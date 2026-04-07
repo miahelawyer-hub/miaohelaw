@@ -13,6 +13,111 @@ const posts = (await getCollection('blog')).sort(
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@graph": [
+				{
+					"@type": "Person",
+					"@id": "https://www.miaohelaw.ca/#person",
+					"name": "Miao He",
+					"alternateName": ["何淼", "Mia He"],
+					"jobTitle": "Family Law Lawyer",
+					"description": "Miao He (何淼) is a dual-licensed family law lawyer in Ontario and China, with 15+ years of experience serving the Chinese-Canadian community in the Greater Toronto Area.",
+					"url": "https://www.miaohelaw.ca",
+					"image": "https://www.miaohelaw.ca/favicon.svg",
+					"telephone": "+1-647-930-6688",
+					"email": "miao@miaohelaw.ca",
+					"knowsLanguage": ["zh-Hans", "en"],
+					"hasCredential": [
+						{
+							"@type": "EducationalOccupationalCredential",
+							"credentialCategory": "Law Society of Ontario — Member #83315K"
+						},
+						{
+							"@type": "EducationalOccupationalCredential",
+							"credentialCategory": "China Bar Association — Licensed"
+						},
+						{
+							"@type": "EducationalOccupationalCredential",
+							"credentialCategory": "Mediation Certificate"
+						}
+					],
+					"memberOf": [
+						{"@type": "Organization", "name": "Law Society of Ontario", "url": "https://lso.ca"},
+						{"@type": "Organization", "name": "The Advocates Society", "url": "https://www.theadvocatessociety.ca"},
+						{"@type": "Organization", "name": "Toronto Lawyers Association", "url": "https://www.tlaonline.ca"},
+						{"@type": "Organization", "name": "York Region Law Association", "url": "https://yrla.ca"},
+						{"@type": "Organization", "name": "Justice Net", "url": "https://www.justicenet.ca"}
+					],
+					"worksFor": {
+						"@id": "https://www.miaohelaw.ca/#lawfirm"
+					},
+					"sameAs": [
+						"https://lso.ca/public-resources/finding-a-lawyer-or-paralegal/directory-search/member?MemberNumber=83315K",
+						"https://www.hlawfirmontario.com",
+						"https://www.linkedin.com/in/miao-he"
+					]
+				},
+				{
+					"@type": "LegalService",
+					"@id": "https://www.miaohelaw.ca/#lawfirm",
+					"name": "H. LAW FIRM 恒. 律师事务所",
+					"alternateName": "H Law Firm",
+					"url": "https://www.hlawfirmontario.com",
+					"telephone": "+1-647-930-6688",
+					"email": "miao@miaohelaw.ca",
+					"address": {
+						"@type": "PostalAddress",
+						"streetAddress": "208-7050 Woodbine Avenue",
+						"addressLocality": "Markham",
+						"addressRegion": "ON",
+						"postalCode": "L3R 4G8",
+						"addressCountry": "CA"
+					},
+					"geo": {
+						"@type": "GeoCoordinates",
+						"latitude": "43.8563",
+						"longitude": "-79.3370"
+					},
+					"areaServed": [
+						"Toronto", "Markham", "Richmond Hill", "Mississauga",
+						"Scarborough", "Brampton", "Oakville", "Greater Toronto Area"
+					],
+					"knowsLanguage": ["zh-Hans", "en"],
+					"serviceType": [
+						"Divorce Litigation",
+						"Family Law",
+						"Child Custody",
+						"Property Division",
+						"Cross-Border Asset Division",
+						"Spousal Support",
+						"Child Support",
+						"Prenuptial Agreement",
+						"Separation Agreement",
+						"Mediation"
+					],
+					"employee": {
+						"@id": "https://www.miaohelaw.ca/#person"
+					},
+					"sameAs": "https://www.hlawfirmontario.com",
+					"priceRange": "$$"
+				},
+				{
+					"@type": "WebSite",
+					"@id": "https://www.miaohelaw.ca/#website",
+					"url": "https://www.miaohelaw.ca",
+					"name": "Miao He (何淼) — Ontario Family Law & Real Estate Lawyer",
+					"description": "Personal website of Miao He (何淼), dual-licensed family law lawyer in Ontario and China, serving the Chinese-Canadian community in the Greater Toronto Area.",
+					"inLanguage": ["zh-Hans", "en"],
+					"publisher": {
+						"@id": "https://www.miaohelaw.ca/#person"
+					}
+				}
+			]
+		}
+		</script>
 	</head>
 	<body>
 		<Header />
