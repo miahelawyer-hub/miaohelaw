@@ -6,4 +6,4 @@ export const SITE_DESCRIPTION = 'Bilingual Ontario and China bar licensed lawyer
 export const SITE_URL = 'https://www.miaohelaw.ca';
 export const AUTHOR_NAME = 'Miao He (何淼)';
 export const AUTHOR_TITLE = 'Barrister & Solicitor — Ontario & China';
-export const AUTHOR_EMAIL = 'mia.he.lawyer@gmail.com';
+export const AUTHOR_EMAIL = 'miao@miaohelaw.ca';
