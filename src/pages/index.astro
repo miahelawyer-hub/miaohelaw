@@ -94,7 +94,51 @@ const posts = (await getCollection('blog')).sort(
 				</blockquote>
 				<a href="https://www.canlii.org" target="_blank" class="case-link">Verify on CanLII →</a>
 			</section>
-
+<!-- Videos -->
+<section class="video-section" style="padding: 4rem 2rem; max-width: 960px; margin: 0 auto; border-top: 1px solid #EDE8DF;">
+    <h2>Legal Insights · 法律视频</h2>
+    <p class="video-sub">Watch Miao He explain Ontario family law and real estate law in Mandarin and English.</p>
+    <div class="video-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem;">
+        <div class="video-item">
+            <div class="video-wrap">
+                <iframe
+                    src="https://www.youtube.com/embed/YhOVZxqwD_k"
+                    title="加拿大法律视频"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                ></iframe>
+            </div>
+        </div>
+        <div class="video-item">
+            <div class="video-wrap">
+                <iframe
+                    src="https://www.youtube.com/embed/86ULSZ6-KF8"
+                    title="加拿大法律视频"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                ></iframe>
+            </div>
+        </div>
+        <div class="video-item">
+            <div class="video-wrap">
+                <iframe
+                    src="https://www.youtube.com/embed/ijZ7E901pXU"
+                    title="加拿大法律视频"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                ></iframe>
+            </div>
+        </div>
+    </div>
+    <div style="text-align:center; margin-top: 2rem;">
+        <a href="https://youtube.com/channel/UCLtXNA90GpKWbt6k-nOgL7w" target="_blank" class="btn-secondary">
+            View All Videos on YouTube →
+        </a>
+    </div>
+</section>
 			<!-- Blog -->
 			<section class="blog-section">
 				<h2>Latest Articles · 最新文章</h2>
@@ -384,7 +428,45 @@ const posts = (await getCollection('blog')).sort(
 		margin: 0 auto 1.5rem;
 		line-height: 1.7;
 	}
-
+/* Videos */
+.video-section {
+    padding: 4rem 2rem;
+    max-width: 960px;
+    margin: 0 auto;
+    border-top: 1px solid #EDE8DF;
+}
+.video-section h2 {
+    font-family: 'Georgia', serif;
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: #1A1208;
+    margin-bottom: 0.75rem;
+}
+.video-sub {
+    color: #6B5A3A;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+}
+.video-wrap {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid #EDE8DF;
+}
+.video-wrap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 	@media (max-width: 720px) {
 		.hero h1 { font-size: 2.5rem; }
 		.stats { grid-template-columns: repeat(2, 1fr); }
