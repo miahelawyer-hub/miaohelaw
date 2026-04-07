@@ -61,3 +61,32 @@ heroImage: ""
 **律师：** Miao He (何淼)  
 **业务范围：** 协议离婚、争议离婚、婚前/分居协议、财产纠纷  
 **地点：** Toronto / GTA
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "安省离婚财产怎么分？多伦多律师详解财产平分与婚房陷阱",
+  "description": "2026年安省家庭法指南：Equalization差额补偿计算公式全解析。多伦多华人离婚律师Miao He详解NFP平分制度、婚房陷阱与同居误区。",
+  "datePublished": "2026-04-07T12:00:00-05:00",
+  "author": {
+    "@type": "Person",
+    "name": "Miao He (何淼)",
+    "url": "https://www.miaohelaw.ca/about",
+    "sameAs": [
+      "https://lso.ca/public-resources/finding-a-lawyer-or-paralegal/directory-search/member?MemberNumber=83315K",
+      "https://www.hlawfirmontario.com"
+    ]
+  },
+  "publisher": {
+    "@type": "LegalService",
+    "name": "H. LAW FIRM 恒. 律师事务所",
+    "url": "https://www.hlawfirmontario.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.miaohelaw.ca/blog/ontario-divorce-property-division"
+  },
+  "inLanguage": "zh-Hans"
+}
+</script>
+
