@@ -1,8 +1,12 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
-import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
-import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { getCollection } from 'astro:content';
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+).slice(0, 3);
 ---
 
 <!doctype html>
@@ -13,37 +17,377 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 	<body>
 		<Header />
 		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This template
-				serves as a lightweight, minimally-styled starting point for anyone looking to build a personal
-				website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to
-				<a href="https://docs.astro.build/">read the docs</a>
-				or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out
-				<a href="https://github.com/Charca/astro-blog-template">astro-blog-template</a>
-				by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
+
+			<!-- Hero -->
+			<section class="hero">
+				<div class="hero-content">
+					<div class="hero-badge">Ontario & China Bar Licensed · 安大略省及中国双执照律师</div>
+					<h1>Miao He <span class="chinese">何淼</span></h1>
+					<p class="hero-title">Barrister & Solicitor · Family Law & Real Estate Law</p>
+					<p class="hero-desc">Bilingual legal services in Mandarin and English. Serving Toronto, Markham, Richmond Hill, Mississauga and all of Ontario.</p>
+					<div class="hero-actions">
+						<a href="mailto:mia.he.lawyer@gmail.com" class="btn-primary">Book a Consultation 预约咨询</a>
+						<a href="/blog" class="btn-secondary">Read My Articles</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Stats -->
+			<section class="stats">
+				<div class="stat-item">
+					<div class="stat-number">15+</div>
+					<div class="stat-label">Years of Experience</div>
+				</div>
+				<div class="stat-item">
+					<div class="stat-number">20+</div>
+					<div class="stat-label">Court Hours / Month</div>
+				</div>
+				<div class="stat-item">
+					<div class="stat-number">200+</div>
+					<div class="stat-label">Consultations / Year</div>
+				</div>
+				<div class="stat-item">
+					<div class="stat-number">2</div>
+					<div class="stat-label">Bar Licences — Ontario & China</div>
+				</div>
+			</section>
+
+			<!-- Practice Areas -->
+			<section class="areas">
+				<h2>Practice Areas · 执业领域</h2>
+				<div class="areas-grid">
+					<div class="area-card area-family">
+						<div class="area-num">01</div>
+						<h3>Family Law · 家庭法</h3>
+						<p>Divorce litigation, cross-border asset division, child custody, spousal support, domestic contracts, and mediation.</p>
+						<a href="/blog" class="area-link">Learn more →</a>
+					</div>
+					<div class="area-card area-re">
+						<div class="area-num">02</div>
+						<h3>Real Estate Law · 房产法</h3>
+						<p>Property purchase and sale, mortgages, title transfers, new construction, and first-time homebuyer guidance.</p>
+						<a href="/blog" class="area-link">Learn more →</a>
+					</div>
+					<div class="area-card area-civil">
+						<div class="area-num">03</div>
+						<h3>Civil Litigation · 民事诉讼</h3>
+						<p>Contract disputes, business partnership conflicts, fraud claims, defamation, and injunctions.</p>
+						<a href="/blog" class="area-link">Learn more →</a>
+					</div>
+					<div class="area-card area-sc">
+						<div class="area-num">04</div>
+						<h3>Small Claims Court · 小额法庭</h3>
+						<p>Filing claims, defending, unpaid invoices, property damage, and judgment enforcement — up to $50,000.</p>
+						<a href="/blog" class="area-link">Learn more →</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Featured Case -->
+			<section class="case-section">
+				<div class="case-label">VERIFIED COURT RECORD · CANLII 公开判决</div>
+				<h2>Yang v. Li, 2024 ONSC 4801</h2>
+				<p>Eight simultaneous claims — including a Chartered Business Valuator (CBV) business valuation dispute — defeated at motion. Significant costs award granted for lack of candour. Appeal dismissed unanimously by three Divisional Court judges.</p>
+				<blockquote>
+					<p>"The motion for leave to appeal the interlocutory decision of Boucher J. dated July 22, 2024 is dismissed. There shall be no order of costs."</p>
+					<cite>— Backhouse J., D.L. Corbett J., O'Brien J. · Ontario Divisional Court · September 4, 2024</cite>
+				</blockquote>
+				<a href="https://www.canlii.org" target="_blank" class="case-link">Verify on CanLII →</a>
+			</section>
+
+			<!-- Blog -->
+			<section class="blog-section">
+				<h2>Latest Articles · 最新文章</h2>
+				<p class="blog-sub">Practical legal insights on Ontario family law, real estate, and civil litigation — in English and Mandarin.</p>
+				<a href="/blog" class="btn-secondary">View All Articles →</a>
+			</section>
+
+			<!-- CTA -->
+			<section class="contact-cta">
+				<h2>Ready to speak with Miao He?</h2>
+				<p>Bilingual consultations available in Mandarin and English. Serving Toronto, Markham, Richmond Hill, Mississauga and all of Ontario.</p>
+				<a href="mailto:mia.he.lawyer@gmail.com" class="btn-primary">Book a Consultation 预约咨询</a>
+			</section>
+
 		</main>
 		<Footer />
 	</body>
 </html>
+
+<style>
+	main {
+		max-width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+
+	/* Hero */
+	.hero {
+		background: #FDFBF7;
+		padding: 5rem 2rem 4rem;
+		text-align: center;
+		border-bottom: 1px solid #EDE8DF;
+	}
+	.hero-content {
+		max-width: 720px;
+		margin: 0 auto;
+	}
+	.hero-badge {
+		display: inline-block;
+		background: #F5EFE0;
+		color: #7A5A1A;
+		font-size: 0.75rem;
+		letter-spacing: 0.05em;
+		padding: 5px 16px;
+		border-radius: 20px;
+		margin-bottom: 1.5rem;
+		border: 1px solid #E8D9B8;
+	}
+	.hero h1 {
+		font-family: 'Georgia', serif;
+		font-size: 3.5rem;
+		font-weight: 400;
+		color: #1A1208;
+		margin-bottom: 0.75rem;
+		line-height: 1.1;
+	}
+	.chinese {
+		color: #7A5A1A;
+	}
+	.hero-title {
+		font-size: 1rem;
+		color: #6B5A3A;
+		margin-bottom: 0.75rem;
+		font-weight: 400;
+	}
+	.hero-desc {
+		font-size: 0.95rem;
+		color: #8A7A5A;
+		max-width: 540px;
+		margin: 0 auto 2rem;
+		line-height: 1.7;
+	}
+	.hero-actions {
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.btn-primary {
+		background: #7A5A1A;
+		color: #FDFBF7;
+		padding: 0.75rem 1.75rem;
+		border-radius: 6px;
+		text-decoration: none;
+		font-size: 0.9rem;
+		font-weight: 500;
+		transition: background 0.2s;
+	}
+	.btn-primary:hover {
+		background: #4A3A0A;
+		color: #FDFBF7;
+	}
+	.btn-secondary {
+		background: transparent;
+		color: #7A5A1A;
+		padding: 0.75rem 1.75rem;
+		border-radius: 6px;
+		text-decoration: none;
+		font-size: 0.9rem;
+		font-weight: 500;
+		border: 1px solid #7A5A1A;
+		transition: all 0.2s;
+	}
+	.btn-secondary:hover {
+		background: #F5EFE0;
+	}
+
+	/* Stats */
+	.stats {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		background: #2C2418;
+	}
+	.stat-item {
+		padding: 2rem 1rem;
+		text-align: center;
+		border-right: 1px solid #3A3020;
+	}
+	.stat-item:last-child {
+		border-right: none;
+	}
+	.stat-number {
+		font-size: 2.25rem;
+		font-weight: 500;
+		color: #FAC775;
+		margin-bottom: 0.4rem;
+	}
+	.stat-label {
+		font-size: 0.75rem;
+		color: #9A8060;
+		line-height: 1.4;
+	}
+
+	/* Practice Areas */
+	.areas {
+		padding: 4rem 2rem;
+		max-width: 960px;
+		margin: 0 auto;
+	}
+	.areas h2 {
+		font-family: 'Georgia', serif;
+		font-size: 1.75rem;
+		font-weight: 400;
+		color: #1A1208;
+		margin-bottom: 2rem;
+	}
+	.areas-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1.25rem;
+	}
+	.area-card {
+		background: #FDFBF7;
+		border: 1px solid #EDE8DF;
+		border-radius: 8px;
+		padding: 1.5rem;
+		border-left: 4px solid;
+	}
+	.area-family { border-left-color: #7A5A1A; }
+	.area-re { border-left-color: #185FA5; }
+	.area-civil { border-left-color: #854F0B; }
+	.area-sc { border-left-color: #993C1D; }
+	.area-num {
+		font-size: 0.7rem;
+		color: #9A8060;
+		letter-spacing: 0.1em;
+		margin-bottom: 0.5rem;
+	}
+	.area-card h3 {
+		font-size: 1rem;
+		font-weight: 500;
+		color: #1A1208;
+		margin-bottom: 0.5rem;
+	}
+	.area-card p {
+		font-size: 0.85rem;
+		color: #6B5A3A;
+		line-height: 1.6;
+		margin-bottom: 1rem;
+	}
+	.area-link {
+		font-size: 0.8rem;
+		color: #7A5A1A;
+		text-decoration: none;
+		font-weight: 500;
+	}
+	.area-link:hover {
+		text-decoration: underline;
+	}
+
+	/* Featured Case */
+	.case-section {
+		background: #2C2418;
+		padding: 4rem 2rem;
+		text-align: center;
+	}
+	.case-label {
+		font-size: 0.7rem;
+		letter-spacing: 0.15em;
+		text-transform: uppercase;
+		color: #9A8060;
+		margin-bottom: 1rem;
+	}
+	.case-section h2 {
+		font-family: 'Georgia', serif;
+		font-size: 1.75rem;
+		font-weight: 400;
+		color: #FAC775;
+		margin-bottom: 1rem;
+	}
+	.case-section p {
+		color: #C4AA80;
+		max-width: 640px;
+		margin: 0 auto 1.5rem;
+		font-size: 0.9rem;
+		line-height: 1.7;
+	}
+	.case-section blockquote {
+		background: rgba(255,255,255,0.05);
+		border: 1px solid rgba(250,199,117,0.2);
+		border-left: 4px solid #FAC775;
+		border-radius: 6px;
+		padding: 1.25rem 1.5rem;
+		max-width: 640px;
+		margin: 0 auto 1.5rem;
+		text-align: left;
+	}
+	.case-section blockquote p {
+		font-style: italic;
+		color: #E8D4A8;
+		margin-bottom: 0.5rem;
+		font-size: 0.9rem;
+	}
+	.case-section blockquote cite {
+		font-size: 0.75rem;
+		color: #9A8060;
+		font-style: normal;
+	}
+	.case-link {
+		color: #FAC775;
+		text-decoration: none;
+		font-size: 0.85rem;
+		font-weight: 500;
+	}
+	.case-link:hover {
+		text-decoration: underline;
+	}
+
+	/* Blog */
+	.blog-section {
+		padding: 4rem 2rem;
+		max-width: 960px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.blog-section h2 {
+		font-family: 'Georgia', serif;
+		font-size: 1.75rem;
+		font-weight: 400;
+		color: #1A1208;
+		margin-bottom: 0.75rem;
+	}
+	.blog-sub {
+		color: #6B5A3A;
+		font-size: 0.9rem;
+		margin-bottom: 1.5rem;
+	}
+
+	/* Contact CTA */
+	.contact-cta {
+		background: #F5EFE0;
+		border-top: 1px solid #EDE8DF;
+		padding: 4rem 2rem;
+		text-align: center;
+	}
+	.contact-cta h2 {
+		font-family: 'Georgia', serif;
+		font-size: 1.75rem;
+		font-weight: 400;
+		color: #1A1208;
+		margin-bottom: 0.75rem;
+	}
+	.contact-cta p {
+		color: #6B5A3A;
+		font-size: 0.9rem;
+		max-width: 540px;
+		margin: 0 auto 1.5rem;
+		line-height: 1.7;
+	}
+
+	@media (max-width: 720px) {
+		.hero h1 { font-size: 2.5rem; }
+		.stats { grid-template-columns: repeat(2, 1fr); }
+		.areas-grid { grid-template-columns: 1fr; }
+	}
+</style>
