@@ -70,10 +70,29 @@ import HeaderLink from './HeaderLink.astro';
 		align-items: center;
 	}
 	@media (max-width: 720px) {
-		nav { padding: 0.8em 1rem; flex-wrap: wrap; justify-content: center; gap: 0.25em; }padding: 0 1rem
     .social-links {
         display: none;
     }
+    h2 {
+        display: none;
+    }
+    nav {
+        padding: 0.5em 0.5em;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0;
+    }
+    nav a {
+        padding: 0.4em 0.4em;
+        font-size: 0.82rem;
+    }
+    .internal-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0;
+    }
+}
     h2 {
         display: none;
     }
