@@ -1,250 +1,320 @@
 ---
-import Layout from '../layouts/BlogPost.astro';
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 ---
-<Layout
-  title="客户评价 | Miao He (何淼) — 多伦多华人家庭法律师"
-  description="真实客户评价——手写贺卡、Google评价、微信留言、客户邮件。何淼律师服务大多伦多华人家庭法案件的真实反馈。"
-  pubDate={new Date('2026-04-07')}
-  heroImage=""
->
 
-<h2>客户评价 · Testimonials</h2>
-<p>以下是客户通过不同方式给何淼律师留下的真实反馈，包括手写贺卡、Google评价、微信留言及电子邮件，均经客户同意展示，敏感信息已作匿名处理。</p>
+<!doctype html>
+<html lang="zh">
+<head>
+  <BaseHead
+    title="客户评价 | 何淼律师真实反馈 | 多伦多华人离婚律师 | Miao He"
+    description="何淼律师（Miao He）真实客户评价——手写贺卡、Google五星评价、微信留言、客户邮件。多伦多华人家庭法律师，647-930-6688。"
+  />
+  <meta name="keywords" content="何淼律师评价,Miao He律师评价,多伦多华人律师评价,Toronto Chinese lawyer review,家庭法律师客户评价,离婚律师推荐,Markham律师评价" />
+  <meta property="og:title" content="客户评价 | 何淼律师 — 多伦多华人离婚律师" />
+  <meta property="og:description" content="何淼律师真实客户评价：手写贺卡、Google五星、微信留言、邮件感谢。647-930-6688。" />
+  <meta property="og:url" content="https://www.miaohelaw.ca/testimonials" />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://www.miaohelaw.ca/testimonials" />
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.miaohelaw.ca/testimonials",
+      "url": "https://www.miaohelaw.ca/testimonials",
+      "name": "客户评价 — 何淼律师",
+      "description": "何淼律师真实客户评价，包括手写贺卡、Google评价、微信留言及客户邮件。",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://www.miaohelaw.ca/" },
+          { "@type": "ListItem", "position": 2, "name": "客户评价", "item": "https://www.miaohelaw.ca/testimonials" }
+        ]
+      },
+      "mainEntity": { "@id": "https://www.miaohelaw.ca/#lawfirm" }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "@id": "https://www.miaohelaw.ca/#lawfirm",
+      "name": "H. LAW FIRM 恒. 律师事务所",
+      "url": "https://www.miaohelaw.ca",
+      "telephone": "+1-647-930-6688",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1",
+        "ratingCount": "14"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Paula L" },
+          "datePublished": "2024-05-31",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "reviewBody": "先后就婚姻和房产的事情和Mia合作，唯一的遗憾是没有早点遇到！Mia和团队非常专业，最重要的是很高效。和Mia共事我才知道原来律师可以回应这么快，可以灵活，可以积极帮客人寻找各种解决方案。"
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Jane" },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "reviewBody": "I cannot recommend Mia He highly enough. She demonstrated an exceptional level of professionalism, strategic insight, and care. She proactively engaged with opposing counsel and found solutions that others had overlooked."
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Ivy" },
+          "datePublished": "2024-06-25",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "reviewBody": "Working with you as my family lawyer in Toronto has been an incredibly reassuring experience. You are, without question, one of the most reliable and effective divorce and family lawyers in Toronto."
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Michael Chen" },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "reviewBody": "Mia was incredibly sharp — she spotted an error in the opposing party financial disclosure that their own lawyer missed. She is the kind of lawyer who actually reads every document instead of just going through the motions."
+        }
+      ]
+    }
+  ]
+  </script>
+</head>
+<body>
+  <Header />
+  <main class="page-main">
+
+    <section class="page-hero">
+      <div class="page-hero-inner">
+        <div class="page-label">客户评价 · TESTIMONIALS</div>
+        <h1>真实客户反馈</h1>
+        <p>以下是客户通过不同方式留下的真实反馈，包括手写贺卡、Google评价、微信留言及电子邮件，均经客户同意展示，敏感信息已作匿名处理。</p>
+      </div>
+    </section>
+
+    <section class="testimonials-section">
+      <div class="testimonials-inner">
+
+        <h2 class="section-title">✍️ 手写贺卡</h2>
+
+        <div class="testimonial-card">
+          <img src="/testimonials/card-handwritten.jpeg" alt="客户手写贺卡给何淼律师" />
+          <div class="testimonial-source">手写贺卡 · 家庭法案件</div>
+          <div class="testimonial-text">
+            亲爱的何律师：<br/><br/>
+            第一次线上会议见到你，我的第六感就告诉我你就是我要找的律师。<br/><br/>
+            谢谢你这么专业、有逻辑，同时又像一个大姐姐一样，设身处地的替我换位思考，捋清思路。<br/><br/>
+            谢谢你帮我重启人生，接下来我一定会认真的好好的生活。<br/><br/>
+            希望你新的一年顺顺利利❤️ 遇到的case都马到成功❤️<br/><br/>
+            <em>You're appreciated more than you know!</em>
+          </div>
+          <div class="testimonial-author">— 匿名客户 · 家庭法案件</div>
+        </div>
+
+        <h2 class="section-title">💬 微信留言</h2>
+
+        <div class="testimonial-card">
+          <img src="/testimonials/wechat-message.jpeg" alt="客户微信留言评价何淼律师" />
+          <div class="testimonial-source">微信留言 · 离婚诉讼案件</div>
+          <div class="testimonial-text">
+            何律师您好，看到您的视频感慨良多！之前在您的积极调解下帮我很快结束了拖了两年的诉讼。其实我之前反复跟前律师提起，我不想跟对方纠缠、亏一点就亏一点只要能速战速决就好，但前律师一直跟我说，对方已经提起诉讼了你没有其他办法只能应诉……直到遇到您！您从我的利益出发，积极火速与对方律师协调，我真真正正感觉到律师是在帮助客人，而不是照本宣科的传话员。转眼间我的官司结束已经两年了，很喜欢自己的状态，永远感谢您的专业与帮助！
+          </div>
+          <div class="testimonial-author">— 匿名客户 · 微信留言 · 离婚诉讼案件</div>
+        </div>
+
+        <h2 class="section-title">⭐ Google 评价</h2>
+
+        <div class="testimonial-card">
+          <img src="/testimonials/google-review-paula.jpeg" alt="Paula L Google评价何淼律师" />
+          <div class="testimonial-source">Google 评价 · May 31, 2024 · Paula L</div>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <div class="testimonial-text">
+            先后就婚姻和房产的事情和Mia合作，唯一的遗憾是没有早点遇到！Mia和团队非常专业，最重要的是很高效，在此之前我以为联系不上律师、沟通缓慢是正常的，和Mia共事我才知道原来律师可以回应这么快，可以灵活，可以积极帮客人寻找各种解决方案。近期接触的律师中，Mia团队费用上和其他相差不大，但效率真是高了三倍不止！以后有需要我一定还会选择她们。
+          </div>
+          <div class="testimonial-author">— Paula L · Local Guide · 婚姻及房产案件</div>
+        </div>
+
+        <div class="testimonial-card">
+          <img src="/testimonials/google-review-jane.jpeg" alt="Jane Google评价何淼律师" />
+          <div class="testimonial-source">Google 评价 · 家庭法案件 · Jane</div>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <div class="testimonial-text">
+            I cannot recommend Mia He highly enough. After my case was initially handled by another lawyer, I had the good fortune of being transferred to her—and the difference was remarkable. From Day One, she demonstrated an exceptional level of professionalism, strategic insight, and care.<br/><br/>
+            Mia exceeded my expectations in every way. She approached my case with clarity and purpose, always seeking the best possible outcome. Unlike my previous experience, she proactively engaged with opposing counsel and found solutions that others had overlooked.<br/><br/>
+            Beyond her legal skills, what truly makes her unique is her heart. She is not only a reliable and talented professional but also someone who genuinely cares for women going through difficult and desperate situations.
+          </div>
+          <div class="testimonial-author">— Jane · Google评价 · 家庭法案件</div>
+        </div>
+
+        <h2 class="section-title">📧 客户邮件</h2>
+
+        <div class="testimonial-card">
+          <img src="/testimonials/email-ivy.jpeg" alt="客户Ivy发给何淼律师的感谢邮件" />
+          <div class="testimonial-source">客户邮件 · June 25, 2024 · Ivy</div>
+          <div class="testimonial-text">
+            Dear Mia,<br/><br/>
+            I want to personally thank you for your exceptional work on my family law matter.<br/><br/>
+            Working with you as my family lawyer in Toronto, Ontario has been an incredibly reassuring experience. From the very beginning, I could clearly see your professionalism, efficiency, and deep understanding of Ontario family law. You handled every step of my case promptly and strategically, which made a stressful situation feel manageable.<br/><br/>
+            I especially appreciate how transparent and reasonable your legal fees were. In a field where costs can easily become overwhelming, your fairness and clarity truly set you apart.<br/><br/>
+            Most importantly, I felt that you genuinely took responsibility for my case. You are, without question, one of the most reliable and effective divorce and family lawyers in Toronto.<br/><br/>
+            Sincerely, Ivy
+          </div>
+          <div class="testimonial-author">— Ivy · 客户邮件 · 家庭法案件</div>
+        </div>
+
+        <h2 class="section-title">📋 更多客户评价</h2>
+
+        <h3 class="category-title">离婚诉讼 · Divorce Litigation</h3>
+
+        <div class="testimonial-card">
+          <div class="testimonial-source">离婚诉讼 · 多伦多</div>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <div class="testimonial-text">我的孩子监护权案子，对方完全不愿意谈，一开始我还想着能不能不打官司。何律师直接告诉我："这个案子不打是拿不到结果的。"她说得很直接，但事后证明她是对的。庭审那天我坐在旁听席看着她应对对方律师，思路清晰，一点都不慌。法官最终判我为主要监护人。</div>
+          <div class="testimonial-author">— David C. · 万锦 · 子女监护权诉讼</div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-source">高冲突离婚 · 多伦多</div>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <div class="testimonial-text">对方律师在谈判桌上非常强硬，开口就是一个对我极不公平的方案。何律师说不用妥协，然后开始准备开庭材料，把所有证据整理得非常完整。对方看到我们真的要打，态度软化了，最后在开庭前达成了对我有利的和解。何律师事后说，很多时候真正准备好打，才是最有效的谈判筹码。</div>
+          <div class="testimonial-author">— Raymond K. · 多伦多 · 对抗性离婚谈判与庭前和解</div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-source">接手复杂案件 · 列治文山</div>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <div class="testimonial-text">跟前夫打了将近两年，换了两个律师都没搞定。找到何律师之后，第一次见面她就把问题讲得非常清楚，哪些能争、哪些没必要争、大概要多久。后来她替我拿到了对方一直不肯承认的中国房产，最终财产分割比我预期的多了将近20万。</div>
+          <div class="testimonial-author">— 刘女士 · 万锦 · 离婚财产分割</div>
+        </div>
+
+        <h3 class="category-title">财产分割 · Property Division</h3>
+
+        <div class="testimonial-card">
+          <div class="testimonial-source">财产分割 · 多伦多</div>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <div class="testimonial-text">第一次见面聊了将近两个小时，何律师把我们的情况分析得非常透彻——两套房产、退休金、对方名下还有一个我根本不知道存在的投资账户。她帮我把那个账户追出来了，最终通过谈判拿到了应得的均等化款项，没有上庭。结果比我预期的好很多。</div>
+          <div class="testimonial-author">— Jennifer L. · 多伦多 · 婚姻存续14年财产分割</div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-source">跨国婚前财产排除 · 密西沙加</div>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <div class="testimonial-text">我在中国有两套房产，离婚谈判时对方坚持要把这两套房都算进均等化。何律师的判断完全不同——她仔细研究了我的财务记录，认为完全可以主张婚前价值排除，而且成功了。事后算下来，这个主张为我保留了将近三十万加元的资产。</div>
+          <div class="testimonial-author">— Steven Y. · 密西沙加 · 跨国婚前财产排除</div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-source">文件审查 · 列治文山</div>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <div class="testimonial-text">Went through a contested divorce involving two properties and a business. Mia was incredibly sharp — she spotted an error in the opposing party's financial disclosure that their own lawyer missed. That single catch saved me a significant sum. She's the kind of lawyer who actually reads every document instead of just going through the motions.</div>
+          <div class="testimonial-author">— Michael Chen · Richmond Hill · Divorce &amp; Property Division</div>
+        </div>
+
+        <h3 class="category-title">婚房紧急保护 · Emergency Protection</h3>
+
+        <div class="testimonial-card">
+          <div class="testimonial-source">婚房紧急保护 · 列治文山</div>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <div class="testimonial-text">那天接到消息说对方已经在谈卖房了，我当时整个人是懵的。打电话给何律师，她当天就开始处理，帮我在房产产权上注册了婚房指定警告，把那个交易直接卡住了。速度之快超出我的想象。何律师说，这种事情早一天处理和晚一天处理，结果可能完全不同。</div>
+          <div class="testimonial-author">— Michael H. · 列治文山 · 婚房紧急保护</div>
+        </div>
+
+        <h3 class="category-title">协议离婚 · Uncontested Divorce</h3>
+
+        <div class="testimonial-card">
+          <div class="testimonial-source">协议离婚 · 北约克</div>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <div class="testimonial-text">我和前夫没什么大争议，就是想尽快把手续办完，不想花太多钱。何律师的收费真的合理，而且她很清楚地告诉我哪些是必要的法律步骤，哪些是可以省掉的。大概四个月左右拿到了离婚令，整个过程我没有觉得被多收过一分钱。</div>
+          <div class="testimonial-author">— Amanda W. · 北约克 · 协议离婚</div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-source">无争议离婚 · 多伦多</div>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <div class="testimonial-text">Fast, professional, no drama. My ex and I had already agreed on everything, we just needed a lawyer to make it official and draft the paperwork correctly. Mia handled it in about 5 weeks. Everything was done right the first time. For a simple divorce, her pricing was very fair. No upselling, no unnecessary steps.</div>
+          <div class="testimonial-author">— Tony Z. · Scarborough · Uncontested Divorce</div>
+        </div>
+
+        <h3 class="category-title">新移民服务 · New Immigrant Support</h3>
+
+        <div class="testimonial-card">
+          <div class="testimonial-source">新移民离婚咨询 · 士嘉堡</div>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <div class="testimonial-text">我移民加拿大才三年，普通话可以但完全不懂这里的法律。面对离婚我真的很迷茫，不知道从哪里开始。何律师用普通话跟我解释每一个步骤，每次我问"这是什么意思"她都不会觉得烦，耐心讲到我明白为止。对我这样的新移民来说，能有一个这样沟通的律师，真的差别很大。</div>
+          <div class="testimonial-author">— Linda Z. · 士嘉堡 · 新移民离婚咨询</div>
+        </div>
+
+        <h3 class="category-title">婚前协议 · Prenuptial Agreement</h3>
+
+        <div class="testimonial-card">
+          <div class="testimonial-source">婚前协议 · Thornhill</div>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <div class="testimonial-text">Getting a prenup felt awkward to bring up, but Mia made the whole process professional and non-judgmental. She explained what's enforceable in Ontario, what tends to get challenged, and drafted something that protected both of us fairly. My fiancé and I both felt comfortable. Thorough and fair.</div>
+          <div class="testimonial-author">— Sophie W. · Thornhill · Prenuptial Agreement</div>
+        </div>
+
+        <h3 class="category-title">跨境资产 · Cross-Border Assets</h3>
+
+        <div class="testimonial-card">
+          <div class="testimonial-source">高净值离婚 · 宾顿</div>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <div class="testimonial-text">我在国内有两套房、一个股票账户，对方一直说国内的东西跟这边离婚没关系。何律师直接告诉我，这是错的，安省法律下全球资产都要算进NFP。她有中国执照，懂国内怎么查，最后那些资产全部被纳入计算，我的分割结果好很多。</div>
+          <div class="testimonial-author">— 黄先生 · 宾顿 · 跨境资产</div>
+        </div>
+
+        <div class="page-cta">
+          <p>以上评价均为真实客户反馈，经客户同意展示，敏感个人信息已作匿名处理。</p>
+          <h2>有类似情况？欢迎咨询</h2>
+          <p>初次咨询30分钟，$220 + HST。</p>
+          <div class="cta-actions">
+            <a href="tel:6479306688" class="btn-primary">📞 647-930-6688</a>
+            <a href="mailto:miao@miaohelaw.ca" class="btn-secondary">miao@miaohelaw.ca</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+  <Footer />
+</body>
+</html>
 
 <style>
-  .testimonial-card {
-    background: #faf8f5;
-    border: 1px solid #e8e0d5;
-    border-radius: 12px;
-    padding: 2rem;
-    margin: 2rem 0;
-  }
-  .testimonial-card img {
-    width: 100%;
-    max-width: 600px;
-    border-radius: 8px;
-    margin: 0 auto 1.5rem;
-    display: block;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
-  }
-  .testimonial-source {
-    font-size: 0.85rem;
-    color: #8a7a6a;
-    margin-bottom: 1rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
-  .testimonial-text {
-    font-size: 1rem;
-    line-height: 1.8;
-    color: #3a3228;
-    border-left: 3px solid #b5935a;
-    padding-left: 1.2rem;
-    margin: 1rem 0;
-  }
-  .testimonial-author {
-    margin-top: 1rem;
-    font-weight: 600;
-    color: #5a4a3a;
-  }
-  .stars { color: #f5a623; font-size: 1.1rem; }
-  .section-title {
-    color: #8a7a6a;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    margin: 3rem 0 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid #e8e0d5;
+  .page-main { max-width: 100%; padding: 0; margin: 0; }
+
+  .page-hero { background: #2C2418; padding: 4rem 2rem; text-align: center; }
+  .page-hero-inner { max-width: 760px; margin: 0 auto; }
+  .page-label { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: #9A8060; margin-bottom: 1rem; }
+  .page-hero h1 { font-family: "Georgia", serif; font-size: 2.5rem; font-weight: 400; color: #FAC775; margin-bottom: 1rem; }
+  .page-hero p { color: #C4AA80; font-size: 0.95rem; line-height: 1.7; max-width: 640px; margin: 0 auto; }
+
+  .testimonials-section { padding: 4rem 2rem; }
+  .testimonials-inner { max-width: 800px; margin: 0 auto; }
+
+  .section-title { font-family: "Georgia", serif; font-size: 1.4rem; font-weight: 400; color: #1A1208; margin: 2.5rem 0 1.25rem; padding-bottom: 0.5rem; border-bottom: 2px solid #EDE8DF; }
+  .section-title:first-of-type { margin-top: 0; }
+  .category-title { font-family: "Georgia", serif; font-size: 1.1rem; font-weight: 400; color: #7A5A1A; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #EDE8DF; }
+
+  .testimonial-card { background: #FDFBF7; border: 1px solid #EDE8DF; border-radius: 8px; padding: 2rem; margin-bottom: 1.25rem; border-left: 4px solid #7A5A1A; }
+  .testimonial-card img { width: 100%; max-width: 600px; border-radius: 8px; margin: 0 auto 1.5rem; display: block; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+  .testimonial-source { font-size: 0.75rem; color: #9A8060; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.75rem; }
+  .stars { color: #F5A623; font-size: 1rem; margin-bottom: 0.75rem; }
+  .testimonial-text { font-size: 0.9rem; line-height: 1.85; color: #3A3228; border-left: 3px solid #FAC775; padding-left: 1.1rem; margin: 0.75rem 0; }
+  .testimonial-author { margin-top: 1rem; font-size: 0.82rem; font-weight: 600; color: #6B5A3A; }
+
+  .page-cta { background: #F5EFE0; border-radius: 8px; padding: 2.5rem 2rem; text-align: center; margin-top: 3rem; }
+  .page-cta p { font-size: 0.85rem; color: #9A8060; margin-bottom: 0.5rem; }
+  .page-cta h2 { font-family: "Georgia", serif; font-size: 1.5rem; font-weight: 400; color: #1A1208; margin-bottom: 0.5rem; }
+  .cta-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1.25rem; }
+  .btn-primary { display: inline-flex; align-items: center; justify-content: center; background: #7A5A1A; color: #FDFBF7; padding: 0.75rem 1.75rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; font-weight: 600; border: 2px solid #7A5A1A; }
+  .btn-primary:hover { background: #4A3A0A; }
+  .btn-secondary { display: inline-flex; align-items: center; justify-content: center; background: transparent; color: #7A5A1A; padding: 0.75rem 1.75rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; font-weight: 600; border: 2px solid #7A5A1A; }
+  .btn-secondary:hover { background: #EDE8DF; }
+
+  @media (max-width: 720px) {
+    .page-hero h1 { font-size: 1.75rem; }
+    .testimonial-card { padding: 1.5rem; }
   }
 </style>
-
-<h3 class="section-title">✍️ 手写贺卡</h3>
-
-<div class="testimonial-card">
-  <img src="/testimonials/card-handwritten.jpeg" alt="客户手写贺卡给何淼律师" />
-  <div class="testimonial-source">手写贺卡 · 家庭法案件</div>
-  <div class="testimonial-text">
-    亲爱的何律师：<br/><br/>
-    第一次线上会议见到你，我的第六感就告诉我你就是我要找的律师。<br/><br/>
-    谢谢你这么专业、有逻辑，同时又像一个大姐姐一样，设身处地的替我换位思考，捋清思路。<br/><br/>
-    谢谢你帮我重启人生，接下来我一定会认真的好好的生活。<br/><br/>
-    希望你新的一年顺顺利利❤️ 遇到的case都马到成功❤️<br/><br/>
-    <em>You're appreciated more than you know!</em>
-  </div>
-  <div class="testimonial-author">— 匿名客户 · 家庭法案件</div>
-</div>
-
-<h3 class="section-title">💬 微信留言</h3>
-
-<div class="testimonial-card">
-  <img src="/testimonials/wechat-message.jpeg" alt="客户微信留言评价何淼律师" />
-  <div class="testimonial-source">微信留言 · 离婚诉讼案件</div>
-  <div class="testimonial-text">
-    何律师您好，看到您的视频感慨良多！之前在您的积极调解下帮我很快结束了拖了两年的诉讼。其实我之前反复跟前律师提起，我不想跟对方纠缠、亏一点就亏一点只要能速战速决就好，但前律师一直跟我说，对方已经提起诉讼了你没有其他办法只能应诉、一定要认真提供尽可能多的材料。所以我一直很窝火，觉得花很多时间和成本去应对并非我本意且确定对我不利的诉讼……我以为法律就是这样无奈……直到遇到您！您从我的利益出发，积极火速与对方律师协调，我真真正正感觉到律师是在帮助客人，而不是照本宣科的传话员。转眼间我的官司结束已经两年了，很喜欢自己的状态，永远感谢您的专业与帮助！祝福您！
-  </div>
-  <div class="testimonial-author">— 匿名客户 · 微信留言 · 离婚诉讼案件</div>
-</div>
-
-<h3 class="section-title">⭐ Google 评价</h3>
-
-<div class="testimonial-card">
-  <img src="/testimonials/google-review-paula.jpeg" alt="Paula L Google评价何淼律师" />
-  <div class="testimonial-source">Google 评价 · May 31, 2024 · Paula L</div>
-  <div class="stars">⭐⭐⭐⭐⭐</div>
-  <div class="testimonial-text">
-    先后就婚姻和房产的事情和Mia合作，唯一的遗憾是没有早点遇到！Mia和团队非常专业，最重要的是很高效，在此之前我以为联系不上律师、沟通缓慢是正常的，和Mia共事我才知道原来律师可以回应这么快，可以灵活，可以积极帮客人寻找各种解决方案。近期接触的律师中，Mia团队费用上和其他相差不大，但效率真是高了三倍不止！以后有需要我一定还会选择她们。
-  </div>
-  <div class="testimonial-author">— Paula L · Local Guide · 婚姻及房产案件</div>
-</div>
-
-<div class="testimonial-card">
-  <img src="/testimonials/google-review-jane.jpeg" alt="Jane Google评价何淼律师" />
-  <div class="testimonial-source">Google 评价 · 家庭法案件 · Jane</div>
-  <div class="stars">⭐⭐⭐⭐⭐</div>
-  <div class="testimonial-text">
-    I cannot recommend Mia He highly enough. After my case was initially handled by another lawyer, I had the good fortune of being transferred to her—and the difference was remarkable. From Day One, she demonstrated an exceptional level of professionalism, strategic insight, and care.<br/><br/>
-    Mia exceeded my expectations in every way. She approached my case with clarity and purpose, always seeking the best possible outcome. Unlike my previous experience, she proactively engaged with opposing counsel and found solutions that others had overlooked.<br/><br/>
-    Beyond her legal skills, what truly makes her unique is her heart. She is not only a reliable and talented professional but also someone who genuinely cares for women going through difficult and desperate situations. I always felt heard, supported, and confident under her guidance.
-  </div>
-  <div class="testimonial-author">— Jane · Google评价 · 家庭法案件</div>
-</div>
-
-<h3 class="section-title">📧 客户邮件</h3>
-
-<div class="testimonial-card">
-  <img src="/testimonials/email-ivy.jpeg" alt="客户Ivy发给何淼律师的感谢邮件" />
-  <div class="testimonial-source">客户邮件 · June 25, 2024 · Ivy</div>
-  <div class="testimonial-text">
-    Dear Mia,<br/><br/>
-    I want to personally thank you for your exceptional work on my family law matter.<br/><br/>
-    Working with you as my family lawyer in Toronto, Ontario has been an incredibly reassuring experience. From the very beginning, I could clearly see your professionalism, efficiency, and deep understanding of Ontario family law. You handled every step of my case promptly and strategically, which made a stressful situation feel manageable.<br/><br/>
-    I especially appreciate how transparent and reasonable your legal fees were. In a field where costs can easily become overwhelming, your fairness and clarity truly set you apart.<br/><br/>
-    Most importantly, I felt that you genuinely took responsibility for my case. Your attention to detail, responsiveness, and commitment to achieving the best outcome did not go unnoticed. You are, without question, one of the most reliable and effective divorce and family lawyers in Toronto.<br/><br/>
-    Thank you again for everything you have done for me.<br/><br/>
-    Sincerely, Ivy
-  </div>
-  <div class="testimonial-author">— Ivy · 客户邮件 · 家庭法案件</div>
-</div>
-
-
-<h3 class="section-title">📋 更多客户评价</h3>
-
-<h4 style="color: #5a4a3a; margin: 2rem 0 1rem;">离婚诉讼 · Divorce Litigation</h4>
-
-<div class="testimonial-card">
-  <div class="testimonial-source">离婚诉讼 · 多伦多</div>
-  <div class="testimonial-text">
-    我的孩子监护权案子，对方完全不愿意谈，一开始我还想着能不能不打官司。何律师直接告诉我："这个案子不打是拿不到结果的。"她说得很直接，但事后证明她是对的。庭审那天我坐在旁听席看着她应对对方律师，思路清晰，一点都不慌。法官最终判我为主要监护人。整个过程我最感激的，是她没有让我抱着不切实际的幻想拖时间，直接帮我解决了问题。
-  </div>
-  <div class="testimonial-author">— David C. · 万锦 · 子女监护权诉讼 ⭐⭐⭐⭐⭐</div>
-</div>
-
-<div class="testimonial-card">
-  <div class="testimonial-source">高冲突离婚 · 多伦多</div>
-  <div class="testimonial-text">
-    对方律师在谈判桌上非常强硬，开口就是一个对我极不公平的方案。我问何律师，我们要不要妥协一部分。她说不用，然后开始准备开庭材料，把所有证据整理得非常完整。对方看到我们真的要打，态度软化了，最后在开庭前达成了对我有利的和解。何律师事后说，很多时候真正准备好打，才是最有效的谈判筹码。
-  </div>
-  <div class="testimonial-author">— Raymond K. · 多伦多 · 对抗性离婚谈判与庭前和解 ⭐⭐⭐⭐⭐</div>
-</div>
-
-<div class="testimonial-card">
-  <div class="testimonial-source">接手复杂案件 · 列治文山</div>
-  <div class="testimonial-text">
-    跟前夫打了将近两年，换了两个律师都没搞定。找到何律师之后，第一次见面她就把问题讲得非常清楚，哪些能争、哪些没必要争、大概要多久。后来她替我拿到了对方一直不肯承认的中国房产，最终财产分割比我预期的多了将近20万。打官司这种事，找对人太重要了。
-  </div>
-  <div class="testimonial-author">— 刘女士 · 万锦 · 离婚财产分割 ⭐⭐⭐⭐⭐</div>
-</div>
-
-<h4 style="color: #5a4a3a; margin: 2rem 0 1rem;">财产分割 · Property Division</h4>
-
-<div class="testimonial-card">
-  <div class="testimonial-source">财产分割 · 多伦多</div>
-  <div class="testimonial-text">
-    老实说，我一开始对离婚这件事完全没有头绪。第一次见面聊了将近两个小时，何律师把我们的情况分析得非常透彻——两套房产、退休金、对方名下还有一个我根本不知道存在的投资账户。她帮我把那个账户追出来了，最终通过谈判拿到了应得的均等化款项，没有上庭。说实话，结果比我预期的好很多。
-  </div>
-  <div class="testimonial-author">— Jennifer L. · 多伦多 · 婚姻存续14年财产分割 ⭐⭐⭐⭐⭐</div>
-</div>
-
-<div class="testimonial-card">
-  <div class="testimonial-source">跨国婚前财产排除 · 密西沙加</div>
-  <div class="testimonial-text">
-    我在中国有两套房产，离婚谈判时对方坚持要把这两套房都算进均等化。我之前咨询过另一个律师，那个律师说可能很难排除。何律师的判断完全不同——她仔细研究了我的财务记录，认为完全可以主张婚前价值排除，而且成功了。事后算下来，这个主张为我保留了将近三十万加元的资产。选对律师，差距真的很大。
-  </div>
-  <div class="testimonial-author">— Steven Y. · 密西沙加 · 跨国婚前财产排除 ⭐⭐⭐⭐⭐</div>
-</div>
-
-<div class="testimonial-card">
-  <div class="testimonial-source">文件审查 · 多伦多</div>
-  <div class="testimonial-text">
-    Went through a contested divorce involving two properties and a business. Mia was incredibly sharp — she spotted an error in the opposing party's financial disclosure that their own lawyer missed. That single catch saved me a significant sum. She's the kind of lawyer who actually reads every document instead of just going through the motions. Highly recommend without hesitation.
-  </div>
-  <div class="testimonial-author">— Michael Chen · Richmond Hill · Divorce & Property Division ⭐⭐⭐⭐⭐</div>
-</div>
-
-<h4 style="color: #5a4a3a; margin: 2rem 0 1rem;">婚房紧急保护 · Emergency Protection</h4>
-
-<div class="testimonial-card">
-  <div class="testimonial-source">婚房紧急保护 · 列治文山</div>
-  <div class="testimonial-text">
-    那天接到消息说对方已经在谈卖房了，我当时整个人是懵的。打电话给何律师，她当天就开始处理，帮我在房产产权上注册了婚房指定警告，把那个交易直接卡住了。速度之快超出我的想象。后来何律师跟我说，这种事情早一天处理和晚一天处理，结果可能完全不同。我非常庆幸当时第一个电话打给了她。
-  </div>
-  <div class="testimonial-author">— Michael H. · 列治文山 · 婚房紧急保护 ⭐⭐⭐⭐⭐</div>
-</div>
-
-<h4 style="color: #5a4a3a; margin: 2rem 0 1rem;">协议离婚 · Uncontested Divorce</h4>
-
-<div class="testimonial-card">
-  <div class="testimonial-source">协议离婚 · 北约克</div>
-  <div class="testimonial-text">
-    我和前夫没什么大争议，就是想尽快把手续办完，不想花太多钱。朋友说找律师很贵，但何律师的收费真的合理，而且她很清楚地告诉我哪些是必要的法律步骤，哪些是可以省掉的。大概四个月左右拿到了离婚令，整个过程我没有觉得被多收过一分钱。
-  </div>
-  <div class="testimonial-author">— Amanda W. · 北约克 · 协议离婚 ⭐⭐⭐⭐⭐</div>
-</div>
-
-<div class="testimonial-card">
-  <div class="testimonial-source">无争议离婚 · 多伦多</div>
-  <div class="testimonial-text">
-    Fast, professional, no drama. My ex and I had already agreed on everything, we just needed a lawyer to make it official and draft the paperwork correctly. Mia handled it in about 5 weeks. Everything was done right the first time. For a simple divorce, her pricing was very fair. No upselling, no unnecessary steps.
-  </div>
-  <div class="testimonial-author">— Tony Z. · Scarborough · Uncontested Divorce ⭐⭐⭐⭐⭐</div>
-</div>
-
-<h4 style="color: #5a4a3a; margin: 2rem 0 1rem;">新移民服务 · New Immigrant Support</h4>
-
-<div class="testimonial-card">
-  <div class="testimonial-source">新移民离婚咨询 · 士嘉堡</div>
-  <div class="testimonial-text">
-    我移民加拿大才三年，普通话可以但完全不懂这里的法律。面对离婚我真的很迷茫，不知道从哪里开始。何律师用普通话跟我解释每一个步骤，每次我问"这是什么意思"她都不会觉得烦，耐心讲到我明白为止。对我这样的新移民来说，能有一个这样沟通的律师，真的差别很大。
-  </div>
-  <div class="testimonial-author">— Linda Z. · 士嘉堡 · 新移民离婚咨询 ⭐⭐⭐⭐⭐</div>
-</div>
-
-<h4 style="color: #5a4a3a; margin: 2rem 0 1rem;">婚前协议 · Prenuptial Agreement</h4>
-
-<div class="testimonial-card">
-  <div class="testimonial-source">婚前协议 · Thornhill</div>
-  <div class="testimonial-text">
-    Getting a prenup felt awkward to bring up, but Mia made the whole process professional and non-judgmental. She explained what's enforceable in Ontario, what tends to get challenged, and drafted something that protected both of us fairly. My fiancé and I both felt comfortable. Thorough and fair.
-  </div>
-  <div class="testimonial-author">— Sophie W. · Thornhill · Prenuptial Agreement ⭐⭐⭐⭐⭐</div>
-</div>
-
-<h4 style="color: #5a4a3a; margin: 2rem 0 1rem;">跨境资产 · Cross-Border Assets</h4>
-
-<div class="testimonial-card">
-  <div class="testimonial-source">高净值离婚 · 列治文山</div>
-  <div class="testimonial-text">
-    我在国内有两套房、一个股票账户，对方一直说国内的东西跟这边离婚没关系。何律师直接告诉我，这是错的，安省法律下全球资产都要算进NFP。她有中国执照，懂国内怎么查，最后那些资产全部被纳入计算，我的分割结果好很多。
-  </div>
-  <div class="testimonial-author">— 黄先生 · 宾顿 · 跨境资产 ⭐⭐⭐⭐⭐</div>
-</div>
-
-<hr/>
-<p style="text-align:center; color: #8a7a6a; font-size: 0.9rem;">
-  以上评价均为真实客户反馈，经客户同意展示，敏感个人信息已作匿名处理。<br/>
-  如需了解更多，欢迎 <a href="/contact">联系何淼律师</a> 预约咨询。
-</p>
-
-</Layout>
