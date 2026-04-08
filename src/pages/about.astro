@@ -1,90 +1,381 @@
 ---
-import Layout from '../layouts/BlogPost.astro';
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 ---
-<Layout
-  title="关于何淼律师 | Miao He — 多伦多华人家庭法律师 | Ontario & China 双执照"
-  description="Miao He（何淼）是大多伦多地区资深华人家庭法律师，持有安省及中国双重律师执照，执业逾15年，每月出庭超过20小时，专注离婚诉讼、财产分割及跨境资产处理。"
-  pubDate={new Date('2026-04-07')}
-  heroImage=""
->
 
-<h2>何淼律师 | Miao (Mia) He</h2>
-<p>
-  我是 Miao He（何淼），持有<strong>安省律师执照</strong>及<strong>中国律师执照</strong>的双执照律师，在大多伦多地区执业逾 15 年。我在 <a href="https://www.hlawfirmontario.com" target="_blank" rel="noopener">H. LAW FIRM 恒. 律师事务所</a>担任主理律师，事务所位于 Markham，服务整个大多伦多华人社区。每月出庭超过 20 小时，每年提供逾 200 件法律咨询，是 GTA 华人社区中案件量最活跃的家庭法律师之一。
-</p>
-<p>
-  我的执业理念是：<strong>能谈则谈，该打必胜。</strong>我同时持有调解员认证（Mediation Certificate），在非诉程序中同样能为客户争取策略高地。
-</p>
+<!doctype html>
+<html lang="zh">
+<head>
+  <BaseHead
+    title="何淼律师 | 多伦多华人离婚律师 | 中加双执照家庭法律师 | Miao He"
+    description="Miao He（何淼）毕业于 Osgoode Hall Law School，持有安大略省及中国双重律师执照，GTA执业15+年，每月出庭20+小时，专注离婚、子女抚养权、跨境资产分割。647-930-6688。"
+  />
+  <meta name="keywords" content="何淼律师,Miao He律师,Mia He律师,多伦多华人离婚律师,Toronto Chinese Divorce Lawyer,中加双执照律师,Markham家庭法律师,GTA华人律师,跨境资产离婚,Osgoode家庭法律师,Chinese family lawyer Toronto" />
+  <meta property="og:title" content="何淼律师 | 多伦多华人离婚律师 | 中加双执照" />
+  <meta property="og:description" content="Miao He（何淼），Osgoode LL.M.，安省及中国双执照，GTA执业15+年。离婚、子女监护、跨境资产。647-930-6688。" />
+  <meta property="og:url" content="https://www.miaohelaw.ca/about" />
+  <meta property="og:type" content="profile" />
+  <link rel="canonical" href="https://www.miaohelaw.ca/about" />
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "@id": "https://www.miaohelaw.ca/about",
+      "url": "https://www.miaohelaw.ca/about",
+      "name": "关于何淼律师 — 多伦多华人离婚律师",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://www.miaohelaw.ca/" },
+          { "@type": "ListItem", "position": 2, "name": "关于律师", "item": "https://www.miaohelaw.ca/about" }
+        ]
+      },
+      "mainEntity": { "@id": "https://www.miaohelaw.ca/#person" }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "@id": "https://www.miaohelaw.ca/#person",
+      "name": "Miao He",
+      "alternateName": ["何淼", "Mia He"],
+      "jobTitle": "Family Law Lawyer",
+      "description": "Miao He（何淼）毕业于 Osgoode Hall Law School（LL.M.），持有安大略省及中国双重律师执照，在 Greater Toronto Area 执业超过15年，现任 H. LAW FIRM 主理律师。",
+      "url": "https://www.miaohelaw.ca",
+      "telephone": "+1-647-930-6688",
+      "email": "miao@miaohelaw.ca",
+      "image": "https://www.miaohelaw.ca/miao-he-lawyer.jpeg",
+      "knowsLanguage": ["zh-Hans", "en"],
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Osgoode Hall Law School",
+        "url": "https://www.osgoode.yorku.ca"
+      },
+      "hasCredential": [
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "Law Society of Ontario — Member #83315K" },
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "China Bar Association — Licensed" },
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "Mediation Certificate" }
+      ],
+      "memberOf": [
+        { "@type": "Organization", "name": "Law Society of Ontario", "url": "https://lso.ca" },
+        { "@type": "Organization", "name": "The Advocates Society", "url": "https://www.theadvocatessociety.ca" },
+        { "@type": "Organization", "name": "Toronto Lawyers Association", "url": "https://www.tlaonline.ca" },
+        { "@type": "Organization", "name": "York Region Law Association", "url": "https://yrla.ca" },
+        { "@type": "Organization", "name": "Justice Net", "url": "https://www.justicenet.ca" }
+      ],
+      "worksFor": { "@id": "https://www.miaohelaw.ca/#lawfirm" },
+      "sameAs": [
+        "https://lso.ca/public-resources/finding-a-lawyer-or-paralegal/directory-search/member?MemberNumber=83315K",
+        "https://www.hlawfirmontario.com",
+        "https://www.linkedin.com/in/miao-he"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "对方不配合离婚怎么办？",
+          "acceptedAnswer": { "@type": "Answer", "text": "可以通过法院程序推进，包括申请披露命令、动议及临时裁定。何淼律师具有丰富的高冲突离婚诉讼经验，可为您制定应对策略。" }
+        },
+        {
+          "@type": "Question",
+          "name": "对方在中国有资产还能查吗？",
+          "acceptedAnswer": { "@type": "Answer", "text": "可以。何淼律师同时持有中国律师执照，可协助调查并处理中国境内房产、公司股权及家族资产，这是绝大多数安省律师无法做到的。" }
+        },
+        {
+          "@type": "Question",
+          "name": "我是否需要立即采取法律行动？",
+          "acceptedAnswer": { "@type": "Answer", "text": "建议尽早咨询律师，以避免对方转移资产或影响案件走向。何淼律师提供30分钟初次咨询，费用$220+HST。" }
+        }
+      ]
+    }
+  ]
+  </script>
+</head>
+<body>
+  <Header />
+  <main class="page-main">
 
-<h2>执业数据</h2>
-<ul>
-  <li>执业年限：15+ 年</li>
-  <li>每月出庭：20+ 小时，活跃于安省各高等法院</li>
-  <li>年咨询量：200+ 件</li>
-  <li>服务语言：普通话（国语）、英语</li>
-  <li>律师执照：安大略省 + 中国（双重执照）</li>
-  <li>调解员认证：Mediation Certificate</li>
-</ul>
+    <section class="page-hero">
+      <div class="page-hero-inner">
+        <div class="page-label">关于律师 · ABOUT</div>
+        <h1>何淼律师 <span class="en-name">Miao He</span></h1>
+        <p>多伦多华人离婚律师 · 中加双执照 · Osgoode Hall LL.M. · 执业15+年</p>
+      </div>
+    </section>
 
-<h2>家庭法执业范围</h2>
-<ul>
-  <li>协议离婚 &amp; 争议离婚（Contested &amp; Uncontested Divorce）</li>
-  <li>财产分割——净家庭财产均等化（Equalization of Net Family Property）</li>
-  <li>婚前协议 &amp; 婚内协议 &amp; 分居协议（Domestic Contracts）</li>
-  <li>子女抚养权 &amp; 育儿时间安排（Custody &amp; Parenting Time）</li>
-  <li>子女抚养费 &amp; 配偶赡养费（Child &amp; Spousal Support）</li>
-  <li>跨境资产处理——中加双边（Cross-Border Asset Division）</li>
-  <li>高冲突离婚诉讼 &amp; 强制执行动议</li>
-  <li>紧急动议（Emergency Motions）</li>
-  <li>调解 &amp; 仲裁（Mediation &amp; Arbitration）</li>
-</ul>
+    <section class="about-section">
+      <div class="about-inner">
+        <div class="about-grid">
 
-<h2>双执照的核心优势</h2>
-<p>
-  持有安省与中国双重律师资格，使我能够直接追查并处理配偶在中国境内持有的房产、公司股权及家族信托——这是绝大多数安省律师无法做到的。在涉及中加跨境资产的高净值离婚案件中，这是决定性的竞争优势。
-</p>
+          <div class="about-main">
 
-<h2>代表判例</h2>
-<ul>
-  <li>
-    <strong>Yang v. Li, 2024 ONSC 4801</strong>（动议）+ <strong>Li v. Yang, Divisional Court No. 460/24 ML</strong>（上诉）<br/>
-    代理答辩方，对方同时推进八项主张，涉及企业估值（CBV）、子女抚养权、财产分割等。何律师以可信度为核心策略，全部八项主张在动议阶段被一并驳回，法院发出诚信惩戒费用裁定。对方上诉后，分区上诉法院三位法官一致驳回上诉。
-    <a href="https://www.canlii.org/en/on/onsc/doc/2024/2024onsc4801/2024onsc4801.html" target="_blank" rel="noopener">CanLII 查看判决书 →</a>
-  </li>
-  <li>
-    <strong>Li v. Jiang, 2026 ONSC 561</strong><br/>
-    代理申请方，对方恶意拖延长达 19 个月拒不配合房产出售。何律师提出强制执行动议，成功获得无限制进入权（Unrestricted Access Order）及 $4,000 诉讼费赔偿。
-  </li>
-</ul>
+            <div class="intro-card">
+              <p class="intro-lead">Miao He 毕业于 <strong>Osgoode Hall Law School（LL.M.）</strong>，持有安大略省及中国双重律师执照，在 Greater Toronto Area 执业超过15年，现任 <a href="https://www.hlawfirmontario.com" target="_blank" rel="noopener">H. LAW FIRM 恒. 律师事务所</a>主理律师。</p>
+              <p>何淼律师专注处理离婚、子女抚养权及财产分割案件，尤其擅长应对对方不配合、转移资产及中加跨境财产争议。在复杂家庭法案件中，她能够通过谈判或诉讼迅速推进案件进展，为客户争取最大利益。</p>
+              <div class="philosophy-box">
+                <span class="philosophy-label">执业理念</span>
+                <span class="philosophy-text">能谈则谈，该打必胜</span>
+              </div>
+            </div>
 
-<h2>客户案例亮点</h2>
-<ul>
-  <li>追回跨境隐藏资产 $300,000+（配偶在中国隐瞒房产及股权）</li>
-  <li>通过财务文件审查发现对方计算错误，为客户节省 $400,000</li>
-  <li>三年僵局案件在接手后数月内庭外和解，保住婚姻住房</li>
-  <li>协议签署后对方反悔，成功维护协议效力，守住 $500,000+ 资产</li>
-  <li>CAS 介入案件，孩子成功留在父母身边</li>
-</ul>
+            <div class="content-card">
+              <h2>如果您正在面临以下问题</h2>
+              <ul class="problem-list">
+                <li>对方拖延离婚或拒绝配合程序</li>
+                <li>隐瞒或转移资产（包括中国房产、公司）</li>
+                <li>子女抚养权争议或无法正常见孩子</li>
+                <li>离婚涉及跨境财产，处理复杂</li>
+              </ul>
+              <p>何淼律师可以为您提供清晰的法律路径，并制定切实可行的应对策略。</p>
+            </div>
 
-<h2>服务地区</h2>
-<p>
-  服务范围涵盖安大略省全境，包括多伦多（Toronto）、万锦（Markham）、列治文山（Richmond Hill）、密西沙加（Mississauga）、士嘉堡（Scarborough）及 GTA 各地区。
-</p>
+            <div class="content-card">
+              <h2>为什么选择何淼律师</h2>
+              <div class="why-grid">
+                <div class="why-item">
+                  <div class="why-icon">⚖️</div>
+                  <div>
+                    <div class="why-title">中加双执照律师</div>
+                    <div class="why-desc">可直接处理中国境内资产调查与执行问题</div>
+                  </div>
+                </div>
+                <div class="why-item">
+                  <div class="why-icon">🏛️</div>
+                  <div>
+                    <div class="why-title">高强度出庭经验</div>
+                    <div class="why-desc">每月出庭超过20小时，熟悉安省法院流程</div>
+                  </div>
+                </div>
+                <div class="why-item">
+                  <div class="why-icon">👥</div>
+                  <div>
+                    <div class="why-title">丰富咨询经验</div>
+                    <div class="why-desc">每年处理200+咨询，了解华人客户常见风险点</div>
+                  </div>
+                </div>
+                <div class="why-item">
+                  <div class="why-icon">🤝</div>
+                  <div>
+                    <div class="why-title">可谈可打</div>
+                    <div class="why-desc">持有调解员认证（Mediation Certificate），兼顾谈判与诉讼策略</div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-<h2>联系方式</h2>
-<ul>
-  <li>📞 <a href="tel:6479306688">647-930-6688</a></li>
-  <li>📧 <a href="mailto:miao@miaohelaw.ca">miao@miaohelaw.ca</a></li>
-  <li>🏢 <a href="https://www.hlawfirmontario.com" target="_blank" rel="noopener">H. LAW FIRM 恒. 律师事务所</a>，208-7050 Woodbine Ave, Markham, Ontario L3R 4G8</li>
-  <li>微信号：372656035</li>
-</ul>
+            <div class="content-card">
+              <h2>执业范围（Family Law Services）</h2>
+              <ul class="services-list">
+                <li>离婚（Divorce – Contested &amp; Uncontested）</li>
+                <li>子女抚养权（Child Custody &amp; Parenting Time）</li>
+                <li>抚养费（Child &amp; Spousal Support）</li>
+                <li>财产分割（Equalization of Net Family Property）</li>
+                <li>婚前/婚内/分居协议（Domestic Contracts）</li>
+                <li>紧急动议（Emergency Motions）</li>
+                <li>强制执行及法院命令执行</li>
+                <li>调解与仲裁（Mediation &amp; Arbitration）</li>
+                <li>中加跨境资产处理（Cross-Border Asset Division）</li>
+              </ul>
+            </div>
 
-<h2>专业认证与会员资质</h2>
-<ul>
-  <li><a href="https://lso.ca/public-resources/finding-a-lawyer-or-paralegal/directory-search/member?MemberNumber=83315K" target="_blank" rel="noopener"><strong>Law Society of Ontario (LSO)</strong></a> — 安省律师协会注册会员 #83315K</li>
-  <li><a href="https://www.theadvocatessociety.ca" target="_blank" rel="noopener"><strong>The Advocates'  Society (TAS)</strong></a> — 加拿大顶级诉讼律师协会会员</li>
-  <li><a href="https://www.tlaonline.ca" target="_blank" rel="noopener"><strong>Toronto Lawyers Association (TLA)</strong></a> — 多伦多律师协会会员</li>
-  <li><a href="https://yrla.ca" target="_blank" rel="noopener"><strong>York Region Law Association (YRLA)</strong></a> — 约克区律师协会会员</li>
-  <li><a href="https://www.justicenet.ca" target="_blank" rel="noopener"><strong>Justice Net</strong></a> — 会员律师</li>
-</ul>
-</Layout>
+            <div class="content-card">
+              <h2>代表案件</h2>
+              <div class="case-item">
+                <div class="case-title">Yang v. Li, 2024 ONSC 4801 + Divisional Court Appeal</div>
+                <p>代理答辩方，在对方提出八项主张（涉及企业估值、抚养权及财产分割）的情况下，全部主张在动议阶段被驳回，并获得费用裁定。对方上诉后，分区上诉法院三位法官一致驳回上诉。</p>
+                <a href="https://www.canlii.org/en/on/onscdc/doc/2024/2024onsc4801/2024onsc4801.html" target="_blank" rel="noopener" class="case-link">CanLII 查看判决书 →</a>
+              </div>
+              <div class="case-item">
+                <div class="case-title">Li v. Jiang, 2026 ONSC 561</div>
+                <p>代理申请方，在对方拖延房产出售长达19个月的情况下，通过强制执行动议成功获得无限制进入权，并获得诉讼费用赔偿。</p>
+                <a href="https://www.canlii.org/en/on/onsc/doc/2026/2026onsc561/2026onsc561.html" target="_blank" rel="noopener" class="case-link">CanLII 查看判决书 →</a>
+              </div>
+            </div>
+
+            <div class="content-card">
+              <h2>客户案例成果</h2>
+              <ul class="results-list">
+                <li><strong>$300,000+</strong> 成功追回跨境隐藏资产</li>
+                <li><strong>$400,000</strong> 通过财务分析发现对方错误，帮助客户避免损失</li>
+                <li><strong>$500,000+</strong> 成功维护分居协议效力，保住客户资产</li>
+                <li>三年僵局案件，在接手后数月内成功和解</li>
+                <li>CAS 介入案件中，成功帮助孩子继续由父母照顾</li>
+              </ul>
+            </div>
+
+            <div class="content-card">
+              <h2>双执照带来的核心优势</h2>
+              <p>作为同时持有中国与安大略省律师执照的律师，何淼律师能够直接处理涉及中国境内的房产、公司股权及家族资产问题。在涉及跨境资产的离婚案件中，这一能力使客户能够：</p>
+              <ul class="advantage-list">
+                <li>更有效识别隐藏资产</li>
+                <li>提高执行成功率</li>
+                <li>降低资产被转移的风险</li>
+              </ul>
+            </div>
+
+            <div class="content-card">
+              <h2>常见问题</h2>
+              <div class="faq-item">
+                <div class="faq-q">Q：对方不配合离婚怎么办？</div>
+                <div class="faq-a">可以通过法院程序推进，包括申请披露命令、动议及临时裁定。</div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-q">Q：对方在中国有资产还能查吗？</div>
+                <div class="faq-a">可以。何淼律师具备中国执业资格，可协助调查并处理跨境资产问题。</div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-q">Q：我是否需要立即采取法律行动？</div>
+                <div class="faq-a">建议尽早咨询律师，以避免对方转移资产或影响案件走向。</div>
+              </div>
+            </div>
+
+          </div>
+
+          <aside class="about-sidebar">
+
+            <div class="sidebar-card stats-card">
+              <h3>执业数据</h3>
+              <div class="stat-row"><span class="stat-num">15+</span><span class="stat-label">执业年限</span></div>
+              <div class="stat-row"><span class="stat-num">20+</span><span class="stat-label">每月出庭小时</span></div>
+              <div class="stat-row"><span class="stat-num">200+</span><span class="stat-label">年咨询件数</span></div>
+              <div class="stat-row"><span class="stat-num">2</span><span class="stat-label">律师执照（安省+中国）</span></div>
+            </div>
+
+            <div class="sidebar-card">
+              <h3>专业会员资格</h3>
+              <ul class="member-list">
+                <li><a href="https://lso.ca/public-resources/finding-a-lawyer-or-paralegal/directory-search/member?MemberNumber=83315K" target="_blank" rel="noopener">Law Society of Ontario (LSO)</a><span>#83315K</span></li>
+                <li><a href="https://www.theadvocatessociety.ca" target="_blank" rel="noopener">The Advocates' Society (TAS)</a></li>
+                <li><a href="https://www.tlaonline.ca" target="_blank" rel="noopener">Toronto Lawyers Association (TLA)</a></li>
+                <li><a href="https://yrla.ca" target="_blank" rel="noopener">York Region Law Association (YRLA)</a></li>
+                <li><a href="https://www.justicenet.ca" target="_blank" rel="noopener">Justice Net</a></li>
+              </ul>
+            </div>
+
+            <div class="sidebar-card">
+              <h3>服务地区</h3>
+              <ul class="area-list">
+                <li><a href="/contact">Toronto 多伦多</a></li>
+                <li><a href="/contact">Markham 万锦</a></li>
+                <li><a href="/contact">Richmond Hill 列治文山</a></li>
+                <li><a href="/contact">Vaughan 旺市</a></li>
+                <li><a href="/contact">Mississauga 密西沙加</a></li>
+                <li><a href="/contact">Scarborough 士嘉堡</a></li>
+                <li><a href="/contact">Ottawa 渥太华</a></li>
+              </ul>
+            </div>
+
+            <div class="sidebar-card contact-card">
+              <h3>联系何淼律师</h3>
+              <div class="contact-list">
+                <a href="tel:6479306688" class="contact-row">📞 647-930-6688</a>
+                <a href="mailto:miao@miaohelaw.ca" class="contact-row">📧 miao@miaohelaw.ca</a>
+                <div class="contact-row">💬 微信：372656035</div>
+                <div class="contact-row">📍 208-7050 Woodbine Ave, Markham</div>
+              </div>
+              <a href="tel:6479306688" class="btn-primary">立即预约咨询</a>
+            </div>
+
+          </aside>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <Footer />
+</body>
+</html>
+
+<style>
+  .page-main { max-width: 100%; padding: 0; margin: 0; }
+
+  .page-hero { background: #2C2418; padding: 4rem 2rem; text-align: center; }
+  .page-hero-inner { max-width: 760px; margin: 0 auto; }
+  .page-label { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: #9A8060; margin-bottom: 1rem; }
+  .page-hero h1 { font-family: "Georgia", serif; font-size: 2.5rem; font-weight: 400; color: #FAC775; margin-bottom: 0.75rem; }
+  .en-name { font-size: 1.5rem; color: #C4AA80; margin-left: 0.5rem; }
+  .page-hero p { color: #C4AA80; font-size: 0.9rem; line-height: 1.7; }
+
+  .about-section { padding: 4rem 2rem; }
+  .about-inner { max-width: 1060px; margin: 0 auto; }
+  .about-grid { display: grid; grid-template-columns: 1fr 300px; gap: 2rem; align-items: start; }
+
+  .intro-card { background: #FDFBF7; border: 1px solid #EDE8DF; border-radius: 8px; padding: 2rem; margin-bottom: 1.5rem; border-left: 4px solid #FAC775; }
+  .intro-lead { font-size: 1rem; color: #1A1208; line-height: 1.8; margin-bottom: 1rem; font-family: "Georgia", serif; }
+  .intro-card p { font-size: 0.9rem; color: #4A3A2A; line-height: 1.8; margin-bottom: 1rem; }
+  .intro-card a { color: #7A5A1A; text-decoration: none; }
+  .intro-card a:hover { text-decoration: underline; }
+  .philosophy-box { display: flex; align-items: center; gap: 1rem; background: #2C2418; padding: 1rem 1.25rem; border-radius: 6px; margin-top: 1rem; }
+  .philosophy-label { font-size: 0.7rem; letter-spacing: 0.1em; color: #9A8060; text-transform: uppercase; white-space: nowrap; }
+  .philosophy-text { font-family: "Georgia", serif; font-size: 1.1rem; color: #FAC775; }
+
+  .content-card { background: #FDFBF7; border: 1px solid #EDE8DF; border-radius: 8px; padding: 2rem; margin-bottom: 1.5rem; border-left: 4px solid #7A5A1A; }
+  .content-card h2 { font-family: "Georgia", serif; font-size: 1.35rem; font-weight: 400; color: #1A1208; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid #EDE8DF; }
+  .content-card p { font-size: 0.9rem; color: #4A3A2A; line-height: 1.8; margin-bottom: 0.75rem; }
+
+  .problem-list, .services-list, .advantage-list { padding-left: 1.25rem; margin: 0.5rem 0; }
+  .problem-list li, .services-list li, .advantage-list li { font-size: 0.9rem; color: #4A3A2A; line-height: 2; }
+
+  .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 0.5rem; }
+  .why-item { display: flex; gap: 0.75rem; align-items: flex-start; background: #F5EFE0; padding: 1rem; border-radius: 6px; }
+  .why-icon { font-size: 1.25rem; flex-shrink: 0; }
+  .why-title { font-size: 0.85rem; font-weight: 600; color: #1A1208; margin-bottom: 0.25rem; }
+  .why-desc { font-size: 0.8rem; color: #6B5A3A; line-height: 1.5; }
+
+  .case-item { margin-bottom: 1.25rem; padding-bottom: 1.25rem; border-bottom: 1px solid #EDE8DF; }
+  .case-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+  .case-title { font-family: "Georgia", serif; font-size: 0.95rem; font-weight: 600; color: #1A1208; margin-bottom: 0.5rem; }
+  .case-item p { font-size: 0.87rem; color: #4A3A2A; line-height: 1.7; margin-bottom: 0.5rem; }
+  .case-link { font-size: 0.82rem; color: #7A5A1A; text-decoration: none; font-weight: 500; }
+  .case-link:hover { text-decoration: underline; }
+
+  .results-list { padding-left: 1.25rem; margin: 0.5rem 0; }
+  .results-list li { font-size: 0.9rem; color: #4A3A2A; line-height: 2; }
+  .results-list strong { color: #7A5A1A; }
+
+  .faq-item { margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid #EDE8DF; }
+  .faq-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+  .faq-q { font-size: 0.9rem; font-weight: 600; color: #1A1208; margin-bottom: 0.35rem; }
+  .faq-a { font-size: 0.875rem; color: #4A3A2A; line-height: 1.7; }
+
+  /* Sidebar */
+  .sidebar-card { background: #FDFBF7; border: 1px solid #EDE8DF; border-radius: 8px; padding: 1.5rem; margin-bottom: 1.25rem; }
+  .sidebar-card h3 { font-family: "Georgia", serif; font-size: 1.05rem; font-weight: 400; color: #1A1208; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid #EDE8DF; }
+
+  .stats-card { background: #2C2418; }
+  .stats-card h3 { color: #FAC775; border-bottom-color: rgba(255,255,255,0.1); }
+  .stat-row { display: flex; align-items: baseline; gap: 0.75rem; margin-bottom: 0.75rem; }
+  .stat-num { font-family: "Georgia", serif; font-size: 1.75rem; color: #FAC775; line-height: 1; }
+  .stat-label { font-size: 0.8rem; color: #9A8060; }
+
+  .member-list { list-style: none; padding: 0; margin: 0; }
+  .member-list li { font-size: 0.85rem; padding: 0.5rem 0; border-bottom: 1px solid #EDE8DF; display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; }
+  .member-list li:last-child { border-bottom: none; }
+  .member-list a { color: #7A5A1A; text-decoration: none; font-weight: 500; }
+  .member-list a:hover { text-decoration: underline; }
+  .member-list span { font-size: 0.75rem; color: #9A8060; white-space: nowrap; }
+
+  .area-list { list-style: none; padding: 0; margin: 0; }
+  .area-list li { font-size: 0.875rem; padding: 0.4rem 0; border-bottom: 1px solid #EDE8DF; }
+  .area-list li:last-child { border-bottom: none; }
+  .area-list a { color: #7A5A1A; text-decoration: none; }
+  .area-list a:hover { text-decoration: underline; }
+
+  .contact-card { background: #F5EFE0; }
+  .contact-list { margin-bottom: 1.25rem; }
+  .contact-row { display: block; font-size: 0.875rem; color: #4A3A2A; padding: 0.4rem 0; text-decoration: none; }
+  a.contact-row:hover { color: #7A5A1A; }
+  .btn-primary { display: flex; align-items: center; justify-content: center; background: #7A5A1A; color: #FDFBF7; padding: 0.75rem 1.5rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; font-weight: 600; text-align: center; }
+  .btn-primary:hover { background: #4A3A0A; }
+
+  @media (max-width: 860px) {
+    .about-grid { grid-template-columns: 1fr; }
+    .why-grid { grid-template-columns: 1fr; }
+    .page-hero h1 { font-size: 1.75rem; }
+    .en-name { display: block; margin: 0.25rem 0 0; }
+  }
+</style>
