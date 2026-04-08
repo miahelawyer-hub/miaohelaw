@@ -1,0 +1,71 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<!doctype html>
+<html lang="zh">
+<head>
+  <BaseHead
+    title="常见问题 FAQ — 何淼律师 | Ontario 家庭法"
+    description="何淼律师解答安省家庭法常见问题，包括离婚财产分割、子女监护、婚前协议、抚养费等。真实执业经验，直接回答。647-930-6688。"
+  />
+</head>
+<body>
+  <Header />
+  <main class="page-main">
+
+    <section class="page-hero">
+      <div class="page-hero-inner">
+        <div class="page-label">FREQUENTLY ASKED QUESTIONS · 常见问题</div>
+        <h1>FAQ · 何律师直接回答</h1>
+        <p>这里的问题都是客户真实问过我的。我尽量用直白的语言回答，不用法律术语堆砌。如果你有其他问题，欢迎直接联系我。</p>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="faq-inner">
+
+        <!-- 内容占位符 — 等待 Mia 填写 -->
+        <div class="faq-placeholder">
+          <p>📝 何律师正在整理常见问题，即将发布。</p>
+          <p>如有紧急问题，欢迎直接致电或发邮件咨询。</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="page-cta">
+      <h2>还有其他问题？</h2>
+      <p>每个案件情况不同。欢迎预约初步咨询，何律师会根据您的具体情况给出建议。</p>
+      <div class="cta-actions">
+        <a href="tel:6479306688" class="btn-primary">📞 647-930-6688</a>
+        <a href="mailto:miao@miaohelaw.ca" class="btn-secondary">miao@miaohelaw.ca</a>
+      </div>
+    </section>
+
+  </main>
+  <Footer />
+</body>
+</html>
+
+<style>
+  .page-main { max-width: 100%; padding: 0; margin: 0; }
+  .page-hero { background: #FDFBF7; padding: 4rem 2rem; text-align: center; border-bottom: 1px solid #EDE8DF; }
+  .page-hero-inner { max-width: 760px; margin: 0 auto; }
+  .page-label { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: #9A8060; margin-bottom: 1rem; }
+  .page-hero h1 { font-family: 'Georgia', serif; font-size: 2.5rem; font-weight: 400; color: #1A1208; margin-bottom: 1rem; }
+  .page-hero p { color: #6B5A3A; font-size: 0.95rem; line-height: 1.7; max-width: 600px; margin: 0 auto; }
+  .faq-section { padding: 4rem 2rem; }
+  .faq-inner { max-width: 800px; margin: 0 auto; }
+  .faq-placeholder { background: #F5EFE0; border: 1px dashed #E8D9B8; border-radius: 8px; padding: 3rem 2rem; text-align: center; color: #6B5A3A; font-size: 0.95rem; line-height: 2; }
+  .page-cta { background: #F5EFE0; border-top: 1px solid #EDE8DF; padding: 4rem 2rem; text-align: center; }
+  .page-cta h2 { font-family: 'Georgia', serif; font-size: 1.75rem; font-weight: 400; color: #1A1208; margin-bottom: 0.75rem; }
+  .page-cta p { color: #6B5A3A; font-size: 0.9rem; max-width: 540px; margin: 0 auto 1.5rem; line-height: 1.7; }
+  .cta-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+  .btn-primary { background: #7A5A1A; color: #FDFBF7; padding: 0.75rem 1.75rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; font-weight: 500; }
+  .btn-primary:hover { background: #4A3A0A; color: #FDFBF7; }
+  .btn-secondary { background: transparent; color: #7A5A1A; padding: 0.75rem 1.75rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; font-weight: 500; border: 1px solid #7A5A1A; }
+  .btn-secondary:hover { background: #F5EFE0; }
+</style>
