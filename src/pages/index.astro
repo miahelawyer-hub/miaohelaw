@@ -299,6 +299,11 @@ const posts = (await getCollection('blog')).sort(
 <style>
 	main { max-width: 100%; padding: 0; margin: 0; }
 
+	.hero-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; gap: 3rem; padding: 0 2rem; }
+	.hero-content { flex: 1; }
+	.hero-photo { flex: 0 0 320px; display: flex; align-items: flex-end; }
+	.hero-photo img { width: 100%; height: 480px; object-fit: cover; object-position: top center; border-radius: 12px; display: block; }
+	@media (max-width: 768px) { .hero-inner { flex-direction: column-reverse; gap: 1.5rem; } .hero-photo { flex: none; width: 100%; } .hero-photo img { height: 320px; } }
 	.hero { background: #FDFBF7; padding: 5rem 2rem 4rem; text-align: center; border-bottom: 1px solid #EDE8DF; }
 	.hero-content { max-width: 760px; margin: 0 auto; }
 	.hero-badge { display: inline-block; background: #F5EFE0; color: #7A5A1A; font-size: 0.75rem; letter-spacing: 0.05em; padding: 5px 16px; border-radius: 20px; margin-bottom: 1.5rem; border: 1px solid #E8D9B8; }
