@@ -1,82 +1,303 @@
 ---
-import Layout from '../layouts/BlogPost.astro';
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 ---
-<Layout
-  title="联系何淼律师 | 多伦多华人家庭法律师 | H. LAW FIRM 恒. 律师事务所"
-  description="联系 Miao He（何淼）律师预约家庭法咨询。服务多伦多、万锦、列治文山及大多伦多地区，提供普通话及英文服务。电话：647-930-6688。"
-  pubDate={new Date('2026-04-07')}
-  heroImage=""
->
 
-<h2>预约咨询</h2>
-<p>如果您正在寻找多伦多华人离婚律师（Toronto Chinese Divorce Lawyer），何淼律师提供专业的家庭法律服务，包括：</p>
-<ul>
-  <li>离婚（Divorce）</li>
-  <li>子女抚养权（Child Custody）</li>
-  <li>抚养费（Child Support / Spousal Support）</li>
-  <li>财产分割（Property Division）</li>
-  <li>紧急禁令（Emergency Motions）</li>
-  <li>婚前协议、婚姻协议、分居协议（Prenup / Marriage Contract / Cohabitation Agreement / Separation Agreement）</li>
-</ul>
-<p>我们为讲中文（普通话）的客户提供清晰、直接的法律建议，帮助您在加拿大法律体系下有效保护自身权益。何淼律师专注于安大略省家庭法，具有丰富的诉讼与谈判经验，能够处理复杂案件，包括：</p>
-<ul>
-  <li>对方转移财产</li>
-  <li>拒绝披露财务信息</li>
-  <li>不配合孩子安排</li>
-  <li>高冲突离婚案件</li>
-</ul>
+<!doctype html>
+<html lang="zh">
+<head>
+  <BaseHead
+    title="联系何淼律师 | 多伦多华人离婚律师 | Markham GTA | H. LAW FIRM 恒. 律师事务所"
+    description="联系 Miao He（何淼）律师预约家庭法咨询。多伦多华人离婚律师，服务 GTA 全区，中英双语，647-930-6688，miao@miaohelaw.ca。"
+  />
+  <meta name="keywords" content="何淼律师,何淼离婚律师,Miao He律师,多伦多华人离婚律师,Toronto Chinese Divorce Lawyer,Markham家庭法律师,GTA华人律师,Chinese family lawyer Toronto,divorce lawyer Markham,647-930-6688" />
+  <meta property="og:title" content="联系何淼律师 | 多伦多华人离婚律师 | 647-930-6688" />
+  <meta property="og:description" content="联系 Miao He（何淼）律师预约家庭法咨询。多伦多华人离婚律师，服务 GTA 全区，中英双语。电话：647-930-6688。" />
+  <meta property="og:url" content="https://www.miaohelaw.ca/contact" />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://www.miaohelaw.ca/contact" />
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "@id": "https://www.miaohelaw.ca/contact",
+      "url": "https://www.miaohelaw.ca/contact",
+      "name": "联系何淼律师 — 多伦多华人家庭法律师",
+      "description": "联系 Miao He（何淼）律师预约家庭法咨询。多伦多华人离婚律师，服务 GTA 全区，中英双语。",
+      "inLanguage": ["zh-Hans", "en"],
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://www.miaohelaw.ca/" },
+          { "@type": "ListItem", "position": 2, "name": "联系我们", "item": "https://www.miaohelaw.ca/contact" }
+        ]
+      },
+      "mainEntity": { "@id": "https://www.miaohelaw.ca/#lawfirm" }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "@id": "https://www.miaohelaw.ca/#lawfirm",
+      "name": "H. LAW FIRM 恒. 律师事务所",
+      "url": "https://www.hlawfirmontario.com",
+      "telephone": "+1-647-930-6688",
+      "email": "miao@miaohelaw.ca",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "208-7050 Woodbine Avenue",
+        "addressLocality": "Markham",
+        "addressRegion": "ON",
+        "postalCode": "L3R 4G8",
+        "addressCountry": "CA"
+      },
+      "geo": { "@type": "GeoCoordinates", "latitude": "43.8149715", "longitude": "-79.3498119" },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "areaServed": ["Toronto","Markham","Richmond Hill","Mississauga","Scarborough","Brampton","Oakville","Greater Toronto Area"],
+      "knowsLanguage": ["zh-Hans","en"],
+      "serviceType": ["Divorce Litigation","Family Law","Child Custody","Property Division","Cross-Border Asset Division","Spousal Support","Child Support","Prenuptial Agreement","Separation Agreement","Mediation"],
+      "employee": {
+        "@type": "Person",
+        "@id": "https://www.miaohelaw.ca/#person",
+        "name": "Miao He",
+        "alternateName": ["何淼","Mia He"],
+        "jobTitle": "Family Law Lawyer",
+        "telephone": "+1-647-930-6688",
+        "email": "miao@miaohelaw.ca",
+        "hasCredential": [
+          { "@type": "EducationalOccupationalCredential", "credentialCategory": "Law Society of Ontario — Member #83315K" },
+          { "@type": "EducationalOccupationalCredential", "credentialCategory": "China Bar Association — Licensed" }
+        ]
+      },
+      "priceRange": "$$",
+      "sameAs": "https://www.hlawfirmontario.com"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "我正考虑离婚，不知从何开始，可以联系何淼律师吗？",
+          "acceptedAnswer": { "@type": "Answer", "text": "可以。何淼律师提供30分钟初次咨询（$220+HST），帮助您了解自身权利、案件走向及费用范围，没有委托义务。电话：647-930-6688。" }
+        },
+        {
+          "@type": "Question",
+          "name": "我担心对方转移或隐瞒资产，何淼律师能帮我吗？",
+          "acceptedAnswer": { "@type": "Answer", "text": "可以。何淼律师具有丰富的跨境资产追索经验，包括紧急资产冻结令及中国境内资产调查，曾成功为客户追回逾30万加币资产。" }
+        },
+        {
+          "@type": "Question",
+          "name": "何淼律师服务哪些地区？",
+          "acceptedAnswer": { "@type": "Answer", "text": "服务范围涵盖安大略省全境，包括多伦多、万锦、列治文山、密西沙加、士嘉堡、宾顿、奥克维尔及 GTA 各地区。" }
+        },
+        {
+          "@type": "Question",
+          "name": "何淼律师提供中文服务吗？",
+          "acceptedAnswer": { "@type": "Answer", "text": "是的。何淼律师提供普通话及英文双语服务，确保中文客户能够清晰理解复杂的法律程序。" }
+        }
+      ]
+    }
+  ]
+  </script>
+</head>
+<body>
+  <Header />
+  <main class="page-main">
 
-<h2>联系方式</h2>
-<ul>
-  <li>📞 电话 / 微信语音：<a href="tel:6479306688">647-930-6688</a></li>
-  <li>📧 电邮：<a href="mailto:miao@miaohelaw.ca">miao@miaohelaw.ca</a></li>
-  <li>💬 微信号：372656035</li>
-</ul>
+    <section class="page-hero">
+      <div class="page-hero-inner">
+        <div class="page-label">联系我们 · CONTACT</div>
+        <h1>预约咨询</h1>
+        <p>如果您正在寻找多伦多华人离婚律师（Toronto Chinese Divorce Lawyer），欢迎联系何淼律师。初次咨询30分钟，$220 + HST，无委托义务。</p>
+      </div>
+    </section>
 
-<h2>事务所地址</h2>
-<p>
-  <a href="https://www.hlawfirmontario.com" target="_blank" rel="noopener"><strong><a href="https://www.hlawfirmontario.com" target="_blank" rel="noopener">H. LAW FIRM 恒. 律师事务所</a></strong></a><br/>
-  208 - 7050 Woodbine Avenue<br/>
-  Markham, Ontario L3R 4G8
-</p>
+    <section class="contact-section">
+      <div class="contact-inner">
+        <div class="contact-grid">
 
-<div style="margin: 1.5rem 0; border-radius: 10px; overflow: hidden; border: 1px solid #EDE8DF;">
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.6!2d-79.3498119!3d43.8149715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d36f0f400001%3A0x2fe787e17ffbfe38!2s7050+Woodbine+Ave+%23208%2C+Markham%2C+ON+L3R+4G8!5e0!3m2!1szh-CN!2sca!4v1"
-    width="100%"
-    height="320"
-    style="border:0; display:block;"
-    allowfullscreen=""
-    loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade"
-    title="H. LAW FIRM 恒. 律师事务所 — 208-7050 Woodbine Ave, Markham">
-  </iframe>
-</div>
+          <div class="contact-main">
 
-<h2>服务地区</h2>
-<p>
-  服务范围涵盖安大略省全境，包括多伦多（Toronto）、万锦（Markham）、列治文山（Richmond Hill）、密西沙加（Mississauga）、士嘉堡（Scarborough）、宾顿（Brampton）、奥克维尔（Oakville）及 GTA 各地区。
-</p>
+            <div class="contact-card highlight">
+              <h2>直接联系</h2>
+              <div class="contact-methods">
+                <a href="tel:6479306688" class="contact-method">
+                  <span class="method-icon">📞</span>
+                  <div>
+                    <div class="method-label">电话 / 微信语音</div>
+                    <div class="method-value">647-930-6688</div>
+                  </div>
+                </a>
+                <a href="mailto:miao@miaohelaw.ca" class="contact-method">
+                  <span class="method-icon">📧</span>
+                  <div>
+                    <div class="method-label">电邮</div>
+                    <div class="method-value">miao@miaohelaw.ca</div>
+                  </div>
+                </a>
+                <div class="contact-method">
+                  <span class="method-icon">💬</span>
+                  <div>
+                    <div class="method-label">微信号</div>
+                    <div class="method-value">372656035</div>
+                  </div>
+                </div>
+              </div>
+              <div class="cta-actions">
+                <a href="tel:6479306688" class="btn-primary">📞 立即致电预约</a>
+                <a href="mailto:miao@miaohelaw.ca" class="btn-secondary">发送电邮</a>
+              </div>
+              <p class="response-note">通常3个工作日内回复 · 现正接受新案件</p>
+            </div>
 
-<h2>服务语言</h2>
-<p>普通话（国语）· 英语</p>
+            <div class="services-card">
+              <h2>服务范围</h2>
+              <p>何淼律师专注于安大略省家庭法，提供中英双语法律服务，包括：</p>
+              <ul class="services-list">
+                <li>离婚诉讼（Divorce Litigation）</li>
+                <li>子女抚养权（Child Custody &amp; Access）</li>
+                <li>抚养费（Child Support / Spousal Support）</li>
+                <li>财产分割（Property Division / NFP Equalization）</li>
+                <li>跨境资产追索（Cross-Border Asset Recovery）</li>
+                <li>紧急禁令（Emergency Motions / Mareva Injunction）</li>
+                <li>婚前协议、分居协议（Marriage Contract / Separation Agreement）</li>
+              </ul>
+              <p class="complex-cases">尤其擅长处理复杂案件：对方转移财产、拒绝披露财务信息、不配合子女安排、高冲突离婚，以及涉及中国境内资产的跨境纠纷。</p>
+            </div>
 
-<h2>常见咨询问题</h2>
-<p>以下情况欢迎直接联系：</p>
-<ul>
-  <li>您正考虑或已决定离婚，不知从何开始</li>
-  <li>您担心对方转移或隐瞒资产</li>
-  <li>您在中国有房产或资产，不确定如何处理</li>
-  <li>您需要婚前协议、分居协议或离婚协议</li>
-  <li>您的子女抚养权或探视权受到威胁</li>
-  <li>您对现有律师的处理方式不满，需要第二意见</li>
-  <li>您的案件已拖延很久，希望推动进展</li>
-</ul>
+            <div class="faq-card">
+              <h2>常见咨询情况</h2>
+              <p>以下情况欢迎直接联系：</p>
+              <ul class="faq-list">
+                <li>您正考虑或已决定离婚，不知从何开始</li>
+                <li>您担心对方转移或隐瞒资产</li>
+                <li>您在中国有房产或资产，不确定如何处理</li>
+                <li>您需要婚前协议、分居协议或离婚协议</li>
+                <li>您的子女抚养权或探视权受到威胁</li>
+                <li>您对现有律师的处理方式不满，需要第二意见</li>
+                <li>您的案件已拖延很久，希望推动进展</li>
+              </ul>
+            </div>
 
-<hr/>
-<p>
-  <strong>何淼律师</strong> · <a href="https://www.hlawfirmontario.com" target="_blank" rel="noopener">H. LAW FIRM 恒. 律师事务所</a><br/>
-  Ontario &amp; China 双重律师执照 · 执业 15+ 年 · 每月出庭 20+ 小时
-</p>
+          </div>
 
-</Layout>
+          <aside class="contact-sidebar">
+
+            <div class="sidebar-card">
+              <h3>事务所地址</h3>
+              <address>
+                <strong><a href="https://www.hlawfirmontario.com" target="_blank" rel="noopener">H. LAW FIRM 恒. 律师事务所</a></strong><br/>
+                208 - 7050 Woodbine Avenue<br/>
+                Markham, Ontario L3R 4G8
+              </address>
+              <div class="map-wrapper">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.6!2d-79.3498119!3d43.8149715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d36f0f400001%3A0x2fe787e17ffbfe38!2s7050+Woodbine+Ave+%23208%2C+Markham%2C+ON+L3R+4G8!5e0!3m2!1szh-CN!2sca!4v1"
+                  width="100%"
+                  height="240"
+                  style="border:0; display:block; border-radius: 6px;"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title="H. LAW FIRM 恒. 律师事务所 — 208-7050 Woodbine Ave, Markham">
+                </iframe>
+              </div>
+            </div>
+
+            <div class="sidebar-card">
+              <h3>服务地区</h3>
+              <ul class="area-list">
+                <li>多伦多（Toronto）</li>
+                <li>万锦（Markham）</li>
+                <li>列治文山（Richmond Hill）</li>
+                <li>密西沙加（Mississauga）</li>
+                <li>士嘉堡（Scarborough）</li>
+                <li>宾顿（Brampton）</li>
+                <li>奥克维尔（Oakville）</li>
+                <li>大多伦多地区（GTA）全区</li>
+              </ul>
+            </div>
+
+            <div class="sidebar-card">
+              <h3>服务语言</h3>
+              <p>普通话（国语）· 英语</p>
+              <h3 style="margin-top:1rem;">执照资质</h3>
+              <p>Law Society of Ontario — #83315K<br/>中国律师协会 — 双重执照<br/>执业 15+ 年 · 每月出庭 20+ 小时</p>
+            </div>
+
+          </aside>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <Footer />
+</body>
+</html>
+
+<style>
+  .page-main { max-width: 100%; padding: 0; margin: 0; }
+
+  .page-hero { background: #2C2418; padding: 4rem 2rem; text-align: center; }
+  .page-hero-inner { max-width: 760px; margin: 0 auto; }
+  .page-label { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: #9A8060; margin-bottom: 1rem; }
+  .page-hero h1 { font-family: 'Georgia', serif; font-size: 2.5rem; font-weight: 400; color: #FAC775; margin-bottom: 1rem; }
+  .page-hero p { color: #C4AA80; font-size: 0.95rem; line-height: 1.7; max-width: 640px; margin: 0 auto; }
+
+  .contact-section { padding: 4rem 2rem; }
+  .contact-inner { max-width: 1060px; margin: 0 auto; }
+  .contact-grid { display: grid; grid-template-columns: 1fr 320px; gap: 2rem; align-items: start; }
+
+  .contact-card { background: #FDFBF7; border: 1px solid #EDE8DF; border-radius: 8px; padding: 2rem; margin-bottom: 1.5rem; }
+  .contact-card.highlight { background: #2C2418; border-left: 4px solid #FAC775; }
+  .contact-card.highlight h2 { font-family: 'Georgia', serif; font-size: 1.4rem; font-weight: 400; color: #FAC775; margin-bottom: 1.25rem; }
+
+  .contact-methods { display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 1.5rem; }
+  .contact-method { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; padding: 0.75rem 1rem; background: rgba(255,255,255,0.06); border-radius: 6px; }
+  .contact-method:hover { background: rgba(255,255,255,0.1); }
+  .method-icon { font-size: 1.2rem; flex-shrink: 0; }
+  .method-label { font-size: 0.75rem; color: #9A8060; margin-bottom: 2px; }
+  .method-value { font-size: 1rem; color: #FAC775; font-weight: 500; }
+
+  .cta-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+  .btn-primary { display: inline-flex; align-items: center; justify-content: center; background: #7A5A1A; color: #FDFBF7; padding: 0.75rem 1.5rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; font-weight: 600; border: 2px solid #7A5A1A; }
+  .btn-primary:hover { background: #4A3A0A; }
+  .btn-secondary { display: inline-flex; align-items: center; justify-content: center; background: transparent; color: #FAC775; padding: 0.75rem 1.5rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; font-weight: 600; border: 2px solid #FAC775; }
+  .btn-secondary:hover { background: rgba(250,199,117,0.1); }
+  .response-note { font-size: 0.8rem; color: #9A8060; margin-top: 1rem; margin-bottom: 0; }
+
+  .services-card { background: #FDFBF7; border: 1px solid #EDE8DF; border-radius: 8px; padding: 2rem; margin-bottom: 1.5rem; border-left: 4px solid #7A5A1A; }
+  .services-card h2 { font-family: 'Georgia', serif; font-size: 1.4rem; font-weight: 400; color: #1A1208; margin-bottom: 0.75rem; }
+  .services-card p { font-size: 0.9rem; color: #4A3A2A; line-height: 1.7; margin-bottom: 0.75rem; }
+  .services-list { padding-left: 1.25rem; margin: 0.75rem 0; }
+  .services-list li { font-size: 0.9rem; color: #4A3A2A; line-height: 1.9; }
+  .complex-cases { font-size: 0.85rem; color: #6B5A3A; background: #F5EFE0; padding: 0.75rem 1rem; border-radius: 6px; margin-top: 0.75rem; margin-bottom: 0; }
+
+  .faq-card { background: #FDFBF7; border: 1px solid #EDE8DF; border-radius: 8px; padding: 2rem; border-left: 4px solid #EDE8DF; }
+  .faq-card h2 { font-family: 'Georgia', serif; font-size: 1.4rem; font-weight: 400; color: #1A1208; margin-bottom: 0.75rem; }
+  .faq-card p { font-size: 0.9rem; color: #4A3A2A; line-height: 1.7; margin-bottom: 0.5rem; }
+  .faq-list { padding-left: 1.25rem; margin: 0; }
+  .faq-list li { font-size: 0.9rem; color: #4A3A2A; line-height: 2; }
+
+  .sidebar-card { background: #FDFBF7; border: 1px solid #EDE8DF; border-radius: 8px; padding: 1.5rem; margin-bottom: 1.25rem; }
+  .sidebar-card h3 { font-family: 'Georgia', serif; font-size: 1.05rem; font-weight: 400; color: #1A1208; margin-bottom: 0.75rem; }
+  .sidebar-card address { font-style: normal; font-size: 0.875rem; color: #4A3A2A; line-height: 1.8; margin-bottom: 1rem; }
+  .sidebar-card address a { color: #7A5A1A; text-decoration: none; font-weight: 600; }
+  .sidebar-card address a:hover { text-decoration: underline; }
+  .sidebar-card p { font-size: 0.875rem; color: #4A3A2A; line-height: 1.7; margin-bottom: 0.5rem; }
+  .map-wrapper { border-radius: 6px; overflow: hidden; margin-top: 0.75rem; }
+  .area-list { padding-left: 1.1rem; margin: 0.5rem 0 0; }
+  .area-list li { font-size: 0.875rem; color: #4A3A2A; line-height: 1.9; }
+
+  @media (max-width: 860px) {
+    .contact-grid { grid-template-columns: 1fr; }
+    .page-hero h1 { font-size: 1.75rem; }
+  }
+</style>
