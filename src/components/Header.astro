@@ -68,8 +68,20 @@ import HeaderLink from './HeaderLink.astro';
 		align-items: center;
 	}
 	@media (max-width: 720px) {
-		.social-links {
-			display: none;
-		}
-	}
+    .social-links {
+        display: none;
+    }
+    h2 {
+        display: none;
+    }
+    nav {
+        justify-content: center;
+        gap: 0.25em;
+        flex-wrap: wrap;
+    }
+    nav a {
+        padding: 0.4em 0.3em;
+        font-size: 0.85em;
+    }
+}
 </style>
