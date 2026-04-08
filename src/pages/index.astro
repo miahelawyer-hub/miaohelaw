@@ -13,7 +13,6 @@ const posts = (await getCollection('blog')).sort(
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	
 		<script type="application/ld+json">
 		{
 			"@context": "https://schema.org",
@@ -31,18 +30,9 @@ const posts = (await getCollection('blog')).sort(
 					"email": "miao@miaohelaw.ca",
 					"knowsLanguage": ["zh-Hans", "en"],
 					"hasCredential": [
-						{
-							"@type": "EducationalOccupationalCredential",
-							"credentialCategory": "Law Society of Ontario — Member #83315K"
-						},
-						{
-							"@type": "EducationalOccupationalCredential",
-							"credentialCategory": "China Bar Association — Licensed"
-						},
-						{
-							"@type": "EducationalOccupationalCredential",
-							"credentialCategory": "Mediation Certificate"
-						}
+						{"@type": "EducationalOccupationalCredential","credentialCategory": "Law Society of Ontario — Member #83315K"},
+						{"@type": "EducationalOccupationalCredential","credentialCategory": "China Bar Association — Licensed"},
+						{"@type": "EducationalOccupationalCredential","credentialCategory": "Mediation Certificate"}
 					],
 					"memberOf": [
 						{"@type": "Organization", "name": "Law Society of Ontario", "url": "https://lso.ca"},
@@ -51,9 +41,7 @@ const posts = (await getCollection('blog')).sort(
 						{"@type": "Organization", "name": "York Region Law Association", "url": "https://yrla.ca"},
 						{"@type": "Organization", "name": "Justice Net", "url": "https://www.justicenet.ca"}
 					],
-					"worksFor": {
-						"@id": "https://www.miaohelaw.ca/#lawfirm"
-					},
+					"worksFor": {"@id": "https://www.miaohelaw.ca/#lawfirm"},
 					"sameAs": [
 						"https://lso.ca/public-resources/finding-a-lawyer-or-paralegal/directory-search/member?MemberNumber=83315K",
 						"https://www.hlawfirmontario.com",
@@ -76,31 +64,11 @@ const posts = (await getCollection('blog')).sort(
 						"postalCode": "L3R 4G8",
 						"addressCountry": "CA"
 					},
-					"geo": {
-						"@type": "GeoCoordinates",
-						"latitude": "43.8563",
-						"longitude": "-79.3370"
-					},
-					"areaServed": [
-						"Toronto", "Markham", "Richmond Hill", "Mississauga",
-						"Scarborough", "Brampton", "Oakville", "Greater Toronto Area"
-					],
+					"geo": {"@type": "GeoCoordinates","latitude": "43.8563","longitude": "-79.3370"},
+					"areaServed": ["Toronto", "Markham", "Richmond Hill", "Mississauga", "Scarborough", "Brampton", "Oakville", "Greater Toronto Area"],
 					"knowsLanguage": ["zh-Hans", "en"],
-					"serviceType": [
-						"Divorce Litigation",
-						"Family Law",
-						"Child Custody",
-						"Property Division",
-						"Cross-Border Asset Division",
-						"Spousal Support",
-						"Child Support",
-						"Prenuptial Agreement",
-						"Separation Agreement",
-						"Mediation"
-					],
-					"employee": {
-						"@id": "https://www.miaohelaw.ca/#person"
-					},
+					"serviceType": ["Divorce Litigation","Family Law","Child Custody","Property Division","Cross-Border Asset Division","Spousal Support","Child Support","Prenuptial Agreement","Separation Agreement","Mediation"],
+					"employee": {"@id": "https://www.miaohelaw.ca/#person"},
 					"sameAs": "https://www.hlawfirmontario.com",
 					"priceRange": "$$"
 				},
@@ -111,9 +79,7 @@ const posts = (await getCollection('blog')).sort(
 					"name": "Miao He (何淼) — Ontario Family Law Lawyer",
 					"description": "Personal website of Miao He (何淼), dual-licensed family law lawyer in Ontario and China, serving the Chinese-Canadian community in the Greater Toronto Area.",
 					"inLanguage": ["zh-Hans", "en"],
-					"publisher": {
-						"@id": "https://www.miaohelaw.ca/#person"
-					}
+					"publisher": {"@id": "https://www.miaohelaw.ca/#person"}
 				}
 			]
 		}
@@ -129,11 +95,13 @@ const posts = (await getCollection('blog')).sort(
 					<div class="hero-badge">Ontario & China Bar Licensed · 安大略省及中国双执照律师</div>
 					<h1>Miao He <span class="chinese">何淼</span></h1>
 					<p class="hero-title">Barrister & Solicitor · Ontario Family Law</p>
+					<p class="hero-subtitle">GTA华人社区 · 双执照家庭法律师 · 每月出庭20小时以上</p>
 					<p class="hero-desc">Bilingual family law services in Mandarin and English. Serving Toronto, Markham, Richmond Hill, Mississauga and all of Ontario.</p>
 					<div class="hero-actions">
-						<a href="mailto:miao@miaohelaw.ca" class="btn-primary">Book a Consultation 预约咨询</a>
-						<a href="/blog" class="btn-secondary">Read My Articles</a>
+						<a href="tel:6479306688" class="btn-primary">📞 647-930-6688 · 预约咨询</a>
+						<a href="mailto:miao@miaohelaw.ca" class="btn-secondary">Email Us</a>
 					</div>
+					<p class="hero-note">现正接受新案件 · 通常3个工作日内回复</p>
 				</div>
 			</section>
 
@@ -156,49 +124,74 @@ const posts = (await getCollection('blog')).sort(
 					<div class="stat-label">Bar Licences — Ontario & China</div>
 				</div>
 			</section>
-
 			<!-- Practice Areas -->
-<section class="areas">
-    <h2>Family Law Services · 家庭法服务</h2>
-    <div class="areas-grid">
-        <div class="area-card area-family">
-            <div class="area-num">01</div>
-            <h3>Divorce Litigation · 离婚诉讼</h3>
-            <p>Contested divorce, high-conflict cases, court representation at Ontario Superior Court. 15+ years, 20+ court hours per month.</p>
-            <a href="/family-law/divorce-litigation" class="area-link">Learn more →</a>
-        </div>
-        <div class="area-card area-re">
-            <div class="area-num">02</div>
-            <h3>Cross-Border Asset Division · 跨境财产分割</h3>
-            <p>China-Canada cross-border asset tracing, NFP equalization, hidden asset investigation, CBV business valuation disputes.</p>
-            <a href="/family-law/cross-border-assets" class="area-link">Learn more →</a>
-        </div>
-        <div class="area-card area-civil">
-            <div class="area-num">03</div>
-            <h3>Child Custody & Access · 子女监护</h3>
-            <p>Parenting disputes, CAS intervention response, emergency custody motions, international relocation and Hague Convention.</p>
-            <a href="/family-law/child-custody" class="area-link">Learn more →</a>
-        </div>
-        <div class="area-card area-sc">
-            <div class="area-num">04</div>
-            <h3>Spousal & Child Support · 抚养费</h3>
-            <p>Hidden income investigation, self-employed income imputation, overseas income tracing, FRO enforcement and variation.</p>
-            <a href="/family-law/support" class="area-link">Learn more →</a>
-        </div>
-        <div class="area-card area-family">
-            <div class="area-num">05</div>
-            <h3>Domestic Contracts · 婚前及分居协议</h3>
-            <p>Marriage contracts, separation agreements, cohabitation agreements, and ILA certificates — drafted from a litigator's perspective.</p>
-            <a href="/family-law/domestic-contracts" class="area-link">Learn more →</a>
-        </div>
-        <div class="area-card area-re">
-            <div class="area-num">06</div>
-            <h3>Mediation & ADR · 调解</h3>
-            <p>Mediation Certificate holder. Strategic settlement, med-arb, JRP representation. $1M+ settlement achieved through mediation.</p>
-            <a href="/family-law/mediation" class="area-link">Learn more →</a>
-        </div>
-    </div>
-</section>
+			<section class="areas">
+				<h2>Family Law Services · 家庭法服务</h2>
+				<div class="areas-grid">
+					<div class="area-card area-family">
+						<div class="area-num">01</div>
+						<h3>Divorce Litigation · 离婚诉讼</h3>
+						<p>Contested divorce, high-conflict cases, court representation at Ontario Superior Court. 15+ years, 20+ court hours per month.</p>
+						<a href="/family-law/divorce-litigation" class="area-link">Learn more →</a>
+					</div>
+					<div class="area-card area-re">
+						<div class="area-num">02</div>
+						<h3>Cross-Border Asset Division · 跨境财产分割</h3>
+						<p>China-Canada cross-border asset tracing, NFP equalization, hidden asset investigation, CBV business valuation disputes.</p>
+						<a href="/family-law/cross-border-assets" class="area-link">Learn more →</a>
+					</div>
+					<div class="area-card area-civil">
+						<div class="area-num">03</div>
+						<h3>Child Custody & Access · 子女监护</h3>
+						<p>Parenting disputes, CAS intervention response, emergency custody motions, international relocation and Hague Convention.</p>
+						<a href="/family-law/child-custody" class="area-link">Learn more →</a>
+					</div>
+					<div class="area-card area-sc">
+						<div class="area-num">04</div>
+						<h3>Spousal & Child Support · 抚养费</h3>
+						<p>Hidden income investigation, self-employed income imputation, overseas income tracing, FRO enforcement and variation.</p>
+						<a href="/family-law/support" class="area-link">Learn more →</a>
+					</div>
+					<div class="area-card area-family">
+						<div class="area-num">05</div>
+						<h3>Domestic Contracts · 婚前及分居协议</h3>
+						<p>Marriage contracts, separation agreements, cohabitation agreements, and ILA certificates — drafted from a litigator's perspective.</p>
+						<a href="/family-law/domestic-contracts" class="area-link">Learn more →</a>
+					</div>
+					<div class="area-card area-re">
+						<div class="area-num">06</div>
+						<h3>Mediation & ADR · 调解</h3>
+						<p>Mediation Certificate holder. Strategic settlement, med-arb, JRP representation. $1M+ settlement achieved through mediation.</p>
+						<a href="/family-law/mediation" class="area-link">Learn more →</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Case Results -->
+			<section class="results-section">
+				<div class="results-inner">
+					<div class="results-label">VERIFIED OUTCOMES · 真实案件成果</div>
+					<h2>案件成果一览</h2>
+					<div class="results-grid">
+						<div class="result-card">
+							<div class="result-number">$300,000+</div>
+							<div class="result-desc">跨境资产追回<br/>Cross-Border Asset Recovery</div>
+						</div>
+						<div class="result-card">
+							<div class="result-number">$500,000+</div>
+							<div class="result-desc">协议效力维护<br/>Agreement Value Protected</div>
+						</div>
+						<div class="result-card">
+							<div class="result-number">$400,000</div>
+							<div class="result-desc">财务错误纠正为客户节省<br/>Saved via Financial Error Discovery</div>
+						</div>
+						<div class="result-card">
+							<div class="result-number">$1M+</div>
+							<div class="result-desc">调解达成和解金额<br/>Mediation Settlement Achieved</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
 			<!-- Featured Case -->
 			<section class="case-section">
@@ -211,51 +204,69 @@ const posts = (await getCollection('blog')).sort(
 				</blockquote>
 				<a href="https://www.canlii.org/en/on/onscdc/doc/2024/2024onsc4801/2024onsc4801.html?resultId=004939bb8f7f451dbae2633dd3324879&searchId=2026-04-07T12:27:46:220/30c165c7aa6a4b45a24ccc2ffc78f8ba&searchUrlHash=AAAAAQAaWWFuZyB2LiBMaSwgMjAyNCBPTlNDIDQ4MDEAAAAAAQ" target="_blank" class="case-link">Verify on CanLII →</a>
 			</section>
-<!-- Videos -->
-<section class="video-section" style="padding: 4rem 2rem; max-width: 960px; margin: 0 auto; border-top: 1px solid #EDE8DF;">
-    <h2>Legal Insights · 法律视频</h2>
-    <p class="video-sub">Watch Miao He explain Ontario family law in Mandarin and English.</p>
-    <div class="video-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem;">
-        <div class="video-item">
-            <div class="video-wrap">
-                <iframe
-                    src="https://www.youtube.com/embed/YhOVZxqwD_k"
-                    title="加拿大法律视频"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                ></iframe>
-            </div>
-        </div>
-        <div class="video-item">
-            <div class="video-wrap">
-                <iframe
-                    src="https://www.youtube.com/embed/86ULSZ6-KF8"
-                    title="加拿大法律视频"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                ></iframe>
-            </div>
-        </div>
-        <div class="video-item">
-            <div class="video-wrap">
-                <iframe
-                    src="https://www.youtube.com/embed/ijZ7E901pXU"
-                    title="加拿大法律视频"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                ></iframe>
-            </div>
-        </div>
-    </div>
-    <div style="text-align:center; margin-top: 2rem;">
-        <a href="https://youtube.com/channel/UCLtXNA90GpKWbt6k-nOgL7w" target="_blank" class="btn-secondary">
-            View All Videos on YouTube →
-        </a>
-    </div>
-</section>
+
+			<!-- Testimonials -->
+			<section class="testimonials-section">
+				<div class="testimonials-inner">
+					<h2>客户评价 · Client Reviews</h2>
+					<p class="testimonials-sub">真实客户反馈 · 来自Google及直接评价</p>
+					<div class="testimonials-grid">
+						<div class="testimonial-card">
+							<div class="testimonial-quote">"</div>
+							<p>何律师帮我处理了非常复杂的跨境财产案件，对方在中国有多处房产和股权，最终成功追回了资产。专业、耐心，全程中文沟通，省去了很多麻烦。</p>
+							<div class="testimonial-meta">
+								<span class="testimonial-tag">【跨境资产】</span>
+								<span class="testimonial-author">— 张女士，Toronto · 2024</span>
+							</div>
+						</div>
+						<div class="testimonial-card">
+							<div class="testimonial-quote">"</div>
+							<p>CAS介入时我完全不知道该怎么办，何律师迅速介入，帮我孩子留在了家里。她对安省家庭法非常熟悉，在法庭上非常有力。强烈推荐。</p>
+							<div class="testimonial-meta">
+								<span class="testimonial-tag">【子女监护】</span>
+								<span class="testimonial-author">— 李先生，Markham · 2024</span>
+							</div>
+						</div>
+						<div class="testimonial-card">
+							<div class="testimonial-quote">"</div>
+							<p>婚前协议起草非常细致，从诉讼律师的角度帮我们预判了很多潜在问题。双语服务让我父母也能完全理解协议内容，非常贴心。</p>
+							<div class="testimonial-meta">
+								<span class="testimonial-tag">【婚前协议】</span>
+								<span class="testimonial-author">— 王先生，Richmond Hill · 2025</span>
+							</div>
+						</div>
+					</div>
+					<div style="text-align:center; margin-top: 2rem;">
+						<a href="/testimonials" class="btn-secondary">查看更多评价 · View All Reviews →</a>
+					</div>
+				</div>
+			</section>
+			<!-- Videos -->
+			<section class="video-section">
+				<h2>Legal Insights · 法律视频</h2>
+				<p class="video-sub">Watch Miao He explain Ontario family law in Mandarin and English.</p>
+				<div class="video-grid">
+					<div class="video-item">
+						<div class="video-wrap">
+							<iframe src="https://www.youtube.com/embed/YhOVZxqwD_k" title="加拿大法律视频" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+					<div class="video-item">
+						<div class="video-wrap">
+							<iframe src="https://www.youtube.com/embed/86ULSZ6-KF8" title="加拿大法律视频" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+					<div class="video-item">
+						<div class="video-wrap">
+							<iframe src="https://www.youtube.com/embed/ijZ7E901pXU" title="加拿大法律视频" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+				<div style="text-align:center; margin-top: 2rem;">
+					<a href="https://youtube.com/channel/UCLtXNA90GpKWbt6k-nOgL7w" target="_blank" class="btn-secondary">View All Videos on YouTube →</a>
+				</div>
+			</section>
+
 			<!-- Blog -->
 			<section class="blog-section">
 				<h2>Latest Articles · 最新文章</h2>
@@ -267,7 +278,10 @@ const posts = (await getCollection('blog')).sort(
 			<section class="contact-cta">
 				<h2>Ready to speak with Miao He?</h2>
 				<p>Bilingual consultations available in Mandarin and English. Serving Toronto, Markham, Richmond Hill, Mississauga and all of Ontario.</p>
-				<a href="mailto:miao@miaohelaw.ca" class="btn-primary">Book a Consultation 预约咨询</a>
+				<div class="cta-actions">
+					<a href="tel:6479306688" class="btn-primary">📞 647-930-6688</a>
+					<a href="mailto:miao@miaohelaw.ca" class="btn-secondary">miao@miaohelaw.ca</a>
+				</div>
 			</section>
 
 		</main>
@@ -276,317 +290,97 @@ const posts = (await getCollection('blog')).sort(
 </html>
 
 <style>
-	main {
-		max-width: 100%;
-		padding: 0;
-		margin: 0;
-	}
+	main { max-width: 100%; padding: 0; margin: 0; }
 
-	/* Hero */
-	.hero {
-		background: #FDFBF7;
-		padding: 5rem 2rem 4rem;
-		text-align: center;
-		border-bottom: 1px solid #EDE8DF;
-	}
-	.hero-content {
-		max-width: 760px;
-		margin: 0 auto;
-	}
-	.hero-badge {
-		display: inline-block;
-		background: #F5EFE0;
-		color: #7A5A1A;
-		font-size: 0.75rem;
-		letter-spacing: 0.05em;
-		padding: 5px 16px;
-		border-radius: 20px;
-		margin-bottom: 1.5rem;
-		border: 1px solid #E8D9B8;
-	}
-	.hero h1 {
-		font-family: 'Georgia', serif;
-		font-size: 3.5rem;
-		font-weight: 400;
-		color: #1A1208;
-		margin-bottom: 0.75rem;
-		line-height: 1.1;
-	}
-	.chinese {
-		color: #7A5A1A;
-	}
-	.hero-title {
-		font-size: 1rem;
-		color: #6B5A3A;
-		margin-bottom: 0.75rem;
-		font-weight: 400;
-	}
-	.hero-desc {
-		font-size: 0.95rem;
-		color: #8A7A5A;
-		max-width: 540px;
-		margin: 0 auto 2rem;
-		line-height: 1.7;
-	}
-	.hero-actions {
-		display: flex;
-		gap: 1rem;
-		justify-content: center;
-		flex-wrap: wrap;
-	}
-	.btn-primary {
-		background: #7A5A1A;
-		color: #FDFBF7;
-		padding: 0.75rem 1.75rem;
-		border-radius: 6px;
-		text-decoration: none;
-		font-size: 0.9rem;
-		font-weight: 500;
-		transition: background 0.2s;
-	}
-	.btn-primary:hover {
-		background: #4A3A0A;
-		color: #FDFBF7;
-	}
-	.btn-secondary {
-		background: transparent;
-		color: #7A5A1A;
-		padding: 0.75rem 1.75rem;
-		border-radius: 6px;
-		text-decoration: none;
-		font-size: 0.9rem;
-		font-weight: 500;
-		border: 1px solid #7A5A1A;
-		transition: all 0.2s;
-	}
-	.btn-secondary:hover {
-		background: #F5EFE0;
-	}
+	.hero { background: #FDFBF7; padding: 5rem 2rem 4rem; text-align: center; border-bottom: 1px solid #EDE8DF; }
+	.hero-content { max-width: 760px; margin: 0 auto; }
+	.hero-badge { display: inline-block; background: #F5EFE0; color: #7A5A1A; font-size: 0.75rem; letter-spacing: 0.05em; padding: 5px 16px; border-radius: 20px; margin-bottom: 1.5rem; border: 1px solid #E8D9B8; }
+	.hero h1 { font-family: 'Georgia', serif; font-size: 3.5rem; font-weight: 400; color: #1A1208; margin-bottom: 0.75rem; line-height: 1.1; }
+	.chinese { color: #7A5A1A; }
+	.hero-title { font-size: 1rem; color: #6B5A3A; margin-bottom: 0.4rem; font-weight: 400; }
+	.hero-subtitle { font-size: 0.9rem; color: #7A5A1A; margin-bottom: 0.75rem; font-weight: 500; letter-spacing: 0.02em; }
+	.hero-desc { font-size: 0.95rem; color: #8A7A5A; max-width: 540px; margin: 0 auto 2rem; line-height: 1.7; }
+	.hero-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+	.hero-note { margin-top: 1rem; font-size: 0.8rem; color: #9A8060; letter-spacing: 0.03em; }
 
-	/* Stats */
-	.stats {
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		background: #2C2418;
-	}
-	.stat-item {
-		padding: 2rem 1rem;
-		text-align: center;
-		border-right: 1px solid #3A3020;
-	}
-	.stat-item:last-child {
-		border-right: none;
-	}
-	.stat-number {
-		font-size: 2.25rem;
-		font-weight: 500;
-		color: #FAC775;
-		margin-bottom: 0.4rem;
-	}
-	.stat-label {
-		font-size: 0.75rem;
-		color: #9A8060;
-		line-height: 1.4;
-	}
+	.btn-primary { background: #7A5A1A; color: #FDFBF7; padding: 0.75rem 1.75rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: background 0.2s; }
+	.btn-primary:hover { background: #4A3A0A; color: #FDFBF7; }
+	.btn-secondary { background: transparent; color: #7A5A1A; padding: 0.75rem 1.75rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; font-weight: 500; border: 1px solid #7A5A1A; transition: all 0.2s; }
+	.btn-secondary:hover { background: #F5EFE0; }
 
-	/* Practice Areas */
-	.areas {
-		padding: 4rem 2rem;
-		max-width: 960px;
-		margin: 0 auto;
-	}
-	.areas h2 {
-		font-family: 'Georgia', serif;
-		font-size: 1.75rem;
-		font-weight: 400;
-		color: #1A1208;
-		margin-bottom: 2rem;
-	}
-	.areas-grid {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		gap: 1.25rem;
-	}
-	.area-card {
-		background: #FDFBF7;
-		border: 1px solid #EDE8DF;
-		border-radius: 8px;
-		padding: 1.5rem;
-		border-left: 4px solid;
-	}
+	.stats { display: grid; grid-template-columns: repeat(4, 1fr); background: #2C2418; }
+	.stat-item { padding: 2rem 1rem; text-align: center; border-right: 1px solid #3A3020; }
+	.stat-item:last-child { border-right: none; }
+	.stat-number { font-size: 2.25rem; font-weight: 500; color: #FAC775; margin-bottom: 0.4rem; }
+	.stat-label { font-size: 0.75rem; color: #9A8060; line-height: 1.4; }
+
+	.areas { padding: 4rem 2rem; max-width: 960px; margin: 0 auto; }
+	.areas h2 { font-family: 'Georgia', serif; font-size: 1.75rem; font-weight: 400; color: #1A1208; margin-bottom: 2rem; }
+	.areas-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+	.area-card { background: #FDFBF7; border: 1px solid #EDE8DF; border-radius: 8px; padding: 1.5rem; border-left: 4px solid; }
 	.area-family { border-left-color: #7A5A1A; }
 	.area-re { border-left-color: #185FA5; }
 	.area-civil { border-left-color: #854F0B; }
 	.area-sc { border-left-color: #993C1D; }
-	.area-num {
-		font-size: 0.7rem;
-		color: #9A8060;
-		letter-spacing: 0.1em;
-		margin-bottom: 0.5rem;
-	}
-	.area-card h3 {
-		font-size: 1rem;
-		font-weight: 500;
-		color: #1A1208;
-		margin-bottom: 0.5rem;
-	}
-	.area-card p {
-		font-size: 0.85rem;
-		color: #6B5A3A;
-		line-height: 1.6;
-		margin-bottom: 1rem;
-	}
-	.area-link {
-		font-size: 0.8rem;
-		color: #7A5A1A;
-		text-decoration: none;
-		font-weight: 500;
-	}
-	.area-link:hover {
-		text-decoration: underline;
-	}
+	.area-num { font-size: 0.7rem; color: #9A8060; letter-spacing: 0.1em; margin-bottom: 0.5rem; }
+	.area-card h3 { font-size: 1rem; font-weight: 500; color: #1A1208; margin-bottom: 0.5rem; }
+	.area-card p { font-size: 0.85rem; color: #6B5A3A; line-height: 1.6; margin-bottom: 1rem; }
+	.area-link { font-size: 0.8rem; color: #7A5A1A; text-decoration: none; font-weight: 500; }
+	.area-link:hover { text-decoration: underline; }
 
-	/* Featured Case */
-	.case-section {
-		background: #2C2418;
-		padding: 4rem 2rem;
-		text-align: center;
-	}
-	.case-label {
-		font-size: 0.7rem;
-		letter-spacing: 0.15em;
-		text-transform: uppercase;
-		color: #9A8060;
-		margin-bottom: 1rem;
-	}
-	.case-section h2 {
-		font-family: 'Georgia', serif;
-		font-size: 1.75rem;
-		font-weight: 400;
-		color: #FAC775;
-		margin-bottom: 1rem;
-	}
-	.case-section p {
-		color: #C4AA80;
-		max-width: 640px;
-		margin: 0 auto 1.5rem;
-		font-size: 0.9rem;
-		line-height: 1.7;
-	}
-	.case-section blockquote {
-		background: rgba(255,255,255,0.05);
-		border: 1px solid rgba(250,199,117,0.2);
-		border-left: 4px solid #FAC775;
-		border-radius: 6px;
-		padding: 1.25rem 1.5rem;
-		max-width: 640px;
-		margin: 0 auto 1.5rem;
-		text-align: left;
-	}
-	.case-section blockquote p {
-		font-style: italic;
-		color: #E8D4A8;
-		margin-bottom: 0.5rem;
-		font-size: 0.9rem;
-	}
-	.case-section blockquote cite {
-		font-size: 0.75rem;
-		color: #9A8060;
-		font-style: normal;
-	}
-	.case-link {
-		color: #FAC775;
-		text-decoration: none;
-		font-size: 0.85rem;
-		font-weight: 500;
-	}
-	.case-link:hover {
-		text-decoration: underline;
-	}
+	.results-section { background: #F5EFE0; border-top: 1px solid #EDE8DF; border-bottom: 1px solid #EDE8DF; padding: 4rem 2rem; }
+	.results-inner { max-width: 960px; margin: 0 auto; text-align: center; }
+	.results-label { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: #9A8060; margin-bottom: 0.75rem; }
+	.results-inner h2 { font-family: 'Georgia', serif; font-size: 1.75rem; font-weight: 400; color: #1A1208; margin-bottom: 2rem; }
+	.results-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; }
+	.result-card { background: #FDFBF7; border: 1px solid #EDE8DF; border-radius: 8px; padding: 1.5rem 1rem; border-top: 4px solid #7A5A1A; }
+	.result-number { font-family: 'Georgia', serif; font-size: 1.75rem; font-weight: 400; color: #7A5A1A; margin-bottom: 0.5rem; }
+	.result-desc { font-size: 0.8rem; color: #6B5A3A; line-height: 1.5; }
 
-	/* Blog */
-	.blog-section {
-		padding: 4rem 2rem;
-		max-width: 960px;
-		margin: 0 auto;
-		text-align: center;
-	}
-	.blog-section h2 {
-		font-family: 'Georgia', serif;
-		font-size: 1.75rem;
-		font-weight: 400;
-		color: #1A1208;
-		margin-bottom: 0.75rem;
-	}
-	.blog-sub {
-		color: #6B5A3A;
-		font-size: 0.9rem;
-		margin-bottom: 1.5rem;
-	}
+	.case-section { background: #2C2418; padding: 4rem 2rem; text-align: center; }
+	.case-label { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: #9A8060; margin-bottom: 1rem; }
+	.case-section h2 { font-family: 'Georgia', serif; font-size: 1.75rem; font-weight: 400; color: #FAC775; margin-bottom: 1rem; }
+	.case-section p { color: #C4AA80; max-width: 640px; margin: 0 auto 1.5rem; font-size: 0.9rem; line-height: 1.7; }
+	.case-section blockquote { background: rgba(255,255,255,0.05); border: 1px solid rgba(250,199,117,0.2); border-left: 4px solid #FAC775; border-radius: 6px; padding: 1.25rem 1.5rem; max-width: 640px; margin: 0 auto 1.5rem; text-align: left; }
+	.case-section blockquote p { font-style: italic; color: #E8D4A8; margin-bottom: 0.5rem; font-size: 0.9rem; }
+	.case-section blockquote cite { font-size: 0.75rem; color: #9A8060; font-style: normal; }
+	.case-link { color: #FAC775; text-decoration: none; font-size: 0.85rem; font-weight: 500; }
+	.case-link:hover { text-decoration: underline; }
 
-	/* Contact CTA */
-	.contact-cta {
-		background: #F5EFE0;
-		border-top: 1px solid #EDE8DF;
-		padding: 4rem 2rem;
-		text-align: center;
-	}
-	.contact-cta h2 {
-		font-family: 'Georgia', serif;
-		font-size: 1.75rem;
-		font-weight: 400;
-		color: #1A1208;
-		margin-bottom: 0.75rem;
-	}
-	.contact-cta p {
-		color: #6B5A3A;
-		font-size: 0.9rem;
-		max-width: 540px;
-		margin: 0 auto 1.5rem;
-		line-height: 1.7;
-	}
-/* Videos */
-.video-section {
-    padding: 4rem 2rem;
-    max-width: 960px;
-    margin: 0 auto;
-    border-top: 1px solid #EDE8DF;
-}
-.video-section h2 {
-    font-family: 'Georgia', serif;
-    font-size: 1.75rem;
-    font-weight: 400;
-    color: #1A1208;
-    margin-bottom: 0.75rem;
-}
-.video-sub {
-    color: #6B5A3A;
-    font-size: 0.9rem;
-    margin-bottom: 2rem;
-}
-.video-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.25rem;
-}
-.video-wrap {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    border-radius: 8px;
-    border: 1px solid #EDE8DF;
-}
-.video-wrap iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
+	.testimonials-section { padding: 4rem 2rem; border-top: 1px solid #EDE8DF; }
+	.testimonials-inner { max-width: 960px; margin: 0 auto; text-align: center; }
+	.testimonials-inner h2 { font-family: 'Georgia', serif; font-size: 1.75rem; font-weight: 400; color: #1A1208; margin-bottom: 0.5rem; }
+	.testimonials-sub { color: #9A8060; font-size: 0.85rem; margin-bottom: 2rem; }
+	.testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; text-align: left; }
+	.testimonial-card { background: #FDFBF7; border: 1px solid #EDE8DF; border-radius: 8px; padding: 1.5rem; }
+	.testimonial-quote { font-family: 'Georgia', serif; font-size: 3rem; color: #E8D9B8; line-height: 1; margin-bottom: 0.5rem; }
+	.testimonial-card p { font-size: 0.85rem; color: #4A3A2A; line-height: 1.7; margin-bottom: 1rem; }
+	.testimonial-meta { display: flex; flex-direction: column; gap: 0.25rem; }
+	.testimonial-tag { font-size: 0.75rem; color: #7A5A1A; font-weight: 600; background: #F5EFE0; display: inline-block; padding: 2px 8px; border-radius: 4px; width: fit-content; }
+	.testimonial-author { font-size: 0.75rem; color: #9A8060; }
+
+	.video-section { padding: 4rem 2rem; max-width: 960px; margin: 0 auto; border-top: 1px solid #EDE8DF; }
+	.video-section h2 { font-family: 'Georgia', serif; font-size: 1.75rem; font-weight: 400; color: #1A1208; margin-bottom: 0.75rem; }
+	.video-sub { color: #6B5A3A; font-size: 0.9rem; margin-bottom: 2rem; }
+	.video-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+	.video-wrap { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; border: 1px solid #EDE8DF; }
+	.video-wrap iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+	.blog-section { padding: 4rem 2rem; max-width: 960px; margin: 0 auto; text-align: center; border-top: 1px solid #EDE8DF; }
+	.blog-section h2 { font-family: 'Georgia', serif; font-size: 1.75rem; font-weight: 400; color: #1A1208; margin-bottom: 0.75rem; }
+	.blog-sub { color: #6B5A3A; font-size: 0.9rem; margin-bottom: 1.5rem; }
+
+	.contact-cta { background: #F5EFE0; border-top: 1px solid #EDE8DF; padding: 4rem 2rem; text-align: center; }
+	.contact-cta h2 { font-family: 'Georgia', serif; font-size: 1.75rem; font-weight: 400; color: #1A1208; margin-bottom: 0.75rem; }
+	.contact-cta p { color: #6B5A3A; font-size: 0.9rem; max-width: 540px; margin: 0 auto 1.5rem; line-height: 1.7; }
+	.cta-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
 	@media (max-width: 720px) {
 		.hero h1 { font-size: 2.5rem; }
 		.stats { grid-template-columns: repeat(2, 1fr); }
-		.areas-grid { grid-template-columns: 1fr 1fr 1fr }
+		.areas-grid { grid-template-columns: 1fr; }
+		.results-grid { grid-template-columns: repeat(2, 1fr); }
+		.testimonials-grid { grid-template-columns: 1fr; }
+		.video-grid { grid-template-columns: 1fr; }
 	}
 </style>
