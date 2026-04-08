@@ -12,6 +12,35 @@ import Footer from '../components/Footer.astro';
     title="案例结果 | 何淼律师真实案件成果 — Ontario 家庭法"
     description="何淼律师真实案件成果展示。跨境资产追回、离婚诉讼、子女监护、婚前协议。Yang v. Li 2024 ONSC 4801，Li v. Jiang 2026 ONSC 561。647-930-6688。"
   />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "mainEntity": {
+    "@type": "Person",
+    "@id": "https://www.miaohelaw.ca/#person",
+    "name": "Miao He",
+    "alternateName": ["何淼", "Mia He"],
+    "jobTitle": "Family Law Lawyer",
+    "url": "https://www.miaohelaw.ca",
+    "telephone": "+1-647-930-6688"
+  },
+  "hasPart": [
+    {
+      "@type": "LegalService",
+      "name": "Li v. Jiang, 2026 ONSC 561",
+      "description": "Ontario Superior Court of Justice. 对方拖延19个月，成功取得无限制探视令及$4,000诉讼费裁定。",
+      "url": "https://www.canlii.org/en/on/onsc/doc/2026/2026onsc561/2026onsc561.html"
+    },
+    {
+      "@type": "LegalService",
+      "name": "Yang v. Li, 2024 ONSC 4801",
+      "description": "Ontario Superior Court of Justice + Divisional Court. 八项主张全部驳回，上诉被三位法官一致驳回。",
+      "url": "https://www.canlii.org/en/on/onscdc/doc/2024/2024onsc4801/2024onsc4801.html"
+    }
+  ]
+}
+</script>
 </head>
 <body>
   <Header />
