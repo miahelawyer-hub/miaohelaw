@@ -20,8 +20,9 @@ const posts = (await getCollection('blog')).sort(
 			main {
 				width: 960px;
 				max-width: 100%;
-				padding: 2rem;
+				padding: 1rem;
 				margin: 0 auto;
+				box-sizing: border-box;
 			}
 			ul {
 				display: flex;
@@ -33,6 +34,8 @@ const posts = (await getCollection('blog')).sort(
 			}
 			ul li {
 				width: calc(50% - 1rem);
+				min-width: 0;
+				overflow: hidden;
 			}
 			ul li * {
 				text-decoration: none;
