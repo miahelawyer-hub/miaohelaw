@@ -13,69 +13,165 @@ import Footer from '../components/Footer.astro';
     description="何淼律师真实案件成果展示。跨境资产追回、离婚诉讼、子女监护、婚前协议。Yang v. Li 2024 ONSC 4801，Li v. Jiang 2026 ONSC 561。647-930-6688。"
   />
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ProfilePage",
-  "mainEntity": {
-    "@type": "Person",
-    "@id": "https://www.miaohelaw.ca/#person",
-    "name": "Miao He",
-    "alternateName": ["何淼", "Mia He"],
-    "jobTitle": "Family Law Lawyer",
-    "url": "https://www.miaohelaw.ca",
-    "telephone": "+1-647-930-6688",
-    "hasCredential": {
-      "@type": "EducationalOccupationalCredential",
-      "credentialCategory": "Law Society of Ontario — Member #83315K"
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": "https://www.miaohelaw.ca/case-results/#page",
+    "name": "何淼律师案例结果 | Ontario 家庭法真实案件成果",
+    "description": "何淼律师 (Miao He) Ontario 家庭法真实案件成果。涵盖跨境资产追回、离婚诉讼、子女监护、婚前协议。含 CanLII 公开判决 Yang v. Li 2024 ONSC 4801、Li v. Jiang 2026 ONSC 561。",
+    "url": "https://www.miaohelaw.ca/case-results/",
+    "inLanguage": ["zh", "en"],
+    "author": {
+      "@type": "Person",
+      "@id": "https://www.miaohelaw.ca/#person",
+      "name": "Miao He",
+      "alternateName": ["何淼", "Mia He"],
+      "jobTitle": "Family Law Lawyer",
+      "url": "https://www.miaohelaw.ca",
+      "telephone": "+1-647-930-6688",
+      "memberOf": {
+        "@type": "Organization",
+        "name": "Law Society of Ontario",
+        "identifier": "83315K"
+      }
+    },
+    "mainEntity": {
+      "@type": "ItemList",
+      "name": "何淼律师案件成果列表",
+      "numberOfItems": 7,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LegalCase",
+            "name": "Li v. Jiang, 2026 ONSC 561",
+            "description": "Ontario Superior Court of Justice. 婚姻投资物业强制执行。对方拖延19个月拒不配合出售，何淼律师提起强制执行动议，法院裁定申请方无限制进入物业权利、授权委托承包商修缮、设定挂牌时间表，并裁定对方支付 $4,000 诉讼费。物业于大多伦多春季房市完成挂牌。",
+            "url": "https://www.canlii.org/en/on/onsc/doc/2026/2026onsc561/2026onsc561.html",
+            "legislationJurisdiction": "Ontario, Canada",
+            "datePublished": "2026",
+            "about": {
+              "@type": "LegalService",
+              "name": "Family Law — Enforcement of Court Orders",
+              "serviceType": "Matrimonial Property Enforcement"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LegalCase",
+            "name": "Yang v. Li, 2024 ONSC 4801",
+            "description": "Ontario Superior Court of Justice + Divisional Court. 涉及企业估值的八项主张全部被驳回。法院认定对方陈述缺乏诚信（lack of candour），发出重大费用裁定。对方上诉后，安省分庭三位法官一致驳回上诉申请。",
+            "url": "https://www.canlii.org/en/on/onscdc/doc/2024/2024onsc4801/2024onsc4801.html",
+            "legislationJurisdiction": "Ontario, Canada",
+            "datePublished": "2024",
+            "about": {
+              "@type": "LegalService",
+              "name": "Family Law — Property Division & Business Valuation",
+              "serviceType": "Divorce Litigation"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Thing",
+            "name": "跨境资产追回 $300,000+",
+            "description": "客户怀疑配偶借协商拖延时机将资金转移至中国境内。何淼律师立即提起紧急资产冻结令动议，在资产出境前成功冻结账户，最终为客户追回逾 $300,000 加币财产补偿。",
+            "about": {
+              "@type": "LegalService",
+              "name": "Family Law — Emergency Asset Preservation",
+              "serviceType": "Cross-border Asset Recovery",
+              "areaServed": "Greater Toronto Area"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "Thing",
+            "name": "三年离婚僵局庭外和解 $1,000,000+",
+            "description": "客户案件久拖三年，律师费持续累积，房产随时面临法院强制出售。何淼律师接手后进行全局利弊分析，推进调解，促成庭外和解，客户保住房产，案件总价值逾 $1,000,000 加币。",
+            "about": {
+              "@type": "LegalService",
+              "name": "Family Law — Mediation & Settlement",
+              "serviceType": "Divorce Settlement",
+              "areaServed": "Greater Toronto Area"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "Thing",
+            "name": "CAS介入危机处理 — 认定孩子无安全问题",
+            "description": "家庭纠纷中警察通报CAS介入。何淼律师协助客户了解CAS调查流程，指导客户冷静配合调查。CAS完成全面调查后，认定孩子不存在安全问题，不再介入，孩子留在父母身边。",
+            "about": {
+              "@type": "LegalService",
+              "name": "Family Law — Child Protection & Custody",
+              "serviceType": "CAS Response & Child Custody",
+              "areaServed": "Greater Toronto Area"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": "Thing",
+            "name": "捍卫分居协议效力 $500,000+",
+            "description": "对方在协议执行两年后反悔提起诉讼，主张协议无效。何淼律师联系中国律所调查对方未披露的境内房产，法庭会议上法官认定对方违约在先、协议效力成立，对方主动和解。客户无需支付任何款项，守住逾 $500,000 加币资产。",
+            "about": {
+              "@type": "LegalService",
+              "name": "Family Law — Separation Agreement Enforcement",
+              "serviceType": "Separation Agreement & Cross-border Investigation",
+              "areaServed": "Greater Toronto Area"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@type": "Thing",
+            "name": "识破财务漏洞节省 $400,000",
+            "description": "对方在财务披露中将其母亲生活费计入家庭开销虚报花费，支撑高额赡养费主张。何淼律师逐字审查财务文件发现漏洞，法院认定对方故意虚报，采纳何律师计算方式，最终裁定金额较对方索求减少 $400,000 加币。",
+            "about": {
+              "@type": "LegalService",
+              "name": "Family Law — Spousal & Child Support",
+              "serviceType": "Support Calculation & Financial Document Review",
+              "areaServed": "Greater Toronto Area"
+            }
+          }
+        }
+      ]
     }
   },
-  "hasPart": [
-    {
-      "@type": "Article",
-      "name": "Li v. Jiang, 2026 ONSC 561",
-      "description": "Ontario Superior Court of Justice. 婚姻投资物业强制执行，对方拖延19个月，成功取得无限制探视令及$4,000诉讼费裁定。",
-      "url": "https://www.canlii.org/en/on/onsc/doc/2026/2026onsc561/2026onsc561.html",
-      "author": {"@id": "https://www.miaohelaw.ca/#person"}
-    },
-    {
-      "@type": "Article",
-      "name": "Yang v. Li, 2024 ONSC 4801",
-      "description": "Ontario Superior Court of Justice + Divisional Court. 涉及企业估值的八项主张全部驳回，上诉被三位法官一致驳回。",
-      "url": "https://www.canlii.org/en/on/onscdc/doc/2024/2024onsc4801/2024onsc4801.html",
-      "author": {"@id": "https://www.miaohelaw.ca/#person"}
-    },
-    {
-      "@type": "Article",
-      "name": "跨境资产追回 $300,000+",
-      "description": "及时提起紧急冻结令，在对方转移资产至中国境内前成功冻结，为客户追回逾30万加币。",
-      "author": {"@id": "https://www.miaohelaw.ca/#person"}
-    },
-    {
-      "@type": "Article",
-      "name": "三年僵局调解和解 $1,000,000+",
-      "description": "接手后全局分析诉讼与和解利弊，促成庭外和解，客户保住房产，终结三年诉讼消耗。",
-      "author": {"@id": "https://www.miaohelaw.ca/#person"}
-    },
-    {
-      "@type": "Article",
-      "name": "CAS介入危机处理",
-      "description": "向客户详细解释CAS工作流程，指导配合调查，最终CAS认定孩子无安全问题，不再介入。",
-      "author": {"@id": "https://www.miaohelaw.ca/#person"}
-    },
-    {
-      "@type": "Article",
-      "name": "捍卫协议效力 $500,000+",
-      "description": "联系中国律所调查对方隐藏财产，法官在conference认定男方违约在先，协议效力获维护。",
-      "author": {"@id": "https://www.miaohelaw.ca/#person"}
-    },
-    {
-      "@type": "Article",
-      "name": "识破财务漏洞节省 $400,000",
-      "description": "发现对方将母亲生活费计入家庭开销虚报花费，法院采纳何律师计算，客户节省40万加币。",
-      "author": {"@id": "https://www.miaohelaw.ca/#person"}
-    }
-  ]
-}
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "首页",
+        "item": "https://www.miaohelaw.ca/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "案例结果",
+        "item": "https://www.miaohelaw.ca/case-results/"
+      }
+    ]
+  }
+]
 </script>
 </head>
 <body>
