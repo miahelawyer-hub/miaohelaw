@@ -1,0 +1,254 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<!doctype html>
+<html lang="zh">
+<head>
+  <BaseHead
+    title="律师费用说明 | 何淼律师 — Ontario 家庭法"
+    description="何淼律师收费透明，提供初次咨询、无争议离婚、协议起草及诉讼代理服务。初次咨询30分钟$220+HST。647-930-6688。"
+  />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "@id": "https://www.miaohelaw.ca/#lawfirm",
+    "name": "Miao He (何淼) — Ontario Family Law Lawyer",
+    "url": "https://www.miaohelaw.ca",
+    "telephone": "+1-647-930-6688",
+    "priceRange": "$$",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "法律服务收费",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "初次咨询",
+            "description": "30分钟初次法律咨询，中英双语，面谈或视频均可。"
+          },
+          "price": "220",
+          "priceCurrency": "CAD"
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "无争议离婚",
+            "description": "双方就离婚条件达成一致，何律师协助完成全部法律文件及法院申请程序。"
+          },
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": "2000",
+            "maxPrice": "3500",
+            "priceCurrency": "CAD"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "协议起草",
+            "description": "婚前协议、分居协议、同居协议的专业起草服务，3个月内签署完毕无额外费用。"
+          },
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": "2500",
+            "maxPrice": "4500",
+            "priceCurrency": "CAD"
+          }
+        }
+      ]
+    }
+  }
+  </script>
+</head>
+<body>
+  <Header />
+  <main class="page-main">
+
+    <section class="page-hero">
+      <div class="page-hero-inner">
+        <div class="page-label">律师费用说明 · LEGAL FEES</div>
+        <h1>收费透明，没有隐藏费用</h1>
+        <p>我相信客户在决定是否聘请律师之前，有权利了解大概的费用范围。以下是我的主要服务收费说明。所有费用均需另加 HST，部分服务另有 disbursements（垫付费用）。</p>
+      </div>
+    </section>
+
+    <section class="pricing-section">
+      <div class="pricing-inner">
+
+        <div class="pricing-card highlight">
+          <div class="pricing-tag">最常见的第一步</div>
+          <h2>初次咨询</h2>
+          <div class="pricing-amount">$220 <span>+ HST</span></div>
+          <div class="pricing-detail">30分钟 · 中英双语 · 面谈或视频均可</div>
+          <p>初次咨询是我们互相了解的机会。你可以向我介绍案情，我会告诉你法律上的处境、可能的选项，以及下一步建议。咨询结束后，你可以自行决定是否继续聘用。</p>
+          <p>咨询费按每6分钟一个计费单元收取，30分钟为一次完整咨询。</p>
+          <a href="tel:6479306688" class="btn-primary">📞 立即预约 647-930-6688</a>
+        </div>
+
+        <h2 class="section-subtitle">固定费用服务</h2>
+        <p class="section-note">以下服务提供固定费用范围，费用因案件具体情况而有所不同。所有费用均需另加 HST 及 disbursements。</p>
+
+        <div class="pricing-grid">
+
+          <div class="pricing-card">
+            <h3>无争议离婚</h3>
+            <div class="pricing-amount-sm">$2,000 – $3,500 <span>+ HST + disbursements</span></div>
+            <p>适用于双方就离婚条件（财产、子女、赡养费等）已达成一致，需要律师协助完成全部法律文件及向法院提交申请的情况。</p>
+            <div class="pricing-includes">
+              <div class="includes-title">包含：</div>
+              <ul>
+                <li>审查双方协议内容</li>
+                <li>准备并递交所有法院文件</li>
+                <li>跟进法院处理进度</li>
+                <li>取得离婚令（Divorce Order）</li>
+              </ul>
+            </div>
+            <div class="pricing-note">⚠️ 如对方不配合或出现争议，案件性质改变，费用另行讨论。</div>
+          </div>
+
+          <div class="pricing-card">
+            <h3>协议起草</h3>
+            <div class="pricing-amount-sm">$2,500 – $4,500 <span>+ HST + disbursements</span></div>
+            <p>适用于需要起草婚前协议、婚内协议、分居协议或同居协议的情况。我以诉讼律师的视角起草协议，预判漏洞，确保协议具有法律效力。</p>
+            <div class="pricing-includes">
+              <div class="includes-title">包含：</div>
+              <ul>
+                <li>全面了解双方财务状况及诉求</li>
+                <li>起草完整协议文本</li>
+                <li>最多两轮修改</li>
+                <li>协助完成签署程序（ILA）</li>
+              </ul>
+            </div>
+            <div class="pricing-note">✅ 3个月内完成签署，不额外收费。超出部分按时间计费。</div>
+          </div>
+
+        </div>
+
+        <h2 class="section-subtitle">诉讼代理</h2>
+
+        <div class="pricing-card">
+          <h3>家庭法诉讼全程代理</h3>
+          <div class="pricing-amount-sm">按小时计费 <span>每6分钟为一计费单元</span></div>
+          <p>适用于争议性离婚、财产分割、子女监护权争夺、配偶赡养费、跨境资产追索等需要在法院进行的案件。</p>
+          <p>费用因案件复杂程度、庭审频率及所需工作量而异。每一份文件、每一次上庭、每一封邮件都会如实记录在账单中，不设隐藏收费。</p>
+          <div class="pricing-includes">
+            <div class="includes-title">计费范围包括：</div>
+            <ul>
+              <li>法庭出席及庭前准备</li>
+              <li>动议文件起草及答辩</li>
+              <li>与对方律师的沟通协商</li>
+              <li>调解及庭外和解谈判</li>
+              <li>客户沟通及法律意见</li>
+            </ul>
+          </div>
+        </div>
+
+        <h2 class="section-subtitle">Limited Retainer · 有限委托</h2>
+
+        <div class="pricing-card">
+          <h3>什么是 Limited Retainer？</h3>
+          <div class="pricing-amount-sm">按实际工作量计费</div>
+          <p>Limited Retainer（有限委托）是指客户不将整个案件全权交给律师，而是只委托律师处理案件中的特定事项。委托协议会明确列出代理范围，代理事项完成后，委托自动终止。</p>
+          <p>适合以下情况：</p>
+          <div class="pricing-includes">
+            <ul>
+              <li>客户选择自行代理（Self-represented），但需要律师协助准备特定文件或走法庭程序</li>
+              <li>客户需要律师出席某一次庭审或会议，但不需要全程代理</li>
+              <li>客户需要律师审查对方提交的文件或协议，提供书面法律意见</li>
+              <li>案件已进入尾声，只需要律师协助完成最后的法律程序</li>
+            </ul>
+          </div>
+          <p>有限委托让客户在控制费用的同时，在关键节点获得专业的法律支持。如果你正在考虑自行代理但不确定某些步骤，欢迎咨询是否适合这种安排。</p>
+        </div>
+
+        <h2 class="section-subtitle">关于 Disbursements（垫付费用）</h2>
+
+        <div class="pricing-card">
+          <p>Disbursements 是律师在处理案件过程中代客户垫付的第三方费用，与律师费分开计算，在账单中单独列明。</p>
+          <div class="pricing-includes">
+            <div class="includes-title">安省法院官方收费（Ontario Superior Court of Justice）</div>
+            <ul>
+              <li>申请书归档费（Application filing）— <strong>$224</strong></li>
+              <li>离婚宣誓书归档费（Affidavit for Divorce filing）— <strong>$445</strong></li>
+              <li>离婚证书申请费（Divorce Certificate）— <strong>$25</strong></li>
+            </ul>
+          </div>
+          <div class="pricing-includes" style="margin-top: 0.75rem;">
+            <div class="includes-title">其他常见 Disbursements</div>
+            <ul>
+              <li>送达费用（Process Server）</li>
+              <li>文件公证及认证费</li>
+              <li>专家报告费（如企业估值 CBV、财务评估）</li>
+              <li>翻译及口译费用</li>
+            </ul>
+          </div>
+          <p>以上法院收费为安省现行标准，如有调整以法院公告为准。所有 disbursements 均会在账单中如实列明，不会有任何隐藏收费。</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="page-cta">
+      <h2>有费用相关问题？</h2>
+      <p>每个案件情况不同。欢迎预约初次咨询，我会根据你的具体情况给出费用估算。</p>
+      <div class="cta-actions">
+        <a href="tel:6479306688" class="btn-primary">📞 647-930-6688</a>
+        <a href="mailto:miao@miaohelaw.ca" class="btn-secondary">miao@miaohelaw.ca</a>
+      </div>
+    </section>
+
+  </main>
+  <Footer />
+</body>
+</html>
+
+<style>
+  .page-main { max-width: 100%; padding: 0; margin: 0; }
+  .page-hero { background: #2C2418; padding: 4rem 2rem; text-align: center; }
+  .page-hero-inner { max-width: 760px; margin: 0 auto; }
+  .page-label { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: #9A8060; margin-bottom: 1rem; }
+  .page-hero h1 { font-family: 'Georgia', serif; font-size: 2.25rem; font-weight: 400; color: #FAC775; margin-bottom: 1rem; }
+  .page-hero p { color: #C4AA80; font-size: 0.9rem; line-height: 1.8; max-width: 640px; margin: 0 auto; }
+  .pricing-section { padding: 4rem 2rem; }
+  .pricing-inner { max-width: 800px; margin: 0 auto; }
+  .section-subtitle { font-family: 'Georgia', serif; font-size: 1.5rem; font-weight: 400; color: #1A1208; margin: 3rem 0 0.5rem; padding-bottom: 0.75rem; border-bottom: 2px solid #EDE8DF; }
+  .section-note { font-size: 0.85rem; color: #9A8060; margin-bottom: 1.5rem; }
+  .pricing-card { background: #FDFBF7; border: 1px solid #EDE8DF; border-radius: 8px; padding: 2rem; margin-bottom: 1.25rem; border-left: 4px solid #7A5A1A; }
+  .pricing-card.highlight { border-left-color: #FAC775; background: #2C2418; }
+  .pricing-card.highlight h2 { color: #FAC775; font-family: 'Georgia', serif; font-weight: 400; font-size: 1.5rem; margin-bottom: 0.5rem; }
+  .pricing-card.highlight p { color: #C4AA80; font-size: 0.9rem; line-height: 1.8; }
+  .pricing-tag { font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: #9A8060; margin-bottom: 0.75rem; }
+  .pricing-amount { font-family: 'Georgia', serif; font-size: 2.5rem; color: #FAC775; margin-bottom: 0.25rem; }
+  .pricing-amount span { font-size: 1rem; color: #9A8060; }
+  .pricing-detail { font-size: 0.8rem; color: #9A8060; margin-bottom: 1.25rem; }
+  .pricing-card h3 { font-family: 'Georgia', serif; font-size: 1.25rem; font-weight: 400; color: #1A1208; margin-bottom: 0.5rem; }
+  .pricing-amount-sm { font-size: 1.1rem; font-weight: 600; color: #7A5A1A; margin-bottom: 1rem; }
+  .pricing-amount-sm span { font-size: 0.8rem; font-weight: 400; color: #9A8060; }
+  .pricing-card p { font-size: 0.9rem; color: #4A3A2A; line-height: 1.8; margin-bottom: 0.75rem; }
+  .pricing-includes { background: #F5EFE0; border-radius: 6px; padding: 1rem 1.25rem; margin: 1rem 0; }
+  .includes-title { font-size: 0.8rem; font-weight: 600; color: #7A5A1A; margin-bottom: 0.5rem; }
+  .pricing-includes ul { margin: 0; padding-left: 1.25rem; }
+  .pricing-includes li { font-size: 0.85rem; color: #4A3A2A; line-height: 1.8; }
+  .pricing-note { font-size: 0.82rem; color: #6B5A3A; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: rgba(122,90,26,0.06); border-radius: 4px; }
+  .pricing-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-bottom: 1.25rem; }
+  .btn-primary { display: inline-block; background: #7A5A1A; color: #FDFBF7; padding: 0.75rem 1.75rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; font-weight: 500; margin-top: 1.25rem; }
+  .btn-primary:hover { background: #4A3A0A; color: #FDFBF7; }
+  .page-cta { background: #F5EFE0; border-top: 1px solid #EDE8DF; padding: 4rem 2rem; text-align: center; }
+  .page-cta h2 { font-family: 'Georgia', serif; font-size: 1.75rem; font-weight: 400; color: #1A1208; margin-bottom: 0.75rem; }
+  .page-cta p { color: #6B5A3A; font-size: 0.9rem; max-width: 540px; margin: 0 auto 1.5rem; line-height: 1.7; }
+  .cta-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+  .btn-secondary { background: transparent; color: #7A5A1A; padding: 0.75rem 1.75rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; font-weight: 500; border: 1px solid #7A5A1A; }
+  .btn-secondary:hover { background: #F5EFE0; }
+  @media (max-width: 720px) {
+    .pricing-grid { grid-template-columns: 1fr; }
+    .page-hero h1 { font-size: 1.75rem; }
+    .pricing-card { padding: 1.5rem; }
+  }
+</style>
