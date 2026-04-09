@@ -54,6 +54,17 @@ import Footer from '../components/Footer.astro';
     }
   ]
   </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "首页", "item": "https://www.miaohelaw.ca/"},
+      {"@type": "ListItem", "position": 2, "name": "Vaughan 家庭法律师", "item": "https://www.miaohelaw.ca/vaughan-family-lawyer"}
+    ]
+  }
+  </script>
 </head>
 <body>
   <Header />
