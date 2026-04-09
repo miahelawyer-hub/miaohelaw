@@ -1,0 +1,133 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { faqItems } from '../../data/faq';
+
+export function getStaticPaths() {
+  return faqItems.map(item => ({
+    params: { slug: item.slug },
+    props: { item },
+  }));
+}
+
+const { item } = Astro.props;
+const others = faqItems.filter(f => f.slug !== item.slug).slice(0, 6);
+---
+
+<!doctype html>
+<html lang="zh">
+<head>
+  <BaseHead
+    title={`${item.question} | 何淼律师 多伦多华人家庭法`}
+    description={`${item.answers[0].replace(/<[^>]+>/g, '')} 何淼律师647-930-6688。`}
+  />
+  <meta name="keywords" content={item.keywords} />
+  <meta property="og:title" content={`${item.question} | 何淼律师`} />
+  <meta property="og:description" content={item.answers[0].replace(/<[^>]+>/g, '')} />
+  <meta property="og:url" content={`https://www.miaohelaw.ca/faq/${item.slug}`} />
+  <meta property="og:type" content="article" />
+  <link rel="canonical" href={`https://www.miaohelaw.ca/faq/${item.slug}`} />
+  <script type="application/ld+json" set:html={JSON.stringify([
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "首页", "item": "https://www.miaohelaw.ca/"},
+        {"@type": "ListItem", "position": 2, "name": "常见问题", "item": "https://www.miaohelaw.ca/faq"},
+        {"@type": "ListItem", "position": 3, "name": item.capsule, "item": `https://www.miaohelaw.ca/faq/${item.slug}`}
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": item.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": item.answers.map(a => a.replace(/<[^>]+>/g, '')).join(' ')
+        }
+      }]
+    }
+  ])} />
+</head>
+<body>
+  <Header />
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="/">首页</a> › <a href="/faq">常见问题</a> › {item.capsule}
+        </div>
+        <div class="capsule-tag">{item.capsule}</div>
+        <h1>{item.question}</h1>
+      </div>
+    </section>
+
+    <section class="answer-section">
+      <div class="container">
+        <div class="answer-card">
+          {item.answers.map(answer => (
+            <p set:html={answer} />
+          ))}
+          <div class="answer-cta">
+            <a href="tel:6479306688">📞 647-930-6688 预约咨询</a>
+          </div>
+        </div>
+
+        <div class="related-section">
+          <h2>其他常见问题</h2>
+          <div class="related-capsules">
+            {others.map(other => (
+              <a href={`/faq/${other.slug}`} class="capsule">{other.capsule}</a>
+            ))}
+          </div>
+          <a href="/faq" class="view-all">查看全部问题 →</a>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-info">
+            <h2>还有其他问题？</h2>
+            <p>何淼律师提供普通话全程服务，初次咨询30分钟 · $220+HST</p>
+          </div>
+          <div class="contact-actions">
+            <a href="tel:6479306688" class="btn-primary">📞 647-930-6688</a>
+            <a href="/contact" class="btn-secondary">预约咨询</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</body>
+</html>
+
+<style>
+  .page-hero{background:linear-gradient(135deg,#2C1810 0%,#4A2C1A 100%);color:white;padding:3rem 0 2rem}
+  .page-hero h1{font-size:1.8rem;margin:0.75rem 0 0;color:#ffffff;line-height:1.4}
+  .breadcrumb{font-size:0.85rem;opacity:0.7;margin-bottom:0.5rem}
+  .breadcrumb a{color:white;text-decoration:none}
+  .capsule-tag{display:inline-block;background:rgba(212,168,83,0.2);border:1px solid #D4A853;color:#D4A853;padding:0.2rem 0.75rem;border-radius:999px;font-size:0.8rem;margin-bottom:0.5rem}
+  .container{max-width:1000px;margin:0 auto;padding:0 1.5rem}
+  .answer-section{padding:3rem 0}
+  .answer-card{background:white;border:1px solid #e8e0d5;border-radius:12px;padding:2rem;margin-bottom:2.5rem}
+  .answer-card p{color:#333;line-height:1.85;margin:0 0 1rem;font-size:1rem}
+  .answer-card p:last-of-type{margin-bottom:0}
+  .answer-cta{margin-top:1.5rem;padding-top:1.25rem;border-top:1px solid #f0ebe3}
+  .answer-cta a{color:#9A8060;font-weight:600;text-decoration:none}
+  .related-section{margin-bottom:2.5rem}
+  .related-section h2{color:#2C1810;font-size:1.1rem;margin:0 0 1rem}
+  .related-capsules{display:flex;flex-wrap:wrap;gap:0.6rem;margin-bottom:1rem}
+  .capsule{background:#f5f0eb;border:1.5px solid #e0d5c8;color:#4A2C1A;padding:0.4rem 1rem;border-radius:999px;font-size:0.875rem;text-decoration:none;transition:all 0.2s}
+  .capsule:hover{background:#2C1810;border-color:#2C1810;color:#ffffff}
+  .view-all{color:#9A8060;font-size:0.875rem;text-decoration:none;font-weight:600}
+  .view-all:hover{color:#2C1810}
+  .contact-card{background:linear-gradient(135deg,#2C1810,#4A2C1A);border-radius:12px;padding:2rem;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap}
+  .contact-info h2{color:#D4A853;margin:0 0 0.5rem;font-size:1.2rem}
+  .contact-info p{color:#ffffff;margin:0;font-size:0.95rem}
+  .contact-actions{display:flex;gap:0.75rem;flex-wrap:wrap}
+  .btn-primary{display:inline-block;background:#D4A853;color:#2C1810;padding:0.7rem 1.4rem;border-radius:6px;text-decoration:none;font-weight:700;font-size:0.9rem}
+  .btn-secondary{display:inline-block;background:transparent;color:white;border:2px solid white;padding:0.7rem 1.4rem;border-radius:6px;text-decoration:none;font-weight:700;font-size:0.9rem}
+  @media(max-width:768px){.page-hero h1{font-size:1.4rem}.contact-card{flex-direction:column}}
+</style>
