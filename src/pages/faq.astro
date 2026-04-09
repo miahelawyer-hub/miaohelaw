@@ -8,64 +8,402 @@ import Footer from '../components/Footer.astro';
 <html lang="zh">
 <head>
   <BaseHead
-    title="常见问题 FAQ — 何淼律师 | Ontario 家庭法"
-    description="何淼律师解答安省家庭法常见问题，包括离婚财产分割、子女监护、婚前协议、抚养费等。真实执业经验，直接回答。647-930-6688。"
+    title="常见问题 | 多伦多华人离婚律师 何淼律师 FAQ | H. LAW FIRM"
+    description="何淼律师解答多伦多华人离婚常见问题：新移民离婚、子女监护、婚前协议、跨境资产、抚养费、分居协议等。普通话服务，647-930-6688。"
   />
+  <meta name="keywords" content="多伦多离婚常见问题,华人离婚FAQ,新移民离婚加拿大,子女监护权加拿大,婚前协议有效吗,抚养费怎么算,分居协议,跨境资产离婚,对方不配合离婚,家暴离婚加拿大,何淼律师,多伦多华人律师" />
+  <meta property="og:title" content="常见问题 | 多伦多华人离婚律师 何淼律师 FAQ" />
+  <meta property="og:description" content="何淼律师解答多伦多华人离婚常见问题。普通话服务，647-930-6688。" />
+  <meta property="og:url" content="https://www.miaohelaw.ca/faq" />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://www.miaohelaw.ca/faq" />
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "首页", "item": "https://www.miaohelaw.ca/"},
+        {"@type": "ListItem", "position": 2, "name": "常见问题", "item": "https://www.miaohelaw.ca/faq"}
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "新移民在加拿大安省可以离婚吗？",
+          "acceptedAnswer": {"@type": "Answer", "text": "可以。安省处理离婚不看移民身份，只要有任何一方在安省居住满一年以上，安省法庭都会审理您的离婚案件。如有疑问请致电647-930-6688咨询何淼律师。"}
+        },
+        {
+          "@type": "Question",
+          "name": "有孩子的离婚和没有孩子的离婚有什么不同？",
+          "acceptedAnswer": {"@type": "Answer", "text": "有孩子的离婚，法院更看重孩子的利益。双方即便达成一致意见，也不能损害孩子的利益。子女抚养费（Child Support）是必须有的，即便双方同意也不能省去，否则法院不会发出离婚令。"}
+        },
+        {
+          "@type": "Question",
+          "name": "对方不配合离婚怎么办？",
+          "acceptedAnswer": {"@type": "Answer", "text": "对方不配合可以直接提起诉讼。如果没有孩子、没有财产需要分割，提起Simple Application即可。如果有孩子或财产需要处理，则需要走完整的离婚诉讼程序。何淼律师可以根据您的情况制定策略，电话647-930-6688。"}
+        },
+        {
+          "@type": "Question",
+          "name": "已经分居了怎么办理离婚？",
+          "acceptedAnswer": {"@type": "Answer", "text": "如果双方已签署分居协议，拿着分居协议去法庭申请离婚证书即可。如果尚未签署分居协议，双方需要决定是通过分居协议解决争议，还是通过法庭诉讼解决。建议提前咨询律师，电话647-930-6688。"}
+        },
+        {
+          "@type": "Question",
+          "name": "在中国离过婚，可以在加拿大安省再次离婚吗？",
+          "acceptedAnswer": {"@type": "Answer", "text": "可以。在中国离过婚不影响在加拿大安省再次离婚，只要您的婚姻是合法办理的即可。"}
+        },
+        {
+          "@type": "Question",
+          "name": "在安省离婚需要多久？",
+          "acceptedAnswer": {"@type": "Answer", "text": "无争议离婚通常需要4至8个月。有争议的诉讼离婚时间因案件复杂程度而异，涉及财产、子女监护、抚养费等越多议题，所需时间越长。"}
+        },
+        {
+          "@type": "Question",
+          "name": "在安省离婚需要多少钱？",
+          "acceptedAnswer": {"@type": "Answer", "text": "无争议离婚我们事务所提供套餐价格。诉讼离婚通常按小时收费，最终费用取决于案件复杂程度。建议先预约咨询了解费用范围，初次咨询30分钟$220+HST，电话647-930-6688。"}
+        },
+        {
+          "@type": "Question",
+          "name": "加拿大的子女监护权是怎么规定的？",
+          "acceptedAnswer": {"@type": "Answer", "text": "加拿大《离婚法》已将抚养权概念改为Decision-Making Responsibility（决策责任）。子女监护权不一定只限于父母，其他人也可以对子女有监护权。所有安排以子女最大利益为核心原则。"}
+        },
+        {
+          "@type": "Question",
+          "name": "婚前协议在安省有效吗？",
+          "acceptedAnswer": {"@type": "Answer", "text": "婚前协议有效，但必须合法合规签署才有效。法院会审查：双方是否自愿签署、有无受胁迫、是否做了完整财产公开、是否有律师解释、协议条款是否清晰无歧义。私下达成的婚前协议可能被认定无效。"}
+        },
+        {
+          "@type": "Question",
+          "name": "抚养费怎么计算？",
+          "acceptedAnswer": {"@type": "Answer", "text": "子女抚养费（Child Support）按联邦Child Support Guidelines强制计算。配偶赡养费（Spousal Support）有Advisory Guidelines可参考，但属参考性指引，不像子女抚养费那样强制执行。"}
+        },
+        {
+          "@type": "Question",
+          "name": "分居协议是什么？有什么好处？",
+          "acceptedAnswer": {"@type": "Answer", "text": "分居协议是双方通过协商解决离婚争议的法律文件。这是最快、费用最少、程序最简单的解决方式。我们律所可以起草和办理分居协议，非常推荐有条件的双方优先考虑，电话647-930-6688。"}
+        },
+        {
+          "@type": "Question",
+          "name": "离婚时有跨境资产怎么处理？",
+          "acceptedAnswer": {"@type": "Answer", "text": "如果双方有跨境资产，在提起诉讼前要格外谨慎。建议先找律师全面盘点境内外资产、制定方案，再启动离婚程序。何淼律师持中加双重执照，处理跨境资产有丰富经验，电话647-930-6688。"}
+        },
+        {
+          "@type": "Question",
+          "name": "对方要带孩子回中国怎么办？",
+          "acceptedAnswer": {"@type": "Answer", "text": "中国不是海牙儿童保护公约成员国，一旦孩子被带回中国追回难度极大。请立即联系律师，安省法院可以发出禁止带孩子离境的Order。时间非常关键，请尽快致电647-930-6688。"}
+        },
+        {
+          "@type": "Question",
+          "name": "遇到家暴怎么办？",
+          "acceptedAnswer": {"@type": "Answer", "text": "如果遭遇家暴，请先报警，保证自身安全是第一位的。家暴对离婚案件有一定影响，但影响程度因案而异。建议尽快咨询家庭法律师，电话647-930-6688。"}
+        },
+        {
+          "@type": "Question",
+          "name": "对方不肯搬出婚房怎么办？",
+          "acceptedAnswer": {"@type": "Answer", "text": "在安省法律下，配偶对婚房有Possession Right（居住权），对方不肯搬出并不意味着案件无法推进。我们帮助许多客户在此情况下成功出售婚房、分割房款。律师可以根据您的情况提供最优建议，电话647-930-6688。"}
+        }
+      ]
+    }
+  ]
+  </script>
 </head>
 <body>
   <Header />
-  <main class="page-main">
-
+  <main>
     <section class="page-hero">
-      <div class="page-hero-inner">
-        <div class="page-label">FREQUENTLY ASKED QUESTIONS · 常见问题</div>
-        <h1>FAQ · 何律师直接回答</h1>
-        <p>这里的问题都是客户真实问过我的。我尽量用直白的语言回答，不用法律术语堆砌。如果你有其他问题，欢迎直接联系我。</p>
+      <div class="container">
+        <div class="breadcrumb"><a href="/">首页</a> › 常见问题</div>
+        <h1>常见问题</h1>
+        <p class="hero-sub">何淼律师解答华人离婚最常见的法律问题 · 普通话服务 · 647-930-6688</p>
       </div>
     </section>
 
     <section class="faq-section">
-      <div class="faq-inner">
+      <div class="container">
 
-        <!-- 内容占位符 — 等待 Mia 填写 -->
-        <div class="faq-placeholder">
-          <p>📝 何律师正在整理常见问题，即将发布。</p>
-          <p>如有紧急问题，欢迎直接致电或发邮件咨询。</p>
+        <div class="capsule-nav">
+          <div class="capsule-group">
+            <span class="group-label">按人群</span>
+            <div class="capsules">
+              <button class="capsule active" data-target="xinmyimin">新移民离婚</button>
+              <button class="capsule" data-target="youhaizi">有孩子的离婚</button>
+              <button class="capsule" data-target="zhongguo">在中国离过婚</button>
+            </div>
+          </div>
+          <div class="capsule-group">
+            <span class="group-label">按情况</span>
+            <div class="capsules">
+              <button class="capsule" data-target="bupeihe">对方不配合</button>
+              <button class="capsule" data-target="fenju">已经分居了</button>
+              <button class="capsule" data-target="haizi-zhongguo">对方要带孩子回中国</button>
+              <button class="capsule" data-target="jiabao">家暴怎么办</button>
+              <button class="capsule" data-target="bushouban">对方不肯搬出去</button>
+            </div>
+          </div>
+          <div class="capsule-group">
+            <span class="group-label">按问题</span>
+            <div class="capsules">
+              <button class="capsule" data-target="duojiu">离婚要多久</button>
+              <button class="capsule" data-target="duoshao">离婚要多少钱</button>
+              <button class="capsule" data-target="jianhuguan">子女监护权</button>
+              <button class="capsule" data-target="hunqian">婚前协议有效吗</button>
+              <button class="capsule" data-target="fuyanfei">抚养费怎么算</button>
+              <button class="capsule" data-target="fenjuxieyi">分居协议</button>
+              <button class="capsule" data-target="kuajing">跨境资产</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-content">
+
+          <div class="faq-item active" id="xinmyimin">
+            <div class="faq-tag">新移民离婚</div>
+            <h2>新移民在加拿大安省可以离婚吗？</h2>
+            <div class="faq-answer">
+              <p>可以。<strong>安省处理离婚不看移民身份</strong>，只要有任何一方在安省居住满一年以上，安省法庭都会审理您的离婚案件。</p>
+              <p>很多新移民担心移民身份会影响离婚程序，实际上这两件事是完全分开的。无论是PR、工签还是其他身份，只要满足居住时间要求，都可以在安省提起离婚。</p>
+              <div class="faq-cta"><a href="tel:6479306688">📞 647-930-6688 预约咨询</a></div>
+            </div>
+          </div>
+
+          <div class="faq-item" id="youhaizi">
+            <div class="faq-tag">有孩子的离婚</div>
+            <h2>有孩子的离婚和没有孩子的离婚有什么不同？</h2>
+            <div class="faq-answer">
+              <p>有明显不同。<strong>有孩子的离婚，法院更看重孩子的利益</strong>，双方即便达成一致意见，也不能损害孩子的利益。</p>
+              <p>最典型的例子是子女抚养费（Child Support）——这是必须有的。即便父母双方都同意不要抚养费，法院也不会发出离婚令，因为抚养费是孩子的权利，不是父母可以放弃的选项。</p>
+              <p>此外，子女监护权、育儿时间的安排，都需要在离婚过程中明确处理。</p>
+              <div class="faq-cta"><a href="tel:6479306688">📞 647-930-6688 预约咨询</a></div>
+            </div>
+          </div>
+
+          <div class="faq-item" id="zhongguo">
+            <div class="faq-tag">在中国离过婚</div>
+            <h2>在中国离过婚，可以在加拿大安省再次离婚吗？</h2>
+            <div class="faq-answer">
+              <p>可以。<strong>在中国离过婚不影响在加拿大安省再次办理离婚</strong>，只要您的婚姻是合法办理的即可。</p>
+              <p>需要注意的是，中国的离婚记录和婚姻证明可能需要经过公证认证才能在加拿大使用。建议提前整理好相关文件，咨询律师了解具体手续。</p>
+              <div class="faq-cta"><a href="tel:6479306688">📞 647-930-6688 预约咨询</a></div>
+            </div>
+          </div>
+
+          <div class="faq-item" id="bupeihe">
+            <div class="faq-tag">对方不配合</div>
+            <h2>对方不配合离婚怎么办？</h2>
+            <div class="faq-answer">
+              <p>对方不配合，<strong>您可以直接提起诉讼</strong>，法院不需要对方同意就可以推进案件。</p>
+              <ul>
+                <li><strong>无孩子、无财产需要分割：</strong>提起Simple Application即可，程序相对简单。</li>
+                <li><strong>有孩子或有财产需要处理：</strong>需要走完整的离婚诉讼程序，由法院裁决双方争议。</li>
+              </ul>
+              <p>对方不配合并不意味着您没有出路，律师可以帮您制定策略推进案件。</p>
+              <div class="faq-cta"><a href="tel:6479306688">📞 647-930-6688 预约咨询</a></div>
+            </div>
+          </div>
+
+          <div class="faq-item" id="fenju">
+            <div class="faq-tag">已经分居了</div>
+            <h2>已经分居了，怎么办理离婚？</h2>
+            <div class="faq-answer">
+              <ul>
+                <li><strong>已签署分居协议：</strong>拿着分居协议去法庭申请离婚证书即可，是最快捷的方式。</li>
+                <li><strong>尚未签署分居协议：</strong>如果财产或孩子的问题还没解决，需要决定是通过分居协议协商解决，还是通过法庭诉讼解决。</li>
+              </ul>
+              <p>分居协议是最省时、省钱、程序最简单的方式，我们非常推荐有条件的双方优先考虑。</p>
+              <div class="faq-cta"><a href="tel:6479306688">📞 647-930-6688 预约咨询</a></div>
+            </div>
+          </div>
+
+          <div class="faq-item" id="haizi-zhongguo">
+            <div class="faq-tag">对方要带孩子回中国</div>
+            <h2>对方要带孩子回中国怎么办？</h2>
+            <div class="faq-answer">
+              <p><strong>这是非常紧急的情况，请立即联系律师。</strong></p>
+              <p>中国不是海牙儿童保护公约（Hague Convention）的成员国。一旦孩子被带回中国，追回的难度极大。安省法院可以发出禁止带孩子离境的Order。<strong>时间非常关键</strong>，一旦孩子离境，法律救济的难度会成倍增加。</p>
+              <div class="faq-cta"><a href="tel:6479306688">📞 647-930-6688 紧急咨询</a></div>
+            </div>
+          </div>
+
+          <div class="faq-item" id="jiabao">
+            <div class="faq-tag">家暴怎么办</div>
+            <h2>遇到家暴怎么办？</h2>
+            <div class="faq-answer">
+              <p><strong>第一步：先报警，保证自身安全。</strong>这是最重要的一步，其他所有法律问题都可以之后处理。</p>
+              <p>家暴对离婚案件有一定影响，但影响程度因案件具体情况而异，并不一定是决定性因素。遭遇家暴之后，应尽快咨询家庭法律师，了解您可以采取哪些法律手段保护自己和孩子。</p>
+              <div class="faq-cta"><a href="tel:6479306688">📞 647-930-6688 预约咨询</a></div>
+            </div>
+          </div>
+
+          <div class="faq-item" id="bushouban">
+            <div class="faq-tag">对方不肯搬出去</div>
+            <h2>对方不肯搬出婚房怎么办？</h2>
+            <div class="faq-answer">
+              <p>在安省法律下，配偶对婚房拥有Possession Right（居住权）。对方不肯搬出去，并不意味着案件无法推进。</p>
+              <p>我们帮助过很多客户在这种情况下成功出售婚房、分割房款，案件照常推进。您能采取的方案不止一种，律师可以根据您的具体情况给出最优建议。</p>
+              <div class="faq-cta"><a href="tel:6479306688">📞 647-930-6688 预约咨询</a></div>
+            </div>
+          </div>
+
+          <div class="faq-item" id="duojiu">
+            <div class="faq-tag">离婚要多久</div>
+            <h2>在安省离婚需要多久？</h2>
+            <div class="faq-answer">
+              <ul>
+                <li><strong>无争议离婚：</strong>通常4至8个月。</li>
+                <li><strong>有争议的诉讼离婚：</strong>时间因案件复杂程度而异。</li>
+              </ul>
+              <p>案件涉及的议题越多，时间越长。只需处理财产分割的案件，比同时涉及财产、子女监护、育儿时间、Child Support和Spousal Support的案件，所需时间短得多。</p>
+              <div class="faq-cta"><a href="tel:6479306688">📞 647-930-6688 预约咨询</a></div>
+            </div>
+          </div>
+
+          <div class="faq-item" id="duoshao">
+            <div class="faq-tag">离婚要多少钱</div>
+            <h2>在安省离婚需要多少钱？</h2>
+            <div class="faq-answer">
+              <ul>
+                <li><strong>无争议离婚：</strong>我们事务所提供套餐价格，费用透明可预期。</li>
+                <li><strong>诉讼离婚：</strong>通常按小时收费，最终费用取决于案件复杂程度，无法事先精确预估。</li>
+              </ul>
+              <p>建议先预约初次咨询，根据您的案件情况给出大致费用范围参考。初次咨询30分钟，$220+HST。</p>
+              <div class="faq-cta"><a href="tel:6479306688">📞 647-930-6688 预约咨询</a></div>
+            </div>
+          </div>
+
+          <div class="faq-item" id="jianhuguan">
+            <div class="faq-tag">子女监护权</div>
+            <h2>加拿大的子女监护权是怎么规定的？</h2>
+            <div class="faq-answer">
+              <p>加拿大《离婚法》已经更新，用<strong>Decision-Making Responsibility（决策责任）</strong>取代了传统的"抚养权"概念。子女监护权（Guardianship）不一定只限于父母，其他人也可以对子女拥有监护权。所有安排都以<strong>子女最大利益（Best Interests of the Child）</strong>为核心原则。</p>
+              <p>何淼律师有丰富的子女监护权诉讼经验，包括在对方有刑事记录的情况下为客户争取到平等育儿时间。</p>
+              <div class="faq-cta"><a href="tel:6479306688">📞 647-930-6688 预约咨询</a></div>
+            </div>
+          </div>
+
+          <div class="faq-item" id="hunqian">
+            <div class="faq-tag">婚前协议有效吗</div>
+            <h2>婚前协议在安省有效吗？</h2>
+            <div class="faq-answer">
+              <p><strong>有效，但必须合法合规签署才有效。</strong>私下达成的婚前协议可能被法院认定无效。</p>
+              <p>法院会从以下几个方面审查：</p>
+              <ul>
+                <li>双方是否自愿签署，有无受到胁迫</li>
+                <li>双方是否做了完整的财产公开</li>
+                <li>是否完全理解法律内容，有无律师解释</li>
+                <li>协议条款是否清晰，有无产生歧义的地方</li>
+              </ul>
+              <p>任何一项不符合，协议都可能被认定无效。建议找律师正规起草和见证签署。</p>
+              <div class="faq-cta"><a href="tel:6479306688">📞 647-930-6688 预约咨询</a></div>
+            </div>
+          </div>
+
+          <div class="faq-item" id="fuyanfei">
+            <div class="faq-tag">抚养费怎么算</div>
+            <h2>抚养费怎么计算？</h2>
+            <div class="faq-answer">
+              <ul>
+                <li><strong>子女抚养费（Child Support）：</strong>按联邦Child Support Guidelines强制计算，根据支付方收入和子女人数确定金额，双方不能自行约定低于标准。</li>
+                <li><strong>配偶赡养费（Spousal Support）：</strong>有Spousal Support Advisory Guidelines可参考，但属参考性指引，法院有更大裁量空间。</li>
+              </ul>
+              <div class="faq-cta"><a href="tel:6479306688">📞 647-930-6688 预约咨询</a></div>
+            </div>
+          </div>
+
+          <div class="faq-item" id="fenjuxieyi">
+            <div class="faq-tag">分居协议</div>
+            <h2>什么是分居协议？有什么好处？</h2>
+            <div class="faq-answer">
+              <p>分居协议是双方通过协商解决离婚争议的法律文件，涵盖财产分割、子女安排、抚养费等所有事项。</p>
+              <ul>
+                <li>花费时间最少</li>
+                <li>法律费用最低</li>
+                <li>程序最简单</li>
+                <li>双方对结果有更多掌控权</li>
+              </ul>
+              <p>我们律所可以起草和办理分居协议，对于有条件协商的双方，这是我们最推荐的方式。</p>
+              <div class="faq-cta"><a href="tel:6479306688">📞 647-930-6688 预约咨询</a></div>
+            </div>
+          </div>
+
+          <div class="faq-item" id="kuajing">
+            <div class="faq-tag">跨境资产</div>
+            <h2>离婚时有跨境资产怎么处理？</h2>
+            <div class="faq-answer">
+              <p>如果双方有跨境资产（如中国房产、境外账户、海外投资），<strong>在提起诉讼前要格外谨慎</strong>。</p>
+              <p>建议在启动离婚程序前，先找律师全面盘点境内外资产，制定好方案，再进行离婚。仓促提起诉讼而没有提前规划，很容易产生难以弥补的问题。</p>
+              <p>何淼律师持中加双重执照，对中国境内资产的法律性质和处理方式有深入了解。</p>
+              <div class="faq-cta"><a href="tel:6479306688">📞 647-930-6688 预约咨询</a></div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="faq-footer">
+          <p>还有其他问题？欢迎直接联系何淼律师，普通话全程服务。</p>
+          <a href="/contact" class="btn-primary">预约咨询</a>
+          <a href="tel:6479306688" class="btn-secondary">647-930-6688</a>
         </div>
 
       </div>
     </section>
-
-    <section class="page-cta">
-      <h2>还有其他问题？</h2>
-      <p>每个案件情况不同。欢迎预约初步咨询，何律师会根据您的具体情况给出建议。</p>
-      <div class="cta-actions">
-        <a href="tel:6479306688" class="btn-primary">📞 647-930-6688</a>
-        <a href="mailto:miao@miaohelaw.ca" class="btn-secondary">miao@miaohelaw.ca</a>
-      </div>
-    </section>
-
   </main>
   <Footer />
 </body>
 </html>
 
 <style>
-  .page-main { max-width: 100%; padding: 0; margin: 0; }
-  .page-hero { background: #FDFBF7; padding: 4rem 2rem; text-align: center; border-bottom: 1px solid #EDE8DF; }
-  .page-hero-inner { max-width: 760px; margin: 0 auto; }
-  .page-label { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: #9A8060; margin-bottom: 1rem; }
-  .page-hero h1 { font-family: 'Georgia', serif; font-size: 2.5rem; font-weight: 400; color: #1A1208; margin-bottom: 1rem; }
-  .page-hero p { color: #6B5A3A; font-size: 0.95rem; line-height: 1.7; max-width: 600px; margin: 0 auto; }
-  .faq-section { padding: 4rem 2rem; }
-  .faq-inner { max-width: 800px; margin: 0 auto; }
-  .faq-placeholder { background: #F5EFE0; border: 1px dashed #E8D9B8; border-radius: 8px; padding: 3rem 2rem; text-align: center; color: #6B5A3A; font-size: 0.95rem; line-height: 2; }
-  .page-cta { background: #F5EFE0; border-top: 1px solid #EDE8DF; padding: 4rem 2rem; text-align: center; }
-  .page-cta h2 { font-family: 'Georgia', serif; font-size: 1.75rem; font-weight: 400; color: #1A1208; margin-bottom: 0.75rem; }
-  .page-cta p { color: #6B5A3A; font-size: 0.9rem; max-width: 540px; margin: 0 auto 1.5rem; line-height: 1.7; }
-  .cta-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
-  .btn-primary { background: #7A5A1A; color: #FDFBF7; padding: 0.75rem 1.75rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; font-weight: 500; }
-  .btn-primary:hover { background: #4A3A0A; color: #FDFBF7; }
-  .btn-secondary { background: transparent; color: #7A5A1A; padding: 0.75rem 1.75rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; font-weight: 500; border: 1px solid #7A5A1A; }
-  .btn-secondary:hover { background: #F5EFE0; }
+  .page-hero{background:linear-gradient(135deg,#2C1810 0%,#4A2C1A 100%);color:white;padding:3rem 0 2rem}
+  .page-hero h1{font-size:2rem;margin:0.5rem 0;color:#ffffff}
+  .hero-sub{color:#D4A853;margin:0}
+  .breadcrumb{font-size:0.85rem;opacity:0.7;margin-bottom:0.5rem}
+  .breadcrumb a{color:white;text-decoration:none}
+  .container{max-width:1000px;margin:0 auto;padding:0 1.5rem}
+  .faq-section{padding:3rem 0}
+  .capsule-nav{margin-bottom:2.5rem}
+  .capsule-group{margin-bottom:1.25rem}
+  .group-label{font-size:0.75rem;color:#9A8060;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;display:block;margin-bottom:0.5rem}
+  .capsules{display:flex;flex-wrap:wrap;gap:0.5rem}
+  .capsule{background:#f5f0eb;border:1.5px solid #e0d5c8;color:#4A2C1A;padding:0.4rem 1rem;border-radius:999px;font-size:0.875rem;cursor:pointer;transition:all 0.2s;white-space:nowrap;font-family:inherit}
+  .capsule:hover{background:#ebe3d8;border-color:#9A8060}
+  .capsule.active{background:#2C1810;border-color:#2C1810;color:#ffffff}
+  .faq-content{min-height:300px}
+  .faq-item{display:none;animation:fadeIn 0.25s ease}
+  .faq-item.active{display:block}
+  @keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+  .faq-tag{display:inline-block;background:#FDF6EC;border:1px solid #D4A853;color:#9A8060;padding:0.2rem 0.75rem;border-radius:999px;font-size:0.8rem;margin-bottom:0.75rem}
+  .faq-content h2{color:#2C1810;font-size:1.4rem;margin:0 0 1rem}
+  .faq-answer{background:white;border:1px solid #e8e0d5;border-radius:12px;padding:1.75rem}
+  .faq-answer p{color:#333;line-height:1.8;margin:0 0 0.9rem}
+  .faq-answer p:last-of-type{margin-bottom:0}
+  .faq-answer ul{padding-left:1.25rem;margin:0.5rem 0 1rem}
+  .faq-answer li{color:#333;line-height:1.8;margin-bottom:0.4rem}
+  .faq-cta{margin-top:1.25rem;padding-top:1.25rem;border-top:1px solid #f0ebe3}
+  .faq-cta a{color:#9A8060;font-weight:600;text-decoration:none;font-size:0.95rem}
+  .faq-cta a:hover{color:#2C1810}
+  .faq-footer{text-align:center;margin-top:3rem;padding:2rem;background:linear-gradient(135deg,#2C1810,#4A2C1A);border-radius:12px;color:white}
+  .faq-footer p{margin:0 0 1rem;color:#ffffff}
+  .btn-primary{display:inline-block;background:#D4A853;color:#2C1810;padding:0.75rem 1.5rem;border-radius:6px;text-decoration:none;font-weight:700;margin:0.4rem}
+  .btn-secondary{display:inline-block;background:transparent;color:white;border:2px solid white;padding:0.75rem 1.5rem;border-radius:6px;text-decoration:none;font-weight:700;margin:0.4rem}
+  @media(max-width:768px){.page-hero h1{font-size:1.5rem}.faq-answer{padding:1.25rem}.faq-content h2{font-size:1.2rem}}
 </style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const capsules = document.querySelectorAll(".capsule");
+    const items = document.querySelectorAll(".faq-item");
+    capsules.forEach(capsule => {
+      capsule.addEventListener("click", () => {
+        const target = capsule.dataset.target;
+        capsules.forEach(c => c.classList.remove("active"));
+        capsule.classList.add("active");
+        items.forEach(item => item.classList.remove("active"));
+        const targetItem = document.getElementById(target);
+        if (targetItem) targetItem.classList.add("active");
+      });
+    });
+  });
+</script>
