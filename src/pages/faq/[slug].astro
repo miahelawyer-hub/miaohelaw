@@ -28,7 +28,19 @@ const others = faqItems.filter(f => f.slug !== item.slug).slice(0, 6);
   <meta property="og:url" content={`https://www.miaohelaw.ca/faq/${item.slug}`} />
   <meta property="og:type" content="article" />
   <link rel="canonical" href={`https://www.miaohelaw.ca/faq/${item.slug}`} />
-  <script type="application/ld+json" set:html={JSON.stringify([
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": item.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.answers.map(a => a.replace(/<[^>]+>/g, '')).join(' ')
+      }
+    }]
+  })}></script>
+    <script type="application/ld+json" set:html={JSON.stringify([
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
