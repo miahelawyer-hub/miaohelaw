@@ -1,101 +1,220 @@
 ---
-import Layout from '../../layouts/BlogPost.astro';
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
 ---
-<Layout
-  title="子女抚养费 & 配偶赡养费律师 | 多伦多华人 | Miao He — Ontario 家庭法"
-  description="何淼律师专注安省子女抚养费及配偶赡养费计算、隐匿收入追查、赡养费变更及强制执行。多伦多华人家庭法律师，普通话英文双语。647-930-6688。"
-  pubDate={new Date('2026-04-07')}
-  heroImage=""
->
-
-<h2>子女抚养费 &amp; 配偶赡养费 · Support</h2>
-<p>
-  抚养费的计算看似有公式可循，实际上隐藏着大量争议空间——尤其是当一方自雇、在中国有收入、或刻意隐瞒真实收入时。何律师擅长深入挖掘对方真实收入，确保抚养费计算公平准确。
-</p>
-
-<h2>子女抚养费（Child Support）</h2>
-<p>
-  安省子女抚养费依据《联邦子女抚养指引》（Federal Child Support Guidelines）计算，核心依据是<strong>支付方的年收入</strong>及子女数量，与接收方收入无关。当孩子与一方父母相处时间达到或超过40%时，双方收入均会纳入计算。
-</p>
-<p>
-  除基本抚养费外，<strong>特殊开支（Section 7 Expenses）</strong>由双方按收入比例分担，包括：托儿费、私立学校学费、大学教育费用、课外活动费、医疗及牙科自付部分等。
-</p>
-
-<h2>配偶赡养费（Spousal Support）</h2>
-<p>
-  配偶赡养费没有固定公式，通常参考《配偶赡养支持指南》（SSAG），综合考量：
-</p>
-<ul>
-  <li>婚姻持续时间</li>
-  <li>双方收入差距</li>
-  <li>婚内角色分工（是否一方放弃职业发展照顾家庭）</li>
-  <li>受抚养方实现经济自给自足的能力与时间</li>
-</ul>
-<p>婚姻越长、收入差距越大、一方因照顾家庭牺牲职业的程度越高，赡养费金额越高、期限越长。长婚姻在特定情况下可能获得无限期赡养费。</p>
-
-<h2>隐匿收入追查</h2>
-<p>
-  自雇律师、企业主、微商经营者常见的策略是低报收入——账面收入极低，但实际生活方式完全不符。何律师通过以下方式追查真实收入：
-</p>
-<ul>
-  <li>生活方式分析（消费模式、境外旅行、礼品记录）</li>
-  <li>公司现金流及财务报表审查</li>
-  <li>强制财务披露申请</li>
-  <li>聘请会计专家进行收入重组分析（Income Imputation）</li>
-  <li>社交媒体证据整理</li>
-</ul>
-
-<h2>赡养费变更与强制执行</h2>
-<p>
-  收入发生重大变化时，任何一方均可申请变更抚养费。对方拒不支付时，可通过以下方式强制执行：
-</p>
-<ul>
-  <li>向家庭责任办公室（Family Responsibility Office / FRO）登记</li>
-  <li>申请工资扣押（Wage Garnishment）</li>
-  <li>扣押税务退款</li>
-  <li>申请藐视法庭令</li>
-  <li>暂停对方驾照或护照</li>
-</ul>
-
-<h2>案例亮点</h2>
-<ul>
-  <li>通过收入追查，将对方申报收入提高近一倍，子女每月抚养费大幅增加</li>
-  <li>全职主妇离婚：证明12年婚内贡献的法律价值，获得均等化款项及配偶赡养费，是对方开价的三倍以上</li>
-  <li>对方拖欠子女抚养费8个月，通过强制执行程序6周内追回全部欠款</li>
-  <li>收入下降后协助客户修改抚养费协议，全程无需上庭</li>
-</ul>
-
-<h2>常见问题</h2>
-<p><strong>Q：我没有工作，离婚后能拿到配偶赡养费吗？</strong><br/>
-可能可以。赡养费取决于婚姻长度、双方收入差距及婚内角色分工。全职照顾家庭的一方，其贡献在安省法律下受到明确保护。</p>
-
-<p><strong>Q：对方说自己没有收入，我怎么办？</strong><br/>
-安省家庭法要求双方完整披露财务状况。如怀疑对方隐瞒收入，律师可申请强制披露令，并通过生活方式分析、公司账目及第三方记录证明真实收入。</p>
-
-<p><strong>Q：子女抚养费可以变更吗？</strong><br/>
-可以。当任何一方收入发生重大变化，或孩子居住安排改变时，均可申请变更。建议通过律师协商解决，避免不必要的诉讼。</p>
-
-<p><strong>Q：对方一直不付抚养费怎么办？</strong><br/>
-不要等待。FRO 登记、工资扣押、税务退款扣押都是有效的执行工具。何律师曾在6周内为客户追回8个月欠款。</p>
-
-<hr/>
-<p>
-  <strong>何淼律师</strong> · <a href="https://www.hlawfirmontario.com" target="_blank" rel="noopener">H. LAW FIRM 恒. 律师事务所</a><br/>
-  Ontario &amp; China 双重律师执照 · 15+ 年执业 · 每月出庭 20+ 小时<br/>
-  📞 <a href="tel:6479306688">647-930-6688</a> · 📧 <a href="mailto:miao@miaohelaw.ca">miao@miaohelaw.ca</a>
-</p>
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-{"@type": "Question", "name": "我没有工作，离婚后能拿到配偶赡养费吗？", "acceptedAnswer": {"@type": "Answer", "text": "可能可以。赡养费取决于婚姻长度、双方收入差距及婚内角色分工。全职照顾家庭的一方，其贡献在安省法律下受到明确保护。"}},
-{"@type": "Question", "name": "对方说自己没有收入，我怎么办？", "acceptedAnswer": {"@type": "Answer", "text": "安省家庭法要求双方完整披露财务状况。律师可申请强制披露令，并通过生活方式分析、公司账目及第三方记录证明真实收入。"}},
-{"@type": "Question", "name": "子女抚养费可以变更吗？", "acceptedAnswer": {"@type": "Answer", "text": "可以。当任何一方收入发生重大变化，或孩子居住安排改变时，均可申请变更。建议通过律师协商解决。"}}
+<!doctype html>
+<html lang="zh">
+<head>
+  <BaseHead
+    title="抚养费与赡养费律师 | Ontario 华人家庭法 | 子女抚养费 · 配偶赡养费 · 推定收入 | 何淼律师"
+    description="子女抚养费不给会影响离婚判决？配偶赡养费和子女抚养费有什么区别？对方故意不工作逃避抚养费怎么办？何淼律师以实战经验为华人客户解析Ontario抚养费法律。647-930-6688。"
+  />
+  <meta name="keywords" content="Ontario子女抚养费,配偶赡养费律师,child support Ontario,spousal support律师,推定收入imputed income,抚养费离婚律师,华人抚养费律师,多伦多抚养费律师,对方不付抚养费,普通话抚养费律师,child support guidelines Ontario" />
+  <meta property="og:title" content="抚养费与赡养费律师 | 子女抚养费 · 配偶赡养费 · 推定收入 | 何淼律师" />
+  <meta property="og:description" content="不处理子女抚养费，法院可能不发离婚证。何淼律师解析Ontario抚养费与赡养费的关键区别，以及对方故意不工作的应对策略。647-930-6688。" />
+  <meta property="og:url" content="https://www.miaohelaw.ca/family-law/support" />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://www.miaohelaw.ca/family-law/support" />
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "@id": "https://www.miaohelaw.ca/family-law/support#service",
+      "name": "何淼律师 — Ontario 抚养费与赡养费服务",
+      "url": "https://www.miaohelaw.ca/family-law/support",
+      "telephone": "+1-647-930-6688",
+      "email": "miao@miaohelaw.ca",
+      "provider": {
+        "@type": "Person",
+        "name": "Miao He",
+        "alternateName": ["何淼", "Mia He"],
+        "jobTitle": "Family Law Lawyer",
+        "knowsLanguage": ["zh-Hans", "en"],
+        "hasCredential": [
+          {"@type": "EducationalOccupationalCredential", "credentialCategory": "Law Society of Ontario — Member #83315K"},
+          {"@type": "EducationalOccupationalCredential", "credentialCategory": "China Bar Association — Licensed"}
+        ]
+      },
+      "serviceType": ["Child Support", "Spousal Support", "Imputed Income", "Support Variation", "Support Enforcement"],
+      "areaServed": {"@type": "Province", "name": "Ontario"},
+      "inLanguage": ["zh-Hans", "en"]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "首页", "item": "https://www.miaohelaw.ca/"},
+        {"@type": "ListItem", "position": 2, "name": "家庭法服务", "item": "https://www.miaohelaw.ca/family-law/"},
+        {"@type": "ListItem", "position": 3, "name": "抚养费与赡养费", "item": "https://www.miaohelaw.ca/family-law/support"}
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "双方同意不付子女抚养费，法院会接受吗？",
+          "acceptedAnswer": {"@type": "Answer", "text": "通常不会。根据我的办案经验，如果子女抚养费安排不合理或缺失，法官会通过发出 endorsement 要求双方反复提供解释材料，实际上变相拒绝发出离婚令。法官的出发点是保护孩子的利益，不会轻易接受父母协商放弃抚养费的安排。"}
+        },
+        {
+          "@type": "Question",
+          "name": "子女抚养费和配偶赡养费有什么区别？",
+          "acceptedAnswer": {"@type": "Answer", "text": "两者有根本区别。子女抚养费（Child Support）依据 Federal Child Support Guidelines 强制计算，不可随意协商减免，是孩子的法定权利。配偶赡养费（Spousal Support）则不是强制的，法院会结合具体案情判断是否适用、金额多少，双方也可以通过协议约定，灵活空间更大。"}
+        },
+        {
+          "@type": "Question",
+          "name": "对方故意辞职不工作来逃避子女抚养费，怎么办？",
+          "acceptedAnswer": {"@type": "Answer", "text": "Ontario 家庭法有推定收入（Imputed Income）机制。如果一方有工作能力但选择不工作，法院可以推定其收入——以其过去的收入水平或年度生活支出为基准，据此计算抚养费义务。但关键是需要向法庭提供证据，法庭不会主动调查。提前咨询律师，了解需要保留哪些证据，至关重要。"}
+        },
+        {
+          "@type": "Question",
+          "name": "抚养费确定之后还能更改吗？",
+          "acceptedAnswer": {"@type": "Answer", "text": "可以。当双方收入或育儿安排发生重大变化时，任何一方均可申请变更抚养费（Variation）。变更必须基于真实的情况改变，不能仅凭主观意愿。何淼律师可协助评估是否符合变更条件，并代理申请。"}
+        },
+        {
+          "@type": "Question",
+          "name": "协议可以约定不付配偶赡养费吗？",
+          "acceptedAnswer": {"@type": "Answer", "text": "可以，但需谨慎。配偶赡养费可以通过协议约定，包括金额、期限或完全豁免。但协议必须公平合理，双方须完整披露财务状况并各自获得独立法律意见，否则协议可能被法院推翻。"}
+        }
+      ]
+    }
   ]
-}
-</script>
+  </script>
+</head>
+<body>
+  <Header />
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="/">首页</a> › <a href="/family-law/">家庭法服务</a> › 抚养费与赡养费
+        </div>
+        <h1>抚养费与赡养费</h1>
+        <p class="hero-sub">子女抚养费 · 配偶赡养费 · 推定收入 · 证据策略 · 普通话全程服务</p>
+      </div>
+    </section>
 
-</Layout>
+    <section class="content-section">
+      <div class="container content-grid">
+        <div class="main-content">
+
+          <div class="definition-box">
+            <p>Ontario 家庭法中的"抚养费"实际上包含两个完全不同的概念：<strong>子女抚养费（Child Support）</strong>和<strong>配偶赡养费（Spousal Support）</strong>。两者的法律性质、计算方式和协商空间截然不同。很多人对两者的混淆，往往导致在关键时刻做出错误决定。</p>
+          </div>
+
+          <h2>子女抚养费：很多人不知道的事实</h2>
+
+          <h3>"我们双方同意不付抚养费"——法院未必接受</h3>
+          <p>这是华人离婚案件中最常见的误解之一。很多夫妻在协商分离时达成"共识"：双方同意不付子女抚养费，或者协议中根本不提抚养费。他们认为，只要双方都同意，法院应该尊重这个决定。</p>
+          <p>现实却完全不同。根据我多年的办案经验，<strong>如果子女抚养费安排缺失或明显不合理，法官会通过反复发出 endorsement 的方式，要求双方不断提供补充解释材料</strong>，一次又一次，直到法官满意为止。虽然没有明文法条写着"不处理抚养费不发离婚证"，但这是法官实际操作中的态度——尤其是在有争议的离婚诉讼中，如果子女事项没有妥善处理，civil divorce 根本推进不了。</p>
+          <p>法官这样做的原因很简单：他担心判完离婚之后，没有人负责照顾孩子。<strong>子女抚养费是孩子的法定权利，不是父母可以随意放弃的选项。</strong></p>
+
+          <h3>子女抚养费的计算：有据可查，不可随意</h3>
+          <p>子女抚养费依据 <strong>Federal Child Support Guidelines</strong> 计算，以支付方的年收入和子女数量为主要依据，全国统一标准。此外，子女的 special and extraordinary expenses（如学费、医疗、课外活动费用）须由双方按收入比例分担，这部分通常被称为 Section 7 expenses。</p>
+          <p>子女抚养费不是可以随意砍价的数字。如果一方收入发生变化，可以申请变更，但必须有真实的情况改变为依据。</p>
+
+          <h2>对方故意不工作来逃避抚养费？Ontario 法律有答案</h2>
+          <p>这是另一个常见的困境：对方明明有工作能力，却在离婚前突然辞职、减薪，或声称找不到工作，企图以此降低子女抚养费。</p>
+          <p>Ontario 家庭法对此有明确的应对机制——<strong>推定收入（Imputed Income）</strong>。法律规定，如果一方有工作能力但选择不工作，法院可以推定其收入，以其历史收入水平或年度实际生活支出为基准，计算其应付的抚养费。换句话说，<strong>故意不工作并不能免除抚养费义务</strong>。</p>
+
+          <h3>关键在于证据——而证据需要提前准备</h3>
+          <p>推定收入机制的运用有一个前提：<strong>法庭不会主动帮你调查对方的收入，举证责任在你。</strong> 你需要向法庭提供证据，证明对方有工作能力、有历史收入记录、或实际生活水平远超其声称的收入。</p>
+          <p>问题是：一旦双方分居，很多证据就很难再获取了。这再次说明了提前咨询律师的重要性。在分居之前或分居初期咨询何淼律师，她会告诉你需要保留哪些材料、从哪些渠道可以获取对方的收入信息，在日后的庭审中形成有力的证据链。</p>
+
+          <h2>配偶赡养费：与子女抚养费的根本区别</h2>
+          <p>配偶赡养费（Spousal Support）的性质与子女抚养费完全不同：</p>
+          <ul class="content-list">
+            <li><strong>不是强制的</strong>：配偶赡养费不是每个案件都有，法院会结合婚姻长度、双方收入差距、一方为婚姻牺牲的职业发展等因素综合判断</li>
+            <li><strong>标准灵活</strong>：虽然有 Spousal Support Advisory Guidelines 作为参考，但法院并不强制按指导方针执行，一案一判</li>
+            <li><strong>可以协议约定</strong>：双方可以在分居协议或婚前协议中约定配偶赡养费的金额、期限，甚至完全豁免——只要协议公平合理、双方完整披露财务且各自有独立法律意见</li>
+          </ul>
+          <p>很多华人客户把配偶赡养费和子女抚养费混为一谈，要么以为配偶赡养费也是必须给的，要么以为子女抚养费也可以协议豁免。理清这两者的区别，是制定正确策略的第一步。</p>
+
+          <div class="qa-block">
+            <h3>Q：我们协议好了不付抚养费，但法院一直不发离婚证，为什么？</h3>
+            <p>A：这很可能是因为法官对子女抚养费的安排不满意。法官会通过 endorsement 反复要求提供解释材料，直到子女利益得到妥善保障。建议尽快咨询律师，了解如何调整方案推进离婚程序。电话：647-930-6688。</p>
+          </div>
+
+          <div class="qa-block">
+            <h3>Q：对方离婚前突然辞职，说没有收入，抚养费怎么算？</h3>
+            <p>A：可以申请法院推定收入（Imputed Income）。关键是证据——对方的历史收入记录、银行流水、生活支出等都可以作为依据。提前咨询律师，了解需要保留哪些证据，不要等到分居后才开始准备。电话：647-930-6688。</p>
+          </div>
+
+          <div class="cta-box">
+            <h3>预约抚养费咨询</h3>
+            <p>初次咨询 30 分钟，$220 + HST。普通话全程服务，厘清抚养费策略。</p>
+            <a href="/contact" class="btn-primary">立即预约</a>
+            <a href="tel:6479306688" class="btn-secondary">647-930-6688</a>
+          </div>
+        </div>
+
+        <aside class="sidebar">
+          <div class="sidebar-card">
+            <h3>联系何淼律师</h3>
+            <p>📞 <a href="tel:6479306688">647-930-6688</a></p>
+            <p>📧 <a href="mailto:miao@miaohelaw.ca">miao@miaohelaw.ca</a></p>
+          </div>
+          <div class="sidebar-card">
+            <h3>抚养费服务</h3>
+            <ul>
+              <li>子女抚养费计算</li>
+              <li>Section 7 特殊费用</li>
+              <li>配偶赡养费评估</li>
+              <li>推定收入申请</li>
+              <li>抚养费变更</li>
+              <li>抚养费执行</li>
+              <li>协议抚养费条款</li>
+            </ul>
+          </div>
+          <div class="sidebar-card">
+            <h3>相关服务</h3>
+            <ul>
+              <li><a href="/family-law/child-custody">子女监护权</a></li>
+              <li><a href="/family-law/divorce-litigation">离婚诉讼</a></li>
+              <li><a href="/family-law/domestic-contracts">婚前及分居协议</a></li>
+              <li><a href="/family-law/cross-border-assets">跨境资产</a></li>
+            </ul>
+          </div>
+          <div class="sidebar-card">
+            <h3>服务语言</h3>
+            <p>🇨🇳 普通话 / 国语</p>
+            <p>🇨🇦 英文（English）</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</body>
+</html>
+<style>
+  .page-hero{background:linear-gradient(135deg,#2C1810 0%,#4A2C1A 100%);color:white;padding:3rem 0 2rem}
+  .page-hero h1{font-size:2rem;margin:0.5rem 0}
+  .hero-sub{color:#D4A853;margin:0}
+  .breadcrumb{font-size:0.85rem;opacity:0.7;margin-bottom:0.5rem}
+  .breadcrumb a{color:white;text-decoration:none}
+  .container{max-width:1100px;margin:0 auto;padding:0 1.5rem}
+  .content-section{padding:3rem 0}
+  .content-grid{display:grid;grid-template-columns:1fr 300px;gap:3rem}
+  .definition-box{background:#FDF6EC;border-left:4px solid #9A8060;padding:1.2rem 1.5rem;margin-bottom:2rem;border-radius:0 8px 8px 0}
+  .content-list{padding-left:1.5rem;margin:1rem 0}
+  .content-list li{margin:0.5rem 0;line-height:1.6}
+  .qa-block{background:#f8f8f8;border-radius:8px;padding:1.2rem 1.5rem;margin:1.5rem 0}
+  .qa-block h3{color:#2C1810;margin-top:0;font-size:1rem}
+  .cta-box{background:linear-gradient(135deg,#2C1810,#4A2C1A);color:white;padding:2rem;border-radius:12px;text-align:center;margin-top:2rem}
+  .cta-box h3{margin-top:0}
+  .btn-primary{display:inline-block;background:#D4A853;color:#2C1810;padding:0.75rem 1.5rem;border-radius:6px;text-decoration:none;font-weight:700;margin:0.5rem}
+  .btn-secondary{display:inline-block;background:transparent;color:white;border:2px solid white;padding:0.75rem 1.5rem;border-radius:6px;text-decoration:none;font-weight:700;margin:0.5rem}
+  .sidebar{display:flex;flex-direction:column;gap:1.5rem}
+  .sidebar-card{background:white;border:1px solid #e8e0d5;border-radius:10px;padding:1.2rem}
+  .sidebar-card h3{color:#2C1810;font-size:0.95rem;margin-top:0;border-bottom:1px solid #e8e0d5;padding-bottom:0.5rem;margin-bottom:0.75rem}
+  .sidebar-card ul{list-style:none;padding:0;margin:0}
+  .sidebar-card li{padding:0.3rem 0;border-bottom:1px solid #f0ebe3;font-size:0.9rem}
+  .sidebar-card a{color:#9A8060;text-decoration:none}
+  h2{color:#2C1810;margin-top:2rem}
+  h3{color:#4A2C1A}
+  @media(max-width:768px){.content-grid{grid-template-columns:1fr}.page-hero h1{font-size:1.5rem}}
+</style>
