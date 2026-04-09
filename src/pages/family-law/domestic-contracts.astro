@@ -1,168 +1,236 @@
 ---
-import Layout from '../../layouts/BlogPost.astro';
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
 ---
-<Layout
-  title="婚前协议 & 分居协议律师 | 多伦多华人 | Miao He — Ontario 家庭法"
-  description="何淼律师专业起草婚前协议、婚内协议、分居协议及同居协议。以诉讼视角预判漏洞，确保协议具有法律效力。多伦多华人家庭法律师。647-930-6688。"
-  pubDate={new Date('2026-04-07')}
-  heroImage=""
->
-
-<h2>婚前及分居协议 · Domestic Contracts</h2>
-<p>
-  一份具有法律效力的协议，是保护您权益最重要的第一步。何律师以<strong>诉讼律师的视角</strong>起草每一份协议——预判对方将来可能提出的任何质疑，提前在协议里堵住漏洞，确保协议在法庭上站得住脚。
-</p>
-
-<h2>我们提供的协议服务</h2>
-
-<h3>婚前协议（Prenuptial Agreement / Marriage Contract）</h3>
-<p>
-  在感情最好的时候，理性地讨论万一情况发生时如何处理——这不是不信任，而是双方最好的保护。婚前协议可以约定：
-</p>
-<ul>
-  <li>婚前资产的归属及保护</li>
-  <li>婚姻期间财富增值的分配方式</li>
-  <li>家族企业股权的保护</li>
-  <li>配偶赡养费的约定（含放弃条款）</li>
-  <li>中国境内资产的处理方式</li>
-</ul>
-
-<h3>婚内协议（Postnuptial Agreement）</h3>
-<p>
-  已结婚但没有婚前协议？可以签署婚内协议，法律效力相同。婚内协议同样可以保护婚前资产、约定财产分配方式，适合婚后财务状况发生重大变化的夫妻。
-</p>
-
-<h3>分居协议（Separation Agreement）</h3>
-<p>
-  分居协议是双方就财产分割、子女安排、赡养费等事项达成的具有法律约束力的书面合同。一份起草严谨的分居协议可以避免日后大量争议：
-</p>
-<ul>
-  <li>财产分割及均等化款项安排</li>
-  <li>婚姻住房的处置方式</li>
-  <li>子女抚养权及育儿时间安排</li>
-  <li>子女抚养费及配偶赡养费</li>
-  <li>未来收入变化的处理机制</li>
-  <li>子女教育费用（Section 7）的分担方式</li>
-</ul>
-
-<h3>同居协议（Cohabitation Agreement）</h3>
-<p>
-  同居伴侣不受《家庭法》均等化条款保护，但可通过同居协议明确双方对共同财产、债务及分手后安排的权利义务，避免日后昂贵的信托诉讼。
-</p>
-
-<h3>协议审查（Agreement Review）</h3>
-<p>
-  对方已提供协议草稿？何律师为您进行专业审查，识别潜在风险与不公平条款。何律师曾在审查中发现三处重大问题——涉及房产估值日期、退休金分割及上诉权利放弃条款——每处错误都可能造成数万加元的损失。
-</p>
-
-<h2>协议有效的法律要求</h2>
-<ul>
-  <li><strong>书面签署</strong> — 口头协议在安省家庭法中不受保护</li>
-  <li><strong>充分财务披露</strong> — 双方须如实披露所有资产及债务</li>
----
-import Layout from '../../layouts/BlogPost.astro';
----
-<Layout
-  title="婚前协议 & 分居协议律师 | 多伦多华人 | Miao He — Ontario 家庭法"
-  description="何淼律师专业起草婚前协议、婚内协议、分居协议及同居协议。以诉讼视角预判漏洞，确保协议具有法律效力。多伦多华人家庭法律师。647-930-6688。"
-  pubDate={new Date('2026-04-07')}
-  heroImage=""
->
-
-<h2>婚前及分居协议 · Domestic Contracts</h2>
-<p>
-  一份具有法律效力的协议，是保护您权益最重要的第一步。何律师以<strong>诉讼律师的视角</strong>起草每一份协议——预判对方将来可能提出的任何质疑，提前在协议里堵住漏洞，确保协议在法庭上站得住脚。
-</p>
-
-<h2>我们提供的协议服务</h2>
-
-<h3>婚前协议（Prenuptial Agreement / Marriage Contract）</h3>
-<p>
-  在感情最好的时候，理性地讨论万一情况发生时如何处理——这不是不信任，而是双方最好的保护。婚前协议可以约定：
-</p>
-<ul>
-  <li>婚前资产的归属及保护</li>
-  <li>婚姻期间财富增值的分配方式</li>
-  <li>家族企业股权的保护</li>
-  <li>配偶赡养费的约定（含放弃条款）</li>
-  <li>中国境内资产的处理方式</li>
-</ul>
-
-<h3>婚内协议（Postnuptial Agreement）</h3>
-<p>
-  已结婚但没有婚前协议？可以签署婚内协议，法律效力相同。婚内协议同样可以保护婚前资产、约定财产分配方式，适合婚后财务状况发生重大变化的夫妻。
-</p>
-
-<h3>分居协议（Separation Agreement）</h3>
-<p>
-  分居协议是双方就财产分割、子女安排、赡养费等事项达成的具有法律约束力的书面合同。一份起草严谨的分居协议可以避免日后大量争议：
-</p>
-<ul>
-  <li>财产分割及均等化款项安排</li>
-  <li>婚姻住房的处置方式</li>
-  <li>子女抚养权及育儿时间安排</li>
-  <li>子女抚养费及配偶赡养费</li>
-  <li>未来收入变化的处理机制</li>
-  <li>子女教育费用（Section 7）的分担方式</li>
-</ul>
-
-<h3>同居协议（Cohabitation Agreement）</h3>
-<p>
-  同居伴侣不受《家庭法》均等化条款保护，但可通过同居协议明确双方对共同财产、债务及分手后安排的权利义务，避免日后昂贵的信托诉讼。
-</p>
-
-<h3>协议审查（Agreement Review）</h3>
-<p>
-  对方已提供协议草稿？何律师为您进行专业审查，识别潜在风险与不公平条款。何律师曾在审查中发现三处重大问题——涉及房产估值日期、退休金分割及上诉权利放弃条款——每处错误都可能造成数万加元的损失。
-</p>
-
-<h2>协议有效的法律要求</h2>
-<ul>
-  <li><strong>书面签署</strong> — 口头协议在安省家庭法中不受保护</li>
-  <li><strong>充分财务披露</strong> — 双方须如实披露所有资产及债务</li>
-  <li><strong>独立法律意见（ILA）</strong> — 双方各自获得独立律师建议，是保护协议效力最重要的步骤</li>
-  <li><strong>自愿签署</strong> — 不得存在胁迫或不当影响</li>
-</ul>
-<p><strong>建议双方各自委托独立律师，而非共用同一律师。</strong>这是保障协议日后不被挑战的关键。</p>
-
-<h2>案例亮点</h2>
-<ul>
-  <li>协议签署后对方反悔，何律师研究大量判例，发现对方在中国存在隐藏财产，法官明确认可协议效力——客户守住逾 $500,000 资产</li>
-  <li>婚前协议被对方律师质疑，何律师成功维护协议效力，客户无需支付任何款项</li>
-  <li>协议审查发现对方草稿存在三处重大问题，修改后为客户保护了数万加元权益</li>
-</ul>
-
-<h2>常见问题</h2>
-<p><strong>Q：签婚前协议是不是不信任对方？</strong><br/>
-婚前协议更像财务规划工具，帮助双方在感情最好时理性讨论未来安排，反而有助于减少日后争议。越来越多安省华人家庭在婚前进行这样的规划。</p>
-
-<p><strong>Q：婚前协议可以约定放弃配偶赡养费吗？</strong><br/>
-可以约定，但存在限制。如果放弃条款在执行时导致一方陷入极度经济困境，法院可能拒绝执行。赡养费放弃条款的措辞和条件设定非常重要，需要律师精心起草。</p>
-
-<p><strong>Q：分居协议签了之后对方不执行怎么办？</strong><br/>
-经律师见证签署的分居协议具有完整法律约束力。对方拒不履行可申请强制执行，包括工资扣押、扣押税务退款、扣押银行账户等。</p>
-
-<p><strong>Q："净身出户"条款在加拿大有效吗？</strong><br/>
-无效。安省没有"净身出户"的法律概念，此类条款不会被执行，且可能影响整份协议的效力。</p>
-
-<hr/>
-<p>
-  <strong>何淼律师</strong> · <a href="https://www.hlawfirmontario.com" target="_blank" rel="noopener">H. LAW FIRM 恒. 律师事务所</a><br/>
-  Ontario &amp; China 双重律师执照 · 15+ 年执业 · 调解员认证<br/>
-  📞 <a href="tel:6479306688">647-930-6688</a> · 📧 <a href="mailto:miao@miaohelaw.ca">miao@miaohelaw.ca</a>
-</p>
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-{"@type": "Question", "name": "签婚前协议是不是意味着不信任对方？", "acceptedAnswer": {"@type": "Answer", "text": "不是。婚前协议是财务规划工具，帮助双方在感情最好时理性讨论未来安排，反而有助于减少日后争议。"}},
-{"@type": "Question", "name": "分居协议签了之后对方不执行怎么办？", "acceptedAnswer": {"@type": "Answer", "text": "经律师见证签署的分居协议具有完整法律约束力。对方拒不履行可申请强制执行，包括工资扣押、扣押税务退款等。"}},
-{"@type": "Question", "name": "婚前协议可以约定放弃配偶赡养费吗？", "acceptedAnswer": {"@type": "Answer", "text": "可以约定，但存在限制。如果放弃条款在执行时导致一方陷入极度经济困境，法院可能拒绝执行。需要律师精心起草。"}}
+<!doctype html>
+<html lang="zh">
+<head>
+  <BaseHead
+    title="婚前协议 · 分居协议 · 同居协议律师 | Ontario 华人家庭法 | 协议有效性 | 何淼律师"
+    description="协议签了就有效？不一定。何淼律师解析Ontario婚前协议、婚内协议、分居协议、同居协议的有效条件，中国离婚协议在加拿大的效力，以及如何避免协议被认定无效。647-930-6688。"
+  />
+  <meta name="keywords" content="婚前协议Ontario,分居协议律师,同居协议,婚内协议,marriage contract Ontario,cohabitation agreement,separation agreement,协议无效Ontario,中国离婚协议加拿大,独立法律意见,financial disclosure协议,华人婚前协议律师,普通话协议律师" />
+  <meta property="og:title" content="婚前协议 · 分居协议 · 同居协议律师 | 协议有效性 | 何淼律师" />
+  <meta property="og:description" content="协议签了不等于法院认可。何淼律师解析Ontario四种婚姻协议的有效条件，中国离婚协议在加拿大的特殊风险，以及如何确保协议真正起到保护作用。647-930-6688。" />
+  <meta property="og:url" content="https://www.miaohelaw.ca/family-law/domestic-contracts" />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://www.miaohelaw.ca/family-law/domestic-contracts" />
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "@id": "https://www.miaohelaw.ca/family-law/domestic-contracts#service",
+      "name": "何淼律师 — Ontario 婚姻协议服务",
+      "url": "https://www.miaohelaw.ca/family-law/domestic-contracts",
+      "telephone": "+1-647-930-6688",
+      "email": "miao@miaohelaw.ca",
+      "provider": {
+        "@type": "Person",
+        "name": "Miao He",
+        "alternateName": ["何淼", "Mia He"],
+        "jobTitle": "Family Law Lawyer",
+        "knowsLanguage": ["zh-Hans", "en"],
+        "hasCredential": [
+          {"@type": "EducationalOccupationalCredential", "credentialCategory": "Law Society of Ontario — Member #83315K"},
+          {"@type": "EducationalOccupationalCredential", "credentialCategory": "China Bar Association — Licensed"}
+        ]
+      },
+      "serviceType": ["Marriage Contract", "Prenuptial Agreement", "Separation Agreement", "Cohabitation Agreement", "Domestic Contract Review", "Contract Validity Assessment"],
+      "areaServed": {"@type": "Province", "name": "Ontario"},
+      "inLanguage": ["zh-Hans", "en"]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "首页", "item": "https://www.miaohelaw.ca/"},
+        {"@type": "ListItem", "position": 2, "name": "家庭法服务", "item": "https://www.miaohelaw.ca/family-law/"},
+        {"@type": "ListItem", "position": 3, "name": "婚姻协议", "item": "https://www.miaohelaw.ca/family-law/domestic-contracts"}
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "婚前协议签了就有法律效力吗？",
+          "acceptedAnswer": {"@type": "Answer", "text": "不一定。Ontario 法院有权在多种情况下认定协议无效，包括：签署时没有律师或见证人、一方不理解协议内容或法律含义、没有寻求独立法律意见、没有完整的财产披露、或一方在胁迫或压力下签署。协议签署只是第一步，遵守正确的程序才能确保协议真正有效。"}
+        },
+        {
+          "@type": "Question",
+          "name": "我们在中国签了离婚协议但没领离婚证，这个协议在加拿大有效吗？",
+          "acceptedAnswer": {"@type": "Answer", "text": "根据中国最高法院的司法解释，中国离婚协议是附条件生效的，以领取离婚证为生效条件。如果没有领离婚证，协议在中国法律下尚未生效。将这份协议带到加拿大使用时，同样面临效力问题。何淼律师持中加双重执照，可评估此类跨境协议的效力。"}
+        },
+        {
+          "@type": "Question",
+          "name": "Ontario 有哪几种婚姻协议？",
+          "acceptedAnswer": {"@type": "Answer", "text": "Ontario 主要有四种：婚前协议（Marriage Contract / Prenuptial Agreement）——结婚前签署；婚内协议（Marriage Contract）——婚姻存续期间签署；分居协议（Separation Agreement）——分居时处理财产、子女、抚养等事项；同居协议（Cohabitation Agreement）——未婚同居伴侣之间签署，保护各自权益。"}
+        },
+        {
+          "@type": "Question",
+          "name": "找便宜的律师快速起草协议，省钱省时间，可以吗？",
+          "acceptedAnswer": {"@type": "Answer", "text": "风险很高。根据何淼律师的办案经验，约20%至30%的离婚诉讼源于一方反悔，试图认定协议无效。如果协议起草不规范、程序不完整，法院可能推翻协议，所有协商结果归零，反而产生更高的诉讼费用。认真起草一份有效协议，是最省钱的方式。"}
+        },
+        {
+          "@type": "Question",
+          "name": "什么是独立法律意见（Independent Legal Advice）？为什么必须要？",
+          "acceptedAnswer": {"@type": "Answer", "text": "独立法律意见是指双方各自聘请不同律师，在签署协议前了解协议内容及其法律后果。这是Ontario协议有效性的重要条件之一。没有独立法律意见，对方日后可以主张自己不理解协议内容，要求法院认定协议无效。"}
+        }
+      ]
+    }
   ]
-}
-</script>
+  </script>
+</head>
+<body>
+  <Header />
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="/">首页</a> › <a href="/family-law/">家庭法服务</a> › 婚姻协议
+        </div>
+        <h1>婚姻协议</h1>
+        <p class="hero-sub">婚前协议 · 婚内协议 · 分居协议 · 同居协议 · 协议有效性 · 普通话全程服务</p>
+      </div>
+    </section>
 
-</Layout>
+    <section class="content-section">
+      <div class="container content-grid">
+        <div class="main-content">
+
+          <div class="definition-box">
+            <p>Ontario 家庭法认可四种婚姻协议：<strong>婚前协议（Marriage Contract）、婚内协议、分居协议（Separation Agreement）、同居协议（Cohabitation Agreement）</strong>。这些协议可以约定财产分割、配偶赡养费、同居权等重要事项，是保护个人权益的有力工具——<strong>前提是，协议必须符合法律要求才真正有效</strong>。根据何淼律师的办案经验，约20%至30%的离婚诉讼，正是因为一方反悔、试图认定协议无效而引发的。</p>
+          </div>
+
+          <h2>签了协议，不等于协议有效</h2>
+          <p>很多华人客户对协议有一个根深蒂固的误解：只要双方签了字，协议就生效了。这个想法在Ontario家庭法框架下是危险的。</p>
+          <p>签署协议，只是第一步。你们自愿遵守，协议当然有效。但<strong>一旦有一方反悔，协议就会面临法院的审查</strong>。如果协议存在以下任何情况，法院有权认定协议全部或部分无效：</p>
+          <ul class="content-list">
+            <li><strong>没有律师或见证人在场</strong>：协议签署须有适当见证</li>
+            <li><strong>一方不理解协议内容或法律含义</strong>：特别是对法律体系不熟悉的新移民客户</li>
+            <li><strong>没有寻求独立法律意见（Independent Legal Advice）</strong>：双方须各自聘请独立律师，了解协议对自己的法律影响</li>
+            <li><strong>没有完整的财产披露（Financial Disclosure）</strong>：双方须全面披露各自的资产、负债和收入</li>
+            <li><strong>一方在胁迫或压力下签署</strong>：包括情感压迫、时间压力等情况</li>
+          </ul>
+          <p>协议被认定无效的后果是什么？<strong>所有协商好的内容归零，财产分割、抚养安排、赡养费全部回到起点，按照法律规定重新处理</strong>。加上随之而来的诉讼费用，这远比一开始认真起草协议代价高得多。</p>
+
+          <h2>为什么有人愿意冒险签"便宜协议"</h2>
+          <p>我非常理解客户想节省费用的心情。有些律师可以快速起草一份简单的协议，价格低，速度快，大概表达了双方的想法就行了。客户往往认为，只要表达了意思、双方签字，就万事大吉。</p>
+          <p>但现实是残酷的。<strong>根据我多年的办案经验，约20%至30%的离婚诉讼，正是源于协议纠纷</strong>——一方在形势对自己不利时，开始寻找协议的漏洞，试图说服法院协议无效。如果协议起草不规范、程序不完整，这并不难做到。</p>
+          <p>一份认真起草的有效协议，是最省钱的法律保障。一份便宜但无效的协议，可能是最贵的错误。</p>
+
+          <h2>中国离婚协议在加拿大：一个被严重低估的法律陷阱</h2>
+          <p>这是何淼律师在实务中遇到的一个越来越常见的情况：华人夫妻在中国签了离婚协议，但没有去民政局领取离婚证，之后一方来到加拿大，希望在这里用这份协议处理财产问题。</p>
+          <p>这里有一个致命的法律陷阱，很多人都不知道。</p>
+
+          <h3>中国司法解释：离婚协议以离婚为条件</h3>
+          <p>根据中国最高人民法院的司法解释，<strong>中国的离婚协议是附条件生效的</strong>——以领取离婚证为生效条件。这意味着：</p>
+          <ul class="content-list">
+            <li><strong>在中国签了协议，也领了离婚证</strong>：协议在中国法律下有效，双方均受协议约束，若一方不履行可诉诸中国法院</li>
+            <li><strong>在中国签了协议，但没有领离婚证</strong>：协议尚未生效。一方反悔，另一方无法依据协议主张权利，财产分割将按中国法律规定处理，协议等同于没有签过</li>
+          </ul>
+          <p>将这样一份在中国尚未生效的协议带到加拿大使用，面临的效力问题更加复杂。Ontario 法院在处理跨境协议时，会审查协议的有效性，包括其在原管辖区的法律效力。</p>
+          <p>这说明了一个根本道理：<strong>无论你在哪里签协议，都必须找认真负责、了解相关法律体系的律师，把目的讲清楚，遵守正确的程序签署</strong>。目的不同，协议的结构和条款也应该完全不同。</p>
+
+          <h2>Ontario 四种婚姻协议详解</h2>
+
+          <h3>婚前协议（Marriage Contract / Prenuptial Agreement）</h3>
+          <p>结婚前签署，约定婚姻期间及离婚时的财产处理方式。常见用途：保护婚前个人资产、父母赠予财产、国内房产；排除特定资产参与 Equalization 计算；约定配偶赡养费。是保护家族财富最有效的法律工具之一。</p>
+
+          <h3>婚内协议（Marriage Contract）</h3>
+          <p>婚姻存续期间签署，可以修改或补充婚前协议，或在婚姻关系发生变化时重新约定财产安排。同样须符合完整财产披露和独立法律意见的要求。</p>
+
+          <h3>分居协议（Separation Agreement）</h3>
+          <p>双方决定分居时签署，处理财产分割、子女监护、育儿时间、子女抚养费、配偶赡养费等所有婚姻事项。签署后具法律约束力，可避免漫长诉讼。<strong>注意：分居协议中必须妥善处理子女抚养费，否则即便协议签署，离婚程序也可能受阻。</strong></p>
+
+          <h3>同居协议（Cohabitation Agreement）</h3>
+          <p>未婚同居伴侣之间签署，保护各自的财产权益。Ontario 法律对未婚同居伴侣的财产保护远弱于已婚夫妻，同居协议是填补这一法律空白的重要工具。如日后结婚，同居协议可自动转化为婚内协议。</p>
+
+          <div class="qa-block">
+            <h3>Q：我们在中国签了离婚协议，没领离婚证，来加拿大后对方反悔了，怎么办？</h3>
+            <p>A：这是一个复杂的跨境法律问题。根据中国司法解释，未领离婚证的离婚协议在中国可能尚未生效。在加拿大处理这个问题需要同时理解两套法律体系。何淼律师持中加双重执照，建议尽快咨询评估具体情况。电话：647-930-6688。</p>
+          </div>
+
+          <div class="qa-block">
+            <h3>Q：协议必须双方都找律师吗？找同一个律师起草可以吗？</h3>
+            <p>A：双方必须各自聘请独立律师（Independent Legal Advice）。同一个律师不能同时代理双方，因为存在利益冲突。何淼律师可以代理一方起草或审阅协议，确保你的利益得到充分保护。对方须另行聘请独立律师。</p>
+          </div>
+
+          <div class="cta-box">
+            <h3>预约婚姻协议咨询</h3>
+            <p>初次咨询 30 分钟，$220 + HST。普通话全程服务，确保协议真正有效。</p>
+            <a href="/contact" class="btn-primary">立即预约</a>
+            <a href="tel:6479306688" class="btn-secondary">647-930-6688</a>
+          </div>
+        </div>
+
+        <aside class="sidebar">
+          <div class="sidebar-card">
+            <h3>联系何淼律师</h3>
+            <p>📞 <a href="tel:6479306688">647-930-6688</a></p>
+            <p>📧 <a href="mailto:miao@miaohelaw.ca">miao@miaohelaw.ca</a></p>
+          </div>
+          <div class="sidebar-card">
+            <h3>协议服务</h3>
+            <ul>
+              <li>婚前协议起草</li>
+              <li>婚内协议</li>
+              <li>分居协议</li>
+              <li>同居协议</li>
+              <li>协议审阅与意见</li>
+              <li>中国协议效力评估</li>
+              <li>协议有效性分析</li>
+            </ul>
+          </div>
+          <div class="sidebar-card">
+            <h3>相关服务</h3>
+            <ul>
+              <li><a href="/family-law/divorce-litigation">离婚诉讼</a></li>
+              <li><a href="/family-law/cross-border-assets">跨境资产</a></li>
+              <li><a href="/family-law/support">抚养费与赡养费</a></li>
+              <li><a href="/family-law/child-custody">子女监护</a></li>
+            </ul>
+          </div>
+          <div class="sidebar-card">
+            <h3>双重执照优势</h3>
+            <p>🇨🇳 中国律师执照</p>
+            <p>🇨🇦 Law Society of Ontario #83315K</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</body>
+</html>
+<style>
+  .page-hero{background:linear-gradient(135deg,#2C1810 0%,#4A2C1A 100%);color:white;padding:3rem 0 2rem}
+  .page-hero h1{font-size:2rem;margin:0.5rem 0}
+  .hero-sub{color:#D4A853;margin:0}
+  .breadcrumb{font-size:0.85rem;opacity:0.7;margin-bottom:0.5rem}
+  .breadcrumb a{color:white;text-decoration:none}
+  .container{max-width:1100px;margin:0 auto;padding:0 1.5rem}
+  .content-section{padding:3rem 0}
+  .content-grid{display:grid;grid-template-columns:1fr 300px;gap:3rem}
+  .definition-box{background:#FDF6EC;border-left:4px solid #9A8060;padding:1.2rem 1.5rem;margin-bottom:2rem;border-radius:0 8px 8px 0}
+  .content-list{padding-left:1.5rem;margin:1rem 0}
+  .content-list li{margin:0.5rem 0;line-height:1.6}
+  .qa-block{background:#f8f8f8;border-radius:8px;padding:1.2rem 1.5rem;margin:1.5rem 0}
+  .qa-block h3{color:#2C1810;margin-top:0;font-size:1rem}
+  .cta-box{background:linear-gradient(135deg,#2C1810,#4A2C1A);color:white;padding:2rem;border-radius:12px;text-align:center;margin-top:2rem}
+  .cta-box h3{margin-top:0}
+  .btn-primary{display:inline-block;background:#D4A853;color:#2C1810;padding:0.75rem 1.5rem;border-radius:6px;text-decoration:none;font-weight:700;margin:0.5rem}
+  .btn-secondary{display:inline-block;background:transparent;color:white;border:2px solid white;padding:0.75rem 1.5rem;border-radius:6px;text-decoration:none;font-weight:700;margin:0.5rem}
+  .sidebar{display:flex;flex-direction:column;gap:1.5rem}
+  .sidebar-card{background:white;border:1px solid #e8e0d5;border-radius:10px;padding:1.2rem}
+  .sidebar-card h3{color:#2C1810;font-size:0.95rem;margin-top:0;border-bottom:1px solid #e8e0d5;padding-bottom:0.5rem;margin-bottom:0.75rem}
+  .sidebar-card ul{list-style:none;padding:0;margin:0}
+  .sidebar-card li{padding:0.3rem 0;border-bottom:1px solid #f0ebe3;font-size:0.9rem}
+  .sidebar-card a{color:#9A8060;text-decoration:none}
+  h2{color:#2C1810;margin-top:2rem}
+  h3{color:#4A2C1A}
+  @media(max-width:768px){.content-grid{grid-template-columns:1fr}.page-hero h1{font-size:1.5rem}}
+</style>
