@@ -1,93 +1,227 @@
 ---
-import Layout from '../../layouts/BlogPost.astro';
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
 ---
-<Layout
-  title="子女抚养权律师 | 多伦多华人监护权诉讼 | Miao He — Ontario 家庭法"
-  description="何淼律师专注安省子女抚养权、育儿时间及CAS介入案件。紧急动议、跨国监护、共同监护争议。多伦多华人家庭法律师，普通话英文双语。647-930-6688。"
-  pubDate={new Date('2026-04-07')}
-  heroImage=""
->
-
-<h2>子女抚养权 · Child Custody & Access</h2>
-<p>
-  在安省，所有涉及子女的法律决定只有一个核心标准：<strong>子女的最佳利益（Best Interests of the Child）</strong>。不是哪方更有钱，不是谁在婚姻中有过错，而是什么安排对孩子最好。何律师在每一个监护权案件中，都以具体事实证明客户的立场如何服务于这一标准。
-</p>
-
-<h2>监护权与育儿时间的区别</h2>
-<p>
-  在安省家庭法中，<strong>监护权（Custody / Decision-Making Responsibility）</strong>是指对孩子重大事项的决策权——包括教育、医疗、宗教及课外活动。<strong>育儿时间（Parenting Time / Access）</strong>是指每方父母与孩子相处的时间安排。两者是独立的问题，可以有不同的安排。
-</p>
-
-<h2>法院如何判定监护权</h2>
-<ul>
-  <li><strong>亲子关系的历史与深度</strong> — 谁是主要照顾者？谁接送上学、出席医疗预约、参与日常生活？</li>
-  <li><strong>支持孩子与另一方关系的能力</strong> — 试图疏离孩子与另一方关系的父母在诉讼中会面临严重后果</li>
-  <li><strong>孩子本身的意愿</strong> — 根据年龄和成熟度考量，年龄较大的孩子意见权重更高</li>
-  <li><strong>家庭暴力历史</strong> — 2021年《离婚法》修订后，家暴记录是法院的首要考量因素</li>
-  <li><strong>父母的照顾能力与配合程度</strong> — 是否能理性参与共同决策</li>
-</ul>
-
-<h2>常见育儿时间安排</h2>
-<ul>
-  <li><strong>主要居住安排</strong> — 孩子主要随一方生活，另一方有定期探视（隔周末、工作日晚等）</li>
-  <li><strong>均等育儿时间（50/50）</strong> — 双方各50%时间，通常按周轮换或2-2-3排班</li>
-  <li><strong>监督探视</strong> — 存在安全顾虑时，由指定第三方监督探视</li>
-</ul>
-<p>安省没有默认的50/50标准——法院根据每个孩子和家庭的具体情况决定。</p>
-
-<h2>CAS（儿童保护机构）介入案件</h2>
-<p>
-  当儿童援助协会（Children's Aid Society）介入家庭时，情况立刻变得紧迫。CAS 调查与家事法庭程序平行进行，可能影响监护权安排，甚至在极端情况下带走孩子。
-</p>
-
-<h3>案例：CAS 介入——孩子成功留在父母身边</h3>
-<p>
-  客户家庭面临紧急 CAS 介入，随时可能失去孩子的监护权。客户不知道如何应对调查程序，也不清楚哪些言行会加剧情况。何律师制定精准的法律应对策略，指导客户走过 CAS 调查的每一个关键步骤，成功向机构证明孩子在家中是安全的。孩子留在父母身边，家庭完整保全。
-</p>
-<p><strong>如果 CAS 联系了你，第一步是在下次与 CAS 会面前立即联系律师。你对 CAS 说的任何话都可能用于后续程序。</strong></p>
-
-<h2>紧急动议</h2>
-<p>
-  当孩子面临即时风险时——对方未经同意带走孩子、计划携子出国、拒绝探视——安省法院可以在数小时内采取行动。何律师处理过多起紧急动议案件，包括申请护照扣押令、禁止出境令及即时返还令。
-</p>
-<p><strong>如果你的孩子已经被带走或即将被带走，立即联系我们。时间至关重要。</strong></p>
-
-<h2>跨国监护权</h2>
-<p>
-  未经另一方书面同意或法院批准，擅自携子离开加拿大是违法行为，可能构成国际儿童劫持。中国与加拿大均非对方《海牙公约》体系的对等执行方，这使得子女被带至中国后的追回极为困难。何律师有处理中加跨国监护争议的经验，能在情况发生前采取预防性法律行动。
-</p>
-
-<h2>常见问题</h2>
-<p><strong>Q：母亲在安省会自动得到监护权吗？</strong><br/>
-不会。安省法律适用性别中立的最佳利益标准，父亲与母亲在监护权诉讼中享有完全平等的法律地位。</p>
-
-<p><strong>Q：孩子可以自己选择跟谁住吗？</strong><br/>
-没有固定年龄规定。法院根据孩子的成熟度考量其意见，通常到青少年中期，孩子的强烈意愿会有显著影响，但不是决定性因素。</p>
-
-<p><strong>Q：对方不让我见孩子，我能申请探视令吗？</strong><br/>
-可以，而且应该尽快行动。拒绝执行法院命令的探视安排，在法律上被视为违反子女最佳利益原则，可申请临时探视令，并追讨诉讼费。</p>
-
-<p><strong>Q：我想带孩子搬去另一个省或回中国，需要什么程序？</strong><br/>
-需要对方书面同意或法院批准。计划迁移的一方须提前60天书面通知对方，并证明迁移符合孩子的最佳利益。未经同意擅自迁移可能构成违法。</p>
-
-<hr/>
-<p>
-  <strong>何淼律师</strong> · <a href="https://www.hlawfirmontario.com" target="_blank" rel="noopener">H. LAW FIRM 恒. 律师事务所</a><br/>
-  Ontario &amp; China 双重律师执照 · 15+ 年执业 · 每月出庭 20+ 小时<br/>
-  📞 <a href="tel:6479306688">647-930-6688</a> · 📧 <a href="mailto:miao@miaohelaw.ca">miao@miaohelaw.ca</a>
-</p>
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-{"@type": "Question", "name": "母亲在安省会自动得到监护权吗？", "acceptedAnswer": {"@type": "Answer", "text": "不会。安省法律适用性别中立的最佳利益标准，父亲与母亲在监护权诉讼中享有完全平等的法律地位。"}},
-{"@type": "Question", "name": "安省是否默认50/50育儿时间？", "acceptedAnswer": {"@type": "Answer", "text": "不是。没有默认标准。法院根据每个孩子和家庭的具体情况决定，以子女最佳利益为唯一标准。"}},
-{"@type": "Question", "name": "对方不让我见孩子，我能申请探视令吗？", "acceptedAnswer": {"@type": "Answer", "text": "可以，而且应该尽快行动。拒绝执行法院命令的探视安排在法律上被视为违反子女最佳利益原则，可申请临时探视令。"}}
+<!doctype html>
+<html lang="zh">
+<head>
+  <BaseHead
+    title="子女监护权律师 | Ontario 华人家庭法 | 主要照顾者 · CAS · 探视权 | 何淼律师"
+    description="子女监护权争议？何淼律师凭借实战经验，提前部署策略、争取主要监护权、处理CAS介入、即便有criminal charge也成功争取到探视时间。普通话全程服务。647-930-6688。"
+  />
+  <meta name="keywords" content="Ontario子女监护权律师,华人子女监护,多伦多监护权律师,主要照顾者认定,parenting time律师,CAS介入律师,restraining order探视权,child custody Ontario,普通话监护权律师,儿童抚养费,共同监护,primary caregiver" />
+  <meta property="og:title" content="子女监护权律师 | 主要照顾者 · CAS · 探视权 | 何淼律师" />
+  <meta property="og:description" content="何淼律师凭借实战经验为华人客户争取子女监护权。提前部署、主要照顾者认定、CAS介入处理、criminal charge后争取探视。647-930-6688。" />
+  <meta property="og:url" content="https://www.miaohelaw.ca/family-law/child-custody" />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://www.miaohelaw.ca/family-law/child-custody" />
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "@id": "https://www.miaohelaw.ca/family-law/child-custody#service",
+      "name": "何淼律师 — Ontario 子女监护权服务",
+      "url": "https://www.miaohelaw.ca/family-law/child-custody",
+      "telephone": "+1-647-930-6688",
+      "email": "miao@miaohelaw.ca",
+      "provider": {
+        "@type": "Person",
+        "name": "Miao He",
+        "alternateName": ["何淼", "Mia He"],
+        "jobTitle": "Family Law Lawyer",
+        "knowsLanguage": ["zh-Hans", "en"],
+        "hasCredential": [
+          {"@type": "EducationalOccupationalCredential", "credentialCategory": "Law Society of Ontario — Member #83315K"},
+          {"@type": "EducationalOccupationalCredential", "credentialCategory": "China Bar Association — Licensed"}
+        ]
+      },
+      "serviceType": ["Child Custody", "Parenting Time", "Primary Caregiver", "CAS Response", "Restraining Order Parenting", "Child Support"],
+      "areaServed": {"@type": "Province", "name": "Ontario"},
+      "inLanguage": ["zh-Hans", "en"]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "首页", "item": "https://www.miaohelaw.ca/"},
+        {"@type": "ListItem", "position": 2, "name": "家庭法服务", "item": "https://www.miaohelaw.ca/family-law/"},
+        {"@type": "ListItem", "position": 3, "name": "子女监护权", "item": "https://www.miaohelaw.ca/family-law/child-custody"}
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "分居后对方主张平分育儿时间，我该怎么办？",
+          "acceptedAnswer": {"@type": "Answer", "text": "对方主张平分育儿时间（equal parenting time）往往是为了逃避支付儿童抚养费。关键在于证明谁是孩子的主要照顾者（primary caregiver）。何淼律师曾在客户尚未分居时就提前部署证据收集策略，第一次庭审即成功确立主要照顾者地位，对方的平分主张被直接打破。"}
+        },
+        {
+          "@type": "Question",
+          "name": "有 criminal charge 或 restraining order，还能争取探视权吗？",
+          "acceptedAnswer": {"@type": "Answer", "text": "可以。Criminal charge 或 restraining order 不等于丧失亲权。何淼律师曾代理有 criminal charge 和 restraining order 的客户，在第一次 case conference 就争取到了 parenting time，最终获得平等育儿时间（equal parenting time）。有刑事记录不代表你是不合格的父母。"}
+        },
+        {
+          "@type": "Question",
+          "name": "CAS 介入了，孩子会被带走吗？",
+          "acceptedAnswer": {"@type": "Answer", "text": "CAS 介入不等于孩子一定会被带走。关键是如何配合调查、提供正确的信息。何淼律师曾协助客户应对 CAS 调查，按照律师的建议配合处理后，CAS 认定客户是合格的母亲，孩子继续留在客户身边。"}
+        },
+        {
+          "@type": "Question",
+          "name": "为什么要在分居前就咨询律师？",
+          "acceptedAnswer": {"@type": "Answer", "text": "提前咨询可以争取到巨大优势。在分居前建立清晰的主要照顾者记录，在分居后的庭审中将成为有力证据。何淼律师会在咨询时就告知客户需要做什么准备，确保在正式分居和开庭时处于最有利的位置。"}
+        },
+        {
+          "@type": "Question",
+          "name": "对方不肯给我探视时间，我能立即采取行动吗？",
+          "acceptedAnswer": {"@type": "Answer", "text": "可以。如果对方无正当理由拒绝给予探视时间，可以申请紧急 motion 或在 case conference 上要求法院介入。何淼律师曾在第一次 conference 就为客户争取到探视时间，不需要等到漫长诉讼结束。"}
+        }
+      ]
+    }
   ]
-}
-</script>
+  </script>
+</head>
+<body>
+  <Header />
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="/">首页</a> › <a href="/family-law/">家庭法服务</a> › 子女监护权
+        </div>
+        <h1>子女监护权</h1>
+        <p class="hero-sub">提前部署 · 主要照顾者认定 · CAS 应对 · 探视权争取 · 普通话全程服务</p>
+      </div>
+    </section>
 
-</Layout>
+    <section class="content-section">
+      <div class="container content-grid">
+        <div class="main-content">
+
+          <div class="definition-box">
+            <p><strong>子女监护权（Child Custody & Parenting Time）</strong>是离婚或分居中最牵动人心的议题。Ontario 家庭法以<strong>子女最大利益（Best Interests of the Child）</strong>为唯一标准，与父母的过错无关。谁是主要照顾者、谁与孩子关系更密切、谁能提供更稳定的环境——这些才是法院真正考量的因素。经验丰富的律师，往往在庭审开始前就已经赢得了关键优势。</p>
+          </div>
+
+          <h2>提前咨询：分居前的布局决定庭审结果</h2>
+          <p>很多人以为，离婚和监护权争议是分居之后才需要律师的事。这是一个代价高昂的误解。</p>
+
+          <h3>实战案例一：分居前提前部署，第一次庭审拿下主要照顾者</h3>
+          <p>一位客户在关系尚未破裂、双方还住在一起时找到我咨询。他预感到分居即将发生，想了解自己的权利。我在咨询中做的第一件事，就是告诉他从现在开始需要记录什么、保存什么。</p>
+          <p>对方律师后来的策略是：主张双方分居前住在一起，分居后还没有建立明确的 status quo，因此应该平分育儿时间（equal parenting time）。这个说法听起来有道理，但是错的。住在一起并不代表两个人平等照顾孩子——在大多数家庭里，日常照顾的责任落在一方肩上，而这恰恰是认定主要照顾者的关键。</p>
+          <p>由于我们提前做好了记录和准备，<strong>第一次庭审就成功确立了我的客户是孩子的主要照顾者</strong>。这个结果直接决定了对方必须支付儿童抚养费——他们主张共同平分育儿时间，根本目的是逃避抚养费，我们第一回合就打破了这个计划。</p>
+          <p>这个案件最重要的教训是：<strong>提前咨询律师，不是为了打官司，而是为了在对的时候做对的准备。</strong></p>
+
+          <h2>有 Criminal Charge 或 Restraining Order，不代表失去亲权</h2>
+          <p>这是很多华人客户最害怕的情况——自己有刑事指控或限制令，以为孩子从此与自己无缘。这个认知是错的，而且放弃争取是最大的错误。</p>
+
+          <h3>实战案例二：从零探视到平等育儿时间</h3>
+          <p>另一位客户同时面对 criminal charge 和 restraining order，对方以此为由完全拒绝给予任何探视时间。很多人在这种情况下会认为自己没有胜算，选择放弃。</p>
+          <p>我没有放弃，客户也没有。我为他制定了清晰的策略：<strong>在第一次 case conference 就直接要求法院介入，争取 parenting time</strong>。法院的立场很清楚——criminal charge 和 restraining order 是关于人身安全的命令，不是关于亲权的判决。一个父亲或母亲有刑事记录，不自动等于他们是不合格的父母。</p>
+          <p>结果：<strong>第一次 conference 就争取到了探视时间，此后逐步增加，最终获得了平等育儿时间（equal parenting time）</strong>。对方用来阻止探视的武器，在法律面前并没有他们想象的那么有力。</p>
+
+          <h2>CAS 介入：配合是关键，恐慌是最大的敌人</h2>
+          <p>Children's Aid Society（CAS）介入，是华人家庭最恐惧的情况之一。很多客户一听到 CAS 就慌了，不知道该说什么、不该说什么，反而让情况更复杂。</p>
+
+          <h3>实战案例三：CAS 调查，客户被认定为合格母亲</h3>
+          <p>一位母亲在 CAS 介入后来找我。她非常紧张，担心孩子会被带走。我告诉她：<strong>CAS 的职责是保护儿童，不是拆散家庭。只要你按照正确的方式配合调查，结果往往是可以控制的。</strong></p>
+          <p>我详细告知她在 CAS 调查过程中需要做什么、如何回应问题、哪些信息要主动提供、哪些细节需要注意。客户按照我的建议配合了整个调查过程。最终结果：<strong>CAS 认定她是合格的母亲，没有任何问题，孩子继续留在她身边</strong>。</p>
+          <p>CAS 介入不是终点，是一个需要冷静应对的程序。有律师在旁指引，和单独面对，结果可以完全不同。</p>
+
+          <h2>子女监护权的核心法律框架</h2>
+
+          <h3>主要照顾者（Primary Caregiver）认定</h3>
+          <p>Ontario 家庭法院在确定育儿安排时，最重要的考量之一是谁在分居前承担了主要的日常照顾责任。这包括：接送上学、参加医疗预约、准备三餐、处理学校事务、安排课外活动等。有完整记录的一方，在庭审中占据巨大优势。</p>
+
+          <h3>儿童抚养费（Child Support）与育儿时间的关系</h3>
+          <p>在 Ontario，儿童抚养费的计算与育儿时间直接挂钩。当一方拥有主要育儿时间（超过60%），另一方须按照 Federal Child Support Guidelines 支付抚养费。这也是为什么很多案件中，争取平分育儿时间的真正动机，是为了规避抚养费义务。识别这一动机，并在庭审中有效回应，是经验律师的核心价值。</p>
+
+          <h3>子女最大利益（Best Interests of the Child）</h3>
+          <p>Ontario《儿童法》列出了法院评估子女最大利益的多项因素，包括：孩子与每位家长的情感联系、每位家长满足孩子需求的能力、孩子的稳定性和连续性、家庭暴力历史等。了解法官如何权衡这些因素，是制定有效策略的基础。</p>
+
+          <div class="qa-block">
+            <h3>Q：对方说住在一起时两人平等照顾孩子，我怎么证明我才是主要照顾者？</h3>
+            <p>A：证据是关键。学校记录、医疗预约记录、日常照顾的文字记录、证人证词——这些都可以证明谁承担了主要照顾责任。最重要的是提前开始记录，而不是等到分居后才想起来。何淼律师会在咨询时就告知你需要准备什么。电话：647-930-6688。</p>
+          </div>
+
+          <div class="qa-block">
+            <h3>Q：我有 criminal charge，律师说我争取不到探视权，真的吗？</h3>
+            <p>A：不一定。Criminal charge 影响的是刑事程序，不自动剥夺亲权。何淼律师有成功代理有刑事记录客户争取探视时间的实战经验。建议尽快咨询，了解你的具体情况和可行策略。</p>
+          </div>
+
+          <div class="cta-box">
+            <h3>预约子女监护权咨询</h3>
+            <p>初次咨询 30 分钟，$220 + HST。越早咨询，策略空间越大。普通话全程服务。</p>
+            <a href="/contact" class="btn-primary">立即预约</a>
+            <a href="tel:6479306688" class="btn-secondary">647-930-6688</a>
+          </div>
+        </div>
+
+        <aside class="sidebar">
+          <div class="sidebar-card">
+            <h3>联系何淼律师</h3>
+            <p>📞 <a href="tel:6479306688">647-930-6688</a></p>
+            <p>📧 <a href="mailto:miao@miaohelaw.ca">miao@miaohelaw.ca</a></p>
+          </div>
+          <div class="sidebar-card">
+            <h3>子女监护权服务</h3>
+            <ul>
+              <li>主要照顾者认定</li>
+              <li>育儿时间安排</li>
+              <li>儿童抚养费</li>
+              <li>紧急监护令</li>
+              <li>CAS 介入应对</li>
+              <li>Restraining Order 后探视</li>
+              <li>跨境子女带走风险</li>
+              <li>祖父母探视权</li>
+            </ul>
+          </div>
+          <div class="sidebar-card">
+            <h3>相关服务</h3>
+            <ul>
+              <li><a href="/family-law/divorce-litigation">离婚诉讼</a></li>
+              <li><a href="/family-law/support">配偶及子女抚养费</a></li>
+              <li><a href="/family-law/domestic-contracts">分居协议</a></li>
+              <li><a href="/family-law/cross-border-assets">跨境资产</a></li>
+            </ul>
+          </div>
+          <div class="sidebar-card">
+            <h3>服务语言</h3>
+            <p>🇨🇳 普通话 / 国语</p>
+            <p>🇨🇦 英文（English）</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</body>
+</html>
+<style>
+  .page-hero{background:linear-gradient(135deg,#2C1810 0%,#4A2C1A 100%);color:white;padding:3rem 0 2rem}
+  .page-hero h1{font-size:2rem;margin:0.5rem 0}
+  .hero-sub{color:#D4A853;margin:0}
+  .breadcrumb{font-size:0.85rem;opacity:0.7;margin-bottom:0.5rem}
+  .breadcrumb a{color:white;text-decoration:none}
+  .container{max-width:1100px;margin:0 auto;padding:0 1.5rem}
+  .content-section{padding:3rem 0}
+  .content-grid{display:grid;grid-template-columns:1fr 300px;gap:3rem}
+  .definition-box{background:#FDF6EC;border-left:4px solid #9A8060;padding:1.2rem 1.5rem;margin-bottom:2rem;border-radius:0 8px 8px 0}
+  .qa-block{background:#f8f8f8;border-radius:8px;padding:1.2rem 1.5rem;margin:1.5rem 0}
+  .qa-block h3{color:#2C1810;margin-top:0;font-size:1rem}
+  .cta-box{background:linear-gradient(135deg,#2C1810,#4A2C1A);color:white;padding:2rem;border-radius:12px;text-align:center;margin-top:2rem}
+  .cta-box h3{margin-top:0}
+  .btn-primary{display:inline-block;background:#D4A853;color:#2C1810;padding:0.75rem 1.5rem;border-radius:6px;text-decoration:none;font-weight:700;margin:0.5rem}
+  .btn-secondary{display:inline-block;background:transparent;color:white;border:2px solid white;padding:0.75rem 1.5rem;border-radius:6px;text-decoration:none;font-weight:700;margin:0.5rem}
+  .sidebar{display:flex;flex-direction:column;gap:1.5rem}
+  .sidebar-card{background:white;border:1px solid #e8e0d5;border-radius:10px;padding:1.2rem}
+  .sidebar-card h3{color:#2C1810;font-size:0.95rem;margin-top:0;border-bottom:1px solid #e8e0d5;padding-bottom:0.5rem;margin-bottom:0.75rem}
+  .sidebar-card ul{list-style:none;padding:0;margin:0}
+  .sidebar-card li{padding:0.3rem 0;border-bottom:1px solid #f0ebe3;font-size:0.9rem}
+  .sidebar-card a{color:#9A8060;text-decoration:none}
+  h2{color:#2C1810;margin-top:2rem}
+  h3{color:#4A2C1A}
+  @media(max-width:768px){.content-grid{grid-template-columns:1fr}.page-hero h1{font-size:1.5rem}}
+</style>
