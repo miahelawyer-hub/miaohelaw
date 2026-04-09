@@ -90,7 +90,48 @@ const posts = (await getCollection('blog')).sort(
 			]
 		}
 		</script>
-	</head>
+	
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "何淼律师是谁？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Miao He（何淼）律师持Ontario及中国双重执照，专注华人家庭法逾15年，服务大多伦多地区华人、中国新移民及跨国家庭。擅长离婚诉讼、跨境资产、子女监护、婚前协议。电话：647-930-6688。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "何淼律师提供什么语言服务？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "何淼律师提供普通话（国语）及英文双语服务，确保中文客户能够清晰理解复杂的Ontario家庭法程序。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "首次咨询需要准备什么？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "建议准备：婚姻证书（如有）、双方收入资料、财产及负债清单、子女相关文件。初次咨询30分钟，费用$220+HST，帮助您了解权利与选项。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "何淼律师的事务所在哪里？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "H. LAW FIRM 恒. 律师事务所位于Markham（万锦），服务大多伦多地区（GTA）全区及Ontario全省。电话：647-930-6688。"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
 	<body>
 		<Header />
 		<main>

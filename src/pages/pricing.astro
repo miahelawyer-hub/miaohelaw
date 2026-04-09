@@ -72,6 +72,49 @@ import Footer from '../components/Footer.astro';
     }
   }
   </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "首页", "item": "https://www.miaohelaw.ca/"},
+      {"@type": "ListItem", "position": 2, "name": "收费标准", "item": "https://www.miaohelaw.ca/pricing"}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "何淼律师初次咨询收费是多少？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "初次咨询30分钟收费$220+HST，帮助您了解自身法律权利、案件走向及费用范围，没有委托义务。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "离婚案件的总费用大概是多少？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ontario离婚案件费用因复杂程度差异较大。无争议离婚通常$3,000至$8,000；有争议的财产或监护纠纷可能达$15,000至$50,000以上。何淼律师提供透明收费，咨询后提供书面预估。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "何淼律师是否接受法律援助？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "何淼律师主要以自费方式收费，不提供法律援助服务。如预算有限，欢迎先预约咨询，共同评估最经济有效的处理方案。"
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <Header />
