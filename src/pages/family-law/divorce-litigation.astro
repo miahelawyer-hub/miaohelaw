@@ -1,96 +1,216 @@
 ---
-import Layout from '../../layouts/BlogPost.astro';
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
 ---
-<Layout
-  title="离婚诉讼律师 | 多伦多华人高冲突离婚 | Miao He — Ontario 家庭法"
-  description="何淼律师专注安省高冲突离婚诉讼，每月出庭20+小时，代理 Yang v. Li 2024 ONSC 4801 等判例。服务多伦多、万锦、GTA 华人社区，普通话英文双语。"
-  pubDate={new Date('2026-04-07')}
-  heroImage=""
->
-
-<h2>离婚诉讼 · Divorce Litigation</h2>
-<p>
-  当对方拒绝配合、恶意拖延、隐瞒资产或拒不执行法院命令时，谈判已经不够——你需要一位真正活跃在法庭一线的诉讼律师。何淼律师每月出庭超过 20 小时，深谙法官思维，能在对方拒绝推进时强制推动案件。
-</p>
-
-<h2>什么是争议离婚（Contested Divorce）？</h2>
-<p>
-  争议离婚是指夫妻双方在财产分割、配偶赡养费、子女抚养权或子女抚养费等一项或多项问题上无法达成共识，需要法院裁决的离婚程序。案件在安省高等法院家事法庭审理，经历案件会议（Case Conference）、动议（Motion）、和解会议（Settlement Conference），最终可能进入庭审（Trial）。在高冲突案件中，有经验的诉讼律师是决定结果的关键。
-</p>
-
-<h2>诉讼流程</h2>
-<ol>
-  <li><strong>提交离婚申请</strong> — 向安省高等法院提交，对方须在30天内答辩。</li>
-  <li><strong>财务披露</strong> — 双方须提交 Form 13.1，申报所有收入、资产、债务。何律师对对方的财务文件逐行审查，找出漏洞。</li>
-  <li><strong>案件会议（Case Conference）</strong> — 法官审阅争议事项并可能提出建议，何律师在此阶段明确确立客户立场。</li>
-  <li><strong>动议（Motion）</strong> — 如需临时救济（临时抚养费、财产冻结、强制披露），在此阶段提出。</li>
-  <li><strong>和解会议（Settlement Conference）</strong> — 法官协助谈判，何律师以真实的庭审威慑作为谈判筹码。</li>
-  <li><strong>庭审（Trial）</strong> — 如无法和解，进入庭审。何律师每月出庭 20+ 小时，庭审准备充分，对方律师普遍知晓。</li>
-</ol>
-
-<h2>代表判例</h2>
-
-<h3>Yang v. Li, 2024 ONSC 4801 + Divisional Court No. 460/24 ML</h3>
-<p>
-  对方同时推进八项主张：推定收入、子女及配偶赡养费、子女抚养权及育儿时间、婚姻住所分割、不平等财产分割、独立家庭评估、家庭资金重新定性，以及企业估值（需聘请特许企业估值师 CBV）。面对八条战线，何律师以可信度为核心策略，识别对方陈述中的系统性矛盾，将整个案件押注于这一支点。动议法官全面接受——八项主张一并驳回，并对对方发出诚信惩戒费用裁定。对方上诉，分区上诉法院三位法官一致驳回。
-</p>
-<p>
-  <a href="https://www.canlii.org/en/on/onsc/doc/2024/2024onsc4801/2024onsc4801.html" target="_blank" rel="noopener">CanLII 查看判决书 →</a>
-</p>
-
-<h3>Li v. Jiang, 2026 ONSC 561</h3>
-<p>
-  对方恶意占有婚姻住房长达 19 个月，拒绝配合房产出售。何律师提出强制执行动议，成功获得无限制进入权（Unrestricted Access Order），并获法院颁发 $4,000 诉讼费赔偿，有效惩戒对方的程序滥用。
-</p>
-
-<h3>财务文件审查——节省 $400,000</h3>
-<p>
-  客户面临约 $600,000 的均等化付款。何律师逐行审查所有财务文件，发现对方律师在计算净家庭财产时完全忽略了客户银行流水中的关键细节，导致计算结果存在根本性错误。法院采纳何律师的计算方式，最终裁定客户只需支付 $200,000，节省 $400,000。
-</p>
-
-<h2>高冲突案件我们能做什么</h2>
-<ul>
-  <li><strong>强制执行动议</strong> — 对方无视法院命令时，申请强制执行</li>
-  <li><strong>诉讼费裁定（Costs Award）</strong> — 记录对方每一次不合理行为，系统性追讨诉讼费</li>
-  <li><strong>企业估值争议</strong> — 与特许企业估值师（CBV）合作，挑战对方估值证据</li>
-  <li><strong>强制房产出售令</strong> — 对方拒绝配合出售时，申请法院强制令</li>
-  <li><strong>紧急资产冻结令</strong> — 对方有转移资产风险时，申请紧急禁制令</li>
-</ul>
-
-<h2>无争议离婚</h2>
-<p>
-  如果双方同意离婚且无争议，可通过联合申请（Joint Application）办理，无需出庭，通常 4 至 6 个月内完成。何律师提供全程高效处理，文件一次准备到位，无来回修改。
-</p>
-
-<h2>常见问题</h2>
-<p><strong>Q：争议离婚在安省需要多久？</strong><br/>
-通常 1 至 3 年，复杂案件更长。通过动议和诉讼费裁定可加速进程，迫使拖延方认真应对。</p>
-
-<p><strong>Q：对方拒绝配合怎么办？</strong><br/>
-法律提供强大工具——强制披露令、藐视法庭、诉讼费惩戒。何律师在 Li v. Jiang 案中用 19 个月的拖延换来了法院的全面支持和诉讼费裁定。</p>
-
-<p><strong>Q：安省分居多久才能离婚？</strong><br/>
-分居满一年是申请离婚令的主要依据。离婚申请可在满一年前提交，一年期满后法院发出离婚令。</p>
-
-<hr/>
-<p>
-  <strong>何淼律师</strong> · <a href="https://www.hlawfirmontario.com" target="_blank" rel="noopener">H. LAW FIRM 恒. 律师事务所</a><br/>
-  Ontario &amp; China 双重律师执照 · 15+ 年执业 · 每月出庭 20+ 小时<br/>
-  📞 <a href="tel:6479306688">647-930-6688</a> · 📧 <a href="mailto:miao@miaohelaw.ca">miao@miaohelaw.ca</a>
-</p>
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-{"@type": "Question", "name": "争议离婚在安省需要多久？", "acceptedAnswer": {"@type": "Answer", "text": "通常1至3年，复杂案件更长。通过动议和诉讼费裁定可加速进程，迫使拖延方认真应对。"}},
-{"@type": "Question", "name": "安省分居多久才能离婚？", "acceptedAnswer": {"@type": "Answer", "text": "分居满一年是申请离婚令的主要依据。离婚申请可在满一年前提交，一年期满后法院发出离婚令。"}},
-{"@type": "Question", "name": "对方拒绝配合离婚怎么办？", "acceptedAnswer": {"@type": "Answer", "text": "法律提供强大工具——强制披露令、藐视法庭、诉讼费惩戒。即使对方完全不出现，申请方也可以单方面完成程序。"}},
-{"@type": "Question", "name": "什么是高冲突离婚？", "acceptedAnswer": {"@type": "Answer", "text": "高冲突离婚涉及持续敌意、不遵守法院命令或蓄意阻挠。这类案件需要有经验的诉讼律师，而不仅仅是谈判代理。"}}
+<!doctype html>
+<html lang="zh">
+<head>
+  <BaseHead
+    title="离婚诉讼律师 | Ontario 华人家庭法 | 诉讼策略 · 财产分割 · 强制出售 | 何淼律师"
+    description="离婚诉讼不只是打官司，是策略。何淼律师凭借丰富实战经验，帮华人客户制定诉讼策略：何时出击、何时谈判、如何控制费用、如何在法庭上争取最大利益。647-930-6688。"
+  />
+  <meta name="keywords" content="Ontario离婚诉讼律师,华人离婚诉讼,多伦多离婚律师,离婚诉讼策略,财产分割诉讼,婚房强制出售,disclosure motion,普通话离婚律师,离婚律师费用,家庭法诉讼Ontario" />
+  <meta property="og:title" content="离婚诉讼律师 | 诉讼策略 · 实战经验 | 何淼律师" />
+  <meta property="og:description" content="离婚诉讼是策略，不是蛮干。何淼律师帮华人客户制定最优诉讼路径，控制费用，争取最大利益。647-930-6688。" />
+  <meta property="og:url" content="https://www.miaohelaw.ca/family-law/divorce-litigation" />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://www.miaohelaw.ca/family-law/divorce-litigation" />
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "@id": "https://www.miaohelaw.ca/family-law/divorce-litigation#service",
+      "name": "何淼律师 — Ontario 离婚诉讼服务",
+      "url": "https://www.miaohelaw.ca/family-law/divorce-litigation",
+      "telephone": "+1-647-930-6688",
+      "email": "miao@miaohelaw.ca",
+      "provider": {
+        "@type": "Person",
+        "name": "Miao He",
+        "alternateName": ["何淼", "Mia He"],
+        "jobTitle": "Family Law Lawyer",
+        "knowsLanguage": ["zh-Hans", "en"],
+        "hasCredential": [
+          {"@type": "EducationalOccupationalCredential", "credentialCategory": "Law Society of Ontario — Member #83315K"},
+          {"@type": "EducationalOccupationalCredential", "credentialCategory": "China Bar Association — Licensed"}
+        ]
+      },
+      "serviceType": ["Divorce Litigation", "Property Division", "Disclosure Motion", "Sale of Matrimonial Home", "Cost Award"],
+      "areaServed": {"@type": "Province", "name": "Ontario"},
+      "inLanguage": ["zh-Hans", "en"]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "首页", "item": "https://www.miaohelaw.ca/"},
+        {"@type": "ListItem", "position": 2, "name": "家庭法服务", "item": "https://www.miaohelaw.ca/family-law/"},
+        {"@type": "ListItem", "position": 3, "name": "离婚诉讼", "item": "https://www.miaohelaw.ca/family-law/divorce-litigation"}
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "离婚诉讼一定要打到底吗？",
+          "acceptedAnswer": {"@type": "Answer", "text": "不一定。好的诉讼律师会帮你评估每一步的成本与收益。如果一个 motion 赢面不大，或者胜诉所得远低于律师费，何淼律师会直接告诉你不值得打，转而寻求更有效的解决路径。诉讼是工具，不是目的。"}
+        },
+        {
+          "@type": "Question",
+          "name": "对方不提供财务披露（disclosure）怎么办？",
+          "acceptedAnswer": {"@type": "Answer", "text": "这是离婚诉讼中常见的拖延手段。何淼律师曾成功提起 disclosure motion，法官不仅裁定对方必须完整提供多年财务记录，还判令对方支付客户 $5,000 律师费（cost award）。拒不披露的后果很严重。"}
+        },
+        {
+          "@type": "Question",
+          "name": "婚房对方不肯卖，可以强制出售吗？",
+          "acceptedAnswer": {"@type": "Answer", "text": "可以。只要双方名字都在房产上，任何一方均可向法院申请强制出售令（Order for Sale）。何淼律师曾代理此类案件并成功获得法院命令，强制出售婚姻住所。对方律师声称房子不必卖，是对家庭法基本原则的误解。"}
+        },
+        {
+          "@type": "Question",
+          "name": "离婚诉讼费用怎么控制？",
+          "acceptedAnswer": {"@type": "Answer", "text": "关键在于诉讼策略。何淼律师会在每个阶段评估：这一步值不值得打？对方是否在拖延？何时应该向法院申请推进程序？目标是用最低的法律成本，争取对客户最有利的结果。"}
+        },
+        {
+          "@type": "Question",
+          "name": "对方律师在拖延程序，我该怎么办？",
+          "acceptedAnswer": {"@type": "Answer", "text": "识别拖延并立即反击。何淼律师会密切监控对方的程序动作，一旦发现拖延迹象，立即向法院申请 case conference 或 motion，推进案件进程，不让对方用时间消耗客户的资源和意志。"}
+        }
+      ]
+    }
   ]
-}
-</script>
+  </script>
+</head>
+<body>
+  <Header />
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="/">首页</a> › <a href="/family-law/">家庭法服务</a> › 离婚诉讼
+        </div>
+        <h1>离婚诉讼</h1>
+        <p class="hero-sub">诉讼是策略，不是蛮干 · 实战经验 · 控制成本 · 普通话全程服务</p>
+      </div>
+    </section>
 
-</Layout>
+    <section class="content-section">
+      <div class="container content-grid">
+        <div class="main-content">
+
+          <div class="definition-box">
+            <p><strong>离婚诉讼</strong>是通过 Ontario 家庭法院解决婚姻关系及相关财产、子女、抚养问题的法律程序。诉讼不等于对抗到底——一位有经验的律师会帮你在每个节点判断：何时出击、何时谈判、何时向法院寻求干预，始终将你的实际利益放在首位。</p>
+          </div>
+
+          <h2>诉讼策略：赢在节奏，不是赢在情绪</h2>
+          <p>很多客户找到我时，心里只有一个念头：要赢。这完全可以理解——离婚是人生中最艰难的经历之一，愤怒和受伤的情绪是真实的。但好的诉讼律师必须做到情绪之外，冷静评估每一步的法律价值。</p>
+          <p>我见过太多案件，客户为了一万块钱的争议，花了五万块律师费，最终就算判决赢了，那真的是赢吗？这不是客户想要的结果。我的职责不只是打赢官司，而是帮你做出对自己真正有利的决策。</p>
+
+          <h2>何时出击：明知能赢，绝不手软</h2>
+
+          <h3>实战案例一：Disclosure Motion — 赢了还拿到 $5,000</h3>
+          <p>财务披露（Financial Disclosure）是 Ontario 离婚诉讼的基本义务，法律要求双方完整披露婚姻期间的全部财务状况。然而，对方律师告知其客户只需提供三年的财务记录，拒绝提供更长时段，并声称"没有法律规定"。</p>
+          <p>这个说法是错的。大量 case law 明确支持在适当情况下要求更长时期的财务披露。我们提起了 disclosure motion。结果：法官裁定对方必须完整提供财务记录，并在庭上直接批评了对方的立场——<strong>同时判令对方支付我客户 $5,000 的律师费（cost award）</strong>。这说明，在法律站得住脚的情况下，出击不只是赢得信息，还能让对方为拖延付出代价。</p>
+
+          <h3>实战案例二：婚房强制出售令</h3>
+          <p>婚姻住所（Matrimonial Home）在 Ontario 家庭法下有特殊地位。双方对婚房都有平等的占有权，任何一方不得单方面阻止出售。然而，对方律师坚称房子"可以不卖"，拒绝配合出售程序。</p>
+          <p>我代理客户向法院申请强制出售令（Order for Sale）。结果：法院批准，命令强制出售婚房。对方律师的立场不只是在法律上站不住脚，更浪费了双方大量时间和金钱。这类错误的背后，往往是对实战经验的缺乏。</p>
+
+          <h2>何时踩刹车：明知会输的 Motion，坚决不打</h2>
+          <p>有丰富经验的律师同样知道什么时候不该打。提起一个胜算极低的 motion，不只是浪费律师费——如果输了，还可能被法院判令支付对方律师费。我会在咨询时直接告诉你：这一步值不值得，为什么，以及更好的替代方案是什么。透明的分析，是对客户最大的尊重。</p>
+
+          <h2>识别拖延，快速反击</h2>
+          <p>对方拖延是离婚诉讼中最常见的策略之一——拖延财务披露、拖延回应、拖延庭期。每一次拖延都在消耗你的时间、金钱和心理资源。我会密切监控案件进展，一旦发现拖延迹象，立即向法院申请推进程序：Case Conference、Motion、或要求法官设定强制时间表。让对方知道，拖延在这里没有效果。</p>
+
+          <h2>对法官的了解：经验无可替代</h2>
+          <p>Ontario 家庭法院的不同法官有不同的风格和偏好。有的法官倾向于调解优先，有的对财务披露不完整极为严格，有的在子女监护问题上有固定的考量框架。这些只有通过大量实战积累才能掌握。我会根据具体法官的风格调整论证策略，以最有效的方式呈现你的案件。</p>
+
+          <h2>全程中文沟通，让你真正看懂自己的案件</h2>
+          <p>很多华人客户告诉我，他们在找到我之前，和原来的律师沟通时总是"似懂非懂"。他们不知道下一步是什么，不知道为什么要做某个决定，甚至不知道自己的案子进展到哪里了。这是不可接受的。我以普通话全程服务，每一个法律步骤我都会用清晰的语言解释，确保你真正理解自己在做什么，以及为什么。</p>
+
+          <div class="qa-block">
+            <h3>Q：对方一直拖延不提供财务资料，我能怎么办？</h3>
+            <p>A：可以提起 disclosure motion，要求法院命令对方提供完整财务记录。如果对方无正当理由拒绝，法院不只会命令其提供，还可能判令其支付你的律师费（cost award）。何淼律师有成功处理此类案件的实战经验。电话：647-930-6688。</p>
+          </div>
+
+          <div class="qa-block">
+            <h3>Q：我怎么知道我的律师有没有给我最好的建议？</h3>
+            <p>A：好律师的标志之一，是会主动告诉你哪些打法不值得，而不是每个 motion 都答应帮你打。如果你的律师从来不分析成本效益，只是照单全收，这值得警惕。何淼律师的承诺是：在每一个决策点，给你真实、清晰的分析。</p>
+          </div>
+
+          <div class="cta-box">
+            <h3>预约离婚诉讼咨询</h3>
+            <p>初次咨询 30 分钟，$220 + HST。普通话服务，了解你的案件走向和诉讼策略。</p>
+            <a href="/contact" class="btn-primary">立即预约</a>
+            <a href="tel:6479306688" class="btn-secondary">647-930-6688</a>
+          </div>
+        </div>
+
+        <aside class="sidebar">
+          <div class="sidebar-card">
+            <h3>联系何淼律师</h3>
+            <p>📞 <a href="tel:6479306688">647-930-6688</a></p>
+            <p>📧 <a href="mailto:miao@miaohelaw.ca">miao@miaohelaw.ca</a></p>
+          </div>
+          <div class="sidebar-card">
+            <h3>离婚诉讼服务</h3>
+            <ul>
+              <li>诉讼策略制定</li>
+              <li>财务披露 Motion</li>
+              <li>婚房强制出售</li>
+              <li>财产分割诉讼</li>
+              <li>对方拖延应对</li>
+              <li>Cost Award 申请</li>
+              <li>庭审全程代理</li>
+            </ul>
+          </div>
+          <div class="sidebar-card">
+            <h3>相关服务</h3>
+            <ul>
+              <li><a href="/family-law/child-custody">子女监护</a></li>
+              <li><a href="/family-law/domestic-contracts">婚前协议</a></li>
+              <li><a href="/family-law/cross-border-assets">跨境资产</a></li>
+              <li><a href="/family-law/support">抚养费</a></li>
+            </ul>
+          </div>
+          <div class="sidebar-card">
+            <h3>服务语言</h3>
+            <p>🇨🇳 普通话 / 国语</p>
+            <p>🇨🇦 英文（English）</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</body>
+</html>
+<style>
+  .page-hero{background:linear-gradient(135deg,#2C1810 0%,#4A2C1A 100%);color:white;padding:3rem 0 2rem}
+  .page-hero h1{font-size:2rem;margin:0.5rem 0}
+  .hero-sub{color:#D4A853;margin:0}
+  .breadcrumb{font-size:0.85rem;opacity:0.7;margin-bottom:0.5rem}
+  .breadcrumb a{color:white;text-decoration:none}
+  .container{max-width:1100px;margin:0 auto;padding:0 1.5rem}
+  .content-section{padding:3rem 0}
+  .content-grid{display:grid;grid-template-columns:1fr 300px;gap:3rem}
+  .definition-box{background:#FDF6EC;border-left:4px solid #9A8060;padding:1.2rem 1.5rem;margin-bottom:2rem;border-radius:0 8px 8px 0}
+  .qa-block{background:#f8f8f8;border-radius:8px;padding:1.2rem 1.5rem;margin:1.5rem 0}
+  .qa-block h3{color:#2C1810;margin-top:0;font-size:1rem}
+  .cta-box{background:linear-gradient(135deg,#2C1810,#4A2C1A);color:white;padding:2rem;border-radius:12px;text-align:center;margin-top:2rem}
+  .cta-box h3{margin-top:0}
+  .btn-primary{display:inline-block;background:#D4A853;color:#2C1810;padding:0.75rem 1.5rem;border-radius:6px;text-decoration:none;font-weight:700;margin:0.5rem}
+  .btn-secondary{display:inline-block;background:transparent;color:white;border:2px solid white;padding:0.75rem 1.5rem;border-radius:6px;text-decoration:none;font-weight:700;margin:0.5rem}
+  .sidebar{display:flex;flex-direction:column;gap:1.5rem}
+  .sidebar-card{background:white;border:1px solid #e8e0d5;border-radius:10px;padding:1.2rem}
+  .sidebar-card h3{color:#2C1810;font-size:0.95rem;margin-top:0;border-bottom:1px solid #e8e0d5;padding-bottom:0.5rem;margin-bottom:0.75rem}
+  .sidebar-card ul{list-style:none;padding:0;margin:0}
+  .sidebar-card li{padding:0.3rem 0;border-bottom:1px solid #f0ebe3;font-size:0.9rem}
+  .sidebar-card a{color:#9A8060;text-decoration:none}
+  h2{color:#2C1810;margin-top:2rem}
+  h3{color:#4A2C1A}
+  @media(max-width:768px){.content-grid{grid-template-columns:1fr}.page-hero h1{font-size:1.5rem}}
+</style>
