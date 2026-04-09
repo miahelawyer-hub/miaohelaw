@@ -50,7 +50,7 @@ const INITIAL_SHOW = 8;
             <span class="group-label">{group}</span>
             <div class="capsules">
               {faqItems.filter(item => item.group === group).map((item, i) => (
-                
+                <a
                   href={"/faq/" + item.slug}
                   class={`capsule${i >= INITIAL_SHOW ? ' hidden-capsule' : ''}`}
                   data-index={i}
