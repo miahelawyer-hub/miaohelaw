@@ -51,7 +51,7 @@ const INITIAL_SHOW = 8;
             <div class="capsules">
               {faqItems.filter(item => item.group === group).map((item, i) => (
                 
-                  href={`/faq/${item.slug}`}
+                  href={"/faq/" + item.slug}
                   class={`capsule${i >= INITIAL_SHOW ? ' hidden-capsule' : ''}`}
                   data-index={i}
                 >
