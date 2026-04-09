@@ -1,0 +1,126 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { faqItems, groups } from '../../data/faq';
+
+const INITIAL_SHOW = 8;
+---
+
+<!doctype html>
+<html lang="zh">
+<head>
+  <BaseHead
+    title="常见问题 | 多伦多华人离婚律师 何淼律师 FAQ"
+    description="何淼律师解答多伦多华人离婚最常见法律问题。新移民离婚、子女监护、婚前协议、跨境资产等，普通话全程服务，647-930-6688。"
+  />
+  <meta name="keywords" content="多伦多离婚常见问题,华人离婚FAQ,新移民离婚加拿大,子女监护权,婚前协议,跨境资产离婚,何淼律师,多伦多华人律师" />
+  <meta property="og:title" content="常见问题 | 多伦多华人离婚律师 何淼律师" />
+  <meta property="og:description" content="何淼律师解答多伦多华人离婚最常见法律问题。普通话服务，647-930-6688。" />
+  <meta property="og:url" content="https://www.miaohelaw.ca/faq" />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://www.miaohelaw.ca/faq" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "首页", "item": "https://www.miaohelaw.ca/"},
+      {"@type": "ListItem", "position": 2, "name": "常见问题", "item": "https://www.miaohelaw.ca/faq"}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <Header />
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="/">首页</a> › 常见问题</div>
+        <h1>常见问题</h1>
+        <p class="hero-sub">点击下方问题了解详情 · 普通话全程服务 · 647-930-6688</p>
+      </div>
+    </section>
+
+    <section class="faq-index-section">
+      <div class="container">
+
+        {groups.map(group => (
+          <div class="capsule-group">
+            <span class="group-label">{group}</span>
+            <div class="capsules">
+              {faqItems.filter(item => item.group === group).map((item, i) => (
+                
+                  href={`/faq/${item.slug}`}
+                  class={`capsule${i >= INITIAL_SHOW ? ' hidden-capsule' : ''}`}
+                  data-index={i}
+                >
+                  {item.capsule}
+                </a>
+              ))}
+            </div>
+          </div>
+        ))}
+
+        <div class="load-more-wrap" id="loadMoreWrap">
+          <button class="load-more-btn" id="loadMoreBtn">更多问题 ↓</button>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-info">
+            <h2>还有其他问题？</h2>
+            <p>何淼律师提供普通话全程服务，初次咨询30分钟 · $220+HST</p>
+          </div>
+          <div class="contact-actions">
+            <a href="tel:6479306688" class="btn-primary">📞 647-930-6688</a>
+            <a href="/contact" class="btn-secondary">预约咨询</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <Footer />
+</body>
+</html>
+
+<style>
+  .page-hero{background:linear-gradient(135deg,#2C1810 0%,#4A2C1A 100%);color:white;padding:3rem 0 2rem}
+  .page-hero h1{font-size:2rem;margin:0.5rem 0;color:#ffffff}
+  .hero-sub{color:#D4A853;margin:0}
+  .breadcrumb{font-size:0.85rem;opacity:0.7;margin-bottom:0.5rem}
+  .breadcrumb a{color:white;text-decoration:none}
+  .container{max-width:1000px;margin:0 auto;padding:0 1.5rem}
+  .faq-index-section{padding:3rem 0}
+  .capsule-group{margin-bottom:2rem}
+  .group-label{font-size:0.75rem;color:#9A8060;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;display:block;margin-bottom:0.75rem}
+  .capsules{display:flex;flex-wrap:wrap;gap:0.6rem}
+  .capsule{background:#f5f0eb;border:1.5px solid #e0d5c8;color:#4A2C1A;padding:0.5rem 1.1rem;border-radius:999px;font-size:0.9rem;text-decoration:none;transition:all 0.2s;white-space:nowrap}
+  .capsule:hover{background:#2C1810;border-color:#2C1810;color:#ffffff}
+  .hidden-capsule{display:none}
+  .load-more-wrap{text-align:center;margin:1.5rem 0 2.5rem}
+  .load-more-btn{background:transparent;border:1.5px solid #9A8060;color:#9A8060;padding:0.5rem 1.5rem;border-radius:999px;font-size:0.875rem;cursor:pointer;transition:all 0.2s;font-family:inherit}
+  .load-more-btn:hover{background:#9A8060;color:white}
+  .contact-card{background:linear-gradient(135deg,#2C1810,#4A2C1A);border-radius:12px;padding:2rem;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap}
+  .contact-info h2{color:#D4A853;margin:0 0 0.5rem;font-size:1.2rem}
+  .contact-info p{color:#ffffff;margin:0;font-size:0.95rem}
+  .contact-actions{display:flex;gap:0.75rem;flex-wrap:wrap}
+  .btn-primary{display:inline-block;background:#D4A853;color:#2C1810;padding:0.7rem 1.4rem;border-radius:6px;text-decoration:none;font-weight:700;font-size:0.9rem}
+  .btn-secondary{display:inline-block;background:transparent;color:white;border:2px solid white;padding:0.7rem 1.4rem;border-radius:6px;text-decoration:none;font-weight:700;font-size:0.9rem}
+  @media(max-width:768px){.page-hero h1{font-size:1.5rem}.contact-card{flex-direction:column}}
+</style>
+
+<script>
+  const btn = document.getElementById('loadMoreBtn');
+  const wrap = document.getElementById('loadMoreWrap');
+  const hidden = document.querySelectorAll('.hidden-capsule');
+
+  if (btn && hidden.length === 0) {
+    wrap.style.display = 'none';
+  }
+
+  btn?.addEventListener('click', () => {
+    hidden.forEach(el => el.classList.remove('hidden-capsule'));
+    wrap.style.display = 'none';
+  });
+</script>
