@@ -1,0 +1,125 @@
+---
+import { getCollection } from 'astro:content';
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  const tagMap = new Map();
+  for (const post of posts) {
+    const tags = post.data.tags || [];
+    for (const tag of tags) {
+      if (!tagMap.has(tag)) tagMap.set(tag, []);
+      tagMap.get(tag).push(post);
+    }
+  }
+  return Array.from(tagMap.entries()).map(([tag, posts]) => ({
+    params: { tag },
+    props: { posts, tag },
+  }));
+}
+
+const { tag, posts } = Astro.props;
+const sorted = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const canonical = `https://www.miaohelaw.ca/tag/${tag}/`;
+
+function formatDate(date) {
+  return new Date(date).toLocaleDateString('zh-CN', { year: 'numeric', month: 'long', day: 'numeric' });
+}
+
+const schema = JSON.stringify([
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": tag + " | 何淼律师 — Ontario家庭法律师",
+    "description": "何淼律师关于" + tag + "的专业文章与法律资讯，涵盖Ontario家庭法实务。",
+    "url": canonical,
+    "inLanguage": "zh-Hans"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"首页","item":"https://www.miaohelaw.ca/"},
+      {"@type":"ListItem","position":2,"name":"标签","item":"https://www.miaohelaw.ca/tag/"},
+      {"@type":"ListItem","position":3,"name":tag,"item":canonical}
+    ]
+  }
+]);
+---
+
+<!doctype html>
+<html lang="zh">
+<head>
+  <BaseHead
+    title={tag + " | 何淼律师 Miao He — Ontario家庭法律师"}
+    description={"何淼律师关于" + tag + "的专业文章与法律资讯。Ontario家庭法，普通话全程服务，647-930-6688。"}
+  />
+  <meta name="keywords" content={tag + ",何淼律师,Miao He,Ontario家庭法,华人离婚律师,LSO 83315K"} />
+  <meta property="og:title" content={tag + " | 何淼律师"} />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href={canonical} />
+  <script type="application/ld+json" set:html={schema}></script>
+  <style>
+    body{background:#faf8f5;margin:0}
+    .hero{background:linear-gradient(135deg,#2C1810,#4A2C1A);padding:2.5rem 1.5rem 2rem;text-align:center}
+    .hero h1{color:#fff;font-size:clamp(1.3rem,3vw,1.8rem);margin:0 0 0.5rem}
+    .hero p{color:#D4A853;margin:0;font-size:0.9rem}
+    .container{max-width:800px;margin:0 auto;padding:2rem 1.5rem}
+    .post-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:1px;background:#e8e0d5;border:1px solid #e8e0d5;border-radius:12px;overflow:hidden}
+    .post-item{background:white}
+    .post-link{display:flex;align-items:center;gap:1.25rem;padding:1.25rem 1.5rem;text-decoration:none;transition:background 0.15s}
+    .post-link:hover{background:#faf8f5}
+    .post-num{font-size:0.75rem;color:#D4A853;font-weight:700;min-width:1.5rem;text-align:right;flex-shrink:0}
+    .post-body{flex:1;min-width:0}
+    .post-title{color:#2C1810;font-size:0.98rem;font-weight:600;line-height:1.45;margin:0 0 0.25rem}
+    .post-date{color:#9A8060;font-size:0.78rem;margin:0}
+    .post-arrow{color:#D4A853;font-size:0.9rem;flex-shrink:0}
+    .cta-box{background:linear-gradient(135deg,#2C1810,#4A2C1A);border-radius:10px;padding:1.75rem;text-align:center;margin-top:2rem}
+    .cta-box h2{color:#D4A853;margin:0 0 0.5rem;font-size:1.1rem}
+    .cta-box p{color:rgba(255,255,255,0.88);margin:0 0 1rem;font-size:0.9rem}
+    .cta-btns{display:flex;gap:0.75rem;justify-content:center;flex-wrap:wrap}
+    .btn-gold{background:#D4A853;color:#2C1810;padding:0.65rem 1.5rem;border-radius:6px;text-decoration:none;font-weight:700;font-size:0.9rem}
+    .btn-outline{background:transparent;color:white;border:2px solid white;padding:0.65rem 1.5rem;border-radius:6px;text-decoration:none;font-weight:700;font-size:0.9rem}
+    .back-link{display:inline-block;color:#9A8060;font-size:0.82rem;text-decoration:none;margin-bottom:1.5rem}
+    @media(max-width:600px){.post-link{padding:1rem 1.1rem;gap:0.9rem}.post-num{display:none}}
+  </style>
+</head>
+<body>
+  <Header />
+  <main>
+    <div class="hero">
+      <h1>{tag}</h1>
+      <p>何淼律师 · 普通话全程服务 · 647-930-6688</p>
+    </div>
+    <div class="container">
+      <a href="/blog" class="back-link">← 返回博客文章</a>
+      <ul class="post-list">
+        {sorted.map((post, i) => (
+          <li class="post-item">
+            <a href={`/blog/${post.id}/`} class="post-link">
+              <span class="post-num">{String(i + 1).padStart(2, '0')}</span>
+              <div class="post-body">
+                <p class="post-title">{post.data.title}</p>
+                <p class="post-date">{formatDate(post.data.pubDate)}</p>
+              </div>
+              <span class="post-arrow">›</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+      <div class="cta-box">
+        <h2>预约初次咨询</h2>
+        <p>30分钟 · $220+HST · 普通话 · Markham · 服务Ontario全省</p>
+        <div class="cta-btns">
+          <a href="tel:6479306688" class="btn-gold">📞 647-930-6688</a>
+          <a href="/contact" class="btn-outline">在线预约</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</body>
+</html>
