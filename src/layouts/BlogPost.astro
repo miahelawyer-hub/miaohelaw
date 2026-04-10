@@ -255,7 +255,7 @@ const allPosts = (await getCollection('blog')).sort(
 
       @media (max-width: 900px) {
         .post-layout { grid-template-columns: 1fr; }
-        .sidebar { order: -1; }
+        /* sidebar stays below on mobile */
         .contact-card { display: none; }
       }
       @media (max-width: 600px) {
