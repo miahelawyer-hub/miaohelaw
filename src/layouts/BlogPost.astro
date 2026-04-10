@@ -264,6 +264,24 @@ const allPosts = (await getCollection('blog')).sort(
         .prose { padding: 1.5rem 1.1rem; font-size: 1rem; }
         .post-layout { padding: 1.5rem 1rem; gap: 1.5rem; }
       }
+
+      /* ── 律师简介 ── */
+      .author-bio {
+        margin-top: 2.5rem;
+        border-top: 2px solid #e8e0d5;
+        padding-top: 1.5rem;
+      }
+      .author-bio-inner {
+        display: flex;
+        gap: 1.25rem;
+        align-items: flex-start;
+      }
+      .author-bio-text p { margin: 0 0 0.6rem; font-size: 0.92rem; color: #4A2C1A; line-height: 1.65; }
+      .author-bio-name { font-size: 1rem !important; font-weight: 700; color: #2C1810 !important; }
+      .author-bio-title { font-size: 0.82rem !important; color: #9A8060 !important; letter-spacing: 0.03em; }
+      .author-bio-links { margin-top: 0.5rem !important; }
+      .author-bio-links a { color: #9A8060; text-decoration: none; font-size: 0.85rem; }
+      .author-bio-links a:hover { color: #2C1810; }
     </style>
   </head>
   <body>
@@ -299,6 +317,23 @@ const allPosts = (await getCollection('blog')).sort(
               <div class="cta-links">
                 <a href="tel:6479306688" class="btn-primary">📞 647-930-6688</a>
                 <a href="/contact" class="btn-secondary">在线预约</a>
+              </div>
+            </div>
+
+            <!-- 律师简介 -->
+            <div class="author-bio">
+              <div class="author-bio-inner">
+                <div class="author-bio-text">
+                  <p class="author-bio-name">何淼律师 Miao He</p>
+                  <p class="author-bio-title">H. LAW FIRM 恒. 律师事务所 · 主持律师</p>
+                  <p>何淼律师持Ontario及中国双重执照（Law Society of Ontario #83315K），专注华人家庭法逾15年，服务大多伦多地区华人、中国新移民及跨国家庭。事务所位于Markham，服务GTA全区及Ontario全省。</p>
+                  <p>曾代理 <strong>Yang v. Li 2024 ONSC 4801</strong>、<strong>Li v. Jiang 2026 ONSC 561</strong> 等CanLII公开判决案件，曾成功为客户追回境外资产逾30万加元。擅长跨境资产追回、离婚诉讼、子女监护及婚前协议。</p>
+                  <p class="author-bio-links">
+                    <a href="/about">律师简介</a> ·
+                    <a href="/case-results">案例结果</a> ·
+                    <a href="/contact">预约咨询</a>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
