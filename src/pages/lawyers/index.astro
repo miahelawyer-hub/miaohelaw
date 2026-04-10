@@ -69,8 +69,8 @@ import Footer from '../../components/Footer.astro';
     <div class="container">
       <!-- 切换标签 -->
       <div class="tab-bar">
-        <button class="tab active" onclick="showTab('city')">按城市查找</button>
-        <button class="tab" onclick="showTab('specialty')">按专长查找</button>
+        <button class="tab active" onclick="showTab('city', this)">按城市查找</button>
+        <button class="tab" onclick="showTab('specialty', this)">按专长查找</button>
       </div>
 
       <!-- 按城市 -->
@@ -1256,11 +1256,11 @@ import Footer from '../../components/Footer.astro';
   <Footer />
 </body>
 <script>
-  function showTab(name) {
+  function showTab(name, btn) {
     document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
     document.querySelectorAll('.tab').forEach(el => el.classList.remove('active'));
     document.getElementById('tab-' + name).classList.add('active');
-    event.target.classList.add('active');
+    btn.classList.add('active');
   }
 </script>
 </html>
