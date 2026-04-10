@@ -9,7 +9,7 @@ import Header from '../components/Header.astro';
 
 type Props = CollectionEntry['blog']['data'];
 
-const { title, description, pubDate, updatedDate, heroImage, keywords } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, keywords, tags } = Astro.props;
 
 const slug = Astro.url.pathname.replace(/\/$/, '');
 const canonicalUrl = `https://www.miaohelaw.ca${slug}`;
@@ -282,7 +282,41 @@ const allPosts = (await getCollection('blog')).sort(
       .author-bio-links { margin-top: 0.5rem !important; }
       .author-bio-links a { color: #9A8060; text-decoration: none; font-size: 0.85rem; }
       .author-bio-links a:hover { color: #2C1810; }
-    </style>
+    	.tag-section {
+		margin: 2rem 0 1rem;
+		padding: 1.25rem 1.5rem;
+		background: #f5f0eb;
+		border-radius: 8px;
+		border-left: 3px solid #D4A853;
+	}
+	.tag-label {
+		font-size: 0.78rem;
+		color: #9A8060;
+		display: block;
+		margin-bottom: 0.6rem;
+		letter-spacing: 0.05em;
+	}
+	.tag-list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+	}
+	.tag-capsule {
+		display: inline-block;
+		background: white;
+		border: 1px solid #D4A853;
+		color: #4A2C1A;
+		font-size: 0.78rem;
+		padding: 0.3rem 0.85rem;
+		border-radius: 20px;
+		text-decoration: none;
+		transition: background 0.15s;
+	}
+	.tag-capsule:hover {
+		background: #D4A853;
+		color: white;
+	}
+</style>
   </head>
   <body>
     <Header />
@@ -394,6 +428,16 @@ const allPosts = (await getCollection('blog')).sort(
           </aside>
         </div>
       </article>
+		{tags && tags.length > 0 && (
+			<div class="tag-section">
+				<span class="tag-label">相关专题：</span>
+				<div class="tag-list">
+					{tags.map(tag => (
+						<a href={`/tag/${tag}/`} class="tag-capsule">{tag}</a>
+					))}
+				</div>
+			</div>
+		)}
     </main>
     <Footer />
   </body>
