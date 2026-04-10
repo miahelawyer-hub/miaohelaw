@@ -282,7 +282,29 @@ const allPosts = (await getCollection('blog')).sort(
       .author-bio-links { margin-top: 0.5rem !important; }
       .author-bio-links a { color: #9A8060; text-decoration: none; font-size: 0.85rem; }
       .author-bio-links a:hover { color: #2C1810; }
-    	.tag-section {
+    	.sidebar-tag-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+        margin-top: 0.25rem;
+      }
+      .sidebar-tag {
+        display: inline-block;
+        background: #f5f0eb;
+        border: 1px solid #D4A853;
+        color: #4A2C1A;
+        font-size: 0.72rem;
+        padding: 0.25rem 0.65rem;
+        border-radius: 20px;
+        text-decoration: none;
+        transition: background 0.15s;
+        line-height: 1.4;
+      }
+      .sidebar-tag:hover {
+        background: #D4A853;
+        color: white;
+      }
+      .tag-section {
 		margin: 2rem 0 1rem;
 		padding: 1.25rem 1.5rem;
 		background: #f5f0eb;
@@ -412,6 +434,18 @@ const allPosts = (await getCollection('blog')).sort(
               </ul>
             </div>
 
+            <!-- 相关标签 -->
+            {tags && tags.length > 0 && (
+              <div class="sidebar-card">
+                <h3>相关专题</h3>
+                <div class="sidebar-tag-list">
+                  {tags.map(tag => (
+                    <a href={`/tag/${tag}/`} class="sidebar-tag">{tag}</a>
+                  ))}
+                </div>
+              </div>
+            )}
+
             <!-- 服务导航 -->
             <div class="sidebar-card">
               <h3>家庭法服务</h3>
@@ -428,16 +462,7 @@ const allPosts = (await getCollection('blog')).sort(
           </aside>
         </div>
       </article>
-		{tags && tags.length > 0 && (
-			<div class="tag-section">
-				<span class="tag-label">相关专题：</span>
-				<div class="tag-list">
-					{tags.map(tag => (
-						<a href={`/tag/${tag}/`} class="tag-capsule">{tag}</a>
-					))}
-				</div>
-			</div>
-		)}
+
     </main>
     <Footer />
   </body>
