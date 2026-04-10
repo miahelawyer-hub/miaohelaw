@@ -3,6 +3,24 @@ const today = new Date();
 ---
 
 <footer>
+<div class="trust-bar">
+  <div class="trust-item">
+    <span class="trust-icon">📍</span>
+    <span>208-7050 Woodbine Ave, Markham, ON L3R 4G8</span>
+  </div>
+  <div class="trust-item">
+    <span class="trust-icon">⚖️</span>
+    <a href="https://lso.ca/public-resources/finding-a-lawyer-or-paralegal/lawyer-paralegal-directory" target="_blank" rel="noopener">Law Society of Ontario — #83315K</a>
+  </div>
+  <div class="trust-item">
+    <span class="trust-icon">🇨🇳</span>
+    <span>中国律师协会 — 双重执照</span>
+  </div>
+  <div class="trust-item">
+    <span class="trust-icon">📞</span>
+    <a href="tel:6479306688">647-930-6688</a>
+  </div>
+</div>
 	&copy; {today.getFullYear()} Miao He (何淼). All rights reserved.
 	<div class="social-links">
 		<a href="https://www.linkedin.com/in/mia-he-93422b160/" target="_blank" rel="noopener" aria-label="LinkedIn">
@@ -32,7 +50,34 @@ const today = new Date();
 </footer>
 
 <style>
-	footer {
+	.trust-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem 2rem;
+  padding: 1rem 1rem 0.5rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  margin-bottom: 1rem;
+}
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  color: rgb(var(--gray));
+}
+.trust-item a {
+  color: rgb(var(--gray));
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.trust-item a:hover {
+  color: #D4A853;
+}
+.trust-icon {
+  font-size: 0.9rem;
+}
+footer {
 		padding: 2em 1em 4em 1em;
 		background: linear-gradient(var(--gray-gradient)) no-repeat;
 		color: rgb(var(--gray));
