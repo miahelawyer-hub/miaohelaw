@@ -1,0 +1,137 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<!doctype html>
+<html lang="zh">
+<head>
+  <BaseHead
+    title="跨境资产离婚律师 GTA | 何淼律师 — 中国房产境外账户处理"
+    description="离婚涉及中国房产、境外账户或跨国资产？何淼律师持中加双重执照，专注跨境资产追回，曾成功追回逾30万加元。GTA华人首选。647-930-6688。"
+  />
+  <meta name="keywords" content="跨境资产离婚律师,中国房产离婚GTA,境外资产离婚Ontario,跨境财产追回律师,Chinese property divorce Toronto,cross-border asset divorce lawyer,何淼律师,中加双执照" />
+  <meta property="og:title" content="跨境资产离婚律师 GTA — 何淼律师" />
+  <meta property="og:description" content="离婚涉及中国房产、境外账户或跨国资产？何淼律师持中加双重执照，专注跨境资产追回，曾成功追回逾30万加元。GTA华人首选。647-930-6688。" />
+  <meta property="og:url" content="https://www.miaohelaw.ca/cross-border-asset-divorce-lawyer-gta" />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://www.miaohelaw.ca/cross-border-asset-divorce-lawyer-gta" />
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "在加拿大离婚，中国的房产需要纳入财产分割吗？",
+          "acceptedAnswer": {"@type": "Answer", "text": "是的。Ontario法院采用全球资产原则，中国境内的房产、银行账户、公司股权，都需要纳入净家庭财产（NFP）计算。婚前已有的中国资产可申请豁免，但需要提供证明文件。何淼律师在跨境资产的评估、举证和分割策略方面有丰富实务经验。"}
+        },
+        {
+          "@type": "Question",
+          "name": "对方把钱转回中国了，我还能追回来吗？",
+          "acceptedAnswer": {"@type": "Answer", "text": "有追索途径，但时间窗口很重要。可以申请紧急资产保全令（Preservation Order）冻结对方在加拿大的资产；通过欺诈性转让法（Fraudulent Conveyance Act）主张撤销转让；以及在中国通过司法协助途径执行。何淼律师曾成功追回境外资产逾30万加元。"}
+        },
+        {
+          "@type": "Question",
+          "name": "我们在中国签的婚前协议，在加拿大有效吗？",
+          "acceptedAnswer": {"@type": "Answer", "text": "不一定。Ontario法院在审查境外婚前协议时，会考察协议是否符合Ontario《家庭法》的基本要求（书面、双方签字、各自获得独立法律意见）。在中国签订的婚前协议，如果没有加拿大律师的独立意见，很可能无法在Ontario离婚中执行。建议移民后重新评估并补签。"}
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "首页", "item": "https://www.miaohelaw.ca/"},
+        {"@type": "ListItem", "position": 2, "name": "跨境资产律师", "item": "https://www.miaohelaw.ca/cross-border-asset-divorce-lawyer-gta"}
+      ]
+    }
+  ]
+  </script>
+  <style>
+    * { box-sizing: border-box; }
+    body { background: #faf8f5; margin: 0; }
+    .page-hero { background: linear-gradient(135deg, #2C1810, #4A2C1A); padding: 3rem 1.5rem 2.5rem; text-align: center; }
+    .badge { display: inline-block; background: rgba(212,168,83,0.15); border: 1px solid #D4A853; color: #D4A853; font-size: 0.78rem; letter-spacing: 0.08em; padding: 0.3rem 1rem; border-radius: 20px; margin-bottom: 1rem; text-transform: uppercase; }
+    .page-hero h1 { color: #ffffff; font-size: clamp(1.5rem, 3.5vw, 2rem); line-height: 1.35; margin: 0 auto 1rem; max-width: 800px; }
+    .page-hero .sub { color: rgba(255,255,255,0.82); font-size: 0.95rem; max-width: 620px; margin: 0 auto 1.5rem; line-height: 1.7; }
+    .hero-cta { display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; }
+    .btn-gold { background: #D4A853; color: #2C1810; padding: 0.75rem 1.75rem; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 0.95rem; }
+    .btn-outline { background: transparent; color: white; border: 2px solid white; padding: 0.75rem 1.75rem; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 0.95rem; }
+    .container { max-width: 900px; margin: 0 auto; padding: 2.5rem 1.5rem; }
+    .section-title { color: #2C1810; font-size: 1.25rem; margin: 0 0 1.25rem; padding-bottom: 0.4rem; border-bottom: 2px solid #D4A853; }
+    .faq-item { background: white; border: 1px solid #e8e0d5; border-radius: 10px; padding: 1.25rem 1.5rem; margin-bottom: 0.75rem; }
+    .faq-item h3 { color: #2C1810; font-size: 0.95rem; margin: 0 0 0.5rem; }
+    .faq-item p { color: #5a3e2b; font-size: 0.88rem; line-height: 1.65; margin: 0; }
+    .service-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; margin-bottom: 2.5rem; }
+    .service-item { background: white; border: 1px solid #e8e0d5; border-radius: 8px; padding: 0.85rem 1rem; font-size: 0.88rem; color: #4A2C1A; display: flex; align-items: center; gap: 0.5rem; }
+    .service-item::before { content: "✓"; color: #D4A853; font-weight: 700; }
+    .final-cta { background: linear-gradient(135deg, #2C1810, #4A2C1A); border-radius: 12px; padding: 2rem; text-align: center; margin-top: 2rem; }
+    .final-cta h2 { color: #D4A853; margin: 0 0 0.6rem; font-size: 1.2rem; }
+    .final-cta p { color: rgba(255,255,255,0.88); margin: 0 0 1.25rem; font-size: 0.92rem; line-height: 1.7; }
+    .lawyer-card { background: white; border: 1px solid #e8e0d5; border-radius: 10px; padding: 1.5rem; margin-bottom: 2.5rem; border-left: 4px solid #D4A853; }
+    .lawyer-card h3 { color: #2C1810; margin: 0 0 0.5rem; font-size: 1rem; }
+    .lawyer-card p { color: #5a3e2b; font-size: 0.88rem; line-height: 1.65; margin: 0 0 0.5rem; }
+    .lawyer-card p:last-child { margin: 0; }
+    @media (max-width: 600px) { .service-grid { grid-template-columns: 1fr; } .page-hero h1 { font-size: 1.35rem; } }
+  </style>
+</head>
+<body>
+  <Header />
+  <main>
+    <div class="page-hero">
+      <div class="badge">跨境资产专项</div>
+      <h1>离婚涉及中国房产或境外资产？</h1>
+      <p class="sub">何淼律师持中加双重执照，专注跨境资产追回15年，曾成功为客户追回境外资产逾30万加元</p>
+      <div class="hero-cta">
+        <a href="tel:6479306688" class="btn-gold">📞 647-930-6688</a>
+        <a href="/contact" class="btn-outline">预约咨询</a>
+      </div>
+    </div>
+    <div class="container">
+
+      <div class="lawyer-card">
+        <h3>何淼律师（Miao He） · H. LAW FIRM 恒. 律师事务所</h3>
+        <p>Ontario律师执照 LSO #83315K · 中国律师执照 · Markham事务所 · 服务GTA全区及Ontario全省</p>
+        <p>曾代理 Yang v. Li 2024 ONSC 4801 · Li v. Jiang 2026 ONSC 561（CanLII可查）· 跨境资产追回逾30万加元</p>
+      </div>
+
+      <h2 class="section-title">常见问题</h2>
+      <div class="faq-item">
+        <h3>在加拿大离婚，中国的房产需要纳入财产分割吗？</h3>
+        <p>是的。Ontario法院采用全球资产原则，中国境内的房产、银行账户、公司股权，都需要纳入净家庭财产（NFP）计算。婚前已有的中国资产可申请豁免，但需要提供证明文件。何淼律师在跨境资产的评估、举证和分割策略方面有丰富实务经验。</p>
+      </div>
+      <div class="faq-item">
+        <h3>对方把钱转回中国了，我还能追回来吗？</h3>
+        <p>有追索途径，但时间窗口很重要。可以申请紧急资产保全令（Preservation Order）冻结对方在加拿大的资产；通过欺诈性转让法（Fraudulent Conveyance Act）主张撤销转让；以及在中国通过司法协助途径执行。何淼律师曾成功追回境外资产逾30万加元。</p>
+      </div>
+      <div class="faq-item">
+        <h3>我们在中国签的婚前协议，在加拿大有效吗？</h3>
+        <p>不一定。Ontario法院在审查境外婚前协议时，会考察协议是否符合Ontario《家庭法》的基本要求（书面、双方签字、各自获得独立法律意见）。在中国签订的婚前协议，如果没有加拿大律师的独立意见，很可能无法在Ontario离婚中执行。建议移民后重新评估并补签。</p>
+      </div>
+
+      <h2 class="section-title" style="margin-top:2.5rem;">服务范围</h2>
+      <div class="service-grid">
+        <div class="service-item">中国房产估值与NFP计算</div>
+        <div class="service-item">紧急资产保全令申请</div>
+        <div class="service-item">欺诈性转让法主张</div>
+        <div class="service-item">境外银行账户追查</div>
+        <div class="service-item">跨境执行策略制定</div>
+        <div class="service-item">中国婚前协议效力评估</div>
+      </div>
+
+      <div class="final-cta">
+        <h2>预约初次咨询</h2>
+        <p>30分钟初次咨询 $220+HST · 了解权利 · 评估案件 · 制定策略<br/>普通话 · 英文双语 · Markham · 服务Ontario全省</p>
+        <div class="hero-cta">
+          <a href="tel:6479306688" class="btn-gold">📞 647-930-6688</a>
+          <a href="/contact" class="btn-outline">在线预约</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</body>
+</html>

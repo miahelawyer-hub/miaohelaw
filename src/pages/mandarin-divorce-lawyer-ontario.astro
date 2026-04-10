@@ -1,0 +1,138 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<!doctype html>
+<html lang="zh">
+<head>
+  <BaseHead
+    title="普通话离婚律师 Ontario | 何淼律师 Miao He — 中文家庭法服务"
+    description="寻找Ontario普通话离婚律师？何淼律师提供全程普通话家庭法服务，覆盖GTA全区。离婚诉讼、子女监护、婚前协议、跨境资产。647-930-6688。"
+  />
+  <meta name="keywords" content="普通话离婚律师Ontario,Mandarin divorce lawyer Ontario,国语离婚律师多伦多,中文家庭法律师GTA,Mandarin family lawyer Toronto,普通话律师Markham,何淼律师,Miao He律师" />
+  <meta property="og:title" content="普通话离婚律师 Ontario — 何淼律师" />
+  <meta property="og:description" content="寻找Ontario普通话离婚律师？何淼律师提供全程普通话家庭法服务，覆盖GTA全区。离婚诉讼、子女监护、婚前协议、跨境资产。647-930-6688。" />
+  <meta property="og:url" content="https://www.miaohelaw.ca/mandarin-divorce-lawyer-ontario" />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://www.miaohelaw.ca/mandarin-divorce-lawyer-ontario" />
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "多伦多有没有说普通话的离婚律师？",
+          "acceptedAnswer": {"@type": "Answer", "text": "有。何淼律师（Miao He）提供全程普通话（国语）家庭法服务，包括离婚诉讼、子女监护权、抚养费、婚前协议及跨境资产处理。事务所位于Markham，服务多伦多、GTA全区及Ontario全省。电话：647-930-6688。"}
+        },
+        {
+          "@type": "Question",
+          "name": "Ontario普通话律师能处理哪些家庭法案件？",
+          "acceptedAnswer": {"@type": "Answer", "text": "何淼律师提供全面的普通话家庭法服务：离婚诉讼（含缺席判决）、子女监护权和居住安排、子女及配偶抚养费、婚前及分居协议、净家庭财产分割、跨境资产追回。"}
+        },
+        {
+          "@type": "Question",
+          "name": "普通话服务对离婚案件有多重要？",
+          "acceptedAnswer": {"@type": "Answer", "text": "家庭法案件涉及大量敏感细节和复杂法律概念。用母语沟通，能确保律师完整理解你的情况，你也能真正理解自己的权利和风险。语言障碍可能导致关键信息遗漏，直接影响案件结果。"}
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "首页", "item": "https://www.miaohelaw.ca/"},
+        {"@type": "ListItem", "position": 2, "name": "普通话律师", "item": "https://www.miaohelaw.ca/mandarin-divorce-lawyer-ontario"}
+      ]
+    }
+  ]
+  </script>
+  <style>
+    * { box-sizing: border-box; }
+    body { background: #faf8f5; margin: 0; }
+    .page-hero { background: linear-gradient(135deg, #2C1810, #4A2C1A); padding: 3rem 1.5rem 2.5rem; text-align: center; }
+    .badge { display: inline-block; background: rgba(212,168,83,0.15); border: 1px solid #D4A853; color: #D4A853; font-size: 0.78rem; letter-spacing: 0.08em; padding: 0.3rem 1rem; border-radius: 20px; margin-bottom: 1rem; text-transform: uppercase; }
+    .page-hero h1 { color: #ffffff; font-size: clamp(1.5rem, 3.5vw, 2rem); line-height: 1.35; margin: 0 auto 1rem; max-width: 800px; }
+    .page-hero .sub { color: rgba(255,255,255,0.82); font-size: 0.95rem; max-width: 620px; margin: 0 auto 1.5rem; line-height: 1.7; }
+    .hero-cta { display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; }
+    .btn-gold { background: #D4A853; color: #2C1810; padding: 0.75rem 1.75rem; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 0.95rem; }
+    .btn-outline { background: transparent; color: white; border: 2px solid white; padding: 0.75rem 1.75rem; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 0.95rem; }
+    .container { max-width: 900px; margin: 0 auto; padding: 2.5rem 1.5rem; }
+    .section-title { color: #2C1810; font-size: 1.25rem; margin: 0 0 1.25rem; padding-bottom: 0.4rem; border-bottom: 2px solid #D4A853; }
+    .faq-item { background: white; border: 1px solid #e8e0d5; border-radius: 10px; padding: 1.25rem 1.5rem; margin-bottom: 0.75rem; }
+    .faq-item h3 { color: #2C1810; font-size: 0.95rem; margin: 0 0 0.5rem; }
+    .faq-item p { color: #5a3e2b; font-size: 0.88rem; line-height: 1.65; margin: 0; }
+    .service-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; margin-bottom: 2.5rem; }
+    .service-item { background: white; border: 1px solid #e8e0d5; border-radius: 8px; padding: 0.85rem 1rem; font-size: 0.88rem; color: #4A2C1A; display: flex; align-items: center; gap: 0.5rem; }
+    .service-item::before { content: "✓"; color: #D4A853; font-weight: 700; }
+    .final-cta { background: linear-gradient(135deg, #2C1810, #4A2C1A); border-radius: 12px; padding: 2rem; text-align: center; margin-top: 2rem; }
+    .final-cta h2 { color: #D4A853; margin: 0 0 0.6rem; font-size: 1.2rem; }
+    .final-cta p { color: rgba(255,255,255,0.88); margin: 0 0 1.25rem; font-size: 0.92rem; line-height: 1.7; }
+    .lawyer-card { background: white; border: 1px solid #e8e0d5; border-radius: 10px; padding: 1.5rem; margin-bottom: 2.5rem; border-left: 4px solid #D4A853; }
+    .lawyer-card h3 { color: #2C1810; margin: 0 0 0.5rem; font-size: 1rem; }
+    .lawyer-card p { color: #5a3e2b; font-size: 0.88rem; line-height: 1.65; margin: 0 0 0.5rem; }
+    .lawyer-card p:last-child { margin: 0; }
+    @media (max-width: 600px) { .service-grid { grid-template-columns: 1fr; } .page-hero h1 { font-size: 1.35rem; } }
+  </style>
+</head>
+<body>
+  <Header />
+  <main>
+    <div class="page-hero">
+      <div class="badge">普通话 · 国语服务</div>
+      <h1>寻找Ontario普通话离婚律师？</h1>
+      <p class="sub">何淼律师提供全程普通话（国语）家庭法服务，无语言障碍，覆盖GTA全区及Ontario全省</p>
+      <div class="hero-cta">
+        <a href="tel:6479306688" class="btn-gold">📞 647-930-6688</a>
+        <a href="/contact" class="btn-outline">预约咨询</a>
+      </div>
+    </div>
+    <div class="container">
+
+      <div class="lawyer-card">
+        <h3>何淼律师（Miao He） · H. LAW FIRM 恒. 律师事务所</h3>
+        <p>Ontario律师执照 LSO #83315K · 中国律师执照 · Markham事务所 · 服务GTA全区及Ontario全省</p>
+        <p>曾代理 Yang v. Li 2024 ONSC 4801 · Li v. Jiang 2026 ONSC 561（CanLII可查）· 跨境资产追回逾30万加元</p>
+      </div>
+
+      <h2 class="section-title">常见问题</h2>
+      <div class="faq-item">
+        <h3>多伦多有没有说普通话的离婚律师？</h3>
+        <p>有。何淼律师（Miao He）提供全程普通话（国语）家庭法服务，包括离婚诉讼、子女监护权、抚养费、婚前协议及跨境资产处理。事务所位于Markham，服务多伦多、GTA全区及Ontario全省。电话：647-930-6688。</p>
+      </div>
+      <div class="faq-item">
+        <h3>Ontario普通话律师能处理哪些家庭法案件？</h3>
+        <p>何淼律师提供全面的普通话家庭法服务：离婚诉讼（含缺席判决）、子女监护权和居住安排、子女及配偶抚养费、婚前及分居协议、净家庭财产分割、跨境资产追回。</p>
+      </div>
+      <div class="faq-item">
+        <h3>普通话服务对离婚案件有多重要？</h3>
+        <p>家庭法案件涉及大量敏感细节和复杂法律概念。用母语沟通，能确保律师完整理解你的情况，你也能真正理解自己的权利和风险。语言障碍可能导致关键信息遗漏，直接影响案件结果。</p>
+      </div>
+
+      <h2 class="section-title" style="margin-top:2.5rem;">服务范围</h2>
+      <div class="service-grid">
+        <div class="service-item">离婚诉讼</div>
+        <div class="service-item">子女监护权</div>
+        <div class="service-item">抚养费计算与执行</div>
+        <div class="service-item">婚前协议</div>
+        <div class="service-item">分居协议</div>
+        <div class="service-item">净家庭财产分割</div>
+        <div class="service-item">跨境资产处理</div>
+      </div>
+
+      <div class="final-cta">
+        <h2>预约初次咨询</h2>
+        <p>30分钟初次咨询 $220+HST · 了解权利 · 评估案件 · 制定策略<br/>普通话 · 英文双语 · Markham · 服务Ontario全省</p>
+        <div class="hero-cta">
+          <a href="tel:6479306688" class="btn-gold">📞 647-930-6688</a>
+          <a href="/contact" class="btn-outline">在线预约</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</body>
+</html>
