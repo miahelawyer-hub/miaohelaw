@@ -1,0 +1,50 @@
+---
+---
+<div class="call-bar">
+  <a href="tel:6479306688" class="call-link">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.25 1.01l-2.2 2.2z"/>
+    </svg>
+    <span class="call-text">立即咨询</span>
+    <span class="call-divider">·</span>
+    <span class="call-number">647-930-6688</span>
+  </a>
+</div>
+
+<style>
+.call-bar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background: #111;
+  border-top: 1px solid #c9a96e;
+}
+.call-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.9rem 1rem;
+  color: #c9a96e;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.call-text, .call-number {
+  font-size: 1rem;
+}
+.call-divider {
+  opacity: 0.5;
+}
+.call-link:active {
+  background: #1a1a1a;
+}
+@media (max-width: 768px) {
+  .call-bar {
+    display: block;
+  }
+}
+</style>
