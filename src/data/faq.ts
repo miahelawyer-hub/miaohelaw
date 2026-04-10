@@ -10,7 +10,7 @@ export interface FaqItem {
 export const faqItems: FaqItem[] = [
   {
     slug: 'xinmyimin',
-    capsule: '新移民离婚',
+    capsule: '新移民在安省可以离婚吗？',
     group: '按人群',
     question: '新移民在加拿大安省可以离婚吗？',
     answers: [
@@ -21,7 +21,7 @@ export const faqItems: FaqItem[] = [
   },
   {
     slug: 'youhaizi',
-    capsule: '有孩子的离婚',
+    capsule: '有孩子的情况下如何离婚？',
     group: '按人群',
     question: '有孩子的离婚和没有孩子的离婚有什么不同？',
     answers: [
@@ -33,7 +33,7 @@ export const faqItems: FaqItem[] = [
   },
   {
     slug: 'zhongguo-liguoguo',
-    capsule: '在中国离过婚',
+    capsule: '在中国离过婚，还能在加拿大再婚吗？',
     group: '按人群',
     question: '在中国离过婚，可以在加拿大安省再次离婚吗？',
     answers: [
@@ -44,7 +44,7 @@ export const faqItems: FaqItem[] = [
   },
   {
     slug: 'bupeihe',
-    capsule: '对方不配合',
+    capsule: '对方不配合离婚怎么办？',
     group: '按情况',
     question: '对方不配合离婚怎么办？',
     answers: [
@@ -56,7 +56,7 @@ export const faqItems: FaqItem[] = [
   },
   {
     slug: 'fenju',
-    capsule: '已经分居了',
+    capsule: '已经分居了怎么办理离婚？',
     group: '按情况',
     question: '已经分居了，怎么办理离婚？',
     answers: [
@@ -68,7 +68,7 @@ export const faqItems: FaqItem[] = [
   },
   {
     slug: 'haizi-zhongguo',
-    capsule: '对方要带孩子回中国',
+    capsule: '对方要带孩子回中国怎么办？',
     group: '按情况',
     question: '对方要带孩子回中国怎么办？',
     answers: [
@@ -80,7 +80,7 @@ export const faqItems: FaqItem[] = [
   },
   {
     slug: 'jiabao',
-    capsule: '家暴怎么办',
+    capsule: '遇到家暴怎么办？',
     group: '按情况',
     question: '遇到家暴怎么办？',
     answers: [
@@ -92,7 +92,7 @@ export const faqItems: FaqItem[] = [
   },
   {
     slug: 'bushouban',
-    capsule: '对方不肯搬出去',
+    capsule: '对方不肯搬出婚房怎么办？',
     group: '按情况',
     question: '对方不肯搬出婚房怎么办？',
     answers: [
@@ -103,7 +103,7 @@ export const faqItems: FaqItem[] = [
   },
   {
     slug: 'duojiu',
-    capsule: '离婚要多久',
+    capsule: '在安省离婚需要多久？',
     group: '按问题',
     question: '在安省离婚需要多久？',
     answers: [
@@ -114,7 +114,7 @@ export const faqItems: FaqItem[] = [
   },
   {
     slug: 'duoshao',
-    capsule: '离婚要多少钱',
+    capsule: '在安省离婚需要多少钱？',
     group: '按问题',
     question: '在安省离婚需要多少钱？',
     answers: [
@@ -125,7 +125,7 @@ export const faqItems: FaqItem[] = [
   },
   {
     slug: 'jianhuguan',
-    capsule: '子女监护权',
+    capsule: '子女监护权是怎么判定的？',
     group: '按问题',
     question: '加拿大的子女监护权是怎么规定的？',
     answers: [
@@ -137,7 +137,7 @@ export const faqItems: FaqItem[] = [
   },
   {
     slug: 'hunqian',
-    capsule: '婚前协议有效吗',
+    capsule: '婚前协议在安省有法律效力吗？',
     group: '按问题',
     question: '婚前协议在安省有效吗？',
     answers: [
@@ -149,7 +149,7 @@ export const faqItems: FaqItem[] = [
   },
   {
     slug: 'fuyanfei',
-    capsule: '抚养费怎么算',
+    capsule: '子女抚养费和配偶赡养费怎么计算？',
     group: '按问题',
     question: '抚养费怎么计算？',
     answers: [
@@ -160,7 +160,7 @@ export const faqItems: FaqItem[] = [
   },
   {
     slug: 'fenjuxieyi',
-    capsule: '分居协议',
+    capsule: '分居协议是什么？有什么好处？',
     group: '按问题',
     question: '什么是分居协议？有什么好处？',
     answers: [
@@ -171,7 +171,7 @@ export const faqItems: FaqItem[] = [
   },
   {
     slug: 'kuajing',
-    capsule: '跨境资产',
+    capsule: '离婚时有中国房产或跨境资产怎么处理？',
     group: '按问题',
     question: '离婚时有跨境资产怎么处理？',
     answers: [
