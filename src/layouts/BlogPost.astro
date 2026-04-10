@@ -9,7 +9,7 @@ import Header from '../components/Header.astro';
 
 type Props = CollectionEntry['blog']['data'];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, keywords } = Astro.props;
 
 const slug = Astro.url.pathname.replace(/\/$/, '');
 const canonicalUrl = `https://www.miaohelaw.ca${slug}`;
@@ -25,7 +25,7 @@ const allPosts = (await getCollection('blog')).sort(
 <html lang="zh">
   <head>
     <BaseHead title={title} description={description} />
-    <link rel="canonical" href={canonicalUrl} />
+    {keywords && <meta name="keywords" content={keywords} />}
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalUrl} />
