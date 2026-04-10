@@ -7,126 +7,161 @@ import Footer from '../components/Footer.astro';
 <html lang="zh">
 <head>
   <BaseHead
-    title="North York 北约克家庭法律师 | 何淼律师 | 离婚 · 子女监护 · 婚前协议"
-    description="何淼律师为 North York 北约克华人提供中英双语家庭法服务。离婚、子女监护、婚前协议、跨境资产。647-930-6688。"
+    title="North York 北约克华人离婚律师 | 何淼律师 | 普通话家庭法服务"
+    description="何淼律师为 North York 北约克华人提供普通话离婚、子女监护、财产分割法律服务。事务所位于Markham，服务Finch、Sheppard沿线华人社区。647-930-6688。"
   />
-  <meta name="keywords" content="North York家庭法律师,北约克离婚律师,North York divorce lawyer,北约克华人律师,Chinese family lawyer North York" />
-  <meta property="og:title" content="North York 北约克家庭法律师 | 何淼律师" />
-  <meta property="og:description" content="何淼律师为 North York 提供中英双语家庭法服务。647-930-6688。" />
+  <meta name="keywords" content="North York离婚律师,北约克华人离婚律师,North York Chinese divorce lawyer,北约克家庭法律师,Finch Sheppard华人律师,普通话离婚律师North York" />
+  <meta property="og:title" content="North York 北约克华人离婚律师 | 何淼律师" />
+  <meta property="og:description" content="何淼律师为 North York 华人提供普通话离婚、子女监护、财产分割服务。647-930-6688。" />
   <meta property="og:url" content="https://www.miaohelaw.ca/north-york-family-lawyer" />
   <meta property="og:type" content="website" />
   <link rel="canonical" href="https://www.miaohelaw.ca/north-york-family-lawyer" />
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"LegalService","name":"何淼律师 — North York 家庭法律师","url":"https://www.miaohelaw.ca/north-york-family-lawyer","telephone":"+1-647-930-6688","areaServed":{"@type":"City","name":"North York"},"provider":{"@type":"Person","name":"Miao He","alternateName":"何淼"},"inLanguage":["zh","en"]}
-  </script>
 
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {"@type": "ListItem", "position": 1, "name": "首页", "item": "https://www.miaohelaw.ca/"},
-      {"@type": "ListItem", "position": 2, "name": "North York 家庭法律师", "item": "https://www.miaohelaw.ca/north-york-family-lawyer"}
-    ]
-  }
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "name": "何淼律师 — North York 北约克华人离婚律师",
+      "url": "https://www.miaohelaw.ca/north-york-family-lawyer",
+      "telephone": "+1-647-930-6688",
+      "areaServed": {"@type": "City", "name": "North York"},
+      "provider": {"@type": "Person", "name": "Miao He", "alternateName": "何淼"},
+      "inLanguage": ["zh", "en"]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "North York 有说普通话的离婚律师吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "有。何淼律师（Miao He）提供普通话及英文双语家庭法服务，服务North York及GTA全区。擅长处理华人离婚、子女监护、高密度公寓婚姻住所争议及跨境资产案件。电话：647-930-6688。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "North York 华人离婚，公寓算婚姻住所吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "是的。North York Finch、Sheppard沿线大量华人居住在共管公寓（Condo），只要分居时双方以该公寓为主要居所，该公寓即构成婚姻住所（Matrimonial Home）。婚姻住所受Ontario《家庭法》特别保护，非产权方也享有平等占用权，不得单方出售或抵押。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "North York 离婚案件在哪个法院处理？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "North York的家庭法案件通常在多伦多Superior Court of Justice Family Court处理，位于393 University Ave。何淼律师在该法院有丰富的出庭经验，可全程普通话服务。"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "首页", "item": "https://www.miaohelaw.ca/"},
+        {"@type": "ListItem", "position": 2, "name": "North York 华人离婚律师", "item": "https://www.miaohelaw.ca/north-york-family-lawyer"}
+      ]
+    }
+  ]
   </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "North York 有说普通话的离婚律师吗？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "有。何淼律师（Miao He）提供普通话及英文双语家庭法服务，服务范围涵盖North York及周边地区，擅长处理华人离婚、子女监护、婚前协议及跨境资产案件。电话：647-930-6688。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "North York 离婚需要多长时间？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Ontario 离婚最快约4至6个月（无争议）；如涉及财产分割或子女监护争议，可能需要1至3年。何淼律师会根据您的具体情况制定最有效率的策略。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "何淼律师收费如何？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "初次咨询30分钟收费$220+HST。案件费用视复杂程度而定，何淼律师提供透明收费，咨询后提供书面费用预估。电话：647-930-6688 预约。"
-        }
-      }
-    ]
-  }
-  </script>
+
+  <style>
+    * { box-sizing: border-box; }
+    body { background: #faf8f5; margin: 0; font-family: -apple-system, sans-serif; }
+    .hero { background: linear-gradient(135deg, #2C1810, #4A2C1A); padding: 3rem 1.5rem 2.5rem; }
+    .hero-inner { max-width: 860px; margin: 0 auto; }
+    .breadcrumb { font-size: 0.8rem; color: rgba(255,255,255,0.5); margin-bottom: 0.75rem; }
+    .breadcrumb a { color: rgba(255,255,255,0.5); text-decoration: none; }
+    .hero h1 { color: #fff; font-size: clamp(1.5rem, 3vw, 2rem); margin: 0 0 0.75rem; line-height: 1.3; }
+    .hero-sub { color: #D4A853; font-size: 0.9rem; margin: 0 0 1.5rem; }
+    .hero-cta { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+    .btn-gold { background: #D4A853; color: #2C1810; padding: 0.7rem 1.5rem; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 0.9rem; }
+    .btn-outline { background: transparent; color: white; border: 2px solid white; padding: 0.7rem 1.5rem; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 0.9rem; }
+    .container { max-width: 860px; margin: 0 auto; padding: 2.5rem 1.5rem; }
+    .section { margin-bottom: 2rem; }
+    .section h2 { color: #2C1810; font-size: 1.15rem; margin: 0 0 0.75rem; padding-bottom: 0.5rem; border-bottom: 2px solid #D4A853; }
+    .section p { color: #4A3A2A; font-size: 0.92rem; line-height: 1.75; margin: 0 0 0.75rem; }
+    .highlight-box { background: #f5f0eb; border-left: 3px solid #D4A853; padding: 1rem 1.25rem; border-radius: 0 6px 6px 0; margin: 1rem 0; }
+    .highlight-box p { margin: 0; font-size: 0.88rem; color: #4A3A2A; }
+    .faq-item { border: 1px solid #e8e0d5; border-radius: 8px; padding: 1.25rem; margin-bottom: 0.75rem; background: white; }
+    .faq-q { font-weight: 600; color: #2C1810; font-size: 0.92rem; margin: 0 0 0.5rem; }
+    .faq-a { color: #4A3A2A; font-size: 0.88rem; line-height: 1.7; margin: 0; }
+    .cta-box { background: linear-gradient(135deg, #2C1810, #4A2C1A); border-radius: 10px; padding: 2rem; text-align: center; margin-top: 2rem; }
+    .cta-box h2 { color: #D4A853; margin: 0 0 0.5rem; font-size: 1.15rem; }
+    .cta-box p { color: rgba(255,255,255,0.88); margin: 0 0 1.25rem; font-size: 0.9rem; }
+    .cta-btns { display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; }
+    @media (max-width: 600px) { .hero-cta { flex-direction: column; } }
+  </style>
 </head>
 <body>
   <Header />
   <main>
-    <section class="page-hero">
-      <div class="container">
-        <div class="breadcrumb"><a href="/">首页</a> › <a href="/contact">服务地区</a> › North York 北约克</div>
-        <h1>North York 北约克家庭法律师</h1>
-        <p class="hero-sub">何淼律师（Miao He）· 中英双语 · 服务北约克全区 · 647-930-6688</p>
-      </div>
-    </section>
-    <section class="content-section">
-      <div class="container content-grid">
-        <div class="main-content">
-          <div class="definition-box">
-            <p>North York 是多伦多市内华人、韩裔及各族移民聚集的核心区域。Yonge Street 沿线、Sheppard 走廊密集分布着大量华人家庭。何淼律师为北约克居民提供中英双语家庭法全程服务。</p>
-          </div>
-          <h2>North York 家庭法服务</h2>
-          <p>北约克的家庭法案件往往涉及多伦多市内高价公寓分割、双职工家庭抚养费计算，以及新移民身份对离婚程序的影响等问题。</p>
-          <h3>离婚与净家庭财产均分</h3>
-          <p>North York 房价高企，共同持有的公寓或独立屋是离婚财产分割的核心争议点。何淼律师协助客户准确评估婚前财产价值，排除婚前资产及赠予资产，保护客户合法财产权益。</p>
-          <h3>子女监护与跨国探视</h3>
-          <p>北约克华人家庭中，祖父母在子女照料中扮演重要角色，何淼律师协助将祖父母探视安排纳入育儿计划，减少日后争议。对于希望带子女回中国探亲的家长，亦可协助办理相关法律手续。</p>
-          <h3>配偶抚养费（Spousal Support）</h3>
-          <p>North York 双职工家庭常见收入差距悬殊的情况。何淼律师根据《离婚法》及《家庭法》，结合 SSAG 计算指引，为客户争取或核算合理抚养费金额。</p>
-          <div class="qa-block">
-            <h3>Q：我是新移民，身份未定，可以在 Ontario 申请离婚吗？</h3>
-            <p>A：申请离婚的前提是在加拿大居住满一年，与移民身份无关。永久居民、工签持有者均可申请。具体情况请致电 647-930-6688 咨询。</p>
-          </div>
-          <div class="cta-box">
-            <h3>预约 North York 家庭法咨询</h3>
-            <p>初次咨询 30 分钟，$220 + HST。中英双语，无需翻译。</p>
-            <a href="/contact" class="btn-primary">立即预约</a>
-            <a href="tel:6479306688" class="btn-secondary">647-930-6688</a>
-          </div>
+    <div class="hero">
+      <div class="hero-inner">
+        <p class="breadcrumb"><a href="/">首页</a> › North York 华人离婚律师</p>
+        <h1>North York 北约克华人离婚律师</h1>
+        <p class="hero-sub">服务 Finch · Sheppard · Yonge 沿线华人社区 · 普通话全程 · 647-930-6688</p>
+        <div class="hero-cta">
+          <a href="tel:6479306688" class="btn-gold">📞 647-930-6688</a>
+          <a href="/contact" class="btn-outline">预约咨询</a>
         </div>
-        <aside class="sidebar">
-          <div class="sidebar-card"><h3>联系何淼律师</h3><p>📞 <a href="tel:6479306688">647-930-6688</a></p><p>📧 <a href="mailto:miao@miaohelaw.ca">miao@miaohelaw.ca</a></p></div>
-          <div class="sidebar-card"><h3>服务项目</h3><ul><li>离婚诉讼</li><li>子女监护</li><li>婚前协议</li><li>财产分割</li><li>抚养费</li><li>跨境资产</li><li>分居协议</li></ul></div>
-          <div class="sidebar-card"><h3>服务语言</h3><p>🇨🇳 普通话</p><p>🇨🇦 英文</p></div>
-        </aside>
       </div>
-    </section>
+    </div>
+
+    <div class="container">
+
+      <div class="section">
+        <h2>North York 华人离婚的特殊考量</h2>
+        <p>North York 是大多伦多华人密度最高的区域之一，Finch Ave 和 Sheppard Ave 沿线聚居大量来自中国大陆、香港和台湾的华人家庭。这里的离婚案件有几个常见的特殊情况：</p>
+        <div class="highlight-box">
+          <p><strong>共管公寓婚姻住所问题：</strong>North York 大量华人家庭居住在 Condo，分居时婚姻住所的认定和占用权争议非常常见。非产权方配偶在法律上享有平等占用权，不得被单方驱逐。</p>
+        </div>
+        <div class="highlight-box">
+          <p><strong>跨省、跨境资产：</strong>不少 North York 华人家庭在中国持有房产或在多国持有资产，何淼律师持中加双重执照，专门处理此类跨境财产分割问题。</p>
+        </div>
+        <div class="highlight-box">
+          <p><strong>法院距离近：</strong>North York 离婚案件在多伦多 Superior Court of Justice 处理，交通便利。何淼律师在该法院有丰富出庭经验。</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>服务范围</h2>
+        <p>何淼律师为 North York 华人提供以下家庭法服务，全程普通话及英文双语：</p>
+        <p>离婚诉讼（Divorce Litigation）· 无争议离婚 · 子女监护权（Decision Making Responsibility）· 子女抚养费（Child Support）· 配偶抚养费（Spousal Support）· 财产分割（NFP Equalization）· 婚姻住所占用权 · 婚前协议（Marriage Contract）· 分居协议（Separation Agreement）· 跨境资产追索（中国房产、境外账户）</p>
+      </div>
+
+      <div class="section">
+        <h2>常见问题</h2>
+        <div class="faq-item">
+          <p class="faq-q">North York 有说普通话的离婚律师吗？</p>
+          <p class="faq-a">有。何淼律师（Miao He）提供普通话及英文双语家庭法服务，服务 North York 及 GTA 全区。事务所位于 Markham，提供视频及电话咨询，初次咨询30分钟 $220+HST。</p>
+        </div>
+        <div class="faq-item">
+          <p class="faq-q">我住在 North York 的 Condo，离婚时对方能把我赶出去吗？</p>
+          <p class="faq-a">不能。根据 Ontario《家庭法》，婚姻住所（Matrimonial Home）中，无论产权登记在哪方名下，双方配偶均享有平等占用权。对方不得在未获法院命令的情况下单方驱逐另一方。如面临此类威胁，应立即寻求法律保护。</p>
+        </div>
+        <div class="faq-item">
+          <p class="faq-q">North York 离婚案件在哪个法院？</p>
+          <p class="faq-a">North York 的家庭法案件通常在多伦多 Superior Court of Justice Family Court 处理（393 University Ave）。何淼律师在该法院有丰富出庭经验，可全程普通话服务。</p>
+        </div>
+      </div>
+
+      <div class="cta-box">
+        <h2>预约 North York 华人离婚律师</h2>
+        <p>何淼律师 · 30分钟初次咨询 $220+HST · 普通话 · 服务 North York 及 GTA 全区</p>
+        <div class="cta-btns">
+          <a href="tel:6479306688" class="btn-gold">📞 647-930-6688</a>
+          <a href="/contact" class="btn-outline">在线预约</a>
+        </div>
+      </div>
+
+    </div>
   </main>
   <Footer />
 </body>
 </html>
-<style>
-  .page-hero{background:linear-gradient(135deg,#2C1810 0%,#4A2C1A 100%);color:white;padding:3rem 0 2rem}
-  .page-hero h1{font-size:2rem;margin:0.5rem 0;color:#ffffff}.hero-sub{color:#D4A853;margin:0}
-  .breadcrumb{font-size:0.85rem;opacity:0.7;margin-bottom:0.5rem}.breadcrumb a{color:white;text-decoration:none}
-  .container{max-width:1100px;margin:0 auto;padding:0 1.5rem}.content-section{padding:3rem 0}
-  .content-grid{display:grid;grid-template-columns:1fr 300px;gap:3rem}
-  .definition-box{background:#FDF6EC;border-left:4px solid #9A8060;padding:1.2rem 1.5rem;margin-bottom:2rem;border-radius:0 8px 8px 0}
-  .qa-block{background:#f8f8f8;border-radius:8px;padding:1.2rem 1.5rem;margin:1.5rem 0}
-  .qa-block h3{color:#2C1810;margin-top:0;font-size:1rem}
-  .cta-box{background:linear-gradient(135deg,#2C1810,#4A2C1A);color:white;padding:2rem;border-radius:12px;text-align:center;margin-top:2rem}
-  .cta-box h3{margin-top:0;color:#D4A853}
-  .btn-primary{display:inline-block;background:#D4A853;color:#2C1810;padding:0.75rem 1.5rem;border-radius:6px;text-decoration:none;font-weight:700;margin:0.5rem}
-  .btn-secondary{display:inline-block;background:transparent;color:white;border:2px solid white;padding:0.75rem 1.5rem;border-radius:6px;text-decoration:none;font-weight:700;margin:0.5rem}
-  .sidebar{display:flex;flex-direction:column;gap:1.5rem}
-  .sidebar-card{background:white;border:1px solid #e8e0d5;border-radius:10px;padding:1.2rem}
-  .sidebar-card h3{color:#2C1810;font-size:0.95rem;margin-top:0;border-bottom:1px solid #e8e0d5;padding-bottom:0.5rem;margin-bottom:0.75rem}
-  .sidebar-card ul{list-style:none;padding:0;margin:0}.sidebar-card li{padding:0.3rem 0;border-bottom:1px solid #f0ebe3;font-size:0.9rem}
-  .sidebar-card a{color:#9A8060;text-decoration:none}
-  h2{color:#2C1810;margin-top:2rem}h3{color:#4A2C1A}
-  @media(max-width:768px){.content-grid{grid-template-columns:1fr}.page-hero h1{font-size:1.5rem}}
-</style>
