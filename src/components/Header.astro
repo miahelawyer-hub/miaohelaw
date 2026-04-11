@@ -8,13 +8,35 @@ import HeaderLink from './HeaderLink.astro';
 		<h2><a href="/">{SITE_TITLE}</a></h2>
 		<div class="internal-links">
 			<HeaderLink href="/">首页</HeaderLink>
-<HeaderLink href="/blog">博客文章</HeaderLink>
-<HeaderLink href="/testimonials">客户评价</HeaderLink>
-<HeaderLink href="/case-results">案例结果</HeaderLink>
-<HeaderLink href="/pricing">费用说明</HeaderLink>
-<HeaderLink href="/faq">常见问题</HeaderLink>
-<HeaderLink href="/about">关于律师</HeaderLink>
-<HeaderLink href="/contact">联系我们</HeaderLink>
+			<div class="dropdown">
+				<span class="dropdown-trigger">家庭法服务 ▾</span>
+				<div class="dropdown-menu">
+					<div class="dropdown-col">
+						<span class="dropdown-heading">离婚</span>
+						<a href="/family-law/divorce-litigation">离婚诉讼</a>
+						<a href="/family-law/mediation">调解与仲裁</a>
+					</div>
+					<div class="dropdown-col">
+						<span class="dropdown-heading">子女</span>
+						<a href="/family-law/child-custody">子女监护权</a>
+						<a href="/family-law/support">子女抚养费</a>
+						<a href="/family-law/support#spousal">配偶赡养费</a>
+					</div>
+					<div class="dropdown-col">
+						<span class="dropdown-heading">协议与财产</span>
+						<a href="/family-law/domestic-contracts">婚前协议</a>
+						<a href="/family-law/domestic-contracts#separation">分居协议</a>
+						<a href="/family-law/cross-border-assets">跨境资产分割</a>
+					</div>
+				</div>
+			</div>
+			<HeaderLink href="/blog">博客文章</HeaderLink>
+			<HeaderLink href="/testimonials">客户评价</HeaderLink>
+			<HeaderLink href="/case-results">案例结果</HeaderLink>
+			<HeaderLink href="/pricing">费用说明</HeaderLink>
+			<HeaderLink href="/faq">常见问题</HeaderLink>
+			<HeaderLink href="/about">关于律师</HeaderLink>
+			<HeaderLink href="/contact">联系我们</HeaderLink>
 		</div>
 		<div class="social-links">
 			<a href="https://www.linkedin.com/in/mia-he-93422b160/" target="_blank">
@@ -79,6 +101,68 @@ import HeaderLink from './HeaderLink.astro';
 		display: flex;
 		gap: 0.5em;
 		align-items: center;
+	}
+	/* Dropdown */
+	.dropdown {
+		position: relative;
+		display: inline-block;
+	}
+	.dropdown-trigger {
+		padding: 0.5em 0.5em;
+		color: var(--black);
+		cursor: pointer;
+		font-size: 1em;
+		border-bottom: 4px solid transparent;
+		white-space: nowrap;
+	}
+	.dropdown-trigger:hover {
+		border-bottom-color: var(--accent);
+	}
+	.dropdown-menu {
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		transform: translateX(-50%);
+		background: white;
+		border: 1px solid #e8e0d5;
+		border-radius: 10px;
+		box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+		padding: 1.25rem;
+		min-width: 480px;
+		z-index: 1000;
+		display: none;
+		flex-direction: row;
+		gap: 1.5rem;
+	}
+	.dropdown:hover .dropdown-menu {
+		display: flex;
+	}
+	.dropdown-col {
+		display: flex;
+		flex-direction: column;
+		gap: 0.35rem;
+		min-width: 130px;
+	}
+	.dropdown-heading {
+		font-size: 0.7rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.06em;
+		color: #9A8060;
+		margin-bottom: 0.35rem;
+		padding-bottom: 0.35rem;
+		border-bottom: 1px solid #f0ebe3;
+	}
+	.dropdown-menu a {
+		font-size: 0.875rem;
+		color: #2C1810;
+		text-decoration: none;
+		padding: 0.2rem 0;
+		border-bottom: none !important;
+	}
+	.dropdown-menu a:hover {
+		color: #9A8060;
 	}
 	@media (max-width: 720px) {
     .social-links {
@@ -164,6 +248,22 @@ import HeaderLink from './HeaderLink.astro';
     color: #FDFBF7;
 }
 @media (max-width: 720px) {
+    .dropdown-trigger { font-size: 0.82rem; padding: 0.4em 0.4em; }
+    .dropdown-menu {
+        position: static;
+        transform: none;
+        box-shadow: none;
+        border: 1px solid #e8e0d5;
+        border-radius: 6px;
+        min-width: unset;
+        width: 100%;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0.75rem;
+        display: none;
+    }
+    .dropdown:hover .dropdown-menu,
+    .dropdown.open .dropdown-menu { display: flex; }
     .wechat-bar { padding: 0.5rem 1rem; }
     .wechat-bar-inner { gap: 0.75rem; }
     .wechat-label { font-size: 0.75rem; }
