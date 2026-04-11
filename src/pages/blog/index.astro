@@ -251,7 +251,8 @@ function formatDate(date) {
         {posts.slice(1).map((post, i) => (
           
             href={`/blog/${post.id}/`}
-            class={`card${i >= 6 ? ' hidden' : ''}`}
+            class="card"
+            style={i >= 6 ? 'display:none' : ''}
             data-index={i}
           >
             <p class="card-date">{formatDate(post.data.pubDate)}</p>
@@ -290,8 +291,8 @@ function formatDate(date) {
     const btn = document.getElementById('load-more-btn');
     if (btn) {
       btn.addEventListener('click', () => {
-        const hidden = document.querySelectorAll('.card.hidden');
-        hidden.forEach(card => card.classList.remove('hidden'));
+        const hidden = document.querySelectorAll('.card[style*="display:none"]');
+        hidden.forEach(card => card.style.display = '');
         btn.classList.add('hidden');
       });
     }
