@@ -40,6 +40,7 @@ import HeaderLink from './HeaderLink.astro';
 			<HeaderLink href="/contact">联系我们</HeaderLink>
 		</div>
 		<div class="social-links">
+			<a href="/en/" class="lang-switch">EN</a>
 			<a href="https://www.linkedin.com/in/mia-he-93422b160/" target="_blank">
 				<span class="sr-only">LinkedIn</span>
 				<svg viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
@@ -102,6 +103,21 @@ import HeaderLink from './HeaderLink.astro';
 		display: flex;
 		gap: 0.5em;
 		align-items: center;
+	}
+	.lang-switch {
+		font-size: 0.78rem;
+		font-weight: 700;
+		letter-spacing: 0.08em;
+		color: #7A5A1A !important;
+		border: 1px solid #C8A86A;
+		border-radius: 4px;
+		padding: 0.2rem 0.6rem !important;
+		border-bottom: 1px solid #C8A86A !important;
+		line-height: 1.4;
+	}
+	.lang-switch:hover {
+		background: #7A5A1A;
+		color: #fff !important;
 	}
 	/* Dropdown */
 	.dropdown {
