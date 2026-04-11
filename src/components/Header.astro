@@ -272,3 +272,16 @@ import HeaderLink from './HeaderLink.astro';
     .wechat-phone { font-size: 0.8rem; padding: 0.4rem 1rem; }
 }
 </style>
+<script>
+  const trigger = document.querySelector('.dropdown-trigger');
+  const dropdown = document.querySelector('.dropdown');
+  if (trigger && dropdown) {
+    trigger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      dropdown.classList.toggle('open');
+    });
+    document.addEventListener('click', () => {
+      dropdown.classList.remove('open');
+    });
+  }
+</script>
