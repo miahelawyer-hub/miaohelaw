@@ -1,0 +1,77 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import HeaderEn from '../../components/HeaderEn.astro';
+import Footer from '../../components/Footer.astro';
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <BaseHead
+    title="Case Results | Miao He — Ontario Family Law Lawyer"
+    description="Verified case outcomes from Miao He's family law practice — cross-border asset recovery, agreement enforcement, court victories. 647-930-6688."
+  />
+  <link rel="canonical" href="https://www.miaohelaw.ca/en/case-results" />
+  <link rel="alternate" hreflang="zh" href="https://www.miaohelaw.ca/case-results" />
+  <link rel="alternate" hreflang="en" href="https://www.miaohelaw.ca/en/case-results" />
+  <style>
+    * { box-sizing: border-box; }
+    body { background: #faf8f5; margin: 0; font-family: Georgia, serif; color: #2C1810; }
+    .page-hero { background: linear-gradient(135deg, #2C1810, #4A2C1A); padding: 3rem 1.5rem 2.5rem; }
+    .page-hero .inner { max-width: 900px; margin: 0 auto; }
+    .breadcrumb { font-size: 0.82rem; color: rgba(255,255,255,0.5); margin-bottom: 0.6rem; }
+    .breadcrumb a { color: rgba(255,255,255,0.5); text-decoration: none; }
+    .page-hero h1 { color: #fff; font-size: clamp(1.6rem, 3vw, 2.2rem); margin: 0 0 0.4rem; }
+    .page-hero p { color: #D4A853; margin: 0; font-size: 0.92rem; }
+    .main-wrap { max-width: 900px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
+    .results-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin: 2rem 0; }
+    .result-card { background: #fff; border: 1px solid #E8E0D5; border-radius: 8px; padding: 2rem; text-align: center; }
+    .result-amount { font-size: 2rem; font-weight: 700; color: #7A5A1A; }
+    .result-label { font-size: 0.9rem; color: #5A4A3A; margin-top: 0.4rem; }
+    .case-block { background: #fff; border: 1px solid #E8E0D5; border-left: 4px solid #7A5A1A; border-radius: 0 8px 8px 0; padding: 1.5rem; margin-bottom: 1.5rem; }
+    .case-block h3 { color: #2C1810; font-size: 1rem; margin: 0 0 0.6rem; }
+    .case-block p { color: #5A4A3A; font-size: 0.88rem; line-height: 1.7; margin: 0 0 0.6rem; }
+    .case-block a { color: #7A5A1A; font-size: 0.85rem; }
+    .cta-box { background: #F5EFE0; border-radius: 8px; padding: 2rem; text-align: center; margin-top: 3rem; }
+    .cta-box h2 { color: #2C1810; margin-bottom: 0.5rem; }
+    .cta-box p { color: #5A4A3A; font-size: 0.9rem; margin-bottom: 1.2rem; }
+    .btn { display: inline-block; background: #7A5A1A; color: #fff; padding: 0.7rem 1.8rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; font-weight: 600; }
+    @media (max-width: 600px) { .results-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <HeaderEn />
+  <div class="page-hero">
+    <div class="inner">
+      <div class="breadcrumb"><a href="/en/">Home</a> › Case Results</div>
+      <h1>Case Results</h1>
+      <p>Verified outcomes from Miao He's family law practice</p>
+    </div>
+  </div>
+  <div class="main-wrap">
+    <div class="results-grid">
+      <div class="result-card"><div class="result-amount">$300,000+</div><div class="result-label">Cross-Border Asset Recovery</div></div>
+      <div class="result-card"><div class="result-amount">$500,000+</div><div class="result-label">Agreement Value Protected</div></div>
+      <div class="result-card"><div class="result-amount">$400,000</div><div class="result-label">Saved via Financial Error Discovery</div></div>
+      <div class="result-card"><div class="result-amount">$1M+</div><div class="result-label">Mediation Settlement Achieved</div></div>
+    </div>
+
+    <div class="case-block">
+      <h3>Yang v. Li, 2024 ONSC 4801 · Verified Court Record</h3>
+      <p>Represented the respondent against eight simultaneous claims, including a CBV business valuation dispute. All claims defeated at motion. Costs awarded for opposing counsel's lack of candour. Appeal unanimously dismissed by three Divisional Court judges.</p>
+      <a href="https://www.canlii.org/en/on/onsc/doc/2024/2024onsc4801/2024onsc4801.html" target="_blank" rel="noopener">Verify on CanLII →</a>
+    </div>
+
+    <div class="case-block">
+      <h3>Li v. Jiang, 2026 ONSC 561</h3>
+      <p>Represented the applicant against a respondent who refused to cooperate with the sale of matrimonial property for 19 months. Successfully obtained an Unrestricted Access Order and $4,000 in costs.</p>
+    </div>
+
+    <div class="cta-box">
+      <h2>Book a Consultation</h2>
+      <p>30 minutes · $220 + HST · Mandarin & English</p>
+      <a href="tel:6479306688" class="btn">📞 647-930-6688</a>
+    </div>
+  </div>
+  <Footer />
+</body>
+</html>

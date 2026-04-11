@@ -1,0 +1,76 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import HeaderEn from '../../components/HeaderEn.astro';
+import Footer from '../../components/Footer.astro';
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <BaseHead
+    title="Client Reviews | Miao He — Ontario Family Law Lawyer"
+    description="Real client reviews for Miao He, Ontario & China dual-licensed family lawyer in Markham. Serving the Chinese-Canadian community. 647-930-6688."
+  />
+  <link rel="canonical" href="https://www.miaohelaw.ca/en/testimonials" />
+  <link rel="alternate" hreflang="zh" href="https://www.miaohelaw.ca/testimonials" />
+  <link rel="alternate" hreflang="en" href="https://www.miaohelaw.ca/en/testimonials" />
+  <style>
+    * { box-sizing: border-box; }
+    body { background: #faf8f5; margin: 0; font-family: Georgia, serif; color: #2C1810; }
+    .page-hero { background: linear-gradient(135deg, #2C1810, #4A2C1A); padding: 3rem 1.5rem 2.5rem; }
+    .page-hero .inner { max-width: 900px; margin: 0 auto; }
+    .breadcrumb { font-size: 0.82rem; color: rgba(255,255,255,0.5); margin-bottom: 0.6rem; }
+    .breadcrumb a { color: rgba(255,255,255,0.5); text-decoration: none; }
+    .page-hero h1 { color: #fff; font-size: clamp(1.6rem, 3vw, 2.2rem); margin: 0 0 0.4rem; }
+    .page-hero p { color: #D4A853; margin: 0; font-size: 0.92rem; }
+    .main-wrap { max-width: 900px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
+    .testimonial-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+    .testimonial-card { background: #fff; border: 1px solid #E8E0D5; border-radius: 8px; padding: 1.5rem; }
+    .testimonial-img { width: 100%; border-radius: 6px; margin-bottom: 1rem; }
+    .testimonial-note { font-size: 0.85rem; color: #5A4A3A; line-height: 1.6; font-style: italic; }
+    .cta-box { background: #F5EFE0; border-radius: 8px; padding: 2rem; text-align: center; margin-top: 3rem; }
+    .cta-box h2 { color: #2C1810; margin-bottom: 0.5rem; }
+    .cta-box p { color: #5A4A3A; font-size: 0.9rem; margin-bottom: 1.2rem; }
+    .btn { display: inline-block; background: #7A5A1A; color: #fff; padding: 0.7rem 1.8rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <HeaderEn />
+  <div class="page-hero">
+    <div class="inner">
+      <div class="breadcrumb"><a href="/en/">Home</a> › Reviews</div>
+      <h1>Client Reviews</h1>
+      <p>Real feedback from clients Miao He has represented</p>
+    </div>
+  </div>
+  <div class="main-wrap">
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <img src="/email-ivy.jpeg" alt="Client review — Ivy" class="testimonial-img" />
+        <p class="testimonial-note">Email review from client Ivy</p>
+      </div>
+      <div class="testimonial-card">
+        <img src="/google-review-paula.jpeg" alt="Google review — Paula" class="testimonial-img" />
+        <p class="testimonial-note">Google review from Paula</p>
+      </div>
+      <div class="testimonial-card">
+        <img src="/wechat-message.jpeg" alt="WeChat review" class="testimonial-img" />
+        <p class="testimonial-note">WeChat message from client</p>
+      </div>
+      <div class="testimonial-card">
+        <img src="/google-review-jane.jpeg" alt="Google review — Jane" class="testimonial-img" />
+        <p class="testimonial-note">Google review from Jane</p>
+      </div>
+      <div class="testimonial-card">
+        <img src="/card-handwritten.jpeg" alt="Handwritten thank-you card" class="testimonial-img" />
+        <p class="testimonial-note">Handwritten thank-you card from client</p>
+      </div>
+    </div>
+    <div class="cta-box">
+      <h2>Ready to Work Together?</h2>
+      <p>Initial consultation 30 min · $220 + HST · Mandarin & English</p>
+      <a href="tel:6479306688" class="btn">📞 647-930-6688</a>
+    </div>
+  </div>
+  <Footer />
+</body>
+</html>

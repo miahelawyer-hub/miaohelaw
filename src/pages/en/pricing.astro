@@ -1,0 +1,89 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import HeaderEn from '../../components/HeaderEn.astro';
+import Footer from '../../components/Footer.astro';
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <BaseHead
+    title="Legal Fees | Miao He — Ontario Family Law Lawyer"
+    description="Transparent fee information for Ontario family law services. Initial consultation $220 + HST. Hourly billing. 647-930-6688."
+  />
+  <link rel="canonical" href="https://www.miaohelaw.ca/en/pricing" />
+  <link rel="alternate" hreflang="zh" href="https://www.miaohelaw.ca/pricing" />
+  <link rel="alternate" hreflang="en" href="https://www.miaohelaw.ca/en/pricing" />
+  <style>
+    * { box-sizing: border-box; }
+    body { background: #faf8f5; margin: 0; font-family: Georgia, serif; color: #2C1810; }
+    .page-hero { background: linear-gradient(135deg, #2C1810, #4A2C1A); padding: 3rem 1.5rem 2.5rem; }
+    .page-hero .inner { max-width: 900px; margin: 0 auto; }
+    .breadcrumb { font-size: 0.82rem; color: rgba(255,255,255,0.5); margin-bottom: 0.6rem; }
+    .breadcrumb a { color: rgba(255,255,255,0.5); text-decoration: none; }
+    .page-hero h1 { color: #fff; font-size: clamp(1.6rem, 3vw, 2.2rem); margin: 0 0 0.4rem; }
+    .page-hero p { color: #D4A853; margin: 0; font-size: 0.92rem; }
+    .main-wrap { max-width: 860px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
+    .card { background: #fff; border: 1px solid #E8E0D5; border-radius: 8px; padding: 2rem; margin-bottom: 1.5rem; }
+    .card h2 { color: #7A5A1A; font-size: 1.1rem; margin: 0 0 1rem; letter-spacing: 0.03em; }
+    .card p { color: #5A4A3A; font-size: 0.9rem; line-height: 1.8; margin-bottom: 0.8rem; }
+    .price-highlight { font-size: 1.4rem; font-weight: 700; color: #2C1810; }
+    .card ul { list-style: none; padding: 0; }
+    .card ul li { color: #5A4A3A; font-size: 0.88rem; padding: 0.3rem 0 0.3rem 1.2rem; position: relative; }
+    .card ul li::before { content: "·"; position: absolute; left: 0; color: #7A5A1A; }
+    .note { background: #F5EFE0; border-radius: 6px; padding: 1rem 1.2rem; font-size: 0.85rem; color: #5A4A3A; margin-top: 0.8rem; }
+    .cta-box { background: #F5EFE0; border-radius: 8px; padding: 2rem; text-align: center; margin-top: 3rem; }
+    .cta-box h2 { color: #2C1810; margin-bottom: 0.5rem; }
+    .cta-box p { color: #5A4A3A; font-size: 0.9rem; margin-bottom: 1.2rem; }
+    .btn { display: inline-block; background: #7A5A1A; color: #fff; padding: 0.7rem 1.8rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; font-weight: 600; margin: 0.3rem; }
+    .btn-outline { background: transparent; border: 1px solid #7A5A1A; color: #7A5A1A; }
+  </style>
+</head>
+<body>
+  <HeaderEn />
+  <div class="page-hero">
+    <div class="inner">
+      <div class="breadcrumb"><a href="/en/">Home</a> › Pricing</div>
+      <h1>Legal Fees</h1>
+      <p>Transparent, honest fee information</p>
+    </div>
+  </div>
+  <div class="main-wrap">
+    <div class="card">
+      <h2>INITIAL CONSULTATION</h2>
+      <p class="price-highlight">$220 + HST · 30 minutes</p>
+      <p>The consultation covers your legal situation, available options, estimated timeline, and an honest assessment of costs. Billed in 6-minute increments after the initial 30 minutes.</p>
+    </div>
+
+    <div class="card">
+      <h2>HOW FEES WORK</h2>
+      <p>All legal work is billed at an hourly rate in 6-minute increments. Retainer required before work begins — applies against billed fees.</p>
+      <ul>
+        <li>Uncontested divorce (simple) — typically $2,000 to $5,000</li>
+        <li>Contested litigation — billed hourly; complex cases may reach $50,000 to $80,000+ per year</li>
+        <li>Domestic contracts (marriage/separation agreements) — varies by complexity</li>
+        <li>Notary public services — flat fee per document</li>
+      </ul>
+      <div class="note">These are estimates only. Every case is different. You will receive a clear cost estimate after your initial consultation.</div>
+    </div>
+
+    <div class="card">
+      <h2>WHAT AFFECTS THE COST?</h2>
+      <ul>
+        <li>Whether the case is contested or uncontested</li>
+        <li>Number of issues in dispute (property, custody, support)</li>
+        <li>Whether cross-border or complex assets are involved</li>
+        <li>The other party's level of cooperation</li>
+        <li>Whether the case goes to trial or settles earlier</li>
+      </ul>
+    </div>
+
+    <div class="cta-box">
+      <h2>Book Your Consultation</h2>
+      <p>30 minutes · $220 + HST · Mandarin & English · Usually responds within 3 business days</p>
+      <a href="tel:6479306688" class="btn">📞 647-930-6688</a>
+      <a href="mailto:miao@miaohelaw.ca" class="btn btn-outline">Email Us</a>
+    </div>
+  </div>
+  <Footer />
+</body>
+</html>

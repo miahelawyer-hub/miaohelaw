@@ -1,0 +1,89 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import HeaderEn from '../../components/HeaderEn.astro';
+import Footer from '../../components/Footer.astro';
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <BaseHead
+    title="Smart Advocacy | Miao He — Ontario Family Law Lawyer"
+    description="Litigation experience is the strongest negotiating tool. Miao He negotiates when it makes sense and litigates when necessary — always putting your interests first. 647-930-6688."
+  />
+  <link rel="canonical" href="https://www.miaohelaw.ca/en/smart-advocacy" />
+  <link rel="alternate" hreflang="zh" href="https://www.miaohelaw.ca/smart-advocacy" />
+  <link rel="alternate" hreflang="en" href="https://www.miaohelaw.ca/en/smart-advocacy" />
+  <style>
+    * { box-sizing: border-box; }
+    body { background: #faf8f5; margin: 0; font-family: Georgia, serif; color: #2C1810; }
+    .page-hero { background: linear-gradient(135deg, #2C1810, #4A2C1A); padding: 3rem 1.5rem 2.5rem; }
+    .page-hero .inner { max-width: 900px; margin: 0 auto; }
+    .breadcrumb { font-size: 0.82rem; color: rgba(255,255,255,0.5); margin-bottom: 0.6rem; }
+    .breadcrumb a { color: rgba(255,255,255,0.5); text-decoration: none; }
+    .page-hero h1 { color: #fff; font-size: clamp(1.6rem, 3vw, 2.2rem); margin: 0 0 0.4rem; }
+    .page-hero p { color: #D4A853; margin: 0; font-size: 0.92rem; }
+    .main-wrap { max-width: 860px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
+    .card { background: #fff; border: 1px solid #E8E0D5; border-radius: 8px; padding: 2rem; margin-bottom: 1.5rem; }
+    .card h2 { color: #7A5A1A; font-size: 1rem; margin: 0 0 1rem; letter-spacing: 0.03em; }
+    .card p { color: #5A4A3A; font-size: 0.9rem; line-height: 1.8; margin-bottom: 0.8rem; }
+    .card p:last-child { margin-bottom: 0; }
+    .principle-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 1rem; }
+    .principle-item { background: #F5EFE0; border-radius: 6px; padding: 1rem; text-align: center; }
+    .principle-icon { font-size: 1.5rem; margin-bottom: 0.4rem; }
+    .principle-title { font-size: 0.85rem; font-weight: 700; color: #2C1810; }
+    .cta-box { background: #F5EFE0; border-radius: 8px; padding: 2rem; text-align: center; margin-top: 3rem; }
+    .cta-box h2 { color: #2C1810; margin-bottom: 0.5rem; }
+    .cta-box p { color: #5A4A3A; font-size: 0.9rem; margin-bottom: 1.2rem; }
+    .btn { display: inline-block; background: #7A5A1A; color: #fff; padding: 0.7rem 1.8rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; font-weight: 600; }
+    @media (max-width: 600px) { .principle-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <HeaderEn />
+  <div class="page-hero">
+    <div class="inner">
+      <div class="breadcrumb"><a href="/en/">Home</a> › Smart Advocacy</div>
+      <h1>Smart Advocacy</h1>
+      <p>Litigation experience is the strongest negotiating tool</p>
+    </div>
+  </div>
+  <div class="main-wrap">
+    <div class="card">
+      <h2>THE PHILOSOPHY</h2>
+      <p>Many people assume that hiring a litigator means going to court. The opposite is often true — the more experienced the litigator, the stronger the position at the negotiating table.</p>
+      <p>Miao He's approach is simple: evaluate every case through a litigator's lens, pursue the best outcome whether that is through negotiation, mediation, or full trial — and never let emotion drive the strategy.</p>
+    </div>
+
+    <div class="card">
+      <h2>THREE PRINCIPLES</h2>
+      <div class="principle-grid">
+        <div class="principle-item">
+          <div class="principle-icon">🤝</div>
+          <div class="principle-title">Negotiate When It Makes Sense</div>
+        </div>
+        <div class="principle-item">
+          <div class="principle-icon">⚖️</div>
+          <div class="principle-title">Litigate When Necessary</div>
+        </div>
+        <div class="principle-item">
+          <div class="principle-icon">🎯</div>
+          <div class="principle-title">Always Protect Your Interests</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>WHY LITIGATION EXPERIENCE MATTERS IN NEGOTIATION</h2>
+      <p>When the opposing party knows your lawyer has 15+ years of active court experience and 20+ court hours per month, negotiations shift. Credible litigation threat changes the dynamic at the table.</p>
+      <p>A verified example: Yang v. Li, 2024 ONSC 4801 — eight simultaneous claims defeated at motion, costs awarded, appeal dismissed unanimously by three Divisional Court judges.</p>
+    </div>
+
+    <div class="cta-box">
+      <h2>Book a Consultation</h2>
+      <p>30 minutes · $220 + HST · Mandarin & English</p>
+      <a href="tel:6479306688" class="btn">📞 647-930-6688</a>
+    </div>
+  </div>
+  <Footer />
+</body>
+</html>

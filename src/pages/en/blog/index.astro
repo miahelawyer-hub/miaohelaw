@@ -1,0 +1,77 @@
+---
+import { getCollection } from 'astro:content';
+import BaseHead from '../../../components/BaseHead.astro';
+import HeaderEn from '../../../components/HeaderEn.astro';
+import Footer from '../../../components/Footer.astro';
+
+const posts = (await getCollection('blog')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+function formatDate(date) {
+  return new Date(date).toLocaleDateString('en-CA', { year: 'numeric', month: 'long', day: 'numeric' });
+}
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <BaseHead
+    title="Blog | Miao He — Ontario Family Law Lawyer"
+    description="Articles on Ontario family law by Miao He: divorce, child custody, property division, marriage contracts, cross-border assets. Serving the Chinese-Canadian community. 647-930-6688."
+  />
+  <meta name="keywords" content="Ontario family law blog,divorce lawyer Toronto blog,family law articles,Chinese family lawyer,Miao He lawyer" />
+  <link rel="canonical" href="https://www.miaohelaw.ca/en/blog" />
+  <link rel="alternate" hreflang="zh" href="https://www.miaohelaw.ca/blog" />
+  <link rel="alternate" hreflang="en" href="https://www.miaohelaw.ca/en/blog" />
+  <style is:global>
+    * { box-sizing: border-box; }
+    body { background: #faf8f5; margin: 0; font-family: Georgia, serif; }
+    .page-hero { background: linear-gradient(135deg, #2C1810, #4A2C1A); padding: 3rem 1.5rem 2.5rem; }
+    .page-hero .inner { max-width: 1100px; margin: 0 auto; }
+    .breadcrumb { font-size: 0.82rem; color: rgba(255,255,255,0.5); margin-bottom: 0.6rem; }
+    .breadcrumb a { color: rgba(255,255,255,0.5); text-decoration: none; }
+    .page-hero h1 { color: #fff; font-size: clamp(1.6rem, 3vw, 2.2rem); margin: 0 0 0.4rem; }
+    .page-hero p { color: #D4A853; margin: 0; font-size: 0.92rem; }
+    .main-wrap { max-width: 1100px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
+    .posts-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+    .post-card { background: #fff; border: 1px solid #E8E0D5; border-radius: 8px; padding: 1.5rem; text-decoration: none; color: inherit; display: block; }
+    .post-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
+    .post-date { font-size: 0.78rem; color: #9A8060; margin-bottom: 0.5rem; }
+    .post-title { font-size: 1.05rem; color: #2C1810; font-weight: 700; margin-bottom: 0.5rem; line-height: 1.4; }
+    .post-desc { font-size: 0.85rem; color: #5A4A3A; line-height: 1.6; }
+    .post-link { display: inline-block; margin-top: 0.8rem; font-size: 0.82rem; color: #8B6914; font-weight: 600; }
+    .cta-box { background: #F5EFE0; border-radius: 8px; padding: 2rem; text-align: center; margin-top: 3rem; }
+    .cta-box h2 { color: #2C1810; margin-bottom: 0.5rem; }
+    .cta-box p { color: #5A4A3A; font-size: 0.9rem; margin-bottom: 1.2rem; }
+    .btn { display: inline-block; background: #7A5A1A; color: #fff; padding: 0.7rem 1.8rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <HeaderEn />
+  <div class="page-hero">
+    <div class="inner">
+      <div class="breadcrumb"><a href="/en/">Home</a> › Blog</div>
+      <h1>Family Law Blog</h1>
+      <p>Practical Ontario family law guidance from Miao He</p>
+    </div>
+  </div>
+  <div class="main-wrap">
+    <div class="posts-grid">
+      {posts.map(post => (
+        <a class="post-card" href={`/blog/${post.slug}`}>
+          <div class="post-date">{formatDate(post.data.pubDate)}</div>
+          <div class="post-title">{post.data.title}</div>
+          {post.data.description && <div class="post-desc">{post.data.description}</div>}
+          <span class="post-link">Read More →</span>
+        </a>
+      ))}
+    </div>
+    <div class="cta-box">
+      <h2>Need Legal Advice?</h2>
+      <p>Initial consultation 30 min · $220 + HST · Mandarin & English</p>
+      <a href="tel:6479306688" class="btn">📞 647-930-6688</a>
+    </div>
+  </div>
+  <Footer />
+</body>
+</html>
