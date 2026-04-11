@@ -1,0 +1,77 @@
+---
+---
+<header>
+  <nav>
+    <h2><a href="/en/">Miao He — Family Lawyer</a></h2>
+    <div class="internal-links">
+      <a href="/en/">Home</a>
+      <div class="dropdown">
+        <span class="dropdown-trigger">Family Law ▾</span>
+        <div class="dropdown-menu">
+          <a href="/en/family-law/divorce-litigation">Divorce Litigation</a>
+          <a href="/en/family-law/cross-border-assets">Cross-Border Assets</a>
+          <a href="/en/family-law/child-custody">Child Custody</a>
+          <a href="/en/family-law/support">Spousal & Child Support</a>
+          <a href="/en/family-law/domestic-contracts">Domestic Contracts</a>
+          <a href="/en/family-law/mediation">Mediation & ADR</a>
+        </div>
+      </div>
+      <a href="/en/about">About</a>
+      <a href="/contact">Contact</a>
+    </div>
+    <div class="social-links">
+      <a href="/" class="lang-switch">中文</a>
+      <a href="https://www.linkedin.com/in/mia-he-93422b160/" target="_blank">LinkedIn</a>
+      <a href="mailto:miao@miaohelaw.ca">Email</a>
+    </div>
+  </nav>
+</header>
+<div class="contact-bar">
+  <div class="contact-bar-inner">
+    <span>📞 <a href="tel:6479306688">647-930-6688</a></span>
+    <span>📧 <a href="mailto:miao@miaohelaw.ca">miao@miaohelaw.ca</a></span>
+    <span>H. LAW FIRM · 208-7050 Woodbine Ave, Markham</span>
+  </div>
+</div>
+
+<style>
+  * { box-sizing: border-box; }
+  header { margin: 0; padding: 0 1.5em; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+  h2 { margin: 0; font-size: 0.95em; }
+  h2 a { text-decoration: none; color: #2C1810; }
+  nav { display: flex; align-items: center; justify-content: space-between; padding: 0.8em 0; gap: 1rem; }
+  .internal-links { display: flex; align-items: center; gap: 0.2rem; flex-wrap: wrap; }
+  .internal-links a { padding: 0.5em 0.6em; color: #2C1810; text-decoration: none; font-size: 0.9rem; border-bottom: 3px solid transparent; }
+  .internal-links a:hover { border-bottom-color: #9A8060; }
+  .social-links { display: flex; align-items: center; gap: 0.5rem; }
+  .social-links a { color: #2C1810; text-decoration: none; font-size: 0.85rem; padding: 0.3em 0.5em; }
+  .lang-switch { font-weight: 700; border: 1px solid #C8A86A; border-radius: 4px; color: #7A5A1A !important; }
+  .lang-switch:hover { background: #7A5A1A; color: #fff !important; }
+  /* Dropdown */
+  .dropdown { position: relative; display: inline-block; }
+  .dropdown-trigger { padding: 0.5em 0.6em; color: #2C1810; cursor: pointer; font-size: 0.9rem; border-bottom: 3px solid transparent; white-space: nowrap; }
+  .dropdown-trigger:hover { border-bottom-color: #9A8060; }
+  .dropdown-menu { display: none; position: absolute; top: 100%; left: 0; background: white; border: 1px solid #e8e0d5; border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.12); padding: 0.75rem; min-width: 220px; z-index: 1000; flex-direction: column; gap: 0.2rem; }
+  .dropdown:hover .dropdown-menu { display: flex; }
+  .dropdown.open .dropdown-menu { display: flex; }
+  .dropdown-menu a { font-size: 0.85rem; color: #2C1810; text-decoration: none; padding: 0.4rem 0.6rem; border-radius: 4px; border-bottom: none !important; }
+  .dropdown-menu a:hover { background: #f5efe0; color: #7A5A1A; }
+  /* Contact bar */
+  .contact-bar { background: #F5EFE0; border-bottom: 1px solid #EDE8DF; padding: 0.4rem 1.5rem; }
+  .contact-bar-inner { max-width: 960px; margin: 0 auto; display: flex; gap: 1.5rem; align-items: center; font-size: 0.8rem; color: #6B5A3A; flex-wrap: wrap; }
+  .contact-bar-inner a { color: #7A5A1A; text-decoration: none; font-weight: 600; }
+  @media (max-width: 720px) {
+    h2 { display: none; }
+    .social-links { gap: 0.3rem; }
+    .internal-links a { font-size: 0.78rem; padding: 0.4em 0.35em; }
+    .contact-bar-inner { gap: 0.8rem; font-size: 0.75rem; }
+  }
+</style>
+<script>
+  const trigger = document.querySelector('.dropdown-trigger');
+  const dropdown = document.querySelector('.dropdown');
+  if (trigger && dropdown) {
+    trigger.addEventListener('click', (e) => { e.stopPropagation(); dropdown.classList.toggle('open'); });
+    document.addEventListener('click', () => { dropdown.classList.remove('open'); });
+  }
+</script>
