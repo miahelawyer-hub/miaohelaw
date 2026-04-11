@@ -64,6 +64,20 @@ const allPosts = (await getCollection('blog')).sort(
       },
       {
         "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": title,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": description
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://www.miaohelaw.ca/" },
