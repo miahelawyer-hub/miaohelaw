@@ -58,9 +58,10 @@ import { faqItems } from '../../data/faq';
   .breadcrumb a{color:white;text-decoration:none}
   .container{max-width:1000px;margin:0 auto;padding:0 1.5rem}
   .faq-index-section{padding:3rem 0}
-  .capsules{display:flex;flex-wrap:wrap;gap:0.75rem;margin-bottom:3rem}
-  .capsule{background:#f5f0eb;border:1.5px solid #e0d5c8;color:#4A2C1A;padding:0.55rem 1.2rem;border-radius:999px;font-size:0.9rem;text-decoration:none;transition:all 0.2s;line-height:1.4}
+  .capsules{display:flex;flex-wrap:wrap;gap:1rem 1.25rem;margin-bottom:3rem}
+  .capsule{background:#f5f0eb;border:1.5px solid #e0d5c8;color:#4A2C1A;padding:0.65rem 1.4rem;border-radius:999px;font-size:0.95rem;text-decoration:none;transition:all 0.2s;line-height:1.5}
   .capsule:hover{background:#2C1810;border-color:#2C1810;color:#ffffff}
+  @media(max-width:768px){.capsules{flex-direction:column;gap:0.6rem}.capsule{width:100%;text-align:center;padding:0.8rem 1.2rem;font-size:1rem}}
   .contact-card{background:linear-gradient(135deg,#2C1810,#4A2C1A);border-radius:12px;padding:2rem;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap}
   .contact-info h2{color:#D4A853;margin:0 0 0.5rem;font-size:1.2rem}
   .contact-info p{color:#ffffff;margin:0;font-size:0.95rem}
