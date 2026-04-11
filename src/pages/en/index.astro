@@ -1,0 +1,271 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <BaseHead
+    title="Miao He — Chinese Family Lawyer Toronto | Ontario & China Dual-Licensed | H. LAW FIRM"
+    description="Miao He (何淼) is a dual-licensed family lawyer in Ontario and China, serving the Chinese-Canadian community in the GTA. Divorce litigation, cross-border assets, child custody. Call 647-930-6688."
+  />
+  <meta name="keywords" content="Chinese family lawyer Toronto,Mandarin divorce lawyer Ontario,dual licensed China Canada lawyer,Markham family lawyer,GTA Chinese divorce lawyer,cross-border asset divorce,family lawyer Markham,Ontario family law Chinese" />
+  <meta property="og:title" content="Miao He — Chinese Family Lawyer Toronto | Ontario & China Dual-Licensed" />
+  <meta property="og:description" content="Dual-licensed in Ontario and China. Divorce litigation, cross-border assets, child custody. Serving Toronto, Markham, Richmond Hill and all of Ontario. 647-930-6688." />
+  <meta property="og:url" content="https://www.miaohelaw.ca/en/" />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://www.miaohelaw.ca/en/" />
+  <link rel="alternate" hreflang="zh" href="https://www.miaohelaw.ca/" />
+  <link rel="alternate" hreflang="en" href="https://www.miaohelaw.ca/en/" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "@id": "https://www.miaohelaw.ca/en/#service",
+    "name": "Miao He — Chinese Family Lawyer Toronto",
+    "url": "https://www.miaohelaw.ca/en/",
+    "telephone": "+1-647-930-6688",
+    "email": "miao@miaohelaw.ca",
+    "provider": {
+      "@type": "Person",
+      "name": "Miao He",
+      "alternateName": ["何淼", "Mia He"],
+      "jobTitle": "Family Law Lawyer",
+      "knowsLanguage": ["zh-Hans", "en"],
+      "hasCredential": [
+        {"@type": "EducationalOccupationalCredential", "credentialCategory": "Law Society of Ontario — Member #83315K"},
+        {"@type": "EducationalOccupationalCredential", "credentialCategory": "China Bar Association — Licensed"},
+        {"@type": "EducationalOccupationalCredential", "credentialCategory": "Expert Witness — Chinese Family Law & Marriage Law"},
+        {"@type": "EducationalOccupationalCredential", "credentialCategory": "Notary Public — Ontario"}
+      ]
+    },
+    "serviceType": ["Divorce Litigation", "Cross-Border Asset Division", "Child Custody", "Spousal Support", "Domestic Contracts", "Mediation"],
+    "areaServed": {"@type": "Province", "name": "Ontario"},
+    "inLanguage": ["zh-Hans", "en"]
+  }
+  </script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Georgia', serif; background: #0F0A04; color: #E8D5B0; }
+    a { color: inherit; text-decoration: none; }
+
+    /* LANG SWITCHER */
+    .lang-bar { background: #1A1208; text-align: right; padding: 0.4rem 2rem; font-size: 0.8rem; }
+    .lang-bar a { color: #C8B99A; margin-left: 1rem; }
+    .lang-bar a.active { color: #D4A853; font-weight: 600; }
+
+    /* HERO */
+    .hero { padding: 5rem 2rem 4rem; max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: 1fr 340px; gap: 3rem; align-items: center; }
+    .hero-badge { font-size: 0.75rem; letter-spacing: 0.15em; color: #D4A853; text-transform: uppercase; margin-bottom: 1rem; }
+    .hero h1 { font-size: 2.8rem; font-weight: 700; line-height: 1.2; color: #F5E6C8; margin-bottom: 1rem; }
+    .hero-sub { font-size: 1rem; color: #C8B99A; line-height: 1.7; margin-bottom: 1.5rem; }
+    .hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .btn-primary { background: #D4A853; color: #1A1208; padding: 0.75rem 1.8rem; border-radius: 6px; font-weight: 700; font-size: 0.95rem; }
+    .btn-secondary { border: 1px solid #D4A853; color: #D4A853; padding: 0.75rem 1.8rem; border-radius: 6px; font-size: 0.95rem; }
+    .hero-photo img { width: 100%; border-radius: 8px; }
+    .availability { margin-top: 1rem; font-size: 0.82rem; color: #A89070; }
+
+    /* STATS */
+    .stats { display: grid; grid-template-columns: repeat(4, 1fr); background: #2C2418; }
+    .stat-item { padding: 2rem 1rem; text-align: center; border-right: 1px solid #3A3020; }
+    .stat-item:last-child { border-right: none; }
+    .stat-number { font-size: 2rem; font-weight: 700; color: #D4A853; }
+    .stat-label { font-size: 0.78rem; color: #C8B99A; margin-top: 0.3rem; }
+
+    /* SERVICES */
+    .areas { padding: 4rem 2rem; max-width: 900px; margin: 0 auto; }
+    .areas h2 { font-size: 1.4rem; color: #D4A853; margin-bottom: 2rem; text-align: center; letter-spacing: 0.05em; }
+    .areas-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+    .area-card { background: #1A1208; border: 1px solid #3A3020; padding: 1.5rem; border-radius: 8px; }
+    .area-num { font-size: 0.7rem; color: #D4A853; letter-spacing: 0.1em; margin-bottom: 0.5rem; }
+    .area-card h3 { font-size: 0.95rem; color: #F5E6C8; margin-bottom: 0.6rem; }
+    .area-card p { font-size: 0.82rem; color: #A89070; line-height: 1.6; margin-bottom: 1rem; }
+    .area-link { font-size: 0.82rem; color: #D4A853; }
+
+    /* CREDENTIALS */
+    .cred-section { background: #1A1208; padding: 3rem 2rem; text-align: center; }
+    .cred-section h2 { color: #D4A853; margin-bottom: 1.5rem; font-size: 1.2rem; letter-spacing: 0.05em; }
+    .cred-list { display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem; max-width: 800px; margin: 0 auto; }
+    .cred-tag { border: 1px solid #3A3020; padding: 0.5rem 1.2rem; border-radius: 20px; font-size: 0.8rem; color: #C8B99A; }
+
+    /* CASE RESULTS */
+    .results { padding: 4rem 2rem; max-width: 900px; margin: 0 auto; }
+    .results h2 { color: #D4A853; margin-bottom: 2rem; text-align: center; font-size: 1.2rem; letter-spacing: 0.1em; }
+    .results-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+    .result-card { background: #1A1208; border: 1px solid #3A3020; padding: 1.5rem; border-radius: 8px; text-align: center; }
+    .result-amount { font-size: 1.8rem; font-weight: 700; color: #D4A853; }
+    .result-label { font-size: 0.82rem; color: #C8B99A; margin-top: 0.4rem; }
+
+    /* CANLII */
+    .canlii { background: #2C2418; padding: 3rem 2rem; max-width: 900px; margin: 0 auto; border-radius: 8px; }
+    .canlii h2 { color: #F5E6C8; margin-bottom: 1rem; font-size: 1.1rem; }
+    .canlii p { color: #C8B99A; font-size: 0.88rem; line-height: 1.7; margin-bottom: 1rem; }
+    .canlii blockquote { border-left: 3px solid #D4A853; padding-left: 1rem; font-style: italic; color: #A89070; font-size: 0.85rem; margin: 1rem 0; }
+    .canlii a { color: #D4A853; font-size: 0.85rem; }
+
+    /* CTA */
+    .cta-section { padding: 4rem 2rem; text-align: center; max-width: 700px; margin: 0 auto; }
+    .cta-section h2 { font-size: 1.6rem; color: #F5E6C8; margin-bottom: 1rem; }
+    .cta-section p { color: #C8B99A; margin-bottom: 2rem; }
+    .cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+    @media (max-width: 768px) {
+      .hero { grid-template-columns: 1fr; }
+      .hero-photo { order: -1; max-width: 200px; margin: 0 auto; }
+      .stats { grid-template-columns: repeat(2, 1fr); }
+      .areas-grid { grid-template-columns: 1fr; }
+      .results-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="lang-bar">
+    <a href="/">中文</a>
+    <a href="/en/" class="active">EN</a>
+  </div>
+
+  <Header />
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <div class="hero-badge">Ontario & China Dual-Licensed · Serving GTA Chinese Community</div>
+      <h1>Miao He<br/>Family Lawyer<br/>Toronto</h1>
+      <p class="hero-sub">
+        Dual-licensed in Ontario and China. 15+ years of active court experience — 20+ court hours per month. Serving the Chinese-Canadian community in Mandarin and English across the Greater Toronto Area.
+      </p>
+      <div class="hero-cta">
+        <a href="tel:6479306688" class="btn-primary">📞 647-930-6688 · Book a Consultation</a>
+        <a href="mailto:miao@miaohelaw.ca" class="btn-secondary">Email Us</a>
+      </div>
+      <p class="availability">Now accepting new cases · Initial consultation 30 min · $220 + HST</p>
+    </div>
+    <div class="hero-photo">
+      <img src="/miao-he-lawyer.jpeg" alt="Miao He — Ontario Family Law Lawyer" />
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="stat-item">
+      <div class="stat-number">15+</div>
+      <div class="stat-label">Years of Experience</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">20+</div>
+      <div class="stat-label">Court Hours / Month</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">200+</div>
+      <div class="stat-label">Consultations / Year</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">2</div>
+      <div class="stat-label">Bar Licences — Ontario & China</div>
+    </div>
+  </section>
+
+  <!-- CREDENTIALS -->
+  <div class="cred-section">
+    <h2>CREDENTIALS & QUALIFICATIONS</h2>
+    <div class="cred-list">
+      <span class="cred-tag">Law Society of Ontario #83315K</span>
+      <span class="cred-tag">China Bar Association — Licensed</span>
+      <span class="cred-tag">Osgoode Hall Law School LL.M.</span>
+      <span class="cred-tag">Expert Witness — Chinese Family Law</span>
+      <span class="cred-tag">Notary Public — Ontario</span>
+      <span class="cred-tag">Mediation Certificate</span>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="areas">
+    <h2>Family Law Services</h2>
+    <div class="areas-grid">
+      <div class="area-card">
+        <div class="area-num">01</div>
+        <h3>Divorce Litigation</h3>
+        <p>High-conflict divorce litigation at the Ontario Superior Court. 15+ years of experience, 20+ court hours per month.</p>
+        <a href="/en/family-law/divorce-litigation" class="area-link">Learn More →</a>
+      </div>
+      <div class="area-card">
+        <div class="area-num">02</div>
+        <h3>Cross-Border Asset Division</h3>
+        <p>Tracing and dividing assets held in China — real estate, company shares, family trusts. A capability most Ontario lawyers do not have.</p>
+        <a href="/en/family-law/cross-border-assets" class="area-link">Learn More →</a>
+      </div>
+      <div class="area-card">
+        <div class="area-num">03</div>
+        <h3>Child Custody & Access</h3>
+        <p>Custody disputes, CAS intervention, emergency motions, international relocation and Hague Convention matters.</p>
+        <a href="/en/family-law/child-custody" class="area-link">Learn More →</a>
+      </div>
+      <div class="area-card">
+        <div class="area-num">04</div>
+        <h3>Spousal & Child Support</h3>
+        <p>Hidden income investigation, self-employment income attribution, overseas income tracing, FRO enforcement.</p>
+        <a href="/en/family-law/support" class="area-link">Learn More →</a>
+      </div>
+      <div class="area-card">
+        <div class="area-num">05</div>
+        <h3>Domestic Contracts</h3>
+        <p>Marriage contracts, separation agreements, cohabitation agreements — drafted from a litigator's perspective.</p>
+        <a href="/en/family-law/domestic-contracts" class="area-link">Learn More →</a>
+      </div>
+      <div class="area-card">
+        <div class="area-num">06</div>
+        <h3>Mediation & ADR</h3>
+        <p>Certified mediator. Strategic out-of-court settlement, mediation-arbitration, JRP representation.</p>
+        <a href="/en/family-law/mediation" class="area-link">Learn More →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE RESULTS -->
+  <section class="results">
+    <h2>VERIFIED OUTCOMES</h2>
+    <div class="results-grid">
+      <div class="result-card">
+        <div class="result-amount">$300,000+</div>
+        <div class="result-label">Cross-Border Asset Recovery</div>
+      </div>
+      <div class="result-card">
+        <div class="result-amount">$500,000+</div>
+        <div class="result-label">Agreement Value Protected</div>
+      </div>
+      <div class="result-card">
+        <div class="result-amount">$400,000</div>
+        <div class="result-label">Saved via Financial Error Discovery</div>
+      </div>
+      <div class="result-card">
+        <div class="result-amount">$1M+</div>
+        <div class="result-label">Mediation Settlement Achieved</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CANLII -->
+  <div style="padding: 0 2rem 3rem; max-width: 900px; margin: 0 auto;">
+    <div class="canlii">
+      <h2>Yang v. Li, 2024 ONSC 4801 · Verified Court Record</h2>
+      <p>Eight simultaneous claims — including a CBV business valuation dispute — defeated at motion. Significant costs award granted for lack of candour. Appeal dismissed unanimously by three Divisional Court judges.</p>
+      <blockquote>"The motion for leave to appeal the interlocutory decision of Boucher J. dated July 22, 2024 is dismissed. There shall be no order of costs." — Backhouse J., D.L. Corbett J., O'Brien J. · Ontario Divisional Court · September 4, 2024</blockquote>
+      <a href="https://www.canlii.org/en/on/onscdc/doc/2024/2024onsc4801/2024onsc4801.html" target="_blank" rel="noopener">Verify on CanLII →</a>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <h2>Ready to Talk?</h2>
+    <p>Initial consultation is 30 minutes at $220 + HST. We respond within 3 business days. Services available in Mandarin and English.</p>
+    <div class="cta-buttons">
+      <a href="tel:6479306688" class="btn-primary">📞 647-930-6688</a>
+      <a href="mailto:miao@miaohelaw.ca" class="btn-secondary">Email Us</a>
+      <a href="/en/about" class="btn-secondary">About Miao He</a>
+    </div>
+  </section>
+
+  <Footer />
+</body>
+</html>
