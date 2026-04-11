@@ -290,13 +290,20 @@ function formatDate(date) {
 
   <script>
     const btn = document.getElementById('load-more-btn');
-    if (btn) {
+    const grid = document.getElementById('post-grid');
+    const dataEl = document.getElementById('more-posts-data');
+    if (btn && grid && dataEl) {
+      const morePosts = JSON.parse(dataEl.textContent);
+      if (morePosts.length === 0) btn.style.display = 'none';
       btn.addEventListener('click', () => {
-        document.querySelectorAll('.card[data-hidden="true"]').forEach(card => {
-          card.style.display = '';
-          card.setAttribute('data-hidden', 'false');
+        morePosts.forEach(p => {
+          const a = document.createElement('a');
+          a.href = p.url;
+          a.className = 'card';
+          a.innerHTML = `<p class="card-date">${p.date}</p><p class="card-title">${p.title}</p><p class="card-desc">${p.desc}</p><div class="card-footer"><span style="font-size:0.75rem;color:#9A8060;">何淼律师</span><span class="card-arrow">→</span></div>`;
+          grid.appendChild(a);
         });
-        btn.classList.add('hidden');
+        btn.style.display = 'none';
       });
     }
   </script>
