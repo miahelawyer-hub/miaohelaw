@@ -26,12 +26,15 @@ import { faqItems } from '../../data/faq';
     </section>
     <section class="faq-index-section">
       <div class="container">
-        <div class="capsules">
-          {faqItems.map(item => (
-            <a href={"/faq/" + item.slug} class="capsule">
+        <div class="capsules" id="capsulesBox">
+          {faqItems.map((item, i) => (
+            <a href={"/faq/" + item.slug} class={`capsule${i >= 15 ? ' hidden-cap' : ''}`}>
               {item.capsule}
             </a>
           ))}
+        </div>
+        <div class="show-more-wrap" id="showMoreWrap">
+          <button class="show-more-btn" id="showMoreBtn">展开全部 43 个问题 ↓</button>
         </div>
         <div class="contact-card">
           <div class="contact-info">
@@ -68,5 +71,18 @@ import { faqItems } from '../../data/faq';
   .contact-actions{display:flex;gap:0.75rem;flex-wrap:wrap}
   .btn-primary{display:inline-block;background:#D4A853;color:#2C1810;padding:0.7rem 1.4rem;border-radius:6px;text-decoration:none;font-weight:700;font-size:0.9rem}
   .btn-secondary{display:inline-block;background:transparent;color:white;border:2px solid white;padding:0.7rem 1.4rem;border-radius:6px;text-decoration:none;font-weight:700;font-size:0.9rem}
-  @media(max-width:768px){.page-hero h1{font-size:1.5rem}.contact-card{flex-direction:column}}
+  .hidden-cap{display:none}
+  .show-more-wrap{text-align:center;margin:0.5rem 0 2rem}
+  .show-more-btn{background:transparent;border:1.5px solid #9A8060;color:#9A8060;padding:0.6rem 1.8rem;border-radius:999px;font-size:0.9rem;cursor:pointer;transition:all 0.2s;font-family:inherit}
+  .show-more-btn:hover{background:#9A8060;color:white}
+  @media(max-width:768px){.page-hero h1{font-size:1.5rem}.contact-card{flex-direction:column}.capsules{flex-direction:column;gap:0.5rem}.capsule{width:100%;text-align:center;box-sizing:border-box}}
 </style>
+
+<script>
+  const btn = document.getElementById('showMoreBtn');
+  const wrap = document.getElementById('showMoreWrap');
+  btn?.addEventListener('click', () => {
+    document.querySelectorAll('.hidden-cap').forEach(el => el.classList.remove('hidden-cap'));
+    wrap.style.display = 'none';
+  });
+</script>
