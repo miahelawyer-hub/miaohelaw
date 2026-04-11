@@ -9,6 +9,24 @@
     <span class="call-divider">·</span>
     <span class="call-number">647-930-6688</span>
   </a>
+
+  <button class="wechat-btn" id="wechat-btn" aria-label="微信扫码咨询">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M8.5 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm5 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+      <path d="M2 8.5C2 5.46 4.91 3 8.5 3S15 5.46 15 8.5c0 .17-.01.34-.03.5H15c3.31 0 6 2.24 6 5s-2.69 5-6 5c-.87 0-1.69-.17-2.44-.47L10 19.5l.5-2C9.4 17.83 8.23 18 7 18c-3.31 0-6-2.24-6-5 0-2.07 1.33-3.87 3.28-4.75A6.5 6.5 0 0 1 2 8.5zm6.5-4C5.46 4.5 3 6.24 3 8.5c0 1.49.9 2.82 2.32 3.63l.68.39-.2.77-.2.77.97-.58.5-.3.55.18c.73.24 1.52.37 2.38.37.18 0 .36-.01.53-.02C10.18 13.08 10 12.55 10 12c0-2.76 2.24-5 5-5h.17C14.27 5.3 11.6 4.5 8.5 4.5zm6.5 6c-2.76 0-5 2.24-5 5s2.24 5 5 5c.82 0 1.6-.2 2.28-.55l.52-.27.54.2.8.3-.23-.9-.15-.6.56-.38C20.22 18.5 21 17.3 21 16c0-2.76-2.24-5-5-5zm-1.5 4a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5zm3 0a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5z"/>
+    </svg>
+    <span>微信</span>
+  </button>
+</div>
+
+<!-- 微信二维码 Modal -->
+<div class="wechat-modal" id="wechat-modal" aria-hidden="true">
+  <div class="wechat-modal-inner">
+    <button class="modal-close" id="modal-close" aria-label="关闭">✕</button>
+    <p class="modal-title">微信扫码咨询</p>
+    <img src="/wechat-qr.jpg" alt="何淼律师微信二维码" class="qr-img" />
+    <p class="modal-sub">扫码添加何淼律师微信<br/>普通话服务 · 随时咨询</p>
+  </div>
 </div>
 
 <style>
@@ -21,7 +39,10 @@
   z-index: 999;
   background: #111;
   border-top: 1px solid #c9a96e;
+  flex-direction: row;
 }
+
+/* 电话部分占大部分宽度 */
 .call-link {
   display: flex;
   align-items: center;
@@ -32,6 +53,7 @@
   text-decoration: none;
   font-weight: 600;
   letter-spacing: 0.02em;
+  flex: 1;
 }
 .call-text, .call-number {
   font-size: 1rem;
@@ -42,9 +64,106 @@
 .call-link:active {
   background: #1a1a1a;
 }
+
+/* 微信按钮 */
+.wechat-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  padding: 0.6rem 1.1rem;
+  background: #07C160;
+  border: none;
+  border-left: 1px solid #c9a96e;
+  color: white;
+  font-size: 0.72rem;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.02em;
+  min-width: 64px;
+}
+.wechat-btn:active {
+  background: #06a050;
+}
+
+/* Modal 遮罩 */
+.wechat-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(0,0,0,0.65);
+  align-items: center;
+  justify-content: center;
+}
+.wechat-modal.open {
+  display: flex;
+}
+
+/* Modal 内容 */
+.wechat-modal-inner {
+  background: white;
+  border-radius: 16px;
+  padding: 1.75rem 1.5rem 1.5rem;
+  text-align: center;
+  position: relative;
+  width: 280px;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.25);
+}
+.modal-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.9rem;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: #999;
+  cursor: pointer;
+  line-height: 1;
+}
+.modal-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #111;
+  margin: 0 0 1rem;
+}
+.qr-img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+.modal-sub {
+  font-size: 0.8rem;
+  color: #666;
+  margin: 0.85rem 0 0;
+  line-height: 1.6;
+}
+
 @media (max-width: 768px) {
   .call-bar {
-    display: block;
+    display: flex;
   }
 }
 </style>
+
+<script>
+  const wechatBtn = document.getElementById('wechat-btn');
+  const modal = document.getElementById('wechat-modal');
+  const closeBtn = document.getElementById('modal-close');
+
+  wechatBtn?.addEventListener('click', () => {
+    modal?.classList.add('open');
+  });
+
+  closeBtn?.addEventListener('click', () => {
+    modal?.classList.remove('open');
+  });
+
+  // 点遮罩关闭
+  modal?.addEventListener('click', (e) => {
+    if (e.target === modal) modal.classList.remove('open');
+  });
+</script>
