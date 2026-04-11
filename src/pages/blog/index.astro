@@ -184,6 +184,7 @@ function formatDate(date) {
     }
     .load-more-btn:hover { background: #D4A853; color: white; }
     .load-more-btn.hidden { display: none; }
+    .card[data-hidden="true"] { display: none; }
     .card.hidden { display: none; }
 
     /* ── CTA ── */
@@ -252,7 +253,7 @@ function formatDate(date) {
           
             href={`/blog/${post.id}/`}
             class="card"
-            style={i >= 6 ? 'display:none' : ''}
+            data-hidden={i >= 6 ? 'true' : 'false'}
             data-index={i}
           >
             <p class="card-date">{formatDate(post.data.pubDate)}</p>
@@ -291,8 +292,10 @@ function formatDate(date) {
     const btn = document.getElementById('load-more-btn');
     if (btn) {
       btn.addEventListener('click', () => {
-        const hidden = document.querySelectorAll('.card[style*="display:none"]');
-        hidden.forEach(card => card.style.display = '');
+        document.querySelectorAll('.card[data-hidden="true"]').forEach(card => {
+          card.style.display = '';
+          card.setAttribute('data-hidden', 'false');
+        });
         btn.classList.add('hidden');
       });
     }
