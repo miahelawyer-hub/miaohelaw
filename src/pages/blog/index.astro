@@ -166,6 +166,9 @@ function formatDate(date) {
     .card-footer { display: flex; align-items: center; justify-content: space-between; margin-top: auto; padding-top: 0.75rem; border-top: 1px solid #f0ebe3; }
     .card-arrow { color: #D4A853; font-size: 1rem; }
 
+    /* ── 隐藏超出卡片 ── */
+    .card.hidden { display: none; }
+
     /* ── 加载更多 ── */
     .load-more-wrap { text-align: center; margin: 0.5rem 0 2rem; }
     .load-more-btn {
@@ -183,9 +186,6 @@ function formatDate(date) {
       transition: background 0.15s, color 0.15s;
     }
     .load-more-btn:hover { background: #D4A853; color: white; }
-    .load-more-btn.hidden { display: none; }
-    .card[data-hidden="true"] { display: none; }
-    .card.hidden { display: none; }
 
     /* ── CTA ── */
     .cta-box {
@@ -247,14 +247,12 @@ function formatDate(date) {
         </a>
       )}
 
-      <!-- 其余文章网格，默认显示6篇 -->
+      <!-- 其余文章网格：第1-6篇显示，第7篇起隐藏 -->
       <div class="grid" id="post-grid">
         {posts.slice(1).map((post, i) => (
-          
+          <a
             href={`/blog/${post.id}/`}
-            class="card"
-            data-hidden={i >= 6 ? 'true' : 'false'}
-            data-index={i}
+            class={`card${i >= 6 ? ' hidden' : ''}`}
           >
             <p class="card-date">{formatDate(post.data.pubDate)}</p>
             <p class="card-title">{post.data.title}</p>
@@ -267,7 +265,7 @@ function formatDate(date) {
         ))}
       </div>
 
-      <!-- 加载更多按钮 -->
+      <!-- 加载更多按钮（文章超过7篇才显示） -->
       {posts.length > 7 && (
         <div class="load-more-wrap">
           <button class="load-more-btn" id="load-more-btn">
@@ -291,19 +289,18 @@ function formatDate(date) {
   <script>
     const btn = document.getElementById('load-more-btn');
     const grid = document.getElementById('post-grid');
-    const dataEl = document.getElementById('more-posts-data');
-    if (btn && grid && dataEl) {
-      const morePosts = JSON.parse(dataEl.textContent);
-      if (morePosts.length === 0) btn.style.display = 'none';
+
+    if (btn && grid) {
+      const getHidden = () => Array.from(grid.querySelectorAll('.card.hidden'));
+
+      // 初始检查：如果没有隐藏卡片就隐藏按钮
+      if (getHidden().length === 0) btn.style.display = 'none';
+
       btn.addEventListener('click', () => {
-        morePosts.forEach(p => {
-          const a = document.createElement('a');
-          a.href = p.url;
-          a.className = 'card';
-          a.innerHTML = `<p class="card-date">${p.date}</p><p class="card-title">${p.title}</p><p class="card-desc">${p.desc}</p><div class="card-footer"><span style="font-size:0.75rem;color:#9A8060;">何淼律师</span><span class="card-arrow">→</span></div>`;
-          grid.appendChild(a);
-        });
-        btn.style.display = 'none';
+        // 每次展开6张
+        getHidden().slice(0, 6).forEach(card => card.classList.remove('hidden'));
+        // 展开后如果没有更多，隐藏按钮
+        if (getHidden().length === 0) btn.style.display = 'none';
       });
     }
   </script>
