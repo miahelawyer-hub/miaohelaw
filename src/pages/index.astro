@@ -176,6 +176,7 @@ const posts = (await getCollection('blog')).sort(
 					<div class="stat-number">2</div>
 					<div class="stat-label">Bar Licences — Ontario & China</div>
 				</div>
+				<div class="stat-item stat-empty"></div>
 				<div class="stat-item">
 					<div class="stat-number">🎓</div>
 					<div class="stat-label">中国婚姻法专家证人</div>
@@ -184,6 +185,7 @@ const posts = (await getCollection('blog')).sort(
 					<div class="stat-number">📋</div>
 					<div class="stat-label">Notary Public · 公证人</div>
 				</div>
+				<div class="stat-item stat-empty"></div>
 			</section>
 			<!-- Practice Areas -->
 			<section class="areas">
@@ -384,6 +386,7 @@ const posts = (await getCollection('blog')).sort(
 	.stats { display: grid; grid-template-columns: repeat(4, 1fr); background: #2C2418; }
 	.stat-item { padding: 2rem 1rem; text-align: center; border-right: 1px solid #3A3020; }
 	.stat-item:last-child { border-right: none; }
+	.stat-empty { border-right: none; }
 	.stat-number { font-size: 2.25rem; font-weight: 500; color: #FAC775; margin-bottom: 0.4rem; }
 	.stat-label { font-size: 0.75rem; color: #9A8060; line-height: 1.4; }
 
