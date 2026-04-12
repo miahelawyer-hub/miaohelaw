@@ -7,71 +7,230 @@ import Footer from '../../components/Footer.astro';
 <html lang="en">
 <head>
   <BaseHead
-    title="Case Results | Miao He — Ontario Family Law Lawyer"
-    description="Verified case outcomes from Miao He's family law practice — cross-border asset recovery, agreement enforcement, court victories. 647-930-6688."
+    title="Case Results | Miao He — Ontario Family Law Lawyer | Real Outcomes"
+    description="Real case results by Miao He: cross-border asset recovery, divorce litigation, custody, property division. Yang v. Li 2024 ONSC 4801, Li v. Jiang 2026 ONSC 561. 647-930-6688."
   />
+  <meta name="keywords" content="Miao He case results,Ontario family law cases,Yang v Li 2024 ONSC 4801,Li v Jiang 2026 ONSC 561,cross-border asset recovery,divorce litigation Toronto,Chinese family lawyer results" />
+  <meta property="og:title" content="Case Results | Miao He — Ontario Family Law Lawyer" />
+  <meta property="og:url" content="https://www.miaohelaw.ca/en/case-results" />
+  <meta property="og:type" content="website" />
   <link rel="canonical" href="https://www.miaohelaw.ca/en/case-results" />
   <link rel="alternate" hreflang="zh" href="https://www.miaohelaw.ca/case-results" />
   <link rel="alternate" hreflang="en" href="https://www.miaohelaw.ca/en/case-results" />
+  <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://www.miaohelaw.ca/en/"},
+      {"@type":"ListItem","position":2,"name":"Case Results","item":"https://www.miaohelaw.ca/en/case-results"}
+    ]
+  }</script>
   <style>
-    * { box-sizing: border-box; }
-    body { background: #faf8f5; margin: 0; font-family: Georgia, serif; color: #2C1810; }
-    .page-hero { background: linear-gradient(135deg, #2C1810, #4A2C1A); padding: 3rem 1.5rem 2.5rem; }
-    .page-hero .inner { max-width: 900px; margin: 0 auto; }
-    .breadcrumb { font-size: 0.82rem; color: rgba(255,255,255,0.5); margin-bottom: 0.6rem; }
-    .breadcrumb a { color: rgba(255,255,255,0.5); text-decoration: none; }
-    .page-hero h1 { color: #fff; font-size: clamp(1.6rem, 3vw, 2.2rem); margin: 0 0 0.4rem; }
-    .page-hero p { color: #D4A853; margin: 0; font-size: 0.92rem; }
-    .main-wrap { max-width: 900px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
-    .results-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin: 2rem 0; }
-    .result-card { background: #fff; border: 1px solid #E8E0D5; border-radius: 8px; padding: 2rem; text-align: center; }
-    .result-amount { font-size: 2rem; font-weight: 700; color: #7A5A1A; }
-    .result-label { font-size: 0.9rem; color: #5A4A3A; margin-top: 0.4rem; }
-    .case-block { background: #fff; border: 1px solid #E8E0D5; border-left: 4px solid #7A5A1A; border-radius: 0 8px 8px 0; padding: 1.5rem; margin-bottom: 1.5rem; }
-    .case-block h3 { color: #2C1810; font-size: 1rem; margin: 0 0 0.6rem; }
-    .case-block p { color: #5A4A3A; font-size: 0.88rem; line-height: 1.7; margin: 0 0 0.6rem; }
-    .case-block a { color: #7A5A1A; font-size: 0.85rem; }
-    .cta-box { background: #F5EFE0; border-radius: 8px; padding: 2rem; text-align: center; margin-top: 3rem; }
-    .cta-box h2 { color: #2C1810; margin-bottom: 0.5rem; }
-    .cta-box p { color: #5A4A3A; font-size: 0.9rem; margin-bottom: 1.2rem; }
-    .btn { display: inline-block; background: #7A5A1A; color: #fff; padding: 0.7rem 1.8rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; font-weight: 600; }
-    @media (max-width: 600px) { .results-grid { grid-template-columns: 1fr; } }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Georgia, serif; background: #FDFBF7; color: #2C1810; }
+    a { color: inherit; text-decoration: none; }
+    .page-hero { background: #2C2418; padding: 4rem 2rem; text-align: center; }
+    .page-hero-inner { max-width: 760px; margin: 0 auto; }
+    .page-label { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: #9A8060; margin-bottom: 1rem; }
+    .page-hero h1 { font-size: 2.5rem; font-weight: 400; color: #FAC775; margin-bottom: 1rem; }
+    .page-hero p { color: #C4AA80; font-size: 0.95rem; line-height: 1.7; max-width: 640px; margin: 0 auto; }
+    .results-numbers { background: #F5EFE0; padding: 3rem 2rem; border-bottom: 1px solid #EDE8DF; }
+    .results-numbers-inner { max-width: 960px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; text-align: center; }
+    .result-stat-number { font-size: 2rem; color: #7A5A1A; margin-bottom: 0.5rem; }
+    .result-stat-label { font-size: 0.8rem; color: #6B5A3A; line-height: 1.5; }
+    .cases-section { padding: 4rem 2rem; }
+    .cases-inner { max-width: 800px; margin: 0 auto; }
+    .section-title { font-size: 1.75rem; font-weight: 400; color: #1A1208; margin-bottom: 1.5rem; padding-bottom: 0.75rem; border-bottom: 2px solid #EDE8DF; }
+    .anonymous-note { font-size: 0.85rem; color: #9A8060; margin-bottom: 2rem; }
+    .case-card { background: #FDFBF7; border: 1px solid #EDE8DF; border-radius: 8px; padding: 2rem; margin-bottom: 1.5rem; border-left: 4px solid #7A5A1A; }
+    .case-card.verified { border-left-color: #FAC775; }
+    .case-tag { font-size: 0.75rem; color: #7A5A1A; font-weight: 600; background: #F5EFE0; display: inline-block; padding: 3px 10px; border-radius: 4px; margin-bottom: 0.5rem; }
+    .case-card.verified .case-tag { background: #2C2418; color: #FAC775; }
+    .case-meta { font-size: 0.78rem; color: #9A8060; margin-bottom: 1.25rem; }
+    .case-card h3 { font-size: 1.25rem; font-weight: 400; color: #1A1208; margin-bottom: 0.5rem; }
+    .case-narrative p { font-size: 0.9rem; color: #4A3A2A; line-height: 1.8; margin-bottom: 0.75rem; }
+    .case-narrative strong { color: #1A1208; }
+    .case-narrative blockquote { background: rgba(44,36,24,0.05); border-left: 3px solid #FAC775; padding: 1rem 1.25rem; margin: 1rem 0; border-radius: 4px; font-style: italic; font-size: 0.85rem; color: #4A3A2A; line-height: 1.7; }
+    .case-narrative blockquote cite { display: block; margin-top: 0.5rem; font-style: normal; font-size: 0.78rem; color: #9A8060; }
+    .case-suitable { margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid #EDE8DF; font-size: 0.82rem; color: #6B5A3A; line-height: 1.6; }
+    .suitable-label { font-weight: 600; color: #7A5A1A; }
+    .case-verify { display: inline-block; margin-top: 1rem; font-size: 0.8rem; color: #7A5A1A; text-decoration: none; font-weight: 500; }
+    .case-verify:hover { text-decoration: underline; }
+    .page-cta { background: #F5EFE0; border-top: 1px solid #EDE8DF; padding: 4rem 2rem; text-align: center; }
+    .page-cta h2 { font-size: 1.75rem; font-weight: 400; color: #1A1208; margin-bottom: 0.75rem; }
+    .page-cta p { color: #6B5A3A; font-size: 0.9rem; max-width: 540px; margin: 0 auto 1.5rem; line-height: 1.7; }
+    .cta-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .btn-primary { background: #7A5A1A; color: #FDFBF7; padding: 0.75rem 1.75rem; border-radius: 6px; font-size: 0.9rem; font-weight: 500; }
+    .btn-secondary { background: transparent; color: #7A5A1A; padding: 0.75rem 1.75rem; border-radius: 6px; font-size: 0.9rem; font-weight: 500; border: 1px solid #7A5A1A; }
+    @media (max-width: 720px) { .results-numbers-inner { grid-template-columns: repeat(2, 1fr); } .page-hero h1 { font-size: 1.75rem; } .case-card { padding: 1.5rem; } }
   </style>
 </head>
 <body>
   <HeaderEn />
-  <div class="page-hero">
-    <div class="inner">
-      <div class="breadcrumb"><a href="/en/">Home</a> › Case Results</div>
-      <h1>Case Results</h1>
-      <p>Verified outcomes from Miao He's family law practice</p>
-    </div>
-  </div>
-  <div class="main-wrap">
-    <div class="results-grid">
-      <div class="result-card"><div class="result-amount">$300,000+</div><div class="result-label">Cross-Border Asset Recovery</div></div>
-      <div class="result-card"><div class="result-amount">$500,000+</div><div class="result-label">Agreement Value Protected</div></div>
-      <div class="result-card"><div class="result-amount">$400,000</div><div class="result-label">Saved via Financial Error Discovery</div></div>
-      <div class="result-card"><div class="result-amount">$1M+</div><div class="result-label">Mediation Settlement Achieved</div></div>
-    </div>
+  <main>
+    <section class="page-hero">
+      <div class="page-hero-inner">
+        <div class="page-label">Real Case Outcomes · First-Person Accounts</div>
+        <h1>My Cases</h1>
+        <p>Every case recorded here is real. Behind each one is a family facing one of the hardest moments of their lives. I write these not to boast, but because if you are in a similar situation, I hope something here gives you a sense of direction.</p>
+      </div>
+    </section>
 
-    <div class="case-block">
-      <h3>Yang v. Li, 2024 ONSC 4801 · Verified Court Record</h3>
-      <p>Represented the respondent against eight simultaneous claims, including a CBV business valuation dispute. All claims defeated at motion. Costs awarded for opposing counsel's lack of candour. Appeal unanimously dismissed by three Divisional Court judges.</p>
-      <a href="https://www.canlii.org/en/on/onsc/doc/2024/2024onsc4801/2024onsc4801.html" target="_blank" rel="noopener">Verify on CanLII →</a>
-    </div>
+    <section class="results-numbers">
+      <div class="results-numbers-inner">
+        <div class="result-stat">
+          <div class="result-stat-number">$300,000+</div>
+          <div class="result-stat-label">Cross-Border Assets Recovered</div>
+        </div>
+        <div class="result-stat">
+          <div class="result-stat-number">$500,000+</div>
+          <div class="result-stat-label">Agreement Enforced</div>
+        </div>
+        <div class="result-stat">
+          <div class="result-stat-number">$400,000</div>
+          <div class="result-stat-label">Saved for Client</div>
+        </div>
+        <div class="result-stat">
+          <div class="result-stat-number">$1M+</div>
+          <div class="result-stat-label">Settled Through Mediation</div>
+        </div>
+      </div>
+    </section>
 
-    <div class="case-block">
-      <h3>Li v. Jiang, 2026 ONSC 561</h3>
-      <p>Represented the applicant against a respondent who refused to cooperate with the sale of matrimonial property for 19 months. Successfully obtained an Unrestricted Access Order and $4,000 in costs.</p>
-    </div>
+    <section class="cases-section">
+      <div class="cases-inner">
 
-    <div class="cta-box">
-      <h2>Book a Consultation</h2>
-      <p>30 minutes · $220 + HST · Mandarin & English</p>
-      <a href="tel:6479306688" class="btn">📞 647-930-6688</a>
-    </div>
-  </div>
+        <h2 class="section-title">CanLII Verified Decisions</h2>
+
+        <div class="case-card verified">
+          <div class="case-tag">【Enforcement · Matrimonial Property】Verified on CanLII</div>
+          <h3>Li v. Jiang, 2026 ONSC 561</h3>
+          <div class="case-meta">Ontario Superior Court of Justice · Representing the Applicant · Miao He</div>
+          <div class="case-narrative">
+            <p>This case left a deep impression on me — not because of its legal complexity, but because of how suffocating the opposing strategy was. Delay was the weapon. Every move we made was met with a new excuse to stall.</p>
+            <p>The dispute involved a matrimonial investment property in Richmond Hill. A court order to sell the property had already been made, but the opposing party — who held physical control of the property — refused to cooperate for 19 consecutive months. No repairs. No staging. No listing. The delay was deliberate and systematic.</p>
+            <p>Complicating matters further, the property contained an unpermitted basement unit, which created legal exposure for any potential buyer. The opposing party clearly knew this and was using it as another stalling tool.</p>
+            <p><strong>The turning point:</strong> I concluded that continued waiting would only embolden the delay. We brought an Enforcement Motion and presented the full 19-month record of non-compliance to the court. At the same time, we made a clear legal argument that addressing the basement compliance issue was a necessary condition for achieving fair market value — and that failing to do so created further litigation risk. The court accepted our position entirely.</p>
+            <p><strong>Court orders:</strong> The court granted the applicant unrestricted access to the property, authorized the retention of contractors to complete necessary repairs, set a binding timeline for listing, and ordered the opposing party to pay $4,000 in costs.</p>
+            <p>Critically, the motion allowed the property to be listed during the GTA's key spring market window, maximizing recovery for my client.</p>
+            <p><strong>My takeaway:</strong> In some cases, negotiation only rewards the delaying party. When you are facing a counterpart who is deliberately running out the clock, the best strategy is to let the court speak. Non-compliance has a cost — and that cost should be borne by the party creating the delay.</p>
+          </div>
+          <a href="https://www.canlii.org/en/on/onsc/doc/2026/2026onsc561/2026onsc561.html" target="_blank" class="case-verify">Verify on CanLII →</a>
+        </div>
+
+        <div class="case-card verified">
+          <div class="case-tag">【Divorce Litigation · Business Valuation · Appeal】Verified on CanLII</div>
+          <h3>Yang v. Li, 2024 ONSC 4801</h3>
+          <div class="case-meta">Ontario Superior Court of Justice + Divisional Court · Representing the Respondent · Miao He</div>
+          <div class="case-narrative">
+            <p>Most divorce cases are already complex. But when the matrimonial assets include shares in a private company, the proceedings take on another dimension entirely. A Chartered Business Valuator must be engaged to independently value the company, and that valuation number becomes the foundation of the entire property division. Any weakness in preparation gives the opposing party room to upend the case.</p>
+            <p>In this matter, the opposing party pursued eight simultaneous claims: imputed income, child support, spousal support, access, residence, net family property, characterization of funds, and business valuation. This was a deliberate high-pressure litigation strategy — overwhelm the respondent across every front and create a gap somewhere.</p>
+            <p><strong>The turning point:</strong> Rather than mounting a fragmented defence on all eight claims, I identified the central pivot of the case: credibility. I found systematic inconsistencies in the opposing party's evidence and made a strategic decision to anchor the entire case to this point. It was a high-risk, high-reward move. If the court accepted that the opposing party's evidence was fundamentally unreliable, the eight claims would fall together.</p>
+            <p><strong>Court orders:</strong> Motion judge Boucher J. accepted our central position. All eight claims were dismissed together. Beyond that, the court found that the opposing party had demonstrated a lack of candour — a finding that is extremely rare in family law — and issued a significant costs order against them. The court was, in effect, penalizing the conduct of the litigation itself.</p>
+            <p>The opposing party appealed. Three judges of the Ontario Divisional Court reviewed the full record and ended the matter with characteristic brevity:</p>
+            <blockquote>"The motion for leave to appeal the interlocutory decision of Boucher J. dated July 22, 2024 is dismissed. There shall be no order of costs."<br/><cite>— Backhouse J., D.L. Corbett J., O'Brien J. · Ontario Divisional Court · September 4, 2024</cite></blockquote>
+            <p><strong>My takeaway:</strong> When facing a scattershot litigation strategy, the most important task is identifying the fundamental flaw in the opposing party's overall narrative — not responding to each claim individually. Complexity does not mean invulnerability. In fact, the more complex a case, the more internal contradictions tend to surface.</p>
+          </div>
+          <a href="https://www.canlii.org/en/on/onscdc/doc/2024/2024onsc4801/2024onsc4801.html" target="_blank" class="case-verify">Verify on CanLII →</a>
+        </div>
+
+        <h2 class="section-title" style="margin-top: 3rem;">Additional Cases</h2>
+        <p class="anonymous-note">The following cases are displayed with client consent. Identifying information has been anonymized.</p>
+
+        <div class="case-card">
+          <div class="case-tag">【Cross-Border Assets · Emergency Freeze Order】</div>
+          <h3>Case 1: $300,000 Recovered — Speed Was Everything</h3>
+          <div class="case-narrative">
+            <p>This case reinforced something I believe deeply: in family law, timing sometimes matters more than anything else.</p>
+            <p>When the client came to me, he had been in "negotiations" with the opposing party for quite some time through a previous firm. As I listened to him describe the situation, I had a strong instinct: the opposing party was using negotiations as cover. They weren't negotiating in good faith — they were waiting for the right moment to move the money.</p>
+            <p>This pattern is not uncommon in divorces involving assets in China. Once funds leave the country, recovering them becomes exponentially harder and more expensive. Ontario courts have very limited enforcement reach over foreign-held assets. The only window of opportunity is before the transfer happens.</p>
+            <p><strong>The turning point:</strong> We stopped negotiating and immediately brought an emergency motion for an asset freeze order. The court granted it. On the eve of what appeared to be a planned transfer of funds to China, the accounts were frozen. That single step locked in the strategic advantage. Subsequent negotiations proceeded with the opposing party's leverage dramatically reduced. We ultimately recovered over $300,000 CAD for the client.</p>
+            <p><strong>The client's words:</strong> After the case concluded, he said something that stayed with me: "I regret not finding you sooner. I thought I was negotiating the whole time. I was actually being strung along."</p>
+            <p><strong>My takeaway:</strong> Negotiation is not inherently wrong — but it requires good faith on both sides. When you sense the other party is stalling, consider seriously whether a change of strategy is needed. Waiting is sometimes the most expensive choice you can make.</p>
+          </div>
+          <div class="case-suitable">
+            <span class="suitable-label">Relevant situations:</span> Suspected asset transfer by spouse, opposing party using negotiations to delay, cases involving assets in China or overseas
+          </div>
+        </div>
+
+        <div class="case-card">
+          <div class="case-tag">【Mediation Settlement · Property Preservation】</div>
+          <h3>Case 2: Three-Year Stalemate — I Ran the Numbers</h3>
+          <div class="case-narrative">
+            <p>This client came to me after three years of litigation. She was exhausted — not just physically, but emotionally. She had actually wanted to settle for a long time. Her previous lawyer kept telling her she could get more at trial. So the case dragged on.</p>
+            <p>The opposing party had in fact made a settlement offer years earlier. Her previous counsel declined it, believing they could extract more from a judge. Three years passed. Legal fees accumulated. The matrimonial home hung in the balance — a forced court-ordered sale was becoming increasingly likely.</p>
+            <p><strong>The first thing I did after taking over:</strong> Not file a motion. Sit down and do a complete, honest assessment of all possible outcomes. If we continued to trial: what was the realistic chance of winning, how much longer would it take, what would the additional legal fees be, what would she actually receive at the end? If she settled now: were the terms fair, what could she keep? No promises of victory — just numbers and probabilities.</p>
+            <p>After that analysis, the answer was clear. If the case went to trial, the home would certainly be sold. With the proceeds, she could not buy back anything comparable in the current market. If she settled, she could stay in her home and restart her life.</p>
+            <p><strong>Result:</strong> We moved quickly to mediation and reached an out-of-court settlement within a short period. She kept the house. Three years of litigation came to an end.</p>
+            <p><strong>My takeaway:</strong> Winning in court is not the same as the best outcome for the client. My job is to help clients make the decision that is best for their lives — not to win for the sake of winning. Sometimes, settling when settlement is possible is the real victory.</p>
+          </div>
+          <div class="case-suitable">
+            <span class="suitable-label">Relevant situations:</span> Case has dragged on without resolution, legal fees are accumulating, questioning the current strategy, wanting to reach a conclusion
+          </div>
+        </div>
+
+        <div class="case-card">
+          <div class="case-tag">【Child Custody · CAS Involvement】</div>
+          <h3>Case 3: CAS Came — Stay Calm</h3>
+          <div class="case-narrative">
+            <p>When I received this case, the client was in a state of extreme panic. CAS had contacted her after police were called during a family dispute and filed a report. Her first words to me were: "Are they going to take my children?"</p>
+            <p>I have seen too many clients make the wrong move in the first moments of a CAS involvement — either over-cooperating to the point of forfeiting their own rights, or resisting so aggressively that the conflict escalates. Both approaches backfire.</p>
+            <p><strong>The first thing I did:</strong> Walk her through exactly how the CAS process works. CAS involvement does not mean children will be removed. CAS's mandate is to assess whether a child is at risk. They will contact schools, doctors, and police for records. They will conduct home visits. But this is a structured process — not arbitrary. If the children are actually safe, CAS will not remove them.</p>
+            <p>Understanding the process cut her panic in half. We then prepared methodically for the questions CAS would likely ask, helping her respond calmly, honestly, and in an organized way.</p>
+            <p><strong>Result:</strong> After a thorough investigation, CAS determined that the children were not at risk and closed its involvement. The children remained with their parents. The family was preserved.</p>
+            <p><strong>My takeaway:</strong> When facing CAS, panic is the greatest enemy. Understand the process, cooperate calmly, and protect your legal rights — all at the same time. If CAS contacts you, consult a lawyer before responding on your own.</p>
+          </div>
+          <div class="case-suitable">
+            <span class="suitable-label">Relevant situations:</span> CAS has contacted you, child custody is under threat, police have been involved in a family dispute
+          </div>
+        </div>
+
+        <div class="case-card">
+          <div class="case-tag">【Agreement Enforcement · Cross-Border Investigation】</div>
+          <h3>Case 4: He Tried to Overturn the Agreement — We Found His Property in China</h3>
+          <div class="case-narrative">
+            <p>The logic of this case was striking: the opposing party was in default of the agreement himself, yet was trying to use his own default to invalidate it. This is legally untenable — but proving it in court required not just legal arguments, but evidence.</p>
+            <p>Background: the parties had signed a separation agreement years earlier without legal representation. The agreement had been fully executed for two years. The opposing party, dissatisfied with how things had turned out, commenced litigation seeking to reopen the property division and have the agreement declared invalid.</p>
+            <p>His timing was calculated — the limitation period for such a claim had not yet expired. On its face, the case had some room to move.</p>
+            <p><strong>The turning point:</strong> As I reviewed the case materials, I identified a critical issue — the opposing party had not fully disclosed his assets at the time the agreement was signed. I engaged lawyers and investigators in China to examine his asset holdings. The investigation revealed that he owned real property in China that had never been disclosed. Even more telling: in an attempt to counter our position, he submitted a document purporting to show he had "no property in China" — a document that directly contradicted what we had already found.</p>
+            <p>At the case conference, the judge reviewed the materials and identified the core contradiction directly: the opposing party was the defaulting party, and a defaulting party cannot use his own default to invalidate an agreement. The judge made clear that his chances of success were very low.</p>
+            <p>Faced with this assessment, the opposing party sought to settle. My client was not required to pay anything, and successfully protected over $500,000 CAD in assets.</p>
+            <p><strong>My takeaway:</strong> Agreements made without lawyers are not unenforceable — but if the other party challenges them, you need a lawyer to defend them. Cross-border investigation is often decisive in these cases. Opposing parties assume assets in China are invisible to Canadian courts. They are not always right.</p>
+          </div>
+          <div class="case-suitable">
+            <span class="suitable-label">Relevant situations:</span> Agreement already signed but opposing party is backing out, suspecting spouse concealed assets in China, agreement validity under challenge
+          </div>
+        </div>
+
+        <div class="case-card">
+          <div class="case-tag">【Property Division · Financial Document Review】</div>
+          <h3>Case 5: I Found the Error in Their Documents — Saved the Client $400,000</h3>
+          <div class="case-narrative">
+            <p>This case spanned two years. My client was the respondent — a self-employed individual. The opposing party's strategy was straightforward from the start: establish the highest possible income figure for him, which would maximize both spousal support and child support payments.</p>
+            <p>The opposing party brought repeated motions to impute income, arguing that my client was concealing his true earnings. We defeated every one of them — all dismissed.</p>
+            <p>The critical turning point came when I was reviewing the opposing party's financial disclosure document line by line.</p>
+            <p><strong>The turning point:</strong> The opposing party had listed the family's living expenses during the marriage in her financial disclosure — the purpose being to establish a high standard of living and justify a large support award. As I cross-checked the figures, I found that her expense list included her mother's living costs.</p>
+            <p>This was not a small detail. It was a foundational error that distorted the entire support calculation. We raised this at trial. The court accepted our position and found that the opposing party had deliberately inflated the family expense figures. The inflated amounts were excluded.</p>
+            <p><strong>Result:</strong> With income properly characterized and expenses properly calculated, the support awards were dramatically reduced. The opposing party had sought approximately $600,000 CAD. The court awarded approximately $200,000 — a reduction of $400,000 for my client.</p>
+            <p><strong>My takeaway:</strong> Financial documents contain the fate of a case. Many people assume family law litigation is decided by who tells the more compelling story. In reality, it is decided by whose numbers hold up under scrutiny. Details determine outcomes — and that requires a lawyer who is willing to read every line.</p>
+          </div>
+          <div class="case-suitable">
+            <span class="suitable-label">Relevant situations:</span> Opposing party claiming large support amounts, self-employed income disputes, questions about the financial calculations
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="page-cta">
+      <h2>Have a Similar Situation? Book a Consultation.</h2>
+      <p>Every case is unique. Book an initial consultation and I will give you a candid assessment of your situation. Initial consultation: 30 minutes · $220 + HST · Mandarin & English.</p>
+      <div class="cta-actions">
+        <a href="tel:6479306688" class="btn-primary">📞 647-930-6688</a>
+        <a href="mailto:miao@miaohelaw.ca" class="btn-secondary">miao@miaohelaw.ca</a>
+      </div>
+    </section>
+  </main>
   <Footer />
 </body>
 </html>
