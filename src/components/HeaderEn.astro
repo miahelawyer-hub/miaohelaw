@@ -5,7 +5,10 @@
 <header style="background:#ffffff !important; color:#2C1810 !important;">
 	<nav style="background:#ffffff !important;">
 		<h2><a href="/en/">Miao He — Family Lawyer</a></h2>
-		<div class="internal-links">
+		<button class="hamburger" id="en-hamburger" aria-label="Menu">
+			<span></span><span></span><span></span>
+		</button>
+		<div class="internal-links" id="en-nav-links">
 			<a href="/en/">Home</a>
 			<div class="dropdown">
 				<span class="dropdown-trigger">Family Law ▾</span>
@@ -177,43 +180,74 @@
 	.dropdown-menu a:hover {
 		color: #9A8060;
 	}
+	.hamburger {
+		display: none;
+		flex-direction: column;
+		gap: 5px;
+		background: none;
+		border: none;
+		cursor: pointer;
+		padding: 4px;
+	}
+	.hamburger span {
+		display: block;
+		width: 24px;
+		height: 2px;
+		background: #2C1810;
+		border-radius: 2px;
+		transition: all 0.2s;
+	}
 	@media (max-width: 720px) {
-    .social-links {
-        display: none;
-    }
-    h2 {
-        display: none;
-    }
-    nav {
-        padding: 0.3em 0.5em;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0;
-    }
-    nav a {
-        padding: 0.4em 0.4em;
-        font-size: 0.82rem;
-    }
-    .internal-links {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0;
-    }
-}
-    h2 {
-        display: none;
-    }
-    nav {
-        justify-content: center;
-        gap: 0.25em;
-        flex-wrap: wrap;
-    }
-    nav a {
-        padding: 0.4em 0.3em;
-        font-size: 0.85em;
-    }
-}
+		.hamburger { display: flex; }
+		.social-links { display: none; }
+		h2 { font-size: 0.9em; }
+		nav {
+			padding: 0.5em 0;
+			flex-wrap: wrap;
+			align-items: center;
+		}
+		.internal-links {
+			display: none;
+			flex-direction: column;
+			width: 100%;
+			border-top: 1px solid #EDE8DF;
+			padding: 0.5rem 0;
+			gap: 0;
+		}
+		.internal-links.open { display: flex; }
+		.internal-links a {
+			padding: 0.6em 1em;
+			font-size: 0.95rem;
+			border-bottom: none;
+			border-left: 3px solid transparent;
+		}
+		.internal-links a:hover { border-left-color: #D4A853; }
+		.dropdown { width: 100%; }
+		.dropdown-trigger {
+			display: block;
+			width: 100%;
+			padding: 0.6em 1em;
+			font-size: 0.95rem;
+		}
+		.dropdown-menu {
+			position: static;
+			transform: none;
+			box-shadow: none;
+			border: none;
+			border-radius: 0;
+			min-width: unset;
+			width: 100%;
+			flex-direction: column;
+			gap: 0;
+			padding: 0 0 0 1.5rem;
+			background: #FDFBF7;
+			display: none;
+		}
+		.dropdown.open .dropdown-menu { display: flex; }
+		.dropdown-col { gap: 0; }
+		.dropdown-heading { margin-top: 0.5rem; }
+		.dropdown-menu a { padding: 0.4em 0; }
+	}
 .wechat-bar {
     background: #F5EFE0;
     border-bottom: 1px solid #EDE8DF;
@@ -285,6 +319,20 @@
 }
 </style>
 <script>
+  // Hamburger menu
+  const hamburger = document.getElementById('en-hamburger');
+  const navLinks = document.getElementById('en-nav-links');
+  if (hamburger && navLinks) {
+    hamburger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      navLinks.classList.toggle('open');
+    });
+    document.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+    });
+    navLinks.addEventListener('click', (e) => e.stopPropagation());
+  }
+  // Dropdown
   const trigger = document.querySelector('.dropdown-trigger');
   const dropdown = document.querySelector('.dropdown');
   if (trigger && dropdown) {
