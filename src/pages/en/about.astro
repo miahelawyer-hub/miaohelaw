@@ -17,13 +17,38 @@ import Footer from '../../components/Footer.astro';
   <link rel="canonical" href="https://www.miaohelaw.ca/en/about" />
   <link rel="alternate" hreflang="zh" href="https://www.miaohelaw.ca/about" />
   <link rel="alternate" hreflang="en" href="https://www.miaohelaw.ca/en/about" />
+  <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Miao He",
+    "alternateName": ["何淼", "Mia He"],
+    "jobTitle": "Family Law Lawyer",
+    "url": "https://www.miaohelaw.ca/en/about",
+    "telephone": "+1-647-930-6688",
+    "email": "miao@miaohelaw.ca",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "208-7050 Woodbine Ave",
+      "addressLocality": "Markham",
+      "addressRegion": "Ontario",
+      "addressCountry": "CA"
+    },
+    "alumniOf": {"@type": "CollegeOrUniversity", "name": "Osgoode Hall Law School, York University"},
+    "memberOf": {"@type": "Organization", "name": "Law Society of Ontario", "identifier": "83315K"},
+    "worksFor": {"@type": "LegalService", "name": "H. LAW FIRM", "url": "https://www.miaohelaw.ca/en/"}
+  }</script>
+  <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://www.miaohelaw.ca/en/"},
+      {"@type":"ListItem","position":2,"name":"About","item":"https://www.miaohelaw.ca/en/about"}
+    ]
+  }</script>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'Georgia', serif; background: #FDFBF7; color: #2C1810; }
     a { color: inherit; text-decoration: none; }
-    .lang-bar { background: #ffffff; text-align: right; padding: 0.4rem 2rem; font-size: 0.8rem; }
-    .lang-bar a { color: #5A4A3A; margin-left: 1rem; }
-    .lang-bar a.active { color: #8B6914; font-weight: 600; }
     .page { max-width: 860px; margin: 0 auto; padding: 3rem 2rem; }
     .page h1 { font-size: 2rem; color: #1A1208; margin-bottom: 0.5rem; }
     .page .subtitle { color: #5A4A3A; margin-bottom: 2rem; font-size: 0.95rem; }
@@ -46,14 +71,10 @@ import Footer from '../../components/Footer.astro';
     .contact-box h2 { color: #8B6914; margin-bottom: 1rem; }
     .btn-primary { display: inline-block; background: #D4A853; color: #1A1208; padding: 0.75rem 2rem; border-radius: 6px; font-weight: 700; margin: 0.5rem; }
     .btn-secondary { display: inline-block; border: 1px solid #D4A853; color: #8B6914; padding: 0.75rem 2rem; border-radius: 6px; margin: 0.5rem; }
-    @media (max-width: 600px) { .cred-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 600px) { .cred-grid { grid-template-columns: 1fr; } .page { padding: 2rem 1rem; } }
   </style>
 </head>
 <body>
-  <div class="lang-bar">
-    <a href="/about">中文</a>
-    <a href="/en/about" class="active">EN</a>
-  </div>
   <HeaderEn />
   <div class="page">
     <h1>Miao He (何淼)</h1>
@@ -132,6 +153,7 @@ import Footer from '../../components/Footer.astro';
       <div class="case-block">
         <h3>Li v. Jiang, 2026 ONSC 561</h3>
         <p>Represented the applicant against a respondent who refused to cooperate with the sale of matrimonial property for 19 months. Successfully obtained an Unrestricted Access Order and $4,000 in costs.</p>
+        <a href="https://www.canlii.org/en/on/onsc/doc/2026/2026onsc561/2026onsc561.html" target="_blank" rel="noopener">View on CanLII →</a>
       </div>
     </div>
 
@@ -139,8 +161,8 @@ import Footer from '../../components/Footer.astro';
       <h2>AREAS SERVED</h2>
       <ul>
         <li>Toronto · Markham · Richmond Hill · Vaughan</li>
-        <li>Mississauga · Scarborough · North York</li>
-        <li>Newmarket · Ajax · Pickering · Brampton</li>
+        <li>Mississauga · Scarborough · North York · Brampton</li>
+        <li>Newmarket · Ajax · Pickering · Thornhill</li>
         <li>Ottawa · Hamilton · London · Windsor · All of Ontario</li>
       </ul>
     </div>
