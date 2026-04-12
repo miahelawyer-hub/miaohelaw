@@ -7,78 +7,252 @@ import Footer from '../../../components/Footer.astro';
 <html lang="en">
 <head>
   <BaseHead
-    title="Family Law Mediation Lawyer Ontario | ADR · Settlement | Miao He"
-    description="Certified mediator and experienced litigator. Strategic out-of-court settlement, mediation-arbitration, JRP representation. Mandarin and English. 647-930-6688."
+    title="Family Law Mediation & Arbitration Lawyer Ontario | ADR | Miao He"
+    description="Mediation and arbitration in Ontario family law — strategic settlement, recognizing delay tactics, when to switch to litigation. Litigator-mediator perspective. Mandarin & English. 647-930-6688."
   />
-  <meta name="keywords" content="family law mediation Ontario,divorce mediation Toronto,mediation arbitration Ontario,out of court settlement family law,JRP family lawyer,certified mediator Ontario" />
+  <meta name="keywords" content="family law mediation Ontario,divorce mediation Toronto,family law arbitration Ontario,out of court settlement Ontario,alternative dispute resolution family law,mediation arbitration Ontario,divorce settlement lawyer GTA,Chinese family lawyer mediation,Ontario family lawyer arbitration,minutes of settlement lawyer Ontario" />
+  <meta property="og:title" content="Family Law Mediation & Arbitration | Miao He — Ontario Family Law" />
+  <meta property="og:description" content="Mediation works when both parties are genuinely ready. Miao He helps you navigate ADR with a litigator's eye — and knows when to switch to court. 647-930-6688." />
+  <meta property="og:url" content="https://www.miaohelaw.ca/en/family-law/mediation" />
   <link rel="canonical" href="https://www.miaohelaw.ca/en/family-law/mediation" />
   <link rel="alternate" hreflang="zh" href="https://www.miaohelaw.ca/family-law/mediation" />
   <link rel="alternate" hreflang="en" href="https://www.miaohelaw.ca/en/family-law/mediation" />
-  <style>
-    *{margin:0;padding:0;box-sizing:border-box}body{font-family:Georgia,serif;background:#FDFBF7;color:#E8D5B0}a{color:inherit;text-decoration:none}
-    .lang-bar{background:#ffffff;text-align:right;padding:.4rem 2rem;font-size:.8rem}.lang-bar a{color:#5A4A3A;margin-left:1rem}.lang-bar a.active{color:#8B6914;font-weight:600}
-    .page{max-width:860px;margin:0 auto;padding:3rem 2rem}
-    .breadcrumb{font-size:.78rem;color:#7A6A5A;margin-bottom:2rem}.breadcrumb a{color:#D4A853}
-    h1{font-size:2rem;color:#1A1208;margin-bottom:.5rem}
-    .lead{color:#5A4A3A;font-size:1rem;line-height:1.7;margin-bottom:2rem}
-    .card{background:#ffffff;border:1px solid #E8E0D5;border-radius:8px;padding:2rem;margin-bottom:1.5rem}
-    .card h2{color:#8B6914;font-size:1rem;margin-bottom:1rem;letter-spacing:.05em}
-    .card p{color:#5A4A3A;font-size:.88rem;line-height:1.8;margin-bottom:.8rem}
-    .card ul{list-style:none;padding:0}.card ul li{color:#5A4A3A;font-size:.85rem;padding:.3rem 0 .3rem 1.2rem;position:relative}.card ul li::before{content:"·";position:absolute;left:0;color:#D4A853}
-    .faq-item{border-bottom:1px solid #3A3020;padding:1rem 0}.faq-item:last-child{border-bottom:none}
-    .faq-q{color:#1A1208;font-size:.9rem;font-weight:600;margin-bottom:.4rem}
-    .faq-a{color:#7A6A5A;font-size:.83rem;line-height:1.7}
-    .cta{text-align:center;padding:2rem}.cta h2{color:#8B6914;margin-bottom:1rem}
-    .btn-primary{display:inline-block;background:#D4A853;color:#1A1208;padding:.75rem 2rem;border-radius:6px;font-weight:700;margin:.5rem}
-    .btn-secondary{display:inline-block;border:1px solid #D4A853;color:#8B6914;padding:.75rem 2rem;border-radius:6px;margin:.5rem}
-  </style>
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "@id": "https://www.miaohelaw.ca/en/family-law/mediation#service",
+      "name": "Miao He — Ontario Family Law Mediation & Arbitration",
+      "url": "https://www.miaohelaw.ca/en/family-law/mediation",
+      "telephone": "+1-647-930-6688",
+      "email": "miao@miaohelaw.ca",
+      "provider": {
+        "@type": "Person",
+        "name": "Miao He",
+        "alternateName": ["何淼", "Mia He"],
+        "jobTitle": "Family Law Lawyer",
+        "knowsLanguage": ["zh-Hans", "en"],
+        "hasCredential": [
+          {"@type": "EducationalOccupationalCredential", "credentialCategory": "Law Society of Ontario — Member #83315K"},
+          {"@type": "EducationalOccupationalCredential", "credentialCategory": "China Bar Association — Licensed"},
+          {"@type": "EducationalOccupationalCredential", "credentialCategory": "Mediation Certificate"},
+          {"@type": "EducationalOccupationalCredential", "credentialCategory": "Expert Witness — Chinese Family Law & Marriage Law"}
+        ]
+      },
+      "serviceType": ["Mediation Support", "Arbitration", "Minutes of Settlement", "ADR Strategy", "Litigation"],
+      "areaServed": {"@type": "Province", "name": "Ontario"},
+      "inLanguage": ["en", "zh"]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.miaohelaw.ca/en/"},
+        {"@type": "ListItem", "position": 2, "name": "Family Law", "item": "https://www.miaohelaw.ca/en/"},
+        {"@type": "ListItem", "position": 3, "name": "Mediation & ADR", "item": "https://www.miaohelaw.ca/en/family-law/mediation"}
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is mediation binding in Ontario?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Mediation itself is not binding. Everything said and agreed upon during mediation has no legal force until it is captured in a signed written agreement — a Minutes of Settlement or Separation Agreement. Before that document is signed, either party can walk away at any time."}
+        },
+        {
+          "@type": "Question",
+          "name": "Can the other side refuse to participate in mediation?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Yes. All alternative dispute resolution processes — mediation and arbitration — require both parties to voluntarily agree to participate. Unlike a court proceeding where attendance can be compelled, neither a judge nor a lawyer can force a party into mediation."}
+        },
+        {
+          "@type": "Question",
+          "name": "Is arbitration cheaper than going to court?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily. Court filing fees in Ontario are very low — approximately $224 for a divorce application. Arbitration requires both parties to pay the arbitrator's fees on top of their own legal costs. Arbitrators are typically senior lawyers billing at their own hourly rate. A complex family law arbitration spanning 10 to 20 hearing days can be extremely expensive. Whether arbitration or litigation makes more financial sense depends heavily on the specific case."}
+        },
+        {
+          "@type": "Question",
+          "name": "We mediated for months and the other side is now backing out of everything. What can I do?",
+          "acceptedAnswer": {"@type": "Answer", "text": "If progress was not captured in a signed agreement after each session, the other party can legally walk away from everything discussed. The remedy is to terminate mediation and move into court proceedings immediately, using the court's mandatory schedule to force the matter forward. Miao He can assess your situation and recommend the fastest path. Call 647-930-6688."}
+        }
+      ]
+    }
+  ]
+  </script>
 </head>
 <body>
-  <div class="lang-bar"><a href="/family-law/mediation">中文</a><a href="/en/family-law/mediation" class="active">EN</a></div>
   <HeaderEn />
-  <div class="page">
-    <div class="breadcrumb"><a href="/en/">Home</a> › Family Law › Mediation & ADR</div>
-    <h1>Mediation & Alternative Dispute Resolution</h1>
-    <p class="lead">The best outcome does not always come from the courtroom. A litigator who can also mediate gives you the full picture — and the strongest position at every stage.</p>
-
-    <div class="card">
-      <h2>WHAT WE OFFER</h2>
-      <ul>
-        <li>Strategic mediation support — as your lawyer at the table</li>
-        <li>Mediation-arbitration (Med-Arb)</li>
-        <li>Judicial Dispute Resolution (JDR / JRP) representation</li>
-        <li>Four-way meetings and settlement conferences</li>
-        <li>Minutes of Settlement drafting</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2>VERIFIED OUTCOME</h2>
-      <p>$1,000,000+ settlement achieved through mediation for a client in a high-conflict family law dispute. The case had been in litigation for years before reaching a resolution at the mediation table.</p>
-    </div>
-
-    <div class="card">
-      <h2>FREQUENTLY ASKED QUESTIONS</h2>
-      <div class="faq-item">
-        <div class="faq-q">Is mediation binding?</div>
-        <div class="faq-a">Mediation itself is not binding — it is a voluntary process. However, if the parties reach an agreement and sign a Minutes of Settlement or Separation Agreement, that document becomes legally binding.</div>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="/en/">Home</a> › <a href="/en/">Family Law</a> › Mediation & ADR
+        </div>
+        <h1>Mediation & Alternative Dispute Resolution</h1>
+        <p class="hero-sub">Litigator-mediator perspective · Recognizing delay tactics · Knowing when to switch to court · Mandarin & English</p>
       </div>
-      <div class="faq-item">
-        <div class="faq-q">Can the other side refuse to participate in mediation?</div>
-        <div class="faq-a">Yes. Mediation and other ADR processes require both parties to agree voluntarily. Courts cannot force a party to mediate, unlike a court hearing where attendance can be compelled.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q">Is mediation cheaper than litigation?</div>
-        <div class="faq-a">It depends. Mediation can save significant time and legal fees if both parties are ready to negotiate in good faith. However, if mediation breaks down, the parties still need to litigate — which means additional costs. We help you assess which path makes sense for your situation.</div>
-      </div>
-    </div>
+    </section>
 
-    <div class="card cta">
-      <h2>Book a Consultation</h2>
-      <a href="tel:6479306688" class="btn-primary">📞 647-930-6688</a>
-      <a href="mailto:miao@miaohelaw.ca" class="btn-secondary">Email Us</a>
-    </div>
-  </div>
+    <section class="content-section">
+      <div class="container content-grid">
+        <div class="main-content">
+
+          <div class="definition-box">
+            <p>Ontario family law offers three main paths to resolution: <strong>litigation, mediation, and arbitration</strong>. Mediation and arbitration are collectively known as Alternative Dispute Resolution (ADR) — designed to help parties resolve disputes outside of court, faster and with more flexibility. But ADR is not always the right tool. Used well, it is a shortcut. Used poorly — or against a party who is not acting in good faith — it can become a mechanism for delay.</p>
+          </div>
+
+          <div class="settlement-note">
+            <p>Miao He holds a <strong>Mediation Certificate</strong> and appears in family court more than 20 hours per month as a litigator. This combination means she evaluates every negotiated outcome through a litigator's lens — knowing what a court would likely decide if negotiations fail, and using that knowledge to position clients for the best possible settlement.</p>
+            <p>Approximately half of Miao He's cases resolve through negotiated separation agreements without going to trial. Verified outcome: <strong>$1,000,000+ settlement achieved through mediation</strong> for a client in a high-conflict family law dispute that had been in litigation for years.</p>
+          </div>
+
+          <h2>The Fundamental Characteristic of ADR: It Cannot Be Forced</h2>
+          <p>Before choosing any ADR process, understand its central limitation: <strong>all alternative dispute resolution requires both parties to voluntarily agree to participate.</strong></p>
+          <p>If one side declines, no one can compel them. A judge cannot order mediation. A lawyer cannot force arbitration. This is fundamentally different from court proceedings — once a hearing date is set by the court, attendance can be mandated and failure to appear has legal consequences.</p>
+          <p>This characteristic cuts both ways. For parties who genuinely want to resolve their dispute, ADR can dramatically accelerate the process. For a party who wants to delay, it provides a structured environment for wasting time without consequences.</p>
+
+          <h2>Mediation: Powerful When Both Sides Are Ready — Dangerous When They Are Not</h2>
+
+          <h3>How Mediation Works</h3>
+          <p>A neutral mediator facilitates discussion between the parties, helping them identify common ground and work toward agreement. The mediator does not make decisions — unlike a judge or arbitrator. The outcome depends entirely on whether the parties can reach consensus. The mediator's role is to manage the process; the result is controlled by the parties themselves.</p>
+
+          <h3>The Most Important Step That Is Most Often Skipped</h3>
+          <p>Many people do not realize this: <strong>everything said during mediation, and every agreement reached verbally, has zero legal force until it is captured in a signed written document.</strong> Before a Minutes of Settlement or Agreement is signed, either party can withdraw at any time and deny any progress was made. Nothing discussed in mediation can be used as evidence in subsequent litigation.</p>
+          <p>Miao He has seen cases where parties mediated for close to a year — making gradual progress at each session, feeling the matter was moving forward — and then one side simply withdrew, leaving the other with nothing. A year of effort, zero legal effect.</p>
+          <p>This is why <strong>an experienced mediator must ensure that every meaningful agreement reached in a session is immediately captured in a signed document</strong>. If your mediator is not doing this, that is a serious red flag. Incremental written commitments lock in progress and prevent the other side from simply walking away from everything at a moment of their choosing.</p>
+
+          <h3>Recognizing When Mediation Is Being Used to Delay</h3>
+          <p>In practice, some parties enter mediation with no genuine intention of reaching agreement. They participate just enough to appear cooperative while using the flexible scheduling and voluntary nature of the process to consume time and wear down the other side.</p>
+          <p>If the other party is consistently stalling — scheduling delays, lack of substantive engagement, excuses at every session — the correct response is to <strong>terminate mediation and move immediately into court proceedings</strong>. Court imposes a mandatory schedule. Delay becomes much harder once the court is involved. Miao He monitors every step and will tell you directly when it is time to switch tracks.</p>
+
+          <h2>Arbitration: More Flexible Than Court, But Not Necessarily Cheaper</h2>
+
+          <h3>What Arbitration Is</h3>
+          <p>Arbitration is essentially a private hearing conducted outside the court system. Both parties agree to appoint a neutral arbitrator — typically a senior lawyer with decades of family law experience, or a former judge — who hears the matter and issues a binding decision. Unlike mediation, the arbitrator's award is enforceable, subject only to any appeal rights the parties have agreed to preserve.</p>
+
+          <h3>The Procedural Advantage</h3>
+          <p>Court litigation in Ontario follows a fixed sequence: Case Conference, Settlement Conference, Trial Management Conference, and then Trial. This process can take years. Arbitration is more flexible — <strong>the parties can agree to modify, abbreviate, or eliminate procedural steps</strong>, and can schedule hearings much faster than waiting for court dates.</p>
+
+          <h3>The Cost Reality: Arbitration Is Often More Expensive Than People Expect</h3>
+          <p>Many people choose arbitration assuming it is cheaper than court. This assumption frequently turns out to be wrong, for one important reason: <strong>the arbitrator's fees.</strong></p>
+          <p>Court application fees in Ontario are very low: approximately $224 to file a divorce application, $445 for the divorce affidavit, $25 for the divorce certificate. Most subsequent filings carry minimal fees. The primary cost of litigation is lawyer time.</p>
+          <p>Arbitration, by contrast, requires both parties to <strong>share the cost of the arbitrator's time</strong> — on top of their own separate legal fees. Arbitrators are senior practitioners billing at their own hourly rates. A complex family law arbitration across 10 to 20 hearing days can generate enormous arbitrator costs alone. For cases with significant complexity, this expense can far exceed what court proceedings would have cost.</p>
+          <p>Whether arbitration makes financial sense for your situation depends on the nature of the dispute, the likely number of hearing days, and both parties' ability and willingness to move efficiently. Miao He will help you do this calculation honestly before you commit.</p>
+
+          <h3>Arbitration Appeals: More Complex Than Court Appeals</h3>
+          <p>If you are dissatisfied with an arbitration award, the appeal process is governed by your arbitration agreement — not standard court appeal rules. The grounds and procedures for challenging an award are often narrower and more restrictive. Before entering arbitration, you must understand exactly what appeal rights you are preserving and what you are giving up.</p>
+
+          <h2>Choosing Your Path: Litigation, Mediation, or Arbitration?</h2>
+          <p>No single approach is right for every situation. The decision depends on whether the other party is genuinely prepared to negotiate, the complexity of the issues in dispute, each party's financial circumstances, and the time pressure involved. Miao He evaluates all of these factors at the outset and gives you a clear, direct recommendation — including when to start with one approach and shift to another as circumstances evolve.</p>
+
+          <div class="qa-block">
+            <h3>Q: We've been mediating for months and the other side is now rejecting everything we agreed on. Is that legal?</h3>
+            <p>A: If the progress was not documented in a signed agreement after each session, yes — the other party can legally walk away from it all. Unsigned agreements in mediation have no legal force. The right move now is to terminate mediation and move into court proceedings to force a mandatory schedule. Call 647-930-6688 to discuss your options.</p>
+          </div>
+
+          <div class="qa-block">
+            <h3>Q: Is arbitration actually cheaper than going to court?</h3>
+            <p>A: Often not. The arbitrator's fees — shared by both parties — can be substantial, especially in complex cases requiring many hearing days. Court filing fees are very low by comparison. Before committing to arbitration, have your lawyer estimate the realistic total cost of each path. Call 647-930-6688.</p>
+          </div>
+
+          <div class="qa-block">
+            <h3>Q: When does mediation make sense and when should we go straight to court?</h3>
+            <p>A: Mediation makes sense when both parties are genuinely motivated to resolve the matter and the issues in dispute are not so complex that a structured hearing is required. If one party has no real incentive to settle, is hiding assets, is using delay as a strategy, or if urgent relief is needed — court is the right starting point. Miao He will assess your situation directly and tell you which path fits.</p>
+          </div>
+
+          <div class="cta-box">
+            <h3>Book a Dispute Resolution Consultation</h3>
+            <p>Initial consultation 30 minutes · $220 + HST · Mandarin & English · Serving Toronto, Markham, GTA</p>
+            <a href="/en/contact" class="btn-primary">Book Now</a>
+            <a href="tel:6479306688" class="btn-secondary">📞 647-930-6688</a>
+          </div>
+        </div>
+
+        <aside class="sidebar">
+          <div class="sidebar-card">
+            <h3>Contact Miao He</h3>
+            <p>📞 <a href="tel:6479306688">647-930-6688</a></p>
+            <p>📧 <a href="mailto:miao@miaohelaw.ca">miao@miaohelaw.ca</a></p>
+            <p>208-7050 Woodbine Ave<br/>Markham, ON L3R 4G8</p>
+          </div>
+          <div class="sidebar-card">
+            <h3>ADR Services</h3>
+            <ul>
+              <li>Strategic mediation support</li>
+              <li>Arbitration representation</li>
+              <li>Minutes of Settlement drafting</li>
+              <li>ADR strategy assessment</li>
+              <li>Mediation-to-litigation transition</li>
+              <li>Four-way meetings</li>
+            </ul>
+          </div>
+          <div class="sidebar-card">
+            <h3>Related Services</h3>
+            <ul>
+              <li><a href="/en/family-law/divorce-litigation">Divorce Litigation</a></li>
+              <li><a href="/en/family-law/domestic-contracts">Separation Agreements</a></li>
+              <li><a href="/en/family-law/child-custody">Child Custody</a></li>
+              <li><a href="/en/family-law/support">Support</a></li>
+            </ul>
+          </div>
+          <div class="sidebar-card">
+            <h3>Languages</h3>
+            <p>🇨🇳 Mandarin / Putonghua</p>
+            <p>🇨🇦 English</p>
+          </div>
+          <div class="sidebar-card">
+            <h3>Serving</h3>
+            <p style="font-size:0.88rem;color:#555;line-height:1.7;">Toronto · Markham · Richmond Hill · Mississauga · Vaughan · Scarborough · North York · GTA</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
   <Footer />
 </body>
 </html>
+<style>
+  *{box-sizing:border-box}
+  body{font-family:Georgia,serif;background:#faf8f5;color:#2C1810;margin:0}
+  .container{max-width:1100px;margin:0 auto;padding:0 1.5rem}
+  .page-hero{background:linear-gradient(135deg,#2C1810 0%,#4A2C1A 100%);color:white;padding:3.5rem 0 2.5rem}
+  .page-hero h1{font-size:2rem;margin:0.5rem 0 0;color:#ffffff;line-height:1.3}
+  .hero-sub{color:#D4A853;margin:0.5rem 0 0;font-size:1rem;line-height:1.6}
+  .breadcrumb{font-size:0.8rem;opacity:0.65;margin-bottom:0.75rem}
+  .breadcrumb a{color:white;text-decoration:none}
+  .content-section{padding:3rem 0}
+  .content-grid{display:grid;grid-template-columns:1fr 300px;gap:3rem;align-items:start}
+  .main-content p{line-height:2;margin:0 0 1.6rem;color:#3a3a3a;font-size:0.98rem}
+  .main-content h2{color:#2C1810;font-size:1.2rem;margin:3rem 0 1rem;padding-top:0.5rem;border-top:2px solid #f0ebe3;line-height:1.4}
+  .main-content h3{color:#9A6820;font-size:1rem;margin:2rem 0 0.75rem;font-weight:700}
+  .definition-box{background:#FDF6EC;border-left:4px solid #D4A853;padding:1.25rem 1.5rem;margin-bottom:2rem;border-radius:0 8px 8px 0}
+  .definition-box p{margin:0;line-height:1.8}
+  .settlement-note{background:#F0F7F0;border-left:4px solid #6A9A6A;padding:1.25rem 1.5rem;margin-bottom:2rem;border-radius:0 8px 8px 0}
+  .settlement-note p{margin:0 0 0.75rem;line-height:1.8;color:#3a4a3a;font-size:0.93rem}
+  .settlement-note p:last-child{margin-bottom:0}
+  .qa-block{background:#f4f4f4;border-radius:10px;padding:1.4rem 1.5rem;margin:2rem 0;border-left:3px solid #9A8060}
+  .qa-block h3{color:#2C1810;margin:0 0 0.6rem;font-size:1rem}
+  .qa-block p{margin:0;color:#444;line-height:1.8;font-size:0.95rem}
+  .cta-box{background:linear-gradient(135deg,#2C1810,#4A2C1A);color:white;padding:2.25rem 2rem;border-radius:14px;text-align:center;margin-top:3rem}
+  .cta-box h3{margin:0 0 0.75rem;color:#D4A853;font-size:1.15rem}
+  .cta-box p{margin:0 0 1.25rem;font-size:0.95rem;color:#ffffff}
+  .btn-primary{display:inline-block;background:#D4A853;color:#2C1810;padding:0.8rem 1.75rem;border-radius:8px;text-decoration:none;font-weight:700;margin:0.4rem;font-size:0.95rem}
+  .btn-secondary{display:inline-block;background:transparent;color:white;border:2px solid rgba(255,255,255,0.8);padding:0.8rem 1.75rem;border-radius:8px;text-decoration:none;font-weight:700;margin:0.4rem;font-size:0.95rem}
+  .sidebar{display:flex;flex-direction:column;gap:1.5rem;position:sticky;top:2rem}
+  .sidebar-card{background:white;border:1px solid #e8e0d5;border-radius:10px;padding:1.25rem}
+  .sidebar-card h3{color:#2C1810;font-size:0.9rem;font-weight:700;margin:0 0 0.75rem;padding-bottom:0.5rem;border-bottom:1px solid #e8e0d5;text-transform:uppercase;letter-spacing:0.03em}
+  .sidebar-card ul{list-style:none;padding:0;margin:0}
+  .sidebar-card li{padding:0.35rem 0;border-bottom:1px solid #f5f0eb;font-size:0.88rem;color:#555}
+  .sidebar-card li:last-child{border-bottom:none}
+  .sidebar-card a{color:#9A8060;text-decoration:none}
+  .sidebar-card a:hover{color:#2C1810}
+  .sidebar-card p{margin:0.3rem 0;font-size:0.9rem;color:#555}
+  @media(max-width:768px){
+    .content-grid{grid-template-columns:1fr}
+    .sidebar{position:static}
+    .page-hero h1{font-size:1.5rem}
+    .btn-primary,.btn-secondary{display:block;margin:0.4rem auto;max-width:260px}
+  }
+</style>
