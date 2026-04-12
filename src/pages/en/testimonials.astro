@@ -7,70 +7,213 @@ import Footer from '../../components/Footer.astro';
 <html lang="en">
 <head>
   <BaseHead
-    title="Client Reviews | Miao He — Ontario Family Law Lawyer"
-    description="Real client reviews for Miao He, Ontario & China dual-licensed family lawyer in Markham. Serving the Chinese-Canadian community. 647-930-6688."
+    title="Client Reviews | Miao He — Ontario Family Law Lawyer | Real Testimonials"
+    description="Real client reviews for Miao He, Ontario & China dual-licensed family lawyer in Markham. Handwritten cards, Google reviews, emails. 647-930-6688."
   />
+  <meta name="keywords" content="Miao He lawyer reviews,Chinese family lawyer Toronto reviews,Ontario divorce lawyer testimonials,Markham family lawyer reviews" />
+  <meta property="og:title" content="Client Reviews | Miao He — Ontario Family Law Lawyer" />
+  <meta property="og:url" content="https://www.miaohelaw.ca/en/testimonials" />
+  <meta property="og:type" content="website" />
   <link rel="canonical" href="https://www.miaohelaw.ca/en/testimonials" />
   <link rel="alternate" hreflang="zh" href="https://www.miaohelaw.ca/testimonials" />
   <link rel="alternate" hreflang="en" href="https://www.miaohelaw.ca/en/testimonials" />
+  <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "H. LAW FIRM",
+    "url": "https://www.miaohelaw.ca/en/",
+    "telephone": "+1-647-930-6688",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "bestRating": "5",
+      "ratingCount": "14"
+    }
+  }</script>
+  <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://www.miaohelaw.ca/en/"},
+      {"@type":"ListItem","position":2,"name":"Reviews","item":"https://www.miaohelaw.ca/en/testimonials"}
+    ]
+  }</script>
   <style>
-    * { box-sizing: border-box; }
-    body { background: #faf8f5; margin: 0; font-family: Georgia, serif; color: #2C1810; }
-    .page-hero { background: linear-gradient(135deg, #2C1810, #4A2C1A); padding: 3rem 1.5rem 2.5rem; }
-    .page-hero .inner { max-width: 900px; margin: 0 auto; }
-    .breadcrumb { font-size: 0.82rem; color: rgba(255,255,255,0.5); margin-bottom: 0.6rem; }
-    .breadcrumb a { color: rgba(255,255,255,0.5); text-decoration: none; }
-    .page-hero h1 { color: #fff; font-size: clamp(1.6rem, 3vw, 2.2rem); margin: 0 0 0.4rem; }
-    .page-hero p { color: #D4A853; margin: 0; font-size: 0.92rem; }
-    .main-wrap { max-width: 900px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
-    .testimonial-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
-    .testimonial-card { background: #fff; border: 1px solid #E8E0D5; border-radius: 8px; padding: 1.5rem; }
-    .testimonial-img { width: 100%; border-radius: 6px; margin-bottom: 1rem; }
-    .testimonial-note { font-size: 0.85rem; color: #5A4A3A; line-height: 1.6; font-style: italic; }
-    .cta-box { background: #F5EFE0; border-radius: 8px; padding: 2rem; text-align: center; margin-top: 3rem; }
-    .cta-box h2 { color: #2C1810; margin-bottom: 0.5rem; }
-    .cta-box p { color: #5A4A3A; font-size: 0.9rem; margin-bottom: 1.2rem; }
-    .btn { display: inline-block; background: #7A5A1A; color: #fff; padding: 0.7rem 1.8rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; font-weight: 600; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Georgia, serif; background: #FDFBF7; color: #2C1810; }
+    a { color: inherit; text-decoration: none; }
+    .page-hero { background: #2C2418; padding: 4rem 2rem; text-align: center; }
+    .page-hero-inner { max-width: 760px; margin: 0 auto; }
+    .page-label { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: #9A8060; margin-bottom: 1rem; }
+    .page-hero h1 { font-size: 2.5rem; font-weight: 400; color: #FAC775; margin-bottom: 1rem; }
+    .page-hero p { color: #C4AA80; font-size: 0.95rem; line-height: 1.7; max-width: 640px; margin: 0 auto; }
+    .testimonials-section { padding: 4rem 2rem; }
+    .testimonials-inner { max-width: 800px; margin: 0 auto; }
+    .section-title { font-size: 1.4rem; font-weight: 400; color: #1A1208; margin: 2.5rem 0 1.25rem; padding-bottom: 0.5rem; border-bottom: 2px solid #EDE8DF; }
+    .section-title:first-of-type { margin-top: 0; }
+    .category-title { font-size: 1.1rem; font-weight: 400; color: #7A5A1A; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #EDE8DF; }
+    .testimonial-card { background: #FDFBF7; border: 1px solid #EDE8DF; border-radius: 8px; padding: 2rem; margin-bottom: 1.25rem; border-left: 4px solid #7A5A1A; }
+    .testimonial-card img { width: 100%; max-width: 600px; border-radius: 8px; margin: 0 auto 1.5rem; display: block; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+    .testimonial-source { font-size: 0.75rem; color: #9A8060; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.75rem; }
+    .stars { color: #F5A623; font-size: 1rem; margin-bottom: 0.75rem; }
+    .testimonial-text { font-size: 0.9rem; line-height: 1.85; color: #3A3228; border-left: 3px solid #FAC775; padding-left: 1.1rem; margin: 0.75rem 0; }
+    .testimonial-author { margin-top: 1rem; font-size: 0.82rem; font-weight: 600; color: #6B5A3A; }
+    .page-cta { background: #F5EFE0; border-radius: 8px; padding: 2.5rem 2rem; text-align: center; margin-top: 3rem; }
+    .page-cta p { font-size: 0.85rem; color: #9A8060; margin-bottom: 0.5rem; }
+    .page-cta h2 { font-size: 1.5rem; font-weight: 400; color: #1A1208; margin-bottom: 0.5rem; }
+    .cta-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1.25rem; }
+    .btn-primary { display: inline-flex; align-items: center; background: #7A5A1A; color: #FDFBF7; padding: 0.75rem 1.75rem; border-radius: 6px; font-size: 0.9rem; font-weight: 600; }
+    .btn-secondary { display: inline-flex; align-items: center; background: transparent; color: #7A5A1A; padding: 0.75rem 1.75rem; border-radius: 6px; font-size: 0.9rem; font-weight: 600; border: 2px solid #7A5A1A; }
+    @media (max-width: 720px) { .page-hero h1 { font-size: 1.75rem; } .testimonial-card { padding: 1.5rem; } }
   </style>
 </head>
 <body>
   <HeaderEn />
-  <div class="page-hero">
-    <div class="inner">
-      <div class="breadcrumb"><a href="/en/">Home</a> › Reviews</div>
-      <h1>Client Reviews</h1>
-      <p>Real feedback from clients Miao He has represented</p>
-    </div>
-  </div>
-  <div class="main-wrap">
-    <div class="testimonial-grid">
-      <div class="testimonial-card">
-        <img src="/email-ivy.jpeg" alt="Client review — Ivy" class="testimonial-img" />
-        <p class="testimonial-note">Email review from client Ivy</p>
+  <main>
+    <section class="page-hero">
+      <div class="page-hero-inner">
+        <div class="page-label">Client Reviews · Testimonials</div>
+        <h1>Real Client Feedback</h1>
+        <p>The following reviews are genuine feedback from clients shared through handwritten cards, Google reviews, messages, and emails. All displayed with client consent. Sensitive personal information has been anonymized.</p>
       </div>
-      <div class="testimonial-card">
-        <img src="/google-review-paula.jpeg" alt="Google review — Paula" class="testimonial-img" />
-        <p class="testimonial-note">Google review from Paula</p>
+    </section>
+
+    <section class="testimonials-section">
+      <div class="testimonials-inner">
+
+        <h2 class="section-title">✍️ Handwritten Card</h2>
+        <div class="testimonial-card">
+          <img src="/testimonials/card-handwritten.jpeg" alt="Handwritten card from client to Miao He" />
+          <div class="testimonial-source">Handwritten Card · Family Law Matter</div>
+          <div class="testimonial-text">
+            Dear Miao He,<br/><br/>
+            From our very first online meeting, my instinct told me you were exactly the lawyer I needed.<br/><br/>
+            Thank you for being so professional and logical, and at the same time like a trusted older sister who truly put herself in my shoes and helped me make sense of everything.<br/><br/>
+            Thank you for helping me restart my life. I will move forward and live well.<br/><br/>
+            Wishing you a smooth and successful year — may every case you take be a win ❤️<br/><br/>
+            <em>You're appreciated more than you know!</em>
+          </div>
+          <div class="testimonial-author">— Anonymous Client · Family Law Matter</div>
+        </div>
+
+        <h2 class="section-title">💬 Client Message</h2>
+        <div class="testimonial-card">
+          <img src="/testimonials/wechat-message.jpeg" alt="Client message to Miao He" />
+          <div class="testimonial-source">Client Message · Divorce Litigation</div>
+          <div class="testimonial-text">
+            Under your active mediation, you helped me end a two-year lawsuit very quickly. I had told my previous lawyer repeatedly that I was willing to accept a little less just to resolve things quickly — but that lawyer kept insisting there was no option but to keep fighting.<br/><br/>
+            Then I met you. You started from my best interests, coordinated with opposing counsel proactively, and I truly felt that a lawyer was actually helping me. It's been two years since my case closed. I love where I am now. Thank you forever for your professionalism.
+          </div>
+          <div class="testimonial-author">— Anonymous Client · Divorce Litigation</div>
+        </div>
+
+        <h2 class="section-title">⭐ Google Reviews</h2>
+        <div class="testimonial-card">
+          <img src="/testimonials/google-review-paula.jpeg" alt="Paula L Google review for Miao He" />
+          <div class="testimonial-source">Google Review · May 31, 2024 · Paula L</div>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <div class="testimonial-text">I worked with Mia on both a family law and real estate matter. The only regret I have is not finding her sooner. Mia and her team are extremely professional — and most importantly, incredibly efficient. Before working with her, I thought slow responses and poor communication were just normal for lawyers. Working with Mia showed me that a lawyer can respond this quickly, be this flexible, and proactively find solutions for clients. Her efficiency is more than three times higher than others I've worked with. If I ever need legal help again, she's the first call I'll make.</div>
+          <div class="testimonial-author">— Paula L · Local Guide · Family Law & Real Estate</div>
+        </div>
+
+        <div class="testimonial-card">
+          <img src="/testimonials/google-review-jane.jpeg" alt="Jane Google review for Miao He" />
+          <div class="testimonial-source">Google Review · Family Law Matter · Jane</div>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <div class="testimonial-text">I cannot recommend Mia He highly enough. After my case was initially handled by another lawyer, I had the good fortune of being transferred to her — and the difference was remarkable. From Day One, she demonstrated an exceptional level of professionalism, strategic insight, and care.<br/><br/>Mia exceeded my expectations in every way. She proactively engaged with opposing counsel and found solutions that others had overlooked. Beyond her legal skills, what truly makes her unique is her heart. She genuinely cares for women going through difficult and desperate situations.</div>
+          <div class="testimonial-author">— Jane · Google Review · Family Law Matter</div>
+        </div>
+
+        <h2 class="section-title">📧 Client Email</h2>
+        <div class="testimonial-card">
+          <img src="/testimonials/email-ivy.jpeg" alt="Email from Ivy to Miao He" />
+          <div class="testimonial-source">Client Email · June 25, 2024 · Ivy</div>
+          <div class="testimonial-text">
+            Dear Mia,<br/><br/>
+            Working with you as my family lawyer in Toronto has been an incredibly reassuring experience. From the very beginning, I could clearly see your professionalism, efficiency, and deep understanding of Ontario family law. You handled every step of my case promptly and strategically, which made a stressful situation feel manageable.<br/><br/>
+            I especially appreciate how transparent and reasonable your legal fees were. In a field where costs can easily become overwhelming, your fairness truly set you apart.<br/><br/>
+            You are, without question, one of the most reliable and effective divorce and family lawyers in Toronto.<br/><br/>
+            Sincerely, Ivy
+          </div>
+          <div class="testimonial-author">— Ivy · Client Email · Family Law Matter</div>
+        </div>
+
+        <h2 class="section-title">📋 More Client Reviews</h2>
+
+        <h3 class="category-title">Divorce Litigation</h3>
+        <div class="testimonial-card">
+          <div class="testimonial-source">Custody Litigation · Toronto</div>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <div class="testimonial-text">My child custody case involved an opposing party who refused to negotiate. Miao He told me directly: "This case won't resolve without litigation." She was blunt — and she was right. On the hearing day I watched her handle opposing counsel with clear thinking and composure. The judge ruled in my favour as primary custodian.</div>
+          <div class="testimonial-author">— David C. · Markham · Child Custody Litigation</div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-source">High-Conflict Divorce · Toronto</div>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <div class="testimonial-text">The opposing lawyer came to the table with a very aggressive position. Miao He told me not to concede, then began preparing for trial — every piece of evidence organized meticulously. When the other side saw we were genuinely ready to go to court, their position softened. We reached a favourable settlement before the hearing. Miao He noted afterward: often, actually being ready to fight is the most effective negotiating tool.</div>
+          <div class="testimonial-author">— Raymond K. · Toronto · Contested Divorce & Pre-Trial Settlement</div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-source">Complex Case · Richmond Hill</div>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <div class="testimonial-text">I had been fighting my ex-husband for nearly two years through two other lawyers without resolution. Miao He laid out the situation clearly in our first meeting. She ultimately recovered Chinese real estate assets that my ex had refused to acknowledge. My final property division was nearly $200,000 more than I had expected.</div>
+          <div class="testimonial-author">— Ms. Liu · Markham · Divorce & Property Division</div>
+        </div>
+
+        <h3 class="category-title">Property Division</h3>
+        <div class="testimonial-card">
+          <div class="testimonial-source">Property Division · Toronto</div>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <div class="testimonial-text">Our first meeting lasted nearly two hours. Miao He analyzed everything — two properties, pension plans, and an investment account my spouse held that I hadn't even known about. She tracked that account down. Through negotiation, I received the equalization payment I was owed without going to trial.</div>
+          <div class="testimonial-author">— Jennifer L. · Toronto · 14-Year Marriage Property Division</div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-source">Document Review · Richmond Hill</div>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <div class="testimonial-text">Went through a contested divorce involving two properties and a business. Mia was incredibly sharp — she spotted an error in the opposing party's financial disclosure that their own lawyer missed. That single catch saved me a significant sum. She's the kind of lawyer who actually reads every document instead of just going through the motions.</div>
+          <div class="testimonial-author">— Michael Chen · Richmond Hill · Divorce & Property Division</div>
+        </div>
+
+        <h3 class="category-title">Uncontested Divorce</h3>
+        <div class="testimonial-card">
+          <div class="testimonial-source">Simple Divorce · Toronto</div>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <div class="testimonial-text">Fast, professional, no drama. My ex and I had already agreed on everything — we just needed a lawyer to make it official. Mia handled it in about 5 weeks. Everything was done right the first time. Her pricing was very fair. No upselling, no unnecessary steps.</div>
+          <div class="testimonial-author">— Tony Z. · Scarborough · Uncontested Divorce</div>
+        </div>
+
+        <h3 class="category-title">Marriage Contracts</h3>
+        <div class="testimonial-card">
+          <div class="testimonial-source">Prenuptial Agreement · Thornhill</div>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <div class="testimonial-text">Getting a prenup felt awkward to bring up, but Mia made the whole process professional and non-judgmental. She explained what's enforceable in Ontario, what tends to get challenged, and drafted something that protected both of us fairly. My fiancé and I both felt comfortable. Thorough and fair.</div>
+          <div class="testimonial-author">— Sophie W. · Thornhill · Prenuptial Agreement</div>
+        </div>
+
+        <h3 class="category-title">Cross-Border Assets</h3>
+        <div class="testimonial-card">
+          <div class="testimonial-source">High-Net-Worth Divorce · Brampton</div>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <div class="testimonial-text">I owned two properties in China and a stock account. My ex kept insisting that assets in China had nothing to do with the Ontario divorce. Miao He told me directly this was wrong — under Ontario law, worldwide assets are included in the NFP calculation. She holds a Chinese law licence and knows how to trace assets there. All assets were brought into the calculation, and my final settlement was significantly better.</div>
+          <div class="testimonial-author">— Mr. Huang · Brampton · Cross-Border Asset Division</div>
+        </div>
+
+        <div class="page-cta">
+          <p>All reviews are genuine client feedback displayed with client consent. Sensitive personal information has been anonymized.</p>
+          <h2>Have a Similar Situation? Book a Consultation.</h2>
+          <p>Initial consultation: 30 minutes · $220 + HST · Mandarin & English</p>
+          <div class="cta-actions">
+            <a href="tel:6479306688" class="btn-primary">📞 647-930-6688</a>
+            <a href="mailto:miao@miaohelaw.ca" class="btn-secondary">miao@miaohelaw.ca</a>
+          </div>
+        </div>
+
       </div>
-      <div class="testimonial-card">
-        <img src="/wechat-message.jpeg" alt="WeChat review" class="testimonial-img" />
-        <p class="testimonial-note">WeChat message from client</p>
-      </div>
-      <div class="testimonial-card">
-        <img src="/google-review-jane.jpeg" alt="Google review — Jane" class="testimonial-img" />
-        <p class="testimonial-note">Google review from Jane</p>
-      </div>
-      <div class="testimonial-card">
-        <img src="/card-handwritten.jpeg" alt="Handwritten thank-you card" class="testimonial-img" />
-        <p class="testimonial-note">Handwritten thank-you card from client</p>
-      </div>
-    </div>
-    <div class="cta-box">
-      <h2>Ready to Work Together?</h2>
-      <p>Initial consultation 30 min · $220 + HST · Mandarin & English</p>
-      <a href="tel:6479306688" class="btn">📞 647-930-6688</a>
-    </div>
-  </div>
+    </section>
+  </main>
   <Footer />
 </body>
 </html>
