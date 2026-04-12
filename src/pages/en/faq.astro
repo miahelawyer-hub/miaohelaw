@@ -2,80 +2,152 @@
 import BaseHead from '../../components/BaseHead.astro';
 import HeaderEn from '../../components/HeaderEn.astro';
 import Footer from '../../components/Footer.astro';
-
-const faqs = [
-  { q: "What are the grounds for divorce in Ontario?", a: "There are three grounds: separation for one year, adultery, or physical/mental cruelty. The vast majority of cases use the one-year separation ground. You can file the application at any time after separation — you do not need to wait a full year before filing." },
-  { q: "Can a new immigrant get divorced in Ontario?", a: "Yes. Ontario courts handle divorce regardless of immigration status. As long as either spouse has lived in Ontario for at least one year, Ontario has jurisdiction to grant the divorce." },
-  { q: "What if my spouse refuses to cooperate with the divorce?", a: "You can proceed with litigation regardless. The court does not require your spouse's consent. After one year of separation, the court can grant a divorce by default judgment even if your spouse refuses to participate." },
-  { q: "Does the matrimonial home have to be split 50/50?", a: "Not necessarily. Ontario uses the equalization of net family property. The home is factored into the net family property calculation — the final division depends on the difference in each spouse's net family property, not a straight split of the house." },
-  { q: "How is child support calculated in Ontario?", a: "Child support is calculated using the Federal Child Support Guidelines based on the paying parent's income and the number of children. The parties cannot agree to pay less than the guideline amount." },
-  { q: "How is spousal support calculated?", a: "Spousal support is guided by the Spousal Support Advisory Guidelines (SSAG), which produce a range based on both parties' incomes and the length of the relationship. Courts have more discretion than with child support — not every case results in spousal support." },
-  { q: "Is a marriage contract (prenup) enforceable in Ontario?", a: "Yes, if properly executed. Both parties must sign voluntarily, each must receive independent legal advice (ILA), there must be full financial disclosure, and the terms must be fair. Agreements made without ILA are at greater risk of being set aside." },
-  { q: "How are assets held in China handled in an Ontario divorce?", a: "Ontario's equalization principle applies to worldwide assets, including Chinese real estate, offshore accounts, and overseas investments. Tracing and dividing cross-border assets requires a lawyer licensed in both China and Ontario." },
-  { q: "What if my spouse threatens to take the children to China?", a: "This is an emergency. Contact a lawyer immediately. China is not a Hague Convention member, making recovery of a child extremely difficult once they leave Canada. Ontario courts can issue a Non-Removal Order before the child departs." },
-  { q: "How long does divorce take in Ontario?", a: "An uncontested divorce typically takes 4 to 8 months. Contested litigation can take 1 to 3 years or longer depending on complexity." },
-  { q: "How much does a divorce lawyer cost in Ontario?", a: "Uncontested divorce packages typically range from $2,000 to $5,000. Contested litigation is billed hourly — a complex contested case can cost $50,000 to $80,000 CAD or more over a year. Initial consultation is 30 minutes at $220 + HST." },
-  { q: "What is equalization of net family property?", a: "This is Ontario's default property division rule. Each spouse calculates their net family property (assets minus debts at separation, minus assets brought into the marriage). The spouse with the higher NFP pays half the difference to the other." },
-  { q: "Does common-law separation follow the same rules as marriage?", a: "No. Common-law spouses in Ontario do not have automatic equalization rights. However, they may have claims based on unjust enrichment, resulting trust, or constructive trust. Spousal support may also apply after a long relationship." },
-  { q: "What is a separation agreement?", a: "A separation agreement is a legally binding contract between spouses that resolves all issues on separation — property division, spousal support, child custody, and parenting time. Both parties should have independent legal advice before signing." },
-  { q: "Can I get an emergency custody order?", a: "Yes. If a child is at immediate risk, a lawyer can bring an emergency motion to obtain a temporary custody or non-removal order, sometimes within 24 to 48 hours." },
-];
 ---
 <!doctype html>
 <html lang="en">
 <head>
   <BaseHead
-    title="Family Law FAQ | Miao He — Ontario Family Law Lawyer"
-    description="Answers to common Ontario family law questions: divorce, property division, child custody, support, marriage contracts, cross-border assets. 647-930-6688."
+    title="FAQ | Ontario Family Law | Miao He — Divorce, Custody, Property"
+    description="Answers to 20 common Ontario family law questions: divorce requirements, property division, child custody, support, prenuptial agreements, cross-border assets. 647-930-6688."
   />
-  <meta name="keywords" content="Ontario divorce FAQ,family law questions Ontario,divorce lawyer Toronto FAQ,child custody FAQ Ontario,spousal support Ontario" />
+  <meta name="keywords" content="Ontario divorce FAQ,family law questions Ontario,divorce requirements Ontario,child custody Ontario,spousal support Ontario,prenuptial agreement Ontario,cross-border divorce Canada,Chinese family lawyer FAQ" />
+  <meta property="og:title" content="FAQ | Ontario Family Law | Miao He" />
+  <meta property="og:url" content="https://www.miaohelaw.ca/en/faq" />
+  <meta property="og:type" content="website" />
   <link rel="canonical" href="https://www.miaohelaw.ca/en/faq" />
   <link rel="alternate" hreflang="zh" href="https://www.miaohelaw.ca/faq" />
   <link rel="alternate" hreflang="en" href="https://www.miaohelaw.ca/en/faq" />
+  <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"What are the requirements for divorce in Ontario?","acceptedAnswer":{"@type":"Answer","text":"There are three grounds for divorce: one year of separation, adultery, or physical or mental cruelty. The vast majority of cases proceed on the one-year separation ground. Separation for one year is a condition for the court to grant the divorce order — not a condition for filing. You can file at any time after separating."}},
+      {"@type":"Question","name":"Can a new immigrant get divorced in Ontario?","acceptedAnswer":{"@type":"Answer","text":"Yes. Ontario courts do not consider immigration status in divorce proceedings. As long as either spouse has been ordinarily resident in Ontario for at least one year, the Ontario court has jurisdiction. This applies regardless of whether you are a permanent resident, on a work permit, or hold another status."}},
+      {"@type":"Question","name":"What if my spouse refuses to cooperate with the divorce?","acceptedAnswer":{"@type":"Answer","text":"You can proceed by filing a divorce application in court. The court does not require the other party's consent. After one year of separation, if the opposing party refuses to participate, the court can proceed and make a judgment in their absence (Default Judgment)."}},
+      {"@type":"Question","name":"Does the house have to be split 50/50 in a divorce?","acceptedAnswer":{"@type":"Answer","text":"Not necessarily. Ontario uses an equalization of net family property system. The matrimonial home is one component of the overall net family property calculation — it is not automatically split in half. The final allocation depends on the difference in each party's net family property at the date of separation."}},
+      {"@type":"Question","name":"How are child support and spousal support calculated?","acceptedAnswer":{"@type":"Answer","text":"Child support is mandatory and calculated under the federal Child Support Guidelines based on the paying parent's income and number of children. The parties cannot agree to pay less than the guideline amount. Spousal support follows the Spousal Support Advisory Guidelines, but courts have more discretion, and not every case requires spousal support."}},
+      {"@type":"Question","name":"Is a prenuptial agreement enforceable in Ontario?","acceptedAnswer":{"@type":"Answer","text":"Yes, but strict conditions must be met: both parties must sign voluntarily, each must receive independent legal advice (ILA), both must fully disclose their financial situation, and the agreement must be fair and reasonable. Agreements reached informally without legal counsel are at risk of being set aside by the court."}},
+      {"@type":"Question","name":"How are assets in China handled in an Ontario divorce?","acceptedAnswer":{"@type":"Answer","text":"Ontario's equalization of net family property applies to worldwide assets, including Chinese real estate, overseas accounts, and foreign investments. Tracing and enforcing judgments on cross-border assets involves two legal systems. It is strongly recommended to consult a lawyer licensed in both Ontario and China before initiating proceedings."}},
+      {"@type":"Question","name":"What if my spouse wants to take the children to China?","acceptedAnswer":{"@type":"Answer","text":"This is an emergency. Contact a lawyer immediately. China is not a signatory to the Hague Convention on international child abduction, which means recovery of a child taken to China is extremely difficult. An Ontario court can issue a Non-Removal Order prohibiting the child from leaving the country. This must be done before the child departs."}},
+      {"@type":"Question","name":"How long does a divorce take in Ontario?","acceptedAnswer":{"@type":"Answer","text":"An uncontested divorce typically takes 4 to 8 months. A contested divorce involving property or custody disputes can take 1 to 3 years or longer depending on complexity."}},
+      {"@type":"Question","name":"How much does a divorce lawyer cost in Ontario?","acceptedAnswer":{"@type":"Answer","text":"An uncontested divorce fixed fee is typically $2,000 to $5,000. Contested litigation is billed hourly; a complex case can cost $50,000 to $80,000+ per year in legal fees. An initial 30-minute consultation with Miao He is $220 + HST."}},
+      {"@type":"Question","name":"What is the difference between contested and uncontested divorce?","acceptedAnswer":{"@type":"Answer","text":"An uncontested divorce means both parties have reached agreement on all issues: asset division, support, and parenting arrangements. An uncontested divorce is faster and less expensive. A contested divorce means one or more issues cannot be resolved by agreement and must be decided by a court."}},
+      {"@type":"Question","name":"Can I get divorced if I was married in China?","acceptedAnswer":{"@type":"Answer","text":"Yes. Ontario courts recognize marriages performed in China as valid, provided they were legal under Chinese law at the time. You can proceed with your divorce in Ontario as long as the residency requirement is met."}},
+      {"@type":"Question","name":"What is a separation agreement?","acceptedAnswer":{"@type":"Answer","text":"A separation agreement is a legally binding contract between spouses that sets out the terms of their separation: how assets and debts will be divided, arrangements for children, and support obligations. A well-drafted separation agreement can resolve all issues without going to court. However, both parties should obtain independent legal advice before signing."}},
+      {"@type":"Question","name":"Is my spouse's pension divided in a divorce?","acceptedAnswer":{"@type":"Answer","text":"Yes. In Ontario, pension plans are included in the equalization of net family property calculation. The value accrued during the marriage is included. The method of division depends on the type of pension."}},
+      {"@type":"Question","name":"What is equalization of net family property?","acceptedAnswer":{"@type":"Answer","text":"Each spouse calculates their net family property (NFP): the value of assets acquired during the marriage minus debts, minus any exclusions (such as pre-marital assets or inheritances). The spouse with the higher NFP pays the other half the difference. This is called the equalization payment."}},
+      {"@type":"Question","name":"Can I keep assets I owned before marriage?","acceptedAnswer":{"@type":"Answer","text":"In most cases, yes. Pre-marital assets can be excluded from the equalization calculation — but only if they are properly documented and have not been commingled with matrimonial assets in a way that makes exclusion difficult to trace. The exception is the matrimonial home: its full value at the date of separation is included regardless of when it was acquired."}},
+      {"@type":"Question","name":"What happens to the matrimonial home if we cannot agree?","acceptedAnswer":{"@type":"Answer","text":"Either party can apply to the court for an order of partition and sale, requiring the property to be sold and proceeds divided. The court can also order one party to buy out the other. The court will not leave a matrimonial property dispute unresolved indefinitely."}},
+      {"@type":"Question","name":"What factors does the court consider in child custody decisions?","acceptedAnswer":{"@type":"Answer","text":"The paramount consideration is the best interests of the child. Relevant factors include: each parent's relationship with the child, ability to meet the child's physical and emotional needs, stability of each home environment, the child's own views (depending on age and maturity), and any history of family violence."}},
+      {"@type":"Question","name":"What is the difference between legal custody and physical custody?","acceptedAnswer":{"@type":"Answer","text":"Legal custody refers to decision-making authority over major decisions in a child's life: education, health care, and religious upbringing. Physical custody (now called 'parenting time' under the Divorce Act) refers to where the child lives. It is common for parents to share legal custody (joint decision-making) while the child primarily resides with one parent."}},
+      {"@type":"Question","name":"How do I book a consultation with Miao He?","acceptedAnswer":{"@type":"Answer","text":"Call 647-930-6688 or email miao@miaohelaw.ca. Initial consultations are 30 minutes at $220 + HST, conducted in Mandarin or English, in person or by video. There is no obligation to retain after the consultation."}}
+    ]
+  }</script>
+  <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://www.miaohelaw.ca/en/"},
+      {"@type":"ListItem","position":2,"name":"FAQ","item":"https://www.miaohelaw.ca/en/faq"}
+    ]
+  }</script>
   <style>
-    * { box-sizing: border-box; }
-    body { background: #faf8f5; margin: 0; font-family: Georgia, serif; color: #2C1810; }
-    .page-hero { background: linear-gradient(135deg, #2C1810, #4A2C1A); padding: 3rem 1.5rem 2.5rem; }
-    .page-hero .inner { max-width: 900px; margin: 0 auto; }
-    .breadcrumb { font-size: 0.82rem; color: rgba(255,255,255,0.5); margin-bottom: 0.6rem; }
-    .breadcrumb a { color: rgba(255,255,255,0.5); text-decoration: none; }
-    .page-hero h1 { color: #fff; font-size: clamp(1.6rem, 3vw, 2.2rem); margin: 0 0 0.4rem; }
-    .page-hero p { color: #D4A853; margin: 0; font-size: 0.92rem; }
-    .main-wrap { max-width: 900px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
-    .faq-item { border-bottom: 1px solid #E8E0D5; padding: 1.2rem 0; }
-    .faq-item:last-child { border-bottom: none; }
-    .faq-q { font-size: 1rem; font-weight: 700; color: #2C1810; margin-bottom: 0.5rem; }
-    .faq-a { font-size: 0.88rem; color: #5A4A3A; line-height: 1.8; }
-    .cta-box { background: #F5EFE0; border-radius: 8px; padding: 2rem; text-align: center; margin-top: 3rem; }
-    .cta-box h2 { color: #2C1810; margin-bottom: 0.5rem; }
-    .cta-box p { color: #5A4A3A; font-size: 0.9rem; margin-bottom: 1.2rem; }
-    .btn { display: inline-block; background: #7A5A1A; color: #fff; padding: 0.7rem 1.8rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; font-weight: 600; margin: 0.3rem; }
-    .btn-outline { background: transparent; border: 1px solid #7A5A1A; color: #7A5A1A; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Georgia, serif; background: #FDFBF7; color: #2C1810; }
+    a { color: inherit; text-decoration: none; }
+    .page-hero { background: linear-gradient(135deg, #2C1810, #4A2C1A); color: white; padding: 3rem 1.5rem 2rem; }
+    .page-hero .container { max-width: 900px; margin: 0 auto; }
+    .breadcrumb { font-size: 0.85rem; opacity: 0.7; margin-bottom: 0.5rem; }
+    .breadcrumb a { color: white; }
+    .page-hero h1 { font-size: 2rem; margin: 0.5rem 0; color: #fff; font-weight: 400; }
+    .hero-sub { color: #D4A853; margin: 0; font-size: 0.9rem; }
+    .faq-section { padding: 3rem 1.5rem 4rem; }
+    .container { max-width: 860px; margin: 0 auto; }
+    .faq-item { border-bottom: 1px solid #EDE8DF; }
+    .faq-question { width: 100%; background: none; border: none; text-align: left; padding: 1.25rem 0; cursor: pointer; display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; font-family: Georgia, serif; font-size: 1rem; color: #1A1208; line-height: 1.5; }
+    .faq-question:hover { color: #7A5A1A; }
+    .faq-icon { font-size: 1.2rem; color: #9A8060; flex-shrink: 0; transition: transform 0.2s; margin-top: 2px; }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+    .faq-answer-inner { padding: 0 0 1.25rem; font-size: 0.9rem; color: #4A3A2A; line-height: 1.85; }
+    .faq-item.open .faq-icon { transform: rotate(45deg); color: #7A5A1A; }
+    .faq-item.open .faq-answer { max-height: 600px; }
+    .contact-card { background: linear-gradient(135deg, #2C1810, #4A2C1A); border-radius: 12px; padding: 2rem; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap; margin-top: 3rem; }
+    .contact-info h2 { color: #D4A853; margin: 0 0 0.5rem; font-size: 1.2rem; font-weight: 400; }
+    .contact-info p { color: #fff; margin: 0; font-size: 0.9rem; opacity: 0.88; }
+    .contact-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+    .btn-primary { display: inline-block; background: #D4A853; color: #2C1810; padding: 0.7rem 1.4rem; border-radius: 6px; font-weight: 700; font-size: 0.9rem; }
+    .btn-secondary { display: inline-block; background: transparent; color: white; border: 2px solid white; padding: 0.7rem 1.4rem; border-radius: 6px; font-weight: 700; font-size: 0.9rem; }
+    @media (max-width: 720px) { .page-hero h1 { font-size: 1.5rem; } .contact-card { flex-direction: column; } }
   </style>
 </head>
 <body>
   <HeaderEn />
-  <div class="page-hero">
-    <div class="inner">
-      <div class="breadcrumb"><a href="/en/">Home</a> › FAQ</div>
-      <h1>Family Law FAQ</h1>
-      <p>Common questions about Ontario family law — answered by Miao He</p>
-    </div>
-  </div>
-  <div class="main-wrap">
-    {faqs.map(item => (
-      <div class="faq-item">
-        <div class="faq-q">{item.q}</div>
-        <div class="faq-a">{item.a}</div>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="/en/">Home</a> › FAQ</div>
+        <h1>Frequently Asked Questions</h1>
+        <p class="hero-sub">Ontario Family Law · Answered by Miao He · 647-930-6688</p>
       </div>
-    ))}
-    <div class="cta-box">
-      <h2>Have a Question Not Listed Here?</h2>
-      <p>Book a consultation — 30 minutes · $220 + HST · Mandarin & English</p>
-      <a href="tel:6479306688" class="btn">📞 647-930-6688</a>
-      <a href="mailto:miao@miaohelaw.ca" class="btn btn-outline">Email Us</a>
-    </div>
-  </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="container">
+
+        {[
+          ["What are the requirements for divorce in Ontario?", "There are three grounds for divorce: one year of separation, adultery, or physical or mental cruelty. The vast majority of cases proceed on the one-year separation ground. Separation for one year is a condition for the court to grant the divorce order — not a condition for filing. You can file at any time after separating."],
+          ["Can a new immigrant get divorced in Ontario?", "Yes. Ontario courts do not consider immigration status in divorce proceedings. As long as either spouse has been ordinarily resident in Ontario for at least one year, the Ontario court has jurisdiction. This applies regardless of whether you are a permanent resident, on a work permit, or hold another status."],
+          ["What if my spouse refuses to cooperate with the divorce?", "You can proceed by filing a divorce application in court. The court does not require the other party's consent. After one year of separation, if the opposing party refuses to participate, the court can proceed and make a judgment in their absence (Default Judgment)."],
+          ["Does the house have to be split 50/50 in a divorce?", "Not necessarily. Ontario uses an equalization of net family property system. The matrimonial home is one component of the overall net family property calculation — it is not automatically split in half. The final allocation depends on the difference in each party's net family property at the date of separation."],
+          ["How are child support and spousal support calculated?", "Child support is mandatory and calculated under the federal Child Support Guidelines based on the paying parent's income and number of children. The parties cannot agree to pay less than the guideline amount. Spousal support follows the Spousal Support Advisory Guidelines, but courts have more discretion, and not every case requires spousal support."],
+          ["Is a prenuptial agreement enforceable in Ontario?", "Yes, but strict conditions must be met: both parties must sign voluntarily, each must receive independent legal advice (ILA), both must fully disclose their financial situation, and the agreement must be fair and reasonable. Agreements reached informally without legal counsel are at risk of being set aside by the court."],
+          ["How are assets in China handled in an Ontario divorce?", "Ontario's equalization of net family property applies to worldwide assets, including Chinese real estate, overseas accounts, and foreign investments. Tracing and enforcing judgments on cross-border assets involves two legal systems. It is strongly recommended to consult a lawyer licensed in both Ontario and China before initiating proceedings."],
+          ["What if my spouse wants to take the children to China?", "This is an emergency. Contact a lawyer immediately. China is not a signatory to the Hague Convention on international child abduction, which means recovery of a child taken to China is extremely difficult. An Ontario court can issue a Non-Removal Order prohibiting the child from leaving the country. This must be done before the child departs."],
+          ["How long does a divorce take in Ontario?", "An uncontested divorce typically takes 4 to 8 months. A contested divorce involving property or custody disputes can take 1 to 3 years or longer depending on complexity."],
+          ["How much does a divorce lawyer cost in Ontario?", "An uncontested divorce fixed fee is typically $2,000 to $5,000. Contested litigation is billed hourly; a complex case can cost $50,000 to $80,000+ per year in legal fees. An initial 30-minute consultation with Miao He is $220 + HST."],
+          ["What is the difference between contested and uncontested divorce?", "An uncontested divorce means both parties have reached agreement on all issues: asset division, support, and parenting arrangements. It is faster and less expensive. A contested divorce means one or more issues cannot be resolved by agreement and must be decided by a court."],
+          ["Can I get divorced in Ontario if I was married in China?", "Yes. Ontario courts recognize marriages performed in China as valid, provided they were legal under Chinese law at the time. You can proceed with your divorce in Ontario as long as the residency requirement is met."],
+          ["What is a separation agreement?", "A separation agreement is a legally binding contract between spouses that sets out the terms of their separation: how assets and debts will be divided, arrangements for children, and support obligations. A well-drafted agreement can resolve all issues without going to court. Both parties should obtain independent legal advice before signing."],
+          ["Is my spouse's pension divided in a divorce?", "Yes. In Ontario, pension plans are included in the equalization of net family property calculation. The value accrued during the marriage is included. The method of division depends on the type of pension."],
+          ["What is equalization of net family property?", "Each spouse calculates their net family property (NFP): the value of assets acquired during the marriage minus debts, minus any exclusions (such as pre-marital assets or inheritances). The spouse with the higher NFP pays the other half the difference. This is called the equalization payment."],
+          ["Can I keep assets I owned before marriage?", "In most cases, yes. Pre-marital assets can be excluded from the equalization calculation — but only if properly documented and not commingled with matrimonial assets in a way that makes the exclusion difficult to trace. The exception is the matrimonial home: its full value at the date of separation is included regardless of when it was acquired."],
+          ["What happens to the matrimonial home if we cannot agree?", "Either party can apply to the court for an order of partition and sale, requiring the property to be sold and proceeds divided. The court can also order one party to buy out the other. The court will not leave a matrimonial property dispute unresolved indefinitely."],
+          ["What factors does the court consider in child custody decisions?", "The paramount consideration is the best interests of the child. Relevant factors include: each parent's relationship with the child, ability to meet the child's needs, stability of each home environment, the child's own views (depending on age and maturity), and any history of family violence."],
+          ["What is the difference between legal custody and physical custody?", "Legal custody refers to decision-making authority over major decisions: education, health care, and religious upbringing. Physical custody (now called 'parenting time' under the Divorce Act) refers to where the child lives. Joint decision-making with primary residence at one parent's home is a common arrangement."],
+          ["How do I book a consultation with Miao He?", "Call 647-930-6688 or email miao@miaohelaw.ca. Initial consultations are 30 minutes at $220 + HST, conducted in Mandarin or English, in person or by video. There is no obligation to retain after the consultation."]
+        ].map(([q, a], i) => (
+          <div class="faq-item" id={`faq-${i}`}>
+            <button class="faq-question" onclick={`toggleFaq(${i})`}>
+              <span>{q}</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">{a}</div>
+            </div>
+          </div>
+        ))}
+
+        <div class="contact-card">
+          <div class="contact-info">
+            <h2>Have More Questions?</h2>
+            <p>Miao He provides consultations in Mandarin and English · Initial consultation 30 min · $220 + HST</p>
+          </div>
+          <div class="contact-actions">
+            <a href="tel:6479306688" class="btn-primary">📞 647-930-6688</a>
+            <a href="/en/contact" class="btn-secondary">Book a Consultation</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
   <Footer />
+
+  <script>
+    function toggleFaq(i) {
+      const item = document.getElementById('faq-' + i);
+      item.classList.toggle('open');
+    }
+  </script>
 </body>
 </html>
