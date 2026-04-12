@@ -7,15 +7,14 @@ import Footer from '../../components/Footer.astro';
 <html lang="en">
 <head>
   <BaseHead
-    title="Chinese Family Lawyer Ottawa | Mandarin Divorce Lawyer Ontario | Miao He"
-    description="Miao He provides Mandarin family law services to Ottawa clients via Zoom — appears in courts province-wide. Divorce, custody, cross-border assets. 647-930-6688."
+    title="Chinese Family Lawyer Ottawa | Federal Pension · Quebec Border · Mandarin | Miao He"
+    description="Miao He serves Chinese-Canadian families in Ottawa — federal pension division, Ontario-Quebec cross-border cases, divorce, custody. Mandarin, Zoom consultations. 647-930-6688."
   />
-  <meta name="keywords" content="Chinese family lawyer Ottawa,Mandarin divorce lawyer Ottawa,family lawyer Ottawa Ontario,Chinese lawyer Ottawa,divorce lawyer Ottawa,Miao He Ottawa,bilingual family lawyer Ottawa" />
-  <meta property="og:title" content="Chinese Family Lawyer Ottawa | Mandarin Divorce Lawyer Ontario | Miao He" />
-  <meta property="og:description" content="Miao He provides Mandarin family law services to Ottawa clients via Zoom — appears in courts province-wide. Divorce, custody, cross-border assets. 647-930-6688." />
+  <meta name="keywords" content="Chinese family lawyer Ottawa,Mandarin divorce lawyer Ottawa,Ottawa Chinese Canadian divorce,federal pension division divorce Ontario,government employee divorce Ottawa,Ontario Quebec cross border divorce,Chinese lawyer Ottawa Ontario,divorce lawyer Ottawa Mandarin,Zoom family law consultation Ottawa,Superior Court Ottawa family law" />
+  <meta property="og:title" content="Chinese Family Lawyer Ottawa | Miao He" />
+  <meta property="og:description" content="Serving Chinese-Canadian families in Ottawa — federal pension division, Ontario-Quebec cases, divorce, custody. Full Mandarin service, Zoom consultations. 647-930-6688." />
   <meta property="og:url" content="https://www.miaohelaw.ca/en/ottawa-chinese-family-lawyer" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://www.miaohelaw.ca/og-image.jpg" />
   <link rel="canonical" href="https://www.miaohelaw.ca/en/ottawa-chinese-family-lawyer" />
   <link rel="alternate" hreflang="zh" href="https://www.miaohelaw.ca/ottawa-family-lawyer" />
   <link rel="alternate" hreflang="en" href="https://www.miaohelaw.ca/en/ottawa-chinese-family-lawyer" />
@@ -29,14 +28,26 @@ import Footer from '../../components/Footer.astro';
       "url": "https://www.miaohelaw.ca/en/ottawa-chinese-family-lawyer",
       "telephone": "+1-647-930-6688",
       "email": "miao@miaohelaw.ca",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "208-7050 Woodbine Ave",
+        "addressLocality": "Markham",
+        "addressRegion": "ON",
+        "addressCountry": "CA"
+      },
       "areaServed": {
         "@type": "City",
         "name": "Ottawa",
         "containedInPlace": {"@type": "Province", "name": "Ontario"}
       },
+      "availableLanguage": [
+        {"@type": "Language", "name": "Mandarin Chinese"},
+        {"@type": "Language", "name": "English"}
+      ],
       "provider": {
         "@type": "Person",
         "name": "Miao He",
+        "alternateName": ["何淼", "Mia He"],
         "jobTitle": "Family Law Lawyer",
         "knowsLanguage": ["zh-Hans", "en"],
         "hasCredential": [
@@ -44,15 +55,17 @@ import Footer from '../../components/Footer.astro';
           {"@type": "EducationalOccupationalCredential", "credentialCategory": "China Bar Association — Licensed"}
         ]
       },
-      "serviceType": ["Family Law", "Divorce", "Child Custody", "Marriage Contract", "Spousal Support", "Cross-border Assets"],
-      "inLanguage": ["en", "zh-Hans"]
+      "serviceType": ["Divorce Litigation", "Federal Pension Division", "Child Custody", "Property Division", "Cross-Border Assets", "Separation Agreement"],
+      "inLanguage": "en",
+      "sameAs": "https://www.miaohelaw.ca/ottawa-family-lawyer"
     },
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.miaohelaw.ca/en/"},
-        {"@type": "ListItem", "position": 2, "name": "Ottawa Chinese Family Lawyer", "item": "https://www.miaohelaw.ca/en/ottawa-chinese-family-lawyer"}
+        {"@type": "ListItem", "position": 2, "name": "Service Areas", "item": "https://www.miaohelaw.ca/en/contact"},
+        {"@type": "ListItem", "position": 3, "name": "Chinese Family Lawyer Ottawa", "item": "https://www.miaohelaw.ca/en/ottawa-chinese-family-lawyer"}
       ]
     },
     {
@@ -61,150 +74,162 @@ import Footer from '../../components/Footer.astro';
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Can I retain a Mandarin-speaking Ontario family lawyer from Ottawa?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Yes. Miao He is licensed in Ontario (LSO #83315K) and can represent Ottawa clients in any Ontario court. She provides full Mandarin service via Zoom. Call 647-930-6688."}
+          "name": "How is a federal government pension divided in an Ontario divorce?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Federal public service pensions are subject to a separate federal regime — the Pension Benefits Division Act — which operates differently from provincial pension rules. The pension can be divided at source, meaning the federal government splits the pension directly between the spouses. The process involves specific forms and timelines. Miao He is familiar with this area and can advise Ottawa public sector clients on how to handle federal pension division correctly. Call 647-930-6688."}
+        },
+        {
+          "@type": "Question",
+          "name": "My spouse lives in Quebec. Can I still divorce in Ontario?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Yes, if you have been ordinarily resident in Ontario for at least one year. Ontario courts have jurisdiction to grant the divorce regardless of where your spouse lives. However, where Quebec and Ontario intersect — particularly for property or support enforcement — cross-provincial issues can arise. Miao He can advise on jurisdiction and strategy for Ottawa-area cases involving a Quebec-resident spouse. Call 647-930-6688."}
+        },
+        {
+          "@type": "Question",
+          "name": "Which court handles Ottawa family law cases?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Ottawa family law cases are heard at the Superior Court of Justice — Ottawa Courthouse, 161 Elgin Street, Ottawa. Miao He serves Ottawa clients primarily by Zoom, and attends in person when required. Full Mandarin service. Call 647-930-6688."}
         }
       ]
     }
   ]
   </script>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: Georgia, serif; background: #FDFBF7; color: #2C1810; }
-    a { color: inherit; text-decoration: none; }
-    .page-hero { background: linear-gradient(135deg, #2C1810, #4A2C1A); padding: 3rem 1.5rem 2.5rem; text-align: center; }
-    .page-hero .inner { max-width: 760px; margin: 0 auto; }
-    .breadcrumb { font-size: 0.82rem; color: rgba(255,255,255,0.5); margin-bottom: 0.6rem; }
-    .breadcrumb a { color: rgba(255,255,255,0.5); }
-    .page-label { font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: #D4A853; margin-bottom: 0.5rem; }
-    .page-hero h1 { color: #fff; font-size: clamp(1.6rem, 3vw, 2.2rem); margin: 0 0 0.5rem; font-weight: 400; }
-    .tagline { color: #D4A853; font-size: 0.88rem; margin: 0; }
-    .main-section { padding: 3rem 1.5rem 4rem; }
-    .main-inner { max-width: 860px; margin: 0 auto; display: grid; grid-template-columns: 1fr 300px; gap: 2.5rem; }
-    .card { background: #fff; border: 1px solid #EDE8DF; border-radius: 12px; padding: 1.75rem; margin-bottom: 1.5rem; }
-    .card h2 { font-size: 1.1rem; font-weight: 700; color: #2C1810; margin: 0 0 1rem; }
-    .card p { font-size: 0.92rem; line-height: 1.7; color: #2C1810; margin-bottom: 0.75rem; }
-    .services-list { list-style: none; padding: 0; margin: 0.5rem 0; }
-    .services-list li { font-size: 0.9rem; padding: 0.3rem 0; border-bottom: 1px solid #F5EFE0; }
-    .services-list li:last-child { border-bottom: none; }
-    .highlight { border-color: #D4A853; box-shadow: 0 4px 20px rgba(212,168,83,0.12); }
-    .cta-block { background: #2C1810; border-radius: 12px; padding: 1.75rem; margin-bottom: 1.5rem; text-align: center; }
-    .cta-block h2 { color: #D4A853; font-size: 1.1rem; margin: 0 0 0.5rem; }
-    .cta-block p { color: rgba(255,255,255,0.8); font-size: 0.88rem; margin: 0 0 1rem; }
-    .btn-phone { display: inline-block; background: #D4A853; color: #1A1208; padding: 0.75rem 2rem; border-radius: 8px; font-weight: 700; font-size: 1rem; margin-bottom: 0.5rem; }
-    .btn-email { display: inline-block; background: transparent; color: #D4A853; border: 1px solid #D4A853; padding: 0.6rem 1.5rem; border-radius: 8px; font-size: 0.88rem; margin-top: 0.5rem; }
-    .sidebar-card { background: #fff; border: 1px solid #EDE8DF; border-radius: 12px; padding: 1.5rem; margin-bottom: 1.25rem; }
-    .sidebar-card h3 { font-size: 0.88rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: #2C1810; margin: 0 0 0.75rem; }
-    .sidebar-card p { font-size: 0.85rem; line-height: 1.6; color: #2C1810; }
-    .cred-list { list-style: none; padding: 0; margin: 0; }
-    .cred-list li { font-size: 0.83rem; padding: 0.25rem 0; padding-left: 1rem; position: relative; color: #2C1810; }
-    .cred-list li::before { content: "·"; position: absolute; left: 0; color: #D4A853; }
-    .area-note { font-size: 0.82rem; color: #9A8060; font-style: italic; margin-top: 0.5rem; }
-    @media (max-width: 720px) { .main-inner { grid-template-columns: 1fr; } }
-</style>
 </head>
 <body>
   <HeaderEn />
   <main>
-
     <section class="page-hero">
-      <div class="inner">
-        <div class="breadcrumb"><a href="/en/">Home</a> › <a href="/en/contact">Areas Served</a> › Ottawa</div>
-        <div class="page-label">Chinese Family Lawyer · Ottawa</div>
-        <h1>Chinese Family Lawyer Serving Ottawa</h1>
-        <p class="tagline">Zoom video consultation · Province-wide court appearances · Full Mandarin service · 647-930-6688</p>
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="/en/">Home</a> › <a href="/en/contact">Service Areas</a> › Ottawa
+        </div>
+        <h1>Chinese Family Lawyer in Ottawa</h1>
+        <p class="hero-sub">Serving Ottawa · Federal pension · Quebec border cases · Mandarin · 647-930-6688</p>
       </div>
     </section>
 
-    <section class="main-section">
-      <div class="main-inner">
-
+    <section class="content-section">
+      <div class="container content-grid">
         <div class="main-content">
 
-          <div class="card highlight">
-            <h2>Serving Ottawa in Mandarin & English</h2>
-            <p>Ottawa's Chinese-Canadian community includes government professionals, researchers, and new immigrants who need Mandarin-speaking legal services. Miao He provides full Ontario family law representation via Zoom, and appears in courts across the province when needed.</p>
-            <p>Miao He (何淼) is dual-licensed in Ontario (LSO #83315K) and China, with 15+ years of family law experience and 20+ court appearances per month. She handles all matters personally — in Mandarin and English, with no interpreter needed.</p>
+          <div class="definition-box">
+            <p>Ottawa's Chinese-Canadian community is smaller than Toronto's but faces family law challenges that are uniquely complex: <strong>federal government pensions governed by federal legislation, cases that cross the Ontario-Quebec border, and a severe shortage of Mandarin-speaking family lawyers in the city</strong>. Miao He (何淼) serves Ottawa clients primarily by Zoom — and attends court in Ottawa in person when required. LSO #83315K · China Bar Association Licensed.</p>
           </div>
 
-          <div class="card">
-            <h2>Family Law Services Available in Ottawa</h2>
-            <ul class="services-list">
-              <li>Divorce Litigation</li>
-              <li>Child Custody &amp; Access</li>
-              <li>Child Support / Spousal Support</li>
-              <li>Property Division / NFP Equalization</li>
-              <li>Cross-Border Asset Recovery (Canada &amp; China)</li>
-              <li>Emergency Motions / Mareva Injunction</li>
-              <li>Marriage Contract / Prenuptial Agreement</li>
-              <li>Separation Agreement</li>
-              <li>Mediation</li>
-            </ul>
-            <p class="area-note">Serving Ottawa and all of Eastern Ontario, including Gatineau-area clients with Ontario family law matters.</p>
+          <h2>What Makes Ottawa Family Law Cases Distinctive</h2>
+          <p>Ottawa is Canada's capital — and the concentration of federal public servants creates a family law landscape that differs from the rest of Ontario in important ways. Miao He has experience with these Ottawa-specific issues.</p>
+
+          <h3>Federal Government Pensions: A Different Set of Rules</h3>
+          <p>Many Ottawa Chinese-Canadian families include federal public servants with defined benefit pensions under the Public Service Superannuation Act. These pensions are divided under the federal Pension Benefits Division Act — a separate regime from Ontario's provincial pension rules. The division can be done at source: the federal government divides the pension directly between the spouses, without the need to liquidate or transfer funds. The process involves specific federal forms, timelines, and calculations. Miao He advises Ottawa public sector clients on how to navigate this correctly, including how to value the pension for Equalization purposes.</p>
+
+            <h3>Ontario-Quebec Border Cases</h3>
+          <p>Ottawa sits on the Ontario-Quebec border, and it is common for one spouse to live or work in Gatineau. If you are ordinarily resident in Ontario, Ontario courts have jurisdiction to grant your divorce regardless of where your spouse lives. However, cross-provincial issues can arise around property, support enforcement, and child custody when one party is in Quebec. Miao He advises on jurisdiction strategy and what steps to take when a case has connections to both provinces.</p>
+
+          <h3>Zoom Service: Practical for Ottawa Clients</h3>
+          <p>Mandarin-speaking family lawyers are scarce in Ottawa. Rather than working with an English-speaking lawyer through an interpreter, Ottawa clients connect with Miao He directly by Zoom — in Mandarin, without translation costs or miscommunication risk. Most consultations, document preparation, and Separation Agreement work is completed remotely. When in-person court attendance is required in Ottawa, Miao He travels — with travel costs disclosed transparently in advance.</p>
+
+          <h3>Cross-Border Assets: China and Canada</h3>
+          <p>Ottawa Chinese-Canadian families frequently hold assets in China — property, bank accounts, or business interests. These are included in Ontario's global Equalization calculation. Miao He's dual licences in Ontario and China allow her to address cross-border asset issues directly, advising on disclosure obligations and enforcement across both jurisdictions.</p>
+
+          <div class="qa-block">
+            <h3>Q: How is a federal government pension divided in a divorce?</h3>
+            <p>A: Federal pensions are governed by the Pension Benefits Division Act — a federal regime separate from provincial rules. Division can be done at source through the federal government. Miao He advises Ottawa public sector clients on this process. Call 647-930-6688.</p>
           </div>
 
-          <div class="card">
-            <h2>Frequently Asked Question</h2>
-            <p><strong>Can I retain a Mandarin-speaking Ontario family lawyer from Ottawa?</strong></p>
-            <p>Yes. Miao He is licensed in Ontario (LSO #83315K) and can represent Ottawa clients in any Ontario court. She provides full Mandarin service via Zoom. Call 647-930-6688.</p>
+          <div class="qa-block">
+            <h3>Q: My spouse lives in Quebec. Can I divorce in Ontario?</h3>
+            <p>A: Yes, if you have been ordinarily resident in Ontario for at least one year. Ontario courts have jurisdiction to grant the divorce. Cross-provincial complications can arise on enforcement — Miao He can advise on strategy. Call 647-930-6688.</p>
+          </div>
+
+          <div class="qa-block">
+            <h3>Q: Which court handles Ottawa family law cases?</h3>
+            <p>A: Ottawa cases are heard at the Superior Court of Justice — Ottawa Courthouse, 161 Elgin Street, Ottawa. Miao He serves Ottawa clients by Zoom and attends in person when required. Full Mandarin service. Call 647-930-6688.</p>
+          </div>
+
+          <div class="cta-box">
+            <h3>Book an Ottawa Family Law Consultation</h3>
+            <p>Initial consultation 30 minutes · $220 + HST · Mandarin &amp; English · Zoom</p>
+            <a href="/en/contact" class="btn-primary">Book Now</a>
+            <a href="tel:6479306688" class="btn-secondary">647-930-6688</a>
           </div>
 
         </div>
 
-        <aside class="main-sidebar">
-
-          <div class="cta-block">
-            <h2>Book a Consultation</h2>
-            <p>Initial consultation 30 min · $220 + HST · No obligation</p>
-            <a href="tel:6479306688" class="btn-phone">📞 647-930-6688</a><br/>
-            <a href="mailto:miao@miaohelaw.ca" class="btn-email">miao@miaohelaw.ca</a>
-          </div>
-
+        <aside class="sidebar">
           <div class="sidebar-card">
-            <h3>Office Address</h3>
-            <p>H. LAW FIRM 恒. 律师事务所<br/>
-            208 - 7050 Woodbine Avenue<br/>
-            Markham, Ontario L3R 4G8</p>
+            <h3>Contact Miao He</h3>
+            <p>📞 <a href="tel:6479306688">647-930-6688</a></p>
+            <p>📧 <a href="mailto:miao@miaohelaw.ca">miao@miaohelaw.ca</a></p>
+            <p>📍 208-7050 Woodbine Ave, Markham</p>
+            <p>💬 WeChat: 372656035</p>
           </div>
-
           <div class="sidebar-card">
-            <h3>Licences &amp; Credentials</h3>
-            <ul class="cred-list">
-              <li>Law Society of Ontario — #83315K</li>
-              <li>China Bar Association — Dual Licensed</li>
-              <li>Expert Witness — Chinese Family Law</li>
-              <li>Notary Public — Ontario</li>
-              <li>15+ years experience</li>
-              <li>20+ court appearances / month</li>
+            <h3>Family Law Services</h3>
+            <ul>
+              <li><a href="/en/family-law/divorce-litigation">Divorce Litigation</a></li>
+              <li><a href="/en/family-law/child-custody">Child Custody</a></li>
+              <li><a href="/en/family-law/domestic-contracts">Marriage Contracts</a></li>
+              <li><a href="/en/family-law/cross-border-assets">Cross-Border Assets</a></li>
+              <li><a href="/en/family-law/support">Support</a></li>
+              <li><a href="/en/family-law/mediation">Mediation</a></li>
             </ul>
           </div>
-
+          <div class="sidebar-card">
+            <h3>Service Areas</h3>
+            <ul>
+              <li><a href="/en/toronto-chinese-family-lawyer">Chinese Divorce Lawyer Toronto</a></li>
+              <li><a href="/en/markham-chinese-family-lawyer">Chinese Family Lawyer Markham · Office</a></li>
+              <li><a href="/en/richmond-hill-chinese-family-lawyer">Chinese Family Lawyer Richmond Hill</a></li>
+              <li><a href="/en/north-york-chinese-family-lawyer">Chinese Divorce Lawyer North York</a></li>
+              <li><a href="/en/scarborough-chinese-family-lawyer">Chinese Family Lawyer Scarborough</a></li>
+              <li><a href="/en/mississauga-chinese-family-lawyer">Chinese Divorce Lawyer Mississauga</a></li>
+              <li><a href="/en/brampton-chinese-family-lawyer">Chinese Family Lawyer Brampton</a></li>
+              <li><a href="/en/vaughan-chinese-family-lawyer">Chinese Family Lawyer Vaughan</a></li>
+              <li><a href="/en/thornhill-chinese-family-lawyer">Chinese Family Lawyer Thornhill</a></li>
+              <li><a href="/en/newmarket-chinese-family-lawyer">Chinese Family Lawyer Newmarket</a></li>
+              <li><a href="/en/ajax-pickering-chinese-family-lawyer">Chinese Lawyer Ajax / Pickering</a></li>
+              <li><a href="/en/hamilton-chinese-family-lawyer">Chinese Family Lawyer Hamilton</a></li>
+              <li><a href="/en/kitchener-chinese-family-lawyer">Chinese Family Lawyer Kitchener</a></li>
+              <li><a href="/en/ottawa-chinese-family-lawyer">Chinese Family Lawyer Ottawa</a></li>
+              <li><a href="/en/london-chinese-family-lawyer">Chinese Lawyer London Ontario</a></li>
+              <li><a href="/en/windsor-chinese-family-lawyer">Chinese Family Lawyer Windsor</a></li>
+              <li><a href="/en/north-bay-chinese-family-lawyer">Chinese Family Lawyer North Bay</a></li>
+            </ul>
+          </div>
           <div class="sidebar-card">
             <h3>Languages</h3>
-            <p>Mandarin (普通话) · English</p>
+            <p>🇨🇳 Mandarin (普通话)</p>
+            <p>🇨🇦 English</p>
           </div>
-
-          <div class="sidebar-card">
-            <h3>Other Areas Served</h3>
-            <p style="font-size:0.8rem;line-height:1.8;">
-              <a href="/en/toronto-chinese-family-lawyer">Toronto</a> ·
-              <a href="/en/markham-chinese-family-lawyer">Markham</a> ·
-              <a href="/en/richmond-hill-chinese-family-lawyer">Richmond Hill</a> ·
-              <a href="/en/mississauga-chinese-family-lawyer">Mississauga</a> ·
-              <a href="/en/brampton-chinese-family-lawyer">Brampton</a> ·
-              <a href="/en/vaughan-chinese-family-lawyer">Vaughan</a> ·
-              <a href="/en/north-york-chinese-family-lawyer">North York</a> ·
-              <a href="/en/scarborough-chinese-family-lawyer">Scarborough</a> ·
-              <a href="/en/hamilton-chinese-family-lawyer">Hamilton</a> ·
-              <a href="/en/ottawa-chinese-family-lawyer">Ottawa</a>
-            </p>
-          </div>
-
         </aside>
       </div>
     </section>
-
   </main>
   <Footer />
 </body>
 </html>
+<style>
+  .page-hero{background:linear-gradient(135deg,#2C1810 0%,#4A2C1A 100%);color:white;padding:3rem 0 2rem}
+  .page-hero h1{font-size:2rem;margin:0.5rem 0;color:#ffffff}
+  .hero-sub{color:#D4A853;margin:0}
+  .breadcrumb{font-size:0.85rem;opacity:0.7;margin-bottom:0.5rem}
+  .breadcrumb a{color:white;text-decoration:none}
+  .container{max-width:1100px;margin:0 auto;padding:0 1.5rem}
+  .content-section{padding:3rem 0}
+  .content-grid{display:grid;grid-template-columns:1fr 300px;gap:3rem}
+  .definition-box{background:#FDF6EC;border-left:4px solid #9A8060;padding:1.2rem 1.5rem;margin-bottom:2rem;border-radius:0 8px 8px 0}
+  .qa-block{background:#f8f8f8;border-radius:8px;padding:1.2rem 1.5rem;margin:1.5rem 0;border-left:3px solid #9A8060}
+  .qa-block h3{color:#2C1810;margin-top:0;font-size:1rem}
+  .cta-box{background:linear-gradient(135deg,#2C1810,#4A2C1A);color:white;padding:2rem;border-radius:12px;text-align:center;margin-top:2rem}
+  .cta-box h3{margin-top:0;color:#D4A853}
+  .cta-box p{color:#ffffff}
+  .btn-primary{display:inline-block;background:#D4A853;color:#2C1810;padding:0.75rem 1.5rem;border-radius:6px;text-decoration:none;font-weight:700;margin:0.5rem}
+  .btn-secondary{display:inline-block;background:transparent;color:white;border:2px solid white;padding:0.75rem 1.5rem;border-radius:6px;text-decoration:none;font-weight:700;margin:0.5rem}
+  .sidebar{display:flex;flex-direction:column;gap:1.5rem}
+  .sidebar-card{background:white;border:1px solid #e8e0d5;border-radius:10px;padding:1.2rem}
+  .sidebar-card h3{color:#2C1810;font-size:0.95rem;margin-top:0;border-bottom:1px solid #e8e0d5;padding-bottom:0.5rem;margin-bottom:0.75rem}
+  .sidebar-card ul{list-style:none;padding:0;margin:0}
+  .sidebar-card li{padding:0.3rem 0;border-bottom:1px solid #f0ebe3;font-size:0.9rem}
+  .sidebar-card a{color:#9A8060;text-decoration:none}
+  .sidebar-card p{margin:0.3rem 0;font-size:0.9rem}
+  h2{color:#2C1810;margin-top:2rem}
+  h3{color:#4A2C1A}
+  @media(max-width:768px){.content-grid{grid-template-columns:1fr}.page-hero h1{font-size:1.5rem}}
+</style>
