@@ -6,13 +6,15 @@ import Footer from '../../components/Footer.astro';
 <!doctype html>
 <html lang="en">
 <head>
-  <BaseHead title="Chinese Family Lawyer Mississauga | Mandarin Divorce Lawyer | Miao He" description="Miao He serves Mississauga Chinese-Canadian professionals — stock options, RSUs, pensions, complex asset division. Peel Region court experience. Mandarin service. 647-930-6688." />
-  <meta name="keywords" content="Chinese family lawyer Mississauga,Mandarin divorce lawyer Mississauga,family lawyer Mississauga,Chinese lawyer Mississauga,divorce lawyer Mississauga Ontario,Peel Region Chinese lawyer" />
-  <meta property="og:title" content="Chinese Family Lawyer Mississauga | Mandarin Divorce Lawyer | Miao He" />
-  <meta property="og:description" content="Miao He serves Mississauga Chinese-Canadian professionals — stock options, RSUs, pensions, complex asset division. Peel Region court experience. Mandarin service. 647-930-6688." />
+  <BaseHead
+    title="Chinese Family Lawyer Mississauga | Stock Options · Pension · Cohabitation | Miao He"
+    description="Miao He serves Chinese-Canadian families in Mississauga — high-income professionals, stock options, RRSP, pension division, cohabitation agreements. Mandarin, no interpreter. 647-930-6688."
+  />
+  <meta name="keywords" content="Chinese family lawyer Mississauga,Mandarin divorce lawyer Mississauga,Chinese lawyer west GTA,stock options divorce Ontario,pension division divorce Mississauga,cohabitation agreement Mississauga,Chinese Canadian divorce Mississauga,separation agreement Mississauga,Peel Region family court Chinese lawyer,Mandarin family lawyer Square One" />
+  <meta property="og:title" content="Chinese Family Lawyer Mississauga | Miao He" />
+  <meta property="og:description" content="Serving Chinese-Canadian professionals in Mississauga — stock options, pension, RRSP division, cohabitation agreements. Full Mandarin service. 647-930-6688." />
   <meta property="og:url" content="https://www.miaohelaw.ca/en/mississauga-chinese-family-lawyer" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://www.miaohelaw.ca/og-image.jpg" />
   <link rel="canonical" href="https://www.miaohelaw.ca/en/mississauga-chinese-family-lawyer" />
   <link rel="alternate" hreflang="zh" href="https://www.miaohelaw.ca/mississauga-family-lawyer" />
   <link rel="alternate" hreflang="en" href="https://www.miaohelaw.ca/en/mississauga-chinese-family-lawyer" />
@@ -26,10 +28,26 @@ import Footer from '../../components/Footer.astro';
       "url": "https://www.miaohelaw.ca/en/mississauga-chinese-family-lawyer",
       "telephone": "+1-647-930-6688",
       "email": "miao@miaohelaw.ca",
-      "areaServed": {"@type": "City", "name": "Mississauga", "containedInPlace": {"@type": "Province", "name": "Ontario"}},
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "208-7050 Woodbine Ave",
+        "addressLocality": "Markham",
+        "addressRegion": "ON",
+        "addressCountry": "CA"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Mississauga",
+        "containedInPlace": {"@type": "Province", "name": "Ontario"}
+      },
+      "availableLanguage": [
+        {"@type": "Language", "name": "Mandarin Chinese"},
+        {"@type": "Language", "name": "English"}
+      ],
       "provider": {
         "@type": "Person",
         "name": "Miao He",
+        "alternateName": ["何淼", "Mia He"],
         "jobTitle": "Family Law Lawyer",
         "knowsLanguage": ["zh-Hans", "en"],
         "hasCredential": [
@@ -37,154 +55,148 @@ import Footer from '../../components/Footer.astro';
           {"@type": "EducationalOccupationalCredential", "credentialCategory": "China Bar Association — Licensed"}
         ]
       },
-      "serviceType": ["Family Law", "Divorce", "Child Custody", "Marriage Contract", "Spousal Support", "Cross-border Assets"],
-      "inLanguage": ["en", "zh-Hans"]
+      "serviceType": ["Divorce Litigation", "Property Division", "Stock Options Division", "Pension Division", "Spousal Support", "Cohabitation Agreement", "Separation Agreement"],
+      "inLanguage": "en",
+      "sameAs": "https://www.miaohelaw.ca/mississauga-family-lawyer"
     },
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.miaohelaw.ca/en/"},
-        {"@type": "ListItem", "position": 2, "name": "Mississauga Chinese Family Lawyer", "item": "https://www.miaohelaw.ca/en/mississauga-chinese-family-lawyer"}
+        {"@type": "ListItem", "position": 2, "name": "Service Areas", "item": "https://www.miaohelaw.ca/en/contact"},
+        {"@type": "ListItem", "position": 3, "name": "Chinese Family Lawyer Mississauga", "item": "https://www.miaohelaw.ca/en/mississauga-chinese-family-lawyer"}
       ]
     },
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
-      "mainEntity": [{
-        "@type": "Question",
-        "name": "Mississauga family law cases — where are they heard?",
-        "acceptedAnswer": {"@type": "Answer", "text": "Mississauga family law cases are heard at Peel Region Family Court in Brampton. Miao He is familiar with Peel Region court procedures and can represent you fully. Phone and video consultations are available so Mississauga clients do not need to travel to Markham. Call 647-930-6688."}
-      }]
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How are stock options and RSUs divided in an Ontario divorce?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Stock options and RSUs that vested during the marriage are included in the Net Family Property calculation and must be equalized. Unvested options may also be partially included depending on the grant date and separation date. Accurate valuation requires financial expertise. Miao He works with financial specialists to ensure these assets are properly accounted for. Call 647-930-6688."}
+        },
+        {
+          "@type": "Question",
+          "name": "Which court handles Mississauga family law cases?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Mississauga family law cases are heard at the Superior Court of Justice — Brampton Courthouse. Miao He is familiar with this court's procedures and can provide full Mandarin representation throughout the process."}
+        },
+        {
+          "@type": "Question",
+          "name": "My partner and I are not married. Do we need a cohabitation agreement?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Common-law partners in Ontario do not have the same automatic property rights as married spouses. A Cohabitation Agreement can define how property is owned, how it would be divided on separation, and what support obligations exist — protecting both parties without requiring litigation. Miao He drafts these agreements in Mandarin and English. Call 647-930-6688."}
+        }
+      ]
     }
   ]
   </script>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: Georgia, serif; background: #FDFBF7; color: #2C1810; }
-    a { color: inherit; text-decoration: none; }
-    .page-hero { background: linear-gradient(135deg, #2C1810, #4A2C1A); padding: 3rem 1.5rem 2.5rem; text-align: center; }
-    .page-hero .inner { max-width: 760px; margin: 0 auto; }
-    .breadcrumb { font-size: 0.82rem; color: rgba(255,255,255,0.5); margin-bottom: 0.6rem; }
-    .breadcrumb a { color: rgba(255,255,255,0.5); }
-    .page-label { font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: #D4A853; margin-bottom: 0.5rem; }
-    .page-hero h1 { color: #fff; font-size: clamp(1.6rem, 3vw, 2.2rem); margin: 0 0 0.5rem; font-weight: 400; }
-    .tagline { color: #D4A853; font-size: 0.88rem; margin: 0; }
-    .main-section { padding: 3rem 1.5rem 4rem; }
-    .main-inner { max-width: 860px; margin: 0 auto; display: grid; grid-template-columns: 1fr 300px; gap: 2.5rem; }
-    .card { background: #fff; border: 1px solid #EDE8DF; border-radius: 12px; padding: 1.75rem; margin-bottom: 1.5rem; }
-    .card h2 { font-size: 1.1rem; font-weight: 700; color: #2C1810; margin: 0 0 1rem; }
-    .card p { font-size: 0.92rem; line-height: 1.7; color: #2C1810; margin-bottom: 0.75rem; }
-    .card p:last-child { margin-bottom: 0; }
-    .highlight { border-color: #D4A853; box-shadow: 0 4px 20px rgba(212,168,83,0.12); }
-    .note { background: #F5EFE0; border-left: 3px solid #D4A853; padding: 0.75rem 1rem; border-radius: 0 6px 6px 0; font-size: 0.88rem; line-height: 1.6; color: #6B5A3A; margin-top: 0.75rem; }
-    .services-list { list-style: none; padding: 0; margin: 0.5rem 0; }
-    .services-list li { font-size: 0.9rem; padding: 0.3rem 0; border-bottom: 1px solid #F5EFE0; }
-    .services-list li:last-child { border-bottom: none; }
-    .faq-q { font-weight: 700; margin-bottom: 0.4rem; }
-    .cta-block { background: #2C1810; border-radius: 12px; padding: 1.75rem; margin-bottom: 1.5rem; text-align: center; }
-    .cta-block h2 { color: #D4A853; font-size: 1.1rem; margin: 0 0 0.5rem; }
-    .cta-block p { color: rgba(255,255,255,0.8); font-size: 0.88rem; margin: 0 0 1rem; }
-    .btn-phone { display: inline-block; background: #D4A853; color: #1A1208; padding: 0.75rem 2rem; border-radius: 8px; font-weight: 700; font-size: 1rem; margin-bottom: 0.5rem; }
-    .btn-email { display: inline-block; background: transparent; color: #D4A853; border: 1px solid #D4A853; padding: 0.6rem 1.5rem; border-radius: 8px; font-size: 0.88rem; margin-top: 0.5rem; }
-    .sidebar-card { background: #fff; border: 1px solid #EDE8DF; border-radius: 12px; padding: 1.5rem; margin-bottom: 1.25rem; }
-    .sidebar-card h3 { font-size: 0.88rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: #2C1810; margin: 0 0 0.75rem; }
-    .sidebar-card p { font-size: 0.85rem; line-height: 1.6; color: #2C1810; }
-    .cred-list { list-style: none; padding: 0; margin: 0; }
-    .cred-list li { font-size: 0.83rem; padding: 0.25rem 0; padding-left: 1rem; position: relative; color: #2C1810; }
-    .cred-list li::before { content: "·"; position: absolute; left: 0; color: #D4A853; }
-    @media (max-width: 720px) { .main-inner { grid-template-columns: 1fr; } }
-</style>
 </head>
 <body>
   <HeaderEn />
   <main>
     <section class="page-hero">
-      <div class="inner">
-        <div class="breadcrumb"><a href="/en/">Home</a> › <a href="/en/contact">Areas Served</a> › Mississauga</div>
-        <div class="page-label">Chinese Family Lawyer · Mississauga</div>
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="/en/">Home</a> › <a href="/en/contact">Service Areas</a> › Mississauga
+        </div>
         <h1>Chinese Family Lawyer in Mississauga</h1>
-        <p class="tagline">Mandarin & English · Peel Region court experience · Complex assets: stock options, pensions · 647-930-6688</p>
+        <p class="hero-sub">Serving Square One · west GTA · Mandarin family law · 647-930-6688</p>
       </div>
     </section>
-    <section class="main-section">
-      <div class="main-inner">
+
+    <section class="content-section">
+      <div class="container content-grid">
         <div class="main-content">
 
-          <div class="card highlight">
-            <h2>Chinese Family Lawyer Serving Mississauga's Professional Community</h2>
-            <p>Mississauga's Hurontario corridor and Square One area have seen rapid growth in Chinese-Canadian professional families — many working in tech, finance, and healthcare. These clients often have complex asset structures that go well beyond the average divorce case. Miao He has experience in Peel Region courts and provides full Mandarin family law services to Mississauga clients.</p>
+          <div class="definition-box">
+            <p>Mississauga's Chinese-Canadian community has grown rapidly around the Square One corridor, and it includes a high concentration of professionals in tech, finance, healthcare, and engineering. When marriages in this community break down, the financial complexity is often significant: <strong>stock options, RSUs, defined benefit pensions, RRSP/TFSA accounts, and professional corporation interests</strong> all require careful handling. Miao He (何淼) provides full Mandarin family law services to Mississauga clients. LSO #83315K · Zoom consultations available.</p>
           </div>
 
-          <div class="card">
-            <h2>High-Income Professional Asset Division in Mississauga</h2>
-            <p>Mississauga has many dual-income professional families. Divorce for these clients often involves assets that require specialized valuation:</p>
-            <ul class="services-list">
-              <li>Stock options and RSUs — vesting schedules, exercised vs. unexercised portions</li>
-              <li>Defined benefit pensions — Ontario pension division rules, actuarial valuation</li>
-              <li>RRSP and TFSA — matrimonial and pre-marital contributions</li>
-              <li>Corporate shareholdings — private company valuation in divorce</li>
-              <li>Professional licences — whether value of a medical or engineering licence counts</li>
-            </ul>
-            <p>Miao He works with financial experts to ensure accurate asset valuation and fair division — and to prevent a spouse from under-reporting income or hiding assets.</p>
+          <h2>What Makes Mississauga Chinese-Canadian Divorce Cases Complex</h2>
+          <p>Mississauga's Chinese-Canadian professional community faces family law challenges that go well beyond the standard house-and-savings division. Getting these cases right requires a lawyer who understands both the legal framework and the specific financial instruments involved.</p>
+
+          <h3>Stock Options, RSUs, and Tech Compensation Packages</h3>
+          <p>Many Mississauga Chinese-Canadian professionals work for tech or financial firms with compensation heavily weighted toward equity. In an Ontario divorce, stock options and RSUs that vested during the marriage form part of the Net Family Property and must be equalized. Unvested options at the date of separation may also be partially included — the calculation depends on grant dates, vesting schedules, and the separation date. Miao He works with financial specialists to ensure these assets are accurately valued and properly accounted for in the Equalization calculation.</p>
+
+          <h3>Pension Division: Defined Benefit and Defined Contribution</h3>
+          <p>Pensions accumulated during the marriage are subject to Equalization under Ontario's Family Law Act. For defined benefit pensions — common in healthcare, government, and finance — valuation requires an actuarial calculation. For defined contribution plans, the math is more straightforward but still requires verification of the correct dates. Miao He ensures pension assets are fully disclosed and correctly included in the NFP calculation.</p>
+
+          <h3>Spousal Support: High-Income Scenarios</h3>
+          <p>When one spouse earns significantly more than the other — as is common in dual-professional Mississauga households where career trajectories diverged — spousal support becomes a central issue. The amount and duration depend on the length of the marriage, the roles each spouse played, and the economic consequences of the relationship. Miao He advises clients on realistic support ranges and negotiates or litigates to achieve an appropriate outcome.</p>
+
+          <h3>Cohabitation Agreements for Common-Law Partners</h3>
+          <p>Common-law couples in Ontario do not have the same automatic property rights as married spouses. Without a Cohabitation Agreement, separation can lead to disputes about who owns what — particularly when both parties contributed to a shared home or business. A properly drafted agreement defines ownership, division on separation, and support obligations before a dispute arises. Miao He drafts these agreements in both Mandarin and English, and provides independent legal advice to ensure enforceability.</p>
+
+          <div class="qa-block">
+            <h3>Q: My compensation includes RSUs that haven't vested yet. Are those included in the divorce?</h3>
+            <p>A: Potentially yes. Unvested RSUs are often partially included in the Net Family Property calculation depending on when they were granted relative to the marriage. This is a technical valuation question that requires careful analysis. Call 647-930-6688 to discuss your specific compensation structure.</p>
           </div>
 
-          <div class="card">
-            <h2>Spousal &amp; Child Support: Preventing Income Under-Reporting</h2>
-            <p>Under the Federal Child Support Guidelines, child support is calculated based on the paying parent's income. Miao He assists clients in verifying a spouse's actual income — including imputed income for self-employed spouses — to prevent support obligations from being artificially reduced.</p>
+          <div class="qa-block">
+            <h3>Q: Which court handles Mississauga family law cases?</h3>
+            <p>A: Mississauga cases are heard at the Superior Court of Justice — Brampton Courthouse. Miao He is familiar with this court's procedures and can represent you fully in Mandarin. Call 647-930-6688.</p>
           </div>
 
-          <div class="card">
-            <h2>Cohabitation Agreements for Unmarried Couples</h2>
-            <p>Mississauga has a significant unmarried cohabiting population. A Cohabitation Agreement protects both parties' property rights if the relationship ends — avoiding expensive litigation. Miao He drafts these agreements in both Chinese and English.</p>
+          <div class="qa-block">
+            <h3>Q: We've lived together for six years but never married. What are my rights if we separate?</h3>
+            <p>A: Common-law partners in Ontario do not have automatic Equalization rights to each other's property the way married spouses do. Your rights depend on what is in your name, what agreements exist, and whether unjust enrichment claims apply. A Cohabitation Agreement drafted before separation is the clearest protection. Call 647-930-6688 to discuss your situation.</p>
           </div>
 
-          <div class="card">
-            <h2>Frequently Asked Question</h2>
-            <p class="faq-q">Mississauga family law cases — where are they heard?</p>
-            <p>Mississauga cases are heard at <strong>Peel Region Family Court in Brampton</strong>. Miao He is familiar with Peel Region court processes and can represent Mississauga clients efficiently. Phone or video consultations are available so you do not need to travel to Markham.</p>
+          <div class="cta-box">
+            <h3>Book a Mississauga Family Law Consultation</h3>
+            <p>Initial consultation 30 minutes · $220 + HST · Mandarin &amp; English · Phone or Zoom</p>
+            <a href="/en/contact" class="btn-primary">Book Now</a>
+            <a href="tel:6479306688" class="btn-secondary">647-930-6688</a>
           </div>
+
         </div>
 
-        <aside class="main-sidebar">
-          <div class="cta-block">
-            <h2>Book a Consultation</h2>
-            <p>Initial consultation 30 min · $220 + HST · No obligation</p>
-            <a href="tel:6479306688" class="btn-phone">📞 647-930-6688</a><br/>
-            <a href="mailto:miao@miaohelaw.ca" class="btn-email">miao@miaohelaw.ca</a>
+        <aside class="sidebar">
+          <div class="sidebar-card">
+            <h3>Contact Miao He</h3>
+            <p>📞 <a href="tel:6479306688">647-930-6688</a></p>
+            <p>📧 <a href="mailto:miao@miaohelaw.ca">miao@miaohelaw.ca</a></p>
+            <p>📍 208-7050 Woodbine Ave, Markham</p>
+            <p>💬 WeChat: 372656035</p>
           </div>
           <div class="sidebar-card">
-            <h3>Office Address</h3>
-            <p>H. LAW FIRM 恒. 律师事务所<br/>208 - 7050 Woodbine Avenue<br/>Markham, Ontario L3R 4G8</p>
+            <h3>Family Law Services</h3>
+            <ul>
+              <li><a href="/en/family-law/divorce-litigation">Divorce Litigation</a></li>
+              <li><a href="/en/family-law/child-custody">Child Custody</a></li>
+              <li><a href="/en/family-law/domestic-contracts">Marriage &amp; Cohabitation Agreements</a></li>
+              <li><a href="/en/family-law/cross-border-assets">Cross-Border Assets</a></li>
+              <li><a href="/en/family-law/support">Support</a></li>
+              <li><a href="/en/family-law/mediation">Mediation</a></li>
+            </ul>
           </div>
           <div class="sidebar-card">
-            <h3>Licences &amp; Credentials</h3>
-            <ul class="cred-list">
-              <li>Law Society of Ontario — #83315K</li>
-              <li>China Bar Association — Dual Licensed</li>
-              <li>Expert Witness — Chinese Family Law</li>
-              <li>Notary Public — Ontario</li>
-              <li>15+ years experience</li>
-              <li>20+ court appearances / month</li>
+            <h3>Service Areas</h3>
+            <ul>
+              <li><a href="/en/toronto-chinese-family-lawyer">Chinese Divorce Lawyer Toronto</a></li>
+              <li><a href="/en/markham-chinese-family-lawyer">Chinese Family Lawyer Markham · Office</a></li>
+              <li><a href="/en/richmond-hill-chinese-family-lawyer">Chinese Family Lawyer Richmond Hill</a></li>
+              <li><a href="/en/north-york-chinese-family-lawyer">Chinese Divorce Lawyer North York</a></li>
+              <li><a href="/en/scarborough-chinese-family-lawyer">Chinese Family Lawyer Scarborough</a></li>
+              <li><a href="/en/mississauga-chinese-family-lawyer">Chinese Divorce Lawyer Mississauga</a></li>
+              <li><a href="/en/brampton-chinese-family-lawyer">Chinese Family Lawyer Brampton</a></li>
+              <li><a href="/en/vaughan-chinese-family-lawyer">Chinese Family Lawyer Vaughan</a></li>
+              <li><a href="/en/thornhill-chinese-family-lawyer">Chinese Family Lawyer Thornhill</a></li>
+              <li><a href="/en/newmarket-chinese-family-lawyer">Chinese Family Lawyer Newmarket</a></li>
+              <li><a href="/en/ajax-pickering-chinese-family-lawyer">Chinese Lawyer Ajax / Pickering</a></li>
+              <li><a href="/en/hamilton-chinese-family-lawyer">Chinese Family Lawyer Hamilton</a></li>
+              <li><a href="/en/kitchener-chinese-family-lawyer">Chinese Family Lawyer Kitchener</a></li>
+              <li><a href="/en/ottawa-chinese-family-lawyer">Chinese Family Lawyer Ottawa</a></li>
+              <li><a href="/en/london-chinese-family-lawyer">Chinese Lawyer London Ontario</a></li>
+              <li><a href="/en/windsor-chinese-family-lawyer">Chinese Family Lawyer Windsor</a></li>
+              <li><a href="/en/north-bay-chinese-family-lawyer">Chinese Family Lawyer North Bay</a></li>
             </ul>
           </div>
           <div class="sidebar-card">
             <h3>Languages</h3>
-            <p>Mandarin (普通话) · English</p>
-          </div>
-          <div class="sidebar-card">
-            <h3>Other Areas Served</h3>
-            <p style="font-size:0.8rem;line-height:1.8;">
-              <a href="/en/toronto-chinese-family-lawyer">Toronto</a> ·
-              <a href="/en/markham-chinese-family-lawyer">Markham</a> ·
-              <a href="/en/richmond-hill-chinese-family-lawyer">Richmond Hill</a> ·
-              <a href="/en/mississauga-chinese-family-lawyer">Mississauga</a> ·
-              <a href="/en/brampton-chinese-family-lawyer">Brampton</a> ·
-              <a href="/en/vaughan-chinese-family-lawyer">Vaughan</a> ·
-              <a href="/en/ottawa-chinese-family-lawyer">Ottawa</a> ·
-              <a href="/en/hamilton-chinese-family-lawyer">Hamilton</a> ·
-              <a href="/en/windsor-chinese-family-lawyer">Windsor</a>
-            </p>
+            <p>🇨🇳 Mandarin (普通话)</p>
+            <p>🇨🇦 English</p>
           </div>
         </aside>
       </div>
@@ -193,3 +205,31 @@ import Footer from '../../components/Footer.astro';
   <Footer />
 </body>
 </html>
+<style>
+  .page-hero{background:linear-gradient(135deg,#2C1810 0%,#4A2C1A 100%);color:white;padding:3rem 0 2rem}
+  .page-hero h1{font-size:2rem;margin:0.5rem 0;color:#ffffff}
+  .hero-sub{color:#D4A853;margin:0}
+  .breadcrumb{font-size:0.85rem;opacity:0.7;margin-bottom:0.5rem}
+  .breadcrumb a{color:white;text-decoration:none}
+  .container{max-width:1100px;margin:0 auto;padding:0 1.5rem}
+  .content-section{padding:3rem 0}
+  .content-grid{display:grid;grid-template-columns:1fr 300px;gap:3rem}
+  .definition-box{background:#FDF6EC;border-left:4px solid #9A8060;padding:1.2rem 1.5rem;margin-bottom:2rem;border-radius:0 8px 8px 0}
+  .qa-block{background:#f8f8f8;border-radius:8px;padding:1.2rem 1.5rem;margin:1.5rem 0;border-left:3px solid #9A8060}
+  .qa-block h3{color:#2C1810;margin-top:0;font-size:1rem}
+  .cta-box{background:linear-gradient(135deg,#2C1810,#4A2C1A);color:white;padding:2rem;border-radius:12px;text-align:center;margin-top:2rem}
+  .cta-box h3{margin-top:0;color:#D4A853}
+  .cta-box p{color:#ffffff}
+  .btn-primary{display:inline-block;background:#D4A853;color:#2C1810;padding:0.75rem 1.5rem;border-radius:6px;text-decoration:none;font-weight:700;margin:0.5rem}
+  .btn-secondary{display:inline-block;background:transparent;color:white;border:2px solid white;padding:0.75rem 1.5rem;border-radius:6px;text-decoration:none;font-weight:700;margin:0.5rem}
+  .sidebar{display:flex;flex-direction:column;gap:1.5rem}
+  .sidebar-card{background:white;border:1px solid #e8e0d5;border-radius:10px;padding:1.2rem}
+  .sidebar-card h3{color:#2C1810;font-size:0.95rem;margin-top:0;border-bottom:1px solid #e8e0d5;padding-bottom:0.5rem;margin-bottom:0.75rem}
+  .sidebar-card ul{list-style:none;padding:0;margin:0}
+  .sidebar-card li{padding:0.3rem 0;border-bottom:1px solid #f0ebe3;font-size:0.9rem}
+  .sidebar-card a{color:#9A8060;text-decoration:none}
+  .sidebar-card p{margin:0.3rem 0;font-size:0.9rem}
+  h2{color:#2C1810;margin-top:2rem}
+  h3{color:#4A2C1A}
+  @media(max-width:768px){.content-grid{grid-template-columns:1fr}.page-hero h1{font-size:1.5rem}}
+</style>
