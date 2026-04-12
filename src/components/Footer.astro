@@ -1,6 +1,7 @@
 ---
 import CallBar from './CallBar.astro';
 const today = new Date();
+const { lang = 'zh' } = Astro.props;
 ---
 
 <CallBar />
@@ -27,13 +28,19 @@ const today = new Date();
     <a href="tel:6479306688">647-930-6688</a>
   </div>
   <div class="footer-legal">
-    <a href="/privacy-policy">隐私政策</a>
-    <span>·</span>
-    <a href="/terms-of-use">使用条款</a>
-    <span>·</span>
-    <a href="/en/privacy-policy">Privacy Policy</a>
-    <span>·</span>
-    <a href="/en/terms-of-use">Terms of Use</a>
+    {lang === 'en' ? (
+      <>
+        <a href="/en/privacy-policy">Privacy Policy</a>
+        <span>·</span>
+        <a href="/en/terms-of-use">Terms of Use</a>
+      </>
+    ) : (
+      <>
+        <a href="/privacy-policy">隐私政策</a>
+        <span>·</span>
+        <a href="/terms-of-use">使用条款</a>
+      </>
+    )}
   </div>
 </div>
 	&copy; {today.getFullYear()} Miao He (何淼). All rights reserved.
