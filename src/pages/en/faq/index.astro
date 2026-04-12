@@ -68,6 +68,10 @@ import { faqItemsEn } from '../../../data/faq-en';
     .contact-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
     .btn-primary { display: inline-block; background: #D4A853; color: #2C1810; padding: 0.7rem 1.4rem; border-radius: 6px; font-weight: 700; font-size: 0.9rem; }
     .btn-secondary { display: inline-block; background: transparent; color: white; border: 2px solid white; padding: 0.7rem 1.4rem; border-radius: 6px; font-weight: 700; font-size: 0.9rem; }
+    .faq-hidden { display: none; }
+    .load-more-wrap { text-align: center; margin: 1.5rem 0 0; }
+    .load-more-btn { display: inline-flex; align-items: center; gap: 0.5rem; background: white; border: 2px solid #D4A853; color: #2C1810; padding: 0.7rem 1.8rem; border-radius: 8px; font-size: 0.92rem; font-weight: 600; cursor: pointer; font-family: Georgia, serif; transition: background 0.15s, color 0.15s; }
+    .load-more-btn:hover { background: #D4A853; color: white; }
     @media (max-width: 720px) { .contact-card { flex-direction: column; } }
   </style>
 </head>
@@ -83,14 +87,19 @@ import { faqItemsEn } from '../../../data/faq-en';
     </section>
     <section class="faq-section">
       <div class="container">
-        {faqItemsEn.map(item => (
-          <div class="faq-item">
+        {faqItemsEn.map((item, i) => (
+          <div class={`faq-item${i >= 10 ? ' faq-hidden' : ''}`}>
             <a href={`/en/faq/${item.slug}`} class="faq-link">
               <span>{item.question}</span>
               <span class="faq-arrow">→</span>
             </a>
           </div>
         ))}
+        {faqItemsEn.length > 10 && (
+          <div class="load-more-wrap">
+            <button class="load-more-btn" id="faq-load-more">Load More Questions ↓</button>
+          </div>
+        )}
         <div class="contact-card">
           <div class="contact-info">
             <h2>Have More Questions?</h2>
@@ -105,5 +114,15 @@ import { faqItemsEn } from '../../../data/faq-en';
     </section>
   </main>
   <Footer />
+  <script>
+    const btn = document.getElementById('faq-load-more');
+    if (btn) {
+      const getHidden = () => Array.from(document.querySelectorAll('.faq-hidden'));
+      btn.addEventListener('click', () => {
+        getHidden().slice(0, 10).forEach(el => el.classList.remove('faq-hidden'));
+        if (getHidden().length === 0) btn.style.display = 'none';
+      });
+    }
+  </script>
 </body>
 </html>
