@@ -6,13 +6,10 @@ import Footer from '../../components/Footer.astro';
 <!doctype html>
 <html lang="en">
 <head>
-  <BaseHead
-    title="Chinese Family Lawyer Mississauga | Mandarin Divorce Lawyer | Miao He"
-    description="Miao He provides Mandarin family law services for Mississauga clients — divorce, child custody, property division, support. Peel Region court experience. 647-930-6688."
-  />
-  <meta name="keywords" content="Chinese family lawyer Mississauga,Mandarin divorce lawyer Mississauga,family lawyer Mississauga,Chinese lawyer Mississauga,divorce lawyer Mississauga Ontario,Peel Region Chinese lawyer,Miao He Mississauga" />
+  <BaseHead title="Chinese Family Lawyer Mississauga | Mandarin Divorce Lawyer | Miao He" description="Miao He serves Mississauga Chinese-Canadian professionals — stock options, RSUs, pensions, complex asset division. Peel Region court experience. Mandarin service. 647-930-6688." />
+  <meta name="keywords" content="Chinese family lawyer Mississauga,Mandarin divorce lawyer Mississauga,family lawyer Mississauga,Chinese lawyer Mississauga,divorce lawyer Mississauga Ontario,Peel Region Chinese lawyer" />
   <meta property="og:title" content="Chinese Family Lawyer Mississauga | Mandarin Divorce Lawyer | Miao He" />
-  <meta property="og:description" content="Miao He provides Mandarin family law services for Mississauga clients — divorce, child custody, property division, support. Peel Region court experience. 647-930-6688." />
+  <meta property="og:description" content="Miao He serves Mississauga Chinese-Canadian professionals — stock options, RSUs, pensions, complex asset division. Peel Region court experience. Mandarin service. 647-930-6688." />
   <meta property="og:url" content="https://www.miaohelaw.ca/en/mississauga-chinese-family-lawyer" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://www.miaohelaw.ca/og-image.jpg" />
@@ -29,11 +26,7 @@ import Footer from '../../components/Footer.astro';
       "url": "https://www.miaohelaw.ca/en/mississauga-chinese-family-lawyer",
       "telephone": "+1-647-930-6688",
       "email": "miao@miaohelaw.ca",
-      "areaServed": {
-        "@type": "City",
-        "name": "Mississauga",
-        "containedInPlace": {"@type": "Province", "name": "Ontario"}
-      },
+      "areaServed": {"@type": "City", "name": "Mississauga", "containedInPlace": {"@type": "Province", "name": "Ontario"}},
       "provider": {
         "@type": "Person",
         "name": "Miao He",
@@ -58,13 +51,11 @@ import Footer from '../../components/Footer.astro';
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Is there a Chinese-speaking divorce lawyer in Mississauga?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Yes. Miao He provides full Mandarin family law services to Mississauga clients. She has Peel Region court experience and handles all matters without an interpreter. Call 647-930-6688."}
-        }
-      ]
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Mississauga family law cases — where are they heard?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Mississauga family law cases are heard at Peel Region Family Court in Brampton. Miao He is familiar with Peel Region court procedures and can represent you fully. Phone and video consultations are available so Mississauga clients do not need to travel to Markham. Call 647-930-6688."}
+      }]
     }
   ]
   </script>
@@ -84,10 +75,13 @@ import Footer from '../../components/Footer.astro';
     .card { background: #fff; border: 1px solid #EDE8DF; border-radius: 12px; padding: 1.75rem; margin-bottom: 1.5rem; }
     .card h2 { font-size: 1.1rem; font-weight: 700; color: #2C1810; margin: 0 0 1rem; }
     .card p { font-size: 0.92rem; line-height: 1.7; color: #2C1810; margin-bottom: 0.75rem; }
+    .card p:last-child { margin-bottom: 0; }
+    .highlight { border-color: #D4A853; box-shadow: 0 4px 20px rgba(212,168,83,0.12); }
+    .note { background: #F5EFE0; border-left: 3px solid #D4A853; padding: 0.75rem 1rem; border-radius: 0 6px 6px 0; font-size: 0.88rem; line-height: 1.6; color: #6B5A3A; margin-top: 0.75rem; }
     .services-list { list-style: none; padding: 0; margin: 0.5rem 0; }
     .services-list li { font-size: 0.9rem; padding: 0.3rem 0; border-bottom: 1px solid #F5EFE0; }
     .services-list li:last-child { border-bottom: none; }
-    .highlight { border-color: #D4A853; box-shadow: 0 4px 20px rgba(212,168,83,0.12); }
+    .faq-q { font-weight: 700; margin-bottom: 0.4rem; }
     .cta-block { background: #2C1810; border-radius: 12px; padding: 1.75rem; margin-bottom: 1.5rem; text-align: center; }
     .cta-block h2 { color: #D4A853; font-size: 1.1rem; margin: 0 0 0.5rem; }
     .cta-block p { color: rgba(255,255,255,0.8); font-size: 0.88rem; margin: 0 0 1rem; }
@@ -99,74 +93,70 @@ import Footer from '../../components/Footer.astro';
     .cred-list { list-style: none; padding: 0; margin: 0; }
     .cred-list li { font-size: 0.83rem; padding: 0.25rem 0; padding-left: 1rem; position: relative; color: #2C1810; }
     .cred-list li::before { content: "·"; position: absolute; left: 0; color: #D4A853; }
-    .area-note { font-size: 0.82rem; color: #9A8060; font-style: italic; margin-top: 0.5rem; }
     @media (max-width: 720px) { .main-inner { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
   <HeaderEn />
   <main>
-
     <section class="page-hero">
       <div class="inner">
         <div class="breadcrumb"><a href="/en/">Home</a> › <a href="/en/contact">Areas Served</a> › Mississauga</div>
         <div class="page-label">Chinese Family Lawyer · Mississauga</div>
         <h1>Chinese Family Lawyer in Mississauga</h1>
-        <p class="tagline">Mandarin & English · Peel Region court experience · Divorce · Custody · Support · 647-930-6688</p>
+        <p class="tagline">Mandarin & English · Peel Region court experience · Complex assets: stock options, pensions · 647-930-6688</p>
       </div>
     </section>
-
     <section class="main-section">
       <div class="main-inner">
-
         <div class="main-content">
 
           <div class="card highlight">
-            <h2>Serving Mississauga in Mandarin & English</h2>
-            <p>Mississauga's Hurontario corridor and Cooksville area have a significant and growing Chinese-Canadian population. Miao He has experience in Peel Region courts and provides full Mandarin family law services — handling divorce, child custody disputes, spousal support, and property division.</p>
-            <p>Miao He (何淼) is dual-licensed in Ontario (LSO #83315K) and China, with 15+ years of family law experience and 20+ court appearances per month. She handles all matters personally — in Mandarin and English, with no interpreter needed.</p>
+            <h2>Chinese Family Lawyer Serving Mississauga's Professional Community</h2>
+            <p>Mississauga's Hurontario corridor and Square One area have seen rapid growth in Chinese-Canadian professional families — many working in tech, finance, and healthcare. These clients often have complex asset structures that go well beyond the average divorce case. Miao He has experience in Peel Region courts and provides full Mandarin family law services to Mississauga clients.</p>
           </div>
 
           <div class="card">
-            <h2>Family Law Services Available in Mississauga</h2>
+            <h2>High-Income Professional Asset Division in Mississauga</h2>
+            <p>Mississauga has many dual-income professional families. Divorce for these clients often involves assets that require specialized valuation:</p>
             <ul class="services-list">
-              <li>Divorce Litigation</li>
-              <li>Child Custody &amp; Access</li>
-              <li>Child Support / Spousal Support</li>
-              <li>Property Division / NFP Equalization</li>
-              <li>Cross-Border Asset Recovery (Canada &amp; China)</li>
-              <li>Emergency Motions / Mareva Injunction</li>
-              <li>Marriage Contract / Prenuptial Agreement</li>
-              <li>Separation Agreement</li>
-              <li>Mediation</li>
+              <li>Stock options and RSUs — vesting schedules, exercised vs. unexercised portions</li>
+              <li>Defined benefit pensions — Ontario pension division rules, actuarial valuation</li>
+              <li>RRSP and TFSA — matrimonial and pre-marital contributions</li>
+              <li>Corporate shareholdings — private company valuation in divorce</li>
+              <li>Professional licences — whether value of a medical or engineering licence counts</li>
             </ul>
-            <p class="area-note">Serving all of Mississauga including Hurontario, Cooksville, Square One area, and Erin Mills.</p>
+            <p>Miao He works with financial experts to ensure accurate asset valuation and fair division — and to prevent a spouse from under-reporting income or hiding assets.</p>
+          </div>
+
+          <div class="card">
+            <h2>Spousal &amp; Child Support: Preventing Income Under-Reporting</h2>
+            <p>Under the Federal Child Support Guidelines, child support is calculated based on the paying parent's income. Miao He assists clients in verifying a spouse's actual income — including imputed income for self-employed spouses — to prevent support obligations from being artificially reduced.</p>
+          </div>
+
+          <div class="card">
+            <h2>Cohabitation Agreements for Unmarried Couples</h2>
+            <p>Mississauga has a significant unmarried cohabiting population. A Cohabitation Agreement protects both parties' property rights if the relationship ends — avoiding expensive litigation. Miao He drafts these agreements in both Chinese and English.</p>
           </div>
 
           <div class="card">
             <h2>Frequently Asked Question</h2>
-            <p><strong>Is there a Chinese-speaking divorce lawyer in Mississauga?</strong></p>
-            <p>Yes. Miao He provides full Mandarin family law services to Mississauga clients. She has Peel Region court experience and handles all matters without an interpreter. Call 647-930-6688.</p>
+            <p class="faq-q">Mississauga family law cases — where are they heard?</p>
+            <p>Mississauga cases are heard at <strong>Peel Region Family Court in Brampton</strong>. Miao He is familiar with Peel Region court processes and can represent Mississauga clients efficiently. Phone or video consultations are available so you do not need to travel to Markham.</p>
           </div>
-
         </div>
 
         <aside class="main-sidebar">
-
           <div class="cta-block">
             <h2>Book a Consultation</h2>
             <p>Initial consultation 30 min · $220 + HST · No obligation</p>
             <a href="tel:6479306688" class="btn-phone">📞 647-930-6688</a><br/>
             <a href="mailto:miao@miaohelaw.ca" class="btn-email">miao@miaohelaw.ca</a>
           </div>
-
           <div class="sidebar-card">
             <h3>Office Address</h3>
-            <p>H. LAW FIRM 恒. 律师事务所<br/>
-            208 - 7050 Woodbine Avenue<br/>
-            Markham, Ontario L3R 4G8</p>
+            <p>H. LAW FIRM 恒. 律师事务所<br/>208 - 7050 Woodbine Avenue<br/>Markham, Ontario L3R 4G8</p>
           </div>
-
           <div class="sidebar-card">
             <h3>Licences &amp; Credentials</h3>
             <ul class="cred-list">
@@ -178,12 +168,10 @@ import Footer from '../../components/Footer.astro';
               <li>20+ court appearances / month</li>
             </ul>
           </div>
-
           <div class="sidebar-card">
             <h3>Languages</h3>
             <p>Mandarin (普通话) · English</p>
           </div>
-
           <div class="sidebar-card">
             <h3>Other Areas Served</h3>
             <p style="font-size:0.8rem;line-height:1.8;">
@@ -193,17 +181,14 @@ import Footer from '../../components/Footer.astro';
               <a href="/en/mississauga-chinese-family-lawyer">Mississauga</a> ·
               <a href="/en/brampton-chinese-family-lawyer">Brampton</a> ·
               <a href="/en/vaughan-chinese-family-lawyer">Vaughan</a> ·
-              <a href="/en/north-york-chinese-family-lawyer">North York</a> ·
-              <a href="/en/scarborough-chinese-family-lawyer">Scarborough</a> ·
+              <a href="/en/ottawa-chinese-family-lawyer">Ottawa</a> ·
               <a href="/en/hamilton-chinese-family-lawyer">Hamilton</a> ·
-              <a href="/en/ottawa-chinese-family-lawyer">Ottawa</a>
+              <a href="/en/windsor-chinese-family-lawyer">Windsor</a>
             </p>
           </div>
-
         </aside>
       </div>
     </section>
-
   </main>
   <Footer />
 </body>

@@ -6,13 +6,10 @@ import Footer from '../../components/Footer.astro';
 <!doctype html>
 <html lang="en">
 <head>
-  <BaseHead
-    title="Chinese Family Lawyer Richmond Hill | Mandarin Divorce Lawyer | Miao He"
-    description="Miao He provides Mandarin family law services for Richmond Hill Chinese-Canadian clients — divorce, child custody, property division, support. Office nearby in Markham. 647-930-6688."
-  />
-  <meta name="keywords" content="Chinese family lawyer Richmond Hill,Mandarin divorce lawyer Richmond Hill,family lawyer Richmond Hill,Chinese lawyer Richmond Hill,divorce lawyer Richmond Hill Ontario,Miao He Richmond Hill" />
+  <BaseHead title="Chinese Family Lawyer Richmond Hill | Mandarin Divorce Lawyer | Miao He" description="Miao He serves Richmond Hill Chinese-Canadian families from her nearby Markham office. York Region court experience. Divorce, custody, property division in Mandarin. 647-930-6688." />
+  <meta name="keywords" content="Chinese family lawyer Richmond Hill,Mandarin divorce lawyer Richmond Hill,family lawyer Richmond Hill,Chinese lawyer Richmond Hill,divorce lawyer Richmond Hill Ontario,York Region family lawyer Chinese" />
   <meta property="og:title" content="Chinese Family Lawyer Richmond Hill | Mandarin Divorce Lawyer | Miao He" />
-  <meta property="og:description" content="Miao He provides Mandarin family law services for Richmond Hill Chinese-Canadian clients — divorce, child custody, property division, support. Office nearby in Markham. 647-930-6688." />
+  <meta property="og:description" content="Miao He serves Richmond Hill Chinese-Canadian families from her nearby Markham office. York Region court experience. Divorce, custody, property division in Mandarin. 647-930-6688." />
   <meta property="og:url" content="https://www.miaohelaw.ca/en/richmond-hill-chinese-family-lawyer" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://www.miaohelaw.ca/og-image.jpg" />
@@ -29,11 +26,7 @@ import Footer from '../../components/Footer.astro';
       "url": "https://www.miaohelaw.ca/en/richmond-hill-chinese-family-lawyer",
       "telephone": "+1-647-930-6688",
       "email": "miao@miaohelaw.ca",
-      "areaServed": {
-        "@type": "City",
-        "name": "Richmond Hill",
-        "containedInPlace": {"@type": "Province", "name": "Ontario"}
-      },
+      "areaServed": {"@type": "City", "name": "Richmond Hill", "containedInPlace": {"@type": "Province", "name": "Ontario"}},
       "provider": {
         "@type": "Person",
         "name": "Miao He",
@@ -58,13 +51,11 @@ import Footer from '../../components/Footer.astro';
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Can I see a Mandarin-speaking family lawyer near Richmond Hill?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Yes. Miao He's office is located at 208-7050 Woodbine Ave, Markham — a short drive from Richmond Hill. She provides full Mandarin family law services including divorce, child custody, and property division. Call 647-930-6688."}
-        }
-      ]
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Richmond Hill family law cases — which court handles them?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Richmond Hill family law matters are typically heard at York Region Family Court in Newmarket. Miao He is familiar with that court's procedures, judges' preferences, and mediation processes, and can efficiently move your case forward. Call 647-930-6688."}
+      }]
     }
   ]
   </script>
@@ -84,10 +75,13 @@ import Footer from '../../components/Footer.astro';
     .card { background: #fff; border: 1px solid #EDE8DF; border-radius: 12px; padding: 1.75rem; margin-bottom: 1.5rem; }
     .card h2 { font-size: 1.1rem; font-weight: 700; color: #2C1810; margin: 0 0 1rem; }
     .card p { font-size: 0.92rem; line-height: 1.7; color: #2C1810; margin-bottom: 0.75rem; }
+    .card p:last-child { margin-bottom: 0; }
+    .highlight { border-color: #D4A853; box-shadow: 0 4px 20px rgba(212,168,83,0.12); }
+    .note { background: #F5EFE0; border-left: 3px solid #D4A853; padding: 0.75rem 1rem; border-radius: 0 6px 6px 0; font-size: 0.88rem; line-height: 1.6; color: #6B5A3A; margin-top: 0.75rem; }
     .services-list { list-style: none; padding: 0; margin: 0.5rem 0; }
     .services-list li { font-size: 0.9rem; padding: 0.3rem 0; border-bottom: 1px solid #F5EFE0; }
     .services-list li:last-child { border-bottom: none; }
-    .highlight { border-color: #D4A853; box-shadow: 0 4px 20px rgba(212,168,83,0.12); }
+    .faq-q { font-weight: 700; margin-bottom: 0.4rem; }
     .cta-block { background: #2C1810; border-radius: 12px; padding: 1.75rem; margin-bottom: 1.5rem; text-align: center; }
     .cta-block h2 { color: #D4A853; font-size: 1.1rem; margin: 0 0 0.5rem; }
     .cta-block p { color: rgba(255,255,255,0.8); font-size: 0.88rem; margin: 0 0 1rem; }
@@ -99,74 +93,64 @@ import Footer from '../../components/Footer.astro';
     .cred-list { list-style: none; padding: 0; margin: 0; }
     .cred-list li { font-size: 0.83rem; padding: 0.25rem 0; padding-left: 1rem; position: relative; color: #2C1810; }
     .cred-list li::before { content: "·"; position: absolute; left: 0; color: #D4A853; }
-    .area-note { font-size: 0.82rem; color: #9A8060; font-style: italic; margin-top: 0.5rem; }
     @media (max-width: 720px) { .main-inner { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
   <HeaderEn />
   <main>
-
     <section class="page-hero">
       <div class="inner">
         <div class="breadcrumb"><a href="/en/">Home</a> › <a href="/en/contact">Areas Served</a> › Richmond Hill</div>
         <div class="page-label">Chinese Family Lawyer · Richmond Hill</div>
         <h1>Chinese Family Lawyer in Richmond Hill</h1>
-        <p class="tagline">Mandarin & English · Office nearby in Markham · Divorce · Custody · Support · 647-930-6688</p>
+        <p class="tagline">Mandarin & English · Markham office minutes away · York Region court experience · 647-930-6688</p>
       </div>
     </section>
-
     <section class="main-section">
       <div class="main-inner">
-
         <div class="main-content">
 
           <div class="card highlight">
-            <h2>Serving Richmond Hill in Mandarin & English</h2>
-            <p>Richmond Hill has one of the highest concentrations of Chinese-Canadian families in Ontario. Miao He's Markham office is minutes away, and she provides full family law services in Mandarin — covering York Region courts and all aspects of Ontario family law.</p>
-            <p>Miao He (何淼) is dual-licensed in Ontario (LSO #83315K) and China, with 15+ years of family law experience and 20+ court appearances per month. She handles all matters personally — in Mandarin and English, with no interpreter needed.</p>
+            <h2>Serving Richmond Hill from a Nearby Markham Office</h2>
+            <p>Richmond Hill (列治文山) borders Markham and is one of the GTA's most concentrated Chinese-Canadian communities. Miao He's office at 208-7050 Woodbine Avenue, Markham is minutes away — Richmond Hill clients can meet in person without a long commute, or choose a phone or Zoom consultation.</p>
           </div>
 
           <div class="card">
-            <h2>Family Law Services Available in Richmond Hill</h2>
-            <ul class="services-list">
-              <li>Divorce Litigation</li>
-              <li>Child Custody &amp; Access</li>
-              <li>Child Support / Spousal Support</li>
-              <li>Property Division / NFP Equalization</li>
-              <li>Cross-Border Asset Recovery (Canada &amp; China)</li>
-              <li>Emergency Motions / Mareva Injunction</li>
-              <li>Marriage Contract / Prenuptial Agreement</li>
-              <li>Separation Agreement</li>
-              <li>Mediation</li>
-            </ul>
-            <p class="area-note">Serving Richmond Hill, Hillcrest Mall area, Bayview Avenue corridor, and all of York Region.</p>
+            <h2>Common Legal Issues for Richmond Hill Chinese-Canadian Families</h2>
+            <p>Richmond Hill family law cases often involve high-value home division, disputes over children's school choices, and cross-border asset transfers. Miao He has extensive experience with these matters.</p>
+            <p><strong>Property division:</strong> Ontario's Family Law Act requires Equalization of net family property accumulated during the marriage — this includes homes, investment accounts, and pensions. Miao He helps clients accurately calculate their Net Family Property and protect assets that should be excluded, such as pre-marital property and parental gifts.</p>
+            <p><strong>Child custody and parenting:</strong> Richmond Hill Chinese-Canadian families often disagree on which school children should attend, whether children can travel to China to visit grandparents, and how Chinese cultural education fits into parenting plans. Miao He drafts detailed Parenting Plans that address these real-world issues with legal enforceability.</p>
+          </div>
+
+          <div class="card">
+            <h2>Marriage Contracts in Richmond Hill</h2>
+            <p>Demand for marriage contracts is high in Richmond Hill — particularly in cases involving parental down payments, family trust assets, and inherited or pre-immigration property. Miao He provides full Chinese-language drafting and legal advice, ensuring the contract meets Ontario court standards and will not be set aside for unfairness.</p>
+          </div>
+
+          <div class="card">
+            <h2>Emergency Motions &amp; Asset Protection</h2>
+            <p>If you suspect a spouse is transferring or hiding assets, or if there is a risk of children being removed from Ontario, Miao He can move quickly to obtain a temporary restraining order or Mareva Injunction to protect your interests.</p>
           </div>
 
           <div class="card">
             <h2>Frequently Asked Question</h2>
-            <p><strong>Can I see a Mandarin-speaking family lawyer near Richmond Hill?</strong></p>
-            <p>Yes. Miao He's office is located at 208-7050 Woodbine Ave, Markham — a short drive from Richmond Hill. She provides full Mandarin family law services including divorce, child custody, and property division. Call 647-930-6688.</p>
+            <p class="faq-q">Richmond Hill family law cases — which court handles them?</p>
+            <p>Richmond Hill cases are typically heard at <strong>York Region Family Court in Newmarket</strong>. Miao He knows this court's procedures, judges' tendencies, and the mediation process well — she can move your case forward efficiently from the first appearance.</p>
           </div>
-
         </div>
 
         <aside class="main-sidebar">
-
           <div class="cta-block">
             <h2>Book a Consultation</h2>
             <p>Initial consultation 30 min · $220 + HST · No obligation</p>
             <a href="tel:6479306688" class="btn-phone">📞 647-930-6688</a><br/>
             <a href="mailto:miao@miaohelaw.ca" class="btn-email">miao@miaohelaw.ca</a>
           </div>
-
           <div class="sidebar-card">
             <h3>Office Address</h3>
-            <p>H. LAW FIRM 恒. 律师事务所<br/>
-            208 - 7050 Woodbine Avenue<br/>
-            Markham, Ontario L3R 4G8</p>
+            <p>H. LAW FIRM 恒. 律师事务所<br/>208 - 7050 Woodbine Avenue<br/>Markham, Ontario L3R 4G8</p>
           </div>
-
           <div class="sidebar-card">
             <h3>Licences &amp; Credentials</h3>
             <ul class="cred-list">
@@ -178,12 +162,10 @@ import Footer from '../../components/Footer.astro';
               <li>20+ court appearances / month</li>
             </ul>
           </div>
-
           <div class="sidebar-card">
             <h3>Languages</h3>
             <p>Mandarin (普通话) · English</p>
           </div>
-
           <div class="sidebar-card">
             <h3>Other Areas Served</h3>
             <p style="font-size:0.8rem;line-height:1.8;">
@@ -193,17 +175,14 @@ import Footer from '../../components/Footer.astro';
               <a href="/en/mississauga-chinese-family-lawyer">Mississauga</a> ·
               <a href="/en/brampton-chinese-family-lawyer">Brampton</a> ·
               <a href="/en/vaughan-chinese-family-lawyer">Vaughan</a> ·
-              <a href="/en/north-york-chinese-family-lawyer">North York</a> ·
-              <a href="/en/scarborough-chinese-family-lawyer">Scarborough</a> ·
+              <a href="/en/ottawa-chinese-family-lawyer">Ottawa</a> ·
               <a href="/en/hamilton-chinese-family-lawyer">Hamilton</a> ·
-              <a href="/en/ottawa-chinese-family-lawyer">Ottawa</a>
+              <a href="/en/windsor-chinese-family-lawyer">Windsor</a>
             </p>
           </div>
-
         </aside>
       </div>
     </section>
-
   </main>
   <Footer />
 </body>

@@ -6,13 +6,10 @@ import Footer from '../../components/Footer.astro';
 <!doctype html>
 <html lang="en">
 <head>
-  <BaseHead
-    title="Chinese Family Lawyer Vaughan | Mandarin Divorce Lawyer | Miao He"
-    description="Miao He serves Vaughan Chinese-Canadian families in family law matters — divorce, custody, support, property division. York Region court experience. 647-930-6688."
-  />
-  <meta name="keywords" content="Chinese family lawyer Vaughan,Mandarin divorce lawyer Vaughan,family lawyer Vaughan,Chinese lawyer Vaughan,divorce lawyer Vaughan Ontario,York Region Chinese lawyer,Miao He Vaughan" />
+  <BaseHead title="Chinese Family Lawyer Vaughan | Mandarin Divorce Lawyer | Miao He" description="Miao He serves Vaughan's high-value property market — family business division, parental gift protection, cross-border assets. Successfully recovered over $300K in hidden cross-border assets. 647-930-6688." />
+  <meta name="keywords" content="Chinese family lawyer Vaughan,Mandarin divorce lawyer Vaughan,family lawyer Vaughan,Chinese lawyer Vaughan,divorce lawyer Vaughan Ontario,York Region Chinese lawyer,family business divorce Vaughan" />
   <meta property="og:title" content="Chinese Family Lawyer Vaughan | Mandarin Divorce Lawyer | Miao He" />
-  <meta property="og:description" content="Miao He serves Vaughan Chinese-Canadian families in family law matters — divorce, custody, support, property division. York Region court experience. 647-930-6688." />
+  <meta property="og:description" content="Miao He serves Vaughan's high-value property market — family business division, parental gift protection, cross-border assets. Successfully recovered over $300K in hidden cross-border assets. 647-930-6688." />
   <meta property="og:url" content="https://www.miaohelaw.ca/en/vaughan-chinese-family-lawyer" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://www.miaohelaw.ca/og-image.jpg" />
@@ -29,11 +26,7 @@ import Footer from '../../components/Footer.astro';
       "url": "https://www.miaohelaw.ca/en/vaughan-chinese-family-lawyer",
       "telephone": "+1-647-930-6688",
       "email": "miao@miaohelaw.ca",
-      "areaServed": {
-        "@type": "City",
-        "name": "Vaughan",
-        "containedInPlace": {"@type": "Province", "name": "Ontario"}
-      },
+      "areaServed": {"@type": "City", "name": "Vaughan", "containedInPlace": {"@type": "Province", "name": "Ontario"}},
       "provider": {
         "@type": "Person",
         "name": "Miao He",
@@ -58,13 +51,11 @@ import Footer from '../../components/Footer.astro';
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Is there a Mandarin-speaking family lawyer serving Vaughan?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Yes. Miao He provides full Mandarin family law services to Vaughan clients. She has York Region court experience and handles all family law matters in Mandarin and English. Call 647-930-6688."}
-        }
-      ]
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "My parents bought our Vaughan home for us. Can my spouse take half in a divorce?",
+        "acceptedAnswer": {"@type": "Answer", "text": "This depends on how title is registered and the nature of the gift. If the property was gifted solely to you (not to both spouses) and this can be documented, it may be excluded from Equalization. Miao He has handled many Vaughan cases involving parental property contributions and can assess your situation. Call 647-930-6688."}
+      }]
     }
   ]
   </script>
@@ -84,10 +75,13 @@ import Footer from '../../components/Footer.astro';
     .card { background: #fff; border: 1px solid #EDE8DF; border-radius: 12px; padding: 1.75rem; margin-bottom: 1.5rem; }
     .card h2 { font-size: 1.1rem; font-weight: 700; color: #2C1810; margin: 0 0 1rem; }
     .card p { font-size: 0.92rem; line-height: 1.7; color: #2C1810; margin-bottom: 0.75rem; }
+    .card p:last-child { margin-bottom: 0; }
+    .highlight { border-color: #D4A853; box-shadow: 0 4px 20px rgba(212,168,83,0.12); }
+    .note { background: #F5EFE0; border-left: 3px solid #D4A853; padding: 0.75rem 1rem; border-radius: 0 6px 6px 0; font-size: 0.88rem; line-height: 1.6; color: #6B5A3A; margin-top: 0.75rem; }
     .services-list { list-style: none; padding: 0; margin: 0.5rem 0; }
     .services-list li { font-size: 0.9rem; padding: 0.3rem 0; border-bottom: 1px solid #F5EFE0; }
     .services-list li:last-child { border-bottom: none; }
-    .highlight { border-color: #D4A853; box-shadow: 0 4px 20px rgba(212,168,83,0.12); }
+    .faq-q { font-weight: 700; margin-bottom: 0.4rem; }
     .cta-block { background: #2C1810; border-radius: 12px; padding: 1.75rem; margin-bottom: 1.5rem; text-align: center; }
     .cta-block h2 { color: #D4A853; font-size: 1.1rem; margin: 0 0 0.5rem; }
     .cta-block p { color: rgba(255,255,255,0.8); font-size: 0.88rem; margin: 0 0 1rem; }
@@ -99,74 +93,68 @@ import Footer from '../../components/Footer.astro';
     .cred-list { list-style: none; padding: 0; margin: 0; }
     .cred-list li { font-size: 0.83rem; padding: 0.25rem 0; padding-left: 1rem; position: relative; color: #2C1810; }
     .cred-list li::before { content: "·"; position: absolute; left: 0; color: #D4A853; }
-    .area-note { font-size: 0.82rem; color: #9A8060; font-style: italic; margin-top: 0.5rem; }
     @media (max-width: 720px) { .main-inner { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
   <HeaderEn />
   <main>
-
     <section class="page-hero">
       <div class="inner">
         <div class="breadcrumb"><a href="/en/">Home</a> › <a href="/en/contact">Areas Served</a> › Vaughan</div>
         <div class="page-label">Chinese Family Lawyer · Vaughan</div>
         <h1>Chinese Family Lawyer in Vaughan</h1>
-        <p class="tagline">Mandarin & English · York Region court experience · Divorce · Custody · 647-930-6688</p>
+        <p class="tagline">Mandarin & English · York Region court experience · High-value property · Family business division · 647-930-6688</p>
       </div>
     </section>
-
     <section class="main-section">
       <div class="main-inner">
-
         <div class="main-content">
 
           <div class="card highlight">
-            <h2>Serving Vaughan in Mandarin & English</h2>
-            <p>Vaughan's Thornhill Woods and Maple communities include a significant Chinese-Canadian population. Miao He has experience in York Region courts and provides full Mandarin family law services — divorce litigation, child custody, property division, and cross-border asset recovery.</p>
-            <p>Miao He (何淼) is dual-licensed in Ontario (LSO #83315K) and China, with 15+ years of family law experience and 20+ court appearances per month. She handles all matters personally — in Mandarin and English, with no interpreter needed.</p>
+            <h2>Chinese Family Lawyer for Vaughan's High-Value Property Market</h2>
+            <p>Vaughan is one of York Region's fastest-growing cities — Woodbridge, Maple, and Thornhill Woods communities include a significant Chinese-Canadian population with high-value homes and often complex financial structures. Family law cases in Vaughan frequently involve million-dollar properties, family businesses, and cross-border assets. Miao He's Markham office is approximately 20 minutes from Vaughan, and she has York Region court experience.</p>
           </div>
 
           <div class="card">
-            <h2>Family Law Services Available in Vaughan</h2>
-            <ul class="services-list">
-              <li>Divorce Litigation</li>
-              <li>Child Custody &amp; Access</li>
-              <li>Child Support / Spousal Support</li>
-              <li>Property Division / NFP Equalization</li>
-              <li>Cross-Border Asset Recovery (Canada &amp; China)</li>
-              <li>Emergency Motions / Mareva Injunction</li>
-              <li>Marriage Contract / Prenuptial Agreement</li>
-              <li>Separation Agreement</li>
-              <li>Mediation</li>
-            </ul>
-            <p class="area-note">Serving Vaughan including Maple, Woodbridge, Thornhill Woods, and all of York Region.</p>
+            <h2>High-Value Home &amp; Family Business Division</h2>
+            <p>Many Vaughan Chinese-Canadian families own homes worth well over a million dollars — and some also operate family businesses. In a divorce, both the property and the business interest must be valued and divided.</p>
+            <p>Miao He works closely with accountants and appraisers to ensure <strong>full asset disclosure</strong> and fair valuation. She has experience identifying and preventing asset concealment — including cases where a spouse deliberately undervalues a business or transfers assets to relatives before separation.</p>
+          </div>
+
+          <div class="card">
+            <h2>Private School Fees &amp; Children's Education in Custody Plans</h2>
+            <p>Vaughan has many private schools. After divorce, which school a child attends and who pays the fees often becomes a major dispute. Miao He helps incorporate these specifics — school choice, extracurricular activities, and fee allocation — into a formal Parenting Plan, giving these arrangements legal enforceability.</p>
+          </div>
+
+          <div class="card">
+            <h2>Protecting Parental Gifts &amp; Family Property</h2>
+            <p>It is common in Vaughan's Chinese-Canadian community for parents to purchase a home for their child. A Marriage Contract can clearly specify that such property is a pre-marital gift and is excluded from Equalization — protecting generational family wealth. The contract must be reviewed by independent counsel for each party to be enforceable.</p>
+          </div>
+
+          <div class="card">
+            <h2>Cross-Border Asset Recovery</h2>
+            <p>Vaughan Chinese-Canadian families frequently hold Chinese real estate, bank deposits, or company shares. Miao He's dual Ontario-China licence allows her to handle cross-border asset disclosure, valuation, and recovery directly. She has successfully helped clients recover <strong>over $300,000 CAD</strong> in cross-border hidden assets.</p>
           </div>
 
           <div class="card">
             <h2>Frequently Asked Question</h2>
-            <p><strong>Is there a Mandarin-speaking family lawyer serving Vaughan?</strong></p>
-            <p>Yes. Miao He provides full Mandarin family law services to Vaughan clients. She has York Region court experience and handles all family law matters in Mandarin and English. Call 647-930-6688.</p>
+            <p class="faq-q">My parents bought our Vaughan home for us. Can my spouse take half in a divorce?</p>
+            <p>It depends on registration and documentation. If the property was a gift to you alone — not to both spouses — and this is clearly documented, it may be excluded from Equalization. Miao He has handled many cases involving parental property in Vaughan and can assess your specific situation directly.</p>
           </div>
-
         </div>
 
         <aside class="main-sidebar">
-
           <div class="cta-block">
             <h2>Book a Consultation</h2>
             <p>Initial consultation 30 min · $220 + HST · No obligation</p>
             <a href="tel:6479306688" class="btn-phone">📞 647-930-6688</a><br/>
             <a href="mailto:miao@miaohelaw.ca" class="btn-email">miao@miaohelaw.ca</a>
           </div>
-
           <div class="sidebar-card">
             <h3>Office Address</h3>
-            <p>H. LAW FIRM 恒. 律师事务所<br/>
-            208 - 7050 Woodbine Avenue<br/>
-            Markham, Ontario L3R 4G8</p>
+            <p>H. LAW FIRM 恒. 律师事务所<br/>208 - 7050 Woodbine Avenue<br/>Markham, Ontario L3R 4G8</p>
           </div>
-
           <div class="sidebar-card">
             <h3>Licences &amp; Credentials</h3>
             <ul class="cred-list">
@@ -178,12 +166,10 @@ import Footer from '../../components/Footer.astro';
               <li>20+ court appearances / month</li>
             </ul>
           </div>
-
           <div class="sidebar-card">
             <h3>Languages</h3>
             <p>Mandarin (普通话) · English</p>
           </div>
-
           <div class="sidebar-card">
             <h3>Other Areas Served</h3>
             <p style="font-size:0.8rem;line-height:1.8;">
@@ -193,17 +179,14 @@ import Footer from '../../components/Footer.astro';
               <a href="/en/mississauga-chinese-family-lawyer">Mississauga</a> ·
               <a href="/en/brampton-chinese-family-lawyer">Brampton</a> ·
               <a href="/en/vaughan-chinese-family-lawyer">Vaughan</a> ·
-              <a href="/en/north-york-chinese-family-lawyer">North York</a> ·
-              <a href="/en/scarborough-chinese-family-lawyer">Scarborough</a> ·
+              <a href="/en/ottawa-chinese-family-lawyer">Ottawa</a> ·
               <a href="/en/hamilton-chinese-family-lawyer">Hamilton</a> ·
-              <a href="/en/ottawa-chinese-family-lawyer">Ottawa</a>
+              <a href="/en/windsor-chinese-family-lawyer">Windsor</a>
             </p>
           </div>
-
         </aside>
       </div>
     </section>
-
   </main>
   <Footer />
 </body>

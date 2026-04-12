@@ -6,13 +6,10 @@ import Footer from '../../components/Footer.astro';
 <!doctype html>
 <html lang="en">
 <head>
-  <BaseHead
-    title="Chinese Family Lawyer Thornhill | Mandarin Divorce Lawyer | Miao He"
-    description="Miao He provides Mandarin family law services for Thornhill clients — divorce litigation, child custody, marriage contracts, property division. 647-930-6688."
-  />
+  <BaseHead title="Chinese Family Lawyer Thornhill | Mandarin Divorce Lawyer | Miao He" description="Miao He serves Thornhill's Chinese-Canadian community — uncooperative spouse divorce, high-value property division, grandparent access, cross-border assets. Markham office nearby. 647-930-6688." />
   <meta name="keywords" content="Chinese family lawyer Thornhill,Mandarin divorce lawyer Thornhill,family lawyer Thornhill,Chinese lawyer Thornhill,divorce lawyer Thornhill Ontario,Miao He Thornhill" />
   <meta property="og:title" content="Chinese Family Lawyer Thornhill | Mandarin Divorce Lawyer | Miao He" />
-  <meta property="og:description" content="Miao He provides Mandarin family law services for Thornhill clients — divorce litigation, child custody, marriage contracts, property division. 647-930-6688." />
+  <meta property="og:description" content="Miao He serves Thornhill's Chinese-Canadian community — uncooperative spouse divorce, high-value property division, grandparent access, cross-border assets. Markham office nearby. 647-930-6688." />
   <meta property="og:url" content="https://www.miaohelaw.ca/en/thornhill-chinese-family-lawyer" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://www.miaohelaw.ca/og-image.jpg" />
@@ -29,11 +26,7 @@ import Footer from '../../components/Footer.astro';
       "url": "https://www.miaohelaw.ca/en/thornhill-chinese-family-lawyer",
       "telephone": "+1-647-930-6688",
       "email": "miao@miaohelaw.ca",
-      "areaServed": {
-        "@type": "City",
-        "name": "Thornhill",
-        "containedInPlace": {"@type": "Province", "name": "Ontario"}
-      },
+      "areaServed": {"@type": "City", "name": "Thornhill", "containedInPlace": {"@type": "Province", "name": "Ontario"}},
       "provider": {
         "@type": "Person",
         "name": "Miao He",
@@ -58,13 +51,11 @@ import Footer from '../../components/Footer.astro';
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Is there a Mandarin-speaking family lawyer near Thornhill?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Yes. Miao He provides full Mandarin family law services to Thornhill clients. Her Markham office is easily accessible, and she handles all matters in Mandarin and English. Call 647-930-6688."}
-        }
-      ]
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "My spouse refuses to cooperate with the divorce. Can I still proceed?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Yes. In Ontario, you can apply for divorce unilaterally after one year of separation — you do not need your spouse's cooperation or signature. Miao He can handle a contested or uncooperative divorce fully on your behalf through the court process. Call 647-930-6688."}
+      }]
     }
   ]
   </script>
@@ -84,10 +75,13 @@ import Footer from '../../components/Footer.astro';
     .card { background: #fff; border: 1px solid #EDE8DF; border-radius: 12px; padding: 1.75rem; margin-bottom: 1.5rem; }
     .card h2 { font-size: 1.1rem; font-weight: 700; color: #2C1810; margin: 0 0 1rem; }
     .card p { font-size: 0.92rem; line-height: 1.7; color: #2C1810; margin-bottom: 0.75rem; }
+    .card p:last-child { margin-bottom: 0; }
+    .highlight { border-color: #D4A853; box-shadow: 0 4px 20px rgba(212,168,83,0.12); }
+    .note { background: #F5EFE0; border-left: 3px solid #D4A853; padding: 0.75rem 1rem; border-radius: 0 6px 6px 0; font-size: 0.88rem; line-height: 1.6; color: #6B5A3A; margin-top: 0.75rem; }
     .services-list { list-style: none; padding: 0; margin: 0.5rem 0; }
     .services-list li { font-size: 0.9rem; padding: 0.3rem 0; border-bottom: 1px solid #F5EFE0; }
     .services-list li:last-child { border-bottom: none; }
-    .highlight { border-color: #D4A853; box-shadow: 0 4px 20px rgba(212,168,83,0.12); }
+    .faq-q { font-weight: 700; margin-bottom: 0.4rem; }
     .cta-block { background: #2C1810; border-radius: 12px; padding: 1.75rem; margin-bottom: 1.5rem; text-align: center; }
     .cta-block h2 { color: #D4A853; font-size: 1.1rem; margin: 0 0 0.5rem; }
     .cta-block p { color: rgba(255,255,255,0.8); font-size: 0.88rem; margin: 0 0 1rem; }
@@ -99,74 +93,68 @@ import Footer from '../../components/Footer.astro';
     .cred-list { list-style: none; padding: 0; margin: 0; }
     .cred-list li { font-size: 0.83rem; padding: 0.25rem 0; padding-left: 1rem; position: relative; color: #2C1810; }
     .cred-list li::before { content: "·"; position: absolute; left: 0; color: #D4A853; }
-    .area-note { font-size: 0.82rem; color: #9A8060; font-style: italic; margin-top: 0.5rem; }
     @media (max-width: 720px) { .main-inner { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
   <HeaderEn />
   <main>
-
     <section class="page-hero">
       <div class="inner">
         <div class="breadcrumb"><a href="/en/">Home</a> › <a href="/en/contact">Areas Served</a> › Thornhill</div>
         <div class="page-label">Chinese Family Lawyer · Thornhill</div>
         <h1>Chinese Family Lawyer in Thornhill</h1>
-        <p class="tagline">Mandarin / Putonghua · Divorce · Custody · Marriage contracts · 647-930-6688</p>
+        <p class="tagline">Mandarin / Putonghua · Divorce without spouse cooperation · Custody with cultural needs · 647-930-6688</p>
       </div>
     </section>
-
     <section class="main-section">
       <div class="main-inner">
-
         <div class="main-content">
 
           <div class="card highlight">
-            <h2>Serving Thornhill in Mandarin & English</h2>
-            <p>Thornhill straddles York and Peel Regions and has a large, established Chinese-Canadian community. Miao He provides full Mandarin family law services to Thornhill clients, with experience in both York Region and Toronto courts — covering divorce, child custody, separation agreements, and marriage contracts.</p>
-            <p>Miao He (何淼) is dual-licensed in Ontario (LSO #83315K) and China, with 15+ years of family law experience and 20+ court appearances per month. She handles all matters personally — in Mandarin and English, with no interpreter needed.</p>
+            <h2>Chinese Family Lawyer Serving Thornhill's Established Community</h2>
+            <p>Thornhill is a mature community straddling York and Peel Regions, with large Chinese-Canadian, Russian-Canadian, and Israeli-Canadian populations. The Promenade and Bayview Avenue areas are established residential zones where family law issues often involve high-value properties, RRSP portfolios, and cross-border assets. Miao He's Markham office is minutes from Thornhill, and she provides full Mandarin family law services to local clients.</p>
           </div>
 
           <div class="card">
-            <h2>Family Law Services Available in Thornhill</h2>
-            <ul class="services-list">
-              <li>Divorce Litigation</li>
-              <li>Child Custody &amp; Access</li>
-              <li>Child Support / Spousal Support</li>
-              <li>Property Division / NFP Equalization</li>
-              <li>Cross-Border Asset Recovery (Canada &amp; China)</li>
-              <li>Emergency Motions / Mareva Injunction</li>
-              <li>Marriage Contract / Prenuptial Agreement</li>
-              <li>Separation Agreement</li>
-              <li>Mediation</li>
-            </ul>
-            <p class="area-note">Serving Thornhill, Promenade area, Bayview Avenue corridor, and surrounding communities in York and Peel Regions.</p>
+            <h2>Divorce When a Spouse Won't Cooperate</h2>
+            <p>One of the most common situations Thornhill Chinese-Canadian clients face: a spouse who refuses to sign papers, delays proceedings, or denies that the marriage has broken down. In Ontario, <strong>you do not need your spouse's cooperation to get divorced</strong>. After one year of separation, Miao He can apply for divorce on your behalf — the court will grant the divorce without the other party's consent if grounds are met.</p>
+            <p>She can also apply for interim orders (temporary custody, support, and property preservation) while the divorce proceeds, protecting your interests throughout.</p>
+          </div>
+
+          <div class="card">
+            <h2>Property Division in Thornhill</h2>
+            <p>Thornhill homes, RRSP accounts, investment portfolios, and Chinese-held assets all form part of the Net Family Property calculation. Miao He helps clients accurately establish the value of pre-marital assets — including property brought to the marriage or received as gifts — to ensure these are properly excluded from Equalization.</p>
+          </div>
+
+          <div class="card">
+            <h2>Child Custody with Chinese Cultural Considerations</h2>
+            <p>Thornhill Chinese-Canadian families often face custody disputes involving: whether children can travel to China to visit grandparents, grandparent access rights, Chinese school and language education, and Lunar New Year holiday arrangements. Miao He incorporates these cultural realities into Parenting Plans as legally binding terms — not just verbal agreements.</p>
+          </div>
+
+          <div class="card">
+            <h2>Marriage Contract &amp; Separation Agreement</h2>
+            <p>Whether you are planning ahead with a Marriage Contract or settling all matters through a Separation Agreement after separation, Miao He provides full Chinese-language drafting. A Separation Agreement that resolves all property, support, and custody issues before formal divorce can save significant time and legal costs.</p>
           </div>
 
           <div class="card">
             <h2>Frequently Asked Question</h2>
-            <p><strong>Is there a Mandarin-speaking family lawyer near Thornhill?</strong></p>
-            <p>Yes. Miao He provides full Mandarin family law services to Thornhill clients. Her Markham office is easily accessible, and she handles all matters in Mandarin and English. Call 647-930-6688.</p>
+            <p class="faq-q">My spouse refuses to cooperate with the divorce. Can I still proceed?</p>
+            <p>Yes. In Ontario you can file for divorce after one year of separation — your spouse's signature is not required. Miao He can manage the entire process through the court system without your spouse's participation. Contact her at 647-930-6688.</p>
           </div>
-
         </div>
 
         <aside class="main-sidebar">
-
           <div class="cta-block">
             <h2>Book a Consultation</h2>
             <p>Initial consultation 30 min · $220 + HST · No obligation</p>
             <a href="tel:6479306688" class="btn-phone">📞 647-930-6688</a><br/>
             <a href="mailto:miao@miaohelaw.ca" class="btn-email">miao@miaohelaw.ca</a>
           </div>
-
           <div class="sidebar-card">
             <h3>Office Address</h3>
-            <p>H. LAW FIRM 恒. 律师事务所<br/>
-            208 - 7050 Woodbine Avenue<br/>
-            Markham, Ontario L3R 4G8</p>
+            <p>H. LAW FIRM 恒. 律师事务所<br/>208 - 7050 Woodbine Avenue<br/>Markham, Ontario L3R 4G8</p>
           </div>
-
           <div class="sidebar-card">
             <h3>Licences &amp; Credentials</h3>
             <ul class="cred-list">
@@ -178,12 +166,10 @@ import Footer from '../../components/Footer.astro';
               <li>20+ court appearances / month</li>
             </ul>
           </div>
-
           <div class="sidebar-card">
             <h3>Languages</h3>
             <p>Mandarin (普通话) · English</p>
           </div>
-
           <div class="sidebar-card">
             <h3>Other Areas Served</h3>
             <p style="font-size:0.8rem;line-height:1.8;">
@@ -193,17 +179,14 @@ import Footer from '../../components/Footer.astro';
               <a href="/en/mississauga-chinese-family-lawyer">Mississauga</a> ·
               <a href="/en/brampton-chinese-family-lawyer">Brampton</a> ·
               <a href="/en/vaughan-chinese-family-lawyer">Vaughan</a> ·
-              <a href="/en/north-york-chinese-family-lawyer">North York</a> ·
-              <a href="/en/scarborough-chinese-family-lawyer">Scarborough</a> ·
+              <a href="/en/ottawa-chinese-family-lawyer">Ottawa</a> ·
               <a href="/en/hamilton-chinese-family-lawyer">Hamilton</a> ·
-              <a href="/en/ottawa-chinese-family-lawyer">Ottawa</a>
+              <a href="/en/windsor-chinese-family-lawyer">Windsor</a>
             </p>
           </div>
-
         </aside>
       </div>
     </section>
-
   </main>
   <Footer />
 </body>

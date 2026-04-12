@@ -6,13 +6,10 @@ import Footer from '../../components/Footer.astro';
 <!doctype html>
 <html lang="en">
 <head>
-  <BaseHead
-    title="Chinese Family Lawyer Markham | Miao He — Office Located in Markham"
-    description="Miao He's office is located at 208-7050 Woodbine Ave, Markham. Bilingual Mandarin and English family law — divorce, custody, support, marriage contracts. 647-930-6688."
-  />
-  <meta name="keywords" content="Chinese family lawyer Markham,Mandarin divorce lawyer Markham,family lawyer Markham Ontario,Chinese lawyer Markham,divorce lawyer Markham,Miao He Markham,Woodbine Ave lawyer Markham" />
-  <meta property="og:title" content="Chinese Family Lawyer Markham | Miao He — Office Located in Markham" />
-  <meta property="og:description" content="Miao He's office is located at 208-7050 Woodbine Ave, Markham. Bilingual Mandarin and English family law — divorce, custody, support, marriage contracts. 647-930-6688." />
+  <BaseHead title="Chinese Family Lawyer Markham | Office Located in Markham | Miao He" description="H. LAW FIRM is located at 208-7050 Woodbine Ave, Markham. Miao He provides bilingual Mandarin & English family law for the Markham Chinese-Canadian community. 647-930-6688." />
+  <meta name="keywords" content="Chinese family lawyer Markham,Mandarin divorce lawyer Markham,family lawyer Markham Ontario,Chinese lawyer Markham,divorce lawyer Markham,Miao He Markham" />
+  <meta property="og:title" content="Chinese Family Lawyer Markham | Office Located in Markham | Miao He" />
+  <meta property="og:description" content="H. LAW FIRM is located at 208-7050 Woodbine Ave, Markham. Miao He provides bilingual Mandarin & English family law for the Markham Chinese-Canadian community. 647-930-6688." />
   <meta property="og:url" content="https://www.miaohelaw.ca/en/markham-chinese-family-lawyer" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://www.miaohelaw.ca/og-image.jpg" />
@@ -29,11 +26,7 @@ import Footer from '../../components/Footer.astro';
       "url": "https://www.miaohelaw.ca/en/markham-chinese-family-lawyer",
       "telephone": "+1-647-930-6688",
       "email": "miao@miaohelaw.ca",
-      "areaServed": {
-        "@type": "City",
-        "name": "Markham",
-        "containedInPlace": {"@type": "Province", "name": "Ontario"}
-      },
+      "areaServed": {"@type": "City", "name": "Markham", "containedInPlace": {"@type": "Province", "name": "Ontario"}},
       "provider": {
         "@type": "Person",
         "name": "Miao He",
@@ -58,13 +51,11 @@ import Footer from '../../components/Footer.astro';
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Is Miao He's office located in Markham?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Yes. The office is at 208-7050 Woodbine Avenue, Markham, Ontario L3R 4G8. In-person consultations are available Monday to Friday. Call 647-930-6688 to schedule."}
-        }
-      ]
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "My parents paid the down payment on our Markham home. Can my spouse claim half of it in a divorce?",
+        "acceptedAnswer": {"@type": "Answer", "text": "It depends on how title is registered and whether the gift can be documented as being made to you alone (not to both spouses). If properly documented, a parental gift may be excluded from Equalization. Miao He can assess your specific situation. Call 647-930-6688."}
+      }]
     }
   ]
   </script>
@@ -84,10 +75,13 @@ import Footer from '../../components/Footer.astro';
     .card { background: #fff; border: 1px solid #EDE8DF; border-radius: 12px; padding: 1.75rem; margin-bottom: 1.5rem; }
     .card h2 { font-size: 1.1rem; font-weight: 700; color: #2C1810; margin: 0 0 1rem; }
     .card p { font-size: 0.92rem; line-height: 1.7; color: #2C1810; margin-bottom: 0.75rem; }
+    .card p:last-child { margin-bottom: 0; }
+    .highlight { border-color: #D4A853; box-shadow: 0 4px 20px rgba(212,168,83,0.12); }
+    .note { background: #F5EFE0; border-left: 3px solid #D4A853; padding: 0.75rem 1rem; border-radius: 0 6px 6px 0; font-size: 0.88rem; line-height: 1.6; color: #6B5A3A; margin-top: 0.75rem; }
     .services-list { list-style: none; padding: 0; margin: 0.5rem 0; }
     .services-list li { font-size: 0.9rem; padding: 0.3rem 0; border-bottom: 1px solid #F5EFE0; }
     .services-list li:last-child { border-bottom: none; }
-    .highlight { border-color: #D4A853; box-shadow: 0 4px 20px rgba(212,168,83,0.12); }
+    .faq-q { font-weight: 700; margin-bottom: 0.4rem; }
     .cta-block { background: #2C1810; border-radius: 12px; padding: 1.75rem; margin-bottom: 1.5rem; text-align: center; }
     .cta-block h2 { color: #D4A853; font-size: 1.1rem; margin: 0 0 0.5rem; }
     .cta-block p { color: rgba(255,255,255,0.8); font-size: 0.88rem; margin: 0 0 1rem; }
@@ -99,14 +93,12 @@ import Footer from '../../components/Footer.astro';
     .cred-list { list-style: none; padding: 0; margin: 0; }
     .cred-list li { font-size: 0.83rem; padding: 0.25rem 0; padding-left: 1rem; position: relative; color: #2C1810; }
     .cred-list li::before { content: "·"; position: absolute; left: 0; color: #D4A853; }
-    .area-note { font-size: 0.82rem; color: #9A8060; font-style: italic; margin-top: 0.5rem; }
     @media (max-width: 720px) { .main-inner { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
   <HeaderEn />
   <main>
-
     <section class="page-hero">
       <div class="inner">
         <div class="breadcrumb"><a href="/en/">Home</a> › <a href="/en/contact">Areas Served</a> › Markham</div>
@@ -115,58 +107,57 @@ import Footer from '../../components/Footer.astro';
         <p class="tagline">Office located in Markham · Mandarin & English · Divorce · Custody · Marriage contracts · 647-930-6688</p>
       </div>
     </section>
-
     <section class="main-section">
       <div class="main-inner">
-
         <div class="main-content">
 
           <div class="card highlight">
-            <h2>Serving Markham in Mandarin & English</h2>
-            <p>Miao He's office is conveniently located at 208-7050 Woodbine Avenue, Markham — in the heart of the GTA's largest Chinese-Canadian community. Clients in Markham, Unionville, and Cornell can meet in person without travelling far.</p>
-            <p>Miao He (何淼) is dual-licensed in Ontario (LSO #83315K) and China, with 15+ years of family law experience and 20+ court appearances per month. She handles all matters personally — in Mandarin and English, with no interpreter needed.</p>
+            <h2>H. LAW FIRM — Located in the Heart of Markham</h2>
+            <p>H. LAW FIRM (恒. 律师事务所) is headquartered at 208-7050 Woodbine Avenue, Markham — in the heart of the GTA's largest Chinese-Canadian community. Miao He leads the firm personally and provides family law services tailored to the cultural and legal needs of Markham's Chinese-Canadian residents.</p>
+            <p>Markham has one of the highest concentrations of Chinese-Canadian families in Canada. Miao He understands this community's background, values, and the specific legal challenges that arise in this context.</p>
           </div>
 
           <div class="card">
-            <h2>Family Law Services Available in Markham</h2>
+            <h2>Family Law Issues Common in Markham</h2>
+            <p>Markham Chinese-Canadian families often face family law matters involving cross-border assets, Chinese marriage certificate authentication, and property division spanning both Canada and China. Miao He holds dual licences in Ontario and China, providing a true one-stop service for these complex matters.</p>
+          </div>
+
+          <div class="card">
+            <h2>Core Family Law Services in Markham</h2>
             <ul class="services-list">
-              <li>Divorce Litigation</li>
-              <li>Child Custody &amp; Access</li>
-              <li>Child Support / Spousal Support</li>
-              <li>Property Division / NFP Equalization</li>
-              <li>Cross-Border Asset Recovery (Canada &amp; China)</li>
-              <li>Emergency Motions / Mareva Injunction</li>
-              <li>Marriage Contract / Prenuptial Agreement</li>
-              <li>Separation Agreement</li>
-              <li>Mediation</li>
+              <li>Divorce — negotiated and contested, property Equalization, spousal support</li>
+              <li>Child Custody &amp; Access — primary residence, parenting time, relocation</li>
+              <li>Marriage Contract (Prenuptial Agreement) — protecting parental gifts, pre-immigration property</li>
+              <li>Cross-Border Assets — Chinese real estate, offshore accounts, dual-country asset disclosure</li>
+              <li>Emergency Motions — asset freezing orders, restraining orders</li>
+              <li>Separation Agreement — comprehensive settlement before formal divorce</li>
             </ul>
-            <p class="area-note">Serving Markham, Unionville, Cornell, Milliken, and surrounding areas.</p>
+          </div>
+
+          <div class="card">
+            <h2>Why Choose a Lawyer Whose Office Is in Markham?</h2>
+            <p>In-person consultations are available at the Woodbine Avenue office — no long drive across the city. Miao He is familiar with the Markham community, the York Region court system, and the specific legal issues that arise most often among local Chinese-Canadian families.</p>
+            <p>Marriage contracts are increasingly common in Markham, particularly where parents have contributed to a down payment or where family business assets need protection. Miao He drafts marriage contracts in both Chinese and English and ensures they meet Ontario court standards for enforceability.</p>
           </div>
 
           <div class="card">
             <h2>Frequently Asked Question</h2>
-            <p><strong>Is Miao He's office located in Markham?</strong></p>
-            <p>Yes. The office is at 208-7050 Woodbine Avenue, Markham, Ontario L3R 4G8. In-person consultations are available Monday to Friday. Call 647-930-6688 to schedule.</p>
+            <p class="faq-q">My parents paid the down payment on our Markham home. Can my spouse claim half of it in a divorce?</p>
+            <p>It depends on documentation and how title is registered. If the gift can be proven to be made to you alone — not to both spouses — it may be excluded from the Equalization calculation. Miao He has handled many Markham cases involving parental contributions and can assess your situation directly.</p>
           </div>
-
         </div>
 
         <aside class="main-sidebar">
-
           <div class="cta-block">
             <h2>Book a Consultation</h2>
             <p>Initial consultation 30 min · $220 + HST · No obligation</p>
             <a href="tel:6479306688" class="btn-phone">📞 647-930-6688</a><br/>
             <a href="mailto:miao@miaohelaw.ca" class="btn-email">miao@miaohelaw.ca</a>
           </div>
-
           <div class="sidebar-card">
             <h3>Office Address</h3>
-            <p>H. LAW FIRM 恒. 律师事务所<br/>
-            208 - 7050 Woodbine Avenue<br/>
-            Markham, Ontario L3R 4G8</p>
+            <p>H. LAW FIRM 恒. 律师事务所<br/>208 - 7050 Woodbine Avenue<br/>Markham, Ontario L3R 4G8</p>
           </div>
-
           <div class="sidebar-card">
             <h3>Licences &amp; Credentials</h3>
             <ul class="cred-list">
@@ -178,12 +169,10 @@ import Footer from '../../components/Footer.astro';
               <li>20+ court appearances / month</li>
             </ul>
           </div>
-
           <div class="sidebar-card">
             <h3>Languages</h3>
             <p>Mandarin (普通话) · English</p>
           </div>
-
           <div class="sidebar-card">
             <h3>Other Areas Served</h3>
             <p style="font-size:0.8rem;line-height:1.8;">
@@ -193,17 +182,14 @@ import Footer from '../../components/Footer.astro';
               <a href="/en/mississauga-chinese-family-lawyer">Mississauga</a> ·
               <a href="/en/brampton-chinese-family-lawyer">Brampton</a> ·
               <a href="/en/vaughan-chinese-family-lawyer">Vaughan</a> ·
-              <a href="/en/north-york-chinese-family-lawyer">North York</a> ·
-              <a href="/en/scarborough-chinese-family-lawyer">Scarborough</a> ·
+              <a href="/en/ottawa-chinese-family-lawyer">Ottawa</a> ·
               <a href="/en/hamilton-chinese-family-lawyer">Hamilton</a> ·
-              <a href="/en/ottawa-chinese-family-lawyer">Ottawa</a>
+              <a href="/en/windsor-chinese-family-lawyer">Windsor</a>
             </p>
           </div>
-
         </aside>
       </div>
     </section>
-
   </main>
   <Footer />
 </body>

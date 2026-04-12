@@ -6,13 +6,10 @@ import Footer from '../../components/Footer.astro';
 <!doctype html>
 <html lang="en">
 <head>
-  <BaseHead
-    title="Chinese Family Lawyer Brampton | Mandarin Divorce Lawyer | Miao He"
-    description="Miao He serves Brampton Chinese-Canadian families in family law matters — divorce, custody, support, property division. Peel Region court experience. 647-930-6688."
-  />
-  <meta name="keywords" content="Chinese family lawyer Brampton,Mandarin divorce lawyer Brampton,family lawyer Brampton,Chinese lawyer Brampton,divorce lawyer Brampton Ontario,Peel Region family lawyer,Miao He Brampton" />
+  <BaseHead title="Chinese Family Lawyer Brampton | Mandarin Divorce Lawyer | Miao He" description="Miao He serves Brampton Chinese-Canadian families with Peel Region court experience — Decision-Making Responsibility, Parenting Time, property division, emergency orders. 647-930-6688." />
+  <meta name="keywords" content="Chinese family lawyer Brampton,Mandarin divorce lawyer Brampton,family lawyer Brampton,Chinese lawyer Brampton,divorce lawyer Brampton Ontario,Peel Region family lawyer Chinese" />
   <meta property="og:title" content="Chinese Family Lawyer Brampton | Mandarin Divorce Lawyer | Miao He" />
-  <meta property="og:description" content="Miao He serves Brampton Chinese-Canadian families in family law matters — divorce, custody, support, property division. Peel Region court experience. 647-930-6688." />
+  <meta property="og:description" content="Miao He serves Brampton Chinese-Canadian families with Peel Region court experience — Decision-Making Responsibility, Parenting Time, property division, emergency orders. 647-930-6688." />
   <meta property="og:url" content="https://www.miaohelaw.ca/en/brampton-chinese-family-lawyer" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://www.miaohelaw.ca/og-image.jpg" />
@@ -29,11 +26,7 @@ import Footer from '../../components/Footer.astro';
       "url": "https://www.miaohelaw.ca/en/brampton-chinese-family-lawyer",
       "telephone": "+1-647-930-6688",
       "email": "miao@miaohelaw.ca",
-      "areaServed": {
-        "@type": "City",
-        "name": "Brampton",
-        "containedInPlace": {"@type": "Province", "name": "Ontario"}
-      },
+      "areaServed": {"@type": "City", "name": "Brampton", "containedInPlace": {"@type": "Province", "name": "Ontario"}},
       "provider": {
         "@type": "Person",
         "name": "Miao He",
@@ -58,13 +51,11 @@ import Footer from '../../components/Footer.astro';
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Can I find a Mandarin-speaking family lawyer in Brampton?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Yes. Miao He provides full Mandarin family law services to Brampton clients. She has Peel Region court experience and conducts all consultations and proceedings in Mandarin and English. Call 647-930-6688."}
-        }
-      ]
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Brampton family law cases — which court and what procedure applies?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Brampton cases are heard at the Ontario Court of Justice or Superior Court of Justice in Peel Region. Miao He is familiar with both courts and can advise on the most appropriate procedure for your matter. Call 647-930-6688."}
+      }]
     }
   ]
   </script>
@@ -84,10 +75,13 @@ import Footer from '../../components/Footer.astro';
     .card { background: #fff; border: 1px solid #EDE8DF; border-radius: 12px; padding: 1.75rem; margin-bottom: 1.5rem; }
     .card h2 { font-size: 1.1rem; font-weight: 700; color: #2C1810; margin: 0 0 1rem; }
     .card p { font-size: 0.92rem; line-height: 1.7; color: #2C1810; margin-bottom: 0.75rem; }
+    .card p:last-child { margin-bottom: 0; }
+    .highlight { border-color: #D4A853; box-shadow: 0 4px 20px rgba(212,168,83,0.12); }
+    .note { background: #F5EFE0; border-left: 3px solid #D4A853; padding: 0.75rem 1rem; border-radius: 0 6px 6px 0; font-size: 0.88rem; line-height: 1.6; color: #6B5A3A; margin-top: 0.75rem; }
     .services-list { list-style: none; padding: 0; margin: 0.5rem 0; }
     .services-list li { font-size: 0.9rem; padding: 0.3rem 0; border-bottom: 1px solid #F5EFE0; }
     .services-list li:last-child { border-bottom: none; }
-    .highlight { border-color: #D4A853; box-shadow: 0 4px 20px rgba(212,168,83,0.12); }
+    .faq-q { font-weight: 700; margin-bottom: 0.4rem; }
     .cta-block { background: #2C1810; border-radius: 12px; padding: 1.75rem; margin-bottom: 1.5rem; text-align: center; }
     .cta-block h2 { color: #D4A853; font-size: 1.1rem; margin: 0 0 0.5rem; }
     .cta-block p { color: rgba(255,255,255,0.8); font-size: 0.88rem; margin: 0 0 1rem; }
@@ -99,74 +93,67 @@ import Footer from '../../components/Footer.astro';
     .cred-list { list-style: none; padding: 0; margin: 0; }
     .cred-list li { font-size: 0.83rem; padding: 0.25rem 0; padding-left: 1rem; position: relative; color: #2C1810; }
     .cred-list li::before { content: "·"; position: absolute; left: 0; color: #D4A853; }
-    .area-note { font-size: 0.82rem; color: #9A8060; font-style: italic; margin-top: 0.5rem; }
     @media (max-width: 720px) { .main-inner { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
   <HeaderEn />
   <main>
-
     <section class="page-hero">
       <div class="inner">
         <div class="breadcrumb"><a href="/en/">Home</a> › <a href="/en/contact">Areas Served</a> › Brampton</div>
         <div class="page-label">Chinese Family Lawyer · Brampton</div>
         <h1>Chinese Family Lawyer in Brampton</h1>
-        <p class="tagline">Mandarin & English · Peel Region court experience · Divorce · Custody · 647-930-6688</p>
+        <p class="tagline">Mandarin & English · Peel Region court experience · Decision-Making · Parenting Time · 647-930-6688</p>
       </div>
     </section>
-
     <section class="main-section">
       <div class="main-inner">
-
         <div class="main-content">
 
           <div class="card highlight">
-            <h2>Serving Brampton in Mandarin & English</h2>
-            <p>Brampton's Chinese-Canadian community continues to grow rapidly. Miao He provides full Mandarin family law services to Brampton clients, with direct experience in Peel Region courts — covering divorce litigation, child custody, spousal and child support, and property division.</p>
-            <p>Miao He (何淼) is dual-licensed in Ontario (LSO #83315K) and China, with 15+ years of family law experience and 20+ court appearances per month. She handles all matters personally — in Mandarin and English, with no interpreter needed.</p>
+            <h2>Chinese Family Lawyer with Peel Region Court Experience</h2>
+            <p>Brampton is Peel Region's core city — one of Canada's fastest-growing urban areas, with a rapidly expanding Chinese-Canadian community. Miao He provides full Mandarin family law services to Brampton clients and is familiar with Peel Region court practices and local family law procedure.</p>
           </div>
 
           <div class="card">
-            <h2>Family Law Services Available in Brampton</h2>
-            <ul class="services-list">
-              <li>Divorce Litigation</li>
-              <li>Child Custody &amp; Access</li>
-              <li>Child Support / Spousal Support</li>
-              <li>Property Division / NFP Equalization</li>
-              <li>Cross-Border Asset Recovery (Canada &amp; China)</li>
-              <li>Emergency Motions / Mareva Injunction</li>
-              <li>Marriage Contract / Prenuptial Agreement</li>
-              <li>Separation Agreement</li>
-              <li>Mediation</li>
-            </ul>
-            <p class="area-note">Serving all of Brampton and the broader Peel Region.</p>
+            <h2>Divorce &amp; Property Division in Brampton</h2>
+            <p>Brampton families commonly own townhouses and semi-detached homes. At the time of divorce, the increase in property value during the marriage must be shared through Equalization of Net Family Property. Miao He helps clients accurately establish the <strong>valuation date</strong> — the date of separation — and the value of pre-marital assets to be excluded, ensuring a fair and legally correct division.</p>
+          </div>
+
+          <div class="card">
+            <h2>Child Custody Under Ontario's Updated Law</h2>
+            <p>Ontario updated the Children, Youth and Family Services Act in 2023. The term "custody" is now replaced by <strong>Decision-Making Responsibility</strong> (who makes major decisions about the child's life) and <strong>Parenting Time</strong> (when the child is with each parent). Miao He drafts detailed Parenting Plans that cover education, medical decisions, religious observance, holidays, and vacation schedules — reducing future disputes.</p>
+          </div>
+
+          <div class="card">
+            <h2>Marriage Contract Requirements in Ontario</h2>
+            <p>A Marriage Contract (Prenuptial Agreement) in Ontario must be reviewed by independent legal counsel for each party to be enforceable. Miao He provides full Chinese-language drafting and ensures the agreement meets Ontario court scrutiny standards — a poorly drafted contract can be set aside by a court as unconscionable.</p>
+          </div>
+
+          <div class="card">
+            <h2>Domestic Violence &amp; Emergency Orders</h2>
+            <p>If you are facing domestic violence or need to urgently protect yourself and your children, Miao He can assist in obtaining an <strong>Emergency Restraining Order</strong> and <strong>Exclusive Possession of the Matrimonial Home</strong> — removing an abusive spouse from the shared home while legal proceedings continue.</p>
           </div>
 
           <div class="card">
             <h2>Frequently Asked Question</h2>
-            <p><strong>Can I find a Mandarin-speaking family lawyer in Brampton?</strong></p>
-            <p>Yes. Miao He provides full Mandarin family law services to Brampton clients. She has Peel Region court experience and conducts all consultations and proceedings in Mandarin and English. Call 647-930-6688.</p>
+            <p class="faq-q">Brampton family law cases — which court?</p>
+            <p>Brampton cases are heard at the Ontario Court of Justice or Superior Court of Justice in Peel Region, depending on the type of proceeding. Miao He is familiar with both courts and will advise on the right venue for your matter.</p>
           </div>
-
         </div>
 
         <aside class="main-sidebar">
-
           <div class="cta-block">
             <h2>Book a Consultation</h2>
             <p>Initial consultation 30 min · $220 + HST · No obligation</p>
             <a href="tel:6479306688" class="btn-phone">📞 647-930-6688</a><br/>
             <a href="mailto:miao@miaohelaw.ca" class="btn-email">miao@miaohelaw.ca</a>
           </div>
-
           <div class="sidebar-card">
             <h3>Office Address</h3>
-            <p>H. LAW FIRM 恒. 律师事务所<br/>
-            208 - 7050 Woodbine Avenue<br/>
-            Markham, Ontario L3R 4G8</p>
+            <p>H. LAW FIRM 恒. 律师事务所<br/>208 - 7050 Woodbine Avenue<br/>Markham, Ontario L3R 4G8</p>
           </div>
-
           <div class="sidebar-card">
             <h3>Licences &amp; Credentials</h3>
             <ul class="cred-list">
@@ -178,12 +165,10 @@ import Footer from '../../components/Footer.astro';
               <li>20+ court appearances / month</li>
             </ul>
           </div>
-
           <div class="sidebar-card">
             <h3>Languages</h3>
             <p>Mandarin (普通话) · English</p>
           </div>
-
           <div class="sidebar-card">
             <h3>Other Areas Served</h3>
             <p style="font-size:0.8rem;line-height:1.8;">
@@ -193,17 +178,14 @@ import Footer from '../../components/Footer.astro';
               <a href="/en/mississauga-chinese-family-lawyer">Mississauga</a> ·
               <a href="/en/brampton-chinese-family-lawyer">Brampton</a> ·
               <a href="/en/vaughan-chinese-family-lawyer">Vaughan</a> ·
-              <a href="/en/north-york-chinese-family-lawyer">North York</a> ·
-              <a href="/en/scarborough-chinese-family-lawyer">Scarborough</a> ·
+              <a href="/en/ottawa-chinese-family-lawyer">Ottawa</a> ·
               <a href="/en/hamilton-chinese-family-lawyer">Hamilton</a> ·
-              <a href="/en/ottawa-chinese-family-lawyer">Ottawa</a>
+              <a href="/en/windsor-chinese-family-lawyer">Windsor</a>
             </p>
           </div>
-
         </aside>
       </div>
     </section>
-
   </main>
   <Footer />
 </body>

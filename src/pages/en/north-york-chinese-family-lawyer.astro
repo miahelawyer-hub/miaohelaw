@@ -6,13 +6,10 @@ import Footer from '../../components/Footer.astro';
 <!doctype html>
 <html lang="en">
 <head>
-  <BaseHead
-    title="Chinese Family Lawyer North York | Mandarin Divorce Lawyer | Miao He"
-    description="Serving Chinese-Canadian families along Finch, Sheppard, and Yonge corridors in North York. Full Mandarin family law — divorce, custody, support. 647-930-6688."
-  />
-  <meta name="keywords" content="Chinese family lawyer North York,Mandarin divorce lawyer North York,family lawyer North York,Chinese lawyer North York,divorce lawyer North York,Finch Sheppard Chinese lawyer,Miao He North York" />
+  <BaseHead title="Chinese Family Lawyer North York | Mandarin Divorce Lawyer | Miao He" description="Serving North York's Chinese-Canadian community along Finch, Sheppard and Yonge corridors. Condo matrimonial home rights, cross-border assets, full Mandarin service. 647-930-6688." />
+  <meta name="keywords" content="Chinese family lawyer North York,Mandarin divorce lawyer North York,family lawyer North York,Chinese lawyer North York,divorce lawyer North York,Finch Sheppard Chinese lawyer,condo matrimonial home divorce" />
   <meta property="og:title" content="Chinese Family Lawyer North York | Mandarin Divorce Lawyer | Miao He" />
-  <meta property="og:description" content="Serving Chinese-Canadian families along Finch, Sheppard, and Yonge corridors in North York. Full Mandarin family law — divorce, custody, support. 647-930-6688." />
+  <meta property="og:description" content="Serving North York's Chinese-Canadian community along Finch, Sheppard and Yonge corridors. Condo matrimonial home rights, cross-border assets, full Mandarin service. 647-930-6688." />
   <meta property="og:url" content="https://www.miaohelaw.ca/en/north-york-chinese-family-lawyer" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://www.miaohelaw.ca/og-image.jpg" />
@@ -29,11 +26,7 @@ import Footer from '../../components/Footer.astro';
       "url": "https://www.miaohelaw.ca/en/north-york-chinese-family-lawyer",
       "telephone": "+1-647-930-6688",
       "email": "miao@miaohelaw.ca",
-      "areaServed": {
-        "@type": "City",
-        "name": "North York",
-        "containedInPlace": {"@type": "Province", "name": "Ontario"}
-      },
+      "areaServed": {"@type": "City", "name": "North York", "containedInPlace": {"@type": "Province", "name": "Ontario"}},
       "provider": {
         "@type": "Person",
         "name": "Miao He",
@@ -58,13 +51,11 @@ import Footer from '../../components/Footer.astro';
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Is there a Chinese-speaking family lawyer serving North York?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Yes. Miao He provides full Mandarin family law services to North York clients. She has experience in Toronto and York Region courts and handles all matters in Mandarin and English. Call 647-930-6688."}
-        }
-      ]
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Is there a Mandarin-speaking divorce lawyer with experience in North York condo cases?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Yes. Miao He has experience with matrimonial home rights in condominiums — a common issue in North York. The non-titled spouse has equal right to occupy the matrimonial home and cannot be unilaterally removed. Call 647-930-6688 to discuss your situation."}
+      }]
     }
   ]
   </script>
@@ -84,10 +75,13 @@ import Footer from '../../components/Footer.astro';
     .card { background: #fff; border: 1px solid #EDE8DF; border-radius: 12px; padding: 1.75rem; margin-bottom: 1.5rem; }
     .card h2 { font-size: 1.1rem; font-weight: 700; color: #2C1810; margin: 0 0 1rem; }
     .card p { font-size: 0.92rem; line-height: 1.7; color: #2C1810; margin-bottom: 0.75rem; }
+    .card p:last-child { margin-bottom: 0; }
+    .highlight { border-color: #D4A853; box-shadow: 0 4px 20px rgba(212,168,83,0.12); }
+    .note { background: #F5EFE0; border-left: 3px solid #D4A853; padding: 0.75rem 1rem; border-radius: 0 6px 6px 0; font-size: 0.88rem; line-height: 1.6; color: #6B5A3A; margin-top: 0.75rem; }
     .services-list { list-style: none; padding: 0; margin: 0.5rem 0; }
     .services-list li { font-size: 0.9rem; padding: 0.3rem 0; border-bottom: 1px solid #F5EFE0; }
     .services-list li:last-child { border-bottom: none; }
-    .highlight { border-color: #D4A853; box-shadow: 0 4px 20px rgba(212,168,83,0.12); }
+    .faq-q { font-weight: 700; margin-bottom: 0.4rem; }
     .cta-block { background: #2C1810; border-radius: 12px; padding: 1.75rem; margin-bottom: 1.5rem; text-align: center; }
     .cta-block h2 { color: #D4A853; font-size: 1.1rem; margin: 0 0 0.5rem; }
     .cta-block p { color: rgba(255,255,255,0.8); font-size: 0.88rem; margin: 0 0 1rem; }
@@ -99,14 +93,12 @@ import Footer from '../../components/Footer.astro';
     .cred-list { list-style: none; padding: 0; margin: 0; }
     .cred-list li { font-size: 0.83rem; padding: 0.25rem 0; padding-left: 1rem; position: relative; color: #2C1810; }
     .cred-list li::before { content: "·"; position: absolute; left: 0; color: #D4A853; }
-    .area-note { font-size: 0.82rem; color: #9A8060; font-style: italic; margin-top: 0.5rem; }
     @media (max-width: 720px) { .main-inner { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
   <HeaderEn />
   <main>
-
     <section class="page-hero">
       <div class="inner">
         <div class="breadcrumb"><a href="/en/">Home</a> › <a href="/en/contact">Areas Served</a> › North York</div>
@@ -115,58 +107,53 @@ import Footer from '../../components/Footer.astro';
         <p class="tagline">Serving Finch · Sheppard · Yonge corridor · Full Mandarin service · 647-930-6688</p>
       </div>
     </section>
-
     <section class="main-section">
       <div class="main-inner">
-
         <div class="main-content">
 
           <div class="card highlight">
-            <h2>Serving North York in Mandarin & English</h2>
-            <p>North York's Finch Avenue and Sheppard Avenue corridors are home to a large and established Chinese-Canadian community. Miao He provides full Mandarin family law services to clients throughout North York, handling divorce litigation, child custody disputes, and property division without the need for interpreters.</p>
-            <p>Miao He (何淼) is dual-licensed in Ontario (LSO #83315K) and China, with 15+ years of family law experience and 20+ court appearances per month. She handles all matters personally — in Mandarin and English, with no interpreter needed.</p>
+            <h2>Chinese Family Lawyer Serving North York's Finch, Sheppard &amp; Yonge Communities</h2>
+            <p>North York is one of the GTA's most densely Chinese-Canadian areas. The Finch Avenue and Sheppard Avenue corridors are home to large communities from Mainland China, Hong Kong, and Taiwan. Miao He provides full Mandarin family law services to North York clients — no interpreter needed, every detail of your case communicated accurately.</p>
           </div>
 
           <div class="card">
-            <h2>Family Law Services Available in North York</h2>
+            <h2>Special Considerations for North York Divorce Cases</h2>
+            <p><strong>Condo matrimonial home rights:</strong> A large proportion of North York Chinese-Canadian families live in condominiums. When separating, the question of who has the right to stay in the matrimonial home is one of the most common disputes. Under Ontario law, both spouses have equal rights to possess the matrimonial home — a non-titled spouse cannot be unilaterally forced out. Miao He can advise on exclusive possession orders and your rights as a non-titled spouse.</p>
+            <p><strong>Cross-provincial and cross-border assets:</strong> Many North York Chinese-Canadian families hold property in China or assets in multiple countries. Miao He holds dual licences in Ontario and China and handles cross-border property division directly — without referring you to a separate lawyer for the China portion.</p>
+            <p><strong>Court access:</strong> North York divorce matters are handled at the Toronto Superior Court of Justice, which is accessible by TTC. Miao He has extensive court experience in Toronto and can guide you through every step of the process.</p>
+          </div>
+
+          <div class="card">
+            <h2>Family Law Services for North York Clients</h2>
             <ul class="services-list">
-              <li>Divorce Litigation</li>
-              <li>Child Custody &amp; Access</li>
-              <li>Child Support / Spousal Support</li>
-              <li>Property Division / NFP Equalization</li>
-              <li>Cross-Border Asset Recovery (Canada &amp; China)</li>
-              <li>Emergency Motions / Mareva Injunction</li>
-              <li>Marriage Contract / Prenuptial Agreement</li>
-              <li>Separation Agreement</li>
-              <li>Mediation</li>
+              <li>Divorce Litigation &amp; Uncontested Divorce</li>
+              <li>Child Custody (Decision-Making Responsibility) &amp; Parenting Time</li>
+              <li>Child Support &amp; Spousal Support</li>
+              <li>Property Division (NFP Equalization)</li>
+              <li>Matrimonial Home — Occupation Rights &amp; Exclusive Possession Orders</li>
+              <li>Marriage Contract &amp; Separation Agreement</li>
+              <li>Cross-Border Asset Recovery (Chinese real estate, offshore accounts)</li>
             </ul>
-            <p class="area-note">Serving North York including Finch, Sheppard, Willowdale, Don Mills, and Yonge-Eglinton area.</p>
           </div>
 
           <div class="card">
             <h2>Frequently Asked Question</h2>
-            <p><strong>Is there a Chinese-speaking family lawyer serving North York?</strong></p>
-            <p>Yes. Miao He provides full Mandarin family law services to North York clients. She has experience in Toronto and York Region courts and handles all matters in Mandarin and English. Call 647-930-6688.</p>
+            <p class="faq-q">Is there a Mandarin-speaking divorce lawyer with experience in North York condo cases?</p>
+            <p>Yes. Miao He has handled many North York cases involving condo matrimonial homes. The non-titled spouse has equal rights to occupy the home and <strong>cannot be unilaterally removed</strong>. If your spouse has locked you out or is pressuring you to leave, call 647-930-6688 immediately.</p>
           </div>
-
         </div>
 
         <aside class="main-sidebar">
-
           <div class="cta-block">
             <h2>Book a Consultation</h2>
             <p>Initial consultation 30 min · $220 + HST · No obligation</p>
             <a href="tel:6479306688" class="btn-phone">📞 647-930-6688</a><br/>
             <a href="mailto:miao@miaohelaw.ca" class="btn-email">miao@miaohelaw.ca</a>
           </div>
-
           <div class="sidebar-card">
             <h3>Office Address</h3>
-            <p>H. LAW FIRM 恒. 律师事务所<br/>
-            208 - 7050 Woodbine Avenue<br/>
-            Markham, Ontario L3R 4G8</p>
+            <p>H. LAW FIRM 恒. 律师事务所<br/>208 - 7050 Woodbine Avenue<br/>Markham, Ontario L3R 4G8</p>
           </div>
-
           <div class="sidebar-card">
             <h3>Licences &amp; Credentials</h3>
             <ul class="cred-list">
@@ -178,12 +165,10 @@ import Footer from '../../components/Footer.astro';
               <li>20+ court appearances / month</li>
             </ul>
           </div>
-
           <div class="sidebar-card">
             <h3>Languages</h3>
             <p>Mandarin (普通话) · English</p>
           </div>
-
           <div class="sidebar-card">
             <h3>Other Areas Served</h3>
             <p style="font-size:0.8rem;line-height:1.8;">
@@ -193,17 +178,14 @@ import Footer from '../../components/Footer.astro';
               <a href="/en/mississauga-chinese-family-lawyer">Mississauga</a> ·
               <a href="/en/brampton-chinese-family-lawyer">Brampton</a> ·
               <a href="/en/vaughan-chinese-family-lawyer">Vaughan</a> ·
-              <a href="/en/north-york-chinese-family-lawyer">North York</a> ·
-              <a href="/en/scarborough-chinese-family-lawyer">Scarborough</a> ·
+              <a href="/en/ottawa-chinese-family-lawyer">Ottawa</a> ·
               <a href="/en/hamilton-chinese-family-lawyer">Hamilton</a> ·
-              <a href="/en/ottawa-chinese-family-lawyer">Ottawa</a>
+              <a href="/en/windsor-chinese-family-lawyer">Windsor</a>
             </p>
           </div>
-
         </aside>
       </div>
     </section>
-
   </main>
   <Footer />
 </body>
