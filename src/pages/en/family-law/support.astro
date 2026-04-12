@@ -7,76 +7,247 @@ import Footer from '../../../components/Footer.astro';
 <html lang="en">
 <head>
   <BaseHead
-    title="Spousal & Child Support Lawyer Ontario | Hidden Income · FRO | Miao He"
-    description="Child support and spousal support in Ontario. Hidden income investigation, self-employment attribution, overseas income tracing, FRO enforcement. 647-930-6688."
+    title="Child Support & Spousal Support Lawyer Ontario | Imputed Income | Miao He"
+    description="Child support and spousal support in Ontario — imputed income, self-employment attribution, hidden income investigation, FRO enforcement. Chinese family lawyer serving Toronto and GTA. Mandarin & English. 647-930-6688."
   />
-  <meta name="keywords" content="spousal support lawyer Ontario,child support lawyer Toronto,hidden income divorce Ontario,self employed support calculation,FRO enforcement lawyer,overseas income spousal support" />
+  <meta name="keywords" content="child support lawyer Ontario,spousal support lawyer Toronto,imputed income Ontario family law,hidden income divorce Ontario,self employed support calculation Ontario,FRO enforcement lawyer GTA,child support guidelines Ontario,Chinese family lawyer support,Mandarin support lawyer Ontario,spousal support SSAG Ontario" />
+  <meta property="og:title" content="Child Support & Spousal Support Lawyer | Miao He — Ontario Family Law" />
+  <meta property="og:description" content="Support calculations depend on accurate income figures. Miao He investigates hidden income, applies imputed income where necessary, and ensures the right amount is paid or received. 647-930-6688." />
+  <meta property="og:url" content="https://www.miaohelaw.ca/en/family-law/support" />
   <link rel="canonical" href="https://www.miaohelaw.ca/en/family-law/support" />
   <link rel="alternate" hreflang="zh" href="https://www.miaohelaw.ca/family-law/support" />
   <link rel="alternate" hreflang="en" href="https://www.miaohelaw.ca/en/family-law/support" />
-  <style>
-    *{margin:0;padding:0;box-sizing:border-box}body{font-family:Georgia,serif;background:#FDFBF7;color:#E8D5B0}a{color:inherit;text-decoration:none}
-    .lang-bar{background:#ffffff;text-align:right;padding:.4rem 2rem;font-size:.8rem}.lang-bar a{color:#5A4A3A;margin-left:1rem}.lang-bar a.active{color:#8B6914;font-weight:600}
-    .page{max-width:860px;margin:0 auto;padding:3rem 2rem}
-    .breadcrumb{font-size:.78rem;color:#7A6A5A;margin-bottom:2rem}.breadcrumb a{color:#D4A853}
-    h1{font-size:2rem;color:#1A1208;margin-bottom:.5rem}
-    .lead{color:#5A4A3A;font-size:1rem;line-height:1.7;margin-bottom:2rem}
-    .card{background:#ffffff;border:1px solid #E8E0D5;border-radius:8px;padding:2rem;margin-bottom:1.5rem}
-    .card h2{color:#8B6914;font-size:1rem;margin-bottom:1rem;letter-spacing:.05em}
-    .card p{color:#5A4A3A;font-size:.88rem;line-height:1.8;margin-bottom:.8rem}
-    .card ul{list-style:none;padding:0}.card ul li{color:#5A4A3A;font-size:.85rem;padding:.3rem 0 .3rem 1.2rem;position:relative}.card ul li::before{content:"·";position:absolute;left:0;color:#D4A853}
-    .faq-item{border-bottom:1px solid #3A3020;padding:1rem 0}.faq-item:last-child{border-bottom:none}
-    .faq-q{color:#1A1208;font-size:.9rem;font-weight:600;margin-bottom:.4rem}
-    .faq-a{color:#7A6A5A;font-size:.83rem;line-height:1.7}
-    .cta{text-align:center;padding:2rem}.cta h2{color:#8B6914;margin-bottom:1rem}
-    .btn-primary{display:inline-block;background:#D4A853;color:#1A1208;padding:.75rem 2rem;border-radius:6px;font-weight:700;margin:.5rem}
-    .btn-secondary{display:inline-block;border:1px solid #D4A853;color:#8B6914;padding:.75rem 2rem;border-radius:6px;margin:.5rem}
-  </style>
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "@id": "https://www.miaohelaw.ca/en/family-law/support#service",
+      "name": "Miao He — Ontario Child & Spousal Support",
+      "url": "https://www.miaohelaw.ca/en/family-law/support",
+      "telephone": "+1-647-930-6688",
+      "email": "miao@miaohelaw.ca",
+      "provider": {
+        "@type": "Person",
+        "name": "Miao He",
+        "alternateName": ["何淼", "Mia He"],
+        "jobTitle": "Family Law Lawyer",
+        "knowsLanguage": ["zh-Hans", "en"],
+        "hasCredential": [
+          {"@type": "EducationalOccupationalCredential", "credentialCategory": "Law Society of Ontario — Member #83315K"},
+          {"@type": "EducationalOccupationalCredential", "credentialCategory": "China Bar Association — Licensed"},
+          {"@type": "EducationalOccupationalCredential", "credentialCategory": "Expert Witness — Chinese Family Law & Marriage Law"},
+          {"@type": "EducationalOccupationalCredential", "credentialCategory": "Notary Public — Ontario"}
+        ]
+      },
+      "serviceType": ["Child Support", "Spousal Support", "Imputed Income", "Support Variation", "FRO Enforcement"],
+      "areaServed": {"@type": "Province", "name": "Ontario"},
+      "inLanguage": ["en", "zh"]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.miaohelaw.ca/en/"},
+        {"@type": "ListItem", "position": 2, "name": "Family Law", "item": "https://www.miaohelaw.ca/en/"},
+        {"@type": "ListItem", "position": 3, "name": "Support", "item": "https://www.miaohelaw.ca/en/family-law/support"}
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "We agreed not to pay child support. Will the court accept this?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Generally not. In Miao He's experience, if child support arrangements are absent or clearly inadequate, judges will repeatedly issue endorsements requiring the parties to provide further explanation — effectively stalling the divorce proceedings until the children's interests are properly addressed. Child support is the child's legal right, not an option parents can waive by agreement."}
+        },
+        {
+          "@type": "Question",
+          "name": "My spouse quit their job before separation to reduce child support. What can I do?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Ontario family law has a direct response to this: imputed income. If a payor has the ability to work but chooses not to, the court can impute income based on their historical earnings or actual living expenses, and calculate support on that basis. Deliberately not working does not eliminate the support obligation. The key is evidence — consult a lawyer early to understand what records to preserve."}
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between child support and spousal support?",
+          "acceptedAnswer": {"@type": "Answer", "text": "They are fundamentally different. Child support is mandatory under the Federal Child Support Guidelines — it cannot be waived by agreement and is calculated based on the payor's income and the number of children. Spousal support is not mandatory in every case. Courts assess entitlement based on factors including the length of the marriage, income disparity, and career sacrifices made during the marriage. The parties can also negotiate spousal support terms in an agreement."}
+        },
+        {
+          "@type": "Question",
+          "name": "My spouse is self-employed and reports very low income. What can I do?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Courts have the authority to impute income to a self-employed payor where their reported income does not reflect their actual earning capacity. Financial disclosure tools and analysis of lifestyle and business expenses can be used to establish a more accurate income figure for support purposes. Miao He regularly handles these cases. Call 647-930-6688."}
+        }
+      ]
+    }
+  ]
+  </script>
 </head>
 <body>
-  <div class="lang-bar"><a href="/family-law/support">中文</a><a href="/en/family-law/support" class="active">EN</a></div>
   <HeaderEn />
-  <div class="page">
-    <div class="breadcrumb"><a href="/en/">Home</a> › Family Law › Spousal & Child Support</div>
-    <h1>Spousal & Child Support</h1>
-    <p class="lead">Support calculations depend entirely on accurate income figures. We specialize in uncovering hidden income, tracing overseas earnings, and ensuring the right amount is paid — or received.</p>
-
-    <div class="card">
-      <h2>WHAT WE HANDLE</h2>
-      <ul>
-        <li>Child support — Federal Child Support Guidelines calculations</li>
-        <li>Spousal support — SSAG range analysis</li>
-        <li>Hidden income investigation</li>
-        <li>Self-employment income attribution</li>
-        <li>Overseas income tracing — including China</li>
-        <li>FRO (Family Responsibility Office) enforcement</li>
-        <li>Variation and termination of support orders</li>
-        <li>Interim support motions</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2>FREQUENTLY ASKED QUESTIONS</h2>
-      <div class="faq-item">
-        <div class="faq-q">My spouse is self-employed and claims low income. What can I do?</div>
-        <div class="faq-a">Courts have the power to impute income to a self-employed spouse where their reported income does not reflect their true earning capacity. We use financial disclosure tools and forensic analysis to establish the actual income for support purposes.</div>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="/en/">Home</a> › <a href="/en/">Family Law</a> › Child & Spousal Support
+        </div>
+        <h1>Child Support & Spousal Support</h1>
+        <p class="hero-sub">Imputed income · Hidden income investigation · FRO enforcement · Mandarin & English · 647-930-6688</p>
       </div>
-      <div class="faq-item">
-        <div class="faq-q">How is spousal support calculated in Ontario?</div>
-        <div class="faq-a">Spousal support is calculated using the Spousal Support Advisory Guidelines (SSAG), which produce a range based on the incomes of both parties and the length of the relationship. The amount and duration depend on factors including economic disadvantage caused by the marriage.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q">My ex is not paying support. What are my options?</div>
-        <div class="faq-a">You can enforce through the Family Responsibility Office (FRO), which has broad powers including wage garnishment, driver's licence suspension, and passport denial. We can also bring a contempt motion directly to the court.</div>
-      </div>
-    </div>
+    </section>
 
-    <div class="card cta">
-      <h2>Book a Consultation</h2>
-      <a href="tel:6479306688" class="btn-primary">📞 647-930-6688</a>
-      <a href="mailto:miao@miaohelaw.ca" class="btn-secondary">Email Us</a>
-    </div>
-  </div>
+    <section class="content-section">
+      <div class="container content-grid">
+        <div class="main-content">
+
+          <div class="definition-box">
+            <p>Ontario family law deals with two fundamentally different types of support: <strong>Child Support</strong> and <strong>Spousal Support</strong>. They operate under different legal frameworks, different calculation methods, and different levels of flexibility. Confusing them — or assuming the same rules apply to both — leads to serious strategic mistakes. Understanding the distinction is the essential starting point.</p>
+          </div>
+
+          <h2>Child Support: What Many People Don't Know</h2>
+
+          <h3>"We Agreed Not to Pay Child Support" — The Court May Not Accept This</h3>
+          <p>This is one of the most common misconceptions in Chinese-Canadian divorce cases. Many separating couples reach a mutual "agreement" that neither party will pay child support, or simply leave the issue out of their separation documents. They assume that if both parents agree, the court will respect that decision.</p>
+          <p>The reality is quite different. Based on Miao He's experience handling contested divorces, <strong>when child support arrangements are absent or plainly inadequate, judges will issue endorsements requiring the parties to provide further explanation — repeatedly, if necessary</strong>, until the children's situation is properly addressed. While there is no explicit statutory provision stating that a divorce order will be withheld for missing child support, this is the practical reality: judges are focused on protecting the children, and they will not simply accept a parental agreement to waive support obligations.</p>
+          <p>The judge's concern is straightforward: once the divorce is granted, someone needs to be responsible for the children's financial needs.</p>
+
+          <div class="key-point">
+            <p>Child support is the child's legal right — not a parental option that can be negotiated away.</p>
+          </div>
+
+          <h3>Child Support Calculation: Fixed by Formula, Not Negotiable</h3>
+          <p>Child support in Ontario is calculated under the <strong>Federal Child Support Guidelines</strong>, based primarily on the payor's annual income and the number of children. The figures are set by a national table and are not subject to personal negotiation. In addition, children's special and extraordinary expenses — such as school fees, medical costs, and extracurricular activities — are shared between the parents in proportion to their incomes. These are referred to as Section 7 expenses.</p>
+          <p>Child support is not a number that can be bargained down. If circumstances change — a significant shift in income or parenting time — either party can apply for a variation, but it must be based on a genuine change in circumstances, not simply a change of preference.</p>
+
+          <h2>When a Spouse Quits to Avoid Support: Ontario Has an Answer</h2>
+          <p>This situation comes up regularly: one spouse, anticipating separation, suddenly resigns, takes a lower-paying position, or claims they cannot find work — all to reduce their child support obligation before proceedings begin.</p>
+          <p>Ontario family law addresses this directly through the doctrine of <strong>imputed income</strong>. Where a payor has the capacity to earn but chooses not to, the court can impute income — assigning an income figure based on their historical earnings or their actual cost of living — and calculate support obligations on that basis. <strong>Deliberately choosing not to work does not eliminate the support obligation.</strong></p>
+
+          <h3>Evidence Is Everything — and Evidence Must Be Gathered Early</h3>
+          <p>There is a critical condition: <strong>courts do not investigate on their own. The burden of proof rests with the party seeking imputation.</strong> You must provide evidence demonstrating the other party's earning capacity, historical income, financial lifestyle, and any pattern suggesting deliberate income reduction.</p>
+          <p>The problem is that once parties have separated, much of this evidence becomes harder to access. This is yet another reason why early consultation matters. Miao He advises clients before or at the time of separation on exactly what records to preserve and where to find relevant income information — building the evidentiary foundation for proceedings before it disappears.</p>
+
+          <h2>Spousal Support: Fundamentally Different from Child Support</h2>
+          <p>Spousal support and child support are governed by entirely different legal principles. The key distinctions are:</p>
+          <ul class="content-list">
+            <li><strong>Not mandatory in every case</strong>: Spousal support does not arise automatically. Courts assess entitlement based on the length of the marriage, the income gap between spouses, career sacrifices one party made during the marriage, and economic disadvantage suffered as a result</li>
+            <li><strong>Flexible standards</strong>: The Spousal Support Advisory Guidelines (SSAG) provide a reference range, but judges are not required to follow them strictly. Each case is assessed on its specific facts</li>
+            <li><strong>Negotiable by agreement</strong>: Unlike child support, spousal support can be addressed — and even waived entirely — through a properly executed separation agreement or marriage contract, provided both parties have made complete financial disclosure and obtained independent legal advice</li>
+          </ul>
+          <p>Many Chinese-Canadian clients conflate the two: assuming spousal support is also mandatory, or assuming child support can also be waived by agreement. Clarifying this distinction is the foundation of any effective support strategy.</p>
+
+          <h2>FRO Enforcement: When the Other Side Refuses to Pay</h2>
+          <p>When a support order exists and the payor refuses to comply, the Family Responsibility Office (FRO) has broad enforcement powers: wage garnishment, bank account seizure, driver's licence suspension, and passport denial. Miao He can also bring a contempt motion directly to the court where FRO enforcement is insufficient or too slow for the circumstances.</p>
+
+          <div class="qa-block">
+            <h3>Q: We both agreed to skip child support in our separation agreement. Now the court keeps asking for more information. Why?</h3>
+            <p>A: This is likely because the judge is not satisfied with how the children's financial needs have been addressed. Courts will issue repeated endorsements requesting explanation until the children's interests are properly protected. You need to revisit the child support terms. Call Miao He at 647-930-6688 to discuss how to restructure the arrangement and move the divorce forward.</p>
+          </div>
+
+          <div class="qa-block">
+            <h3>Q: My spouse quit their job right before we separated and now claims to have no income. How do I fight this?</h3>
+            <p>A: Apply to have income imputed. The court can assign an income based on prior earnings or lifestyle expenditure and calculate support on that number. The critical step is evidence — pay stubs, tax returns, bank records, and lifestyle spending all play a role. Start preserving this information now. Call 647-930-6688.</p>
+          </div>
+
+          <div class="qa-block">
+            <h3>Q: Can spousal support be waived in a separation agreement?</h3>
+            <p>A: Yes, with caution. Spousal support can be addressed — including complete waiver — in a properly executed agreement where both parties have made full financial disclosure and received independent legal advice. An agreement that lacks these elements is at risk of being set aside by a court later. Miao He can advise you on how to structure the agreement to make it hold up.</p>
+          </div>
+
+          <div class="cta-box">
+            <h3>Book a Support Consultation</h3>
+            <p>Initial consultation 30 minutes · $220 + HST · Mandarin & English · Serving Toronto, Markham, GTA</p>
+            <a href="/en/contact" class="btn-primary">Book Now</a>
+            <a href="tel:6479306688" class="btn-secondary">📞 647-930-6688</a>
+          </div>
+        </div>
+
+        <aside class="sidebar">
+          <div class="sidebar-card">
+            <h3>Contact Miao He</h3>
+            <p>📞 <a href="tel:6479306688">647-930-6688</a></p>
+            <p>📧 <a href="mailto:miao@miaohelaw.ca">miao@miaohelaw.ca</a></p>
+            <p>208-7050 Woodbine Ave<br/>Markham, ON L3R 4G8</p>
+          </div>
+          <div class="sidebar-card">
+            <h3>Support Services</h3>
+            <ul>
+              <li>Child support calculation</li>
+              <li>Section 7 special expenses</li>
+              <li>Spousal support (SSAG analysis)</li>
+              <li>Imputed income applications</li>
+              <li>Hidden income investigation</li>
+              <li>Support variation</li>
+              <li>FRO enforcement</li>
+            </ul>
+          </div>
+          <div class="sidebar-card">
+            <h3>Related Services</h3>
+            <ul>
+              <li><a href="/en/family-law/child-custody">Child Custody</a></li>
+              <li><a href="/en/family-law/divorce-litigation">Divorce Litigation</a></li>
+              <li><a href="/en/family-law/domestic-contracts">Separation Agreements</a></li>
+              <li><a href="/en/family-law/cross-border-assets">Cross-Border Assets</a></li>
+            </ul>
+          </div>
+          <div class="sidebar-card">
+            <h3>Languages</h3>
+            <p>🇨🇳 Mandarin / Putonghua</p>
+            <p>🇨🇦 English</p>
+          </div>
+          <div class="sidebar-card">
+            <h3>Serving</h3>
+            <p style="font-size:0.88rem;color:#555;line-height:1.7;">Toronto · Markham · Richmond Hill · Mississauga · Vaughan · Scarborough · North York · GTA</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
   <Footer />
 </body>
 </html>
+<style>
+  *{box-sizing:border-box}
+  body{font-family:Georgia,serif;background:#faf8f5;color:#2C1810;margin:0}
+  .container{max-width:1100px;margin:0 auto;padding:0 1.5rem}
+  .page-hero{background:linear-gradient(135deg,#2C1810 0%,#4A2C1A 100%);color:white;padding:3.5rem 0 2.5rem}
+  .page-hero h1{font-size:2rem;margin:0.5rem 0 0;color:#ffffff;line-height:1.3}
+  .hero-sub{color:#D4A853;margin:0.5rem 0 0;font-size:1rem;line-height:1.6}
+  .breadcrumb{font-size:0.8rem;opacity:0.65;margin-bottom:0.75rem}
+  .breadcrumb a{color:white;text-decoration:none}
+  .content-section{padding:3rem 0}
+  .content-grid{display:grid;grid-template-columns:1fr 300px;gap:3rem;align-items:start}
+  .main-content p{line-height:2;margin:0 0 1.6rem;color:#3a3a3a;font-size:0.98rem}
+  .main-content h2{color:#2C1810;font-size:1.2rem;margin:3rem 0 1rem;padding-top:0.5rem;border-top:2px solid #f0ebe3;line-height:1.4}
+  .main-content h3{color:#9A6820;font-size:1rem;margin:2rem 0 0.75rem;font-weight:700}
+  .definition-box{background:#FDF6EC;border-left:4px solid #D4A853;padding:1.25rem 1.5rem;margin-bottom:2rem;border-radius:0 8px 8px 0}
+  .definition-box p{margin:0;line-height:1.8}
+  .key-point{background:#fff8ee;border:1.5px solid #D4A853;border-radius:10px;padding:1.25rem 1.5rem;margin:1.75rem 0;position:relative}
+  .key-point::before{content:"💡";position:absolute;top:-0.75rem;left:1rem;background:#fff8ee;padding:0 0.3rem;font-size:1rem}
+  .key-point p{margin:0;font-weight:600;color:#2C1810;line-height:1.7;font-size:0.98rem}
+  .content-list{padding-left:0;margin:1rem 0 1.6rem;list-style:none}
+  .content-list li{margin:0.6rem 0;padding:0.6rem 0.75rem 0.6rem 2.5rem;background:#fafafa;border-radius:6px;line-height:1.6;position:relative}
+  .content-list li::before{content:"✓";position:absolute;left:0.75rem;color:#9A8060;font-weight:700}
+  .qa-block{background:#f4f4f4;border-radius:10px;padding:1.4rem 1.5rem;margin:2rem 0;border-left:3px solid #9A8060}
+  .qa-block h3{color:#2C1810;margin:0 0 0.6rem;font-size:1rem}
+  .qa-block p{margin:0;color:#444;line-height:1.8;font-size:0.95rem}
+  .cta-box{background:linear-gradient(135deg,#2C1810,#4A2C1A);color:white;padding:2.25rem 2rem;border-radius:14px;text-align:center;margin-top:3rem}
+  .cta-box h3{margin:0 0 0.75rem;color:#D4A853;font-size:1.15rem}
+  .cta-box p{margin:0 0 1.25rem;font-size:0.95rem;color:#ffffff}
+  .btn-primary{display:inline-block;background:#D4A853;color:#2C1810;padding:0.8rem 1.75rem;border-radius:8px;text-decoration:none;font-weight:700;margin:0.4rem;font-size:0.95rem}
+  .btn-secondary{display:inline-block;background:transparent;color:white;border:2px solid rgba(255,255,255,0.8);padding:0.8rem 1.75rem;border-radius:8px;text-decoration:none;font-weight:700;margin:0.4rem;font-size:0.95rem}
+  .sidebar{display:flex;flex-direction:column;gap:1.5rem;position:sticky;top:2rem}
+  .sidebar-card{background:white;border:1px solid #e8e0d5;border-radius:10px;padding:1.25rem}
+  .sidebar-card h3{color:#2C1810;font-size:0.9rem;font-weight:700;margin:0 0 0.75rem;padding-bottom:0.5rem;border-bottom:1px solid #e8e0d5;text-transform:uppercase;letter-spacing:0.03em}
+  .sidebar-card ul{list-style:none;padding:0;margin:0}
+  .sidebar-card li{padding:0.35rem 0;border-bottom:1px solid #f5f0eb;font-size:0.88rem;color:#555}
+  .sidebar-card li:last-child{border-bottom:none}
+  .sidebar-card a{color:#9A8060;text-decoration:none}
+  .sidebar-card a:hover{color:#2C1810}
+  .sidebar-card p{margin:0.3rem 0;font-size:0.9rem;color:#555}
+  @media(max-width:768px){
+    .content-grid{grid-template-columns:1fr}
+    .sidebar{position:static}
+    .page-hero h1{font-size:1.5rem}
+    .btn-primary,.btn-secondary{display:block;margin:0.4rem auto;max-width:260px}
+  }
+</style>
