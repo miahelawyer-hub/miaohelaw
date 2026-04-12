@@ -6,13 +6,15 @@ import Footer from '../../components/Footer.astro';
 <!doctype html>
 <html lang="en">
 <head>
-  <BaseHead title="Chinese Family Lawyer Scarborough | Mandarin Divorce Lawyer | Miao He" description="Miao He provides Mandarin family law services throughout Scarborough — Chinese cultural considerations in custody plans, new immigrant divorce, emergency protection orders. 647-930-6688." />
-  <meta name="keywords" content="Chinese family lawyer Scarborough,Mandarin divorce lawyer Scarborough,family lawyer Scarborough,Chinese lawyer Scarborough,divorce lawyer Scarborough Ontario,Agincourt Chinese lawyer" />
-  <meta property="og:title" content="Chinese Family Lawyer Scarborough | Mandarin Divorce Lawyer | Miao He" />
-  <meta property="og:description" content="Miao He provides Mandarin family law services throughout Scarborough — Chinese cultural considerations in custody plans, new immigrant divorce, emergency protection orders. 647-930-6688." />
+  <BaseHead
+    title="Chinese Family Lawyer Scarborough | Divorce · Custody · Property Division | Miao He"
+    description="Miao He serves Chinese-Canadian families in Scarborough — Agincourt, Scarborough Town Centre. New immigrant divorce, multigenerational property, Chinese cultural custody. Mandarin, no interpreter. 647-930-6688."
+  />
+  <meta name="keywords" content="Chinese family lawyer Scarborough,Mandarin divorce lawyer Scarborough,Chinese divorce lawyer east Toronto,separation agreement Scarborough,Chinese Canadian divorce Scarborough,divorce lawyer Scarborough Ontario,property division multigenerational home Ontario,child custody Chinese family Scarborough,Mandarin speaking family lawyer GTA" />
+  <meta property="og:title" content="Chinese Family Lawyer Scarborough | Divorce · Custody · Property | Miao He" />
+  <meta property="og:description" content="Serving Chinese-Canadian families in Agincourt and Scarborough — new immigrant divorce, property division, cultural custody arrangements. Full Mandarin service. 647-930-6688." />
   <meta property="og:url" content="https://www.miaohelaw.ca/en/scarborough-chinese-family-lawyer" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://www.miaohelaw.ca/og-image.jpg" />
   <link rel="canonical" href="https://www.miaohelaw.ca/en/scarborough-chinese-family-lawyer" />
   <link rel="alternate" hreflang="zh" href="https://www.miaohelaw.ca/scarborough-family-lawyer" />
   <link rel="alternate" hreflang="en" href="https://www.miaohelaw.ca/en/scarborough-chinese-family-lawyer" />
@@ -26,154 +28,176 @@ import Footer from '../../components/Footer.astro';
       "url": "https://www.miaohelaw.ca/en/scarborough-chinese-family-lawyer",
       "telephone": "+1-647-930-6688",
       "email": "miao@miaohelaw.ca",
-      "areaServed": {"@type": "City", "name": "Scarborough", "containedInPlace": {"@type": "Province", "name": "Ontario"}},
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "208-7050 Woodbine Ave",
+        "addressLocality": "Markham",
+        "addressRegion": "ON",
+        "addressCountry": "CA"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Scarborough",
+        "containedInPlace": {"@type": "Province", "name": "Ontario"}
+      },
+      "availableLanguage": [
+        {"@type": "Language", "name": "Mandarin Chinese"},
+        {"@type": "Language", "name": "English"}
+      ],
       "provider": {
         "@type": "Person",
         "name": "Miao He",
+        "alternateName": ["何淼", "Mia He"],
         "jobTitle": "Family Law Lawyer",
         "knowsLanguage": ["zh-Hans", "en"],
         "hasCredential": [
           {"@type": "EducationalOccupationalCredential", "credentialCategory": "Law Society of Ontario — Member #83315K"},
-          {"@type": "EducationalOccupationalCredential", "credentialCategory": "China Bar Association — Licensed"}
+          {"@type": "EducationalOccupationalCredential", "credentialCategory": "China Bar Association — Licensed"},
+          {"@type": "EducationalOccupationalCredential", "credentialCategory": "Expert Witness — Chinese Family Law & Marriage Law"}
         ]
       },
-      "serviceType": ["Family Law", "Divorce", "Child Custody", "Marriage Contract", "Spousal Support", "Cross-border Assets"],
-      "inLanguage": ["en", "zh-Hans"]
+      "serviceType": ["Divorce Litigation", "Child Custody", "Marriage Contract", "Property Division", "Emergency Protection Orders", "New Immigrant Divorce"],
+      "inLanguage": "en",
+      "sameAs": "https://www.miaohelaw.ca/scarborough-family-lawyer"
     },
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.miaohelaw.ca/en/"},
-        {"@type": "ListItem", "position": 2, "name": "Scarborough Chinese Family Lawyer", "item": "https://www.miaohelaw.ca/en/scarborough-chinese-family-lawyer"}
+        {"@type": "ListItem", "position": 2, "name": "Service Areas", "item": "https://www.miaohelaw.ca/en/contact"},
+        {"@type": "ListItem", "position": 3, "name": "Chinese Family Lawyer Scarborough", "item": "https://www.miaohelaw.ca/en/scarborough-chinese-family-lawyer"}
       ]
     },
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
-      "mainEntity": [{
-        "@type": "Question",
-        "name": "Scarborough family law cases — which court handles them and which procedure applies?",
-        "acceptedAnswer": {"@type": "Answer", "text": "Scarborough cases may be heard at the Ontario Court of Justice in Scarborough or the Superior Court of Justice in downtown Toronto, depending on the nature of the matter. Miao He can advise on which court and procedure is most appropriate for your case. Call 647-930-6688."}
-      }]
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "We married in China and recently moved to Scarborough. Can we divorce in Ontario?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Yes. If at least one spouse has been ordinarily resident in Ontario for one year, you can apply for divorce here. The marriage registered in China is recognized in Ontario — no re-registration is required. However, you may need certified translations and authentication of your Chinese marriage certificate. Miao He handles these cross-border procedural requirements directly. Call 647-930-6688."}
+        },
+        {
+          "@type": "Question",
+          "name": "Which court handles Scarborough divorce cases?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Scarborough family law cases may be heard at the Ontario Court of Justice in Scarborough or the Superior Court of Justice in downtown Toronto, depending on the nature of the case. Miao He can advise which court and procedure is most appropriate for your situation."}
+        },
+        {
+          "@type": "Question",
+          "name": "My family owns a home with my parents and my spouse. How is that divided in a divorce?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Multigenerational home ownership is common in Scarborough's Chinese-Canadian community and creates complex property questions. The division depends on how title is registered, what contributions each party made, and whether any funds were gifts. Miao He can help untangle these ownership arrangements and protect your legal share. Call 647-930-6688."}
+        }
+      ]
     }
   ]
   </script>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: Georgia, serif; background: #FDFBF7; color: #2C1810; }
-    a { color: inherit; text-decoration: none; }
-    .page-hero { background: linear-gradient(135deg, #2C1810, #4A2C1A); padding: 3rem 1.5rem 2.5rem; text-align: center; }
-    .page-hero .inner { max-width: 760px; margin: 0 auto; }
-    .breadcrumb { font-size: 0.82rem; color: rgba(255,255,255,0.5); margin-bottom: 0.6rem; }
-    .breadcrumb a { color: rgba(255,255,255,0.5); }
-    .page-label { font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: #D4A853; margin-bottom: 0.5rem; }
-    .page-hero h1 { color: #fff; font-size: clamp(1.6rem, 3vw, 2.2rem); margin: 0 0 0.5rem; font-weight: 400; }
-    .tagline { color: #D4A853; font-size: 0.88rem; margin: 0; }
-    .main-section { padding: 3rem 1.5rem 4rem; }
-    .main-inner { max-width: 860px; margin: 0 auto; display: grid; grid-template-columns: 1fr 300px; gap: 2.5rem; }
-    .card { background: #fff; border: 1px solid #EDE8DF; border-radius: 12px; padding: 1.75rem; margin-bottom: 1.5rem; }
-    .card h2 { font-size: 1.1rem; font-weight: 700; color: #2C1810; margin: 0 0 1rem; }
-    .card p { font-size: 0.92rem; line-height: 1.7; color: #2C1810; margin-bottom: 0.75rem; }
-    .card p:last-child { margin-bottom: 0; }
-    .highlight { border-color: #D4A853; box-shadow: 0 4px 20px rgba(212,168,83,0.12); }
-    .note { background: #F5EFE0; border-left: 3px solid #D4A853; padding: 0.75rem 1rem; border-radius: 0 6px 6px 0; font-size: 0.88rem; line-height: 1.6; color: #6B5A3A; margin-top: 0.75rem; }
-    .services-list { list-style: none; padding: 0; margin: 0.5rem 0; }
-    .services-list li { font-size: 0.9rem; padding: 0.3rem 0; border-bottom: 1px solid #F5EFE0; }
-    .services-list li:last-child { border-bottom: none; }
-    .faq-q { font-weight: 700; margin-bottom: 0.4rem; }
-    .cta-block { background: #2C1810; border-radius: 12px; padding: 1.75rem; margin-bottom: 1.5rem; text-align: center; }
-    .cta-block h2 { color: #D4A853; font-size: 1.1rem; margin: 0 0 0.5rem; }
-    .cta-block p { color: rgba(255,255,255,0.8); font-size: 0.88rem; margin: 0 0 1rem; }
-    .btn-phone { display: inline-block; background: #D4A853; color: #1A1208; padding: 0.75rem 2rem; border-radius: 8px; font-weight: 700; font-size: 1rem; margin-bottom: 0.5rem; }
-    .btn-email { display: inline-block; background: transparent; color: #D4A853; border: 1px solid #D4A853; padding: 0.6rem 1.5rem; border-radius: 8px; font-size: 0.88rem; margin-top: 0.5rem; }
-    .sidebar-card { background: #fff; border: 1px solid #EDE8DF; border-radius: 12px; padding: 1.5rem; margin-bottom: 1.25rem; }
-    .sidebar-card h3 { font-size: 0.88rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: #2C1810; margin: 0 0 0.75rem; }
-    .sidebar-card p { font-size: 0.85rem; line-height: 1.6; color: #2C1810; }
-    .cred-list { list-style: none; padding: 0; margin: 0; }
-    .cred-list li { font-size: 0.83rem; padding: 0.25rem 0; padding-left: 1rem; position: relative; color: #2C1810; }
-    .cred-list li::before { content: "·"; position: absolute; left: 0; color: #D4A853; }
-    @media (max-width: 720px) { .main-inner { grid-template-columns: 1fr; } }
-</style>
 </head>
 <body>
   <HeaderEn />
   <main>
     <section class="page-hero">
-      <div class="inner">
-        <div class="breadcrumb"><a href="/en/">Home</a> › <a href="/en/contact">Areas Served</a> › Scarborough</div>
-        <div class="page-label">Chinese Family Lawyer · Scarborough</div>
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="/en/">Home</a> › <a href="/en/contact">Service Areas</a> › Scarborough
+        </div>
         <h1>Chinese Family Lawyer in Scarborough</h1>
-        <p class="tagline">Mandarin & English · Serving Agincourt to Malvern · Chinese cultural needs respected · 647-930-6688</p>
+        <p class="hero-sub">Serving Agincourt · Scarborough Town Centre · Mandarin family law · 647-930-6688</p>
       </div>
     </section>
-    <section class="main-section">
-      <div class="main-inner">
+
+    <section class="content-section">
+      <div class="container content-grid">
         <div class="main-content">
 
-          <div class="card highlight">
-            <h2>Chinese Family Lawyer Serving All of Scarborough</h2>
-            <p>Scarborough is East Toronto's most diverse area — and home to a large, established Chinese-Canadian community across Agincourt, Malvern, Scarborough Town Centre, and Kennedy Road. Miao He provides full Mandarin family law services to Scarborough clients, handling everything from new immigrant divorce to complex custody disputes with Chinese cultural dimensions.</p>
+          <div class="definition-box">
+            <p>Scarborough — particularly Agincourt and the Scarborough Town Centre area — is one of the GTA's most diverse and densely populated Chinese-Canadian communities. Family law cases here reflect that diversity: <strong>new immigrants divorcing under two legal systems, multigenerational households with complex ownership, and custody disputes shaped by Chinese cultural values</strong>. Miao He (何淼) provides full Mandarin family law services to Scarborough families. LSO #83315K · China Bar Association Licensed.</p>
           </div>
 
-          <div class="card">
-            <h2>Scarborough Family Law: What Makes These Cases Different</h2>
-            <p><strong>New immigrant divorce and marriage authentication:</strong> Many Scarborough Chinese-Canadian families married in China and registered their marriage there. Divorce in Ontario requires recognizing the Chinese marriage — Miao He handles this process and the interaction between Ontario and Chinese marriage law.</p>
-            <p><strong>Multi-generational households:</strong> Scarborough has many multi-generational Chinese families living under one roof. When divorce happens, questions arise about whose assets are whose — Miao He can untangle co-mingled family finances and establish clear ownership.</p>
-            <p><strong>Chinese culture in custody plans:</strong> Chinese-Canadian families often want Parenting Plans that reflect their cultural priorities — Chinese school attendance, Lunar New Year celebrations, grandparent access. Miao He incorporates these elements into legally binding agreements.</p>
+          <h2>What Makes Scarborough Chinese-Canadian Family Law Cases Distinctive</h2>
+          <p>Scarborough's Chinese-Canadian community spans multiple generations and immigration waves — from recent arrivals still navigating Canadian legal processes to established families facing the same property and custody questions as any other Ontario family, but with cross-cultural layers that require specific expertise.</p>
+
+          <h3>New Immigrant Divorce: Two Legal Systems, One Proceeding</h3>
+          <p>Many Scarborough Chinese-Canadian couples married in China and have only recently settled in Ontario. When these marriages break down, the divorce process involves authenticating Chinese marriage certificates, determining whether a separation agreement signed in China has any legal effect in Ontario, and sometimes dealing with assets that exist entirely within China's legal system. Miao He holds dual licences in Ontario and China — she handles these cross-border procedural requirements directly, without sending you to a separate specialist or requiring you to find your own Chinese-law resources.</p>
+
+          <h3>Multigenerational Home Ownership and Property Division</h3>
+          <p>It is common in Scarborough for parents to contribute significantly to a child's home purchase — either as co-owners on title or through a large down payment gift. When divorce occurs, these arrangements create complex questions: Was the parental contribution a gift to the couple or a loan? If the parents are on title, what share do they own? How does Ontario's Equalization calculation apply to a home that was never fully "marital" in the first place? Miao He has extensive experience disentangling these ownership structures and protecting clients' legal entitlements.</p>
+
+          <h3>Child Custody: Chinese Cultural Considerations</h3>
+          <p>Chinese-Canadian families in Scarborough often place high value on children's Chinese-language education, extended family involvement in care, and maintaining cultural and ancestral connections. These are legitimate considerations that Ontario courts can and do accommodate — but they need to be specifically included in a Parenting Plan to be legally binding. Miao He builds custody arrangements that reflect how Chinese-Canadian families actually live: Chinese school schedules, lunar new year holiday access, grandparent care time, and travel arrangements for visits to China.</p>
+
+          <h3>Emergency Protection Orders</h3>
+          <p>If you face family violence or have reason to believe your spouse intends to remove children from Ontario or out of Canada, Miao He can move urgently to obtain an Emergency Restraining Order or a Ne Exeat order preventing the children from being taken out of the province. These orders require immediate action — delay reduces your options significantly.</p>
+
+          <div class="qa-block">
+            <h3>Q: We married in China and moved to Scarborough two years ago. Can we divorce here?</h3>
+            <p>A: Yes. One year of ordinary residence in Ontario is sufficient to apply for divorce here. Your Chinese marriage is recognized — you will need certified translations and authentication of the marriage certificate, but no re-registration. Miao He handles these cross-border procedural matters directly. Call 647-930-6688.</p>
           </div>
 
-          <div class="card">
-            <h2>Emergency Protection Orders</h2>
-            <p>If you are facing domestic violence or fear that a spouse may remove children from Ontario, Miao He can move quickly to obtain an <strong>Emergency Restraining Order</strong> or a <strong>Ne Exeat Order</strong> (preventing children from being taken out of the province or country). Speed matters in these situations — call 647-930-6688 immediately.</p>
+          <div class="qa-block">
+            <h3>Q: Which court handles Scarborough family law cases?</h3>
+            <p>A: Scarborough cases may be heard at the Ontario Court of Justice in Scarborough or the Superior Court of Justice in Toronto, depending on what issues are involved. Miao He can advise which court and procedure is right for your situation. Call 647-930-6688.</p>
           </div>
 
-          <div class="card">
-            <h2>Frequently Asked Question</h2>
-            <p class="faq-q">Scarborough family law cases — which court handles them?</p>
-            <p>Scarborough matters may be heard at the Ontario Court of Justice in Scarborough or the Superior Court of Justice in downtown Toronto, depending on whether the matter is contested and which procedures are involved. Miao He can advise on the right venue and process for your specific situation.</p>
+          <div class="qa-block">
+            <h3>Q: My parents helped buy our house and are on title. Does my spouse get half of their share too?</h3>
+            <p>A: Not necessarily. The division depends on how title is registered, what the intent of the contribution was, and whether there is documentation. Parental contributions are frequently excluded from Equalization — but this requires proper evidence and legal argument. Call 647-930-6688 to discuss your specific situation.</p>
           </div>
+
+          <div class="cta-box">
+            <h3>Book a Scarborough Family Law Consultation</h3>
+            <p>Initial consultation 30 minutes · $220 + HST · Mandarin &amp; English · In-person or Zoom</p>
+            <a href="/en/contact" class="btn-primary">Book Now</a>
+            <a href="tel:6479306688" class="btn-secondary">647-930-6688</a>
+          </div>
+
         </div>
 
-        <aside class="main-sidebar">
-          <div class="cta-block">
-            <h2>Book a Consultation</h2>
-            <p>Initial consultation 30 min · $220 + HST · No obligation</p>
-            <a href="tel:6479306688" class="btn-phone">📞 647-930-6688</a><br/>
-            <a href="mailto:miao@miaohelaw.ca" class="btn-email">miao@miaohelaw.ca</a>
+        <aside class="sidebar">
+          <div class="sidebar-card">
+            <h3>Contact Miao He</h3>
+            <p>📞 <a href="tel:6479306688">647-930-6688</a></p>
+            <p>📧 <a href="mailto:miao@miaohelaw.ca">miao@miaohelaw.ca</a></p>
+            <p>📍 208-7050 Woodbine Ave, Markham</p>
+            <p>💬 WeChat: 372656035</p>
           </div>
           <div class="sidebar-card">
-            <h3>Office Address</h3>
-            <p>H. LAW FIRM 恒. 律师事务所<br/>208 - 7050 Woodbine Avenue<br/>Markham, Ontario L3R 4G8</p>
+            <h3>Family Law Services</h3>
+            <ul>
+              <li><a href="/en/family-law/divorce-litigation">Divorce Litigation</a></li>
+              <li><a href="/en/family-law/child-custody">Child Custody</a></li>
+              <li><a href="/en/family-law/domestic-contracts">Marriage Contracts</a></li>
+              <li><a href="/en/family-law/cross-border-assets">Cross-Border Assets</a></li>
+              <li><a href="/en/family-law/support">Support</a></li>
+              <li><a href="/en/family-law/mediation">Mediation</a></li>
+            </ul>
           </div>
           <div class="sidebar-card">
-            <h3>Licences &amp; Credentials</h3>
-            <ul class="cred-list">
-              <li>Law Society of Ontario — #83315K</li>
-              <li>China Bar Association — Dual Licensed</li>
-              <li>Expert Witness — Chinese Family Law</li>
-              <li>Notary Public — Ontario</li>
-              <li>15+ years experience</li>
-              <li>20+ court appearances / month</li>
+            <h3>Service Areas</h3>
+            <ul>
+              <li><a href="/en/toronto-chinese-family-lawyer">Chinese Divorce Lawyer Toronto</a></li>
+              <li><a href="/en/markham-chinese-family-lawyer">Chinese Family Lawyer Markham · Office</a></li>
+              <li><a href="/en/richmond-hill-chinese-family-lawyer">Chinese Family Lawyer Richmond Hill</a></li>
+              <li><a href="/en/north-york-chinese-family-lawyer">Chinese Divorce Lawyer North York</a></li>
+              <li><a href="/en/scarborough-chinese-family-lawyer">Chinese Family Lawyer Scarborough</a></li>
+              <li><a href="/en/mississauga-chinese-family-lawyer">Chinese Divorce Lawyer Mississauga</a></li>
+              <li><a href="/en/brampton-chinese-family-lawyer">Chinese Family Lawyer Brampton</a></li>
+              <li><a href="/en/vaughan-chinese-family-lawyer">Chinese Family Lawyer Vaughan</a></li>
+              <li><a href="/en/thornhill-chinese-family-lawyer">Chinese Family Lawyer Thornhill</a></li>
+              <li><a href="/en/newmarket-chinese-family-lawyer">Chinese Family Lawyer Newmarket</a></li>
+              <li><a href="/en/ajax-pickering-chinese-family-lawyer">Chinese Lawyer Ajax / Pickering</a></li>
+              <li><a href="/en/hamilton-chinese-family-lawyer">Chinese Family Lawyer Hamilton</a></li>
+              <li><a href="/en/kitchener-chinese-family-lawyer">Chinese Family Lawyer Kitchener</a></li>
+              <li><a href="/en/ottawa-chinese-family-lawyer">Chinese Family Lawyer Ottawa</a></li>
+              <li><a href="/en/london-chinese-family-lawyer">Chinese Lawyer London Ontario</a></li>
+              <li><a href="/en/windsor-chinese-family-lawyer">Chinese Family Lawyer Windsor</a></li>
+              <li><a href="/en/north-bay-chinese-family-lawyer">Chinese Family Lawyer North Bay</a></li>
             </ul>
           </div>
           <div class="sidebar-card">
             <h3>Languages</h3>
-            <p>Mandarin (普通话) · English</p>
-          </div>
-          <div class="sidebar-card">
-            <h3>Other Areas Served</h3>
-            <p style="font-size:0.8rem;line-height:1.8;">
-              <a href="/en/toronto-chinese-family-lawyer">Toronto</a> ·
-              <a href="/en/markham-chinese-family-lawyer">Markham</a> ·
-              <a href="/en/richmond-hill-chinese-family-lawyer">Richmond Hill</a> ·
-              <a href="/en/mississauga-chinese-family-lawyer">Mississauga</a> ·
-              <a href="/en/brampton-chinese-family-lawyer">Brampton</a> ·
-              <a href="/en/vaughan-chinese-family-lawyer">Vaughan</a> ·
-              <a href="/en/ottawa-chinese-family-lawyer">Ottawa</a> ·
-              <a href="/en/hamilton-chinese-family-lawyer">Hamilton</a> ·
-              <a href="/en/windsor-chinese-family-lawyer">Windsor</a>
-            </p>
+            <p>🇨🇳 Mandarin (普通话)</p>
+            <p>🇨🇦 English</p>
           </div>
         </aside>
       </div>
@@ -182,3 +206,31 @@ import Footer from '../../components/Footer.astro';
   <Footer />
 </body>
 </html>
+<style>
+  .page-hero{background:linear-gradient(135deg,#2C1810 0%,#4A2C1A 100%);color:white;padding:3rem 0 2rem}
+  .page-hero h1{font-size:2rem;margin:0.5rem 0;color:#ffffff}
+  .hero-sub{color:#D4A853;margin:0}
+  .breadcrumb{font-size:0.85rem;opacity:0.7;margin-bottom:0.5rem}
+  .breadcrumb a{color:white;text-decoration:none}
+  .container{max-width:1100px;margin:0 auto;padding:0 1.5rem}
+  .content-section{padding:3rem 0}
+  .content-grid{display:grid;grid-template-columns:1fr 300px;gap:3rem}
+  .definition-box{background:#FDF6EC;border-left:4px solid #9A8060;padding:1.2rem 1.5rem;margin-bottom:2rem;border-radius:0 8px 8px 0}
+  .qa-block{background:#f8f8f8;border-radius:8px;padding:1.2rem 1.5rem;margin:1.5rem 0;border-left:3px solid #9A8060}
+  .qa-block h3{color:#2C1810;margin-top:0;font-size:1rem}
+  .cta-box{background:linear-gradient(135deg,#2C1810,#4A2C1A);color:white;padding:2rem;border-radius:12px;text-align:center;margin-top:2rem}
+  .cta-box h3{margin-top:0;color:#D4A853}
+  .cta-box p{color:#ffffff}
+  .btn-primary{display:inline-block;background:#D4A853;color:#2C1810;padding:0.75rem 1.5rem;border-radius:6px;text-decoration:none;font-weight:700;margin:0.5rem}
+  .btn-secondary{display:inline-block;background:transparent;color:white;border:2px solid white;padding:0.75rem 1.5rem;border-radius:6px;text-decoration:none;font-weight:700;margin:0.5rem}
+  .sidebar{display:flex;flex-direction:column;gap:1.5rem}
+  .sidebar-card{background:white;border:1px solid #e8e0d5;border-radius:10px;padding:1.2rem}
+  .sidebar-card h3{color:#2C1810;font-size:0.95rem;margin-top:0;border-bottom:1px solid #e8e0d5;padding-bottom:0.5rem;margin-bottom:0.75rem}
+  .sidebar-card ul{list-style:none;padding:0;margin:0}
+  .sidebar-card li{padding:0.3rem 0;border-bottom:1px solid #f0ebe3;font-size:0.9rem}
+  .sidebar-card a{color:#9A8060;text-decoration:none}
+  .sidebar-card p{margin:0.3rem 0;font-size:0.9rem}
+  h2{color:#2C1810;margin-top:2rem}
+  h3{color:#4A2C1A}
+  @media(max-width:768px){.content-grid{grid-template-columns:1fr}.page-hero h1{font-size:1.5rem}}
+</style>
