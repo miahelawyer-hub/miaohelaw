@@ -7,15 +7,14 @@ import Footer from '../../components/Footer.astro';
 <html lang="en">
 <head>
   <BaseHead
-    title="Chinese Family Lawyer Ajax Pickering | Mandarin Divorce Lawyer East GTA | Miao He"
-    description="Miao He provides Mandarin family law services for Ajax and Pickering clients in East GTA — divorce, custody, property division. No interpreter needed. 647-930-6688."
+    title="Chinese Family Lawyer Ajax Pickering | Separation Agreement · Durham Region | Miao He"
+    description="Miao He serves Chinese-Canadian families in Ajax and Pickering — separation agreements, property division, child custody, Durham Region family court. Mandarin, no interpreter. 647-930-6688."
   />
-  <meta name="keywords" content="Chinese family lawyer Ajax,Chinese family lawyer Pickering,Mandarin divorce lawyer Ajax Pickering,family lawyer Ajax,Chinese lawyer Pickering,divorce lawyer Ajax Ontario,East GTA Chinese lawyer,Miao He Ajax Pickering" />
-  <meta property="og:title" content="Chinese Family Lawyer Ajax Pickering | Mandarin Divorce Lawyer East GTA | Miao He" />
-  <meta property="og:description" content="Miao He provides Mandarin family law services for Ajax and Pickering clients in East GTA — divorce, custody, property division. No interpreter needed. 647-930-6688." />
+  <meta name="keywords" content="Chinese family lawyer Ajax,Chinese family lawyer Pickering,Mandarin divorce lawyer Durham Region,separation agreement Ajax Pickering,Durham Region family court Chinese lawyer,Chinese lawyer east GTA,divorce lawyer Ajax Ontario,child custody Pickering Chinese,Oshawa courthouse family law,property division Ajax Pickering" />
+  <meta property="og:title" content="Chinese Family Lawyer Ajax Pickering | Miao He" />
+  <meta property="og:description" content="Serving Chinese-Canadian families in Ajax and Pickering — separation agreements, property division, child custody. Full Mandarin service, Durham Region family court. 647-930-6688." />
   <meta property="og:url" content="https://www.miaohelaw.ca/en/ajax-pickering-chinese-family-lawyer" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://www.miaohelaw.ca/og-image.jpg" />
   <link rel="canonical" href="https://www.miaohelaw.ca/en/ajax-pickering-chinese-family-lawyer" />
   <link rel="alternate" hreflang="zh" href="https://www.miaohelaw.ca/ajax-pickering-family-lawyer" />
   <link rel="alternate" hreflang="en" href="https://www.miaohelaw.ca/en/ajax-pickering-chinese-family-lawyer" />
@@ -25,18 +24,29 @@ import Footer from '../../components/Footer.astro';
       "@context": "https://schema.org",
       "@type": "LegalService",
       "@id": "https://www.miaohelaw.ca/en/ajax-pickering-chinese-family-lawyer#service",
-      "name": "Miao He — Chinese Family Lawyer serving Ajax / Pickering",
+      "name": "Miao He — Chinese Family Lawyer serving Ajax and Pickering",
       "url": "https://www.miaohelaw.ca/en/ajax-pickering-chinese-family-lawyer",
       "telephone": "+1-647-930-6688",
       "email": "miao@miaohelaw.ca",
-      "areaServed": {
-        "@type": "City",
-        "name": "Ajax / Pickering",
-        "containedInPlace": {"@type": "Province", "name": "Ontario"}
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "208-7050 Woodbine Ave",
+        "addressLocality": "Markham",
+        "addressRegion": "ON",
+        "addressCountry": "CA"
       },
+      "areaServed": [
+        {"@type": "City", "name": "Ajax", "containedInPlace": {"@type": "Province", "name": "Ontario"}},
+        {"@type": "City", "name": "Pickering", "containedInPlace": {"@type": "Province", "name": "Ontario"}}
+      ],
+      "availableLanguage": [
+        {"@type": "Language", "name": "Mandarin Chinese"},
+        {"@type": "Language", "name": "English"}
+      ],
       "provider": {
         "@type": "Person",
         "name": "Miao He",
+        "alternateName": ["何淼", "Mia He"],
         "jobTitle": "Family Law Lawyer",
         "knowsLanguage": ["zh-Hans", "en"],
         "hasCredential": [
@@ -44,15 +54,17 @@ import Footer from '../../components/Footer.astro';
           {"@type": "EducationalOccupationalCredential", "credentialCategory": "China Bar Association — Licensed"}
         ]
       },
-      "serviceType": ["Family Law", "Divorce", "Child Custody", "Marriage Contract", "Spousal Support", "Cross-border Assets"],
-      "inLanguage": ["en", "zh-Hans"]
+      "serviceType": ["Divorce Litigation", "Separation Agreement", "Child Custody", "Property Division", "Marriage Contract", "Spousal Support"],
+      "inLanguage": "en",
+      "sameAs": "https://www.miaohelaw.ca/ajax-pickering-family-lawyer"
     },
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.miaohelaw.ca/en/"},
-        {"@type": "ListItem", "position": 2, "name": "Ajax / Pickering Chinese Family Lawyer", "item": "https://www.miaohelaw.ca/en/ajax-pickering-chinese-family-lawyer"}
+        {"@type": "ListItem", "position": 2, "name": "Service Areas", "item": "https://www.miaohelaw.ca/en/contact"},
+        {"@type": "ListItem", "position": 3, "name": "Chinese Family Lawyer Ajax Pickering", "item": "https://www.miaohelaw.ca/en/ajax-pickering-chinese-family-lawyer"}
       ]
     },
     {
@@ -61,150 +73,162 @@ import Footer from '../../components/Footer.astro';
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Is there a Mandarin-speaking family lawyer serving Ajax and Pickering?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Yes. Miao He provides full Mandarin family law services to Ajax and Pickering clients. Consultations are available in person or by video. Call 647-930-6688."}
+          "name": "What is a separation agreement and do I need one before divorcing?",
+          "acceptedAnswer": {"@type": "Answer", "text": "A Separation Agreement is a legally binding contract between separating spouses that resolves property division, support, and parenting arrangements. You do not need a separation agreement to get divorced — but having one significantly reduces the risk of future disputes and speeds up the divorce process. Miao He drafts separation agreements in Mandarin and English. Call 647-930-6688."}
+        },
+        {
+          "@type": "Question",
+          "name": "Can my spouse take our children to another province without my permission?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Not without your consent or a court order. If you believe your spouse is planning to relocate children without permission, Miao He can move urgently to obtain a court order preventing the move. Under Ontario's Children's Law Reform Act, relocating a child without consent or a court order is a serious matter with legal consequences. Call 647-930-6688 immediately if this is a concern."}
+        },
+        {
+          "@type": "Question",
+          "name": "Which court handles Ajax and Pickering family law cases?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Ajax and Pickering are in Durham Region. Family law cases are heard at the Superior Court of Justice — Oshawa Courthouse. Miao He can represent clients at this court and provides full Mandarin service. Zoom consultations are available for clients in east GTA. Call 647-930-6688."}
         }
       ]
     }
   ]
   </script>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: Georgia, serif; background: #FDFBF7; color: #2C1810; }
-    a { color: inherit; text-decoration: none; }
-    .page-hero { background: linear-gradient(135deg, #2C1810, #4A2C1A); padding: 3rem 1.5rem 2.5rem; text-align: center; }
-    .page-hero .inner { max-width: 760px; margin: 0 auto; }
-    .breadcrumb { font-size: 0.82rem; color: rgba(255,255,255,0.5); margin-bottom: 0.6rem; }
-    .breadcrumb a { color: rgba(255,255,255,0.5); }
-    .page-label { font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: #D4A853; margin-bottom: 0.5rem; }
-    .page-hero h1 { color: #fff; font-size: clamp(1.6rem, 3vw, 2.2rem); margin: 0 0 0.5rem; font-weight: 400; }
-    .tagline { color: #D4A853; font-size: 0.88rem; margin: 0; }
-    .main-section { padding: 3rem 1.5rem 4rem; }
-    .main-inner { max-width: 860px; margin: 0 auto; display: grid; grid-template-columns: 1fr 300px; gap: 2.5rem; }
-    .card { background: #fff; border: 1px solid #EDE8DF; border-radius: 12px; padding: 1.75rem; margin-bottom: 1.5rem; }
-    .card h2 { font-size: 1.1rem; font-weight: 700; color: #2C1810; margin: 0 0 1rem; }
-    .card p { font-size: 0.92rem; line-height: 1.7; color: #2C1810; margin-bottom: 0.75rem; }
-    .services-list { list-style: none; padding: 0; margin: 0.5rem 0; }
-    .services-list li { font-size: 0.9rem; padding: 0.3rem 0; border-bottom: 1px solid #F5EFE0; }
-    .services-list li:last-child { border-bottom: none; }
-    .highlight { border-color: #D4A853; box-shadow: 0 4px 20px rgba(212,168,83,0.12); }
-    .cta-block { background: #2C1810; border-radius: 12px; padding: 1.75rem; margin-bottom: 1.5rem; text-align: center; }
-    .cta-block h2 { color: #D4A853; font-size: 1.1rem; margin: 0 0 0.5rem; }
-    .cta-block p { color: rgba(255,255,255,0.8); font-size: 0.88rem; margin: 0 0 1rem; }
-    .btn-phone { display: inline-block; background: #D4A853; color: #1A1208; padding: 0.75rem 2rem; border-radius: 8px; font-weight: 700; font-size: 1rem; margin-bottom: 0.5rem; }
-    .btn-email { display: inline-block; background: transparent; color: #D4A853; border: 1px solid #D4A853; padding: 0.6rem 1.5rem; border-radius: 8px; font-size: 0.88rem; margin-top: 0.5rem; }
-    .sidebar-card { background: #fff; border: 1px solid #EDE8DF; border-radius: 12px; padding: 1.5rem; margin-bottom: 1.25rem; }
-    .sidebar-card h3 { font-size: 0.88rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: #2C1810; margin: 0 0 0.75rem; }
-    .sidebar-card p { font-size: 0.85rem; line-height: 1.6; color: #2C1810; }
-    .cred-list { list-style: none; padding: 0; margin: 0; }
-    .cred-list li { font-size: 0.83rem; padding: 0.25rem 0; padding-left: 1rem; position: relative; color: #2C1810; }
-    .cred-list li::before { content: "·"; position: absolute; left: 0; color: #D4A853; }
-    .area-note { font-size: 0.82rem; color: #9A8060; font-style: italic; margin-top: 0.5rem; }
-    @media (max-width: 720px) { .main-inner { grid-template-columns: 1fr; } }
-</style>
 </head>
 <body>
   <HeaderEn />
   <main>
-
     <section class="page-hero">
-      <div class="inner">
-        <div class="breadcrumb"><a href="/en/">Home</a> › <a href="/en/contact">Areas Served</a> › Ajax / Pickering</div>
-        <div class="page-label">Chinese Family Lawyer · Ajax / Pickering</div>
-        <h1>Chinese Family Lawyer in Ajax & Pickering</h1>
-        <p class="tagline">Mandarin / Putonghua · East GTA service · No interpreter needed · 647-930-6688</p>
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="/en/">Home</a> › <a href="/en/contact">Service Areas</a> › Ajax / Pickering
+        </div>
+        <h1>Chinese Family Lawyer in Ajax &amp; Pickering</h1>
+        <p class="hero-sub">Serving east GTA · Durham Region · Mandarin family law · 647-930-6688</p>
       </div>
     </section>
 
-    <section class="main-section">
-      <div class="main-inner">
-
+    <section class="content-section">
+      <div class="container content-grid">
         <div class="main-content">
 
-          <div class="card highlight">
-            <h2>Serving Ajax / Pickering in Mandarin & English</h2>
-            <p>Ajax and Pickering's Chinese-Canadian communities are growing steadily in Durham Region. Miao He provides full Mandarin family law services to East GTA clients — covering divorce litigation, child custody, property division, and cross-border asset recovery without the need for an interpreter.</p>
-            <p>Miao He (何淼) is dual-licensed in Ontario (LSO #83315K) and China, with 15+ years of family law experience and 20+ court appearances per month. She handles all matters personally — in Mandarin and English, with no interpreter needed.</p>
+          <div class="definition-box">
+            <p>Ajax and Pickering are part of Durham Region's rapidly growing east GTA — a corridor where Chinese-Canadian families have been settling in increasing numbers. Family law cases here reflect east GTA's specific character: <strong>rising property values, growing families with grandparent involvement in childcare, and a shortage of Mandarin-speaking family lawyers</strong> in the area. Miao He (何淼) fills that gap, providing full Mandarin family law services to Ajax and Pickering clients. Zoom consultations available. LSO #83315K.</p>
           </div>
 
-          <div class="card">
-            <h2>Family Law Services Available in Ajax / Pickering</h2>
-            <ul class="services-list">
-              <li>Divorce Litigation</li>
-              <li>Child Custody &amp; Access</li>
-              <li>Child Support / Spousal Support</li>
-              <li>Property Division / NFP Equalization</li>
-              <li>Cross-Border Asset Recovery (Canada &amp; China)</li>
-              <li>Emergency Motions / Mareva Injunction</li>
-              <li>Marriage Contract / Prenuptial Agreement</li>
-              <li>Separation Agreement</li>
-              <li>Mediation</li>
-            </ul>
-            <p class="area-note">Serving Ajax, Pickering, Whitby, and all of Durham Region.</p>
+          <h2>Family Law Services for Ajax and Pickering Chinese-Canadian Families</h2>
+          <p>Ajax and Pickering clients often face the same core family law issues as the rest of the GTA — but with less access to Mandarin-speaking legal help. Miao He brings the same depth of service to east GTA clients that GTA-core communities have access to, with the convenience of phone and Zoom consultations.</p>
+
+          <h3>Separation Agreements: Resolving Everything Before Court</h3>
+          <p>A Separation Agreement is a legally binding contract that resolves property division, support obligations, and parenting arrangements between separating spouses — without going to court. For Ajax and Pickering families where both parties are willing to negotiate, a well-drafted Separation Agreement is the most efficient path to resolution. It eliminates uncertainty, reduces legal costs, and can be incorporated into a divorce order. Miao He drafts Separation Agreements in Mandarin and English, explaining every provision clearly before signing.</p>
+
+          <h3>Property Division: East GTA Real Estate</h3>
+          <p>Property values in Ajax and Pickering have risen significantly over the past decade. When a marriage breaks down, the increase in property value during the marriage is subject to Equalization — but pre-marital value and parental contributions may be excluded. Miao He helps clients establish the correct valuation baseline at the date of marriage and date of separation, protecting assets that should not be split.</p>
+
+          <h3>Child Custody: Grandparent Care and Cultural Arrangements</h3>
+          <p>Chinese-Canadian families in Ajax and Pickering frequently rely on grandparents for childcare — a reality that affects custody and parenting time arrangements. Miao He builds Parenting Plans that reflect how these families actually operate: grandparent care time, Chinese school schedules, cultural holiday arrangements, and rules around travel. These specific provisions reduce future disputes by leaving less to interpretation.</p>
+
+          <h3>Child Relocation: When a Spouse Wants to Move</h3>
+          <p>If your spouse wants to relocate with the children — to another city, province, or country — this is one of the most serious family law issues you will face. Ontario's Children's Law Reform Act requires notice and either consent or a court order before a custodial parent can relocate a child. Miao He can move urgently to prevent an unauthorized move, and advises clients on relocation rights on both sides of the dispute.</p>
+
+          <div class="qa-block">
+            <h3>Q: What is a separation agreement and do I need one?</h3>
+            <p>A: A Separation Agreement is a binding contract that resolves property, support, and parenting — without going to court. You don't need one to divorce, but having one makes the process faster and reduces future disputes. Miao He drafts these in Mandarin and English. Call 647-930-6688.</p>
           </div>
 
-          <div class="card">
-            <h2>Frequently Asked Question</h2>
-            <p><strong>Is there a Mandarin-speaking family lawyer serving Ajax and Pickering?</strong></p>
-            <p>Yes. Miao He provides full Mandarin family law services to Ajax and Pickering clients. Consultations are available in person or by video. Call 647-930-6688.</p>
+          <div class="qa-block">
+            <h3>Q: My spouse is talking about moving to another province with our children. Can they do that?</h3>
+            <p>A: Not without your consent or a court order. If this is a concern, call 647-930-6688 immediately. Miao He can obtain an urgent court order preventing the move while the matter is resolved properly.</p>
+          </div>
+
+          <div class="qa-block">
+            <h3>Q: Which court handles Ajax and Pickering family law cases?</h3>
+            <p>A: Ajax and Pickering are in Durham Region. Cases are heard at the Superior Court of Justice — Oshawa Courthouse. Zoom consultations are available for east GTA clients. Call 647-930-6688.</p>
+          </div>
+
+          <div class="cta-box">
+            <h3>Book an Ajax / Pickering Family Law Consultation</h3>
+            <p>Initial consultation 30 minutes · $220 + HST · Mandarin &amp; English · Phone or Zoom</p>
+            <a href="/en/contact" class="btn-primary">Book Now</a>
+            <a href="tel:6479306688" class="btn-secondary">647-930-6688</a>
           </div>
 
         </div>
 
-        <aside class="main-sidebar">
-
-          <div class="cta-block">
-            <h2>Book a Consultation</h2>
-            <p>Initial consultation 30 min · $220 + HST · No obligation</p>
-            <a href="tel:6479306688" class="btn-phone">📞 647-930-6688</a><br/>
-            <a href="mailto:miao@miaohelaw.ca" class="btn-email">miao@miaohelaw.ca</a>
-          </div>
-
+        <aside class="sidebar">
           <div class="sidebar-card">
-            <h3>Office Address</h3>
-            <p>H. LAW FIRM 恒. 律师事务所<br/>
-            208 - 7050 Woodbine Avenue<br/>
-            Markham, Ontario L3R 4G8</p>
+            <h3>Contact Miao He</h3>
+            <p>📞 <a href="tel:6479306688">647-930-6688</a></p>
+            <p>📧 <a href="mailto:miao@miaohelaw.ca">miao@miaohelaw.ca</a></p>
+            <p>📍 208-7050 Woodbine Ave, Markham</p>
+            <p>💬 WeChat: 372656035</p>
           </div>
-
           <div class="sidebar-card">
-            <h3>Licences &amp; Credentials</h3>
-            <ul class="cred-list">
-              <li>Law Society of Ontario — #83315K</li>
-              <li>China Bar Association — Dual Licensed</li>
-              <li>Expert Witness — Chinese Family Law</li>
-              <li>Notary Public — Ontario</li>
-              <li>15+ years experience</li>
-              <li>20+ court appearances / month</li>
+            <h3>Family Law Services</h3>
+            <ul>
+              <li><a href="/en/family-law/divorce-litigation">Divorce Litigation</a></li>
+              <li><a href="/en/family-law/child-custody">Child Custody</a></li>
+              <li><a href="/en/family-law/domestic-contracts">Marriage Contracts</a></li>
+              <li><a href="/en/family-law/cross-border-assets">Cross-Border Assets</a></li>
+              <li><a href="/en/family-law/support">Support</a></li>
+              <li><a href="/en/family-law/mediation">Mediation</a></li>
             </ul>
           </div>
-
+          <div class="sidebar-card">
+            <h3>Service Areas</h3>
+            <ul>
+              <li><a href="/en/toronto-chinese-family-lawyer">Chinese Divorce Lawyer Toronto</a></li>
+              <li><a href="/en/markham-chinese-family-lawyer">Chinese Family Lawyer Markham · Office</a></li>
+              <li><a href="/en/richmond-hill-chinese-family-lawyer">Chinese Family Lawyer Richmond Hill</a></li>
+              <li><a href="/en/north-york-chinese-family-lawyer">Chinese Divorce Lawyer North York</a></li>
+              <li><a href="/en/scarborough-chinese-family-lawyer">Chinese Family Lawyer Scarborough</a></li>
+              <li><a href="/en/mississauga-chinese-family-lawyer">Chinese Divorce Lawyer Mississauga</a></li>
+              <li><a href="/en/brampton-chinese-family-lawyer">Chinese Family Lawyer Brampton</a></li>
+              <li><a href="/en/vaughan-chinese-family-lawyer">Chinese Family Lawyer Vaughan</a></li>
+              <li><a href="/en/thornhill-chinese-family-lawyer">Chinese Family Lawyer Thornhill</a></li>
+              <li><a href="/en/newmarket-chinese-family-lawyer">Chinese Family Lawyer Newmarket</a></li>
+              <li><a href="/en/ajax-pickering-chinese-family-lawyer">Chinese Lawyer Ajax / Pickering</a></li>
+              <li><a href="/en/hamilton-chinese-family-lawyer">Chinese Family Lawyer Hamilton</a></li>
+              <li><a href="/en/kitchener-chinese-family-lawyer">Chinese Family Lawyer Kitchener</a></li>
+              <li><a href="/en/ottawa-chinese-family-lawyer">Chinese Family Lawyer Ottawa</a></li>
+              <li><a href="/en/london-chinese-family-lawyer">Chinese Lawyer London Ontario</a></li>
+              <li><a href="/en/windsor-chinese-family-lawyer">Chinese Family Lawyer Windsor</a></li>
+              <li><a href="/en/north-bay-chinese-family-lawyer">Chinese Family Lawyer North Bay</a></li>
+            </ul>
+          </div>
           <div class="sidebar-card">
             <h3>Languages</h3>
-            <p>Mandarin (普通话) · English</p>
+            <p>🇨🇳 Mandarin (普通话)</p>
+            <p>🇨🇦 English</p>
           </div>
-
-          <div class="sidebar-card">
-            <h3>Other Areas Served</h3>
-            <p style="font-size:0.8rem;line-height:1.8;">
-              <a href="/en/toronto-chinese-family-lawyer">Toronto</a> ·
-              <a href="/en/markham-chinese-family-lawyer">Markham</a> ·
-              <a href="/en/richmond-hill-chinese-family-lawyer">Richmond Hill</a> ·
-              <a href="/en/mississauga-chinese-family-lawyer">Mississauga</a> ·
-              <a href="/en/brampton-chinese-family-lawyer">Brampton</a> ·
-              <a href="/en/vaughan-chinese-family-lawyer">Vaughan</a> ·
-              <a href="/en/north-york-chinese-family-lawyer">North York</a> ·
-              <a href="/en/scarborough-chinese-family-lawyer">Scarborough</a> ·
-              <a href="/en/hamilton-chinese-family-lawyer">Hamilton</a> ·
-              <a href="/en/ottawa-chinese-family-lawyer">Ottawa</a>
-            </p>
-          </div>
-
         </aside>
       </div>
     </section>
-
   </main>
   <Footer />
 </body>
 </html>
+<style>
+  .page-hero{background:linear-gradient(135deg,#2C1810 0%,#4A2C1A 100%);color:white;padding:3rem 0 2rem}
+  .page-hero h1{font-size:2rem;margin:0.5rem 0;color:#ffffff}
+  .hero-sub{color:#D4A853;margin:0}
+  .breadcrumb{font-size:0.85rem;opacity:0.7;margin-bottom:0.5rem}
+  .breadcrumb a{color:white;text-decoration:none}
+  .container{max-width:1100px;margin:0 auto;padding:0 1.5rem}
+  .content-section{padding:3rem 0}
+  .content-grid{display:grid;grid-template-columns:1fr 300px;gap:3rem}
+  .definition-box{background:#FDF6EC;border-left:4px solid #9A8060;padding:1.2rem 1.5rem;margin-bottom:2rem;border-radius:0 8px 8px 0}
+  .qa-block{background:#f8f8f8;border-radius:8px;padding:1.2rem 1.5rem;margin:1.5rem 0;border-left:3px solid #9A8060}
+  .qa-block h3{color:#2C1810;margin-top:0;font-size:1rem}
+  .cta-box{background:linear-gradient(135deg,#2C1810,#4A2C1A);color:white;padding:2rem;border-radius:12px;text-align:center;margin-top:2rem}
+  .cta-box h3{margin-top:0;color:#D4A853}
+  .cta-box p{color:#ffffff}
+  .btn-primary{display:inline-block;background:#D4A853;color:#2C1810;padding:0.75rem 1.5rem;border-radius:6px;text-decoration:none;font-weight:700;margin:0.5rem}
+  .btn-secondary{display:inline-block;background:transparent;color:white;border:2px solid white;padding:0.75rem 1.5rem;border-radius:6px;text-decoration:none;font-weight:700;margin:0.5rem}
+  .sidebar{display:flex;flex-direction:column;gap:1.5rem}
+  .sidebar-card{background:white;border:1px solid #e8e0d5;border-radius:10px;padding:1.2rem}
+  .sidebar-card h3{color:#2C1810;font-size:0.95rem;margin-top:0;border-bottom:1px solid #e8e0d5;padding-bottom:0.5rem;margin-bottom:0.75rem}
+  .sidebar-card ul{list-style:none;padding:0;margin:0}
+  .sidebar-card li{padding:0.3rem 0;border-bottom:1px solid #f0ebe3;font-size:0.9rem}
+  .sidebar-card a{color:#9A8060;text-decoration:none}
+  .sidebar-card p{margin:0.3rem 0;font-size:0.9rem}
+  h2{color:#2C1810;margin-top:2rem}
+  h3{color:#4A2C1A}
+  @media(max-width:768px){.content-grid{grid-template-columns:1fr}.page-hero h1{font-size:1.5rem}}
+</style>
