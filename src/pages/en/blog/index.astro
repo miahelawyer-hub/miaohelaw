@@ -4,7 +4,7 @@ import BaseHead from '../../../components/BaseHead.astro';
 import HeaderEn from '../../../components/HeaderEn.astro';
 import Footer from '../../../components/Footer.astro';
 
-const posts = (await getCollection('blog')).sort(
+const posts = (await getCollection('blog-en')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 
@@ -99,7 +99,7 @@ function formatDate(date) {
     </div>
     <div class="main-wrap">
       {posts.length > 0 && (
-        <a href={`/blog/${posts[0].id}/`} class="featured-card">
+        <a href={`/en/blog/${posts[0].id}/`} class="featured-card">
           <div class="featured-left">
             <div>
               <span class="featured-tag">LATEST ARTICLE</span>
@@ -120,7 +120,7 @@ function formatDate(date) {
       )}
       <div class="grid" id="post-grid">
         {posts.slice(1).map((post, i) => (
-          <a href={`/blog/${post.id}/`} class={`card${i >= 6 ? ' hidden' : ''}`}>
+          <a href={`/en/blog/${post.id}/`} class={`card${i >= 6 ? ' hidden' : ''}`}>
             <p class="card-date">{formatDate(post.data.pubDate)}</p>
             <p class="card-title">{post.data.title}</p>
             <p class="card-desc">{post.data.description}</p>

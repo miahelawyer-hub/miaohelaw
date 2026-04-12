@@ -1,0 +1,229 @@
+---
+import { getCollection } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import HeaderEn from '../components/HeaderEn.astro';
+
+type Props = {
+  title: string;
+  description: string;
+  pubDate: Date;
+  updatedDate?: Date;
+  keywords?: string;
+  tags?: string[];
+};
+
+const { title, description, pubDate, updatedDate, keywords, tags } = Astro.props;
+
+const slug = Astro.url.pathname.replace(/\/$/, '');
+const canonicalUrl = `https://www.miaohelaw.ca${slug}`;
+const dateStr = pubDate.toISOString().split('T')[0];
+const updatedStr = updatedDate ? updatedDate.toISOString().split('T')[0] : dateStr;
+
+function formatDate(date: Date) {
+  return new Date(date).toLocaleDateString('en-CA', { year: 'numeric', month: 'long', day: 'numeric' });
+}
+
+const allPosts = (await getCollection('blog-en')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+).filter(p => `/en/blog/${p.id}` !== slug && `/en/blog/${p.id}/` !== slug).slice(0, 4);
+---
+
+<html lang="en">
+  <head>
+    <BaseHead title={title} description={description} />
+    {keywords && <meta name="keywords" content={keywords} />}
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="en_CA" />
+    <link rel="alternate" hreflang="en" href={canonicalUrl} />
+    <script type="application/ld+json" set:html={JSON.stringify([
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": title,
+        "description": description,
+        "url": canonicalUrl,
+        "datePublished": dateStr,
+        "dateModified": updatedStr,
+        "inLanguage": "en",
+        "author": {
+          "@type": "Person",
+          "@id": "https://www.miaohelaw.ca/#person",
+          "name": "Miao He",
+          "alternateName": ["何淼", "Mia He"],
+          "jobTitle": "Family Law Lawyer",
+          "url": "https://www.miaohelaw.ca",
+          "telephone": "+1-647-930-6688"
+        },
+        "publisher": {
+          "@type": "Person",
+          "@id": "https://www.miaohelaw.ca/#person",
+          "name": "Miao He",
+          "url": "https://www.miaohelaw.ca"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.miaohelaw.ca/en/" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.miaohelaw.ca/en/blog/" },
+          { "@type": "ListItem", "position": 3, "name": title, "item": canonicalUrl }
+        ]
+      }
+    ])} />
+    <style is:global>
+      * { box-sizing: border-box; }
+      body { background: #faf8f5; margin: 0; font-family: Georgia, serif; }
+      .post-hero { background: linear-gradient(135deg, #2C1810 0%, #4A2C1A 100%); padding: 3rem 1.5rem 2.5rem; text-align: center; }
+      .post-hero .breadcrumb { font-size: 0.78rem; color: #c9a96e; margin-bottom: 1.2rem; letter-spacing: 0.04em; text-transform: uppercase; }
+      .post-hero .breadcrumb a { color: #c9a96e; text-decoration: none; }
+      .post-hero .breadcrumb a:hover { color: #D4A853; }
+      .post-hero h1 { color: #ffffff; font-size: clamp(1.5rem, 3.5vw, 2.1rem); line-height: 1.35; margin: 0 auto 1.2rem; max-width: 820px; font-weight: 700; }
+      .post-hero .meta { color: #D4A853; font-size: 0.82rem; letter-spacing: 0.04em; }
+      .post-layout { max-width: 1100px; margin: 0 auto; padding: 2.5rem 1.5rem; display: grid; grid-template-columns: 1fr 300px; gap: 2.5rem; align-items: start; }
+      .prose { background: #ffffff; border-radius: 12px; padding: 2.5rem; box-shadow: 0 2px 12px rgba(44,24,16,0.07); color: #2C1810; font-size: 1.08rem; line-height: 2; min-width: 0; }
+      .prose h2 { font-size: 1.15rem; margin: 3rem 0 1.2rem; padding: 0.55rem 1.1rem 0.55rem 1rem; background: linear-gradient(135deg, #2C1810 0%, #4A2C1A 100%); color: #ffffff; border-radius: 6px; }
+      .prose h3 { color: #4A2C1A; font-size: 1.08rem; margin: 2.2rem 0 0.8rem; padding-left: 0.85rem; border-left: 3px solid #D4A853; }
+      .prose p { margin: 0 0 1.6rem; }
+      .prose strong { color: #2C1810; }
+      .prose blockquote { border-left: 4px solid #D4A853; background: #fdf6ec; margin: 1.5rem 0; padding: 1rem 1.5rem; border-radius: 0 8px 8px 0; color: #4A2C1A; font-style: italic; }
+      .prose ul, .prose ol { padding-left: 1.5rem; margin: 0 0 1.25rem; }
+      .prose li { margin-bottom: 0.75rem; line-height: 1.9; }
+      .prose table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.95rem; border-radius: 8px; overflow: hidden; }
+      .prose th { background: #2C1810; color: #D4A853; padding: 0.75rem 1rem; text-align: left; font-weight: 600; font-size: 0.9rem; }
+      .prose td { padding: 0.65rem 1rem; border-bottom: 1px solid #e8e0d5; color: #2C1810; }
+      .prose tr:nth-child(even) td { background: #fdf6ec; }
+      .prose hr { border: none; border-top: 1px solid #e8e0d5; margin: 2rem 0; }
+      .cta-box { background: linear-gradient(135deg, #2C1810, #4A2C1A); color: white; padding: 2rem; border-radius: 12px; margin-top: 2.5rem; text-align: center; }
+      .cta-box h3 { color: #D4A853; margin: 0 0 0.6rem; font-size: 1.1rem; }
+      .cta-box p { color: rgba(255,255,255,0.92); margin: 0 0 1.25rem; font-size: 0.95rem; }
+      .cta-links { display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; }
+      .btn-primary { display: inline-block; background: #D4A853; color: #2C1810; padding: 0.7rem 1.5rem; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 0.92rem; }
+      .btn-secondary { display: inline-block; background: transparent; color: white; border: 2px solid white; padding: 0.7rem 1.5rem; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 0.92rem; }
+      .author-bio { margin-top: 2.5rem; border-top: 2px solid #e8e0d5; padding-top: 1.5rem; }
+      .author-bio-text p { margin: 0 0 0.6rem; font-size: 0.92rem; color: #4A2C1A; line-height: 1.65; }
+      .author-bio-name { font-size: 1rem !important; font-weight: 700; color: #2C1810 !important; }
+      .author-bio-title { font-size: 0.82rem !important; color: #9A8060 !important; letter-spacing: 0.03em; }
+      .author-bio-links a { color: #9A8060; text-decoration: none; font-size: 0.85rem; }
+      .author-bio-links a:hover { color: #2C1810; }
+      .sidebar { display: flex; flex-direction: column; gap: 1.25rem; }
+      .sidebar-card { background: white; border: 1px solid #e8e0d5; border-radius: 10px; padding: 1.25rem; box-shadow: 0 2px 8px rgba(44,24,16,0.05); }
+      .sidebar-card h3 { color: #2C1810; font-size: 0.88rem; text-transform: uppercase; letter-spacing: 0.06em; margin: 0 0 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid #D4A853; }
+      .contact-card { background: linear-gradient(135deg, #2C1810, #4A2C1A); border: none; }
+      .contact-card h3 { color: #D4A853; border-bottom-color: rgba(212,168,83,0.4); }
+      .contact-card p { color: rgba(255,255,255,0.85); font-size: 0.88rem; margin: 0 0 1rem; line-height: 1.6; }
+      .contact-card a.call-btn { display: block; background: #D4A853; color: #2C1810; text-align: center; padding: 0.65rem; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 0.92rem; margin-bottom: 0.5rem; }
+      .contact-card a.email-btn { display: block; background: transparent; color: white; text-align: center; padding: 0.65rem; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.88rem; border: 1px solid rgba(255,255,255,0.4); }
+      .related-list { list-style: none; padding: 0; margin: 0; }
+      .related-list li { border-bottom: 1px solid #f0ebe3; padding: 0.6rem 0; }
+      .related-list li:last-child { border-bottom: none; padding-bottom: 0; }
+      .related-list a { color: #4A2C1A; text-decoration: none; font-size: 0.88rem; line-height: 1.45; display: block; }
+      .related-list a:hover { color: #D4A853; }
+      .related-list .rdate { font-size: 0.75rem; color: #9A8060; margin-top: 0.2rem; }
+      .service-list { list-style: none; padding: 0; margin: 0; }
+      .service-list li { padding: 0.3rem 0; border-bottom: 1px solid #f0ebe3; font-size: 0.88rem; }
+      .service-list li:last-child { border-bottom: none; }
+      .service-list a { color: #9A8060; text-decoration: none; }
+      .service-list a:hover { color: #2C1810; }
+      @media (max-width: 900px) { .post-layout { grid-template-columns: 1fr; } .contact-card { display: none; } }
+      @media (max-width: 600px) { .post-hero { padding: 2rem 1rem 1.5rem; } .post-hero h1 { font-size: 1.35rem; } .prose { padding: 1.5rem 1.1rem; font-size: 1rem; } .post-layout { padding: 1.5rem 1rem; gap: 1.5rem; } }
+    </style>
+  </head>
+  <body>
+    <HeaderEn />
+    <main>
+      <article>
+        <div class="post-hero">
+          <p class="breadcrumb">
+            <a href="/en/">Home</a> &rsaquo;
+            <a href="/en/blog">Blog</a> &rsaquo;
+            Family Law
+          </p>
+          <h1>{title}</h1>
+          <p class="meta">
+            Miao He &nbsp;·&nbsp; {formatDate(pubDate)}
+            {updatedDate && <span>&nbsp;(Updated: {formatDate(updatedDate)})</span>}
+            &nbsp;·&nbsp; H. LAW FIRM
+          </p>
+        </div>
+
+        <div class="post-layout">
+          <div class="prose">
+            <slot />
+            <div class="cta-box">
+              <h3>Book an Initial Legal Consultation</h3>
+              <p>Miao He · 30-minute consultation $220+HST · Understand your rights, assess your options, and build a strategy. Mandarin & English.</p>
+              <div class="cta-links">
+                <a href="tel:6479306688" class="btn-primary">📞 647-930-6688</a>
+                <a href="/en/contact" class="btn-secondary">Book Online</a>
+              </div>
+            </div>
+
+            <div class="author-bio">
+              <div class="author-bio-text">
+                <p class="author-bio-name">Miao He (何淼)</p>
+                <p class="author-bio-title">Principal Lawyer · H. LAW FIRM · Markham, Ontario</p>
+                <p>Miao He is dual-licensed in Ontario (LSO #83315K) and China, with over 15 years of family law experience serving the Chinese-Canadian community in the Greater Toronto Area. She has appeared in cases including <strong>Yang v. Li 2024 ONSC 4801</strong> and <strong>Li v. Jiang 2026 ONSC 561</strong>, and has successfully recovered over $300,000 in cross-border assets for clients.</p>
+                <p class="author-bio-links">
+                  <a href="/en/about">About Miao He</a> ·
+                  <a href="/en/case-results">Case Results</a> ·
+                  <a href="/en/contact">Book a Consultation</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <aside class="sidebar">
+            <div class="sidebar-card contact-card">
+              <h3>Book a Consultation</h3>
+              <p>Miao He · Mandarin & English<br/>Initial consultation 30 min $220+HST<br/>Markham · All of Ontario</p>
+              <a href="tel:6479306688" class="call-btn">📞 647-930-6688</a>
+              <a href="mailto:miao@miaohelaw.ca" class="email-btn">✉ miao@miaohelaw.ca</a>
+            </div>
+
+            {allPosts.length > 0 && (
+              <div class="sidebar-card">
+                <h3>Related Articles</h3>
+                <ul class="related-list">
+                  {allPosts.map(post => (
+                    <li>
+                      <a href={`/en/blog/${post.id}`}>{post.data.title}</a>
+                      <div class="rdate">{formatDate(post.data.pubDate)}</div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            <div class="sidebar-card" style="background:linear-gradient(135deg,#2C1810,#4A2C1A);border:none;">
+              <h3 style="color:#D4A853;border-bottom-color:rgba(212,168,83,0.3);">Why Miao He</h3>
+              <ul class="service-list">
+                <li style="border-bottom-color:rgba(255,255,255,0.1)"><a href="/en/about" style="color:rgba(255,255,255,0.85)">Dual-Licensed: Ontario & China</a></li>
+                <li style="border-bottom-color:rgba(255,255,255,0.1)"><a href="/en/about" style="color:rgba(255,255,255,0.85)">Mandarin & English Service</a></li>
+                <li style="border-bottom-color:rgba(255,255,255,0.1)"><a href="/en/case-results" style="color:rgba(255,255,255,0.85)">CanLII Verified Cases</a></li>
+                <li style="border-bottom-color:none"><a href="/en/case-results" style="color:#D4A853;font-weight:600">→ View Case Results</a></li>
+              </ul>
+            </div>
+
+            <div class="sidebar-card">
+              <h3>Family Law Services</h3>
+              <ul class="service-list">
+                <li><a href="/en/family-law/divorce-litigation">Divorce Litigation</a></li>
+                <li><a href="/en/family-law/child-custody">Child Custody</a></li>
+                <li><a href="/en/family-law/support">Support</a></li>
+                <li><a href="/en/family-law/domestic-contracts">Marriage Contracts</a></li>
+                <li><a href="/en/family-law/cross-border-assets">Cross-Border Assets</a></li>
+                <li><a href="/en/family-law/mediation">Mediation</a></li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </article>
+    </main>
+    <Footer />
+  </body>
+</html>
