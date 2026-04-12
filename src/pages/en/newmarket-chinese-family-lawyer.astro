@@ -7,15 +7,14 @@ import Footer from '../../components/Footer.astro';
 <html lang="en">
 <head>
   <BaseHead
-    title="Chinese Family Lawyer Newmarket | Mandarin Divorce Lawyer | Miao He"
-    description="Miao He provides Mandarin family law services for Newmarket and Aurora clients — no interpreter needed, patient and thorough consultation. 647-930-6688."
+    title="Chinese Family Lawyer Newmarket | Divorce Timeline · No Interpreter · Mandarin | Miao He"
+    description="Miao He serves Chinese-Canadian families in Newmarket — no interpreter needed, full Mandarin service, courthouse experience at Superior Court of Justice Newmarket. 647-930-6688."
   />
-  <meta name="keywords" content="Chinese family lawyer Newmarket,Mandarin divorce lawyer Newmarket,family lawyer Newmarket,Chinese lawyer Newmarket,divorce lawyer Newmarket Ontario,Aurora Chinese lawyer,Miao He Newmarket" />
-  <meta property="og:title" content="Chinese Family Lawyer Newmarket | Mandarin Divorce Lawyer | Miao He" />
-  <meta property="og:description" content="Miao He provides Mandarin family law services for Newmarket and Aurora clients — no interpreter needed, patient and thorough consultation. 647-930-6688." />
+  <meta name="keywords" content="Chinese family lawyer Newmarket,Mandarin divorce lawyer Newmarket,Newmarket Chinese Canadian divorce,how long does divorce take Ontario,divorce timeline Ontario,no interpreter family lawyer Ontario,Chinese lawyer York Region Newmarket,Superior Court Newmarket family law,separation agreement Newmarket,child custody Newmarket Chinese" />
+  <meta property="og:title" content="Chinese Family Lawyer Newmarket | Miao He" />
+  <meta property="og:description" content="Serving Chinese-Canadian families in Newmarket — full Mandarin service, no interpreter, deep familiarity with Superior Court of Justice Newmarket Courthouse. 647-930-6688." />
   <meta property="og:url" content="https://www.miaohelaw.ca/en/newmarket-chinese-family-lawyer" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://www.miaohelaw.ca/og-image.jpg" />
   <link rel="canonical" href="https://www.miaohelaw.ca/en/newmarket-chinese-family-lawyer" />
   <link rel="alternate" hreflang="zh" href="https://www.miaohelaw.ca/newmarket-family-lawyer" />
   <link rel="alternate" hreflang="en" href="https://www.miaohelaw.ca/en/newmarket-chinese-family-lawyer" />
@@ -29,14 +28,26 @@ import Footer from '../../components/Footer.astro';
       "url": "https://www.miaohelaw.ca/en/newmarket-chinese-family-lawyer",
       "telephone": "+1-647-930-6688",
       "email": "miao@miaohelaw.ca",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "208-7050 Woodbine Ave",
+        "addressLocality": "Markham",
+        "addressRegion": "ON",
+        "addressCountry": "CA"
+      },
       "areaServed": {
         "@type": "City",
         "name": "Newmarket",
         "containedInPlace": {"@type": "Province", "name": "Ontario"}
       },
+      "availableLanguage": [
+        {"@type": "Language", "name": "Mandarin Chinese"},
+        {"@type": "Language", "name": "English"}
+      ],
       "provider": {
         "@type": "Person",
         "name": "Miao He",
+        "alternateName": ["何淼", "Mia He"],
         "jobTitle": "Family Law Lawyer",
         "knowsLanguage": ["zh-Hans", "en"],
         "hasCredential": [
@@ -44,15 +55,17 @@ import Footer from '../../components/Footer.astro';
           {"@type": "EducationalOccupationalCredential", "credentialCategory": "China Bar Association — Licensed"}
         ]
       },
-      "serviceType": ["Family Law", "Divorce", "Child Custody", "Marriage Contract", "Spousal Support", "Cross-border Assets"],
-      "inLanguage": ["en", "zh-Hans"]
+      "serviceType": ["Divorce Litigation", "Child Custody", "Property Division", "Marriage Contract", "Separation Agreement", "Cross-Border Assets"],
+      "inLanguage": "en",
+      "sameAs": "https://www.miaohelaw.ca/newmarket-family-lawyer"
     },
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.miaohelaw.ca/en/"},
-        {"@type": "ListItem", "position": 2, "name": "Newmarket Chinese Family Lawyer", "item": "https://www.miaohelaw.ca/en/newmarket-chinese-family-lawyer"}
+        {"@type": "ListItem", "position": 2, "name": "Service Areas", "item": "https://www.miaohelaw.ca/en/contact"},
+        {"@type": "ListItem", "position": 3, "name": "Chinese Family Lawyer Newmarket", "item": "https://www.miaohelaw.ca/en/newmarket-chinese-family-lawyer"}
       ]
     },
     {
@@ -61,150 +74,165 @@ import Footer from '../../components/Footer.astro';
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Can I consult a Mandarin-speaking family lawyer in Newmarket?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Yes. Miao He provides full Mandarin family law services to Newmarket and Aurora clients. Consultations are available in person at her Markham office or by phone/video. Call 647-930-6688."}
+          "name": "How long does a divorce take in Ontario?",
+          "acceptedAnswer": {"@type": "Answer", "text": "An uncontested divorce in Ontario typically takes 4 to 6 months from filing to the divorce order, assuming all paperwork is complete and both parties agree. A contested divorce — where spouses disagree on property, support, or custody — can take 1 to 3 years or longer depending on complexity. Miao He can advise on the realistic timeline for your specific situation. Call 647-930-6688."}
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need an interpreter to work with a family lawyer in Ontario?",
+          "acceptedAnswer": {"@type": "Answer", "text": "If you work with an English-speaking lawyer, yes — and interpreter fees add both cost and risk of miscommunication. Miao He speaks Mandarin directly, so no interpreter is needed. This saves money and ensures nothing is lost in translation. Call 647-930-6688."}
+        },
+        {
+          "@type": "Question",
+          "name": "Which court handles Newmarket family law cases?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Newmarket family law cases are heard at the Superior Court of Justice — Newmarket Courthouse, located at 50 Eagle Street West, Newmarket. Miao He has extensive experience at this court and is familiar with its scheduling practices and procedures."}
         }
       ]
     }
   ]
   </script>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: Georgia, serif; background: #FDFBF7; color: #2C1810; }
-    a { color: inherit; text-decoration: none; }
-    .page-hero { background: linear-gradient(135deg, #2C1810, #4A2C1A); padding: 3rem 1.5rem 2.5rem; text-align: center; }
-    .page-hero .inner { max-width: 760px; margin: 0 auto; }
-    .breadcrumb { font-size: 0.82rem; color: rgba(255,255,255,0.5); margin-bottom: 0.6rem; }
-    .breadcrumb a { color: rgba(255,255,255,0.5); }
-    .page-label { font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: #D4A853; margin-bottom: 0.5rem; }
-    .page-hero h1 { color: #fff; font-size: clamp(1.6rem, 3vw, 2.2rem); margin: 0 0 0.5rem; font-weight: 400; }
-    .tagline { color: #D4A853; font-size: 0.88rem; margin: 0; }
-    .main-section { padding: 3rem 1.5rem 4rem; }
-    .main-inner { max-width: 860px; margin: 0 auto; display: grid; grid-template-columns: 1fr 300px; gap: 2.5rem; }
-    .card { background: #fff; border: 1px solid #EDE8DF; border-radius: 12px; padding: 1.75rem; margin-bottom: 1.5rem; }
-    .card h2 { font-size: 1.1rem; font-weight: 700; color: #2C1810; margin: 0 0 1rem; }
-    .card p { font-size: 0.92rem; line-height: 1.7; color: #2C1810; margin-bottom: 0.75rem; }
-    .services-list { list-style: none; padding: 0; margin: 0.5rem 0; }
-    .services-list li { font-size: 0.9rem; padding: 0.3rem 0; border-bottom: 1px solid #F5EFE0; }
-    .services-list li:last-child { border-bottom: none; }
-    .highlight { border-color: #D4A853; box-shadow: 0 4px 20px rgba(212,168,83,0.12); }
-    .cta-block { background: #2C1810; border-radius: 12px; padding: 1.75rem; margin-bottom: 1.5rem; text-align: center; }
-    .cta-block h2 { color: #D4A853; font-size: 1.1rem; margin: 0 0 0.5rem; }
-    .cta-block p { color: rgba(255,255,255,0.8); font-size: 0.88rem; margin: 0 0 1rem; }
-    .btn-phone { display: inline-block; background: #D4A853; color: #1A1208; padding: 0.75rem 2rem; border-radius: 8px; font-weight: 700; font-size: 1rem; margin-bottom: 0.5rem; }
-    .btn-email { display: inline-block; background: transparent; color: #D4A853; border: 1px solid #D4A853; padding: 0.6rem 1.5rem; border-radius: 8px; font-size: 0.88rem; margin-top: 0.5rem; }
-    .sidebar-card { background: #fff; border: 1px solid #EDE8DF; border-radius: 12px; padding: 1.5rem; margin-bottom: 1.25rem; }
-    .sidebar-card h3 { font-size: 0.88rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: #2C1810; margin: 0 0 0.75rem; }
-    .sidebar-card p { font-size: 0.85rem; line-height: 1.6; color: #2C1810; }
-    .cred-list { list-style: none; padding: 0; margin: 0; }
-    .cred-list li { font-size: 0.83rem; padding: 0.25rem 0; padding-left: 1rem; position: relative; color: #2C1810; }
-    .cred-list li::before { content: "·"; position: absolute; left: 0; color: #D4A853; }
-    .area-note { font-size: 0.82rem; color: #9A8060; font-style: italic; margin-top: 0.5rem; }
-    @media (max-width: 720px) { .main-inner { grid-template-columns: 1fr; } }
-</style>
 </head>
 <body>
   <HeaderEn />
   <main>
-
     <section class="page-hero">
-      <div class="inner">
-        <div class="breadcrumb"><a href="/en/">Home</a> › <a href="/en/contact">Areas Served</a> › Newmarket</div>
-        <div class="page-label">Chinese Family Lawyer · Newmarket</div>
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="/en/">Home</a> › <a href="/en/contact">Service Areas</a> › Newmarket
+        </div>
         <h1>Chinese Family Lawyer in Newmarket</h1>
-        <p class="tagline">Mandarin / Putonghua · No interpreter needed · Patient consultation · 647-930-6688</p>
+        <p class="hero-sub">Mandarin family law · No interpreter needed · Superior Court Newmarket experience · 647-930-6688</p>
       </div>
     </section>
 
-    <section class="main-section">
-      <div class="main-inner">
-
+    <section class="content-section">
+      <div class="container content-grid">
         <div class="main-content">
 
-          <div class="card highlight">
-            <h2>Serving Newmarket in Mandarin & English</h2>
-            <p>Chinese-Canadian families in Newmarket and Aurora often struggle to find legal services in Mandarin. Miao He provides full Mandarin family law services — no interpreter needed, no detail lost. Consultations are thorough and conducted entirely at your pace, in your language.</p>
-            <p>Miao He (何淼) is dual-licensed in Ontario (LSO #83315K) and China, with 15+ years of family law experience and 20+ court appearances per month. She handles all matters personally — in Mandarin and English, with no interpreter needed.</p>
+          <div class="definition-box">
+            <p>Newmarket is the home of the <strong>Superior Court of Justice — Newmarket Courthouse</strong> — the court that handles family law cases for York Region, including Richmond Hill, Vaughan, Thornhill, Aurora, and Newmarket itself. Miao He (何淼) provides full Mandarin family law services to Newmarket and York Region clients, with deep familiarity with this court's procedures, scheduling practices, and judicial expectations. <strong>No interpreter needed.</strong> LSO #83315K.</p>
           </div>
 
-          <div class="card">
-            <h2>Family Law Services Available in Newmarket</h2>
-            <ul class="services-list">
-              <li>Divorce Litigation</li>
-              <li>Child Custody &amp; Access</li>
-              <li>Child Support / Spousal Support</li>
-              <li>Property Division / NFP Equalization</li>
-              <li>Cross-Border Asset Recovery (Canada &amp; China)</li>
-              <li>Emergency Motions / Mareva Injunction</li>
-              <li>Marriage Contract / Prenuptial Agreement</li>
-              <li>Separation Agreement</li>
-              <li>Mediation</li>
-            </ul>
-            <p class="area-note">Serving Newmarket, Aurora, East Gwillimbury, and upper York Region.</p>
+          <h2>Why Newmarket Chinese-Canadian Families Choose a Mandarin-Speaking Lawyer</h2>
+          <p>Working with a family lawyer in a language you don't fully control creates real risks — details get lost, nuances are missed, and the emotional weight of what you're going through doesn't fully come across. Miao He communicates directly in Mandarin, ensuring that the full picture reaches the legal process.</p>
+
+          <h3>No Interpreter: Lower Cost, Better Accuracy</h3>
+          <p>Many Chinese-Canadian clients work with English-speaking lawyers and hire a separate interpreter for consultations and court appearances. This adds cost — interpreter fees can run $100–$200 per hour — and introduces the risk that critical details are imprecisely translated. Miao He speaks Mandarin directly. The savings are real, and so is the accuracy.</p>
+
+          <h3>Courthouse Familiarity: Newmarket Superior Court</h3>
+          <p>The Superior Court of Justice — Newmarket Courthouse (50 Eagle Street West) handles York Region family law matters. Miao He has extensive experience at this court — its scheduling practices, the conference process, how motions are handled, and what judges in this jurisdiction expect from counsel. This local knowledge translates into more efficient case management and better-prepared appearances.</p>
+
+          <h3>Divorce: Contested and Uncontested</h3>
+          <p>An uncontested divorce — where both spouses agree on all terms — can be completed in Ontario in as little as 4 to 6 months without a court appearance. A contested divorce, where spouses disagree on property, support, or custody, takes significantly longer and requires court appearances. Miao He advises clients honestly on which path makes sense for their situation and guides the full process in Mandarin.</p>
+
+          <h3>Child Custody and Parenting Plans</h3>
+          <p>Newmarket Chinese-Canadian families often face custody questions that involve cultural considerations: whether children can travel to China for extended visits, Chinese-language schooling, grandparent involvement in care. Miao He builds Parenting Plans that address these specifics in legally binding terms — reducing the likelihood of future disputes by being precise about what each party can and cannot do.</p>
+
+          <h3>Property Division and York Region Real Estate</h3>
+          <p>York Region properties — detached homes, investment properties, and properties with parental contributions — are subject to Ontario's Net Family Property Equalization rules. Miao He ensures accurate valuation at the correct separation date, proper exclusion of pre-marital and gifted assets, and full disclosure of all assets including those held in China.</p>
+
+          <div class="qa-block">
+            <h3>Q: How long does a divorce take in Ontario?</h3>
+            <p>A: An uncontested divorce typically takes 4 to 6 months from filing. A contested divorce can take 1 to 3 years or more depending on the issues. Miao He can give you a realistic timeline based on your specific circumstances. Call 647-930-6688.</p>
           </div>
 
-          <div class="card">
-            <h2>Frequently Asked Question</h2>
-            <p><strong>Can I consult a Mandarin-speaking family lawyer in Newmarket?</strong></p>
-            <p>Yes. Miao He provides full Mandarin family law services to Newmarket and Aurora clients. Consultations are available in person at her Markham office or by phone/video. Call 647-930-6688.</p>
+          <div class="qa-block">
+            <h3>Q: Do I need an interpreter to work with a Newmarket family lawyer?</h3>
+            <p>A: Not with Miao He. She speaks Mandarin directly — no interpreter fees, no translation errors. Call 647-930-6688.</p>
+          </div>
+
+          <div class="qa-block">
+            <h3>Q: Which court handles Newmarket family law cases?</h3>
+            <p>A: The Superior Court of Justice — Newmarket Courthouse, 50 Eagle Street West, Newmarket. Miao He has extensive experience at this court and can represent you fully in Mandarin. Call 647-930-6688.</p>
+          </div>
+
+          <div class="cta-box">
+            <h3>Book a Newmarket Family Law Consultation</h3>
+            <p>Initial consultation 30 minutes · $220 + HST · Mandarin &amp; English · Phone or Zoom</p>
+            <a href="/en/contact" class="btn-primary">Book Now</a>
+            <a href="tel:6479306688" class="btn-secondary">647-930-6688</a>
           </div>
 
         </div>
 
-        <aside class="main-sidebar">
-
-          <div class="cta-block">
-            <h2>Book a Consultation</h2>
-            <p>Initial consultation 30 min · $220 + HST · No obligation</p>
-            <a href="tel:6479306688" class="btn-phone">📞 647-930-6688</a><br/>
-            <a href="mailto:miao@miaohelaw.ca" class="btn-email">miao@miaohelaw.ca</a>
-          </div>
-
+        <aside class="sidebar">
           <div class="sidebar-card">
-            <h3>Office Address</h3>
-            <p>H. LAW FIRM 恒. 律师事务所<br/>
-            208 - 7050 Woodbine Avenue<br/>
-            Markham, Ontario L3R 4G8</p>
+            <h3>Contact Miao He</h3>
+            <p>📞 <a href="tel:6479306688">647-930-6688</a></p>
+            <p>📧 <a href="mailto:miao@miaohelaw.ca">miao@miaohelaw.ca</a></p>
+            <p>📍 208-7050 Woodbine Ave, Markham</p>
+            <p>💬 WeChat: 372656035</p>
           </div>
-
           <div class="sidebar-card">
-            <h3>Licences &amp; Credentials</h3>
-            <ul class="cred-list">
-              <li>Law Society of Ontario — #83315K</li>
-              <li>China Bar Association — Dual Licensed</li>
-              <li>Expert Witness — Chinese Family Law</li>
-              <li>Notary Public — Ontario</li>
-              <li>15+ years experience</li>
-              <li>20+ court appearances / month</li>
+            <h3>Family Law Services</h3>
+            <ul>
+              <li><a href="/en/family-law/divorce-litigation">Divorce Litigation</a></li>
+              <li><a href="/en/family-law/child-custody">Child Custody</a></li>
+              <li><a href="/en/family-law/domestic-contracts">Marriage Contracts</a></li>
+              <li><a href="/en/family-law/cross-border-assets">Cross-Border Assets</a></li>
+              <li><a href="/en/family-law/support">Support</a></li>
+              <li><a href="/en/family-law/mediation">Mediation</a></li>
             </ul>
           </div>
-
+          <div class="sidebar-card">
+            <h3>Service Areas</h3>
+            <ul>
+              <li><a href="/en/toronto-chinese-family-lawyer">Chinese Divorce Lawyer Toronto</a></li>
+              <li><a href="/en/markham-chinese-family-lawyer">Chinese Family Lawyer Markham · Office</a></li>
+              <li><a href="/en/richmond-hill-chinese-family-lawyer">Chinese Family Lawyer Richmond Hill</a></li>
+              <li><a href="/en/north-york-chinese-family-lawyer">Chinese Divorce Lawyer North York</a></li>
+              <li><a href="/en/scarborough-chinese-family-lawyer">Chinese Family Lawyer Scarborough</a></li>
+              <li><a href="/en/mississauga-chinese-family-lawyer">Chinese Divorce Lawyer Mississauga</a></li>
+              <li><a href="/en/brampton-chinese-family-lawyer">Chinese Family Lawyer Brampton</a></li>
+              <li><a href="/en/vaughan-chinese-family-lawyer">Chinese Family Lawyer Vaughan</a></li>
+              <li><a href="/en/thornhill-chinese-family-lawyer">Chinese Family Lawyer Thornhill</a></li>
+              <li><a href="/en/newmarket-chinese-family-lawyer">Chinese Family Lawyer Newmarket</a></li>
+              <li><a href="/en/ajax-pickering-chinese-family-lawyer">Chinese Lawyer Ajax / Pickering</a></li>
+              <li><a href="/en/hamilton-chinese-family-lawyer">Chinese Family Lawyer Hamilton</a></li>
+              <li><a href="/en/kitchener-chinese-family-lawyer">Chinese Family Lawyer Kitchener</a></li>
+              <li><a href="/en/ottawa-chinese-family-lawyer">Chinese Family Lawyer Ottawa</a></li>
+              <li><a href="/en/london-chinese-family-lawyer">Chinese Lawyer London Ontario</a></li>
+              <li><a href="/en/windsor-chinese-family-lawyer">Chinese Family Lawyer Windsor</a></li>
+              <li><a href="/en/north-bay-chinese-family-lawyer">Chinese Family Lawyer North Bay</a></li>
+            </ul>
+          </div>
           <div class="sidebar-card">
             <h3>Languages</h3>
-            <p>Mandarin (普通话) · English</p>
+            <p>🇨🇳 Mandarin (普通话)</p>
+            <p>🇨🇦 English</p>
           </div>
-
-          <div class="sidebar-card">
-            <h3>Other Areas Served</h3>
-            <p style="font-size:0.8rem;line-height:1.8;">
-              <a href="/en/toronto-chinese-family-lawyer">Toronto</a> ·
-              <a href="/en/markham-chinese-family-lawyer">Markham</a> ·
-              <a href="/en/richmond-hill-chinese-family-lawyer">Richmond Hill</a> ·
-              <a href="/en/mississauga-chinese-family-lawyer">Mississauga</a> ·
-              <a href="/en/brampton-chinese-family-lawyer">Brampton</a> ·
-              <a href="/en/vaughan-chinese-family-lawyer">Vaughan</a> ·
-              <a href="/en/north-york-chinese-family-lawyer">North York</a> ·
-              <a href="/en/scarborough-chinese-family-lawyer">Scarborough</a> ·
-              <a href="/en/hamilton-chinese-family-lawyer">Hamilton</a> ·
-              <a href="/en/ottawa-chinese-family-lawyer">Ottawa</a>
-            </p>
-          </div>
-
         </aside>
       </div>
     </section>
-
   </main>
   <Footer />
 </body>
 </html>
+<style>
+  .page-hero{background:linear-gradient(135deg,#2C1810 0%,#4A2C1A 100%);color:white;padding:3rem 0 2rem}
+  .page-hero h1{font-size:2rem;margin:0.5rem 0;color:#ffffff}
+  .hero-sub{color:#D4A853;margin:0}
+  .breadcrumb{font-size:0.85rem;opacity:0.7;margin-bottom:0.5rem}
+  .breadcrumb a{color:white;text-decoration:none}
+  .container{max-width:1100px;margin:0 auto;padding:0 1.5rem}
+  .content-section{padding:3rem 0}
+  .content-grid{display:grid;grid-template-columns:1fr 300px;gap:3rem}
+  .definition-box{background:#FDF6EC;border-left:4px solid #9A8060;padding:1.2rem 1.5rem;margin-bottom:2rem;border-radius:0 8px 8px 0}
+  .qa-block{background:#f8f8f8;border-radius:8px;padding:1.2rem 1.5rem;margin:1.5rem 0;border-left:3px solid #9A8060}
+  .qa-block h3{color:#2C1810;margin-top:0;font-size:1rem}
+  .cta-box{background:linear-gradient(135deg,#2C1810,#4A2C1A);color:white;padding:2rem;border-radius:12px;text-align:center;margin-top:2rem}
+  .cta-box h3{margin-top:0;color:#D4A853}
+  .cta-box p{color:#ffffff}
+  .btn-primary{display:inline-block;background:#D4A853;color:#2C1810;padding:0.75rem 1.5rem;border-radius:6px;text-decoration:none;font-weight:700;margin:0.5rem}
+  .btn-secondary{display:inline-block;background:transparent;color:white;border:2px solid white;padding:0.75rem 1.5rem;border-radius:6px;text-decoration:none;font-weight:700;margin:0.5rem}
+  .sidebar{display:flex;flex-direction:column;gap:1.5rem}
+  .sidebar-card{background:white;border:1px solid #e8e0d5;border-radius:10px;padding:1.2rem}
+  .sidebar-card h3{color:#2C1810;font-size:0.95rem;margin-top:0;border-bottom:1px solid #e8e0d5;padding-bottom:0.5rem;margin-bottom:0.75rem}
+  .sidebar-card ul{list-style:none;padding:0;margin:0}
+  .sidebar-card li{padding:0.3rem 0;border-bottom:1px solid #f0ebe3;font-size:0.9rem}
+  .sidebar-card a{color:#9A8060;text-decoration:none}
+  .sidebar-card p{margin:0.3rem 0;font-size:0.9rem}
+  h2{color:#2C1810;margin-top:2rem}
+  h3{color:#4A2C1A}
+  @media(max-width:768px){.content-grid{grid-template-columns:1fr}.page-hero h1{font-size:1.5rem}}
+</style>
