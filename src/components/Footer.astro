@@ -26,6 +26,15 @@ const today = new Date();
     <span class="trust-icon">📞</span>
     <a href="tel:6479306688">647-930-6688</a>
   </div>
+  <div class="footer-legal">
+    <a href="/privacy-policy">隐私政策</a>
+    <span>·</span>
+    <a href="/terms-of-use">使用条款</a>
+    <span>·</span>
+    <a href="/en/privacy-policy">Privacy Policy</a>
+    <span>·</span>
+    <a href="/en/terms-of-use">Terms of Use</a>
+  </div>
 </div>
 	&copy; {today.getFullYear()} Miao He (何淼). All rights reserved.
 	<div class="social-links">
@@ -121,5 +130,25 @@ footer {
 		font-size: 0.8rem;
 		color: rgb(var(--gray));
 		margin-top: 0.5em;
+	}
+	.footer-legal {
+		margin-top: 1.5em;
+		font-size: 0.78rem;
+		color: rgb(var(--gray));
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 0.5em;
+		flex-wrap: wrap;
+	}
+	.footer-legal a {
+		color: rgb(var(--gray));
+		text-decoration: none;
+	}
+	.footer-legal a:hover {
+		color: #D4A853;
+	}
+	.footer-legal span {
+		opacity: 0.4;
 	}
 </style>
