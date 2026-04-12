@@ -30,10 +30,38 @@ import Footer from '../../components/Footer.astro';
       "addressRegion": "ON",
       "addressCountry": "CA"
     },
-    "serviceType": ["Hague Apostille", "Document Authentication China Canada", "Notary Public Ontario", "Cross-Border Document Services"],
+    "serviceType": ["Hague Apostille", "Document Authentication China Canada", "Hague Service Convention China", "Notary Public Ontario", "Cross-Border Document Services"],
     "availableLanguage": [
       {"@type": "Language", "name": "Mandarin Chinese"},
       {"@type": "Language", "name": "English"}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "My spouse is in China and refuses to cooperate with the divorce. What can I do?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Your spouse's refusal does not prevent you from divorcing in Ontario. After one year of separation, you can proceed with a divorce application on your own. The key challenge is proper service of the divorce documents — this must follow the Hague Service Convention process through China's Central Authority. Once properly served, if your spouse does not respond, the Ontario court can still grant the divorce on a default basis. Call 647-930-6688."}
+      },
+      {
+        "@type": "Question",
+        "name": "My spouse is in China and I don't know their address. Can I still serve them?",
+        "acceptedAnswer": {"@type": "Answer", "text": "If your spouse's address in China is unknown, you may be able to apply for an order for substituted service — serving by email, WeChat, or social media — if you can demonstrate reasonable efforts to locate the other party. Miao He can advise on whether substituted service is appropriate. Call 647-930-6688."}
+      },
+      {
+        "@type": "Question",
+        "name": "Can a Canadian divorce order be enforced in China?",
+        "acceptedAnswer": {"@type": "Answer", "text": "A Canadian divorce order is not automatically enforceable in China. Canada and China do not have a reciprocal enforcement treaty for civil judgments. However, the Canadian order can be used as evidence in Chinese proceedings. Miao He advises on cross-border enforcement strategy. Call 647-930-6688."}
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between the Hague Apostille Convention and the Hague Service Convention?",
+        "acceptedAnswer": {"@type": "Answer", "text": "These are two separate treaties. The Apostille Convention authenticates documents so they are recognized as genuine in another country. The Service Convention governs how court documents are formally delivered to a party in another country. Both may be relevant in a cross-border divorce — Apostille for evidence documents, Service Convention for delivering the application to a spouse in China. Miao He advises on both. Call 647-930-6688."}
+      }
     ]
   }
   </script>

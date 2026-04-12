@@ -16,6 +16,28 @@ import Footer from '../components/Footer.astro';
   <link rel="canonical" href="https://www.miaohelaw.ca/notary-public" />
   <link rel="alternate" hreflang="en" href="https://www.miaohelaw.ca/en/notary-public" />
   <link rel="alternate" hreflang="zh" href="https://www.miaohelaw.ca/notary-public" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "何淼律师 — Ontario公证服务",
+    "url": "https://www.miaohelaw.ca/notary-public",
+    "telephone": "+1-647-930-6688",
+    "email": "miao@miaohelaw.ca",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "208-7050 Woodbine Ave",
+      "addressLocality": "Markham",
+      "addressRegion": "ON",
+      "addressCountry": "CA"
+    },
+    "serviceType": ["Ontario公证服务", "文件副本认证", "法定声明", "宣誓书", "委托书公证", "普通话公证"],
+    "availableLanguage": [
+      {"@type": "Language", "name": "Chinese (Mandarin)"},
+      {"@type": "Language", "name": "English"}
+    ]
+  }
+  </script>
 </head>
 <body>
   <Header />
