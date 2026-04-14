@@ -179,7 +179,7 @@ export const faqItems: FaqItem[] = [
     ],
     keywords: '离婚后再婚加拿大,Certificate of Divorce再婚,离婚证书安省,何淼律师',
   },
-];
+},
   {
     slug: 'lihun-tiaojian',
     capsule: '在安省离婚需要满足什么条件？',
