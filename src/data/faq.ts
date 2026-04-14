@@ -3,7 +3,12 @@ export interface FaqItem {
   capsule: string;
   question: string;
   summary: string;
-  answers: string[
+  answers: string[];
+  details: string[];
+  keywords: string;
+}
+
+export const faqItems: FaqItem[] = [
   {
     slug: 'fumu-shouguan',
     capsule: '父母给我们出的首付，离婚时能拿回来吗？',
