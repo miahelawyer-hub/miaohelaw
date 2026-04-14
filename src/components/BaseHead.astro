@@ -1,6 +1,5 @@
 ---
 import '../styles/global.css';
-import { Analytics } from '@vercel/analytics/astro';
 import { SITE_TITLE } from '../consts';
 
 interface Props {
@@ -50,4 +49,3 @@ const { title, description, image = 'https://www.miaohelaw.ca/miao-he-lawyer.jpe
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={image} />
-<Analytics />

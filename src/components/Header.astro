@@ -36,7 +36,19 @@ import HeaderLink from './HeaderLink.astro';
 					</div>
 				</div>
 			</div>
-			<HeaderLink href="/blog">博客文章</HeaderLink>
+			<div class="dropdown">
+				<span class="dropdown-trigger">内容中心 ▾</span>
+				<div class="dropdown-menu">
+					<div class="dropdown-col">
+						<span class="dropdown-heading">文章</span>
+						<a href="/blog">博客文章</a>
+					</div>
+					<div class="dropdown-col">
+						<span class="dropdown-heading">视频</span>
+						<a href="/videos">法律视频</a>
+					</div>
+				</div>
+			</div>
 			<HeaderLink href="/testimonials">客户评价</HeaderLink>
 			<HeaderLink href="/case-results">案例结果</HeaderLink>
 			<HeaderLink href="/pricing">费用说明</HeaderLink>
