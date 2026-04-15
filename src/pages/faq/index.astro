@@ -3,6 +3,8 @@ import BaseHead from '../../components/BaseHead.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import { faqItems } from '../../data/faq';
+
+const totalFaq = faqItems.length;
 ---
 
 <!doctype html>
@@ -10,11 +12,11 @@ import { faqItems } from '../../data/faq';
 <head>
   <BaseHead
     title="离婚常见问题解答 | 多伦多华人离婚律师 何淼律师"
-    description="何淼律师解答43个多伦多华人离婚最常见法律问题：离婚条件、财产分割、子女监护、抚养费、婚前协议、跨境资产等。普通话全程服务，647-930-6688。"
+    description={`何淼律师解答${totalFaq}个多伦多华人离婚最常见法律问题：离婚条件、财产分割、子女监护、抚养费、婚前协议、跨境资产等。普通话全程服务，647-930-6688。`}
   />
   <meta name="keywords" content="多伦多离婚常见问题,华人离婚FAQ,安省离婚条件,子女监护权加拿大,婚前协议安省,跨境资产离婚,离婚律师费用,何淼律师,多伦多华人律师" />
   <meta property="og:title" content="离婚常见问题解答 | 多伦多华人离婚律师 何淼律师" />
-  <meta property="og:description" content="何淼律师解答43个多伦多华人离婚最常见法律问题。普通话全程服务，647-930-6688。" />
+  <meta property="og:description" content={`何淼律师解答${totalFaq}个多伦多华人离婚最常见法律问题。普通话全程服务，647-930-6688。`} />
   <meta property="og:url" content="https://www.miaohelaw.ca/faq" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://www.miaohelaw.ca/og-image.jpg" />
@@ -73,9 +75,11 @@ import { faqItems } from '../../data/faq';
             </a>
           ))}
         </div>
-        <div class="show-more-wrap" id="showMoreWrap">
-          <button class="show-more-btn" id="showMoreBtn">展开全部 43 个问题 ↓</button>
-        </div>
+        {totalFaq > 15 && (
+          <div class="show-more-wrap" id="showMoreWrap">
+            <button class="show-more-btn" id="showMoreBtn">展开全部 {totalFaq} 个问题 ↓</button>
+          </div>
+        )}
         <div class="contact-card">
           <div class="contact-info">
             <h2>还有其他问题？</h2>
