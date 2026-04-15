@@ -10,6 +10,23 @@ export interface FaqItemEn {
 export const faqItemsEn: FaqItemEn[] = 
 [
   {
+    "slug": "parents-down-payment-divorce-ontario",
+    "question": "My parents contributed to the down payment on our home — can that money be recovered in a divorce?",
+    "summary": "Not necessarily. The answer depends on four factors: whether the property is a matrimonial home or investment property, whose account the money was deposited into, whether the contribution was a gift or a loan, and what evidence exists to prove the parties' intentions. There is no fixed answer — every case is different.",
+    "answers": [
+      "It depends on the nature of the property, where the money was transferred, and whether there is any documentation or communication establishing the intention behind the contribution.",
+      "In our experience, cases involving parental contributions to a down payment are among the most contested property disputes in Chinese-Canadian divorces. The Ontario Family Law Act treats matrimonial homes differently from investment properties, and whether the money was a gift or a loan makes a significant legal difference."
+    ],
+    "details": [
+      "Parental contributions to a down payment are extremely common in Chinese-Canadian families — and they are among the most frequently disputed issues when a marriage breaks down. Under Ontario's Family Law Act, the answer depends on several interconnected factors that must be analyzed together.",
+      "First: the nature of the property. Ontario law treats matrimonial homes differently from investment properties. A matrimonial home is valued at its full market value on the date of separation — no deductions are permitted for pre-marital contributions or parental funds used toward the purchase. This means that if the parental contribution went into a matrimonial home, it cannot simply be deducted from the equalization calculation. Investment properties are treated differently — pre-marital value can potentially be deducted as a date-of-marriage asset.",
+      "Second: whose account the money was deposited into. If the funds were transferred only into one spouse's personal account, it is easier to argue that the contribution was made to that individual — whether as a gift or a loan. If the money went into a joint account or directly to the other spouse, establishing ownership becomes more difficult, and the other side may argue the contribution was made to both spouses equally.",
+      "Third: gift or loan. If the parents signed a loan agreement or there was a clear expectation of repayment, the contribution can potentially be treated as a debt in the net family property calculation — meaning it does not need to be equalized. If it was a gift, the analysis is more complex, particularly when the property is a matrimonial home. Under the Douglas v Douglas, 2022 ONSC 585 (CanLII) framework, courts assess seven factors to distinguish a loan from a gift: whether contemporaneous loan documents exist, whether repayment terms were specified, whether security was provided, whether the advance was made to one child but not others, whether repayment was ever demanded before separation, whether any partial repayment occurred, and whether there was any reasonable expectation of repayment. Even without a formal loan agreement, evidence pointing toward these factors can support a loan characterization.",
+      "Fourth: what evidence exists. Even without a formal agreement, WeChat messages, emails, e-transfer notes, and bank records can all be critical evidence of the parties' true intentions. Courts will look at everything available to determine what the contribution was intended to be. We recommend gathering all relevant records and bringing them to a consultation so that Miao He can analyze the specific facts of your case. Contact us at 647-930-6688."
+    ],
+    "keywords": "parents down payment divorce Ontario,parental contribution matrimonial home Ontario,gift or loan family law Ontario,down payment divorce Chinese Canadian,Miao He lawyer"
+  },
+  {
     "slug": "divorce-requirements-ontario",
     "question": "What are the requirements for divorce in Ontario?",
     "summary": "There are three grounds for divorce in Ontario: one year of separation, adultery, or physical or mental cruelty. The vast majority of cases use the one-year separation ground. Separation for one year is a condition for the court to grant the divorce — not a condition for filing.",
