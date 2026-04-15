@@ -2,7 +2,7 @@
 import BaseHead from '../../../components/BaseHead.astro';
 import HeaderEn from '../../../components/HeaderEn.astro';
 import Footer from '../../../components/Footer.astro';
-import { faqItemsEn } from '../../../data/faq-en';
+import { faqItemsEn, getFaqItemsEnForListing } from '../../../data/faq-en';
 
 export function getStaticPaths() {
   return faqItemsEn.map(item => ({
@@ -12,7 +12,8 @@ export function getStaticPaths() {
 }
 
 const { item } = Astro.props;
-const others = faqItemsEn.filter(f => f.slug !== item.slug).slice(0, 6);
+const faqListingEn = getFaqItemsEnForListing();
+const others = faqListingEn.filter(f => f.slug !== item.slug).slice(0, 6);
 ---
 <!doctype html>
 <html lang="en">

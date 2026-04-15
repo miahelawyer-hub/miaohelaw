@@ -5,10 +5,28 @@ export interface FaqItemEn {
   answers: string[];
   details: string[];
   keywords: string;
+  featured?: boolean;
 }
 
 export const faqItemsEn: FaqItemEn[] = 
 [
+  {
+    "slug": "husband-rrsp-divorce-ontario",
+    "question": "My husband has an RRSP in his name — can I get a share of it when we divorce?",
+    "summary": "Yes. An RRSP held in only one spouse name must still be disclosed and valued. Growth during the marriage is generally captured in the separation-date snapshot and addressed through equalization of net family property. What you ultimately receive depends on the overall equalization calculation — not on the RRSP alone.",
+    "answers": [
+      "If the RRSP grew during the marriage, you can share in that growth. In Ontario, the analysis compares property on the date of separation to what already existed on the date of marriage. The increase over the marriage is the basic idea behind net family property.",
+      "So in Ontario, when one spouse holds an RRSP at separation, the other spouse can often claim a share of the value through equalization. In our experience, the dollar result depends on both spouses full assets and debts — bring statements and disclosure to a lawyer for a proper calculation."
+    ],
+    "details": [
+      "Ontario Family Law Act equalization is not a line-by-line 50/50 split of each asset. Each spouse values their property on the date of separation, subtracts date-of-marriage property, applies permitted deductions and exclusions, and arrives at net family property. The spouse with the higher NFP typically pays the other half the difference as an equalization payment.",
+      "Legal title to an RRSP in one spouse name does not remove it from disclosure or from the separation-date balance sheet. Market growth during the marriage is usually reflected in the account value at separation. Pre-marital balances, pre-marital contributions, or other excludable amounts may reduce what is included — that is case-specific.",
+      "In our experience, many clients assume that because the account is in the other spouse name, it is off limits. That is not how Ontario equalization works. How payment is made — cash, negotiated terms, or in appropriate cases discussions of RRSP rollover mechanics — depends on the file, tax rules, and institutional requirements.",
+      "Gather recent statements, contribution history, and separation-date values as early as you can. Contact Miao He at 647-930-6688 to book a consultation."
+    ],
+    "keywords": "RRSP divorce Ontario,divide RRSP separation,equalization net family property Ontario,spouse RRSP family law,Miao He lawyer",
+    "featured": true
+  },
   {
     "slug": "parents-down-payment-divorce-ontario",
     "question": "My parents contributed to the down payment on our home — can that money be recovered in a divorce?",
@@ -365,5 +383,10 @@ export const faqItemsEn: FaqItemEn[] =
     ],
     "keywords": "book consultation Miao He,family lawyer Markham,Chinese family lawyer GTA,Ontario family law consultation,647-930-6688"
   }
-]
-;
+];
+
+export function getFaqItemsEnForListing(): FaqItemEn[] {
+  const pinned = faqItemsEn.filter((item) => item.featured);
+  const rest = faqItemsEn.filter((item) => !item.featured);
+  return [...pinned, ...rest];
+}

@@ -6,10 +6,30 @@ export interface FaqItem {
   answers: string[];
   details: string[];
   keywords: string;
+  featured?: boolean;
 }
 
 export const faqItems: FaqItem[] = [
 
+  {
+    slug: 'laogong-rrsp-lihun-fen',
+    capsule: '老公名下有RRSP，离婚能分到吗？',
+    question: '我老公名下有RRSP，离婚的时候能分到吗？',
+    summary:
+      '可以。RRSP写在一方名下也要纳入财产披露与计价；婚姻存续期间账户有增长的，增长部分通常体现在分居日的资产统计里，通过净家庭财产均等分割结算。最终能拿到多少取决于双方整体资产负债与差额，不是只看RRSP这一项。',
+    answers: [
+      '如果他的RRSP在婚姻存续期间内是有增长的，你是可以分到的。离婚时看的是分居日双方名下的财产，减去结婚日已经存在的财产，这段期间里增长出来的价值双方都可以参与分配，这就是家庭净资产（净家庭财产）的计算思路。',
+      '所以在加拿大安省，分居时一方名下有RRSP的，另一方往往可以通过均等分割主张到相应价值。根据何律师的经验，具体金额要结合双方全部资产与债务一起测算，建议带上RRSP对账单和财产披露材料咨询律师。',
+    ],
+    details: [
+      '安省《家庭法》实行的是净家庭财产均等分割（Equalization of Net Family Property），不是把RRSP或某一套房单独拿出来"一刀切"平分。计算方式是：各自统计分居日名下财产总值，减去结婚日财产总值，再依法扣除债务与可排除项目，得出各自的净家庭财产；双方净财产有差额时，净资产较高的一方通常向较低的一方支付差额的一部分。',
+      'RRSP登记在丈夫或妻子一方名下，并不改变其需要披露、需要按分居日计价并纳入净资产表的性质。婚姻期间市值的增长，一般会体现在分居日的账户价值里；若存在婚前余额、婚前供款或依法可剔除的部分，则可能影响计入净值的数额，需要个案核对。',
+      '根据何律师的经验，不少客户误以为"在他名下就没我的份"，这在安省并不是这样理解的。您实际能主张多少，要看Equalization的整体结果；履行方式也可能是现金结算、双方协商方案，或在符合条件时讨论是否采用RRSP定向划转等安排，涉及税务与银行规则，不宜自行想当然操作。',
+      '建议您尽早整理账户月结单、供款记录与分居日前后的市值材料，便于律师评估。欢迎致电647-930-6688预约何淼律师咨询。',
+    ],
+    keywords: 'RRSP离婚分割,老公RRSP离婚,安省净家庭财产,Equalization,多伦多离婚财产律师,何淼律师',
+    featured: true,
+  },
   {
     slug: 'fumu-shougou-toukuan',
     capsule: '父母出了首付，离婚时这笔钱能要回来吗？',
@@ -760,3 +780,9 @@ export const faqItems: FaqItem[] = [
     keywords: '离婚打官司还是协议,协议离婚优缺点,离婚诉讼,何淼律师',
   },
 ];
+
+export function getFaqItemsForListing(): FaqItem[] {
+  const pinned = faqItems.filter((item) => item.featured);
+  const rest = faqItems.filter((item) => !item.featured);
+  return [...pinned, ...rest];
+}
