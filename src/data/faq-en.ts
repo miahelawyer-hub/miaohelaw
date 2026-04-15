@@ -64,6 +64,24 @@ export const faqItemsEn: FaqItemEn[] =
     "featured": true
   },
   {
+    "slug": "spouse-credit-card-debt-divorce-ontario",
+    "question": "My husband ran up a lot of credit card debt during our marriage — do I have to pay it after divorce?",
+    "summary": "Not necessarily. It depends on the nature of the debt and where the money actually went — whether it supported joint household living expenses and whether it was truly personal to your spouse. Creditors generally cannot pursue you solely because you were married. If litigation is started, courts look closely at use of funds.",
+    "answers": [
+      "It depends on the nature of the debt. If the borrowing supported joint household living expenses, you may have exposure. If it was entirely your spouse's personal conduct and you did not benefit, creditors often cannot pursue you.",
+      "If the card is only in your spouse name and you did not guarantee the debt, creditors usually cannot demand payment from you directly. If your spouse is sued, a court may still trace where the money went."
+    ],
+    "details": [
+      "Under Ontario family law, debts incurred during a marriage are not automatically joint in every sense. A core question is where the money ultimately went.",
+      "If debt funded ordinary family living — groceries, utilities, children's expenses, or jointly used assets — it may be treated as a family-related obligation in which both spouses have some stake, depending on the facts and pleadings.",
+      "If the debt is purely personal — gambling, private loans to friends, undisclosed online borrowing, and similar — and you did not benefit, and the obligation sits only in the other spouse's name, the other spouse's creditors often have no direct claim against you as a separate person.",
+      "If creditors sue both spouses, courts examine actual use of funds. If the money was spent on personal dissipation unrelated to the household, the non-borrowing spouse is often far less exposed.",
+      "Debt allocation is a central part of separation planning. Contact Miao He at 647-930-6688 or WeChat 372656035 to clarify your exposure early."
+    ],
+    "keywords": "spouse credit card debt divorce Ontario,joint debt separation Ontario,gambling debt divorce Ontario,personal debt spouse liability Ontario,Miao He lawyer,Chinese family lawyer GTA",
+    "featured": true
+  },
+  {
     "slug": "parents-down-payment-divorce-ontario",
     "question": "My parents contributed to the down payment on our home — can that money be recovered in a divorce?",
     "summary": "Not necessarily. The answer depends on four factors: whether the property is a matrimonial home or investment property, whose account the money was deposited into, whether the contribution was a gift or a loan, and what evidence exists to prove the parties' intentions. There is no fixed answer — every case is different.",
