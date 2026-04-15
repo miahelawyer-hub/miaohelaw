@@ -2,6 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { SITE_LAST_UPDATED_ZH } from '../consts';
 ---
 <!doctype html>
 <html lang="zh">
@@ -13,15 +14,14 @@ import Footer from '../components/Footer.astro';
   <meta name="keywords" content="海牙认证加拿大,加拿大文件中国使用,中国文件加拿大认可,海牙公约认证Ontario,离婚判决书海牙认证,出生证明海牙认证加拿大,中加文件认证,海牙送达公约,配偶在中国离婚,万锦公证律师" />
   <meta property="og:title" content="海牙认证 · 中加文件认证 | 何淼律师" />
   <meta property="og:description" content="中加文件海牙认证专业服务。双重执照律师+Ontario公证资质，一站式处理。647-930-6688。" />
-  <link rel="canonical" href="https://www.miaohelaw.ca/hague-apostille" />
-  <link rel="alternate" hreflang="en" href="https://www.miaohelaw.ca/en/hague-apostille" />
-  <link rel="alternate" hreflang="zh" href="https://www.miaohelaw.ca/hague-apostille" />
+  <link rel="alternate" hreflang="en" href="https://www.miaohelaw.ca/en/hague-apostille/" />
+  <link rel="alternate" hreflang="zh" href="https://www.miaohelaw.ca/hague-apostille/" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LegalService",
     "name": "何淼律师 — 海牙认证与文件公证",
-    "url": "https://www.miaohelaw.ca/hague-apostille",
+    "url": "https://www.miaohelaw.ca/hague-apostille/",
     "telephone": "+1-647-930-6688",
     "email": "miao@miaohelaw.ca",
     "address": {
@@ -75,6 +75,7 @@ import Footer from '../components/Footer.astro';
         <div class="breadcrumb"><a href="/">首页</a> › 文件服务 › 海牙认证</div>
         <h1>海牙认证 · 中加文件认证服务</h1>
         <p class="hero-sub">何淼律师 · Ontario及中国双重执照 · Ontario公证资质 · 647-930-6688</p>
+        <p class="page-last-updated page-last-updated--gradient">页面内容最后更新：{SITE_LAST_UPDATED_ZH}</p>
       </div>
     </section>
 

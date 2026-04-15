@@ -2,6 +2,7 @@
 import BaseHead from '../../components/BaseHead.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
+import { SITE_LAST_UPDATED_ZH } from '../../consts';
 import { getFaqItemsForListing } from '../../data/faq';
 import { stripHtml } from '../../utils/stripHtml';
 
@@ -31,17 +32,15 @@ const faqPageJsonLd = {
   <meta name="keywords" content="多伦多离婚常见问题,华人离婚FAQ,安省离婚条件,子女监护权加拿大,婚前协议安省,跨境资产离婚,离婚律师费用,何淼律师,多伦多华人律师" />
   <meta property="og:title" content="离婚常见问题解答 | 多伦多华人离婚律师 何淼律师" />
   <meta property="og:description" content={`何淼律师解答${totalFaq}个多伦多华人离婚最常见法律问题。普通话全程服务，647-930-6688。`} />
-  <meta property="og:url" content="https://www.miaohelaw.ca/faq" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://www.miaohelaw.ca/og-image.jpg" />
-  <link rel="canonical" href="https://www.miaohelaw.ca/faq" />
   <script type="application/ld+json" set:html={JSON.stringify(faqPageJsonLd)} />
   <script type="application/ld+json">{
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
       {"@type":"ListItem","position":1,"name":"首页","item":"https://www.miaohelaw.ca/"},
-      {"@type":"ListItem","position":2,"name":"常见问题","item":"https://www.miaohelaw.ca/faq"}
+      {"@type":"ListItem","position":2,"name":"常见问题","item":"https://www.miaohelaw.ca/faq/"}
     ]
   }</script>
 </head>
@@ -52,7 +51,9 @@ const faqPageJsonLd = {
       <div class="container">
         <div class="breadcrumb"><a href="/">首页</a> › 常见问题</div>
         <h1>常见问题</h1>
+        <p class="hero-stat">共 {totalFaq} 个常见问题解答</p>
         <p class="hero-sub">点击下方问题了解详情 · 普通话全程服务 · 647-930-6688</p>
+        <p class="page-last-updated page-last-updated--gradient">页面内容最后更新：{SITE_LAST_UPDATED_ZH}</p>
       </div>
     </section>
     <section class="faq-section">
@@ -137,6 +138,13 @@ const faqPageJsonLd = {
     color:#ffffff;
     font-weight: 500;
     letter-spacing: 0.02em;
+  }
+  .hero-stat{
+    color:#F5E6C8;
+    margin:0 0 0.45rem;
+    font-size:0.96rem;
+    font-weight:600;
+    letter-spacing:0.02em;
   }
   .hero-sub{
     color:#E8C47A;

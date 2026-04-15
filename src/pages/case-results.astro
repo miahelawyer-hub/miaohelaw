@@ -3,6 +3,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { SITE_LAST_UPDATED_ZH } from '../consts';
 ---
 
 <!doctype html>
@@ -15,9 +16,7 @@ import Footer from '../components/Footer.astro';
   <meta name="keywords" content="案例结果,何淼律师案件,Ontario家庭法案例,Yang v Li 2024 ONSC 4801,Li v Jiang 2026 ONSC 561,跨境资产追回,离婚诉讼案例,子女监护案例,多伦多华人律师案例" />
   <meta property="og:title" content="案例结果 | 何淼律师真实案件成果 — Ontario 家庭法" />
   <meta property="og:description" content="何淼律师真实案件成果。Yang v. Li 2024 ONSC 4801，Li v. Jiang 2026 ONSC 561。跨境资产追回、离婚诉讼、子女监护。647-930-6688。" />
-  <meta property="og:url" content="https://www.miaohelaw.ca/case-results" />
   <meta property="og:type" content="website" />
-  <link rel="canonical" href="https://www.miaohelaw.ca/case-results" />
   <script type="application/ld+json">
 [
   {
@@ -34,7 +33,7 @@ import Footer from '../components/Footer.astro';
       "name": "Miao He",
       "alternateName": ["何淼", "Mia He"],
       "jobTitle": "Family Law Lawyer",
-      "url": "https://www.miaohelaw.ca",
+      "url": "https://www.miaohelaw.ca/",
       "telephone": "+1-647-930-6688",
       "memberOf": {
         "@type": "Organization",
@@ -189,6 +188,7 @@ import Footer from '../components/Footer.astro';
         <div class="page-label">真实案件成果 · 第一人称叙述</div>
         <h1>我的案例</h1>
         <p>这里记录的都是真实发生的案件。每一个案件背后，都是一个家庭在最艰难的时刻做出的选择。我写下这些，不是为了炫耀，而是希望正在经历类似处境的你，能从中找到一点方向。</p>
+        <p class="page-last-updated page-last-updated--warm">页面内容最后更新：{SITE_LAST_UPDATED_ZH}</p>
       </div>
     </section>
 

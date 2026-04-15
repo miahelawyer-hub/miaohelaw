@@ -1,0 +1,5 @@
+# https://www.miaohelaw.ca — Miao He (何淼), Ontario family law
+User-agent: *
+Allow: /
+
+Sitemap: https://www.miaohelaw.ca/sitemap-index.xml

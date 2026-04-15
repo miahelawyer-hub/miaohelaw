@@ -2,6 +2,7 @@
 import BaseHead from '../../components/BaseHead.astro';
 import HeaderEn from '../../components/HeaderEn.astro';
 import Footer from '../../components/Footer.astro';
+import { SITE_LAST_UPDATED_EN } from '../../consts';
 ---
 <!doctype html>
 <html lang="en">
@@ -12,11 +13,9 @@ import Footer from '../../components/Footer.astro';
   />
   <meta name="keywords" content="Miao He lawyer reviews,Chinese family lawyer Toronto reviews,Ontario divorce lawyer testimonials,Markham family lawyer reviews" />
   <meta property="og:title" content="Client Reviews | Miao He — Ontario Family Law Lawyer" />
-  <meta property="og:url" content="https://www.miaohelaw.ca/en/testimonials" />
   <meta property="og:type" content="website" />
-  <link rel="canonical" href="https://www.miaohelaw.ca/en/testimonials" />
-  <link rel="alternate" hreflang="zh" href="https://www.miaohelaw.ca/testimonials" />
-  <link rel="alternate" hreflang="en" href="https://www.miaohelaw.ca/en/testimonials" />
+  <link rel="alternate" hreflang="zh" href="https://www.miaohelaw.ca/testimonials/" />
+  <link rel="alternate" hreflang="en" href="https://www.miaohelaw.ca/en/testimonials/" />
   <script type="application/ld+json">{
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -35,7 +34,7 @@ import Footer from '../../components/Footer.astro';
     "@type": "BreadcrumbList",
     "itemListElement": [
       {"@type":"ListItem","position":1,"name":"Home","item":"https://www.miaohelaw.ca/en/"},
-      {"@type":"ListItem","position":2,"name":"Reviews","item":"https://www.miaohelaw.ca/en/testimonials"}
+      {"@type":"ListItem","position":2,"name":"Reviews","item":"https://www.miaohelaw.ca/en/testimonials/"}
     ]
   }</script>
   <style>
@@ -75,6 +74,7 @@ import Footer from '../../components/Footer.astro';
         <div class="page-label">Client Reviews · Testimonials</div>
         <h1>Real Client Feedback</h1>
         <p>The following reviews are genuine feedback from clients shared through handwritten cards, Google reviews, messages, and emails. All displayed with client consent. Sensitive personal information has been anonymized.</p>
+        <p class="page-last-updated page-last-updated--warm">Page last updated: {SITE_LAST_UPDATED_EN}</p>
       </div>
     </section>
 

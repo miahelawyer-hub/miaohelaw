@@ -2,6 +2,7 @@
 import BaseHead from '../../components/BaseHead.astro';
 import HeaderEn from '../../components/HeaderEn.astro';
 import Footer from '../../components/Footer.astro';
+import { SITE_LAST_UPDATED_EN } from '../../consts';
 ---
 <!doctype html>
 <html lang="en">
@@ -13,14 +14,12 @@ import Footer from '../../components/Footer.astro';
   <meta name="keywords" content="Notary Public Ontario Mandarin,Chinese notary public Toronto,notarize documents Ontario,Mandarin notary Markham,Chinese notary Mississauga,notary public GTA Chinese,notarize documents for China,Ontario notary public Chinese lawyer,certified true copy Ontario,statutory declaration Ontario Chinese" />
   <meta property="og:title" content="Notary Public Ontario | Mandarin | Miao He Law" />
   <meta property="og:description" content="Commissioned Notary Public in Ontario. Mandarin and English notarization services for documents used in Canada and China. 647-930-6688." />
-  <meta property="og:url" content="https://www.miaohelaw.ca/en/notary-public" />
-  <link rel="canonical" href="https://www.miaohelaw.ca/en/notary-public" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LegalService",
     "name": "Miao He — Notary Public Ontario",
-    "url": "https://www.miaohelaw.ca/en/notary-public",
+    "url": "https://www.miaohelaw.ca/en/notary-public/",
     "telephone": "+1-647-930-6688",
     "email": "miao@miaohelaw.ca",
     "address": {
@@ -72,6 +71,7 @@ import Footer from '../../components/Footer.astro';
         </div>
         <h1>Notary Public · Ontario</h1>
         <p class="hero-sub">Mandarin &amp; English · Markham · 647-930-6688</p>
+        <p class="page-last-updated page-last-updated--gradient">Page last updated: {SITE_LAST_UPDATED_EN}</p>
       </div>
     </section>
 

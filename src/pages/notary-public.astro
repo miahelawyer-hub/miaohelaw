@@ -2,6 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { SITE_LAST_UPDATED_ZH } from '../consts';
 ---
 <!doctype html>
 <html lang="zh">
@@ -13,15 +14,14 @@ import Footer from '../components/Footer.astro';
   <meta name="keywords" content="Ontario公证服务,普通话公证,中文公证多伦多,万锦公证律师,中国文件公证加拿大,委托书公证Ontario,文件副本认证,法定声明公证,中加文件公证,华人公证服务GTA" />
   <meta property="og:title" content="Ontario公证服务 · 普通话 | 何淼律师" />
   <meta property="og:description" content="Ontario公证人资质，普通话和英文公证服务。万锦办公室。647-930-6688。" />
-  <link rel="canonical" href="https://www.miaohelaw.ca/notary-public" />
-  <link rel="alternate" hreflang="en" href="https://www.miaohelaw.ca/en/notary-public" />
-  <link rel="alternate" hreflang="zh" href="https://www.miaohelaw.ca/notary-public" />
+  <link rel="alternate" hreflang="en" href="https://www.miaohelaw.ca/en/notary-public/" />
+  <link rel="alternate" hreflang="zh" href="https://www.miaohelaw.ca/notary-public/" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LegalService",
     "name": "何淼律师 — Ontario公证服务",
-    "url": "https://www.miaohelaw.ca/notary-public",
+    "url": "https://www.miaohelaw.ca/notary-public/",
     "telephone": "+1-647-930-6688",
     "email": "miao@miaohelaw.ca",
     "address": {
@@ -75,6 +75,7 @@ import Footer from '../components/Footer.astro';
         <div class="breadcrumb"><a href="/">首页</a> › 文件服务 › 公证服务</div>
         <h1>Ontario 公证服务</h1>
         <p class="hero-sub">普通话 · 英文 · 万锦办公室 · 647-930-6688</p>
+        <p class="page-last-updated page-last-updated--gradient">页面内容最后更新：{SITE_LAST_UPDATED_ZH}</p>
       </div>
     </section>
 

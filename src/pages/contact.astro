@@ -2,6 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { SITE_LAST_UPDATED_ZH } from '../consts';
 ---
 
 <!doctype html>
@@ -14,16 +15,14 @@ import Footer from '../components/Footer.astro';
   <meta name="keywords" content="何淼律师,何淼离婚律师,Miao He律师,多伦多华人离婚律师,Toronto Chinese Divorce Lawyer,Markham家庭法律师,GTA华人律师,Chinese family lawyer Toronto,divorce lawyer Markham,647-930-6688" />
   <meta property="og:title" content="联系何淼律师 | 多伦多华人离婚律师 | 647-930-6688" />
   <meta property="og:description" content="联系 Miao He（何淼）律师预约家庭法咨询。多伦多华人离婚律师，服务 GTA 全区，中英双语。电话：647-930-6688。" />
-  <meta property="og:url" content="https://www.miaohelaw.ca/contact" />
   <meta property="og:type" content="website" />
-  <link rel="canonical" href="https://www.miaohelaw.ca/contact" />
   <script type="application/ld+json">
   [
     {
       "@context": "https://schema.org",
       "@type": "ContactPage",
-      "@id": "https://www.miaohelaw.ca/contact",
-      "url": "https://www.miaohelaw.ca/contact",
+      "@id": "https://www.miaohelaw.ca/contact/",
+      "url": "https://www.miaohelaw.ca/contact/",
       "name": "联系何淼律师 — 多伦多华人家庭法律师",
       "description": "联系 Miao He（何淼）律师预约家庭法咨询。多伦多华人离婚律师，服务 GTA 全区，中英双语。",
       "inLanguage": ["zh-Hans", "en"],
@@ -31,7 +30,7 @@ import Footer from '../components/Footer.astro';
         "@type": "BreadcrumbList",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://www.miaohelaw.ca/" },
-          { "@type": "ListItem", "position": 2, "name": "联系我们", "item": "https://www.miaohelaw.ca/contact" }
+          { "@type": "ListItem", "position": 2, "name": "联系我们", "item": "https://www.miaohelaw.ca/contact/" }
         ]
       },
       "mainEntity": { "@id": "https://www.miaohelaw.ca/#lawfirm" }
@@ -118,6 +117,7 @@ import Footer from '../components/Footer.astro';
         <div class="page-label">联系我们 · CONTACT</div>
         <h1>预约咨询</h1>
         <p>如果您正在寻找多伦多华人离婚律师（Toronto Chinese Divorce Lawyer），欢迎联系何淼律师。初次咨询30分钟，$220 + HST，无委托义务。</p>
+        <p class="page-last-updated page-last-updated--warm">页面内容最后更新：{SITE_LAST_UPDATED_ZH}</p>
       </div>
     </section>
 

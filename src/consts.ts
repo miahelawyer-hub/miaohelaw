@@ -7,3 +7,7 @@ export const SITE_URL = 'https://www.miaohelaw.ca';
 export const AUTHOR_NAME = 'Miao He (何淼)';
 export const AUTHOR_TITLE = 'Barrister & Solicitor — Ontario & China';
 export const AUTHOR_EMAIL = 'miao@miaohelaw.ca';
+
+/** Human-readable content review stamp for static key pages (not file modification times). */
+export const SITE_LAST_UPDATED_ZH = '2026年4月';
+export const SITE_LAST_UPDATED_EN = 'April 2026';

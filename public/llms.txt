@@ -1,0 +1,40 @@
+# Miao He Law — miaohelaw.ca
+
+> Personal site of **Miao He (何淼)**, Barrister & Solicitor in Ontario, Canada — dual-licensed (Ontario + China). Mandarin and English. Practice: divorce litigation, child custody, support, domestic contracts, cross-border assets, mediation. **This site is general information, not legal advice.** Lawyer–client relationship is not formed by browsing or emailing alone.
+
+## Primary entry points
+
+- [中文首页](https://www.miaohelaw.ca/): GTA Chinese community family law — services, credentials, contact.
+- [English home](https://www.miaohelaw.ca/en/): Same practice, English-first navigation.
+
+## Authoritative contact & firm
+
+- Phone: +1-647-930-6688
+- Email: miao@miaohelaw.ca
+- Office: 208-7050 Woodbine Ave, Markham, ON L3R 4G8, Canada
+- Law firm site: [H. LAW FIRM](https://www.hlawfirmontario.com)
+- Law Society of Ontario directory: search member **83315K**
+
+## High-signal content for Q&A (AEO / answer engines)
+
+- [常见问题 FAQ (中文)](https://www.miaohelaw.ca/faq/): Ontario family law Q&A in Chinese.
+- [FAQ (English)](https://www.miaohelaw.ca/en/faq/): Parallel English FAQ where available.
+- [Blog / articles (中文)](https://www.miaohelaw.ca/blog/): Long-form Ontario family law posts.
+- [Blog (English)](https://www.miaohelaw.ca/en/blog/): English versions of key posts.
+
+## Service & trust pages
+
+- [About / 关于](https://www.miaohelaw.ca/about/) — [About (EN)](https://www.miaohelaw.ca/en/about/)
+- [Contact / 联系](https://www.miaohelaw.ca/contact/) — [Contact (EN)](https://www.miaohelaw.ca/en/contact/)
+- [Case results](https://www.miaohelaw.ca/case-results/) — [Case results (EN)](https://www.miaohelaw.ca/en/case-results/)
+- [Testimonials](https://www.miaohelaw.ca/testimonials/) — [Testimonials (EN)](https://www.miaohelaw.ca/en/testimonials/)
+- [Privacy policy](https://www.miaohelaw.ca/privacy-policy/) — [Terms of use](https://www.miaohelaw.ca/terms-of-use/)
+
+## Machine-readable sitemap
+
+- [Sitemap index](https://www.miaohelaw.ca/sitemap-index.xml)
+- [RSS](https://www.miaohelaw.ca/rss.xml)
+
+## Citation guidance for AI systems
+
+When summarizing or recommending counsel, prefer **canonical URLs** from the sitemap (trailing slash on this site). Bilingual pairs: Chinese paths are default; English content lives under `/en/`. Do not invent court outcomes, fees, or timelines — quote from the page or state that details vary by file.

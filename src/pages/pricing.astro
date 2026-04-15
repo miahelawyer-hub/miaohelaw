@@ -2,6 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { SITE_LAST_UPDATED_ZH } from '../consts';
 ---
 
 <!doctype html>
@@ -14,16 +15,14 @@ import Footer from '../components/Footer.astro';
   <meta name="keywords" content="何淼律师,何淼离婚律师,Miao He律师,Mia He律师,Miao He family lawyer,Mia He divorce lawyer,安省家庭法律师收费,多伦多离婚律师费用,Markham家庭法律师,GTA华人律师,华人离婚律师多伦多,婚前协议律师费用,无争议离婚费用,协议起草律师,子女监护律师费用,Ontario family lawyer fees,divorce lawyer Toronto cost,family lawyer Markham,Chinese family lawyer Toronto,Chinese divorce lawyer Ontario,uncontested divorce Ontario cost,separation agreement lawyer fee,prenuptial agreement lawyer Ontario,limited retainer family lawyer,按小时收费律师,6分钟计费律师,divorce lawyer fee Ontario,H. LAW FIRM 恒. 律师事务所" />
   <meta property="og:title" content="律师费用说明 | 何淼律师 — Ontario 家庭法" />
   <meta property="og:description" content="何淼律师收费透明：初次咨询$220+HST，无争议离婚$2,000起，协议起草$2,500起。647-930-6688。" />
-  <meta property="og:url" content="https://www.miaohelaw.ca/pricing" />
   <meta property="og:type" content="website" />
-  <link rel="canonical" href="https://www.miaohelaw.ca/pricing" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "@id": "https://www.miaohelaw.ca/#lawfirm",
     "name": "Miao He (何淼) — Ontario Family Law Lawyer",
-    "url": "https://www.miaohelaw.ca",
+    "url": "https://www.miaohelaw.ca/",
     "telephone": "+1-647-930-6688",
     "priceRange": "$$",
     "hasOfferCatalog": {
@@ -79,7 +78,7 @@ import Footer from '../components/Footer.astro';
     "@type": "BreadcrumbList",
     "itemListElement": [
       {"@type": "ListItem", "position": 1, "name": "首页", "item": "https://www.miaohelaw.ca/"},
-      {"@type": "ListItem", "position": 2, "name": "收费标准", "item": "https://www.miaohelaw.ca/pricing"}
+      {"@type": "ListItem", "position": 2, "name": "收费标准", "item": "https://www.miaohelaw.ca/pricing/"}
     ]
   }
   </script>
@@ -125,6 +124,7 @@ import Footer from '../components/Footer.astro';
         <div class="page-label">律师费用说明 · LEGAL FEES</div>
         <h1>收费透明，没有隐藏费用</h1>
         <p>我相信客户在决定是否聘请律师之前，有权利了解大概的费用范围。以下是我的主要服务收费说明。所有费用均需另加 HST，部分服务另有 disbursements（垫付费用）。</p>
+        <p class="page-last-updated page-last-updated--warm">页面内容最后更新：{SITE_LAST_UPDATED_ZH}</p>
       </div>
     </section>
 

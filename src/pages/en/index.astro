@@ -13,37 +13,122 @@ import Footer from '../../components/Footer.astro';
   <meta name="keywords" content="Chinese family lawyer Toronto,Mandarin divorce lawyer Ontario,dual licensed China Canada lawyer,Markham family lawyer,GTA Chinese divorce lawyer,cross-border asset divorce,family lawyer Markham,Ontario family law Chinese" />
   <meta property="og:title" content="Miao He — Chinese Family Lawyer Toronto | Ontario & China Dual-Licensed" />
   <meta property="og:description" content="Dual-licensed in Ontario and China. Divorce litigation, cross-border assets, child custody. Serving Toronto, Markham, Richmond Hill and all of Ontario. 647-930-6688." />
-  <meta property="og:url" content="https://www.miaohelaw.ca/en/" />
   <meta property="og:type" content="website" />
-  <link rel="canonical" href="https://www.miaohelaw.ca/en/" />
   <link rel="alternate" hreflang="zh" href="https://www.miaohelaw.ca/" />
   <link rel="alternate" hreflang="en" href="https://www.miaohelaw.ca/en/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.miaohelaw.ca/" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LegalService",
-    "@id": "https://www.miaohelaw.ca/en/#service",
-    "name": "Miao He — Chinese Family Lawyer Toronto",
-    "url": "https://www.miaohelaw.ca/en/",
-    "telephone": "+1-647-930-6688",
-    "email": "miao@miaohelaw.ca",
-    "provider": {
-      "@type": "Person",
-      "name": "Miao He",
-      "alternateName": ["何淼", "Mia He"],
-      "jobTitle": "Family Law Lawyer",
-      "knowsLanguage": ["zh-Hans", "en"],
-      "hasCredential": [
-        {"@type": "EducationalOccupationalCredential", "credentialCategory": "Law Society of Ontario — Member #83315K"},
-        {"@type": "EducationalOccupationalCredential", "credentialCategory": "China Bar Association — Licensed"},
-        {"@type": "EducationalOccupationalCredential", "credentialCategory": "Mediation Certificate"},
-        {"@type": "EducationalOccupationalCredential", "credentialCategory": "Expert Witness — Chinese Family Law & Marriage Law"},
-        {"@type": "EducationalOccupationalCredential", "credentialCategory": "Notary Public — Ontario"}
-      ]
-    },
-    "serviceType": ["Divorce Litigation", "Cross-Border Asset Division", "Child Custody", "Spousal Support", "Domestic Contracts", "Mediation"],
-    "areaServed": {"@type": "Province", "name": "Ontario"},
-    "inLanguage": ["zh-Hans", "en"]
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://www.miaohelaw.ca/#person",
+        "name": "Miao He",
+        "alternateName": ["何淼", "Mia He"],
+        "jobTitle": "Family Law Lawyer",
+        "description": "Miao He (何淼) is a dual-licensed family law lawyer in Ontario and China, with 15+ years of experience serving the Chinese-Canadian community in the Greater Toronto Area. She provides negotiated separation agreements, mediation, and litigation, and is a certified mediator and experienced litigator.",
+        "url": "https://www.miaohelaw.ca/",
+        "image": "https://www.miaohelaw.ca/favicon.svg",
+        "telephone": "+1-647-930-6688",
+        "email": "miao@miaohelaw.ca",
+        "knowsLanguage": ["zh-Hans", "en"],
+        "hasCredential": [
+          {"@type": "EducationalOccupationalCredential", "credentialCategory": "Law Society of Ontario — Member #83315K"},
+          {"@type": "EducationalOccupationalCredential", "credentialCategory": "China Bar Association — Licensed"},
+          {"@type": "EducationalOccupationalCredential", "credentialCategory": "Mediation Certificate"},
+          {"@type": "EducationalOccupationalCredential", "credentialCategory": "Expert Witness — Chinese Family Law & Marriage Law"},
+          {"@type": "EducationalOccupationalCredential", "credentialCategory": "Notary Public — Ontario"}
+        ],
+        "memberOf": [
+          {"@type": "Organization", "name": "Law Society of Ontario", "url": "https://lso.ca/"},
+          {"@type": "Organization", "name": "The Advocates Society", "url": "https://www.theadvocatessociety.ca/"},
+          {"@type": "Organization", "name": "Toronto Lawyers Association", "url": "https://www.tlaonline.ca/"},
+          {"@type": "Organization", "name": "York Region Law Association", "url": "https://yrla.ca/"},
+          {"@type": "Organization", "name": "Justice Net", "url": "https://www.justicenet.ca/"}
+        ],
+        "worksFor": {"@id": "https://www.miaohelaw.ca/#lawfirm"},
+        "sameAs": [
+          "https://lso.ca/public-resources/finding-a-lawyer-or-paralegal/lawyer-and-paralegal-directory",
+          "https://www.hlawfirmontario.com/",
+          "https://www.linkedin.com/in/mia-he-93422b160/"
+        ]
+      },
+      {
+        "@type": "LegalService",
+        "@id": "https://www.miaohelaw.ca/#lawfirm",
+        "name": "H. LAW FIRM 恒. 律师事务所",
+        "alternateName": "H. LAW FIRM 恒. 律师事务所",
+        "url": "https://www.hlawfirmontario.com/",
+        "telephone": "+1-647-930-6688",
+        "email": "miao@miaohelaw.ca",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "208-7050 Woodbine Avenue",
+          "addressLocality": "Markham",
+          "addressRegion": "ON",
+          "postalCode": "L3R 4G8",
+          "addressCountry": "CA"
+        },
+        "geo": {"@type": "GeoCoordinates", "latitude": "43.8563", "longitude": "-79.3370"},
+        "areaServed": ["Toronto", "Markham", "Richmond Hill", "Mississauga", "Scarborough", "Brampton", "Oakville", "Greater Toronto Area"],
+        "knowsLanguage": ["zh-Hans", "en"],
+        "serviceType": ["Divorce Litigation", "Family Law", "Child Custody", "Property Division", "Cross-Border Asset Division", "Spousal Support", "Child Support", "Prenuptial Agreement", "Separation Agreement", "Mediation"],
+        "employee": {"@id": "https://www.miaohelaw.ca/#person"},
+        "sameAs": "https://www.hlawfirmontario.com/",
+        "priceRange": "$$"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.miaohelaw.ca/#website",
+        "url": "https://www.miaohelaw.ca/",
+        "name": "Miao He (何淼) — Ontario Family Law Lawyer",
+        "description": "Personal website of Miao He (何淼), dual-licensed family law lawyer in Ontario and China, serving the Chinese-Canadian community in the Greater Toronto Area. English and Mandarin.",
+        "inLanguage": ["zh-Hans", "en"],
+        "publisher": {"@id": "https://www.miaohelaw.ca/#person"}
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "inLanguage": "en",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Who is Miao He?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Miao He (何淼) is dual-licensed in Ontario and China and focuses on family law for over 15 years, serving the GTA, new immigrants from China, and cross-border families. She handles divorce litigation, cross-border assets, child custody, and domestic contracts. Phone: 647-930-6688."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What languages does Miao He offer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Miao He provides services in Mandarin and English so clients can understand Ontario family law procedures clearly without relying on a third-party interpreter."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What should I bring to the initial consultation?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bring marriage certificates (if any), income information for both parties, a list of assets and debts, and documents relating to children. The initial consultation is 30 minutes at $220 + HST and helps you understand your rights and options."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where is the law firm located?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "H. LAW FIRM (恒. 律师事务所) is located in Markham and serves the Greater Toronto Area (GTA) and clients across Ontario. Phone: 647-930-6688."
+        }
+      }
+    ]
   }
   </script>
 </head>

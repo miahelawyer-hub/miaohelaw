@@ -31,9 +31,7 @@ const jsonLdAnswerPlain = [summaryPlain, ...item.answers.map(stripHtml)].filter(
   <meta name="keywords" content={item.keywords} />
   <meta property="og:title" content={`${questionPlain} | 何淼律师`} />
   <meta property="og:description" content={summaryPlain} />
-  <meta property="og:url" content={`https://www.miaohelaw.ca/faq/${item.slug}`} />
   <meta property="og:type" content="article" />
-  <link rel="canonical" href={`https://www.miaohelaw.ca/faq/${item.slug}`} />
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -51,8 +49,8 @@ const jsonLdAnswerPlain = [summaryPlain, ...item.answers.map(stripHtml)].filter(
     "@type": "BreadcrumbList",
     "itemListElement": [
       {"@type": "ListItem", "position": 1, "name": "首页", "item": "https://www.miaohelaw.ca/"},
-      {"@type": "ListItem", "position": 2, "name": "常见问题", "item": "https://www.miaohelaw.ca/faq"},
-      {"@type": "ListItem", "position": 3, "name": capsulePlain, "item": `https://www.miaohelaw.ca/faq/${item.slug}`}
+      {"@type": "ListItem", "position": 2, "name": "常见问题", "item": "https://www.miaohelaw.ca/faq/"},
+      {"@type": "ListItem", "position": 3, "name": capsulePlain, "item": `https://www.miaohelaw.ca/faq/${item.slug}/`}
     ]
   })} />
 </head>

@@ -83,7 +83,7 @@ tags:
   "author": {
     "@type": "Person",
     "name": "Miao He (何淼)",
-    "url": "https://www.miaohelaw.ca/about",
+    "url": "https://www.miaohelaw.ca/about/",
     "sameAs": [
       "https://lso.ca/public-resources/finding-a-lawyer-or-paralegal/directory-search/member?MemberNumber=83315K",
       "https://www.hlawfirmontario.com"
@@ -96,7 +96,7 @@ tags:
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.miaohelaw.ca/blog/ontario-divorce-property-division"
+    "@id": "https://www.miaohelaw.ca/blog/ontario-divorce-property-division/"
   },
   "inLanguage": "zh-Hans"
 }

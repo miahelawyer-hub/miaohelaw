@@ -2,6 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { SITE_LAST_UPDATED_ZH } from '../consts';
 ---
 
 <!doctype html>
@@ -14,22 +15,20 @@ import Footer from '../components/Footer.astro';
   <meta name="keywords" content="何淼律师,Miao He律师,Mia He律师,多伦多华人离婚律师,Toronto Chinese Divorce Lawyer,中加双执照律师,Markham家庭法律师,GTA华人律师,跨境资产离婚,Osgoode家庭法律师,Chinese family lawyer Toronto,中国婚姻法专家证人,Expert Witness Chinese marriage law,Notary Public Markham,公证人万锦,Ontario notary public Chinese" />
   <meta property="og:title" content="何淼律师 | 多伦多华人离婚律师 | 中加双执照" />
   <meta property="og:description" content="Miao He（何淼），Osgoode LL.M.，安省及中国双执照，GTA执业15+年。离婚、子女监护、跨境资产。647-930-6688。" />
-  <meta property="og:url" content="https://www.miaohelaw.ca/about" />
   <meta property="og:type" content="profile" />
-  <link rel="canonical" href="https://www.miaohelaw.ca/about" />
   <script type="application/ld+json">
   [
     {
       "@context": "https://schema.org",
       "@type": "ProfilePage",
-      "@id": "https://www.miaohelaw.ca/about",
-      "url": "https://www.miaohelaw.ca/about",
+      "@id": "https://www.miaohelaw.ca/about/",
+      "url": "https://www.miaohelaw.ca/about/",
       "name": "关于何淼律师 — 多伦多华人离婚律师",
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://www.miaohelaw.ca/" },
-          { "@type": "ListItem", "position": 2, "name": "关于律师", "item": "https://www.miaohelaw.ca/about" }
+          { "@type": "ListItem", "position": 2, "name": "关于律师", "item": "https://www.miaohelaw.ca/about/" }
         ]
       },
       "mainEntity": { "@id": "https://www.miaohelaw.ca/#person" }
@@ -42,7 +41,7 @@ import Footer from '../components/Footer.astro';
       "alternateName": ["何淼", "Mia He"],
       "jobTitle": "Family Law Lawyer",
       "description": "Miao He（何淼）毕业于 Osgoode Hall Law School（LL.M.），持有安大略省及中国双重律师执照，在 Greater Toronto Area 执业超过15年，现任 H. LAW FIRM 主理律师。",
-      "url": "https://www.miaohelaw.ca",
+      "url": "https://www.miaohelaw.ca/",
       "telephone": "+1-647-930-6688",
       "email": "miao@miaohelaw.ca",
       "image": "https://www.miaohelaw.ca/miao-he-lawyer.jpeg",
@@ -106,6 +105,7 @@ import Footer from '../components/Footer.astro';
         <div class="page-label">关于律师 · ABOUT</div>
         <h1>何淼律师 <span class="en-name">Miao He</span></h1>
         <p>多伦多华人离婚律师 · 中加双执照 · Osgoode Hall LL.M. · 执业15+年</p>
+        <p class="page-last-updated page-last-updated--warm">页面内容最后更新：{SITE_LAST_UPDATED_ZH}</p>
       </div>
     </section>
 

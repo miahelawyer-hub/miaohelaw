@@ -11,15 +11,17 @@ type Props = CollectionEntry['blog']['data'];
 
 const { title, description, pubDate, updatedDate, heroImage, keywords, tags } = Astro.props;
 
-const slug = Astro.url.pathname.replace(/\/$/, '');
-const canonicalUrl = `https://www.miaohelaw.ca${slug}`;
-const dateStr = pubDate.toISOString().split('T')[0];
-const updatedStr = updatedDate ? updatedDate.toISOString().split('T')[0] : dateStr;
+const pathname = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${Astro.url.pathname}/`;
+const canonicalUrl = new URL(pathname, Astro.site).href;
+const pathCore = pathname.replace(/\/$/, '') || '/';
+const publishedIso = pubDate.toISOString();
+const modifiedIso = (updatedDate ?? pubDate).toISOString();
+const articleAuthorUrl = 'https://www.miaohelaw.ca/about/';
 
 // 获取其他博文用于侧边栏
 const allPosts = (await getCollection('blog')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-).filter(p => `/blog/${p.id}` !== slug && `/blog/${p.id}/` !== slug).slice(0, 4);
+).filter(p => `/blog/${p.id}` !== pathCore && `/blog/${p.id}/` !== pathname).slice(0, 4);
 ---
 
 <html lang="zh">
@@ -28,9 +30,12 @@ const allPosts = (await getCollection('blog')).sort(
     {keywords && <meta name="keywords" content={keywords} />}
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:url" content={canonicalUrl} />
     <meta property="og:type" content="article" />
     <meta property="og:locale" content="zh_CN" />
+    <meta property="article:published_time" content={publishedIso} />
+    <meta property="article:modified_time" content={modifiedIso} />
+    <meta property="article:author" content={articleAuthorUrl} />
+    <meta name="author" content="何淼律师 Miao He" />
     <script type="application/ld+json" set:html={JSON.stringify([
       {
         "@context": "https://schema.org",
@@ -38,8 +43,8 @@ const allPosts = (await getCollection('blog')).sort(
         "headline": title,
         "description": description,
         "url": canonicalUrl,
-        "datePublished": dateStr,
-        "dateModified": updatedStr,
+        "datePublished": publishedIso,
+        "dateModified": modifiedIso,
         "inLanguage": "zh",
         "author": {
           "@type": "Person",
@@ -47,14 +52,14 @@ const allPosts = (await getCollection('blog')).sort(
           "name": "Miao He",
           "alternateName": ["何淼", "Mia He"],
           "jobTitle": "Family Law Lawyer",
-          "url": "https://www.miaohelaw.ca",
+          "url": "https://www.miaohelaw.ca/",
           "telephone": "+1-647-930-6688"
         },
         "publisher": {
           "@type": "Person",
           "@id": "https://www.miaohelaw.ca/#person",
           "name": "Miao He",
-          "url": "https://www.miaohelaw.ca"
+          "url": "https://www.miaohelaw.ca/"
         },
         "about": {
           "@type": "LegalService",
@@ -377,6 +382,9 @@ const allPosts = (await getCollection('blog')).sort(
             <FormattedDate date={pubDate} />
             {updatedDate && <span>&nbsp;（更新：<FormattedDate date={updatedDate} />）</span>}
             &nbsp;·&nbsp; H. LAW FIRM 恒. 律师事务所
+          </p>
+          <p class="post-meta-updated">
+            页面最后更新：<FormattedDate date={updatedDate ?? pubDate} />
           </p>
         </div>
 

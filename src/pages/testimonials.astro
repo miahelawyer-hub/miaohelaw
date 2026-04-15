@@ -2,6 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { SITE_LAST_UPDATED_ZH } from '../consts';
 ---
 
 <!doctype html>
@@ -14,23 +15,21 @@ import Footer from '../components/Footer.astro';
   <meta name="keywords" content="何淼律师评价,Miao He律师评价,多伦多华人律师评价,Toronto Chinese lawyer review,家庭法律师客户评价,离婚律师推荐,Markham律师评价" />
   <meta property="og:title" content="客户评价 | 何淼律师 — 多伦多华人离婚律师" />
   <meta property="og:description" content="何淼律师真实客户评价：Google五星、Yelp好评、手写贺卡、微信留言、邮件感谢。17条真实反馈。647-930-6688。" />
-  <meta property="og:url" content="https://www.miaohelaw.ca/testimonials" />
   <meta property="og:type" content="website" />
-  <link rel="canonical" href="https://www.miaohelaw.ca/testimonials" />
   <script type="application/ld+json">
   [
     {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      "@id": "https://www.miaohelaw.ca/testimonials",
-      "url": "https://www.miaohelaw.ca/testimonials",
+      "@id": "https://www.miaohelaw.ca/testimonials/",
+      "url": "https://www.miaohelaw.ca/testimonials/",
       "name": "客户评价 — 何淼律师",
       "description": "何淼律师真实客户评价，包括手写贺卡、Google评价、微信留言及客户邮件。",
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://www.miaohelaw.ca/" },
-          { "@type": "ListItem", "position": 2, "name": "客户评价", "item": "https://www.miaohelaw.ca/testimonials" }
+          { "@type": "ListItem", "position": 2, "name": "客户评价", "item": "https://www.miaohelaw.ca/testimonials/" }
         ]
       },
       "mainEntity": { "@id": "https://www.miaohelaw.ca/#lawfirm" }
@@ -40,7 +39,7 @@ import Footer from '../components/Footer.astro';
       "@type": "LocalBusiness",
       "@id": "https://www.miaohelaw.ca/#lawfirm",
       "name": "H. LAW FIRM 恒. 律师事务所",
-      "url": "https://www.miaohelaw.ca",
+      "url": "https://www.miaohelaw.ca/",
       "telephone": "+1-647-930-6688",
       "aggregateRating": {
         "@type": "AggregateRating",
@@ -144,6 +143,7 @@ import Footer from '../components/Footer.astro';
         <div class="page-label">客户评价 · TESTIMONIALS</div>
         <h1>真实客户反馈</h1>
         <p>以下是客户通过不同方式留下的真实反馈，包括手写贺卡、Google评价、微信留言及电子邮件，均经客户同意展示，敏感信息已作匿名处理。</p>
+        <p class="page-last-updated page-last-updated--warm">页面内容最后更新：{SITE_LAST_UPDATED_ZH}</p>
       </div>
     </section>
 
