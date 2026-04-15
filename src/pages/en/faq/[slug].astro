@@ -154,7 +154,7 @@ const others = faqListingEn.filter(f => f.slug !== item.slug).slice(0, 6);
         <div class="answer-card">
           <h2>Detailed Answer</h2>
           {item.details.map(para => (
-            <p>{para}</p>
+            <p set:html={para} />
           ))}
           <div class="answer-cta">
             <a href="tel:6479306688">📞 647-930-6688 · Book a Consultation with Miao He</a>
