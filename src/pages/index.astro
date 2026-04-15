@@ -188,6 +188,7 @@ const posts = (await getCollection('blog')).sort(
 			<!-- Practice Areas -->
 			<section class="areas">
 				<h2>Family Law Services · 家庭法服务</h2>
+				<p class="areas-sub">八大核心家庭法服务：从协议谈判到出庭诉讼，从本地财产到跨境资产，全流程覆盖。</p>
 				<div class="areas-grid">
 					<div class="area-card area-family">
 						<div class="area-num">01</div>
@@ -397,19 +398,85 @@ const posts = (await getCollection('blog')).sort(
 	.stat-number { font-size: 2.25rem; font-weight: 500; color: #FAC775; margin-bottom: 0.4rem; }
 	.stat-label { font-size: 0.75rem; color: #9A8060; line-height: 1.4; }
 
-	.areas { padding: 4rem 2rem; max-width: 960px; margin: 0 auto; }
-	.areas h2 { font-family: 'Georgia', serif; font-size: 1.75rem; font-weight: 400; color: #1A1208; margin-bottom: 2rem; }
+	.areas { padding: 4.25rem 2rem; max-width: 960px; margin: 0 auto; }
+	.areas h2 { font-family: 'Georgia', serif; font-size: 1.75rem; font-weight: 400; color: #1A1208; margin-bottom: 0.65rem; }
+	.areas-sub { color: #6B5A3A; font-size: 0.95rem; line-height: 1.75; margin-bottom: 2rem; max-width: 70ch; }
+
 	.areas-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
-	.area-card { background: #FDFBF7; border: 1px solid #EDE8DF; border-radius: 8px; padding: 1.5rem; border-left: 4px solid; }
-	.area-family { border-left-color: #7A5A1A; }
-	.area-re { border-left-color: #185FA5; }
-	.area-civil { border-left-color: #854F0B; }
-	.area-sc { border-left-color: #993C1D; }
-	.area-num { font-size: 0.7rem; color: #9A8060; letter-spacing: 0.1em; margin-bottom: 0.5rem; }
-	.area-card h3 { font-size: 1rem; font-weight: 500; color: #1A1208; margin-bottom: 0.5rem; }
-	.area-card p { font-size: 0.85rem; color: #6B5A3A; line-height: 1.6; margin-bottom: 1rem; }
-	.area-link { font-size: 0.8rem; color: #7A5A1A; text-decoration: none; font-weight: 500; }
+
+	.area-card {
+		--accent: #7A5A1A;
+		--card-bg: #ffffff;
+		position: relative;
+		background: var(--card-bg);
+		border: 1px solid #EDE8DF;
+		border-radius: 12px;
+		padding: 1.6rem 1.6rem 1.45rem;
+		box-shadow: 0 10px 30px rgba(44,24,16,0.06);
+		transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+	}
+	.area-card::before{
+		content:"";
+		position:absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		width: 4px;
+		background: var(--accent);
+	}
+	.area-card:hover{
+		transform: translateY(-2px);
+		border-color: rgba(212,168,83,0.6);
+		box-shadow: 0 16px 44px rgba(44,24,16,0.09);
+	}
+
+	/* Subtle, premium-tinted backgrounds per category */
+	.area-family { --accent: #7A5A1A; --card-bg: linear-gradient(180deg, #FFFFFF 0%, #FFFBF3 100%); }
+	.area-re { --accent: #185FA5; --card-bg: linear-gradient(180deg, #FFFFFF 0%, #F2F7FF 100%); }
+	.area-civil { --accent: #854F0B; --card-bg: linear-gradient(180deg, #FFFFFF 0%, #FFF6EF 100%); }
+	.area-sc { --accent: #993C1D; --card-bg: linear-gradient(180deg, #FFFFFF 0%, #FFF2F0 100%); }
+	.area-num {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		min-width: 44px;
+		height: 28px;
+		padding: 0 10px;
+		border-radius: 999px;
+		background: rgba(245,239,224,0.85);
+		border: 1px solid rgba(232,217,184,0.85);
+		font-size: 0.72rem;
+		color: #7A5A1A;
+		letter-spacing: 0.12em;
+		margin-bottom: 0.85rem;
+	}
+	.area-card h3 {
+		font-size: 1.06rem;
+		font-weight: 600;
+		color: #1A1208;
+		margin-bottom: 0.55rem;
+		line-height: 1.35;
+	}
+	.area-card p {
+		font-size: 0.9rem;
+		color: #6B5A3A;
+		line-height: 1.65;
+		margin-bottom: 1.15rem;
+	}
+	.area-link {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.35rem;
+		font-size: 0.84rem;
+		color: #7A5A1A;
+		text-decoration: none;
+		font-weight: 600;
+	}
 	.area-link:hover { text-decoration: underline; }
+
+	@media (max-width: 720px) {
+		.areas-grid { grid-template-columns: 1fr; }
+	}
 
 	.results-section { background: #F5EFE0; border-top: 1px solid #EDE8DF; border-bottom: 1px solid #EDE8DF; padding: 4rem 2rem; }
 	.results-inner { max-width: 960px; margin: 0 auto; text-align: center; }
