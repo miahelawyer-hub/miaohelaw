@@ -82,6 +82,25 @@ export const faqItemsEn: FaqItemEn[] =
     "featured": true
   },
   {
+    "slug": "stay-home-10-years-spousal-support-ontario",
+    "question": "I stayed home full-time with the kids for 10 years of marriage — can I get spousal support after divorce? For how long?",
+    "summary": "You can apply for spousal support. Full-time caregiving and career sacrifice are important factors courts consider. Amount and duration are not fixed by a mandatory formula — judges weigh income disparity, length of marriage, dependency, and future earning capacity, often using the federal Spousal Support Advisory Guidelines (SSAG) as a non-binding range. Longer marriages and greater dependency can support longer or higher support, but every case differs.",
+    "answers": [
+      "You can seek spousal support. Staying home to raise children and forgoing paid employment is a strong basis courts recognize when assessing entitlement.",
+      "How much and for how long has no one-size-fits-all answer. Courts may consult the SSAG ranges, but Ontario judges retain discretion and tailor orders to the facts."
+    ],
+    "details": [
+      "In Ontario, spousal support analysis focuses heavily on economic dependency built during the marriage. Ten years of full-time childcare and foregone career progression is powerful evidence of need and compensatory themes.",
+      "Amount is closely tied to income disparity. If you are not currently employed, the court will look at the payor's income and your needs and capacities — larger gaps often correlate with higher awards, subject to the overall matrix.",
+      "Duration is linked to length of marriage. Longer marriages often support longer support periods; a decade-long marriage can justify a substantial term, and in some cases indefinite or non-fixed duration is argued where the facts support it.",
+      "The SSAG provides advisory ranges for amount and duration, but courts are not strictly bound — judges can move above or below the range where fairness requires.",
+      "Disability or health limitations affecting employability can lengthen duration or increase amount when proven and relevant.",
+      "Many stay-at-home parents underestimate their claims. Contact Miao He at 647-930-6688 or WeChat 372656035 to understand your realistic range early."
+    ],
+    "keywords": "stay at home parent spousal support Ontario,10 year marriage spousal support,SSAG Ontario,spousal support duration Ontario,Miao He lawyer,Chinese family lawyer GTA",
+    "featured": true
+  },
+  {
     "slug": "parents-down-payment-divorce-ontario",
     "question": "My parents contributed to the down payment on our home — can that money be recovered in a divorce?",
     "summary": "Not necessarily. The answer depends on four factors: whether the property is a matrimonial home or investment property, whose account the money was deposited into, whether the contribution was a gift or a loan, and what evidence exists to prove the parties' intentions. There is no fixed answer — every case is different.",
