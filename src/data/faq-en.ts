@@ -46,6 +46,24 @@ export const faqItemsEn: FaqItemEn[] =
     "featured": true
   },
   {
+    "slug": "child-relocation-vancouver-ex-objects",
+    "question": "After divorce I want to move with my child to Vancouver — my ex does not agree. Can I just move?",
+    "summary": "No. If the other parent does not agree, you cannot simply relocate with the child. Ontario and federal relocation rules require formal written notice and, if there is no agreement, a court determination based on the child's best interests. Moving without consent or a court order can carry serious legal consequences.",
+    "answers": [
+      "No. If the other parent does not agree, you should not relocate with the child without following the statutory relocation process and, if necessary, obtaining a court order.",
+      "In short: without the other parent's agreement or a court order, unilateral relocation can be unlawful and can seriously harm your position on parenting time and decision-making."
+    ],
+    "details": [
+      "Ontario Children Law Reform Act and the Divorce Act relocation framework require advance written notice of a proposed move (a Notice of Relocation in many cases). The other parent has a legislated window to respond with objections and reasons.",
+      "If there is no timely response, the law may treat the situation as consent in limited circumstances — but a clear objection means the dispute must go before a judge. Courts decide whether the relocation is permitted based primarily on the best interests of the child.",
+      "Judges typically weigh the child's schooling and community ties, the feasibility of preserving a meaningful relationship with the non-moving parent, travel and contact costs, and whether the moving parent's reasons are adequate and good-faith (for example employment or family support).",
+      "Relocating without consent or a court order can expose you to urgent motions, enforcement issues, and serious credibility problems in parenting litigation — in extreme cases it can undermine your parenting case.",
+      "Plan early. Contact Miao He at 647-930-6688 to understand timelines, notice requirements, and how to present (or respond to) a relocation application."
+    ],
+    "keywords": "child relocation Ontario,Notice of Relocation Canada,move province divorce parenting,Vancouver relocation custody,Miao He lawyer,Chinese family lawyer GTA",
+    "featured": true
+  },
+  {
     "slug": "parents-down-payment-divorce-ontario",
     "question": "My parents contributed to the down payment on our home — can that money be recovered in a divorce?",
     "summary": "Not necessarily. The answer depends on four factors: whether the property is a matrimonial home or investment property, whose account the money was deposited into, whether the contribution was a gift or a loan, and what evidence exists to prove the parties' intentions. There is no fixed answer — every case is different.",
