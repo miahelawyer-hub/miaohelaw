@@ -3,6 +3,7 @@ import BaseHead from '../../../components/BaseHead.astro';
 import HeaderEn from '../../../components/HeaderEn.astro';
 import Footer from '../../../components/Footer.astro';
 import { faqItemsEn, getFaqItemsEnForListing } from '../../../data/faq-en';
+import { stripHtml } from '../../../utils/stripHtml';
 
 export function getStaticPaths() {
   return faqItemsEn.map(item => ({
@@ -14,17 +15,19 @@ export function getStaticPaths() {
 const { item } = Astro.props;
 const faqListingEn = getFaqItemsEnForListing();
 const others = faqListingEn.filter(f => f.slug !== item.slug).slice(0, 6);
+const summaryPlain = stripHtml(item.summary);
+const jsonLdAnswerPlain = [summaryPlain, ...item.answers.map(stripHtml)].filter(Boolean).join('\n\n');
 ---
 <!doctype html>
 <html lang="en">
 <head>
   <BaseHead
     title={`${item.question} | Miao He — Ontario Family Law`}
-    description={item.summary}
+    description={summaryPlain}
   />
   <meta name="keywords" content={item.keywords} />
   <meta property="og:title" content={`${item.question} | Miao He`} />
-  <meta property="og:description" content={item.summary} />
+  <meta property="og:description" content={summaryPlain} />
   <meta property="og:url" content={`https://www.miaohelaw.ca/en/faq/${item.slug}`} />
   <meta property="og:type" content="article" />
   <link rel="canonical" href={`https://www.miaohelaw.ca/en/faq/${item.slug}`} />
@@ -34,7 +37,7 @@ const others = faqListingEn.filter(f => f.slug !== item.slug).slice(0, 6);
     "mainEntity": [{
       "@type": "Question",
       "name": item.question,
-      "acceptedAnswer": { "@type": "Answer", "text": item.summary }
+      "acceptedAnswer": { "@type": "Answer", "text": jsonLdAnswerPlain }
     }]
   })} />
   <script type="application/ld+json" set:html={JSON.stringify({
@@ -69,20 +72,22 @@ const others = faqListingEn.filter(f => f.slug !== item.slug).slice(0, 6);
       font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em;
       color: #9A8060; text-transform: uppercase; margin-bottom: 0.5rem;
     }
-    .summary-card p { color: #2C1810; font-size: 0.95rem; line-height: 1.8; margin: 0; }
+    .summary-card .summary-body { color: #2C1810; font-size: 0.95rem; line-height: 1.8; margin: 0; }
 
     .answer-card {
       background: white; border-radius: 12px;
       box-shadow: 0 2px 12px rgba(44,24,16,0.07);
       padding: 2rem 2.5rem; margin-bottom: 2rem;
     }
+    .answer-card--points { margin-bottom: 1.5rem; }
     .answer-card h2 {
       font-size: 1rem; text-transform: uppercase; letter-spacing: 0.06em;
       color: #9A8060; margin-bottom: 1.25rem; padding-bottom: 0.75rem;
       border-bottom: 2px solid #D4A853;
     }
-    .answer-card p { color: #2C1810; font-size: 0.95rem; line-height: 1.9; margin-bottom: 1.25rem; }
-    .answer-card p:last-of-type { margin-bottom: 0; }
+    .answer-card p, .answer-card .answer-point { color: #2C1810; font-size: 0.95rem; line-height: 1.9; margin-bottom: 1.25rem; }
+    .answer-card p:last-of-type, .answer-card .answer-point:last-of-type { margin-bottom: 0; }
+    .answer-card em { font-style: italic; }
 
     .answer-cta {
       margin-top: 1.75rem; padding-top: 1.25rem; border-top: 1px solid #e8e0d5;
@@ -148,7 +153,14 @@ const others = faqListingEn.filter(f => f.slug !== item.slug).slice(0, 6);
 
         <div class="summary-card">
           <div class="summary-label">Short Answer</div>
-          <p>{item.summary}</p>
+          <p class="summary-body" set:html={item.summary} />
+        </div>
+
+        <div class="answer-card answer-card--points">
+          <h2>Key Points</h2>
+          {item.answers.map((para) => (
+            <p class="answer-point" set:html={para} />
+          ))}
         </div>
 
         <div class="answer-card">

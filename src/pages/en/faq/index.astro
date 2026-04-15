@@ -3,6 +3,7 @@ import BaseHead from '../../../components/BaseHead.astro';
 import HeaderEn from '../../../components/HeaderEn.astro';
 import Footer from '../../../components/Footer.astro';
 import { getFaqItemsEnForListing } from '../../../data/faq-en';
+import { stripHtml } from '../../../utils/stripHtml';
 
 const items = getFaqItemsEnForListing();
 const totalFaqEn = items.length;
@@ -27,7 +28,7 @@ const totalFaqEn = items.length;
     "mainEntity": items.map(item => ({
       "@type": "Question",
       "name": item.question,
-      "acceptedAnswer": { "@type": "Answer", "text": item.summary }
+      "acceptedAnswer": { "@type": "Answer", "text": [stripHtml(item.summary), ...item.answers.map(stripHtml)].filter(Boolean).join("\n\n") }
     }))
   })} />
   <script type="application/ld+json">{JSON.stringify({
@@ -204,7 +205,7 @@ const totalFaqEn = items.length;
         <p class="faq-search-meta" id="faq-search-meta" aria-live="polite"></p>
 
         {items.map((item, i) => (
-          <div class={`faq-item${i >= 10 ? ' faq-hidden' : ''}`} data-search={`${item.question} ${item.summary} ${item.keywords}`.toLowerCase()}>
+          <div class={`faq-item${i >= 10 ? ' faq-hidden' : ''}`} data-search={`${item.question} ${stripHtml(item.summary)} ${item.answers.map(stripHtml).join(' ')} ${item.keywords}`.toLowerCase()}>
             <a href={`/en/faq/${item.slug}`} class="faq-link">
               <span>{item.question}</span>
               <span class="faq-arrow">→</span>

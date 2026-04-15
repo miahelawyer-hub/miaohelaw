@@ -3,6 +3,7 @@ import BaseHead from '../../components/BaseHead.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import { faqItems, getFaqItemsForListing } from '../../data/faq';
+import { stripHtml } from '../../utils/stripHtml';
 
 export function getStaticPaths() {
   return faqItems.map(item => ({
@@ -14,6 +15,8 @@ export function getStaticPaths() {
 const { item } = Astro.props;
 const faqListing = getFaqItemsForListing();
 const others = faqListing.filter(f => f.slug !== item.slug).slice(0, 6);
+const summaryPlain = stripHtml(item.summary);
+const jsonLdAnswerPlain = [summaryPlain, ...item.answers.map(stripHtml)].filter(Boolean).join('\n\n');
 ---
 
 <!doctype html>
@@ -21,11 +24,11 @@ const others = faqListing.filter(f => f.slug !== item.slug).slice(0, 6);
 <head>
   <BaseHead
     title={`${item.question} | 何淼律师 多伦多华人家庭法`}
-    description={item.summary}
+    description={summaryPlain}
   />
   <meta name="keywords" content={item.keywords} />
   <meta property="og:title" content={`${item.question} | 何淼律师`} />
-  <meta property="og:description" content={item.summary} />
+  <meta property="og:description" content={summaryPlain} />
   <meta property="og:url" content={`https://www.miaohelaw.ca/faq/${item.slug}`} />
   <meta property="og:type" content="article" />
   <link rel="canonical" href={`https://www.miaohelaw.ca/faq/${item.slug}`} />
@@ -37,7 +40,7 @@ const others = faqListing.filter(f => f.slug !== item.slug).slice(0, 6);
       "name": item.question,
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": item.summary
+        "text": jsonLdAnswerPlain
       }
     }]
   })}></script>
@@ -68,7 +71,14 @@ const others = faqListing.filter(f => f.slug !== item.slug).slice(0, 6);
 
         <div class="summary-card">
           <div class="summary-label">简答</div>
-          <p>{item.summary}</p>
+          <p class="summary-body" set:html={item.summary} />
+        </div>
+
+        <div class="answer-card answer-card--points">
+          <h2>要点</h2>
+          {item.answers.map((para) => (
+            <p class="answer-point" set:html={para} />
+          ))}
         </div>
 
         <div class="answer-card">
@@ -118,11 +128,13 @@ const others = faqListing.filter(f => f.slug !== item.slug).slice(0, 6);
   .answer-section{padding:3rem 0}
   .summary-card{background:#fdf8f0;border-left:4px solid #D4A853;border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;margin-bottom:2rem}
   .summary-label{font-size:0.72rem;font-weight:700;color:#9A8060;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.5rem}
-  .summary-card p{color:#2C1810;line-height:1.75;margin:0;font-size:1rem;font-weight:500}
+  .summary-card .summary-body{color:#2C1810;line-height:1.75;margin:0;font-size:1rem;font-weight:500}
   .answer-card{background:white;border:1px solid #e8e0d5;border-radius:12px;padding:2rem;margin-bottom:2.5rem}
+  .answer-card--points{margin-bottom:1.75rem}
   .answer-card h2{color:#2C1810;font-size:1.1rem;margin:0 0 1.25rem;padding-bottom:0.75rem;border-bottom:1px solid #f0ebe3}
-  .answer-card p{color:#333;line-height:1.9;margin:0 0 1.1rem;font-size:1rem}
-  .answer-card p:last-of-type{margin-bottom:0}
+  .answer-card p,.answer-card .answer-point{color:#333;line-height:1.9;margin:0 0 1.1rem;font-size:1rem}
+  .answer-card p:last-of-type,.answer-card .answer-point:last-of-type{margin-bottom:0}
+  .answer-card em{font-style:italic}
   .answer-cta{margin-top:1.5rem;padding-top:1.25rem;border-top:1px solid #f0ebe3}
   .answer-cta a{color:#9A8060;font-weight:600;text-decoration:none;font-size:0.95rem}
   .answer-cta a:hover{color:#2C1810}
