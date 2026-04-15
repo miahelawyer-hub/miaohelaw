@@ -6,156 +6,383 @@ const { lang = 'zh' } = Astro.props;
 
 <CallBar />
 <footer>
-<div class="trust-bar">
-  <div class="trust-item">
-    <span class="trust-icon">📍</span>
-    <span>208-7050 Woodbine Ave, Markham, ON L3R 4G8</span>
-  </div>
-  <div class="trust-item">
-    <span class="trust-icon">⚖️</span>
-    <a href="https://lso.ca/home" target="_blank" rel="noopener">Law Society of Ontario — #83315K</a>
-  </div>
-  <div class="trust-item">
-    <span class="trust-icon">🇨🇳</span>
-    <span>中国律师协会 — 双重执照</span>
-  </div>
-  <div class="trust-item">
-    <span class="trust-icon">🏢</span>
-    <a href="https://www.hlawfirmontario.com" target="_blank" rel="noopener">H. LAW FIRM</a>
-  </div>
-  <div class="trust-item">
-    <span class="trust-icon">📞</span>
-    <a href="tel:6479306688">647-930-6688</a>
-  </div>
-  <div class="footer-legal">
-    {lang === 'en' ? (
-      <>
-        <a href="/en/privacy-policy">Privacy Policy</a>
-        <span>·</span>
-        <a href="/en/terms-of-use">Terms of Use</a>
-      </>
-    ) : (
-      <>
-        <a href="/privacy-policy">隐私政策</a>
-        <span>·</span>
-        <a href="/terms-of-use">使用条款</a>
-      </>
-    )}
-  </div>
-</div>
-	&copy; {today.getFullYear()} Miao He (何淼). All rights reserved.
-	<div class="social-links">
-		<a href="https://www.linkedin.com/in/mia-he-93422b160/" target="_blank" rel="noopener" aria-label="LinkedIn">
-			<span class="sr-only">LinkedIn</span>
-			<svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" fill="currentColor">
-				<path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-			</svg>
-		</a>
-		<a href="https://youtube.com/channel/UCLtXNA90GpKWbt6k-nOgL7w" target="_blank" rel="noopener" aria-label="YouTube">
-			<span class="sr-only">YouTube</span>
-			<svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" fill="currentColor">
-				<path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-			</svg>
-		</a>
-		<a href="https://www.tiktok.com/@mamashidawang" target="_blank" rel="noopener" aria-label="TikTok">
-			<span class="sr-only">TikTok</span>
-			<svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" fill="currentColor">
-				<path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/>
-			</svg>
-		</a>
-	</div>
-	<div class="wechat-section">
-		<p class="wechat-label">微信咨询 · WeChat</p>
-		<img src="/wechat-qr.jpg" alt="何淼律师微信二维码 WeChat QR Code" class="wechat-qr" />
-		<p class="wechat-id">微信号：372656035</p>
+	<div class="footer-inner">
+		<div class="footer-grid">
+			<section class="footer-col" aria-label={lang === 'en' ? 'Contact' : '联系'}>
+				<div class="footer-h">{lang === 'en' ? 'Contact' : '联系'}</div>
+				<div class="chip-stack">
+					<a class="chip chip-wide" href="tel:6479306688"><span class="ico">📞</span><span>647-930-6688</span></a>
+					<a class="chip chip-wide" href="mailto:miao@miaohelaw.ca"><span class="ico">✉️</span><span>miao@miaohelaw.ca</span></a>
+					<div class="chip chip-wide"><span class="ico">📍</span><span>208-7050 Woodbine Ave, Markham, ON L3R 4G8</span></div>
+				</div>
+			</section>
+
+			<section class="footer-col" aria-label={lang === 'en' ? 'Credentials' : '资质'}>
+				<div class="footer-h">{lang === 'en' ? 'Credentials' : '资质'}</div>
+				<div class="chip-stack">
+					<a class="chip chip-wide" href="https://lso.ca/home" target="_blank" rel="noopener"><span class="ico">⚖️</span><span>LSO #83315K</span></a>
+					<a class="chip chip-wide" href="https://www.hlawfirmontario.com" target="_blank" rel="noopener"><span class="ico">🏢</span><span>H. LAW FIRM</span></a>
+					<div class="chip chip-wide"><span class="ico">🇨🇳</span><span>{lang === 'en' ? 'China Bar · Dual-licensed' : '中国律师协会 · 双执照'}</span></div>
+				</div>
+			</section>
+
+			<section class="footer-col footer-col-connect" aria-label={lang === 'en' ? 'Follow and WeChat' : '关注与微信'}>
+				<div class="footer-connect-head">
+					<div class="footer-h">{lang === 'en' ? 'Follow & WeChat' : '关注与微信'}</div>
+					<div class="social-links social-links-head" aria-label="Social links">
+						<a href="https://www.linkedin.com/in/mia-he-93422b160/" target="_blank" rel="noopener" aria-label="LinkedIn">
+							<span class="sr-only">LinkedIn</span>
+							<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="currentColor">
+								<path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+							</svg>
+						</a>
+						<a href="https://youtube.com/channel/UCLtXNA90GpKWbt6k-nOgL7w" target="_blank" rel="noopener" aria-label="YouTube">
+							<span class="sr-only">YouTube</span>
+							<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="currentColor">
+								<path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+							</svg>
+						</a>
+						<a href="https://www.tiktok.com/@mamashidawang" target="_blank" rel="noopener" aria-label="TikTok">
+							<span class="sr-only">TikTok</span>
+							<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="currentColor">
+								<path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="chip-stack">
+					<div class="wechat-card" aria-label="WeChat">
+						<button
+							type="button"
+							class="wechat-qr-trigger"
+							id="footer-wechat-qr-open"
+							aria-haspopup="dialog"
+							aria-controls="footer-wechat-qr-dialog"
+							aria-label={lang === 'en' ? 'Enlarge WeChat QR code' : '放大查看微信二维码'}
+						>
+							<img src="/wechat-qr.jpg" alt="" class="wechat-qr" width="44" height="44" decoding="async" />
+						</button>
+						<div class="wechat-meta">
+							<div class="wechat-title">{lang === 'en' ? 'Scan to chat' : '扫码咨询'}</div>
+							<div class="wechat-id">{lang === 'en' ? 'ID: 372656035' : '微信号：372656035'}</div>
+						</div>
+					</div>
+					<div class="chip chip-wide footer-legal" aria-label="Legal links">
+						{lang === 'en' ? (
+							<>
+								<a href="/en/privacy-policy">Privacy</a>
+								<span class="dot">·</span>
+								<a href="/en/terms-of-use">Terms</a>
+							</>
+						) : (
+							<>
+								<a href="/privacy-policy">隐私</a>
+								<span class="dot">·</span>
+								<a href="/terms-of-use">条款</a>
+							</>
+						)}
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div class="footer-copy">
+			&copy; {today.getFullYear()} Miao He (何淼). All rights reserved.
+		</div>
 	</div>
 </footer>
 
+<dialog class="wechat-qr-dialog" id="footer-wechat-qr-dialog" aria-labelledby="footer-wechat-qr-dialog-title">
+	<div class="wechat-qr-dialog-panel">
+		<button type="button" class="wechat-qr-dialog-close" data-wechat-qr-close aria-label={lang === 'en' ? 'Close' : '关闭'}>
+			<span aria-hidden="true">×</span>
+		</button>
+		<p class="wechat-qr-dialog-title" id="footer-wechat-qr-dialog-title">
+			{lang === 'en' ? 'WeChat QR' : '微信二维码'}
+		</p>
+		<img src="/wechat-qr.jpg" alt={lang === 'en' ? 'WeChat QR code — scan to add' : '何淼律师微信二维码，扫码添加'} class="wechat-qr-dialog-img" width="520" height="520" decoding="async" />
+		<p class="wechat-qr-dialog-hint">{lang === 'en' ? 'Click outside or press Esc to close.' : '点击空白处或按 Esc 关闭。'}</p>
+	</div>
+</dialog>
+
+<script>
+	function setupFooterWechatQr() {
+		const dialog = document.getElementById('footer-wechat-qr-dialog');
+		const openBtn = document.getElementById('footer-wechat-qr-open');
+		if (!(dialog instanceof HTMLDialogElement) || !openBtn) return;
+
+		const close = () => dialog.close();
+		openBtn.addEventListener('click', () => dialog.showModal());
+		dialog.querySelectorAll('[data-wechat-qr-close]').forEach((el) => {
+			el.addEventListener('click', close);
+		});
+		dialog.addEventListener('click', (e) => {
+			if (e.target === dialog) close();
+		});
+	}
+	if (document.readyState === 'loading') {
+		document.addEventListener('DOMContentLoaded', setupFooterWechatQr);
+	} else {
+		setupFooterWechatQr();
+	}
+</script>
+
 <style>
-	.trust-bar {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.75rem 2rem;
-  padding: 1rem 1rem 0.5rem;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
-  margin-bottom: 1rem;
-}
-.trust-item {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  font-size: 0.82rem;
-  color: rgb(var(--gray));
-}
-.trust-item a {
-  color: rgb(var(--gray));
-  text-decoration: underline;
-  text-underline-offset: 2px;
-}
-.trust-item a:hover {
-  color: #D4A853;
-}
-.trust-icon {
-  font-size: 0.9rem;
-}
 footer {
-		padding: 2em 1em 4em 1em;
+		padding: 1.35rem 1.1rem 4rem;
 		background: linear-gradient(var(--gray-gradient)) no-repeat;
 		color: rgb(var(--gray));
-		text-align: center;
+		text-align: left;
 	}
+	.footer-inner{
+		max-width: 1120px;
+		margin: 0 auto;
+	}
+	.footer-grid{
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 1rem 1.5rem;
+		align-items: start;
+	}
+	.footer-col{ min-width: 0; }
+	.footer-h{
+		font-size: 0.72rem;
+		letter-spacing: 0.14em;
+		text-transform: uppercase;
+		color: rgba(var(--gray), 0.85);
+		font-weight: 800;
+		margin-bottom: 0.55rem;
+	}
+	.footer-connect-head{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 0.65rem;
+		margin-bottom: 0.55rem;
+		min-width: 0;
+	}
+	.footer-col-connect .footer-h{
+		margin-bottom: 0;
+		min-width: 0;
+		flex: 1;
+		line-height: 1.35;
+	}
+	.social-links-head{
+		flex-shrink: 0;
+		justify-content: flex-end;
+		flex-wrap: nowrap;
+		gap: 0.4rem;
+	}
+	.chip-stack{
+		display: grid;
+		gap: 0.45rem;
+	}
+	.chip{
+		display: inline-flex;
+		align-items: center;
+		gap: 0.4rem;
+		padding: 0.45rem 0.65rem;
+		border-radius: 999px;
+		border: 1px solid rgba(232,217,184,0.95);
+		background: rgba(253,251,247,0.72);
+		box-shadow: 0 10px 18px rgba(44,24,16,0.06);
+		font-size: 0.78rem;
+		line-height: 1.35;
+		color: rgba(var(--gray), 0.98);
+		text-decoration: none;
+		transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+	}
+	.chip-wide{ width: 100%; }
+	a.chip:hover{
+		transform: translateY(-1px);
+		box-shadow: 0 14px 24px rgba(44,24,16,0.09);
+		border-color: rgba(212,168,83,0.55);
+		color: var(--accent);
+	}
+	div.chip:hover{
+		transform: translateY(-1px);
+		box-shadow: 0 14px 24px rgba(44,24,16,0.09);
+		border-color: rgba(212,168,83,0.55);
+	}
+	.ico{ opacity: 0.85; }
 	.social-links {
 		display: flex;
-		justify-content: center;
-		gap: 1em;
-		margin-top: 1em;
+		justify-content: flex-start;
+		gap: 0.45rem;
+		margin: 0;
 		align-items: center;
+		flex-wrap: wrap;
 	}
 	.social-links a {
 		text-decoration: none;
-		color: rgb(var(--gray));
+		color: rgba(var(--gray), 0.92);
+		width: 34px;
+		height: 34px;
+		border-radius: 999px;
+		display: grid;
+		place-items: center;
+		border: 1px solid rgba(232,217,184,0.75);
+		background: rgba(253,251,247,0.55);
+		box-shadow: 0 10px 18px rgba(44,24,16,0.06);
+		transition: transform 0.15s ease, box-shadow 0.15s ease, color 0.15s ease, border-color 0.15s ease;
 	}
 	.social-links a:hover {
-		color: rgb(var(--gray-dark));
-	}
-	.wechat-section {
-		margin-top: 2em;
-	}
-	.wechat-label {
-		font-size: 0.85rem;
-		color: rgb(var(--gray));
-		margin-bottom: 0.75em;
-	}
-	.wechat-qr {
-		width: 120px;
-		height: 120px;
-		border-radius: 8px;
-		border: 1px solid #EDE8DF;
-	}
-	.wechat-id {
-		font-size: 0.8rem;
-		color: rgb(var(--gray));
-		margin-top: 0.5em;
+		color: var(--accent);
+		transform: translateY(-1px);
+		box-shadow: 0 14px 24px rgba(44,24,16,0.09);
+		border-color: rgba(212,168,83,0.55);
 	}
 	.footer-legal {
-		margin-top: 1.5em;
-		font-size: 0.78rem;
-		color: rgb(var(--gray));
-		display: flex;
-		justify-content: center;
+		display: inline-flex;
 		align-items: center;
-		gap: 0.5em;
-		flex-wrap: wrap;
+		justify-content: flex-start;
+		gap: 0.45rem;
+		font-weight: 700;
 	}
 	.footer-legal a {
-		color: rgb(var(--gray));
+		color: rgba(var(--gray), 0.95);
 		text-decoration: none;
 	}
 	.footer-legal a:hover {
-		color: #D4A853;
+		color: var(--accent);
 	}
-	.footer-legal span {
-		opacity: 0.4;
+	.dot{ opacity: 0.45; }
+	.wechat-card{
+		display: flex;
+		align-items: center;
+		gap: 0.65rem;
+		padding: 0.55rem 0.65rem;
+		border-radius: 14px;
+		border: 1px solid rgba(232,217,184,0.95);
+		background: rgba(253,251,247,0.72);
+		box-shadow: 0 12px 22px rgba(44,24,16,0.08);
+	}
+	.wechat-qr-trigger{
+		display: inline-flex;
+		padding: 0;
+		margin: 0;
+		border: none;
+		background: transparent;
+		cursor: zoom-in;
+		border-radius: 10px;
+		line-height: 0;
+		transition: transform 0.15s ease, box-shadow 0.15s ease;
+	}
+	.wechat-qr-trigger:focus-visible{
+		outline: 2px solid rgba(212,168,83,0.85);
+		outline-offset: 3px;
+	}
+	.wechat-qr-trigger:hover{
+		transform: scale(1.03);
+	}
+	.wechat-qr{
+		width: 44px;
+		height: 44px;
+		border-radius: 10px;
+		border: 1px solid rgba(232,217,184,0.95);
+		display: block;
+	}
+	.wechat-qr-dialog{
+		padding: 0;
+		border: none;
+		margin: 0;
+		max-width: none;
+		width: 100%;
+		max-height: none;
+		height: 100%;
+		background: transparent;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.wechat-qr-dialog::backdrop{
+		background: rgba(22, 16, 12, 0.55);
+		cursor: pointer;
+	}
+	.wechat-qr-dialog-panel{
+		position: relative;
+		padding: 1.25rem 1.25rem 1rem;
+		border-radius: 14px;
+		background: rgba(253,251,247,0.98);
+		border: 1px solid rgba(232,217,184,0.95);
+		box-shadow: 0 24px 48px rgba(44,24,16,0.18);
+		max-width: min(92vw, 420px);
+	}
+	.wechat-qr-dialog-title{
+		margin: 0 0 0.65rem;
+		font-size: 0.78rem;
+		font-weight: 800;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		color: rgba(122,90,26,0.88);
+	}
+	.wechat-qr-dialog-img{
+		width: min(72vw, 320px);
+		height: auto;
+		display: block;
+		margin: 0 auto;
+		border-radius: 10px;
+		border: 1px solid rgba(232,217,184,0.95);
+	}
+	.wechat-qr-dialog-hint{
+		margin: 0.75rem 0 0;
+		font-size: 0.72rem;
+		color: rgba(var(--gray), 0.75);
+		text-align: center;
+	}
+	.wechat-qr-dialog-close{
+		position: absolute;
+		top: 0.5rem;
+		right: 0.5rem;
+		width: 2rem;
+		height: 2rem;
+		border-radius: 999px;
+		border: 1px solid rgba(232,217,184,0.95);
+		background: rgba(253,251,247,0.95);
+		color: rgba(var(--gray), 0.9);
+		font-size: 1.35rem;
+		line-height: 1;
+		cursor: pointer;
+		display: grid;
+		place-items: center;
+		padding: 0;
+		transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+	}
+	.wechat-qr-dialog-close:hover{
+		color: var(--accent);
+		border-color: rgba(212,168,83,0.55);
+	}
+	.wechat-meta{ min-width: 0; }
+	.wechat-title{
+		font-size: 0.72rem;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+		color: rgba(122,90,26,0.78);
+		font-weight: 800;
+	}
+	.wechat-id{
+		margin-top: 0.15rem;
+		font-size: 0.78rem;
+		color: rgba(var(--gray), 0.98);
+		font-weight: 700;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.footer-copy{
+		font-size: 0.78rem;
+		color: rgba(var(--gray), 0.92);
+		padding-top: 0.85rem;
+		margin-top: 0.85rem;
+		border-top: 1px solid rgba(232,217,184,0.55);
+		text-align: center;
+	}
+	@media (max-width: 980px){
+		.footer-grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+		.footer-col-connect{ grid-column: 1 / -1; }
+	}
+	@media (max-width: 720px){
+		footer{ text-align: left; }
+		.footer-grid{ grid-template-columns: 1fr; }
 	}
 </style>
