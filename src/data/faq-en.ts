@@ -101,6 +101,24 @@ export const faqItemsEn: FaqItemEn[] =
     "featured": true
   },
   {
+    "slug": "work-permit-spouse-pr-divorce-immigration",
+    "question": "I have a work permit and my spouse is a permanent resident — we are divorcing. Will my immigration status be affected?",
+    "summary": "An existing work permit or already-issued PR is not automatically lost simply because you divorce, assuming your original applications were truthful. The high-risk scenario is an in-land spousal sponsorship still in progress: separation can end the sponsor relationship and jeopardize the application — get coordinated family-law and immigration advice quickly.",
+    "answers": [
+      "If you already hold PR, divorce usually does not cause PR to be revoked — provided the information in your original application was genuine.",
+      "If you are on a work permit without PR and you were relying on your spouse to sponsor you for PR, separation materially changes the spousal relationship. The sponsor may not be able to continue as your sponsor in the same way."
+    ],
+    "details": [
+      "Issued PR is a standalone status. Divorce, by itself, does not automatically cancel a valid PR card.",
+      "An important caveat: if IRCC later finds material misrepresentation in the marriage-based application, PR can be challenged. That is about honesty of the file — not divorce as such.",
+      "If you hold a work permit, do not yet have PR, and your PR pathway is spousal sponsorship through your partner, formal separation can alter the legal relationship that underpins the sponsorship.",
+      "In that situation, the application may be refused or otherwise derailed, and you should urgently map alternative pathways — for example employer-driven work permits, other eligible programs, or lawful status extensions where available.",
+      "These issues sit at the intersection of family law and immigration law. Consult both a family lawyer and an immigration lawyer early. Contact Miao He at 647-930-6688 or WeChat 372656035."
+    ],
+    "keywords": "work permit divorce Ontario,spousal sponsorship PR divorce Canada,immigration status divorce Ontario,PR revoked divorce Canada,Miao He lawyer,Chinese family lawyer GTA",
+    "featured": true
+  },
+  {
     "slug": "parents-down-payment-divorce-ontario",
     "question": "My parents contributed to the down payment on our home — can that money be recovered in a divorce?",
     "summary": "Not necessarily. The answer depends on four factors: whether the property is a matrimonial home or investment property, whose account the money was deposited into, whether the contribution was a gift or a loan, and what evidence exists to prove the parties' intentions. There is no fixed answer — every case is different.",
