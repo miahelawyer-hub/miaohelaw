@@ -137,6 +137,24 @@ export const faqItemsEn: FaqItemEn[] =
     "featured": true
   },
   {
+    "slug": "remarriage-certificate-divorce-ontario",
+    "question": "After I receive my Certificate of Divorce, when can I remarry?",
+    "summary": "Once you hold a Certificate of Divorce, you may remarry at any time — there is no further waiting period under Canadian law. Remember the two-step ending: the court first grants a Divorce Order; after the usual 31-day appeal window you may apply for the Certificate, which is the document that proves the marriage is legally ended.",
+    "answers": [
+      "After the Certificate of Divorce is issued, you can remarry whenever you wish. There is no additional statutory waiting period tied to remarriage.",
+      "Two steps matter: the court issues a Divorce Order first. You typically apply for the Certificate of Divorce after the 31-day appeal period. Only with the certificate is the marriage formally dissolved for remarriage purposes."
+    ],
+    "details": [
+      "In Ontario, clients often confuse the Divorce Order with being fully divorced. The order is the court pronouncement, but it is not the same thing as the final proof used for remarriage and many administrative steps.",
+      "There is a 31-day appeal period after the Divorce Order. If no appeal is taken, you may apply for the Certificate of Divorce. That certificate is the clearest proof the marriage has been legally terminated.",
+      "After you have the certificate, you may remarry without an extra Canadian-law waiting period.",
+      "Practical planning: if you will register a new marriage in China or elsewhere, you may need authentication — for example Apostille steps where available, or Chinese consular authentication depending on timing and routing. Confirm the receiving country requirements early.",
+      "If you need help expediting the certificate or coordinating cross-border document authentication, contact Miao He at 647-930-6688 or WeChat 372656035."
+    ],
+    "keywords": "remarriage after divorce Ontario,Certificate of Divorce Ontario,Divorce Order vs certificate Ontario,how long remarry Canada,Miao He lawyer,Chinese family lawyer GTA",
+    "featured": true
+  },
+  {
     "slug": "parents-down-payment-divorce-ontario",
     "question": "My parents contributed to the down payment on our home — can that money be recovered in a divorce?",
     "summary": "Not necessarily. The answer depends on four factors: whether the property is a matrimonial home or investment property, whose account the money was deposited into, whether the contribution was a gift or a loan, and what evidence exists to prove the parties' intentions. There is no fixed answer — every case is different.",
