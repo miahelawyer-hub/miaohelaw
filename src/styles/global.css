@@ -22,6 +22,19 @@
 	/* English editorial serif stacks (HLR-inspired) */
 	--font-en-body: ui-serif, "Iowan Old Style", "Palatino Linotype", Palatino, Baskerville, "Times New Roman", Georgia, serif;
 	--font-en-display: ui-serif, "Iowan Old Style", "Palatino Linotype", Palatino, Baskerville, "Times New Roman", Georgia, serif;
+	/* Chinese UI / body: common web stack (PingFang / YaHei / Noto), pairs cleanly with Georgia on EN pages */
+	--font-zh-body:
+		"PingFang SC",
+		"Hiragino Sans GB",
+		"Microsoft YaHei",
+		"微软雅黑",
+		"Noto Sans SC",
+		"Source Han Sans SC",
+		"WenQuanYi Micro Hei",
+		ui-sans-serif,
+		system-ui,
+		sans-serif;
+	--font-zh-display: var(--font-zh-body);
 }
 
 @font-face {
@@ -66,6 +79,33 @@ html[lang="en"] h5,
 html[lang="en"] h6{
 	font-family: var(--font-en-display) !important;
 	letter-spacing: 0.01em;
+}
+
+/* Chinese typography: system UI sans (Atkinson has no CJK glyphs) */
+html[lang="zh"] body,
+html[lang="zh-CN"] body{
+	font-family: var(--font-zh-body) !important;
+	font-weight: 500;
+	letter-spacing: 0.01em;
+	/* subpixel reads heavier than antialiased on many macOS setups */
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+html[lang="zh"] h1,
+html[lang="zh"] h2,
+html[lang="zh"] h3,
+html[lang="zh"] h4,
+html[lang="zh"] h5,
+html[lang="zh"] h6,
+html[lang="zh-CN"] h1,
+html[lang="zh-CN"] h2,
+html[lang="zh-CN"] h3,
+html[lang="zh-CN"] h4,
+html[lang="zh-CN"] h5,
+html[lang="zh-CN"] h6{
+	font-family: var(--font-zh-display) !important;
+	font-weight: 600;
+	letter-spacing: 0.02em;
+	-webkit-font-smoothing: subpixel-antialiased;
 }
 
 main {
