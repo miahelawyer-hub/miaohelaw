@@ -713,15 +713,108 @@ import Footer from '../../components/Footer.astro';
     margin-right: auto;
   }
 
-  .case-section { background: #2C2418; padding: 4rem 2rem; text-align: center; }
-  .case-label { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: #9A8060; margin-bottom: 1rem; }
-  .case-section h2 { font-family: 'Georgia', serif; font-size: 1.75rem; font-weight: 400; color: #FAC775; margin-bottom: 1rem; }
-  .case-section p { color: #C4AA80; max-width: 640px; margin: 0 auto 1.5rem; font-size: 0.9rem; line-height: 1.7; }
-  .case-section blockquote { background: rgba(255,255,255,0.05); border: 1px solid rgba(250,199,117,0.2); border-left: 4px solid #FAC775; border-radius: 6px; padding: 1.25rem 1.5rem; max-width: 640px; margin: 0 auto 1.5rem; text-align: left; }
-  .case-section blockquote p { font-style: italic; color: #E8D4A8; margin-bottom: 0.5rem; font-size: 0.9rem; }
-  .case-section blockquote cite { font-size: 0.75rem; color: #9A8060; font-style: normal; }
-  .case-link { color: #FAC775; text-decoration: none; font-size: 0.85rem; font-weight: 500; }
-  .case-link:hover { text-decoration: underline; }
+  .case-section{
+    position: relative;
+    background:
+      radial-gradient(900px 300px at 50% 0%, rgba(250,199,117,0.10), rgba(250,199,117,0) 60%),
+      linear-gradient(180deg, #2C2418 0%, #241D14 100%);
+    padding: 4.75rem 2rem;
+    text-align: center;
+    overflow: hidden;
+  }
+  .case-section::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+      repeating-linear-gradient(90deg, rgba(255,255,255,0.05) 0 1px, rgba(255,255,255,0) 1px 18px),
+      repeating-linear-gradient(0deg, rgba(0,0,0,0.10) 0 1px, rgba(0,0,0,0) 1px 14px);
+    opacity: 0.12;
+    mix-blend-mode: overlay;
+    pointer-events:none;
+  }
+  .case-section > *{ position: relative; z-index: 1; }
+
+  .case-label{
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(232,217,184,0.72);
+    margin-bottom: 1rem;
+  }
+  .case-section h2{
+    font-family: 'Georgia', serif;
+    font-size: clamp(1.55rem, 2.4vw, 2rem);
+    font-weight: 500;
+    color: #FAC775;
+    margin-bottom: 1.1rem;
+    letter-spacing: 0.01em;
+  }
+  .case-section p{
+    color: rgba(232,212,168,0.82);
+    max-width: 70ch;
+    margin: 0 auto 1.75rem;
+    font-size: 0.95rem;
+    line-height: 1.85;
+  }
+  .case-section blockquote{
+    position: relative;
+    background:
+      linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+    border: 1px solid rgba(250,199,117,0.22);
+    border-radius: 14px;
+    padding: 1.6rem 1.65rem;
+    max-width: 760px;
+    margin: 0 auto 1.75rem;
+    text-align: left;
+    box-shadow:
+      0 22px 40px rgba(0,0,0,0.28),
+      inset 0 1px 0 rgba(255,255,255,0.08);
+  }
+  .case-section blockquote::before{
+    content:"";
+    position:absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    border-radius: 14px 0 0 14px;
+    background: linear-gradient(180deg, rgba(250,199,117,0.95), rgba(212,168,83,0.55));
+  }
+  .case-section blockquote p{
+    font-style: italic;
+    color: rgba(255,240,206,0.92);
+    margin-bottom: 0.85rem;
+    font-size: 0.95rem;
+    line-height: 1.85;
+  }
+  .case-section blockquote cite{
+    display: block;
+    font-size: 0.78rem;
+    color: rgba(232,217,184,0.70);
+    font-style: normal;
+    letter-spacing: 0.02em;
+  }
+  .case-link{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45rem;
+    padding: 0.85rem 1.25rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #2C2418;
+    background: linear-gradient(135deg, #FAC775, #D4A853);
+    box-shadow: 0 16px 26px rgba(0,0,0,0.25);
+    transition: transform 0.15s ease, filter 0.15s ease, box-shadow 0.15s ease;
+  }
+  .case-link:hover{
+    transform: translateY(-1px);
+    filter: brightness(1.02);
+    box-shadow: 0 20px 34px rgba(0,0,0,0.28);
+  }
 
   .testimonials-section { padding: 4rem 2rem; border-top: 1px solid #EDE8DF; }
   .testimonials-inner { max-width: 960px; margin: 0 auto; text-align: center; }
