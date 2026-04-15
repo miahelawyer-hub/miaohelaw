@@ -216,24 +216,33 @@ import Footer from '../../components/Footer.astro';
             <div class="testimonial-quote">"</div>
             <p>Miao He handled a very complex cross-border asset case for me. My ex-spouse held multiple properties and company shares in China. She successfully traced and recovered the assets. Professional, patient, and fully bilingual.</p>
             <div class="testimonial-meta">
-              <span class="testimonial-tag">[Cross-Border Assets]</span>
-              <span class="testimonial-author">— Ms. Zhang, Toronto · 2024</span>
+              <div class="testimonial-avatar is-initials" aria-hidden="true">ZZ</div>
+              <div class="testimonial-meta-text">
+                <span class="testimonial-tag">Cross-Border Assets · ★★★★★</span>
+                <span class="testimonial-author">Ms. Zhang, Toronto · 2024</span>
+              </div>
             </div>
           </div>
           <div class="testimonial-card">
             <div class="testimonial-quote">"</div>
             <p>When CAS got involved, I had no idea what to do. Miao He stepped in immediately and helped keep my child at home. She knows Ontario family law inside out and is a very effective advocate in court.</p>
             <div class="testimonial-meta">
-              <span class="testimonial-tag">[Child Custody]</span>
-              <span class="testimonial-author">— Mr. Li, Markham · 2024</span>
+              <div class="testimonial-avatar is-initials" aria-hidden="true">LI</div>
+              <div class="testimonial-meta-text">
+                <span class="testimonial-tag">Child Custody · ★★★★★</span>
+                <span class="testimonial-author">Mr. Li, Markham · 2024</span>
+              </div>
             </div>
           </div>
           <div class="testimonial-card">
             <div class="testimonial-quote">"</div>
             <p>The marriage contract drafting was incredibly thorough — she anticipated issues from a litigator's perspective that we never would have thought of. Bilingual service meant my parents could fully understand the agreement too.</p>
             <div class="testimonial-meta">
-              <span class="testimonial-tag">[Marriage Contract]</span>
-              <span class="testimonial-author">— Mr. Wang, Richmond Hill · 2025</span>
+              <div class="testimonial-avatar is-initials" aria-hidden="true">WA</div>
+              <div class="testimonial-meta-text">
+                <span class="testimonial-tag">Marriage Contract · ★★★★★</span>
+                <span class="testimonial-author">Mr. Wang, Richmond Hill · 2025</span>
+              </div>
             </div>
           </div>
         </div>
@@ -821,12 +830,33 @@ import Footer from '../../components/Footer.astro';
   .testimonials-inner h2 { font-family: 'Georgia', serif; font-size: 1.75rem; font-weight: 400; color: #1A1208; margin-bottom: 0.5rem; }
   .testimonials-sub { color: #9A8060; font-size: 0.85rem; margin-bottom: 2rem; }
   .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; text-align: left; }
-  .testimonial-card { background: #FDFBF7; border: 1px solid #EDE8DF; border-radius: 8px; padding: 1.5rem; }
+  .testimonial-card { background: #FDFBF7; border: 1px solid #EDE8DF; border-radius: 12px; padding: 1.6rem; box-shadow: 0 12px 30px rgba(44,24,16,0.06); transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease; }
+  .testimonial-card:hover { transform: translateY(-2px); box-shadow: 0 18px 40px rgba(44,24,16,0.09); border-color: rgba(212,168,83,0.35); }
   .testimonial-quote { font-family: 'Georgia', serif; font-size: 3rem; color: #E8D9B8; line-height: 1; margin-bottom: 0.5rem; }
   .testimonial-card p { font-size: 0.85rem; color: #4A3A2A; line-height: 1.7; margin-bottom: 1rem; }
-  .testimonial-meta { display: flex; flex-direction: column; gap: 0.25rem; }
-  .testimonial-tag { font-size: 0.75rem; color: #7A5A1A; font-weight: 600; background: #F5EFE0; display: inline-block; padding: 2px 8px; border-radius: 4px; width: fit-content; }
-  .testimonial-author { font-size: 0.75rem; color: #9A8060; }
+  .testimonial-meta { display: flex; align-items: center; gap: 0.75rem; margin-top: 1.05rem; }
+  .testimonial-avatar{
+    width: 38px;
+    height: 38px;
+    border-radius: 999px;
+    overflow: hidden;
+    border: 1px solid rgba(232,217,184,0.95);
+    box-shadow: 0 10px 18px rgba(44,24,16,0.10);
+    background: radial-gradient(circle at 30% 30%, rgba(250,199,117,0.38), rgba(122,90,26,0.10));
+    display: grid;
+    place-items: center;
+    flex: 0 0 auto;
+  }
+  .testimonial-avatar img{ width: 100%; height: 100%; object-fit: cover; display:block; }
+  .testimonial-avatar.is-initials{
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    color: #5A4518;
+  }
+  .testimonial-meta-text{ display:flex; flex-direction: column; gap: 0.18rem; min-width: 0; }
+  .testimonial-tag { font-size: 0.72rem; color: #7A5A1A; font-weight: 700; background: rgba(245,239,224,0.85); display: inline-flex; align-items: center; padding: 3px 10px; border-radius: 999px; width: fit-content; border: 1px solid rgba(232,217,184,0.95); }
+  .testimonial-author { font-size: 0.75rem; color: #9A8060; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
   .video-section { padding: 4rem 2rem; max-width: 960px; margin: 0 auto; border-top: 1px solid #EDE8DF; }
   .video-section h2 { font-family: 'Georgia', serif; font-size: 1.75rem; font-weight: 400; color: #1A1208; margin-bottom: 0.75rem; }
