@@ -19,6 +19,9 @@
 	--bg-secondary: #F5EFE0;
 	--text-primary: #1A1208;
 	--text-secondary: #6B5A3A;
+	/* English editorial serif stacks (HLR-inspired) */
+	--font-en-body: ui-serif, "Iowan Old Style", "Palatino Linotype", Palatino, Baskerville, "Times New Roman", Georgia, serif;
+	--font-en-display: ui-serif, "Iowan Old Style", "Palatino Linotype", Palatino, Baskerville, "Times New Roman", Georgia, serif;
 }
 
 @font-face {
@@ -48,6 +51,21 @@ body {
 	color: var(--text-primary);
 	font-size: 20px;
 	line-height: 1.7;
+}
+
+/* English typography: premium editorial serif */
+html[lang="en"] body{
+	font-family: var(--font-en-body) !important;
+	letter-spacing: 0.002em;
+}
+html[lang="en"] h1,
+html[lang="en"] h2,
+html[lang="en"] h3,
+html[lang="en"] h4,
+html[lang="en"] h5,
+html[lang="en"] h6{
+	font-family: var(--font-en-display) !important;
+	letter-spacing: 0.01em;
 }
 
 main {
