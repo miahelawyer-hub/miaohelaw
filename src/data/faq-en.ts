@@ -54,7 +54,7 @@ export const faqItemsEn: FaqItemEn[] =
       "In short: without the other parent's agreement or a court order, unilateral relocation can be unlawful and can seriously harm your position on parenting time and decision-making."
     ],
     "details": [
-      "Ontario Children Law Reform Act and the Divorce Act relocation framework require advance written notice of a proposed move (a Notice of Relocation in many cases). The other parent has a legislated window to respond with objections and reasons.",
+      "Ontario 《Children Law Reform Act》 and the 《Divorce Act》 relocation framework require advance written notice of a proposed move (a Notice of Relocation in many cases). The other parent has a legislated window to respond with objections and reasons.",
       "If there is no timely response, the law may treat the situation as consent in limited circumstances — but a clear objection means the dispute must go before a judge. Courts decide whether the relocation is permitted based primarily on the best interests of the child.",
       "Judges typically weigh the child's schooling and community ties, the feasibility of preserving a meaningful relationship with the non-moving parent, travel and contact costs, and whether the moving parent's reasons are adequate and good-faith (for example employment or family support).",
       "Relocating without consent or a court order can expose you to urgent motions, enforcement issues, and serious credibility problems in parenting litigation — in extreme cases it can undermine your parenting case.",
