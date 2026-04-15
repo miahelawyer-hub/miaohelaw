@@ -68,8 +68,24 @@ const totalFaq = faqItems.length;
     </section>
     <section class="faq-section">
       <div class="container">
+        <div class="faq-search" role="search" aria-label="常见问题搜索">
+          <label class="sr-only" for="faq-search-input">搜索问题</label>
+          <input
+            id="faq-search-input"
+            class="faq-search-input"
+            type="search"
+            placeholder="搜索关键词（例如：抚养费、婚房、首付、家暴）"
+            autocomplete="off"
+          />
+          <button class="faq-search-clear" id="faq-search-clear" type="button" aria-label="清空搜索">清空</button>
+        </div>
+        <p class="faq-search-meta" id="faq-search-meta" aria-live="polite"></p>
+
         {faqItems.map((item, i) => (
-          <div class={`faq-item${i >= 10 ? ' faq-hidden' : ''}`}>
+          <div
+            class={`faq-item${i >= 10 ? ' faq-hidden' : ''}`}
+            data-search={`${item.question} ${item.capsule} ${item.summary} ${item.keywords}`.toLowerCase()}
+          >
             <a href={`/faq/${item.slug}`} class="faq-link">
               <span>{item.question}</span>
               <span class="faq-arrow">→</span>
@@ -148,6 +164,66 @@ const totalFaq = faqItems.length;
   .container{max-width:860px;margin:0 auto;padding:0 1.5rem}
 
   .faq-section { padding: 3rem 0 4rem; }
+  .sr-only{
+    position:absolute;
+    width:1px;
+    height:1px;
+    padding:0;
+    margin:-1px;
+    overflow:hidden;
+    clip:rect(0,0,0,0);
+    white-space:nowrap;
+    border:0;
+  }
+  .faq-search{
+    display:flex;
+    gap:0.75rem;
+    align-items:center;
+    margin: 0 0 1.25rem;
+    padding: 0.75rem;
+    border-radius: 14px;
+    background: rgba(255,255,255,0.75);
+    border: 1px solid rgba(237,232,223,0.95);
+    box-shadow: 0 1px 0 rgba(44,24,16,0.02);
+  }
+  .faq-search-input{
+    flex: 1;
+    min-width: 0;
+    border: 1px solid rgba(212,168,83,0.28);
+    background: #fff;
+    color: #2C1810;
+    border-radius: 12px;
+    padding: 0.85rem 0.95rem;
+    font-size: 1rem;
+    line-height: 1.2;
+    outline: none;
+  }
+  .faq-search-input:focus{
+    border-color: rgba(212,168,83,0.6);
+    box-shadow: 0 0 0 4px rgba(212,168,83,0.18);
+  }
+  .faq-search-clear{
+    flex: none;
+    border: 1px solid rgba(154,128,96,0.35);
+    background: transparent;
+    color: #6B5A3A;
+    padding: 0.75rem 0.9rem;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.95rem;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+  }
+  .faq-search-clear:hover{
+    background: rgba(212,168,83,0.14);
+    border-color: rgba(212,168,83,0.45);
+    color: #2C1810;
+  }
+  .faq-search-meta{
+    margin: -0.35rem 0 1.25rem;
+    color: rgba(44,24,16,0.72);
+    font-size: 0.92rem;
+  }
   .faq-item { padding: 0.55rem 0; }
   .faq-link {
     display: flex; justify-content: space-between; align-items: center;
@@ -173,6 +249,7 @@ const totalFaq = faqItems.length;
   .faq-arrow { font-size: 1.05rem; color: #9A8060; flex-shrink: 0; }
 
   .faq-hidden { display: none; }
+  .faq-filter-hidden { display: none; }
   .load-more-wrap { text-align: center; margin: 1.5rem 0 0; }
   .load-more-btn {
     display: inline-flex; align-items: center; gap: 0.5rem;
@@ -198,16 +275,78 @@ const totalFaq = faqItems.length;
     .faq-section { padding: 2.25rem 0 3.5rem; }
     .faq-item { padding: 0.45rem 0; }
     .faq-link { padding: 0.95rem 0.9rem; font-size: 1rem; }
+    .faq-search{ padding: 0.65rem; gap: 0.6rem; }
+    .faq-search-input{ padding: 0.8rem 0.85rem; }
+    .faq-search-clear{ padding: 0.72rem 0.82rem; }
   }
 </style>
 
 <script>
-  const btn = document.getElementById('faq-load-more');
-  if (btn) {
-    const getHidden = () => Array.from(document.querySelectorAll('.faq-hidden'));
-    btn.addEventListener('click', () => {
-      getHidden().slice(0, 10).forEach(el => el.classList.remove('faq-hidden'));
-      if (getHidden().length === 0) btn.style.display = 'none';
+  const loadMoreBtn = document.getElementById('faq-load-more');
+  const searchInput = document.getElementById('faq-search-input');
+  const clearBtn = document.getElementById('faq-search-clear');
+  const meta = document.getElementById('faq-search-meta');
+
+  const items = Array.from(document.querySelectorAll('.faq-item'));
+  const pageSize = 10;
+
+  const getLoadMoreWrap = () => loadMoreBtn?.closest('.load-more-wrap');
+  const setLoadMoreVisible = (visible) => {
+    const wrap = getLoadMoreWrap();
+    if (wrap) wrap.style.display = visible ? '' : 'none';
+    if (loadMoreBtn) loadMoreBtn.style.display = visible ? '' : 'none';
+  };
+
+  const applyPagination = () => {
+    items.forEach((el, idx) => {
+      if (idx < pageSize) el.classList.remove('faq-hidden');
+      else el.classList.add('faq-hidden');
+    });
+    const remaining = items.filter(el => el.classList.contains('faq-hidden') && !el.classList.contains('faq-filter-hidden')).length;
+    setLoadMoreVisible(remaining > 0);
+  };
+
+  const filterItems = (rawQuery) => {
+    const q = (rawQuery || '').trim().toLowerCase();
+    if (!q) {
+      items.forEach(el => el.classList.remove('faq-filter-hidden'));
+      if (meta) meta.textContent = '';
+      applyPagination();
+      return;
+    }
+
+    let matches = 0;
+    items.forEach(el => {
+      const hay = el.getAttribute('data-search') || '';
+      const ok = hay.includes(q);
+      el.classList.toggle('faq-filter-hidden', !ok);
+      el.classList.remove('faq-hidden');
+      if (ok) matches += 1;
+    });
+    setLoadMoreVisible(false);
+    if (meta) meta.textContent = `已找到 ${matches} 个相关问题`;
+  };
+
+  if (loadMoreBtn) {
+    loadMoreBtn.addEventListener('click', () => {
+      const hidden = items.filter(el => el.classList.contains('faq-hidden') && !el.classList.contains('faq-filter-hidden'));
+      hidden.slice(0, pageSize).forEach(el => el.classList.remove('faq-hidden'));
+      const remaining = items.filter(el => el.classList.contains('faq-hidden') && !el.classList.contains('faq-filter-hidden')).length;
+      if (remaining === 0) setLoadMoreVisible(false);
     });
   }
+
+  if (searchInput) {
+    searchInput.addEventListener('input', (e) => filterItems(e.target.value));
+  }
+  if (clearBtn) {
+    clearBtn.addEventListener('click', () => {
+      if (searchInput) searchInput.value = '';
+      filterItems('');
+      searchInput?.focus();
+    });
+  }
+
+  // Initialize state
+  applyPagination();
 </script>
