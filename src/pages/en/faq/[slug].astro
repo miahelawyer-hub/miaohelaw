@@ -16,17 +16,18 @@ const { item } = Astro.props;
 const faqListingEn = getFaqItemsEnForListing();
 const others = faqListingEn.filter(f => f.slug !== item.slug).slice(0, 6);
 const summaryPlain = stripHtml(item.summary);
+const questionPlain = stripHtml(item.question);
 const jsonLdAnswerPlain = [summaryPlain, ...item.answers.map(stripHtml)].filter(Boolean).join('\n\n');
 ---
 <!doctype html>
 <html lang="en">
 <head>
   <BaseHead
-    title={`${item.question} | Miao He — Ontario Family Law`}
+    title={`${questionPlain} | Miao He — Ontario Family Law`}
     description={summaryPlain}
   />
   <meta name="keywords" content={item.keywords} />
-  <meta property="og:title" content={`${item.question} | Miao He`} />
+  <meta property="og:title" content={`${questionPlain} | Miao He`} />
   <meta property="og:description" content={summaryPlain} />
   <meta property="og:url" content={`https://www.miaohelaw.ca/en/faq/${item.slug}`} />
   <meta property="og:type" content="article" />
@@ -36,7 +37,7 @@ const jsonLdAnswerPlain = [summaryPlain, ...item.answers.map(stripHtml)].filter(
     "@type": "FAQPage",
     "mainEntity": [{
       "@type": "Question",
-      "name": item.question,
+      "name": questionPlain,
       "acceptedAnswer": { "@type": "Answer", "text": jsonLdAnswerPlain }
     }]
   })} />
@@ -46,7 +47,7 @@ const jsonLdAnswerPlain = [summaryPlain, ...item.answers.map(stripHtml)].filter(
     "itemListElement": [
       {"@type":"ListItem","position":1,"name":"Home","item":"https://www.miaohelaw.ca/en/"},
       {"@type":"ListItem","position":2,"name":"FAQ","item":"https://www.miaohelaw.ca/en/faq"},
-      {"@type":"ListItem","position":3,"name":item.question,"item":`https://www.miaohelaw.ca/en/faq/${item.slug}`}
+      {"@type":"ListItem","position":3,"name":questionPlain,"item":`https://www.miaohelaw.ca/en/faq/${item.slug}`}
     ]
   })} />
   <style>
@@ -60,6 +61,7 @@ const jsonLdAnswerPlain = [summaryPlain, ...item.answers.map(stripHtml)].filter(
     .breadcrumb a { color: rgba(255,255,255,0.5); }
     .breadcrumb span { color: rgba(255,255,255,0.3); margin: 0 0.4rem; }
     .page-hero h1 { color: #fff; font-size: clamp(1.4rem, 3vw, 2rem); line-height: 1.4; font-weight: 400; }
+    .page-hero h1 em, .breadcrumb-current em { font-style: italic; }
 
     .answer-section { padding: 2.5rem 1.5rem 4rem; }
     .container { max-width: 860px; margin: 0 auto; }
@@ -113,6 +115,7 @@ const jsonLdAnswerPlain = [summaryPlain, ...item.answers.map(stripHtml)].filter(
     }
     .related-list a:hover { background: #fdf6ec; color: #7A5A1A; }
     .related-list .arr { color: #9A8060; font-size: 0.85rem; }
+    .related-list a span em { font-style: italic; }
     .view-all { font-size: 0.85rem; color: #9A8060; }
     .view-all:hover { color: #2C1810; }
 
@@ -142,9 +145,9 @@ const jsonLdAnswerPlain = [summaryPlain, ...item.answers.map(stripHtml)].filter(
         <p class="breadcrumb">
           <a href="/en/">Home</a><span>›</span>
           <a href="/en/faq">FAQ</a><span>›</span>
-          {item.question}
+          <span class="breadcrumb-current" set:html={item.question} />
         </p>
-        <h1>{item.question}</h1>
+        <h1 set:html={item.question} />
       </div>
     </section>
 
@@ -179,7 +182,7 @@ const jsonLdAnswerPlain = [summaryPlain, ...item.answers.map(stripHtml)].filter(
             {others.map(other => (
               <li>
                 <a href={`/en/faq/${other.slug}`}>
-                  <span>{other.question}</span>
+                  <span set:html={other.question} />
                   <span class="arr">→</span>
                 </a>
               </li>

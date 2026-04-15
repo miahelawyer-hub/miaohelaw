@@ -12,7 +12,7 @@ const faqPageJsonLd = {
   '@type': 'FAQPage',
   mainEntity: faqListing.map((item) => ({
     '@type': 'Question',
-    name: item.question,
+    name: stripHtml(item.question),
     acceptedAnswer: {
       '@type': 'Answer',
       text: [stripHtml(item.summary), ...item.answers.map(stripHtml)].filter(Boolean).join('\n\n'),
@@ -73,10 +73,10 @@ const faqPageJsonLd = {
         {faqListing.map((item, i) => (
           <div
             class={`faq-item${i >= 10 ? ' faq-hidden' : ''}`}
-            data-search={`${item.question} ${item.capsule} ${stripHtml(item.summary)} ${item.answers.map(stripHtml).join(' ')} ${item.keywords}`.toLowerCase()}
+            data-search={`${stripHtml(item.question)} ${stripHtml(item.capsule)} ${stripHtml(item.summary)} ${item.answers.map(stripHtml).join(' ')} ${item.keywords}`.toLowerCase()}
           >
             <a href={`/faq/${item.slug}`} class="faq-link">
-              <span>{item.question}</span>
+              <span set:html={item.question} />
               <span class="faq-arrow">→</span>
             </a>
           </div>
@@ -235,6 +235,7 @@ const faqPageJsonLd = {
   }
   .faq-link:active { transform: translateY(0px); }
   .faq-link:hover .faq-arrow { color: #D4A853; }
+  .faq-link span em { font-style: italic; }
   .faq-arrow { font-size: 1.05rem; color: #9A8060; flex-shrink: 0; }
 
   .faq-hidden { display: none; }

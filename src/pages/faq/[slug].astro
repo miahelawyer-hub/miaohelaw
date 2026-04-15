@@ -16,6 +16,8 @@ const { item } = Astro.props;
 const faqListing = getFaqItemsForListing();
 const others = faqListing.filter(f => f.slug !== item.slug).slice(0, 6);
 const summaryPlain = stripHtml(item.summary);
+const questionPlain = stripHtml(item.question);
+const capsulePlain = stripHtml(item.capsule);
 const jsonLdAnswerPlain = [summaryPlain, ...item.answers.map(stripHtml)].filter(Boolean).join('\n\n');
 ---
 
@@ -23,11 +25,11 @@ const jsonLdAnswerPlain = [summaryPlain, ...item.answers.map(stripHtml)].filter(
 <html lang="zh">
 <head>
   <BaseHead
-    title={`${item.question} | 何淼律师 多伦多华人家庭法`}
+    title={`${questionPlain} | 何淼律师 多伦多华人家庭法`}
     description={summaryPlain}
   />
   <meta name="keywords" content={item.keywords} />
-  <meta property="og:title" content={`${item.question} | 何淼律师`} />
+  <meta property="og:title" content={`${questionPlain} | 何淼律师`} />
   <meta property="og:description" content={summaryPlain} />
   <meta property="og:url" content={`https://www.miaohelaw.ca/faq/${item.slug}`} />
   <meta property="og:type" content="article" />
@@ -37,7 +39,7 @@ const jsonLdAnswerPlain = [summaryPlain, ...item.answers.map(stripHtml)].filter(
     "@type": "FAQPage",
     "mainEntity": [{
       "@type": "Question",
-      "name": item.question,
+      "name": questionPlain,
       "acceptedAnswer": {
         "@type": "Answer",
         "text": jsonLdAnswerPlain
@@ -50,7 +52,7 @@ const jsonLdAnswerPlain = [summaryPlain, ...item.answers.map(stripHtml)].filter(
     "itemListElement": [
       {"@type": "ListItem", "position": 1, "name": "首页", "item": "https://www.miaohelaw.ca/"},
       {"@type": "ListItem", "position": 2, "name": "常见问题", "item": "https://www.miaohelaw.ca/faq"},
-      {"@type": "ListItem", "position": 3, "name": item.capsule, "item": `https://www.miaohelaw.ca/faq/${item.slug}`}
+      {"@type": "ListItem", "position": 3, "name": capsulePlain, "item": `https://www.miaohelaw.ca/faq/${item.slug}`}
     ]
   })} />
 </head>
@@ -60,9 +62,9 @@ const jsonLdAnswerPlain = [summaryPlain, ...item.answers.map(stripHtml)].filter(
     <section class="page-hero">
       <div class="container">
         <div class="breadcrumb">
-          <a href="/">首页</a> › <a href="/faq">常见问题</a> › {item.capsule}
+          <a href="/">首页</a> › <a href="/faq">常见问题</a> › <span class="breadcrumb-current" set:html={item.capsule} />
         </div>
-        <h1>{item.question}</h1>
+        <h1 set:html={item.question} />
       </div>
     </section>
 
@@ -95,7 +97,7 @@ const jsonLdAnswerPlain = [summaryPlain, ...item.answers.map(stripHtml)].filter(
           <h2>其他常见问题</h2>
           <div class="related-capsules">
             {others.map(other => (
-              <a href={`/faq/${other.slug}`} class="capsule">{other.capsule}</a>
+              <a href={`/faq/${other.slug}`} class="capsule"><span set:html={other.capsule} /></a>
             ))}
           </div>
           <a href="/faq" class="view-all">查看全部问题 →</a>
@@ -122,6 +124,7 @@ const jsonLdAnswerPlain = [summaryPlain, ...item.answers.map(stripHtml)].filter(
 <style>
   .page-hero{background:linear-gradient(135deg,#2C1810 0%,#4A2C1A 100%);color:white;padding:3rem 0 2rem}
   .page-hero h1{font-size:1.8rem;margin:0.75rem 0 0;color:#ffffff;line-height:1.4}
+  .page-hero h1 em,.breadcrumb-current em{font-style:italic}
   .breadcrumb{font-size:0.85rem;opacity:0.7;margin-bottom:0.75rem}
   .breadcrumb a{color:white;text-decoration:none}
   .container{max-width:1000px;margin:0 auto;padding:0 1.5rem}
@@ -143,6 +146,7 @@ const jsonLdAnswerPlain = [summaryPlain, ...item.answers.map(stripHtml)].filter(
   .related-capsules{display:flex;flex-wrap:wrap;gap:0.6rem;margin-bottom:1rem}
   .capsule{background:#f5f0eb;border:1.5px solid #e0d5c8;color:#4A2C1A;padding:0.4rem 1rem;border-radius:999px;font-size:0.875rem;text-decoration:none;transition:all 0.2s}
   .capsule:hover{background:#2C1810;border-color:#2C1810;color:#ffffff}
+  .capsule span em{font-style:italic}
   .view-all{color:#9A8060;font-size:0.875rem;text-decoration:none;font-weight:600}
   .view-all:hover{color:#2C1810}
   .contact-card{background:linear-gradient(135deg,#2C1810,#4A2C1A);border-radius:12px;padding:2rem;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap}

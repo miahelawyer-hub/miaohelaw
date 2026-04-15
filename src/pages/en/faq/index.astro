@@ -27,7 +27,7 @@ const totalFaqEn = items.length;
     "@type": "FAQPage",
     "mainEntity": items.map(item => ({
       "@type": "Question",
-      "name": item.question,
+      "name": stripHtml(item.question),
       "acceptedAnswer": { "@type": "Answer", "text": [stripHtml(item.summary), ...item.answers.map(stripHtml)].filter(Boolean).join("\n\n") }
     }))
   })} />
@@ -89,6 +89,7 @@ const totalFaqEn = items.length;
     .faq-link:hover { background: #fff; border-color: rgba(212,168,83,0.35); color: #6B4A12; transform: translateY(-1px); }
     .faq-link:active { transform: translateY(0px); }
     .faq-link:hover .faq-arrow { color: #D4A853; }
+    .faq-link span em { font-style: italic; }
     .faq-arrow { font-size: 1.05rem; color: #9A8060; flex-shrink: 0; }
     .contact-card {
       background: linear-gradient(135deg, #2C1810, #4A2C1A);
@@ -205,9 +206,9 @@ const totalFaqEn = items.length;
         <p class="faq-search-meta" id="faq-search-meta" aria-live="polite"></p>
 
         {items.map((item, i) => (
-          <div class={`faq-item${i >= 10 ? ' faq-hidden' : ''}`} data-search={`${item.question} ${stripHtml(item.summary)} ${item.answers.map(stripHtml).join(' ')} ${item.keywords}`.toLowerCase()}>
+          <div class={`faq-item${i >= 10 ? ' faq-hidden' : ''}`} data-search={`${stripHtml(item.question)} ${stripHtml(item.summary)} ${item.answers.map(stripHtml).join(' ')} ${item.keywords}`.toLowerCase()}>
             <a href={`/en/faq/${item.slug}`} class="faq-link">
-              <span>{item.question}</span>
+              <span set:html={item.question} />
               <span class="faq-arrow">→</span>
             </a>
           </div>
