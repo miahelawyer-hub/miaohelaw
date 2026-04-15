@@ -28,6 +28,24 @@ export const faqItemsEn: FaqItemEn[] =
     "featured": true
   },
   {
+    "slug": "child-preference-custody-ontario",
+    "question": "My child says they want to live with Dad after divorce — will the court listen?",
+    "summary": "Courts may consider a child's views, but the child does not decide. A judge's primary focus is the best interests of the child, with heavy weight on the parenting status quo during the marriage and after separation. For children roughly six or seven and under, expressed preferences usually carry less weight; as children mature, their views can matter more.",
+    "answers": [
+      "Courts can take a child's preferences into account, but the child does not make the decision. The child's voice is only one factor in a broader analysis.",
+      "A central question is the parenting status quo: who has actually been caring for the child during the marriage and after separation — school runs, day-to-day medical issues, and routine school communication."
+    ],
+    "details": [
+      "Under Ontario family law, the voice of the child is one factor in parenting disputes, but it is neither the only factor nor automatically decisive. The overarching principle is always the best interests of the child.",
+      "Courts place significant weight on status quo — who has primarily cared for the child, handled pickups and drop-offs, and managed day-to-day health and school matters during the marriage and after separation. That lived reality is often the most persuasive evidence.",
+      "Age matters. For very young children, courts tend to treat expressed preferences as carrying limited weight because the child may not yet be able to grasp what best interests means in a legal sense. For older, more mature children, appropriately gathered views can carry more weight.",
+      "Where a child views need to be presented formally, Ontario often involves the Office of the Children Lawyer (OCL) rather than putting the child on the witness stand in open court.",
+      "Practical takeaway: building a stable, child-focused parenting pattern after separation can be critical. For advice tailored to your situation, contact Miao He at 647-930-6688."
+    ],
+    "keywords": "child preference custody Ontario,child wants live with father,best interests child Ontario,voice of the child Ontario,OCL Ontario,Miao He lawyer",
+    "featured": true
+  },
+  {
     "slug": "parents-down-payment-divorce-ontario",
     "question": "My parents contributed to the down payment on our home — can that money be recovered in a divorce?",
     "summary": "Not necessarily. The answer depends on four factors: whether the property is a matrimonial home or investment property, whose account the money was deposited into, whether the contribution was a gift or a loan, and what evidence exists to prove the parties' intentions. There is no fixed answer — every case is different.",
