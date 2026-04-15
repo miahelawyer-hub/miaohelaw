@@ -442,5 +442,6 @@ export const faqItemsEn: FaqItemEn[] =
 export function getFaqItemsEnForListing(): FaqItemEn[] {
   const pinned = faqItemsEn.filter((item) => item.featured);
   const rest = faqItemsEn.filter((item) => !item.featured);
-  return [...pinned, ...rest];
+  // Featured blocks are appended in chronological order; list newest first on /en/faq.
+  return [...pinned].reverse().concat(rest);
 }

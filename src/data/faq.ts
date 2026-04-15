@@ -848,5 +848,6 @@ export const faqItems: FaqItem[] = [
 export function getFaqItemsForListing(): FaqItem[] {
   const pinned = faqItems.filter((item) => item.featured);
   const rest = faqItems.filter((item) => !item.featured);
-  return [...pinned, ...rest];
+  // Featured blocks are appended in chronological order; list newest first on /faq.
+  return [...pinned].reverse().concat(rest);
 }
