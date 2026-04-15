@@ -175,19 +175,19 @@ import Footer from '../../components/Footer.astro';
         <h2>Case Results</h2>
         <div class="results-grid">
           <div class="result-card">
-            <div class="result-number">$300,000+</div>
+            <div class="result-number" data-text="$300,000+"><span class="result-front">$300,000+</span></div>
             <div class="result-desc">Cross-Border Asset Recovery</div>
           </div>
           <div class="result-card">
-            <div class="result-number">$500,000+</div>
+            <div class="result-number" data-text="$500,000+"><span class="result-front">$500,000+</span></div>
             <div class="result-desc">Agreement Value Protected</div>
           </div>
           <div class="result-card">
-            <div class="result-number">$400,000</div>
+            <div class="result-number" data-text="$400,000"><span class="result-front">$400,000</span></div>
             <div class="result-desc">Saved via Financial Error Discovery</div>
           </div>
           <div class="result-card">
-            <div class="result-number">$1M+</div>
+            <div class="result-number" data-text="$1M+"><span class="result-front">$1M+</span></div>
             <div class="result-desc">Mediation Settlement Achieved</div>
           </div>
         </div>
@@ -599,9 +599,119 @@ import Footer from '../../components/Footer.astro';
   .results-label { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: #9A8060; margin-bottom: 0.75rem; }
   .results-inner h2 { font-family: 'Georgia', serif; font-size: 1.75rem; font-weight: 400; color: #1A1208; margin-bottom: 2rem; }
   .results-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; }
-  .result-card { background: #FDFBF7; border: 1px solid #EDE8DF; border-radius: 8px; padding: 1.5rem 1rem; border-top: 4px solid #7A5A1A; }
-  .result-number { font-family: 'Georgia', serif; font-size: 1.75rem; font-weight: 400; color: #7A5A1A; margin-bottom: 0.5rem; }
-  .result-desc { font-size: 0.8rem; color: #6B5A3A; line-height: 1.5; }
+  /* Remove the "background board" card; keep only text + platform */
+  .result-card{
+    position: relative;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    padding: 1.65rem 0.25rem 1.1rem;
+    box-shadow: none;
+  }
+  .result-number{
+    position: relative;
+    display: inline-block;
+    font-family: 'Georgia', serif;
+    font-size: 1.75rem;
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: 0.9rem;
+    letter-spacing: 0.01em;
+    --baseY: -2px;
+    transform: translateY(var(--baseY)) translateZ(0);
+    padding-bottom: 3.1rem; /* reserve room for larger platform + text */
+    --dx: 8px;
+    --dy: 8px;
+    transform-origin: 50% 100%;
+  }
+  @keyframes result-pop{
+    0%   { transform: translateY(var(--baseY)) scale(1) translateZ(0); }
+    35%  { transform: translateY(calc(var(--baseY) - 10px)) scale(1.02) translateZ(0); }
+    70%  { transform: translateY(calc(var(--baseY) + 2px)) scale(0.995) translateZ(0); }
+    100% { transform: translateY(var(--baseY)) scale(1) translateZ(0); }
+  }
+  .result-number.is-pop{
+    animation: result-pop 520ms cubic-bezier(.2,.8,.2,1);
+  }
+  @keyframes digit-pop{
+    0%   { transform: translateY(0) scale(1); filter: brightness(1); }
+    35%  { transform: translateY(-10px) scale(1.03); filter: brightness(1.04); }
+    70%  { transform: translateY(2px) scale(0.995); filter: brightness(1.01); }
+    100% { transform: translateY(0) scale(1); filter: brightness(1); }
+  }
+  .result-front .d{
+    display: inline-block;
+    will-change: transform;
+  }
+  .result-front.digits-pop .d{
+    animation: digit-pop 520ms cubic-bezier(.2,.8,.2,1) both;
+  }
+  .result-front.digits-pop .d{ animation-delay: calc(var(--i, 0) * 70ms); }
+  /* Extruded depth: subtle, premium */
+  .result-number::before{
+    content: attr(data-text);
+    position:absolute;
+    left: 0;
+    top: 0;
+    transform: translate(var(--dx), var(--dy));
+    color: rgba(74,58,10,0.18);
+    text-shadow:
+      0 1px 0 rgba(122,90,26,0.22),
+      1px 2px 0 rgba(122,90,26,0.20),
+      2px 3px 0 rgba(44,24,16,0.12),
+      0 18px 22px rgba(44,24,16,0.16);
+    filter: blur(0.1px);
+    z-index: 0;
+    pointer-events:none;
+  }
+  .result-front{
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    color: #7A5A1A;
+    text-shadow:
+      0 1px 0 rgba(255,255,255,0.70),
+      0 12px 22px rgba(44,24,16,0.18);
+  }
+  /* Isometric platform under number */
+  .result-number::after{
+    content:"";
+    position:absolute;
+    left: 50%;
+    top: 46%;
+    transform: translateX(-50%) skewX(-12deg);
+    width: clamp(220px, 130%, 340px);
+    height: 86px;
+    border-radius: 12px;
+    background:
+      linear-gradient(180deg, rgba(255,255,255,0.92), rgba(253,251,247,0.72)),
+      radial-gradient(220px 42px at 50% 22%, rgba(250,199,117,0.28), rgba(250,199,117,0));
+    border: 1px solid rgba(232,217,184,0.98);
+    box-shadow:
+      0 26px 36px rgba(44,24,16,0.16),
+      inset 0 1px 0 rgba(255,255,255,0.85),
+      inset 0 -14px 18px rgba(44,24,16,0.10);
+    clip-path: polygon(7% 10%, 93% 10%, 100% 100%, 0% 100%);
+    opacity: 0.98;
+    z-index: 1;
+    pointer-events:none;
+  }
+  .result-desc{
+    position: relative;
+    z-index: 2;
+    display: block;
+    margin-top: -2.25rem; /* pull onto the platform */
+    padding: 0 0.75rem;
+    font-size: 0.76rem;
+    color: #5A4518;
+    line-height: 1.5;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.55);
+    max-width: 22ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   .case-section { background: #2C2418; padding: 4rem 2rem; text-align: center; }
   .case-label { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: #9A8060; margin-bottom: 1rem; }
@@ -658,7 +768,7 @@ import Footer from '../../components/Footer.astro';
 <script>
   const prefersReducedMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches ?? false;
   const statsSection = document.querySelector('.stats');
-  const counters = Array.from(document.querySelectorAll<HTMLElement>('.stat-number[data-count]'));
+  const counters = Array.from(document.querySelectorAll('.stat-number[data-count]'));
 
   const setFinal = () => {
     for (const el of counters) {
@@ -711,6 +821,68 @@ import Footer from '../../components/Footer.astro';
     io.observe(statsSection);
   } else {
     animateCounters();
+  }
+
+  // Results numbers pop (left → right)
+  const resultsSection = document.querySelector('.results-section');
+  const resultNumbers = Array.from(document.querySelectorAll('.results-grid .result-number'));
+  const splitDigits = () => {
+    const fronts = Array.from(document.querySelectorAll('.results-grid .result-front'));
+    for (const front of fronts) {
+      const full = (front.textContent ?? '').trim();
+      front.setAttribute('aria-label', full);
+      front.textContent = '';
+      let di = 0;
+      for (const ch of full) {
+        const span = document.createElement('span');
+        span.textContent = ch;
+        if (/[0-9]/.test(ch)) {
+          span.className = 'd';
+          span.style.setProperty('--i', String(di));
+          di += 1;
+        } else {
+          span.className = 'p';
+        }
+        front.appendChild(span);
+      }
+    }
+  };
+  const runResultsPop = () => {
+    splitDigits();
+    resultNumbers.forEach((el, idx) => {
+      window.setTimeout(() => {
+        el.classList.remove('is-pop');
+        const front = el.querySelector('.result-front');
+        if (front) {
+          front.classList.remove('digits-pop');
+          void front.offsetWidth;
+          front.classList.add('digits-pop');
+        }
+        // force reflow so repeated refresh/hmr still pops (card-level)
+        void el.offsetWidth;
+        el.classList.add('is-pop');
+      }, idx * 140);
+    });
+  };
+
+  if (!prefersReducedMotion && resultsSection && resultNumbers.length > 0) {
+    if ('IntersectionObserver' in window) {
+      const io2 = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting) {
+              runResultsPop();
+              io2.disconnect();
+              break;
+            }
+          }
+        },
+        { threshold: 0.35 }
+      );
+      io2.observe(resultsSection);
+    } else {
+      runResultsPop();
+    }
   }
 </script>
 
