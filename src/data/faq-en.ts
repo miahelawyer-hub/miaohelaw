@@ -119,6 +119,24 @@ export const faqItemsEn: FaqItemEn[] =
     "featured": true
   },
   {
+    "slug": "china-pension-social-insurance-equalization-ontario",
+    "question": "My spouse has pension and social insurance in China — can those be divided in an Ontario separation?",
+    "summary": "Yes, in principle. Ontario equalization of net family property is based on worldwide net family property. Chinese pension and social-insurance entitlements must be disclosed with a credible cash value; growth during the marriage is generally included in the holder's NFP for equalization. Practical disclosure and valuation can be difficult and may require court tools if a spouse resists.",
+    "answers": [
+      "Yes. Ontario equalization looks at worldwide assets. Location of the asset does not remove it from disclosure and valuation.",
+      "Chinese pension and social insurance programs should be valued in cash terms, with values tied to the date of marriage and the date of separation. Marriage-period growth is typically included in the holder's net family property for equalization purposes."
+    ],
+    "details": [
+      "Under Ontario Family Law Act equalization, the starting point is each spouse's worldwide property on the date of separation, with permitted deductions and exclusions. If your family life and divorce process are centred in Ontario, overseas entitlements remain within the disclosure and equalization frame.",
+      "Occupational annuities, enterprise annuities, and basic old-age social insurance for urban employees in China are common categories that must be translated into a disclosure schedule with credible values and documentation for both key dates.",
+      "What is equalized through the NFP formula is generally the growth during the marriage — separation-date value minus marriage-date value — subject to proof and any applicable exclusions for pre-marital portions.",
+      "Enforcement and verification can be hard if a spouse resists production. Ontario courts have tools such as disclosure orders and, in appropriate cases, adverse inferences where disclosure is inadequate.",
+      "Miao He is dual-licensed in Ontario and China and regularly handles cross-border cases involving Chinese benefits and payroll systems. Contact 647-930-6688 or WeChat 372656035."
+    ],
+    "keywords": "China pension divorce Ontario,social insurance equalization Canada,worldwide net family property Ontario,cross-border divorce China assets Ontario,Miao He lawyer,dual licensed family lawyer",
+    "featured": true
+  },
+  {
     "slug": "parents-down-payment-divorce-ontario",
     "question": "My parents contributed to the down payment on our home — can that money be recovered in a divorce?",
     "summary": "Not necessarily. The answer depends on four factors: whether the property is a matrimonial home or investment property, whose account the money was deposited into, whether the contribution was a gift or a loan, and what evidence exists to prove the parties' intentions. There is no fixed answer — every case is different.",
