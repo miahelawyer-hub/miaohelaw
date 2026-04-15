@@ -77,19 +77,19 @@ import Footer from '../../components/Footer.astro';
     <!-- Stats -->
     <section class="stats">
       <div class="stat-item">
-        <div class="stat-number">15+</div>
+        <div class="stat-number" data-count="15" data-suffix="+">0+</div>
         <div class="stat-label">Years of Experience</div>
       </div>
       <div class="stat-item">
-        <div class="stat-number">20+</div>
+        <div class="stat-number" data-count="20" data-suffix="+">0+</div>
         <div class="stat-label">Court Hours / Month</div>
       </div>
       <div class="stat-item">
-        <div class="stat-number">200+</div>
+        <div class="stat-number" data-count="200" data-suffix="+">0+</div>
         <div class="stat-label">Consultations / Year</div>
       </div>
       <div class="stat-item">
-        <div class="stat-number">2</div>
+        <div class="stat-number" data-count="2">0</div>
         <div class="stat-label">Bar Licences — Ontario & China</div>
       </div>
       <div class="stat-item">
@@ -305,11 +305,78 @@ import Footer from '../../components/Footer.astro';
   .btn-secondary { background: transparent; color: #7A5A1A; padding: 0.75rem 1.75rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; font-weight: 500; border: 1px solid #7A5A1A; }
   .btn-secondary:hover { background: #F5EFE0; }
 
-  .stats { display: grid; grid-template-columns: repeat(6, 1fr); background: #2C2418; }
-  .stat-item { padding: 2rem 1rem; text-align: center; border-right: 1px solid #3A3020; }
+  .stats{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    position: relative;
+    background:
+      linear-gradient(180deg, rgba(255,255,255,0.10) 0%, rgba(255,255,255,0.02) 18%, rgba(0,0,0,0.0) 55%),
+      radial-gradient(900px 120px at 35% 0%, rgba(250,199,117,0.22), rgba(250,199,117,0) 62%),
+      linear-gradient(180deg, #312A1E 0%, #241D14 50%, #1D170F 100%);
+    border-top: 1px solid rgba(255,255,255,0.10);
+    border-bottom: 1px solid rgba(0,0,0,0.55);
+    box-shadow:
+      0 18px 40px rgba(0,0,0,0.22),
+      inset 0 1px 0 rgba(255,255,255,0.10),
+      inset 0 -10px 18px rgba(0,0,0,0.35);
+    overflow: hidden;
+  }
+  .stats::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+      repeating-linear-gradient(90deg, rgba(255,255,255,0.04) 0 1px, rgba(255,255,255,0) 1px 14px),
+      repeating-linear-gradient(0deg, rgba(0,0,0,0.06) 0 1px, rgba(0,0,0,0) 1px 10px);
+    opacity: 0.20;
+    pointer-events:none;
+    mix-blend-mode: overlay;
+  }
+  .stats::after{
+    content:"";
+    position:absolute;
+    left:0; right:0; top:0;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(250,199,117,0), rgba(250,199,117,0.55), rgba(250,199,117,0));
+    opacity: 0.65;
+    pointer-events:none;
+  }
+
+  .stat-item{
+    position: relative;
+    padding: 2rem 1rem;
+    text-align: center;
+    border-right: 1px solid rgba(255,255,255,0.07);
+    box-shadow: inset -1px 0 0 rgba(0,0,0,0.35);
+  }
+  .stat-item::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0));
+    opacity: 0.6;
+    pointer-events:none;
+  }
   .stat-item:last-child { border-right: none; }
-  .stat-number { font-size: 2.25rem; font-weight: 500; color: #FAC775; margin-bottom: 0.4rem; }
-  .stat-label { font-size: 0.75rem; color: #9A8060; line-height: 1.4; }
+  .stat-number{
+    font-family: ui-sans-serif, system-ui, -apple-system, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: #FAC775;
+    margin-bottom: 0.4rem;
+    letter-spacing: 0.01em;
+    font-variant-numeric: tabular-nums lining-nums;
+    text-shadow:
+      0 1px 0 rgba(0,0,0,0.55),
+      0 10px 22px rgba(0,0,0,0.35);
+  }
+  .stat-label{
+    font-size: 0.75rem;
+    color: rgba(230,206,160,0.72);
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
 
   .areas { padding: 4.25rem 2rem; max-width: 960px; margin: 0 auto; }
   .areas h2 { font-family: 'Georgia', serif; font-size: 1.75rem; font-weight: 400; color: #1A1208; margin-bottom: 0.65rem; }
@@ -428,3 +495,63 @@ import Footer from '../../components/Footer.astro';
     .video-grid { grid-template-columns: 1fr; }
   }
 </style>
+
+<script>
+  const prefersReducedMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches ?? false;
+  const statsSection = document.querySelector('.stats');
+  const counters = Array.from(document.querySelectorAll<HTMLElement>('.stat-number[data-count]'));
+
+  const setFinal = () => {
+    for (const el of counters) {
+      const target = Number(el.dataset.count ?? '0');
+      const suffix = el.dataset.suffix ?? '';
+      el.textContent = `${target}${suffix}`;
+    }
+  };
+
+  const animateCounters = () => {
+    const start = performance.now();
+    const duration = 900;
+    const targets = counters.map((el) => ({
+      el,
+      target: Number(el.dataset.count ?? '0'),
+      suffix: el.dataset.suffix ?? '',
+    }));
+
+    const easeOutCubic = (t: number) => 1 - Math.pow(1 - t, 3);
+
+    const tick = (now: number) => {
+      const t = Math.min(1, (now - start) / duration);
+      const eased = easeOutCubic(t);
+      for (const item of targets) {
+        const value = Math.round(item.target * eased);
+        item.el.textContent = `${value}${item.suffix}`;
+      }
+      if (t < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  };
+
+  if (!statsSection || counters.length === 0) {
+    // nothing
+  } else if (prefersReducedMotion) {
+    setFinal();
+  } else if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            animateCounters();
+            io.disconnect();
+            break;
+          }
+        }
+      },
+      { threshold: 0.35 }
+    );
+    io.observe(statsSection);
+  } else {
+    animateCounters();
+  }
+</script>
+
