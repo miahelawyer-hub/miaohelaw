@@ -3,6 +3,13 @@ import BaseHead from '../../../components/BaseHead.astro';
 import HeaderEn from '../../../components/HeaderEn.astro';
 import Footer from '../../../components/Footer.astro';
 import { faqItemsEn } from '../../../data/faq-en';
+
+const FEATURED_FAQ_SLUG = 'parents-down-payment-divorce-ontario';
+const items = [...faqItemsEn].sort((a, b) => {
+  if (a.slug === FEATURED_FAQ_SLUG) return -1;
+  if (b.slug === FEATURED_FAQ_SLUG) return 1;
+  return 0;
+});
 ---
 <!doctype html>
 <html lang="en">
@@ -21,7 +28,7 @@ import { faqItemsEn } from '../../../data/faq-en';
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": faqItemsEn.map(item => ({
+    "mainEntity": items.map(item => ({
       "@type": "Question",
       "name": item.question,
       "acceptedAnswer": { "@type": "Answer", "text": item.summary }
@@ -87,7 +94,7 @@ import { faqItemsEn } from '../../../data/faq-en';
     </section>
     <section class="faq-section">
       <div class="container">
-        {faqItemsEn.map((item, i) => (
+        {items.map((item, i) => (
           <div class={`faq-item${i >= 10 ? ' faq-hidden' : ''}`}>
             <a href={`/en/faq/${item.slug}`} class="faq-link">
               <span>{item.question}</span>
@@ -95,7 +102,7 @@ import { faqItemsEn } from '../../../data/faq-en';
             </a>
           </div>
         ))}
-        {faqItemsEn.length > 10 && (
+        {items.length > 10 && (
           <div class="load-more-wrap">
             <button class="load-more-btn" id="faq-load-more">Load More Questions ↓</button>
           </div>
