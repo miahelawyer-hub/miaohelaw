@@ -103,11 +103,11 @@ export const faqItemsEn: FaqItemEn[] =
     "question": "What are the requirements for divorce in Ontario?",
     "summary": "There are three grounds for divorce in Ontario: one year of separation, adultery, or physical or mental cruelty. The vast majority of cases use the one-year separation ground. Separation for one year is a condition for the court to grant the divorce — not a condition for filing.",
     "answers": [
-      "There are three grounds for divorce under the Divorce Act: one year of separation, adultery, or physical or mental cruelty.",
+      "There are three grounds for divorce under the 《Divorce Act》: one year of separation, adultery, or physical or mental cruelty.",
       "The one-year separation ground is by far the most common. It does not require proof of fault, and the parties can agree that separation has occurred even while continuing to live under the same roof."
     ],
     "details": [
-      "The Divorce Act sets out three grounds on which a court may grant a divorce. The first, and most commonly used, is separation for one year or more with no reasonable prospect of reconciliation. The second is adultery. The third is physical or mental cruelty of such a kind that the petitioning spouse cannot reasonably be expected to continue cohabiting.",
+      "The 《Divorce Act》 sets out three grounds on which a court may grant a divorce. The first, and most commonly used, is separation for one year or more with no reasonable prospect of reconciliation. The second is adultery. The third is physical or mental cruelty of such a kind that the petitioning spouse cannot reasonably be expected to continue cohabiting.",
       "A critical distinction that many clients miss: the one-year separation period is a condition for the court to grant the divorce order — not a condition for filing the application. You can file a divorce application at any point after separating. The court will simply wait until one year has passed before issuing the divorce order.",
       "In practice, this means you can and should begin dealing with property division, support, and parenting arrangements immediately after separation, without waiting for one year to pass. Delaying can result in assets being dissipated or positions hardening. The earlier you engage a lawyer, the better protected your interests will be.",
       "If you are unsure whether you meet the grounds for divorce, or want to understand which approach best fits your circumstances, contact Miao He at 647-930-6688 for an initial consultation."
@@ -123,7 +123,7 @@ export const faqItemsEn: FaqItemEn[] =
       "As long as either you or your spouse has been ordinarily resident in Ontario for at least one year immediately before the divorce application is filed, an Ontario court can hear the case."
     ],
     "details": [
-      "Under the Divorce Act, an Ontario court has jurisdiction to hear a divorce if either spouse has been ordinarily resident in Ontario for at least one year immediately before the divorce application is filed. Ordinarily resident means Ontario is your primary and habitual home — not merely a temporary stay.",
+      "Under the 《Divorce Act》, an Ontario court has jurisdiction to hear a divorce if either spouse has been ordinarily resident in Ontario for at least one year immediately before the divorce application is filed. Ordinarily resident means Ontario is your primary and habitual home — not merely a temporary stay.",
       "Immigration status is entirely irrelevant to this analysis. The court does not ask whether you are a citizen, permanent resident, or temporary resident. If you have lived in Ontario for at least one year, you can file for divorce here.",
       "One area of caution for newcomers: if your immigration status is linked to your spouse — for example, if you came to Canada under spousal sponsorship — a divorce may have immigration consequences that are separate from the family law proceedings. It is important to get both family law and immigration advice before proceeding.",
       "Miao He is a bilingual lawyer who serves the Chinese-Canadian community in the GTA. If you have questions about divorce as a newcomer, contact 647-930-6688."
@@ -139,7 +139,7 @@ export const faqItemsEn: FaqItemEn[] =
       "After one year of separation, if your spouse refuses to participate, the court can issue a divorce order in their absence — called a Default Judgment."
     ],
     "details": [
-      "Ontario courts do not require the consent of both parties to grant a divorce. The Divorce Act entitles either spouse to apply for a divorce after one year of separation, regardless of whether the other party agrees.",
+      "Ontario courts do not require the consent of both parties to grant a divorce. The 《Divorce Act》 entitles either spouse to apply for a divorce after one year of separation, regardless of whether the other party agrees.",
       "If your spouse is served with the divorce application and fails to file an Answer within the required time (30 days if they are in Ontario; 60 days if they are outside Canada), they can be noted in default. Once noted in default, you can proceed to seek the divorce order without further participation from your spouse.",
       "The court will review your materials and, if satisfied that the one-year separation requirement is met and there are no other barriers, will issue the divorce order.",
       "One important nuance: obtaining the divorce order is one thing; resolving property division, support, and parenting issues is another. Even if you get the divorce, outstanding family law issues can still be brought before the court by either party. Dealing with these issues proactively — ideally through a separation agreement — is strongly recommended.",
@@ -395,7 +395,7 @@ export const faqItemsEn: FaqItemEn[] =
       "Key factors include: each parent relationship with the child, stability of each home environment, the child own views and preferences, willingness to facilitate the child relationship with the other parent, and any history of violence or abuse."
     ],
     "details": [
-      "Under both the Divorce Act and Ontario Children Law Reform Act, the paramount consideration in all parenting decisions is the best interests of the child. Courts do not apply a presumption in favour of either parent.",
+      "Under both the 《Divorce Act》 and the Ontario 《Children Law Reform Act》, the paramount consideration in all parenting decisions is the best interests of the child. Courts do not apply a presumption in favour of either parent.",
       "Specific factors courts consider include: the nature and strength of the child relationship with each parent; each parent ability to provide for the child physical, emotional, and developmental needs; the child own views and preferences, considered proportionally to their age and maturity; each parent willingness to support the child relationship with the other parent; the stability and continuity of the child current environment; and any history of family violence, including the impact on the child.",
       "Courts pay particular attention to the willingness of each parent to facilitate the child relationship with the other parent. A parent who attempts to alienate the child from the other parent — through negative comments, withholding information, or frustrating parenting time — risks losing credibility with the court.",
       "The child own voice is increasingly important. While courts do not allow children to simply choose which parent they live with, older children expressed preferences carry significant weight, particularly if the preference is clearly articulated and consistent.",
@@ -412,7 +412,7 @@ export const faqItemsEn: FaqItemEn[] =
       "Parenting time: the schedule of when the child is with each parent. These two concepts are independent of each other."
     ],
     "details": [
-      "The 2021 amendments to the Divorce Act replaced the terms custody and access with decision-making responsibility and parenting time. The change reflects a shift in focus from parental rights to parental responsibilities.",
+      "The 2021 amendments to the 《Divorce Act》 replaced the terms custody and access with decision-making responsibility and parenting time. The change reflects a shift in focus from parental rights to parental responsibilities.",
       "Decision-making responsibility refers to the authority to make significant decisions about a child upbringing: which school they attend, what medical treatment they receive, what religion they are raised in, and what extracurricular activities they participate in. This can be held solely by one parent (sole decision-making) or shared by both parents (joint decision-making).",
       "Parenting time refers to the schedule of when the child physically lives with or is in the care of each parent. Common arrangements include primary residence with one parent and scheduled time with the other; week-on/week-off alternating schedules; or customized arrangements based on each family specific circumstances.",
       "Critically, decision-making responsibility and parenting time are separate concepts. A child can live primarily with one parent while both parents share decision-making responsibility. Or one parent may have sole decision-making while the other has substantial parenting time. The arrangement depends on what serves the child best interests.",
