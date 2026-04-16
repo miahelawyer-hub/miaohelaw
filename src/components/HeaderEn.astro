@@ -5,7 +5,7 @@
 <header style="background:#ffffff !important; color:var(--text-heading) !important;">
 	<nav style="background:#ffffff !important;">
 		<h2><a href="/en/">Miao He — Family Lawyer</a></h2>
-		<button class="hamburger" id="en-hamburger" aria-label="Menu">
+		<button class="hamburger" id="en-hamburger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="en-nav-links">
 			<span></span><span></span><span></span>
 		</button>
 		<div class="internal-links" id="en-nav-links">
@@ -143,6 +143,10 @@
 		background: #7A5A1A;
 		color: #fff !important;
 	}
+	/* 仅在汉堡内展示，避免与右侧「中文」重复 */
+	.lang-switch-mobile {
+		display: none;
+	}
 	/* Dropdown */
 	.dropdown {
 		position: relative;
@@ -218,7 +222,7 @@
 		display: block;
 		width: 24px;
 		height: 2px;
-		background: #2C1810;
+		background: var(--text-heading);
 		border-radius: 2px;
 		transition: all 0.2s;
 	}
@@ -248,6 +252,14 @@
 			color: var(--text-heading);
 		}
 		.internal-links :global(a:hover) { border-left-color: #D4A853; }
+		.lang-switch-mobile {
+			display: block;
+			margin-top: 0.25rem;
+			font-weight: 700;
+			color: #7a5a1a !important;
+			border-top: 1px solid rgba(237, 232, 223, 0.95);
+			padding-top: 0.65rem !important;
+		}
 		.dropdown { width: 100%; }
 		.dropdown-trigger {
 			display: block;
@@ -432,31 +444,32 @@
 }
 </style>
 <script>
-  // Hamburger menu
-  const hamburger = document.getElementById('en-hamburger');
-  const navLinks = document.getElementById('en-nav-links');
-  if (hamburger && navLinks) {
-    hamburger.addEventListener('click', (e) => {
-      e.stopPropagation();
-      navLinks.classList.toggle('open');
-    });
-    document.addEventListener('click', () => {
-      navLinks.classList.remove('open');
-    });
-    navLinks.addEventListener('click', (e) => e.stopPropagation());
-  }
-  // Dropdown
-  const trigger = document.querySelector('.dropdown-trigger');
-  const dropdown = document.querySelector('.dropdown');
-  if (trigger && dropdown) {
-    trigger.addEventListener('click', (e) => {
-      e.stopPropagation();
-      dropdown.classList.toggle('open');
-    });
-    document.addEventListener('click', () => {
-      dropdown.classList.remove('open');
-    });
-  }
+	const hamburger = document.getElementById('en-hamburger');
+	const navLinks = document.getElementById('en-nav-links');
+	if (hamburger && navLinks) {
+		hamburger.addEventListener('click', (e) => {
+			e.stopPropagation();
+			const open = navLinks.classList.toggle('open');
+			hamburger.setAttribute('aria-expanded', open ? 'true' : 'false');
+		});
+		navLinks.addEventListener('click', (e) => e.stopPropagation());
+	}
+
+	document.querySelectorAll('.dropdown').forEach((dropdown) => {
+		const trigger = dropdown.querySelector('.dropdown-trigger');
+		if (!trigger) return;
+		trigger.addEventListener('click', (e) => {
+			e.stopPropagation();
+			dropdown.classList.toggle('open');
+		});
+	});
+
+	const closeMenus = () => {
+		navLinks?.classList.remove('open');
+		hamburger?.setAttribute('aria-expanded', 'false');
+		document.querySelectorAll('.dropdown.open').forEach((d) => d.classList.remove('open'));
+	};
+	document.addEventListener('click', closeMenus);
 
   // QR zoom modal
   const qrBtn = document.querySelector('.wechat-qr-btn');
@@ -482,6 +495,11 @@
     if (target?.getAttribute('data-close') === 'true') closeQrModal();
   });
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && qrModal?.classList.contains('open')) closeQrModal();
+    if (e.key !== 'Escape') return;
+    if (qrModal?.classList.contains('open')) {
+      closeQrModal();
+      return;
+    }
+    closeMenus();
   });
 </script>

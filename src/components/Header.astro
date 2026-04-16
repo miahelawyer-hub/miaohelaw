@@ -6,7 +6,10 @@ import HeaderLink from './HeaderLink.astro';
 <header>
 	<nav>
 		<h2><a href="/">{SITE_TITLE}</a></h2>
-		<div class="internal-links">
+		<button class="hamburger" id="zh-hamburger" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="zh-nav-links">
+			<span></span><span></span><span></span>
+		</button>
+		<div class="internal-links" id="zh-nav-links">
 			<HeaderLink href="/">首页</HeaderLink>
 			<div class="dropdown">
 				<span class="dropdown-trigger">家庭法服务 ▾</span>
@@ -55,6 +58,7 @@ import HeaderLink from './HeaderLink.astro';
 			<HeaderLink href="/faq">常见问题</HeaderLink>
 			<HeaderLink href="/about">关于律师</HeaderLink>
 			<HeaderLink href="/contact">联系我们</HeaderLink>
+			<a href="/en/" class="lang-switch-mobile">English · EN</a>
 		</div>
 		<div class="social-links">
 			<a href="/en/" class="lang-switch">EN</a>
@@ -210,30 +214,117 @@ import HeaderLink from './HeaderLink.astro';
 	.dropdown-menu a:hover {
 		color: #9A8060;
 	}
+	/* 桌面端：语言切换放在右侧 social，不在主导航重复 */
+	.lang-switch-mobile {
+		display: none;
+	}
+	.hamburger {
+		display: none;
+		flex-direction: column;
+		justify-content: center;
+		gap: 5px;
+		background: none;
+		border: none;
+		cursor: pointer;
+		padding: 6px;
+		-webkit-tap-highlight-color: transparent;
+	}
+	.hamburger span {
+		display: block;
+		width: 24px;
+		height: 2px;
+		background: var(--text-heading);
+		border-radius: 2px;
+		transition: opacity 0.2s, transform 0.2s;
+	}
 	@media (max-width: 720px) {
-    .social-links a:not(.lang-switch) {
-        display: none;
-    }
-    h2 {
-        display: none;
-    }
-    nav {
-        padding: 0.3em 0.5em;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0;
-    }
-    nav :global(a) {
-        padding: 0.4em 0.4em;
-        font-size: 0.82rem;
-    }
-    .internal-links {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0;
-    }
-}
+		.hamburger {
+			display: flex;
+			flex-shrink: 0;
+		}
+		.social-links {
+			display: none;
+		}
+		h2 {
+			display: block;
+			flex: 1;
+			min-width: 0;
+			font-size: 0.82rem;
+			line-height: 1.35;
+			text-align: left;
+		}
+		nav {
+			padding: 0.5em 0;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: space-between;
+			gap: 0;
+		}
+		.internal-links {
+			display: none;
+			flex-direction: column;
+			width: 100%;
+			border-top: 1px solid #ede8df;
+			padding: 0.35rem 0 0.5rem;
+			gap: 0;
+		}
+		.internal-links.open {
+			display: flex;
+		}
+		.internal-links :global(a) {
+			padding: 0.6em 1em;
+			font-size: 0.95rem;
+			border-bottom: none;
+			border-left: 3px solid transparent;
+		}
+		.internal-links :global(a:hover) {
+			border-left-color: #d4a853;
+		}
+		.lang-switch-mobile {
+			display: block;
+			margin-top: 0.25rem;
+			font-weight: 700;
+			color: #7a5a1a !important;
+			border-top: 1px solid rgba(237, 232, 223, 0.95);
+			padding-top: 0.65rem !important;
+		}
+		.dropdown {
+			width: 100%;
+		}
+		.dropdown-trigger {
+			display: block;
+			width: 100%;
+			padding: 0.6em 1em;
+			font-size: 0.95rem;
+			box-sizing: border-box;
+		}
+		.dropdown-menu {
+			position: static;
+			transform: none;
+			box-shadow: none;
+			border: none;
+			border-radius: 0;
+			min-width: unset;
+			width: 100%;
+			flex-direction: column;
+			gap: 0;
+			padding: 0 0 0 1.5rem;
+			background: #fdfbf7;
+			display: none;
+		}
+		.dropdown.open .dropdown-menu {
+			display: flex;
+		}
+		.dropdown-col {
+			gap: 0;
+		}
+		.dropdown-heading {
+			margin-top: 0.5rem;
+		}
+		.dropdown-menu a {
+			padding: 0.4em 0;
+		}
+	}
 .wechat-bar {
     background:
       radial-gradient(900px 180px at 20% 0%, rgba(212,168,83,0.20), rgba(212,168,83,0) 60%),
@@ -367,42 +458,55 @@ import HeaderLink from './HeaderLink.astro';
     letter-spacing: 0.01em;
 }
 @media (max-width: 720px) {
-    .dropdown-trigger { font-size: 0.82rem; padding: 0.4em 0.4em; }
-    .dropdown-menu {
-        position: static;
-        transform: none;
-        box-shadow: none;
-        border: 1px solid #e8e0d5;
-        border-radius: 6px;
-        min-width: unset;
-        width: 100%;
-        flex-direction: column;
-        gap: 0.5rem;
-        padding: 0.75rem;
-        display: none;
-    }
-    .dropdown:hover .dropdown-menu,
-    .dropdown.open .dropdown-menu { display: flex; }
-    .wechat-bar { padding: 0.5rem 1rem; }
-    .wechat-bar-inner { gap: 0.75rem; }
-    .wechat-label { font-size: 0.75rem; }
-    .wechat-id { display: none; }
-    .wechat-phone { font-size: 0.8rem; padding: 0.4rem 1rem; }
-    .qr-modal-inner{ margin-top: 12vh; padding: 1.05rem 1.05rem 0.95rem; }
+	.wechat-bar {
+		padding: 0.5rem 1rem;
+	}
+	.wechat-bar-inner {
+		gap: 0.75rem;
+	}
+	.wechat-label {
+		font-size: 0.75rem;
+	}
+	.wechat-id {
+		display: none;
+	}
+	.wechat-phone {
+		font-size: 0.8rem;
+		padding: 0.4rem 1rem;
+	}
+	.qr-modal-inner {
+		margin-top: 12vh;
+		padding: 1.05rem 1.05rem 0.95rem;
+	}
 }
 </style>
 <script>
-  const trigger = document.querySelector('.dropdown-trigger');
-  const dropdown = document.querySelector('.dropdown');
-  if (trigger && dropdown) {
-    trigger.addEventListener('click', (e) => {
-      e.stopPropagation();
-      dropdown.classList.toggle('open');
-    });
-    document.addEventListener('click', () => {
-      dropdown.classList.remove('open');
-    });
-  }
+	const hamburger = document.getElementById('zh-hamburger');
+	const navLinks = document.getElementById('zh-nav-links');
+	if (hamburger && navLinks) {
+		hamburger.addEventListener('click', (e) => {
+			e.stopPropagation();
+			const open = navLinks.classList.toggle('open');
+			hamburger.setAttribute('aria-expanded', open ? 'true' : 'false');
+		});
+		navLinks.addEventListener('click', (e) => e.stopPropagation());
+	}
+
+	document.querySelectorAll('.dropdown').forEach((dropdown) => {
+		const trigger = dropdown.querySelector('.dropdown-trigger');
+		if (!trigger) return;
+		trigger.addEventListener('click', (e) => {
+			e.stopPropagation();
+			dropdown.classList.toggle('open');
+		});
+	});
+
+	const closeMenus = () => {
+		navLinks?.classList.remove('open');
+		hamburger?.setAttribute('aria-expanded', 'false');
+		document.querySelectorAll('.dropdown.open').forEach((d) => d.classList.remove('open'));
+	};
+	document.addEventListener('click', closeMenus);
 
   // QR zoom modal
   const qrBtn = document.querySelector('.wechat-qr-btn');
@@ -428,6 +532,11 @@ import HeaderLink from './HeaderLink.astro';
     if (target?.getAttribute('data-close') === 'true') closeQrModal();
   });
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && qrModal?.classList.contains('open')) closeQrModal();
+    if (e.key !== 'Escape') return;
+    if (qrModal?.classList.contains('open')) {
+      closeQrModal();
+      return;
+    }
+    closeMenus();
   });
 </script>
