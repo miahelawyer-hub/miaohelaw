@@ -25,7 +25,7 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
     "url": "https://www.miaohelaw.ca/en/about/",
     "telephone": "+1-647-930-6688",
     "email": "miao@miaohelaw.ca",
-    "image": "https://www.miaohelaw.ca/miao-he-lawyer.jpeg",
+    "image": "https://www.miaohelaw.ca/miao-he-about-hero.jpg",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "208-7050 Woodbine Ave",
@@ -47,21 +47,63 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
   }</script>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Georgia', serif; background: var(--bg); color: var(--text-primary); }
-    a { color: inherit; text-decoration: none; }
+    /*
+      Match site-wide English typography (global.css): editorial serif body + display headings.
+      Keep Atkinson only on buttons (UI affordances), not long-form copy.
+    */
+    body {
+      background: var(--bg);
+      color: var(--text-primary);
+      font-size: 20px;
+      line-height: 1.7;
+      letter-spacing: 0.002em;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { color: var(--accent-dark); text-decoration: underline; text-underline-offset: 3px; }
     .page { max-width: 860px; margin: 0 auto; padding: 3rem 2rem; }
-    .page h1 { font-size: 2rem; color: var(--text-heading); margin-bottom: 0.5rem; }
-    .page .subtitle { color: #5A4A3A; margin-bottom: 2rem; font-size: 0.95rem; }
+    .page--who { padding-top: clamp(2.5rem, 5vw, 4rem); }
+    .page h1 {
+      font-family: "Playfair Display", var(--font-en-display) !important;
+      font-size: clamp(2.1rem, 4.8vw, 3.25rem);
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      line-height: 1.08;
+      color: var(--text-heading);
+      margin-bottom: 0.35rem;
+    }
+    .who-hero h1 {
+      font-family: "Playfair Display", var(--font-en-display) !important;
+      font-size: clamp(2rem, 4.2vw, 2.85rem);
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      line-height: 1.12;
+      color: var(--text-heading);
+      margin: 0 0 0.35rem;
+    }
     .content-card { background: #ffffff; border: 1px solid #E8E0D5; border-radius: 8px; padding: 2rem; margin-bottom: 2rem; }
-    .content-card h2 { color: #8B6914; font-size: 1.1rem; margin-bottom: 1rem; letter-spacing: 0.05em; }
-    .content-card p { color: #5A4A3A; line-height: 1.8; margin-bottom: 1rem; font-size: 0.92rem; }
+    .content-card h2 {
+      font-family: "Playfair Display", var(--font-en-display) !important;
+      color: #8B6914;
+      font-size: 1.05rem;
+      margin-bottom: 1rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    .content-card p { color: #5A4A3A; line-height: 1.8; margin-bottom: 1rem; font-size: 0.95rem; }
     .content-card ul { list-style: none; padding: 0; }
-    .content-card ul li { color: #5A4A3A; font-size: 0.88rem; padding: 0.3rem 0; padding-left: 1.2rem; position: relative; }
+    .content-card ul li { color: #5A4A3A; font-size: 0.9rem; padding: 0.3rem 0; padding-left: 1.2rem; position: relative; }
     .content-card ul li::before { content: "·"; position: absolute; left: 0; color: #8B6914; }
     .cred-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-top: 1rem; }
     .cred-item { border: 1px solid #E8E0D5; padding: 1rem; border-radius: 6px; }
     .cred-item .icon { font-size: 1.2rem; margin-bottom: 0.4rem; }
-    .cred-item .title { color: var(--text-heading); font-size: 0.88rem; font-weight: 600; }
+    .cred-item .title {
+      font-family: "Playfair Display", var(--font-en-display) !important;
+      color: var(--text-heading);
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+    }
     .cred-item .desc { color: #7A6A5A; font-size: 0.78rem; margin-top: 0.2rem; }
     .case-block { background: #F5EFE0; border-left: 3px solid #D4A853; padding: 1rem 1.2rem; border-radius: 0 6px 6px 0; margin-bottom: 1rem; }
     .case-block h3 { color: var(--text-heading); font-size: 0.92rem; margin-bottom: 0.4rem; }
@@ -69,58 +111,311 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
     .case-block a { color: #8B6914; font-size: 0.8rem; }
     .contact-box { text-align: center; padding: 2rem; }
     .contact-box h2 { color: #8B6914; margin-bottom: 1rem; }
-    .btn-primary { display: inline-block; background: #D4A853; color: var(--text-heading); padding: 0.75rem 2rem; border-radius: 6px; font-weight: 700; margin: 0.5rem; }
-    .btn-secondary { display: inline-block; border: 1px solid #D4A853; color: #8B6914; padding: 0.75rem 2rem; border-radius: 6px; margin: 0.5rem; }
-    .about-portrait-en {
-      margin: 0 auto 2rem;
-      text-align: center;
-      max-width: 420px;
-      /* Cream canvas to blend the portrait background */
-      background: #F5EFE0;
-      border-radius: 14px;
-      padding: 0.35rem 0.5rem 0;
+    .btn-primary {
+      display: inline-block;
+      background: #D4A853;
+      color: var(--text-heading);
+      padding: 0.75rem 2rem;
+      border-radius: 6px;
+      font-family: "Atkinson", ui-sans-serif, system-ui, -apple-system, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+      font-weight: 800;
+      margin: 0.5rem;
+    }
+    .btn-secondary {
+      display: inline-block;
+      border: 1px solid #D4A853;
+      color: #8B6914;
+      padding: 0.75rem 2rem;
+      border-radius: 6px;
+      font-family: "Atkinson", ui-sans-serif, system-ui, -apple-system, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+      font-weight: 700;
+      margin: 0.5rem;
+    }
+    /* ── WHO WE ARE: full-bleed office bg + scrim + cutout (left) + copy (right) ── */
+    .who-hero--studio{
+      position: relative;
       isolation: isolate;
+      min-height: clamp(460px, 62vh, 680px);
+      display: flex;
+      align-items: flex-end;
     }
-    .about-portrait-en img {
+    .who-hero-bg{
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      overflow: hidden;
+    }
+    .who-hero-bg-image{
+      position: absolute;
+      inset: 0;
+      background-image: url("/about-hero-office.jpg");
+      background-size: cover;
+      background-position: 58% center;
+      transform: scale(1.03);
+    }
+    .who-hero-bg-overlay{
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        100deg,
+        rgba(247, 242, 239, 0.18) 0%,
+        rgba(247, 242, 239, 0.52) 24%,
+        rgba(247, 242, 239, 0.86) 46%,
+        rgba(248, 250, 252, 0.94) 100%
+      );
+    }
+    .who-hero-shell{
+      position: relative;
+      z-index: 1;
       width: 100%;
-      height: auto;
-      max-width: 400px;
-      margin: 0 auto;
-      display: block;
-      object-fit: contain;
-      object-position: center;
-      border-radius: 10px;
-      box-shadow: 0 14px 32px rgba(26, 18, 8, 0.12);
-      border: none;
-      mix-blend-mode: multiply;
+      padding: clamp(2.25rem, 5vw, 3.75rem) 0 clamp(1.75rem, 3vw, 2.75rem);
     }
-    .about-portrait-en figcaption {
-      margin-top: 0.55rem;
+    .who-hero-inner{
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 0.75rem;
+    }
+    .who-hero-grid{
+      display: grid;
+      grid-template-columns: minmax(200px, 4fr) minmax(0, 8fr);
+      gap: clamp(0.9rem, 2.2vw, 1.75rem);
+      align-items: stretch;
+      margin-bottom: 2.5rem;
+    }
+    .who-portrait{
+      margin: 0;
+      align-self: stretch;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      line-height: 0;
+      min-height: 0;
+    }
+    .who-portrait img{
+      width: auto;
+      max-width: min(380px, 100%);
+      max-height: 85%;
+      height: auto;
+      display: block;
+      margin: 0 auto 0 -10px;
+      object-fit: contain;
+      object-position: center center;
+      transform: translateY(10px);
+      border-radius: 24px;
+      border: 1px solid rgba(212, 168, 83, 0.42);
+      box-shadow:
+        0 14px 34px rgba(122, 90, 26, 0.1),
+        0 6px 16px rgba(184, 150, 120, 0.18);
+    }
+    .who-copy{ min-width: 0; padding-bottom: 0.25rem; }
+    .who-rule{
+      width: 3.5rem;
+      height: 3px;
+      border-radius: 2px;
+      background: linear-gradient(90deg, #7a5a1a, rgba(212, 168, 83, 0.85));
+      margin: 0.25rem 0 1.05rem;
+    }
+    .who-kicker{
+      display: flex;
+      align-items: center;
+      gap: 0.55rem 0.65rem;
+      flex-wrap: wrap;
+      font-family: var(--font-en-body) !important;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(122, 90, 26, 0.65);
+      margin-bottom: 0.75rem;
+    }
+    .who-kicker-line{
+      flex: 0 0 auto;
+      width: 2.35rem;
+      height: 2px;
+      border-radius: 1px;
+      background: linear-gradient(90deg, #7a5a1a, rgba(212, 168, 83, 0.82));
+    }
+    .who-kicker-inner{
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .who-kicker-ico{
+      width: 24px;
+      height: 24px;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      background: rgba(212,168,83,0.18);
+      color: #7A5A1A;
       font-size: 0.82rem;
-      color: #7a6a5a;
+      line-height: 1;
+    }
+    .who-lead{
+      margin: 0 0 0.35rem;
+      font-size: 1.02rem;
+      line-height: 1.85;
+      color: rgba(44,24,16,0.86);
+      font-family: var(--font-en-body) !important;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+    }
+    .who-sub{
+      margin: 0 0 1.35rem;
+      padding-top: 1.05rem;
+      border-top: 1px solid rgba(212, 168, 83, 0.28);
+      font-size: 0.94rem;
+      line-height: 1.8;
+      color: rgba(90,74,58,0.82);
+      font-family: var(--font-en-body) !important;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+    }
+    .who-checklist{
+      list-style: none;
+      margin: 0 0 1.55rem;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0.5rem;
+      max-width: 34rem;
+    }
+    .who-checklist li{
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      margin: 0;
+      font-size: 0.88rem;
+      color: rgba(44,24,16,0.88);
+      font-family: var(--font-en-body) !important;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      line-height: 1.45;
+      padding: 0.45rem 1rem 0.45rem 0.75rem;
+      border-radius: 999px;
+      background: linear-gradient(180deg, rgba(255, 252, 248, 0.98) 0%, rgba(247, 242, 239, 0.88) 100%);
+      border: 1px solid rgba(212, 168, 83, 0.4);
+      box-shadow: 0 1px 0 rgba(255, 255, 255, 0.75) inset;
+    }
+    .who-checklist li::before{
+      content: "✓";
+      flex: 0 0 auto;
+      width: auto;
+      height: auto;
+      border-radius: 0;
+      display: block;
+      margin-top: 0;
+      background: transparent;
+      color: rgba(122, 90, 26, 0.78);
+      font-weight: 800;
+      font-size: 0.7rem;
+      line-height: 1;
+    }
+    .who-actions{
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+    }
+    .who-btn{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.9rem 1.6rem;
+      border-radius: 999px;
+      background: rgba(184,150,120,0.88);
+      color: #fff;
+      font-family: "Atkinson", ui-sans-serif, system-ui, -apple-system, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      text-decoration: none;
+      box-shadow: 0 18px 34px rgba(44,24,16,0.14);
+      transition: transform 0.15s ease, filter 0.15s ease;
+    }
+    .who-btn:hover{ transform: translateY(-1px); filter: brightness(1.02); }
+    .who-last-updated{
+      font-size: 0.82rem;
+      color: rgba(90,74,58,0.72);
+      font-family: var(--font-en-body) !important;
+      letter-spacing: 0.01em;
     }
     @media (max-width: 600px) { .cred-grid { grid-template-columns: 1fr; } .page { padding: 2rem 1rem; } }
+    @media (max-width: 920px){
+      .who-hero-grid{ grid-template-columns: 1fr; gap: 1.5rem; text-align: center; }
+      .who-portrait{ justify-content: center; align-self: center; width: 100%; max-width: min(320px, 88vw); }
+      .who-portrait img{ margin: 0 auto; max-width: min(280px, 74vw); max-height: none; }
+      .who-checklist{ align-items: center; max-width: none; width: 100%; }
+      .who-checklist li{ max-width: min(26rem, 100%); }
+      .who-actions{ justify-content: center; }
+      .who-hero h1, .page h1{ text-align: center; }
+      .who-kicker{ justify-content: center; width: 100%; }
+      .who-rule{ margin-left: auto; margin-right: auto; }
+      .who-hero-bg-overlay{
+        background: linear-gradient(
+          165deg,
+          rgba(247, 242, 239, 0.35) 0%,
+          rgba(247, 242, 239, 0.82) 42%,
+          rgba(248, 250, 252, 0.94) 100%
+        );
+      }
+    }
   </style>
 </head>
 <body>
   <HeaderEn />
-  <div class="page">
-    <h1>Miao He (何淼)</h1>
-    <p class="subtitle">Family Law Lawyer · Ontario & China Dual-Licensed · H. LAW FIRM, Markham</p>
-    <p class="page-last-updated page-last-updated--light">Page last updated: {SITE_LAST_UPDATED_EN}</p>
+  <section class="who-hero who-hero--studio" aria-labelledby="who-title">
+    <div class="who-hero-bg" aria-hidden="true">
+      <div class="who-hero-bg-image"></div>
+      <div class="who-hero-bg-overlay"></div>
+    </div>
+    <div class="who-hero-shell">
+      <div class="who-hero-inner">
+        <div class="who-hero-grid">
+          <figure class="who-portrait">
+            <img
+              src="/miao-he-about-hero.jpg"
+              alt="Miao He — Ontario family law lawyer"
+              width="682"
+              height="1024"
+              fetchpriority="high"
+              decoding="async"
+            />
+          </figure>
+          <div class="who-copy">
+            <div class="who-kicker">
+              <span class="who-kicker-line" aria-hidden="true"></span>
+              <span class="who-kicker-inner">
+                <span class="who-kicker-ico" aria-hidden="true">⚖️</span>
+                <span>WHO WE ARE</span>
+              </span>
+            </div>
+            <h1 id="who-title">Strategic Advocacy.<br />Cross-Border Expertise.</h1>
+            <div class="who-rule" aria-hidden="true"></div>
+            <p class="who-lead">
+              Miao He (何淼) is a dual-licensed family lawyer in Ontario and China, with 15+ years of experience serving Chinese-Canadian families across the GTA.
+            </p>
+            <p class="who-sub">
+              Litigator mindset, settlement strategy. High-conflict divorce, child custody, and complex cross-border assets — handled in Mandarin and English.
+            </p>
 
-    <figure class="about-portrait-en">
-      <img
-        src="/miao-he-lawyer.jpeg"
-        alt="Miao He — Ontario family law lawyer"
-        width="1024"
-        height="1024"
-        loading="lazy"
-        decoding="async"
-      />
-      <figcaption>Miao He (何淼) · Ontario Family Law</figcaption>
-    </figure>
+            <ul class="who-checklist" aria-label="Key strengths">
+              <li>Dual-licensed in Ontario &amp; China</li>
+              <li>Courtroom-heavy practice — 20+ hours/month</li>
+              <li>Mediation-trained — tactful, firm when needed</li>
+            </ul>
 
+            <div class="who-actions">
+              <a href="tel:6479306688" class="who-btn">Book a consultation · 647-930-6688</a>
+              <div class="who-last-updated">Page last updated: {SITE_LAST_UPDATED_EN}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="page page--who">
     <div class="content-card">
       <h2>ABOUT</h2>
       <p>I am Miao He (何淼), a dual-licensed family lawyer holding both an Ontario bar licence and a China bar licence. I have practiced family law in the Greater Toronto Area for over 15 years and serve as the principal lawyer at H. LAW FIRM, located in Markham.</p>
@@ -214,7 +509,7 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
       <a href="tel:6479306688" class="btn-primary">📞 647-930-6688</a>
       <a href="mailto:miao@miaohelaw.ca" class="btn-secondary">Email Us</a>
     </div>
-  </div>
+  </main>
   <Footer lang="en" />
 </body>
 </html>

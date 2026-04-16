@@ -44,7 +44,7 @@ import { SITE_LAST_UPDATED_ZH } from '../consts';
       "url": "https://www.miaohelaw.ca/",
       "telephone": "+1-647-930-6688",
       "email": "miao@miaohelaw.ca",
-      "image": "https://www.miaohelaw.ca/miao-he-lawyer.jpeg",
+      "image": "https://www.miaohelaw.ca/miao-he-about-hero.jpg",
       "knowsLanguage": ["zh-Hans", "en"],
       "alumniOf": {
         "@type": "CollegeOrUniversity",
@@ -100,12 +100,55 @@ import { SITE_LAST_UPDATED_ZH } from '../consts';
   <Header />
   <main class="page-main">
 
-    <section class="page-hero">
-      <div class="page-hero-inner">
-        <div class="page-label">关于律师 · ABOUT</div>
-        <h1>何淼律师 <span class="en-name">Miao He</span></h1>
-        <p>多伦多华人离婚律师 · 中加双执照 · Osgoode Hall LL.M. · 执业15+年</p>
-        <p class="page-last-updated page-last-updated--warm">页面内容最后更新：{SITE_LAST_UPDATED_ZH}</p>
+    <section class="who-hero who-hero--studio" aria-labelledby="who-title">
+      <div class="who-hero-bg" aria-hidden="true">
+        <div class="who-hero-bg-image"></div>
+        <div class="who-hero-bg-overlay"></div>
+      </div>
+      <div class="who-hero-shell">
+        <div class="who-hero-inner">
+          <div class="who-hero-grid">
+            <figure class="who-portrait">
+              <img
+                src="/miao-he-about-hero.jpg"
+                alt="何淼律师 Miao He — Ontario 家庭法律师"
+                width="682"
+                height="1024"
+                fetchpriority="high"
+                decoding="async"
+              />
+            </figure>
+            <div class="who-copy">
+              <div class="who-kicker">
+                <span class="who-kicker-line" aria-hidden="true"></span>
+                <span class="who-kicker-inner">
+                  <span class="who-kicker-ico" aria-hidden="true">⚖️</span>
+                  <span>WHO WE ARE</span>
+                </span>
+              </div>
+              <h1 id="who-title">诉讼为盾 · 跨境为桥</h1>
+              <div class="who-rule" aria-hidden="true"></div>
+              <p class="who-lead">
+                Miao He（何淼）毕业于 <strong>Osgoode Hall Law School（LL.M.）</strong>，持有安大略省及中国双重律师执照，专注家庭法逾 15 年，现任 <a href="https://www.hlawfirmontario.com" target="_blank" rel="noopener">H. LAW FIRM 恒. 律师事务所</a>主理律师。
+              </p>
+              <div class="who-divider" aria-hidden="true"></div>
+              <p class="who-sub">
+                以诉讼律师的眼光评估案件——能谈则谈，该打必胜。擅长高冲突离婚、子女监护与中加跨境资产。
+              </p>
+
+              <ul class="who-checklist" aria-label="核心优势">
+                <li>中加双执照 · 处理跨境资产更直接</li>
+                <li>高强度出庭经验 · 熟悉安省法院流程</li>
+                <li>调解员资格 · 兼顾谈判与诉讼策略</li>
+              </ul>
+
+              <div class="who-actions">
+                <a class="who-btn" href="tel:6479306688">预约咨询 · 647-930-6688</a>
+                <div class="who-last-updated">页面内容最后更新：{SITE_LAST_UPDATED_ZH}</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -114,27 +157,6 @@ import { SITE_LAST_UPDATED_ZH } from '../consts';
         <div class="about-grid">
 
           <div class="about-main">
-
-            <figure class="about-portrait">
-              <img
-                src="/miao-he-lawyer.jpeg"
-                alt="何淼律师 Miao He — Ontario 家庭法律师"
-                width="1024"
-                height="1024"
-                loading="lazy"
-                decoding="async"
-              />
-              <figcaption>何淼律师 · Miao He · Ontario Family Law</figcaption>
-            </figure>
-
-            <div class="intro-card">
-              <p class="intro-lead">Miao He 毕业于 <strong>Osgoode Hall Law School（LL.M.）</strong>，持有安大略省及中国双重律师执照，在 Greater Toronto Area 执业超过15年，现任 <a href="https://www.hlawfirmontario.com" target="_blank" rel="noopener">H. LAW FIRM 恒. 律师事务所</a>主理律师。</p>
-              <p>何淼律师专注处理离婚、子女抚养权及财产分割案件，尤其擅长应对对方不配合、转移资产及中加跨境财产争议。在复杂家庭法案件中，她能够通过谈判或诉讼迅速推进案件进展，为客户争取最大利益。</p>
-              <div class="philosophy-box">
-                <span class="philosophy-label">执业理念</span>
-                <span class="philosophy-text">能谈则谈，该打必胜</span>
-              </div>
-            </div>
 
             <div class="content-card">
               <h2>如果您正在面临以下问题</h2>
@@ -322,55 +344,234 @@ import { SITE_LAST_UPDATED_ZH } from '../consts';
 <style>
   .page-main { max-width: 100%; padding: 0; margin: 0; }
 
-  .page-hero { background: #2C2418; padding: 4rem 2rem; text-align: center; }
-  .page-hero-inner { max-width: 760px; margin: 0 auto; }
-  .page-label { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: #9A8060; margin-bottom: 1rem; }
-  .page-hero h1 { font-family: "Georgia", serif; font-size: 2.5rem; font-weight: 400; color: #FAC775; margin-bottom: 0.75rem; }
-  .en-name { font-size: 1.5rem; color: #C4AA80; margin-left: 0.5rem; }
-  .page-hero p { color: #C4AA80; font-size: 0.9rem; line-height: 1.7; }
+  /* ── WHO WE ARE hero: office photo + scrim + cutout portrait (left) + copy (right) ── */
+  .who-hero--studio{
+    position: relative;
+    isolation: isolate;
+    min-height: clamp(460px, 62vh, 680px);
+    display: flex;
+    align-items: flex-end;
+  }
+  .who-hero-bg{
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+  }
+  .who-hero-bg-image{
+    position: absolute;
+    inset: 0;
+    background-image: url("/about-hero-office.jpg");
+    background-size: cover;
+    background-position: 58% center;
+    transform: scale(1.03);
+  }
+  .who-hero-bg-overlay{
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      100deg,
+      rgba(247, 242, 239, 0.18) 0%,
+      rgba(247, 242, 239, 0.52) 24%,
+      rgba(247, 242, 239, 0.86) 46%,
+      rgba(248, 250, 252, 0.94) 100%
+    );
+  }
+  .who-hero-shell{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    padding: clamp(2.25rem, 5vw, 3.75rem) 0 clamp(1.75rem, 3vw, 2.75rem);
+  }
+  .who-hero-inner{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 0.75rem;
+  }
+  .who-hero-grid{
+    display: grid;
+    grid-template-columns: minmax(190px, 4fr) minmax(0, 8fr);
+    gap: clamp(0.9rem, 2.2vw, 1.75rem);
+    align-items: stretch;
+  }
+  .who-portrait{
+    margin: 0;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    line-height: 0;
+    min-height: 0;
+  }
+  .who-portrait img{
+    width: auto;
+    max-width: min(348px, 100%);
+    max-height: 85%;
+    height: auto;
+    display: block;
+    margin: 0 auto 0 -10px;
+    object-fit: contain;
+    object-position: center center;
+    border-radius: 24px;
+    border: 1px solid rgba(212, 168, 83, 0.42);
+    box-shadow:
+      0 14px 34px rgba(122, 90, 26, 0.1),
+      0 6px 16px rgba(184, 150, 120, 0.18);
+  }
+  .who-copy{
+    min-width: 0;
+    padding-bottom: 0.25rem;
+  }
+  .who-rule{
+    width: 3.5rem;
+    height: 3px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #7a5a1a, rgba(212, 168, 83, 0.85));
+    margin: 0.25rem 0 1.05rem;
+  }
+  .who-kicker{
+    display: flex;
+    align-items: center;
+    gap: 0.55rem 0.65rem;
+    flex-wrap: wrap;
+    font-family: var(--font-zh-body) !important;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(122, 90, 26, 0.65);
+    margin-bottom: 0.9rem;
+  }
+  .who-kicker-line{
+    flex: 0 0 auto;
+    width: 2.35rem;
+    height: 2px;
+    border-radius: 1px;
+    background: linear-gradient(90deg, #7a5a1a, rgba(212, 168, 83, 0.82));
+  }
+  .who-kicker-inner{
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .who-kicker-ico{
+    width: 24px;
+    height: 24px;
+    border-radius: 999px;
+    display: grid;
+    place-items: center;
+    background: rgba(212,168,83,0.18);
+    color: #7A5A1A;
+    font-size: 0.82rem;
+    line-height: 1;
+  }
+  .who-hero h1{
+    font-family: "Noto Serif SC", "Songti SC", "STSong", "SimSun", serif !important;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    font-size: clamp(2rem, 4.2vw, 2.85rem);
+    line-height: 1.12;
+    color: var(--text-heading);
+    margin: 0 0 0.35rem;
+  }
+  .who-lead{
+    margin: 0 0 0.35rem;
+    font-size: 1.02rem;
+    line-height: 1.85;
+    color: rgba(44,24,16,0.86);
+    font-family: var(--font-zh-body) !important;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+  }
+  .who-lead a{ color: #7A5A1A; text-decoration: none; border-bottom: 1px solid rgba(122,90,26,0.25); }
+  .who-lead a:hover{ border-bottom-color: rgba(122,90,26,0.5); }
+  .who-divider{
+    width: 100%;
+    height: 1px;
+    background: rgba(201, 161, 104, 0.55);
+    margin: 0.9rem 0 0.95rem;
+  }
+  .who-sub{
+    margin: 0 0 1.35rem;
+    font-size: 0.94rem;
+    line-height: 1.8;
+    color: rgba(90,74,58,0.82);
+    font-family: var(--font-zh-body) !important;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+  }
+  .who-checklist{
+    list-style: none;
+    margin: 0 0 1.55rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+    max-width: 34rem;
+  }
+  .who-checklist li{
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    margin: 0;
+    font-size: 0.88rem;
+    color: rgba(44,24,16,0.88);
+    font-family: var(--font-zh-body) !important;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    padding: 0.45rem 1rem 0.45rem 0.75rem;
+    border-radius: 999px;
+    background: linear-gradient(180deg, rgba(255, 252, 248, 0.98) 0%, rgba(247, 242, 239, 0.88) 100%);
+    border: 1px solid rgba(212, 168, 83, 0.4);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.75) inset;
+  }
+  .who-checklist li::before{
+    content: "✓";
+    flex: 0 0 auto;
+    width: auto;
+    height: auto;
+    border-radius: 0;
+    display: block;
+    margin-top: 0;
+    background: transparent;
+    color: rgba(122, 90, 26, 0.78);
+    font-weight: 800;
+    font-size: 0.7rem;
+    line-height: 1;
+  }
+  .who-actions{
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+  }
+  .who-btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.9rem 1.6rem;
+    border-radius: 999px;
+    background: rgba(184,150,120,0.88);
+    color: #fff;
+    font-family: var(--font-zh-body) !important;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    box-shadow: 0 18px 34px rgba(44,24,16,0.14);
+    transition: transform 0.15s ease, filter 0.15s ease;
+  }
+  .who-btn:hover{ transform: translateY(-1px); filter: brightness(1.02); }
+  .who-last-updated{
+    font-size: 0.82rem;
+    color: rgba(90,74,58,0.72);
+    font-family: var(--font-zh-body) !important;
+    letter-spacing: 0.01em;
+  }
 
   .about-section { padding: 4rem 2rem; }
   .about-inner { max-width: 1060px; margin: 0 auto; }
   .about-grid { display: grid; grid-template-columns: 1fr 300px; gap: 2rem; align-items: start; }
-
-  .about-portrait {
-    margin: 0 auto 1.75rem;
-    text-align: center;
-    max-width: 420px;
-    /* Cream canvas to blend the portrait background */
-    background: #F5EFE0;
-    border-radius: 14px;
-    padding: 0.35rem 0.5rem 0;
-    isolation: isolate;
-  }
-  .about-portrait img {
-    width: 100%;
-    height: auto;
-    max-width: 400px;
-    margin: 0 auto;
-    display: block;
-    object-fit: contain;
-    object-position: center;
-    border-radius: 10px;
-    box-shadow: 0 14px 32px rgba(44, 24, 16, 0.12);
-    border: none;
-    mix-blend-mode: multiply;
-  }
-  .about-portrait figcaption {
-    margin-top: 0.65rem;
-    font-size: 0.82rem;
-    color: #6b5a3a;
-    letter-spacing: 0.04em;
-  }
-
-  .intro-card { background: #FDFBF7; border: 1px solid #EDE8DF; border-radius: 8px; padding: 2rem; margin-bottom: 1.5rem; border-left: 4px solid #FAC775; }
-  .intro-lead { font-size: 1rem; color: var(--text-primary); line-height: 1.8; margin-bottom: 1rem; font-family: "Georgia", serif; }
-  .intro-card p { font-size: 0.9rem; color: #4A3A2A; line-height: 1.8; margin-bottom: 1rem; }
-  .intro-card a { color: #7A5A1A; text-decoration: none; }
-  .intro-card a:hover { text-decoration: underline; }
-  .philosophy-box { display: flex; align-items: center; gap: 1rem; background: #2C2418; padding: 1rem 1.25rem; border-radius: 6px; margin-top: 1rem; }
-  .philosophy-label { font-size: 0.7rem; letter-spacing: 0.1em; color: #9A8060; text-transform: uppercase; white-space: nowrap; }
-  .philosophy-text { font-family: "Georgia", serif; font-size: 1.1rem; color: #FAC775; }
 
   .content-card { background: #FDFBF7; border: 1px solid #EDE8DF; border-radius: 8px; padding: 2rem; margin-bottom: 1.5rem; border-left: 4px solid #7A5A1A; }
   .content-card h2 { font-family: "Georgia", serif; font-size: 1.35rem; font-weight: 400; color: var(--text-heading); margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid #EDE8DF; }
@@ -391,6 +592,26 @@ import { SITE_LAST_UPDATED_ZH } from '../consts';
   .case-item p { font-size: 0.87rem; color: #4A3A2A; line-height: 1.7; margin-bottom: 0.5rem; }
   .case-link { font-size: 0.82rem; color: #7A5A1A; text-decoration: none; font-weight: 500; }
   .case-link:hover { text-decoration: underline; }
+
+  @media (max-width: 920px){
+    .who-hero-grid{ grid-template-columns: 1fr; gap: 1.5rem; text-align: center; }
+    .who-portrait{ justify-content: center; align-self: center; width: 100%; max-width: min(320px, 88vw); }
+    .who-portrait img{ margin: 0 auto; max-width: min(268px, 70vw); max-height: none; }
+    .who-checklist{ align-items: center; max-width: none; width: 100%; }
+    .who-checklist li{ max-width: min(26rem, 100%); }
+    .who-actions{ justify-content: center; }
+    .who-hero h1{ text-align: center; }
+    .who-kicker{ justify-content: center; width: 100%; }
+    .who-rule{ margin-left: auto; margin-right: auto; }
+    .who-hero-bg-overlay{
+      background: linear-gradient(
+        165deg,
+        rgba(247, 242, 239, 0.35) 0%,
+        rgba(247, 242, 239, 0.82) 42%,
+        rgba(248, 250, 252, 0.94) 100%
+      );
+    }
+  }
 
   .results-list { padding-left: 1.25rem; margin: 0.5rem 0; }
   .results-list li { font-size: 0.9rem; color: #4A3A2A; line-height: 2; }
