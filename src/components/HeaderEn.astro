@@ -94,6 +94,9 @@
 		padding: 0 1em;
 		background: #ffffff !important;
 		box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+		/* Match English page headings: editorial serif (same stack as html[lang="en"] h1–h6) */
+		font-family: var(--font-en-display);
+		letter-spacing: 0.01em;
 	}
 	h2 {
 		margin: 0;
@@ -109,13 +112,13 @@
 		justify-content: space-between;
 		padding: 0.8em 0;
 	}
-	nav a {
+	nav :global(a) {
 		padding: 0.5em 0.5em;
 		color: var(--text-heading);
 		border-bottom: 4px solid transparent;
 		text-decoration: none;
 	}
-	nav a.active {
+	nav :global(a.active) {
 		text-decoration: none;
 		border-bottom-color: var(--accent);
 	}
@@ -237,13 +240,14 @@
 			gap: 0;
 		}
 		.internal-links.open { display: flex; }
-		.internal-links a {
+		.internal-links :global(a) {
 			padding: 0.6em 1em;
 			font-size: 0.95rem;
 			border-bottom: none;
 			border-left: 3px solid transparent;
+			color: var(--text-heading);
 		}
-		.internal-links a:hover { border-left-color: #D4A853; }
+		.internal-links :global(a:hover) { border-left-color: #D4A853; }
 		.dropdown { width: 100%; }
 		.dropdown-trigger {
 			display: block;

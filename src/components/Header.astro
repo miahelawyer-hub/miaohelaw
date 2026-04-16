@@ -116,13 +116,14 @@ import HeaderLink from './HeaderLink.astro';
 		justify-content: space-between;
 		padding: 0.8em 0;
 	}
-	nav a {
+	/* :global(a) so HeaderLink and other child roots receive nav link colors */
+	nav :global(a) {
 		padding: 0.5em 0.5em;
 		color: var(--text-heading);
 		border-bottom: 4px solid transparent;
 		text-decoration: none;
 	}
-	nav a.active {
+	nav :global(a.active) {
 		text-decoration: none;
 		border-bottom-color: var(--accent);
 	}
@@ -222,7 +223,7 @@ import HeaderLink from './HeaderLink.astro';
         justify-content: center;
         gap: 0;
     }
-    nav a {
+    nav :global(a) {
         padding: 0.4em 0.4em;
         font-size: 0.82rem;
     }
