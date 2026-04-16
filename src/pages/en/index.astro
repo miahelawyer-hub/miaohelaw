@@ -2,6 +2,15 @@
 import BaseHead from '../../components/BaseHead.astro';
 import HeaderEn from '../../components/HeaderEn.astro';
 import Footer from '../../components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog-en')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+).slice(0, 3);
+
+function formatBlogDate(date: Date) {
+  return new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+}
 ---
 <!doctype html>
 <html lang="en">
@@ -210,7 +219,7 @@ import Footer from '../../components/Footer.astro';
           <div class="area-card-inner">
             <div class="area-icon" aria-hidden="true"><img src="/images/service-icons/scales-books.png" alt="" width="64" height="64" loading="lazy" decoding="async" /></div>
             <div class="area-card-body">
-              <h3>Cross-Border Asset Division</h3>
+              <h3>Cross-Border <span class="en-title-nowrap">Asset Division</span></h3>
               <p>Tracing assets held in China — real estate, company shares, family trusts. Hidden asset investigation. CBV valuation disputes.</p>
               <a href="/en/family-law/cross-border-assets" class="area-link">Learn more →</a>
             </div>
@@ -347,18 +356,18 @@ import Footer from '../../components/Footer.astro';
           </div>
           <div class="testimonial-card">
             <div class="testimonial-quote">"</div>
-            <p>The marriage contract drafting was incredibly thorough — she anticipated issues from a litigator's perspective that we never would have thought of. Bilingual service meant my parents could fully understand the agreement too.</p>
+            <p>先后就婚姻和房产的事情和 Mia 合作,唯一的遗憾是没有早点遇到!Mia 和团队非常专业,最重要的是很高效。在此之前我以为联系不上律师、沟通缓慢是正常的,和 Mia 共事我才知道原来律师可以回应这么快,可以灵活,可以积极帮客人寻找各种解决方案。近期接触的律师中,Mia 团队费用上和其他相差不大,但效率真是高了三倍不止!以后有需要我一定还会选择她们。</p>
             <div class="testimonial-meta">
-              <div class="testimonial-avatar is-initials" aria-hidden="true">WA</div>
+              <div class="testimonial-avatar is-initials" aria-hidden="true">PL</div>
               <div class="testimonial-meta-text">
-                <span class="testimonial-tag">Marriage Contract · ★★★★★</span>
-                <span class="testimonial-author">Mr. Wang, Richmond Hill · 2025</span>
+                <span class="testimonial-tag">Google · ★★★★★</span>
+                <span class="testimonial-author">Paula L · May 2024</span>
               </div>
             </div>
           </div>
         </div>
-        <div style="text-align:center; margin-top: 2rem;">
-          <a href="/en/testimonials" class="btn-secondary">View All Reviews →</a>
+        <div class="testimonials-more-wrap">
+          <a href="/en/testimonials" class="btn-secondary testimonials-view-all-link">View All Reviews →</a>
         </div>
       </div>
     </section>
@@ -371,27 +380,27 @@ import Footer from '../../components/Footer.astro';
         <div class="area-card">
           <div class="area-card-inner">
             <div class="area-card-body">
-              <h3>Separation by Agreement · 协商离婚</h3>
-              <p>Negotiated separation and uncontested divorce paths in Ontario — a practical starting point.</p>
-              <a href="https://www.youtube.com/watch?v=YhOVZxqwD_k" target="_blank" rel="noopener noreferrer" class="area-link">▶ 观看视频 · Watch Video →</a>
+              <h3>Separation by Agreement</h3>
+              <p>Introduction to Ontario divorce: separation agreements and uncontested divorce pathways.</p>
+              <a href="https://www.youtube.com/watch?v=YhOVZxqwD_k" target="_blank" rel="noopener noreferrer" class="area-link">▶ Watch Video →</a>
             </div>
           </div>
         </div>
         <div class="area-card">
           <div class="area-card-inner">
             <div class="area-card-body">
-              <h3>Spouse Refuses Divorce — Court Outcomes · 一方不同意，法院会判离吗？</h3>
-              <p>No-fault divorce and how courts decide whether a marriage has broken down irretrievably.</p>
-              <a href="https://www.youtube.com/watch?v=86ULSZ6-KF8" target="_blank" rel="noopener noreferrer" class="area-link">▶ 观看视频 · Watch Video →</a>
+              <h3>Spouse Refuses Divorce — Court Outcomes</h3>
+              <p>How courts determine &quot;marriage breakdown&quot; under no-fault divorce principles.</p>
+              <a href="https://www.youtube.com/watch?v=86ULSZ6-KF8" target="_blank" rel="noopener noreferrer" class="area-link">▶ Watch Video →</a>
             </div>
           </div>
         </div>
         <div class="area-card">
           <div class="area-card-inner">
             <div class="area-card-body">
-              <h3>Reducing Asset Dissipation in Litigation · 诉讼中减少资产流失</h3>
-              <p>Freezes, disclosure, and evidence strategy to limit transfers or waste of marital property.</p>
-              <a href="https://www.youtube.com/watch?v=ijZ7E901pXU" target="_blank" rel="noopener noreferrer" class="area-link">▶ 观看视频 · Watch Video →</a>
+              <h3>Reducing Asset Dissipation in Litigation</h3>
+              <p>Preservation, disclosure, and evidence strategies to prevent asset dissipation.</p>
+              <a href="https://www.youtube.com/watch?v=ijZ7E901pXU" target="_blank" rel="noopener noreferrer" class="area-link">▶ Watch Video →</a>
             </div>
           </div>
         </div>
@@ -405,7 +414,23 @@ import Footer from '../../components/Footer.astro';
     <section class="blog-section">
       <h2>Latest Articles</h2>
       <p class="blog-sub">Practical legal insights on Ontario family law — in English and Mandarin.</p>
-      <a href="/en/blog" class="btn-secondary">View All Articles →</a>
+      <div class="blog-cards-grid">
+        {posts.map((post) => (
+          <div class="area-card">
+            <div class="area-card-inner">
+              <div class="area-card-body">
+                <h3>{post.data.title}</h3>
+                <p class="post-meta-date">{formatBlogDate(post.data.pubDate)}</p>
+                <p class="post-excerpt">{post.data.description}</p>
+                <a href={`/en/blog/${post.id}`} class="area-link">Read More →</a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div class="blog-more-wrap">
+        <a href="/en/blog" class="btn-secondary blog-view-all-link">View All Articles →</a>
+      </div>
     </section>
 
     <!-- CTA -->
@@ -414,8 +439,8 @@ import Footer from '../../components/Footer.astro';
       <p>Bilingual service in Mandarin and English · Serving Toronto, Markham, Richmond Hill, Mississauga and all of Ontario</p>
       <div class="fee-notice">Initial consultation 30 min · $220 + HST</div>
       <div class="cta-actions">
-        <a href="tel:6479306688" class="btn-primary">📞 647-930-6688</a>
-        <a href="mailto:miao@miaohelaw.ca" class="btn-secondary">miao@miaohelaw.ca</a>
+        <a href="tel:6479306688" class="btn-primary contact-cta-phone">📞 647-930-6688</a>
+        <a href="mailto:miao@miaohelaw.ca" class="btn-secondary contact-cta-email">✉️ miao@miaohelaw.ca</a>
       </div>
     </section>
 
@@ -732,6 +757,10 @@ import Footer from '../../components/Footer.astro';
     max-width: min(70ch, 980px);
   }
 
+  .en-title-nowrap {
+    white-space: nowrap;
+  }
+
   .areas-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -750,17 +779,6 @@ import Footer from '../../components/Footer.astro';
     box-shadow: 0 8px 28px rgba(42, 53, 68, 0.06);
     transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
     overflow: hidden;
-  }
-  .area-card::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 4px;
-    background: var(--accent);
-    border-radius: 14px 0 0 14px;
-    opacity: 0.85;
   }
   .area-card:hover {
     transform: translateY(-3px);
@@ -824,6 +842,9 @@ import Footer from '../../components/Footer.astro';
     letter-spacing: 0.02em;
     align-self: flex-end;
     margin-top: auto;
+  }
+  .areas .area-link {
+    font-weight: 600;
   }
   .area-link:hover {
     text-decoration: underline;
@@ -951,9 +972,7 @@ import Footer from '../../components/Footer.astro';
 
   .case-section{
     position: relative;
-    background:
-      radial-gradient(900px 300px at 50% 0%, rgba(250,199,117,0.10), rgba(250,199,117,0) 60%),
-      linear-gradient(180deg, #1C2B3F 0%, #141E2B 100%);
+    background: #1C2B3F;
     padding: 4.75rem 2rem;
     text-align: center;
     overflow: hidden;
@@ -1056,12 +1075,34 @@ import Footer from '../../components/Footer.astro';
   .testimonials-inner { max-width: 960px; margin: 0 auto; text-align: center; }
   .testimonials-inner h2 { font-family: 'Georgia', serif; font-size: 1.75rem; font-weight: 400; color: var(--text-heading); margin-bottom: 0.5rem; }
   .testimonials-sub { color: #9A8060; font-size: 0.85rem; margin-bottom: 2rem; }
-  .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; text-align: left; }
-  .testimonial-card { background: #FDFBF7; border: 1px solid #EDE8DF; border-radius: 12px; padding: 1.6rem; box-shadow: 0 12px 30px rgba(44,24,16,0.06); transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease; }
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    text-align: left;
+    align-items: stretch;
+  }
+  @media (min-width: 768px) {
+    .testimonials-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  .testimonial-card {
+    background: #FDFBF7;
+    border: 1px solid #EDE8DF;
+    border-radius: 12px;
+    padding: 1.6rem;
+    box-shadow: 0 12px 30px rgba(44,24,16,0.06);
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+    height: 100%;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+  }
   .testimonial-card:hover { transform: translateY(-2px); box-shadow: 0 18px 40px rgba(44,24,16,0.09); border-color: rgba(212,168,83,0.35); }
-  .testimonial-quote { font-family: 'Georgia', serif; font-size: 3rem; color: #E8D9B8; line-height: 1; margin-bottom: 0.5rem; }
-  .testimonial-card p { font-size: 0.85rem; color: #4A3A2A; line-height: 1.7; margin-bottom: 1rem; }
-  .testimonial-meta { display: flex; align-items: center; gap: 0.75rem; margin-top: 1.05rem; }
+  .testimonial-quote { font-family: 'Georgia', serif; font-size: 3rem; color: #E8D9B8; line-height: 1; margin-bottom: 0.5rem; flex-shrink: 0; }
+  .testimonial-card p { font-size: 0.85rem; color: #4A3A2A; line-height: 1.7; margin-bottom: 0; flex: 1 1 auto; }
+  .testimonial-meta { display: flex; align-items: center; gap: 0.75rem; margin-top: auto; padding-top: 1.05rem; }
   .testimonial-avatar{
     width: 38px;
     height: 38px;
@@ -1084,6 +1125,13 @@ import Footer from '../../components/Footer.astro';
   .testimonial-meta-text{ display:flex; flex-direction: column; gap: 0.18rem; min-width: 0; }
   .testimonial-tag { font-size: 0.72rem; color: #7A5A1A; font-weight: 700; background: rgba(245,239,224,0.85); display: inline-flex; align-items: center; padding: 3px 10px; border-radius: 999px; width: fit-content; border: 1px solid rgba(232,217,184,0.95); }
   .testimonial-author { font-size: 0.75rem; color: #9A8060; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .testimonials-more-wrap {
+    text-align: center;
+  }
+  a.testimonials-view-all-link {
+    display: inline-block;
+    margin-top: 4rem;
+  }
 
   .video-section {
     --areas-bg: #f7f2ef;
@@ -1110,17 +1158,115 @@ import Footer from '../../components/Footer.astro';
     font-weight: 600;
   }
 
-  .blog-section { padding: 4rem 2rem; max-width: 960px; margin: 0 auto; text-align: center; border-top: 1px solid #EDE8DF; }
+  .blog-section {
+    --areas-bg: #f7f2ef;
+    --areas-heading: #2a3544;
+    --areas-body: #3d4f6f;
+    --areas-muted: #5a6d85;
+    --areas-link: #7A5A1A;
+    --areas-bar: rgba(212, 168, 83, 0.9);
+    padding: 4rem 2rem;
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 1px solid #EDE8DF;
+  }
   .blog-section h2 { font-family: 'Georgia', serif; font-size: 1.75rem; font-weight: 400; color: var(--text-heading); margin-bottom: 0.75rem; }
   .blog-sub { color: #6B5A3A; font-size: 0.9rem; margin-bottom: 1.5rem; }
+  .blog-cards-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.35rem;
+    max-width: 980px;
+    margin: 0 auto;
+    text-align: left;
+    align-items: stretch;
+  }
+  @media (min-width: 768px) {
+    .blog-cards-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  .blog-section .area-link {
+    font-weight: 600;
+  }
+  .blog-section .post-meta-date {
+    font-size: 0.78rem;
+    color: var(--areas-muted);
+    margin: 0 0 0.45rem;
+    line-height: 1.45;
+  }
+  .blog-section .area-card p.post-excerpt {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+  .blog-more-wrap {
+    text-align: center;
+  }
+  a.blog-view-all-link {
+    display: inline-block;
+    margin-top: 4rem;
+  }
 
-  .contact-cta { background: #F5EFE0; border-top: 1px solid #EDE8DF; padding: 4rem 2rem; text-align: center; }
-  .contact-cta h2 { font-family: 'Georgia', serif; font-size: 1.75rem; font-weight: 400; color: var(--text-heading); margin-bottom: 0.75rem; }
-  .contact-cta p { color: #6B5A3A; font-size: 0.9rem; max-width: 540px; margin: 0 auto 1rem; line-height: 1.7; }
-  .fee-notice { display: inline-block; background: rgba(122,90,26,0.12); color: #7A5A1A; font-size: 0.85rem; font-weight: 500; padding: 0.5rem 1.25rem; border-radius: 20px; margin-bottom: 1.5rem; border: 1px solid rgba(122,90,26,0.25); }
+  .contact-cta {
+    position: relative;
+    background: #1C2B3F;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  .contact-cta h2 {
+    font-family: "Playfair Display", "Noto Serif SC", "Songti SC", Georgia, "Times New Roman", serif;
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: #FAC775;
+    margin-bottom: 0.75rem;
+    line-height: 1.35;
+  }
+  .contact-cta p {
+    color: #d4cfc3;
+    font-size: 0.9rem;
+    max-width: 540px;
+    margin: 0 auto 1.5rem;
+    line-height: 1.7;
+  }
+  .contact-cta .fee-notice {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.12);
+    color: rgba(232, 217, 184, 0.92);
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 0.5rem 1.25rem;
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+  }
   .cta-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+  .contact-cta a.contact-cta-phone {
+    background: #c9a168;
+    color: #1c1810;
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.38);
+  }
+  .contact-cta a.contact-cta-phone:hover {
+    filter: brightness(1.04);
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.42);
+  }
+  .contact-cta a.contact-cta-email {
+    background: transparent;
+    color: rgba(232, 217, 184, 0.95);
+    border: 1px solid #c9a168;
+    backdrop-filter: none;
+  }
+  .contact-cta a.contact-cta-email:hover {
+    background: rgba(201, 161, 104, 0.14);
+    border-color: #d4b47e;
+    color: #fdfbf7;
+  }
 
-  @media (max-width: 768px) {
+  @media (max-width: 720px) {
     .hero-court-slogan {
       font-size: clamp(1.65rem, 7vw, 2.35rem);
     }
@@ -1137,6 +1283,7 @@ import Footer from '../../components/Footer.astro';
     .results-grid { grid-template-columns: repeat(2, 1fr); }
     .testimonials-grid { grid-template-columns: 1fr; }
     .video-cards-grid { grid-template-columns: 1fr; }
+    .blog-cards-grid { grid-template-columns: 1fr; }
   }
 </style>
 
