@@ -623,15 +623,15 @@ import Footer from '../../components/Footer.astro';
     grid-template-columns: repeat(6, 1fr);
     position: relative;
     background:
-      linear-gradient(180deg, rgba(255,255,255,0.10) 0%, rgba(255,255,255,0.02) 18%, rgba(0,0,0,0.0) 55%),
-      radial-gradient(900px 120px at 35% 0%, rgba(250,199,117,0.22), rgba(250,199,117,0) 62%),
-      linear-gradient(180deg, #312A1E 0%, #241D14 50%, #1D170F 100%);
-    border-top: 1px solid rgba(255,255,255,0.10);
-    border-bottom: 1px solid rgba(0,0,0,0.55);
+      linear-gradient(180deg, rgba(255,255,255,0.055) 0%, rgba(255,255,255,0.02) 28%, transparent 62%),
+      radial-gradient(760px 96px at 50% -8%, rgba(250,199,117,0.11), rgba(250,199,117,0) 58%),
+      linear-gradient(180deg, #2a241b 0%, #221c15 48%, #1b1610 100%);
+    border-top: 1px solid rgba(255,255,255,0.08);
+    border-bottom: 1px solid rgba(0,0,0,0.42);
     box-shadow:
-      0 18px 40px rgba(0,0,0,0.22),
-      inset 0 1px 0 rgba(255,255,255,0.10),
-      inset 0 -10px 18px rgba(0,0,0,0.35);
+      0 14px 34px rgba(0,0,0,0.18),
+      inset 0 1px 0 rgba(255,255,255,0.08),
+      inset 0 -8px 16px rgba(0,0,0,0.28);
     overflow: hidden;
   }
   .stats::before{
@@ -659,15 +659,15 @@ import Footer from '../../components/Footer.astro';
     position: relative;
     padding: 2rem 1rem;
     text-align: center;
-    border-right: 1px solid rgba(255,255,255,0.07);
-    box-shadow: inset -1px 0 0 rgba(0,0,0,0.35);
+    border-right: 1px solid rgba(255,255,255,0.06);
+    box-shadow: inset -1px 0 0 rgba(0,0,0,0.28);
   }
   .stat-item::before{
     content:"";
     position:absolute;
     inset:0;
-    background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0));
-    opacity: 0.6;
+    background: linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0));
+    opacity: 0.42;
     pointer-events:none;
   }
   .stat-item:last-child { border-right: none; }
@@ -675,7 +675,7 @@ import Footer from '../../components/Footer.astro';
     font-family: ui-sans-serif, system-ui, -apple-system, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
     font-size: 2.25rem;
     font-weight: 600;
-    color: #FAC775;
+    color: #d9ad58;
     margin-bottom: 0.4rem;
     letter-spacing: 0.01em;
     font-variant-numeric: tabular-nums lining-nums;
@@ -685,7 +685,7 @@ import Footer from '../../components/Footer.astro';
   }
   .stat-label{
     font-size: 0.75rem;
-    color: rgba(230,206,160,0.72);
+    color: rgba(236,218,178,0.78);
     line-height: 1.4;
     letter-spacing: 0.06em;
     text-transform: uppercase;
