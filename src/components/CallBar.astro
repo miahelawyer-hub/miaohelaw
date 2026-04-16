@@ -56,26 +56,27 @@
   text-decoration: none;
 }
 
-/* 电话行：黑底金字 */
+/* 电话行：深海军蓝 + 浅金字（与全站 CTA 色系一致） */
 .call-phone {
-  background: #111;
-  color: #c9a96e;
-  border-bottom: 1px solid #2a2a2a;
+  background: #1C2B3F;
+  color: rgba(232, 217, 184, 0.95);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-.call-phone:active { background: #1a1a1a; }
+.call-phone:active { background: #24364d; }
 .phone-num { font-weight: 700; }
-.divider { opacity: 0.4; }
+.divider { opacity: 0.45; }
 
-/* 微信行：绿底白字 */
+/* 微信行：主金色（与全站 CTA 一致，保留微信图标） */
 .call-wechat {
-  background: #07C160;
-  color: white;
+  background: #c9a168;
+  color: #1c1810;
 }
-.call-wechat:active { background: #06a050; }
+.call-wechat:active { filter: brightness(0.97); }
 .wechat-hint {
   font-size: 0.78rem;
-  opacity: 0.85;
   margin-left: 0.25rem;
+  color: rgba(28, 24, 16, 0.72);
+  font-weight: 500;
 }
 
 /* Modal 遮罩 */

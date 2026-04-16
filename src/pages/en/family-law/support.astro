@@ -2,6 +2,7 @@
 import BaseHead from '../../../components/BaseHead.astro';
 import HeaderEn from '../../../components/HeaderEn.astro';
 import Footer from '../../../components/Footer.astro';
+import '../../../styles/family-law-service-detail.css';
 ---
 <!doctype html>
 <html lang="en">
@@ -57,23 +58,13 @@ import Footer from '../../../components/Footer.astro';
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "We agreed not to pay child support. Will the court accept this?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Generally not. In Miao He's experience, if child support arrangements are absent or clearly inadequate, judges will repeatedly issue endorsements requiring the parties to provide further explanation — effectively stalling the divorce proceedings until the children's interests are properly addressed. Child support is the child's legal right, not an option parents can waive by agreement."}
+          "name": "We both agreed to skip child support in our separation agreement. Now the court keeps asking for more information. Why?",
+          "acceptedAnswer": {"@type": "Answer", "text": "This is likely because the judge is not satisfied with how the children's financial needs have been addressed. Courts will issue repeated endorsements requesting explanation until the children's interests are properly protected. You need to revisit the child support terms. Call Miao He at 647-930-6688 to discuss how to restructure the arrangement and move the divorce forward."}
         },
         {
           "@type": "Question",
-          "name": "My spouse quit their job before separation to reduce child support. What can I do?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Ontario family law has a direct response to this: imputed income. If a payor has the ability to work but chooses not to, the court can impute income based on their historical earnings or actual living expenses, and calculate support on that basis. Deliberately not working does not eliminate the support obligation. The key is evidence — consult a lawyer early to understand what records to preserve."}
-        },
-        {
-          "@type": "Question",
-          "name": "What is the difference between child support and spousal support?",
-          "acceptedAnswer": {"@type": "Answer", "text": "They are fundamentally different. Child support is mandatory under the Federal Child Support Guidelines — it cannot be waived by agreement and is calculated based on the payor's income and the number of children. Spousal support is not mandatory in every case. Courts assess entitlement based on factors including the length of the marriage, income disparity, and career sacrifices made during the marriage. The parties can also negotiate spousal support terms in an agreement."}
-        },
-        {
-          "@type": "Question",
-          "name": "My spouse is self-employed and reports very low income. What can I do?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Courts have the authority to impute income to a self-employed payor where their reported income does not reflect their actual earning capacity. Financial disclosure tools and analysis of lifestyle and business expenses can be used to establish a more accurate income figure for support purposes. Miao He regularly handles these cases. Call 647-930-6688."}
+          "name": "My spouse quit their job right before we separated and now claims to have no income. How do I fight this?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Apply to have income imputed. The court can assign an income based on prior earnings or lifestyle expenditure and calculate support on that number. The critical step is evidence — pay stubs, tax returns, bank records, and lifestyle spending all play a role. Start preserving this information now. Call 647-930-6688."}
         }
       ]
     }
@@ -82,7 +73,7 @@ import Footer from '../../../components/Footer.astro';
 </head>
 <body>
   <HeaderEn />
-  <main>
+  <main class="family-law-service-detail">
     <section class="page-hero">
       <div class="container">
         <div class="breadcrumb">
@@ -146,11 +137,6 @@ import Footer from '../../../components/Footer.astro';
             <p>A: Apply to have income imputed. The court can assign an income based on prior earnings or lifestyle expenditure and calculate support on that number. The critical step is evidence — pay stubs, tax returns, bank records, and lifestyle spending all play a role. Start preserving this information now. Call 647-930-6688.</p>
           </div>
 
-          <div class="qa-block">
-            <h3>Q: Can spousal support be waived in a separation agreement?</h3>
-            <p>A: Yes, with caution. Spousal support can be addressed — including complete waiver — in a properly executed agreement where both parties have made full financial disclosure and received independent legal advice. An agreement that lacks these elements is at risk of being set aside by a court later. Miao He can advise you on how to structure the agreement to make it hold up.</p>
-          </div>
-
           <div class="cta-box">
             <h3>Book a Support Consultation</h3>
             <p>Initial consultation 30 minutes · $220 + HST · Mandarin & English · Serving Toronto, Markham, GTA</p>
@@ -203,49 +189,3 @@ import Footer from '../../../components/Footer.astro';
   <Footer lang="en" />
 </body>
 </html>
-<style>
-  *{box-sizing:border-box}
-  body{font-family:Georgia,serif;background:var(--bg);color: var(--text-heading);margin:0}
-  .container{max-width:1100px;margin:0 auto;padding:0 1.5rem}
-  .page-hero{background:linear-gradient(135deg,#2C1810 0%,#4A2C1A 100%);color:white;padding:3.5rem 0 2.5rem}
-  .page-hero h1{font-size:2rem;margin:0.5rem 0 0;color:#ffffff;line-height:1.3}
-  .hero-sub{color:#D4A853;margin:0.5rem 0 0;font-size:1rem;line-height:1.6}
-  .breadcrumb{font-size:0.8rem;opacity:0.65;margin-bottom:0.75rem}
-  .breadcrumb a{color:white;text-decoration:none}
-  .content-section{padding:3rem 0}
-  .content-grid{display:grid;grid-template-columns:1fr 300px;gap:3rem;align-items:start}
-  .main-content p{line-height:2;margin:0 0 1.6rem;color:#3a3a3a;font-size:0.98rem}
-  .main-content h2{color: var(--text-heading);font-size:1.2rem;margin:3rem 0 1rem;padding-top:0.5rem;border-top:2px solid #f0ebe3;line-height:1.4}
-  .main-content h3{color:#9A6820;font-size:1rem;margin:2rem 0 0.75rem;font-weight:700}
-  .definition-box{background:#FDF6EC;border-left:4px solid #D4A853;padding:1.25rem 1.5rem;margin-bottom:2rem;border-radius:0 8px 8px 0}
-  .definition-box p{margin:0;line-height:1.8}
-  .key-point{background:#fff8ee;border:1.5px solid #D4A853;border-radius:10px;padding:1.25rem 1.5rem;margin:1.75rem 0;position:relative}
-  .key-point::before{content:"💡";position:absolute;top:-0.75rem;left:1rem;background:#fff8ee;padding:0 0.3rem;font-size:1rem}
-  .key-point p{margin:0;font-weight:600;color: var(--text-heading);line-height:1.7;font-size:0.98rem}
-  .content-list{padding-left:0;margin:1rem 0 1.6rem;list-style:none}
-  .content-list li{margin:0.6rem 0;padding:0.6rem 0.75rem 0.6rem 2.5rem;background:#fafafa;border-radius:6px;line-height:1.6;position:relative}
-  .content-list li::before{content:"✓";position:absolute;left:0.75rem;color:#9A8060;font-weight:700}
-  .qa-block{background:#f4f4f4;border-radius:10px;padding:1.4rem 1.5rem;margin:2rem 0;border-left:3px solid #9A8060}
-  .qa-block h3{color: var(--text-heading);margin:0 0 0.6rem;font-size:1rem}
-  .qa-block p{margin:0;color:#444;line-height:1.8;font-size:0.95rem}
-  .cta-box{background:linear-gradient(135deg,#2C1810,#4A2C1A);color:white;padding:2.25rem 2rem;border-radius:14px;text-align:center;margin-top:3rem}
-  .cta-box h3{margin:0 0 0.75rem;color:#D4A853;font-size:1.15rem}
-  .cta-box p{margin:0 0 1.25rem;font-size:0.95rem;color:#ffffff}
-  .btn-primary{display:inline-block;background:#D4A853;color: var(--text-heading);padding:0.8rem 1.75rem;border-radius:8px;text-decoration:none;font-weight:700;margin:0.4rem;font-size:0.95rem}
-  .btn-secondary{display:inline-block;background:transparent;color:white;border:2px solid rgba(255,255,255,0.8);padding:0.8rem 1.75rem;border-radius:8px;text-decoration:none;font-weight:700;margin:0.4rem;font-size:0.95rem}
-  .sidebar{display:flex;flex-direction:column;gap:1.5rem;position:sticky;top:2rem}
-  .sidebar-card{background:white;border:1px solid #e8e0d5;border-radius:10px;padding:1.25rem}
-  .sidebar-card h3{color: var(--text-heading);font-size:0.9rem;font-weight:700;margin:0 0 0.75rem;padding-bottom:0.5rem;border-bottom:1px solid #e8e0d5;text-transform:uppercase;letter-spacing:0.03em}
-  .sidebar-card ul{list-style:none;padding:0;margin:0}
-  .sidebar-card li{padding:0.35rem 0;border-bottom:1px solid #f5f0eb;font-size:0.88rem;color:#555}
-  .sidebar-card li:last-child{border-bottom:none}
-  .sidebar-card a{color:#9A8060;text-decoration:none}
-  .sidebar-card a:hover{color: var(--text-heading)}
-  .sidebar-card p{margin:0.3rem 0;font-size:0.9rem;color:#555}
-  @media(max-width:768px){
-    .content-grid{grid-template-columns:1fr}
-    .sidebar{position:static}
-    .page-hero h1{font-size:1.5rem}
-    .btn-primary,.btn-secondary{display:block;margin:0.4rem auto;max-width:260px}
-  }
-</style>

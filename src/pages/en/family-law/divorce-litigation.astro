@@ -2,6 +2,7 @@
 import BaseHead from '../../../components/BaseHead.astro';
 import HeaderEn from '../../../components/HeaderEn.astro';
 import Footer from '../../../components/Footer.astro';
+import '../../../styles/family-law-service-detail.css';
 ---
 <!doctype html>
 <html lang="en">
@@ -43,18 +44,13 @@ import Footer from '../../../components/Footer.astro';
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Does divorce litigation mean going to trial?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily. A skilled litigator evaluates the cost and benefit of every step. If a motion is unlikely to succeed, or the cost of fighting outweighs the gain, Miao He will tell you directly — and recommend a more effective path. Litigation is a tool, not an end."}
-        },
-        {
-          "@type": "Question",
           "name": "What if my spouse refuses to provide financial disclosure?",
           "acceptedAnswer": {"@type": "Answer", "text": "This is a common delay tactic. Miao He has successfully brought disclosure motions where the court not only ordered full financial disclosure but also awarded $5,000 in costs against the opposing party for failing to comply."}
         },
         {
           "@type": "Question",
-          "name": "Can I force the sale of the matrimonial home?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Yes. Where both names are on the property, either spouse can apply for an Order for Sale. Miao He has successfully obtained such orders when the other side refused to cooperate with the sale process."}
+          "name": "How do I know if my lawyer is giving me the best advice?",
+          "acceptedAnswer": {"@type": "Answer", "text": "A strong lawyer will tell you which fights are not worth having — rather than agreeing to every motion. If your lawyer never discusses cost-benefit and simply proceeds with everything, that is a red flag. Miao He's commitment is honest, clear analysis at every decision point."}
         }
       ]
     }
@@ -63,7 +59,7 @@ import Footer from '../../../components/Footer.astro';
 </head>
 <body>
   <HeaderEn />
-  <main>
+  <main class="family-law-service-detail">
     <section class="page-hero">
       <div class="container">
         <div class="breadcrumb">
@@ -122,11 +118,6 @@ import Footer from '../../../components/Footer.astro';
             <p>A: One sign of a good lawyer is that they will tell you which fights are not worth having — rather than agreeing to every motion you suggest. If your lawyer never discusses cost-benefit and simply proceeds with everything, that is worth paying attention to. Miao He's commitment is to give you honest, clear analysis at every decision point.</p>
           </div>
 
-          <div class="qa-block">
-            <h3>Q: Can both spouses use the same lawyer?</h3>
-            <p>A: No. Each spouse must have independent legal representation in contested proceedings. In uncontested matters, one lawyer may assist with document preparation, but cannot advise both parties. Miao He can refer you to a trusted colleague if needed.</p>
-          </div>
-
           <div class="cta-box">
             <h3>Book a Divorce Litigation Consultation</h3>
             <p>Initial consultation 30 minutes · $220 + HST · Mandarin & English · Usually responds within 3 business days</p>
@@ -181,45 +172,3 @@ import Footer from '../../../components/Footer.astro';
   <Footer lang="en" />
 </body>
 </html>
-<style>
-  *{box-sizing:border-box}
-  body{font-family:Georgia,serif;background:var(--bg);color: var(--text-heading);margin:0}
-  .container{max-width:1100px;margin:0 auto;padding:0 1.5rem}
-  .page-hero{background:linear-gradient(135deg,#2C1810 0%,#4A2C1A 100%);color:white;padding:3.5rem 0 2.5rem}
-  .page-hero h1{font-size:2rem;margin:0.5rem 0 0;color:#ffffff;line-height:1.3}
-  .hero-sub{color:#D4A853;margin:0.5rem 0 0;font-size:1rem;line-height:1.6}
-  .breadcrumb{font-size:0.8rem;opacity:0.65;margin-bottom:0.75rem}
-  .breadcrumb a{color:white;text-decoration:none}
-  .content-section{padding:3rem 0}
-  .content-grid{display:grid;grid-template-columns:1fr 300px;gap:3rem;align-items:start}
-  .main-content p{line-height:2;margin:0 0 1.6rem;color:#3a3a3a;font-size:0.98rem}
-  .main-content h2{color: var(--text-heading);font-size:1.2rem;margin:3rem 0 1rem;padding-top:0.5rem;border-top:2px solid #f0ebe3;line-height:1.4}
-  .main-content h3{color:#9A6820;font-size:1rem;margin:2rem 0 0.75rem;font-weight:700}
-  .definition-box{background:#FDF6EC;border-left:4px solid #D4A853;padding:1.25rem 1.5rem;margin-bottom:2rem;border-radius:0 8px 8px 0}
-  .definition-box p{margin:0;line-height:1.8}
-  .settlement-note{background:#F0F7F0;border-left:4px solid #6A9A6A;padding:1.25rem 1.5rem;margin-bottom:2rem;border-radius:0 8px 8px 0}
-  .settlement-note p{margin:0;line-height:1.8;color:#3a4a3a;font-size:0.93rem}
-  .qa-block{background:#f4f4f4;border-radius:10px;padding:1.4rem 1.5rem;margin:2rem 0;border-left:3px solid #9A8060}
-  .qa-block h3{color: var(--text-heading);margin:0 0 0.6rem;font-size:1rem}
-  .qa-block p{margin:0;color:#444;line-height:1.8;font-size:0.95rem}
-  .cta-box{background:linear-gradient(135deg,#2C1810,#4A2C1A);color:white;padding:2.25rem 2rem;border-radius:14px;text-align:center;margin-top:3rem}
-  .cta-box h3{margin:0 0 0.75rem;color:#D4A853;font-size:1.15rem}
-  .cta-box p{margin:0 0 1.25rem;font-size:0.95rem;color:#ffffff}
-  .btn-primary{display:inline-block;background:#D4A853;color: var(--text-heading);padding:0.8rem 1.75rem;border-radius:8px;text-decoration:none;font-weight:700;margin:0.4rem;font-size:0.95rem}
-  .btn-secondary{display:inline-block;background:transparent;color:white;border:2px solid rgba(255,255,255,0.8);padding:0.8rem 1.75rem;border-radius:8px;text-decoration:none;font-weight:700;margin:0.4rem;font-size:0.95rem}
-  .sidebar{display:flex;flex-direction:column;gap:1.5rem;position:sticky;top:2rem}
-  .sidebar-card{background:white;border:1px solid #e8e0d5;border-radius:10px;padding:1.25rem}
-  .sidebar-card h3{color: var(--text-heading);font-size:0.9rem;font-weight:700;margin:0 0 0.75rem;padding-bottom:0.5rem;border-bottom:1px solid #e8e0d5;text-transform:uppercase;letter-spacing:0.03em}
-  .sidebar-card ul{list-style:none;padding:0;margin:0}
-  .sidebar-card li{padding:0.35rem 0;border-bottom:1px solid #f5f0eb;font-size:0.88rem;color:#555}
-  .sidebar-card li:last-child{border-bottom:none}
-  .sidebar-card a{color:#9A8060;text-decoration:none}
-  .sidebar-card a:hover{color: var(--text-heading)}
-  .sidebar-card p{margin:0.3rem 0;font-size:0.9rem;color:#555}
-  @media(max-width:768px){
-    .content-grid{grid-template-columns:1fr}
-    .sidebar{position:static}
-    .page-hero h1{font-size:1.5rem}
-    .btn-primary,.btn-secondary{display:block;margin:0.4rem auto;max-width:260px}
-  }
-</style>
