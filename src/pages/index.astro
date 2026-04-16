@@ -7,6 +7,9 @@ import { getCollection } from 'astro:content';
 const posts = (await getCollection('blog')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 ).slice(0, 3);
+function formatBlogDate(date: Date) {
+	return new Date(date).toLocaleDateString('zh-CN', { year: 'numeric', month: 'long', day: 'numeric' });
+}
 ---
 
 <!doctype html>
@@ -404,17 +407,33 @@ const posts = (await getCollection('blog')).sort(
 			<section class="blog-section">
 				<h2>Latest Articles · 最新文章</h2>
 				<p class="blog-sub">Practical legal insights on Ontario family law — in English and Mandarin.</p>
-				<a href="/blog" class="btn-secondary">View All Articles →</a>
+				<div class="blog-cards-grid">
+					{posts.map((post) => (
+						<div class="area-card">
+							<div class="area-card-inner">
+								<div class="area-card-body">
+									<h3>{post.data.title}</h3>
+									<p class="post-meta-date">{formatBlogDate(post.data.pubDate)}</p>
+									<p class="post-excerpt">{post.data.description}</p>
+									<a href={`/blog/${post.id}`} class="area-link">阅读全文 · Read More →</a>
+								</div>
+							</div>
+						</div>
+					))}
+				</div>
+				<div class="blog-more-wrap">
+					<a href="/blog" class="btn-secondary blog-view-all-link">View All Articles →</a>
+				</div>
 			</section>
 
 			<!-- CTA -->
 			<section class="contact-cta">
-				<h2>Ready to speak with Miao He?</h2>
+				<h2>准备好咨询何淼律师了吗? · Ready to speak with Miao He?</h2>
 				<p>中英双语服务 · 服务范围涵盖多伦多、万锦、列治文山、密西沙加及安大略省全境</p>
 <div class="fee-notice">初次咨询 30分钟 · $220 + HST · 按每6分钟计费</div>
 <div class="cta-actions">
 					<a href="tel:6479306688" class="btn-primary">📞 647-930-6688</a>
-					<a href="mailto:miao@miaohelaw.ca" class="btn-secondary">miao@miaohelaw.ca</a>
+					<a href="mailto:miao@miaohelaw.ca" class="btn-secondary">✉️ miao@miaohelaw.ca</a>
 				</div>
 			</section>
 
@@ -1151,12 +1170,69 @@ const posts = (await getCollection('blog')).sort(
 		font-weight: 600;
 	}
 
-	.blog-section { padding: 4rem 2rem; max-width: 960px; margin: 0 auto; text-align: center; border-top: 1px solid #EDE8DF; }
+	.blog-section {
+		--areas-bg: #f7f2ef;
+		--areas-heading: #2a3544;
+		--areas-body: #3d4f6f;
+		--areas-muted: #5a6d85;
+		--areas-link: #7A5A1A;
+		--areas-bar: rgba(212, 168, 83, 0.9);
+		padding: 4rem 2rem;
+		max-width: 960px;
+		margin: 0 auto;
+		text-align: center;
+		border-top: 1px solid #EDE8DF;
+	}
 	.blog-section h2 { font-family: 'Georgia', serif; font-size: 1.75rem; font-weight: 400; color: var(--text-heading); margin-bottom: 0.75rem; }
 	.blog-sub { color: #6B5A3A; font-size: 0.9rem; margin-bottom: 1.5rem; }
+	/* Same grid rhythm as Legal Insights cards; 1 col below 768px, 3 cols from md up */
+	.blog-cards-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 1.35rem;
+		max-width: 980px;
+		margin: 0 auto;
+		text-align: left;
+		align-items: stretch;
+	}
+	@media (min-width: 768px) {
+		.blog-cards-grid {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+	.blog-section .area-link {
+		font-weight: 600;
+	}
+	.blog-section .post-meta-date {
+		font-size: 0.78rem;
+		color: var(--areas-muted);
+		margin: 0 0 0.45rem;
+		line-height: 1.45;
+	}
+	.blog-section .area-card p.post-excerpt {
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 3;
+		overflow: hidden;
+		margin-bottom: 1rem;
+	}
+	.blog-more-wrap {
+		text-align: center;
+	}
+	a.blog-view-all-link {
+		display: inline-block;
+		margin-top: 4rem;
+	}
 
 	.contact-cta { background: #F5EFE0; border-top: 1px solid #EDE8DF; padding: 4rem 2rem; text-align: center; }
-	.contact-cta h2 { font-family: 'Georgia', serif; font-size: 1.75rem; font-weight: 400; color: var(--text-heading); margin-bottom: 0.75rem; }
+	.contact-cta h2 {
+		font-family: "Playfair Display", "Noto Serif SC", "Songti SC", Georgia, "Times New Roman", serif;
+		font-size: 1.75rem;
+		font-weight: 400;
+		color: var(--text-heading);
+		margin-bottom: 0.75rem;
+		line-height: 1.35;
+	}
 	.contact-cta p { color: #6B5A3A; font-size: 0.9rem; max-width: 540px; margin: 0 auto 1.5rem; line-height: 1.7; }
 	.cta-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
 
@@ -1177,6 +1253,7 @@ const posts = (await getCollection('blog')).sort(
 		.results-grid { grid-template-columns: repeat(2, 1fr); }
 		.testimonials-grid { grid-template-columns: 1fr; }
 		.video-cards-grid { grid-template-columns: 1fr; }
+		.blog-cards-grid { grid-template-columns: 1fr; }
 	}
 .fee-notice {
 		display: inline-block;
