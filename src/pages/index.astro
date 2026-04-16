@@ -210,7 +210,7 @@ const posts = (await getCollection('blog')).sort(
 						<div class="area-card-inner">
 							<div class="area-icon" aria-hidden="true"><img src="/images/service-icons/scales-books.png" alt="" width="64" height="64" loading="lazy" decoding="async" /></div>
 							<div class="area-card-body">
-								<h3>Cross-Border Asset Division · 跨境财产分割</h3>
+								<h3>Cross-Border Asset Division · <span class="zh-nowrap">跨境资产分割</span></h3>
 								<p>中加跨境资产追踪、净家庭财产均分、隐匿资产调查、CBV商业估值争议。</p>
 								<a href="/family-law/cross-border-assets" class="area-link">了解更多 →</a>
 							</div>
@@ -706,8 +706,8 @@ const posts = (await getCollection('blog')).sort(
 		--areas-heading: #2a3544;
 		--areas-body: #3d4f6f;
 		--areas-muted: #5a6d85;
-		--areas-link: #2a5f9e;
-		--areas-bar: #4a5f78;
+		--areas-link: #7A5A1A;
+		--areas-bar: rgba(212, 168, 83, 0.9);
 
 		position: relative;
 		width: 100vw;
@@ -718,6 +718,7 @@ const posts = (await getCollection('blog')).sort(
 		box-sizing: border-box;
 		background: var(--areas-bg);
 	}
+	.zh-nowrap{ white-space: nowrap; }
 	.areas-kicker {
 		display: flex;
 		align-items: center;
@@ -821,10 +822,12 @@ const posts = (await getCollection('blog')).sort(
 	.area-card-body {
 		min-width: 0;
 		flex: 1;
+		display: flex;
+		flex-direction: column;
 	}
 
 	.area-card h3 {
-		font-family: Georgia, "Times New Roman", serif;
+		font-family: "Playfair Display", "Noto Serif SC", "Songti SC", Georgia, "Times New Roman", serif;
 		font-size: 1.05rem;
 		font-weight: 600;
 		color: var(--areas-heading);
@@ -844,8 +847,10 @@ const posts = (await getCollection('blog')).sort(
 		font-size: 0.82rem;
 		color: var(--areas-link);
 		text-decoration: none;
-		font-weight: 700;
+		font-weight: 800;
 		letter-spacing: 0.02em;
+		align-self: flex-end;
+		margin-top: auto;
 	}
 	.area-link:hover {
 		text-decoration: underline;

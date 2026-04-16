@@ -701,8 +701,8 @@ import Footer from '../../components/Footer.astro';
     --areas-heading: #2a3544;
     --areas-body: #3d4f6f;
     --areas-muted: #5a6d85;
-    --areas-link: #2a5f9e;
-    --areas-bar: #4a5f78;
+    --areas-link: #7A5A1A;
+    --areas-bar: rgba(212, 168, 83, 0.9);
 
     position: relative;
     width: 100vw;
@@ -816,10 +816,12 @@ import Footer from '../../components/Footer.astro';
   .area-card-body {
     min-width: 0;
     flex: 1;
+    display: flex;
+    flex-direction: column;
   }
 
   .area-card h3 {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: "Playfair Display", "Noto Serif SC", "Songti SC", Georgia, "Times New Roman", serif;
     font-size: 1.05rem;
     font-weight: 600;
     color: var(--areas-heading);
@@ -839,8 +841,10 @@ import Footer from '../../components/Footer.astro';
     font-size: 0.82rem;
     color: var(--areas-link);
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 800;
     letter-spacing: 0.02em;
+    align-self: flex-end;
+    margin-top: auto;
   }
   .area-link:hover {
     text-decoration: underline;
