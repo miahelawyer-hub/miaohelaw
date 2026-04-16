@@ -77,27 +77,6 @@ import HeaderLink from './HeaderLink.astro';
 		</div>
 	</nav>
 </header>
-<div class="wechat-bar">
-  <div class="wechat-bar-inner">
-    <button class="wechat-qr-btn" type="button" aria-label="点击放大微信二维码" aria-haspopup="dialog" aria-controls="wechat-qr-modal">
-      <img src="/wechat-qr.jpg" alt="微信扫码咨询何淼律师" class="wechat-qr" />
-    </button>
-    <div class="wechat-bar-text">
-      <span class="wechat-label">📱 微信扫码咨询</span>
-      <span class="wechat-id">微信号：372656035</span>
-    </div>
-    <a href="tel:6479306688" class="wechat-phone">📞 647-930-6688</a>
-  </div>
-</div>
-
-<div class="qr-modal" id="wechat-qr-modal" aria-hidden="true">
-  <div class="qr-modal-backdrop" data-close="true"></div>
-  <div class="qr-modal-inner" role="dialog" aria-modal="true" aria-label="微信二维码放大预览">
-    <button class="qr-modal-close" type="button" aria-label="关闭二维码预览" data-close="true">×</button>
-    <img src="/wechat-qr.jpg" alt="微信二维码放大图" class="qr-modal-img" />
-    <div class="qr-modal-tip">打开微信，扫一扫即可咨询</div>
-  </div>
-</div>
 
 <style>
 	header {
@@ -325,160 +304,6 @@ import HeaderLink from './HeaderLink.astro';
 			padding: 0.4em 0;
 		}
 	}
-.wechat-bar {
-    background:
-      radial-gradient(900px 180px at 20% 0%, rgba(212,168,83,0.20), rgba(212,168,83,0) 60%),
-      linear-gradient(180deg, #F8F1E2 0%, #F3E9D6 100%);
-    border-bottom: 1px solid rgba(237,232,223,0.95);
-    padding: 0.65rem 1.5rem;
-    box-shadow: 0 10px 22px rgba(44,24,16,0.06);
-}
-.wechat-bar-inner {
-    max-width: 960px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-.wechat-qr {
-    width: 48px;
-    height: 48px;
-    border-radius: 10px;
-    object-fit: cover;
-    border: 1px solid rgba(232,217,184,0.95);
-    box-shadow: 0 10px 18px rgba(44,24,16,0.12);
-}
-.wechat-qr-btn{
-    display: inline-flex;
-    padding: 0;
-    border: 0;
-    background: transparent;
-    border-radius: 12px;
-    cursor: pointer;
-}
-.wechat-qr-btn:focus-visible{
-    outline: 3px solid rgba(212,168,83,0.55);
-    outline-offset: 3px;
-}
-.wechat-qr-btn:hover .wechat-qr{
-    transform: translateY(-1px);
-    box-shadow: 0 14px 22px rgba(44,24,16,0.14);
-}
-.wechat-qr{
-    transition: transform 0.15s ease, box-shadow 0.15s ease;
-}
-.wechat-bar-text { min-width: 0; }
-.wechat-bar-text {
-    display: flex;
-    flex-direction: column;
-    gap: 0.1rem;
-}
-.wechat-label {
-    font-size: 0.82rem;
-    font-weight: 700;
-    color: var(--text-heading);
-}
-.wechat-id {
-    font-size: 0.75rem;
-    color: #6B5A3A;
-}
-.wechat-phone {
-    margin-left: auto;
-    background: linear-gradient(135deg, #7A5A1A, #4A3A0A);
-    color: #FDFBF7;
-    padding: 0.55rem 1.2rem;
-    border-radius: 12px;
-    text-decoration: none;
-    font-size: 0.85rem;
-    font-weight: 800;
-    letter-spacing: 0.01em;
-    box-shadow: 0 14px 22px rgba(74,58,10,0.20);
-    border: 1px solid rgba(74,58,10,0.10);
-    transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
-}
-.wechat-phone:hover {
-    filter: brightness(1.03);
-    color: #FDFBF7;
-    transform: translateY(-1px);
-    box-shadow: 0 18px 28px rgba(74,58,10,0.24);
-}
-
-.qr-modal{
-    position: fixed;
-    inset: 0;
-    z-index: 2000;
-    display: none;
-}
-.qr-modal.open{ display: block; }
-.qr-modal-backdrop{
-    position: absolute;
-    inset: 0;
-    background: rgba(17, 12, 8, 0.55);
-    backdrop-filter: blur(6px);
-}
-.qr-modal-inner{
-    position: relative;
-    width: min(92vw, 420px);
-    margin: 10vh auto 0;
-    background: linear-gradient(180deg, rgba(253,251,247,0.96), rgba(248,241,226,0.96));
-    border: 1px solid rgba(232,217,184,0.95);
-    border-radius: 18px;
-    box-shadow: 0 30px 60px rgba(0,0,0,0.22);
-    padding: 1.25rem 1.25rem 1.1rem;
-}
-.qr-modal-close{
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 34px;
-    height: 34px;
-    border-radius: 12px;
-    border: 1px solid rgba(232,217,184,0.95);
-    background: rgba(255,255,255,0.75);
-    color: var(--text-heading);
-    font-size: 20px;
-    line-height: 1;
-    cursor: pointer;
-}
-.qr-modal-close:hover{ filter: brightness(0.98); }
-.qr-modal-img{
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 14px;
-    border: 1px solid rgba(232,217,184,0.95);
-    box-shadow: 0 18px 30px rgba(44,24,16,0.14);
-}
-.qr-modal-tip{
-    margin-top: 0.8rem;
-    text-align: center;
-    font-size: 0.9rem;
-    color: #4A3A0A;
-    font-weight: 700;
-    letter-spacing: 0.01em;
-}
-@media (max-width: 720px) {
-	.wechat-bar {
-		padding: 0.5rem 1rem;
-	}
-	.wechat-bar-inner {
-		gap: 0.75rem;
-	}
-	.wechat-label {
-		font-size: 0.75rem;
-	}
-	.wechat-id {
-		display: none;
-	}
-	.wechat-phone {
-		font-size: 0.8rem;
-		padding: 0.4rem 1rem;
-	}
-	.qr-modal-inner {
-		margin-top: 12vh;
-		padding: 1.05rem 1.05rem 0.95rem;
-	}
-}
 </style>
 <script>
 	const hamburger = document.getElementById('zh-hamburger');
@@ -507,36 +332,8 @@ import HeaderLink from './HeaderLink.astro';
 		document.querySelectorAll('.dropdown.open').forEach((d) => d.classList.remove('open'));
 	};
 	document.addEventListener('click', closeMenus);
-
-  // QR zoom modal
-  const qrBtn = document.querySelector('.wechat-qr-btn');
-  const qrModal = document.getElementById('wechat-qr-modal');
-  const openQrModal = () => {
-    if (!qrModal) return;
-    qrModal.classList.add('open');
-    qrModal.setAttribute('aria-hidden', 'false');
-    document.body.style.overflow = 'hidden';
-    const closeBtn = qrModal.querySelector('.qr-modal-close');
-    closeBtn?.focus();
-  };
-  const closeQrModal = () => {
-    if (!qrModal) return;
-    qrModal.classList.remove('open');
-    qrModal.setAttribute('aria-hidden', 'true');
-    document.body.style.overflow = '';
-    if (qrBtn && typeof qrBtn.focus === 'function') qrBtn.focus();
-  };
-  qrBtn?.addEventListener('click', openQrModal);
-  qrModal?.addEventListener('click', (e) => {
-    const target = e.target as HTMLElement | null;
-    if (target?.getAttribute('data-close') === 'true') closeQrModal();
-  });
   document.addEventListener('keydown', (e) => {
     if (e.key !== 'Escape') return;
-    if (qrModal?.classList.contains('open')) {
-      closeQrModal();
-      return;
-    }
     closeMenus();
   });
 </script>
