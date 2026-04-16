@@ -79,6 +79,7 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
       line-height: 1.12;
       color: var(--text-heading);
       margin: 0 0 0.35rem;
+      text-align: center;
     }
     .content-card { background: #ffffff; border: 1px solid #E8E0D5; border-radius: 8px; padding: 2rem; margin-bottom: 2rem; }
     .content-card h2 {
@@ -137,7 +138,9 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
       isolation: isolate;
       min-height: clamp(460px, 62vh, 680px);
       display: flex;
-      align-items: flex-end;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: stretch;
     }
     .who-hero-bg{
       position: absolute;
@@ -168,58 +171,73 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
       position: relative;
       z-index: 1;
       width: 100%;
+      max-width: 100%;
+      flex: 1 1 auto;
+      min-width: 0;
+      box-sizing: border-box;
       padding: clamp(2.25rem, 5vw, 3.75rem) 0 clamp(1.75rem, 3vw, 2.75rem);
     }
     .who-hero-inner{
       max-width: 1120px;
+      width: 100%;
       margin: 0 auto;
       padding: 0 0.75rem;
+      box-sizing: border-box;
     }
     .who-hero-grid{
-      display: grid;
-      grid-template-columns: minmax(200px, 4fr) minmax(0, 8fr);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       gap: clamp(0.9rem, 2.2vw, 1.75rem);
-      align-items: stretch;
       margin-bottom: 2.5rem;
     }
     .who-portrait{
-      margin: 0;
-      align-self: stretch;
+      margin: 0 auto;
+      width: fit-content;
+      max-width: min(320px, 100%);
+      align-self: center;
       display: flex;
       align-items: center;
-      justify-content: flex-start;
+      justify-content: center;
       line-height: 0;
       min-height: 0;
     }
     .who-portrait img{
       width: auto;
-      max-width: min(380px, 100%);
-      max-height: 85%;
+      max-width: min(280px, 74vw);
+      max-height: none;
       height: auto;
       display: block;
-      margin: 0 auto 0 -10px;
+      margin: 0 auto;
       object-fit: contain;
       object-position: center center;
-      transform: translateY(10px);
+      transform: none;
       border-radius: 24px;
       border: 1px solid rgba(212, 168, 83, 0.42);
       box-shadow:
         0 14px 34px rgba(122, 90, 26, 0.1),
         0 6px 16px rgba(184, 150, 120, 0.18);
     }
-    .who-copy{ min-width: 0; padding-bottom: 0.25rem; }
+    .who-copy{
+      min-width: 0;
+      width: 100%;
+      max-width: 36rem;
+      padding-bottom: 0.25rem;
+      text-align: center;
+    }
     .who-rule{
       width: 3.5rem;
       height: 3px;
       border-radius: 2px;
       background: linear-gradient(90deg, #7a5a1a, rgba(212, 168, 83, 0.85));
-      margin: 0.25rem 0 1.05rem;
+      margin: 0.25rem auto 1.05rem;
     }
     .who-kicker{
       display: flex;
       align-items: center;
-      gap: 0.55rem 0.65rem;
-      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+      flex-wrap: nowrap;
       font-family: var(--font-en-body) !important;
       font-size: 0.72rem;
       font-weight: 600;
@@ -230,6 +248,7 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
     }
     .who-kicker-line{
       flex: 0 0 auto;
+      flex-shrink: 0;
       width: 2.35rem;
       height: 2px;
       border-radius: 1px;
@@ -238,7 +257,10 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
     .who-kicker-inner{
       display: inline-flex;
       align-items: center;
+      justify-content: center;
       gap: 0.5rem;
+      flex-wrap: nowrap;
+      flex-shrink: 0;
     }
     .who-kicker-ico{
       width: 24px;
@@ -273,19 +295,21 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
     }
     .who-checklist{
       list-style: none;
-      margin: 0 0 1.55rem;
+      margin: 0 auto 1.55rem;
       padding: 0;
       display: flex;
       flex-direction: column;
-      align-items: stretch;
+      align-items: center;
       gap: 0.5rem;
-      max-width: 34rem;
+      max-width: none;
+      width: 100%;
     }
     .who-checklist li{
       display: flex;
       align-items: center;
       gap: 0.45rem;
       margin: 0;
+      max-width: min(26rem, 100%);
       font-size: 0.88rem;
       color: rgba(44,24,16,0.88);
       font-family: var(--font-en-body) !important;
@@ -315,6 +339,7 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
     .who-actions{
       display: flex;
       align-items: center;
+      justify-content: center;
       gap: 1.25rem;
       flex-wrap: wrap;
     }
@@ -341,17 +366,77 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
       letter-spacing: 0.01em;
     }
     @media (max-width: 600px) { .cred-grid { grid-template-columns: 1fr; } .page { padding: 2rem 1rem; } }
-    @media (max-width: 920px){
-      .who-hero-grid{ grid-template-columns: 1fr; gap: 1.5rem; text-align: center; }
-      .who-portrait{ justify-content: center; align-self: center; width: 100%; max-width: min(320px, 88vw); }
-      .who-portrait img{ margin: 0 auto; max-width: min(280px, 74vw); max-height: none; }
-      .who-checklist{ align-items: center; max-width: none; width: 100%; }
-      .who-checklist li{ max-width: min(26rem, 100%); }
-      .who-actions{ justify-content: center; }
-      .who-hero h1, .page h1{ text-align: center; }
-      .who-kicker{ justify-content: center; width: 100%; }
-      .who-rule{ margin-left: auto; margin-right: auto; }
-      .who-hero-bg-overlay{
+    @media (min-width: 921px) {
+      .who-hero-grid {
+        display: grid;
+        grid-template-columns: minmax(200px, 4fr) minmax(0, 8fr);
+        gap: clamp(0.9rem, 2.2vw, 1.75rem);
+        align-items: stretch;
+      }
+      .who-portrait {
+        margin: 0 !important;
+        width: auto !important;
+        max-width: none !important;
+        align-self: stretch;
+        justify-content: flex-start;
+      }
+      .who-portrait img {
+        max-width: min(380px, 100%);
+        max-height: 85%;
+        margin: 0 auto 0 -10px !important;
+        transform: translateY(10px);
+      }
+      .who-copy {
+        text-align: left;
+        max-width: none;
+      }
+      .who-kicker {
+        justify-content: flex-start;
+      }
+      .who-hero h1 {
+        text-align: left;
+      }
+      .who-rule {
+        margin: 0.25rem 0 1.05rem;
+      }
+      .who-checklist {
+        margin: 0 0 1.55rem;
+        align-items: stretch;
+        max-width: 34rem;
+        width: auto;
+      }
+      .who-checklist li {
+        max-width: none;
+      }
+      .who-actions {
+        justify-content: flex-start;
+      }
+    }
+    @media (max-width: 920px) {
+      .who-hero-shell {
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+      .who-hero-inner {
+        padding-left: max(0.75rem, env(safe-area-inset-left, 0px));
+        padding-right: max(0.75rem, env(safe-area-inset-right, 0px));
+      }
+      figure.who-portrait {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        width: fit-content !important;
+        max-width: min(320px, 100%) !important;
+        display: flex !important;
+        justify-content: center !important;
+      }
+      .who-portrait img {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        display: block !important;
+      }
+      .who-hero-bg-overlay {
         background: linear-gradient(
           165deg,
           rgba(247, 242, 239, 0.35) 0%,
