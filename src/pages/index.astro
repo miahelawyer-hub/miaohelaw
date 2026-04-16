@@ -345,9 +345,20 @@ const posts = (await getCollection('blog')).sort(
 								</div>
 							</div>
 						</div>
+						<div class="testimonial-card">
+							<div class="testimonial-quote">"</div>
+							<p>先后就婚姻和房产的事情和 Mia 合作,唯一的遗憾是没有早点遇到!Mia 和团队非常专业,最重要的是很高效。在此之前我以为联系不上律师、沟通缓慢是正常的,和 Mia 共事我才知道原来律师可以回应这么快,可以灵活,可以积极帮客人寻找各种解决方案。近期接触的律师中,Mia 团队费用上和其他相差不大,但效率真是高了三倍不止!以后有需要我一定还会选择她们。</p>
+							<div class="testimonial-meta">
+								<div class="testimonial-avatar is-initials" aria-hidden="true">PL</div>
+								<div class="testimonial-meta-text">
+									<span class="testimonial-tag">Google · ★★★★★</span>
+									<span class="testimonial-author">Paula L · May 2024</span>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div style="text-align:center; margin-top: 2rem;">
-						<a href="/testimonials" class="btn-secondary">查看更多评价 · View All Reviews →</a>
+					<div class="testimonials-more-wrap">
+						<a href="/testimonials" class="btn-secondary testimonials-view-all-link">查看更多评价 · View All Reviews →</a>
 					</div>
 				</div>
 			</section>
@@ -1055,12 +1066,35 @@ const posts = (await getCollection('blog')).sort(
 	.testimonials-inner { max-width: 960px; margin: 0 auto; text-align: center; }
 	.testimonials-inner h2 { font-family: 'Georgia', serif; font-size: 1.75rem; font-weight: 400; color: var(--text-heading); margin-bottom: 0.5rem; }
 	.testimonials-sub { color: #9A8060; font-size: 0.85rem; margin-bottom: 2rem; }
-	.testimonials-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; text-align: left; }
-	.testimonial-card { background: #FDFBF7; border: 1px solid #EDE8DF; border-radius: 12px; padding: 1.6rem; box-shadow: 0 12px 30px rgba(44,24,16,0.06); transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease; }
+	/* Mobile: 1 col; md (768px+): 3 cols — same intent as md:grid-cols-3 */
+	.testimonials-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 1.25rem;
+		text-align: left;
+		align-items: stretch;
+	}
+	@media (min-width: 768px) {
+		.testimonials-grid {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+	.testimonial-card {
+		background: #FDFBF7;
+		border: 1px solid #EDE8DF;
+		border-radius: 12px;
+		padding: 1.6rem;
+		box-shadow: 0 12px 30px rgba(44,24,16,0.06);
+		transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+		height: 100%;
+		min-height: 0;
+		display: flex;
+		flex-direction: column;
+	}
 	.testimonial-card:hover { transform: translateY(-2px); box-shadow: 0 18px 40px rgba(44,24,16,0.09); border-color: rgba(212,168,83,0.35); }
-	.testimonial-quote { font-family: 'Georgia', serif; font-size: 3rem; color: #E8D9B8; line-height: 1; margin-bottom: 0.5rem; }
-	.testimonial-card p { font-size: 0.85rem; color: #4A3A2A; line-height: 1.7; margin-bottom: 1rem; }
-	.testimonial-meta { display: flex; align-items: center; gap: 0.75rem; margin-top: 1.05rem; }
+	.testimonial-quote { font-family: 'Georgia', serif; font-size: 3rem; color: #E8D9B8; line-height: 1; margin-bottom: 0.5rem; flex-shrink: 0; }
+	.testimonial-card p { font-size: 0.85rem; color: #4A3A2A; line-height: 1.7; margin-bottom: 0; flex: 1 1 auto; }
+	.testimonial-meta { display: flex; align-items: center; gap: 0.75rem; margin-top: auto; padding-top: 1.05rem; }
 	.testimonial-avatar{
 		width: 38px;
 		height: 38px;
@@ -1083,6 +1117,14 @@ const posts = (await getCollection('blog')).sort(
 	.testimonial-meta-text{ display:flex; flex-direction: column; gap: 0.18rem; min-width: 0; }
 	.testimonial-tag { font-size: 0.72rem; color: #7A5A1A; font-weight: 700; background: rgba(245,239,224,0.85); display: inline-flex; align-items: center; padding: 3px 10px; border-radius: 999px; width: fit-content; border: 1px solid rgba(232,217,184,0.95); }
 	.testimonial-author { font-size: 0.75rem; color: #9A8060; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+	/* Spacing below grid: margin on block wrapper can collapse with grid; anchor inline-block + mt avoids that */
+	.testimonials-more-wrap {
+		text-align: center;
+	}
+	a.testimonials-view-all-link {
+		display: inline-block;
+		margin-top: 4rem;
+	}
 
 	.video-section {
 		--areas-bg: #f7f2ef;
