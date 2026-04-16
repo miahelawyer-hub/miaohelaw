@@ -44,7 +44,7 @@ function formatDate(date) {
   }</script>
   <style is:global>
     * { box-sizing: border-box; }
-    body { background: #faf8f5; margin: 0; }
+    body { background: var(--bg); margin: 0; }
 
     .page-hero {
       background: linear-gradient(135deg, #2C1810, #4A2C1A);
@@ -127,7 +127,7 @@ function formatDate(date) {
 
     .featured-right { padding: 2rem 2rem 2rem 1.75rem; display: flex; flex-direction: column; justify-content: center; }
     .featured-date { color: #9A8060; font-size: 0.78rem; margin: 0 0 0.6rem; }
-    .featured-title { color: #2C1810; font-size: 1.2rem; font-weight: 700; line-height: 1.4; margin: 0 0 0.85rem; }
+    .featured-title { color: var(--text-heading); font-size: 1.2rem; font-weight: 700; line-height: 1.4; margin: 0 0 0.85rem; }
     .featured-desc { color: #4A2C1A; font-size: 0.9rem; line-height: 1.75; margin: 0 0 1.25rem; }
     .featured-more {
       display: inline-flex;
@@ -163,7 +163,7 @@ function formatDate(date) {
     }
     .card:hover { box-shadow: 0 4px 18px rgba(44,24,16,0.11); border-color: #D4A853; }
     .card-date { color: #9A8060; font-size: 0.75rem; margin: 0 0 0.5rem; }
-    .card-title { color: #2C1810; font-size: 0.95rem; font-weight: 600; line-height: 1.45; margin: 0 0 0.65rem; flex: 1; }
+    .card-title { color: var(--text-heading); font-size: 0.95rem; font-weight: 600; line-height: 1.45; margin: 0 0 0.65rem; flex: 1; }
     .card-desc { color: #6B5040; font-size: 0.82rem; line-height: 1.6; margin: 0 0 1rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
     .card-footer { display: flex; align-items: center; justify-content: space-between; margin-top: auto; padding-top: 0.75rem; border-top: 1px solid #f0ebe3; }
     .card-arrow { color: #D4A853; font-size: 1rem; }
@@ -179,7 +179,7 @@ function formatDate(date) {
       gap: 0.5rem;
       background: white;
       border: 2px solid #D4A853;
-      color: #2C1810;
+      color: var(--text-heading);
       padding: 0.75rem 2rem;
       border-radius: 8px;
       font-size: 0.92rem;
@@ -199,7 +199,7 @@ function formatDate(date) {
     .cta-box h2 { color: #D4A853; margin: 0 0 0.5rem; font-size: 1.1rem; }
     .cta-box p { color: rgba(255,255,255,0.88); margin: 0 0 1.25rem; font-size: 0.9rem; }
     .cta-btns { display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; }
-    .btn-gold { background: #D4A853; color: #2C1810; padding: 0.65rem 1.4rem; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 0.9rem; }
+    .btn-gold { background: #D4A853; color: var(--text-heading); padding: 0.65rem 1.4rem; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 0.9rem; }
     .btn-outline { background: transparent; color: white; border: 2px solid rgba(255,255,255,0.6); padding: 0.65rem 1.4rem; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 0.9rem; }
 
     @media (max-width: 900px) {

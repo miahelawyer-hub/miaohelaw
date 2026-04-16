@@ -90,18 +90,18 @@ import Footer from '../components/Footer.astro';
   </script>
   <style>
     * { box-sizing: border-box; }
-    body { background: #faf8f5; margin: 0; }
+    body { background: var(--bg); margin: 0; }
     .page-hero { background: linear-gradient(135deg, #2C1810, #4A2C1A); padding: 3rem 1.5rem 2.5rem; text-align: center; }
     .badge { display: inline-block; background: rgba(212,168,83,0.15); border: 1px solid #D4A853; color: #D4A853; font-size: 0.78rem; letter-spacing: 0.08em; padding: 0.3rem 1rem; border-radius: 20px; margin-bottom: 1rem; text-transform: uppercase; }
     .page-hero h1 { color: #ffffff; font-size: clamp(1.5rem, 3.5vw, 2rem); line-height: 1.35; margin: 0 auto 1rem; max-width: 800px; }
     .page-hero .sub { color: rgba(255,255,255,0.82); font-size: 0.95rem; max-width: 620px; margin: 0 auto 1.5rem; line-height: 1.7; }
     .hero-cta { display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; }
-    .btn-gold { background: #D4A853; color: #2C1810; padding: 0.75rem 1.75rem; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 0.95rem; }
+    .btn-gold { background: #D4A853; color: var(--text-heading); padding: 0.75rem 1.75rem; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 0.95rem; }
     .btn-outline { background: transparent; color: white; border: 2px solid white; padding: 0.75rem 1.75rem; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 0.95rem; }
     .container { max-width: 900px; margin: 0 auto; padding: 2.5rem 1.5rem; }
-    .section-title { color: #2C1810; font-size: 1.25rem; margin: 0 0 1.25rem; padding-bottom: 0.4rem; border-bottom: 2px solid #D4A853; }
+    .section-title { color: var(--text-heading); font-size: 1.25rem; margin: 0 0 1.25rem; padding-bottom: 0.4rem; border-bottom: 2px solid #D4A853; }
     .faq-item { background: white; border: 1px solid #e8e0d5; border-radius: 10px; padding: 1.25rem 1.5rem; margin-bottom: 0.75rem; }
-    .faq-item h3 { color: #2C1810; font-size: 0.95rem; margin: 0 0 0.5rem; }
+    .faq-item h3 { color: var(--text-heading); font-size: 0.95rem; margin: 0 0 0.5rem; }
     .faq-item p { color: #5a3e2b; font-size: 0.88rem; line-height: 1.65; margin: 0; }
     .service-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; margin-bottom: 2.5rem; }
     .service-item { background: white; border: 1px solid #e8e0d5; border-radius: 8px; padding: 0.85rem 1rem; font-size: 0.88rem; color: #4A2C1A; display: flex; align-items: center; gap: 0.5rem; }
@@ -110,7 +110,7 @@ import Footer from '../components/Footer.astro';
     .final-cta h2 { color: #D4A853; margin: 0 0 0.6rem; font-size: 1.2rem; }
     .final-cta p { color: rgba(255,255,255,0.88); margin: 0 0 1.25rem; font-size: 0.92rem; line-height: 1.7; }
     .lawyer-card { background: white; border: 1px solid #e8e0d5; border-radius: 10px; padding: 1.5rem; margin-bottom: 2.5rem; border-left: 4px solid #D4A853; }
-    .lawyer-card h3 { color: #2C1810; margin: 0 0 0.5rem; font-size: 1rem; }
+    .lawyer-card h3 { color: var(--text-heading); margin: 0 0 0.5rem; font-size: 1rem; }
     .lawyer-card p { color: #5a3e2b; font-size: 0.88rem; line-height: 1.65; margin: 0 0 0.5rem; }
     .lawyer-card p:last-child { margin: 0; }
     @media (max-width: 600px) { .service-grid { grid-template-columns: 1fr; } .page-hero h1 { font-size: 1.35rem; } }

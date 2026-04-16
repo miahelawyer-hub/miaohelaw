@@ -93,7 +93,7 @@ const allPosts = (await getCollection('blog')).sort(
     ])} />
     <style is:global>
       * { box-sizing: border-box; }
-      body { background: #faf8f5; margin: 0; }
+      body { background: var(--bg); margin: 0; }
 
       /* ── Hero ── */
       .post-hero {
@@ -141,13 +141,13 @@ const allPosts = (await getCollection('blog')).sort(
         border-radius: 12px;
         padding: 2.5rem;
         box-shadow: 0 2px 12px rgba(44,24,16,0.07);
-        color: #2C1810;
+        color: var(--text-primary);
         font-size: 1.08rem;
         line-height: 2;
         min-width: 0;
       }
       .prose h2 {
-        color: #2C1810;
+        color: var(--text-heading);
         font-size: 1.15rem;
         margin: 3rem 0 1.2rem;
         padding: 0.55rem 1.1rem 0.55rem 1rem;
@@ -165,7 +165,7 @@ const allPosts = (await getCollection('blog')).sort(
         border-left: 3px solid #D4A853;
       }
       .prose p { margin: 0 0 1.6rem; }
-      .prose strong { color: #2C1810; }
+      .prose strong { color: var(--text-heading); }
       .prose blockquote {
         border-left: 4px solid #D4A853;
         background: #fdf6ec;
@@ -196,7 +196,7 @@ const allPosts = (await getCollection('blog')).sort(
       .prose td {
         padding: 0.65rem 1rem;
         border-bottom: 1px solid #e8e0d5;
-        color: #2C1810;
+        color: var(--text-primary);
       }
       .prose tr:nth-child(even) td { background: #fdf6ec; }
       .prose hr { border: none; border-top: 1px solid #e8e0d5; margin: 2rem 0; }
@@ -214,7 +214,7 @@ const allPosts = (await getCollection('blog')).sort(
       .cta-box p { color: rgba(255,255,255,0.92); margin: 0 0 1.25rem; font-size: 0.95rem; }
       .cta-links { display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; }
       .btn-primary {
-        display: inline-block; background: #D4A853; color: #2C1810;
+        display: inline-block; background: #D4A853; color: var(--text-heading);
         padding: 0.7rem 1.5rem; border-radius: 6px; text-decoration: none;
         font-weight: 700; font-size: 0.92rem;
       }
@@ -235,7 +235,7 @@ const allPosts = (await getCollection('blog')).sort(
         box-shadow: 0 2px 8px rgba(44,24,16,0.05);
       }
       .sidebar-card h3 {
-        color: #2C1810;
+        color: var(--text-heading);
         font-size: 0.88rem;
         text-transform: uppercase;
         letter-spacing: 0.06em;
@@ -249,7 +249,7 @@ const allPosts = (await getCollection('blog')).sort(
       .contact-card h3 { color: #D4A853; border-bottom-color: rgba(212,168,83,0.4); }
       .contact-card p { color: rgba(255,255,255,0.85); font-size: 0.88rem; margin: 0 0 1rem; line-height: 1.6; }
       .contact-card a.call-btn {
-        display: block; background: #D4A853; color: #2C1810;
+        display: block; background: #D4A853; color: var(--text-heading);
         text-align: center; padding: 0.65rem; border-radius: 6px;
         text-decoration: none; font-weight: 700; font-size: 0.92rem; margin-bottom: 0.5rem;
       }
@@ -276,7 +276,7 @@ const allPosts = (await getCollection('blog')).sort(
       .service-list li { padding: 0.3rem 0; border-bottom: 1px solid #f0ebe3; font-size: 0.88rem; }
       .service-list li:last-child { border-bottom: none; }
       .service-list a { color: #9A8060; text-decoration: none; }
-      .service-list a:hover { color: #2C1810; }
+      .service-list a:hover { color: var(--text-heading); }
 
       @media (max-width: 900px) {
         .post-layout { grid-template-columns: 1fr; }
@@ -302,11 +302,11 @@ const allPosts = (await getCollection('blog')).sort(
         align-items: flex-start;
       }
       .author-bio-text p { margin: 0 0 0.6rem; font-size: 0.92rem; color: #4A2C1A; line-height: 1.65; }
-      .author-bio-name { font-size: 1rem !important; font-weight: 700; color: #2C1810 !important; }
+      .author-bio-name { font-size: 1rem !important; font-weight: 700; color: var(--text-heading) !important; }
       .author-bio-title { font-size: 0.82rem !important; color: #9A8060 !important; letter-spacing: 0.03em; }
       .author-bio-links { margin-top: 0.5rem !important; }
       .author-bio-links a { color: #9A8060; text-decoration: none; font-size: 0.85rem; }
-      .author-bio-links a:hover { color: #2C1810; }
+      .author-bio-links a:hover { color: var(--text-heading); }
     	.sidebar-tag-list {
         display: flex;
         flex-wrap: wrap;

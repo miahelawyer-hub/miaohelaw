@@ -107,7 +107,7 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
   </script>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: Georgia, serif; background: #FDFBF7; color: #2C1810; }
+    body { font-family: Georgia, serif; background: var(--bg); color: var(--text-primary); }
     a { color: inherit; text-decoration: none; }
     .page-hero { background: linear-gradient(135deg, #2C1810, #4A2C1A); padding: 3rem 1.5rem 2.5rem; text-align: center; }
     .page-hero .inner { max-width: 700px; margin: 0 auto; }
@@ -121,17 +121,17 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
     .contact-grid { display: grid; grid-template-columns: 1fr 340px; gap: 2.5rem; }
     .contact-card { background: #fff; border: 1px solid #EDE8DF; border-radius: 12px; padding: 2rem; margin-bottom: 1.5rem; }
     .contact-card.highlight { border-color: #D4A853; box-shadow: 0 4px 20px rgba(212,168,83,0.12); }
-    .contact-card h2, .services-card h2, .faq-card h2 { font-size: 1.15rem; font-weight: 700; color: #2C1810; margin: 0 0 1.2rem; }
+    .contact-card h2, .services-card h2, .faq-card h2 { font-size: 1.15rem; font-weight: 700; color: var(--text-heading); margin: 0 0 1.2rem; }
     .contact-methods { display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 1.5rem; }
     .contact-method { display: flex; align-items: center; gap: 1rem; padding: 0.75rem 1rem; background: #FDFBF7; border-radius: 8px; border: 1px solid #EDE8DF; }
     .contact-method:hover { border-color: #D4A853; }
     .method-icon { font-size: 1.4rem; }
     .method-label { font-size: 0.78rem; color: #9A8060; margin-bottom: 0.2rem; }
-    .method-value { font-size: 1rem; font-weight: 600; color: #2C1810; }
+    .method-value { font-size: 1rem; font-weight: 600; color: var(--text-heading); }
     .cta-actions { display: flex; gap: 0.75rem; margin-bottom: 1rem; flex-wrap: wrap; }
     .btn-primary { background: #2C1810; color: #FDFBF7; padding: 0.7rem 1.5rem; border-radius: 8px; font-size: 0.92rem; font-weight: 600; }
     .btn-primary:hover { background: #4A2C1A; }
-    .btn-secondary { background: white; color: #2C1810; padding: 0.7rem 1.5rem; border-radius: 8px; font-size: 0.92rem; font-weight: 600; border: 2px solid #2C1810; }
+    .btn-secondary { background: white; color: var(--text-heading); padding: 0.7rem 1.5rem; border-radius: 8px; font-size: 0.92rem; font-weight: 600; border: 2px solid #2C1810; }
     .btn-secondary:hover { background: #FDFBF7; }
     .response-note { font-size: 0.8rem; color: #9A8060; }
     .services-card, .faq-card { background: #fff; border: 1px solid #EDE8DF; border-radius: 12px; padding: 2rem; margin-bottom: 1.5rem; }
@@ -140,16 +140,16 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
     .complex-cases { font-size: 0.88rem; color: #6B5A3A; margin-top: 1rem; line-height: 1.6; background: #F5EFE0; padding: 0.75rem 1rem; border-radius: 6px; border-left: 3px solid #D4A853; }
     .contact-sidebar { display: flex; flex-direction: column; gap: 1.25rem; }
     .sidebar-card { background: #fff; border: 1px solid #EDE8DF; border-radius: 12px; padding: 1.5rem; }
-    .sidebar-card h3 { font-size: 0.92rem; font-weight: 700; color: #2C1810; margin: 0 0 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; }
-    .sidebar-card address { font-style: normal; font-size: 0.88rem; line-height: 1.7; color: #2C1810; }
+    .sidebar-card h3 { font-size: 0.92rem; font-weight: 700; color: var(--text-heading); margin: 0 0 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; }
+    .sidebar-card address { font-style: normal; font-size: 0.88rem; line-height: 1.7; color: var(--text-heading); }
     .sidebar-card address a { color: #7A5A1A; text-decoration: underline; }
     .map-wrapper { margin-top: 0.75rem; border-radius: 6px; overflow: hidden; }
     .area-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.3rem; }
     .area-list li { font-size: 0.85rem; }
-    .area-list a { color: #2C1810; }
+    .area-list a { color: var(--text-heading); }
     .area-list a:hover { color: #7A5A1A; text-decoration: underline; }
     .credential-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.4rem; }
-    .credential-list li { font-size: 0.85rem; color: #2C1810; padding-left: 1rem; position: relative; }
+    .credential-list li { font-size: 0.85rem; color: var(--text-heading); padding-left: 1rem; position: relative; }
     .credential-list li::before { content: "·"; position: absolute; left: 0; color: #D4A853; }
     @media (max-width: 760px) {
       .contact-grid { grid-template-columns: 1fr; }

@@ -42,8 +42,8 @@ const totalFaqEn = items.length;
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: ui-serif, Georgia, serif;
-      background: #faf8f5;
-      color: #2C1810;
+      background: var(--bg);
+      color: var(--text-primary);
       -webkit-font-smoothing: antialiased;
       text-rendering: optimizeLegibility;
     }
@@ -79,7 +79,7 @@ const totalFaqEn = items.length;
     .faq-link {
       display: flex; justify-content: space-between; align-items: center;
       padding: 1.05rem 1.1rem; gap: 1rem;
-      font-size: 1.02rem; color: #1A1208; line-height: 1.65;
+      font-size: 1.02rem; color: var(--text-primary); line-height: 1.65;
       border-radius: 12px;
       background: rgba(255,255,255,0.65);
       border: 1px solid rgba(237,232,223,0.9);
@@ -100,11 +100,11 @@ const totalFaqEn = items.length;
     .contact-info h2 { color: #D4A853; margin: 0 0 0.5rem; font-size: 1.2rem; font-weight: 400; }
     .contact-info p { color: #fff; margin: 0; font-size: 0.9rem; opacity: 0.88; }
     .contact-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
-    .btn-primary { display: inline-block; background: #D4A853; color: #2C1810; padding: 0.7rem 1.4rem; border-radius: 6px; font-weight: 700; font-size: 0.9rem; }
+    .btn-primary { display: inline-block; background: #D4A853; color: var(--text-heading); padding: 0.7rem 1.4rem; border-radius: 6px; font-weight: 700; font-size: 0.9rem; }
     .btn-secondary { display: inline-block; background: transparent; color: white; border: 2px solid white; padding: 0.7rem 1.4rem; border-radius: 6px; font-weight: 700; font-size: 0.9rem; }
     .faq-hidden { display: none; }
     .load-more-wrap { text-align: center; margin: 1.5rem 0 0; }
-    .load-more-btn { display: inline-flex; align-items: center; gap: 0.5rem; background: white; border: 2px solid #D4A853; color: #2C1810; padding: 0.7rem 1.8rem; border-radius: 8px; font-size: 0.92rem; font-weight: 600; cursor: pointer; font-family: Georgia, serif; transition: background 0.15s, color 0.15s; }
+    .load-more-btn { display: inline-flex; align-items: center; gap: 0.5rem; background: white; border: 2px solid #D4A853; color: var(--text-heading); padding: 0.7rem 1.8rem; border-radius: 8px; font-size: 0.92rem; font-weight: 600; cursor: pointer; font-family: Georgia, serif; transition: background 0.15s, color 0.15s; }
     .load-more-btn:hover { background: #D4A853; color: white; }
     .faq-filter-hidden { display: none; }
 
@@ -135,7 +135,7 @@ const totalFaqEn = items.length;
       min-width: 0;
       border: 1px solid rgba(212,168,83,0.28);
       background: #fff;
-      color: #2C1810;
+      color: var(--text-heading);
       border-radius: 12px;
       padding: 0.85rem 0.95rem;
       font-size: 1rem;
@@ -161,7 +161,7 @@ const totalFaqEn = items.length;
     .faq-search-clear:hover{
       background: rgba(212,168,83,0.14);
       border-color: rgba(212,168,83,0.45);
-      color: #2C1810;
+      color: var(--text-heading);
     }
     .faq-search-meta{
       margin: -0.35rem 0 1.25rem;

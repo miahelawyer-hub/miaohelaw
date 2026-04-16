@@ -50,7 +50,7 @@ const jsonLdAnswerPlain = [summaryPlain, ...item.answers.map(stripHtml)].filter(
   })} />
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: Georgia, serif; background: #faf8f5; color: #2C1810; }
+    body { font-family: Georgia, serif; background: var(--bg); color: var(--text-primary); }
     a { color: inherit; text-decoration: none; }
 
     .page-hero { background: linear-gradient(135deg, #2C1810, #4A2C1A); padding: 3rem 1.5rem 2.5rem; }
@@ -72,7 +72,7 @@ const jsonLdAnswerPlain = [summaryPlain, ...item.answers.map(stripHtml)].filter(
       font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em;
       color: #9A8060; text-transform: uppercase; margin-bottom: 0.5rem;
     }
-    .summary-card .summary-body { color: #2C1810; font-size: 0.95rem; line-height: 1.8; margin: 0; }
+    .summary-card .summary-body { color: var(--text-heading); font-size: 0.95rem; line-height: 1.8; margin: 0; }
 
     .answer-card {
       background: white; border-radius: 12px;
@@ -85,7 +85,7 @@ const jsonLdAnswerPlain = [summaryPlain, ...item.answers.map(stripHtml)].filter(
       color: #9A8060; margin-bottom: 1.25rem; padding-bottom: 0.75rem;
       border-bottom: 2px solid #D4A853;
     }
-    .answer-card p, .answer-card .answer-point { color: #2C1810; font-size: 0.95rem; line-height: 1.9; margin-bottom: 1.25rem; }
+    .answer-card p, .answer-card .answer-point { color: var(--text-heading); font-size: 0.95rem; line-height: 1.9; margin-bottom: 1.25rem; }
     .answer-card p:last-of-type, .answer-card .answer-point:last-of-type { margin-bottom: 0; }
     .answer-card em { font-style: italic; }
 
@@ -93,7 +93,7 @@ const jsonLdAnswerPlain = [summaryPlain, ...item.answers.map(stripHtml)].filter(
       margin-top: 1.75rem; padding-top: 1.25rem; border-top: 1px solid #e8e0d5;
     }
     .answer-cta a {
-      display: inline-block; background: #D4A853; color: #2C1810;
+      display: inline-block; background: #D4A853; color: var(--text-heading);
       padding: 0.7rem 1.5rem; border-radius: 6px; font-weight: 700; font-size: 0.9rem;
     }
 
@@ -108,14 +108,14 @@ const jsonLdAnswerPlain = [summaryPlain, ...item.answers.map(stripHtml)].filter(
     .related-list li:last-child { border-bottom: none; }
     .related-list a {
       display: flex; justify-content: space-between; align-items: center;
-      padding: 0.9rem 1.25rem; font-size: 0.9rem; color: #2C1810;
+      padding: 0.9rem 1.25rem; font-size: 0.9rem; color: var(--text-heading);
       transition: background 0.15s;
     }
     .related-list a:hover { background: #fdf6ec; color: #7A5A1A; }
     .related-list .arr { color: #9A8060; font-size: 0.85rem; }
     .related-list a span em { font-style: italic; }
     .view-all { font-size: 0.85rem; color: #9A8060; }
-    .view-all:hover { color: #2C1810; }
+    .view-all:hover { color: var(--text-heading); }
 
     .contact-card {
       background: linear-gradient(135deg, #2C1810, #4A2C1A);
@@ -126,7 +126,7 @@ const jsonLdAnswerPlain = [summaryPlain, ...item.answers.map(stripHtml)].filter(
     .contact-info h2 { color: #D4A853; margin: 0 0 0.5rem; font-size: 1.1rem; font-weight: 400; }
     .contact-info p { color: rgba(255,255,255,0.88); margin: 0; font-size: 0.88rem; }
     .contact-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
-    .btn-primary { display: inline-block; background: #D4A853; color: #2C1810; padding: 0.65rem 1.3rem; border-radius: 6px; font-weight: 700; font-size: 0.88rem; }
+    .btn-primary { display: inline-block; background: #D4A853; color: var(--text-heading); padding: 0.65rem 1.3rem; border-radius: 6px; font-weight: 700; font-size: 0.88rem; }
     .btn-secondary { display: inline-block; background: transparent; color: white; border: 2px solid white; padding: 0.65rem 1.3rem; border-radius: 6px; font-weight: 700; font-size: 0.88rem; }
 
     @media (max-width: 720px) {
