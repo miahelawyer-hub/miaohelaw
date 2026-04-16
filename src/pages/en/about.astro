@@ -25,6 +25,7 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
     "url": "https://www.miaohelaw.ca/en/about/",
     "telephone": "+1-647-930-6688",
     "email": "miao@miaohelaw.ca",
+    "image": "https://www.miaohelaw.ca/miao-he-lawyer.jpeg",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "208-7050 Woodbine Ave",
@@ -74,9 +75,11 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
       margin: 0 auto 2rem;
       text-align: center;
       max-width: 420px;
-      background: var(--bg);
+      /* Cream canvas to blend the portrait background */
+      background: #F5EFE0;
       border-radius: 14px;
       padding: 0.35rem 0.5rem 0;
+      isolation: isolate;
     }
     .about-portrait-en img {
       width: 100%;
@@ -85,10 +88,11 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
       margin: 0 auto;
       display: block;
       object-fit: contain;
-      object-position: center bottom;
+      object-position: center;
       border-radius: 10px;
       box-shadow: 0 14px 32px rgba(26, 18, 8, 0.12);
       border: none;
+      mix-blend-mode: multiply;
     }
     .about-portrait-en figcaption {
       margin-top: 0.55rem;
@@ -107,10 +111,10 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
 
     <figure class="about-portrait-en">
       <img
-        src="/miao-he-lawyer.png"
+        src="/miao-he-lawyer.jpeg"
         alt="Miao He — Ontario family law lawyer"
-        width="408"
-        height="612"
+        width="1024"
+        height="1024"
         loading="lazy"
         decoding="async"
       />

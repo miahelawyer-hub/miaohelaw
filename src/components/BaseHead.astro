@@ -13,7 +13,7 @@ const rawPath = Astro.url.pathname;
 const canonicalPath =
 	rawPath === '/' || rawPath.endsWith('/') ? rawPath : `${rawPath}/`;
 const canonicalURL = new URL(canonicalPath, Astro.site);
-const { title, description, image = 'https://www.miaohelaw.ca/miao-he-lawyer.png' } = Astro.props;
+const { title, description, image = 'https://www.miaohelaw.ca/miao-he-lawyer.jpeg' } = Astro.props;
 ---
 
 <!-- Global Metadata -->
