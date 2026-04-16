@@ -44,7 +44,7 @@ import { SITE_LAST_UPDATED_ZH } from '../consts';
       "url": "https://www.miaohelaw.ca/",
       "telephone": "+1-647-930-6688",
       "email": "miao@miaohelaw.ca",
-      "image": "https://www.miaohelaw.ca/miao-he-lawyer.jpeg",
+      "image": "https://www.miaohelaw.ca/miao-he-lawyer.png",
       "knowsLanguage": ["zh-Hans", "en"],
       "alumniOf": {
         "@type": "CollegeOrUniversity",
@@ -117,10 +117,10 @@ import { SITE_LAST_UPDATED_ZH } from '../consts';
 
             <figure class="about-portrait">
               <img
-                src="/miao-he-lawyer.jpeg"
+                src="/miao-he-lawyer.png"
                 alt="何淼律师 Miao He — Ontario 家庭法律师"
-                width="960"
-                height="1200"
+                width="408"
+                height="612"
                 loading="lazy"
                 decoding="async"
               />
@@ -333,18 +333,25 @@ import { SITE_LAST_UPDATED_ZH } from '../consts';
   .about-inner { max-width: 1060px; margin: 0 auto; }
   .about-grid { display: grid; grid-template-columns: 1fr 300px; gap: 2rem; align-items: start; }
 
-  .about-portrait { margin: 0 0 1.75rem; text-align: center; }
+  .about-portrait {
+    margin: 0 auto 1.75rem;
+    text-align: center;
+    max-width: 420px;
+    background: var(--bg);
+    border-radius: 14px;
+    padding: 0.35rem 0.5rem 0;
+  }
   .about-portrait img {
     width: 100%;
-    max-width: 460px;
+    height: auto;
+    max-width: 400px;
     margin: 0 auto;
     display: block;
-    max-height: 440px;
-    object-fit: cover;
-    object-position: top center;
-    border-radius: 12px;
-    box-shadow: 0 18px 44px rgba(44, 24, 16, 0.18);
-    border: 1px solid rgba(237, 232, 223, 0.95);
+    object-fit: contain;
+    object-position: center bottom;
+    border-radius: 10px;
+    box-shadow: 0 14px 32px rgba(44, 24, 16, 0.12);
+    border: none;
   }
   .about-portrait figcaption {
     margin-top: 0.65rem;

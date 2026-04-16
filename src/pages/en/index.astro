@@ -17,6 +17,12 @@ import Footer from '../../components/Footer.astro';
   <link rel="alternate" hreflang="zh" href="https://www.miaohelaw.ca/" />
   <link rel="alternate" hreflang="en" href="https://www.miaohelaw.ca/en/" />
   <link rel="alternate" hreflang="x-default" href="https://www.miaohelaw.ca/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -142,7 +148,7 @@ import Footer from '../../components/Footer.astro';
       <div class="hero-court-scrim" aria-hidden="true"></div>
       <div class="hero-inner hero-inner--court">
         <p class="hero-court-eyebrow">Ontario family law</p>
-        <p class="hero-court-slogan" lang="en">I care about what you care about</p>
+        <p class="hero-court-slogan" lang="en">Bilingual. Bicultural.<br />By your side.</p>
         <h1 id="hero-main-heading" class="hero-court-h1">Miao He <span class="hero-court-chinese">何淼</span></h1>
         <p class="hero-court-tagline">Dual-licensed family lawyer (Ontario &amp; China) · Mandarin &amp; English · Markham · GTA &amp; all of Ontario</p>
         <div class="hero-court-actions">
@@ -498,10 +504,10 @@ import Footer from '../../components/Footer.astro';
   }
   .hero-court-slogan {
     margin: 0 0 1.35rem;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
     font-size: clamp(2rem, 5.5vw, 3.5rem);
-    font-weight: 400;
-    font-style: italic;
+    font-weight: 500;
+    font-style: normal;
     line-height: 1.12;
     letter-spacing: 0.03em;
     color: #fff;

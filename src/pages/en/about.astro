@@ -70,18 +70,25 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
     .contact-box h2 { color: #8B6914; margin-bottom: 1rem; }
     .btn-primary { display: inline-block; background: #D4A853; color: var(--text-heading); padding: 0.75rem 2rem; border-radius: 6px; font-weight: 700; margin: 0.5rem; }
     .btn-secondary { display: inline-block; border: 1px solid #D4A853; color: #8B6914; padding: 0.75rem 2rem; border-radius: 6px; margin: 0.5rem; }
-    .about-portrait-en { margin: 0 0 2rem; text-align: center; }
+    .about-portrait-en {
+      margin: 0 auto 2rem;
+      text-align: center;
+      max-width: 420px;
+      background: var(--bg);
+      border-radius: 14px;
+      padding: 0.35rem 0.5rem 0;
+    }
     .about-portrait-en img {
       width: 100%;
-      max-width: 420px;
+      height: auto;
+      max-width: 400px;
       margin: 0 auto;
       display: block;
-      max-height: 400px;
-      object-fit: cover;
-      object-position: top center;
+      object-fit: contain;
+      object-position: center bottom;
       border-radius: 10px;
-      box-shadow: 0 14px 36px rgba(26, 18, 8, 0.12);
-      border: 1px solid #e8e0d5;
+      box-shadow: 0 14px 32px rgba(26, 18, 8, 0.12);
+      border: none;
     }
     .about-portrait-en figcaption {
       margin-top: 0.55rem;
@@ -100,10 +107,10 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
 
     <figure class="about-portrait-en">
       <img
-        src="/miao-he-lawyer.jpeg"
+        src="/miao-he-lawyer.png"
         alt="Miao He — Ontario family law lawyer"
-        width="960"
-        height="1200"
+        width="408"
+        height="612"
         loading="lazy"
         decoding="async"
       />
