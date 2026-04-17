@@ -6,6 +6,10 @@ export interface FaqItemEn {
   details: string[];
   keywords: string;
   featured?: boolean;
+  /** Chinese FAQ path for hreflang, e.g. `/faq/toronto-lihun-feiyong-duoshao/` */
+  pairedFaqPath?: string;
+  metaTitle?: string;
+  metaDescription?: string;
 }
 
 export const faqItemsEn: FaqItemEn[] = 
@@ -342,6 +346,10 @@ export const faqItemsEn: FaqItemEn[] =
   {
     "slug": "toronto-divorce-cost-how-much",
     "question": "How much does a divorce cost in Toronto?",
+    "featured": true,
+    "pairedFaqPath": "/faq/toronto-lihun-feiyong-duoshao/",
+    "metaTitle": "Toronto Divorce Cost (2026) | ~CAD $5,000 Uncontested | Separation Agreement + Application | Miao He",
+    "metaDescription": "Toronto divorce costs vary by case type: many uncontested matters (separation agreement + divorce application) are often planned around roughly CAD $5,000 as an order-of-magnitude anchor; contested cases are usually hourly. Mandarin/English family lawyer serving Markham, Richmond Hill, Scarborough, and the GTA. Call 647-930-6688.",
     "summary": "There is no single standard answer — cost depends heavily on whether your divorce is uncontested or contested. For many uncontested paths (separation agreement plus divorce application), total legal spend is often in the ballpark of <strong>about CAD $5,000</strong>, subject to complexity. Contested litigation is usually hourly, so totals are harder to predict upfront.",
     "answers": [
       "<strong>Uncontested divorce</strong>: where spouses already agree on separation, property, and children, the workflow commonly starts with a <strong>Separation Agreement</strong>, followed by a <strong>Divorce Application</strong>. Many GTA family files in this category are handled as a structured process, which makes budgeting more realistic — <strong>around CAD $5,000</strong> is a common order-of-magnitude estimate (it can move up or down with disclosure and drafting complexity).",
@@ -355,7 +363,7 @@ export const faqItemsEn: FaqItemEn[] =
       "<strong>Takeaway</strong>: think in two buckets — <strong>uncontested</strong>: often controllable, commonly discussed around <strong>about CAD $5,000</strong> as a starting planning range for a typical separation agreement + divorce application workflow; <strong>contested</strong>: depends on complexity and procedural history, so a responsible lawyer usually gives a range and assumptions rather than a fixed price on day one.",
       "In consultations, the most useful question is not only “how much,” but <strong>which bucket your case is in</strong> and what facts would move it from negotiated to contested. For a confidential discussion tailored to your situation, contact Miao He at <strong>647-930-6688</strong>."
     ],
-    "keywords": "Toronto divorce cost,how much divorce Toronto,uncontested divorce cost Toronto,separation agreement divorce application,Chinese divorce lawyer Toronto,Markham Richmond Hill Scarborough family lawyer,hourly divorce lawyer Ontario,Miao He"
+    "keywords": "Toronto divorce cost,how much is a divorce in Toronto,Toronto divorce lawyer fees,GTA divorce cost,Greater Toronto Area family lawyer fees,uncontested divorce cost Toronto,Toronto separation agreement lawyer fee,divorce application Ontario cost,separation agreement and divorce application price,contested divorce hourly rate Ontario,Chinese divorce lawyer Toronto cost,Mandarin family lawyer Toronto fees,Markham divorce lawyer cost,Richmond Hill divorce lawyer fees,Scarborough divorce lawyer cost,North York family lawyer fees,Vaughan divorce cost,Mississauga divorce lawyer fees,Ontario family court lawyer hourly rate,high conflict divorce cost Toronto,Miao He lawyer,Miao He family law,6479306688"
   },
   {
     "slug": "contested-vs-uncontested-divorce-ontario",

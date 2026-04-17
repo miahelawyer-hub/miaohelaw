@@ -7,6 +7,12 @@ export interface FaqItem {
   details: string[];
   keywords: string;
   featured?: boolean;
+  /** English FAQ path for hreflang, e.g. `/en/faq/toronto-divorce-cost-how-much/` */
+  pairedFaqPath?: string;
+  /** Overrides `<title>` / og:title when set */
+  metaTitle?: string;
+  /** Overrides meta description when set (plain text, no HTML) */
+  metaDescription?: string;
 }
 
 export const faqItems: FaqItem[] = [
@@ -885,6 +891,11 @@ export const faqItems: FaqItem[] = [
     slug: 'toronto-lihun-feiyong-duoshao',
     capsule: '多伦多离婚费用大概多少？',
     question: '多伦多离婚费用大概是多少？',
+    featured: true,
+    pairedFaqPath: '/en/faq/toronto-divorce-cost-how-much/',
+    metaTitle: '多伦多离婚费用大概多少｜无争议约5000加元起｜分居协议+离婚申请｜何淼律师',
+    metaDescription:
+      '多伦多离婚费用没有统一标准：无争议离婚常见路径为先分居协议再离婚申请，整体多可控制在约5000加元量级起；有争议诉讼多为按小时计费，视争议与出庭而定。万锦、列治文山、士嘉堡、多伦多市区华人离婚律师收费差异说明。预约何淼律师647-930-6688。',
     summary:
       '没有统一标准，关键看是无争议还是有争议离婚。无争议通常先分居协议再递交离婚申请，整体费用相对可控，多数情况下约<strong>5,000 加元</strong>左右可完成全流程（视文件复杂度会略有浮动）。有争议进入诉讼的，律师多按小时计费，总费用随争议点、取证与出庭次数拉长而不确定。',
     answers: [
@@ -900,7 +911,7 @@ export const faqItems: FaqItem[] = [
       '因此，咨询多伦多华人离婚律师时，比只问「多少钱」更重要的是先厘清：您的案件更接近无争议协议路径，还是已进入或可能进入争议诉讼。案件结构越清晰，费用区间才越可预估。欢迎致电<strong>647-930-6688</strong>预约何淼律师，在了解事实与目标后讨论可行路径与预算区间。',
     ],
     keywords:
-      '多伦多离婚费用,多伦多离婚律师费,华人离婚律师多伦多,无争议离婚费用,分居协议离婚申请,有争议离婚律师费,万锦离婚律师,列治文山离婚律师,士嘉堡离婚律师,世嘉堡离婚律师,安省离婚按小时收费,何淼律师',
+      '多伦多离婚费用,多伦多离婚多少钱,多伦多离婚成本,GTA离婚费用,大多伦多离婚律师费,多伦多华人离婚律师费用,普通话离婚律师多伦多,粤语家庭法律师多伦多,无争议离婚多伦多费用,多伦多分居协议费用,多伦多离婚申请费用,分居协议加离婚申请多少钱,安省离婚费用多伦多,万锦离婚费用,万锦华人离婚律师费,列治文山离婚费用,列治文山华人律师,士嘉堡离婚律师费,世嘉堡离婚费用,北约克离婚律师,旺市离婚费用,密西沙加离婚费用,多伦多Downtown离婚律师,安省家庭法按小时收费,有争议离婚律师费多伦多,离婚官司多少钱多伦多,子女抚养争议律师费,财产分割离婚费用,何淼律师,何淼律师多伦多,Miao He Toronto,6479306688',
   },
   {
     slug: 'lushi-fei-duoshao',

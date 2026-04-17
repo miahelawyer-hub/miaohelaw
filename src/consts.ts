@@ -9,5 +9,5 @@ export const AUTHOR_TITLE = 'Barrister & Solicitor — Ontario & China';
 export const AUTHOR_EMAIL = 'miao@miaohelaw.ca';
 
 /** Human-readable content review stamp for static key pages (not file modification times). */
-export const SITE_LAST_UPDATED_ZH = '2026年4月';
-export const SITE_LAST_UPDATED_EN = 'April 2026';
+export const SITE_LAST_UPDATED_ZH = '2026年4月17日';
+export const SITE_LAST_UPDATED_EN = 'April 17, 2026';

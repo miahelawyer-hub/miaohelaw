@@ -2,6 +2,7 @@
 import BaseHead from '../../components/BaseHead.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, SITE_URL } from '../../consts';
 import { faqItems, getFaqItemsForListing } from '../../data/faq';
 import { stripHtml } from '../../utils/stripHtml';
 
@@ -19,40 +20,79 @@ const summaryPlain = stripHtml(item.summary);
 const questionPlain = stripHtml(item.question);
 const capsulePlain = stripHtml(item.capsule);
 const jsonLdAnswerPlain = [summaryPlain, ...item.answers.map(stripHtml)].filter(Boolean).join('\n\n');
+const pageUrl = new URL(`faq/${item.slug}/`, `${SITE_URL}/`).href;
+const metaTitle = item.metaTitle ?? `${questionPlain} | 何淼律师 多伦多华人家庭法`;
+const metaDesc = item.metaDescription ?? summaryPlain;
+const alternateEnUrl = item.pairedFaqPath
+  ? new URL(item.pairedFaqPath.replace(/^\//, ''), `${SITE_URL}/`).href
+  : null;
+const siteUrlSlash = SITE_URL.endsWith('/') ? SITE_URL : `${SITE_URL}/`;
+const faqSchemaGraph = [
+  {
+    '@type': 'WebPage',
+    '@id': `${pageUrl}#webpage`,
+    url: pageUrl,
+    name: metaTitle,
+    description: metaDesc,
+    inLanguage: 'zh-CN',
+    isPartOf: {
+      '@type': 'WebSite',
+      name: SITE_TITLE,
+      url: siteUrlSlash,
+    },
+  },
+  {
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: questionPlain,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: jsonLdAnswerPlain,
+        },
+      },
+    ],
+  },
+  {
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: '首页', item: siteUrlSlash },
+      { '@type': 'ListItem', position: 2, name: '常见问题', item: new URL('faq/', siteUrlSlash).href },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: capsulePlain,
+        item: pageUrl,
+      },
+    ],
+  },
+];
 ---
 
 <!doctype html>
 <html lang="zh">
 <head>
   <BaseHead
-    title={`${questionPlain} | 何淼律师 多伦多华人家庭法`}
-    description={summaryPlain}
+    title={metaTitle}
+    description={metaDesc}
     ogType="article"
   />
   <meta name="keywords" content={item.keywords} />
-  <meta property="og:title" content={`${questionPlain} | 何淼律师`} />
-  <meta property="og:description" content={summaryPlain} />
-  <script type="application/ld+json" set:html={JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [{
-      "@type": "Question",
-      "name": questionPlain,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": jsonLdAnswerPlain
-      }
-    }]
-  })}></script>
-  <script type="application/ld+json" set:html={JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {"@type": "ListItem", "position": 1, "name": "首页", "item": "https://www.miaohelaw.ca/"},
-      {"@type": "ListItem", "position": 2, "name": "常见问题", "item": "https://www.miaohelaw.ca/faq/"},
-      {"@type": "ListItem", "position": 3, "name": capsulePlain, "item": `https://www.miaohelaw.ca/faq/${item.slug}/`}
-    ]
-  })} />
+  {alternateEnUrl && (
+    <>
+      <link rel="alternate" hreflang="zh" href={pageUrl} />
+      <link rel="alternate" hreflang="en" href={alternateEnUrl} />
+      <link rel="alternate" hreflang="x-default" href={pageUrl} />
+    </>
+  )}
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@graph': faqSchemaGraph,
+    })}
+  />
 </head>
 <body>
   <Header />

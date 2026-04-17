@@ -2,6 +2,7 @@
 import BaseHead from '../../../components/BaseHead.astro';
 import HeaderEn from '../../../components/HeaderEn.astro';
 import Footer from '../../../components/Footer.astro';
+import { SITE_TITLE, SITE_URL } from '../../../consts';
 import { faqItemsEn, getFaqItemsEnForListing } from '../../../data/faq-en';
 import { stripHtml } from '../../../utils/stripHtml';
 
@@ -18,36 +19,78 @@ const others = faqListingEn.filter(f => f.slug !== item.slug).slice(0, 6);
 const summaryPlain = stripHtml(item.summary);
 const questionPlain = stripHtml(item.question);
 const jsonLdAnswerPlain = [summaryPlain, ...item.answers.map(stripHtml)].filter(Boolean).join('\n\n');
+const pageUrl = new URL(`en/faq/${item.slug}/`, `${SITE_URL}/`).href;
+const metaTitle = item.metaTitle ?? `${questionPlain} | Miao He — Ontario Family Law`;
+const metaDesc = item.metaDescription ?? summaryPlain;
+const alternateZhUrl = item.pairedFaqPath
+  ? new URL(item.pairedFaqPath.replace(/^\//, ''), `${SITE_URL}/`).href
+  : null;
+const siteUrlSlash = SITE_URL.endsWith('/') ? SITE_URL : `${SITE_URL}/`;
+const faqSchemaGraph = [
+  {
+    '@type': 'WebPage',
+    '@id': `${pageUrl}#webpage`,
+    url: pageUrl,
+    name: metaTitle,
+    description: metaDesc,
+    inLanguage: 'en-CA',
+    isPartOf: {
+      '@type': 'WebSite',
+      name: SITE_TITLE,
+      url: siteUrlSlash,
+    },
+  },
+  {
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: questionPlain,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: jsonLdAnswerPlain,
+        },
+      },
+    ],
+  },
+  {
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: siteUrlSlash },
+      { '@type': 'ListItem', position: 2, name: 'FAQ', item: new URL('en/faq/', siteUrlSlash).href },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: questionPlain,
+        item: pageUrl,
+      },
+    ],
+  },
+];
 ---
 <!doctype html>
 <html lang="en">
 <head>
   <BaseHead
-    title={`${questionPlain} | Miao He — Ontario Family Law`}
-    description={summaryPlain}
+    title={metaTitle}
+    description={metaDesc}
     ogType="article"
   />
   <meta name="keywords" content={item.keywords} />
-  <meta property="og:title" content={`${questionPlain} | Miao He`} />
-  <meta property="og:description" content={summaryPlain} />
-  <script type="application/ld+json" set:html={JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [{
-      "@type": "Question",
-      "name": questionPlain,
-      "acceptedAnswer": { "@type": "Answer", "text": jsonLdAnswerPlain }
-    }]
-  })} />
-  <script type="application/ld+json" set:html={JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {"@type":"ListItem","position":1,"name":"Home","item":"https://www.miaohelaw.ca/en/"},
-      {"@type":"ListItem","position":2,"name":"FAQ","item":"https://www.miaohelaw.ca/en/faq/"},
-      {"@type":"ListItem","position":3,"name":questionPlain,"item":`https://www.miaohelaw.ca/en/faq/${item.slug}/`}
-    ]
-  })} />
+  {alternateZhUrl && (
+    <>
+      <link rel="alternate" hreflang="en" href={pageUrl} />
+      <link rel="alternate" hreflang="zh" href={alternateZhUrl} />
+      <link rel="alternate" hreflang="x-default" href={alternateZhUrl} />
+    </>
+  )}
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@graph': faqSchemaGraph,
+    })}
+  />
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: Georgia, serif; background: var(--bg); color: var(--text-primary); }
