@@ -372,37 +372,97 @@ function formatBlogDate(date: Date) {
       </div>
     </section>
 
-    <!-- Videos — text cards (same tokens as Family Law Services / .areas) -->
+    <!-- Videos — YouTube thumbnail + play affordance -->
     <section class="video-section">
       <h2>Legal Insights · Videos</h2>
       <p class="video-sub">Watch Miao He explain Ontario family law in Mandarin and English.</p>
       <div class="video-cards-grid">
-        <div class="area-card">
-          <div class="area-card-inner">
-            <div class="area-card-body">
-              <h3>Separation by Agreement</h3>
-              <p>Introduction to Ontario divorce: separation agreements and uncontested divorce pathways.</p>
-              <a href="https://www.youtube.com/watch?v=YhOVZxqwD_k" target="_blank" rel="noopener noreferrer" class="area-link">▶ Watch Video →</a>
+        <div class="area-card video-card">
+          <a
+            href="https://www.youtube.com/watch?v=YhOVZxqwD_k"
+            class="video-card-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Watch on YouTube: Separation by Agreement"
+          >
+            <div class="video-thumb">
+              <img
+                src="https://img.youtube.com/vi/YhOVZxqwD_k/hqdefault.jpg"
+                alt=""
+                width="480"
+                height="360"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="video-play" aria-hidden="true"><span class="video-play-icon">▶</span></span>
+              <span class="video-platform" aria-hidden="true">YouTube</span>
             </div>
-          </div>
+            <div class="area-card-inner video-card-inner">
+              <div class="area-card-body">
+                <h3>Separation by Agreement</h3>
+                <p>Introduction to Ontario divorce: separation agreements and uncontested divorce pathways.</p>
+                <span class="video-cta">▶ Watch Video →</span>
+              </div>
+            </div>
+          </a>
         </div>
-        <div class="area-card">
-          <div class="area-card-inner">
-            <div class="area-card-body">
-              <h3>Spouse Refuses Divorce — Court Outcomes</h3>
-              <p>How courts determine &quot;marriage breakdown&quot; under no-fault divorce principles.</p>
-              <a href="https://www.youtube.com/watch?v=86ULSZ6-KF8" target="_blank" rel="noopener noreferrer" class="area-link">▶ Watch Video →</a>
+        <div class="area-card video-card">
+          <a
+            href="https://www.youtube.com/watch?v=86ULSZ6-KF8"
+            class="video-card-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Watch on YouTube: Spouse refuses divorce — court outcomes"
+          >
+            <div class="video-thumb">
+              <img
+                src="https://img.youtube.com/vi/86ULSZ6-KF8/hqdefault.jpg"
+                alt=""
+                width="480"
+                height="360"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="video-play" aria-hidden="true"><span class="video-play-icon">▶</span></span>
+              <span class="video-platform" aria-hidden="true">YouTube</span>
             </div>
-          </div>
+            <div class="area-card-inner video-card-inner">
+              <div class="area-card-body">
+                <h3>Spouse Refuses Divorce — Court Outcomes</h3>
+                <p>How courts determine &quot;marriage breakdown&quot; under no-fault divorce principles.</p>
+                <span class="video-cta">▶ Watch Video →</span>
+              </div>
+            </div>
+          </a>
         </div>
-        <div class="area-card">
-          <div class="area-card-inner">
-            <div class="area-card-body">
-              <h3>Reducing Asset Dissipation in Litigation</h3>
-              <p>Preservation, disclosure, and evidence strategies to prevent asset dissipation.</p>
-              <a href="https://www.youtube.com/watch?v=ijZ7E901pXU" target="_blank" rel="noopener noreferrer" class="area-link">▶ Watch Video →</a>
+        <div class="area-card video-card">
+          <a
+            href="https://www.youtube.com/watch?v=ijZ7E901pXU"
+            class="video-card-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Watch on YouTube: Reducing asset dissipation in litigation"
+          >
+            <div class="video-thumb">
+              <img
+                src="https://img.youtube.com/vi/ijZ7E901pXU/hqdefault.jpg"
+                alt=""
+                width="480"
+                height="360"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="video-play" aria-hidden="true"><span class="video-play-icon">▶</span></span>
+              <span class="video-platform" aria-hidden="true">YouTube</span>
             </div>
-          </div>
+            <div class="area-card-inner video-card-inner">
+              <div class="area-card-body">
+                <h3>Reducing Asset Dissipation in Litigation</h3>
+                <p>Preservation, disclosure, and evidence strategies to prevent asset dissipation.</p>
+                <span class="video-cta">▶ Watch Video →</span>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
       <div style="text-align:center; margin-top: 2rem;">
@@ -1154,8 +1214,104 @@ function formatBlogDate(date: Date) {
     max-width: 980px;
     margin: 0 auto;
   }
-  .video-section .area-link {
-    font-weight: 600;
+  .video-card {
+    padding: 0;
+  }
+  .video-card-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 0;
+    text-decoration: none;
+    color: inherit;
+  }
+  .video-thumb {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    background: #1a1f26;
+    overflow: hidden;
+  }
+  .video-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.28s ease, filter 0.28s ease;
+  }
+  .video-card-link:hover .video-thumb img,
+  .video-card-link:focus-visible .video-thumb img {
+    transform: scale(1.04);
+    filter: brightness(1.05);
+  }
+  .video-play {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    background: linear-gradient(180deg, transparent 42%, rgba(0, 0, 0, 0.35) 100%);
+  }
+  .video-play-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.25rem;
+    height: 3.25rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.94);
+    color: #c00;
+    font-size: 1.1rem;
+    padding-left: 0.2rem;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+  }
+  .video-platform {
+    position: absolute;
+    top: 0.55rem;
+    right: 0.55rem;
+    font-size: 0.65rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.55);
+    padding: 0.28rem 0.45rem;
+    border-radius: 4px;
+    pointer-events: none;
+  }
+  .video-card-inner {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-height: 0;
+    padding: 1.35rem 1.45rem 1.35rem 1.35rem;
+  }
+  .video-card-inner .area-card-body {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+  }
+  .video-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin-top: auto;
+    align-self: flex-end;
+    font-size: 0.82rem;
+    color: var(--areas-link);
+    font-weight: 800;
+    letter-spacing: 0.02em;
+  }
+  .video-card-link:hover .video-cta,
+  .video-card-link:focus-visible .video-cta {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .video-card-link:focus-visible {
+    outline: 2px solid var(--areas-link);
+    outline-offset: 2px;
+    border-radius: 14px;
   }
 
   .blog-section {
