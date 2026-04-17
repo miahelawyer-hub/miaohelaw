@@ -340,6 +340,24 @@ export const faqItemsEn: FaqItemEn[] =
     "keywords": "divorce lawyer cost Ontario,family lawyer fees Ontario,uncontested divorce cost,contested divorce cost Ontario,Miao He consultation"
   },
   {
+    "slug": "toronto-divorce-cost-how-much",
+    "question": "How much does a divorce cost in Toronto?",
+    "summary": "There is no single standard answer — cost depends heavily on whether your divorce is uncontested or contested. For many uncontested paths (separation agreement plus divorce application), total legal spend is often in the ballpark of <strong>about CAD $5,000</strong>, subject to complexity. Contested litigation is usually hourly, so totals are harder to predict upfront.",
+    "answers": [
+      "<strong>Uncontested divorce</strong>: where spouses already agree on separation, property, and children, the workflow commonly starts with a <strong>Separation Agreement</strong>, followed by a <strong>Divorce Application</strong>. Many GTA family files in this category are handled as a structured process, which makes budgeting more realistic — <strong>around CAD $5,000</strong> is a common order-of-magnitude estimate (it can move up or down with disclosure and drafting complexity).",
+      "<strong>Contested divorce</strong>: custody/access disputes, contested property issues, a spouse who will not agree, or court-driven litigation typically means <strong>hourly billing</strong>. Hourly rates differ by counsel and the file, and every additional step (disclosure, motions, conferences, trial prep) adds time — so totals are inherently uncertain."
+    ],
+    "details": [
+      "Clients understandably want a single number, but in Ontario (including Toronto, Markham, Richmond Hill, Scarborough, and nearby regions) family counsel — including Mandarin/Cantonese-speaking divorce lawyers — often price <strong>very differently</strong> depending on whether the matter is negotiated and paper-driven versus adversarial and court-driven.",
+      "<strong>Uncontested path (more predictable)</strong>: when both sides can agree, counsel typically focuses on drafting/review, financial disclosure, parenting/support language, and then the divorce application paperwork. Because the scope is narrower, many firms can quote a range or staged fee so you know what “done” looks like before you start. That is why a figure like <strong>about CAD $5,000</strong> can be a useful planning anchor — not a guarantee for every household, but a realistic discussion point for a straightforward uncontested workflow.",
+      "<strong>Contested path (less predictable)</strong>: disputes over children, support, or property, refusal to sign, or repeated court events expand lawyer time quickly. Ontario litigation is usually billed hourly; the opposing side’s tactics and delay can lengthen the timeline, which increases fees even if you want the case finished yesterday.",
+      "<strong>Why contested costs are hard to estimate early</strong>: more issues means more correspondence, disclosure review, evidence preparation, and court appearances. In Ontario family law, one side cannot unilaterally “shut down” a contested process if the other side continues to litigate — so costs can accumulate while issues remain live.",
+      "<strong>Takeaway</strong>: think in two buckets — <strong>uncontested</strong>: often controllable, commonly discussed around <strong>about CAD $5,000</strong> as a starting planning range for a typical separation agreement + divorce application workflow; <strong>contested</strong>: depends on complexity and procedural history, so a responsible lawyer usually gives a range and assumptions rather than a fixed price on day one.",
+      "In consultations, the most useful question is not only “how much,” but <strong>which bucket your case is in</strong> and what facts would move it from negotiated to contested. For a confidential discussion tailored to your situation, contact Miao He at <strong>647-930-6688</strong>."
+    ],
+    "keywords": "Toronto divorce cost,how much divorce Toronto,uncontested divorce cost Toronto,separation agreement divorce application,Chinese divorce lawyer Toronto,Markham Richmond Hill Scarborough family lawyer,hourly divorce lawyer Ontario,Miao He"
+  },
+  {
     "slug": "contested-vs-uncontested-divorce-ontario",
     "question": "What is the difference between contested and uncontested divorce?",
     "summary": "An uncontested divorce means both parties have agreed on all issues: property division, support, and parenting. It is resolved without a trial and is faster and less expensive. A contested divorce means one or more issues cannot be resolved by agreement and must be decided by a judge at trial.",
