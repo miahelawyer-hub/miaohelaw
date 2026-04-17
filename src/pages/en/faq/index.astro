@@ -51,20 +51,10 @@ const totalFaqEn = items.length;
 
     .page-hero {
       position: relative;
-      background: linear-gradient(135deg, #2C1810, #4A2C1A);
+      background: var(--hero-legal-top-background); border-bottom: 1px solid rgba(0, 0, 0, 0.35);
       color: white;
       padding: 3rem 1.5rem 2.5rem;
       overflow: hidden;
-    }
-    .page-hero::after {
-      content: "";
-      position: absolute;
-      inset: -40% -20% auto auto;
-      width: 520px;
-      height: 520px;
-      background: radial-gradient(circle at 30% 30%, rgba(212,168,83,0.28), rgba(212,168,83,0) 60%);
-      transform: rotate(18deg);
-      pointer-events: none;
     }
     .page-hero .inner { max-width: 860px; margin: 0 auto; }
     .breadcrumb { font-size: 0.82rem; color: rgba(255,255,255,0.5); margin-bottom: 0.6rem; }

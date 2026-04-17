@@ -49,17 +49,9 @@ main.family-law-service-detail .container {
   padding: 0 1.5rem;
 }
 
-/* Hero — same stack as index `.hero-court-bg` + `.hero-court-scrim` (see src/pages/index.astro) */
+/* Hero — global token (child custody reference); see :root --hero-legal-top-background */
 main.family-law-service-detail .page-hero {
-  background:
-    radial-gradient(ellipse 85% 72% at 50% 42%, rgba(0, 0, 0, 0.42) 0%, transparent 58%),
-    linear-gradient(
-      165deg,
-      rgba(14, 12, 18, 0.76) 0%,
-      rgba(22, 18, 16, 0.84) 45%,
-      rgba(12, 10, 10, 0.9) 100%
-    ),
-    url('/images/hero-legal-backdrop.png') center 40% / cover no-repeat;
+  background: var(--hero-legal-top-background);
   color: #fff;
   padding: 3.5rem 0 2.5rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.35);
