@@ -1,17 +1,29 @@
 ---
+/** Display calendar date in America/Toronto so Ontario-focused posts never shift by build-server TZ. */
 interface Props {
 	date: Date;
+	/** BCP 47 locale; Chinese blog uses zh-CN, English uses en-US */
+	locale?: string;
 }
 
-const { date } = Astro.props;
+const { date, locale = 'en-US' } = Astro.props;
+
+const dateOpts =
+	locale.startsWith('zh')
+		? {
+				year: 'numeric',
+				month: 'long',
+				day: 'numeric',
+				timeZone: 'America/Toronto',
+			}
+		: {
+				year: 'numeric',
+				month: 'short',
+				day: 'numeric',
+				timeZone: 'America/Toronto',
+			};
 ---
 
 <time datetime={date.toISOString()}>
-	{
-		date.toLocaleDateString('en-us', {
-			year: 'numeric',
-			month: 'short',
-			day: 'numeric',
-		})
-	}
+	{date.toLocaleDateString(locale, dateOpts)}
 </time>

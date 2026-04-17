@@ -764,12 +764,12 @@ const structuredDataJson = JSON.stringify([
           <h1>{title}</h1>
           <p class="meta">
             何淼律师 Miao He &nbsp;·&nbsp;
-            <FormattedDate date={pubDate} />
-            {updatedDate && <span>&nbsp;（更新：<FormattedDate date={updatedDate} />）</span>}
+            <FormattedDate date={pubDate} locale="zh-CN" />
+            {updatedDate && <span>&nbsp;（更新：<FormattedDate date={updatedDate} locale="zh-CN" />）</span>}
             &nbsp;·&nbsp; H. LAW FIRM 恒. 律师事务所
           </p>
           <p class="post-meta-updated">
-            页面最后更新：<FormattedDate date={updatedDate ?? pubDate} />
+            页面最后更新：<FormattedDate date={updatedDate ?? pubDate} locale="zh-CN" />
           </p>
         </div>
 
@@ -845,7 +845,7 @@ const structuredDataJson = JSON.stringify([
                       <a href={`/blog/${post.id}`}>
                         {post.data.title}
                       </a>
-                      <div class="rdate"><FormattedDate date={post.data.pubDate} /></div>
+                      <div class="rdate"><FormattedDate date={post.data.pubDate} locale="zh-CN" /></div>
                     </li>
                   ))}
                 </ul>
