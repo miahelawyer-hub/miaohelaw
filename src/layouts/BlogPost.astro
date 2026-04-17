@@ -6,6 +6,8 @@ import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
+import '../styles/blog-prose-body-color.css';
+import { SITE_TITLE, SITE_URL } from '../consts';
 
 type Props = CollectionEntry['blog']['data'];
 
@@ -20,7 +22,26 @@ const {
   relatedIntro,
   relatedReading,
   pairedArticlePath,
+  faqStructured,
 } = Astro.props;
+
+const faqPageMainEntity =
+  faqStructured && faqStructured.length > 0
+    ? faqStructured.map((item) => ({
+        '@type': 'Question',
+        name: item.question,
+        acceptedAnswer: { '@type': 'Answer', text: item.answer },
+      }))
+    : [
+        {
+          '@type': 'Question',
+          name: title,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: description,
+          },
+        },
+      ];
 
 const pathname = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${Astro.url.pathname}/`;
 const canonicalUrl = new URL(pathname, Astro.site).href;
@@ -47,6 +68,149 @@ function titleForBlogSlug(slug: string): string {
 
 const defaultRelatedIntro =
   '如果您在阅读本文之外，还想延伸了解下列话题，欢迎继续阅读站内相关文章：';
+
+const siteOrigin = SITE_URL.replace(/\/$/, '');
+const webPageId = `${canonicalUrl}#webpage`;
+const breadcrumbId = `${canonicalUrl}#breadcrumb`;
+
+const articleLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description,
+  url: canonicalUrl,
+  datePublished: publishedIso,
+  dateModified: modifiedIso,
+  inLanguage: 'zh-CN',
+  isAccessibleForFree: true,
+  image: [`${siteOrigin}/miao-he-lawyer.jpeg`],
+  author: {
+    '@type': 'Person',
+    '@id': `${siteOrigin}/#person`,
+    name: 'Miao He',
+    alternateName: ['何淼', 'Mia He'],
+    jobTitle: 'Family Law Lawyer',
+    url: `${siteOrigin}/`,
+    telephone: '+1-647-930-6688',
+  },
+  publisher: {
+    '@type': 'Person',
+    '@id': `${siteOrigin}/#person`,
+    name: 'Miao He',
+    url: `${siteOrigin}/`,
+  },
+  provider: { '@id': `${siteOrigin}/#legalservice` },
+  about: {
+    '@type': 'LegalService',
+    name: 'Ontario Family Law',
+    areaServed: ['Greater Toronto Area', 'Ontario'],
+  },
+  ...(keywords
+    ? {
+        keywords: keywords
+          .split(/[,，]/)
+          .map((s) => s.trim())
+          .filter(Boolean),
+      }
+    : {}),
+  articleSection: 'Ontario family law',
+  mainEntityOfPage: { '@type': 'WebPage', '@id': webPageId },
+};
+
+const webPageLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': webPageId,
+  url: canonicalUrl,
+  name: title,
+  description,
+  inLanguage: 'zh-CN',
+  isPartOf: {
+    '@type': 'WebSite',
+    '@id': `${siteOrigin}/#website`,
+    url: `${siteOrigin}/`,
+    name: SITE_TITLE,
+  },
+  primaryImageOfPage: {
+    '@type': 'ImageObject',
+    url: `${siteOrigin}/miao-he-lawyer.jpeg`,
+  },
+  datePublished: publishedIso,
+  dateModified: modifiedIso,
+  breadcrumb: { '@id': breadcrumbId },
+};
+
+const webSiteLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  '@id': `${siteOrigin}/#website`,
+  url: `${siteOrigin}/`,
+  name: SITE_TITLE,
+  alternateName: ['miaohelaw.ca', '何淼律师', 'Miao He Law'],
+  inLanguage: ['zh-CN', 'en-CA'],
+  publisher: { '@id': `${siteOrigin}/#person` },
+};
+
+const legalServiceLd = {
+  '@context': 'https://schema.org',
+  '@type': 'LegalService',
+  '@id': `${siteOrigin}/#legalservice`,
+  name: 'H. LAW FIRM 恒. 律师事务所',
+  alternateName: ['H. LAW FIRM', '恒律师事务所', 'H Law Firm Ontario'],
+  description:
+    '安省家庭法：离婚与分居、子女监护与抚养、财产分割、婚前及分居协议、跨境资产等。普通话及英文服务，面向多伦多、万锦、列治文山、士嘉堡及安省客户。',
+  url: `${siteOrigin}/contact/`,
+  image: `${siteOrigin}/miao-he-lawyer.jpeg`,
+  telephone: '+1-647-930-6688',
+  email: 'miao@miaohelaw.ca',
+  priceRange: '$$',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '208-7050 Woodbine Ave',
+    addressLocality: 'Markham',
+    addressRegion: 'ON',
+    postalCode: 'L3R 4G8',
+    addressCountry: 'CA',
+  },
+  areaServed: [
+    { '@type': 'City', name: 'Toronto' },
+    { '@type': 'City', name: 'Markham' },
+    { '@type': 'City', name: 'Richmond Hill' },
+    { '@type': 'City', name: 'Vaughan' },
+    { '@type': 'City', name: 'Mississauga' },
+    { '@type': 'City', name: 'Scarborough' },
+    { '@type': 'AdministrativeArea', name: 'Greater Toronto Area' },
+    { '@type': 'AdministrativeArea', name: 'Ontario' },
+  ],
+  sameAs: ['https://www.linkedin.com/in/mia-he-93422b160/'],
+  founder: { '@id': `${siteOrigin}/#person` },
+};
+
+const faqPageLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqPageMainEntity,
+};
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  '@id': breadcrumbId,
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: '首页', item: `${siteOrigin}/` },
+    { '@type': 'ListItem', position: 2, name: '博客', item: `${siteOrigin}/blog/` },
+    { '@type': 'ListItem', position: 3, name: title, item: canonicalUrl },
+  ],
+};
+
+const structuredDataJson = JSON.stringify([
+  articleLd,
+  webPageLd,
+  webSiteLd,
+  legalServiceLd,
+  faqPageLd,
+  breadcrumbLd,
+]);
 ---
 
 <html lang="zh">
@@ -69,82 +233,12 @@ const defaultRelatedIntro =
         <link rel="alternate" hreflang="x-default" href={absoluteUrl(pairedArticlePath)} />
       </>
     )}
-    <script type="application/ld+json" set:html={JSON.stringify([
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": title,
-        "description": description,
-        "url": canonicalUrl,
-        "datePublished": publishedIso,
-        "dateModified": modifiedIso,
-        "inLanguage": "zh-CN",
-        "isAccessibleForFree": true,
-        "image": ["https://www.miaohelaw.ca/miao-he-lawyer.jpeg"],
-        "author": {
-          "@type": "Person",
-          "@id": "https://www.miaohelaw.ca/#person",
-          "name": "Miao He",
-          "alternateName": ["何淼", "Mia He"],
-          "jobTitle": "Family Law Lawyer",
-          "url": "https://www.miaohelaw.ca/",
-          "telephone": "+1-647-930-6688"
-        },
-        "publisher": {
-          "@type": "Person",
-          "@id": "https://www.miaohelaw.ca/#person",
-          "name": "Miao He",
-          "url": "https://www.miaohelaw.ca/"
-        },
-        "about": {
-          "@type": "LegalService",
-          "name": "Ontario Family Law",
-          "areaServed": ["Greater Toronto Area", "Ontario"]
-        },
-        ...(keywords
-          ? {
-              keywords: keywords
-                .split(/[,，]/)
-                .map((s) => s.trim())
-                .filter(Boolean),
-            }
-          : {}),
-        "articleSection": "Ontario family law",
-        "mainEntityOfPage": { "@type": "WebPage", "@id": `${canonicalUrl}#webpage` }
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": title,
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": description
-            }
-          }
-        ]
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://www.miaohelaw.ca/" },
-          { "@type": "ListItem", "position": 2, "name": "博客", "item": "https://www.miaohelaw.ca/blog/" },
-          { "@type": "ListItem", "position": 3, "name": title, "item": canonicalUrl }
-        ]
-      }
-    ])} />
+    <script type="application/ld+json" set:html={structuredDataJson} />
     <style is:global>
       * { box-sizing: border-box; }
       body { background: var(--bg); margin: 0; }
 
-      /* 博文页 main 内：与侧栏/引言相同的暖棕正文与标题色（避免中文无衬线在 #3d4f6f 上过「冷蓝」） */
-      main {
-        --text-primary: #4a3a2e;
-        --text-heading: #2c1810;
-      }
+      /* 正文色：与全站 global.css（Sentinel 蓝）一致 */
 
       /* ── Hero ── */
       .post-hero {
@@ -189,12 +283,15 @@ const defaultRelatedIntro =
 
       /* ── 正文 ── */
       /* 正文：与全站中文栈一致（无衬线），加大行距与段距，避免长文「挤」 */
+      /* Sentinel 蓝写在本块内，避免依赖外链顺序下 :root 变量是否已就绪 */
       .prose {
+        --text-primary: #3d4f6f;
+        --text-heading: #2a3544;
         background: #ffffff;
         border-radius: 12px;
         padding: 2.5rem;
         box-shadow: 0 2px 12px rgba(44,24,16,0.07);
-        color: var(--text-primary);
+        color: #3d4f6f;
         font-family: var(--font-zh-body);
         font-size: 1.02rem;
         font-weight: 400;
@@ -213,21 +310,28 @@ const defaultRelatedIntro =
         letter-spacing: 0.01em;
       }
       .prose h3 {
-        color: #4A2C1A;
+        color: #2a3544;
         font-size: 1.08rem;
         margin: 2.2rem 0 0.8rem;
         padding-left: 0.85rem;
         border-left: 3px solid #D4A853;
       }
+      .prose p,
+      .prose li,
+      .prose ol,
+      .prose ul,
+      .prose em {
+        color: #3d4f6f;
+      }
       .prose p { margin: 0 0 1.85rem; }
-      .prose strong { color: var(--text-heading); }
+      .prose strong { color: #2a3544; }
       .prose blockquote {
         border-left: 4px solid #D4A853;
         background: #fdf6ec;
         margin: 1.5rem 0;
         padding: 1rem 1.5rem;
         border-radius: 0 8px 8px 0;
-        color: #4A2C1A;
+        color: #2a3544;
         font-style: italic;
       }
       /* 文首「要点速览」：略小于正文、可读；正文内 HTML 使用 class="blog-tldr" */
@@ -284,7 +388,7 @@ const defaultRelatedIntro =
       .prose td {
         padding: 0.65rem 1rem;
         border-bottom: 1px solid #e8e0d5;
-        color: var(--text-primary);
+        color: #3d4f6f;
       }
       .prose tr:nth-child(even) td { background: #fdf6ec; }
       .prose hr { border: none; border-top: 1px solid #e8e0d5; margin: 2rem 0; }
@@ -582,7 +686,7 @@ const defaultRelatedIntro =
         gap: 1.25rem;
         align-items: flex-start;
       }
-      .author-bio-text p { margin: 0 0 0.6rem; font-size: 0.92rem; color: #4A2C1A; line-height: 1.65; }
+      .author-bio-text p { margin: 0 0 0.6rem; font-size: 0.92rem; color: #3d4f6f; line-height: 1.65; }
       .author-bio-name { font-size: 1rem !important; font-weight: 700; color: var(--text-heading) !important; }
       .author-bio-title { font-size: 0.82rem !important; color: #9A8060 !important; letter-spacing: 0.03em; }
       .author-bio-links { margin-top: 0.5rem !important; }

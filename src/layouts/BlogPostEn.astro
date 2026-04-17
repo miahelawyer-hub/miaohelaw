@@ -4,8 +4,12 @@ import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import HeaderEn from '../components/HeaderEn.astro';
+import '../styles/blog-prose-body-color.css';
+import { SITE_TITLE, SITE_URL } from '../consts';
 
 type RelatedReadingItem = { slug: string; line: string };
+
+type FaqStructuredItem = { question: string; answer: string };
 
 type Props = {
   title: string;
@@ -17,6 +21,7 @@ type Props = {
   relatedIntro?: string;
   relatedReading?: RelatedReadingItem[];
   pairedArticlePath?: string;
+  faqStructured?: FaqStructuredItem[];
 };
 
 const {
@@ -29,7 +34,23 @@ const {
   relatedIntro,
   relatedReading,
   pairedArticlePath,
+  faqStructured,
 } = Astro.props;
+
+const faqPageMainEntity =
+  faqStructured && faqStructured.length > 0
+    ? faqStructured.map((item) => ({
+        '@type': 'Question',
+        name: item.question,
+        acceptedAnswer: { '@type': 'Answer', text: item.answer },
+      }))
+    : [
+        {
+          '@type': 'Question',
+          name: title,
+          acceptedAnswer: { '@type': 'Answer', text: description },
+        },
+      ];
 
 const pathname = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${Astro.url.pathname}/`;
 const canonicalUrl = new URL(pathname, Astro.site).href;
@@ -43,6 +64,10 @@ function absoluteUrl(path: string) {
   return new URL(p, siteBase).href;
 }
 
+const siteOrigin = SITE_URL.replace(/\/$/, '');
+const webPageId = `${canonicalUrl}#webpage`;
+const breadcrumbId = `${canonicalUrl}#breadcrumb`;
+
 const articleLd: Record<string, unknown> = {
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -53,29 +78,30 @@ const articleLd: Record<string, unknown> = {
   dateModified: modifiedIso,
   inLanguage: 'en-CA',
   isAccessibleForFree: true,
-  image: ['https://www.miaohelaw.ca/miao-he-lawyer.jpeg'],
+  image: [`${siteOrigin}/miao-he-lawyer.jpeg`],
   author: {
     '@type': 'Person',
-    '@id': 'https://www.miaohelaw.ca/#person',
+    '@id': `${siteOrigin}/#person`,
     name: 'Miao He',
     alternateName: ['何淼', 'Mia He'],
     jobTitle: 'Family Law Lawyer',
-    url: 'https://www.miaohelaw.ca/',
+    url: `${siteOrigin}/`,
     telephone: '+1-647-930-6688',
   },
   publisher: {
     '@type': 'Person',
-    '@id': 'https://www.miaohelaw.ca/#person',
+    '@id': `${siteOrigin}/#person`,
     name: 'Miao He',
-    url: 'https://www.miaohelaw.ca/',
+    url: `${siteOrigin}/`,
   },
+  provider: { '@id': `${siteOrigin}/#legalservice` },
   about: {
     '@type': 'LegalService',
     name: 'Ontario Family Law',
     areaServed: ['Greater Toronto Area', 'Ontario'],
   },
   articleSection: 'Ontario family law',
-  mainEntityOfPage: { '@type': 'WebPage', '@id': `${canonicalUrl}#webpage` },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': webPageId },
 };
 if (keywords) {
   articleLd.keywords = keywords
@@ -87,26 +113,97 @@ if (keywords) {
 const faqPageLd = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: title,
-      acceptedAnswer: { '@type': 'Answer', text: description },
-    },
+  mainEntity: faqPageMainEntity,
+};
+
+const webPageLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': webPageId,
+  url: canonicalUrl,
+  name: title,
+  description,
+  inLanguage: 'en-CA',
+  isPartOf: {
+    '@type': 'WebSite',
+    '@id': `${siteOrigin}/#website`,
+    url: `${siteOrigin}/`,
+    name: SITE_TITLE,
+  },
+  primaryImageOfPage: {
+    '@type': 'ImageObject',
+    url: `${siteOrigin}/miao-he-lawyer.jpeg`,
+  },
+  datePublished: publishedIso,
+  dateModified: modifiedIso,
+  breadcrumb: { '@id': breadcrumbId },
+};
+
+const webSiteLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  '@id': `${siteOrigin}/#website`,
+  url: `${siteOrigin}/`,
+  name: SITE_TITLE,
+  alternateName: ['miaohelaw.ca', '何淼律师', 'Miao He Law'],
+  inLanguage: ['zh-CN', 'en-CA'],
+  publisher: { '@id': `${siteOrigin}/#person` },
+};
+
+const legalServiceLd = {
+  '@context': 'https://schema.org',
+  '@type': 'LegalService',
+  '@id': `${siteOrigin}/#legalservice`,
+  name: 'H. LAW FIRM',
+  alternateName: ['H. LAW FIRM 恒. 律师事务所', '恒律师事务所', 'Miao He Law Firm Ontario'],
+  description:
+    'Ontario family law: divorce and separation, parenting and support, property division, domestic contracts, and cross-border issues. Mandarin and English. Serving Toronto, Markham, Richmond Hill, Scarborough, the GTA, and province-wide.',
+  url: `${siteOrigin}/en/contact/`,
+  image: `${siteOrigin}/miao-he-lawyer.jpeg`,
+  telephone: '+1-647-930-6688',
+  email: 'miao@miaohelaw.ca',
+  priceRange: '$$',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '208-7050 Woodbine Ave',
+    addressLocality: 'Markham',
+    addressRegion: 'ON',
+    postalCode: 'L3R 4G8',
+    addressCountry: 'CA',
+  },
+  areaServed: [
+    { '@type': 'City', name: 'Toronto' },
+    { '@type': 'City', name: 'Markham' },
+    { '@type': 'City', name: 'Richmond Hill' },
+    { '@type': 'City', name: 'Vaughan' },
+    { '@type': 'City', name: 'Mississauga' },
+    { '@type': 'City', name: 'Scarborough' },
+    { '@type': 'AdministrativeArea', name: 'Greater Toronto Area' },
+    { '@type': 'AdministrativeArea', name: 'Ontario' },
   ],
+  sameAs: ['https://www.linkedin.com/in/mia-he-93422b160/'],
+  founder: { '@id': `${siteOrigin}/#person` },
 };
 
 const breadcrumbLd = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
+  '@id': breadcrumbId,
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.miaohelaw.ca/en/' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.miaohelaw.ca/en/blog/' },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteOrigin}/en/` },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: `${siteOrigin}/en/blog/` },
     { '@type': 'ListItem', position: 3, name: title, item: canonicalUrl },
   ],
 };
 
-const structuredDataJson = JSON.stringify([articleLd, faqPageLd, breadcrumbLd]);
+const structuredDataJson = JSON.stringify([
+  articleLd,
+  webPageLd,
+  webSiteLd,
+  legalServiceLd,
+  faqPageLd,
+  breadcrumbLd,
+]);
 
 function formatDate(date: Date) {
   return new Date(date).toLocaleDateString('en-CA', { year: 'numeric', month: 'long', day: 'numeric' });
@@ -153,10 +250,6 @@ const defaultRelatedIntroEn =
       * { box-sizing: border-box; }
       body { background: var(--bg); margin: 0; font-family: Georgia, serif; }
 
-      main {
-        --text-primary: #4a3a2e;
-        --text-heading: #2c1810;
-      }
       .post-hero { background: var(--hero-legal-top-background); border-bottom: 1px solid rgba(0, 0, 0, 0.35); padding: 3rem 1.5rem 2.5rem; text-align: center; }
       .post-hero .breadcrumb { font-size: 0.78rem; color: #c9a96e; margin-bottom: 1.2rem; letter-spacing: 0.04em; text-transform: uppercase; }
       .post-hero .breadcrumb a { color: #c9a96e; text-decoration: none; }
@@ -165,11 +258,13 @@ const defaultRelatedIntroEn =
       .post-hero .meta { color: #D4A853; font-size: 0.82rem; letter-spacing: 0.04em; }
       .post-layout { max-width: 1100px; margin: 0 auto; padding: 2.5rem 1.5rem; display: grid; grid-template-columns: 1fr 300px; gap: 2.5rem; align-items: start; }
       .prose {
+        --text-primary: #3d4f6f;
+        --text-heading: #2a3544;
         background: #ffffff;
         border-radius: 12px;
         padding: 2.5rem;
         box-shadow: 0 2px 12px rgba(44,24,16,0.07);
-        color: var(--text-primary);
+        color: #3d4f6f;
         font-family: var(--font-en-body);
         font-size: 1.02rem;
         line-height: 2;
@@ -177,10 +272,17 @@ const defaultRelatedIntroEn =
         min-width: 0;
       }
       .prose h2 { font-size: 1.15rem; margin: 3.25rem 0 1.35rem; padding: 0.55rem 1.1rem 0.55rem 1rem; background: linear-gradient(135deg, #2C1810 0%, #4A2C1A 100%); color: #ffffff; border-radius: 6px; }
-      .prose h3 { color: #4A2C1A; font-size: 1.08rem; margin: 2.2rem 0 0.8rem; padding-left: 0.85rem; border-left: 3px solid #D4A853; }
+      .prose h3 { color: #2a3544; font-size: 1.08rem; margin: 2.2rem 0 0.8rem; padding-left: 0.85rem; border-left: 3px solid #D4A853; }
+      .prose p,
+      .prose li,
+      .prose ol,
+      .prose ul,
+      .prose em {
+        color: #3d4f6f;
+      }
       .prose p { margin: 0 0 1.85rem; }
-      .prose strong { color: var(--text-heading); }
-      .prose blockquote { border-left: 4px solid #D4A853; background: #fdf6ec; margin: 1.5rem 0; padding: 1rem 1.5rem; border-radius: 0 8px 8px 0; color: #4A2C1A; font-style: italic; }
+      .prose strong { color: #2a3544; }
+      .prose blockquote { border-left: 4px solid #D4A853; background: #fdf6ec; margin: 1.5rem 0; padding: 1rem 1.5rem; border-radius: 0 8px 8px 0; color: #2a3544; font-style: italic; }
       .prose .blog-tldr {
         margin: 0 0 1.35rem;
         padding: 0.85rem 1rem 0.9rem 0.9rem;
@@ -217,7 +319,7 @@ const defaultRelatedIntroEn =
       .prose li { margin-bottom: 0.85rem; line-height: 2; }
       .prose table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.95rem; border-radius: 8px; overflow: hidden; }
       .prose th { background: #2C1810; color: #D4A853; padding: 0.75rem 1rem; text-align: left; font-weight: 600; font-size: 0.9rem; }
-      .prose td { padding: 0.65rem 1rem; border-bottom: 1px solid #e8e0d5; color: var(--text-primary); }
+      .prose td { padding: 0.65rem 1rem; border-bottom: 1px solid #e8e0d5; color: #3d4f6f; }
       .prose tr:nth-child(even) td { background: #fdf6ec; }
       .prose hr { border: none; border-top: 1px solid #e8e0d5; margin: 2rem 0; }
       .cta-box {
@@ -355,7 +457,7 @@ const defaultRelatedIntroEn =
         text-underline-offset: 2px;
       }
       .author-bio { margin-top: 2.5rem; border-top: 2px solid #e8e0d5; padding-top: 1.5rem; }
-      .author-bio-text p { margin: 0 0 0.6rem; font-size: 0.92rem; color: #4A2C1A; line-height: 1.65; }
+      .author-bio-text p { margin: 0 0 0.6rem; font-size: 0.92rem; color: #3d4f6f; line-height: 1.65; }
       .author-bio-name { font-size: 1rem !important; font-weight: 700; color: var(--text-heading) !important; }
       .author-bio-title { font-size: 0.82rem !important; color: #9A8060 !important; letter-spacing: 0.03em; }
       .author-bio-links a { color: #9A8060; text-decoration: none; font-size: 0.85rem; }

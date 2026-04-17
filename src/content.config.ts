@@ -27,6 +27,15 @@ const blogSchema = ({ image }) =>
      * For bilingual posts with the same slug: ZH uses `/en/blog/{slug}/`, EN uses `/blog/{slug}/`.
      */
     pairedArticlePath: z.string().optional(),
+    /** Optional FAQPage mainEntity; when set, replaces default single Q&A from title/description */
+    faqStructured: z
+      .array(
+        z.object({
+          question: z.string(),
+          answer: z.string(),
+        })
+      )
+      .optional(),
   });
 
 const blog = defineCollection({

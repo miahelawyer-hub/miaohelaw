@@ -1,0 +1,33 @@
+/**
+ * Blog article body — imported from BlogPost layouts so Vite always bundles it
+ * (avoids dev/HMR missing updates to layout-inlined styles). Matches global.css Sentinel blue.
+ */
+main article .post-layout .prose,
+main article .post-layout .prose p,
+main article .post-layout .prose li,
+main article .post-layout .prose ul,
+main article .post-layout .prose ol,
+main article .post-layout .prose em {
+	color: #3d4f6f !important;
+}
+
+main article .post-layout .prose strong,
+main article .post-layout .prose b {
+	color: #2a3544 !important;
+}
+
+main article .post-layout .prose h3 {
+	color: #2a3544 !important;
+}
+
+main article .post-layout .prose blockquote {
+	color: #2a3544 !important;
+}
+
+main article .post-layout .prose td {
+	color: #3d4f6f !important;
+}
+
+main article .post-layout .author-bio-text p {
+	color: #3d4f6f !important;
+}
