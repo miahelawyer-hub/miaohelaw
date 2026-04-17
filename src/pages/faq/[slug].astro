@@ -27,11 +27,11 @@ const jsonLdAnswerPlain = [summaryPlain, ...item.answers.map(stripHtml)].filter(
   <BaseHead
     title={`${questionPlain} | 何淼律师 多伦多华人家庭法`}
     description={summaryPlain}
+    ogType="article"
   />
   <meta name="keywords" content={item.keywords} />
   <meta property="og:title" content={`${questionPlain} | 何淼律师`} />
   <meta property="og:description" content={summaryPlain} />
-  <meta property="og:type" content="article" />
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "FAQPage",

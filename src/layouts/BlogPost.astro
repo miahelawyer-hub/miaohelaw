@@ -51,11 +51,10 @@ const defaultRelatedIntro =
 
 <html lang="zh">
   <head>
-    <BaseHead title={title} description={description} />
+    <BaseHead title={title} description={description} ogType="article" />
     {keywords && <meta name="keywords" content={keywords} />}
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:type" content="article" />
     <meta property="og:locale" content="zh_CN" />
     {pairedArticlePath && <meta property="og:locale:alternate" content="en_CA" />}
     <meta property="og:url" content={canonicalUrl} />
