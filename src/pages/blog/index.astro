@@ -65,6 +65,68 @@ function formatDate(date) {
 
     .main-wrap { max-width: 1100px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
 
+    /* ── 搜索 ── */
+    .blog-search {
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+      margin: 0 0 1.25rem;
+      padding: 0.85rem;
+      border-radius: 14px;
+      background: rgba(255,255,255,0.75);
+      border: 1px solid rgba(237,232,223,0.95);
+      box-shadow: 0 1px 0 rgba(44,24,16,0.02);
+    }
+    .blog-search-input{
+      flex: 1;
+      min-width: 0;
+      border: 1px solid rgba(212,168,83,0.28);
+      background: #fff;
+      color: var(--text-heading);
+      border-radius: 12px;
+      padding: 0.85rem 0.95rem;
+      font-size: 1rem;
+      line-height: 1.2;
+      outline: none;
+    }
+    .blog-search-input:focus{
+      border-color: rgba(212,168,83,0.6);
+      box-shadow: 0 0 0 4px rgba(212,168,83,0.18);
+    }
+    .blog-search-clear{
+      flex: none;
+      background: transparent;
+      border: 1px solid rgba(44,24,16,0.22);
+      color: #4A2C1A;
+      border-radius: 12px;
+      padding: 0.7rem 0.9rem;
+      font-size: 0.92rem;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .blog-search-clear:hover{
+      border-color: rgba(212,168,83,0.6);
+      background: rgba(212,168,83,0.08);
+    }
+    .blog-search-meta{
+      margin: 0 0 1.25rem;
+      color: #6b5a48;
+      font-size: 0.88rem;
+      line-height: 1.5;
+      min-height: 1.35em;
+    }
+    .sr-only{
+      position:absolute;
+      width:1px;
+      height:1px;
+      padding:0;
+      margin:-1px;
+      overflow:hidden;
+      clip:rect(0,0,0,0);
+      white-space:nowrap;
+      border:0;
+    }
+
     /* ── 置顶大卡片 ── */
     .featured-card {
       display: grid;
@@ -235,9 +297,26 @@ function formatDate(date) {
     </div>
 
     <div class="main-wrap">
+      <div class="blog-search" role="search" aria-label="博客文章搜索">
+        <label class="sr-only" for="blog-search-input">搜索文章</label>
+        <input
+          id="blog-search-input"
+          class="blog-search-input"
+          type="search"
+          placeholder="搜索关键词（例如：离婚、监护、婚前协议、抚养费）"
+          autocomplete="off"
+        />
+        <button class="blog-search-clear" id="blog-search-clear" type="button" aria-label="清空搜索">清空</button>
+      </div>
+      <p class="blog-search-meta" id="blog-search-meta" aria-live="polite"></p>
+
       <!-- 置顶第一篇 -->
       {posts.length > 0 && (
-        <a href={`/blog/${posts[0].id}/`} class="featured-card">
+        <a
+          href={`/blog/${posts[0].id}/`}
+          class="featured-card"
+          data-search={`${posts[0].data.title} ${posts[0].data.description} ${(posts[0].data.tags ?? []).join(' ')}`.toLowerCase()}
+        >
           <div class="featured-left">
             <div>
               <span class="featured-tag">最新文章</span>
@@ -263,6 +342,7 @@ function formatDate(date) {
           <a
             href={`/blog/${post.id}/`}
             class={`card${i >= 6 ? ' hidden' : ''}`}
+            data-search={`${post.data.title} ${post.data.description} ${(post.data.tags ?? []).join(' ')}`.toLowerCase()}
           >
             <p class="card-date">{formatDate(post.data.pubDate)}</p>
             <p class="card-title">{post.data.title}</p>
@@ -297,8 +377,62 @@ function formatDate(date) {
   <Footer />
 
   <script>
-    const btn = document.getElementById('load-more-btn');
     const grid = document.getElementById('post-grid');
+    const btn = document.getElementById('load-more-btn');
+    const featured = document.querySelector('.featured-card');
+
+    const searchInput = document.getElementById('blog-search-input');
+    const searchClear = document.getElementById('blog-search-clear');
+    const searchMeta = document.getElementById('blog-search-meta');
+
+    const allCards = () => [
+      ...(featured ? [featured] : []),
+      ...(grid ? Array.from(grid.querySelectorAll('.card')) : []),
+    ];
+
+    const resetLoadMore = () => {
+      if (!grid) return;
+      const cards = Array.from(grid.querySelectorAll('.card'));
+      cards.forEach((card, idx) => {
+        if (idx >= 6) card.classList.add('hidden');
+        else card.classList.remove('hidden');
+      });
+      if (btn) btn.style.display = cards.length > 6 ? '' : 'none';
+    };
+
+    const applySearch = () => {
+      const q = String(searchInput?.value ?? '').trim().toLowerCase();
+      const cards = allCards();
+
+      if (!q) {
+        cards.forEach((card) => (card.style.display = ''));
+        if (searchMeta) searchMeta.textContent = '';
+        resetLoadMore();
+        return;
+      }
+
+      let shown = 0;
+      cards.forEach((card) => {
+        const hay = (card.getAttribute('data-search') || '').toLowerCase();
+        const ok = hay.includes(q);
+        card.style.display = ok ? '' : 'none';
+        if (ok) {
+          shown += 1;
+          card.classList.remove('hidden');
+        }
+      });
+      if (btn) btn.style.display = 'none';
+      if (searchMeta) searchMeta.textContent = `搜索“${q}”：匹配 ${shown} 篇文章`;
+    };
+
+    if (searchInput && searchClear) {
+      searchInput.addEventListener('input', applySearch);
+      searchClear.addEventListener('click', () => {
+        searchInput.value = '';
+        applySearch();
+        searchInput.focus();
+      });
+    }
 
     if (btn && grid) {
       const getHidden = () => Array.from(grid.querySelectorAll('.card.hidden'));
@@ -307,6 +441,8 @@ function formatDate(date) {
       if (getHidden().length === 0) btn.style.display = 'none';
 
       btn.addEventListener('click', () => {
+        const q = String(searchInput?.value ?? '').trim();
+        if (q) return;
         // 每次展开6张
         getHidden().slice(0, 6).forEach(card => card.classList.remove('hidden'));
         // 展开后如果没有更多，隐藏按钮
