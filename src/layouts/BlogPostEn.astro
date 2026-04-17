@@ -5,6 +5,8 @@ import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import HeaderEn from '../components/HeaderEn.astro';
 
+type RelatedReadingItem = { slug: string; line: string };
+
 type Props = {
   title: string;
   description: string;
@@ -12,9 +14,22 @@ type Props = {
   updatedDate?: Date;
   keywords?: string;
   tags?: string[];
+  relatedIntro?: string;
+  relatedReading?: RelatedReadingItem[];
+  pairedArticlePath?: string;
 };
 
-const { title, description, pubDate, updatedDate, keywords, tags } = Astro.props;
+const {
+  title,
+  description,
+  pubDate,
+  updatedDate,
+  keywords,
+  tags,
+  relatedIntro,
+  relatedReading,
+  pairedArticlePath,
+} = Astro.props;
 
 const pathname = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${Astro.url.pathname}/`;
 const canonicalUrl = new URL(pathname, Astro.site).href;
@@ -22,14 +37,91 @@ const pathCore = pathname.replace(/\/$/, '') || '/';
 const publishedIso = pubDate.toISOString();
 const modifiedIso = (updatedDate ?? pubDate).toISOString();
 const articleAuthorUrl = 'https://www.miaohelaw.ca/en/about/';
+const siteBase = Astro.site ?? new URL('https://www.miaohelaw.ca/');
+function absoluteUrl(path: string) {
+  const p = path.startsWith('/') ? path : `/${path}`;
+  return new URL(p, siteBase).href;
+}
+
+const articleLd: Record<string, unknown> = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description,
+  url: canonicalUrl,
+  datePublished: publishedIso,
+  dateModified: modifiedIso,
+  inLanguage: 'en-CA',
+  author: {
+    '@type': 'Person',
+    '@id': 'https://www.miaohelaw.ca/#person',
+    name: 'Miao He',
+    alternateName: ['何淼', 'Mia He'],
+    jobTitle: 'Family Law Lawyer',
+    url: 'https://www.miaohelaw.ca/',
+    telephone: '+1-647-930-6688',
+  },
+  publisher: {
+    '@type': 'Person',
+    '@id': 'https://www.miaohelaw.ca/#person',
+    name: 'Miao He',
+    url: 'https://www.miaohelaw.ca/',
+  },
+  about: {
+    '@type': 'LegalService',
+    name: 'Ontario Family Law',
+    areaServed: ['Greater Toronto Area', 'Ontario'],
+  },
+  articleSection: 'Ontario family law',
+  mainEntityOfPage: { '@type': 'WebPage', '@id': `${canonicalUrl}#webpage` },
+};
+if (keywords) {
+  articleLd.keywords = keywords
+    .split(/[,]/)
+    .map((s) => s.trim())
+    .filter(Boolean);
+}
+
+const faqPageLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: title,
+      acceptedAnswer: { '@type': 'Answer', text: description },
+    },
+  ],
+};
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.miaohelaw.ca/en/' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.miaohelaw.ca/en/blog/' },
+    { '@type': 'ListItem', position: 3, name: title, item: canonicalUrl },
+  ],
+};
+
+const structuredDataJson = JSON.stringify([articleLd, faqPageLd, breadcrumbLd]);
 
 function formatDate(date: Date) {
   return new Date(date).toLocaleDateString('en-CA', { year: 'numeric', month: 'long', day: 'numeric' });
 }
 
-const allPosts = (await getCollection('blog-en')).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-).filter(p => `/en/blog/${p.id}` !== pathCore && `/en/blog/${p.id}/` !== pathname).slice(0, 4);
+const allBlogEntriesEn = await getCollection('blog-en');
+const allPosts = allBlogEntriesEn
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .filter((p) => `/en/blog/${p.id}` !== pathCore && `/en/blog/${p.id}/` !== pathname)
+  .slice(0, 4);
+
+function titleForEnBlogSlug(slug: string): string {
+  return allBlogEntriesEn.find((p) => p.id === slug)?.data.title ?? slug;
+}
+
+const defaultRelatedIntroEn =
+  'If you want to go deeper on related topics, you may find these earlier articles helpful:';
 ---
 
 <html lang="en">
@@ -44,43 +136,23 @@ const allPosts = (await getCollection('blog-en')).sort(
     <meta property="article:modified_time" content={modifiedIso} />
     <meta property="article:author" content={articleAuthorUrl} />
     <meta name="author" content="Miao He" />
-    <link rel="alternate" hreflang="en" href={canonicalUrl} />
-    <script type="application/ld+json" set:html={JSON.stringify([
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": title,
-        "description": description,
-        "url": canonicalUrl,
-        "datePublished": publishedIso,
-        "dateModified": modifiedIso,
-        "inLanguage": "en",
-        "author": {
-          "@type": "Person",
-          "@id": "https://www.miaohelaw.ca/#person",
-          "name": "Miao He",
-          "alternateName": ["何淼", "Mia He"],
-          "jobTitle": "Family Law Lawyer",
-          "url": "https://www.miaohelaw.ca/",
-          "telephone": "+1-647-930-6688"
-        },
-        "publisher": {
-          "@type": "Person",
-          "@id": "https://www.miaohelaw.ca/#person",
-          "name": "Miao He",
-          "url": "https://www.miaohelaw.ca/"
-        }
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.miaohelaw.ca/en/" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.miaohelaw.ca/en/blog/" },
-          { "@type": "ListItem", "position": 3, "name": title, "item": canonicalUrl }
-        ]
-      }
-    ])} />
+    <meta property="og:url" content={canonicalUrl} />
+    {pairedArticlePath ? (
+      <>
+        <link rel="alternate" hreflang="en" href={canonicalUrl} />
+        <link rel="alternate" hreflang="zh-CN" href={absoluteUrl(pairedArticlePath)} />
+        <link rel="alternate" hreflang="x-default" href={canonicalUrl} />
+      </>
+    ) : (
+      <link rel="alternate" hreflang="en" href={canonicalUrl} />
+    )}
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap"
+      rel="stylesheet"
+    />
+    <script type="application/ld+json" set:html={structuredDataJson} />
     <style is:global>
       * { box-sizing: border-box; }
       body { background: var(--bg); margin: 0; font-family: Georgia, serif; }
@@ -91,12 +163,53 @@ const allPosts = (await getCollection('blog-en')).sort(
       .post-hero h1 { color: #ffffff; font-size: clamp(1.5rem, 3.5vw, 2.1rem); line-height: 1.35; margin: 0 auto 1.2rem; max-width: 820px; font-weight: 700; }
       .post-hero .meta { color: #D4A853; font-size: 0.82rem; letter-spacing: 0.04em; }
       .post-layout { max-width: 1100px; margin: 0 auto; padding: 2.5rem 1.5rem; display: grid; grid-template-columns: 1fr 300px; gap: 2.5rem; align-items: start; }
-      .prose { background: #ffffff; border-radius: 12px; padding: 2.5rem; box-shadow: 0 2px 12px rgba(44,24,16,0.07); color: var(--text-primary); font-size: 1.08rem; line-height: 2; min-width: 0; }
+      .prose {
+        background: #ffffff;
+        border-radius: 12px;
+        padding: 2.5rem;
+        box-shadow: 0 2px 12px rgba(44,24,16,0.07);
+        color: var(--text-primary);
+        font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+        font-size: 1.02rem;
+        line-height: 1.85;
+        min-width: 0;
+      }
       .prose h2 { font-size: 1.15rem; margin: 3rem 0 1.2rem; padding: 0.55rem 1.1rem 0.55rem 1rem; background: linear-gradient(135deg, #2C1810 0%, #4A2C1A 100%); color: #ffffff; border-radius: 6px; }
       .prose h3 { color: #4A2C1A; font-size: 1.08rem; margin: 2.2rem 0 0.8rem; padding-left: 0.85rem; border-left: 3px solid #D4A853; }
       .prose p { margin: 0 0 1.6rem; }
       .prose strong { color: var(--text-heading); }
       .prose blockquote { border-left: 4px solid #D4A853; background: #fdf6ec; margin: 1.5rem 0; padding: 1rem 1.5rem; border-radius: 0 8px 8px 0; color: #4A2C1A; font-style: italic; }
+      .prose .blog-tldr {
+        margin: 0 0 1rem;
+        padding: 0.65rem 0.9rem 0.65rem 0.8rem;
+        background: #f9f5ef;
+        border-left: 3px solid #c9a168;
+        border-radius: 0 6px 6px 0;
+        font-size: 0.95rem;
+        line-height: 1.55;
+        color: #3a2e22;
+        font-style: normal;
+      }
+      .prose .blog-tldr-kicker {
+        margin: 0 0 0.4rem;
+        font-size: 0.84rem;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        text-transform: none;
+        color: #5c4010;
+      }
+      .prose .blog-tldr ul {
+        margin: 0;
+        padding-left: 1rem;
+        list-style: disc;
+      }
+      .prose .blog-tldr li {
+        margin-bottom: 0.2rem;
+        line-height: 1.45;
+      }
+      .prose .blog-tldr li:last-child {
+        margin-bottom: 0;
+      }
       .prose ul, .prose ol { padding-left: 1.5rem; margin: 0 0 1.25rem; }
       .prose li { margin-bottom: 0.75rem; line-height: 1.9; }
       .prose table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.95rem; border-radius: 8px; overflow: hidden; }
@@ -104,12 +217,140 @@ const allPosts = (await getCollection('blog-en')).sort(
       .prose td { padding: 0.65rem 1rem; border-bottom: 1px solid #e8e0d5; color: var(--text-primary); }
       .prose tr:nth-child(even) td { background: #fdf6ec; }
       .prose hr { border: none; border-top: 1px solid #e8e0d5; margin: 2rem 0; }
-      .cta-box { background: linear-gradient(135deg, #2C1810, #4A2C1A); color: white; padding: 2rem; border-radius: 12px; margin-top: 2.5rem; text-align: center; }
-      .cta-box h3 { color: #D4A853; margin: 0 0 0.6rem; font-size: 1.1rem; }
-      .cta-box p { color: rgba(255,255,255,0.92); margin: 0 0 1.25rem; font-size: 0.95rem; }
-      .cta-links { display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; }
-      .btn-primary { display: inline-block; background: #D4A853; color: var(--text-heading); padding: 0.7rem 1.5rem; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 0.92rem; }
-      .btn-secondary { display: inline-block; background: transparent; color: white; border: 2px solid white; padding: 0.7rem 1.5rem; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 0.92rem; }
+      .cta-box {
+        margin-top: 2.5rem;
+        padding: 2rem 1.35rem;
+        text-align: center;
+        border-radius: 12px;
+        color: #fff;
+        background: #1c2b3f;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 0 14px 32px rgba(0, 0, 0, 0.14);
+      }
+      .cta-box-heading {
+        font-family: "Playfair Display", Georgia, "Times New Roman", serif !important;
+        font-size: clamp(1.28rem, 2.8vw, 1.6rem);
+        font-weight: 600 !important;
+        color: #fac775 !important;
+        margin: 0 0 0.55rem;
+        line-height: 1.35;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+      }
+      .cta-box-intro {
+        color: #d4cfc3;
+        font-size: 0.86rem;
+        line-height: 1.6;
+        max-width: 34rem;
+        margin: 0 auto 1rem;
+      }
+      .cta-box-fee {
+        display: inline-block;
+        background: #263649;
+        color: rgba(232, 217, 184, 0.92);
+        font-size: 0.8rem;
+        font-weight: 500;
+        padding: 0.45rem 1rem;
+        border-radius: 20px;
+        margin-bottom: 1.15rem;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .cta-box-actions {
+        display: flex;
+        gap: 0.75rem;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .cta-box .btn-cta-phone {
+        display: inline-block;
+        background: #c9a168;
+        color: #1c1810;
+        padding: 0.72rem 1.35rem;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 0.9rem;
+        box-shadow: 0 14px 32px rgba(0, 0, 0, 0.38);
+        transition: filter 0.15s ease, box-shadow 0.15s ease;
+      }
+      .cta-box .btn-cta-phone:hover {
+        filter: brightness(1.04);
+        box-shadow: 0 18px 36px rgba(0, 0, 0, 0.42);
+      }
+      .cta-box .btn-cta-email {
+        display: inline-block;
+        background: transparent;
+        color: rgba(232, 217, 184, 0.95);
+        border: 1px solid #c9a168;
+        padding: 0.72rem 1.35rem;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 0.88rem;
+        transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+      }
+      .cta-box .btn-cta-email:hover {
+        background: rgba(201, 161, 104, 0.14);
+        border-color: #d4b47e;
+        color: #fdfbf7;
+      }
+      .sidebar-regions-intro {
+        font-size: 0.8rem;
+        color: #6b5a48;
+        line-height: 1.55;
+        margin: 0 0 0.85rem;
+      }
+      .region-link-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .region-link-list li {
+        border-bottom: 1px solid #f0ebe3;
+        padding: 0.5rem 0;
+      }
+      .region-link-list li:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+      .region-link-list a {
+        display: block;
+        text-decoration: none;
+        color: #4a2c1a;
+      }
+      .region-link-list a:hover .r-main {
+        color: #7a5a1a;
+      }
+      .region-link-list .r-main {
+        display: block;
+        font-size: 0.86rem;
+        font-weight: 700;
+        line-height: 1.35;
+      }
+      .region-link-list .r-tail {
+        display: block;
+        font-size: 0.72rem;
+        color: #8a7a68;
+        font-weight: 500;
+        margin-top: 0.15rem;
+        line-height: 1.35;
+      }
+      .sidebar-address {
+        margin: 0.85rem 0 0;
+        padding-top: 0.85rem;
+        border-top: 1px solid #e8e0d5;
+        font-size: 0.78rem;
+        line-height: 1.5;
+      }
+      .sidebar-address a {
+        color: #5a6d85;
+        font-weight: 600;
+        text-decoration: none;
+      }
+      .sidebar-address a:hover {
+        color: #7a5a1a;
+        text-decoration: underline;
+        text-underline-offset: 2px;
+      }
       .author-bio { margin-top: 2.5rem; border-top: 2px solid #e8e0d5; padding-top: 1.5rem; }
       .author-bio-text p { margin: 0 0 0.6rem; font-size: 0.92rem; color: #4A2C1A; line-height: 1.65; }
       .author-bio-name { font-size: 1rem !important; font-weight: 700; color: var(--text-heading) !important; }
@@ -130,13 +371,53 @@ const allPosts = (await getCollection('blog-en')).sort(
       .related-list a { color: #4A2C1A; text-decoration: none; font-size: 0.88rem; line-height: 1.45; display: block; }
       .related-list a:hover { color: #D4A853; }
       .related-list .rdate { font-size: 0.75rem; color: #9A8060; margin-top: 0.2rem; }
+      .sidebar-related-intro {
+        font-size: 0.84rem;
+        color: #6b5a48;
+        line-height: 1.65;
+        margin: 0 0 1rem;
+      }
+      .related-reading-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .related-reading-list li {
+        padding: 0.85rem 0;
+        border-bottom: 1px solid #f0ebe3;
+      }
+      .related-reading-list li:first-child {
+        padding-top: 0;
+      }
+      .related-reading-list li:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+      .related-reading-list a {
+        color: #4a2c1a;
+        text-decoration: none;
+        font-size: 0.9rem;
+        font-weight: 700;
+        line-height: 1.4;
+        display: block;
+      }
+      .related-reading-list a:hover {
+        color: #d4a853;
+      }
+      .related-reading-teaser {
+        margin: 0.4rem 0 0;
+        font-size: 0.8rem;
+        color: #7a6a58;
+        line-height: 1.55;
+        font-weight: 500;
+      }
       .service-list { list-style: none; padding: 0; margin: 0; }
       .service-list li { padding: 0.3rem 0; border-bottom: 1px solid #f0ebe3; font-size: 0.88rem; }
       .service-list li:last-child { border-bottom: none; }
       .service-list a { color: #9A8060; text-decoration: none; }
       .service-list a:hover { color: var(--text-heading); }
       @media (max-width: 900px) { .post-layout { grid-template-columns: 1fr; } .contact-card { display: none; } }
-      @media (max-width: 600px) { .post-hero { padding: 2rem 1rem 1.5rem; } .post-hero h1 { font-size: 1.35rem; } .prose { padding: 1.5rem 1.1rem; font-size: 1rem; } .post-layout { padding: 1.5rem 1rem; gap: 1.5rem; } }
+      @media (max-width: 600px) { .post-hero { padding: 2rem 1rem 1.5rem; } .post-hero h1 { font-size: 1.35rem; } .prose { padding: 1.5rem 1.1rem; font-size: 0.96rem; } .post-layout { padding: 1.5rem 1rem; gap: 1.5rem; } }
     </style>
   </head>
   <body>
@@ -164,11 +445,12 @@ const allPosts = (await getCollection('blog-en')).sort(
           <div class="prose">
             <slot />
             <div class="cta-box">
-              <h3>Book an Initial Legal Consultation</h3>
-              <p>Miao He · 30-minute consultation $220+HST · Understand your rights, assess your options, and build a strategy. Mandarin & English.</p>
-              <div class="cta-links">
-                <a href="tel:6479306688" class="btn-primary">📞 647-930-6688</a>
-                <a href="/en/contact" class="btn-secondary">Book Online</a>
+              <h3 class="cta-box-heading">Speak with Miao He</h3>
+              <p class="cta-box-intro">Mandarin & English · Markham office · GTA &amp; Ontario</p>
+              <div class="cta-box-fee">Initial consultation 30 min · $220 + HST · billed in 6-minute units</div>
+              <div class="cta-box-actions">
+                <a href="tel:6479306688" class="btn-cta-phone">📞 647-930-6688</a>
+                <a href="mailto:miao@miaohelaw.ca" class="btn-cta-email">✉️ miao@miaohelaw.ca</a>
               </div>
             </div>
 
@@ -194,9 +476,24 @@ const allPosts = (await getCollection('blog-en')).sort(
               <a href="mailto:miao@miaohelaw.ca" class="email-btn">✉ miao@miaohelaw.ca</a>
             </div>
 
+            {relatedReading && relatedReading.length > 0 && (
+              <div class="sidebar-card">
+                <h3>Further Reading</h3>
+                <p class="sidebar-related-intro">{relatedIntro ?? defaultRelatedIntroEn}</p>
+                <ul class="related-reading-list">
+                  {relatedReading.map((item) => (
+                    <li>
+                      <a href={`/en/blog/${item.slug}/`}>{titleForEnBlogSlug(item.slug)}</a>
+                      <p class="related-reading-teaser">{item.line}</p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
             {allPosts.length > 0 && (
               <div class="sidebar-card">
-                <h3>Related Articles</h3>
+                <h3>More Articles</h3>
                 <ul class="related-list">
                   {allPosts.map(post => (
                     <li>
@@ -228,6 +525,78 @@ const allPosts = (await getCollection('blog-en')).sort(
                 <li><a href="/en/family-law/cross-border-assets">Cross-Border Assets</a></li>
                 <li><a href="/en/family-law/mediation">Mediation</a></li>
               </ul>
+            </div>
+
+            <div class="sidebar-card">
+              <h3>Service areas · GTA</h3>
+              <p class="sidebar-regions-intro">
+                Based in Markham, serving the GTA and Ontario. Local landing pages (on-site):
+              </p>
+              <ul class="region-link-list">
+                <li>
+                  <a href="/en/toronto-chinese-family-lawyer/">
+                    <span class="r-main">Toronto · Chinese family lawyer</span>
+                    <span class="r-tail">Mandarin divorce &amp; custody · GTA</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/en/markham-chinese-family-lawyer/">
+                    <span class="r-main">Markham family lawyer</span>
+                    <span class="r-tail">Office location · in-person meetings</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/en/richmond-hill-chinese-family-lawyer/">
+                    <span class="r-main">Richmond Hill divorce lawyer</span>
+                    <span class="r-tail">York Region family law</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/en/mississauga-chinese-family-lawyer/">
+                    <span class="r-main">Mississauga family law</span>
+                    <span class="r-tail">Peel divorce &amp; support</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/en/scarborough-chinese-family-lawyer/">
+                    <span class="r-main">Scarborough Chinese family lawyer</span>
+                    <span class="r-tail">East GTA consultations</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/en/north-york-chinese-family-lawyer/">
+                    <span class="r-main">North York family lawyer</span>
+                    <span class="r-tail">Central Toronto area</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/en/vaughan-chinese-family-lawyer/">
+                    <span class="r-main">Vaughan divorce lawyer</span>
+                    <span class="r-tail">York Region Mandarin service</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/en/brampton-chinese-family-lawyer/">
+                    <span class="r-main">Brampton family law</span>
+                    <span class="r-tail">Peel Region divorce counsel</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/en/thornhill-chinese-family-lawyer/">
+                    <span class="r-main">Thornhill family lawyer</span>
+                    <span class="r-tail">York Region Chinese clients</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/en/ajax-pickering-chinese-family-lawyer/">
+                    <span class="r-main">Ajax / Pickering family lawyer</span>
+                    <span class="r-tail">Durham Region divorce help</span>
+                  </a>
+                </li>
+              </ul>
+              <p class="sidebar-address">
+                <a href="/en/contact/">📍 Office: 208-7050 Woodbine Ave, Markham, ON L3R 4G8 — directions &amp; booking</a>
+              </p>
             </div>
           </aside>
         </div>

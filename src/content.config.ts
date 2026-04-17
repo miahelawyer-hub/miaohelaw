@@ -11,6 +11,19 @@ const blogSchema = ({ image }) =>
     heroImage: z.optional(image()),
     keywords: z.string().optional(),
     tags: z.array(z.string()).optional(),
+    /** Optional sidebar blurb above curated internal links */
+    relatedIntro: z.string().optional(),
+    /** Curated same-site blog links with one-line context (slug = blog post `id`) */
+    relatedReading: z
+      .array(
+        z.object({
+          slug: z.string(),
+          line: z.string(),
+        })
+      )
+      .optional(),
+    /** Other-language URL path (with trailing slash) for hreflang, e.g. `/en/blog/slug/` on ZH posts */
+    pairedArticlePath: z.string().optional(),
   });
 
 const blog = defineCollection({

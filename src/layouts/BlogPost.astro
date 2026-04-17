@@ -9,7 +9,18 @@ import Header from '../components/Header.astro';
 
 type Props = CollectionEntry['blog']['data'];
 
-const { title, description, pubDate, updatedDate, heroImage, keywords, tags } = Astro.props;
+const {
+  title,
+  description,
+  pubDate,
+  updatedDate,
+  heroImage,
+  keywords,
+  tags,
+  relatedIntro,
+  relatedReading,
+  pairedArticlePath,
+} = Astro.props;
 
 const pathname = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${Astro.url.pathname}/`;
 const canonicalUrl = new URL(pathname, Astro.site).href;
@@ -17,11 +28,25 @@ const pathCore = pathname.replace(/\/$/, '') || '/';
 const publishedIso = pubDate.toISOString();
 const modifiedIso = (updatedDate ?? pubDate).toISOString();
 const articleAuthorUrl = 'https://www.miaohelaw.ca/about/';
+const siteBase = Astro.site ?? new URL('https://www.miaohelaw.ca/');
+function absoluteUrl(path: string) {
+  const p = path.startsWith('/') ? path : `/${path}`;
+  return new URL(p, siteBase).href;
+}
 
-// 获取其他博文用于侧边栏
-const allPosts = (await getCollection('blog')).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-).filter(p => `/blog/${p.id}` !== pathCore && `/blog/${p.id}/` !== pathname).slice(0, 4);
+// 获取其他博文用于侧边栏；全量用于解析延伸阅读 slug → 标题
+const allBlogEntries = await getCollection('blog');
+const allPosts = allBlogEntries
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .filter((p) => `/blog/${p.id}` !== pathCore && `/blog/${p.id}/` !== pathname)
+  .slice(0, 4);
+
+function titleForBlogSlug(slug: string): string {
+  return allBlogEntries.find((p) => p.id === slug)?.data.title ?? slug;
+}
+
+const defaultRelatedIntro =
+  '如果您在阅读本文之外，还想延伸了解下列话题，欢迎继续阅读站内相关文章：';
 ---
 
 <html lang="zh">
@@ -32,10 +57,18 @@ const allPosts = (await getCollection('blog')).sort(
     <meta property="og:description" content={description} />
     <meta property="og:type" content="article" />
     <meta property="og:locale" content="zh_CN" />
+    <meta property="og:url" content={canonicalUrl} />
     <meta property="article:published_time" content={publishedIso} />
     <meta property="article:modified_time" content={modifiedIso} />
     <meta property="article:author" content={articleAuthorUrl} />
     <meta name="author" content="何淼律师 Miao He" />
+    {pairedArticlePath && (
+      <>
+        <link rel="alternate" hreflang="zh-CN" href={canonicalUrl} />
+        <link rel="alternate" hreflang="en" href={absoluteUrl(pairedArticlePath)} />
+        <link rel="alternate" hreflang="x-default" href={absoluteUrl(pairedArticlePath)} />
+      </>
+    )}
     <script type="application/ld+json" set:html={JSON.stringify([
       {
         "@context": "https://schema.org",
@@ -65,7 +98,17 @@ const allPosts = (await getCollection('blog')).sort(
           "@type": "LegalService",
           "name": "Ontario Family Law",
           "areaServed": "Greater Toronto Area"
-        }
+        },
+        ...(keywords
+          ? {
+              keywords: keywords
+                .split(/[,，]/)
+                .map((s) => s.trim())
+                .filter(Boolean),
+            }
+          : {}),
+        "articleSection": "Ontario family law",
+        "mainEntityOfPage": { "@type": "WebPage", "@id": `${canonicalUrl}#webpage` }
       },
       {
         "@context": "https://schema.org",
@@ -142,8 +185,10 @@ const allPosts = (await getCollection('blog')).sort(
         padding: 2.5rem;
         box-shadow: 0 2px 12px rgba(44,24,16,0.07);
         color: var(--text-primary);
-        font-size: 1.08rem;
-        line-height: 2;
+        font-family: "Noto Serif SC", "Songti SC", "STSong", "Source Han Serif SC", Georgia, "Times New Roman", serif;
+        font-size: 1.02rem;
+        font-weight: 400;
+        line-height: 1.85;
         min-width: 0;
       }
       .prose h2 {
@@ -175,6 +220,38 @@ const allPosts = (await getCollection('blog')).sort(
         color: #4A2C1A;
         font-style: italic;
       }
+      /* 文首「要点速览」：略小于正文、可读；正文内 HTML 使用 class="blog-tldr" */
+      .prose .blog-tldr {
+        margin: 0 0 1rem;
+        padding: 0.65rem 0.9rem 0.65rem 0.8rem;
+        background: #f9f5ef;
+        border-left: 3px solid #c9a168;
+        border-radius: 0 6px 6px 0;
+        font-size: 0.95rem;
+        line-height: 1.55;
+        color: #3a2e22;
+        font-style: normal;
+      }
+      .prose .blog-tldr-kicker {
+        margin: 0 0 0.4rem;
+        font-size: 0.84rem;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        text-transform: none;
+        color: #5c4010;
+      }
+      .prose .blog-tldr ul {
+        margin: 0;
+        padding-left: 1rem;
+        list-style: disc;
+      }
+      .prose .blog-tldr li {
+        margin-bottom: 0.2rem;
+        line-height: 1.45;
+      }
+      .prose .blog-tldr li:last-child {
+        margin-bottom: 0;
+      }
       .prose ul, .prose ol { padding-left: 1.5rem; margin: 0 0 1.25rem; }
       .prose li { margin-bottom: 0.75rem; line-height: 1.9; }
       .prose table {
@@ -201,27 +278,143 @@ const allPosts = (await getCollection('blog')).sort(
       .prose tr:nth-child(even) td { background: #fdf6ec; }
       .prose hr { border: none; border-top: 1px solid #e8e0d5; margin: 2rem 0; }
 
-      /* ── 文末 CTA ── */
+      /* ── 文末 CTA：与首页 contact-cta 同款（金标题 / 暖灰正文 / 费用 pill / 电话 + 邮箱） ── */
       .cta-box {
-        background: linear-gradient(135deg, #2C1810, #4A2C1A);
-        color: white;
-        padding: 2rem;
-        border-radius: 12px;
         margin-top: 2.5rem;
+        padding: 2rem 1.35rem;
         text-align: center;
+        border-radius: 12px;
+        color: #fff;
+        background: #1c2b3f;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 0 14px 32px rgba(0, 0, 0, 0.14);
       }
-      .cta-box h3 { color: #D4A853; margin: 0 0 0.6rem; font-size: 1.1rem; }
-      .cta-box p { color: rgba(255,255,255,0.92); margin: 0 0 1.25rem; font-size: 0.95rem; }
-      .cta-links { display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; }
-      .btn-primary {
-        display: inline-block; background: #D4A853; color: var(--text-heading);
-        padding: 0.7rem 1.5rem; border-radius: 6px; text-decoration: none;
-        font-weight: 700; font-size: 0.92rem;
+      /* 与首页 contact-cta 同色；思源宋加粗，避免细体在深蓝底上发灰 */
+      .cta-box-heading {
+        font-family: "Noto Serif SC", "Songti SC", Georgia, "Times New Roman", serif !important;
+        font-size: clamp(1.28rem, 2.8vw, 1.6rem);
+        font-weight: 700 !important;
+        color: #fac775 !important;
+        margin: 0 0 0.55rem;
+        line-height: 1.35;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
       }
-      .btn-secondary {
-        display: inline-block; background: transparent; color: white;
-        border: 2px solid white; padding: 0.7rem 1.5rem; border-radius: 6px;
-        text-decoration: none; font-weight: 700; font-size: 0.92rem;
+      .cta-box-intro {
+        color: #d4cfc3;
+        font-size: 0.86rem;
+        line-height: 1.6;
+        max-width: 34rem;
+        margin: 0 auto 1rem;
+      }
+      .cta-box-fee {
+        display: inline-block;
+        background: #263649;
+        color: rgba(232, 217, 184, 0.92);
+        font-size: 0.8rem;
+        font-weight: 500;
+        padding: 0.45rem 1rem;
+        border-radius: 20px;
+        margin-bottom: 1.15rem;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .cta-box-actions {
+        display: flex;
+        gap: 0.75rem;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .cta-box .btn-cta-phone {
+        display: inline-block;
+        background: #c9a168;
+        color: #1c1810;
+        padding: 0.72rem 1.35rem;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 0.9rem;
+        box-shadow: 0 14px 32px rgba(0, 0, 0, 0.38);
+        transition: filter 0.15s ease, box-shadow 0.15s ease;
+      }
+      .cta-box .btn-cta-phone:hover {
+        filter: brightness(1.04);
+        box-shadow: 0 18px 36px rgba(0, 0, 0, 0.42);
+      }
+      .cta-box .btn-cta-email {
+        display: inline-block;
+        background: transparent;
+        color: rgba(232, 217, 184, 0.95);
+        border: 1px solid #c9a168;
+        padding: 0.72rem 1.35rem;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 0.88rem;
+        transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+      }
+      .cta-box .btn-cta-email:hover {
+        background: rgba(201, 161, 104, 0.14);
+        border-color: #d4b47e;
+        color: #fdfbf7;
+      }
+
+      /* 侧边栏：服务地区 + 长尾内链 */
+      .sidebar-regions-intro {
+        font-size: 0.8rem;
+        color: #6b5a48;
+        line-height: 1.55;
+        margin: 0 0 0.85rem;
+      }
+      .region-link-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .region-link-list li {
+        border-bottom: 1px solid #f0ebe3;
+        padding: 0.5rem 0;
+      }
+      .region-link-list li:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+      .region-link-list a {
+        display: block;
+        text-decoration: none;
+        color: #4a2c1a;
+      }
+      .region-link-list a:hover .r-main {
+        color: #7a5a1a;
+      }
+      .region-link-list .r-main {
+        display: block;
+        font-size: 0.86rem;
+        font-weight: 700;
+        line-height: 1.35;
+      }
+      .region-link-list .r-tail {
+        display: block;
+        font-size: 0.72rem;
+        color: #8a7a68;
+        font-weight: 500;
+        margin-top: 0.15rem;
+        line-height: 1.35;
+      }
+      .sidebar-address {
+        margin: 0.85rem 0 0;
+        padding-top: 0.85rem;
+        border-top: 1px solid #e8e0d5;
+        font-size: 0.78rem;
+        line-height: 1.5;
+      }
+      .sidebar-address a {
+        color: #5a6d85;
+        font-weight: 600;
+        text-decoration: none;
+      }
+      .sidebar-address a:hover {
+        color: #7a5a1a;
+        text-decoration: underline;
+        text-underline-offset: 2px;
       }
 
       /* ── 侧边栏 ── */
@@ -271,6 +464,48 @@ const allPosts = (await getCollection('blog')).sort(
       .related-list a:hover { color: #D4A853; }
       .related-list .rdate { font-size: 0.75rem; color: #9A8060; margin-top: 0.2rem; }
 
+      /* 延伸阅读（带一句场景说明的内链） */
+      .sidebar-related-intro {
+        font-size: 0.84rem;
+        color: #6b5a48;
+        line-height: 1.65;
+        margin: 0 0 1rem;
+      }
+      .related-reading-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .related-reading-list li {
+        padding: 0.85rem 0;
+        border-bottom: 1px solid #f0ebe3;
+      }
+      .related-reading-list li:first-child {
+        padding-top: 0;
+      }
+      .related-reading-list li:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+      .related-reading-list a {
+        color: #4a2c1a;
+        text-decoration: none;
+        font-size: 0.9rem;
+        font-weight: 700;
+        line-height: 1.4;
+        display: block;
+      }
+      .related-reading-list a:hover {
+        color: #d4a853;
+      }
+      .related-reading-teaser {
+        margin: 0.4rem 0 0;
+        font-size: 0.8rem;
+        color: #7a6a58;
+        line-height: 1.55;
+        font-weight: 500;
+      }
+
       /* 服务导航 */
       .service-list { list-style: none; padding: 0; margin: 0; }
       .service-list li { padding: 0.3rem 0; border-bottom: 1px solid #f0ebe3; font-size: 0.88rem; }
@@ -286,7 +521,7 @@ const allPosts = (await getCollection('blog')).sort(
       @media (max-width: 600px) {
         .post-hero { padding: 2rem 1rem 1.5rem; }
         .post-hero h1 { font-size: 1.35rem; }
-        .prose { padding: 1.5rem 1.1rem; font-size: 1rem; }
+        .prose { padding: 1.5rem 1.1rem; font-size: 0.96rem; }
         .post-layout { padding: 1.5rem 1rem; gap: 1.5rem; }
       }
 
@@ -396,11 +631,12 @@ const allPosts = (await getCollection('blog')).sort(
             <slot />
             <!-- 文末 CTA -->
             <div class="cta-box">
-              <h3>预约初次法律咨询</h3>
-              <p>何淼律师提供 30 分钟初次咨询（$220+HST）。了解您的权利、评估案件走向、制定处理方案。普通话 · 英文双语服务。</p>
-              <div class="cta-links">
-                <a href="tel:6479306688" class="btn-primary">📞 647-930-6688</a>
-                <a href="/contact" class="btn-secondary">在线预约</a>
+              <h3 class="cta-box-heading">咨询何淼律师</h3>
+              <p class="cta-box-intro">普通话与英文 · 万锦事务所 · 服务 GTA 及安大略省</p>
+              <div class="cta-box-fee">初次咨询 30 分钟 · $220 + HST · 按每 6 分钟计费</div>
+              <div class="cta-box-actions">
+                <a href="tel:6479306688" class="btn-cta-phone">📞 647-930-6688</a>
+                <a href="mailto:miao@miaohelaw.ca" class="btn-cta-email">✉️ miao@miaohelaw.ca</a>
               </div>
             </div>
 
@@ -433,10 +669,26 @@ const allPosts = (await getCollection('blog')).sort(
               <a href="mailto:miao@miaohelaw.ca" class="email-btn">✉ miao@miaohelaw.ca</a>
             </div>
 
-            <!-- 相关文章 -->
+            <!-- 延伸阅读：编辑在 frontmatter 中配置 relatedReading -->
+            {relatedReading && relatedReading.length > 0 && (
+              <div class="sidebar-card">
+                <h3>延伸阅读</h3>
+                <p class="sidebar-related-intro">{relatedIntro ?? defaultRelatedIntro}</p>
+                <ul class="related-reading-list">
+                  {relatedReading.map((item) => (
+                    <li>
+                      <a href={`/blog/${item.slug}/`}>{titleForBlogSlug(item.slug)}</a>
+                      <p class="related-reading-teaser">{item.line}</p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            <!-- 更多文章（按发布时间） -->
             {allPosts.length > 0 && (
               <div class="sidebar-card">
-                <h3>相关文章</h3>
+                <h3>更多文章</h3>
                 <ul class="related-list">
                   {allPosts.map(post => (
                     <li>
@@ -485,6 +737,77 @@ const allPosts = (await getCollection('blog')).sort(
                 <li><a href="/family-law/cross-border-assets">跨境资产</a></li>
                 <li><a href="/family-law/mediation">调解</a></li>
               </ul>
+            </div>
+
+            <!-- 服务地区：落地页内链 + 长尾说明 + 事务所地址 -->
+            <div class="sidebar-card">
+              <h3>服务地区 · 落地页</h3>
+              <p class="sidebar-regions-intro">立足万锦，服务 GTA 及安省。下列为各城市华人家庭法 / 离婚律师专题页（站内）：</p>
+              <ul class="region-link-list">
+                <li>
+                  <a href="/toronto-family-lawyer/">
+                    <span class="r-main">多伦多离婚律师</span>
+                    <span class="r-tail">Toronto 华人家庭法 · 普通话咨询</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/markham-family-lawyer/">
+                    <span class="r-main">万锦 Markham 家庭法律师</span>
+                    <span class="r-tail">事务所所在城市 · 面对面预约</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/richmond-hill-family-lawyer/">
+                    <span class="r-main">列治文山离婚律师</span>
+                    <span class="r-tail">Richmond Hill 华人家庭法</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/mississauga-family-lawyer/">
+                    <span class="r-main">密西沙加家庭法律师</span>
+                    <span class="r-tail">Mississauga 离婚与监护</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/scarborough-family-lawyer/">
+                    <span class="r-main">士嘉堡离婚律师</span>
+                    <span class="r-tail">Scarborough 华人律师</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/north-york-family-lawyer/">
+                    <span class="r-main">北约克家庭法律师</span>
+                    <span class="r-tail">North York GTA 中区</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/vaughan-family-lawyer/">
+                    <span class="r-main">旺市 Vaughan 离婚律师</span>
+                    <span class="r-tail">约克区家庭法</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/brampton-family-lawyer/">
+                    <span class="r-main">宾顿 Brampton 家庭法</span>
+                    <span class="r-tail">Peel 区离婚与财产</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/thornhill-family-lawyer/">
+                    <span class="r-main">康山 Thornhill 律师</span>
+                    <span class="r-tail">约克区华人家庭法</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/ajax-pickering-family-lawyer/">
+                    <span class="r-main">Ajax / Pickering 家庭法律师</span>
+                    <span class="r-tail">杜林区离婚咨询</span>
+                  </a>
+                </li>
+              </ul>
+              <p class="sidebar-address">
+                <a href="/contact/">📍 事务所：208-7050 Woodbine Ave, Markham, ON L3R 4G8 — 到访路线与预约说明</a>
+              </p>
             </div>
 
           </aside>
