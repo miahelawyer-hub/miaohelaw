@@ -1,7 +1,7 @@
 ---
 title: "安省家庭法「一张图」不够用：Toronto、Newmarket、Ottawa、North Bay 的法庭程序差在哪里？"
 description: "网上能搜到的多是标准流程；实务中各区法院在申请变更、第一次 case conference、庭审排期以及线下/线上安排上常有不同。何淼律师结合在 GTA 及安省多地办案的体会，说明这些差异为何重要、对自行代理与新手律师意味着什么。"
-pubDate: 2026-04-17T10:00:00-05:00
+pubDate: 2026-04-16T10:00:00-05:00
 heroImage: ""
 keywords: "安省家庭法,家庭法庭程序,多伦多家庭法院,Newmarket法院,Ottawa家庭法,North Bay法院,case conference,self represented,何淼律师,万锦家庭法律师,GTA家庭法"
 pairedArticlePath: "/en/blog/ontario-family-court-procedures-regional-differences/"
