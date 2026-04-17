@@ -1,6 +1,7 @@
 ---
 title: "高净值离婚：隐藏资产怎么查？境外资产怎么追？"
 description: "离婚涉及大额资产、公司股权、境外账户时，如何防止对方隐匿转移？何淼律师详解高净值离婚的资产追查手段、紧急保全申请和取证策略。"
+pairedArticlePath: "/en/blog/high-net-worth-divorce-ontario/"
 pubDate: 2026-04-09T19:00:00-05:00
 heroImage: ""
 keywords: "高净值离婚Ontario,隐藏资产追查,资产保全令,商业估值离婚,境外资产离婚,何淼律师"

@@ -1,6 +1,7 @@
 ---
 title: "对方不付抚养费怎么办？Ontario强制执行手段详解"
 description: "离婚后对方拒付或拖欠子女抚养费、配偶抚养费怎么办？何淼律师详解Ontario家庭责任办公室（FRO）、工资扣押、银行账户冻结等强制执行手段。"
+pairedArticlePath: "/en/blog/spousal-child-support-ontario/"
 pubDate: 2026-04-09T14:00:00-05:00
 heroImage: ""
 keywords: "抚养费Ontario,FRO家庭责任办公室,工资扣押,驾照暂停抚养费,子女抚养费执行,何淼律师"

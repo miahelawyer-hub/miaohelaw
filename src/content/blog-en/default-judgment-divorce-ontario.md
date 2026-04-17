@@ -1,6 +1,7 @@
 ---
 title: "What Happens If Your Spouse Doesn't Respond to Your Ontario Divorce Application?"
 description: "A spouse who refuses to participate cannot stop a divorce. Miao He explains the default process in Ontario family court and what a petitioner can expect when the other party does not respond."
+pairedArticlePath: "/blog/default-judgment-divorce-ontario/"
 pubDate: 2026-04-11T16:00:00-05:00
 keywords: "Ontario family law,Miao He lawyer,Chinese family lawyer Toronto,divorce Ontario,647-930-6688"
 tags:

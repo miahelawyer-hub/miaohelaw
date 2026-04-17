@@ -1,6 +1,7 @@
 ---
 title: "离婚诉讼中，律师费可以让对方承担吗？"
 description: "很多人听说输了官司要承担对方律师费，但实际情况远比这复杂。何淼律师详解安省家庭法中的 Costs Award 机制——什么情况下可以申请，能拿回多少。"
+pairedArticlePath: "/en/blog/costs-award-divorce-ontario/"
 pubDate: 2026-04-11T15:00:00-05:00
 heroImage: ""
 keywords: "离婚律师费对方承担,costs award Ontario,安省诉讼费用,家庭法律师费,何淼律师,华人家庭法律师"

@@ -1,6 +1,7 @@
 ---
 title: "Separation Date vs. Divorce Date in Ontario: Why the Difference Matters"
 description: "The date of separation and the date of divorce are not the same — and confusing them can have serious financial consequences. Miao He explains what each date means and why accurate identification matters."
+pairedArticlePath: "/blog/separation-date-vs-divorce-date-ontario/"
 pubDate: 2026-04-11T16:00:00-05:00
 keywords: "Ontario family law,Miao He lawyer,Chinese family lawyer Toronto,divorce Ontario,647-930-6688"
 tags:

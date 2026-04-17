@@ -1,6 +1,7 @@
 ---
 title: "Dividing Assets Between Canada and China in an Ontario Divorce"
 description: "When a marriage involves property in both Canada and China, the divorce becomes significantly more complex. Miao He explains how Ontario courts handle cross-border assets and why dual-licensed representation matters."
+pairedArticlePath: "/blog/cross-border-assets-divorce-ontario/"
 pubDate: 2026-04-11T16:00:00-05:00
 keywords: "Ontario family law,Miao He lawyer,Chinese family lawyer Toronto,divorce Ontario,647-930-6688"
 tags:

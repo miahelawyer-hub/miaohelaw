@@ -1,6 +1,7 @@
 ---
 title: "Imputed Income and Child Support in Ontario: What You Need to Know"
 description: "If a parent earns less than they should, or hides income, a court can impute income for child support purposes. Miao He explains how imputed income works and how to challenge it."
+pairedArticlePath: "/blog/imputed-income-child-support-ontario/"
 pubDate: 2026-04-11T16:00:00-05:00
 keywords: "Ontario family law,Miao He lawyer,Chinese family lawyer Toronto,divorce Ontario,647-930-6688"
 tags:

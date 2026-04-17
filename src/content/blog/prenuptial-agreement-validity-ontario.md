@@ -1,6 +1,7 @@
 ---
 title: "婚前协议签了真的有用吗？哪些情况会被法院推翻？"
 description: "很多人以为签了婚前协议就高枕无忧，但实践中大量婚前协议因形式问题或约定不明而被推翻。何淼律师从实务角度解析婚前协议的有效条件和常见陷阱。"
+pairedArticlePath: "/en/blog/prenuptial-agreement-validity-ontario/"
 pubDate: 2026-04-11T13:00:00-05:00
 heroImage: ""
 keywords: "婚前协议安省,婚前协议有效条件,婚前协议被推翻,prenuptial agreement Ontario,何淼律师,华人家庭法律师"

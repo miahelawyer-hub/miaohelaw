@@ -1,6 +1,7 @@
 ---
 title: "Spousal Support and Child Support in Ontario: How Are They Calculated?"
 description: "Child support is mandatory and formula-based. Spousal support depends on multiple factors. Miao He explains how each is calculated and what to expect in an Ontario divorce."
+pairedArticlePath: "/blog/spousal-child-support-ontario/"
 pubDate: 2026-04-11T16:00:00-05:00
 keywords: "Ontario family law,Miao He lawyer,Chinese family lawyer Toronto,divorce Ontario,647-930-6688"
 tags:

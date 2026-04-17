@@ -1,6 +1,7 @@
 ---
 title: "When Will a Court Order the Other Party to Pay Your Legal Costs in Ontario?"
 description: "Costs awards in family law cases are more common than many people realize. Miao He explains when Ontario courts order one party to pay the other's legal fees, and how to position yourself for a costs award."
+pairedArticlePath: "/blog/costs-award-divorce-ontario/"
 pubDate: 2026-04-11T16:00:00-05:00
 keywords: "Ontario family law,Miao He lawyer,Chinese family lawyer Toronto,divorce Ontario,647-930-6688"
 tags:

@@ -1,6 +1,7 @@
 ---
 title: "对方故意不工作来逃避抚养费，怎么办？"
 description: "在安省，故意失业或减少收入来逃避子女抚养费是无效策略。法院有权推定收入（Imputed Income）。何淼律师解析法律机制与证据策略，并分享真实案例：成功申请一次性支付抚养费。"
+pairedArticlePath: "/en/blog/imputed-income-child-support-ontario/"
 pubDate: 2026-04-11T12:00:00-05:00
 heroImage: ""
 keywords: "推定收入安省,子女抚养费逃避,imputed income Ontario,故意不工作抚养费,何淼律师,华人家庭法律师"

@@ -55,10 +55,10 @@ Those details are **rarely** reduced to a single national infographic. **Experie
 
 Under the *Family Law Rules*, there are lawful routes to **amend** an **Application** (including consent, amendment before an Answer in some situations, or amendment **after court leave**). But **after leave is granted**, **which step happens on paper first** can differ by courthouse.
 
-**Toronto (typical sequence described in practice)**  
+**Toronto**  
 After leave, a common approach is to **serve the proposed change first**, then file a **package** for the court (always confirm current practice directions and counter-clerk guidance). The package may include the **court’s amendment order**, the **revised application**, and a **6B affidavit of service**, filed together for acceptance.
 
-**Newmarket (typical sequence described in practice)**  
+**Newmarket**  
 On the same **leave** fact pattern, local practice may instead emphasize **filing the amended application with the court first**, together with the **leave order**; the court may **issue** an **issued amended application**, then you **serve** using that issued document, and later **return** to court with **amended materials + 6B + the earlier order** to close the loop. That chain is **not the same** as the **Toronto** pattern.
 
 **Takeaway**  

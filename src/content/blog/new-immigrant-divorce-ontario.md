@@ -1,6 +1,7 @@
 ---
 title: "新移民在加拿大离婚：PR身份、移民监、配偶担保会受影响吗？"
 description: "刚移民加拿大就面临离婚？PR身份会失去吗？被担保人离婚后担保责任怎么算？何淼律师详解新移民离婚的移民法与家庭法交叉问题。"
+pairedArticlePath: "/en/blog/new-immigrant-divorce-ontario/"
 pubDate: 2026-04-09T15:00:00-05:00
 heroImage: ""
 keywords: "新移民离婚,PR离婚,移民监担保,配偶担保离婚,新移民家庭法Ontario,何淼律师"

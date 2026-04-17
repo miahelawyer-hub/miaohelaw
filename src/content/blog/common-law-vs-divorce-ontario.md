@@ -1,6 +1,7 @@
 ---
 title: "Common-law 同居伴侣分手和离婚有什么不同？"
 description: "在加拿大安省，不结婚但同居满3年（或有孩子）的伴侣属于Common-law关系。分手时不需要离婚证，但财产权利与已婚夫妻有根本差异。何淼律师详解两者的核心区别。"
+pairedArticlePath: "/en/blog/common-law-vs-divorce-ontario/"
 pubDate: 2026-04-11T11:00:00-05:00
 heroImage: ""
 keywords: "Common-law分手安省,同居伴侣分手,Common-law离婚区别,同居协议安省,何淼律师,华人家庭法律师"

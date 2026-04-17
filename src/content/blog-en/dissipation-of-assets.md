@@ -1,6 +1,7 @@
 ---
 title: "What Happens If Your Spouse Wastes or Hides Assets During a Divorce?"
 description: "If a spouse deliberately dissipates, hides, or transfers assets to defeat the equalization claim, Ontario courts have tools to address it. Miao He explains what dissipation is and how to respond."
+pairedArticlePath: "/blog/dissipation-of-assets/"
 pubDate: 2026-04-11T16:00:00-05:00
 keywords: "Ontario family law,Miao He lawyer,Chinese family lawyer Toronto,divorce Ontario,647-930-6688"
 tags:

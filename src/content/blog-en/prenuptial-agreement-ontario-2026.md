@@ -1,6 +1,7 @@
 ---
 title: "Prenuptial Agreements in Ontario (2026): What You Need to Know"
 description: "Thinking about a marriage contract before your wedding? Miao He explains what a prenuptial agreement can and cannot do in Ontario, and what makes it enforceable."
+pairedArticlePath: "/blog/prenuptial-agreement-ontario-2026/"
 pubDate: 2026-04-11T16:00:00-05:00
 keywords: "Ontario family law,Miao He lawyer,Chinese family lawyer Toronto,divorce Ontario,647-930-6688"
 tags:

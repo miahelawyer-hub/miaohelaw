@@ -1,6 +1,7 @@
 ---
 title: "离婚前先查财产：为什么分居日比离婚日更重要？"
 description: "很多华人按照中国的法律思维，以为财产分割从离婚日开始计算——这是一个代价高昂的误解。在加拿大安省，决定你能拿多少财产的关键日期是分居日，不是离婚日。"
+pairedArticlePath: "/en/blog/separation-date-vs-divorce-date-ontario/"
 pubDate: 2026-04-11T10:00:00-05:00
 heroImage: ""
 keywords: "分居日财产分割,安省分居日,净资产计算安省,离婚前查财产,何淼律师,中加双执照律师"

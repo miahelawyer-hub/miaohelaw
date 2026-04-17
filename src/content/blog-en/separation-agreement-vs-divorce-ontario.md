@@ -1,6 +1,7 @@
 ---
 title: "Separation Agreement vs. Divorce in Ontario: What's the Difference?"
 description: "Many couples in Ontario separate without immediately divorcing. Miao He explains the legal difference between a separation agreement and a divorce order, and why both may be necessary."
+pairedArticlePath: "/blog/separation-agreement-vs-divorce-ontario/"
 pubDate: 2026-04-11T16:00:00-05:00
 keywords: "Ontario family law,Miao He lawyer,Chinese family lawyer Toronto,divorce Ontario,647-930-6688"
 tags:

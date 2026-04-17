@@ -22,7 +22,10 @@ const blogSchema = ({ image }) =>
         })
       )
       .optional(),
-    /** Other-language URL path (with trailing slash) for hreflang, e.g. `/en/blog/slug/` on ZH posts */
+    /**
+     * Other-language URL (trailing slash) for hreflang + og:locale:alternate.
+     * For bilingual posts with the same slug: ZH uses `/en/blog/{slug}/`, EN uses `/blog/{slug}/`.
+     */
     pairedArticlePath: z.string().optional(),
   });
 

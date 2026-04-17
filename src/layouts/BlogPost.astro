@@ -57,6 +57,7 @@ const defaultRelatedIntro =
     <meta property="og:description" content={description} />
     <meta property="og:type" content="article" />
     <meta property="og:locale" content="zh_CN" />
+    {pairedArticlePath && <meta property="og:locale:alternate" content="en_CA" />}
     <meta property="og:url" content={canonicalUrl} />
     <meta property="article:published_time" content={publishedIso} />
     <meta property="article:modified_time" content={modifiedIso} />
@@ -78,7 +79,9 @@ const defaultRelatedIntro =
         "url": canonicalUrl,
         "datePublished": publishedIso,
         "dateModified": modifiedIso,
-        "inLanguage": "zh",
+        "inLanguage": "zh-CN",
+        "isAccessibleForFree": true,
+        "image": ["https://www.miaohelaw.ca/miao-he-lawyer.jpeg"],
         "author": {
           "@type": "Person",
           "@id": "https://www.miaohelaw.ca/#person",
@@ -97,7 +100,7 @@ const defaultRelatedIntro =
         "about": {
           "@type": "LegalService",
           "name": "Ontario Family Law",
-          "areaServed": "Greater Toronto Area"
+          "areaServed": ["Greater Toronto Area", "Ontario"]
         },
         ...(keywords
           ? {
@@ -137,6 +140,12 @@ const defaultRelatedIntro =
     <style is:global>
       * { box-sizing: border-box; }
       body { background: var(--bg); margin: 0; }
+
+      /* 博文页 main 内：与侧栏/引言相同的暖棕正文与标题色（避免中文无衬线在 #3d4f6f 上过「冷蓝」） */
+      main {
+        --text-primary: #4a3a2e;
+        --text-heading: #2c1810;
+      }
 
       /* ── Hero ── */
       .post-hero {
@@ -190,11 +199,10 @@ const defaultRelatedIntro =
         font-size: 1.02rem;
         font-weight: 400;
         line-height: 2;
-        letter-spacing: 0.03em;
+        letter-spacing: 0.02em;
         min-width: 0;
       }
       .prose h2 {
-        color: var(--text-heading);
         font-size: 1.15rem;
         margin: 3.25rem 0 1.35rem;
         padding: 0.55rem 1.1rem 0.55rem 1rem;
@@ -231,7 +239,7 @@ const defaultRelatedIntro =
         border-radius: 0 6px 6px 0;
         font-size: 1rem;
         line-height: 1.72;
-        letter-spacing: 0.02em;
+        letter-spacing: 0.015em;
         color: #3a2e22;
         font-style: normal;
       }
