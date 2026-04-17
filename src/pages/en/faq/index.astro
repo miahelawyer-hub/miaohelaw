@@ -8,6 +8,28 @@ import { stripHtml } from '../../../utils/stripHtml';
 
 const items = getFaqItemsEnForListing();
 const totalFaqEn = items.length;
+
+const faqPageJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: items.map((item) => ({
+    '@type': 'Question',
+    name: stripHtml(item.question),
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: [stripHtml(item.summary), ...item.answers.map(stripHtml)].filter(Boolean).join('\n\n'),
+    },
+  })),
+};
+
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.miaohelaw.ca/en/' },
+    { '@type': 'ListItem', position: 2, name: 'FAQ', item: 'https://www.miaohelaw.ca/en/faq/' },
+  ],
+};
 ---
 <!doctype html>
 <html lang="en">
@@ -21,23 +43,8 @@ const totalFaqEn = items.length;
   <meta property="og:type" content="website" />
   <link rel="alternate" hreflang="zh" href="https://www.miaohelaw.ca/faq/" />
   <link rel="alternate" hreflang="en" href="https://www.miaohelaw.ca/en/faq/" />
-  <script type="application/ld+json" set:html={JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": items.map(item => ({
-      "@type": "Question",
-      "name": stripHtml(item.question),
-      "acceptedAnswer": { "@type": "Answer", "text": [stripHtml(item.summary), ...item.answers.map(stripHtml)].filter(Boolean).join("\n\n") }
-    }))
-  })} />
-  <script type="application/ld+json">{JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {"@type":"ListItem","position":1,"name":"Home","item":"https://www.miaohelaw.ca/en/"},
-      {"@type":"ListItem","position":2,"name":"FAQ","item":"https://www.miaohelaw.ca/en/faq/"}
-    ]
-  })}</script>
+  <script type="application/ld+json" set:html={JSON.stringify(faqPageJsonLd)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbJsonLd)} />
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
