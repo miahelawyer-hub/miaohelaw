@@ -20,15 +20,22 @@ const {
 	image = 'https://www.miaohelaw.ca/miao-he-lawyer.jpeg',
 	ogType = 'website',
 } = Astro.props;
+
+/** Absolute favicon URLs help crawlers (e.g. Googlebot-Image) resolve icons consistently */
+const origin = (Astro.site ?? new URL('https://www.miaohelaw.ca/')).origin;
+const abs = (path: string) => new URL(path, `${origin}/`).href;
 ---
 
 <!-- Global Metadata -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
+<!-- Favicons: Google recommends a square icon &gt;48px; put ico + 192 first for search + crawlers -->
+<link rel="icon" href={abs('/favicon.ico')} />
+<link rel="icon" type="image/png" sizes="192x192" href={abs('/favicon-192.png')} />
+<link rel="icon" type="image/png" sizes="32x32" href={abs('/favicon-32.png')} />
+<link rel="icon" type="image/png" sizes="16x16" href={abs('/favicon-16.png')} />
+<link rel="apple-touch-icon" sizes="180x180" href={abs('/apple-touch-icon.png')} />
+<link rel="icon" type="image/svg+xml" href={abs('/favicon.svg')} />
 <link rel="sitemap" href="/sitemap-index.xml" />
 <link
 	rel="alternate"
