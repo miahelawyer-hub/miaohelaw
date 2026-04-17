@@ -179,22 +179,24 @@ const defaultRelatedIntro =
       }
 
       /* ── 正文 ── */
+      /* 正文：与全站中文栈一致（无衬线），加大行距与段距，避免长文「挤」 */
       .prose {
         background: #ffffff;
         border-radius: 12px;
         padding: 2.5rem;
         box-shadow: 0 2px 12px rgba(44,24,16,0.07);
         color: var(--text-primary);
-        font-family: "Noto Serif SC", "Songti SC", "STSong", "Source Han Serif SC", Georgia, "Times New Roman", serif;
+        font-family: var(--font-zh-body);
         font-size: 1.02rem;
         font-weight: 400;
-        line-height: 1.85;
+        line-height: 2;
+        letter-spacing: 0.03em;
         min-width: 0;
       }
       .prose h2 {
         color: var(--text-heading);
         font-size: 1.15rem;
-        margin: 3rem 0 1.2rem;
+        margin: 3.25rem 0 1.35rem;
         padding: 0.55rem 1.1rem 0.55rem 1rem;
         background: linear-gradient(135deg, #2C1810 0%, #4A2C1A 100%);
         color: #ffffff;
@@ -209,7 +211,7 @@ const defaultRelatedIntro =
         padding-left: 0.85rem;
         border-left: 3px solid #D4A853;
       }
-      .prose p { margin: 0 0 1.6rem; }
+      .prose p { margin: 0 0 1.85rem; }
       .prose strong { color: var(--text-heading); }
       .prose blockquote {
         border-left: 4px solid #D4A853;
@@ -222,19 +224,20 @@ const defaultRelatedIntro =
       }
       /* 文首「要点速览」：略小于正文、可读；正文内 HTML 使用 class="blog-tldr" */
       .prose .blog-tldr {
-        margin: 0 0 1rem;
-        padding: 0.65rem 0.9rem 0.65rem 0.8rem;
+        margin: 0 0 1.35rem;
+        padding: 0.85rem 1rem 0.9rem 0.9rem;
         background: #f9f5ef;
         border-left: 3px solid #c9a168;
         border-radius: 0 6px 6px 0;
-        font-size: 0.95rem;
-        line-height: 1.55;
+        font-size: 1rem;
+        line-height: 1.72;
+        letter-spacing: 0.02em;
         color: #3a2e22;
         font-style: normal;
       }
       .prose .blog-tldr-kicker {
-        margin: 0 0 0.4rem;
-        font-size: 0.84rem;
+        margin: 0 0 0.55rem;
+        font-size: 0.9rem;
         font-weight: 800;
         letter-spacing: 0.06em;
         text-transform: none;
@@ -242,18 +245,18 @@ const defaultRelatedIntro =
       }
       .prose .blog-tldr ul {
         margin: 0;
-        padding-left: 1rem;
+        padding-left: 1.15rem;
         list-style: disc;
       }
       .prose .blog-tldr li {
-        margin-bottom: 0.2rem;
-        line-height: 1.45;
+        margin-bottom: 0.5rem;
+        line-height: 1.68;
       }
       .prose .blog-tldr li:last-child {
         margin-bottom: 0;
       }
-      .prose ul, .prose ol { padding-left: 1.5rem; margin: 0 0 1.25rem; }
-      .prose li { margin-bottom: 0.75rem; line-height: 1.9; }
+      .prose ul, .prose ol { padding-left: 1.5rem; margin: 0 0 1.5rem; }
+      .prose li { margin-bottom: 0.85rem; line-height: 2; }
       .prose table {
         width: 100%;
         border-collapse: collapse;
@@ -417,6 +420,41 @@ const defaultRelatedIntro =
         text-underline-offset: 2px;
       }
 
+      .sidebar-member-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .sidebar-member-list li {
+        font-size: 0.84rem;
+        padding: 0.55rem 0;
+        border-bottom: 1px solid #f0ebe3;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 0.75rem;
+        line-height: 1.45;
+      }
+      .sidebar-member-list li:last-child {
+        border-bottom: none;
+      }
+      .sidebar-member-list a {
+        color: #7a5a1a;
+        text-decoration: none;
+        font-weight: 600;
+        flex: 1;
+        min-width: 0;
+      }
+      .sidebar-member-list a:hover {
+        text-decoration: underline;
+        text-underline-offset: 2px;
+      }
+      .sidebar-member-note {
+        font-size: 0.72rem;
+        color: #9a8060;
+        white-space: nowrap;
+        flex-shrink: 0;
+      }
       /* ── 侧边栏 ── */
       .sidebar { display: flex; flex-direction: column; gap: 1.25rem; }
 
@@ -521,7 +559,7 @@ const defaultRelatedIntro =
       @media (max-width: 600px) {
         .post-hero { padding: 2rem 1rem 1.5rem; }
         .post-hero h1 { font-size: 1.35rem; }
-        .prose { padding: 1.5rem 1.1rem; font-size: 0.96rem; }
+        .prose { padding: 1.5rem 1.1rem; font-size: 0.96rem; line-height: 1.95; }
         .post-layout { padding: 1.5rem 1rem; gap: 1.5rem; }
       }
 
@@ -808,6 +846,31 @@ const defaultRelatedIntro =
               <p class="sidebar-address">
                 <a href="/contact/">📍 事务所：208-7050 Woodbine Ave, Markham, ON L3R 4G8 — 到访路线与预约说明</a>
               </p>
+            </div>
+
+            <div class="sidebar-card">
+              <h3>专业协会会员</h3>
+              <ul class="sidebar-member-list">
+                <li>
+                  <a href="https://lso.ca/home" target="_blank" rel="noopener noreferrer">安大略律师协会（LSO）</a>
+                  <span class="sidebar-member-note">#83315K</span>
+                </li>
+                <li>
+                  <a href="https://www.advocates.ca/" target="_blank" rel="noopener noreferrer">The Advocates’ Society（TAS）</a>
+                </li>
+                <li>
+                  <a href="https://www.tlaonline.ca" target="_blank" rel="noopener noreferrer">Toronto Lawyers Association（TLA）</a>
+                </li>
+                <li>
+                  <a href="https://yorklaw.ca/" target="_blank" rel="noopener noreferrer">York Region Law Association（YRLA）</a>
+                </li>
+                <li>
+                  <a href="https://www.justicenet.ca" target="_blank" rel="noopener noreferrer">Justice Net</a>
+                </li>
+                <li>
+                  <a href="https://www.acla.org.cn" target="_blank" rel="noopener noreferrer">中华全国律师协会（中国律师执业资格）</a>
+                </li>
+              </ul>
             </div>
 
           </aside>
