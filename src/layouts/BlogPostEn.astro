@@ -258,13 +258,11 @@ const defaultRelatedIntroEn =
       .post-hero .meta { color: #D4A853; font-size: 0.82rem; letter-spacing: 0.04em; }
       .post-layout { max-width: 1100px; margin: 0 auto; padding: 2.5rem 1.5rem; display: grid; grid-template-columns: 1fr 300px; gap: 2.5rem; align-items: start; }
       .prose {
-        --text-primary: #3d4f6f;
-        --text-heading: #2a3544;
         background: #ffffff;
         border-radius: 12px;
         padding: 2.5rem;
         box-shadow: 0 2px 12px rgba(44,24,16,0.07);
-        color: #3d4f6f;
+        color: var(--text-primary);
         font-family: var(--font-en-body);
         font-size: 1.02rem;
         line-height: 2;
@@ -272,17 +270,17 @@ const defaultRelatedIntroEn =
         min-width: 0;
       }
       .prose h2 { font-size: 1.15rem; margin: 3.25rem 0 1.35rem; padding: 0.55rem 1.1rem 0.55rem 1rem; background: linear-gradient(135deg, #2C1810 0%, #4A2C1A 100%); color: #ffffff; border-radius: 6px; }
-      .prose h3 { color: #2a3544; font-size: 1.08rem; margin: 2.2rem 0 0.8rem; padding-left: 0.85rem; border-left: 3px solid #D4A853; }
+      .prose h3 { color: var(--text-heading); font-size: 1.08rem; margin: 2.2rem 0 0.8rem; padding-left: 0.85rem; border-left: 3px solid #D4A853; }
       .prose p,
       .prose li,
       .prose ol,
       .prose ul,
       .prose em {
-        color: #3d4f6f;
+        color: var(--text-primary);
       }
       .prose p { margin: 0 0 1.85rem; }
-      .prose strong { color: #2a3544; }
-      .prose blockquote { border-left: 4px solid #D4A853; background: #fdf6ec; margin: 1.5rem 0; padding: 1rem 1.5rem; border-radius: 0 8px 8px 0; color: #2a3544; font-style: italic; }
+      .prose strong { color: var(--text-heading); }
+      .prose blockquote { border-left: 4px solid #D4A853; background: #fdf6ec; margin: 1.5rem 0; padding: 1rem 1.5rem; border-radius: 0 8px 8px 0; color: var(--text-heading); font-style: italic; }
       .prose .blog-tldr {
         margin: 0 0 1.35rem;
         padding: 0.85rem 1rem 0.9rem 0.9rem;
@@ -319,7 +317,7 @@ const defaultRelatedIntroEn =
       .prose li { margin-bottom: 0.85rem; line-height: 2; }
       .prose table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.95rem; border-radius: 8px; overflow: hidden; }
       .prose th { background: #2C1810; color: #D4A853; padding: 0.75rem 1rem; text-align: left; font-weight: 600; font-size: 0.9rem; }
-      .prose td { padding: 0.65rem 1rem; border-bottom: 1px solid #e8e0d5; color: #3d4f6f; }
+      .prose td { padding: 0.65rem 1rem; border-bottom: 1px solid #e8e0d5; color: var(--text-primary); }
       .prose tr:nth-child(even) td { background: #fdf6ec; }
       .prose hr { border: none; border-top: 1px solid #e8e0d5; margin: 2rem 0; }
       .cta-box {
@@ -328,7 +326,7 @@ const defaultRelatedIntroEn =
         text-align: center;
         border-radius: 12px;
         color: #fff;
-        background: #1c2b3f;
+        background: linear-gradient(135deg, #2c1810 0%, #4a2c1a 100%);
         border: 1px solid rgba(255, 255, 255, 0.08);
         box-shadow: 0 14px 32px rgba(0, 0, 0, 0.14);
       }
@@ -457,7 +455,7 @@ const defaultRelatedIntroEn =
         text-underline-offset: 2px;
       }
       .author-bio { margin-top: 2.5rem; border-top: 2px solid #e8e0d5; padding-top: 1.5rem; }
-      .author-bio-text p { margin: 0 0 0.6rem; font-size: 0.92rem; color: #3d4f6f; line-height: 1.65; }
+      .author-bio-text p { margin: 0 0 0.6rem; font-size: 0.92rem; color: var(--text-primary); line-height: 1.65; }
       .author-bio-name { font-size: 1rem !important; font-weight: 700; color: var(--text-heading) !important; }
       .author-bio-title { font-size: 0.82rem !important; color: #9A8060 !important; letter-spacing: 0.03em; }
       .author-bio-links a { color: #9A8060; text-decoration: none; font-size: 0.85rem; }

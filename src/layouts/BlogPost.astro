@@ -283,15 +283,13 @@ const structuredDataJson = JSON.stringify([
 
       /* ── 正文 ── */
       /* 正文：与全站中文栈一致（无衬线），加大行距与段距，避免长文「挤」 */
-      /* Sentinel 蓝写在本块内，避免依赖外链顺序下 :root 变量是否已就绪 */
+      /* 暖褐正文 / 深咖标题，与全站 :root 一致 */
       .prose {
-        --text-primary: #3d4f6f;
-        --text-heading: #2a3544;
         background: #ffffff;
         border-radius: 12px;
         padding: 2.5rem;
         box-shadow: 0 2px 12px rgba(44,24,16,0.07);
-        color: #3d4f6f;
+        color: var(--text-primary);
         font-family: var(--font-zh-body);
         font-size: 1.02rem;
         font-weight: 400;
@@ -310,7 +308,7 @@ const structuredDataJson = JSON.stringify([
         letter-spacing: 0.01em;
       }
       .prose h3 {
-        color: #2a3544;
+        color: var(--text-heading);
         font-size: 1.08rem;
         margin: 2.2rem 0 0.8rem;
         padding-left: 0.85rem;
@@ -321,17 +319,17 @@ const structuredDataJson = JSON.stringify([
       .prose ol,
       .prose ul,
       .prose em {
-        color: #3d4f6f;
+        color: var(--text-primary);
       }
       .prose p { margin: 0 0 1.85rem; }
-      .prose strong { color: #2a3544; }
+      .prose strong { color: var(--text-heading); }
       .prose blockquote {
         border-left: 4px solid #D4A853;
         background: #fdf6ec;
         margin: 1.5rem 0;
         padding: 1rem 1.5rem;
         border-radius: 0 8px 8px 0;
-        color: #2a3544;
+        color: var(--text-heading);
         font-style: italic;
       }
       /* 文首「要点速览」：略小于正文、可读；正文内 HTML 使用 class="blog-tldr" */
@@ -388,7 +386,7 @@ const structuredDataJson = JSON.stringify([
       .prose td {
         padding: 0.65rem 1rem;
         border-bottom: 1px solid #e8e0d5;
-        color: #3d4f6f;
+        color: var(--text-primary);
       }
       .prose tr:nth-child(even) td { background: #fdf6ec; }
       .prose hr { border: none; border-top: 1px solid #e8e0d5; margin: 2rem 0; }
@@ -400,11 +398,11 @@ const structuredDataJson = JSON.stringify([
         text-align: center;
         border-radius: 12px;
         color: #fff;
-        background: #1c2b3f;
+        background: linear-gradient(135deg, #2c1810 0%, #4a2c1a 100%);
         border: 1px solid rgba(255, 255, 255, 0.08);
         box-shadow: 0 14px 32px rgba(0, 0, 0, 0.14);
       }
-      /* 与首页 contact-cta 同色；思源宋加粗，避免细体在深蓝底上发灰 */
+      /* 与首页 contact-cta 同款深咖底；思源宋加粗 */
       .cta-box-heading {
         font-family: "Noto Serif SC", "Songti SC", Georgia, "Times New Roman", serif !important;
         font-size: clamp(1.28rem, 2.8vw, 1.6rem);
@@ -686,7 +684,7 @@ const structuredDataJson = JSON.stringify([
         gap: 1.25rem;
         align-items: flex-start;
       }
-      .author-bio-text p { margin: 0 0 0.6rem; font-size: 0.92rem; color: #3d4f6f; line-height: 1.65; }
+      .author-bio-text p { margin: 0 0 0.6rem; font-size: 0.92rem; color: var(--text-primary); line-height: 1.65; }
       .author-bio-name { font-size: 1rem !important; font-weight: 700; color: var(--text-heading) !important; }
       .author-bio-title { font-size: 0.82rem !important; color: #9A8060 !important; letter-spacing: 0.03em; }
       .author-bio-links { margin-top: 0.5rem !important; }

@@ -1,6 +1,6 @@
 /*
   Miao He (何淼) — miaohelaw.ca
-  Colour scheme: cream canvas + Sentinel blue typography
+  Colour scheme: cream canvas + warm espresso / brown typography
 */
 
 :root {
@@ -17,8 +17,8 @@
 		0 16px 32px rgba(var(--black), 3%);
 	--bg: #f7f2ef;
 	--bg-secondary: #F5EFE0;
-	--text-primary: #3d4f6f;
-	--text-heading: #2a3544;
+	--text-primary: #4a3a2a;
+	--text-heading: #2c1810;
 	--text-secondary: #6B5A3A;
 	/* English editorial serif stacks (HLR-inspired) */
 	--font-en-body: ui-serif, "Iowan Old Style", "Palatino Linotype", Palatino, Baskerville, "Times New Roman", Georgia, serif;
