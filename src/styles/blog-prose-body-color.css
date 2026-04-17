@@ -31,3 +31,18 @@ main article .post-layout .prose td {
 main article .post-layout .author-bio-text p {
 	color: var(--text-primary) !important;
 }
+
+/* 文末 CTA 在 .prose 内：全局 prose 的 h3/p !important 会盖住配色并带上 h3 左边框，在此收回 */
+main article .post-layout .prose .cta-box h3.cta-box-heading {
+	color: #fac775 !important;
+	border-left: none !important;
+	padding-left: 0 !important;
+	margin: 0 0 0.55rem !important;
+	font-size: clamp(1.28rem, 2.8vw, 1.6rem) !important;
+	line-height: 1.35 !important;
+}
+
+main article .post-layout .prose .cta-box p.cta-box-intro {
+	color: rgba(245, 243, 240, 0.94) !important;
+	margin: 0 auto 1rem !important;
+}
