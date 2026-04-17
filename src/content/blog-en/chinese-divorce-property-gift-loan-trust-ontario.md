@@ -27,7 +27,7 @@ relatedReading:
     line: "If you are considering domestic contracts to clarify parent advances, start with validity and disclosure basics."
 faqStructured:
   - question: "In an Ontario divorce, is a parent’s contribution a gift or a loan?"
-    answer: "There is no automatic rule. Courts weigh contemporaneous documents, repayment terms, security, demands before separation, partial repayments, differential treatment among children, and whether repayment was realistically expected. Barber v. Magee (2015 ONSC 8054, aff’d 2017 ONCA 558) summarizes a multi-factor framework courts use in gift-vs-loan disputes."
+    answer: "There is no automatic rule. Courts weigh contemporaneous documents, repayment terms, security, demands before separation, partial repayments, differential treatment among children, and whether repayment was realistically expected. Barber v. Magee (2015 ONSC 8054, aff’d 2017 ONCA 558) summarizes a multi-factor framework courts use in gift-vs-loan disputes. Full trial reasons on CanLII: https://www.canlii.org/en/on/onsc/doc/2015/2015onsc8054/2015onsc8054.html"
   - question: "Why does Barber v. Magee matter for Mandarin-speaking clients in the GTA?"
     answer: "The decision explains that labels after separation are less important than the objective record: written loan evidence at the time, structured repayment, security, and conduct consistent with a loan. That fact pattern appears frequently where parents funded a down payment or helped with mortgage payments."
   - question: "Can parents claim a trust over a home if they only paid the down payment?"
@@ -64,7 +64,7 @@ Culturally, parental support for housing is common. Legally, if there was no **m
 
 Ontario judges generally **do not** decide gift/loan characterization from labels alone. They look for **objective indicators** of what the parties and parents intended **at the time**.
 
-In **Barber v. Magee** (2015 ONSC 8054; Court of Appeal reasons at **2017 ONCA 558**), the court emphasized a multi-factor analysis (including themes drawn from comparative case law).
+In [Barber v. Magee, 2015 ONSC 8054](https://www.canlii.org/en/on/onsc/doc/2015/2015onsc8054/2015onsc8054.html) (Court of Appeal reasons at **2017 ONCA 558**), the court emphasized a multi-factor analysis (including themes drawn from comparative case law).
 
 Typical factors include:
 
@@ -129,7 +129,7 @@ Ontario property fights in Chinese-Canadian communities often turn on:
 - **matrimonial home** sale issues  
 - whether **imputed income** reframes support exposure  
 
-**Barber v. Magee** is a key **gift/loan** roadmap—but every file still turns on its own documents, timing, and conduct.
+[Barber v. Magee](https://www.canlii.org/en/on/onsc/doc/2015/2015onsc8054/2015onsc8054.html) is a key **gift/loan** roadmap—but every file still turns on its own documents, timing, and conduct.
 
 ---
 
