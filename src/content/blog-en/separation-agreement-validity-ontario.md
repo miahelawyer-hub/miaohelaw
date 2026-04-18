@@ -49,7 +49,7 @@ Even if the signing process was formally correct, if the terms of the agreement 
 
 If the separation agreement was properly executed — each party had independent legal counsel, full financial disclosure was made, a witness was present, and both parties signed voluntarily — then **neither party can unilaterally revoke or overturn it.**
 
-This is the most important legal feature of a separation agreement: **it is a binding contract**. It does not become void because one party regrets signing, the relationship improves, or the terms later seem unfavourable.
+This is the most important legal feature of a separation agreement: **it is a binding contract**. It does not become void because one party regrets signing or the terms later seem unfavourable.
 
 This is precisely why you must take the agreement seriously and review every clause carefully before signing — once signed, it is enforceable.
 
