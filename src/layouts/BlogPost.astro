@@ -327,10 +327,20 @@ const structuredDataJson = JSON.stringify([
         border-left: 4px solid #D4A853;
         background: #fdf6ec;
         margin: 1.5rem 0;
-        padding: 1rem 1.5rem;
+        padding: 0.85rem 1.25rem;
         border-radius: 0 8px 8px 0;
         color: var(--text-heading);
         font-style: italic;
+        font-size: 0.94rem;
+        line-height: 1.75;
+      }
+      .prose blockquote p {
+        margin: 0;
+        font-size: inherit;
+        line-height: inherit;
+      }
+      .prose blockquote strong {
+        font-weight: 600;
       }
       /* 文首「要点速览」：略小于正文、可读；正文内 HTML 使用 class="blog-tldr" */
       .prose .blog-tldr {
@@ -761,7 +771,7 @@ const structuredDataJson = JSON.stringify([
           </p>
           <h1>{title}</h1>
           <p class="meta">
-            何淼律师 Miao He &nbsp;·&nbsp;
+            何淼 Miao (Mia) He &nbsp;·&nbsp;
             <FormattedDate date={pubDate} locale="zh-CN" />
             {updatedDate && <span>&nbsp;（更新：<FormattedDate date={updatedDate} locale="zh-CN" />）</span>}
             &nbsp;·&nbsp; H. LAW FIRM 恒. 律师事务所
@@ -792,7 +802,7 @@ const structuredDataJson = JSON.stringify([
             <div class="author-bio">
               <div class="author-bio-inner">
                 <div class="author-bio-text">
-                  <p class="author-bio-name">何淼律师 Miao He</p>
+                  <p class="author-bio-name">何淼 Miao (Mia) He</p>
                   <p class="author-bio-title">H. LAW FIRM 恒. 律师事务所 · 主持律师</p>
                   <p>何淼律师持Ontario及中国双重执照（Law Society of Ontario #83315K），专注华人家庭法逾15年，服务大多伦多地区华人、中国新移民及跨国家庭。事务所位于Markham，服务GTA全区及Ontario全省。</p>
                   <p>曾代理 <strong>Yang v. Li 2024 ONSC 4801</strong>、<strong>Li v. Jiang 2026 ONSC 561</strong> 等CanLII公开判决案件，曾成功为客户追回境外资产逾30万加元。擅长跨境资产追回、离婚诉讼、子女监护及婚前协议。</p>
