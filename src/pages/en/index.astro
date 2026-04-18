@@ -42,7 +42,7 @@ function formatBlogDate(date: Date) {
         "name": "Miao He",
         "alternateName": ["何淼", "Mia He"],
         "jobTitle": "Family Law Lawyer",
-        "description": "Miao He (何淼) is an Ontario family law lawyer practicing exclusively in family law. Dual-licensed in Ontario and China, with 15+ years of experience serving the Chinese-Canadian community in the Greater Toronto Area. She provides negotiated separation agreements, mediation, and litigation, and is a certified mediator and experienced litigator.",
+        "description": "Miao He (何淼) is a dual-licensed family law lawyer in Ontario and China, with 15+ years of experience serving the Chinese-Canadian community in the Greater Toronto Area. She provides negotiated separation agreements, mediation, and litigation, and is a certified mediator and experienced litigator.",
         "url": "https://www.miaohelaw.ca/",
         "image": "https://www.miaohelaw.ca/miao-he-lawyer.jpeg",
         "telephone": "+1-647-930-6688",
@@ -57,14 +57,15 @@ function formatBlogDate(date: Date) {
         ],
         "memberOf": [
           {"@type": "Organization", "name": "Law Society of Ontario", "url": "https://lso.ca/"},
-          {"@type": "Organization", "name": "The Advocates Society", "url": "https://www.advocates.ca/"},
+          {"@type": "Organization", "name": "The Advocates Society", "url": "https://www.theadvocatessociety.ca/"},
           {"@type": "Organization", "name": "Toronto Lawyers Association", "url": "https://www.tlaonline.ca/"},
-          {"@type": "Organization", "name": "York Region Law Association", "url": "https://yorklaw.ca/"},
+          {"@type": "Organization", "name": "York Region Law Association", "url": "https://yrla.ca/"},
           {"@type": "Organization", "name": "Justice Net", "url": "https://www.justicenet.ca/"}
         ],
         "worksFor": {"@id": "https://www.miaohelaw.ca/#lawfirm"},
         "sameAs": [
           "https://lso.ca/public-resources/finding-a-lawyer-or-paralegal/lawyer-and-paralegal-directory",
+          "https://www.hlawfirmontario.com/",
           "https://www.linkedin.com/in/mia-he-93422b160/"
         ]
       },
@@ -73,7 +74,6 @@ function formatBlogDate(date: Date) {
         "@id": "https://www.miaohelaw.ca/#lawfirm",
         "name": "H. LAW FIRM 恒. 律师事务所",
         "alternateName": "H. LAW FIRM 恒. 律师事务所",
-        "description": "The Markham-based law firm where Miao He practises Ontario family law. The firm's separate corporate website describes the full firm and its broader practice areas.",
         "logo": "https://www.miaohelaw.ca/h-law-firm-logo.png",
         "url": "https://www.hlawfirmontario.com/",
         "telephone": "+1-647-930-6688",
@@ -89,6 +89,7 @@ function formatBlogDate(date: Date) {
         "geo": {"@type": "GeoCoordinates", "latitude": "43.8563", "longitude": "-79.3370"},
         "areaServed": ["Toronto", "Markham", "Richmond Hill", "Mississauga", "Scarborough", "Brampton", "Oakville", "Greater Toronto Area"],
         "knowsLanguage": ["zh-Hans", "en"],
+        "serviceType": ["Divorce Litigation", "Family Law", "Child Custody", "Property Division", "Cross-Border Asset Division", "Spousal Support", "Child Support", "Prenuptial Agreement", "Separation Agreement", "Mediation"],
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
           "name": "Ontario Family Law Services",
@@ -114,7 +115,7 @@ function formatBlogDate(date: Date) {
         "@id": "https://www.miaohelaw.ca/#website",
         "url": "https://www.miaohelaw.ca/",
         "name": "Miao He (何淼) — Ontario Family Law Lawyer",
-        "description": "Personal professional website of Miao He, Ontario family law lawyer. Focused exclusively on family law matters for the Chinese-Canadian community.",
+        "description": "Personal website of Miao He (何淼), dual-licensed family law lawyer in Ontario and China, serving the Chinese-Canadian community in the Greater Toronto Area. English and Mandarin.",
         "inLanguage": ["zh-Hans", "en"],
         "publisher": {"@id": "https://www.miaohelaw.ca/#person"}
       }
@@ -175,7 +176,7 @@ function formatBlogDate(date: Date) {
         <p class="hero-court-eyebrow">Ontario family law</p>
         <p class="hero-court-slogan" lang="en">Bilingual. Bicultural. By your side.</p>
         <h1 id="hero-main-heading" class="hero-court-h1">Ontario Family Law &amp; Divorce Lawyer – Miao He <span class="hero-court-chinese">何淼</span></h1>
-        <p class="hero-court-tagline">Dual-licensed family lawyer (Ontario &amp; China) · Mandarin &amp; English · Markham · GTA &amp; all of Ontario</p>
+        <p class="hero-court-lead">Dual-licensed family lawyer (Ontario &amp; China) · divorce, custody &amp; cross-border assets · Mandarin &amp; English · Markham · GTA and Ontario</p>
         <div class="hero-court-actions">
           <a href="tel:6479306688" class="btn-court-primary">Book a consultation · 647-930-6688</a>
           <a href="/en/about/" class="btn-court-secondary">About the lawyer</a>
@@ -604,6 +605,17 @@ function formatBlogDate(date: Date) {
   .hero-court-chinese {
     color: #e8c9a4;
     font-weight: 600;
+  }
+  .hero-court-lead {
+    margin: 0 auto 0.9rem;
+    max-width: 44em;
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    font-size: clamp(0.72rem, 1.35vw, 0.82rem);
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    color: rgba(255, 255, 255, 0.82);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
   }
   .hero-court-tagline {
     margin: 0 auto 1.85rem;
