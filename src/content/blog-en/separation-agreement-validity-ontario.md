@@ -37,11 +37,11 @@ If disclosure was incomplete at the time of signing, the other party may later u
 
 ### 4. No Witness Signature
 
-A separation agreement must be signed in the presence of a witness. The absence of a witness is a formal defect that may affect enforceability.
+A missing witness signature does not automatically invalidate a separation agreement, but having a witness signature significantly strengthens the weight a court gives when assessing the agreement's validity.
 
-### 5. Grossly Unfair Terms
+### 5. Unconscionable
 
-Even if the signing process was formally correct, if the terms of the agreement are grossly unfair to one party — for example, if one party gave up significant rights without truly understanding them — the court may still find the agreement invalid or partially unenforceable.
+Even if the signing process was formally correct, if the terms of the agreement are unconscionable — for example, if one party gave up significant rights without truly understanding them — the court may still find the agreement invalid or partially unenforceable.
 
 ---
 
