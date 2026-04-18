@@ -12,7 +12,6 @@
 	};
 
 	const animateCounters = () => {
-		const start = performance.now();
 		const duration = 900;
 		const targets = counters.map((el) => ({
 			el,
@@ -20,7 +19,12 @@
 			suffix: el.dataset.suffix ?? '',
 		}));
 
+		for (const item of targets) {
+			item.el.textContent = `0${item.suffix}`;
+		}
+
 		const easeOutCubic = (t) => 1 - Math.pow(1 - t, 3);
+		const start = performance.now();
 
 		const tick = (now) => {
 			const t = Math.min(1, (now - start) / duration);
