@@ -20,13 +20,13 @@ const services = [
   {
     href: '/en/family-law/child-custody/',
     icon: '/images/service-icons/courthouse.png',
-    title: 'Child Custody & Parenting Time',
+    title: 'Child Custody & Access',
     desc: 'Primary caregiver determination, CAS response, emergency motions, Hague-Convention international relocation.',
   },
   {
     href: '/en/family-law/support/',
     icon: '/images/service-icons/scales-books.png',
-    title: 'Child & Spousal Support',
+    title: 'Spousal & Child Support',
     desc: 'Hidden-income investigation, self-employed income imputation, overseas income tracing, FRO enforcement and variation.',
   },
   {
@@ -36,10 +36,22 @@ const services = [
     desc: 'Marriage, cohabitation and separation agreements plus Independent Legal Advice (ILA) — drafted with a litigator\u2019s eye.',
   },
   {
+    href: '/en/family-law/domestic-contracts/',
+    icon: '/images/service-icons/document-ideas.png',
+    title: 'Common-Law Rights',
+    desc: 'Cohabitation agreements, post-separation property disputes, Unjust Enrichment claims, spousal support applications. Cohabitation is not marriage — protect your rights early.',
+  },
+  {
     href: '/en/family-law/mediation/',
     icon: '/images/service-icons/document-gavel.png',
     title: 'Mediation & ADR',
-    desc: 'Certified mediator. Strategic out-of-court settlement, med-arb, four-step mediation advocacy — over CAD 1M recovered in mediation.',
+    desc: 'Certified mediator. Strategic out-of-court settlement, med-arb, JRP representation — over CAD 1M recovered through mediation.',
+  },
+  {
+    href: '/en/smart-advocacy/',
+    icon: '/images/service-icons/gavel.png',
+    title: 'Smart Advocacy',
+    desc: 'Every case evaluated through a litigator\u2019s lens. Maximum leverage at the negotiation table — full courtroom representation when it counts.',
   },
 ];
 ---
@@ -48,11 +60,11 @@ const services = [
 <head>
   <BaseHead
     title="Family Law Services | Miao He — Ontario & China Dual-Licensed Lawyer"
-    description="Overview of Ontario family law services by Miao He: divorce litigation, cross-border asset division, child custody, support, domestic contracts, and mediation. Dual-licensed in Ontario and China. 647-930-6688."
+    description="Overview of Ontario family law services by Miao He: divorce litigation, cross-border asset division, child custody, support, domestic contracts, common-law rights, mediation, and smart advocacy. Dual-licensed in Ontario and China. 647-930-6688."
   />
-  <meta name="keywords" content="Ontario family law services,Toronto Chinese family lawyer,divorce litigation Ontario,cross-border asset division,child custody lawyer,spousal support lawyer,domestic contracts Ontario,family law mediation,dual licensed Ontario China lawyer" />
+  <meta name="keywords" content="Ontario family law services,Toronto Chinese family lawyer,divorce litigation Ontario,cross-border asset division,child custody lawyer,spousal support lawyer,domestic contracts Ontario,common-law rights Ontario,family law mediation,smart advocacy,dual licensed Ontario China lawyer" />
   <meta property="og:title" content="Family Law Services | Miao He — Ontario Family Law" />
-  <meta property="og:description" content="Six core family law service lines across Ontario and cross-border matters. Dual-licensed in Ontario and China, 15+ years of experience." />
+  <meta property="og:description" content="Eight core family law service lines across Ontario and cross-border matters. Dual-licensed in Ontario and China, 15+ years of experience." />
   <meta property="og:type" content="website" />
   <link rel="canonical" href="https://www.miaohelaw.ca/en/family-law/" />
   <link rel="alternate" hreflang="zh" href="https://www.miaohelaw.ca/family-law/" />
@@ -66,7 +78,7 @@ const services = [
       "@id": "https://www.miaohelaw.ca/en/family-law/#page",
       "url": "https://www.miaohelaw.ca/en/family-law/",
       "name": "Family Law Services — Miao He",
-      "description": "Overview of family law services provided by Miao He in Ontario: divorce litigation, cross-border asset division, child custody, support, domestic contracts, and mediation.",
+      "description": "Overview of family law services provided by Miao He in Ontario: divorce litigation, cross-border asset division, child custody, support, domestic contracts, common-law rights, mediation, and smart advocacy.",
       "inLanguage": "en",
       "isPartOf": { "@type": "WebSite", "url": "https://www.miaohelaw.ca/" },
       "about": {
@@ -89,14 +101,16 @@ const services = [
       "@type": "ItemList",
       "name": "Family Law Services",
       "itemListOrder": "https://schema.org/ItemListOrderAscending",
-      "numberOfItems": 6,
+      "numberOfItems": 8,
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Divorce Litigation", "url": "https://www.miaohelaw.ca/en/family-law/divorce-litigation/" },
         { "@type": "ListItem", "position": 2, "name": "Cross-Border Asset Division", "url": "https://www.miaohelaw.ca/en/family-law/cross-border-assets/" },
-        { "@type": "ListItem", "position": 3, "name": "Child Custody & Parenting Time", "url": "https://www.miaohelaw.ca/en/family-law/child-custody/" },
-        { "@type": "ListItem", "position": 4, "name": "Child & Spousal Support", "url": "https://www.miaohelaw.ca/en/family-law/support/" },
+        { "@type": "ListItem", "position": 3, "name": "Child Custody & Access", "url": "https://www.miaohelaw.ca/en/family-law/child-custody/" },
+        { "@type": "ListItem", "position": 4, "name": "Spousal & Child Support", "url": "https://www.miaohelaw.ca/en/family-law/support/" },
         { "@type": "ListItem", "position": 5, "name": "Domestic Contracts", "url": "https://www.miaohelaw.ca/en/family-law/domestic-contracts/" },
-        { "@type": "ListItem", "position": 6, "name": "Mediation & ADR", "url": "https://www.miaohelaw.ca/en/family-law/mediation/" }
+        { "@type": "ListItem", "position": 6, "name": "Common-Law Rights", "url": "https://www.miaohelaw.ca/en/family-law/domestic-contracts/" },
+        { "@type": "ListItem", "position": 7, "name": "Mediation & ADR", "url": "https://www.miaohelaw.ca/en/family-law/mediation/" },
+        { "@type": "ListItem", "position": 8, "name": "Smart Advocacy", "url": "https://www.miaohelaw.ca/en/smart-advocacy/" }
       ]
     }
   ]
@@ -111,7 +125,7 @@ const services = [
           <a href="/en/">Home</a> › Family Law Services
         </div>
         <h1>Family Law Services</h1>
-        <p class="hero-sub">Six core practice areas · Dual-licensed in Ontario & China · Mandarin and English throughout</p>
+        <p class="hero-sub">Eight core practice areas · Dual-licensed in Ontario & China · Mandarin and English throughout</p>
       </div>
     </section>
 
@@ -168,19 +182,26 @@ const services = [
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 1.25rem;
+  }
+  @media (max-width: 1080px) {
+    main.family-law-hub .hub-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (max-width: 560px) {
+    main.family-law-hub .hub-grid { grid-template-columns: 1fr; }
   }
   main.family-law-hub .hub-card { margin: 0; }
   main.family-law-hub .hub-card-link {
     display: flex;
-    gap: 1rem;
+    flex-direction: column;
+    gap: 0.85rem;
     align-items: flex-start;
     background: #fdfbf7;
     border: 1px solid #ede8df;
-    border-left: 4px solid #7a5a1a;
+    border-top: 4px solid #7a5a1a;
     border-radius: 10px;
-    padding: 1.25rem 1.25rem 1.1rem;
+    padding: 1.25rem 1.1rem 1.1rem;
     text-decoration: none;
     color: inherit;
     height: 100%;
@@ -190,7 +211,7 @@ const services = [
   main.family-law-hub .hub-card-link:focus-visible {
     transform: translateY(-1px);
     box-shadow: 0 10px 24px rgba(44, 24, 16, 0.1);
-    border-left-color: #c9a168;
+    border-top-color: #c9a168;
     outline: none;
   }
   main.family-law-hub .hub-card-icon {
@@ -256,8 +277,7 @@ const services = [
   main.family-law-hub .cta-btn--primary { background: #fac775; color: #1c2b3f; }
   main.family-law-hub .cta-btn--ghost { background: transparent; color: #fac775; border: 1px solid rgba(250, 199, 117, 0.6); }
 
-  @media (max-width: 720px) {
-    main.family-law-hub .hub-card-link { flex-direction: column; gap: 0.75rem; }
+  @media (max-width: 560px) {
     main.family-law-hub .hub-card-icon { width: 48px; height: 48px; }
     main.family-law-hub .hub-card-icon img { width: 34px; height: 34px; }
   }

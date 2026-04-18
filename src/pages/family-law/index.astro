@@ -47,6 +47,12 @@ const services = [
     title: 'Mediation & ADR · 调解与仲裁',
     desc: '持调解员资格。战略性庭外和解、调解仲裁、四步调解方案代理——调解追回资产逾百万加元。',
   },
+  {
+    href: '/smart-advocacy/',
+    icon: '/images/service-icons/gavel.png',
+    title: 'Smart Advocacy · 智慧维权',
+    desc: '最好的结果不一定来自法庭。以诉讼律师的眼光评估每一个案件，在谈判桌上争取最大利益——必要时全力出庭代理。',
+  },
 ];
 ---
 <!doctype html>
@@ -58,7 +64,7 @@ const services = [
   />
   <meta name="keywords" content="家庭法服务,Ontario家庭法律师,多伦多华人家庭法,离婚诉讼,跨境资产,子女监护,婚前协议,分居协议,同居伴侣,调解仲裁,Chinese family law lawyer GTA,何淼律师家庭法" />
   <meta property="og:title" content="家庭法服务总览 | 何淼律师 · Ontario 家庭法" />
-  <meta property="og:description" content="七大家庭法服务线：离婚诉讼、跨境资产、子女监护、抚养费、协议、同居伴侣、调解。Ontario 与中国双执照律师。" />
+  <meta property="og:description" content="八大家庭法服务线：离婚诉讼、跨境资产、子女监护、抚养费、协议、同居伴侣、调解、智慧维权。Ontario 与中国双执照律师。" />
   <meta property="og:type" content="website" />
   <link rel="canonical" href="https://www.miaohelaw.ca/family-law/" />
   <link rel="alternate" hreflang="zh" href="https://www.miaohelaw.ca/family-law/" />
@@ -72,7 +78,7 @@ const services = [
       "@id": "https://www.miaohelaw.ca/family-law/#page",
       "url": "https://www.miaohelaw.ca/family-law/",
       "name": "家庭法服务总览 — 何淼律师",
-      "description": "何淼律师在 Ontario 提供的七大家庭法服务线：离婚诉讼、跨境资产分割、子女监护、抚养费、婚前及分居协议、同居伴侣权利、调解仲裁。",
+      "description": "何淼律师在 Ontario 提供的八大家庭法服务线：离婚诉讼、跨境资产分割、子女监护、抚养费、婚前及分居协议、同居伴侣权利、调解仲裁、智慧维权。",
       "inLanguage": "zh-Hans",
       "isPartOf": { "@type": "WebSite", "url": "https://www.miaohelaw.ca/" },
       "about": {
@@ -95,7 +101,7 @@ const services = [
       "@type": "ItemList",
       "name": "家庭法服务",
       "itemListOrder": "https://schema.org/ItemListOrderAscending",
-      "numberOfItems": 7,
+      "numberOfItems": 8,
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "离婚诉讼", "url": "https://www.miaohelaw.ca/family-law/divorce-litigation/" },
         { "@type": "ListItem", "position": 2, "name": "跨境资产分割", "url": "https://www.miaohelaw.ca/family-law/cross-border-assets/" },
@@ -103,7 +109,8 @@ const services = [
         { "@type": "ListItem", "position": 4, "name": "抚养费与赡养费", "url": "https://www.miaohelaw.ca/family-law/support/" },
         { "@type": "ListItem", "position": 5, "name": "婚前及分居协议", "url": "https://www.miaohelaw.ca/family-law/domestic-contracts/" },
         { "@type": "ListItem", "position": 6, "name": "同居伴侣权利", "url": "https://www.miaohelaw.ca/family-law/common-law/" },
-        { "@type": "ListItem", "position": 7, "name": "调解与仲裁", "url": "https://www.miaohelaw.ca/family-law/mediation/" }
+        { "@type": "ListItem", "position": 7, "name": "调解与仲裁", "url": "https://www.miaohelaw.ca/family-law/mediation/" },
+        { "@type": "ListItem", "position": 8, "name": "智慧维权", "url": "https://www.miaohelaw.ca/smart-advocacy/" }
       ]
     }
   ]
@@ -118,14 +125,14 @@ const services = [
           <a href="/">首页</a> › 家庭法服务
         </div>
         <h1>Family Law Services · 家庭法服务</h1>
-        <p class="hero-sub">七大核心服务 · Ontario 与中国双重律师执照 · 普通话与英文全程沟通</p>
+        <p class="hero-sub">八大核心服务 · Ontario 与中国双重律师执照 · 普通话与英文全程沟通</p>
       </div>
     </section>
 
     <section class="content-section">
       <div class="container">
         <div class="hub-intro">
-          <p>Miao He（何淼）律师专注 Ontario 家庭法，在 Greater Toronto Area 执业逾 15 年，自 2009 年取得中国律师执照起即以诉讼律师为职业定位。以下七大服务线覆盖了华人客户最常面对的家庭法议题——从协议谈判到出庭诉讼，从本地财产到跨境资产。</p>
+          <p>Miao He（何淼）律师专注 Ontario 家庭法，在 Greater Toronto Area 执业逾 15 年，自 2009 年取得中国律师执照起即以诉讼律师为职业定位。以下八大服务线覆盖了华人客户最常面对的家庭法议题——从协议谈判到出庭诉讼，从本地财产到跨境资产。</p>
         </div>
 
         <ul class="hub-grid" aria-label="家庭法服务列表">
@@ -175,19 +182,26 @@ const services = [
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 1.25rem;
+  }
+  @media (max-width: 1080px) {
+    main.family-law-hub .hub-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (max-width: 560px) {
+    main.family-law-hub .hub-grid { grid-template-columns: 1fr; }
   }
   main.family-law-hub .hub-card { margin: 0; }
   main.family-law-hub .hub-card-link {
     display: flex;
-    gap: 1rem;
+    flex-direction: column;
+    gap: 0.85rem;
     align-items: flex-start;
     background: #fdfbf7;
     border: 1px solid #ede8df;
-    border-left: 4px solid #7a5a1a;
+    border-top: 4px solid #7a5a1a;
     border-radius: 10px;
-    padding: 1.25rem 1.25rem 1.1rem;
+    padding: 1.25rem 1.1rem 1.1rem;
     text-decoration: none;
     color: inherit;
     height: 100%;
@@ -197,7 +211,7 @@ const services = [
   main.family-law-hub .hub-card-link:focus-visible {
     transform: translateY(-1px);
     box-shadow: 0 10px 24px rgba(44, 24, 16, 0.1);
-    border-left-color: #c9a168;
+    border-top-color: #c9a168;
     outline: none;
   }
   main.family-law-hub .hub-card-icon {
@@ -263,8 +277,7 @@ const services = [
   main.family-law-hub .cta-btn--primary { background: #fac775; color: #1c2b3f; }
   main.family-law-hub .cta-btn--ghost { background: transparent; color: #fac775; border: 1px solid rgba(250, 199, 117, 0.6); }
 
-  @media (max-width: 720px) {
-    main.family-law-hub .hub-card-link { flex-direction: column; gap: 0.75rem; }
+  @media (max-width: 560px) {
     main.family-law-hub .hub-card-icon { width: 48px; height: 48px; }
     main.family-law-hub .hub-card-icon img { width: 34px; height: 34px; }
   }
