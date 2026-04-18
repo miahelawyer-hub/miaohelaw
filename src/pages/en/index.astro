@@ -89,7 +89,22 @@ function formatBlogDate(date: Date) {
         "geo": {"@type": "GeoCoordinates", "latitude": "43.8563", "longitude": "-79.3370"},
         "areaServed": ["Toronto", "Markham", "Richmond Hill", "Mississauga", "Scarborough", "Brampton", "Oakville", "Greater Toronto Area"],
         "knowsLanguage": ["zh-Hans", "en"],
-        "serviceType": ["Divorce Litigation", "Family Law", "Child Custody", "Property Division", "Cross-Border Asset Division", "Spousal Support", "Child Support", "Prenuptial Agreement", "Separation Agreement", "Mediation"],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Ontario Family Law Services",
+          "itemListElement": [
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Divorce Litigation", "serviceType": "Family Law"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Child Custody & Access", "serviceType": "Family Law"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Property Division", "serviceType": "Family Law"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Cross-Border Asset Division", "serviceType": "Family Law"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Spousal Support", "serviceType": "Family Law"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Child Support", "serviceType": "Family Law"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Prenuptial Agreement", "serviceType": "Family Law"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Separation Agreement", "serviceType": "Family Law"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Common-law Relationship Matters", "serviceType": "Family Law"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Mediation & ADR", "serviceType": "Family Law"}}
+          ]
+        },
         "employee": {"@id": "https://www.miaohelaw.ca/#person"},
         "sameAs": "https://www.hlawfirmontario.com/",
         "priceRange": "$$"
