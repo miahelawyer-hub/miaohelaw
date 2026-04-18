@@ -869,6 +869,19 @@ function formatBlogDate(date: Date) {
     transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
     overflow: hidden;
   }
+  .area-card:has(.area-link) { cursor: pointer; }
+  .area-card .area-link::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    border-radius: inherit;
+  }
+  .area-card .area-card-inner { position: relative; z-index: 0; }
+  .area-card:focus-within {
+    border-color: rgba(74, 95, 120, 0.28);
+    box-shadow: 0 16px 40px rgba(42, 53, 68, 0.1);
+  }
   .area-card:hover {
     transform: translateY(-3px);
     border-color: rgba(74, 95, 120, 0.22);
