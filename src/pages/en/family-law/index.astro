@@ -1,0 +1,266 @@
+---
+import BaseHead from '../../../components/BaseHead.astro';
+import HeaderEn from '../../../components/HeaderEn.astro';
+import Footer from '../../../components/Footer.astro';
+import '../../../styles/family-law-service-detail.css';
+
+const services = [
+  {
+    href: '/en/family-law/divorce-litigation/',
+    icon: '/images/service-icons/gavel-alt.png',
+    title: 'Divorce Litigation',
+    desc: 'High-conflict divorce and Ontario Superior Court advocacy. Strategy over emotion — know when to push, when to settle.',
+  },
+  {
+    href: '/en/family-law/cross-border-assets/',
+    icon: '/images/service-icons/scales-books.png',
+    title: 'Cross-Border Asset Division',
+    desc: 'China–Canada asset tracing, Net Family Property equalization, hidden-asset investigations, CBV valuation disputes.',
+  },
+  {
+    href: '/en/family-law/child-custody/',
+    icon: '/images/service-icons/courthouse.png',
+    title: 'Child Custody & Parenting Time',
+    desc: 'Primary caregiver determination, CAS response, emergency motions, Hague-Convention international relocation.',
+  },
+  {
+    href: '/en/family-law/support/',
+    icon: '/images/service-icons/scales-books.png',
+    title: 'Child & Spousal Support',
+    desc: 'Hidden-income investigation, self-employed income imputation, overseas income tracing, FRO enforcement and variation.',
+  },
+  {
+    href: '/en/family-law/domestic-contracts/',
+    icon: '/images/service-icons/document-gavel.png',
+    title: 'Domestic Contracts',
+    desc: 'Marriage, cohabitation and separation agreements plus Independent Legal Advice (ILA) — drafted with a litigator\u2019s eye.',
+  },
+  {
+    href: '/en/family-law/mediation/',
+    icon: '/images/service-icons/document-gavel.png',
+    title: 'Mediation & ADR',
+    desc: 'Certified mediator. Strategic out-of-court settlement, med-arb, four-step mediation advocacy — over CAD 1M recovered in mediation.',
+  },
+];
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <BaseHead
+    title="Family Law Services | Miao He — Ontario & China Dual-Licensed Lawyer"
+    description="Overview of Ontario family law services by Miao He: divorce litigation, cross-border asset division, child custody, support, domestic contracts, and mediation. Dual-licensed in Ontario and China. 647-930-6688."
+  />
+  <meta name="keywords" content="Ontario family law services,Toronto Chinese family lawyer,divorce litigation Ontario,cross-border asset division,child custody lawyer,spousal support lawyer,domestic contracts Ontario,family law mediation,dual licensed Ontario China lawyer" />
+  <meta property="og:title" content="Family Law Services | Miao He — Ontario Family Law" />
+  <meta property="og:description" content="Six core family law service lines across Ontario and cross-border matters. Dual-licensed in Ontario and China, 15+ years of experience." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://www.miaohelaw.ca/en/family-law/" />
+  <link rel="alternate" hreflang="zh" href="https://www.miaohelaw.ca/family-law/" />
+  <link rel="alternate" hreflang="en" href="https://www.miaohelaw.ca/en/family-law/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.miaohelaw.ca/family-law/" />
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "@id": "https://www.miaohelaw.ca/en/family-law/#page",
+      "url": "https://www.miaohelaw.ca/en/family-law/",
+      "name": "Family Law Services — Miao He",
+      "description": "Overview of family law services provided by Miao He in Ontario: divorce litigation, cross-border asset division, child custody, support, domestic contracts, and mediation.",
+      "inLanguage": "en",
+      "isPartOf": { "@type": "WebSite", "url": "https://www.miaohelaw.ca/" },
+      "about": {
+        "@type": "Person",
+        "name": "Miao He",
+        "alternateName": ["何淼", "Mia He"],
+        "jobTitle": "Family Law Lawyer"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.miaohelaw.ca/en/" },
+        { "@type": "ListItem", "position": 2, "name": "Family Law Services", "item": "https://www.miaohelaw.ca/en/family-law/" }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Family Law Services",
+      "itemListOrder": "https://schema.org/ItemListOrderAscending",
+      "numberOfItems": 6,
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Divorce Litigation", "url": "https://www.miaohelaw.ca/en/family-law/divorce-litigation/" },
+        { "@type": "ListItem", "position": 2, "name": "Cross-Border Asset Division", "url": "https://www.miaohelaw.ca/en/family-law/cross-border-assets/" },
+        { "@type": "ListItem", "position": 3, "name": "Child Custody & Parenting Time", "url": "https://www.miaohelaw.ca/en/family-law/child-custody/" },
+        { "@type": "ListItem", "position": 4, "name": "Child & Spousal Support", "url": "https://www.miaohelaw.ca/en/family-law/support/" },
+        { "@type": "ListItem", "position": 5, "name": "Domestic Contracts", "url": "https://www.miaohelaw.ca/en/family-law/domestic-contracts/" },
+        { "@type": "ListItem", "position": 6, "name": "Mediation & ADR", "url": "https://www.miaohelaw.ca/en/family-law/mediation/" }
+      ]
+    }
+  ]
+  </script>
+</head>
+<body>
+  <HeaderEn />
+  <main class="family-law-service-detail family-law-hub">
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="/en/">Home</a> › Family Law Services
+        </div>
+        <h1>Family Law Services</h1>
+        <p class="hero-sub">Six core practice areas · Dual-licensed in Ontario & China · Mandarin and English throughout</p>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <div class="hub-intro">
+          <p>Miao He (何淼) focuses exclusively on Ontario family law, with 15+ years of experience across the Greater Toronto Area. Called to the China Bar in 2009, she has practised as a litigation lawyer ever since. The service lines below cover the issues Chinese-Canadian families most often face — from agreement drafting and negotiation to Superior Court advocacy, and from Ontario property to complex cross-border assets.</p>
+        </div>
+
+        <ul class="hub-grid" aria-label="Family law services">
+          {services.map((s) => (
+            <li class="hub-card">
+              <a class="hub-card-link" href={s.href}>
+                <span class="hub-card-icon" aria-hidden="true">
+                  <img src={s.icon} alt="" width="56" height="56" loading="lazy" decoding="async" />
+                </span>
+                <span class="hub-card-body">
+                  <span class="hub-card-title">{s.title}</span>
+                  <span class="hub-card-desc">{s.desc}</span>
+                  <span class="hub-card-more">Learn more →</span>
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+
+        <div class="cta-box">
+          <h3>Need a clear read on your specific situation?</h3>
+          <p>Initial consultation · 30 minutes · $220 + HST · Mandarin & English · typically a reply within 3 business days.</p>
+          <div class="cta-actions">
+            <a class="cta-btn cta-btn--primary" href="tel:6479306688">📞 647-930-6688</a>
+            <a class="cta-btn cta-btn--ghost" href="/en/contact/">Contact us →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer lang="en" />
+</body>
+</html>
+
+<style>
+  main.family-law-hub .hub-intro {
+    max-width: 780px;
+    margin: 0 auto 2.25rem;
+    font-size: 1rem;
+    line-height: 1.85;
+    color: #2d2a24;
+  }
+  main.family-law-hub .hub-intro p { margin: 0; }
+
+  main.family-law-hub .hub-grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.25rem;
+  }
+  main.family-law-hub .hub-card { margin: 0; }
+  main.family-law-hub .hub-card-link {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    background: #fdfbf7;
+    border: 1px solid #ede8df;
+    border-left: 4px solid #7a5a1a;
+    border-radius: 10px;
+    padding: 1.25rem 1.25rem 1.1rem;
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  }
+  main.family-law-hub .hub-card-link:hover,
+  main.family-law-hub .hub-card-link:focus-visible {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 24px rgba(44, 24, 16, 0.1);
+    border-left-color: #c9a168;
+    outline: none;
+  }
+  main.family-law-hub .hub-card-icon {
+    flex: 0 0 auto;
+    width: 56px;
+    height: 56px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5efe0;
+    border-radius: 10px;
+  }
+  main.family-law-hub .hub-card-icon img {
+    width: 40px;
+    height: 40px;
+    display: block;
+    object-fit: contain;
+  }
+  main.family-law-hub .hub-card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    min-width: 0;
+  }
+  main.family-law-hub .hub-card-title {
+    font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #2c1810;
+    line-height: 1.35;
+  }
+  main.family-law-hub .hub-card-desc {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: #4a3a2a;
+  }
+  main.family-law-hub .hub-card-more {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #7a5a1a;
+    margin-top: 0.15rem;
+  }
+
+  main.family-law-hub .cta-box { margin-top: 3rem; }
+  main.family-law-hub .cta-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+  }
+  main.family-law-hub .cta-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.4rem;
+    border-radius: 999px;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 0.01em;
+    transition: transform 0.15s ease, filter 0.15s ease;
+  }
+  main.family-law-hub .cta-btn:hover { transform: translateY(-1px); filter: brightness(1.05); }
+  main.family-law-hub .cta-btn--primary { background: #fac775; color: #1c2b3f; }
+  main.family-law-hub .cta-btn--ghost { background: transparent; color: #fac775; border: 1px solid rgba(250, 199, 117, 0.6); }
+
+  @media (max-width: 720px) {
+    main.family-law-hub .hub-card-link { flex-direction: column; gap: 0.75rem; }
+    main.family-law-hub .hub-card-icon { width: 48px; height: 48px; }
+    main.family-law-hub .hub-card-icon img { width: 34px; height: 34px; }
+  }
+</style>
+</contents>
+</invoke>
