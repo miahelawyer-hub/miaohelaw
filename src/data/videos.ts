@@ -152,6 +152,26 @@ export const videoItems: VideoItem[] = [
     ],
     keywords: '夫妻吵架报警加拿大,家暴报警安省,报警撤诉加拿大,家庭暴力何淼律师,多伦多家庭法律师,保护令安省',
   },
+  {
+    slug: 'common-law-duration-ontario-immigration',
+    youtubeId: 'shh0y0eWiF4',
+    title: '同居两年算 Common Law 吗？安省家庭法与移民标准不同',
+    topic: 'Common Law 同居',
+    topicSlug: 'common-law',
+    uploadDate: '2026-04-17',
+    summary:
+      '「在一起住了两年算 Common Law 吗？」——取决于您在哪个省、以及要办的是家庭法、移民担保还是其他事项。安省家庭法为同居满 3 年或有共同子女；联邦移民法下同居担保常见标准为连续同居满 1 年。',
+    description:
+      '很多人以为 Common Law 有全国统一标准，其实并非如此。「我们在一起住了两年，算 Common Law 吗？」——答案要看<strong>您所在的省份</strong>以及<strong>您要处理的法律事项</strong>。在安大略省<a href="/family-law/common-law/">家庭法</a>框架下，通常须同居连续满 3 年，或双方处于同居关系且有共同子女，二者满足其一即可能被认定为 Common-law 伴侣并产生相应家庭法上的权利义务。若您办理的是<strong>联邦移民法</strong>下的同居伴侣担保等事项，认定标准与家庭法不同——常见标准为双方连续共同生活满 1 年（具体以当时有效的移民法规与材料要求为准）。BC 省、阿尔伯塔省等各省家庭法对同居伴侣的定义也可能不同。',
+    keyPoints: [
+      '没有放之四海皆准的单一标准：「算不算 Common Law」取决于您要适用的是哪一部法律——省家庭法、联邦移民法、税务规则等各不相同。',
+      '安大略省家庭法：在<a href="/family-law/common-law/">安省家庭法</a>框架下，通常为同居连续满 3 年，或双方有共同子女且处于同居关系，满足其一即可能被认定为 Common-law 伴侣。',
+      '联邦移民法（同居担保等）：在移民担保等场景下，认定标准与省家庭法不同——常见为连续共同生活满 1 年可能被认定为 Common-law 伴侣关系（以 IRCC 当时要求与您的证据材料为准）。',
+      '其他省份：BC、阿尔伯塔等省对同居／adult interdependent partner 等的定义与时点要求可能与安省不同；若您不在安省，应查阅当地法律或咨询当地律师。',
+      '何淼律师提醒：同一段关系在不同法律框架下可能被不同标准衡量。若不确定是否符合认定或应准备多长的同居证明，建议先咨询律师，避免因材料与法律依据不匹配而耽误程序。',
+    ],
+    keywords: '同居多久算Common Law,安省Common Law三年,移民担保同居一年,Common Law标准加拿大,何淼律师Common Law,多伦多同居律师',
+  },
 ];
 
 export function getVideosByTopic(): Map<string, VideoItem[]> {
