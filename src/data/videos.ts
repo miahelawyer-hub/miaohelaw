@@ -113,6 +113,25 @@ export const videoItems: VideoItem[] = [
     ],
     keywords: '安省离婚诉讼,对方不同意离婚安省,case conference安省,离婚答辩期,单方离婚诉讼安省,何淼律师离婚诉讼',
   },
+  {
+    slug: 'common-law-china-marriage-license',
+    youtubeId: 'cyR8my-zJT4',
+    title: '在加拿大Common Law同居，可以回中国领结婚证吗？',
+    topic: 'Common Law 同居',
+    topicSlug: 'common-law',
+    uploadDate: '2026-04-17',
+    summary:
+      '在加拿大维持 Common Law 关系、未正式结婚，想回中国领证——中国法律一般不将同居视为婚姻，民政登记上您可能仍为单身，回国领证在法律上通常可行，但子女、抚养费与财产未妥善处理则有实务风险。',
+    description:
+      '许多在加拿大维持<a href="/family-law/common-law/">Common Law（同居）关系</a>的朋友会问：没有正式结婚，想回中国与他人领取结婚证，法律上可以吗？从中国法律框架看，Common Law 事实婚姻通常不被承认为婚姻，民政登记上您可能仍为单身状态，回国领取结婚证在法律上通常是可行的。但何淼律师提醒您：长期同居往往已涉及<a href="/family-law/child-custody/">子女抚养与监护</a>、<a href="/family-law/support/">抚养费</a>及共同生活期间的财产安排；在未妥善处理上述问题前开始新关系，日后可能面临复杂法律纠纷。',
+    keyPoints: [
+      '中国法律视角：<a href="/family-law/common-law/">Common Law 同居关系</a>在中国法律框架下通常不被视为婚姻，民政登记上您可能仍为单身，回国领取结婚证在法律上通常是可行的。',
+      '实务风险：长期<a href="/family-law/common-law/">同居关系</a>常已涉及子女安排、抚养费及共同生活期间的资产问题——未妥善处理前贸然开始新关系，可能引发日后诉讼或执行困难。',
+      '何淼律师建议：先正式结束现有同居关系，厘清<a href="/family-law/child-custody/">子女</a>与<a href="/family-law/support/">经济扶养</a>安排，必要时通过<a href="/family-law/domestic-contracts/">同居协议（Cohabitation Agreement）</a>等书面方式固定双方权利义务。',
+      '任何长久稳定的关系都应以真诚与信任为基础；若您考虑结束同居或想了解您在安省的法律权利，欢迎预约咨询。',
+    ],
+    keywords: '加拿大Common Law,同居回中国领证,中国结婚证Common Law,安省同居法律,何淼律师Common Law,多伦多同居律师',
+  },
 ];
 
 export function getVideosByTopic(): Map<string, VideoItem[]> {
