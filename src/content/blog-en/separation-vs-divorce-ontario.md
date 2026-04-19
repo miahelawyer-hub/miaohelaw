@@ -57,7 +57,7 @@ Many clients confuse the two, but under Canadian law, separation and divorce are
 
 - ✅ **No documents or court process required** — separation begins the moment either (or both) spouses treat the relationship as over
 - ✅ You can **separate under one roof** ("separation under one roof") — as long as the two of you are no longer living as spouses
-- ✅ It is strongly recommended to sign a **[Separation Agreement](/family-law/domestic-contracts#separation)** to set out property, support, and parenting arrangements
+- ✅ It is strongly recommended to sign a **[Separation Agreement](/en/family-law/domestic-contracts#separation)** to set out property, support, and parenting arrangements
 
 **Separation is reversible:**
 
@@ -78,7 +78,7 @@ The separation date has significant consequences for property division and the d
 
 **Key features of divorce:**
 
-- ⚖️ You must file a [Divorce Litigation](/family-law/divorce-litigation) application with the Ontario Superior Court of Justice
+- ⚖️ You must file a [Divorce Litigation](/en/family-law/divorce-litigation) application with the Ontario Superior Court of Justice
 - ⚖️ You generally need to have been **separated for one year** to apply on the ground of marriage breakdown (applications can also be based on adultery or cruelty, but the one-year ground is by far the most common)
 - ⚖️ Once the divorce order takes effect, the parties are **legally no longer spouses**
 
@@ -125,4 +125,4 @@ There is no such thing as a "reconciliation certificate." There is only a new ma
 
 The separation date, the terms of your separation agreement, and the divorce timeline all have direct consequences for property division and parenting arrangements. Before making major decisions, I recommend a one-on-one consultation first.
 
-[Book a Consultation](/contact/)
+[Book a Consultation](/en/contact/)
