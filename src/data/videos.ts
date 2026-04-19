@@ -73,6 +73,26 @@ export const videoItems: VideoItem[] = [
     ],
     keywords: '安省离婚程序,离婚协商安省,分居协议多伦多,律师协商离婚,净身出户加拿大,何淼律师离婚',
   },
+  {
+    slug: 'ontario-divorce-certificate-three-paths',
+    youtubeId: '2Ya-6FcACJk',
+    title: '签了分居协议下一步怎么办？安省离婚三条路',
+    topic: '离婚程序',
+    topicSlug: 'divorce-procedures',
+    uploadDate: '2026-04-17',
+    summary:
+      '签了分居协议，然后呢？安省离婚有三条路：共同离婚申请、单方离婚申请，或直接跳过分居协议提交共同申请。选错程序既浪费时间又浪费金钱，何淼律师为您梳理完整流程。',
+    description:
+      '许多人签了<a href="/family-law/domestic-contracts#separation">分居协议</a>后不知道下一步该怎么做。在安省，正式离婚需要向法院申请离婚证书（Divorce Certificate）。根据双方情况不同，可选择共同离婚申请或单方离婚申请两种方式。如果双方没有财产争议也没有子女，还可以跳过分居协议，直接提交共同申请。每种路径的时间成本和法律要求各不相同，选错了既浪费时间又浪费金钱。',
+    keyPoints: [
+      '第一步仍是协商：就财产、子女、<a href="/blog/separation-vs-divorce-ontario/">抚养费</a>等问题达成一致，签署<a href="/family-law/domestic-contracts#separation">分居协议（Separation Agreement）</a>。',
+      '共同离婚申请（Joint Application）：双方均同意，由一位律师起草文件，双方签字后连同分居协议一起提交法院——从提交到拿到离婚证书通常需要 4 至 8 个月。',
+      '单方离婚申请（Simple Application）：对方不配合提交共同申请时可单方面提交。分两步：① 提交申请并给对方答辩期（加拿大境内 30 天，境外 60 天）；② 答辩期过后无异议，法院单方审核并下达离婚令。',
+      '快速通道：如双方无财产争议且无子女，可直接跳过分居协议，提交共同离婚申请。',
+      '何淼律师提醒：每个人的情况不同，适合的<a href="/family-law/divorce-litigation/">离婚程序</a>也不同。建议预约咨询，由律师为您分析最适合的离婚路径。',
+    ],
+    keywords: '安省离婚证书,共同离婚申请安省,单方离婚申请安省,分居协议后离婚,安省离婚流程,何淼律师离婚程序',
+  },
 ];
 
 export function getVideosByTopic(): Map<string, VideoItem[]> {
