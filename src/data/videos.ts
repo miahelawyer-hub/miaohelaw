@@ -53,6 +53,26 @@ export const videoItems: VideoItem[] = [
     ],
     keywords: '婚前协议安省,婚前协议有效条件,安省婚姻合同,婚前协议律师多伦多,何淼律师婚前协议,domestic contract ontario',
   },
+  {
+    slug: 'ontario-divorce-procedures-negotiation',
+    youtubeId: 'YhOVZxqwD_k',
+    title: '安省离婚第一步：协商的两种方式与常见误区',
+    topic: '离婚程序',
+    topicSlug: 'divorce-procedures',
+    uploadDate: '2026-04-17',
+    summary:
+      '在安省面临离婚，第一步往往是协商。双方自行协商与委托律师协商有本质区别——何淼律师提醒：提出没有法律依据的无理要求，只会拖长时间、增加律师费，对您毫无益处。',
+    description:
+      '在安省面临离婚，您最先可能接触的程序就是协商。协商分为两种：双方自行协商，或委托律师代为协商。自行协商达成一致后，可由律师起草<a href="/family-law/domestic-contracts#separation">分居协议</a>，将双方意见写入正式文件。委托律师协商则需先完成财务公开（Financial Disclosure），在厘清双方<a href="/blog/separation-vs-divorce-ontario/">净家庭资产（Net Family Property）</a>后再进行协商。',
+    keyPoints: [
+      '自行协商：双方就争议事项达成解决方案后，委托律师起草<a href="/family-law/domestic-contracts#separation">分居协议</a>，将已达成的意见写入正式法律文件。',
+      '律师协商：双方各聘律师，先完成财务公开报告，再就家庭净资产分配、子女抚养等事项展开协商。',
+      '常见误区——"净身出户"：在加拿大没有"净身出户"这一法律概念。提出无法律依据的要求，对方律师不会同意，只会耗费您大量时间和律师费，不会带来任何益处。',
+      '何淼律师提醒：律师按时间计费。无效的协商除了带来高额账单，不会给您任何帮助。在协商前，务必先了解您在法律上实际能够主张的权利。',
+      '本系列后续视频将继续介绍其他<a href="/family-law/divorce-litigation/">离婚程序</a>及注意要点，欢迎持续关注。',
+    ],
+    keywords: '安省离婚程序,离婚协商安省,分居协议多伦多,律师协商离婚,净身出户加拿大,何淼律师离婚',
+  },
 ];
 
 export function getVideosByTopic(): Map<string, VideoItem[]> {
