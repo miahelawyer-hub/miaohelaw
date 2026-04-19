@@ -93,6 +93,26 @@ export const videoItems: VideoItem[] = [
     ],
     keywords: '安省离婚证书,共同离婚申请安省,单方离婚申请安省,分居协议后离婚,安省离婚流程,何淼律师离婚程序',
   },
+  {
+    slug: 'ontario-divorce-litigation-uncooperative-spouse',
+    youtubeId: 'ijYMwSMVUxI',
+    title: '对方不配合也能离婚？安省离婚诉讼完整程序',
+    topic: '离婚程序',
+    topicSlug: 'divorce-procedures',
+    uploadDate: '2026-04-17',
+    summary:
+      '协商不成、对方根本不配合——这在离婚案件中非常常见。即使对方不同意，您一样可以在安省单独提起离婚诉讼。何淼律师详解从立案到法院下达离婚令的完整程序。',
+    description:
+      '双方协商不成，对方不配合——这种情况在<a href="/family-law/divorce-litigation/">离婚诉讼</a>中非常常见。很多朋友不知道，即使对方不同意，您一样可以在安大略省单独提起离婚诉讼。法院有权在对方不配合的情况下作出判决。所有诉讼表格在安省法院官网均可免费下载，但程序涉及多个技术性步骤，建议委托律师处理以避免程序错误。',
+    keyPoints: [
+      '任何一方均可单独提起<a href="/family-law/divorce-litigation/">离婚诉讼</a>：可委托律师起草诉讼文件，也可自行填写安省法院官网的免费表格提交。',
+      '给对方答辩期：提交申请后须给对方答辩期——加拿大境内 30 天，境外（如中国）60 天。对方如有正当理由可向法庭申请延期。',
+      'Case Conference（庭前会议）：对方答辩后，双方可申请由法官主持的庭前会议，了解争议焦点、推动和解或确定后续程序。目前安省法院排期通常需 3 至 6 个月，请提前规划。',
+      '对方不答辩怎么办：答辩期过后对方仍无异议，您无需等待其配合，可继续推进——法院可单方面审核文件并直接下达离婚令。',
+      '何淼律师提示：<a href="/family-law/divorce-litigation/">离婚诉讼</a>涉及多个技术性步骤，不同情况适合不同策略。建议预约咨询，由律师根据您的具体情况制定方案。',
+    ],
+    keywords: '安省离婚诉讼,对方不同意离婚安省,case conference安省,离婚答辩期,单方离婚诉讼安省,何淼律师离婚诉讼',
+  },
 ];
 
 export function getVideosByTopic(): Map<string, VideoItem[]> {
