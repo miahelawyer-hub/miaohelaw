@@ -964,6 +964,108 @@ export const faqItems: FaqItem[] = [
     ],
     keywords: '离婚打官司还是协议,协议离婚优缺点,离婚诉讼,何淼律师',
   },
+
+  // ── 分居与离婚系列（2026-04-19）──────────────────────────────
+  {
+    slug: 'fenju-jiushi-lihun-ma',
+    capsule: '分居就是离婚吗？',
+    question: '分居就是离婚吗？',
+    summary:
+      '不是。分居（Separation）和离婚（Divorce）是完全不同的两件事。分居是事实行为——夫妻事实上停止共同生活，不需要法院程序，不需要任何文件；离婚是法律程序——必须向加拿大法院申请并获得离婚判决书才生效。',
+    answers: [
+      '<strong>分居是事实行为</strong>——夫妻双方事实上停止共同生活，不需要法院程序，不需要任何文件。',
+      '<strong>离婚是法律程序</strong>——必须向加拿大法院申请，并获得<strong>离婚判决书（Divorce Certificate）</strong>才生效。',
+    ],
+    details: [
+      '分居后，双方在法律上<strong>仍然是夫妻</strong>：不能再婚、仍享有配偶权利义务、分居状态不会自动变成离婚。只有经过法院程序拿到离婚证，婚姻关系才彻底终止。',
+      '很多华人客户误以为"分居了就等于离婚了"。这是一个代价极高的误解——在法律上仍处于已婚状态，不仅无法再婚，财产界定也会变得更复杂。',
+      '如果您想正式结束婚姻关系，必须通过<a href="/family-law/divorce-litigation">离婚诉讼</a>程序向法院提出申请。如果双方对财产、抚养等事项有共识，也可以先签订<a href="/family-law/domestic-contracts#separation">分居协议</a>，为后续离婚做好准备。',
+      '完整解析请阅读：<a href="/blog/separation-vs-divorce-ontario/">《分居和离婚的区别详解》</a>。欢迎致电647-930-6688预约何淼律师咨询。',
+    ],
+    keywords: '分居就是离婚吗,分居和离婚的区别,分居法律后果安省,离婚判决书加拿大,何淼律师',
+    pairedFaqPath: '/en/faq/is-separation-the-same-as-divorce/',
+    featured: true,
+  },
+  {
+    slug: 'fenju-yinian-zidong-lihun',
+    capsule: '分居一年就自动离婚了吗？',
+    question: '分居一年就自动离婚了吗？',
+    summary:
+      '不会。加拿大没有"自动离婚"这一说。无论分居多久——1年、5年、甚至10年——只要不主动向法院申请离婚，婚姻关系永远存在。分居满1年只是让您有资格申请离婚，不代表自动离婚。',
+    answers: [
+      '加拿大《<a href="https://laws-lois.justice.gc.ca/eng/acts/d-3.4/"><em>Divorce Act</em></a>》规定：<strong>分居满1年</strong>是申请离婚最常见的理由（"婚姻破裂"）。但这只是让您<strong>有资格申请离婚</strong>，不代表自动离婚。',
+      '必须主动向加拿大省级高等法院提交<a href="/family-law/divorce-litigation">离婚申请</a>，经过法院审理并获得离婚判决书，婚姻才正式终止。',
+    ],
+    details: [
+      '何淼律师曾代理过一位<strong>分居10年</strong>仍未离婚的客户。10年里他一直认为"时间长了就自动离了"——结果法律上仍是已婚状态，无法再婚，财产界定极为复杂。',
+      '分居满1年后，如需启动离婚程序，需要准备分居日证明、财产清单等材料，向法院提交申请，等待法院审理，最终获得离婚判决书。',
+      '"分居久 = 自动离婚"是代价高昂的误解。建议在分居满一年后尽早咨询律师，了解<a href="/family-law/divorce-litigation">离婚申请</a>流程与所需文件。',
+      '完整解析请阅读：<a href="/blog/separation-vs-divorce-ontario/">《分居和离婚的区别详解》</a>。欢迎致电647-930-6688预约何淼律师咨询。',
+    ],
+    keywords: '分居一年自动离婚,加拿大自动离婚,分居多久可以离婚,Divorce Act分居满一年,何淼律师',
+    pairedFaqPath: '/en/faq/separation-one-year-automatic-divorce/',
+    featured: true,
+  },
+  {
+    slug: 'fenju-zhihou-fanhou-hehao',
+    capsule: '分居之后可以反悔和好吗？',
+    question: '分居之后可以反悔和好吗？',
+    summary:
+      '可以，但时间有讲究。加拿大法律认可夫妻分居后重新和好（reconciliation）。关键规则是：重新共同生活不超过90天，原分居日不变；超过90天，之前的分居期被打断，未来如再次分手需重新计算分居日。',
+    answers: [
+      '可以。加拿大法律认可夫妻分居后<strong>重新和好（reconciliation）</strong>。',
+      '关键是<strong>90天规则</strong>：重新共同生活不超过90天，分居日继续有效；超过90天，之前的分居期被打断，未来如再次分手需<strong>重新计算分居日</strong>。',
+    ],
+    details: [
+      '加拿大《<a href="https://laws-lois.justice.gc.ca/eng/acts/d-3.4/"><em>Divorce Act</em></a>》第8(3)条给出明确标准：短暂复合（不超过90天）不会重置分居期；超过90天被视为关系已修复，之前的分居期被打断。',
+      '分居日直接影响：财产分割的计算基准日、申请离婚的时效起算、<a href="/family-law/domestic-contracts#separation">分居协议</a>的适用范围。这些都是直接关系到您财产权益的关键节点。',
+      '建议保留短信、邮件、独立账户等可证明分居日的证据。如果曾经短暂复合又再次分居，及时咨询律师确认分居日是否需要重新认定。',
+      '完整解析请阅读：<a href="/blog/separation-vs-divorce-ontario/">《分居和离婚的区别详解》</a>。欢迎致电647-930-6688预约何淼律师咨询。',
+    ],
+    keywords: '分居后可以和好吗,90天复合规则加拿大,分居日重置,reconciliation Divorce Act,何淼律师',
+    pairedFaqPath: '/en/faq/can-you-reconcile-after-separation/',
+    featured: true,
+  },
+  {
+    slug: 'lihun-zhihou-keyi-fanhui',
+    capsule: '离婚之后可以反悔吗？',
+    question: '离婚之后可以反悔吗？',
+    summary:
+      '法律上，不可以。一旦拿到离婚判决书（Divorce Certificate），婚姻关系在法律上彻底终止。如果之后想恢复夫妻关系，必须重新办理结婚登记——与陌生人结婚是同样的程序。',
+    answers: [
+      '不可以。一旦拿到<strong>离婚判决书（Divorce Certificate）</strong>，婚姻关系在法律上<strong>彻底终止</strong>。',
+      '如果想复合，<strong>必须重新办理结婚登记</strong>。加拿大法律下没有"复婚证"，只有一张新的"结婚证"——与陌生人结婚是同样的程序。',
+    ],
+    details: [
+      '这与分居完全不同：分居可以通过重新共同生活超过90天"反悔"；但离婚一旦完成，无论双方之后关系如何改善，法律上的婚姻关系已不存在。',
+      '如果您对婚姻仍有不确定，请在递交<a href="/family-law/divorce-litigation">离婚申请</a>前慎重考虑。一旦法院发出离婚判决，不可逆转。',
+      '现实中也有夫妻离婚后决定复合，他们的选择是重新举行婚礼、重新办理结婚登记，这与初次结婚程序完全相同。',
+      '完整解析请阅读：<a href="/blog/separation-vs-divorce-ontario/">《分居和离婚的区别详解》</a>。欢迎致电647-930-6688预约何淼律师咨询。',
+    ],
+    keywords: '离婚后可以复婚吗,离婚反悔加拿大,离婚判决书不可逆,复婚程序加拿大,何淼律师',
+    pairedFaqPath: '/en/faq/can-you-reconcile-after-divorce/',
+    featured: true,
+  },
+  {
+    slug: 'tongwuyan-fenju',
+    capsule: '同一个屋檐下可以分居吗？',
+    question: '同一个屋檐下可以分居吗？',
+    summary:
+      '可以。加拿大安省法院认可"同屋分居"（Separation Under One Roof）。法律不强求物理上分开住，而是看双方是否实质上停止了夫妻生活——分房睡、财务独立、生活分开、社交独立等。同屋分居法律效力与常规分居相同，但举证更难，建议留好证据。',
+    answers: [
+      '可以。加拿大安省法院认可<strong>"同屋分居"（Separation Under One Roof）</strong>，不强求物理上分开居住。',
+      '关键看<strong>是否实质上停止了夫妻生活</strong>：分房睡、财务独立、生活分开、社交独立、对外表态等。不需要全部满足，但越多越能证明实质分居。',
+    ],
+    details: [
+      '现实中很多夫妻因为经济压力、孩子抚养、房屋产权等原因，分居时无法立刻分开居住。加拿大法律充分考虑到这一现实，不以"是否搬出"作为分居的判断标准。',
+      '法院常见的认定因素包括：分房睡、不再有夫妻亲密关系；财务独立——分别管理账户、各自承担开支；生活分开——不一起吃饭、购物、做家务；社交独立——不以夫妻身份出席活动；对外表态——告知家人朋友双方已分居。',
+      '"同屋分居"在法律上完全等同于常规分居，分居日一样重要，<a href="/family-law/domestic-contracts#separation">分居协议</a>一样适用。但因为双方仍住在一起，举证比"搬出去住"更难——建议通过<a href="/blog/electronic-evidence-ontario-family-court/">短信、邮件等电子记录</a>保留分居证据。',
+      '完整解析请阅读：<a href="/blog/separation-vs-divorce-ontario/">《分居和离婚的区别详解》</a>。欢迎致电647-930-6688预约何淼律师咨询。',
+    ],
+    keywords: '同屋分居安省,separation under one roof,同住可以分居吗,分居证据保留,何淼律师',
+    pairedFaqPath: '/en/faq/separation-under-one-roof/',
+    featured: true,
+  },
 ];
 
 export function getFaqItemsForListing(): FaqItem[] {

@@ -535,7 +535,104 @@ export const faqItemsEn: FaqItemEn[] =
       "To book, call 647-930-6688 or email miao@miaohelaw.ca. You can also submit an inquiry through the contact form at miaohelaw.ca/en/contact."
     ],
     "keywords": "book consultation Miao He,family lawyer Markham,Chinese family lawyer GTA,Ontario family law consultation,647-930-6688"
-  }
+  },
+
+  // ── Separation vs Divorce series (2026-04-19) ─────────────────
+  {
+    slug: "is-separation-the-same-as-divorce",
+    question: "Is separation the same as divorce?",
+    summary:
+      "No. Separation and divorce are completely different things. Separation is a factual state — spouses stop living together as a couple, with no court process and no documents required. Divorce is a legal process — you must apply to a Canadian court and obtain a Divorce Order before the marriage is legally ended.",
+    answers: [
+      "<strong>Separation is a factual state</strong> — spouses stop functioning as a couple in their daily and financial lives. No court process and no documents are required.",
+      "<strong>Divorce is a legal process</strong> — you must apply to a Canadian court and obtain a <strong>Divorce Order (Divorce Certificate)</strong> before the marriage is legally terminated.",
+    ],
+    details: [
+      "After separation, the parties are still legally married: they cannot remarry, spousal rights and obligations continue, and the separation does not automatically convert into a divorce. Only a court-issued Divorce Order ends the marriage.",
+      "A common misconception among clients from a Chinese legal background is that separation equals divorce. This misunderstanding can be costly — remaining legally married affects your ability to remarry and complicates property characterization.",
+      "If you wish to formally end the marriage, you must go through a <a href=\"/en/family-law/divorce-litigation\">divorce litigation</a> application. If the parties have agreed on property and parenting matters, a <a href=\"/en/family-law/domestic-contracts#separation\">separation agreement</a> can be signed first to document those terms before filing.",
+      "For the full explanation, read: <a href=\"/en/blog/separation-vs-divorce-ontario/\">Separation vs. Divorce in Canada: Key Legal Differences</a>. Contact Miao He at 647-930-6688 to book a consultation.",
+    ],
+    keywords: "is separation divorce Canada,separation vs divorce Ontario,legal consequences separation Ontario,Divorce Order Canada,Miao He lawyer",
+    pairedFaqPath: "/faq/fenju-jiushi-lihun-ma/",
+    featured: true,
+  },
+  {
+    slug: "separation-one-year-automatic-divorce",
+    question: "Does being separated for one year mean we are automatically divorced?",
+    summary:
+      "No. Canada does not have automatic divorce. No matter how long you stay separated — one year, five years, even ten years — the marriage continues unless you actively apply to court for a divorce. One year of separation gives you the right to apply; it does not end the marriage by itself.",
+    answers: [
+      "The Canadian <a href=\"https://laws-lois.justice.gc.ca/eng/acts/d-3.4/\"><em>Divorce Act</em></a> provides that <strong>one year of separation</strong> is the most common ground for divorce (marriage breakdown). But it only gives you the <strong>right to apply</strong> — it does not automatically end the marriage.",
+      "You must actively file a <a href=\"/en/family-law/divorce-litigation\">divorce application</a> with the Ontario Superior Court of Justice, go through the court process, and receive a Divorce Order before the marriage is legally over.",
+    ],
+    details: [
+      "Miao He has represented a client who had been separated for <strong>ten years</strong> and had never filed for divorce. He believed the passage of time had ended the marriage automatically — it had not. He remained legally married, could not remarry, and the property issues had become significantly more complicated.",
+      "After one year of separation, if you are ready to proceed, you will typically need to prepare evidence of the separation date, a financial disclosure, and the necessary court documents to file the application.",
+      "\"Long separation = automatic divorce\" is a costly misconception. Once you have been separated for a year, consult a lawyer about starting the <a href=\"/en/family-law/divorce-litigation\">divorce application</a> process.",
+      "For the full explanation, read: <a href=\"/en/blog/separation-vs-divorce-ontario/\">Separation vs. Divorce in Canada: Key Legal Differences</a>. Contact Miao He at 647-930-6688 to book a consultation.",
+    ],
+    keywords: "separated one year automatic divorce Canada,how long separated to divorce Ontario,Divorce Act one year separation,marriage breakdown Canada,Miao He lawyer",
+    pairedFaqPath: "/faq/fenju-yinian-zidong-lihun/",
+    featured: true,
+  },
+  {
+    slug: "can-you-reconcile-after-separation",
+    question: "Can you change your mind and reconcile after separating?",
+    summary:
+      "Yes, but the timing matters. Canadian law allows spouses to reconcile after separation. The key rule: if you resume living together for 90 days or less, the original separation date is preserved. If you live together for more than 90 days, the prior separation period is broken and you will need to recalculate your separation date if you separate again.",
+    answers: [
+      "Yes. Canadian law recognizes <strong>reconciliation</strong> after separation.",
+      "The <strong>90-day rule</strong> is critical: resuming cohabitation for 90 days or less does not reset your separation date. Resuming for <strong>more than 90 days</strong> breaks the prior separation period — if you separate again in the future, you will need to <strong>recalculate the separation date</strong>.",
+    ],
+    details: [
+      "Section 8(3) of the Canadian <a href=\"https://laws-lois.justice.gc.ca/eng/acts/d-3.4/\"><em>Divorce Act</em></a> sets out the rule explicitly: a brief resumption of cohabitation (90 days or less) does not restart the clock; resumption beyond 90 days is treated as a genuine reconciliation that interrupts the separation period.",
+      "The separation date directly affects: the valuation date for property division, when the one-year clock to file for divorce starts, and the scope of a <a href=\"/en/family-law/domestic-contracts#separation\">separation agreement</a>. These are significant financial implications.",
+      "Keep evidence of your separation date — texts, emails, and separate bank accounts. If you have briefly reconciled and then separated again, consult a lawyer promptly to confirm whether your separation date needs to be re-established.",
+      "For the full explanation, read: <a href=\"/en/blog/separation-vs-divorce-ontario/\">Separation vs. Divorce in Canada: Key Legal Differences</a>. Contact Miao He at 647-930-6688 to book a consultation.",
+    ],
+    keywords: "reconcile after separation Canada,90-day reconciliation rule Canada,separation date reset Ontario,Divorce Act reconciliation,Miao He lawyer",
+    pairedFaqPath: "/faq/fenju-zhihou-fanhou-hehao/",
+    featured: true,
+  },
+  {
+    slug: "can-you-reconcile-after-divorce",
+    question: "Can you change your mind after a divorce is granted?",
+    summary:
+      "No. Once a Divorce Order is issued, the marriage is permanently ended in law. If the parties later wish to resume their relationship as spouses, they must register a completely new marriage — the same process as marrying for the first time. There is no such thing as a reinstatement of the prior marriage.",
+    answers: [
+      "No. Once a <strong>Divorce Order (Divorce Certificate)</strong> is issued, the marriage is <strong>permanently terminated in law</strong>.",
+      "If the parties later wish to be spouses again, they must <strong>register a new marriage</strong>. There is no \"remarriage certificate\" — the process is identical to marrying a stranger for the first time.",
+    ],
+    details: [
+      "This is fundamentally different from separation: separation can be \"undone\" by resuming cohabitation for more than 90 days. Once a divorce is granted, however strong the reconciliation, the prior legal marriage no longer exists.",
+      "If you have any uncertainty about whether you want to end the marriage, please think carefully before filing a <a href=\"/en/family-law/divorce-litigation\">divorce application</a>. Once the court issues the Divorce Order, it is irreversible.",
+      "In practice, some former couples do reconcile after divorce and choose to remarry. That remarriage involves a new ceremony and new registration — exactly like a first marriage.",
+      "For the full explanation, read: <a href=\"/en/blog/separation-vs-divorce-ontario/\">Separation vs. Divorce in Canada: Key Legal Differences</a>. Contact Miao He at 647-930-6688 to book a consultation.",
+    ],
+    keywords: "reconcile after divorce Canada,divorce irreversible Ontario,remarry after divorce Canada,Divorce Order permanent,Miao He lawyer",
+    pairedFaqPath: "/faq/lihun-zhihou-keyi-fanhui/",
+    featured: true,
+  },
+  {
+    slug: "separation-under-one-roof",
+    question: "Can you be legally separated while still living under the same roof?",
+    summary:
+      "Yes. Ontario courts recognize separation under one roof. The law does not require spouses to physically live apart — what matters is whether they have substantively stopped living as a couple: separate bedrooms, separate finances, separate daily lives. Separation under one roof has the same legal effect as conventional separation, but proving it requires stronger evidence.",
+    answers: [
+      "Yes. Ontario courts recognize <strong>separation under one roof</strong>. Physical separation is not required.",
+      "The key question is whether the parties have <strong>substantively stopped living as spouses</strong>: separate bedrooms, independent finances, separate daily routines, separate social lives, and informing family or friends of the separation. Not all of these need to be present, but the more indicators, the stronger the evidence.",
+    ],
+    details: [
+      "Many spouses cannot immediately move to separate residences due to financial pressure, children's schooling, or shared property ownership. Canadian law reflects this reality and does not treat physical co-habitation as incompatible with legal separation.",
+      "Courts look at indicators such as: sleeping in separate bedrooms with no spousal intimacy; financially independent — separate accounts, separate expenses; not eating together, shopping together, or sharing household chores; not attending events as a couple; and informing family and friends of the separation.",
+      "Separation under one roof is legally equivalent to conventional separation — the separation date carries the same weight for property division and divorce timing, and a <a href=\"/en/family-law/domestic-contracts#separation\">separation agreement</a> is equally applicable. However, because the parties still share a residence, proving the separation date is harder — preserve <a href=\"/en/blog/electronic-evidence-ontario-family-court/\">electronic evidence such as texts and emails</a> to document the separation.",
+      "For the full explanation, read: <a href=\"/en/blog/separation-vs-divorce-ontario/\">Separation vs. Divorce in Canada: Key Legal Differences</a>. Contact Miao He at 647-930-6688 to book a consultation.",
+    ],
+    keywords: "separation under one roof Ontario,live together separated Canada,same house separated Ontario,prove separation date same roof,Miao He lawyer",
+    pairedFaqPath: "/faq/tongwuyan-fenju/",
+    featured: true,
+  },
 ];
 
 export function getFaqItemsEnForListing(): FaqItemEn[] {
