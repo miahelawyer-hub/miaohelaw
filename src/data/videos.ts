@@ -492,6 +492,26 @@ export const videoItems: VideoItem[] = [
     ],
     keywords: '分居一年离婚加拿大,何时递交离婚申请安省,无过错离婚分居一年,何淼律师离婚程序,多伦多离婚申请时间',
   },
+  {
+    slug: 'verify-ontario-lawyer-lso-directory',
+    youtubeId: 'wZSrL230NVQ',
+    title: '委托前如何核实律师执照？安省 LSO 官网免费查',
+    topic: '请律师须知',
+    topicSlug: 'hiring-lawyer',
+    uploadDate: '2026-04-17',
+    summary:
+      '安省持牌律师信息在 Law Society of Ontario（LSO）官网公开可查。何淼律师演示如何通过律师名录核对姓名、事务所、联系方式及执业限制；若涉及房产交接，可留意 Real Estate Insured 等栏目。',
+    description:
+      '在找家庭法律师或其他律师之前，何淼律师建议您先用<strong>官方、免费</strong>的渠道核实对方是否具备安省律师执业资格。安大略省律师协会（Law Society of Ontario，LSO）在 <a href="https://lso.ca/" target="_blank" rel="noopener noreferrer">lso.ca</a> 公布的<strong>律师名录（Lawyer Directory）</strong>中，可查询持牌律师的法定姓名、执业状态、所属事务所及联系方式等信息。操作要点：进入 LSO 网站后打开律师查询页面，在姓名栏输入律师的 <strong>Legal Name（法定英文姓名）</strong> 进行检索，点开结果即可查看详细档案。若您计划委托律师办理<strong>房地产买卖交接（real estate closing）</strong>，除一般执业资格外，还应留意档案中与房地产保险／业务许可相关的字段（视频中以 <strong>Real Estate Insured</strong> 为例：显示 Yes 通常表示具备相关承保条件下的房地产业务资格；显示 No 则通常意味着不宜由其主导该类交接——具体以名录展示及律所说明为准）。何淼律师的 LSO 会员编号为 <strong>#83315K</strong>，您可在上述名录中自行核对，亦可在本站<a href="/about/">关于律师</a>页面查阅公开执业信息。',
+    keyPoints: [
+      '第一步：访问 <a href="https://lso.ca/" target="_blank" rel="noopener noreferrer">lso.ca</a>，进入律师名录／查询（Lawyer Directory）页面。',
+      '第二步：在姓名检索栏输入律师的法定英文姓名（Legal Name），执行搜索。',
+      '第三步：点开对应档案，核对执业状态、事务所、联系方式及任何公示的执业限制或附加条件。',
+      '房产交接特别提示：若需办理房地产交接，除「是否为持牌律师」外，还应核对名录中与房地产执业／保险相关的公示字段（视频以 Real Estate Insured 为例），并与律所确认其实际承办范围。',
+      '建议：在签署 retainers 或支付大额费用前，先完成上述查询；对任何无法在 LSO 名录中核实身份的人士，应提高警惕。',
+    ],
+    keywords: '安省律师资格查询,LSO律师名录,如何查律师执照多伦多,Real Estate Insured律师,何淼律师83315K,加拿大律师协会查询',
+  },
 ];
 
 export function getVideosByTopic(): Map<string, VideoItem[]> {
