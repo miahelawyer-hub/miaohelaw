@@ -312,6 +312,26 @@ export const videoItems: VideoItem[] = [
     ],
     keywords: '放弃子女抚养费安省,Child Support离婚申请,双方同意不付抚养费,何淼律师子女抚养,多伦多离婚子女费,安省离婚法院',
   },
+  {
+    slug: 'diy-separation-agreement-ontario-risks',
+    youtubeId: 'mdtD840Hv2E',
+    title: '分居协议可以自己起草吗？',
+    topic: '分居与离婚',
+    topicSlug: 'separation-divorce',
+    uploadDate: '2026-04-17',
+    summary:
+      '何淼律师不建议自行起草分居协议：有效协议通常需自愿、理解条款、完整披露，且双方各自取得独立法律意见（ILA）等；自己写的版本往往在争议中难以证明程序合规，事后被挑战时可能付出更高诉讼成本。',
+    description:
+      '不少人认为<a href="/family-law/domestic-contracts#separation">分居协议（Separation Agreement）</a>只是「把商量好的内容写下来」，自行套用模板即可。何淼律师在视频中说明：在安省，分居协议属于严肃的<a href="/faq/fenjuxieyi/">具有约束力的法律合同</a>，一旦签署即可能对财产、子女、扶养等产生长期影响。法院在事后审查协议效力时，通常会关注签署过程是否自愿、是否存在不当压力、财产披露是否充分、双方是否真正理解条款，以及是否各自获得<strong>独立法律意见（Independent Legal Advice, ILA）</strong>等要素。自行起草的文本往往难以在形式上完整回应上述审查要点；即便双方已按协议执行一段时间，仍可能因新争议而被一方主张撤销或部分无效，从而重新进入昂贵、耗时的诉讼。',
+    keyPoints: [
+      '常见条件（概括）：自愿签署且无胁迫或不当压力；条款清晰、双方对权利义务有真实理解；充分的财务披露；以及通常极为关键的——<strong>双方各自聘请独立律师并出具 ILA</strong>。',
+      '自行起草的薄弱点：即便内容看似「公平」，也可能缺少可核验的程序性文件与披露记录；一旦发生争议，对方常从「未获 ILA／披露不足／条款含糊／签署仓促」等角度挑战协议效力。',
+      '实务风险：何淼律师见过双方自行书写并执行一段时间后，又因新矛盾诉请认定协议无效或部分无效，最终<strong>省下的起草成本远低于后续诉讼与补救费用</strong>的情形。',
+      '与无争议离婚路径的关系：即使双方高度一致，涉及孩子或财产时，仍建议由律师主导或审阅协议文本；可参阅<a href="/faq/xuyao-lushi-ma/">双方同意离婚还需要律师吗</a>。',
+      '关于分居协议签署后的效力、推翻与变更，参见<a href="/blog/separation-agreement-validity-ontario/">分居协议签了之后还能反悔吗</a>。',
+    ],
+    keywords: '自行起草分居协议安省,Separation Agreement ILA,分居协议无效,何淼律师分居协议,多伦多分居协议律师,安省离婚协议',
+  },
 ];
 
 export function getVideosByTopic(): Map<string, VideoItem[]> {
