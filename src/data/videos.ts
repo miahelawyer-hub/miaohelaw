@@ -572,6 +572,26 @@ export const videoItems: VideoItem[] = [
     ],
     keywords: '父母出资婚房加拿大,家庭房产信托安省,借款协议父母首付,NRST父母出资,何淼律师父母首付,多伦多离婚房产',
   },
+  {
+    slug: 'matrimonial-home-title-in-corporation-debora',
+    youtubeId: 'nmF1KTOjLrE',
+    title: '房产登记在公司名下，就能规避婚房认定吗？',
+    topic: '婚房认定',
+    topicSlug: 'matrimonial-home',
+    uploadDate: '2026-04-17',
+    summary:
+      '仅因房产登记在公司名下，并不当然阻止法院在特定事实下仍将其认定为《家庭法》意义上的婚房。安省上诉法院在 Debora v. Debora（2006 ONCA）等判例中强调：当公司实质为一方配偶的「替身／alter ego」且房屋实际用于家庭主要居所时，不能仅以公司外壳规避对方在婚房制度下的合法权益。',
+    description:
+      '何淼律师在视频中讨论一个常见「规划想法」：把家庭主要居所登记在<strong>公司名下</strong>，是否就能避免该房屋在离婚时被认定为<strong>婚房（matrimonial home）</strong>？在安省，答案通常是：<strong>不能仅凭登记名义下定论</strong>。法院往往会综合审查房屋是否被双方<strong>实际作为家庭主要居所使用</strong>、公司与配偶之间的控制关系、费用来源与账户安排等。经典判例为<strong>Debora v. Debora</strong>（2006 年安省上诉法院；中立引用示例：<em>(2006), 218 O.A.C. 237 (CA)</em>）：争议房产虽登记在男方持股公司名下，但法院查明双方将其用作主要家庭生活场所、男方为唯一股东且与家庭开支安排密切相关等事实后，认定该房产仍应纳入婚房相关规则处理，并指出不允许男方仅以公司面纱规避女方合法权益（视频口播中亦可能以「Deborah 案」指称该案，正式引用请以判例数据库为准）。何淼律师同时提醒：加拿大法以判例为重要渊源，任何<strong>个别事实细节变化</strong>都可能影响结论；具体规划应在律师指导下结合披露义务与税务、公司合规一并评估。延伸阅读：<a href="/videos/matrimonial-home-fla-18-ontario/">安省婚房（Matrimonial Home）是什么？家庭法第18条导读</a>。',
+    keyPoints: [
+      '核心误区：「登记在公司名下 = 一定不是婚房」并不成立；关键仍在于<strong>家庭主要居所的实际使用</strong>与<strong>公司与配偶之间的关系结构</strong>等因素。',
+      '判例脉络：Debora v. Debora 表明，在符合查明事实的前提下，法院可拒绝让一方通过公司形式不当削弱对方在婚房制度下应受考量的权益。',
+      '与法条的关系：除《<a href="https://www.ontario.ca/laws/statute/90f03" target="_blank" rel="noopener noreferrer">家庭法</a>》第18条等条文外，实务判断常需结合判例发展；不宜只记条文而忽略事实调查与证据。',
+      '规划警示：以公司持有住宅以规避家庭法后果的安排，可能同时触发公司、税务与贷款合规问题；应事先评估风险，而非事后补救。',
+      '若您涉及婚房认定、公司持股房产或 equalization 争议，欢迎预约何淼律师；亦可参阅<a href="/blog/net-family-property-ontario/">净家庭财产（NFP）</a>相关文章。',
+    ],
+    keywords: '公司名下婚房安省,Debora v Debora,matrimonial home corporation,婚房认定规避,何淼律师婚房,多伦多离婚房产',
+  },
 ];
 
 export function getVideosByTopic(): Map<string, VideoItem[]> {
