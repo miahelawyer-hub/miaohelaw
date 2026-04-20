@@ -332,6 +332,26 @@ export const videoItems: VideoItem[] = [
     ],
     keywords: '自行起草分居协议安省,Separation Agreement ILA,分居协议无效,何淼律师分居协议,多伦多分居协议律师,安省离婚协议',
   },
+  {
+    slug: 'divorce-financial-disclosure-preparation-ontario',
+    youtubeId: '4jcgQ7r4rds',
+    title: '离婚前对家庭财务一无所知？Financial Statement 是关键',
+    topic: '离婚财产',
+    topicSlug: 'property-division',
+    uploadDate: '2026-04-17',
+    summary:
+      '安省有争议的离婚诉讼中，财产分割高度依赖双方交换并宣誓提交的财务报表（Financial Statement）。若您对家庭资产、负债与收入毫无概念，便难以审阅对方披露是否完整，更难发现少报或瞒报。',
+    description:
+      '不少人想离婚，却对家庭财务状况几乎一无所知——对方名下有哪些资产、存款与投资结构、家庭大致净资产等都不清楚。何淼律师在视频中强调：<strong>离婚前的准备常被忽略，却直接影响您在程序中的主动权</strong>。在安省<a href="/family-law/divorce-litigation/">离婚诉讼</a>的财产争议中，双方通常需要依法院规则交换财务材料，核心载体之一即经宣誓的<strong>财务报表（Financial Statement，常见为 Form 13 / Form 13.1 等）</strong>，用以列明资产、负债与收入等。交换之后，您需要有能力审阅对方的披露是否一致、完整；若您对家庭财务完全没有「底稿」与概念，往往难以判断数字是否合理，也更难定位可能存在的遗漏。发现少报或瞒报后，固然可通过补披露、动议等途径寻求救济，但<strong>前提通常是您或您的律师能先识别出问题所在</strong>。',
+    keyPoints: [
+      '核心机制：有争议情形下的财产分割工作，往往建立在双方<strong>全面、持续的财务披露</strong>之上；Financial Statement 是其中最常见、最重要的书面载体之一。',
+      '交换之后要「会看」：您至少应对家庭账户余额区间、主要房产与投资线索、双方收入与负债结构有基本了解，才能把对方的数字「对回现实」。',
+      '发现问题的意义：若怀疑少报或瞒报，可讨论补披露、书面质询、动议等路径；但追查与质疑通常需要线索与起点——完全空白起步会更被动（可参阅<a href="/faq/chaxun-zichan/">如何查对方的银行账户或资产</a>）。',
+      '披露范围与形式：法院要求的披露往往具有<strong>全球性、广泛性</strong>，且宣誓文件存在严肃法律后果；详见<a href="/faq/caiwu-pilu/">法院会要求提供哪些财务披露</a>及<a href="/faq/bu-tigong-cailiao/">对方不提供财务材料怎么办</a>。',
+      '建议：在正式提起诉讼前，尽量整理手头账单、税单、房产文件与账户线索，并尽早预约律师评估披露策略与时间表。',
+    ],
+    keywords: '离婚前财务准备安省,Financial Statement离婚,离婚财产披露,瞒报资产安省,何淼律师离婚财产,多伦多离婚诉讼准备',
+  },
 ];
 
 export function getVideosByTopic(): Map<string, VideoItem[]> {
