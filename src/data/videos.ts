@@ -412,6 +412,26 @@ export const videoItems: VideoItem[] = [
     ],
     keywords: '中国结婚加拿大已婚,中国结婚证加拿大使用,已婚还是Common Law,何淼律师中加婚姻,安省财产分割已婚,多伦多华人离婚',
   },
+  {
+    slug: 'separation-date-property-china-vs-ontario',
+    youtubeId: 'Q450MQ8bS_c',
+    title: '离婚证之前财产都算「共同」吗？中加规则不一样',
+    topic: '分居与离婚',
+    topicSlug: 'separation-divorce',
+    uploadDate: '2026-04-17',
+    summary:
+      '许多从中国来的客户习惯以「离婚证」作为财产分界，但在安省家庭法下，净家庭财产计算通常以分居日为关键节点——分居后取得或增值的资产安排与中国法思维不同，分居日也往往是争议焦点。',
+    description:
+      '不少华人客户会带着中国的法律直觉来理解加拿大安省的夫妻财产规则，误以为在<strong>拿到离婚证之前</strong>，婚后取得的财产都当然属于「夫妻共同财产」、需要在离婚时一并分配。何淼律师在视频中对比说明：在中国法语境下，婚姻存续期间与财产归属的判断逻辑，与安省《<a href="https://www.ontario.ca/laws/statute/90f03" target="_blank" rel="noopener noreferrer">家庭法</a>》框架下的<strong>净家庭财产（NFP）与分居日（Date of Separation）</strong>规则并不相同。在安省，影响 equalization 计算的关键时点通常是<strong>双方分居之日</strong>，而不是离婚证签发日；分居日之后取得或形成的资产与增值，往往可能以不同方式被评估或排除在结算之外——具体仍取决于资产类型、来源、是否涉及婚房等特殊规则以及证据。正因为分居日会显著影响结果，实务中围绕分居事实与日期的争议非常常见。建议在分居初期尽量以<a href="/family-law/domestic-contracts#separation">书面方式</a>固定分居意向与日期，并在可能的情况下通过分居协议明确关键条款；若暂时无法就全文达成一致，也应至少尽量把分居日相关事实与共识记录清楚。',
+    keyPoints: [
+      '思维差异：中国法下常见的「以离婚证为界」理解，不能直接套用到安省 NFP／equalization 的计算逻辑上。',
+      '安省关键节点：通常以<strong>分居日</strong>作为财产结算的重要时间锚点之一，而非以领取离婚证之日作为唯一分界。',
+      '实务影响：分居后新取得的收入、账户、房产等，是否以及如何进入结算，需要结合规则与证据逐项分析，不宜凭感觉推定「一定不分」或「一定全分」。',
+      '争议焦点：分居事实是否成立、分居日为何日，往往成为诉讼或谈判中的核心争议之一。',
+      '行动建议：尽早整理能证明分居时间线的材料，并阅读<a href="/blog/separation-date-vs-divorce-date-ontario/">离婚前先查财产：为什么分居日比离婚日更重要</a>；有疑问欢迎预约咨询。',
+    ],
+    keywords: '分居日财产分割安省,中加夫妻财产区别,离婚证财产中国,何淼律师分居日,NFP安省华人,多伦多离婚财产',
+  },
 ];
 
 export function getVideosByTopic(): Map<string, VideoItem[]> {
