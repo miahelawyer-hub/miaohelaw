@@ -172,6 +172,26 @@ export const videoItems: VideoItem[] = [
     ],
     keywords: '同居多久算Common Law,安省Common Law三年,移民担保同居一年,Common Law标准加拿大,何淼律师Common Law,多伦多同居律师',
   },
+  {
+    slug: 'dating-after-separation-ontario',
+    youtubeId: 'BYFNkeIF1GA',
+    title: '要等拿离婚证才能谈恋爱吗？安省分居即关系结束',
+    topic: '分居与离婚',
+    topicSlug: 'separation-divorce',
+    uploadDate: '2026-04-17',
+    summary:
+      '在安省不必等离婚证才能开始新恋情——正式分居后婚姻关系即已结束。例外：分居后复合并连续同居超过 90 天，分居时间须重新计算。再婚须先取得离婚证；财产分割以分居日为基准。',
+    description:
+      '很多从中国来的客户会问：「是不是要等拿到离婚证，才能开始新的感情？」在中国与加拿大，这一点规定不同。在安大略省，<strong>通常不需要等离婚证</strong>：双方一旦<a href="/blog/separation-vs-divorce-ontario/">正式分居</a>，婚姻关系在家庭法意义上即已结束，分居后法律上一般并不禁止您开始新的恋情。但须注意<a href="/blog/separation-vs-divorce-ontario/">90 日复合理由</a>：若分居后又复合并连续同居超过 90 天，法律上可能视为先前分居不再存在，分居日须重新起算——这会直接影响<a href="/blog/separation-date-vs-divorce-date-ontario/">财产均等分割（equalization）的基准日</a>。',
+    keyPoints: [
+      '安省视角：一般不必等离婚证——双方正式分居后，婚姻关系在家庭法框架下通常即视为结束，分居后开始新恋情本身通常不构成法律障碍（个案仍可能有其他争议，例如育儿安排或协议义务，应另行评估）。',
+      '再婚例外：若您计划与他人<strong>再婚</strong>，须先取得离婚证（Divorce Certificate）方可办理再婚登记——离婚证是「能否再婚」的关键，而不是「能否约会」的前提。',
+      '90 天规则：分居后若双方又复合并连续共同生活超过 90 天，可能被认定为分居中断，分居日期须重新计算——若曾有短暂复合，务必与律师确认<a href="/blog/separation-vs-divorce-ontario/">分居日认定</a>。',
+      '财产分割基准：安省夫妻财产分割一般以<strong>分居日</strong>为计算基准，而非领取离婚证之日。建议在分居时即以<a href="/family-law/domestic-contracts#separation">书面方式</a>记录分居意向与日期，并保存相关证据。',
+      '若您对分居日、财产分割或再婚手续有疑问，欢迎预约何淼律师咨询。',
+    ],
+    keywords: '分居后可以恋爱吗安省,离婚证再婚加拿大,分居日财产分割安省,90天复合安省,何淼律师分居离婚,多伦多离婚律师',
+  },
 ];
 
 export function getVideosByTopic(): Map<string, VideoItem[]> {
