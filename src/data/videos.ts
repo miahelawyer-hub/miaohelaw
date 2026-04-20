@@ -192,6 +192,26 @@ export const videoItems: VideoItem[] = [
     ],
     keywords: '分居后可以恋爱吗安省,离婚证再婚加拿大,分居日财产分割安省,90天复合安省,何淼律师分居离婚,多伦多离婚律师',
   },
+  {
+    slug: 'parents-gift-money-divorce-ontario',
+    youtubeId: 'AdoyJfXVjnw',
+    title: '父母给的钱离婚要分给对方吗？安省法律这样规定',
+    topic: '离婚财产',
+    topicSlug: 'property-division',
+    uploadDate: '2026-04-17',
+    summary:
+      '婚姻期间父母给的钱，离婚时要不要拿出来平分？安省《家庭法》对继承与第三方赠与等有排除规则，但您须证明资金来源、去向，且避免与夫妻共同财产混同——否则争议极大。',
+    description:
+      '这是何淼律师在离婚案件中遇到争议最多的问题之一：婚姻期间父母或第三方给的钱，离婚时要不要与对方分配？根据安省《<a href="https://www.ontario.ca/laws/statute/90f03" target="_blank" rel="noopener noreferrer">家庭法</a>》下的<a href="/blog/net-family-property-ontario/">净家庭财产（NFP）计算框架</a>，符合条件的继承与赠与等可能被认定为排除财产（excluded property），但具体能否排除、排除多少，取决于证据、资金是否混同、是否涉及<a href="/faq/fumu-shougou-toukuan/">婚房出资等特殊安排</a>等——每个案件不同，需个案分析。',
+    keyPoints: [
+      '原则概述：婚姻期间来自父母或第三方的<strong>赠与</strong>，在满足法定条件且证据充分的情况下，往往有可能主张为排除财产，从而不纳入与对方之间的财产分配计算——但法律适用与计算方式因案而异。',
+      '关键前提——举证：您通常需要证明款项性质（例如赠与意图）、分居日仍可追溯、资金来源与去向清晰。若与夫妻共同账户或日常开支混同，日后很难说清楚。',
+      '实务建议：尽量使用<strong>独立账户</strong>专门存放该部分资产，不与日常夫妻共用账户混用；保留银行转账记录、汇款凭证，最好有书面赠与说明或能印证当时意图的材料。',
+      '涉及父母为首付出资、借款或代持等复杂安排时，争议规则与单纯现金赠与不同，建议结合<a href="/faq/fumu-shougou-toukuan/">父母出资 FAQ</a>与<a href="/blog/chinese-divorce-property-gift-loan-trust-ontario/">父母出资、赠与借款规则</a>一并评估。',
+      '若您已在离婚程序中或不确定父母给予的资产应如何处理，欢迎预约何淼律师咨询。',
+    ],
+    keywords: '父母给的钱离婚分割,安省赠与财产离婚,排除财产安省,离婚财产举证,何淼律师离婚财产,多伦多离婚财产律师',
+  },
 ];
 
 export function getVideosByTopic(): Map<string, VideoItem[]> {
