@@ -1,4 +1,46 @@
 {
+	"redirects": [
+		{
+			"source": "/richmond-hill-family-lawer",
+			"destination": "/richmond-hill-family-lawyer/",
+			"permanent": true
+		},
+		{
+			"source": "/richmond-hill-family-lawer/",
+			"destination": "/richmond-hill-family-lawyer/",
+			"permanent": true
+		},
+		{
+			"source": "/en/blog/prenuptial-agreement-ontario-2024",
+			"destination": "/en/blog/prenuptial-agreement-ontario-2026/",
+			"permanent": true
+		},
+		{
+			"source": "/en/blog/prenuptial-agreement-ontario-2024/",
+			"destination": "/en/blog/prenuptial-agreement-ontario-2026/",
+			"permanent": true
+		},
+		{
+			"source": "/blog/prenuptial-agreement-ontario-2024",
+			"destination": "/blog/prenuptial-agreement-ontario-2026/",
+			"permanent": true
+		},
+		{
+			"source": "/blog/prenuptial-agreement-ontario-2024/",
+			"destination": "/blog/prenuptial-agreement-ontario-2026/",
+			"permanent": true
+		},
+		{
+			"source": "/faq/haizi-yijian-jianhu-fayuan",
+			"destination": "/faq/haizi-yijian-jianhu-fayuan/",
+			"permanent": true
+		},
+		{
+			"source": "/blog/separation-agreement-validity-ontario",
+			"destination": "/blog/separation-agreement-validity-ontario/",
+			"permanent": true
+		}
+	],
 	"headers": [
 		{
 			"source": "/(.*)",
