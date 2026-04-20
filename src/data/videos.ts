@@ -512,6 +512,26 @@ export const videoItems: VideoItem[] = [
     ],
     keywords: '安省律师资格查询,LSO律师名录,如何查律师执照多伦多,Real Estate Insured律师,何淼律师83315K,加拿大律师协会查询',
   },
+  {
+    slug: 'matrimonial-home-fla-18-ontario',
+    youtubeId: 'PBasR-Ps9cQ',
+    title: '安省婚房（Matrimonial Home）是什么？家庭法第18条导读',
+    topic: '婚房认定',
+    topicSlug: 'matrimonial-home',
+    uploadDate: '2026-04-17',
+    summary:
+      '何淼律师依安省《家庭法》第18条说明：婚房通常指双方用于家庭生活的「主要居所」。一旦被认定为婚房，在财产分割与居住安排上适用一整套特殊规则；婚前／婚姻协议可对部分事项作出约定，但某些居住相关安排仍受法律强制性限制。',
+    description:
+      '很多人对「婚房」在离婚中的含义与后果存在误解。何淼律师在视频中依据安省《<a href="https://www.ontario.ca/laws/statute/90f03" target="_blank" rel="noopener noreferrer">家庭法</a>》<strong>第18条</strong>作入门说明：婚房（Matrimonial Home）通常指配偶双方用于家庭生活的<strong>主要居所（family residence）</strong>。在典型情形下，婚房在分居日的<strong>全部市场价值</strong>往往需纳入双方净家庭财产计算，且可能适用与「普通投资房」不同的规则；因此，即便房产主要由一方出资或登记在一方名下，只要构成婚房，仍可能对最终结算产生重大影响——视频里用「各享一半权利」是<strong>便于理解的通俗说法</strong>，并不等于自动在产权登记上变成各 50% 份额；具体仍须结合整套 equalization、债务、赠与／借款、是否另有<a href="/family-law/domestic-contracts/">婚姻协议</a>等综合分析。关于「父母名下是否可能不构成婚房」等例外，参见本站<a href="/videos/parents-property-matrimonial-home/">父母名下的房产不是你的婚房</a>视频页。婚姻协议方面：双方可就<strong>所有权归属、出售分配方案</strong>等作出约定，但试图通过私下条款完全剥夺对方依法享有的与婚房相关的<strong>占有／居住及法院可命令的独占居住（exclusive possession）</strong>等安排，往往可能因违反强制性规范或公共政策而难以执行——具体措辞需由律师逐条审核。',
+    keyPoints: [
+      '定义：依《家庭法》第18条框架，婚房核心是「家庭主要居所」的法律认定，而不是只看房产证上写谁的名字。',
+      '与出资、登记名义的关系：是否一方全款、是否仅登记在一方名下，通常<strong>不能单独决定</strong>该房在离婚财产结算中是否仍按婚房规则处理（除非存在依法可排除或另行约定的情形）。',
+      '协议边界：婚姻协议可讨论产权与变现分配，但对<strong>居住安排、法院独占令等</strong>问题，条款是否有效需非常谨慎地起草与审查。',
+      '实务选择：因居住安排易引发持续冲突，部分当事人最终选择出售婚房并在清算后分配售房款——是否为「最干净」方案因人而异，应结合税务、贷款与孩子安置等一并评估。',
+      '若您涉及婚房认定、协议起草或 equalization 计算，欢迎预约何淼律师；亦可延伸阅读<a href="/blog/net-family-property-ontario/">净家庭财产（NFP）与分居日</a>相关文章。',
+    ],
+    keywords: '安省婚房定义,家庭法第18条,Matrimonial Home安省,婚房居住权离婚,何淼律师婚房,多伦多离婚房产',
+  },
 ];
 
 export function getVideosByTopic(): Map<string, VideoItem[]> {
