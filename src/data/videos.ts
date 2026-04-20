@@ -352,6 +352,26 @@ export const videoItems: VideoItem[] = [
     ],
     keywords: '离婚前财务准备安省,Financial Statement离婚,离婚财产披露,瞒报资产安省,何淼律师离婚财产,多伦多离婚诉讼准备',
   },
+  {
+    slug: 'adultery-net-family-property-ontario',
+    youtubeId: '7PuOARW4Ds8',
+    title: '对方出轨能「净身出户」吗？安省财产怎么分',
+    topic: '离婚财产',
+    topicSlug: 'property-division',
+    uploadDate: '2026-04-17',
+    summary:
+      '在安省，出轨本身通常不改变净家庭财产均等分割（equalization）的基本计算框架；法律上也没有「无过错方当然多分」的一般规则。若想在协议中约定出轨后果，措辞与签署背景要求极高，否则条款可能被推翻。',
+    description:
+      '不少从中国来的客户会问：对方出轨了，能不能让他／她<strong>净身出户</strong>？何淼律师在视频中说明：在加拿大安省，<strong>婚姻道德上的过错与财产分割是两条线</strong>。在典型的<a href="/blog/net-family-property-ontario/">净家庭财产（NFP）均等分割</a>框架下，出轨本身通常不会自动剥夺对方的财产权利，也不存在「只要对方有错就可让其净身出户」的固定规则。双方若希望在<a href="/family-law/domestic-contracts/">婚姻协议（Marriage Contract）</a>中写入与忠诚相关的经济后果，必须在披露、自愿性、措辞精确性及公共政策边界等方面格外谨慎——否则相关条款可能被整体或部分认定无效。视频中还提到一类典型风险：若签署协议时双方地位、信息与谈判背景已因婚外情等因素而显著失衡，法院可能质疑条款的自愿性与公平性，从而拒绝执行惩罚性安排。',
+    keyPoints: [
+      '财产规则：在无特殊协议或例外事由的典型情形下，安省家庭法下的财产结算仍以双方申报与计价为基础，按法定公式进行净额结算——过错本身通常不是「多拿少拿」的直接杠杆。',
+      '「净身出户」叙事：更多见于情感与道德层面的期待；在加拿大无过错离婚与 NFP 框架下，不宜把它当作默认法律结果。',
+      '协议中的「惩罚性／忠诚」条款：理论上可能通过严谨的婚姻协议进行安排，但极易触碰可执行性与公共政策边界；应由专业律师评估披露、独立法律意见、措辞与签署过程。',
+      '挥霍与第三者支出：若涉及婚内向第三者转移大额资产等，另当别论，可能涉及<strong>挥霍（dissipation）</strong>等不同主张路径——参见<a href="/blog/dissipation-of-assets/">婚姻财产挥霍（Dissipation of Assets）</a>。',
+      '若您考虑在协议中加入出轨相关条款，建议先预约咨询，避免投入时间精力后却无法在争议中获得法院支持。',
+    ],
+    keywords: '出轨离婚财产安省,净身出户加拿大,婚姻协议忠诚条款,何淼律师离婚财产,NFP均等分割安省,多伦多离婚律师',
+  },
 ];
 
 export function getVideosByTopic(): Map<string, VideoItem[]> {
