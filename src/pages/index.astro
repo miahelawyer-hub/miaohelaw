@@ -3,12 +3,25 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { getCollection } from 'astro:content';
+import { videoItems, type VideoItem } from '../data/videos';
+
 const posts = (await getCollection('blog')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 ).slice(0, 3);
 function formatBlogDate(date: Date) {
 	return new Date(date).toLocaleDateString('zh-CN', { year: 'numeric', month: 'long', day: 'numeric' });
 }
+
+/** 首页「法律视频」三张卡片，链到本站 /videos/{slug}/ */
+const homepageVideoSlugs = [
+	'ontario-divorce-procedures-negotiation',
+	'ontario-divorce-litigation-uncooperative-spouse',
+	'divorce-financial-disclosure-preparation-ontario',
+] as const;
+
+const homepageVideos: VideoItem[] = homepageVideoSlugs
+	.map((slug) => videoItems.find((v) => v.slug === slug))
+	.filter((v): v is VideoItem => v != null);
 ---
 
 <!doctype html>
@@ -382,101 +395,43 @@ function formatBlogDate(date: Date) {
 					</div>
 				</div>
 			</section>
-			<!-- Videos — YouTube thumbnail + play affordance (hqdefault from video ID) -->
+			<!-- Videos — thumbnails from YouTube CDN; links to on-site /videos/ pages -->
 			<section class="video-section">
 				<h2>Legal Insights · 法律视频</h2>
 				<p class="video-sub">Watch Miao He explain Ontario family law in Mandarin and English.</p>
 				<div class="video-cards-grid">
-					<div class="area-card video-card">
-						<a
-							href="https://www.youtube.com/watch?v=YhOVZxqwD_k"
-							class="video-card-link"
-							target="_blank"
-							rel="noopener noreferrer"
-							aria-label="在 YouTube 观看：协商离婚 — Separation by Agreement"
-						>
-							<div class="video-thumb">
-								<img
-									src="https://img.youtube.com/vi/YhOVZxqwD_k/hqdefault.jpg"
-									alt=""
-									width="480"
-									height="360"
-									loading="lazy"
-									decoding="async"
-								/>
-								<span class="video-play" aria-hidden="true"><span class="video-play-icon">▶</span></span>
-								<span class="video-platform" aria-hidden="true">YouTube</span>
-							</div>
-							<div class="area-card-inner video-card-inner">
-								<div class="area-card-body">
-									<h3>Separation by Agreement · 协商离婚</h3>
-									<p>安省离婚流程入门：协议分居、分居协议与无争议离婚路径。</p>
-									<span class="video-cta">▶ 观看视频 · Watch Video →</span>
+					{homepageVideos.map((video) => (
+						<div class="area-card video-card">
+							<a
+								href={`/videos/${video.slug}/`}
+								class="video-card-link"
+								aria-label={`在本站观看：${video.title}`}
+							>
+								<div class="video-thumb">
+									<img
+										src={`https://img.youtube.com/vi/${video.youtubeId}/hqdefault.jpg`}
+										alt=""
+										width="480"
+										height="360"
+										loading="lazy"
+										decoding="async"
+									/>
+									<span class="video-play" aria-hidden="true"><span class="video-play-icon">▶</span></span>
+									<span class="video-platform" aria-hidden="true">站内</span>
 								</div>
-							</div>
-						</a>
-					</div>
-					<div class="area-card video-card">
-						<a
-							href="https://www.youtube.com/watch?v=86ULSZ6-KF8"
-							class="video-card-link"
-							target="_blank"
-							rel="noopener noreferrer"
-							aria-label="在 YouTube 观看：一方不同意离婚时法院的认定"
-						>
-							<div class="video-thumb">
-								<img
-									src="https://img.youtube.com/vi/86ULSZ6-KF8/hqdefault.jpg"
-									alt=""
-									width="480"
-									height="360"
-									loading="lazy"
-									decoding="async"
-								/>
-								<span class="video-play" aria-hidden="true"><span class="video-play-icon">▶</span></span>
-								<span class="video-platform" aria-hidden="true">YouTube</span>
-							</div>
-							<div class="area-card-inner video-card-inner">
-								<div class="area-card-body">
-									<h3>Spouse Refuses Divorce — Court Outcomes · 一方不同意，法院会判离吗？</h3>
-									<p>无过错离婚原则下，法院如何认定婚姻关系已「无法挽回的破裂」。</p>
-									<span class="video-cta">▶ 观看视频 · Watch Video →</span>
+								<div class="area-card-inner video-card-inner">
+									<div class="area-card-body">
+										<h3>{video.title}</h3>
+										<p>{video.summary}</p>
+										<span class="video-cta">▶ 观看视频 · Watch Video →</span>
+									</div>
 								</div>
-							</div>
-						</a>
-					</div>
-					<div class="area-card video-card">
-						<a
-							href="https://www.youtube.com/watch?v=ijZ7E901pXU"
-							class="video-card-link"
-							target="_blank"
-							rel="noopener noreferrer"
-							aria-label="在 YouTube 观看：诉讼中减少资产流失"
-						>
-							<div class="video-thumb">
-								<img
-									src="https://img.youtube.com/vi/ijZ7E901pXU/hqdefault.jpg"
-									alt=""
-									width="480"
-									height="360"
-									loading="lazy"
-									decoding="async"
-								/>
-								<span class="video-play" aria-hidden="true"><span class="video-play-icon">▶</span></span>
-								<span class="video-platform" aria-hidden="true">YouTube</span>
-							</div>
-							<div class="area-card-inner video-card-inner">
-								<div class="area-card-body">
-									<h3>Reducing Asset Dissipation in Litigation · 诉讼中减少资产流失</h3>
-									<p>诉讼中保全、披露与证据策略，降低对方转移或挥霍婚姻财产的风险。</p>
-									<span class="video-cta">▶ 观看视频 · Watch Video →</span>
-								</div>
-							</div>
-						</a>
-					</div>
+							</a>
+						</div>
+					))}
 				</div>
 				<div style="text-align:center; margin-top: 2rem;">
-					<a href="https://youtube.com/channel/UCLtXNA90GpKWbt6k-nOgL7w" target="_blank" rel="noopener noreferrer" class="btn-secondary">View All Videos on YouTube →</a>
+					<a href="/videos/" class="btn-secondary">查看全部视频 · View All Videos →</a>
 				</div>
 			</section>
 
@@ -1321,10 +1276,10 @@ function formatBlogDate(date: Date) {
 		position: absolute;
 		top: 0.55rem;
 		right: 0.55rem;
-		font-size: 0.65rem;
+		font-size: 0.68rem;
 		font-weight: 800;
-		letter-spacing: 0.06em;
-		text-transform: uppercase;
+		letter-spacing: 0.04em;
+		text-transform: none;
 		color: #fff;
 		background: rgba(0, 0, 0, 0.55);
 		padding: 0.28rem 0.45rem;
@@ -1343,6 +1298,16 @@ function formatBlogDate(date: Date) {
 		display: flex;
 		flex-direction: column;
 		min-height: 0;
+	}
+	.video-card-inner .area-card-body p {
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 3;
+		overflow: hidden;
+		font-size: 0.88rem;
+		line-height: 1.55;
+		margin-top: 0.35rem;
+		color: var(--areas-body);
 	}
 	.video-cta {
 		display: inline-flex;
