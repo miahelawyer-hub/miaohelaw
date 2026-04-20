@@ -6,7 +6,15 @@ type Props = HTMLAttributes<'a'>;
 const { href, class: className, ...props } = Astro.props;
 const pathname = Astro.url.pathname.replace(import.meta.env.BASE_URL, '');
 const subpath = pathname.match(/[^\/]+/g);
-const isActive = href === pathname || href === '/' + (subpath?.[0] || '');
+const hrefStr = String(href ?? '');
+const withTrailing = (p: string) => (p.endsWith('/') ? p : `${p}/`);
+/** 与 astro trailingSlash: 'always' 一致：/path 与 /path/ 视为同一路径前缀 */
+const isActive =
+	hrefStr === '/'
+		? pathname === '/' || pathname === ''
+		: pathname === hrefStr ||
+			pathname === withTrailing(hrefStr) ||
+			pathname.startsWith(`${hrefStr.replace(/\/$/, '')}/`);
 ---
 
 <a href={href} class:list={[className, { active: isActive }]} {...props}>

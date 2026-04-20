@@ -185,7 +185,7 @@ const faqSchemaGraph = [
       <div class="inner">
         <p class="breadcrumb">
           <a href="/en/">Home</a><span>›</span>
-          <a href="/en/faq">FAQ</a><span>›</span>
+          <a href="/en/faq/">FAQ</a><span>›</span>
           <span class="breadcrumb-current" set:html={item.question} />
         </p>
         <h1 set:html={item.question} />
@@ -222,14 +222,14 @@ const faqSchemaGraph = [
           <ul class="related-list">
             {others.map(other => (
               <li>
-                <a href={`/en/faq/${other.slug}`}>
+                <a href={`/en/faq/${other.slug}/`}>
                   <span set:html={other.question} />
                   <span class="arr">→</span>
                 </a>
               </li>
             ))}
           </ul>
-          <a href="/en/faq" class="view-all">← View all questions</a>
+          <a href="/en/faq/" class="view-all">← View all questions</a>
         </div>
 
         <div class="contact-card">

@@ -76,7 +76,7 @@ const faqPageJsonLd = {
             class={`faq-item${i >= 10 ? ' faq-hidden' : ''}`}
             data-search={`${stripHtml(item.question)} ${stripHtml(item.capsule)} ${stripHtml(item.summary)} ${item.answers.map(stripHtml).join(' ')} ${item.keywords}`.toLowerCase()}
           >
-            <a href={`/faq/${item.slug}`} class="faq-link">
+            <a href={`/faq/${item.slug}/`} class="faq-link">
               <span set:html={item.question} />
               <span class="faq-arrow">→</span>
             </a>
