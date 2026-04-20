@@ -392,6 +392,26 @@ export const videoItems: VideoItem[] = [
     ],
     keywords: '只分居不离婚加拿大,分居不离婚影响,分居协议90天,安省分居后果,何淼律师分居离婚,多伦多分居咨询',
   },
+  {
+    slug: 'china-marriage-not-common-law-ontario',
+    youtubeId: 'EgV7xCjjTdE',
+    title: '在中国领证，在加拿大算 Common Law 吗？',
+    topic: '中加婚姻',
+    topicSlug: 'china-canada-marriage',
+    uploadDate: '2026-04-17',
+    summary:
+      '何淼律师常见误区：在中国已办结婚登记、领取结婚证后移居加拿大，法律上通常为已婚，而非 Common Law。婚姻状态认定错误，会直接影响安省财产分割适用哪一套规则。',
+    description:
+      '不少客户在咨询开场会说：「我在中国结婚了，在加拿大是 Common Law。」何淼律师指出，这一表述在<strong>法律意义上通常是错误的</strong>：只要您在中国已依法完成结婚登记并取得结婚证，移居加拿大后，在加拿大家庭法语境下您通常仍应被视为<strong>已婚（married）</strong>，而不是仅因长期同居就被重新归类为 Common Law——当然，若您另行在加拿大与他人合法登记结婚等情形，则属不同法律问题。将「已婚」误作「Common Law」，在财产分割上风险极高：在安省，<a href="/blog/net-family-property-ontario/">已婚夫妻的净家庭财产均等分割（equalization）</a>规则，与<a href="/family-law/common-law/">Common-law 伴侣</a>在财产方面的默认规则并不相同。关于中国结婚证在加拿大的使用：常见路径包括在符合要求的中国公证机构办理<strong>中英文公证／翻译</strong>，并在后续程序中视法院或机构要求办理相应的认证或补充材料；具体以您办理事项的主管机关与法院清单为准。涉及在中国结婚、在安省离婚的管辖与文件，亦可参阅<a href="/faq/zhongguo-jiehun-ansheng-lihun/">在中国结婚可以在安省离婚吗</a>。',
+    keyPoints: [
+      '状态认定：中国依法登记结婚后移居加拿大，通常应理解为「跨国婚姻下的已婚状态」，而不是自动变成 Common Law。',
+      '财产法后果：已婚与 Common-law 在安省财产分割上的默认规则差异显著——误认身份可能导致您对权利来源、举证与谈判策略判断失误。',
+      '文件使用：中国结婚证在加拿大使用，通常需要符合格式要求的翻译与公证／认证链条；不同机关（法院、金融机构、登记部门）要求可能不同，应提前核对清单。',
+      '与中国结婚、在安省启动离婚或财产程序相关的常见问题，可先阅读<a href="/faq/zhongguo-jiehun-ansheng-lihun/">在中国结婚可以在安省离婚吗</a>并携带全套婚姻与身份材料咨询律师。',
+      '若您在中国结婚后长期在加拿大生活，建议在处理离婚、协议或重大资产处分前，先与律师确认婚姻状态认定与应适用的法律框架。',
+    ],
+    keywords: '中国结婚加拿大已婚,中国结婚证加拿大使用,已婚还是Common Law,何淼律师中加婚姻,安省财产分割已婚,多伦多华人离婚',
+  },
 ];
 
 export function getVideosByTopic(): Map<string, VideoItem[]> {
