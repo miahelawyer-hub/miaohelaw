@@ -532,6 +532,26 @@ export const videoItems: VideoItem[] = [
     ],
     keywords: '安省婚房定义,家庭法第18条,Matrimonial Home安省,婚房居住权离婚,何淼律师婚房,多伦多离婚房产',
   },
+  {
+    slug: 'common-law-no-matrimonial-home-statutory-right',
+    youtubeId: 'P0otr3ufMDE',
+    title: 'Common Law 有「婚房权」吗？安省家庭法下的关键区别',
+    topic: 'Common Law 同居',
+    topicSlug: 'common-law',
+    uploadDate: '2026-04-17',
+    summary:
+      '依安省《家庭法》财产与婚房制度，Common-law 伴侣通常不适用已婚夫妻的婚房（matrimonial home）特别规则；产权登记名义与对房屋的实质贡献，会显著影响分手后的权利主张路径。何淼律师在视频中比较已婚与同居的差异，并讨论极少数例外情形。',
+    description:
+      '许多<a href="/family-law/common-law/">Common-law 伴侣</a>不了解：在安省《<a href="https://www.ontario.ca/laws/statute/90f03" target="_blank" rel="noopener noreferrer">家庭法</a>》的<strong>财产与婚房（matrimonial home）制度</strong>下，同居关系本身通常<strong>不会自动赋予</strong>与已婚配偶相同的「婚房」法定地位。换言之，房屋若仅登记在一方名下，该方在对外处分产权、与金融机构打交道等方面往往更占名义优势；而未登记一方<strong>不能当然依据</strong>已婚夫妻的婚房规则主张与已婚者完全相同的法定权利。但这不等于未登记一方「毫无救济」：若能证明对房屋有<strong>实质性贡献</strong>（如出资、还贷、重大修缮等），仍可能通过<strong>推定信托（constructive trust）、不当得利（unjust enrichment）</strong>等衡平法路径向法院请求救济——能否成立高度依赖证据。何淼律师在视频中以 <strong>Jones v. O\u2019Neal</strong> 为例说明：在<strong>极端个别</strong>的事实组合下，法院曾在程序早期作出临时性的居住安排，但该类裁判<strong>不具有普遍可复制性</strong>；如需在文书或庭审中正式引用，请以 CanLII 等数据库核对完整引称与事实。长远而言，对 Common-law 伴侣最具可操作性的保护，往往是提前签署<a href="/family-law/domestic-contracts/">同居协议（Cohabitation Agreement）</a>并做好资金留痕。',
+    keyPoints: [
+      '制度差异：Common-law 与已婚在安省《家庭法》财产规则上并不相同；「同居再久」本身通常不会自动产生与已婚配偶相同的婚房法定效果。',
+      '产权名义：登记名义对处分与举证影响重大；未登记一方若缺乏书面安排与证据，事后主张往往更困难、更昂贵。',
+      '衡平救济：存在实质贡献线索时，应尽早与律师讨论是否可能主张 constructive trust / unjust enrichment 等路径，而非默认「法律一定会给我一半」或「一定没有任何权利」。',
+      '判例提示：视频中讨论的 Jones v. O\u2019Neal 体现的是<strong>极罕见事实背景</strong>下的临时安排，不应被理解为「Common-law 也能轻易拿到婚房居住权」的一般规则。',
+      '预防优先：考虑签订同居协议、分开管理大额资金与房屋开支，并保留凭证；需要模板级审查或谈判策略时可预约何淼律师。',
+    ],
+    keywords: 'Common Law婚房安省,同居伴侣房产,constructive trust安省,同居协议多伦多,何淼律师Common Law,安省同居房产',
+  },
 ];
 
 export function getVideosByTopic(): Map<string, VideoItem[]> {
