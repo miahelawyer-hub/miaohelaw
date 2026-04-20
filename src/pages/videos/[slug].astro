@@ -2,7 +2,8 @@
 import BaseHead from '../../components/BaseHead.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
-import { videoItems } from '../../data/videos';
+import VideoCard from '../../components/VideoCard.astro';
+import { videoItems, getRelatedVideos } from '../../data/videos';
 import { SITE_URL } from '../../consts';
 
 export function getStaticPaths() {
@@ -13,6 +14,8 @@ export function getStaticPaths() {
 }
 
 const { video } = Astro.props;
+const relatedVideos = getRelatedVideos(video);
+const topicListUrl = `/videos/topic/${video.topicSlug}/`;
 const thumbUrl = `https://img.youtube.com/vi/${video.youtubeId}/maxresdefault.jpg`;
 const embedUrl = `https://www.youtube.com/embed/${video.youtubeId}`;
 const watchUrl = `https://www.youtube.com/watch?v=${video.youtubeId}`;
@@ -60,7 +63,7 @@ const videoObjectSchema = {
     <section class="video-hero">
       <div class="container">
         <div class="breadcrumb">
-          <a href="/">首页</a> › <a href="/videos/">法律视频</a> › <span>{video.topic}</span>
+          <a href="/">首页</a> › <a href="/videos/">法律视频</a> › <a href={topicListUrl}>{video.topic}</a>
         </div>
         <h1>{video.title}</h1>
       </div>
@@ -93,6 +96,21 @@ const videoObjectSchema = {
             </ul>
             <p class="disclaimer">本视频内容仅供参考，不构成针对您个人案件的法律意见。如有具体问题，欢迎预约一对一咨询。</p>
           </div>
+
+          {relatedVideos.length > 0 && (
+            <div class="related-videos">
+              <h2 class="related-videos__title">相关视频</h2>
+              <p class="related-videos__intro">
+                与「{video.topic}」相关的更多讲解；也可
+                <a href={topicListUrl}>查看该话题全部视频 →</a>
+              </p>
+              <div class="related-videos__grid">
+                {relatedVideos.map((v) => (
+                  <VideoCard video={v} />
+                ))}
+              </div>
+            </div>
+          )}
 
           <div class="video-cta">
             <h3 class="cta-heading">咨询何淼律师</h3>
@@ -170,6 +188,37 @@ const videoObjectSchema = {
   }
 
   .video-content { display: flex; flex-direction: column; gap: 2rem; }
+
+  .related-videos__title {
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: var(--text-heading);
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid #D4A853;
+    display: inline-block;
+  }
+  .related-videos__intro {
+    font-size: 0.88rem;
+    line-height: 1.65;
+    color: var(--text-primary);
+    opacity: 0.88;
+    margin-bottom: 1.1rem;
+  }
+  .related-videos__intro a {
+    color: var(--accent);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .related-videos__intro a:hover {
+    color: var(--accent-dark);
+  }
+  .related-videos__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1.1rem;
+  }
 
   .video-summary h2,
   .video-keypoints h2 {

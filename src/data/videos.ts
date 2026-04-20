@@ -625,3 +625,15 @@ export function getTopicGroupsBySlug(): TopicVideoGroup[] {
   }
   return order.map((slug) => map.get(slug)!);
 }
+
+/** 单条视频页「相关视频」条数上限（优先同话题） */
+export const RELATED_VIDEOS_MAX = 6;
+
+/** 同 topicSlug 下其他视频（保持 videoItems 顺序）；若该话题仅本条则回退为站内其他视频 */
+export function getRelatedVideos(video: VideoItem, max = RELATED_VIDEOS_MAX): VideoItem[] {
+  const sameTopic = videoItems.filter(
+    (v) => v.topicSlug === video.topicSlug && v.slug !== video.slug
+  );
+  if (sameTopic.length > 0) return sameTopic.slice(0, max);
+  return videoItems.filter((v) => v.slug !== video.slug).slice(0, max);
+}
