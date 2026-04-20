@@ -602,3 +602,26 @@ export function getVideosByTopic(): Map<string, VideoItem[]> {
   }
   return map;
 }
+
+/** 主列表 /videos/ 每个话题下最多直接展示的视频条数 */
+export const VIDEOS_PREVIEW_PER_TOPIC = 3;
+
+export interface TopicVideoGroup {
+  topic: string;
+  topicSlug: string;
+  videos: VideoItem[];
+}
+
+/** 按 topicSlug 分组，顺序与 videoItems 中首次出现的 slug 一致 */
+export function getTopicGroupsBySlug(): TopicVideoGroup[] {
+  const order: string[] = [];
+  const map = new Map<string, TopicVideoGroup>();
+  for (const v of videoItems) {
+    if (!map.has(v.topicSlug)) {
+      order.push(v.topicSlug);
+      map.set(v.topicSlug, { topic: v.topic, topicSlug: v.topicSlug, videos: [] });
+    }
+    map.get(v.topicSlug)!.videos.push(v);
+  }
+  return order.map((slug) => map.get(slug)!);
+}
