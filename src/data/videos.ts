@@ -196,8 +196,8 @@ export const videoItems: VideoItem[] = [
     slug: 'parents-gift-money-divorce-ontario',
     youtubeId: 'AdoyJfXVjnw',
     title: '父母给的钱离婚要分给对方吗？安省法律这样规定',
-    topic: '离婚财产',
-    topicSlug: 'property-division',
+    topic: '婚房，分居，离婚',
+    topicSlug: 'matrimonial-home-separation-divorce',
     uploadDate: '2026-04-17',
     summary:
       '婚姻期间父母给的钱，离婚时要不要拿出来平分？安省《家庭法》对继承与第三方赠与等有排除规则，但您须证明资金来源、去向，且避免与夫妻共同财产混同——否则争议极大。',
@@ -336,8 +336,8 @@ export const videoItems: VideoItem[] = [
     slug: 'divorce-financial-disclosure-preparation-ontario',
     youtubeId: '4jcgQ7r4rds',
     title: '离婚前对家庭财务一无所知？Financial Statement 是关键',
-    topic: '离婚财产',
-    topicSlug: 'property-division',
+    topic: '婚房，分居，离婚',
+    topicSlug: 'matrimonial-home-separation-divorce',
     uploadDate: '2026-04-17',
     summary:
       '安省有争议的离婚诉讼中，财产分割高度依赖双方交换并宣誓提交的财务报表（Financial Statement）。若您对家庭资产、负债与收入毫无概念，便难以审阅对方披露是否完整，更难发现少报或瞒报。',
