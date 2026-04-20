@@ -627,7 +627,7 @@ export function getTopicGroupsBySlug(): TopicVideoGroup[] {
 }
 
 /** 单条视频页「相关视频」条数上限（优先同话题） */
-export const RELATED_VIDEOS_MAX = 6;
+export const RELATED_VIDEOS_MAX = 3;
 
 /** 同 topicSlug 下其他视频（保持 videoItems 顺序）；若该话题仅本条则回退为站内其他视频 */
 export function getRelatedVideos(video: VideoItem, max = RELATED_VIDEOS_MAX): VideoItem[] {
