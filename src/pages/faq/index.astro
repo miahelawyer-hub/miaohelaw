@@ -2,7 +2,7 @@
 import BaseHead from '../../components/BaseHead.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
-import { SITE_LAST_UPDATED_ZH } from '../../consts';
+import { SITE_LAST_UPDATED_ZH, SITE_URL } from '../../consts';
 import { getFaqItemsForListing } from '../../data/faq';
 import { stripHtml } from '../../utils/stripHtml';
 
@@ -11,6 +11,8 @@ const totalFaq = faqListing.length;
 const faqPageJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
+  author: { '@id': `${SITE_URL}/#person` },
+  publisher: { '@id': `${SITE_URL}/#person` },
   mainEntity: faqListing.map((item) => ({
     '@type': 'Question',
     name: stripHtml(item.question),

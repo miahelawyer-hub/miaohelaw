@@ -3,7 +3,18 @@ import { getCollection } from 'astro:content';
 import BaseHead from '../../components/BaseHead.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
-import { SITE_LAST_UPDATED_ZH } from '../../consts';
+import { SITE_LAST_UPDATED_ZH, SITE_URL } from '../../consts';
+
+const blogListJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Blog',
+  name: '何淼律师博客 | 多伦多华人家庭法',
+  url: `${SITE_URL}/blog/`,
+  inLanguage: 'zh-CN',
+  description: '何淼律师分享加拿大安省家庭法知识',
+  author: { '@id': `${SITE_URL}/#person` },
+  publisher: { '@id': `${SITE_URL}/#person` },
+};
 
 const posts = (await getCollection('blog')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
@@ -32,15 +43,7 @@ function formatDate(date) {
   <link rel="alternate" hreflang="zh-CN" href="https://www.miaohelaw.ca/blog/" />
   <link rel="alternate" hreflang="en" href="https://www.miaohelaw.ca/en/blog/" />
   <link rel="alternate" hreflang="x-default" href="https://www.miaohelaw.ca/en/blog/" />
-  <script type="application/ld+json">{
-    "@context": "https://schema.org",
-    "@type": "Blog",
-    "name": "何淼律师博客 | 多伦多华人家庭法",
-    "url": "https://www.miaohelaw.ca/blog/",
-    "inLanguage": "zh-CN",
-    "description": "何淼律师分享加拿大安省家庭法知识",
-    "publisher": {"@type":"Person","@id":"https://www.miaohelaw.ca/#person","name":"何淼律师 Miao He","url":"https://www.miaohelaw.ca/"}
-  }</script>
+  <script type="application/ld+json" set:html={JSON.stringify(blogListJsonLd)} />
   <script type="application/ld+json">{
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
