@@ -80,19 +80,10 @@ const articleLd: Record<string, unknown> = {
   isAccessibleForFree: true,
   image: [`${siteOrigin}/miao-he-lawyer.jpeg`],
   author: {
-    '@type': 'Person',
-    '@id': `${siteOrigin}/#person`,
-    name: 'Miao He',
-    alternateName: ['何淼', 'Mia He'],
-    jobTitle: 'Family Law Lawyer',
-    url: `${siteOrigin}/`,
-    telephone: '+1-647-930-6688',
+    '@id': `${SITE_URL}/#person`,
   },
   publisher: {
-    '@type': 'Person',
-    '@id': `${siteOrigin}/#person`,
-    name: 'Miao He',
-    url: `${siteOrigin}/`,
+    '@id': `${SITE_URL}/#person`,
   },
   provider: { '@id': `${siteOrigin}/#legalservice` },
   about: {

@@ -3,7 +3,19 @@ import { getCollection } from 'astro:content';
 import BaseHead from '../../../components/BaseHead.astro';
 import HeaderEn from '../../../components/HeaderEn.astro';
 import Footer from '../../../components/Footer.astro';
-import { SITE_LAST_UPDATED_EN } from '../../../consts';
+import { SITE_LAST_UPDATED_EN, SITE_URL } from '../../../consts';
+
+const blogListJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Blog',
+  name: 'Miao He — Ontario Family Law Blog',
+  url: `${SITE_URL}/en/blog/`,
+  inLanguage: 'en-CA',
+  description:
+    'Ontario family law articles by Miao He, dual-licensed family lawyer serving the Chinese-Canadian community in the GTA.',
+  author: { '@id': `${SITE_URL}/#person` },
+  publisher: { '@id': `${SITE_URL}/#person` },
+};
 
 const posts = (await getCollection('blog-en')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
@@ -31,15 +43,7 @@ function formatDate(date) {
   <link rel="alternate" hreflang="zh-CN" href="https://www.miaohelaw.ca/blog/" />
   <link rel="alternate" hreflang="en" href="https://www.miaohelaw.ca/en/blog/" />
   <link rel="alternate" hreflang="x-default" href="https://www.miaohelaw.ca/en/blog/" />
-  <script type="application/ld+json">{
-    "@context": "https://schema.org",
-    "@type": "Blog",
-    "name": "Miao He — Ontario Family Law Blog",
-    "url": "https://www.miaohelaw.ca/en/blog/",
-    "inLanguage": "en-CA",
-    "description": "Ontario family law articles by Miao He, dual-licensed family lawyer serving the Chinese-Canadian community in the GTA.",
-    "publisher": {"@type":"Person","@id":"https://www.miaohelaw.ca/#person","name":"Miao He","url":"https://www.miaohelaw.ca/en/"}
-  }</script>
+  <script type="application/ld+json" set:html={JSON.stringify(blogListJsonLd)} />
   <script type="application/ld+json">{
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",

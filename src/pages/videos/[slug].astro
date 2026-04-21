@@ -5,6 +5,19 @@ import Footer from '../../components/Footer.astro';
 import VideoCard from '../../components/VideoCard.astro';
 import { videoItems, getRelatedVideos } from '../../data/videos';
 import { SITE_URL } from '../../consts';
+import { stripHtml } from '../../utils/stripHtml';
+
+/** Schema.org / Google expect a full ISO-8601 instant for VideoObject.uploadDate */
+function uploadDateToIso8601Utc(dateStr: string): string {
+  const d = dateStr.trim();
+  if (/^\d{4}-\d{2}-\d{2}$/.test(d)) return `${d}T00:00:00Z`;
+  return d;
+}
+
+/** Prevent `</script>` etc. inside JSON from breaking the HTML script block */
+function jsonLdScriptContent(obj: unknown): string {
+  return JSON.stringify(obj).replace(/</g, '\\u003c');
+}
 
 export function getStaticPaths() {
   return videoItems.map((v) => ({
@@ -27,17 +40,25 @@ const metaDesc  = video.metaDescription ?? video.summary;
 const videoObjectSchema = {
   '@context': 'https://schema.org',
   '@type': 'VideoObject',
-  name: video.title,
-  description: video.description,
+  name: stripHtml(video.title),
+  description: stripHtml(video.description),
   thumbnailUrl: thumbUrl,
-  uploadDate: video.uploadDate,
+  uploadDate: uploadDateToIso8601Utc(video.uploadDate),
   embedUrl,
   contentUrl: watchUrl,
   publisher: {
-    '@type': 'Person',
-    name: '何淼 Miao (Mia) He',
-    url: SITE_URL,
+    '@id': `${SITE_URL}/#person`,
   },
+};
+
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: '首页', item: `${SITE_URL}/` },
+    { '@type': 'ListItem', position: 2, name: '法律视频', item: `${SITE_URL}/videos/` },
+    { '@type': 'ListItem', position: 3, name: stripHtml(video.title), item: pageUrl },
+  ],
 };
 ---
 
@@ -46,16 +67,8 @@ const videoObjectSchema = {
 <head>
   <BaseHead title={metaTitle} description={metaDesc} />
   <meta name="keywords" content={video.keywords} />
-  <script type="application/ld+json" set:html={JSON.stringify(videoObjectSchema)} />
-  <script type="application/ld+json">{`{
-    "@context":"https://schema.org",
-    "@type":"BreadcrumbList",
-    "itemListElement":[
-      {"@type":"ListItem","position":1,"name":"首页","item":"${SITE_URL}/"},
-      {"@type":"ListItem","position":2,"name":"法律视频","item":"${SITE_URL}/videos/"},
-      {"@type":"ListItem","position":3,"name":"${video.title}","item":"${pageUrl}"}
-    ]
-  }`}</script>
+  <script type="application/ld+json" set:html={jsonLdScriptContent(videoObjectSchema)} />
+  <script type="application/ld+json" set:html={jsonLdScriptContent(breadcrumbJsonLd)} />
 </head>
 <body>
   <Header />
