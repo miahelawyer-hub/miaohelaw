@@ -91,10 +91,6 @@ function formatDate(date) {
     .card-desc { color: #6B5040; font-size: 0.82rem; line-height: 1.6; margin: 0 0 1rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
     .card-footer { display: flex; align-items: center; justify-content: space-between; margin-top: auto; padding-top: 0.75rem; border-top: 1px solid #f0ebe3; }
     .card-arrow { color: #D4A853; font-size: 1rem; }
-    .card.hidden { display: none; }
-    .load-more-wrap { text-align: center; margin: 0.5rem 0 2rem; }
-    .load-more-btn { display: inline-flex; align-items: center; gap: 0.5rem; background: white; border: 2px solid #D4A853; color: var(--text-heading); padding: 0.75rem 2rem; border-radius: 8px; font-size: 0.92rem; font-weight: 600; cursor: pointer; transition: background 0.15s, color 0.15s; }
-    .load-more-btn:hover { background: #D4A853; color: white; }
     .cta-box {
       background: #1c2b3f;
       border-radius: 12px;
@@ -187,10 +183,10 @@ function formatDate(date) {
         </a>
       )}
       <div class="grid" id="post-grid">
-        {posts.slice(1).map((post, i) => (
+        {posts.slice(1).map((post) => (
           <a
             href={`/en/blog/${post.id}/`}
-            class={`card${i >= 6 ? ' hidden' : ''}`}
+            class="card"
             data-search={`${post.data.title} ${post.data.description} ${(post.data.tags ?? []).join(' ')}`.toLowerCase()}
           >
             <p class="card-date">{formatDate(post.data.pubDate)}</p>
@@ -203,11 +199,6 @@ function formatDate(date) {
           </a>
         ))}
       </div>
-      {posts.length > 7 && (
-        <div class="load-more-wrap">
-          <button class="load-more-btn" id="load-more-btn">Load More Articles ↓</button>
-        </div>
-      )}
       <div class="cta-box">
         <h2>Book an Initial Consultation</h2>
         <p>Miao He · 30-min consultation $220+HST · Mandarin & English · Markham · All of Ontario</p>

@@ -239,27 +239,6 @@ function formatDate(date) {
     .card-footer { display: flex; align-items: center; justify-content: space-between; margin-top: auto; padding-top: 0.75rem; border-top: 1px solid #f0ebe3; }
     .card-arrow { color: #D4A853; font-size: 1rem; }
 
-    /* ── 隐藏超出卡片 ── */
-    .card.hidden { display: none; }
-
-    /* ── 加载更多 ── */
-    .load-more-wrap { text-align: center; margin: 0.5rem 0 2rem; }
-    .load-more-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      background: white;
-      border: 2px solid #D4A853;
-      color: var(--text-heading);
-      padding: 0.75rem 2rem;
-      border-radius: 8px;
-      font-size: 0.92rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: background 0.15s, color 0.15s;
-    }
-    .load-more-btn:hover { background: #D4A853; color: white; }
-
     /* ── CTA：与博客文章文末条同款深蓝 + 暖金（仅配色） ── */
     .cta-box {
       background: #1c2b3f;
@@ -365,12 +344,12 @@ function formatDate(date) {
         </a>
       )}
 
-      <!-- 其余文章网格：第1-6篇显示，第7篇起隐藏 -->
+      <!-- 其余文章网格：全部静态输出，便于爬虫与 SEO 发现全部链接（搜索仍可用） -->
       <div class="grid" id="post-grid">
-        {posts.slice(1).map((post, i) => (
+        {posts.slice(1).map((post) => (
           <a
             href={`/blog/${post.id}/`}
-            class={`card${i >= 6 ? ' hidden' : ''}`}
+            class="card"
             data-search={`${post.data.title} ${post.data.description} ${(post.data.tags ?? []).join(' ')}`.toLowerCase()}
           >
             <p class="card-date">{formatDate(post.data.pubDate)}</p>
@@ -383,15 +362,6 @@ function formatDate(date) {
           </a>
         ))}
       </div>
-
-      <!-- 加载更多按钮（文章超过7篇才显示） -->
-      {posts.length > 7 && (
-        <div class="load-more-wrap">
-          <button class="load-more-btn" id="load-more-btn">
-            查看更多文章 ↓
-          </button>
-        </div>
-      )}
 
       <div class="cta-box">
         <h2>预约初次法律咨询</h2>
