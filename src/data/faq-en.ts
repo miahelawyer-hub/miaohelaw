@@ -534,7 +534,8 @@ export const faqItemsEn: FaqItemEn[] =
       "Miao He serves clients throughout the Greater Toronto Area and all of Ontario. She holds both an Ontario bar licence (LSO #83315K) and a Chinese bar licence, making her uniquely equipped to handle family law matters involving Canadian and Chinese elements.",
       "To book, call 647-930-6688 or email miao@miaohelaw.ca. You can also submit an inquiry through the contact form at miaohelaw.ca/en/contact."
     ],
-    "keywords": "book consultation Miao He,family lawyer Markham,Chinese family lawyer GTA,Ontario family law consultation,647-930-6688"
+    "keywords": "book consultation Miao He,family lawyer Markham,Chinese family lawyer GTA,Ontario family law consultation,647-930-6688",
+    "pairedFaqPath": "/faq/book-consultation-miao-he/"
   },
 
   // ── Separation vs Divorce series (2026-04-19) ─────────────────
@@ -631,6 +632,100 @@ export const faqItemsEn: FaqItemEn[] =
     ],
     keywords: "separation under one roof Ontario,live together separated Canada,same house separated Ontario,prove separation date same roof,Miao He lawyer",
     pairedFaqPath: "/faq/tongwuyan-fenju/",
+    featured: true,
+  },
+  {
+    slug: "empathy-and-law-both-matter-ontario-family-lawyer",
+    question: "In Ontario, why is empathy just as important as knowing the law when choosing a family lawyer?",
+    summary:
+      "Statutes set the frame, but family disputes arrive with intense emotion and lived context. Without empathy, counsel may not truly understand why you insist on a particular outcome or why you cannot compromise in this file. Hearing the \"why\" is what lets legal tools be aimed at your core interests. Knowing the law is the baseline; understanding the client at emotional depth is often what makes strategy credible in negotiation and in court.",
+    answers: [
+      "Rules are abstract, but family disputes are personal. If a lawyer cannot empathize, it is harder to stand in your shoes on why a demand matters or why a line cannot be crossed.",
+      "Only after counsel understands <strong>why</strong> you are fighting this case can they fight effectively for what matters most. Statute knowledge is the passing bar; depth of understanding is what often builds a stronger shield in negotiation and litigation.",
+    ],
+    details: [
+      "Rules are cold on the page; family disputes carry heat and cost. If a lawyer cannot empathize, they may not truly grasp why you insist on a particular outcome or why you cannot back down in this case. Once counsel hears <strong>why</strong> you are pursuing the case, they can align strategy with your central interests. Knowing the law is the minimum; understanding the client at an emotional depth is what often makes a lawyer your most reliable backstop in negotiation and in court.",
+      "For more on \"human\" legal service and how to interview counsel, read Miao He’s <a href=\"/en/blog/how-to-choose-markham-family-lawyer/\">How to Choose a Good Markham Family Lawyer</a>. You may also compare notes with <a href=\"/en/blog/how-to-choose-toronto-chinese-divorce-lawyer/\">How to Choose the Best Chinese Divorce Lawyer in Toronto</a> on consults and fit.",
+      "Call <strong>647-930-6688</strong> or WeChat <strong>372656035</strong> to book a consultation.",
+    ],
+    keywords: "Ontario family lawyer empathy,Chinese family lawyer GTA,Markham family lawyer,choose family lawyer Ontario,Miao He lawyer",
+    pairedFaqPath: "/faq/gongqing-yu-dongfalv-tongyang-zhongyao/",
+    featured: true,
+  },
+  {
+    slug: "lawyer-interrupts-during-family-law-consult",
+    question: "Why does my family lawyer sometimes interrupt me — does that mean they do not respect me?",
+    summary:
+      "Not necessarily. Timing matters: if counsel has already heard the full narrative, later interruptions often filter out irrelevant detail, control hourly cost, and refocus on issues and evidence. If interruptions start from minute one and never let you finish, that can mean the full picture — and key facts hiding in detail — are being missed. True professionalism is disciplined triage <em>after</em> listening, not cold cutting you off at the outset.",
+    answers: [
+      "It depends on timing. If your lawyer has already heard the full story and then redirects in follow-up meetings, that is often professional time management — removing information that will not change outcomes and focusing on admissible facts and leverage points.",
+      "If counsel is impatient from the first minute and interrupts constantly, the file may lose context and even miss evidence buried in detail. True professionalism is precise triage after a real listen — not dismissive interruption from the start.",
+    ],
+    details: [
+      "After counsel has heard the full arc, interruptions in later communications often help strip out facts that will not move the needle, protect your legal spend, and concentrate on issues, evidence, and procedural steps that matter.",
+      "If counsel never lets you finish and interrupts throughout, they may be losing the forest for the trees — and can miss critical evidence hiding in the details.",
+      "This is consistent with what Miao He describes in <a href=\"/en/blog/how-to-choose-markham-family-lawyer/\">How to Choose a Good Markham Family Lawyer</a>: holding space for emotion while still managing consult time. Professional listening is not unlimited repetition of the same story; it is spending limited time on information that can change results. For how hourly costs add up, see <a href=\"/en/faq/divorce-lawyer-cost-ontario/\">How much does a divorce lawyer cost in Ontario?</a>",
+      "Call <strong>647-930-6688</strong> to book a consultation with Miao He.",
+    ],
+    keywords: "lawyer interrupts consult,hourly billing family lawyer,Markham family lawyer,Ontario family law consult,Miao He lawyer",
+    pairedFaqPath: "/faq/lushi-weishenme-you-shi-dazhuan-chenshu/",
+    featured: true,
+  },
+  {
+    slug: "court-evidence-vs-emotional-noise-family-law",
+    question: "In a family law case, how do I tell \"court evidence\" apart from \"emotional noise\"?",
+    summary:
+      "Emotional noise is usually subjective feeling without objective support — hard for a judge to credit on its own. Court evidence ties to verifiable facts: documents, transfers, third-party witnesses, medical or police records. Experienced counsel will press for details that can be turned into proof. Emotional harm is not always noise: family violence or personal injury can become central evidence in family or criminal proceedings, and telling the difference takes seasoned judgment.",
+    answers: [
+      "Emotional noise is often pure subjective feeling (\"I am unhappy,\" \"I feel hurt\"). Without objective material, a judge will rarely rely on it alone.",
+      "Court evidence maps to facts you can prove: written records, transfer slips, third-party witnesses, medical or police materials. Strong lawyers ask for those specifics while you speak.",
+    ],
+    details: [
+      "Sorting story from proof is highly experience-dependent. Emotional noise is usually subjective feeling without objective anchors — difficult for a court to accept standing alone.",
+      "Court evidence means the narrative can be tied to materials you can file and test: \"Is there a paper trail?\" \"Transfers or third-party witnesses?\" Those convertible details are the core.",
+      "Important caveat: emotional harm is not always noise. Where <strong>family violence</strong> or personal injury is involved, the same facts may be critical evidence in criminal or family proceedings. Drawing the line takes deep practical judgment.",
+      "On electronic and documentary habits in court, see <a href=\"/en/blog/electronic-evidence-ontario-family-court/\">Electronic evidence in Ontario family court</a>. Miao He also discusses carrying your \"usable voice\" into court in <a href=\"/en/blog/how-to-choose-markham-family-lawyer/\">How to Choose a Good Markham Family Lawyer</a>. Call <strong>647-930-6688</strong> to book.",
+    ],
+    keywords: "family law evidence Ontario,emotional noise court,family violence evidence Ontario,Miao He lawyer",
+    pairedFaqPath: "/faq/fating-zhengju-yu-qingxu-zaoyin/",
+    featured: true,
+  },
+  {
+    slug: "control-litigation-costs-hourly-ontario",
+    question: "Ontario lawyers bill by the hour — how can I keep my litigation costs under control?",
+    summary:
+      "Much of the answer is the depth of your <strong>first consultation</strong>. You do not have to wait until mid-case to think about savings. In the first meeting, map strategy, likely direction, and a preliminary plan with counsel; retain once you share a strategic baseline. The most expensive pattern is re-asking the same questions. Efficient, targeted negotiation or litigation on a shared plan is usually the soundest way to save money.",
+    answers: [
+      "The secret is <strong>depth in the initial consult</strong>. You should not wait until the file is half finished to think about cost. In the first meeting, explore case theory, likely trajectory, and a preliminary litigation or negotiation strategy; retaining after strategic alignment usually saves time and fees.",
+      "The most expensive habit is repeating the same conversations. With a shared plan, move negotiations or litigation efficiently and purposefully.",
+    ],
+    details: [
+      "You do not have to wait until mid-case to think about savings. In the first consultation, work through case theory, likely trajectory, and a preliminary strategy with your lawyer. Once you align on strategy before retaining, later work is more likely to \"aim true\" from day one.",
+      "The most expensive pattern is repeating the same issues. On a shared strategic baseline, advance negotiation or litigation efficiently and purposefully — that is usually the most rational way to control cost.",
+      "For how we try to keep communication on outcome-driving topics and cost thinking, read <a href=\"/en/blog/how-to-choose-markham-family-lawyer/\">How to Choose a Good Markham Family Lawyer</a>. For fee ranges and variables, compare <a href=\"/en/faq/divorce-lawyer-cost-ontario/\">How much does a divorce lawyer cost in Ontario?</a> and <a href=\"/en/faq/toronto-divorce-cost-how-much/\">How much does a divorce cost in Toronto?</a>.",
+      "Call <strong>647-930-6688</strong> to book a consultation.",
+    ],
+    keywords: "Ontario hourly lawyer fees,control litigation cost,family lawyer first consult,Miao He lawyer",
+    pairedFaqPath: "/faq/an-sheng-xiaoshoufei-kongzhi-susong-chengben/",
+    featured: true,
+  },
+  {
+    slug: "outside-markham-hire-ontario-family-lawyer",
+    question: "I live outside Markham — can I still hire you for an Ontario family law matter?",
+    summary:
+      "Yes. With an Ontario licence, we can represent family law clients province-wide. Whether you are in Toronto, Ottawa, London, or Windsor, distance is rarely a barrier: video meetings, e-signatures, and Ontario court e-filing can support the same quality of service as for local Markham clients. Justice in law is province-wide; professional service can be as well (subject to conflicts checks and scheduling).",
+    answers: [
+      "Yes. Holding an Ontario licence, we can represent family law matters across the province.",
+      "Whether you are in Toronto, Ottawa, London, or Windsor, distance is no longer a practical barrier. Video conferences, electronic signatures, and Ontario court electronic filing allow the same depth of service as for Markham-area clients.",
+    ],
+    details: [
+      "With an Ontario licence, we can represent family law matters across the province.",
+      "Whether you are in Toronto, Ottawa, London, or Windsor, distance is no longer a barrier to legal service. Video meetings, e-signatures, and Ontario court electronic filing support the same high-quality, in-depth work as for local Markham clients.",
+      "The fairness of the law is province-wide, and so is our professional service — whether a retainer fits still depends on case-by-case review (conflicts, capacity, and file structure). Miao He explains province-wide service in the closing section of <a href=\"/en/blog/how-to-choose-markham-family-lawyer/\">How to Choose a Good Markham Family Lawyer</a>, subject to individual assessment.",
+      "Call <strong>647-930-6688</strong> with your location and a short case summary, and we can discuss whether a retainer is appropriate.",
+    ],
+    keywords: "Markham family lawyer Ontario wide,GTA family lawyer,Ontario family law remote consult,Miao He lawyer",
+    pairedFaqPath: "/faq/markham-wai-pinren-an-sheng-jiatingfa/",
     featured: true,
   },
 ];

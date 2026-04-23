@@ -100,10 +100,20 @@ const faqSchemaGraph = [
 
     .page-hero { background: var(--hero-legal-top-background); border-bottom: 1px solid rgba(0,0,0,0.35); padding: 3rem 1.5rem 2.5rem; }
     .page-hero .inner { max-width: 860px; margin: 0 auto; }
-    .breadcrumb { font-size: 0.78rem; color: rgba(255,255,255,0.5); margin-bottom: 1rem; }
-    .breadcrumb a { color: rgba(255,255,255,0.5); }
-    .breadcrumb span { color: rgba(255,255,255,0.3); margin: 0 0.4rem; }
-    .page-hero h1 { color: #fff; font-size: clamp(1.4rem, 3vw, 2rem); line-height: 1.4; font-weight: 400; }
+    .breadcrumb {
+      font-size: 0.78rem; line-height: 1.5; margin-bottom: 0.35rem;
+      color: rgba(255,255,255,0.52); font-weight: 400;
+    }
+    .breadcrumb a { color: #c9a96e; text-decoration: none; font-weight: 500; }
+    .breadcrumb a:hover { color: #e4c47a; }
+    .breadcrumb .breadcrumb-sep { color: rgba(255,255,255,0.28); margin: 0 0.4rem; user-select: none; }
+    .breadcrumb-current { color: rgba(255,255,255,0.45); cursor: default; }
+    .page-hero h1 {
+      color: rgba(255,255,255,0.98); font-size: clamp(1.35rem, 2.8vw, 1.95rem);
+      line-height: 1.45; font-weight: 600; letter-spacing: 0.01em;
+      margin-top: 0.65rem;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.4), 0 4px 28px rgba(0,0,0,0.22);
+    }
     .page-hero h1 em, .breadcrumb-current em { font-style: italic; }
 
     .answer-section { padding: 2.5rem 1.5rem 4rem; }
@@ -185,11 +195,13 @@ const faqSchemaGraph = [
   <main>
     <section class="page-hero">
       <div class="inner">
-        <p class="breadcrumb">
-          <a href="/en/">Home</a><span>›</span>
-          <a href="/en/faq/">FAQ</a><span>›</span>
-          <span class="breadcrumb-current" set:html={item.question} />
-        </p>
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="/en/">Home</a>
+          <span class="breadcrumb-sep" aria-hidden="true">›</span>
+          <a href="/en/faq/">FAQ</a>
+          <span class="breadcrumb-sep" aria-hidden="true">›</span>
+          <span class="breadcrumb-current" title={questionPlain} aria-current="page">This page</span>
+        </nav>
         <h1 set:html={item.question} />
       </div>
     </section>
