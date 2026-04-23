@@ -1,54 +1,94 @@
 ---
-import BaseHead from '../../../components/BaseHead.astro';
-import HeaderEn from '../../../components/HeaderEn.astro';
-import Footer from '../../../components/Footer.astro';
-import { SITE_LAST_UPDATED_EN, SITE_URL } from '../../../consts';
-import { getFaqItemsEnForListing } from '../../../data/faq-en';
-import { stripHtml } from '../../../utils/stripHtml';
+import type { GetStaticPaths } from 'astro';
+import BaseHead from '../../../../components/BaseHead.astro';
+import HeaderEn from '../../../../components/HeaderEn.astro';
+import Footer from '../../../../components/Footer.astro';
+import { SITE_LAST_UPDATED_EN, SITE_URL } from '../../../../consts';
+import { getFaqItemsEnForListing } from '../../../../data/faq-en';
+import { getFaqItemsForListing } from '../../../../data/faq';
+import { stripHtml } from '../../../../utils/stripHtml';
 
-const items = getFaqItemsEnForListing();
-const totalFaqEn = items.length;
-const totalPages = Math.max(1, Math.ceil(totalFaqEn / 10));
-const pageItems = items.slice(0, 10);
+export const getStaticPaths = (async () => {
+	const all = getFaqItemsEnForListing();
+	const zhAll = getFaqItemsForListing();
+	const n = all.length;
+	const totalPages = Math.max(1, Math.ceil(n / 10));
+	const zhTotalPages = Math.max(1, Math.ceil(zhAll.length / 10));
+	const paths: {
+		params: { page: string };
+		props: {
+			currentPage: number;
+			pageItems: ReturnType<typeof getFaqItemsEnForListing>;
+			totalPages: number;
+			totalFaqEn: number;
+			zhTotalPages: number;
+		};
+	}[] = [];
+	for (let p = 2; p <= totalPages; p++) {
+		paths.push({
+			params: { page: String(p) },
+			props: {
+				currentPage: p,
+				pageItems: all.slice((p - 1) * 10, p * 10),
+				totalPages,
+				totalFaqEn: n,
+				zhTotalPages,
+			},
+		});
+	}
+	return paths;
+}) satisfies GetStaticPaths;
+
+const { currentPage, pageItems, totalPages, totalFaqEn, zhTotalPages } = Astro.props;
+
+const canonicalUrl = `${SITE_URL}/en/faq/page/${currentPage}/`;
+const prevUrl = currentPage === 2 ? `${SITE_URL}/en/faq/` : `${SITE_URL}/en/faq/page/${currentPage - 1}/`;
+const nextUrl = currentPage < totalPages ? `${SITE_URL}/en/faq/page/${currentPage + 1}/` : null;
+
+const emitHreflang = currentPage <= zhTotalPages;
 
 const itemListJsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'ItemList',
-  itemListElement: pageItems.map((item, i) => ({
-    '@type': 'ListItem',
-    position: i + 1,
-    url: `${SITE_URL}/en/faq/${item.slug}/`,
-    name: stripHtml(item.question),
-  })),
+	'@context': 'https://schema.org',
+	'@type': 'ItemList',
+	itemListElement: pageItems.map((item, i) => ({
+		'@type': 'ListItem',
+		position: i + 1,
+		url: `${SITE_URL}/en/faq/${item.slug}/`,
+		name: stripHtml(item.question),
+	})),
 };
 
 const breadcrumbJsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.miaohelaw.ca/en/' },
-    { '@type': 'ListItem', position: 2, name: 'FAQ', item: 'https://www.miaohelaw.ca/en/faq/' },
-  ],
+	'@context': 'https://schema.org',
+	'@type': 'BreadcrumbList',
+	itemListElement: [
+		{ '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/en/` },
+		{ '@type': 'ListItem', position: 2, name: 'FAQ', item: `${SITE_URL}/en/faq/` },
+		{ '@type': 'ListItem', position: 3, name: `Page ${currentPage}`, item: canonicalUrl },
+	],
 };
-
-const canonicalUrl = `${SITE_URL}/en/faq/`;
-const nextUrl = totalPages > 1 ? `${SITE_URL}/en/faq/page/2/` : null;
 ---
+
 <!doctype html>
 <html lang="en">
 <head>
   <BaseHead
-    title="FAQ | Ontario Family Law | Miao He — Divorce, Custody, Property"
-    description={`Answers to ${totalFaqEn} Ontario family law questions: divorce requirements, property division, child custody, support, prenuptial agreements, cross-border assets. 647-930-6688.`}
+    title={`FAQ · Page ${currentPage} | Ontario Family Law | Miao He`}
+    description={`Ontario family law FAQ by Miao He — page ${currentPage} of ${totalPages} (${totalFaqEn} questions). Divorce, custody, property, support, and more. 647-930-6688.`}
   />
-  <meta name="keywords" content="Toronto divorce cost,Ontario divorce FAQ,family law questions Ontario,divorce requirements Ontario,child custody Ontario,spousal support Ontario,prenuptial agreement Ontario,uncontested divorce cost Toronto,Chinese family lawyer FAQ,Miao He" />
-  <meta property="og:title" content="FAQ | Ontario Family Law | Miao He" />
+  <meta name="keywords" content="Toronto divorce cost,Ontario divorce FAQ,family law questions Ontario,Miao He" />
+  <meta property="og:title" content={`FAQ · Page ${currentPage} | Miao He`} />
   <meta property="og:type" content="website" />
   <meta property="og:url" content={canonicalUrl} />
+  <link rel="prev" href={prevUrl} />
   {nextUrl && <link rel="next" href={nextUrl} />}
-  <link rel="alternate" hreflang="zh" href="https://www.miaohelaw.ca/faq/" />
-  <link rel="alternate" hreflang="en" href="https://www.miaohelaw.ca/en/faq/" />
-  <link rel="alternate" hreflang="x-default" href="https://www.miaohelaw.ca/en/faq/" />
+  {emitHreflang && (
+    <>
+      <link rel="alternate" hreflang="zh" href={`${SITE_URL}/faq/page/${currentPage}/`} />
+      <link rel="alternate" hreflang="en" href={canonicalUrl} />
+      <link rel="alternate" hreflang="x-default" href={canonicalUrl} />
+    </>
+  )}
   <script type="application/ld+json" set:html={JSON.stringify(itemListJsonLd)} />
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbJsonLd)} />
   <style>
@@ -207,9 +247,9 @@ const nextUrl = totalPages > 1 ? `${SITE_URL}/en/faq/page/2/` : null;
   <main class="faq-listing-root" id="faq-listing-root">
     <section class="page-hero">
       <div class="inner">
-        <p class="breadcrumb"><a href="/en/">Home</a> › FAQ</p>
+        <p class="breadcrumb"><a href="/en/">Home</a> › <a href="/en/faq/">FAQ</a> › Page {currentPage}</p>
         <h1>Frequently Asked Questions</h1>
-        <p class="hero-stat">{totalFaqEn} frequently asked questions · Page 1 of {totalPages}</p>
+        <p class="hero-stat">{totalFaqEn} questions · Page {currentPage} of {totalPages}</p>
         <p class="hero-sub">Ontario Family Law · Answered by Miao He · 647-930-6688</p>
         <p class="page-last-updated page-last-updated--gradient">Page last updated: {SITE_LAST_UPDATED_EN}</p>
       </div>
@@ -238,8 +278,10 @@ const nextUrl = totalPages > 1 ? `${SITE_URL}/en/faq/page/2/` : null;
 
         <nav class="faq-pagination" aria-label="FAQ pagination">
           {Array.from({ length: totalPages }, (_, i) => i + 1).map((num) =>
-            num === 1 ? (
+            num === currentPage ? (
               <span class="current" aria-current="page">{num}</span>
+            ) : num === 1 ? (
+              <a href="/en/faq/">{num}</a>
             ) : (
               <a href={`/en/faq/page/${num}/`}>{num}</a>
             )

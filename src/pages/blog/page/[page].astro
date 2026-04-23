@@ -1,64 +1,107 @@
 ---
+import type { GetStaticPaths } from 'astro';
 import { getCollection } from 'astro:content';
-import BaseHead from '../../components/BaseHead.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
-import { SITE_LAST_UPDATED_ZH, SITE_URL } from '../../consts';
+import BaseHead from '../../../components/BaseHead.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import { SITE_LAST_UPDATED_ZH, SITE_URL } from '../../../consts';
 
-const posts = (await getCollection('blog')).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-);
-const totalPosts = posts.length;
-const totalPages = Math.max(1, Math.ceil(totalPosts / 10));
-const pageSmallCards = posts.slice(1, 10);
-const schemaPosts = posts.length > 0 ? [posts[0], ...pageSmallCards] : [];
+export const getStaticPaths = (async () => {
+	const posts = (await getCollection('blog')).sort(
+		(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+	);
+	const enPosts = (await getCollection('blog-en')).sort(
+		(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+	);
+	const n = posts.length;
+	const totalPages = Math.max(1, Math.ceil(n / 10));
+	const enTotalPages = Math.max(1, Math.ceil(enPosts.length / 10));
+	const paths: {
+		params: { page: string };
+		props: {
+			currentPage: number;
+			pagePosts: typeof posts;
+			totalPages: number;
+			totalPosts: number;
+			enTotalPages: number;
+		};
+	}[] = [];
+	for (let p = 2; p <= totalPages; p++) {
+		paths.push({
+			params: { page: String(p) },
+			props: {
+				currentPage: p,
+				pagePosts: posts.slice((p - 1) * 10, p * 10),
+				totalPages,
+				totalPosts: n,
+				enTotalPages,
+			},
+		});
+	}
+	return paths;
+}) satisfies GetStaticPaths;
+
+const { currentPage, pagePosts, totalPages, totalPosts, enTotalPages } = Astro.props;
+
+function formatDate(date: Date) {
+	return new Date(date).toLocaleDateString('zh-CN', { year: 'numeric', month: 'long', day: 'numeric' });
+}
+
+const canonicalUrl = `${SITE_URL}/blog/page/${currentPage}/`;
+const prevUrl =
+	currentPage === 2 ? `${SITE_URL}/blog/` : `${SITE_URL}/blog/page/${currentPage - 1}/`;
+const nextUrl = currentPage < totalPages ? `${SITE_URL}/blog/page/${currentPage + 1}/` : null;
+
+const emitHreflang = currentPage <= enTotalPages;
 
 const itemListJsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'ItemList',
-  itemListElement: schemaPosts.map((post, i) => ({
-    '@type': 'ListItem',
-    position: i + 1,
-    url: `${SITE_URL}/blog/${post.id}/`,
-    name: post.data.title,
-  })),
+	'@context': 'https://schema.org',
+	'@type': 'ItemList',
+	itemListElement: pagePosts.map((post, i) => ({
+		'@type': 'ListItem',
+		position: i + 1,
+		url: `${SITE_URL}/blog/${post.id}/`,
+		name: post.data.title,
+	})),
 };
 
-const canonicalUrl = `${SITE_URL}/blog/`;
-const nextUrl = totalPages > 1 ? `${SITE_URL}/blog/page/2/` : null;
-
-function formatDate(date) {
-  return new Date(date).toLocaleDateString('zh-CN', { year: 'numeric', month: 'long', day: 'numeric' });
-}
+const breadcrumbJsonLd = {
+	'@context': 'https://schema.org',
+	'@type': 'BreadcrumbList',
+	itemListElement: [
+		{ '@type': 'ListItem', position: 1, name: '首页', item: `${SITE_URL}/` },
+		{ '@type': 'ListItem', position: 2, name: '博客', item: `${SITE_URL}/blog/` },
+		{ '@type': 'ListItem', position: 3, name: `第${currentPage}页`, item: canonicalUrl },
+	],
+};
 ---
 
 <!doctype html>
 <html lang="zh">
 <head>
   <BaseHead
-    title="博客文章 | 何淼律师 — Ontario家庭法律师"
-    description="何淼律师撰写的Ontario家庭法文章，涵盖离婚、子女监护、财产分割、婚前协议、跨境资产等华人最关心的法律问题。"
+    title={`博客文章 · 第${currentPage}页 | 何淼律师 — Ontario家庭法律师`}
+    description={`何淼律师家庭法博客第${currentPage}页，共 ${totalPosts} 篇文章。涵盖离婚、子女监护、财产分割、婚前协议等安省家庭法实用内容。`}
   />
+  <meta name="robots" content="index,follow" />
+  <link rel="prev" href={prevUrl} />
+  {nextUrl && <link rel="next" href={nextUrl} />}
+  {emitHreflang && (
+    <>
+      <link rel="alternate" hreflang="zh-CN" href={canonicalUrl} />
+      <link rel="alternate" hreflang="en" href={`${SITE_URL}/en/blog/page/${currentPage}/`} />
+      <link rel="alternate" hreflang="x-default" href={`${SITE_URL}/en/blog/page/${currentPage}/`} />
+    </>
+  )}
   <meta name="keywords" content="Ontario家庭法博客,华人离婚指南,离婚法律知识,子女监护权Ontario,婚前协议,何淼律师" />
-  <meta property="og:title" content="博客文章 | 多伦多华人家庭法律师 何淼" />
-  <meta property="og:description" content="何淼律师分享安省家庭法实用知识，涵盖离婚、子女监护、财产分割、婚前协议等。普通话全程服务，647-930-6688。" />
+  <meta property="og:title" content={`博客文章 · 第${currentPage}页 | 何淼律师`} />
+  <meta property="og:description" content={`何淼律师博客第${currentPage}页，共 ${totalPosts} 篇安省家庭法文章。`} />
   <meta property="og:type" content="website" />
   <meta property="og:url" content={canonicalUrl} />
   <meta property="og:locale" content="zh_CN" />
-  <meta property="og:locale:alternate" content="en_CA" />
-  {nextUrl && <link rel="next" href={nextUrl} />}
-  <link rel="alternate" hreflang="zh-CN" href="https://www.miaohelaw.ca/blog/" />
-  <link rel="alternate" hreflang="en" href="https://www.miaohelaw.ca/en/blog/" />
-  <link rel="alternate" hreflang="x-default" href="https://www.miaohelaw.ca/en/blog/" />
+  {emitHreflang && <meta property="og:locale:alternate" content="en_CA" />}
   <script type="application/ld+json" set:html={JSON.stringify(itemListJsonLd)} />
-  <script type="application/ld+json">{
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {"@type":"ListItem","position":1,"name":"首页","item":"https://www.miaohelaw.ca/"},
-      {"@type":"ListItem","position":2,"name":"博客","item":"https://www.miaohelaw.ca/blog/"}
-    ]
-  }</script>
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbJsonLd)} />
   <style is:global>
     * { box-sizing: border-box; }
     body { background: var(--bg); margin: 0; }
@@ -75,7 +118,6 @@ function formatDate(date) {
 
     .main-wrap { max-width: 1100px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
 
-    /* ── 搜索 ── */
     .blog-search {
       display: flex;
       gap: 0.75rem;
@@ -139,35 +181,6 @@ function formatDate(date) {
       font-size: 0.92rem;
     }
     .blog-search-results a:hover { border-color: rgba(212,168,83,0.45); }
-    .pagination {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 0.45rem 0.65rem;
-      margin: 0 0 1.5rem;
-      font-size: 0.88rem;
-    }
-    .pagination a,
-    .pagination span.current {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-width: 2.25rem;
-      padding: 0.45rem 0.55rem;
-      border-radius: 8px;
-      text-decoration: none;
-      border: 1px solid rgba(44,24,16,0.12);
-      color: #4A2C1A;
-      background: rgba(255,255,255,0.85);
-    }
-    .pagination a:hover { border-color: rgba(212,168,83,0.55); }
-    .pagination span.current {
-      font-weight: 700;
-      border-color: rgba(212,168,83,0.55);
-      background: rgba(212,168,83,0.12);
-    }
-    .blog-listing--searching .featured-card,
-    .blog-listing--searching .grid { display: none !important; }
     .sr-only{
       position:absolute;
       width:1px;
@@ -180,90 +193,6 @@ function formatDate(date) {
       border:0;
     }
 
-    /* ── 置顶大卡片 ── */
-    .featured-card {
-      display: grid;
-      grid-template-columns: 280px 1fr;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 2px 16px rgba(44,24,16,0.09);
-      overflow: hidden;
-      margin-bottom: 2rem;
-      text-decoration: none;
-      border: 1px solid #e8e0d5;
-      transition: box-shadow 0.2s;
-    }
-    .featured-card:hover { box-shadow: 0 6px 28px rgba(44,24,16,0.14); }
-
-    .featured-left {
-      background: linear-gradient(160deg, #2C1810 0%, #4A2C1A 60%, #3a2015 100%);
-      padding: 2rem 1.75rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      position: relative;
-      overflow: hidden;
-    }
-    .featured-left::before {
-      content: '法';
-      position: absolute;
-      right: -0.5rem;
-      bottom: -1rem;
-      font-size: 8rem;
-      color: rgba(212,168,83,0.07);
-      font-weight: 900;
-      line-height: 1;
-      pointer-events: none;
-    }
-    .featured-tag {
-      display: inline-block;
-      background: rgba(212,168,83,0.15);
-      border: 1px solid rgba(212,168,83,0.4);
-      color: #D4A853;
-      font-size: 0.7rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      padding: 0.3rem 0.75rem;
-      border-radius: 20px;
-      width: fit-content;
-    }
-    .featured-quote {
-      color: rgba(255,255,255,0.75);
-      font-size: 0.85rem;
-      line-height: 1.7;
-      margin: 1.25rem 0 0;
-    }
-    .featured-quote strong {
-      color: #D4A853;
-      display: block;
-      font-size: 1rem;
-      margin-bottom: 0.4rem;
-    }
-    .featured-author {
-      color: rgba(255,255,255,0.45);
-      font-size: 0.72rem;
-      margin-top: 1.5rem;
-      letter-spacing: 0.04em;
-    }
-
-    .featured-right { padding: 2rem 2rem 2rem 1.75rem; display: flex; flex-direction: column; justify-content: center; }
-    .featured-date { color: #9A8060; font-size: 0.78rem; margin: 0 0 0.6rem; }
-    .featured-title { color: var(--text-heading); font-size: 1.2rem; font-weight: 700; line-height: 1.4; margin: 0 0 0.85rem; }
-    .featured-desc { color: #4A2C1A; font-size: 0.9rem; line-height: 1.75; margin: 0 0 1.25rem; }
-    .featured-more {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      color: white;
-      background: linear-gradient(135deg, #2C1810, #4A2C1A);
-      padding: 0.55rem 1.2rem;
-      border-radius: 6px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      width: fit-content;
-    }
-
-    /* ── 卡片网格 ── */
     .grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -289,7 +218,35 @@ function formatDate(date) {
     .card-footer { display: flex; align-items: center; justify-content: space-between; margin-top: auto; padding-top: 0.75rem; border-top: 1px solid #f0ebe3; }
     .card-arrow { color: #D4A853; font-size: 1rem; }
 
-    /* ── CTA：与博客文章文末条同款深蓝 + 暖金（仅配色） ── */
+    .pagination {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.45rem 0.65rem;
+      margin: 0 0 2rem;
+      font-size: 0.88rem;
+    }
+    .pagination a,
+    .pagination span.current {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 2.25rem;
+      padding: 0.45rem 0.55rem;
+      border-radius: 8px;
+      text-decoration: none;
+      border: 1px solid rgba(44,24,16,0.12);
+      color: #4A2C1A;
+      background: rgba(255,255,255,0.85);
+    }
+    .pagination a:hover { border-color: rgba(212,168,83,0.55); }
+    .pagination span.current {
+      font-weight: 700;
+      border-color: rgba(212,168,83,0.55);
+      background: rgba(212,168,83,0.12);
+    }
+    .blog-listing--searching .grid { display: none !important; }
+
     .cta-box {
       background: #1c2b3f;
       border-radius: 12px;
@@ -330,14 +287,10 @@ function formatDate(date) {
 
     @media (max-width: 900px) {
       .grid { grid-template-columns: repeat(2, 1fr); }
-      .featured-card { grid-template-columns: 1fr; }
-      .featured-left { padding: 1.5rem; }
-      .featured-left::before { font-size: 5rem; }
     }
     @media (max-width: 600px) {
       .grid { grid-template-columns: 1fr; }
       .main-wrap { padding: 1.5rem 1rem 3rem; }
-      .featured-right { padding: 1.5rem; }
     }
   </style>
 </head>
@@ -346,9 +299,9 @@ function formatDate(date) {
   <main class="blog-listing-root" id="blog-listing-root">
     <div class="page-hero">
       <div class="inner">
-        <p class="breadcrumb"><a href="/">首页</a> › 博客文章</p>
+        <p class="breadcrumb"><a href="/">首页</a> › <a href="/blog/">博客文章</a> › 第 {currentPage} 页</p>
         <h1>法律知识 · 博客文章</h1>
-        <p class="hero-stat">共 {totalPosts} 篇博客文章 · 第 1 / {totalPages} 页</p>
+        <p class="hero-stat">第 {currentPage} / {totalPages} 页 · 共 {totalPosts} 篇</p>
         <p class="hero-sub">何淼律师撰写 · 普通话全程服务 · 647-930-6688</p>
         <p class="page-last-updated page-last-updated--gradient">页面内容最后更新：{SITE_LAST_UPDATED_ZH}</p>
       </div>
@@ -377,43 +330,18 @@ function formatDate(date) {
 
       <nav class="pagination" aria-label="博客分页">
         {Array.from({ length: totalPages }, (_, i) => i + 1).map((num) =>
-          num === 1 ? (
+          num === currentPage ? (
             <span class="current" aria-current="page">{num}</span>
+          ) : num === 1 ? (
+            <a href="/blog/">{num}</a>
           ) : (
             <a href={`/blog/page/${num}/`}>{num}</a>
           )
         )}
       </nav>
 
-      <!-- 置顶第一篇 -->
-      {posts.length > 0 && (
-        <a
-          href={`/blog/${posts[0].id}/`}
-          class="featured-card"
-          data-search={`${posts[0].data.title} ${posts[0].data.description} ${(posts[0].data.tags ?? []).join(' ')}`.toLowerCase()}
-        >
-          <div class="featured-left">
-            <div>
-              <span class="featured-tag">最新文章</span>
-              <p class="featured-quote">
-                <strong>何淼律师说</strong>
-                了解法律，才能保护自己的权益。每一个决定，都值得在充分知情的情况下做出。
-              </p>
-            </div>
-            <p class="featured-author">何淼律师 · LSO #83315K · 中加双执照</p>
-          </div>
-          <div class="featured-right">
-            <p class="featured-date">{formatDate(posts[0].data.pubDate)}</p>
-            <p class="featured-title">{posts[0].data.title}</p>
-            <p class="featured-desc">{posts[0].data.description}</p>
-            <span class="featured-more">阅读全文 →</span>
-          </div>
-        </a>
-      )}
-
-      <!-- 其余文章网格：全部静态输出，便于爬虫与 SEO 发现全部链接（搜索仍可用） -->
       <div class="grid" id="post-grid">
-        {pageSmallCards.map((post) => (
+        {pagePosts.map((post) => (
           <a
             href={`/blog/${post.id}/`}
             class="card"

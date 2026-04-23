@@ -5,22 +5,27 @@ import HeaderEn from '../../../components/HeaderEn.astro';
 import Footer from '../../../components/Footer.astro';
 import { SITE_LAST_UPDATED_EN, SITE_URL } from '../../../consts';
 
-const blogListJsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'Blog',
-  name: 'Miao He — Ontario Family Law Blog',
-  url: `${SITE_URL}/en/blog/`,
-  inLanguage: 'en-CA',
-  description:
-    'Ontario family law articles by Miao He, dual-licensed family lawyer serving the Chinese-Canadian community in the GTA.',
-  author: { '@id': `${SITE_URL}/#person` },
-  publisher: { '@id': `${SITE_URL}/#person` },
-};
-
 const posts = (await getCollection('blog-en')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 const totalPosts = posts.length;
+const totalPages = Math.max(1, Math.ceil(totalPosts / 10));
+const pageSmallCards = posts.slice(1, 10);
+const schemaPosts = posts.length > 0 ? [posts[0], ...pageSmallCards] : [];
+
+const itemListJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  itemListElement: schemaPosts.map((post, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    url: `${SITE_URL}/en/blog/${post.id}/`,
+    name: post.data.title,
+  })),
+};
+
+const canonicalUrl = `${SITE_URL}/en/blog/`;
+const nextUrl = totalPages > 1 ? `${SITE_URL}/en/blog/page/2/` : null;
 
 function formatDate(date) {
   return new Date(date).toLocaleDateString('en-CA', { year: 'numeric', month: 'long', day: 'numeric' });
@@ -37,13 +42,14 @@ function formatDate(date) {
   <meta property="og:title" content="Blog | Miao He — Ontario Family Law Lawyer" />
   <meta property="og:description" content="Ontario family law articles by Miao He: divorce, child custody, property division, marriage contracts, cross-border assets. Bilingual Mandarin and English. 647-930-6688." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.miaohelaw.ca/en/blog/" />
+  <meta property="og:url" content={canonicalUrl} />
   <meta property="og:locale" content="en_CA" />
   <meta property="og:locale:alternate" content="zh_CN" />
+  {nextUrl && <link rel="next" href={nextUrl} />}
   <link rel="alternate" hreflang="zh-CN" href="https://www.miaohelaw.ca/blog/" />
   <link rel="alternate" hreflang="en" href="https://www.miaohelaw.ca/en/blog/" />
   <link rel="alternate" hreflang="x-default" href="https://www.miaohelaw.ca/en/blog/" />
-  <script type="application/ld+json" set:html={JSON.stringify(blogListJsonLd)} />
+  <script type="application/ld+json" set:html={JSON.stringify(itemListJsonLd)} />
   <script type="application/ld+json">{
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -69,6 +75,17 @@ function formatDate(date) {
     .blog-search-clear{ flex: none; background: transparent; border: 1px solid rgba(44,24,16,0.22); color: #4A2C1A; border-radius: 12px; padding: 0.7rem 0.9rem; font-size: 0.92rem; cursor: pointer; white-space: nowrap; }
     .blog-search-clear:hover{ border-color: rgba(212,168,83,0.6); background: rgba(212,168,83,0.08); }
     .blog-search-meta{ margin: 0 0 1.25rem; color: #6b5a48; font-size: 0.88rem; line-height: 1.5; min-height: 1.35em; }
+    .blog-search-results { margin: 0 0 1.25rem; }
+    .blog-search-results ul { list-style: none; margin: 0; padding: 0; }
+    .blog-search-results li { margin: 0 0 0.5rem; }
+    .blog-search-results a { display: block; padding: 0.65rem 0.85rem; border-radius: 10px; background: rgba(255,255,255,0.9); border: 1px solid rgba(237,232,223,0.95); color: var(--text-heading); text-decoration: none; font-size: 0.92rem; }
+    .blog-search-results a:hover { border-color: rgba(212,168,83,0.45); }
+    .pagination { display: flex; flex-wrap: wrap; align-items: center; gap: 0.45rem 0.65rem; margin: 0 0 1.5rem; font-size: 0.88rem; }
+    .pagination a, .pagination span.current { display: inline-flex; align-items: center; justify-content: center; min-width: 2.25rem; padding: 0.45rem 0.55rem; border-radius: 8px; text-decoration: none; border: 1px solid rgba(44,24,16,0.12); color: #4A2C1A; background: rgba(255,255,255,0.85); }
+    .pagination a:hover { border-color: rgba(212,168,83,0.55); }
+    .pagination span.current { font-weight: 700; border-color: rgba(212,168,83,0.55); background: rgba(212,168,83,0.12); }
+    .blog-listing--searching .featured-card,
+    .blog-listing--searching .grid { display: none !important; }
     .sr-only{ position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
     .featured-card { display: grid; grid-template-columns: 280px 1fr; background: white; border-radius: 12px; box-shadow: 0 2px 16px rgba(44,24,16,0.09); overflow: hidden; margin-bottom: 2rem; text-decoration: none; border: 1px solid #e8e0d5; transition: box-shadow 0.2s; }
     .featured-card:hover { box-shadow: 0 6px 28px rgba(44,24,16,0.14); }
@@ -134,18 +151,24 @@ function formatDate(date) {
 </head>
 <body>
   <HeaderEn />
-  <main>
+  <main class="blog-listing-root" id="blog-listing-root">
     <div class="page-hero">
       <div class="inner">
         <p class="breadcrumb"><a href="/en/">Home</a> › Blog</p>
         <h1>Family Law Articles</h1>
-        <p class="hero-stat">{totalPosts} {totalPosts === 1 ? 'blog article' : 'blog articles'}</p>
+        <p class="hero-stat">{totalPosts} {totalPosts === 1 ? 'blog article' : 'blog articles'} · Page 1 of {totalPages}</p>
         <p class="hero-sub">Written by Miao He · Bilingual Mandarin & English · 647-930-6688</p>
         <p class="page-last-updated page-last-updated--gradient">Page last updated: {SITE_LAST_UPDATED_EN}</p>
       </div>
     </div>
     <div class="main-wrap">
-      <div class="blog-search" role="search" aria-label="Blog search">
+      <div
+        class="blog-search"
+        role="search"
+        aria-label="Blog search"
+        data-search-json="/en/blog-search.json"
+        data-list-home="/en/blog/"
+      >
         <label class="sr-only" for="blog-search-input">Search articles</label>
         <input
           id="blog-search-input"
@@ -157,6 +180,17 @@ function formatDate(date) {
         <button class="blog-search-clear" id="blog-search-clear" type="button" aria-label="Clear search">Clear</button>
       </div>
       <p class="blog-search-meta" id="blog-search-meta" aria-live="polite"></p>
+      <div class="blog-search-results" id="blog-search-results" hidden></div>
+
+      <nav class="pagination" aria-label="Blog pagination">
+        {Array.from({ length: totalPages }, (_, i) => i + 1).map((num) =>
+          num === 1 ? (
+            <span class="current" aria-current="page">{num}</span>
+          ) : (
+            <a href={`/en/blog/page/${num}/`}>{num}</a>
+          )
+        )}
+      </nav>
 
       {posts.length > 0 && (
         <a
@@ -183,7 +217,7 @@ function formatDate(date) {
         </a>
       )}
       <div class="grid" id="post-grid">
-        {posts.slice(1).map((post) => (
+        {pageSmallCards.map((post) => (
           <a
             href={`/en/blog/${post.id}/`}
             class="card"

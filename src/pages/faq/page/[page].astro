@@ -1,66 +1,107 @@
 ---
-import BaseHead from '../../components/BaseHead.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
-import { SITE_LAST_UPDATED_ZH, SITE_URL } from '../../consts';
-import { getFaqItemsForListing } from '../../data/faq';
-import { stripHtml } from '../../utils/stripHtml';
+import type { GetStaticPaths } from 'astro';
+import BaseHead from '../../../components/BaseHead.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import { SITE_LAST_UPDATED_ZH, SITE_URL } from '../../../consts';
+import { getFaqItemsForListing } from '../../../data/faq';
+import { getFaqItemsEnForListing } from '../../../data/faq-en';
+import { stripHtml } from '../../../utils/stripHtml';
 
-const faqListing = getFaqItemsForListing();
-const totalFaq = faqListing.length;
-const totalPages = Math.max(1, Math.ceil(totalFaq / 10));
-const pageItems = faqListing.slice(0, 10);
+export const getStaticPaths = (async () => {
+	const all = getFaqItemsForListing();
+	const enAll = getFaqItemsEnForListing();
+	const n = all.length;
+	const totalPages = Math.max(1, Math.ceil(n / 10));
+	const enTotalPages = Math.max(1, Math.ceil(enAll.length / 10));
+	const paths: {
+		params: { page: string };
+		props: {
+			currentPage: number;
+			pageItems: ReturnType<typeof getFaqItemsForListing>;
+			totalPages: number;
+			totalFaq: number;
+			enTotalPages: number;
+		};
+	}[] = [];
+	for (let p = 2; p <= totalPages; p++) {
+		paths.push({
+			params: { page: String(p) },
+			props: {
+				currentPage: p,
+				pageItems: all.slice((p - 1) * 10, p * 10),
+				totalPages,
+				totalFaq: n,
+				enTotalPages,
+			},
+		});
+	}
+	return paths;
+}) satisfies GetStaticPaths;
+
+const { currentPage, pageItems, totalPages, totalFaq, enTotalPages } = Astro.props;
+
+const canonicalUrl = `${SITE_URL}/faq/page/${currentPage}/`;
+const prevUrl = currentPage === 2 ? `${SITE_URL}/faq/` : `${SITE_URL}/faq/page/${currentPage - 1}/`;
+const nextUrl = currentPage < totalPages ? `${SITE_URL}/faq/page/${currentPage + 1}/` : null;
+
+const emitHreflang = currentPage <= enTotalPages;
 
 const itemListJsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'ItemList',
-  itemListElement: pageItems.map((item, i) => ({
-    '@type': 'ListItem',
-    position: i + 1,
-    url: `${SITE_URL}/faq/${item.slug}/`,
-    name: stripHtml(item.question),
-  })),
+	'@context': 'https://schema.org',
+	'@type': 'ItemList',
+	itemListElement: pageItems.map((item, i) => ({
+		'@type': 'ListItem',
+		position: i + 1,
+		url: `${SITE_URL}/faq/${item.slug}/`,
+		name: stripHtml(item.question),
+	})),
 };
 
-const canonicalUrl = `${SITE_URL}/faq/`;
-const nextUrl = totalPages > 1 ? `${SITE_URL}/faq/page/2/` : null;
+const breadcrumbJsonLd = {
+	'@context': 'https://schema.org',
+	'@type': 'BreadcrumbList',
+	itemListElement: [
+		{ '@type': 'ListItem', position: 1, name: '首页', item: `${SITE_URL}/` },
+		{ '@type': 'ListItem', position: 2, name: '常见问题', item: `${SITE_URL}/faq/` },
+		{ '@type': 'ListItem', position: 3, name: `第${currentPage}页`, item: canonicalUrl },
+	],
+};
 ---
 
 <!doctype html>
 <html lang="zh">
 <head>
   <BaseHead
-    title="离婚常见问题解答 | 多伦多华人离婚律师 何淼律师"
-    description={`何淼律师解答${totalFaq}个多伦多华人离婚最常见法律问题：离婚条件、财产分割、子女监护、抚养费、婚前协议、跨境资产等。普通话全程服务，647-930-6688。`}
+    title={`离婚常见问题解答 · 第${currentPage}页 | 多伦多华人离婚律师 何淼律师`}
+    description={`何淼律师解答多伦多华人离婚常见法律问题（第${currentPage}页，共 ${totalFaq} 题）：离婚条件、财产分割、子女监护、抚养费、婚前协议等。647-930-6688。`}
   />
-  <meta name="keywords" content="多伦多离婚费用,多伦多离婚常见问题,华人离婚FAQ,安省离婚条件,子女监护权加拿大,婚前协议安省,跨境资产离婚,离婚律师费用,无争议离婚费用多伦多,分居协议律师费,何淼律师,多伦多华人律师" />
-  <meta property="og:title" content="离婚常见问题解答 | 多伦多华人离婚律师 何淼律师" />
-  <meta property="og:description" content={`何淼律师解答${totalFaq}个多伦多华人离婚最常见法律问题。普通话全程服务，647-930-6688。`} />
+  <meta name="keywords" content="多伦多离婚费用,多伦多离婚常见问题,华人离婚FAQ,安省离婚条件,何淼律师" />
+  <meta property="og:title" content={`离婚常见问题解答 · 第${currentPage}页 | 何淼律师`} />
+  <meta property="og:description" content={`华人离婚常见问题解答第${currentPage}页，共 ${totalFaq} 题。`} />
   <meta property="og:type" content="website" />
   <meta property="og:url" content={canonicalUrl} />
   <meta property="og:image" content="https://www.miaohelaw.ca/og-image.jpg" />
+  <link rel="prev" href={prevUrl} />
   {nextUrl && <link rel="next" href={nextUrl} />}
-  <link rel="alternate" hreflang="zh" href="https://www.miaohelaw.ca/faq/" />
-  <link rel="alternate" hreflang="en" href="https://www.miaohelaw.ca/en/faq/" />
-  <link rel="alternate" hreflang="x-default" href="https://www.miaohelaw.ca/en/faq/" />
+  {emitHreflang && (
+    <>
+      <link rel="alternate" hreflang="zh" href={canonicalUrl} />
+      <link rel="alternate" hreflang="en" href={`${SITE_URL}/en/faq/page/${currentPage}/`} />
+      <link rel="alternate" hreflang="x-default" href={`${SITE_URL}/en/faq/page/${currentPage}/`} />
+    </>
+  )}
   <script type="application/ld+json" set:html={JSON.stringify(itemListJsonLd)} />
-  <script type="application/ld+json">{
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {"@type":"ListItem","position":1,"name":"首页","item":"https://www.miaohelaw.ca/"},
-      {"@type":"ListItem","position":2,"name":"常见问题","item":"https://www.miaohelaw.ca/faq/"}
-    ]
-  }</script>
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbJsonLd)} />
 </head>
 <body>
   <Header />
   <main class="faq-listing-root" id="faq-listing-root">
     <section class="page-hero">
       <div class="container">
-        <div class="breadcrumb"><a href="/">首页</a> › 常见问题</div>
+        <div class="breadcrumb"><a href="/">首页</a> › <a href="/faq/">常见问题</a> › 第 {currentPage} 页</div>
         <h1>常见问题</h1>
-        <p class="hero-stat">共 {totalFaq} 个常见问题解答 · 第 1 / {totalPages} 页</p>
+        <p class="hero-stat">共 {totalFaq} 个常见问题解答 · 第 {currentPage} / {totalPages} 页</p>
         <p class="hero-sub">点击下方问题了解详情 · 普通话全程服务 · 647-930-6688</p>
         <p class="page-last-updated page-last-updated--gradient">页面内容最后更新：{SITE_LAST_UPDATED_ZH}</p>
       </div>
@@ -89,8 +130,10 @@ const nextUrl = totalPages > 1 ? `${SITE_URL}/faq/page/2/` : null;
 
         <nav class="faq-pagination" aria-label="常见问题分页">
           {Array.from({ length: totalPages }, (_, i) => i + 1).map((num) =>
-            num === 1 ? (
+            num === currentPage ? (
               <span class="current" aria-current="page">{num}</span>
+            ) : num === 1 ? (
+              <a href="/faq/">{num}</a>
             ) : (
               <a href={`/faq/page/${num}/`}>{num}</a>
             )
