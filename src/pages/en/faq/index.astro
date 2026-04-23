@@ -101,10 +101,6 @@ const breadcrumbJsonLd = {
     .contact-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
     .btn-primary { display: inline-block; background: #D4A853; color: var(--text-heading); padding: 0.7rem 1.4rem; border-radius: 6px; font-weight: 700; font-size: 0.9rem; }
     .btn-secondary { display: inline-block; background: transparent; color: white; border: 2px solid white; padding: 0.7rem 1.4rem; border-radius: 6px; font-weight: 700; font-size: 0.9rem; }
-    .faq-hidden { display: none; }
-    .load-more-wrap { text-align: center; margin: 1.5rem 0 0; }
-    .load-more-btn { display: inline-flex; align-items: center; gap: 0.5rem; background: white; border: 2px solid #D4A853; color: var(--text-heading); padding: 0.7rem 1.8rem; border-radius: 8px; font-size: 0.92rem; font-weight: 600; cursor: pointer; font-family: Georgia, serif; transition: background 0.15s, color 0.15s; }
-    .load-more-btn:hover { background: #D4A853; color: white; }
     .faq-filter-hidden { display: none; }
 
     .sr-only{
@@ -206,19 +202,14 @@ const breadcrumbJsonLd = {
         </div>
         <p class="faq-search-meta" id="faq-search-meta" aria-live="polite"></p>
 
-        {items.map((item, i) => (
-          <div class={`faq-item${i >= 10 ? ' faq-hidden' : ''}`} data-search={`${stripHtml(item.question)} ${stripHtml(item.summary)} ${item.answers.map(stripHtml).join(' ')} ${item.keywords}`.toLowerCase()}>
+        {items.map((item) => (
+          <div class="faq-item" data-search={`${stripHtml(item.question)} ${stripHtml(item.summary)} ${item.answers.map(stripHtml).join(' ')} ${item.keywords}`.toLowerCase()}>
             <a href={`/en/faq/${item.slug}/`} class="faq-link">
               <span set:html={item.question} />
               <span class="faq-arrow">→</span>
             </a>
           </div>
         ))}
-        {items.length > 10 && (
-          <div class="load-more-wrap">
-            <button class="load-more-btn" id="faq-load-more">Load More Questions ↓</button>
-          </div>
-        )}
         <div class="contact-card">
           <div class="contact-info">
             <h2>Have More Questions?</h2>

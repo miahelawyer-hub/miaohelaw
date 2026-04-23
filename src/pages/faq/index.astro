@@ -73,9 +73,9 @@ const faqPageJsonLd = {
         </div>
         <p class="faq-search-meta" id="faq-search-meta" aria-live="polite"></p>
 
-        {faqListing.map((item, i) => (
+        {faqListing.map((item) => (
           <div
-            class={`faq-item${i >= 10 ? ' faq-hidden' : ''}`}
+            class="faq-item"
             data-search={`${stripHtml(item.question)} ${stripHtml(item.capsule)} ${stripHtml(item.summary)} ${item.answers.map(stripHtml).join(' ')} ${item.keywords}`.toLowerCase()}
           >
             <a href={`/faq/${item.slug}/`} class="faq-link">
@@ -84,11 +84,6 @@ const faqPageJsonLd = {
             </a>
           </div>
         ))}
-        {totalFaq > 10 && (
-          <div class="load-more-wrap">
-            <button class="load-more-btn" id="faq-load-more">加载更多问题 ↓</button>
-          </div>
-        )}
         <div class="contact-card">
           <div class="contact-info">
             <h2>还有其他问题？</h2>
@@ -238,17 +233,7 @@ const faqPageJsonLd = {
   .faq-link span em { font-style: italic; }
   .faq-arrow { font-size: 1.05rem; color: #9A8060; flex-shrink: 0; }
 
-  .faq-hidden { display: none; }
   .faq-filter-hidden { display: none; }
-  .load-more-wrap { text-align: center; margin: 1.5rem 0 0; }
-  .load-more-btn {
-    display: inline-flex; align-items: center; gap: 0.5rem;
-    background: white; border: 2px solid #D4A853; color: var(--text-heading);
-    padding: 0.7rem 1.8rem; border-radius: 8px; font-size: 0.92rem;
-    font-weight: 600; cursor: pointer; font-family: Georgia, serif;
-    transition: background 0.15s, color 0.15s;
-  }
-  .load-more-btn:hover { background: #D4A853; color: white; }
 
   .contact-card{background:linear-gradient(135deg,#2C1810,#4A2C1A);border-radius:12px;padding:2rem;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;margin-top:3rem}
   .contact-info h2{color:#D4A853;margin:0 0 0.5rem;font-size:1.2rem;font-weight:400}
