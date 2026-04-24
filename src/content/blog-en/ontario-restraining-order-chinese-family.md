@@ -83,7 +83,7 @@ Note the language carefully: you do not have to prove that serious harm has alre
 Evidence that can support the application includes:
 
 Medical records, police reports, and injury documentation of prior physical violence
-Threatening text messages, WeChat messages, voicemails, emails (preserve both screenshots and original files)
+Threatening text messages, WeChat messages, voicemails, emails (preserve both screenshots and original files; on the admissibility of electronic evidence in Ontario family court, see: [WeChat, Bank Screenshots & Recordings as Evidence in Ontario Family Court](/en/blog/electronic-evidence-ontario-family-court/))
 Security camera and doorbell footage
 Witness statements (neighbours, teachers, friends)
 Social media threats or posts
@@ -141,11 +141,11 @@ I tell clients: every breach, every time — record it. Date, time, what occurre
 Follow-Up Strategy: Not Just a Piece of Paper
 Many clients think that once the Restraining Order is in hand, everything is solved. It is not. In practice, a Restraining Order is usually one phase in a broader strategy. It typically needs to be paired with:
 
-Concurrent or subsequent separation / divorce proceedings — the Restraining Order only creates distance; the underlying relationship must still be resolved through a separation agreement or divorce
-A Preservation Order — to prevent the respondent from transferring, concealing, or dissipating joint assets during the litigation
+Concurrent or subsequent separation / divorce proceedings — the Restraining Order only creates distance; the underlying relationship must still be resolved through a separation agreement or divorce (see: [Separation vs. Divorce in Canada: Key Legal Differences](/en/blog/separation-vs-divorce-ontario/))
+A Preservation Order — to prevent the respondent from transferring, concealing, or dissipating joint assets during the litigation (see: [What Happens If Your Spouse Wastes or Hides Assets During a Divorce?](/en/blog/dissipation-of-assets/))
 An Interim Parenting Order — if there are children, a temporary custody arrangement must be structured alongside the restraining order
-Exclusive Possession of the Matrimonial Home — a separate order requiring the respondent to vacate
-Interim Spousal / Child Support — if you are financially dependent, temporary support must be applied for quickly
+Exclusive Possession of the Matrimonial Home — a separate order requiring the respondent to vacate (on the legal nature of the matrimonial home and property division rules, see: [Understanding Net Family Property (NFP) in Ontario](/en/blog/net-family-property-ontario/))
+Interim Spousal / Child Support — if you are financially dependent, temporary support must be applied for quickly (see: [Spousal Support and Child Support in Ontario: How Are They Calculated?](/en/blog/spousal-child-support-ontario/))
 
 These five are a package, not a menu. A Restraining Order by itself may leave the respondent in control of the house, the bank accounts, and your children's whereabouts. A complete protection plan coordinates all of them.
 
@@ -158,12 +158,12 @@ For case-specific immigration advice, consult an immigration lawyer in parallel.
 5.2 What About the Children?
 In a domestic violence context, courts apply several principles:
 
-The best interests of the child is the sole standard
+The best interests of the child is the sole standard (see: [Child Custody and Parenting Time in Ontario: A Practical Guide](/en/blog/child-custody-ontario-chinese/))
 The existence of family violence is a weighted factor in custody and access decisions
 If the respondent has been violent or threatening toward the child, the court may order no contact or supervised access only
 You do not have to wait until final judgment to protect your children — an Interim Parenting Order can be sought on motion
 
-An important warning: do not unilaterally take the children out of Ontario, especially not back to China. Even with justification, removing a child without the other parent's consent or a court order may constitute parental abduction, and will severely prejudice your position in subsequent custody litigation. The correct route is through an emergency motion, asking the court to grant you interim custody and to restrain the other party.
+An important warning: do not unilaterally take the children out of Ontario, especially not back to China. Even with justification, removing a child without the other parent's consent or a court order may constitute parental abduction, and will severely prejudice your position in subsequent custody litigation (for the legal pathway to recover a child taken to China, see: [My Child Has Been Taken to China: What Can I Do?](/en/blog/child-taken-to-china-ontario/)). The correct route is through an emergency motion, asking the court to grant you interim custody and to restrain the other party.
 5.3 "Cold Violence" and Financial Control — Without Physical Abuse, Does the Law Still Apply?
 Yes.
 Ontario family law defines family violence broadly. It is not limited to physical assault. The following all fall within the definition for Restraining Order purposes:
@@ -195,7 +195,7 @@ Accept the order and bring your own cross-claims
 5.5 Costs and Legal Aid
 The Restraining Order application itself does not require court filing fees (urgent family-law procedures are generally fee-waived), but legal fees are real.
 
-An urgent motion typically costs between CAD $3,000 and $8,000, depending on complexity
+An urgent motion typically costs between CAD $3,000 and $8,000, depending on complexity (for a full breakdown of family law legal fees in Ontario, see: [How to Choose the Best Chinese Divorce Lawyer in Toronto](/en/blog/how-to-choose-toronto-chinese-divorce-lawyer/))
 If you cannot afford a lawyer, apply to Legal Aid Ontario (1-800-668-8258) — domestic violence matters are among their priority categories
 Some legal clinics offer free domestic violence legal services
 The Assaulted Women's Helpline can refer you to appropriate free legal resources
@@ -233,5 +233,5 @@ Fem'aide (French): 1-877-336-2433
 
 About the Author
 Miao He (何淼) is a family lawyer dual-licensed in Ontario and China. Law Society of Ontario licence number: #83315K. She has represented clients in complex family-law matters including high-conflict litigation, cross-border asset disputes, and urgent motions. Her reported decisions include Yang v. Li, 2024 ONSC 4801 and Li v. Jiang, 2026 ONSC 561, both publicly available on CanLII.
-Office: Markham (serving the Greater Toronto Area). Mandarin and English. For consultation: 647-930-6688 or lawyer@hlawfirmontario.com.
+Office: Markham (serving the Greater Toronto Area). Mandarin and English. For consultation: 647-930-6688 or miao@miaohelaw.ca.
 Initial consultation: 30 minutes, CAD $220 + HST. Priority scheduling may be available for urgent domestic-violence matters.
