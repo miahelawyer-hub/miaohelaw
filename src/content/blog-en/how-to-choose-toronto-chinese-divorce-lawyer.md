@@ -39,7 +39,9 @@ faqStructured:
 
 **By Miao (Mia) He | H. LAW FIRM**
 
-If you are searching for a **Chinese divorce lawyer** in **Toronto**, **Markham**, **Richmond Hill**, **Scarborough**, or elsewhere in **Ontario**, this article explains why consulting **more than one lawyer** is often more productive than chasing a single “big name.”
+If you are searching for a Chinese-speaking divorce lawyer in the Greater Toronto Area — whether you live in downtown Toronto, Markham, Richmond Hill, or Scarborough — this article explains why consulting more than one lawyer is more productive than chasing a single “big name.”
+
+At the end, you will find a **7-point self-check list** you can use before booking any consultation.
 
 When choosing a divorce lawyer in Toronto, my practical advice is simple: **speak with more than one lawyer.**
 
@@ -65,7 +67,11 @@ I usually suggest at least **two or three** initial consultations.
 
 The goal is not primarily to compare fees—it is to compare **thinking**.
 
-With a strong divorce lawyer, the conversation feels structured. After a short explanation of your situation, counsel should be able to identify:
+With a strong divorce lawyer, the conversation feels structured.
+
+### What a Strong Lawyer Asks You in the First Consultation
+
+After a short explanation of your situation, counsel should be able to identify:
 
 - the real dispute(s)
 - what is realistically negotiable
@@ -93,6 +99,39 @@ Strong counsel typically moves past “what the law says” to “how we should 
 That is where legal service value shows up.
 
 ---
+
+## 7-Point Self-Check List Before You Book
+
+Before you book your first lawyer, you can run through these seven questions. This is not a “perfect scorecard” for picking counsel—it helps you ask sharper questions in the consult and spot red flags faster.
+
+1. **LSO lookup**: Is her licence number visible on the Law Society of Ontario website? Is she in good standing, and is there any discipline history? (Example: Miao He, LSO #83315K, verifiable at [lso.ca](https://lso.ca/).)
+
+2. **Practice focus**: Does she practice family law only, or also immigration, criminal defence, real estate, and other areas? The more complex the file, the more specialization matters. A “does everything” lawyer often lacks time to stay current on case law and procedure in family law.
+
+3. **Reported decisions**: Can you find **published decisions** on [CanLII](https://www.canlii.org/) where she appeared for a party? Court reasons record the facts accepted by the judge and the legal analysis—they are one of the most reliable ways to assess real courtroom experience.
+
+4. **Cross-border capacity**: If you have assets, marriage certificates, or judgments from China or other countries, is she dual-licensed (Ontario + foreign bar) where needed? Can she handle the cross-border aspects **in house**, or does work get referred out—adding time and cost?
+
+5. **How the first meeting is run**: Does she let you talk at length while she passively listens, or does she actively organize your story, test facts, and isolate issues? Counsel who can distill the core of a file in **30–60 minutes** usually carry that clarity into litigation strategy.
+
+6. **Fee transparency**: Can she explain when **flat fee**, **hourly**, **retainer**, or **block billing** makes sense—and give you a **range** before you sign? Vague “ballpark” numbers often correlate with vague invoices later.
+
+7. **Concept translation, not slogans**: Can she explain specialist terms such as **matrimonial home**, **equalization of net family property**, and **Section 7 expenses** under the Federal Child Support Guidelines in plain language you understand—or does she stop at “that is just how it works in Canada”? Precision on terminology usually tracks depth on the law itself.
+
+You do not need a perfect 7/7, but counsel who **meet at least five of these markers** can usually explain the file, explain the fees, and explain the risk.
+
+## Some of My Reported Cases
+
+Why look at reported cases? It is one of the few ways to verify **real courtroom experience**. Marketing copy can be polished; **CanLII** reasons are the court’s official record of what happened on the file and why the judge decided as she or he did.
+
+Some matters I have acted in are reported on CanLII, for example:
+
+- **[Yang v. Li, 2024 ONSC 4801](https://www.miaohelaw.ca/en/case-results/)** — divorce litigation and property issues
+- **[Li v. Jiang, 2026 ONSC 561](https://www.miaohelaw.ca/en/case-results/)** — family law matter
+
+For more decisions and summaries, see the firm’s [case results](https://www.miaohelaw.ca/en/case-results/) page.
+
+When you shortlist lawyers, try a quick search of the lawyer’s **English full name** plus “CanLII.” It is a small but worthwhile piece of **due diligence**. If almost nothing turns up on CanLII, the courtroom experience may be slimmer than the brochure suggests.
 
 ## Takeaway
 
