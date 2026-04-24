@@ -1,0 +1,10 @@
+---
+tag: "Ontario family law"
+---
+Ontario family law is built on two overlapping systems: the federal *Divorce Act* and Ontario's own *Family Law Act*, *Children's Law Reform Act*, and related statutes. Together they govern how marriages end, how property is divided, how children are parented after separation, and how support obligations are calculated and enforced.
+
+The framework looks clean on paper. In practice, almost every real case involves trade-offs: between speed and fairness, between litigation and negotiation, between what you are entitled to and what you can actually recover. The cases I see most often — cross-border asset disputes, high-conflict separations, complex parenting arrangements — live in the gaps between black-letter rules and real family life.
+
+The articles below walk through the most frequently misunderstood corners of Ontario family law: the separation date vs. divorce date, net family property calculations, the difference between a separation agreement and a divorce order, equalization and the matrimonial home, and more.
+
+I am Miao He, dual-licensed in Ontario and China (LSO #83315K). I practise family law full-time, based in Markham, serving clients across Ontario in Mandarin and English. For an initial consultation, call **647-930-6688**.

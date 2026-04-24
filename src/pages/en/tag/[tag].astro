@@ -1,29 +1,27 @@
 ---
 /* ============================================
- * TAG INTRO MECHANISM
+ * TAG INTRO MECHANISM (English blog tags)
  * ============================================
- * Intro 文件存放在：src/data/tag-intros/{tag 原文}.md
+ * Intro files live in: src/data/tag-intros-en/{exact tag string}.md
  *
- * 文件名必须与 tag 原文完全一致（含中文、空格等）。
- * 例如 tag "万锦家庭法律师" 对应文件
- *   src/data/tag-intros/万锦家庭法律师.md
+ * Filename must match the tag string exactly (spaces, punctuation, etc.).
  *
- * 如果某 tag 没有对应 md 文件，tag 页会正常显示
- * （只是 H1 下方不出现 intro 段落）——不会报错。
+ * If a tag has no matching .md file, the tag page still renders
+ * (only the intro block below H1 is omitted) — no build error.
  *
- * 写新文章后的 TAG CHECK 流程：
- *   1. 列出文章 tags
- *   2. 对比 src/data/tag-intros/ 现有文件
- *   3. 报告缺口，由用户决定是否为新 tag 创建 intro
+ * After publishing posts with new tags:
+ *   1. List tags used in blog-en
+ *   2. Compare with files under src/data/tag-intros-en/
+ *   3. Report gaps; create intro files when needed
  * ============================================ */
 
 import { getCollection } from 'astro:content';
-import BaseHead from '../../components/BaseHead.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
+import BaseHead from '../../../components/BaseHead.astro';
+import HeaderEn from '../../../components/HeaderEn.astro';
+import Footer from '../../../components/Footer.astro';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blog');
+  const posts = await getCollection('blog-en');
   const tagMap = new Map();
   for (const post of posts) {
     const tags = post.data.tags || [];
@@ -38,14 +36,13 @@ export async function getStaticPaths() {
   }));
 }
 
-// 动态加载 tag intro 文件（如果存在）
-const tagIntroModules = import.meta.glob('../../data/tag-intros/*.md', {
+// Load optional tag intro markdown (raw)
+const tagIntroModules = import.meta.glob('../../../data/tag-intros-en/*.md', {
   eager: true,
   query: '?raw',
   import: 'default',
 });
 
-// 极简 frontmatter 解析器（不依赖外部包）
 function parseTagIntro(raw) {
   if (!raw) return null;
   const match = raw.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
@@ -69,13 +66,10 @@ function parseTagIntro(raw) {
   return { frontmatter, body };
 }
 
-// 将 intro body 中的 Markdown 链接和换行转成 HTML
 function renderIntroBody(body) {
   if (!body) return '';
   return body
-    // Markdown 链接 [text](url) -> <a href="url">text</a>
     .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>')
-    // 双换行 -> 段落分隔
     .split(/\n\n+/)
     .map((para) => `<p>${para.replace(/\n/g, '<br>')}</p>`)
     .join('');
@@ -83,51 +77,60 @@ function renderIntroBody(body) {
 
 const { tag, posts } = Astro.props;
 
-// 查找当前 tag 是否有 intro 文件
 let tagIntro = null;
-const introKey = `../../data/tag-intros/${tag}.md`;
+const introKey = `../../../data/tag-intros-en/${tag}.md`;
 const rawContent = tagIntroModules[introKey];
 if (rawContent) {
   tagIntro = parseTagIntro(rawContent);
 }
 
 const sorted = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-const canonical = `https://www.miaohelaw.ca/tag/${tag}/`;
+const canonical = `https://www.miaohelaw.ca/en/tag/${tag}/`;
 
 function formatDate(date) {
-  return new Date(date).toLocaleDateString('zh-CN', { year: 'numeric', month: 'long', day: 'numeric' });
+  return new Date(date).toLocaleDateString('en-CA', { year: 'numeric', month: 'long', day: 'numeric' });
 }
 
 const schema = JSON.stringify([
   {
-    "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    "name": tag + " | 何淼律师 — Ontario家庭法律师",
-    "description": "何淼律师关于" + tag + "的专业文章与法律资讯，涵盖Ontario家庭法实务。",
-    "url": canonical,
-    "inLanguage": "zh-Hans"
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: tag + ' | Miao He — Ontario Family Lawyer',
+    description:
+      'Articles and legal insights on ' +
+      tag +
+      ' by Miao He — Ontario family law practice, Mandarin & English.',
+    url: canonical,
+    inLanguage: 'en-CA',
   },
   {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {"@type":"ListItem","position":1,"name":"首页","item":"https://www.miaohelaw.ca/"},
-      {"@type":"ListItem","position":2,"name":"标签","item":"https://www.miaohelaw.ca/tag/"},
-      {"@type":"ListItem","position":3,"name":tag,"item":canonical}
-    ]
-  }
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.miaohelaw.ca/' },
+      { '@type': 'ListItem', position: 2, name: 'Tags', item: 'https://www.miaohelaw.ca/en/tag/' },
+      { '@type': 'ListItem', position: 3, name: tag, item: canonical },
+    ],
+  },
 ]);
 ---
 
 <!doctype html>
-<html lang="zh">
+<html lang="en">
 <head>
   <BaseHead
-    title={tag + " | 何淼律师 Miao He — Ontario家庭法律师"}
-    description={"何淼律师关于" + tag + "的专业文章与法律资讯。Ontario家庭法，普通话全程服务，647-930-6688。"}
+    title={tag + ' | Miao He — Ontario Family Lawyer'}
+    description={
+      'Articles and legal insights on ' +
+      tag +
+      ' by Miao He. Ontario family law, Mandarin & English, 647-930-6688.'
+    }
   />
-  <meta name="keywords" content={tag + ",何淼律师,Miao He,Ontario家庭法,华人离婚律师,LSO 83315K"} />
-  <meta property="og:title" content={tag + " | 何淼律师"} />
+  <meta
+    name="keywords"
+    content={tag + ',Miao He,Ontario family law,Chinese family lawyer,dual-licensed lawyer,LSO 83315K'}
+  />
+  <meta property="og:title" content={tag + ' | Miao He — Ontario Family Lawyer'} />
   <meta property="og:type" content="website" />
   <script type="application/ld+json" set:html={schema}></script>
   <style>
@@ -184,7 +187,7 @@ const schema = JSON.stringify([
   </style>
 </head>
 <body>
-  <Header />
+  <HeaderEn />
   <main>
     <div class="hero">
       <h1>{tag}</h1>
@@ -193,14 +196,14 @@ const schema = JSON.stringify([
           <div set:html={renderIntroBody(tagIntro.body)}></div>
         </div>
       )}
-      <p>何淼律师 · 普通话全程服务 · 647-930-6688</p>
+      <p>Miao He · Mandarin & English · 647-930-6688</p>
     </div>
     <div class="container">
-      <a href="/blog/" class="back-link">← 返回博客文章</a>
+      <a href="/en/blog/" class="back-link">← Back to Blog</a>
       <ul class="post-list">
         {sorted.map((post, i) => (
           <li class="post-item">
-            <a href={`/blog/${post.id}/`} class="post-link">
+            <a href={`/en/blog/${post.id}/`} class="post-link">
               <span class="post-num">{String(i + 1).padStart(2, '0')}</span>
               <div class="post-body">
                 <p class="post-title">{post.data.title}</p>
@@ -212,11 +215,11 @@ const schema = JSON.stringify([
         ))}
       </ul>
       <div class="cta-box">
-        <h2>预约初次咨询</h2>
-        <p>30分钟 · $220+HST · 普通话 · Markham · 服务Ontario全省</p>
+        <h2>Book Initial Consultation</h2>
+        <p>30 min · $220+HST · Mandarin & English · Markham · Serving Ontario</p>
         <div class="cta-btns">
           <a href="tel:6479306688" class="btn-gold">📞 647-930-6688</a>
-          <a href="/contact" class="btn-outline">在线预约</a>
+          <a href="/en/contact" class="btn-outline">Contact</a>
         </div>
       </div>
     </div>

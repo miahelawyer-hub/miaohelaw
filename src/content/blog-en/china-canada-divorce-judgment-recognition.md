@@ -10,7 +10,7 @@ tags:
   - "Cross-border Divorce"
   - "China–Canada Recognition"
   - "Jurisdiction Strategy"
-  - "Dual-Licensed Lawyer"
+  - "dual-licensed lawyer"
   - "Chinese family lawyer"
   - "Miao He"
 relatedReading:
