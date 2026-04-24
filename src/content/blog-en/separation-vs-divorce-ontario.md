@@ -9,8 +9,8 @@ keywords: "separation vs divorce Canada,separation under one roof Ontario,90-day
 tags:
   - "Separation vs Divorce"
   - "Separation Date"
-  - "Ontario Family Law"
-  - "Chinese Family Lawyer"
+  - "Ontario family law"
+  - "Chinese family lawyer"
   - "Miao He"
 relatedReading:
   - slug: common-law-vs-divorce-ontario

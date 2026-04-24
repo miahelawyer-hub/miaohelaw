@@ -11,7 +11,7 @@ tags:
   - "China–Canada Recognition"
   - "Jurisdiction Strategy"
   - "Dual-Licensed Lawyer"
-  - "Chinese Family Lawyer"
+  - "Chinese family lawyer"
   - "Miao He"
 relatedReading:
   - slug: cross-border-assets-divorce-ontario

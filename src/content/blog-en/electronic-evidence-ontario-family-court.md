@@ -11,7 +11,7 @@ tags:
   - "WeChat Evidence"
   - "Ontario Family Court"
   - "China Canada Evidence Rules"
-  - "Chinese Family Lawyer"
+  - "Chinese family lawyer"
   - "Miao He"
 relatedReading:
   - slug: chinese-divorce-property-gift-loan-trust-ontario
