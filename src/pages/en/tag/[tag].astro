@@ -84,6 +84,9 @@ if (rawContent) {
   tagIntro = parseTagIntro(rawContent);
 }
 
+// Index only when this tag is “rescued”: has an intro AND has 2+ posts.
+const isRescuedTag = Boolean(tagIntro) && posts.length >= 2;
+
 const sorted = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 const canonical = `https://www.miaohelaw.ca/en/tag/${tag}/`;
 
@@ -126,7 +129,7 @@ const schema = JSON.stringify([
       ' by Miao He. Ontario family law, Mandarin & English, 647-930-6688.'
     }
   />
-  {posts.length < 2 && <meta name="robots" content="noindex, nofollow" />}
+  {!isRescuedTag && <meta name="robots" content="noindex, follow" />}
   <meta
     name="keywords"
     content={tag + ',Miao He,Ontario family law,Chinese family lawyer,dual-licensed lawyer,LSO 83315K'}
