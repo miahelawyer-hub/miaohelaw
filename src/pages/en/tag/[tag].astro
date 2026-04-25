@@ -126,6 +126,7 @@ const schema = JSON.stringify([
       ' by Miao He. Ontario family law, Mandarin & English, 647-930-6688.'
     }
   />
+  {posts.length < 2 && <meta name="robots" content="noindex, nofollow" />}
   <meta
     name="keywords"
     content={tag + ',Miao He,Ontario family law,Chinese family lawyer,dual-licensed lawyer,LSO 83315K'}

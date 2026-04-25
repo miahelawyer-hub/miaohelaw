@@ -126,6 +126,7 @@ const schema = JSON.stringify([
     title={tag + " | 何淼律师 Miao He — Ontario家庭法律师"}
     description={"何淼律师关于" + tag + "的专业文章与法律资讯。Ontario家庭法，普通话全程服务，647-930-6688。"}
   />
+  {posts.length < 2 && <meta name="robots" content="noindex, nofollow" />}
   <meta name="keywords" content={tag + ",何淼律师,Miao He,Ontario家庭法,华人离婚律师,LSO 83315K"} />
   <meta property="og:title" content={tag + " | 何淼律师"} />
   <meta property="og:type" content="website" />
