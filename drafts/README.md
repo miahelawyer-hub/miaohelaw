@@ -1,19 +1,24 @@
-# 博客草稿（本地预览）
+# 博客草稿与正式预览
 
-这里的 `.md` **不会**被 Astro 的 `blog` 集合加载，因此**不会生成正式页面**，适合你和团队先审稿。
+## 用真实站点 UI 预览（推荐）
 
-## 方式一：用脚本生成浏览器预览（推荐）
+带 `draft: true` 的中文文章放在 `src/content/blog/` 后：
 
-在项目根目录执行：
+1. 在项目根目录运行：`npm run dev`
+2. 浏览器打开（端口以终端显示为准，默认多为 `4321`）：  
+   **http://localhost:4321/blog/no-fault-divorce-domestic-violence-ontario/**
+
+页面顶部会出现**黄色「草稿预览」横幅**，布局、侧边栏、标签胶囊等与线上博文一致。  
+`draft: true` 的文章**不会**进入生产构建：不会出现在 `/blog/` 列表、RSS、站内搜索 JSON、首页最近文章、tag 聚合计数里。
+
+**正式发布前**：在对应 `.md` 的 frontmatter 里**删除** `draft: true`（或改为 `draft: false`），再 `npm run build` 部署。
+
+## Markdown 转静态 HTML（可选）
+
+若只需要离线阅读、不看站点布局：
 
 ```bash
-node scripts/render-blog-draft.mjs drafts/<你的草稿>.md
+node scripts/render-blog-draft.mjs path/to/your-draft.md
 ```
 
-会生成同名的 `*.preview.html`，用浏览器打开即可（双击或在终端 `open drafts/<草稿>.preview.html`）。
-
-首次运行可能需要联网下载 `marked`（`npx` 缓存后会更快）。
-
-## 方式二：在编辑器里直接预览 Markdown
-
-在 Cursor / VS Code 中打开 `drafts/*.md`，使用内置 Markdown 预览（macOS 常用快捷键：`Cmd + Shift + V`）。
+会生成同名的 `*.preview.html`（需本机可执行 `npx marked`）。

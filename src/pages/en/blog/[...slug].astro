@@ -1,10 +1,11 @@
 ---
 import { type CollectionEntry, getCollection, render } from "astro:content";
 import BlogPostEn from "../../../layouts/BlogPostEn.astro";
+import { isBlogEnPostRoutable } from "../../../lib/blogPublished";
 
 export async function getStaticPaths() {
   const posts = await getCollection("blog-en");
-  return posts.map((post) => ({
+  return posts.filter(isBlogEnPostRoutable).map((post) => ({
     params: { slug: post.id },
     props: post,
   }));

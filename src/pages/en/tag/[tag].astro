@@ -16,12 +16,13 @@
  * ============================================ */
 
 import { getCollection } from 'astro:content';
+import { isPublishedBlogEnPost } from '../../../lib/blogPublished';
 import BaseHead from '../../../components/BaseHead.astro';
 import HeaderEn from '../../../components/HeaderEn.astro';
 import Footer from '../../../components/Footer.astro';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blog-en');
+  const posts = (await getCollection('blog-en')).filter(isPublishedBlogEnPost);
   const tagMap = new Map();
   for (const post of posts) {
     const tags = post.data.tags || [];

@@ -36,6 +36,8 @@ const blogSchema = ({ image }) =>
         })
       )
       .optional(),
+    /** When true: omitted from prod RSS/listings/tag counts; still viewable under `astro dev`. */
+    draft: z.boolean().optional(),
   });
 
 const blog = defineCollection({

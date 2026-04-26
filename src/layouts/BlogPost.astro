@@ -2,6 +2,7 @@
 import { Image } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
 import { getCollection } from 'astro:content';
+import { isPublishedBlogPost } from '../lib/blogPublished';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
@@ -23,6 +24,7 @@ const {
   relatedReading,
   pairedArticlePath,
   faqStructured,
+  draft,
 } = Astro.props;
 
 const faqPageMainEntity =
@@ -58,9 +60,10 @@ function absoluteUrl(path: string) {
 // 获取其他博文用于侧边栏；全量用于解析延伸阅读 slug → 标题
 const allBlogEntries = await getCollection('blog');
 const allPosts = allBlogEntries
-  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
-  .filter((p) => `/blog/${p.id}` !== pathCore && `/blog/${p.id}/` !== pathname)
-  .slice(0, 4);
+	.filter(isPublishedBlogPost)
+	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+	.filter((p) => `/blog/${p.id}` !== pathCore && `/blog/${p.id}/` !== pathname)
+	.slice(0, 4);
 
 function titleForBlogSlug(slug: string): string {
   return allBlogEntries.find((p) => p.id === slug)?.data.title ?? slug;
@@ -207,6 +210,7 @@ const structuredDataJson = JSON.stringify([
 <html lang="zh">
   <head>
     <BaseHead title={title} description={description} ogType="article" />
+    {draft === true && <meta name="robots" content="noindex, nofollow" />}
     {keywords && <meta name="keywords" content={keywords} />}
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
@@ -747,12 +751,29 @@ const structuredDataJson = JSON.stringify([
 		background: #D4A853;
 		color: white;
 	}
+	.draft-preview-banner {
+		margin: 0;
+		padding: 0.75rem 1.25rem;
+		background: #fff8e6;
+		border-bottom: 1px solid #e8d9a8;
+		color: #4a3b10;
+		font-size: 0.92rem;
+		text-align: center;
+	}
+	.draft-preview-banner code {
+		font-size: 0.85em;
+	}
 </style>
   </head>
   <body>
     <Header />
     <main>
       <article>
+        {draft === true && (
+          <p class="draft-preview-banner">
+            <strong>草稿预览</strong>：此文章带有 <code>draft: true</code>，仅在本地开发服务器中可访问；生产构建不会生成此 URL。确认排版后删除该字段即可正式发布。
+          </p>
+        )}
         <!-- Hero -->
         <div class="post-hero">
           <p class="breadcrumb">

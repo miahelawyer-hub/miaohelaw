@@ -4,10 +4,11 @@ import BaseHead from '../../../components/BaseHead.astro';
 import HeaderEn from '../../../components/HeaderEn.astro';
 import Footer from '../../../components/Footer.astro';
 import { SITE_LAST_UPDATED_EN, SITE_URL } from '../../../consts';
+import { isPublishedBlogEnPost } from '../../../lib/blogPublished';
 
-const posts = (await getCollection('blog-en')).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-);
+const posts = (await getCollection('blog-en'))
+  .filter(isPublishedBlogEnPost)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 const totalPosts = posts.length;
 const totalPages = Math.max(1, Math.ceil(totalPosts / 10));
 const pageSmallCards = posts.slice(1, 10);

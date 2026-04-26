@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
+import { isPublishedBlogEnPost } from '../lib/blogPublished';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
@@ -22,6 +23,7 @@ type Props = {
   relatedReading?: RelatedReadingItem[];
   pairedArticlePath?: string;
   faqStructured?: FaqStructuredItem[];
+  draft?: boolean;
 };
 
 const {
@@ -35,6 +37,7 @@ const {
   relatedReading,
   pairedArticlePath,
   faqStructured,
+  draft,
 } = Astro.props;
 
 const faqPageMainEntity =
@@ -202,6 +205,7 @@ function formatDate(date: Date) {
 
 const allBlogEntriesEn = await getCollection('blog-en');
 const allPosts = allBlogEntriesEn
+  .filter(isPublishedBlogEnPost)
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
   .filter((p) => `/en/blog/${p.id}` !== pathCore && `/en/blog/${p.id}/` !== pathname)
   .slice(0, 4);
@@ -217,6 +221,7 @@ const defaultRelatedIntroEn =
 <html lang="en">
   <head>
     <BaseHead title={title} description={description} ogType="article" />
+    {draft === true && <meta name="robots" content="noindex, nofollow" />}
     {keywords && <meta name="keywords" content={keywords} />}
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
@@ -559,12 +564,29 @@ const defaultRelatedIntroEn =
       }
       @media (max-width: 900px) { .post-layout { grid-template-columns: 1fr; } .contact-card { display: none; } }
       @media (max-width: 600px) { .post-hero { padding: 2rem 1rem 1.5rem; } .post-hero h1 { font-size: 1.35rem; } .prose { padding: 1.5rem 1.1rem; font-size: 0.96rem; line-height: 1.95; } .post-layout { padding: 1.5rem 1rem; gap: 1.5rem; } }
+      .draft-preview-banner {
+        margin: 0;
+        padding: 0.75rem 1.25rem;
+        background: #fff8e6;
+        border-bottom: 1px solid #e8d9a8;
+        color: #4a3b10;
+        font-size: 0.92rem;
+        text-align: center;
+      }
+      .draft-preview-banner code {
+        font-size: 0.85em;
+      }
     </style>
   </head>
   <body>
     <HeaderEn />
     <main>
       <article>
+        {draft === true && (
+          <p class="draft-preview-banner">
+            <strong>Draft preview</strong>: this post has <code>draft: true</code>. It is only available in the local dev server and is omitted from production builds. Remove the flag to publish.
+          </p>
+        )}
         <div class="post-hero">
           <p class="breadcrumb">
             <a href="/en/">Home</a> &rsaquo;

@@ -4,10 +4,12 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { getCollection } from 'astro:content';
 import { videoItems, type VideoItem } from '../data/videos';
+import { isPublishedBlogPost } from '../lib/blogPublished';
 
-const posts = (await getCollection('blog')).sort(
-	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-).slice(0, 3);
+const posts = (await getCollection('blog'))
+	.filter(isPublishedBlogPost)
+	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+	.slice(0, 3);
 function formatBlogDate(date: Date) {
 	return new Date(date).toLocaleDateString('zh-CN', { year: 'numeric', month: 'long', day: 'numeric' });
 }
