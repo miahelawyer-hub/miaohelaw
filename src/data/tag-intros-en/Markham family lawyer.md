@@ -4,6 +4,7 @@ title: Markham family lawyer in Ontario: Practical Guide & Legal Insights | Miao
 h2: Markham cases aren’t “standard” — handle cross-border assets and cultural realities without costly mistakes
 description: A practical hub for Markham clients dealing with Ontario separation and divorce where the real issues include cross-border assets, parent down payments, and documentation that must hold up in court.
 schemaName: Markham family lawyer | Miao He — Ontario Family Lawyer
+schemaDescription: This CollectionPage indexes articles on Ontario family-law practice oriented to Markham and York Region, including Superior Court procedure, financial disclosure, equalization, matrimonial-home claims, and cross-border asset issues common in the local Chinese-Canadian client population.
 ---
 Markham is home to one of the largest Chinese-Canadian communities in Ontario, and the family law issues my clients bring me here are distinct from what a downtown Toronto practice typically sees. Many involve cross-border assets — property in China, parent contributions to Canadian down payments, joint accounts split across two countries. Many involve cultural expectations that do not map neatly onto Ontario's family law framework.
 

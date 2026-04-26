@@ -1,6 +1,6 @@
 ---
 /* ============================================
- * TAG INTRO MECHANISM
+ * TAG INTRO MECHANISM（中文 blog /tag/[tag]）
  * ============================================
  * Intro 文件存放在：src/data/tag-intros/{tag 原文}.md
  *
@@ -8,13 +8,23 @@
  * 例如 tag "万锦家庭法律师" 对应文件
  *   src/data/tag-intros/万锦家庭法律师.md
  *
+ * 每个 intro 文件的 frontmatter 必须包含以下五个核心字段（中英通用模板）：
+ *   title            吸引点击的页面标题（<title> / OG 等）
+ *   h2               页面顶部专业导语（hero 副标题）
+ *   description      搜索结果用的 meta 摘要
+ *   schemaName       CollectionPage 等结构化数据的标题（更正式）
+ *   schemaDescription 结构化数据的详细描述（更偏教义/底层信息）
+ *
+ * “拯救”聚合页（可索引 + ItemList）：该 tag 下已发布中文博文数 ≥ 2，且存在上述 intro 文件。
+ * 否则：noindex,follow（仍显示文章列表）。
+ *
  * 如果某 tag 没有对应 md 文件，tag 页会正常显示
  * （只是 H1 下方不出现 intro 段落）——不会报错。
  *
  * 写新文章后的 TAG CHECK 流程：
  *   1. 列出文章 tags
  *   2. 对比 src/data/tag-intros/ 现有文件
- *   3. 报告缺口，由用户决定是否为新 tag 创建 intro
+ *   3. 报告缺口；若某 tag 已达 2+ 篇，应补齐 intro 及五字段
  * ============================================ */
 
 import { getCollection } from 'astro:content';

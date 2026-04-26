@@ -4,6 +4,7 @@ title: Ontario family law: Practical Guide & Legal Insights | Miao He
 h2: Know the rules before you negotiate — a clear guide that helps you avoid the most expensive misunderstandings
 description: A comprehensive hub explaining Ontario family law across the Divorce Act and Ontario statutes, with practical guidance on separation, property division, parenting, support, and the trade-offs that drive cost and timelines.
 schemaName: Ontario family law | Miao He — Ontario Family Lawyer
+schemaDescription: This CollectionPage aggregates doctrinal and procedural articles on the interaction of the Divorce Act, Family Law Act, Children’s Law Reform Act, and supporting regulations as applied in Ontario family courts, including separation, equalization, parenting, and support obligations.
 ---
 Ontario family law is built on two overlapping systems: the federal *Divorce Act* and Ontario's own *Family Law Act*, *Children's Law Reform Act*, and related statutes. Together they govern how marriages end, how property is divided, how children are parented after separation, and how support obligations are calculated and enforced.
 

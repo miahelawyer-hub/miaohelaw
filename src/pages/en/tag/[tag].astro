@@ -1,10 +1,20 @@
 ---
 /* ============================================
- * TAG INTRO MECHANISM (English blog tags)
+ * TAG INTRO MECHANISM（英文 blog-en /en/tag/[tag]）
  * ============================================
  * Intro files live in: src/data/tag-intros-en/{exact tag string}.md
  *
  * Filename must match the tag string exactly (spaces, punctuation, etc.).
+ *
+ * Each intro file’s frontmatter MUST include these five fields (same template as ZH):
+ *   title             Click-oriented page title
+ *   h2                Professional hero subtitle
+ *   description       Meta description for SERPs
+ *   schemaName        Formal name for JSON-LD CollectionPage
+ *   schemaDescription Longer, more doctrinal/technical description for structured data
+ *
+ * English “rescued” hub (indexable + ItemList): published blog-en posts with this tag ≥ 2
+ * AND this intro file exists. Otherwise: noindex,follow (list still renders).
  *
  * If a tag has no matching .md file, the tag page still renders
  * (only the intro block below H1 is omitted) — no build error.
@@ -12,7 +22,7 @@
  * After publishing posts with new tags:
  *   1. List tags used in blog-en
  *   2. Compare with files under src/data/tag-intros-en/
- *   3. Report gaps; create intro files when needed
+ *   3. Report gaps; when a tag reaches 2+ posts, add/complete the intro with all five fields
  * ============================================ */
 
 import { getCollection } from 'astro:content';
