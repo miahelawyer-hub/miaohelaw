@@ -9,6 +9,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "draft:preview": "node scripts/render-blog-draft.mjs",
     "astro": "astro",
     "generate-favicons": "node scripts/generate-favicons.mjs"
   },
