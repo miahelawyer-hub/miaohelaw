@@ -112,9 +112,10 @@ export default defineConfig({
 			},
 		}),
 	],
-	// Dev: explicit IPv4 avoids some browsers/OS resolving localhost to ::1
+	// Dev: listen on all local addresses so both http://127.0.0.1:4321/ and
+	// http://localhost:4321/ work (some OSes resolve localhost to IPv6 ::1 only).
 	server: {
 		port: 4321,
-		host: '127.0.0.1',
+		host: true,
 	},
 });
