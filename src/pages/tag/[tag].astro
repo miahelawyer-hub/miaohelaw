@@ -97,28 +97,56 @@ const isRescuedTag = Boolean(tagIntro) && posts.length >= 2;
 const sorted = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 const canonical = `https://www.miaohelaw.ca/tag/${tag}/`;
 
+const introFm = tagIntro?.frontmatter ?? {};
+const pageTitle =
+  introFm.title ?? `${tag} 专题 | 何淼律师 — Ontario家庭法律师`;
+const pageH2 = introFm.h2 ?? null;
+const pageDescription =
+  introFm.description ??
+  `何淼律师关于${tag}的专业文章与法律资讯。Ontario家庭法，普通话全程服务，647-930-6688。`;
+const schemaName =
+  introFm.schemaName ?? `${tag} | 何淼律师 — Ontario家庭法律师`;
+const schemaDescription =
+  introFm.schemaDescription ??
+  `何淼律师关于${tag}的专业文章与法律资讯，涵盖Ontario家庭法实务。`;
+
 function formatDate(date) {
   return new Date(date).toLocaleDateString('zh-CN', { year: 'numeric', month: 'long', day: 'numeric' });
 }
 
+const itemList =
+  isRescuedTag
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        itemListElement: sorted.map((post, i) => ({
+          '@type': 'ListItem',
+          position: i + 1,
+          url: new URL(`/blog/${post.id}/`, Astro.site).href,
+          name: post.data.title,
+        })),
+      }
+    : null;
+
 const schema = JSON.stringify([
   {
-    "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    "name": tag + " | 何淼律师 — Ontario家庭法律师",
-    "description": "何淼律师关于" + tag + "的专业文章与法律资讯，涵盖Ontario家庭法实务。",
-    "url": canonical,
-    "inLanguage": "zh-Hans"
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: schemaName,
+    description: schemaDescription,
+    url: canonical,
+    inLanguage: 'zh-Hans',
   },
   {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {"@type":"ListItem","position":1,"name":"首页","item":"https://www.miaohelaw.ca/"},
-      {"@type":"ListItem","position":2,"name":"标签","item":"https://www.miaohelaw.ca/tag/"},
-      {"@type":"ListItem","position":3,"name":tag,"item":canonical}
-    ]
-  }
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: '首页', item: 'https://www.miaohelaw.ca/' },
+      { '@type': 'ListItem', position: 2, name: '标签', item: 'https://www.miaohelaw.ca/tag/' },
+      { '@type': 'ListItem', position: 3, name: tag, item: canonical },
+    ],
+  },
+  ...(itemList ? [itemList] : []),
 ]);
 ---
 
@@ -126,8 +154,8 @@ const schema = JSON.stringify([
 <html lang="zh">
 <head>
   <BaseHead
-    title={tag + " | 何淼律师 Miao He — Ontario家庭法律师"}
-    description={"何淼律师关于" + tag + "的专业文章与法律资讯。Ontario家庭法，普通话全程服务，647-930-6688。"}
+    title={pageTitle}
+    description={pageDescription}
   />
   {!isRescuedTag && <meta name="robots" content="noindex, follow" />}
   <meta name="keywords" content={tag + ",何淼律师,Miao He,Ontario家庭法,华人离婚律师,LSO 83315K"} />
@@ -192,6 +220,7 @@ const schema = JSON.stringify([
   <main>
     <div class="hero">
       <h1>{tag}</h1>
+      {pageH2 && <h2>{pageH2}</h2>}
       {tagIntro && (
         <div class="tag-intro">
           <div set:html={renderIntroBody(tagIntro.body)}></div>

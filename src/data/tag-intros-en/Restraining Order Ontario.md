@@ -1,5 +1,9 @@
 ---
 tag: "Restraining Order Ontario"
+title: Restraining Order Ontario: Practical Guide & Legal Insights | Miao He
+h2: Feeling unsafe at home? Learn how restraining orders work, what evidence matters, and how protection is obtained in family court
+description: A practical guide to Ontario restraining orders in family law: who can apply, what “reasonable fear” means, what evidence to prepare, and what happens after an order is issued in real domestic-conflict situations.
+schemaName: Restraining Order Ontario | Miao He — Ontario Family Lawyer
 ---
 A Restraining Order in Ontario is a civil court order issued under section 46 of the *Family Law Act* or section 35 of the *Children's Law Reform Act*. It prohibits a specified person — usually a current or former spouse, partner, or co-parent — from contacting, approaching, or harassing the applicant or their children.
 

@@ -90,19 +90,41 @@ const isRescuedTag = Boolean(tagIntro) && posts.length >= 2;
 const sorted = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 const canonical = `https://www.miaohelaw.ca/en/tag/${tag}/`;
 
+const introFm = tagIntro?.frontmatter ?? {};
+const pageTitle = introFm.title ?? `${tag} Hub | Miao He — Ontario Family Lawyer`;
+const pageH2 = introFm.h2 ?? null;
+const pageDescription =
+  introFm.description ??
+  `Articles and legal insights on ${tag} by Miao He. Ontario family law, Mandarin & English, 647-930-6688.`;
+const schemaName = introFm.schemaName ?? `${tag} | Miao He — Ontario Family Lawyer`;
+const schemaDescription =
+  introFm.schemaDescription ??
+  `Articles and legal insights on ${tag} by Miao He — Ontario family law practice, Mandarin & English.`;
+
 function formatDate(date) {
   return new Date(date).toLocaleDateString('en-CA', { year: 'numeric', month: 'long', day: 'numeric' });
 }
+
+const itemList =
+  isRescuedTag
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        itemListElement: sorted.map((post, i) => ({
+          '@type': 'ListItem',
+          position: i + 1,
+          url: new URL(`/en/blog/${post.id}/`, Astro.site).href,
+          name: post.data.title,
+        })),
+      }
+    : null;
 
 const schema = JSON.stringify([
   {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
-    name: tag + ' | Miao He — Ontario Family Lawyer',
-    description:
-      'Articles and legal insights on ' +
-      tag +
-      ' by Miao He — Ontario family law practice, Mandarin & English.',
+    name: schemaName,
+    description: schemaDescription,
     url: canonical,
     inLanguage: 'en-CA',
   },
@@ -115,6 +137,7 @@ const schema = JSON.stringify([
       { '@type': 'ListItem', position: 3, name: tag, item: canonical },
     ],
   },
+  ...(itemList ? [itemList] : []),
 ]);
 ---
 
@@ -122,12 +145,8 @@ const schema = JSON.stringify([
 <html lang="en">
 <head>
   <BaseHead
-    title={tag + ' | Miao He — Ontario Family Lawyer'}
-    description={
-      'Articles and legal insights on ' +
-      tag +
-      ' by Miao He. Ontario family law, Mandarin & English, 647-930-6688.'
-    }
+    title={pageTitle}
+    description={pageDescription}
   />
   {!isRescuedTag && <meta name="robots" content="noindex, follow" />}
   <meta
@@ -195,6 +214,7 @@ const schema = JSON.stringify([
   <main>
     <div class="hero">
       <h1>{tag}</h1>
+      {pageH2 && <h2>{pageH2}</h2>}
       {tagIntro && (
         <div class="tag-intro">
           <div set:html={renderIntroBody(tagIntro.body)}></div>

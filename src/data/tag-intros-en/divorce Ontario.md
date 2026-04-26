@@ -1,5 +1,9 @@
 ---
 tag: "divorce Ontario"
+title: Divorce Ontario: Practical Guide & Legal Insights | Miao He
+h2: Divorce outcomes turn on dates, documents, and disclosure — understand the process so your case doesn’t drag on for years
+description: A practical hub on divorce in Ontario covering property division, parenting, support, disclosure, procedure, and enforcement — including what to do when the other party refuses to cooperate.
+schemaName: Divorce Ontario | Miao He — Ontario Family Lawyer
 ---
 Divorce in Ontario is governed by the federal *Divorce Act*, but most of what actually happens in a divorce — property division, parenting arrangements, support, evidence, enforcement — is shaped by provincial legislation and the rules of the Ontario Superior Court of Justice.
 
