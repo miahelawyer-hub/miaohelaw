@@ -1213,6 +1213,34 @@ export const faqItems: FaqItem[] = [
       '警方临时不准接触与家事法庭民事限制令不等于刑事定罪；是否影响工签、枫叶卡等须视后续刑事程序与个案而定，并非必然吊销签证。',
     pairedFaqPath: '/en/faq/restraining-order-immigration-pr-work-permit/',
   },
+  {
+    slug: 'toronto-jinji-xianzhiling-zhouqi',
+    capsule:
+      '先分清两条路：警方在刑事相关程序里作出的临时不准接触（non-contact order，有时当场）与家事法庭依《家庭法》签发的民事 Restraining Order（常走 urgent motion，力争约两周内首轮聆讯，视法院排期与材料而定）。',
+    question: '在多伦多申请「紧急限制令」，通常需要多长时间能拿到？',
+    summary:
+      '实务上常把两类措施都口语化成「限制令」，但<strong>路径不同、时间也不同</strong>：<strong>（1）</strong>一方报警并说明人身安全或家暴等风险后，警方可能在调查/释放等环节<strong>很快</strong>作出<strong>临时不准接触（non-contact order）</strong>类安排，以<strong>先稳住接触边界</strong>；这不等于家事法法庭已签发民事 Restraining Order。<strong>（2）</strong>若不走或不仅走刑事路径，而向<strong>家事法庭</strong>申请民事 Restraining Order，律师通常会通过<strong>紧急动议（urgent motion）</strong>争取排期；在多伦多地区常见经验是<strong>力争在约两周内</strong>排到<strong>首轮聆讯</strong>，法官审查证据后如认为符合法定条件，才会签发命令。<strong>具体排期因法院、分院、案件量与材料完备度而异</strong>，「两周」并非法律上的硬性保证。',
+    answers: [
+      '若您指的是<strong>报警后警方作出的临时不准接触（non-contact order）</strong>：在说明存在即时安全风险或家暴等情形时，警方有可能在<strong>接案后相当短的时间内</strong>对接触方式作出限制，以<strong>先降低当下冲突</strong>。这类措施往往依附于<strong>刑事调查/释放条件</strong>等框架，与家事法庭签发的<strong>民事 Restraining Order</strong>不是同一份「纸」。',
+      '若您指的是在<strong>家事法庭</strong>申请<strong>民事 Restraining Order</strong>：实务上多通过<strong>urgent motion（紧急动议）</strong>推进。何律师在多伦多/大多地区案件中的常见经验是：<strong>力争约两周内</strong>获得<strong>首轮开庭/聆讯</strong>的机会，但<strong>实际排期会因法院与季节、案件积压、是否材料齐全、对方是否到庭等因素浮动</strong>。',
+      '无论哪条路径，<strong>能否「拿到」以及「拿到什么强度」的命令</strong>，最终都取决于<strong>事实、证据与法律标准</strong>（例如合理恐惧、是否适合单方面申请等），而不是单纯「越快越好」的口号。',
+    ],
+    details: [
+      '先把概念对齐：英文语境里有时会把 <strong>restraining order</strong> 与 <strong>non-contact order</strong> 混着说，但在安省语境下，您更需要区分的是——<strong>警方在刑事相关程序中作出的临时接触限制</strong>，与<strong>家事法官依据《家庭法》（FLA）或《儿童法改革法》（CLRA）签发的民事 Restraining Order</strong>。两者<strong>申请主体、程序、证据标准与后续救济</strong>都不同。',
+      '在<strong>警方路径</strong>上，若一方报警并陈述存在被跟踪、骚扰、暴力或升级风险，警方可能基于当时掌握的信息，在调查、逮捕或释放等环节<strong>较快</strong>采取<strong>限制双方接触</strong>的安排（您口语中说的 non-contact order）。其首要目的通常是<strong>即时风险控制</strong>，并不自动等同于「家庭法层面的一切问题都已终局解决」。',
+      '在<strong>家事法庭路径</strong>上，律师通常会准备宣誓书与证据包，通过 <strong>urgent motion</strong> 说明为何需要<strong>紧急听审</strong>以及为何符合<strong>单方面（ex parte）或短期听审</strong>等程序条件（以个案策略为准）。在<strong>多伦多及大多地区</strong>，常见目标是<strong>争取约两周内的首轮聆讯窗口</strong>；但<strong>法院排期并非律师可单方承诺</strong>，极端繁忙时期也可能更长。',
+      '聆讯后，法官只有在认为<strong>证据与法律要件</strong>满足时，才会签发或续签 Restraining Order，并可能同时处理<strong>临时育儿安排、婚姻住房排他性居住</strong>等联动议题（视申请内容而定）。更完整的程序与证据清单，见<a href="/blog/ontario-restraining-order-chinese-family/">《在安省申请 Restraining Order…》</a>及<a href="/tag/Restraining%20Order%20Ontario/">专题标签页</a>。',
+      '若您同时关心「限制令与对方移民身份」的交叉问题，可先阅读本站<a href="/faq/xianzhiling-yimin-gongqian-fengye/">上一则常见问答</a>。',
+      '如需评估您是否符合<strong>紧急动议</strong>、材料如何组织、以及多伦多/新市等<strong>具体分院排期</strong>的现实区间，欢迎致电647-930-6688预约何淼律师咨询。',
+    ],
+    keywords:
+      '多伦多紧急限制令,urgent motion restraining order Toronto,non-contact order多伦多,家事法庭限制令排期,安省家暴律师,何淼律师',
+    featured: true,
+    metaTitle: '多伦多紧急限制令多久能拿到？警方 vs 家事法庭｜何淼律师',
+    metaDescription:
+      '警方临时不准接触可能较快作出；家事法庭民事 Restraining Order 常走 urgent motion，常见经验力争约两周内首轮聆讯，实际以法院排期与案情为准。',
+    pairedFaqPath: '/en/faq/toronto-urgent-restraining-order-timeline/',
+  },
 ];
 
 export function getFaqItemsForListing(): FaqItem[] {

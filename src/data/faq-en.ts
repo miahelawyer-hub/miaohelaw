@@ -755,6 +755,34 @@ export const faqItemsEn: FaqItemEn[] =
     metaDescription:
       "A police non-contact order is temporary and is not a criminal conviction; a civil restraining order is not a guilty verdict. Immigration impact after a conviction is case-specific — not automatic loss of every permit or PR card.",
   },
+  {
+    slug: "toronto-urgent-restraining-order-timeline",
+    question:
+      "In Toronto, how long does it usually take to get an \"emergency restraining order\"?",
+    summary:
+      "People often use the word \"restraining order\" loosely for <strong>two different things</strong>, and the <strong>timelines differ</strong>. <strong>(1)</strong> After a 911 call and a safety or intimate-partner violence narrative, police may impose a <strong>temporary non-contact order</strong> or similar <strong>release conditions</strong> <strong>very quickly</strong> to stabilize contact — that is <strong>not the same document</strong> as a civil family-law restraining order from Superior Court. <strong>(2)</strong> For a <strong>civil restraining order</strong> under Ontario's <em>Family Law Act</em> / <em>Children's Law Reform Act</em>, counsel usually bring an <strong>urgent motion</strong>. In Toronto and the GTA, a common <strong>planning target</strong> is to seek a <strong>first court date within roughly two weeks</strong>, but <strong>dockets vary</strong> by courthouse, season, backlog, completeness of materials, and whether the matter is heard on notice or ex parte. <strong>\"Two weeks\" is not a legal guarantee.</strong>",
+    answers: [
+      "If you mean a <strong>police non-contact order</strong> tied to investigation or release: police may act <strong>shortly after intake</strong> when immediate risk is credibly described. That step is about <strong>urgent risk control</strong> inside the criminal stream — it is <strong>not interchangeable</strong> with a judge-signed <strong>civil restraining order</strong> in family court.",
+      "If you mean a <strong>civil restraining order</strong> in family court: lawyers typically advance an <strong>urgent motion</strong> with affidavits and exhibits. In our Toronto/GTA files, we often <strong>aim for a first return or hearing window within about two weeks</strong>, but <strong>actual scheduling floats</strong> with court resources, filing timing, and contested vs uncontested posture.",
+      "Either way, <strong>whether you \"get\" an order — and how strong it is</strong> — turns on <strong>facts, admissible evidence, and legal tests</strong> (for example reasonable fear and urgency), not on slogans about speed alone.",
+    ],
+    details: [
+      "First align vocabulary. Colloquially people mix <strong>\"restraining order\"</strong> with <strong>\"non-contact order,\"</strong> but in Ontario you should separate <strong>temporary police-imposed contact limits</strong> from a <strong>civil restraining order</strong> granted by a family judge under the <em>FLA</em> or <em>CLRA</em>. Different applicants, procedures, burdens, and remedies apply.",
+      "On the <strong>police track</strong>, where someone reports stalking, harassment, assault, or escalating danger, officers may quickly impose <strong>no-contact terms</strong> as part of investigation, arrest, or release. That is what many clients call a <strong>non-contact order</strong>. It prioritizes <strong>immediate safety</strong>; it does not, by itself, resolve every downstream family-law issue.",
+      "On the <strong>family-court track</strong>, counsel packages sworn evidence and seeks an <strong>urgent motion</strong>, explaining why the situation meets urgency rules and whether <strong>ex parte</strong> or short-notice relief is appropriate — strategy is always file-specific. In Toronto and nearby centres, a realistic <strong>goal</strong> is often a <strong>first hearing within roughly two weeks</strong>, but <strong>no lawyer can promise a court's calendar</strong>; busy periods can stretch longer.",
+      "After a hearing, a judge issues or continues a restraining order only if the <strong>evidence and legal tests</strong> are met, and may bundle <strong>interim parenting</strong> or <strong>exclusive possession of the matrimonial home</strong> if those claims are properly before the court. For a fuller procedural map, read <a href=\"/en/blog/ontario-restraining-order-chinese-family/\">Restraining orders in Ontario: emergency legal protection</a> and browse <a href=\"/en/tag/Restraining%20Order%20Ontario/\">Restraining Order Ontario</a>.",
+      "If you are also worried about <strong>immigration status</strong> in the same fact pattern, start with <a href=\"/en/faq/restraining-order-immigration-pr-work-permit/\">this earlier FAQ on restraining orders and work permits / PR cards</a>.",
+      "To assess whether your facts support an <strong>urgent motion</strong>, how to organize disclosure, and what scheduling ranges look like for your <strong>specific courthouse</strong>, call <strong>647-930-6688</strong> to book a consultation.",
+    ],
+    keywords:
+      "urgent restraining order Toronto,non-contact order Ontario,urgent motion family law,restraining order timeline GTA,family violence lawyer Toronto,Miao He",
+    featured: true,
+    pairedFaqPath: "/faq/toronto-jinji-xianzhiling-zhouqi/",
+    metaTitle:
+      "How fast is an emergency restraining order in Toronto? Police vs. family court | Miao He",
+    metaDescription:
+      "Police non-contact orders can come quickly; civil restraining orders usually move by urgent motion, often aiming for a first court date within about two weeks in Toronto/GTA — subject to docket and evidence.",
+  },
 ];
 
 export function getFaqItemsEnForListing(): FaqItemEn[] {
