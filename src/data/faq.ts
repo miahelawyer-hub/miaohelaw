@@ -68,7 +68,7 @@ export const faqItems: FaqItem[] = [
       '简单来说：没有对方同意或法院命令，擅自带孩子搬离是违法的，可能严重影响你的监护权。',
     ],
     details: [
-      '根据安省《儿童法改革法》及《离婚法》下的迁居规则，如果你计划带孩子搬到另一城市或省份，通常须提前以书面形式向对方发出迁居通知（Notice of Relocation）。对方收到通知后须在法定期限内回复，说明是否同意以及理由。',
+      '根据安省<a href="https://www.ontario.ca/laws/statute/90c12" target="_blank" rel="noopener noreferrer">《儿童法改革法》</a>及《离婚法》下的迁居规则，如果你计划带孩子搬到另一城市或省份，通常须提前以书面形式向对方发出迁居通知（Notice of Relocation）。对方收到通知后须在法定期限内回复，说明是否同意以及理由。',
       '如果对方在规定时间内没有回复，在符合法定条件的情形下，有时可能被推定为同意；但若对方明确反对，则无法自行解决，必须向法院提出申请，由法官判断是否允许迁居。',
       '法庭审理迁居申请时，核心考量仍是子女最大利益。法官通常会综合评估：迁居对孩子生活、学习、社交的影响；迁居后另一方与孩子保持有意义联系是否现实可行；申请方理由是否充分合理（例如工作机会、家庭支持等）。',
       '在未取得对方同意或法院命令的情况下擅自带孩子搬离，可能被认定为严重不当行为，并可能被视为违反现有法院命令或引发紧急救济程序，极端情形下对您的育儿安排产生重大不利影响。',
@@ -1216,7 +1216,7 @@ export const faqItems: FaqItem[] = [
   {
     slug: 'toronto-jinji-xianzhiling-zhouqi',
     capsule:
-      '先分清两条路：警方在刑事相关程序里作出的临时不准接触（non-contact order，有时当场）与家事法庭依《家庭法》签发的民事 Restraining Order（常走 urgent motion，力争约两周内首轮聆讯，视法院排期与材料而定）。',
+      '先分清两条路：警方在刑事相关程序里作出的临时不准接触（non-contact order，有时当场）与家事法庭依<a href="https://www.ontario.ca/laws/statute/90f03" target="_blank" rel="noopener noreferrer">《家庭法》</a>签发的民事 Restraining Order（常走 urgent motion，力争约两周内首轮聆讯，视法院排期与材料而定）。',
     question: '在多伦多申请「紧急限制令」，通常需要多长时间能拿到？',
     summary:
       '实务上常把两类措施都口语化成「限制令」，但<strong>路径不同、时间也不同</strong>：<strong>（1）</strong>一方报警并说明人身安全或家暴等风险后，警方可能在调查/释放等环节<strong>很快</strong>作出<strong>临时不准接触（non-contact order）</strong>类安排，以<strong>先稳住接触边界</strong>；这不等于家事法法庭已签发民事 Restraining Order。<strong>（2）</strong>若不走或不仅走刑事路径，而向<strong>家事法庭</strong>申请民事 Restraining Order，律师通常会通过<strong>紧急动议（urgent motion）</strong>争取排期；在多伦多地区常见经验是<strong>力争在约两周内</strong>排到<strong>首轮聆讯</strong>，法官审查证据后如认为符合法定条件，才会签发命令。<strong>具体排期因法院、分院、案件量与材料完备度而异</strong>，「两周」并非法律上的硬性保证。',
@@ -1226,11 +1226,11 @@ export const faqItems: FaqItem[] = [
       '无论哪条路径，<strong>能否「拿到」以及「拿到什么强度」的命令</strong>，最终都取决于<strong>事实、证据与法律标准</strong>（例如合理恐惧、是否适合单方面申请等），而不是单纯「越快越好」的口号。',
     ],
     details: [
-      '先把概念对齐：英文语境里有时会把 <strong>restraining order</strong> 与 <strong>non-contact order</strong> 混着说，但在安省语境下，您更需要区分的是——<strong>警方在刑事相关程序中作出的临时接触限制</strong>，与<strong>家事法官依据《家庭法》（FLA）或《儿童法改革法》（CLRA）签发的民事 Restraining Order</strong>。两者<strong>申请主体、程序、证据标准与后续救济</strong>都不同。',
+      '先把概念对齐：英文语境里有时会把 <strong>restraining order</strong> 与 <strong>non-contact order</strong> 混着说，但在安省语境下，您更需要区分的是——<strong>警方在刑事相关程序中作出的临时接触限制</strong>，与<strong>家事法官依据<a href="https://www.ontario.ca/laws/statute/90f03" target="_blank" rel="noopener noreferrer">《家庭法》</a>（FLA）或<a href="https://www.ontario.ca/laws/statute/90c12" target="_blank" rel="noopener noreferrer">《儿童法改革法》</a>（CLRA）签发的民事 Restraining Order</strong>。两者<strong>申请主体、程序、证据标准与后续救济</strong>都不同。',
       '在<strong>警方路径</strong>上，若一方报警并陈述存在被跟踪、骚扰、暴力或升级风险，警方可能基于当时掌握的信息，在调查、逮捕或释放等环节<strong>较快</strong>采取<strong>限制双方接触</strong>的安排（您口语中说的 non-contact order）。其首要目的通常是<strong>即时风险控制</strong>，并不自动等同于「家庭法层面的一切问题都已终局解决」。',
       '在<strong>家事法庭路径</strong>上，律师通常会准备宣誓书与证据包，通过 <strong>urgent motion</strong> 说明为何需要<strong>紧急听审</strong>以及为何符合<strong>单方面（ex parte）或短期听审</strong>等程序条件（以个案策略为准）。在<strong>多伦多及大多地区</strong>，常见目标是<strong>争取约两周内的首轮聆讯窗口</strong>；但<strong>法院排期并非律师可单方承诺</strong>，极端繁忙时期也可能更长。',
       '聆讯后，法官只有在认为<strong>证据与法律要件</strong>满足时，才会签发或续签 Restraining Order，并可能同时处理<strong>临时育儿安排、婚姻住房排他性居住</strong>等联动议题（视申请内容而定）。更完整的程序与证据清单，见<a href="/blog/ontario-restraining-order-chinese-family/">《在安省申请 Restraining Order…》</a>及<a href="/tag/Restraining%20Order%20Ontario/">专题标签页</a>。',
-      '若您同时关心「限制令与对方移民身份」的交叉问题，可先阅读本站<a href="/faq/xianzhiling-yimin-gongqian-fengye/">上一则常见问答</a>。',
+      '若您同时关心「限制令与对方移民身份」的交叉问题，可先阅读本站<a href="/faq/xianzhiling-yimin-gongqian-fengye/">如果我申请了限制令，会影响对方的移民身份吗？（例如工签或枫叶卡）</a>。',
       '如需评估您是否符合<strong>紧急动议</strong>、材料如何组织、以及多伦多/新市等<strong>具体分院排期</strong>的现实区间，欢迎致电647-930-6688预约何淼律师咨询。',
     ],
     keywords:
@@ -1258,6 +1258,7 @@ export const faqItems: FaqItem[] = [
       '<strong>经济虐待（financial abuse）</strong>通常指一方利用<strong>经济依赖或信息不对称</strong>，通过控制银行账户、拒绝支付必要家庭开支、切断信用卡、隐瞒或转移资金、迫使对方签署不利文件等方式，实质限制对方<strong>离开关系或独立决策</strong>的能力。您提到的「financial assault / 经济层面控制」在中文讨论里常被归入这一类，但<strong>具体措辞与认定标准仍以证据与法律论证为准</strong>。',
       '此外，<strong>性胁迫、破坏财物、利用孩子传话施压、在社交媒体上公开羞辱</strong>等，也可能在个案中成为「家庭暴力」事实矩阵的一部分。',
       '若您正在同时考虑<strong>限制令、紧急动议与离婚/监护程序</strong>的衔接，可参阅<a href="/blog/ontario-restraining-order-chinese-family/">《在安省申请 Restraining Order…》</a>、<a href="/blog/no-fault-divorce-domestic-violence-ontario/">《安省是「无过错离婚」，但家暴真的对结果没影响吗？》</a>，以及<a href="/faq/xianzhiling-yimin-gongqian-fengye/">限制令与移民身份常见问答</a>。',
+      '若您已报警但警方当时未逮捕对方，仍可评估向家事法庭申请民事限制令的可行性，见本站<a href="/faq/jingcha-wei-buzhua-jiatingfa-xianzhiling/">常见问答：警察没抓人还能申请限制令吗？</a>。',
       '何淼律师提示：若您正处于<strong>即时危险</strong>，请先拨打<strong>911</strong>；也可拨打 Assaulted Women’s Helpline <strong>1-866-863-0511</strong>（多语言）。如需家庭法层面的策略与证据组织，欢迎致电647-930-6688预约咨询。',
     ],
     keywords:
@@ -1267,6 +1268,33 @@ export const faqItems: FaqItem[] = [
     metaDescription:
       '安省家庭法语境下家庭暴力含义较宽，可含言语虐待、骚扰、跟踪、限制自由与经济控制等；是否成立取决于事实与证据，非口头标签即可。',
     pairedFaqPath: '/en/faq/ontario-family-violence-beyond-physical/',
+  },
+  {
+    slug: 'jingcha-wei-buzhua-jiatingfa-xianzhiling',
+    capsule:
+      '可以。刑事执法/检控与家事法庭民事限制令的证明标准与程序不同；警方未逮捕或未进入有罪判决，并不自动排除在符合条件时向家事法庭申请 Restraining Order。',
+    question: '如果我报警了，警察没有把人抓走，我还能去家庭法（家事法庭）申请限制令吗？',
+    summary:
+      '可以。<strong>刑事路径</strong>与<strong>家事法庭民事路径</strong>适用的是<strong>不同的法律标准与程序</strong>。警方在某一时刻是否逮捕、检控机关是否提出指控，依据的是<strong>刑事执法与检控门槛</strong>；而家事法官审理<strong>民事限制令（Restraining Order）</strong>时，依据的是<strong><a href="https://www.ontario.ca/laws/statute/90f03" target="_blank" rel="noopener noreferrer">《家庭法》</a>（FLA）、<a href="https://www.ontario.ca/laws/statute/90c12" target="_blank" rel="noopener noreferrer">《儿童法改革法》</a>（CLRA）等下的民事要件</strong>。因此，即便对方<strong>尚未在刑事程序中被认定有罪</strong>，只要您能在民事动议框架下提出<strong>充分、可采纳的证据</strong>，并满足法定条件，仍<strong>可能</strong>获得限制令；<strong>是否最终签发取决于个案证据与听审结论</strong>。',
+    answers: [
+      '可以。警方「有没有抓人」并不等于家事法上「能不能申请限制令」。刑事上常见考量包括是否有<strong>合理根据</strong>逮捕、证据是否达到检控标准、公共利益等；家事法上则更聚焦于<strong>人身安全、接触边界、合理恐惧与骚扰/暴力风险</strong>等民事救济要件（以具体申请类型为准）。',
+      '因此，即便对方<strong>没有被逮捕</strong>，或<strong>尚未被刑事定罪</strong>，只要您的材料能够支撑法官在民事程序中作出有利于您的认定，法院仍<strong>可以</strong>签发 Restraining Order。反之亦需注意：<strong>刑事上有动作也不自动等于</strong>家事法庭必然会签发命令——两条线<strong>相互独立又可能并行</strong>，策略上需要分轨评估。',
+    ],
+    details: [
+      '先把概念对齐：许多人会把<strong>报警后的警方处理结果</strong>与<strong>家事法庭能否给民事保护</strong>绑在一起，但二者<strong>法律性质不同</strong>。警方未逮捕，可能反映的是当时证据、风险评估、执法裁量或程序阶段等多种因素，并不自动写入「家事法上一定没有风险」的结论。',
+      '在向家事法庭申请限制令时，核心通常是：如何在宣誓书与证据包中，清晰呈现<strong>事实时间线、风险升级点、以及为何需要法院命令来限制接触或接近</strong>等（以个案策略为准）。这与刑事法庭是否最终定罪，是<strong>不同法庭、不同角色、不同证明框架</strong>下的问题。',
+      '实务提醒：<strong>情绪叙述与可呈堂证据不是一回事</strong>。无论是短信、邮件、通话记录、证人陈述、医疗或报警记录、还是第三方文件，都涉及<strong>可采性与相关性</strong>的筛选，建议在律师指导下系统整理。',
+      '关于<strong>紧急动议、排期与「警方 non-contact」和民事 Restraining Order 的区别</strong>，可参阅<a href="/faq/toronto-jinji-xianzhiling-zhouqi/">《在多伦多申请「紧急限制令」通常需要多长时间？》</a>；关于<strong>限制令与移民身份</strong>的交叉问题，见<a href="/faq/xianzhiling-yimin-gongqian-fengye/">限制令与工签/枫叶卡常见问答</a>；程序与材料总览见<a href="/blog/ontario-restraining-order-chinese-family/">《在安省申请 Restraining Order…》</a>及<a href="/tag/Restraining%20Order%20Ontario/">专题标签页</a>。',
+      '若您同时关心<strong>除肢体冲突外哪些行为可能纳入家暴语境</strong>，见<a href="/faq/ansheng-jiatingfa-jiatingbao-xingwei-fanwei/">在安省的家庭法中，除了肢体冲突，哪些行为会被认定为家暴？</a>。',
+      '何淼律师提示：若您正处于<strong>即时危险</strong>，请先拨打<strong>911</strong>。如需就限制令申请、证据组织与程序策略咨询家庭法，欢迎致电647-930-6688预约。',
+    ],
+    keywords:
+      '报警警察没抓人限制令,未逮捕申请Restraining Order,刑事民事标准不同,安省家事法庭限制令,紧急动议家暴,何淼律师',
+    featured: true,
+    metaTitle: '报警后警察没抓人，还能申请家事法庭限制令吗？｜何淼律师',
+    metaDescription:
+      '刑事与家事法庭标准不同；警方未逮捕不妨碍在证据充分且符合家庭法要件时向安省家事法庭申请民事 Restraining Order，是否签发以个案为准。',
+    pairedFaqPath: '/en/faq/no-arrest-restraining-order-ontario-family-law/',
   },
 ];
 
