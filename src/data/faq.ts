@@ -1258,7 +1258,8 @@ export const faqItems: FaqItem[] = [
       '<strong>经济虐待（financial abuse）</strong>通常指一方利用<strong>经济依赖或信息不对称</strong>，通过控制银行账户、拒绝支付必要家庭开支、切断信用卡、隐瞒或转移资金、迫使对方签署不利文件等方式，实质限制对方<strong>离开关系或独立决策</strong>的能力。您提到的「financial assault / 经济层面控制」在中文讨论里常被归入这一类，但<strong>具体措辞与认定标准仍以证据与法律论证为准</strong>。',
       '此外，<strong>性胁迫、破坏财物、利用孩子传话施压、在社交媒体上公开羞辱</strong>等，也可能在个案中成为「家庭暴力」事实矩阵的一部分。',
       '若您正在同时考虑<strong>限制令、紧急动议与离婚/监护程序</strong>的衔接，可参阅<a href="/blog/ontario-restraining-order-chinese-family/">《在安省申请 Restraining Order…》</a>、<a href="/blog/no-fault-divorce-domestic-violence-ontario/">《安省是「无过错离婚」，但家暴真的对结果没影响吗？》</a>，以及<a href="/faq/xianzhiling-yimin-gongqian-fengye/">限制令与移民身份常见问答</a>。',
-      '若您已报警但警方当时未逮捕对方，仍可评估向家事法庭申请民事限制令的可行性，见本站<a href="/faq/jingcha-wei-buzhua-jiatingfa-xianzhiling/">常见问答：警察没抓人还能申请限制令吗？</a>。',
+      '若您已报警但警方当时未逮捕对方，仍可评估向家事法庭申请民事限制令的可行性，见本站<a href="/faq/jingcha-wei-buzhua-jiatingfa-xianzhiling/">如果我报警了，警察没有把人抓走，我还能去家庭法（家事法庭）申请限制令吗？</a>。',
+      '若您关心<strong>家暴是否会改变子女监护与育儿时间的裁判</strong>，见<a href="/faq/jiabao-yingxiang-jianhu-yuershijian-ontario/">家暴会影响安省法官对于子女监护权和育儿时间的裁决吗？</a>。',
       '何淼律师提示：若您正处于<strong>即时危险</strong>，请先拨打<strong>911</strong>；也可拨打 Assaulted Women’s Helpline <strong>1-866-863-0511</strong>（多语言）。如需家庭法层面的策略与证据组织，欢迎致电647-930-6688预约咨询。',
     ],
     keywords:
@@ -1286,6 +1287,7 @@ export const faqItems: FaqItem[] = [
       '实务提醒：<strong>情绪叙述与可呈堂证据不是一回事</strong>。无论是短信、邮件、通话记录、证人陈述、医疗或报警记录、还是第三方文件，都涉及<strong>可采性与相关性</strong>的筛选，建议在律师指导下系统整理。',
       '关于<strong>紧急动议、排期与「警方 non-contact」和民事 Restraining Order 的区别</strong>，可参阅<a href="/faq/toronto-jinji-xianzhiling-zhouqi/">《在多伦多申请「紧急限制令」通常需要多长时间？》</a>；关于<strong>限制令与移民身份</strong>的交叉问题，见<a href="/faq/xianzhiling-yimin-gongqian-fengye/">限制令与工签/枫叶卡常见问答</a>；程序与材料总览见<a href="/blog/ontario-restraining-order-chinese-family/">《在安省申请 Restraining Order…》</a>及<a href="/tag/Restraining%20Order%20Ontario/">专题标签页</a>。',
       '若您同时关心<strong>除肢体冲突外哪些行为可能纳入家暴语境</strong>，见<a href="/faq/ansheng-jiatingfa-jiatingbao-xingwei-fanwei/">在安省的家庭法中，除了肢体冲突，哪些行为会被认定为家暴？</a>。',
+      '若您同时关心<strong>家暴对子女监护与育儿时间的影响</strong>，见<a href="/faq/jiabao-yingxiang-jianhu-yuershijian-ontario/">家暴会影响安省法官对于子女监护权和育儿时间的裁决吗？</a>。',
       '何淼律师提示：若您正处于<strong>即时危险</strong>，请先拨打<strong>911</strong>。如需就限制令申请、证据组织与程序策略咨询家庭法，欢迎致电647-930-6688预约。',
     ],
     keywords:
@@ -1295,6 +1297,32 @@ export const faqItems: FaqItem[] = [
     metaDescription:
       '刑事与家事法庭标准不同；警方未逮捕不妨碍在证据充分且符合家庭法要件时向安省家事法庭申请民事 Restraining Order，是否签发以个案为准。',
     pairedFaqPath: '/en/faq/no-arrest-restraining-order-ontario-family-law/',
+  },
+  {
+    slug: 'jiabao-yingxiang-jianhu-yuershijian-ontario',
+    capsule:
+      '视个案而定：纯经济控制等若不指向孩子即时安全风险，未必显著改变育儿安排；肢体暴力、身体虐待及影响孩子安全的行为，则更可能进入法官对子女最大利益的裁量。',
+    question: '家暴会影响安省法官对于子女监护权和育儿时间的裁决吗？',
+    summary:
+      '<strong>取决于您所指的家暴在具体事实中属于哪一类。</strong>正如本站常见问答<a href="/faq/ansheng-jiatingfa-jiatingbao-xingwei-fanwei/">在安省的家庭法中，除了肢体冲突，哪些行为会被认定为家暴？</a>中所述，安省家庭法语境下的<strong>家庭暴力（family violence）</strong>含义较宽，可包括<strong>经济虐待、言语威胁与其他形态的胁迫或控制</strong>等。<strong>若主要是配偶之间的经济支配或资源控制</strong>，且<strong>在证据与论证上并不表明孩子会面临即时安全风险或不利养育环境</strong>，有时对<strong>育儿时间（parenting time）与决策责任（decision-making responsibility）</strong>的最终安排<strong>影响可能相对有限</strong>（仍以个案为准）。<strong>若事实包含肢体冲突、身体虐待，或牵涉孩子安全、接触边界与稳定养育环境的风险</strong>，则更可能<strong>显著影响</strong>法官在<strong>子女最大利益</strong>框架下的判断。',
+    answers: [
+      '<strong>类型不同，影响往往不同。</strong>经济层面的控制若主要体现为夫妻之间的财务安排、账户控制等，且不与孩子安全直接挂钩，未必自动「决定」监护权归属；但法官仍可能将其放入<strong>整体事实矩阵</strong>（例如是否影响一方稳定养育能力、信息披露与可信性等）。',
+      '<strong>一旦涉及身体暴力、恐吓升级、或让孩子目睹/卷入冲突、以及威胁孩子安全或稳定接触的行为</strong>，通常更容易进入法院对<strong>接触安排、临时或长期育儿方案</strong>的审慎评估，并可能对<strong>决策权分配、主要居所、监督接触</strong>等产生实质影响。',
+    ],
+    details: [
+      '安省法院在子女相关争议中，核心标准是<strong>子女最大利益（best interests of the child）</strong>。<a href="https://www.ontario.ca/laws/statute/90c12" target="_blank" rel="noopener noreferrer">《儿童法改革法》</a>等框架下的考量因素很多，家庭暴力或安全风险只是其中一类需要结合<strong>证据、严重度、频率、是否持续、以及与孩子之间的关联</strong>来评估的要素。',
+      '因此，「家暴」一词本身<strong>不等于</strong>自动失去监护权或自动减少育儿时间；关键是<strong>哪些事实被证明</strong>、这些事实如何与<strong>孩子的安全、稳定、情感需求与发展</strong>相连。',
+      '关于<strong>无过错离婚制度下家暴是否仍可能影响结果</strong>（包括育儿与财产披露等侧面），可对照阅读<a href="/blog/no-fault-divorce-domestic-violence-ontario/">《安省是「无过错离婚」，但家暴真的对结果没影响吗？》</a>。',
+      '若您尚未对齐「哪些行为可能被纳入家暴语境」，请先阅读<a href="/faq/ansheng-jiatingfa-jiatingbao-xingwei-fanwei/">在安省的家庭法中，除了肢体冲突，哪些行为会被认定为家暴？</a>；若同时涉及<strong>限制令与紧急动议</strong>，见<a href="/blog/ontario-restraining-order-chinese-family/">《在安省申请 Restraining Order…》</a>及<a href="/faq/toronto-jinji-xianzhiling-zhouqi/">在多伦多申请「紧急限制令」，通常需要多长时间能拿到？</a>。',
+      '何淼律师提示：若您正处于<strong>即时危险</strong>，请先拨打<strong>911</strong>。如需就<strong>监护、育儿时间、证据与动议策略</strong>咨询，欢迎致电647-930-6688预约。',
+    ],
+    keywords:
+      '家暴子女监护权安省,育儿时间家庭暴力,family violence parenting time Ontario,经济虐待监护权,何淼律师多伦多家庭法',
+    featured: true,
+    metaTitle: '家暴会影响子女监护权与育儿时间吗？安省｜何淼律师',
+    metaDescription:
+      '视家暴类型与是否牵涉孩子安全而定：纯经济控制未必单独决定育儿安排；肢体暴力、身体虐待及影响孩子安全的行为更可能进入法官对子女最大利益的裁量。',
+    pairedFaqPath: '/en/faq/does-family-violence-affect-custody-parenting-time-ontario/',
   },
 ];
 

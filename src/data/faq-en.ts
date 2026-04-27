@@ -799,7 +799,8 @@ export const faqItemsEn: FaqItemEn[] =
       "<strong>Financial abuse</strong> often describes one spouse leveraging <strong>income disparity or financial opacity</strong> to trap the other: controlling accounts, hiding income or assets, refusing to pay predictable household needs without justification, or making access to money conditional on obedience. That pattern can be argued as part of family violence — but <strong>labels do not replace proof</strong>.",
       "Other conduct sometimes bundled into the same factual matrix includes <strong>sexual coercion, property damage, using children as messengers of threats, or online shaming</strong>. Each allegation still has to meet evidentiary standards.",
       "If you are also mapping <strong>restraining orders, urgent motions, and divorce or parenting strategy</strong>, read <a href=\"/en/blog/ontario-restraining-order-chinese-family/\">Restraining orders in Ontario: emergency legal protection</a>, <a href=\"/en/blog/no-fault-divorce-domestic-violence-ontario/\">No-fault divorce and domestic violence — does it still matter?</a>, and <a href=\"/en/faq/restraining-order-immigration-pr-work-permit/\">If I apply for a restraining order, will it affect my spouse's immigration status — for example a work permit or PR card?</a>",
-      "If police <strong>did not arrest</strong> the other person after a call, you may still be able to seek a <strong>civil restraining order</strong> in family court when the tests are met — read <a href=\"/en/faq/no-arrest-restraining-order-ontario-family-law/\">this FAQ</a>.",
+      "If police <strong>did not arrest</strong> the other person after a call, you may still be able to seek a <strong>civil restraining order</strong> in family court when the tests are met — read <a href=\"/en/faq/no-arrest-restraining-order-ontario-family-law/\">I called the police but they did not arrest the person — can I still apply for a restraining order in Ontario family court?</a>",
+      "If you are asking whether family violence changes <strong>custody and parenting-time outcomes</strong>, read <a href=\"/en/faq/does-family-violence-affect-custody-parenting-time-ontario/\">Does domestic violence affect how Ontario judges decide child custody and parenting time?</a>",
       "<strong>If you are in immediate danger, call 911.</strong> For 24-hour multilingual support, Assaulted Women's Helpline: <strong>1-866-863-0511</strong>. For family-law strategy and evidence planning, call <strong>647-930-6688</strong> to book a consultation with Miao He.",
     ],
     keywords:
@@ -827,6 +828,7 @@ export const faqItemsEn: FaqItemEn[] =
       "On a motion, judges look at <strong>sworn affidavits and admissible exhibits</strong> tied to the legal tests you invoke. Emotional narratives and what is persuasive in court are not always the same; lawyers help sort <strong>relevance, admissibility, and sequencing</strong>.",
       "For how <strong>urgent motions</strong>, timelines, and vocabulary differ between <strong>police non-contact conditions</strong> and <strong>civil restraining orders</strong>, read <a href=\"/en/faq/toronto-urgent-restraining-order-timeline/\">this FAQ on Toronto timelines</a>. On <strong>immigration status</strong> angles, read <a href=\"/en/faq/restraining-order-immigration-pr-work-permit/\">If I apply for a restraining order, will it affect my spouse's immigration status — for example a work permit or PR card?</a> For a fuller roadmap, see <a href=\"/en/blog/ontario-restraining-order-chinese-family/\">Restraining orders in Ontario: emergency legal protection</a> and <a href=\"/en/tag/Restraining%20Order%20Ontario/\">Restraining Order Ontario</a>.",
       "If you are also reviewing <strong>what conduct can count as family violence beyond physical assault</strong>, see <a href=\"/en/faq/ontario-family-violence-beyond-physical/\">Under Ontario family law, besides physical assault, what kinds of conduct can be considered domestic violence?</a> (Chinese version linked from that page).",
+      "If you are also asking how violence allegations intersect with <strong>parenting orders</strong>, read <a href=\"/en/faq/does-family-violence-affect-custody-parenting-time-ontario/\">Does domestic violence affect how Ontario judges decide child custody and parenting time?</a>",
       "<strong>If you are in immediate danger, call 911.</strong> For 24-hour multilingual support, Assaulted Women's Helpline: <strong>1-866-863-0511</strong>. For restraining-order strategy and evidence planning, call <strong>647-930-6688</strong> to book a consultation with Miao He.",
     ],
     keywords:
@@ -837,6 +839,32 @@ export const faqItemsEn: FaqItemEn[] =
       "Police did not arrest — can I still get a restraining order in Ontario family court? | Miao He",
     metaDescription:
       "Criminal and family-court standards differ. Non-arrest does not automatically bar a civil restraining order when FLA/CLRA tests are met with credible evidence — outcomes are case-specific.",
+  },
+  {
+    slug: "does-family-violence-affect-custody-parenting-time-ontario",
+    question:
+      "Does domestic violence affect how Ontario judges decide child custody and parenting time?",
+    summary:
+      "<strong>It depends what you mean by domestic violence on the facts.</strong> As explained in <a href=\"/en/faq/ontario-family-violence-beyond-physical/\">Under Ontario family law, besides physical assault, what kinds of conduct can be considered domestic violence?</a>, <strong>\"family violence\"</strong> can include <strong>financial abuse, verbal threats, and other controlling or coercive patterns</strong> — not only hitting. <strong>Purely economic misconduct between adults</strong> that does <strong>not</strong> credibly connect to a child's <strong>immediate safety</strong> or a risky parenting environment <strong>may</strong> have a <strong>more limited</strong> impact on final <strong>decision-making responsibility</strong> and <strong>parenting time</strong>, though judges still weigh credibility and overall stability (always case-specific). Where the record includes <strong>physical assault, bodily harm, escalating intimidation, exposure of children to violence, or behaviours that undermine a child's safety or stable contact</strong>, those facts are <strong>far more likely</strong> to influence parenting outcomes under the <strong>best interests of the child</strong> test.",
+    answers: [
+      "<strong>Different patterns carry different weight.</strong> Financial control that mainly plays out as spousal money management — without a persuasive link to the child's safety or caregiving quality — does not automatically \"decide\" custody labels; it may still matter as part of the <strong>overall factual matrix</strong> (disclosure, credibility, stability of each home).",
+      "Conduct involving <strong>physical violence, credible threats, children witnessing conflict, or risks to safe parenting time</strong> is more likely to drive urgent or interim orders and to affect longer-term arrangements such as <strong>decision-making allocation, primary residence, supervision, or contact conditions</strong> — depending on proof and judicial discretion.",
+    ],
+    details: [
+      "Ontario judges apply a <strong>best interests of the child</strong> lens under statutes such as the <a href=\"https://www.ontario.ca/laws/statute/90c12\" target=\"_blank\" rel=\"noopener noreferrer\"><em>Children's Law Reform Act</em></a> (and, where applicable, the <em>Divorce Act</em>). Family violence is one cluster of factors that must be assessed with attention to <strong>severity, frequency, duration, and linkage to the child</strong> — not by labels alone.",
+      "Saying \"family violence\" exists on paper does <strong>not</strong> mechanically remove parenting time or decision-making; outcomes turn on <strong>admissible evidence</strong> and how risks map onto the child's needs for <strong>safety, security, and development</strong>.",
+      "For how Ontario's <strong>\"no-fault\" divorce framing</strong> still intersects with safety and parenting issues, read <a href=\"/en/blog/no-fault-divorce-domestic-violence-ontario/\">No-fault divorce and domestic violence — does it still matter?</a>",
+      "If you have not yet reviewed <strong>what conduct can count as family violence beyond physical assault</strong>, start with <a href=\"/en/faq/ontario-family-violence-beyond-physical/\">Under Ontario family law, besides physical assault, what kinds of conduct can be considered domestic violence?</a> For <strong>restraining orders and urgent motions</strong>, see <a href=\"/en/blog/ontario-restraining-order-chinese-family/\">Restraining orders in Ontario: emergency legal protection</a> and <a href=\"/en/faq/toronto-urgent-restraining-order-timeline/\">In Toronto, how long does it usually take to get an \"emergency restraining order\"?</a>",
+      "<strong>If you are in immediate danger, call 911.</strong> For 24-hour multilingual support, Assaulted Women's Helpline: <strong>1-866-863-0511</strong>. For parenting, evidence, and motion strategy, call <strong>647-930-6688</strong> to book a consultation with Miao He.",
+    ],
+    keywords:
+      "family violence custody Ontario,parenting time domestic violence,best interests child family violence,financial abuse parenting order Ontario,Miao He family lawyer",
+    featured: true,
+    pairedFaqPath: "/faq/jiabao-yingxiang-jianhu-yuershijian-ontario/",
+    metaTitle:
+      "Does domestic violence affect custody and parenting time in Ontario? | Miao He",
+    metaDescription:
+      "Impact depends on the type of family violence and child safety: economic abuse alone may weigh differently than physical assault or risks to the child; outcomes are evidence-driven.",
   },
 ];
 
