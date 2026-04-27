@@ -1185,6 +1185,34 @@ export const faqItems: FaqItem[] = [
     keywords: '预约何淼律师,何淼律师咨询,万锦家庭法律师咨询,初次咨询费用,647-930-6688',
     pairedFaqPath: '/en/faq/book-consultation-miao-he/',
   },
+  {
+    slug: 'xianzhiling-yimin-gongqian-fengye',
+    capsule:
+      '警方临时「不准接触」≠刑事定罪；家事法庭民事限制令本身也不等于有罪判决。是否影响工签、枫叶卡等须看后续是否进入刑事程序及个案情节。',
+    question: '如果我申请了限制令，会影响对方的移民身份吗？（例如工签或枫叶卡）',
+    summary:
+      '一般而言：仅警方在调查或释放阶段作出的临时不准接触安排，本身不等于刑事定罪，通常<strong>不会单独据此</strong>自动撤销对方的工签或枫叶卡。家事法庭的民事限制令（Restraining Order）同样是<strong>民事救济</strong>，不等于对方已被判刑。若之后出现<strong>刑事定罪</strong>，是否触发移民法上的不利后果要<strong>依罪名、刑期、记录及个案</strong>判断，并非「只要定罪就一定会被取消工签或枫叶卡」。涉及在留身份的具体策略，应同时咨询<strong>持牌移民顾问或移民律师</strong>。',
+    answers: [
+      '若只是警方给出的临时「不准接触」类安排（常见于释放条件等），性质是<strong>在刑事程序进行期间限制双方接触</strong>，并不代表法院已作出<strong>刑事有罪判决</strong>，因此<strong>通常不会单凭这一点</strong>就等同于移民身份必然被撤销。',
+      '您在<strong>家事法庭</strong>申请的民事<strong>限制令（Restraining Order）</strong>，由法官依据家庭法审查证据后签发，属于<strong>民事保护</strong>范畴；对方是否会被移民部门采取不利措施，与<strong>是否构成刑事定罪、以及具体罪名与情节</strong>不是同一回事。',
+      '退一步说，即便将来出现刑事定罪，是否会影响工签、学签、枫叶卡或入籍申请，也要看<strong>罪名类别、量刑、是否属于严重刑事犯罪（serious criminality）等</strong>综合判断，<strong>不是</strong>「只要定罪就必然吊销签证」的固定公式。',
+    ],
+    details: [
+      '许多当事人会把三件事混在一起：<strong>（1）警方临时限制接触</strong>、<strong>（2）家事法庭民事限制令</strong>、以及<strong>（3）刑事法院的有罪判决</strong>。三者法律性质不同。您申请或持有民事限制令，核心是向家庭法庭说明<strong>合理恐惧与安全风险</strong>，并不自动替对方「定罪」。',
+      '警方在调查、逮捕或释放等环节要求双方不得联系，往往是为了<strong>降低冲突升级风险、保全现场与证据</strong>。在<strong>尚未形成有罪判决</strong>之前，这类安排本身一般<strong>不会单独构成</strong>移民法意义上「因某罪已定必吊销身份」的结论——但个案仍可能因<strong>并行程序、边境询问、后续指控</strong>等出现复杂情况，需要分阶段评估。',
+      '关于<strong>家事法庭 Restraining Order</strong>的申请条件、宣誓书与紧急动议，可参阅本站<a href="/blog/ontario-restraining-order-chinese-family/">《在安省申请 Restraining Order：华人家庭面对家暴时，法律能提供哪些紧急保护？》</a>；同类主题文章索引见<a href="/tag/Restraining%20Order%20Ontario/">Restraining Order Ontario 专题标签页</a>。',
+      '若您关心的是<strong>无过错离婚制度下家暴对子女监护、住房与扶养等家事结果的影响</strong>，可对照阅读<a href="/blog/no-fault-divorce-domestic-violence-ontario/">《安省是「无过错离婚」，但家暴真的对结果没影响吗？》</a>。',
+      '<strong>重要提示：</strong>何淼律师执业领域为<strong>安省家庭法</strong>。移民法（IRPA/IRPR）适用与执法高度个案化。涉及工签、枫叶卡、入境或遣返风险时，建议在家庭法策略之外，另行咨询<strong>加拿大持牌移民顾问（RCIC）或移民诉讼律师</strong>，以获得针对性的移民法意见。',
+      '如需就<strong>限制令申请、证据组织、与离婚/监护程序的衔接</strong>讨论家庭法方案，欢迎致电647-930-6688预约何淼律师咨询。',
+    ],
+    keywords:
+      '限制令移民身份,Restraining Order工签枫叶卡,不准接触令移民,安省家事法庭限制令,刑事定罪移民后果,华人家庭法律师多伦多,何淼律师',
+    featured: true,
+    metaTitle: '申请限制令会影响对方工签或枫叶卡吗？｜何淼律师 多伦多家庭法',
+    metaDescription:
+      '警方临时不准接触与家事法庭民事限制令不等于刑事定罪；是否影响工签、枫叶卡等须视后续刑事程序与个案而定，并非必然吊销签证。',
+    pairedFaqPath: '/en/faq/restraining-order-immigration-pr-work-permit/',
+  },
 ];
 
 export function getFaqItemsForListing(): FaqItem[] {

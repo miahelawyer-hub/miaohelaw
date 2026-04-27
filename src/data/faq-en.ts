@@ -728,6 +728,33 @@ export const faqItemsEn: FaqItemEn[] =
     pairedFaqPath: "/faq/markham-wai-pinren-an-sheng-jiatingfa/",
     featured: true,
   },
+  {
+    slug: "restraining-order-immigration-pr-work-permit",
+    question:
+      "If I apply for a restraining order, will it affect my spouse's immigration status — for example a work permit or PR card?",
+    summary:
+      "Usually <strong>not in the way people fear</strong>. A police <strong>non-contact order</strong> is a <strong>temporary</strong> condition controlling contact while a matter is investigated or processed; it is <strong>not the same thing as a criminal conviction</strong> and, standing alone, <strong>does not automatically</strong> cancel a work permit or PR card. A <strong>civil</strong> family-law <strong>restraining order</strong> is also <strong>not a finding of guilt</strong>. If a person is later <strong>convicted</strong> of an offence, <strong>immigration consequences depend on the offence, sentence, record, and the full picture</strong> — it is <strong>not</strong> a rule that \"any conviction always\" revokes status. For status-specific advice, speak with a <strong>licensed Canadian immigration lawyer or RCIC</strong>.",
+    answers: [
+      "A police <strong>non-contact order</strong> typically means <strong>no contact between people for a limited period</strong> while police processes unfold. That is different from a judge in criminal court having found someone <strong>guilty</strong>. The mere existence of a non-contact condition <strong>does not, by itself, map onto</strong> an automatic immigration penalty.",
+      "A <strong>civil restraining order</strong> in family court is about <strong>safety and court-ordered limits</strong> on approach or communication. Obtaining or defending one is <strong>not the same as a criminal sentence</strong>, and it should not be confused with IRCC or CBSA having already decided inadmissibility.",
+      "Where a <strong>criminal conviction</strong> later exists, whether status is affected turns on <strong>what offence, how serious, sentencing, criminal record, and individual facts</strong>. Canadian immigration law is highly fact-specific; <strong>do not assume</strong> that any conviction automatically cancels every permit or PR card.",
+    ],
+    details: [
+      "Clients often blur three different ideas: <strong>(1) a police non-contact order</strong>, <strong>(2) a civil family restraining order</strong>, and <strong>(3) a criminal conviction after trial or a guilty plea</strong>. Each has different actors, standards, and paperwork. Applying for a civil restraining order is about presenting <strong>credible evidence of risk</strong> in family court — it does not, by itself, \"convict\" anyone criminally.",
+      "Non-contact directions tied to release or investigation are meant to <strong>reduce immediate conflict and preserve safety</strong> while matters are sorted out. Until there is a <strong>conviction</strong> (where the criminal process goes that far), those measures are a poor substitute for a full immigration inadmissibility analysis — but they are also <strong>not a standalone switch</strong> that automatically revokes PR or a work permit.",
+      "For how restraining orders work in Ontario family court — evidence, urgency, and common worries for families — see <a href=\"/en/blog/ontario-restraining-order-chinese-family/\">Restraining orders in Ontario: emergency legal protection</a> and the topic list at <a href=\"/en/tag/Restraining%20Order%20Ontario/\">Restraining Order Ontario</a>. On how \"no-fault\" divorce still intersects with safety and parenting issues, read <a href=\"/en/blog/no-fault-divorce-domestic-violence-ontario/\">No-fault divorce and domestic violence — does it still matter?</a>",
+      "<strong>Scope note:</strong> Miao He practises <strong>Ontario family law</strong>. Immigration inadmissibility, permits, PR, and enforcement involve <strong>IRPA / IRPR</strong> and agency discretion. Where your question is really about <strong>status, border risk, or removal</strong>, retain or consult a <strong>Canadian immigration lawyer or Regulated Canadian Immigration Consultant (RCIC)</strong> in parallel with family-court strategy.",
+      "To discuss <strong>restraining orders, affidavits, motions, or how a family file intersects with safety planning</strong>, call <strong>647-930-6688</strong> to book a consultation.",
+    ],
+    keywords:
+      "restraining order immigration Canada,non-contact order work permit,PR card criminal conviction Ontario,family violence restraining order Ontario,Miao He family lawyer",
+    featured: true,
+    pairedFaqPath: "/faq/xianzhiling-yimin-gongqian-fengye/",
+    metaTitle:
+      "Restraining order vs. non-contact order — immigration to Canada (work permit, PR) | Miao He",
+    metaDescription:
+      "A police non-contact order is temporary and is not a criminal conviction; a civil restraining order is not a guilty verdict. Immigration impact after a conviction is case-specific — not automatic loss of every permit or PR card.",
+  },
 ];
 
 export function getFaqItemsEnForListing(): FaqItemEn[] {
