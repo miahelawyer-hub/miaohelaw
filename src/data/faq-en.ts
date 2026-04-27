@@ -783,6 +783,33 @@ export const faqItemsEn: FaqItemEn[] =
     metaDescription:
       "Police non-contact orders can come quickly; civil restraining orders usually move by urgent motion, often aiming for a first court date within about two weeks in Toronto/GTA — subject to docket and evidence.",
   },
+  {
+    slug: "ontario-family-violence-beyond-physical",
+    question:
+      "Under Ontario family law, besides physical assault, what kinds of conduct can be considered domestic violence?",
+    summary:
+      "In parenting and safety-sensitive family-law disputes, <strong>\"family violence\"</strong> is often treated as a <strong>broad pattern of harmful conduct</strong>, not only bruises or hitting. Beyond physical assault, courts may examine <strong>verbal abuse, threats, harassment, stalking or surveillance, isolating a partner from friends or family, controlling movement</strong>, and <strong>financial abuse</strong> — using money, accounts, housing costs, or credit access to dominate a more dependent spouse and block realistic exit options (always fact-specific). A <strong>wide legal definition does not mean labels alone win cases</strong>; judges still look for <strong>credible evidence and a coherent timeline</strong>.",
+    answers: [
+      "Common non-physical categories in court narratives include: <strong>intimidation and degrading language</strong>; <strong>repeated unwanted contact, following, or monitoring</strong>; <strong>controlling phones, travel, or social contact</strong>; and <strong>financial control</strong> — for example monopolizing banking, cutting off reasonable access to funds for necessities, weaponizing rent or mortgage payments, or forcing disadvantageous financial \"agreements\" under pressure.",
+      "Whether any of this is found to be <strong>family violence in your file</strong> is not decided by slogans. Once litigation or motions start, outcomes turn on <strong>documents, witnesses, third-party records, and overall credibility</strong>.",
+    ],
+    details: [
+      "Ontario judges deciding parenting, contact, or urgent protection issues ask whether <strong>family violence</strong> or safety risks affect <strong>children's best interests</strong>. The analysis is broader than \"was there a single punch?\" It can include conduct that undermines <strong>psychological safety, autonomy, and stable parenting</strong>.",
+      "<strong>Coercive control</strong> is increasingly taken seriously in practice: a long arc of threats (\"you will never see the kids,\" \"I will destroy your career\"), isolation, micromanaging communications, and humiliation can sit alongside physical incidents in the same risk picture — if properly proven.",
+      "<strong>Financial abuse</strong> often describes one spouse leveraging <strong>income disparity or financial opacity</strong> to trap the other: controlling accounts, hiding income or assets, refusing to pay predictable household needs without justification, or making access to money conditional on obedience. That pattern can be argued as part of family violence — but <strong>labels do not replace proof</strong>.",
+      "Other conduct sometimes bundled into the same factual matrix includes <strong>sexual coercion, property damage, using children as messengers of threats, or online shaming</strong>. Each allegation still has to meet evidentiary standards.",
+      "If you are also mapping <strong>restraining orders, urgent motions, and divorce or parenting strategy</strong>, read <a href=\"/en/blog/ontario-restraining-order-chinese-family/\">Restraining orders in Ontario: emergency legal protection</a>, <a href=\"/en/blog/no-fault-divorce-domestic-violence-ontario/\">No-fault divorce and domestic violence — does it still matter?</a>, and <a href=\"/en/faq/restraining-order-immigration-pr-work-permit/\">this FAQ on restraining orders and immigration status</a>.",
+      "<strong>If you are in immediate danger, call 911.</strong> For 24-hour multilingual support, Assaulted Women's Helpline: <strong>1-866-863-0511</strong>. For family-law strategy and evidence planning, call <strong>647-930-6688</strong> to book a consultation with Miao He.",
+    ],
+    keywords:
+      "Ontario family violence definition,financial abuse divorce Ontario,coercive control family law,verbal abuse parenting order,stalking harassment family court,Miao He lawyer",
+    featured: true,
+    pairedFaqPath: "/faq/ansheng-jiatingfa-jiatingbao-xingwei-fanwei/",
+    metaTitle:
+      "What can be considered domestic violence in Ontario besides physical assault? | Miao He",
+    metaDescription:
+      "Family violence in Ontario family law can include verbal abuse, harassment, stalking, isolation, coercive control, and financial abuse — but findings depend on evidence, not labels alone.",
+  },
 ];
 
 export function getFaqItemsEnForListing(): FaqItemEn[] {

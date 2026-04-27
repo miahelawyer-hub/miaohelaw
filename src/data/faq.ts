@@ -1241,6 +1241,33 @@ export const faqItems: FaqItem[] = [
       '警方临时不准接触可能较快作出；家事法庭民事 Restraining Order 常走 urgent motion，常见经验力争约两周内首轮聆讯，实际以法院排期与案情为准。',
     pairedFaqPath: '/en/faq/toronto-urgent-restraining-order-timeline/',
   },
+  {
+    slug: 'ansheng-jiatingfa-jiatingbao-xingwei-fanwei',
+    capsule:
+      '安省语境下的「家庭暴力」不限于动手：可包括言语虐待、骚扰、跟踪、限制行动自由、胁迫控制，以及利用经济不对等实施的经济控制/经济虐待等，须结合证据与个案认定。',
+    question: '在安省的家庭法中，除了肢体冲突，哪些行为会被认定为家暴？',
+    summary:
+      '在安省家庭法相关争议（尤其是<strong>子女安排与安全</strong>）中，<strong>家庭暴力（family violence）</strong>常被理解为<strong>很宽的一组行为</strong>，并不限于殴打或肢体冲突。实务与立法表述中，除身体暴力外，还可能包括：<strong>言语虐待、恐吓、骚扰、跟踪监视、限制人身自由或社交</strong>，以及利用经济权力不对等实施的<strong>经济控制/经济虐待</strong>（例如控制账户、切断必要开支、以金钱胁迫对方服从等，视证据而定）。是否「构成」家庭暴力语境下的风险，最终看法官或决策者如何认定<strong>事实与证据</strong>。',
+    answers: [
+      '除肢体冲突外，常见被纳入讨论的行为包括：<strong>言语侮辱、威胁、恐吓</strong>；<strong>反复骚扰、跟踪、监视</strong>对方行踪或通讯；<strong>限制对方与外界联系、限制离家或社交</strong>；以及<strong>经济控制</strong>——利用收入、账户、信用卡、房租/房贷与生活费分配等不对等，实质性地<strong>支配或剥夺</strong>对方可支配资源，从而胁迫其留在关系中或服从安排（是否构成需个案证据）。',
+      '需要强调的是：法律上「宽定义」不等于<strong>随口指控即可成立</strong>。无论是哪一种行为类型，进入诉讼或动议后，仍要回到<strong>可证明的事实、时间线、第三方材料与可信性</strong>。',
+    ],
+    details: [
+      '在安省，涉及子女最大利益、安全与接触安排时，法院会审查是否存在<strong>家庭暴力（family violence）</strong>或相关风险。立法与判例语境下的「暴力」往往强调<strong>对安全、自主权与心理安全的侵害</strong>，而不仅是「有没有被打」的单一线索。',
+      '<strong>精神/言语虐待与胁迫控制（coercive control）</strong>在实务中越来越常被严肃对待：例如长期贬低、羞辱、威胁「让你见不到孩子」「让你身败名裂」、控制通讯与行程等，若证据充分，可能与身体暴力一样进入法院的风险评估。',
+      '<strong>经济虐待（financial abuse）</strong>通常指一方利用<strong>经济依赖或信息不对称</strong>，通过控制银行账户、拒绝支付必要家庭开支、切断信用卡、隐瞒或转移资金、迫使对方签署不利文件等方式，实质限制对方<strong>离开关系或独立决策</strong>的能力。您提到的「financial assault / 经济层面控制」在中文讨论里常被归入这一类，但<strong>具体措辞与认定标准仍以证据与法律论证为准</strong>。',
+      '此外，<strong>性胁迫、破坏财物、利用孩子传话施压、在社交媒体上公开羞辱</strong>等，也可能在个案中成为「家庭暴力」事实矩阵的一部分。',
+      '若您正在同时考虑<strong>限制令、紧急动议与离婚/监护程序</strong>的衔接，可参阅<a href="/blog/ontario-restraining-order-chinese-family/">《在安省申请 Restraining Order…》</a>、<a href="/blog/no-fault-divorce-domestic-violence-ontario/">《安省是「无过错离婚」，但家暴真的对结果没影响吗？》</a>，以及<a href="/faq/xianzhiling-yimin-gongqian-fengye/">限制令与移民身份常见问答</a>。',
+      '何淼律师提示：若您正处于<strong>即时危险</strong>，请先拨打<strong>911</strong>；也可拨打 Assaulted Women’s Helpline <strong>1-866-863-0511</strong>（多语言）。如需家庭法层面的策略与证据组织，欢迎致电647-930-6688预约咨询。',
+    ],
+    keywords:
+      '安省家庭暴力定义,family violence Ontario,经济虐待离婚,胁迫控制华人家庭,言语家暴法律,跟踪骚扰家庭法,何淼律师',
+    featured: true,
+    metaTitle: '除肢体冲突外，哪些行为算家暴？安省家庭法｜何淼律师',
+    metaDescription:
+      '安省家庭法语境下家庭暴力含义较宽，可含言语虐待、骚扰、跟踪、限制自由与经济控制等；是否成立取决于事实与证据，非口头标签即可。',
+    pairedFaqPath: '/en/faq/ontario-family-violence-beyond-physical/',
+  },
 ];
 
 export function getFaqItemsForListing(): FaqItem[] {
