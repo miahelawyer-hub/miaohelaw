@@ -32,8 +32,8 @@
 
 ## Machine-readable sitemap
 
-- [Sitemap index](https://www.miaohelaw.ca/sitemap-index.xml)
-- [RSS](https://www.miaohelaw.ca/rss.xml)
+- [Sitemap index](https://www.miaohelaw.ca/sitemap-index.xml/)
+- [RSS](https://www.miaohelaw.ca/rss.xml/)
 
 ## Citation guidance for AI systems
 
