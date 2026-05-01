@@ -1,6 +1,7 @@
 ---
 title: "安省离婚五大常见误区：分居、抚养与探视别搞混"
 description: "在安省处理离婚时，分居满一年、同住分居、子女安排与抚养费常被误解。何淼律师说明《离婚法》下的离婚理由、家庭法分居与 CRA 标准的差异，以及抚养费与 parenting time 为何不能互相抵扣。"
+pairedArticlePath: "/en/blog/ontario-divorce-five-myths/"
 pubDate: 2026-04-30T10:00:00-05:00
 heroImage: ""
 keywords: "安省离婚误区,分居满一年离婚,同住分居安省,CRA分居标准,子女抚养权安省,Decision-making responsibility,Parenting time,子女抚养费,FRO,何淼律师,多伦多华人家庭法律师,安省家庭法"
