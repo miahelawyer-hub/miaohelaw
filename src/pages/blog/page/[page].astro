@@ -5,13 +5,14 @@ import BaseHead from '../../../components/BaseHead.astro';
 import Header from '../../../components/Header.astro';
 import Footer from '../../../components/Footer.astro';
 import { SITE_LAST_UPDATED_ZH, SITE_URL } from '../../../consts';
+import { isBlogEnPostRoutable, isBlogPostRoutable } from '../../../lib/blogPublished';
 
 export const getStaticPaths = (async () => {
 	const posts = (await getCollection('blog'))
-		.filter((p) => p.data.draft !== true)
+		.filter(isBlogPostRoutable)
 		.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 	const enPosts = (await getCollection('blog-en'))
-		.filter((p) => p.data.draft !== true)
+		.filter(isBlogEnPostRoutable)
 		.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 	const n = posts.length;
 	const totalPages = Math.max(1, Math.ceil(n / 10));

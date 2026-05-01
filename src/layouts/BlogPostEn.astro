@@ -1,6 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
-import { isPublishedBlogEnPost } from '../lib/blogPublished';
+import { isBlogEnPostRoutable } from '../lib/blogPublished';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
@@ -205,7 +205,7 @@ function formatDate(date: Date) {
 
 const allBlogEntriesEn = await getCollection('blog-en');
 const allPosts = allBlogEntriesEn
-  .filter(isPublishedBlogEnPost)
+  .filter(isBlogEnPostRoutable)
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
   .filter((p) => `/en/blog/${p.id}` !== pathCore && `/en/blog/${p.id}/` !== pathname)
   .slice(0, 4);

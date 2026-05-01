@@ -4,10 +4,10 @@ import BaseHead from '../../components/BaseHead.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import { SITE_LAST_UPDATED_ZH, SITE_URL } from '../../consts';
-import { isPublishedBlogPost } from '../../lib/blogPublished';
+import { isBlogPostRoutable } from '../../lib/blogPublished';
 
 const posts = (await getCollection('blog'))
-	.filter(isPublishedBlogPost)
+	.filter(isBlogPostRoutable)
 	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 const totalPosts = posts.length;
 const totalPages = Math.max(1, Math.ceil(totalPosts / 10));

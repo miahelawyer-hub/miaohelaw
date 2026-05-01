@@ -1,13 +1,13 @@
 import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
 import { SITE_URL } from '../consts';
-import { isPublishedBlogPost } from '../lib/blogPublished';
+import { isBlogPostRoutable } from '../lib/blogPublished';
 
 export const prerender = true;
 
 export const GET: APIRoute = async () => {
 	const posts = (await getCollection('blog'))
-		.filter(isPublishedBlogPost)
+		.filter(isBlogPostRoutable)
 		.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 	const body = posts.map((post) => ({
 		slug: post.id,
