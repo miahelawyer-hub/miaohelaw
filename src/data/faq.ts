@@ -1324,6 +1324,121 @@ export const faqItems: FaqItem[] = [
       '视家暴类型与是否牵涉孩子安全而定：纯经济控制未必单独决定育儿安排；肢体暴力、身体虐待及影响孩子安全的行为更可能进入法官对子女最大利益的裁量。',
     pairedFaqPath: '/en/faq/does-family-violence-affect-custody-parenting-time-ontario/',
   },
+  {
+    slug: 'anshen-zinv-fuyangfei-jisuan',
+    capsule: '安省子女抚养费按 Federal Child Support Guidelines 算，依据支付方税前年收入、子女数量和居住省份查表确定。',
+    question: '在加拿大安省，子女抚养费是怎么算的？',
+    summary:
+      '在安省，子女抚养费首先按《Federal Child Support Guidelines（联邦子女抚养费准则）》计算，依据是支付方的<strong>税前年收入</strong>、子女人数和居住省份。这三个变量直接对应一张全国统一的表格，查表即可得出每月应付金额。注意是税前收入，不是税后；如果支付方年收入超过 15 万加币，接收方还可依据 Guidelines 第 4 条申请超出表格金额的抚养费。若需把<strong>经济安排与育儿裁量</strong>放在一起理解，可参阅<a href="/faq/haizi-yijian-jianhu-fayuan/">离婚后孩子的意见法院会听吗？</a>；中加认定差异见<a href="/blog/ontario-vs-china-child-spousal-support-comparison/">安省抚养费 vs 中国抚养费：关键认定差异</a>；本站<a href="/family-law/support/">扶养与抚养费（子女与配偶）专题</a>亦汇总相关程序与策略。',
+    answers: [
+      '安省的子女抚养费遵循《Federal Child Support Guidelines》。计算依据的是<strong>支付方的税前年收入</strong>、孩子的数量和居住的省份，这三项直接对应一张全国统一的标准表格，查表即得每月应付金额。',
+      '需要特别注意的是<strong>税前而非税后</strong>。很多客户用到手工资来推算，得出的数字会偏低。另外，当支付方年收入超过 <strong>15 万加币</strong>时，接收方可以依据 Guidelines 第 4 条申请超出表格金额的抚养费——理由是孩子有权分享父母实际能维持的生活水平。',
+    ],
+    details: [
+      '《Federal Child Support Guidelines》是加拿大联邦层面的全国统一规则。安省作为参与省份，离婚案件中的子女抚养费基本都按这套准则计算。Guidelines 附带的表格已经把支付方收入、孩子人数与每月金额做了精确对应，律师和法官的工作主要是核实<strong>申报的收入是否真实完整</strong>。',
+      '"税前收入"指的是 T1 申报表上 Line 15000 的总收入，包括工资、自雇收入、租金、分红、海外收入等。如果支付方有未申报或低报收入的迹象，律师可以申请财务披露与第三方核查；自雇人士还要看 Line 15000 之上的实际可支配收入，避免通过公司报销虚减个人收入。',
+      '当支付方年收入超过 15 万加币时，按 Guidelines 表格继续往上推算的金额可能偏低，因为高收入家庭的孩子的实际生活成本与教育投入更高。Guidelines 第 4 条允许法院在此类案件中超出表格判决，常见考量包括<strong>家庭原本的消费水平、孩子的教育安排（私校、留学、特长培养等）</strong>。',
+      '此外，Guidelines 还区分 "table amount"（按表格的基础金额）与 "section 7 expenses"（特殊或特别开支，如医疗、课外活动、上大学的学费等），后者由父母按收入比例分摊，与基础抚养费分开计算。建议致电 647-930-6688 预约何淼律师咨询您的具体情况。',
+    ],
+    keywords: '安省子女抚养费,Federal Child Support Guidelines,子女抚养费计算,加拿大抚养费,何淼律师,中加双执照律师',
+    featured: true,
+    metaTitle: '在加拿大安省，子女抚养费是怎么算的？| 何淼律师',
+    metaDescription:
+      '安省子女抚养费按《Federal Child Support Guidelines》计算，依据支付方税前年收入、子女数量和省份查表得出。年收入 15 万以上可申请超表金额。',
+    pairedFaqPath: '/en/faq/how-is-child-support-calculated-ontario/',
+  },
+  {
+    slug: 'meiyou-shouru-yiran-keyi-zhengqu-jianhuquan',
+    capsule: '可以。安省判定子女监护权的标准是"子女最大利益原则"，考虑亲子关系、照顾能力、稳定性等，不是父母的经济条件。',
+    question: '在加拿大，没有收入的一方还能拿到孩子的抚养权吗？',
+    summary:
+      '可以。在安省，子女监护权（decision-making responsibility / parenting time）的判定标准是<strong>"子女最大利益原则（best interests of the child）"</strong>，考虑的是亲子关系、照顾能力、稳定性、家庭暴力等因素，<strong>不是父母的经济条件</strong>。收入较低的一方完全可能成为主要监护人，对方则通过支付子女抚养费来履行经济责任。这一点和中国家庭法的逻辑有根本差别。经济侧可对照<a href="/faq/anshen-zinv-fuyangfei-jisuan/">安省子女抚养费如何计算</a>；裁量框架可参考<a href="/blog/child-custody-ontario-chinese/">安省子女监护权：华人父母常见误区</a>；亦欢迎从<a href="/about/">关于律师与事务所</a>了解我们如何处理跨境与双语案件。',
+    answers: [
+      '<strong>可以。</strong>在安省，监护权和经济条件是<strong>分开判断的两件事</strong>。法院判定监护权（decision-making responsibility）和育儿时间（parenting time）时遵循"子女最大利益原则"，考量孩子与父母的关系、双方的照顾能力、稳定性、是否存在家庭暴力等因素。<strong>父母的收入高低本身不是判断标准</strong>。',
+      '从中国移民来的客户经常误解这一点——因为在中国法院，一方的经济能力会直接影响监护权归属。但在加拿大，收入较低的一方完全可能拿到主要监护权；对方通过支付子女抚养费来履行经济责任，并不会"因为收入高就拿到孩子"。',
+    ],
+    details: [
+      '安省 <em>Children\'s Law Reform Act</em>（《儿童法改革法》）和联邦 <em>Divorce Act</em>（《离婚法》）都明确规定，子女相关问题的核心标准是<strong>子女最大利益（best interests of the child）</strong>。法院评估的因素包括：孩子与每位父母的情感纽带、每位父母满足孩子需求的能力、孩子的稳定性需求、家庭暴力风险、孩子的意愿（在年龄和成熟度允许时）等。',
+      '<strong>"父母的经济条件"不在这份清单上。</strong>背后的法律逻辑是：经济差距由抚养费制度（支付方按 Guidelines 支付）和财产分割制度来弥补，监护权本身不应该被卖给收入更高的一方。',
+      '根据何淼律师的经验，许多在传统观念里"经济条件不如对方"的客户其实拥有很强的监护权主张——他们是孩子的<strong>主要照顾者（primary caregiver）</strong>，了解孩子的日常作息、医疗、学校情况，与孩子的情感连接更紧密。这些恰恰是法院最看重的因素。',
+      '如果您正面临监护权争议，请提前整理：日常照顾孩子的证据（接送、就医、家长会、签字记录等）、孩子的日常作息材料、双方与孩子相处时间的记录。欢迎致电 647-930-6688 预约何淼律师咨询。',
+    ],
+    keywords: '没有收入监护权,安省子女监护权,best interests of the child,主要照顾者,何淼律师,中加双执照律师',
+    featured: true,
+    metaTitle: '没有收入还能拿到孩子的抚养权吗？安省 | 何淼律师',
+    metaDescription:
+      '可以。安省判定监护权的核心标准是"子女最大利益原则"，考虑亲子关系、照顾能力、稳定性等因素，不看父母经济条件。收入差距由抚养费制度弥补。',
+    pairedFaqPath: '/en/faq/parent-without-income-custody-canada/',
+  },
+  {
+    slug: 'zhongguo-fangchan-shouru-anshen-lihun-jisuan',
+    capsule: '会。安省法庭计算收入和财产时看的是全球范围，中国的工资、租金、分红、房产都必须披露并纳入计算。',
+    question: '我在中国有房产和收入，加拿大法庭离婚时会算进去吗？',
+    summary:
+      '会。安省法庭计算一个人的收入和财产时，看的是<strong>全球范围</strong>——中国的工资、租金、分红、银行账户、房产都必须披露并纳入抚养费和财产分割的计算基础。这一点和中国法院的做法差别很大：中国法院在很多情况下对境外财产不予追溯或处理。在跨境离婚案件中，中国资产的披露是一个无法绕开的环节。财产分割框架可先读<a href="/faq/jiating-jingzichan/">离婚时如何计算家庭净资产？</a>；跨境披露与举证见<a href="/blog/cross-border-assets-divorce-ontario/">跨境资产与安省离婚</a>；需要中英双语与两国法域经验时，见<a href="/dual-licensed-china-canada-family-lawyer/">中加双执照家庭法服务介绍</a>。',
+    answers: [
+      '<strong>会，而且这是一个无法绕开的环节。</strong>安省法庭计算抚养费收入和财产分割时，看的是<strong>全球范围（worldwide）</strong>——你在中国的工资收入、租金收入、分红、银行存款、房产、股权，都必须如实披露，并纳入安省家庭法的计算框架。',
+      '这一点与中国法院的做法形成强烈反差：中国法院在很多离婚案件中对境外财产<strong>不予追溯或处理</strong>，但安省法庭对境内境外资产一视同仁。如果你以为"中国的房产法庭管不到"而不披露，将面临严重的法律后果，包括隐瞒财产判决、不利推定、甚至诉讼成本由你独自承担。',
+    ],
+    details: [
+      '安省 <em>Family Law Act</em>（《家庭法》）第 4 条对净家庭财产（Net Family Property）的定义不限于本地资产——只要是配偶名下的财产，无论登记地在哪里，分居日的市值都计入分居日资产清单。同样，《Federal Child Support Guidelines》计算抚养费时使用的是"年收入"，包括来自全球的所有应税及未申报的收入来源。',
+      '常见的中国资产类型在披露中需要分别处理：<strong>房产</strong>（提供产权证、近期估值）、<strong>银行存款</strong>（账户对账单）、<strong>租金收入</strong>（租赁合同 + 银行流水）、<strong>分红/股权</strong>（持股证明 + 分红记录）、<strong>父母处寄存的资金</strong>（视情况是否需要披露）。',
+      '中国资产的<strong>估值</strong>通常需要中国当地的评估机构出具材料，律师会指导如何获取符合安省法庭采信标准的文件。<strong>翻译公证</strong>也是必备步骤——所有中文文件需要由认证翻译机构出具英文翻译件。',
+      '对方有时会通过<strong>资产追查（asset tracing）</strong>查证你在中国的财产，包括通过中国银行的境内查询、不动产登记查询、第三方征信调查等。在加拿大法庭强制披露要求下，故意隐瞒会导致严重不利后果。建议在第一次咨询时就坦诚交代全部跨境资产情况。欢迎致电 647-930-6688 预约何淼律师咨询。',
+    ],
+    keywords: '中国房产离婚,境外资产披露,跨境离婚,worldwide income,Net Family Property,何淼律师,中加双执照律师',
+    featured: true,
+    metaTitle: '中国房产和收入会算进加拿大离婚吗？| 何淼律师',
+    metaDescription:
+      '会。安省法庭按全球范围计算财产和收入，中国的房产、租金、分红、银行账户都必须披露并纳入分割。隐瞒境外资产将面临严重法律后果。',
+    pairedFaqPath: '/en/faq/disclose-chinese-assets-ontario-divorce/',
+  },
+  {
+    slug: 'zhongguo-anshen-peiou-shanyangfei-chabie',
+    capsule: '中国法院少判配偶赡养费，仅在重大疾病或丧失劳动能力等特殊情况下判付；安省则有完整独立的配偶赡养费制度。',
+    question: '在中国法院和安省法院，配偶赡养费的差别是什么？',
+    summary:
+      '在中国，离婚时法院判付配偶赡养费的情形<strong>非常少见</strong>，通常只在一方有重大疾病或丧失劳动能力等特殊困难时才会判。但在加拿大安省，<strong>配偶赡养费是一项独立的法律请求</strong>，有完整的认定框架。即便双方都有工作能力、都没有重大健康问题，安省法院仍然可能基于婚姻期间形成的生活水平或一方为家庭所做的职业牺牲来判付。金额与年限可接续阅读<a href="/faq/anshen-peiou-shanyangfei-jine-nianxian/">安省配偶赡养费的金额和年限是怎么决定的？</a>；系统对照见<a href="/blog/ontario-vs-china-child-spousal-support-comparison/">安省抚养费 vs 中国抚养费（含配偶赡养）</a>；程序与争议类型见<a href="/family-law/divorce-litigation/">离婚与诉讼</a>专题。',
+    answers: [
+      '<strong>差别非常大。</strong>在中国，配偶赡养费（生活费）在普通离婚中很少被判付，主要适用于一方有重大疾病、丧失劳动能力等特殊困难情形。中国法律的默认假设是：离婚后双方各自承担经济责任，不互相依赖。',
+      '但在<strong>加拿大安省</strong>，配偶赡养费（spousal support）是一项<strong>独立的法律请求</strong>，有完整的判定框架和判例支持。即便双方都健康、都有工作能力，安省法院仍然可能判付——理由可能是婚姻期间形成的生活水平、一方为家庭所做的职业牺牲（全职照顾家庭）、或为对方支持事业发展所失去的机会成本。',
+    ],
+    details: [
+      '安省的配偶赡养费由联邦 <em>Divorce Act</em>（《离婚法》）和省级 <em>Family Law Act</em>（《家庭法》）双重规范。判付逻辑有三类基础：<strong>补偿性（compensatory）</strong>——一方为家庭做出职业牺牲；<strong>非补偿性（non-compensatory）</strong>——婚后一方陷入经济困难；<strong>合同性（contractual）</strong>——基于双方明示或默示的协议。',
+      '加拿大律师协会还发布了《Spousal Support Advisory Guidelines》（SSAG，配偶赡养费咨询准则），虽然不是强制性法律，但律师和法官在大多数案件中都会参考它来计算金额范围与年限。SSAG 给出的是"区间"（如月付金额 X 到 Y、持续 N 年到 M 年），具体数字仍由法官结合个案确定。',
+      '中国法院的"少判"传统并不意味着加拿大也会少判。相反，安省的判付率高、金额可观、年限可能长达数年甚至 10 年以上，<strong>对从中国来的客户来说是一项常常被低估的法律风险</strong>。如果你是高收入一方，在第一次咨询时就应该明确"是否会被判付配偶赡养费"作为核心问题之一。',
+      '反过来说，如果你是相对低收入或为家庭付出更多的一方，配偶赡养费可能是你的重要权利——不要因为"中国不判这个"就主动放弃主张。欢迎致电 647-930-6688 预约何淼律师评估您的具体情况。',
+    ],
+    keywords: '配偶赡养费,中加离婚差别,spousal support Ontario,SSAG,Divorce Act,何淼律师,中加双执照律师',
+    featured: true,
+    metaTitle: '中国法院和安省法院，配偶赡养费的差别是什么？| 何淼律师',
+    metaDescription:
+      '中国法院少判配偶赡养费，仅在重大疾病或丧失劳动能力时判付。安省则有独立完整的配偶赡养费制度，即便双方都健康、有工作能力仍可能判付。',
+    pairedFaqPath: '/en/faq/why-canada-spousal-support-vs-china/',
+  },
+  {
+    slug: 'anshen-peiou-shanyangfei-jine-nianxian',
+    capsule: '安省配偶赡养费综合考虑五个因素：婚姻年限、双方收入、健康状况、婚姻期间生活水平、为家庭做的职业牺牲。',
+    question: '在安省，配偶赡养费的金额和年限是怎么决定的？',
+    summary:
+      '安省法院在判定配偶赡养费时综合考虑五个因素：<strong>结婚或同居的持续年限</strong>、<strong>双方各自的收入和收入能力</strong>、<strong>一方的身体状况和工作能力</strong>、<strong>婚姻期间形成的生活水平和消费习惯</strong>、以及<strong>一方为家庭所做的职业牺牲</strong>（如全职照顾家庭放弃事业）。婚姻越长，赡养义务通常越长；长婚姻案件中，赡养费持续 5–10 年甚至更长是常见的。制度背景见<a href="/faq/zhongguo-anshen-peiou-shanyangfei-chabie/">中国法院与安省法院配偶赡养费的差别</a>；执行与 FRO 等实务见<a href="/blog/spousal-child-support-ontario/">对方不付抚养费怎么办</a>；家庭法各业务线总览见<a href="/family-law/">家庭法服务</a>。',
+    answers: [
+      '安省法院判定配偶赡养费时综合考量<strong>五个因素</strong>：（1）结婚或同居的持续年限；（2）双方各自的收入与收入能力；（3）一方的身体状况和工作能力；（4）婚姻期间形成的生活水平和消费习惯；（5）一方为家庭所做的职业牺牲。',
+      '一般来说，<strong>婚姻越长，赡养义务越长</strong>；婚姻达到 20 年以上或加上孩子年龄达到一定标准时，可能进入<strong>不限期赡养（indefinite support）</strong>的范围。长婚姻案件中，赡养费持续 5–10 年甚至更长是常见的。具体金额通常参考 SSAG（配偶赡养费咨询准则）给出的区间。',
+    ],
+    details: [
+      'SSAG 提供了两种公式：<strong>"无子女公式"（without child support formula）</strong>用于无子女或子女已成年的婚姻；<strong>"有子女公式"（with child support formula）</strong>用于仍需支付子女抚养费的婚姻。前者主要看双方收入差与婚姻年限，后者会考虑子女抚养费支付后的可支配收入。两种公式都给出"金额区间"和"年限区间"，律师据此谈判，法官据此判决。',
+      '<strong>金额</strong>的影响因素：双方税前收入差越大、婚姻越长，配偶赡养费越高。婚姻期间形成的高消费水平也会推高金额——例如长期年消费 30 万加币的家庭，离婚后仅判付每月 2,000 加币显然不符合"维持生活水平"的逻辑。',
+      '<strong>年限</strong>的常见判断：婚姻每持续一年，赡养费义务约对应半年到一年。<strong>20 年以上的婚姻</strong>，或<strong>"65 岁规则"</strong>（婚姻年限 + 接收方年龄达到 65）适用时，可能进入不限期赡养。短婚姻（如 3-5 年）通常只判 1-3 年的过渡性赡养。',
+      '<strong>调整与终止</strong>：配偶赡养费判付后并非一成不变。<strong>支付方收入显著下降、接收方再婚或同居、接收方收入大幅上升</strong>等情况，都可能成为申请减免或终止的理由。建议保留收入变化的证据，并在变化发生后及时咨询律师。欢迎致电 647-930-6688 预约何淼律师咨询。',
+    ],
+    keywords: '配偶赡养费金额,配偶赡养费年限,SSAG,spousal support guidelines,不限期赡养,何淼律师',
+    featured: true,
+    metaTitle: '安省配偶赡养费的金额和年限是怎么决定的？| 何淼律师',
+    metaDescription:
+      '安省配偶赡养费综合考虑婚姻年限、双方收入、健康状况、婚姻期间生活水平、为家庭做的职业牺牲。长婚姻持续 5–10 年常见，20 年以上可能不限期。',
+    pairedFaqPath: '/en/faq/spousal-support-amount-duration-ontario/',
+  },
 ];
 
 export function getFaqItemsForListing(): FaqItem[] {

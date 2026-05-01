@@ -866,6 +866,121 @@ export const faqItemsEn: FaqItemEn[] =
     metaDescription:
       "Impact depends on the type of family violence and child safety: economic abuse alone may weigh differently than physical assault or risks to the child; outcomes are evidence-driven.",
   },
+  {
+    slug: "how-is-child-support-calculated-ontario",
+    question: "How is child support calculated in Ontario after a divorce?",
+    summary:
+      "In Ontario, child support is calculated under the <strong>Federal Child Support Guidelines</strong> based on the payor's pre-tax annual income, the number of children, and the province of residence. These three inputs map to a national table that produces the monthly amount. The calculation uses pre-tax (gross) income, not take-home pay. When the payor's income exceeds $150,000, the recipient may seek child support above the table amount under Section 4 of the Guidelines. For how child and spousal support fit together, see <a href=\"/en/faq/child-spousal-support-ontario/\">How are child support and spousal support calculated?</a>; for a China–Ontario comparison, read <a href=\"/en/blog/ontario-vs-china-child-spousal-support-comparison/\">Ontario vs China: child and spousal support</a>; our <a href=\"/en/family-law/support/\">child and spousal support overview</a> collects related guides.",
+    answers: [
+      "Ontario follows the <strong>Federal Child Support Guidelines</strong>. The amount is determined by three inputs: the payor's <strong>pre-tax annual income</strong>, the number of children, and the province of residence. These map directly to a national table that gives the monthly amount.",
+      "Two practical points: first, this is <strong>pre-tax</strong> income (Line 15000 on a Canadian T1), not take-home pay. Second, when the payor earns over <strong>$150,000</strong>, the table is a floor — Section 4 of the Guidelines lets the recipient seek a higher amount, recognizing that children should share in the household's actual standard of living.",
+    ],
+    details: [
+      "The Federal Child Support Guidelines apply to all Canadian provinces, including Ontario, in divorce cases. The Guidelines table converts the payor's income, number of children, and province into a monthly amount with very little discretion. Lawyers and judges focus most of their effort on verifying that the income disclosed is <strong>complete and accurate</strong>.",
+      "Pre-tax income includes employment earnings, self-employment income, rental income, dividends, foreign income, and capital gains. For self-employed payors, courts often look beyond the T1 line to assess <strong>actual disposable income</strong>, including discretionary corporate expenses and benefits. Underreporting can be challenged through full disclosure motions and forensic accounting.",
+      "When the payor earns over $150,000, simply extending the table can produce an amount that does not reflect the children's actual lifestyle. <strong>Section 4 of the Guidelines</strong> allows the court to award above-table support, considering the family's established consumption patterns, private school tuition, extracurricular activities, and similar high-end expenses.",
+      "The Guidelines also distinguish <strong>table amount</strong> (the basic monthly support) from <strong>Section 7 expenses</strong> (special or extraordinary costs such as medical, daycare, post-secondary tuition, and major extracurriculars), which parents share proportionally to their incomes — separately from the table amount. To discuss your specific case, contact Miao He at 647-930-6688.",
+    ],
+    keywords:
+      "child support Ontario,Federal Child Support Guidelines,calculate child support Canada,Section 4 Guidelines,Miao He lawyer,dual-licensed China Canada",
+    featured: true,
+    pairedFaqPath: "/faq/anshen-zinv-fuyangfei-jisuan/",
+    metaTitle: "How Is Child Support Calculated in Ontario? | Miao He",
+    metaDescription:
+      "Ontario child support is set by the Federal Child Support Guidelines based on the payor's pre-tax income, children, and province. Income above $150K may trigger above-table support.",
+  },
+  {
+    slug: "parent-without-income-custody-canada",
+    question: "Can a parent without income still get custody of the children in Canada?",
+    summary:
+      "Yes. Ontario decides parenting matters (decision-making responsibility and parenting time) based on the <strong>best interests of the child</strong>, considering factors such as the parent-child relationship, capacity to meet the child's needs, stability, and family violence — <strong>not the parent's income</strong>. The lower-earning parent can absolutely become the primary parent; the higher-earning parent then satisfies their financial obligation through child support. For the support side, see <a href=\"/en/faq/how-is-child-support-calculated-ontario/\">How is child support calculated in Ontario?</a>; for parenting pitfalls in practice, read <a href=\"/en/blog/child-custody-ontario-chinese/\">Child custody in Ontario — common misconceptions</a>; learn more about the firm at <a href=\"/en/about/\">About</a>.",
+    answers: [
+      "<strong>Yes.</strong> In Ontario, custody (now called decision-making responsibility) and parenting time are decided on the <strong>best interests of the child</strong> — not on income. The court considers each parent's relationship with the child, capacity to meet daily needs, stability, family violence, and the child's wishes (where age-appropriate).",
+      "Clients from China are sometimes surprised by this, because Chinese family courts do weigh a parent's economic standing in custody decisions. Canadian law takes a different path: economic disparity is addressed through <strong>child support and equalization</strong>, while parenting decisions are made on what serves the child best.",
+    ],
+    details: [
+      "The <em>Children's Law Reform Act</em> and the federal <em>Divorce Act</em> both anchor parenting decisions in the <strong>best interests of the child</strong>. The statutory factors include: the child's emotional bond with each parent, each parent's ability to meet the child's needs, the child's need for stability, family violence and safety risks, and the child's views (where appropriate).",
+      "Notably, <strong>parental income is not on this list</strong>. The legal logic: economic disparity is addressed by support payments and property division, not by giving the higher earner the children.",
+      "In Mia He's experience, many clients who feel financially weaker in fact have strong parenting positions because they are the <strong>primary caregiver</strong> — the one who knows the child's daily routine, medical history, school, and emotional needs. These are exactly the facts Ontario courts weigh most heavily.",
+      "If you are facing a parenting dispute, document the caregiving you actually provide: school pickups, medical appointments, parent-teacher meetings, daily routines, and time spent with the child. To discuss strategy, contact Miao He at 647-930-6688.",
+    ],
+    keywords:
+      "custody without income Ontario,best interests of the child,primary caregiver,parenting Ontario,Miao He lawyer,Chinese family lawyer Toronto",
+    featured: true,
+    pairedFaqPath: "/faq/meiyou-shouru-yiran-keyi-zhengqu-jianhuquan/",
+    metaTitle: "Can a Parent Without Income Get Custody in Canada? | Miao He",
+    metaDescription:
+      "Yes. Ontario decides custody on the best interests of the child — parent-child relationship, caregiving capacity, stability, family violence — not parental income.",
+  },
+  {
+    slug: "disclose-chinese-assets-ontario-divorce",
+    question: "Do I need to disclose my Chinese assets and income in an Ontario divorce?",
+    summary:
+      "Yes. Ontario courts calculate income and net worth on a <strong>worldwide basis</strong> — Chinese salaries, rental income, dividends, bank accounts, and real estate must be fully disclosed and counted toward both child support calculations and equalization of net family property. This contrasts with how many Chinese courts treat foreign assets, often without practical reach. For cross-border families, disclosure of Chinese assets is unavoidable in Ontario divorce proceedings. For the equalization framework, see <a href=\"/en/faq/house-split-divorce-ontario/\">Does the house have to be split 50/50 in a divorce?</a> (Ontario NFP overview); for disclosure themes, read <a href=\"/en/blog/cross-border-assets-divorce-ontario/\">Cross-border assets and Ontario divorce</a>; our <a href=\"/dual-licensed-china-canada-family-lawyer/\">dual-licensed China–Canada family law</a> page explains how we handle these files.",
+    answers: [
+      "<strong>Yes — and this is non-negotiable.</strong> Ontario calculates income and net worth on a <strong>worldwide</strong> basis. Salaries, rental income, dividends, bank balances, real estate, and equity holdings located in China must be disclosed and incorporated into both child/spousal support and equalization of net family property.",
+      "The contrast with Chinese practice is sharp: many Chinese courts will not pursue or adjudicate foreign property in routine divorces. Ontario does not make that distinction. Treating Chinese assets as 'out of reach' and failing to disclose them carries serious consequences — adverse inferences, costs awards, contempt findings, and in extreme cases imputed property values.",
+    ],
+    details: [
+      "Section 4 of Ontario's <em>Family Law Act</em> defines net family property by reference to property a spouse owns at the date of separation, regardless of where that property is located. The <em>Federal Child Support Guidelines</em> similarly base child support on worldwide annual income, including unreported or under-reported sources.",
+      "Common Chinese asset types that need disclosure: <strong>real estate</strong> (title certificates and current valuations), <strong>bank accounts</strong> (statements), <strong>rental income</strong> (lease agreements plus banking records), <strong>shares and dividends</strong> (holding records and dividend history), and <strong>funds parked with relatives</strong> (case-by-case treatment depending on whether the funds are truly yours).",
+      "<strong>Valuation</strong> usually requires Chinese local appraisals and supporting documents that satisfy Ontario evidentiary standards. <strong>Translation and notarization</strong> are essential — all Chinese-language documents typically need certified English translations.",
+      "Opposing counsel can pursue <strong>asset tracing</strong> through Chinese bank inquiries, real estate registry checks, and third-party investigators. Under Ontario's strict disclosure rules, deliberate non-disclosure leads to severe outcomes. Be candid with your lawyer at the first consultation about all cross-border holdings. Contact Miao He at 647-930-6688 to discuss your file.",
+    ],
+    keywords:
+      "Chinese assets Ontario divorce,worldwide income disclosure,cross-border divorce,asset tracing China Canada,Net Family Property,Miao He lawyer",
+    featured: true,
+    pairedFaqPath: "/faq/zhongguo-fangchan-shouru-anshen-lihun-jisuan/",
+    metaTitle: "Must I Disclose Chinese Assets in an Ontario Divorce? | Miao He",
+    metaDescription:
+      "Yes. Ontario courts calculate property and income worldwide. Chinese real estate, salaries, rental income, and bank accounts must be disclosed. Hiding them carries severe consequences.",
+  },
+  {
+    slug: "why-canada-spousal-support-vs-china",
+    question: "Why does Canada have spousal support when China rarely awards it?",
+    summary:
+      "Chinese courts seldom award spousal support in ordinary divorces, with exceptions limited to narrow hardship situations such as serious illness. Ontario operates under a fundamentally different framework: <strong>spousal support is an independent legal claim</strong> with a developed body of law. Even when both parties are working and healthy, an Ontario court may order spousal support to maintain the marital standard of living or to compensate for career sacrifices made for the family. For amount and duration, continue with <a href=\"/en/faq/spousal-support-amount-duration-ontario/\">How long does spousal support last in Ontario?</a>; for a structured comparison, see <a href=\"/en/blog/ontario-vs-china-child-spousal-support-comparison/\">Ontario vs China: child and spousal support</a>; procedure context is on our <a href=\"/en/family-law/divorce-litigation/\">divorce litigation</a> page.",
+    answers: [
+      "<strong>The two systems start from different defaults.</strong> Chinese courts treat ordinary divorces with the assumption that each spouse will move on financially after the marriage ends; spousal support is reserved for narrow hardship situations like serious illness or loss of working capacity.",
+      "<strong>Ontario takes the opposite default.</strong> Spousal support is an independent, developed area of law. Even when both spouses are healthy and employed, an Ontario court may order support — based on marital lifestyle, career sacrifices made for the family, or economic disadvantage caused by the marriage breakdown.",
+    ],
+    details: [
+      "Ontario spousal support is governed by both the federal <em>Divorce Act</em> and the provincial <em>Family Law Act</em>. Three theoretical bases support an award: <strong>compensatory</strong> (one spouse made career sacrifices for the family), <strong>non-compensatory</strong> (a spouse faces economic hardship after the marriage ends), and <strong>contractual</strong> (express or implied agreements between the spouses).",
+      "The <em>Spousal Support Advisory Guidelines</em> (SSAG) provide ranges — not strict rules — for amount and duration. Lawyers and judges treat them as a strong reference in most cases. SSAG outputs a range (e.g., monthly amount X to Y, duration N to M years), with judicial discretion still operating within those bounds.",
+      "The Chinese 'rarely awards' tradition does not transfer to Canada. Awards in Ontario can be substantial in dollar amount and run for years — sometimes a decade or more in long marriages. <strong>For Chinese-Canadian families, this is one of the most underestimated legal risks</strong>. If you are the higher earner, treat the question 'will I owe spousal support' as a top-tier issue at the first consultation.",
+      "Conversely, if you are the lower-earning spouse or made career sacrifices for the family, spousal support may be a meaningful right — don't waive it because Chinese courts wouldn't have ordered it. To assess your situation, contact Miao He at 647-930-6688.",
+    ],
+    keywords:
+      "spousal support Ontario,China vs Canada divorce,SSAG,Divorce Act spousal support,cross-border family law,Miao He lawyer",
+    featured: true,
+    pairedFaqPath: "/faq/zhongguo-anshen-peiou-shanyangfei-chabie/",
+    metaTitle: "Why Does Canada Have Spousal Support When China Rarely Awards It? | Miao He",
+    metaDescription:
+      "Chinese courts seldom award spousal support in routine divorces. Ontario treats it as an independent legal claim with developed law — courts may award it even when both spouses work.",
+  },
+  {
+    slug: "spousal-support-amount-duration-ontario",
+    question: "How long does spousal support last in Ontario, and how is the amount determined?",
+    summary:
+      "Ontario courts consider five factors when determining spousal support: the <strong>length of the marriage or cohabitation</strong>, <strong>the income and earning capacity of each spouse</strong>, <strong>the health and employability of either party</strong>, <strong>the standard of living established during the marriage</strong>, and <strong>career sacrifices made for the family</strong>. Longer marriages typically result in longer support obligations; in long marriages, awards lasting 5–10 years or more are common. For why Canada awards spousal support more often than China, see <a href=\"/en/faq/why-canada-spousal-support-vs-china/\">Why does Canada have spousal support when China rarely awards it?</a>; for how the two streams relate, read <a href=\"/en/blog/spousal-child-support-ontario/\">Spousal support and child support in Ontario: how are they calculated?</a>; related materials are grouped under <a href=\"/en/family-law/support/\">child and spousal support</a>.",
+    answers: [
+      "Ontario courts weigh <strong>five factors</strong>: (1) length of marriage or cohabitation; (2) each spouse's income and earning capacity; (3) physical health and employability; (4) marital standard of living and spending patterns; and (5) career sacrifices made for the family.",
+      "As a rule of thumb, <strong>longer marriages produce longer support obligations</strong>. Marriages of 20 years or more, or cases where length-plus-recipient-age reaches certain thresholds, may trigger <strong>indefinite support</strong>. In long marriages, awards lasting 5–10 years or more are common. Specific amounts usually fall within the SSAG ranges.",
+    ],
+    details: [
+      "The SSAG offers two formulas: the <strong>without-child-support formula</strong> for marriages without children or with adult children, and the <strong>with-child-support formula</strong> for cases where child support is also payable. The first focuses on income disparity and marriage length; the second factors in disposable income after child support. Both produce ranges for amount and duration that lawyers negotiate within and judges decide within.",
+      "<strong>Amount</strong> drivers: larger gross income gap and longer marriage push support higher. A high marital standard of living also pulls amounts upward — for example, a family with $300K annual consumption rarely sees a court award only $2,000/month spousal support, because that fails to maintain the established standard.",
+      "<strong>Duration</strong> guidance: roughly speaking, each year of marriage corresponds to half-a-year to one-year of support. <strong>Marriages over 20 years</strong>, or cases triggering the <strong>'rule of 65'</strong> (marriage length plus recipient's age reaching 65), can shift to indefinite support. Short marriages (say, 3–5 years) usually receive 1–3 years of transitional support.",
+      "<strong>Variation and termination</strong>: spousal support is not fixed forever. <strong>Material changes</strong> — substantial drop in payor income, recipient remarriage or cohabitation, recipient's significant income increase — can ground motions to vary or terminate. Keep evidence of income changes and consult counsel promptly when circumstances change. Contact Miao He at 647-930-6688 for advice.",
+    ],
+    keywords:
+      "spousal support amount Ontario,spousal support duration,SSAG,Spousal Support Advisory Guidelines,indefinite support,rule of 65,Miao He lawyer",
+    featured: true,
+    pairedFaqPath: "/faq/anshen-peiou-shanyangfei-jine-nianxian/",
+    metaTitle: "How Long Does Spousal Support Last in Ontario? | Miao He",
+    metaDescription:
+      "Ontario weighs five factors: marriage length, both incomes, health, marital lifestyle, and career sacrifices. Long marriages 5–10+ years; 20+ may trigger indefinite support.",
+  },
 ];
 
 export function getFaqItemsEnForListing(): FaqItemEn[] {
