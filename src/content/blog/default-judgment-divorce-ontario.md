@@ -12,10 +12,7 @@ tags:
   - "mandarin-family-lawyer"
   - "markham-divorce-lawyer"
   - "miao-he-lawyer"
-  - "ontario-divorce-lawyer"
-  - "substituted-service"
   - "toronto-chinese-family-lawyer"
-  - "uncooperative-spouse-divorce"
 ---
 
 "我已经递交了离婚申请，但对方根本不理我，也不去法院——我能继续吗？"
