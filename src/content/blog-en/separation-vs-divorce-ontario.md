@@ -9,10 +9,11 @@ heroImage: ""
 keywords: "separation vs divorce Canada,separation under one roof Ontario,90-day reconciliation rule Canada,separation date Ontario,divorce filing Ontario,separation agreement Ontario,Miao He family lawyer,how long to divorce Canada,legal separation Ontario,Chinese family lawyer Ontario"
 tags:
   - "chinese-family-lawyer"
+  - "divorce-ontario"
+  - "markham-family-lawyer"
   - "miao-he-lawyer"
   - "ontario-family-law"
   - "separation-date"
-  - "separation-vs-divorce"
 relatedReading:
   - slug: common-law-vs-divorce-ontario
     line: Separation rules in common-law relationships — how they differ from formal marriage under Canadian law.
