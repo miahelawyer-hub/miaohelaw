@@ -1,14 +1,15 @@
 ---
+
 title: "Can New Immigrants Get Divorced in Ontario?"
 description: "Immigration status does not affect your right to divorce in Ontario. Miao He explains the residency requirements, what documents you need, and common concerns for newcomers going through separation."
 pairedArticlePath: "/blog/new-immigrant-divorce-ontario/"
 pubDate: 2026-04-11T16:00:00-05:00
 keywords: "Ontario family law,Miao He lawyer,Chinese family lawyer Toronto,divorce Ontario,647-930-6688"
 tags:
-  - "Ontario family law"
-  - "Miao He"
-  - "divorce Ontario"
-  - "Chinese family lawyer"
+  - "chinese-family-lawyer"
+  - "divorce-ontario"
+  - "miao-he-lawyer"
+  - "ontario-family-law"
 ---
 
 One of the most common concerns among newcomers to Canada facing a marriage breakdown is whether their immigration status affects their ability to divorce. The short answer is: **it does not.**

@@ -1,4 +1,5 @@
 ---
+
 title: "WeChat, Bank Screenshots & Recordings as Evidence in Ontario Family Court"
 description: "Can WeChat messages, bank screenshots, or recordings be used as evidence in Ontario family court? Yes — but only with conditions. Authentication is the hardest hurdle: all evidence must be introduced through witness testimony unless both sides consent. Miao He explains admissibility rules, the China vs Canada evidence gap, and five practical steps to get your electronic evidence into court."
 pairedArticlePath: "/blog/electronic-evidence-ontario-family-court/"
@@ -7,12 +8,12 @@ updatedDate: 2026-04-18T15:00:00-04:00
 heroImage: ""
 keywords: "WeChat evidence Ontario family court,bank screenshot admissibility,recording evidence family law Ontario,electronic evidence authentication,witness testimony family court,Family Law Rules Ontario evidence,Evidence Act Ontario,China Canada evidence rules,Chinese divorce lawyer Ontario,Miao He"
 tags:
-  - "Electronic Evidence"
-  - "WeChat Evidence"
-  - "Ontario Family Court"
-  - "China Canada Evidence Rules"
-  - "Chinese family lawyer"
-  - "Miao He"
+  - "china-canada-evidence-rules"
+  - "chinese-family-lawyer"
+  - "electronic-evidence"
+  - "miao-he-lawyer"
+  - "ontario-family-court"
+  - "wechat-evidence"
 relatedReading:
   - slug: chinese-divorce-property-gift-loan-trust-ontario
     line: How parental contributions (gift vs loan) are proven — one of the most common contexts where WeChat transfers are introduced as evidence.

@@ -1,4 +1,5 @@
 ---
+
 title: "华人离婚财产分割规则是什么？父母出资、赠与借款与安省判例框架"
 description: "多伦多及安省华人离婚中财产争议常集中于父母首付/还贷：是赠与还是借款？法院如何举证？Barber v. Magee 判例因素、信托主张、婚房出售令与推定收入一文梳理。"
 pairedArticlePath: "/en/blog/chinese-divorce-property-gift-loan-trust-ontario/"
@@ -6,16 +7,16 @@ pubDate: 2026-04-17T14:00:00-05:00
 heroImage: ""
 keywords: "华人离婚财产分割,多伦多华人离婚律师,父母出资买房离婚,赠与还是借款,父母首付离婚分割,安省家庭法财产分割,Barber v Magee,多伦多离婚财产律师,万锦离婚律师,列治文山家庭法,士嘉堡华人律师,世嘉堡离婚,婚房出售令,Sale of Matrimonial Home,推定收入,imputed income Ontario,明示信托,推定信托,何淼律师,Miao He律师"
 tags:
-  - "华人离婚律师"
-  - "多伦多华人家庭法律师"
-  - "财产分割律师"
-  - "离婚财产分割"
-  - "万锦离婚律师"
-  - "列治文山离婚律师"
-  - "士嘉堡离婚律师"
-  - "安省家庭法"
-  - "何淼律师"
-  - "普通话离婚律师"
+  - "chinese-divorce-lawyer"
+  - "divorce-property-division"
+  - "mandarin-divorce-lawyer"
+  - "markham-divorce-lawyer"
+  - "miao-he-lawyer"
+  - "ontario-family-law"
+  - "property-division-lawyer"
+  - "richmond-hill-divorce-lawyer"
+  - "scarborough-divorce-lawyer"
+  - "toronto-chinese-family-lawyer"
 relatedIntro: "若你还希望从净资产均等（Equalization）、整体财产框架或抚养费推定收入角度补充阅读，可结合下列站内文章。"
 relatedReading:
   - slug: ontario-divorce-property-division

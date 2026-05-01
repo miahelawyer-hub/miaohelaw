@@ -1,14 +1,15 @@
 ---
+
 title: "Can a Separation Agreement Be Overturned in Ontario?"
 description: "A signed separation agreement is binding — but it can be challenged if signed under duress, without independent legal advice, or without financial disclosure. Miao He explains when it holds and when it can be set aside."
 pairedArticlePath: "/blog/separation-agreement-validity-ontario/"
 pubDate: 2026-04-11T16:00:00-05:00
 keywords: "Ontario family law,Miao He lawyer,Chinese family lawyer Toronto,divorce Ontario,647-930-6688"
 tags:
-  - "Ontario family law"
-  - "Miao He"
-  - "divorce Ontario"
-  - "Chinese family lawyer"
+  - "chinese-family-lawyer"
+  - "divorce-ontario"
+  - "miao-he-lawyer"
+  - "ontario-family-law"
 ---
 
 Can a separation agreement be overturned after it's been signed?

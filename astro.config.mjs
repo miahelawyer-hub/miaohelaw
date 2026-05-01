@@ -65,7 +65,7 @@ function computeRescuedTagPaths({ prefix, contentDir, introDir }) {
 	const counts = computeTagCounts(contentDir);
 	const rescued = new Set();
 	for (const [tag, c] of counts.entries()) {
-		if (c >= 2 && introTags.has(tag)) {
+		if (c >= 5 && introTags.has(tag)) {
 			rescued.add(`${prefix}${encodeURIComponent(tag)}/`);
 		}
 	}
@@ -105,7 +105,7 @@ export default defineConfig({
 				if (p.startsWith('/tag/') || p.startsWith('/en/tag/')) {
 					// Only include “rescued” tag pages in sitemap:
 					// - tag has an intro file
-					// - tag appears in 2+ posts
+					// - tag appears in 5+ posts
 					return rescuedTagPaths.has(p);
 				}
 				return true;

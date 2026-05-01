@@ -1,4 +1,5 @@
 ---
+
 title: "Ontario Has No-Fault Divorce — Does Domestic Violence Still Affect the Outcome?"
 description: "Most Ontario divorces rely on one-year separation, but family violence is not a legal non-issue. This article explains how domestic abuse can still shape parenting orders, exclusive possession of the matrimonial home, interim relief, and credibility — and where restraining orders fit in."
 pairedArticlePath: "/blog/no-fault-divorce-domestic-violence-ontario/"
@@ -6,12 +7,12 @@ pubDate: 2026-04-26T16:00:00-04:00
 heroImage: ""
 keywords: "no-fault divorce Ontario,domestic violence family law,Restraining Order Ontario,decision-making responsibility,best interests of the child,exclusive possession matrimonial home,Chinese family lawyer Toronto,Miao He"
 tags:
-  - "Ontario family law"
-  - "Restraining Order Ontario"
-  - "domestic violence lawyer Ontario"
-  - "divorce Ontario"
-  - "Chinese family lawyer"
-  - "Markham family lawyer"
+  - "chinese-family-lawyer"
+  - "divorce-ontario"
+  - "domestic-violence-lawyer-ontario"
+  - "markham-family-lawyer"
+  - "ontario-family-law"
+  - "restraining-order-ontario"
 relatedIntro: "If you are in an urgent situation, prioritize physical safety first. This article explains how no-fault divorce interacts — and does not fully displace — parenting, housing, and safety issues in Ontario family law."
 relatedReading:
   - slug: "ontario-restraining-order-chinese-family"
@@ -88,7 +89,7 @@ If you want the \"how-to\" companion to this article, read:
 [Restraining orders in Ontario — emergency legal protection for Chinese families facing domestic violence](/en/blog/ontario-restraining-order-chinese-family/)
 
 For a curated list of posts on the same tag:  
-[Restraining Order Ontario hub](/en/tag/Restraining%20Order%20Ontario/)
+[Restraining Order Ontario hub](/en/tag/restraining-order-ontario/)
 
 Think of it this way: **protection usually starts with stating the risk clearly, organizing admissible evidence, and obtaining enforceable court orders** — all of which benefit from strategy, not improvisation.
 
@@ -139,7 +140,7 @@ In extreme situations, violence-related injury, mental-health impairment, earnin
 
 ### 2) Understand restraining orders as **tools**, not emotional vents
 
-- [Restraining Order Ontario hub](/en/tag/Restraining%20Order%20Ontario/)  
+- [Restraining Order Ontario hub](/en/tag/restraining-order-ontario/)  
 - [Restraining orders — practical guide](/en/blog/ontario-restraining-order-chinese-family/)
 
 ### 3) Preserve evidence — calm documentation beats panic deletes

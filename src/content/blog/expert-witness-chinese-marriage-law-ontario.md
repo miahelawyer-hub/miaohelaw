@@ -1,4 +1,5 @@
 ---
+
 title: "在加拿大离婚，什么情况下需要中国婚姻法专家证人？"
 description: "加拿大法庭的证据规则与中国完全不同——所有证据必须通过证人证言引入。何淼律师解析何时需要中国婚姻法专家证人，以及专家证人在法庭上的角色与中立立场。"
 pairedArticlePath: "/en/blog/expert-witness-chinese-marriage-law-ontario/"
@@ -6,14 +7,14 @@ pubDate: 2026-04-11T09:00:00-05:00
 heroImage: ""
 keywords: "中国婚姻法专家证人,加拿大离婚专家证人,Expert Witness中国法律,跨境离婚证据,何淼律师,中加双执照律师"
 tags:
-  - "中国婚姻法专家证人"
-  - "专家证人加拿大"
-  - "跨境离婚证据"
-  - "Expert Witness Ontario"
-  - "何淼律师"
-  - "中加双执照律师"
-  - "多伦多华人家庭法律师"
-  - "cross-border divorce Ontario"
+  - "chinese-marriage-law-expert-witness"
+  - "cross-border-divorce-evidence"
+  - "cross-border-divorce-ontario"
+  - "dual-licensed-china-canada-lawyer"
+  - "expert-witness-canada"
+  - "expert-witness-ontario"
+  - "miao-he-lawyer"
+  - "toronto-chinese-family-lawyer"
 ---
 
 很多在加拿大打离婚官司的华人，都对一件事感到困惑：

@@ -1,14 +1,15 @@
 ---
+
 title: "Child Custody and Parenting Time in Ontario: A Practical Guide"
 description: "Ontario replaced 'custody' with 'decision-making responsibility' and 'parenting time' under the Divorce Act. Miao He explains what these terms mean and how parenting arrangements are determined."
 pairedArticlePath: "/blog/child-custody-ontario-chinese/"
 pubDate: 2026-04-11T16:00:00-05:00
 keywords: "Ontario family law,Miao He lawyer,Chinese family lawyer Toronto,divorce Ontario,647-930-6688"
 tags:
-  - "Ontario family law"
-  - "Miao He"
-  - "divorce Ontario"
-  - "Chinese family lawyer"
+  - "chinese-family-lawyer"
+  - "divorce-ontario"
+  - "miao-he-lawyer"
+  - "ontario-family-law"
 ---
 
 The language of child custody in Ontario has changed significantly in recent years. Understanding the current framework is essential for any parent navigating a separation or divorce.

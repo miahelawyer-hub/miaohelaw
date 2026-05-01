@@ -1,4 +1,5 @@
 ---
+
 title: "婚前协议在Ontario有法律效力吗？5个华人常见误区"
 description: "很多人以为婚前协议签了就万事大吉，但Ontario法院推翻婚前协议的案例并不少见。何淼律师详解婚前协议的法律要求、5个常见误区和起草注意事项。"
 pairedArticlePath: "/en/blog/prenuptial-agreement-ontario-2026/"
@@ -6,16 +7,14 @@ pubDate: 2026-04-09T11:00:00-05:00
 heroImage: ""
 keywords: "婚前协议Ontario,Marriage Contract,独立法律意见,婚前协议误区,Ontario婚姻合同,何淼律师"
 tags:
-  - "婚前协议律师"
-  - "婚前协议 Ontario"
-  - "多伦多华人家庭法律师"
-  - "华人离婚律师"
-  - "万锦家庭法律师"
-  - "普通话家庭法律师"
-  - "prenuptial agreement Ontario"
-  - "Marriage Contract Ontario"
-  - "何淼律师"
-  - "Miao He律师"
+  - "chinese-divorce-lawyer"
+  - "mandarin-family-lawyer"
+  - "markham-family-lawyer"
+  - "marriage-contract-ontario"
+  - "miao-he-lawyer"
+  - "prenuptial-agreement-lawyer"
+  - "prenuptial-agreement-ontario"
+  - "toronto-chinese-family-lawyer"
 ---
 
 在华人社区，越来越多的人在结婚前选择签订婚前协议。这是一个理智的决定——但很多人对婚前协议在Ontario的法律效力存在严重误解，导致花了钱签了协议，离婚时却发现协议根本无法执行。

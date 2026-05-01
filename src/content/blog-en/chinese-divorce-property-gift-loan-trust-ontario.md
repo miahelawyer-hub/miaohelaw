@@ -1,4 +1,5 @@
 ---
+
 title: "Chinese-Canadian Divorce and Property Division: Parent Gifts vs. Loans, Trusts, and Ontario Case Law"
 description: "In Toronto and Ontario family files, parent contributions to down payments and mortgages often trigger a core dispute: gift or loan? This article outlines the Barber v. Magee framework, trust issues, matrimonial home sale orders, and imputed income in context."
 pairedArticlePath: "/blog/chinese-divorce-property-gift-loan-trust-ontario/"
@@ -6,15 +7,15 @@ pubDate: 2026-04-17T14:00:00-05:00
 heroImage: ""
 keywords: "Chinese divorce property division Ontario,parent gift or loan divorce Toronto,down payment from parents divorce,Barber v Magee,gift vs loan family law Ontario,Chinese family lawyer Toronto,Markham Richmond Hill Scarborough divorce lawyer,matrimonial home sale order Ontario,imputed income child support Ontario,express trust resulting trust constructive trust,equalization Ontario,Miao He family lawyer"
 tags:
-  - "Chinese family lawyer Toronto"
-  - "Ontario property division"
-  - "Toronto divorce lawyer"
-  - "Markham family lawyer"
-  - "Richmond Hill family law"
-  - "Scarborough Chinese lawyer"
-  - "parent contribution divorce"
-  - "Miao He"
-  - "Ontario family law"
+  - "chinese-family-lawyer-toronto"
+  - "markham-family-lawyer"
+  - "miao-he-lawyer"
+  - "ontario-family-law"
+  - "ontario-property-division"
+  - "parent-contribution-divorce"
+  - "richmond-hill-family-law"
+  - "scarborough-chinese-lawyer"
+  - "toronto-divorce-lawyer"
 relatedIntro: "For equalization basics, net family property mechanics, or imputed income in support claims, these posts complement the topics above."
 relatedReading:
   - slug: ontario-divorce-property-division

@@ -1,4 +1,5 @@
 ---
+
 title: "离婚时对方把孩子带回中国了，还能追回来吗？"
 description: "中国不是海牙公约成员国，对方恶意带孩子回中国是家庭法中最棘手的情形之一。何淼律师详解预防措施、法律手段，以及最坏情况下你面临的现实。"
 pairedArticlePath: "/en/blog/child-taken-to-china-ontario/"
@@ -6,14 +7,14 @@ pubDate: 2026-04-11T14:00:00-05:00
 heroImage: ""
 keywords: "孩子被带回中国,海牙公约中国,parental abduction Ontario,子女抚养权跨境,何淼律师,华人家庭法律师"
 tags:
-  - "孩子被带回中国"
-  - "海牙公约"
-  - "parental abduction Ontario"
-  - "子女监护权跨境"
-  - "何淼律师"
-  - "多伦多华人家庭法律师"
-  - "child custody Ontario"
-  - "华人离婚律师"
+  - "child-custody-ontario"
+  - "child-taken-to-china"
+  - "chinese-divorce-lawyer"
+  - "cross-border-child-custody"
+  - "hague-convention"
+  - "miao-he-lawyer"
+  - "parental-abduction-ontario"
+  - "toronto-chinese-family-lawyer"
 ---
 
 这是华人离婚案件中最让人揪心的情形之一：

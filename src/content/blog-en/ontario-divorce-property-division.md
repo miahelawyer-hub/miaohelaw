@@ -1,14 +1,15 @@
 ---
+
 title: "How Is Property Divided in an Ontario Divorce?"
 description: "Ontario does not split everything 50/50. Miao He explains the equalization of net family property system, what counts, what's excluded, and how the matrimonial home is treated differently."
 pairedArticlePath: "/blog/ontario-divorce-property-division/"
 pubDate: 2026-04-11T16:00:00-05:00
 keywords: "Ontario family law,Miao He lawyer,Chinese family lawyer Toronto,divorce Ontario,647-930-6688"
 tags:
-  - "Ontario family law"
-  - "Miao He"
-  - "divorce Ontario"
-  - "Chinese family lawyer"
+  - "chinese-family-lawyer"
+  - "divorce-ontario"
+  - "miao-he-lawyer"
+  - "ontario-family-law"
 ---
 
 One of the most common misconceptions in Ontario family law is that divorce automatically means splitting everything equally. That is not how it works.

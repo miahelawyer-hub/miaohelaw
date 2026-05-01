@@ -2,9 +2,7 @@
 /* ============================================
  * TAG INTRO MECHANISM（英文 blog-en /en/tag/[tag]）
  * ============================================
- * Intro files live in: src/data/tag-intros-en/{exact tag string}.md
- *
- * Filename must match the tag string exactly (spaces, punctuation, etc.).
+ * Intro files live in: src/data/tag-intros-en/{slug}.md (same slug as blog-en `tags`, kebab-case).
  *
  * Each intro file’s frontmatter MUST include these five fields (same template as ZH):
  *   title             Click-oriented page title
@@ -13,7 +11,7 @@
  *   schemaName        Formal name for JSON-LD CollectionPage
  *   schemaDescription Longer, more doctrinal/technical description for structured data
  *
- * English “rescued” hub (indexable + ItemList): published blog-en posts with this tag ≥ 2
+ * English “rescued” hub (indexable + ItemList): published blog-en posts with this tag ≥ 5
  * AND this intro file exists. Otherwise: noindex,follow (list still renders).
  *
  * If a tag has no matching .md file, the tag page still renders
@@ -22,7 +20,7 @@
  * After publishing posts with new tags:
  *   1. List tags used in blog-en
  *   2. Compare with files under src/data/tag-intros-en/
- *   3. Report gaps; when a tag reaches 2+ posts, add/complete the intro with all five fields
+ *   3. Report gaps; when a tag reaches 5+ posts, add/complete the intro with all five fields
  * ============================================ */
 
 import { getCollection } from 'astro:content';
@@ -30,6 +28,7 @@ import { isBlogEnPostRoutable } from '../../../lib/blogPublished';
 import BaseHead from '../../../components/BaseHead.astro';
 import HeaderEn from '../../../components/HeaderEn.astro';
 import Footer from '../../../components/Footer.astro';
+import { getTagDisplayNameEn } from '../../../data/tagDisplayNames';
 
 export async function getStaticPaths() {
   const posts = (await getCollection('blog-en')).filter(isBlogEnPostRoutable);
@@ -95,22 +94,23 @@ if (rawContent) {
   tagIntro = parseTagIntro(rawContent);
 }
 
-// Index only when this tag is “rescued”: has an intro AND has 2+ posts.
-const isRescuedTag = Boolean(tagIntro) && posts.length >= 2;
+// Index only when this tag is “rescued”: has an intro AND has 5+ posts.
+const isRescuedTag = Boolean(tagIntro) && posts.length >= 5;
 
 const sorted = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 const canonical = `https://www.miaohelaw.ca/en/tag/${tag}/`;
 
 const introFm = tagIntro?.frontmatter ?? {};
-const pageTitle = introFm.title ?? `${tag} Hub | Miao He — Ontario Family Lawyer`;
+const displayLabel = introFm.displayName ?? getTagDisplayNameEn(tag);
+const pageTitle = introFm.title ?? `${displayLabel} Hub | Miao He — Ontario Family Lawyer`;
 const pageH2 = introFm.h2 ?? null;
 const pageDescription =
   introFm.description ??
-  `Articles and legal insights on ${tag} by Miao He. Ontario family law, Mandarin & English, 647-930-6688.`;
-const schemaName = introFm.schemaName ?? `${tag} | Miao He — Ontario Family Lawyer`;
+  `Articles and legal insights on ${displayLabel} by Miao He. Ontario family law, Mandarin & English, 647-930-6688.`;
 const schemaDescription =
   introFm.schemaDescription ??
-  `Articles and legal insights on ${tag} by Miao He — Ontario family law practice, Mandarin & English.`;
+  `Articles and legal insights on ${displayLabel} by Miao He — Ontario family law practice, Mandarin & English.`;
+const collectionPageName = displayLabel;
 
 function formatDate(date) {
   return new Date(date).toLocaleDateString('en-CA', { year: 'numeric', month: 'long', day: 'numeric' });
@@ -134,7 +134,7 @@ const schema = JSON.stringify([
   {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
-    name: schemaName,
+    name: collectionPageName,
     description: schemaDescription,
     url: canonical,
     inLanguage: 'en-CA',
@@ -145,7 +145,7 @@ const schema = JSON.stringify([
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.miaohelaw.ca/' },
       { '@type': 'ListItem', position: 2, name: 'Tags', item: 'https://www.miaohelaw.ca/en/tag/' },
-      { '@type': 'ListItem', position: 3, name: tag, item: canonical },
+      { '@type': 'ListItem', position: 3, name: displayLabel, item: canonical },
     ],
   },
   ...(itemList ? [itemList] : []),
@@ -162,9 +162,9 @@ const schema = JSON.stringify([
   {!isRescuedTag && <meta name="robots" content="noindex, follow" />}
   <meta
     name="keywords"
-    content={tag + ',Miao He,Ontario family law,Chinese family lawyer,dual-licensed lawyer,LSO 83315K'}
+    content={displayLabel + ',Miao He,Ontario family law,Chinese family lawyer,dual-licensed lawyer,LSO 83315K'}
   />
-  <meta property="og:title" content={tag + ' | Miao He — Ontario Family Lawyer'} />
+  <meta property="og:title" content={displayLabel + ' | Miao He — Ontario Family Lawyer'} />
   <meta property="og:type" content="website" />
   <script type="application/ld+json" set:html={schema}></script>
   <style>
@@ -224,7 +224,7 @@ const schema = JSON.stringify([
   <HeaderEn />
   <main>
     <div class="hero">
-      <h1>{tag}</h1>
+      <h1>{displayLabel}</h1>
       {pageH2 && <h2>{pageH2}</h2>}
       {tagIntro && (
         <div class="tag-intro">

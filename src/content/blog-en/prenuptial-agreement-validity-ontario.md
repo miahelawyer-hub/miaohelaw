@@ -1,14 +1,15 @@
 ---
+
 title: "Is Your Marriage Contract Valid? What Ontario Courts Look For"
 description: "A marriage contract can be set aside if it does not meet Ontario's legal requirements. Miao He explains the key validity requirements and common pitfalls that lead courts to invalidate marriage contracts."
 pairedArticlePath: "/blog/prenuptial-agreement-validity-ontario/"
 pubDate: 2026-04-11T16:00:00-05:00
 keywords: "Ontario family law,Miao He lawyer,Chinese family lawyer Toronto,divorce Ontario,647-930-6688"
 tags:
-  - "Ontario family law"
-  - "Miao He"
-  - "divorce Ontario"
-  - "Chinese family lawyer"
+  - "chinese-family-lawyer"
+  - "divorce-ontario"
+  - "miao-he-lawyer"
+  - "ontario-family-law"
 ---
 
 Signing a marriage contract does not guarantee it will be enforced. Ontario courts have the power to set aside marriage contracts that do not meet the required legal standards. If you are relying on a contract to protect your assets, you need to know what makes it valid — and what could defeat it.

@@ -1,4 +1,5 @@
 ---
+
 title: "还没离婚，对方已与别人同居——财产怎么分？那笔钱还能要回来吗？"
 description: "对方出轨同居，婚内给第三者花的钱能追回来吗？何淼律师详解安省分居日、婚姻财产挥霍（Dissipation of Assets）的法律主张与举证要求。"
 pairedArticlePath: "/en/blog/dissipation-of-assets/"
@@ -6,16 +7,15 @@ pubDate: 2026-04-07T14:00:00-05:00
 heroImage: ""
 keywords: "婚姻财产挥霍,Dissipation of Assets,分居日财产,对方出轨财产,Ontario财产分割,何淼律师"
 tags:
-  - "资产转移律师"
-  - "隐藏资产离婚"
-  - "多伦多华人家庭法律师"
-  - "华人离婚律师"
-  - "财产分割律师"
-  - "跨境资产律师"
-  - "普通话家庭法律师"
-  - "万锦家庭法律师"
-  - "何淼律师"
-  - "Miao He律师"
+  - "asset-dissipation-lawyer"
+  - "chinese-divorce-lawyer"
+  - "cross-border-asset-lawyer"
+  - "hidden-assets-divorce"
+  - "mandarin-family-lawyer"
+  - "markham-family-lawyer"
+  - "miao-he-lawyer"
+  - "property-division-lawyer"
+  - "toronto-chinese-family-lawyer"
 ---
 
 **作者：Miao (Mia) He 何淼律师 | H. LAW FIRM 恒. 律师事务所**

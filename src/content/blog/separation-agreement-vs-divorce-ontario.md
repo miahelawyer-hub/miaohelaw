@@ -1,4 +1,5 @@
 ---
+
 title: "分居协议 vs 离婚：有什么区别？我该选哪个？"
 description: "分居和离婚在Ontario有什么法律区别？分居协议能解决什么问题？什么情况下应该先签分居协议而不急着离婚？何淼律师详解两者的适用场景。"
 pairedArticlePath: "/en/blog/separation-agreement-vs-divorce-ontario/"
@@ -6,16 +7,14 @@ pubDate: 2026-04-09T16:00:00-05:00
 heroImage: ""
 keywords: "分居协议Ontario,Separation Agreement,分居vs离婚,Ontario分居,婚姻合同,何淼律师"
 tags:
-  - "分居协议律师"
-  - "分居协议 Ontario"
-  - "多伦多华人家庭法律师"
-  - "华人离婚律师"
-  - "万锦家庭法律师"
-  - "普通话家庭法律师"
-  - "separation agreement Ontario"
-  - "分居vs离婚"
-  - "何淼律师"
-  - "Miao He律师"
+  - "chinese-divorce-lawyer"
+  - "mandarin-family-lawyer"
+  - "markham-family-lawyer"
+  - "miao-he-lawyer"
+  - "separation-agreement-lawyer"
+  - "separation-agreement-ontario"
+  - "separation-vs-divorce"
+  - "toronto-chinese-family-lawyer"
 ---
 
 很多人在婚姻出现问题时，第一个问题是："我是要分居还是直接离婚？"

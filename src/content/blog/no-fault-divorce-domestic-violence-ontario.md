@@ -1,4 +1,5 @@
 ---
+
 title: "安省是「无过错离婚」，但家暴真的对结果没影响吗？"
 description: "安省离婚多以一年分居为 grounds，但家暴并非「零影响」。本文从子女监护、婚姻住房排他性居住、赡养与财产三方面拆解实务后果，并说明 Restraining Order 与证据保全的第一步。"
 pairedArticlePath: "/en/blog/no-fault-divorce-domestic-violence-ontario/"
@@ -6,17 +7,15 @@ pubDate: 2026-04-26T16:00:00-04:00
 heroImage: ""
 keywords: "家暴离婚影响,安省限制令,子女监护权与家暴,子女监护权Ontario,子女抚养费 Ontario,配偶抚养费,无过错离婚,Restraining Order Ontario,安省家庭法,何淼律师"
 tags:
-  - "Ontario family law"
-  - "Restraining Order Ontario"
-  - "安省家庭法"
-  - "子女监护权Ontario"
-  - "子女抚养费 Ontario"
-  - "配偶抚养费"
-  - "多伦多华人家庭法律师"
-  - "万锦家庭法律师"
-  - "华人离婚律师"
-  - "何淼律师"
-  - "Miao He律师"
+  - "child-custody-ontario"
+  - "child-support-ontario"
+  - "chinese-divorce-lawyer"
+  - "markham-family-lawyer"
+  - "miao-he-lawyer"
+  - "ontario-family-law"
+  - "restraining-order-ontario"
+  - "spousal-support"
+  - "toronto-chinese-family-lawyer"
 relatedIntro: "如果你正在紧急处境中，请优先确保人身安全；本文帮助你理解：无过错离婚制度下，家暴仍可能如何影响诉讼走向。"
 relatedReading:
   - slug: "ontario-restraining-order-chinese-family"
@@ -97,7 +96,7 @@ faqStructured:
 [在安省申请 Restraining Order：华人家庭面对家暴时，法律能提供哪些紧急保护？](/blog/ontario-restraining-order-chinese-family/)
 
 以及我把「限制令 + 证据 + 常见误区」整理成专题入口的页面（适合收藏、反复看）：  
-[Restraining Order Ontario 专题页](/tag/Restraining%20Order%20Ontario/)
+[Restraining Order Ontario 专题页](/tag/restraining-order-ontario/)
 
 你可以把它理解成：**保护受害者的第一步，往往是「把风险说清楚 + 把证据摆出来 + 把可执行的命令拿到手」**——而这三件事，都需要策略。
 
@@ -124,7 +123,7 @@ faqStructured:
 
 **一句话结论：**在子女争议里，家暴与安全风险，往往是法官评估「孩子最大利益」时的**重磅砝码**——但它仍然必须落到**证据**与**事实认定**上。
 
-若你想先把「决策责任 / parenting time / 证据与误区」放在一张地图上看，可先浏览本站 **[子女监护专题](/family-law/child-custody/)**；需要更细的实务拆解，可继续读 **[子女监护权争议：Ontario法院的判断标准](/blog/child-custody-ontario-chinese/)**。同类主题的站内索引也可从 **[子女监护权Ontario](/tag/子女监护权Ontario/)**、**[子女抚养费 Ontario](/tag/子女抚养费%20Ontario/)** 进入，便于把「安全与监护」和「抚养费/育儿时间是否被捆绑」对照着看。
+若你想先把「决策责任 / parenting time / 证据与误区」放在一张地图上看，可先浏览本站 **[子女监护专题](/family-law/child-custody/)**；需要更细的实务拆解，可继续读 **[子女监护权争议：Ontario法院的判断标准](/blog/child-custody-ontario-chinese/)**。同类主题的站内索引也可从 **[子女监护权Ontario](/tag/child-custody-ontario/)**、**[子女抚养费 Ontario](/tag/child-support-ontario/)** 进入，便于把「安全与监护」和「抚养费/育儿时间是否被捆绑」对照着看。
 
 我还想把我工作里非常痛、但必须讲出来的两类提醒写清楚（这也是我自己的经历融合进来的部分）：
 
@@ -149,7 +148,7 @@ faqStructured:
 
 **原则层面**：安省的 equalization（净家庭财产差额计算）并不是「谁更错就少分」的分配逻辑。
 
-**支持费与扶养（赡养）层面**：子女抚养费、配偶扶养（赡养）的计算、变更与执行，往往与「收入能力、披露、临时命令」绑定在一起——你可以先从本站 **[扶养与抚养费专题](/family-law/support/)** 建立框架；若已进入「对方不付 / 拖欠 / FRO」阶段，可对照 **[对方不付抚养费怎么办？Ontario强制执行手段详解](/blog/spousal-child-support-ontario/)**。相关标签入口：**[配偶抚养费](/tag/配偶抚养费/)**、**[子女抚养费 Ontario](/tag/子女抚养费%20Ontario/)**（与「推定收入」等议题常交叉出现，见 [故意不工作逃避抚养费](/blog/imputed-income-child-support-ontario/)）。
+**支持费与扶养（赡养）层面**：子女抚养费、配偶扶养（赡养）的计算、变更与执行，往往与「收入能力、披露、临时命令」绑定在一起——你可以先从本站 **[扶养与抚养费专题](/family-law/support/)** 建立框架；若已进入「对方不付 / 拖欠 / FRO」阶段，可对照 **[对方不付抚养费怎么办？Ontario强制执行手段详解](/blog/spousal-child-support-ontario/)**。相关标签入口：**[配偶抚养费](/tag/spousal-support/)**、**[子女抚养费 Ontario](/tag/child-support-ontario/)**（与「推定收入」等议题常交叉出现，见 [故意不工作逃避抚养费](/blog/imputed-income-child-support-ontario/)）。
 
 **但实务层面**：在极端情况下，例如施暴导致的严重身体/精神后果，影响到工作能力、收入能力、治疗与康复成本，或牵动费用裁定（costs）等议题，案件可能会出现「看似与家暴相关」的财务后果——这需要非常谨慎的个案分析，不能一概而论。
 
@@ -164,7 +163,7 @@ faqStructured:
 ### 2）了解 Restraining Order：把它当作「程序工具」，而不是「情绪出口」
 
 建议你从这里开始（专题汇总）：  
-[Restraining Order Ontario 专题页](/tag/Restraining%20Order%20Ontario/)
+[Restraining Order Ontario 专题页](/tag/restraining-order-ontario/)
 
 以及更细的操作向文章：  
 [在安省申请 Restraining Order：华人家庭面对家暴时，法律能提供哪些紧急保护？](/blog/ontario-restraining-order-chinese-family/)

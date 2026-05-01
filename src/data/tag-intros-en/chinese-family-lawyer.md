@@ -1,4 +1,7 @@
 ---
+slug: "chinese-family-lawyer"
+displayName: "Chinese family lawyer"
+
 tag: "Chinese family lawyer"
 title: Chinese family lawyer in Ontario: Practical Guide & Legal Insights | Miao He
 h2: Not just language — get family-law strategy that understands Chinese family dynamics and cross-border property pressure points

@@ -1,14 +1,15 @@
 ---
+
 title: "How Long Does a Divorce Take in Ontario? (2026 Guide)"
 description: "Timelines vary widely depending on whether the divorce is contested or uncontested. Miao He walks through what to expect at each stage of an Ontario divorce in 2026."
 pairedArticlePath: "/blog/ontario-divorce-timeline-2026/"
 pubDate: 2026-04-11T16:00:00-05:00
 keywords: "Ontario family law,Miao He lawyer,Chinese family lawyer Toronto,divorce Ontario,647-930-6688"
 tags:
-  - "Ontario family law"
-  - "Miao He"
-  - "divorce Ontario"
-  - "Chinese family lawyer"
+  - "chinese-family-lawyer"
+  - "divorce-ontario"
+  - "miao-he-lawyer"
+  - "ontario-family-law"
 ---
 
 One of the first questions clients ask is: how long will this take? The honest answer is that it depends — primarily on whether the divorce is contested or uncontested, and on how efficiently the parties can resolve outstanding issues.

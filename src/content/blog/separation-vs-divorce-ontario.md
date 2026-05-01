@@ -1,4 +1,5 @@
 ---
+
 title: "分居和离婚的区别详解"
 description: '在加拿大，分居是"事实状态"，离婚是"法律程序"——两者在法律后果、可逆性与程序要求上完全不同。分居无需法院、可同屋进行；90天复合规则直接影响分居日起算；离婚必须经法院判决，婚姻才彻底终止。很多华人客户误以为分居久了就自动离婚——实际上不主动申请，婚姻关系永远存在。何淼律师详解三大常见误区。'
 pairedArticlePath: "/en/blog/separation-vs-divorce-ontario/"
@@ -7,11 +8,11 @@ updatedDate: 2026-04-19T12:00:00-04:00
 heroImage: ""
 keywords: "分居和离婚的区别,加拿大分居法律,分居日认定,90天复合规则,同屋分居,离婚申请安省,分居协议安省,何淼律师,Separation Divorce Ontario,separation date证据"
 tags:
-  - "分居与离婚"
-  - "分居日认定"
-  - "安省家庭法"
-  - "华人离婚律师"
-  - "何淼律师"
+  - "chinese-divorce-lawyer"
+  - "miao-he-lawyer"
+  - "ontario-family-law"
+  - "separation-and-divorce"
+  - "separation-date-determination"
 relatedReading:
   - slug: common-law-vs-divorce-ontario
     line: Common-law 同居关系的分居规则——与正式婚姻有哪些关键差异。

@@ -1,4 +1,5 @@
 ---
+
 title: "How to Choose a Good Markham Family Lawyer: Someone Who Hears You—and Protects What Matters"
 description: "Across Ontario—and especially from a Markham office—strong family counsel balances empathy with hourly-rate discipline: listening for what you cannot quite say, stopping costly repetition, and translating usable facts into admissible courtroom narrative. Miao He explains how to assess fit before you lock into a strategy."
 pairedArticlePath: "/blog/how-to-choose-markham-family-lawyer/"
@@ -7,11 +8,11 @@ updatedDate: 2026-04-21T10:00:00-04:00
 heroImage: ""
 keywords: "Markham family lawyer,Ontario family lawyer,Mandarin family lawyer GTA,hourly rate family lawyer,Markham divorce lawyer,how to choose family lawyer,Ontario family law,Miao He family lawyer,GTA family counsel"
 tags:
-  - "Markham family lawyer"
-  - "Ontario family law"
-  - "GTA family lawyer"
-  - "Miao He"
-  - "family lawyer consult"
+  - "family-lawyer-consult"
+  - "gta-family-lawyer"
+  - "markham-family-lawyer"
+  - "miao-he-lawyer"
+  - "ontario-family-law"
 relatedIntro: "If you are also comparing counsel after multiple consults, mapping legal fees, or sketching a divorce timeline in Ontario, these posts pair well with the themes above."
 relatedReading:
   - slug: how-to-choose-toronto-chinese-divorce-lawyer

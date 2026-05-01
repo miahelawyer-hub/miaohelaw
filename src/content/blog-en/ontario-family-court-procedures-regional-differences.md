@@ -1,4 +1,5 @@
 ---
+
 title: "Ontario Family Law: Why the 'Standard' Roadmap Is Not Enough — How Toronto, Newmarket, Ottawa & North Bay Courts Actually Differ"
 description: "Family Law Rules set out a standard path, but filing steps, service order, first case conference expectations, trial scheduling, and in-person vs virtual hearings can differ by courthouse. Miao He explains why local practice matters for self-represented litigants and junior counsel in Ontario."
 pubDate: 2026-04-16T10:00:00-05:00
@@ -6,14 +7,14 @@ heroImage: ""
 keywords: "Ontario family court procedures,Toronto family court practice,Newmarket Superior Court family law,Ottawa family law case conference,GTA vs Ottawa trial scheduling,amend family law application leave to amend,Ontario self represented family court,regional court differences Ontario,case conference in person virtual Ontario,North Bay family court online,Miao He family lawyer Markham,Chinese family lawyer Ontario,647-930-6688"
 pairedArticlePath: "/blog/ontario-family-court-procedures-regional-differences/"
 tags:
-  - "Ontario family law"
-  - "family court procedure"
-  - "Toronto family lawyer"
-  - "Markham family lawyer"
-  - "self represented litigant"
-  - "case conference"
-  - "Miao He"
-  - "Chinese family lawyer GTA"
+  - "case-conference"
+  - "chinese-family-lawyer-gta"
+  - "family-court-procedure"
+  - "markham-family-lawyer"
+  - "miao-he-lawyer"
+  - "ontario-family-law"
+  - "self-represented-litigant"
+  - "toronto-family-lawyer"
 relatedIntro: "For timelines, default judgments, costs, and how separation agreements interact with divorce, you may also find these posts helpful:"
 relatedReading:
   - slug: ontario-divorce-timeline-2026

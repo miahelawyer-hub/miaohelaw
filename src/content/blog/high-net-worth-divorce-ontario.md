@@ -1,4 +1,5 @@
 ---
+
 title: "高净值离婚：隐藏资产怎么查？境外资产怎么追？"
 description: "离婚涉及大额资产、公司股权、境外账户时，如何防止对方隐匿转移？何淼律师详解高净值离婚的资产追查手段、紧急保全申请和取证策略。"
 pairedArticlePath: "/en/blog/high-net-worth-divorce-ontario/"
@@ -6,17 +7,16 @@ pubDate: 2026-04-09T19:00:00-05:00
 heroImage: ""
 keywords: "高净值离婚Ontario,隐藏资产追查,资产保全令,商业估值离婚,境外资产离婚,何淼律师"
 tags:
-  - "高净値离婚律师"
-  - "复杂离婚律师"
-  - "多伦多华人家庭法律师"
-  - "华人离婚律师"
-  - "财产分割律师"
-  - "跨境资产律师"
-  - "high net worth divorce Ontario"
-  - "普通话家庭法律师"
-  - "万锦离婚律师"
-  - "何淼律师"
-  - "Miao He律师"
+  - "chinese-divorce-lawyer"
+  - "complex-divorce-lawyer"
+  - "cross-border-asset-lawyer"
+  - "high-net-worth-divorce-lawyer"
+  - "high-net-worth-divorce-ontario"
+  - "mandarin-family-lawyer"
+  - "markham-divorce-lawyer"
+  - "miao-he-lawyer"
+  - "property-division-lawyer"
+  - "toronto-chinese-family-lawyer"
 ---
 
 高净值离婚和普通离婚的区别，不只是数字大小——而是复杂程度完全不同。

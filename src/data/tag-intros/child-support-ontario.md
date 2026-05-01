@@ -1,4 +1,7 @@
 ---
+slug: "child-support-ontario"
+displayName: "子女抚养费 Ontario"
+
 title: 子女抚养费 Ontario 专题：指引表、特殊开支与收入认定 | 何淼律师
 h2: 从表格数额到 Section 7 特殊费用、再到对方不报收入——子女扶养费的计算与争议焦点
 description: Ontario 子女抚养费（child support）专题：Federal Child Support Guidelines 指引表、抚养时间分摊、特殊及特别开支（section 7）、推定收入与自雇/跨境收入等常见争议。

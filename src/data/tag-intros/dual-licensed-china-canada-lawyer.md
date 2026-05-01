@@ -1,4 +1,7 @@
 ---
+slug: "dual-licensed-china-canada-lawyer"
+displayName: "中加双执照律师"
+
 title: 中加双执照律师 专题：不外包不失真，跨境家事一次做对 | 何淼律师
 description: 安省与中国双持牌家庭法律师——何淼 Miao He
 updatedDate: 2026-04-23

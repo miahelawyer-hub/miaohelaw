@@ -1,4 +1,7 @@
 ---
+slug: "divorce-ontario"
+displayName: "divorce Ontario"
+
 tag: "divorce Ontario"
 title: Divorce Ontario: Practical Guide & Legal Insights | Miao He
 h2: Divorce outcomes turn on dates, documents, and disclosure — understand the process so your case doesn’t drag on for years

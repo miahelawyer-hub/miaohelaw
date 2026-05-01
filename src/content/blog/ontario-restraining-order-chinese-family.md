@@ -1,4 +1,5 @@
 ---
+
 title: "在安省申请 Restraining Order：华人家庭面对家暴时，法律能提供哪些紧急保护？"
 description: "安省家暴禁制令实务指南——华人家庭如何申请 Restraining Order、紧急动议程序、证据准备、移民身份与孩子保护。何淼律师家庭法专业解读。"
 pairedArticlePath: "/en/blog/ontario-restraining-order-chinese-family/"
@@ -6,19 +7,18 @@ pubDate: 2026-04-24T10:00:00-04:00
 heroImage: ""
 keywords: "安省家暴律师,Restraining Order Ontario,禁制令申请,紧急动议,家庭暴力,多伦多华人家庭法律师,何淼律师"
 tags:
-  - "家暴律师"
-  - "Restraining Order Ontario"
-  - "禁制令律师"
-  - "紧急动议"
-  - "家庭暴力安省"
-  - "domestic violence lawyer Ontario"
-  - "多伦多华人家庭法律师"
-  - "华人离婚律师"
-  - "安省家庭法"
-  - "万锦家庭法律师"
-  - "中加双执照律师"
-  - "何淼律师"
-  - "Miao He律师"
+  - "chinese-divorce-lawyer"
+  - "domestic-violence-lawyer"
+  - "domestic-violence-lawyer-ontario"
+  - "domestic-violence-ontario"
+  - "dual-licensed-china-canada-lawyer"
+  - "markham-family-lawyer"
+  - "miao-he-lawyer"
+  - "ontario-family-law"
+  - "restraining-order-lawyer"
+  - "restraining-order-ontario"
+  - "toronto-chinese-family-lawyer"
+  - "urgent-motion"
 ---
 
 > **如果你此刻正处于危险中，请先拨打 911。**  

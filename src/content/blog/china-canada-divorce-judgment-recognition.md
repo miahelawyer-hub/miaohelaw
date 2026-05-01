@@ -1,4 +1,5 @@
 ---
+
 title: "中国离婚判决在加拿大如何承认？加拿大判决在中国怎么执行？"
 description: "在中国拿到离婚判决，加拿大会自动认可吗？加拿大判决里的财产分割，中国法院执行吗？跨境离婚最危险的不是\"法律复杂\"，而是起诉地选错——判决到手却拿不到财产。何淼律师结合代理真实跨境离婚案件的实务经验，系统讲解承认与执行规则、跨境法律冲突，以及如何根据财产分布选择起诉地。"
 pairedArticlePath: "/en/blog/china-canada-divorce-judgment-recognition/"
@@ -7,12 +8,12 @@ updatedDate: 2026-04-18T12:00:00-04:00
 heroImage: ""
 keywords: "中国离婚判决加拿大承认,加拿大判决中国执行,跨境离婚管辖权,涉外离婚承认,跨境财产分割,中加双执照律师,何淼律师,Equalization Set-off,Conflict of Laws,judicial sovereignty"
 tags:
-  - "跨境离婚"
-  - "中加跨境判决"
-  - "管辖权选择"
-  - "中加双执照律师"
-  - "华人离婚律师"
-  - "何淼律师"
+  - "china-canada-judgment-recognition"
+  - "chinese-divorce-lawyer"
+  - "cross-border-divorce"
+  - "dual-licensed-china-canada-lawyer"
+  - "jurisdiction-selection"
+  - "miao-he-lawyer"
 relatedReading:
   - slug: cross-border-assets-divorce-ontario
     line: 选完起诉地之后，加拿大法院如何审理与披露中国房产、账户与境外公司股权。

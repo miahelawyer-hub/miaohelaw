@@ -1,4 +1,5 @@
 ---
+
 title: "微信、银行截图、录音能在安省家庭法庭做证据吗？"
 description: "在安省家庭法庭，微信记录、银行截图、录音能不能作为证据？答案是有条件的——书面电子记录原则上可采，录音要看录制情境，所有证据都必须由证人在庭上引入并证明真实性。何淼律师从代理华人离婚案件的实务经验出发，讲解三类电子证据的采信规则、真实性证明难点、加中证据规则的关键差异，以及实务中最常踩雷的环节。"
 pairedArticlePath: "/en/blog/electronic-evidence-ontario-family-court/"
@@ -7,12 +8,12 @@ updatedDate: 2026-04-18T15:00:00-04:00
 heroImage: ""
 keywords: "微信记录证据,银行截图证据,录音证据安省,电子证据采信,Witness Testimony家庭法庭,Family Law Rules Ontario,Evidence Act Ontario,跨境证据中加,华人离婚律师,何淼律师"
 tags:
-  - "电子证据"
-  - "微信证据"
-  - "安省家庭法庭"
-  - "中加证据规则"
-  - "华人离婚律师"
-  - "何淼律师"
+  - "china-canada-evidence-rules"
+  - "chinese-divorce-lawyer"
+  - "electronic-evidence"
+  - "miao-he-lawyer"
+  - "ontario-family-court"
+  - "wechat-evidence"
 relatedReading:
   - slug: chinese-divorce-property-gift-loan-trust-ontario
     line: 父母出资性质（赠与 vs 借款）的证据认定与还原——电子转账记录最常被引用的场景之一。

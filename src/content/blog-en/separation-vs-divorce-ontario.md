@@ -1,4 +1,5 @@
 ---
+
 title: "Separation vs. Divorce in Canada: Key Legal Differences"
 description: "Separation is factual; divorce is a court order. Separate under one roof — no paperwork. 90-day rule governs reconciliation. Years apart never end a marriage."
 pairedArticlePath: "/blog/separation-vs-divorce-ontario/"
@@ -7,11 +8,11 @@ updatedDate: 2026-04-19T12:00:00-04:00
 heroImage: ""
 keywords: "separation vs divorce Canada,separation under one roof Ontario,90-day reconciliation rule Canada,separation date Ontario,divorce filing Ontario,separation agreement Ontario,Miao He family lawyer,how long to divorce Canada,legal separation Ontario,Chinese family lawyer Ontario"
 tags:
-  - "Separation vs Divorce"
-  - "Separation Date"
-  - "Ontario family law"
-  - "Chinese family lawyer"
-  - "Miao He"
+  - "chinese-family-lawyer"
+  - "miao-he-lawyer"
+  - "ontario-family-law"
+  - "separation-date"
+  - "separation-vs-divorce"
 relatedReading:
   - slug: common-law-vs-divorce-ontario
     line: Separation rules in common-law relationships — how they differ from formal marriage under Canadian law.

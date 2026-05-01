@@ -1,14 +1,15 @@
 ---
+
 title: "High-Net-Worth Divorce in Ontario: Key Issues and Strategies"
 description: "When significant assets are at stake, the stakes of every decision are higher. Miao He explains the distinctive challenges of high-net-worth divorce in Ontario, from business valuations to offshore assets."
 pairedArticlePath: "/blog/high-net-worth-divorce-ontario/"
 pubDate: 2026-04-11T16:00:00-05:00
 keywords: "Ontario family law,Miao He lawyer,Chinese family lawyer Toronto,divorce Ontario,647-930-6688"
 tags:
-  - "Ontario family law"
-  - "Miao He"
-  - "divorce Ontario"
-  - "Chinese family lawyer"
+  - "chinese-family-lawyer"
+  - "divorce-ontario"
+  - "miao-he-lawyer"
+  - "ontario-family-law"
 ---
 
 High-net-worth divorces involve the same legal framework as any other Ontario divorce — but the complexity, the stakes, and the strategies are categorically different.

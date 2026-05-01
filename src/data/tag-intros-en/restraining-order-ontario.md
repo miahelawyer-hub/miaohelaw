@@ -1,4 +1,7 @@
 ---
+slug: "restraining-order-ontario"
+displayName: "Restraining Order Ontario"
+
 tag: "Restraining Order Ontario"
 title: Restraining Order Ontario: Practical Guide & Legal Insights | Miao He
 h2: Feeling unsafe at home? Learn how restraining orders work, what evidence matters, and how protection is obtained in family court

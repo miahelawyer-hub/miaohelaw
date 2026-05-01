@@ -1,14 +1,15 @@
 ---
+
 title: "Understanding Net Family Property (NFP) in Ontario"
 description: "NFP is the foundation of property division in Ontario divorce law. Miao He explains how it is calculated, what is included and excluded, and how the equalization payment is determined."
 pairedArticlePath: "/blog/net-family-property-ontario/"
 pubDate: 2026-04-11T16:00:00-05:00
 keywords: "Ontario family law,Miao He lawyer,Chinese family lawyer Toronto,divorce Ontario,647-930-6688"
 tags:
-  - "Ontario family law"
-  - "Miao He"
-  - "divorce Ontario"
-  - "Chinese family lawyer"
+  - "chinese-family-lawyer"
+  - "divorce-ontario"
+  - "miao-he-lawyer"
+  - "ontario-family-law"
 ---
 
 Net Family Property (NFP) is the cornerstone of property division in Ontario. If you are going through a divorce, understanding how NFP is calculated is essential — it determines how much, if anything, one spouse owes the other.

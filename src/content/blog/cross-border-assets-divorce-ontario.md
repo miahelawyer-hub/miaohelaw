@@ -1,4 +1,5 @@
 ---
+
 title: "离婚时中国房产怎么分？Ontario法院如何处理境外资产"
 description: "在加拿大离婚，中国的房产、存款、投资账户要纳入财产分割吗？何淼律师详解Ontario法院对境外资产的管辖权、举证要求和常见处理策略。"
 pairedArticlePath: "/en/blog/cross-border-assets-divorce-ontario/"
@@ -6,18 +7,17 @@ pubDate: 2026-04-09T12:00:00-05:00
 heroImage: ""
 keywords: "跨境资产离婚,中国房产离婚,境外资产Ontario,NFP境外资产,资产保全令,何淼律师,中加双执照律师"
 tags:
-  - "跨境资产律师"
-  - "中国房产离婚"
-  - "多伦多华人家庭法律师"
-  - "万锦跨境资产律师"
-  - "华人离婚律师"
-  - "中加双执照律师"
-  - "cross-border asset lawyer Ontario"
-  - "境外资产分割"
-  - "普通话家庭法律师"
-  - "何淼律师"
-  - "Miao He律师"
-  - "资产保全令"
+  - "asset-preservation-order"
+  - "china-property-divorce"
+  - "chinese-divorce-lawyer"
+  - "cross-border-asset-lawyer"
+  - "cross-border-asset-lawyer-ontario"
+  - "dual-licensed-china-canada-lawyer"
+  - "mandarin-family-lawyer"
+  - "markham-cross-border-asset-lawyer"
+  - "miao-he-lawyer"
+  - "overseas-asset-division"
+  - "toronto-chinese-family-lawyer"
 ---
 
 这是何淼律师在咨询中被问到频率最高的问题之一——

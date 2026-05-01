@@ -9,6 +9,7 @@ import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 import '../styles/blog-prose-body-color.css';
 import { SITE_TITLE, SITE_URL } from '../consts';
+import { getTagDisplayNameZh } from '../data/tagDisplayNames';
 
 type Props = CollectionEntry['blog']['data'];
 
@@ -890,7 +891,7 @@ const structuredDataJson = JSON.stringify([
                 <h3>相关专题</h3>
                 <div class="sidebar-tag-list">
                   {tags.map(tag => (
-                    <a href={`/tag/${tag}/`} class="sidebar-tag">{tag}</a>
+                    <a href={`/tag/${tag}/`} class="sidebar-tag">{getTagDisplayNameZh(tag)}</a>
                   ))}
                 </div>
               </div>

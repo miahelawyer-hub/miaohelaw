@@ -1,14 +1,15 @@
 ---
+
 title: "Chinese Marriage Law as Evidence in Ontario Courts: The Role of an Expert Witness"
 description: "When an Ontario court needs to determine the validity of a Chinese marriage, divorce, or property arrangement, it may require expert evidence on Chinese law. Miao He is qualified as an Expert Witness in Chinese family law."
 pairedArticlePath: "/blog/expert-witness-chinese-marriage-law-ontario/"
 pubDate: 2026-04-11T16:00:00-05:00
 keywords: "Ontario family law,Miao He lawyer,Chinese family lawyer Toronto,divorce Ontario,647-930-6688"
 tags:
-  - "Ontario family law"
-  - "Miao He"
-  - "divorce Ontario"
-  - "Chinese family lawyer"
+  - "chinese-family-lawyer"
+  - "divorce-ontario"
+  - "miao-he-lawyer"
+  - "ontario-family-law"
 ---
 
 Ontario courts apply Ontario law — but sometimes, the facts of a case depend on what the law was in another jurisdiction. When Chinese marriage law, divorce law, or property law is relevant to an Ontario family law proceeding, the court may need an expert to explain it.

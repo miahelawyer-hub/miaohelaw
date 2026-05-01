@@ -1,4 +1,5 @@
 ---
+
 title: "Restraining Orders in Ontario: Emergency Legal Protection for Chinese Families Facing Domestic Violence"
 description: "A practical guide to Ontario restraining orders for Chinese-Canadian families facing domestic violence—urgent motion procedure, evidence requirements, immigration and child protection concerns."
 pairedArticlePath: "/blog/ontario-restraining-order-chinese-family/"
@@ -6,17 +7,17 @@ pubDate: 2026-04-24T10:00:00-04:00
 heroImage: ""
 keywords: "Ontario restraining order, domestic violence lawyer Ontario, urgent motion, family violence, Chinese family lawyer Toronto, Miao He"
 tags:
-  - "Restraining Order Ontario"
-  - "domestic violence lawyer Ontario"
-  - "urgent motion"
-  - "family violence Ontario"
-  - "high-conflict litigation"
-  - "Chinese family lawyer"
-  - "Markham family lawyer"
-  - "Toronto divorce lawyer"
-  - "Ontario family law"
-  - "dual-licensed lawyer"
-  - "Miao He"
+  - "chinese-family-lawyer"
+  - "domestic-violence-lawyer-ontario"
+  - "dual-licensed-lawyer"
+  - "family-violence-ontario"
+  - "high-conflict-litigation"
+  - "markham-family-lawyer"
+  - "miao-he-lawyer"
+  - "ontario-family-law"
+  - "restraining-order-ontario"
+  - "toronto-divorce-lawyer"
+  - "urgent-motion"
 ---
 
 > **If you are in immediate danger, call 911.**  

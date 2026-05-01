@@ -1,14 +1,15 @@
 ---
+
 title: "Common-Law Relationships vs. Marriage in Ontario: Key Legal Differences"
 description: "Common-law partners in Ontario do not have the same property rights as married spouses. Miao He explains the key differences and why legal planning matters for couples who live together without marrying."
 pairedArticlePath: "/blog/common-law-vs-divorce-ontario/"
 pubDate: 2026-04-11T16:00:00-05:00
 keywords: "Ontario family law,Miao He lawyer,Chinese family lawyer Toronto,divorce Ontario,647-930-6688"
 tags:
-  - "Ontario family law"
-  - "Miao He"
-  - "divorce Ontario"
-  - "Chinese family lawyer"
+  - "chinese-family-lawyer"
+  - "divorce-ontario"
+  - "miao-he-lawyer"
+  - "ontario-family-law"
 ---
 
 Many couples in Ontario live together without getting married. But the legal consequences of separating from a common-law partner are **very different** from divorcing a married spouse. Understanding these differences is critical — and many couples do not find out until it is too late.

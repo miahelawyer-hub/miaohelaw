@@ -1,4 +1,5 @@
 ---
+
 title: "新移民在加拿大离婚：PR身份、移民监、配偶担保会受影响吗？"
 description: "刚移民加拿大就面临离婚？PR身份会失去吗？被担保人离婚后担保责任怎么算？何淼律师详解新移民离婚的移民法与家庭法交叉问题。"
 pairedArticlePath: "/en/blog/new-immigrant-divorce-ontario/"
@@ -6,16 +7,15 @@ pubDate: 2026-04-09T15:00:00-05:00
 heroImage: ""
 keywords: "新移民离婚,PR离婚,移民监担保,配偶担保离婚,新移民家庭法Ontario,何淼律师"
 tags:
-  - "新移民离婚律师"
-  - "PR离婚"
-  - "多伦多华人家庭法律师"
-  - "华人离婚律师"
-  - "移民监离婚"
-  - "万锦离婚律师"
-  - "普通话家庭法律师"
-  - "immigrant divorce Ontario"
-  - "何淼律师"
-  - "Miao He律师"
+  - "chinese-divorce-lawyer"
+  - "immigrant-divorce-ontario"
+  - "immigration-residency-divorce"
+  - "mandarin-family-lawyer"
+  - "markham-divorce-lawyer"
+  - "miao-he-lawyer"
+  - "new-immigrant-divorce-lawyer"
+  - "permanent-resident-divorce"
+  - "toronto-chinese-family-lawyer"
 ---
 
 在何律师的咨询案件中，有相当一部分是刚移民加拿大不久就面临婚姻危机的客户。他们担心的问题往往不只是财产和子女，还有一个更根本的问题：

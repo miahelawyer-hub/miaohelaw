@@ -1,4 +1,7 @@
 ---
+slug: "divorce-costs-ontario"
+displayName: "divorce costs Ontario"
+
 tag: "divorce costs Ontario"
 title: Divorce costs in Ontario: retainers, court fees & what drives the bill | Miao He
 h2: The sticker shock is rarely the hourly rate — it’s the scope of what you are actually fighting

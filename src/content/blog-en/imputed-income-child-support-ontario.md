@@ -1,14 +1,15 @@
 ---
+
 title: "Imputed Income and Child Support in Ontario: What You Need to Know"
 description: "If a parent earns less than they should, or hides income, a court can impute income for child support purposes. Miao He explains how imputed income works and how to challenge it."
 pairedArticlePath: "/blog/imputed-income-child-support-ontario/"
 pubDate: 2026-04-11T16:00:00-05:00
 keywords: "Ontario family law,Miao He lawyer,Chinese family lawyer Toronto,divorce Ontario,647-930-6688"
 tags:
-  - "Ontario family law"
-  - "Miao He"
-  - "divorce Ontario"
-  - "Chinese family lawyer"
+  - "chinese-family-lawyer"
+  - "divorce-ontario"
+  - "miao-he-lawyer"
+  - "ontario-family-law"
 ---
 
 Child support in Ontario is based on income — specifically, the paying parent's **annual gross income**. But what happens when a parent deliberately reduces their income, hides earnings, or is unemployed without good reason? Ontario courts have a powerful tool: **imputed income**.

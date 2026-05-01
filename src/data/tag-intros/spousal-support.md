@@ -1,4 +1,7 @@
 ---
+slug: "spousal-support"
+displayName: "配偶抚养费"
+
 title: 配偶抚养费专题：权利、能力与补偿性扶养——安省 SSAG 与法庭裁量 | 何淼律师
 h2: 分居或离婚后是否应付配偶赡养费：看需要、能力与婚姻角色；数额与期限如何落在合理区间
 description: Ontario 配偶抚养费（spousal support）专题：配偶扶养 entitlement、Spousal Support Advisory Guidelines（SSAG）的参考区间、补偿性与非补偿性扶养、与子女抚养费及财产分割的交互关系。

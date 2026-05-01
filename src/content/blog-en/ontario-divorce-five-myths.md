@@ -1,4 +1,5 @@
 ---
+
 title: "Mistakes People Make About Ontario Divorce: Separation, Support, and Parenting Time"
 description: "Five mistakes people make about Ontario divorce — the one-year rule, separation under one roof, CRA vs family law, parenting without income, and why child support cannot be traded for parenting time."
 pairedArticlePath: "/blog/ontario-divorce-five-myths/"
@@ -6,13 +7,13 @@ pubDate: 2026-04-30T12:00:00-05:00
 heroImage: ""
 keywords: "mistakes people make about Ontario divorce,separation one year divorce,child support FRO,parenting time Ontario,decision-making responsibility,Miao He lawyer,Toronto family lawyer,647-930-6688"
 tags:
-  - "Chinese family lawyer GTA"
-  - "Chinese family lawyer Toronto"
-  - "Richmond Hill family lawyer"
-  - "Scarborough family lawyer"
-  - "divorce costs Ontario"
-  - "GTA family lawyer"
-  - "Mandarin divorce lawyer Ontario"
+  - "chinese-family-lawyer-gta"
+  - "chinese-family-lawyer-toronto"
+  - "divorce-costs-ontario"
+  - "gta-family-lawyer"
+  - "mandarin-divorce-lawyer-ontario"
+  - "richmond-hill-family-lawyer"
+  - "scarborough-family-lawyer"
 relatedIntro: "These posts pair well if you want procedure, dates, or parenting detail alongside the mistakes below about timing and parenting."
 relatedReading:
   - slug: ontario-divorce-timeline-2026

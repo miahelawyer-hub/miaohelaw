@@ -1,4 +1,7 @@
 ---
+slug: "gta-family-lawyer"
+displayName: "GTA family lawyer"
+
 tag: "GTA family lawyer"
 title: GTA family lawyer: one labour market, many family courts | Miao He
 h2: From Mississauga to Pickering, the statutes are identical — your file’s posture still has to fit your facts

@@ -2,11 +2,7 @@
 /* ============================================
  * TAG INTRO MECHANISM（中文 blog /tag/[tag]）
  * ============================================
- * Intro 文件存放在：src/data/tag-intros/{tag 原文}.md
- *
- * 文件名必须与 tag 原文完全一致（含中文、空格等）。
- * 例如 tag "万锦家庭法律师" 对应文件
- *   src/data/tag-intros/万锦家庭法律师.md
+ * Intro 文件存放在：src/data/tag-intros/{slug}.md（slug 与 blog frontmatter tags 一致，英文 kebab-case）。
  *
  * 每个 intro 文件的 frontmatter 必须包含以下五个核心字段（中英通用模板）：
  *   title            吸引点击的页面标题（<title> / OG 等）
@@ -15,7 +11,7 @@
  *   schemaName       CollectionPage 等结构化数据的标题（更正式）
  *   schemaDescription 结构化数据的详细描述（更偏教义/底层信息）
  *
- * “拯救”聚合页（可索引 + ItemList）：该 tag 下已发布中文博文数 ≥ 2，且存在上述 intro 文件。
+ * “拯救”聚合页（可索引 + ItemList）：该 tag 下已发布中文博文数 ≥ 5，且存在上述 intro 文件。
  * 否则：noindex,follow（仍显示文章列表）。
  *
  * 如果某 tag 没有对应 md 文件，tag 页会正常显示
@@ -24,7 +20,7 @@
  * 写新文章后的 TAG CHECK 流程：
  *   1. 列出文章 tags
  *   2. 对比 src/data/tag-intros/ 现有文件
- *   3. 报告缺口；若某 tag 已达 2+ 篇，应补齐 intro 及五字段
+ *   3. 报告缺口；若某 tag 已达 5+ 篇，应补齐 intro 及五字段
  * ============================================ */
 
 import { getCollection } from 'astro:content';
@@ -32,6 +28,7 @@ import BaseHead from '../../components/BaseHead.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import { isBlogPostRoutable } from '../../lib/blogPublished';
+import { getTagDisplayNameZh } from '../../data/tagDisplayNames';
 
 export async function getStaticPaths() {
   const posts = (await getCollection('blog')).filter(isBlogPostRoutable);
@@ -102,24 +99,24 @@ if (rawContent) {
   tagIntro = parseTagIntro(rawContent);
 }
 
-// Index only when this tag is “rescued”: has an intro AND has 2+ posts.
-const isRescuedTag = Boolean(tagIntro) && posts.length >= 2;
+// Index only when this tag is “rescued”: has an intro AND has 5+ posts.
+const isRescuedTag = Boolean(tagIntro) && posts.length >= 5;
 
 const sorted = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 const canonical = `https://www.miaohelaw.ca/tag/${tag}/`;
 
 const introFm = tagIntro?.frontmatter ?? {};
+const displayLabel = introFm.displayName ?? getTagDisplayNameZh(tag);
 const pageTitle =
-  introFm.title ?? `${tag} 专题 | 何淼律师 — Ontario家庭法律师`;
+  introFm.title ?? `${displayLabel} 专题 | 何淼律师 — Ontario家庭法律师`;
 const pageH2 = introFm.h2 ?? null;
 const pageDescription =
   introFm.description ??
-  `何淼律师关于${tag}的专业文章与法律资讯。Ontario家庭法，普通话全程服务，647-930-6688。`;
-const schemaName =
-  introFm.schemaName ?? `${tag} | 何淼律师 — Ontario家庭法律师`;
+  `何淼律师关于${displayLabel}的专业文章与法律资讯。Ontario家庭法，普通话全程服务，647-930-6688。`;
 const schemaDescription =
   introFm.schemaDescription ??
-  `何淼律师关于${tag}的专业文章与法律资讯，涵盖Ontario家庭法实务。`;
+  `何淼律师关于${displayLabel}的专业文章与法律资讯，涵盖Ontario家庭法实务。`;
+const collectionPageName = displayLabel;
 
 function formatDate(date) {
   return new Date(date).toLocaleDateString('zh-CN', { year: 'numeric', month: 'long', day: 'numeric' });
@@ -143,7 +140,7 @@ const schema = JSON.stringify([
   {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
-    name: schemaName,
+    name: collectionPageName,
     description: schemaDescription,
     url: canonical,
     inLanguage: 'zh-Hans',
@@ -154,7 +151,7 @@ const schema = JSON.stringify([
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: '首页', item: 'https://www.miaohelaw.ca/' },
       { '@type': 'ListItem', position: 2, name: '标签', item: 'https://www.miaohelaw.ca/tag/' },
-      { '@type': 'ListItem', position: 3, name: tag, item: canonical },
+      { '@type': 'ListItem', position: 3, name: displayLabel, item: canonical },
     ],
   },
   ...(itemList ? [itemList] : []),
@@ -169,8 +166,8 @@ const schema = JSON.stringify([
     description={pageDescription}
   />
   {!isRescuedTag && <meta name="robots" content="noindex, follow" />}
-  <meta name="keywords" content={tag + ",何淼律师,Miao He,Ontario家庭法,华人离婚律师,LSO 83315K"} />
-  <meta property="og:title" content={tag + " | 何淼律师"} />
+  <meta name="keywords" content={displayLabel + ",何淼律师,Miao He,Ontario家庭法,华人离婚律师,LSO 83315K"} />
+  <meta property="og:title" content={displayLabel + " | 何淼律师"} />
   <meta property="og:type" content="website" />
   <script type="application/ld+json" set:html={schema}></script>
   <style>
@@ -230,7 +227,7 @@ const schema = JSON.stringify([
   <Header />
   <main>
     <div class="hero">
-      <h1>{tag}</h1>
+      <h1>{displayLabel}</h1>
       {pageH2 && <h2>{pageH2}</h2>}
       {tagIntro && (
         <div class="tag-intro">

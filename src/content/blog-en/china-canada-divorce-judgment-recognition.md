@@ -1,4 +1,5 @@
 ---
+
 title: "China–Canada Divorce Judgments: Recognition & Strategy"
 description: "Chinese divorce judgments need separate Canadian recognition. Canadian judgments cannot divide Chinese property. Wrong forum: judgment but no asset."
 pairedArticlePath: "/blog/china-canada-divorce-judgment-recognition/"
@@ -7,12 +8,12 @@ updatedDate: 2026-04-18T12:00:00-04:00
 heroImage: ""
 keywords: "China divorce judgment recognition Canada,Canadian judgment enforcement China,cross-border divorce jurisdiction,Ontario family law conflict of laws,Equalization Set-off,dual-licensed Ontario China lawyer,worldwide assets Ontario,Hague Convention divorce,Miao He family lawyer,judicial sovereignty"
 tags:
-  - "Cross-border Divorce"
-  - "China–Canada Recognition"
-  - "Jurisdiction Strategy"
-  - "dual-licensed lawyer"
-  - "Chinese family lawyer"
-  - "Miao He"
+  - "china-canada-recognition"
+  - "chinese-family-lawyer"
+  - "cross-border-divorce"
+  - "dual-licensed-lawyer"
+  - "jurisdiction-strategy"
+  - "miao-he-lawyer"
 relatedReading:
   - slug: cross-border-assets-divorce-ontario
     line: How Ontario courts handle Chinese real estate, accounts, and offshore equity once you've chosen the forum.

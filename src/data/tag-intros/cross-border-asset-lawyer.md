@@ -1,4 +1,7 @@
 ---
+slug: "cross-border-asset-lawyer"
+displayName: "跨境资产律师"
+
 title: 跨境资产律师 专题：追查估值到执行，把海外资产算清楚 | 何淼律师
 description: 中加两地家庭财产的追查、估值、均分与执行
 updatedDate: 2026-04-23

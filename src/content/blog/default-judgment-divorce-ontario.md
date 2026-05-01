@@ -1,4 +1,5 @@
 ---
+
 title: "对方不出庭、不回应怎么办？Ontario离婚缺席判决详解"
 description: "对方收到离婚申请后消失、拒绝回应、或者在中国无法联系怎么办？何淼律师详解Ontario缺席判决程序、替代送达申请，以及如何在对方不配合的情况下推进离婚。"
 pairedArticlePath: "/en/blog/default-judgment-divorce-ontario/"
@@ -6,16 +7,15 @@ pubDate: 2026-04-09T18:00:00-05:00
 heroImage: ""
 keywords: "缺席判决离婚,对方不配合离婚,替代送达Ontario,离婚对方在中国,缺席程序Ontario,何淼律师"
 tags:
-  - "缺席判决律师"
-  - "对方不配合离婚"
-  - "多伦多华人家庭法律师"
-  - "华人离婚律师"
-  - "Ontario divorce lawyer"
-  - "普通话家庭法律师"
-  - "万锦离婚律师"
-  - "替代送达"
-  - "何淼律师"
-  - "Miao He律师"
+  - "chinese-divorce-lawyer"
+  - "default-judgment-lawyer"
+  - "mandarin-family-lawyer"
+  - "markham-divorce-lawyer"
+  - "miao-he-lawyer"
+  - "ontario-divorce-lawyer"
+  - "substituted-service"
+  - "toronto-chinese-family-lawyer"
+  - "uncooperative-spouse-divorce"
 ---
 
 "我已经递交了离婚申请，但对方根本不理我，也不去法院——我能继续吗？"

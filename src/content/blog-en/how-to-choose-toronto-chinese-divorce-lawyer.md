@@ -1,4 +1,5 @@
 ---
+
 title: "How to Choose the Best Chinese Divorce Lawyer in Toronto"
 description: "Across Toronto, Markham, Richmond Hill, Scarborough, and Ontario generally, divorce files differ sharply. Miao He explains why consulting multiple counsel matters, what to listen for in a consult, and how to match lawyer skills to your case structure."
 pairedArticlePath: "/blog/how-to-choose-toronto-chinese-divorce-lawyer/"
@@ -6,16 +7,16 @@ pubDate: 2026-04-17T10:00:00-05:00
 heroImage: ""
 keywords: "Chinese divorce lawyer Toronto,Toronto divorce lawyer,Mandarin divorce lawyer Ontario,Markham divorce lawyer,Richmond Hill family lawyer,Scarborough Chinese family lawyer,GTA Chinese divorce lawyer,Ontario Chinese family lawyer,how to choose a divorce lawyer,Miao He family lawyer,best Chinese divorce lawyer Toronto,uncontested divorce Ontario,contested divorce Ontario,Greater Toronto Area family law,Chinese speaking lawyer Markham Richmond Hill Scarborough"
 tags:
-  - "Chinese family lawyer Toronto"
-  - "Mandarin divorce lawyer Ontario"
-  - "Toronto divorce lawyer"
-  - "Markham divorce lawyer"
-  - "Richmond Hill family lawyer"
-  - "Scarborough family lawyer"
-  - "GTA family law"
-  - "Ontario family law"
-  - "Miao He"
-  - "how to choose divorce lawyer"
+  - "chinese-family-lawyer-toronto"
+  - "gta-family-law"
+  - "how-to-choose-divorce-lawyer"
+  - "mandarin-divorce-lawyer-ontario"
+  - "markham-divorce-lawyer"
+  - "miao-he-lawyer"
+  - "ontario-family-law"
+  - "richmond-hill-family-lawyer"
+  - "scarborough-family-lawyer"
+  - "toronto-divorce-lawyer"
 relatedIntro: "If you are also researching timelines, legal fees, or separation agreements in Ontario, these related posts pair well with the topics above (Toronto, Markham, Richmond Hill, Scarborough, and province-wide)."
 relatedReading:
   - slug: toronto-divorce-lawyer-fees-3000-vs-30000

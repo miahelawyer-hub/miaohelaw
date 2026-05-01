@@ -1,18 +1,19 @@
 ---
+
 title: "Toronto Divorce Lawyer Fees Explained: From About $3,000 to $30,000 — What You Are Actually Paying For"
 description: "Uncontested divorce packages vs hourly billing in Ontario: six-minute units, court filing fees, tariff assessments, and retainers — why Toronto divorce lawyer costs vary so widely, and how to budget before you instruct counsel."
 pubDate: 2026-04-17T12:00:00-05:00
 heroImage: ""
 keywords: "Toronto divorce lawyer fees,Ontario divorce lawyer cost,hourly family lawyer Ontario,uncontested divorce package Ontario,six minute billing lawyer,divorce court fees Ontario,retainer agreement family law,Markham Chinese family lawyer,GTA Mandarin divorce lawyer,affordable divorce lawyer Toronto,how much does a divorce lawyer cost Ontario,legal bill assessment Ontario,Miao He family lawyer,647-930-6688"
 tags:
-  - "Toronto divorce lawyer fees"
-  - "Ontario family law"
-  - "hourly billing family lawyer"
-  - "uncontested divorce Ontario"
-  - "Chinese family lawyer GTA"
-  - "Markham family lawyer"
-  - "Miao He"
-  - "divorce costs Ontario"
+  - "chinese-family-lawyer-gta"
+  - "divorce-costs-ontario"
+  - "hourly-billing-family-lawyer"
+  - "markham-family-lawyer"
+  - "miao-he-lawyer"
+  - "ontario-family-law"
+  - "toronto-divorce-lawyer-fees"
+  - "uncontested-divorce-ontario"
 pairedArticlePath: "/blog/toronto-divorce-lawyer-fees-3000-vs-30000/"
 relatedIntro: "If you are also thinking about who pays costs after trial, how long a case takes, or property and agreement routes, these earlier posts may help:"
 relatedReading:

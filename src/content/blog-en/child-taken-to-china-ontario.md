@@ -1,14 +1,15 @@
 ---
+
 title: "My Child Has Been Taken to China: What Can I Do?"
 description: "China is not a member of the Hague Convention on child abduction, which makes international child recovery extremely difficult. Miao He explains your legal options if your child has been taken to China without consent."
 pairedArticlePath: "/blog/child-taken-to-china-ontario/"
 pubDate: 2026-04-11T16:00:00-05:00
 keywords: "Ontario family law,Miao He lawyer,Chinese family lawyer Toronto,divorce Ontario,647-930-6688"
 tags:
-  - "Ontario family law"
-  - "Miao He"
-  - "divorce Ontario"
-  - "Chinese family lawyer"
+  - "chinese-family-lawyer"
+  - "divorce-ontario"
+  - "miao-he-lawyer"
+  - "ontario-family-law"
 ---
 
 If your child has been taken to China without your consent, you are facing one of the most urgent and difficult situations in family law. The options available to you are limited — and time is critical.
