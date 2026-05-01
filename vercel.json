@@ -54,6 +54,451 @@
 			"source": "/blog/separation-agreement-validity-ontario",
 			"destination": "/blog/separation-agreement-validity-ontario/",
 			"permanent": true
+		},
+		{
+			"source": "/tag/Restraining Order Ontario/",
+			"destination": "/tag/restraining-order-ontario/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/child custody lawyer Toronto/",
+			"destination": "/tag/child-custody-lawyer-toronto/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/domestic violence lawyer Ontario/",
+			"destination": "/tag/domestic-violence-lawyer-ontario/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/万锦家庭法律师/",
+			"destination": "/tag/markham-family-lawyer/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/专家证人加拿大/",
+			"destination": "/tag/expert-witness-canada/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/世嘉堡离婚律师/",
+			"destination": "/tag/scarborough-divorce-lawyer/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/中加证据规则/",
+			"destination": "/tag/china-canada-evidence-rules/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/中加跨境判决/",
+			"destination": "/tag/china-canada-judgment-recognition/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/分居与离婚/",
+			"destination": "/tag/separation-and-divorce/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/分居协议律师/",
+			"destination": "/tag/separation-agreement-lawyer/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/分居协议无效/",
+			"destination": "/tag/separation-agreement-invalid/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/分居协议被推翻/",
+			"destination": "/tag/separation-agreement-set-aside/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/分居日认定/",
+			"destination": "/tag/separation-date-determination/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/华人律师/",
+			"destination": "/tag/chinese-lawyer/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/华人离婚安省/",
+			"destination": "/tag/chinese-divorce-ontario/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/同居协议安省/",
+			"destination": "/tag/cohabitation-agreement-ontario/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/境外资产分割/",
+			"destination": "/tag/overseas-asset-division/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/士嘉堡离婚律师/",
+			"destination": "/tag/scarborough-divorce-lawyer/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/多伦多华人家庭法律师/",
+			"destination": "/tag/toronto-chinese-family-lawyer/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/多伦多华人离婚律师/",
+			"destination": "/tag/toronto-chinese-divorce-lawyer/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/多伦多子女监护律师/",
+			"destination": "/tag/toronto-child-custody-lawyer/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/多伦多家庭法律师/",
+			"destination": "/tag/toronto-family-lawyer/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/婚前协议律师/",
+			"destination": "/tag/prenuptial-agreement-lawyer/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/子女抚养费 Ontario/",
+			"destination": "/tag/child-support-ontario/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/子女监护律师/",
+			"destination": "/tag/child-custody-lawyer/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/安省家庭法/",
+			"destination": "/tag/ontario-family-law/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/安省家庭法庭/",
+			"destination": "/tag/ontario-family-court/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/安省离婚费用/",
+			"destination": "/tag/ontario-divorce-cost/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/家庭暴力安省/",
+			"destination": "/tag/domestic-violence-ontario/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/家庭法庭程序/",
+			"destination": "/tag/family-court-procedure/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/家暴律师/",
+			"destination": "/tag/domestic-violence-lawyer/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/律师咨询/",
+			"destination": "/tag/lawyer-consultation/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/微信证据/",
+			"destination": "/tag/wechat-evidence/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/抚养费律师/",
+			"destination": "/tag/support-lawyer/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/普通话离婚律师/",
+			"destination": "/tag/mandarin-divorce-lawyer/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/电子证据/",
+			"destination": "/tag/electronic-evidence/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/禁制令律师/",
+			"destination": "/tag/restraining-order-lawyer/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/离婚前查财产/",
+			"destination": "/tag/pre-divorce-asset-search/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/离婚律师费/",
+			"destination": "/tag/divorce-lawyer-fees/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/离婚财产分割/",
+			"destination": "/tag/divorce-property-division/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/管辖权选择/",
+			"destination": "/tag/jurisdiction-selection/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/紧急动议/",
+			"destination": "/tag/urgent-motion/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/自行代理/",
+			"destination": "/tag/self-represented-litigant/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/诉讼费用安省/",
+			"destination": "/tag/litigation-costs-ontario/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/跨境离婚/",
+			"destination": "/tag/cross-border-divorce/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/跨境资产律师/",
+			"destination": "/tag/cross-border-asset-lawyer/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/配偶抚养费/",
+			"destination": "/tag/spousal-support/",
+			"permanent": true
+		},
+		{
+			"source": "/en/tag/China Canada Evidence Rules/",
+			"destination": "/en/tag/china-canada-evidence-rules/",
+			"permanent": true
+		},
+		{
+			"source": "/en/tag/China–Canada Recognition/",
+			"destination": "/en/tag/china-canada-recognition/",
+			"permanent": true
+		},
+		{
+			"source": "/en/tag/Chinese family lawyer GTA/",
+			"destination": "/en/tag/chinese-family-lawyer-gta/",
+			"permanent": true
+		},
+		{
+			"source": "/en/tag/Chinese family lawyer Toronto/",
+			"destination": "/en/tag/chinese-family-lawyer-toronto/",
+			"permanent": true
+		},
+		{
+			"source": "/en/tag/Chinese family lawyer/",
+			"destination": "/en/tag/chinese-family-lawyer/",
+			"permanent": true
+		},
+		{
+			"source": "/en/tag/Cross-border Divorce/",
+			"destination": "/en/tag/cross-border-divorce/",
+			"permanent": true
+		},
+		{
+			"source": "/en/tag/Electronic Evidence/",
+			"destination": "/en/tag/electronic-evidence/",
+			"permanent": true
+		},
+		{
+			"source": "/en/tag/GTA family law/",
+			"destination": "/en/tag/gta-family-law/",
+			"permanent": true
+		},
+		{
+			"source": "/en/tag/GTA family lawyer/",
+			"destination": "/en/tag/gta-family-lawyer/",
+			"permanent": true
+		},
+		{
+			"source": "/en/tag/Jurisdiction Strategy/",
+			"destination": "/en/tag/jurisdiction-strategy/",
+			"permanent": true
+		},
+		{
+			"source": "/en/tag/Mandarin divorce lawyer Ontario/",
+			"destination": "/en/tag/mandarin-divorce-lawyer-ontario/",
+			"permanent": true
+		},
+		{
+			"source": "/en/tag/Markham divorce lawyer/",
+			"destination": "/en/tag/markham-divorce-lawyer/",
+			"permanent": true
+		},
+		{
+			"source": "/en/tag/Markham family lawyer/",
+			"destination": "/en/tag/markham-family-lawyer/",
+			"permanent": true
+		},
+		{
+			"source": "/en/tag/Miao He/",
+			"destination": "/en/tag/miao-he-lawyer/",
+			"permanent": true
+		},
+		{
+			"source": "/en/tag/Ontario Family Court/",
+			"destination": "/en/tag/ontario-family-court/",
+			"permanent": true
+		},
+		{
+			"source": "/en/tag/Ontario family law/",
+			"destination": "/en/tag/ontario-family-law/",
+			"permanent": true
+		},
+		{
+			"source": "/en/tag/Ontario property division/",
+			"destination": "/en/tag/ontario-property-division/",
+			"permanent": true
+		},
+		{
+			"source": "/en/tag/Restraining Order Ontario/",
+			"destination": "/en/tag/restraining-order-ontario/",
+			"permanent": true
+		},
+		{
+			"source": "/en/tag/Richmond Hill family law/",
+			"destination": "/en/tag/richmond-hill-family-law/",
+			"permanent": true
+		},
+		{
+			"source": "/en/tag/Richmond Hill family lawyer/",
+			"destination": "/en/tag/richmond-hill-family-lawyer/",
+			"permanent": true
+		},
+		{
+			"source": "/en/tag/Scarborough Chinese lawyer/",
+			"destination": "/en/tag/scarborough-chinese-lawyer/",
+			"permanent": true
+		},
+		{
+			"source": "/en/tag/Scarborough family lawyer/",
+			"destination": "/en/tag/scarborough-family-lawyer/",
+			"permanent": true
+		},
+		{
+			"source": "/en/tag/Separation Date/",
+			"destination": "/en/tag/separation-date/",
+			"permanent": true
+		},
+		{
+			"source": "/en/tag/Toronto divorce lawyer fees/",
+			"destination": "/en/tag/toronto-divorce-lawyer-fees/",
+			"permanent": true
+		},
+		{
+			"source": "/en/tag/Toronto divorce lawyer/",
+			"destination": "/en/tag/toronto-divorce-lawyer/",
+			"permanent": true
+		},
+		{
+			"source": "/en/tag/Toronto family lawyer/",
+			"destination": "/en/tag/toronto-family-lawyer/",
+			"permanent": true
+		},
+		{
+			"source": "/en/tag/WeChat Evidence/",
+			"destination": "/en/tag/wechat-evidence/",
+			"permanent": true
+		},
+		{
+			"source": "/en/tag/case conference/",
+			"destination": "/en/tag/case-conference/",
+			"permanent": true
+		},
+		{
+			"source": "/en/tag/divorce Ontario/",
+			"destination": "/en/tag/divorce-ontario/",
+			"permanent": true
+		},
+		{
+			"source": "/en/tag/divorce costs Ontario/",
+			"destination": "/en/tag/divorce-costs-ontario/",
+			"permanent": true
+		},
+		{
+			"source": "/en/tag/domestic violence lawyer Ontario/",
+			"destination": "/en/tag/domestic-violence-lawyer-ontario/",
+			"permanent": true
+		},
+		{
+			"source": "/en/tag/dual-licensed lawyer/",
+			"destination": "/en/tag/dual-licensed-lawyer/",
+			"permanent": true
+		},
+		{
+			"source": "/en/tag/family court procedure/",
+			"destination": "/en/tag/family-court-procedure/",
+			"permanent": true
+		},
+		{
+			"source": "/en/tag/family lawyer consult/",
+			"destination": "/en/tag/family-lawyer-consult/",
+			"permanent": true
+		},
+		{
+			"source": "/en/tag/family violence Ontario/",
+			"destination": "/en/tag/family-violence-ontario/",
+			"permanent": true
+		},
+		{
+			"source": "/en/tag/high-conflict litigation/",
+			"destination": "/en/tag/high-conflict-litigation/",
+			"permanent": true
+		},
+		{
+			"source": "/en/tag/hourly billing family lawyer/",
+			"destination": "/en/tag/hourly-billing-family-lawyer/",
+			"permanent": true
+		},
+		{
+			"source": "/en/tag/how to choose divorce lawyer/",
+			"destination": "/en/tag/how-to-choose-divorce-lawyer/",
+			"permanent": true
+		},
+		{
+			"source": "/en/tag/parent contribution divorce/",
+			"destination": "/en/tag/parent-contribution-divorce/",
+			"permanent": true
+		},
+		{
+			"source": "/en/tag/self represented litigant/",
+			"destination": "/en/tag/self-represented-litigant/",
+			"permanent": true
+		},
+		{
+			"source": "/en/tag/uncontested divorce Ontario/",
+			"destination": "/en/tag/uncontested-divorce-ontario/",
+			"permanent": true
+		},
+		{
+			"source": "/en/tag/urgent motion/",
+			"destination": "/en/tag/urgent-motion/",
+			"permanent": true
 		}
 	],
 	"headers": [
