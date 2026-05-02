@@ -1439,6 +1439,101 @@ export const faqItems: FaqItem[] = [
       '安省配偶赡养费综合考虑婚姻年限、双方收入、健康状况、婚姻期间生活水平、为家庭做的职业牺牲。长婚姻持续 5–10 年常见，20 年以上可能不限期。',
     pairedFaqPath: '/en/faq/spousal-support-amount-duration-ontario/',
   },
+  {
+    slug: 'ssag-shi-shenme-anshen',
+    capsule: 'SSAG 是配偶赡养费咨询准则，提供金额和年限的参考区间，但只是顾问性指导，不像子女抚养费那样强制。',
+    question: 'SSAG 是什么？为什么 SSAG 不像子女抚养费那样必须执行？',
+    summary:
+      'SSAG 全称 Spousal Support Advisory Guidelines（配偶赡养费咨询准则），由加拿大司法部委托学者编制，自 2008 年起在安省家庭法案件中广泛使用。SSAG 提供配偶赡养费的<strong>金额区间</strong>和<strong>年限区间</strong>，但是<strong>顾问性参考</strong>而非强制法律——这是它与子女抚养费指导（Federal Child Support Guidelines，强制性表格计算）的根本区别。法官在判付时通常以 SSAG 为起点，但可以基于个案 factor 上下调整甚至偏离。具体金额年限计算见<a href="/faq/anshen-peiou-shanyangfei-jine-nianxian/">配偶赡养费的金额和年限怎么决定</a>；判付资格基础见<a href="/faq/peiou-fuyangfei-entitlement-zige-anshen/">谁有资格主张配偶赡养费</a>；如涉及收入争议见<a href="/faq/yincang-shouru/">对方隐瞒收入怎么办</a>。',
+    answers: [
+      'SSAG = <strong>Spousal Support Advisory Guidelines</strong>，是加拿大司法部委托 Carol Rogerson 教授和 Rollie Thompson 教授编制的<strong>顾问性参考文件</strong>，提供配偶赡养费的金额和年限建议区间。它<strong>不是强制法律</strong>，但安省家庭法律师和法官在大多数案件中都会参考。',
+      'SSAG 与子女抚养费指导（Federal Child Support Guidelines）有本质区别：<strong>子女抚养费必须按表算</strong>，法官几乎没有裁量空间；<strong>配偶赡养费可参考 SSAG 但不强制照搬</strong>，法官根据个案各项 factor 综合裁量，可以落在 SSAG 区间低端、中端、高端，也可以高于上限或低于下限。',
+    ],
+    details: [
+      'SSAG 提供两种公式：<strong>"无子女公式"（without child support formula）</strong>用于无未成年子女的婚姻，主要看双方收入差与婚姻年限；<strong>"有子女公式"（with child support formula）</strong>用于同时支付子女抚养费的婚姻，会先扣除子女抚养费再计算可支配收入。两种公式都给出"金额区间"（月支付低端/中端/高端三个数字）和"年限区间"（最短到最长的支付年限）。',
+      '<strong>为什么 SSAG 不强制？</strong>这是政策设计的有意选择。立法者认识到配偶赡养费涉及的 factor 比子女抚养费复杂得多——婚姻长度、双方角色、补偿性诉求、健康状况等都需要法官个案权衡，强制公式无法准确反映复杂事实。因此 SSAG 设计为"顾问性指导 + 法官裁量"的混合模式。',
+      '<strong>法院如何使用 SSAG？</strong>实务中，安省法官把 SSAG 区间作为<strong>起点</strong>，然后结合：（1）案件具体 factor；（2）双方提出的偏离理由；（3）相关判例；（4）公平和合理性来确定最终金额。例如长期婚姻 + 强补偿性诉求可能高于 SSAG 上限，支付方有特殊财务困难可能低于下限，或在不寻常情形下完全偏离 SSAG。',
+      '<strong>实务影响</strong>：理解 SSAG 的"顾问性"对当事人有三个意义：（1）不能单凭网上 SSAG 计算器结果决定接受或拒绝和解；（2）谈判空间在 SSAG 区间内外都存在；（3）<strong>收入数字（包括 imputed income）的争议往往比"哪个 SSAG 区间"更关键</strong>——同样的婚姻长度，对方收入推定为 8 万还是 15 万，最终金额差异巨大。具体案件评估请致电 647-930-6688 预约何淼律师咨询。',
+    ],
+    keywords: 'SSAG,Spousal Support Advisory Guidelines,配偶赡养费咨询准则,顾问性指导,无子女公式,有子女公式,Rule of 65,何淼律师',
+    featured: true,
+    metaTitle: 'SSAG 是什么？为什么 SSAG 不像子女抚养费那样必须执行？| 何淼律师',
+    metaDescription:
+      'SSAG 是配偶赡养费咨询准则，由加拿大司法部委托学者编制，提供金额和年限参考区间。它是顾问性指导而非强制法律，与子女抚养费 Federal Guidelines 性质完全不同。',
+    pairedFaqPath: '/en/faq/what-is-ssag-ontario/',
+  },
+  {
+    slug: 'peiou-fuyangfei-entitlement-zige-anshen',
+    capsule: '配偶赡养费不是离婚自动产生的，主张方必须先证明 entitlement（资格）成立，三类基础：补偿性、非补偿性、契约性。',
+    question: '在安省，谁有资格主张配偶赡养费？什么情况下法院才会判付？',
+    summary:
+      '在安省，配偶赡养费<strong>不是离婚时自动产生的</strong>。主张方必须先证明 entitlement（资格）成立。加拿大最高法院在 <em>Bracklow v. Bracklow</em> [1999] 1 S.C.R. 420 中确立了三类资格基础：<strong>补偿性</strong>（一方在婚姻中为家庭放弃职业发展）、<strong>非补偿性</strong>（分居后基本生活困难）、<strong>契约性</strong>（婚前/分居协议约定）。如果 entitlement 不成立，无论 SSAG 计算结果多高，法院都不会判付。资格成立后，金额和年限的计算见<a href="/faq/anshen-peiou-shanyangfei-jine-nianxian/">安省配偶赡养费的金额和年限</a>；SSAG 性质见<a href="/faq/ssag-shi-shenme-anshen/">SSAG 是什么</a>；同居伴侣的特殊规则见<a href="/faq/tongju-banlv-peiou-fuyangfei-anshen/">同居伴侣能否主张配偶赡养费</a>。',
+    answers: [
+      '<strong>配偶赡养费不是自动的。</strong>主张方必须先过两道门槛：第一步是 entitlement（资格）是否成立；第二步才是金额和年限怎么定。如果第一步不成立，第二步根本不会展开——无论 SSAG 算出多高，法院都不会判付。',
+      '加拿大最高法院在 <em>Bracklow v. Bracklow</em> 案中确立了三类 entitlement 基础：<strong>（1）补偿性请求</strong>——一方为家庭利益放弃职业发展；<strong>（2）非补偿性请求</strong>——分居后基本生活困难；<strong>（3）契约性请求</strong>——婚前协议、同居协议或分居协议中约定。这三类基础<strong>可以同时主张</strong>，叠加会显著影响金额和年限。',
+    ],
+    details: [
+      '<strong>基础一：补偿性请求（Compensatory Support）</strong>。适用于一方在婚姻中为家庭利益放弃职业发展的情形。典型场景：全职妈妈/爸爸长期照顾子女离开职场；一方为支持配偶事业放弃工作随迁；一方资助配偶完成学业但未享受婚姻继续的回报；一方在家族企业中无偿付出多年。理论基础是"婚姻是经济伙伴关系，一方为共同利益的牺牲应得到补偿"。',
+      '<strong>基础二：非补偿性（需求性）请求（Non-Compensatory）</strong>。适用于分居后一方基本生活困难需要支持的情形。典型场景：接收方收入显著低于支付方，无法维持婚姻期间生活水平；接收方因健康、年龄等原因就业能力受限；长期婚姻中两人经济深度依赖。理论基础是"婚姻产生经济相互依赖，分居后较短时间不能让一方陷入贫困"。',
+      '<strong>基础三：契约性请求（Contractual）</strong>。基于双方在婚前协议、同居协议或分居协议中的约定。前提是协议本身有效——即满足程序要求（独立法律建议、充分披露、自愿签署）和实质要求（条款合理、不极端不公平）。如果协议中放弃配偶赡养费的条款不符合这些要求，可能被法院推翻。婚前协议详见<a href="/blog/prenuptial-agreement-ontario-2026/">安省婚前协议详解</a>。',
+      '<strong>什么情况下 entitlement 不成立？</strong>三种典型：（1）短婚姻 + 双方都有独立收入（例如结婚 2 年，双方都全职工作，无补偿性也无生活困难）；（2）双方收入相当且经济独立无相互依赖；（3）婚前协议明确放弃且协议有效。但<strong>注意</strong>：即使表面上 entitlement 似乎弱，仔细分析也常能找到补偿性或非补偿性基础——这正是律师评估的价值。',
+      '<strong>实务建议</strong>：（1）不要假设"短婚就没资格"——即使结婚 3 年，如果一方为搬家放弃职业，仍可能有补偿性请求；（2）不要假设"我收入高就一定要付"——如果对方收入也不低且无补偿性基础，entitlement 可能不成立；（3）协议条款要谨慎——婚前协议中放弃配偶赡养费的条款不一定有效。具体资格评估请致电 647-930-6688 预约何淼律师咨询。',
+    ],
+    keywords: 'entitlement,配偶赡养费资格,Bracklow v Bracklow,补偿性请求,非补偿性请求,契约性请求,婚前协议,何淼律师',
+    featured: true,
+    metaTitle: '在安省，谁有资格主张配偶赡养费？三类 entitlement 基础详解 | 何淼律师',
+    metaDescription:
+      '安省配偶赡养费不是离婚自动产生的，主张方必须先证明 entitlement 成立。三类基础：补偿性（职业牺牲）、非补偿性（生活困难）、契约性（协议约定）。',
+    pairedFaqPath: '/en/faq/who-is-entitled-to-spousal-support-ontario/',
+  },
+  {
+    slug: 'tongju-banlv-peiou-fuyangfei-anshen',
+    capsule: '可以——只要满足同居 3 年以上，或同居期间有共同子女且关系稳定，就有权主张配偶赡养费。',
+    question: '我们没有结婚，只是同居，分手时能要配偶赡养费吗？',
+    summary:
+      '可以——但有条件。在安省，<strong>未婚同居伴侣（common-law partner）</strong>只要满足以下任一条件，就有权主张配偶赡养费：（1）<strong>连续同居 3 年以上</strong>；或（2）<strong>同居期间有共同子女且关系具有相对稳定性</strong>。同居关系下的配偶赡养费计算方式与已婚夫妻基本相同，三类 entitlement 基础同样适用，SSAG 计算同样使用。但<strong>关键区别是同居伴侣没有自动的财产分割权利</strong>（不适用净家庭财产均等）。同居伴侣必须在分居后<strong>2 年内</strong>主张配偶赡养费，否则可能丧失权利。资格基础见<a href="/faq/peiou-fuyangfei-entitlement-zige-anshen/">谁有资格主张配偶赡养费</a>；金额年限见<a href="/faq/anshen-peiou-shanyangfei-jine-nianxian/">配偶赡养费金额和年限</a>；同居 vs 离婚详解见<a href="/blog/common-law-vs-divorce-ontario/">安省同居关系与婚姻的区别</a>。',
+    answers: [
+      '<strong>可以。</strong>这是华人客户最大的盲区——以为"没领证就两清"，实际上安省未婚同居伴侣分手时同样可能要支付配偶赡养费，金额和年限与已婚情况基本相同。这个盲区造成的实际损失常常巨大：一方放弃了本可主张的几年到十几年配偶赡养费，另一方在毫无心理准备下面对重大付款义务。',
+      '根据安省 <em>Family Law Act</em> 第 29 条，"配偶"的定义除了已婚夫妻，还包括两类同居伴侣：（1）<strong>连续同居 3 年以上</strong>，处于"类似配偶关系（conjugal relationship）"；或（2）<strong>关系具有相对稳定性（some permanence）且有共同子女</strong>——此类不要求满 3 年。',
+    ],
+    details: [
+      '<strong>什么算"类似配偶关系"？</strong>法院综合考量：共同居住地址；经济上的相互依赖（共同账户、共担房租房贷）；性关系；社交场合中以伴侣身份示人；共同度假、家庭活动；子女、亲属对关系的认知。不是单看是否登记同居协议，而是看实际关系状态。',
+      '<strong>同居伴侣 vs 已婚夫妻的核心区别</strong>：（1）<strong>配偶赡养费</strong>——满足条件即可主张，标准与已婚相同；（2）<strong>三类 entitlement 基础</strong>——补偿性、非补偿性、契约性同样适用；（3）<strong>SSAG 计算</strong>——同样使用；（4）<strong>财产分割</strong>——<strong>这是关键区别！</strong>同居伴侣<strong>没有自动的净家庭财产（NFP）均等权利</strong>，财产纠纷需通过 constructive trust（推定信托）等普通法途径主张，难度更高。',
+      '<strong>时效问题：分居后 2 年内必须主张</strong>。根据 <em>Family Law Act</em>，未婚同居伴侣必须在分居后 2 年内提出配偶赡养费主张，否则可能丧失权利。已婚夫妻虽也有时效，但同居伴侣的时效更严格、更容易被忽视——这是最常见的"权利沉睡"陷阱。',
+      '<strong>典型情形示例</strong>：（1）同居 8 年未婚 + 2 名子女 + 女方分居前 5 年全职在家——满足"3 年"和"有共同子女"两个条件，强补偿性请求，可能每月数千加币 + 年限 4-8 年；（2）同居 2 年未婚 + 1 个子女——不满足 3 年但满足"关系稳定 + 共同子女"，仍可主张；（3）同居 4 年无子女 + 双方全职工作 + 收入相当——满足 3 年但 entitlement 较弱，是否判付要看具体补偿性/非补偿性基础。',
+      '<strong>中国客户特别提醒</strong>：中国法律下"同居关系"基本不产生抚养费义务，从中国移民来的客户常误以为安省也是如此，这是危险的认知偏差。涉及中加跨境同居关系的常见复杂情形：两人在中国相识同居后移民安省；一方持工签随另一方来加但未能就业；一方有中国境内资产但未在加拿大披露。这类案件需要中加双重法律视角评估。何淼律师持中加双执照（中国 2009 / 安省 LSO #83315K），处理过多起涉及中加跨境同居关系的家庭法案件。咨询预约：647-930-6688。',
+    ],
+    keywords: '同居伴侣,common-law,common-law partner,配偶赡养费,Family Law Act 第29条,同居3年,Constructive Trust,共同子女,何淼律师',
+    featured: true,
+    metaTitle: '没结婚的同居伴侣能要配偶赡养费吗？安省 common-law 规则详解 | 何淼律师',
+    metaDescription:
+      '在安省，同居 3 年以上或有共同子女的未婚伴侣分手时同样可能主张配偶赡养费，标准与已婚相同。但同居伴侣没有自动的财产分割权利，且 2 年时效更严格。',
+    pairedFaqPath: '/en/faq/common-law-spousal-support-ontario/',
+  },
+  {
+    slug: 'peiou-cizhi-buzuo-zhifufang-shijiao',
+    capsule: '作为支付方，如果对方分居后故意不工作来获取长期配偶赡养费，可以主张推定收入、申请有期限赡养命令或申请变更命令。',
+    question: '我作为支付方，对方分居后故意辞职不工作来要更多赡养费，我怎么应对？',
+    summary:
+      '安省法院<strong>不允许接收方故意不工作</strong>来获取长期配偶赡养费。除非接收方有身体或精神原因导致无法工作，否则法院会期待其在合理时间内重新进入职场。作为支付方，你可以：（1）<strong>主张对接收方 impute income</strong>，按其合理就业能力推定收入降低应付金额；（2）<strong>申请有期限的过渡性赡养</strong>，明确截止期；（3）<strong>申请变更或终止赡养命令</strong>。判例支持详见 <em>Drygala v. Pauli</em>, 2002 CanLII 41868 (ON CA)。从接收方视角的同主题问答见<a href="/faq/quanzhizhifu-shinian-peioushanyangfei/">全职在家 10 年能拿多少赡养费</a>；推定收入实操见<a href="/faq/yincang-shouru/">对方隐瞒收入怎么办</a>；entitlement 基础见<a href="/faq/peiou-fuyangfei-entitlement-zige-anshen/">谁有资格主张配偶赡养费</a>。',
+    answers: [
+      '<strong>不要假设你必须一直养下去。</strong>加拿大《Divorce Act》明确规定双方都有"合理努力实现经济自给自足"的义务。这意味着接收方不能故意不工作来获取永久赡养——法院会评估接收方的<strong>就业能力</strong>，而不只是当前实际收入。',
+      '作为支付方，你有三种主要应对策略：（1）<strong>主张推定收入（imputed income against recipient）</strong>——按对方合理就业能力推定一个收入数字，从而降低应付赡养费金额；（2）<strong>谈判或申请有期限的过渡性赡养</strong>——例如 3 年后自动终止；（3）<strong>已有命令的可申请变更或终止</strong>——如对方有能力工作但拒绝工作。',
+    ],
+    details: [
+      '<strong>策略一：主张推定收入降低应付金额</strong>。安省判例 <em>Drygala v. Pauli</em>, 2002 CanLII 41868 (ON CA) 确立了在配偶刻意不工作时如何推定收入的标准。作为支付方需要举证：对方的工作经历、行业薪资水平、当前就业市场情况、对方的健康和年龄、是否需要照顾未成年子女、对方的求职努力（或缺乏努力）。如果证据成立，法院会按"对方应该能赚多少"而非"对方实际赚多少"计算 SSAG 输入数字，从而降低你的应付金额。',
+      '<strong>策略二：争取有期限的过渡性赡养</strong>。在协议或法庭命令中，<strong>明确赡养费的截止日期或复审条件</strong>。常见结构：3-5 年的过渡期，到期自动终止；或设置中期复审日（例如 2 年后回看接收方就业进展）。对中等长度婚姻这是合理且常见的安排，避免承担"无限期付款"的风险。',
+      '<strong>策略三：申请变更或终止已有命令</strong>。如果赡养命令已经存在但情况发生实质性变化（material change），可以申请变更（variation）或终止（termination）。可援引的事由：（1）对方有就业能力但拒绝寻找工作；（2）对方再婚或同居；（3）对方收入大幅上升；（4）你的收入显著下降。法院会要求你证明"实质性变化"——保留好相关证据是关键。',
+      '<strong>哪些情形法院会支持接收方"暂时不工作"？</strong>并非所有"不工作"都被法院否定，以下情形法院可能支持较长期赡养：（1）有医学证明的身体或精神疾病无法工作；（2）20 年以上长期婚姻 + 一方为家庭长期放弃职业发展；（3）"65 法则"（婚姻年限 + 接收方分居时年龄 ≥ 65）；（4）接收方需照顾年幼或特殊需要的子女；（5）强补偿性请求（全职妈妈、随配偶工作搬迁等）。这些情形下推定收入主张往往不会被法院支持。',
+      '<strong>实务建议</strong>：（1）不要假设"我必须一直养下去"——委托律师评估对方的真实就业能力；（2）<strong>收集对方有就业能力但不工作的证据</strong>（社交媒体、招聘网站浏览记录、行业内人脉证词等）；（3）在协议或命令中<strong>明确截止期</strong>或复审条件；（4）保留<strong>你自己收入变化</strong>的证据，为未来变更命令做准备。具体策略评估请致电 647-930-6688 预约何淼律师咨询。',
+    ],
+    keywords: '配偶赡养费支付方策略,推定收入接收方,有期限赡养命令,变更命令,Drygala v Pauli,自给自足义务,Divorce Act,何淼律师',
+    featured: true,
+    metaTitle: '配偶分居后故意不工作来要更多赡养费，支付方怎么应对？| 何淼律师',
+    metaDescription:
+      '安省法院不允许接收方故意不工作来获取长期赡养费。作为支付方可主张推定收入、申请有期限赡养、变更已有命令。Drygala v. Pauli 判例支持。',
+    pairedFaqPath: '/en/faq/payor-spouse-refuses-to-work-ontario/',
+  },
 ];
 
 export function getFaqItemsForListing(): FaqItem[] {
