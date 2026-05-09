@@ -2,7 +2,6 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { SITE_LAST_UPDATED_ZH } from '../consts';
 ---
 
 <!doctype html>
@@ -143,7 +142,7 @@ import { SITE_LAST_UPDATED_ZH } from '../consts';
         <div class="page-label">客户评价 · TESTIMONIALS</div>
         <h1>真实客户反馈</h1>
         <p>以下是客户通过不同方式留下的真实反馈，包括手写贺卡、Google评价、微信留言及电子邮件，均经客户同意展示，敏感信息已作匿名处理。</p>
-        <p class="page-last-updated page-last-updated--warm">页面内容最后更新：{SITE_LAST_UPDATED_ZH}</p>
+        <p class="page-last-updated page-last-updated--warm">页面内容最后更新：2026年5月9日</p>
       </div>
     </section>
 
@@ -370,9 +369,29 @@ import { SITE_LAST_UPDATED_ZH } from '../consts';
 
   .page-hero { background: var(--hero-legal-top-background); border-bottom: 1px solid rgba(0, 0, 0, 0.35); padding: 4rem 2rem; text-align: center; }
   .page-hero-inner { max-width: 760px; margin: 0 auto; }
-  .page-label { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: #9A8060; margin-bottom: 1rem; }
-  .page-hero h1 { font-family: "Georgia", serif; font-size: 2.5rem; font-weight: 400; color: #FAC775; margin-bottom: 1rem; }
-  .page-hero p { color: #C4AA80; font-size: 0.95rem; line-height: 1.7; max-width: 640px; margin: 0 auto; }
+  .page-label { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255, 255, 255, 0.72); margin-bottom: 1rem; }
+  .page-hero h1 {
+    font-family: "Georgia", serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: #f5e6c8;
+    margin-bottom: 1rem;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+  }
+  .page-hero-inner > p:not(.page-last-updated) {
+    color: #b89678;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    max-width: 640px;
+    margin: 0 auto;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+  }
+  .page-hero .page-last-updated.page-last-updated--warm {
+    margin-top: 1rem;
+    font-size: 0.78rem;
+    color: rgba(255, 255, 255, 0.72);
+  }
 
   .testimonials-section { padding: 4rem 2rem; }
   .testimonials-inner { max-width: 800px; margin: 0 auto; }
