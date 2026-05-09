@@ -49,14 +49,132 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: Georgia, serif; background: var(--bg); color: var(--text-primary); }
     a { color: inherit; text-decoration: none; }
-    .page-hero { background: var(--hero-legal-top-background); border-bottom: 1px solid rgba(0, 0, 0, 0.35); padding: 4rem 2rem; text-align: center; }
-    .page-hero-inner { max-width: 760px; margin: 0 auto; }
+    .page-hero { border-bottom: 1px solid rgba(0, 0, 0, 0.35); text-align: center; }
+    .page-hero--pricing {
+      position: relative;
+      min-height: 400px;
+      padding: 3rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .page-hero-bg {
+      position: absolute;
+      inset: 0;
+      background: url('/images/consultation.png') center / cover no-repeat;
+      transform: scale(1.02);
+      z-index: 0;
+    }
+    .page-hero-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background:
+        linear-gradient(165deg, rgba(22, 18, 14, 0.82) 0%, rgba(36, 28, 20, 0.76) 50%, rgba(16, 12, 10, 0.88) 100%);
+    }
+    .page-hero-inner {
+      position: relative;
+      z-index: 2;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    .page-hero--pricing .page-label { color: rgba(232, 201, 164, 0.95); text-shadow: 0 1px 8px rgba(0, 0, 0, 0.45); }
+    .page-hero--pricing h1 {
+      font-size: 2.25rem;
+      font-weight: 400;
+      margin-bottom: 1rem;
+      color: #FDFBF7;
+      text-shadow: 0 2px 20px rgba(0, 0, 0, 0.55), 0 1px 3px rgba(0, 0, 0, 0.45);
+    }
+    .page-hero--pricing p {
+      font-size: 0.9rem;
+      line-height: 1.8;
+      max-width: 640px;
+      margin: 0 auto;
+      color: rgba(255, 255, 255, 0.9);
+      text-shadow: 0 1px 12px rgba(0, 0, 0, 0.4);
+    }
+    .page-hero--pricing .page-last-updated { color: rgba(255, 255, 255, 0.72) !important; }
     .page-label { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: #9A8060; margin-bottom: 1rem; }
-    .page-hero h1 { font-size: 2.25rem; font-weight: 400; color: #FAC775; margin-bottom: 1rem; }
-    .page-hero p { color: #C4AA80; font-size: 0.9rem; line-height: 1.8; max-width: 640px; margin: 0 auto; }
-    .pricing-section { padding: 4rem 2rem; }
-    .pricing-inner { max-width: 800px; margin: 0 auto; }
-    .section-subtitle { font-size: 1.5rem; font-weight: 400; color: var(--text-heading); margin: 3rem 0 0.5rem; padding-bottom: 0.75rem; border-bottom: 2px solid #EDE8DF; }
+    .pricing-section { padding: 5.5rem 2rem 6rem; }
+    .pricing-inner { max-width: 920px; margin: 0 auto; }
+    .pricing-inner--consult { max-width: 1080px; }
+    .consult-intro-layout {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      align-items: stretch;
+      margin-bottom: 1rem;
+    }
+    .consult-intro-visual { order: -1; }
+    .consult-intro-visual-frame {
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(237, 232, 223, 0.35);
+      box-shadow: 0 16px 48px rgba(44, 36, 24, 0.18);
+      min-height: 240px;
+      height: 100%;
+      max-height: 420px;
+    }
+    .consult-intro-visual-frame img {
+      width: 100%;
+      height: 100%;
+      min-height: 240px;
+      object-fit: cover;
+      display: block;
+    }
+    @media (min-width: 900px) {
+      .consult-intro-layout {
+        display: grid;
+        grid-template-columns: 1fr minmax(280px, 40%);
+        gap: 2.25rem;
+        align-items: stretch;
+      }
+      .consult-intro-visual { order: unset; }
+      .consult-intro-visual-frame { max-height: none; min-height: 100%; }
+    }
+    .pricing-banner {
+      position: relative;
+      width: 100vw;
+      margin-left: calc(50% - 50vw);
+      margin-right: calc(50% - 50vw);
+      min-height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 3.5rem;
+      margin-bottom: 2.25rem;
+      overflow: hidden;
+    }
+    .pricing-banner-bg {
+      position: absolute;
+      inset: 0;
+      background: url('/images/pen-document.png') center / cover no-repeat;
+      z-index: 0;
+    }
+    .pricing-banner-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: linear-gradient(180deg, rgba(24, 18, 14, 0.45) 0%, rgba(18, 14, 11, 0.62) 100%);
+    }
+    .pricing-banner-inner {
+      position: relative;
+      z-index: 2;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      max-width: 920px;
+      margin: 0 auto;
+    }
+    .section-subtitle { font-size: 1.5rem; font-weight: 400; color: var(--text-heading); margin: 4rem 0 0.5rem; padding-bottom: 0.75rem; border-bottom: 2px solid #EDE8DF; }
+    .section-subtitle--on-banner {
+      margin: 0;
+      padding: 0;
+      border-bottom: none;
+      color: #FDFBF7;
+      text-shadow: 0 2px 28px rgba(0, 0, 0, 0.55), 0 1px 4px rgba(0, 0, 0, 0.45);
+    }
     .section-note { font-size: 0.85rem; color: #9A8060; margin-bottom: 1.5rem; }
     .pricing-card { background: #FDFBF7; border: 1px solid #EDE8DF; border-radius: 8px; padding: 2rem; margin-bottom: 1.25rem; border-left: 4px solid #7A5A1A; }
     .pricing-card.highlight { border-left-color: #FAC775; background: #2C2418; }
@@ -82,18 +200,25 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
     .pricing-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-bottom: 1.25rem; }
     .btn-primary { display: inline-flex; align-items: center; justify-content: center; width: 240px; height: 52px; background: #7A5A1A; color: #FDFBF7; border-radius: 8px; font-size: 0.9rem; font-weight: 600; border: 2px solid #7A5A1A; box-sizing: border-box; }
     .btn-primary:hover { background: #4A3A0A; }
-    .page-cta { background: #F5EFE0; border-top: 1px solid #EDE8DF; padding: 4rem 2rem; text-align: center; }
+    .page-cta { background: #F5EFE0; border-top: 1px solid #EDE8DF; padding: 5.5rem 2rem 6rem; text-align: center; }
     .page-cta h2 { font-size: 1.75rem; font-weight: 400; color: var(--text-heading); margin-bottom: 0.75rem; }
     .page-cta p { color: #6B5A3A; font-size: 0.9rem; max-width: 540px; margin: 0 auto 1.5rem; line-height: 1.7; }
     .cta-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
     .btn-secondary { display: inline-flex; align-items: center; justify-content: center; width: 240px; height: 52px; background: #FDFBF7; color: #7A5A1A; border-radius: 8px; font-size: 0.9rem; font-weight: 600; border: 2px solid #7A5A1A; box-sizing: border-box; }
-    @media (max-width: 720px) { .pricing-grid { grid-template-columns: 1fr; } .page-hero h1 { font-size: 1.75rem; } .pricing-card { padding: 1.5rem; } }
+    @media (max-width: 720px) {
+      .pricing-grid { grid-template-columns: 1fr; }
+      .page-hero--pricing h1 { font-size: 1.75rem; }
+      .pricing-card { padding: 1.5rem; }
+      .pricing-banner { margin-top: 2.5rem; min-height: 220px; }
+    }
   </style>
 </head>
 <body>
   <HeaderEn />
   <main>
-    <section class="page-hero">
+    <section class="page-hero page-hero--pricing">
+      <div class="page-hero-bg" aria-hidden="true"></div>
+      <div class="page-hero-overlay" aria-hidden="true"></div>
       <div class="page-hero-inner">
         <div class="page-label">Legal Fees · Transparent Pricing</div>
         <h1>Transparent Fees. No Hidden Costs.</h1>
@@ -103,21 +228,38 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
     </section>
 
     <section class="pricing-section">
-      <div class="pricing-inner">
-
-        <div class="pricing-card highlight">
-          <div class="pricing-tag">The Most Common First Step</div>
-          <h2>Initial Consultation</h2>
-          <div class="pricing-amount">$220 <span>+ HST</span></div>
-          <div class="pricing-detail">30 minutes · Mandarin & English · In-person or video</div>
-          <p>Legal situations don't have standard answers. In an initial consultation, I don't just listen to the facts — I give you a full strategic picture.</p>
-          <p>I will walk you through the realistic options in your case: the risks of litigation, your negotiating position, and the most effective path forward. Many clients tell me that what gave them the most peace of mind was finally understanding the full landscape of their situation.</p>
-          <p>I will not let clients enter proceedings without a clear strategy. My goal is to ensure you make the most rational decision with complete information in hand.</p>
-          <p style="font-size:0.8rem;color:#9A8060;">Billed in 6-minute units. 30 minutes constitutes one complete consultation.</p>
-          <a href="tel:6479306688" class="btn-primary">📞 Book Now: 647-930-6688</a>
+      <div class="pricing-inner pricing-inner--consult">
+        <div class="consult-intro-layout">
+          <div class="consult-intro-content">
+            <div class="pricing-card highlight">
+              <div class="pricing-tag">The Most Common First Step</div>
+              <h2>Initial Consultation</h2>
+              <div class="pricing-amount">$220 <span>+ HST</span></div>
+              <div class="pricing-detail">30 minutes · Mandarin & English · In-person or video</div>
+              <p>Legal situations don't have standard answers. In an initial consultation, I don't just listen to the facts — I give you a full strategic picture.</p>
+              <p>I will walk you through the realistic options in your case: the risks of litigation, your negotiating position, and the most effective path forward. Many clients tell me that what gave them the most peace of mind was finally understanding the full landscape of their situation.</p>
+              <p>I will not let clients enter proceedings without a clear strategy. My goal is to ensure you make the most rational decision with complete information in hand.</p>
+              <p style="font-size:0.8rem;color:#9A8060;">Billed in 6-minute units. 30 minutes constitutes one complete consultation.</p>
+              <a href="tel:6479306688" class="btn-primary">📞 Book Now: 647-930-6688</a>
+            </div>
+          </div>
+          <div class="consult-intro-visual">
+            <div class="consult-intro-visual-frame">
+              <img src="/images/office-meeting.png" alt="" width="1200" height="800" loading="lazy" decoding="async" />
+            </div>
+          </div>
         </div>
+      </div>
 
-        <h2 class="section-subtitle">Fixed Fee Services</h2>
+      <div class="pricing-banner" aria-labelledby="fixed-fee-banner-title-en">
+        <div class="pricing-banner-bg" aria-hidden="true"></div>
+        <div class="pricing-banner-overlay" aria-hidden="true"></div>
+        <div class="pricing-banner-inner">
+          <h2 id="fixed-fee-banner-title-en" class="section-subtitle section-subtitle--on-banner">Fixed Fee Services</h2>
+        </div>
+      </div>
+
+      <div class="pricing-inner">
         <p class="section-note">The following services are offered at fixed fee ranges. Actual fees depend on the specifics of each matter. All fees are subject to HST and disbursements.</p>
 
         <div class="pricing-grid">
