@@ -106,68 +106,543 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
   ]
   </script>
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: Georgia, serif; background: var(--bg); color: var(--text-primary); }
-    a { color: inherit; text-decoration: none; }
-    .page-hero { background: var(--hero-legal-top-background); border-bottom: 1px solid rgba(0,0,0,0.35); padding: 3rem 1.5rem 2.5rem; text-align: center; }
-    .page-hero .inner { max-width: 700px; margin: 0 auto; }
-    .breadcrumb { font-size: 0.82rem; color: rgba(255,255,255,0.5); margin-bottom: 0.6rem; }
-    .breadcrumb a { color: rgba(255,255,255,0.5); }
-    .page-label { font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: #D4A853; margin-bottom: 0.5rem; }
-    .page-hero h1 { color: #fff; font-size: clamp(1.6rem, 3vw, 2.2rem); margin: 0 0 0.4rem; font-weight: 400; }
-    .page-hero p { color: #D4A853; font-size: 0.9rem; margin: 0; }
-    .contact-section { padding: 3rem 1.5rem 4rem; }
+    :global(body.page-contact-dark) {
+      background-color: #1a1a1a;
+      color: rgba(255, 255, 255, 0.92);
+    }
+
+    .page-main {
+      max-width: 100%;
+      padding: 0;
+      margin: 0;
+      --contact-gold: #d4a853;
+      --contact-gold-soft: #c4a386;
+      --contact-panel: #222224;
+      --contact-panel-border: rgba(255, 255, 255, 0.1);
+      --contact-body: rgba(255, 255, 255, 0.9);
+      --contact-muted: rgba(232, 226, 217, 0.72);
+    }
+
+    /* H.lawfirmontario-style hero (mirrors 家庭法-华人律师): layered photo + brand scrim */
+    .hf-hero {
+      --hf-brand-primary: #3a4148;
+      --hf-brand-accent: #b8956a;
+      --hf-brand-accent-dark: #a78458;
+      position: relative;
+      overflow: hidden;
+      padding: clamp(5rem, 12vw, 7rem) 1.5rem;
+      text-align: center;
+      color: #fff;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+    }
+
+    .hf-hero__layers {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+
+    .hf-hero__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .hf-hero__overlay {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+    }
+
+    .hf-hero__overlay--brand {
+      background: rgba(58, 65, 72, 0.85);
+    }
+
+    .hf-hero__overlay--gradient {
+      background: linear-gradient(to top, rgba(58, 65, 72, 0.4), transparent, transparent);
+    }
+
+    .hf-hero__inner {
+      position: relative;
+      z-index: 10;
+      max-width: 56rem;
+      margin: 0 auto;
+      padding-left: max(0px, env(safe-area-inset-left));
+      padding-right: max(0px, env(safe-area-inset-right));
+    }
+
+    .hf-hero__breadcrumb {
+      font-size: 0.82rem;
+      color: rgba(255, 255, 255, 0.78);
+      margin-bottom: 1rem;
+    }
+
+    .hf-hero__breadcrumb a {
+      color: inherit;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .hf-hero__badge-row {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .hf-hero__badge {
+      display: inline-block;
+      padding: 0.375rem 1rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--hf-brand-accent);
+      background: rgba(184, 149, 106, 0.15);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      border-radius: 9999px;
+      border: 1px solid rgba(184, 149, 106, 0.3);
+    }
+
+    .hf-hero__title {
+      font-size: clamp(1.875rem, 4vw, 3rem);
+      font-weight: 700;
+      line-height: 1.15;
+      margin: 0 0 1rem;
+      color: #fff;
+    }
+
+    .hf-hero__accent {
+      color: var(--hf-brand-accent);
+    }
+
+    .hf-hero__subtitle {
+      font-size: clamp(1rem, 2vw, 1.125rem);
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.9);
+      margin: 0 auto 1.5rem;
+      max-width: 42rem;
+      line-height: 1.5;
+    }
+
+    .hf-hero__lead {
+      font-size: clamp(1.05rem, 2vw, 1.25rem);
+      line-height: 1.625;
+      color: rgba(255, 255, 255, 0.9);
+      margin: 0 auto 2.5rem;
+      max-width: 48rem;
+    }
+
+    .hf-hero__accent-inline {
+      color: var(--hf-brand-accent);
+      font-weight: 600;
+    }
+
+    .hf-hero__cta-row {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      justify-content: center;
+      align-items: stretch;
+    }
+
+    .hf-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.875rem 1.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 1.25;
+      border-radius: 0.375rem;
+      text-decoration: none;
+      border: 2px solid transparent;
+      cursor: pointer;
+      box-sizing: border-box;
+      transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+      font-family: inherit;
+      width: 100%;
+    }
+
+    .hf-btn--primary {
+      background: var(--hf-brand-accent);
+      color: #fff !important;
+      border-color: var(--hf-brand-accent);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.25);
+    }
+
+    .hf-btn--primary:hover {
+      background: var(--hf-brand-accent-dark);
+      border-color: var(--hf-brand-accent-dark);
+    }
+
+    .hf-btn--ghost {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      border-color: #fff;
+      color: #fff !important;
+    }
+
+    .hf-btn--ghost:hover {
+      background: #fff;
+      color: var(--hf-brand-primary) !important;
+      border-color: #fff;
+    }
+
+    .hf-wechat-icon {
+      width: 1.25rem;
+      height: 1.25rem;
+      flex-shrink: 0;
+      color: #07c160;
+    }
+
+    .hf-btn--ghost:hover .hf-wechat-icon {
+      color: #07c160;
+    }
+
+    .hf-hero__wechat {
+      position: relative;
+      display: inline-flex;
+      width: 100%;
+      justify-content: center;
+    }
+
+    .hf-wechat-popover {
+      display: none;
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-bottom: 0.75rem;
+      width: 16rem;
+      background: #fff;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 0.5rem;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.35);
+      padding: 1rem;
+      z-index: 50;
+      text-align: left;
+    }
+
+    .hf-wechat-popover.is-open {
+      display: block;
+    }
+
+    .hf-wechat-popover__label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #6b7280;
+      margin: 0 0 0.75rem;
+      text-align: center;
+    }
+
+    .hf-wechat-popover__qr {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 0.375rem;
+    }
+
+    .hf-wechat-popover__hours {
+      font-size: 0.75rem;
+      color: #374151;
+      margin: 0.75rem 0 0;
+      text-align: center;
+      line-height: 1.5;
+    }
+
+    .hf-hero__updated {
+      margin: 1.75rem 0 0;
+      font-size: 0.78rem;
+      color: rgba(255, 255, 255, 0.72);
+    }
+
+    #direct-contact {
+      scroll-margin-top: 5rem;
+    }
+
+    @media (min-width: 640px) {
+      .hf-hero__cta-row {
+        flex-direction: row;
+        align-items: stretch;
+      }
+
+      .hf-btn {
+        width: auto;
+      }
+
+      .hf-hero__wechat {
+        width: auto;
+      }
+    }
+
+    .contact-section { padding: 3rem 1.5rem 4rem; background: #1a1a1a; }
     .contact-inner { max-width: 960px; margin: 0 auto; }
     .contact-grid { display: grid; grid-template-columns: 1fr 340px; gap: 2.5rem; }
-    .contact-card { background: #fff; border: 1px solid #EDE8DF; border-radius: 12px; padding: 2rem; margin-bottom: 1.5rem; }
-    .contact-card.highlight { border-color: #D4A853; box-shadow: 0 4px 20px rgba(212,168,83,0.12); }
-    .contact-card h2, .services-card h2, .faq-card h2 { font-size: 1.15rem; font-weight: 700; color: var(--text-heading); margin: 0 0 1.2rem; }
+
+    .contact-card,
+    .services-card,
+    .faq-card,
+    .sidebar-card {
+      background: var(--contact-panel);
+      border: 1px solid var(--contact-panel-border);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+    }
+
+    .contact-card.highlight {
+      border-left: 4px solid var(--contact-gold);
+      padding-left: calc(2rem - 3px);
+    }
+
+    .contact-card.highlight h2,
+    .services-card h2,
+    .faq-card h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--contact-gold);
+      margin: 0 0 1.2rem;
+    }
+
     .contact-methods { display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 1.5rem; }
-    .contact-method { display: flex; align-items: center; gap: 1rem; padding: 0.75rem 1rem; background: #FDFBF7; border-radius: 8px; border: 1px solid #EDE8DF; }
-    .contact-method:hover { border-color: #D4A853; }
+    .contact-method {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.75rem 1rem;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: background 0.15s, border-color 0.15s;
+    }
+    .contact-method:hover {
+      background: rgba(255, 255, 255, 0.09);
+      border-color: rgba(212, 168, 83, 0.35);
+    }
     .method-icon { font-size: 1.4rem; }
-    .method-label { font-size: 0.78rem; color: #9A8060; margin-bottom: 0.2rem; }
-    .method-value { font-size: 1rem; font-weight: 600; color: var(--text-heading); }
+    .method-label { font-size: 0.78rem; color: var(--contact-muted); margin-bottom: 0.2rem; }
+    .method-value { font-size: 1rem; font-weight: 600; color: #ffffff; }
+
     .cta-actions { display: flex; gap: 0.75rem; margin-bottom: 1rem; flex-wrap: wrap; }
-    .btn-primary { background: #2C1810; color: #FDFBF7; padding: 0.7rem 1.5rem; border-radius: 8px; font-size: 0.92rem; font-weight: 600; }
-    .btn-primary:hover { background: #4A2C1A; }
-    .btn-secondary { background: white; color: var(--text-heading); padding: 0.7rem 1.5rem; border-radius: 8px; font-size: 0.92rem; font-weight: 600; border: 2px solid #2C1810; }
-    .btn-secondary:hover { background: #FDFBF7; }
-    .response-note { font-size: 0.8rem; color: #9A8060; }
-    .services-card, .faq-card { background: #fff; border: 1px solid #EDE8DF; border-radius: 12px; padding: 2rem; margin-bottom: 1.5rem; }
-    .services-list, .faq-list { padding-left: 1.2rem; margin: 0.75rem 0; }
-    .services-list li, .faq-list li { margin-bottom: 0.5rem; font-size: 0.92rem; line-height: 1.5; }
-    .complex-cases { font-size: 0.88rem; color: #6B5A3A; margin-top: 1rem; line-height: 1.6; background: #F5EFE0; padding: 0.75rem 1rem; border-radius: 6px; border-left: 3px solid #D4A853; }
+    .btn-primary {
+      background: var(--contact-gold-soft);
+      color: #1a1208;
+      padding: 0.72rem 1.45rem;
+      border-radius: 999px;
+      font-size: 0.92rem;
+      font-weight: 700;
+      border: none;
+      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.35);
+      transition: background 0.15s, transform 0.15s;
+    }
+    .btn-primary:hover { background: #d4b699; transform: translateY(-1px); }
+    .btn-secondary {
+      background: transparent;
+      color: #ffffff;
+      padding: 0.68rem 1.35rem;
+      border-radius: 999px;
+      font-size: 0.92rem;
+      font-weight: 600;
+      border: 2px solid rgba(255, 255, 255, 0.82);
+      transition: background 0.15s, border-color 0.15s;
+    }
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: #ffffff;
+    }
+
+    .response-note { font-size: 0.8rem; color: var(--contact-muted); }
+
+    .services-card p,
+    .faq-card p {
+      font-size: 0.92rem;
+      color: var(--contact-body);
+      line-height: 1.65;
+      margin-bottom: 0.75rem;
+    }
+
+    .services-list,
+    .faq-list {
+      padding-left: 1.2rem;
+      margin: 0.75rem 0;
+    }
+    .services-list li,
+    .faq-list li {
+      margin-bottom: 0.5rem;
+      font-size: 0.92rem;
+      line-height: 1.55;
+      color: var(--contact-body);
+    }
+
+    .complex-cases {
+      font-size: 0.88rem;
+      color: rgba(255, 255, 255, 0.88);
+      margin-top: 1rem;
+      line-height: 1.6;
+      background: rgba(0, 0, 0, 0.35);
+      padding: 0.85rem 1rem;
+      border-radius: 6px;
+      border-left: 3px solid var(--contact-gold);
+    }
+
     .contact-sidebar { display: flex; flex-direction: column; gap: 1.25rem; }
-    .sidebar-card { background: #fff; border: 1px solid #EDE8DF; border-radius: 12px; padding: 1.5rem; }
-    .sidebar-card h3 { font-size: 0.92rem; font-weight: 700; color: var(--text-heading); margin: 0 0 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; }
-    .sidebar-card address { font-style: normal; font-size: 0.88rem; line-height: 1.7; color: var(--text-heading); }
-    .sidebar-card address a { color: #7A5A1A; text-decoration: underline; }
-    .map-wrapper { margin-top: 0.75rem; border-radius: 6px; overflow: hidden; }
-    .area-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.3rem; }
+
+    .sidebar-card { padding: 1.5rem; }
+    .sidebar-card h3 {
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--contact-gold);
+      margin: 0 0 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .sidebar-card address {
+      font-style: normal;
+      font-size: 0.88rem;
+      line-height: 1.75;
+      color: var(--contact-body);
+    }
+    .sidebar-card address a {
+      color: #ffffff;
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(212, 168, 83, 0.45);
+    }
+    .sidebar-card address a:hover {
+      color: var(--contact-gold);
+      border-bottom-color: var(--contact-gold);
+    }
+
+    .sidebar-card p { font-size: 0.875rem; color: var(--contact-body); line-height: 1.7; margin-bottom: 0.5rem; }
+
+    .map-wrapper {
+      margin-top: 0.75rem;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid var(--contact-panel-border);
+    }
+
+    .area-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
     .area-list li { font-size: 0.85rem; }
-    .area-list a { color: var(--text-heading); }
-    .area-list a:hover { color: #7A5A1A; text-decoration: underline; }
-    .credential-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.4rem; }
-    .credential-list li { font-size: 0.85rem; color: var(--text-heading); padding-left: 1rem; position: relative; }
-    .credential-list li::before { content: "·"; position: absolute; left: 0; color: #D4A853; }
+    .area-list a {
+      color: rgba(255, 255, 255, 0.88);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: color 0.15s, border-color 0.15s;
+    }
+    .area-list a:hover {
+      color: var(--contact-gold);
+      border-bottom-color: rgba(212, 168, 83, 0.5);
+    }
+
+    .credential-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+    .credential-list li {
+      font-size: 0.85rem;
+      color: var(--contact-body);
+      padding-left: 1rem;
+      position: relative;
+    }
+    .credential-list li::before {
+      content: "·";
+      position: absolute;
+      left: 0;
+      color: var(--contact-gold);
+    }
+
+    .sidebar-area-lede { font-size: 0.8rem; color: var(--contact-muted); margin-bottom: 0.5rem; }
+
     @media (max-width: 760px) {
       .contact-grid { grid-template-columns: 1fr; }
       .contact-sidebar { order: -1; }
     }
   </style>
 </head>
-<body>
+<body class="page-contact-dark">
   <HeaderEn />
-  <main>
+  <main class="page-main">
 
-    <section class="page-hero">
-      <div class="inner">
-        <div class="breadcrumb"><a href="/en/">Home</a> › Contact</div>
-        <div class="page-label">Contact Us · 联系我们</div>
-        <h1>Book a Consultation</h1>
-        <p>Looking for a Mandarin-speaking divorce lawyer in Toronto or GTA? Contact Miao He. Initial consultation 30 min · $220 + HST · No obligation to retain.</p>
-        <p class="page-last-updated page-last-updated--gradient">Page last updated: {SITE_LAST_UPDATED_EN}</p>
+    <section class="hf-hero" aria-label="Contact">
+      <div class="hf-hero__layers" aria-hidden="true">
+        <img
+          class="hf-hero__img"
+          src="/hero-zh-background.png"
+          alt=""
+          width="1920"
+          height="1080"
+          loading="eager"
+          decoding="async"
+        />
+        <div class="hf-hero__overlay hf-hero__overlay--brand"></div>
+        <div class="hf-hero__overlay hf-hero__overlay--gradient"></div>
+      </div>
+      <div class="hf-hero__inner">
+        <div class="hf-hero__breadcrumb"><a href="/en/">Home</a> › Contact</div>
+        <div class="hf-hero__badge-row">
+          <span class="hf-hero__badge">Contact</span>
+        </div>
+        <h1 class="hf-hero__title">
+          Contact Miao He | <span class="hf-hero__accent">Book a Consultation</span>
+        </h1>
+        <p class="hf-hero__subtitle">
+          Ontario LSO #83315K · Mandarin &amp; English · Greater Toronto
+        </p>
+        <p class="hf-hero__lead">
+          Looking for a Mandarin-speaking divorce lawyer in Toronto or GTA? Contact <span class="hf-hero__accent-inline">Miao He</span>. Initial consultation <span class="hf-hero__accent-inline">30 min · $220 + HST</span>. No obligation to retain.
+        </p>
+        <div class="hf-hero__cta-row">
+          <a href="tel:6479306688" class="hf-btn hf-btn--primary">📞 647-930-6688</a>
+          <div class="hf-hero__wechat" id="cta-wechat-wrapper-contact-en-hero">
+            <button
+              type="button"
+              class="hf-btn hf-btn--ghost hf-btn--wechat"
+              id="cta-wechat-toggle-contact-en-hero"
+              aria-expanded="false"
+              aria-controls="cta-wechat-popover-contact-en-hero"
+            >
+              <svg class="hf-wechat-icon" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8.691 2C4.768 2 1.5 4.74 1.5 8.07c0 1.928 1.105 3.652 2.832 4.776L3.5 14.5l2.227-1.118c.704.182 1.443.282 2.205.282.158 0 .315-.005.47-.014a4.99 4.99 0 01-.182-1.293c0-2.946 2.804-5.339 6.275-5.339.158 0 .314.006.469.018C14.495 4.066 11.953 2 8.691 2zm-2.5 4a.75.75 0 110 1.5.75.75 0 010-1.5zm5 0a.75.75 0 110 1.5.75.75 0 010-1.5zM15.5 7.95c-3.245 0-5.875 2.166-5.875 4.838s2.63 4.838 5.875 4.838c.683 0 1.341-.097 1.953-.275L19.5 18.5l-.658-1.395C20.357 16.18 21.25 14.74 21.25 13.05c0-2.672-2.63-5.1-5.75-5.1zm-2 3a.625.625 0 110 1.25.625.625 0 010-1.25zm4 0a.625.625 0 110 1.25.625.625 0 010-1.25z"></path>
+              </svg>
+              WeChat
+            </button>
+            <div class="hf-wechat-popover" id="cta-wechat-popover-contact-en-hero" role="dialog" aria-hidden="true">
+              <p class="hf-wechat-popover__label">Scan QR to add WeChat</p>
+              <img src="/wechat-qr.jpg" alt="H. Law Firm WeChat QR code" class="hf-wechat-popover__qr" width="256" height="256" loading="lazy" decoding="async" />
+              <p class="hf-wechat-popover__hours">
+                Hours: Monday–Friday<br />
+                9:00 a.m. – 5:00 p.m.
+              </p>
+            </div>
+          </div>
+          <a href="mailto:miao@miaohelaw.ca" class="hf-btn hf-btn--ghost">Email us →</a>
+        </div>
+        <p class="hf-hero__updated">Page last updated: {SITE_LAST_UPDATED_EN}</p>
       </div>
     </section>
 
@@ -177,7 +652,7 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
 
           <div class="contact-main">
 
-            <div class="contact-card highlight">
+            <div class="contact-card highlight" id="direct-contact">
               <h2>Contact Directly</h2>
               <div class="contact-methods">
                 <a href="tel:6479306688" class="contact-method">
@@ -265,7 +740,7 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
 
             <div class="sidebar-card">
               <h3>Areas Served</h3>
-              <p style="font-size:0.8rem;color:#9A8060;margin-bottom:0.5rem;">Serving all of Ontario, including but not limited to:</p>
+              <p class="sidebar-area-lede">Serving all of Ontario, including but not limited to:</p>
               <ul class="area-list">
                 <li><a href="/en/toronto-chinese-family-lawyer">Chinese Family Lawyer Toronto</a></li>
                 <li><a href="/en/markham-chinese-family-lawyer">Chinese Family Lawyer Markham</a> · Office</li>
@@ -310,5 +785,32 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
 
   </main>
   <Footer lang="en" />
+  <script is:inline>
+    (function () {
+      var t = document.getElementById('cta-wechat-toggle-contact-en-hero');
+      var p = document.getElementById('cta-wechat-popover-contact-en-hero');
+      var w = document.getElementById('cta-wechat-wrapper-contact-en-hero');
+      if (t && p) {
+        t.addEventListener('click', function (e) {
+          e.stopPropagation();
+          var open = !p.classList.contains('is-open');
+          p.classList.toggle('is-open', open);
+          t.setAttribute('aria-expanded', open ? 'true' : 'false');
+          p.setAttribute('aria-hidden', open ? 'false' : 'true');
+        });
+      }
+      if (w && p) {
+        document.addEventListener('click', function (e) {
+          if (!w.contains(e.target)) {
+            p.classList.remove('is-open');
+            if (t) {
+              t.setAttribute('aria-expanded', 'false');
+              p.setAttribute('aria-hidden', 'true');
+            }
+          }
+        });
+      }
+    })();
+  </script>
 </body>
 </html>
