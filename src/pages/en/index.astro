@@ -173,7 +173,7 @@ function formatBlogDate(date: Date) {
       <div class="hero-court-scrim" aria-hidden="true"></div>
       <div class="hero-inner hero-inner--court">
         <p class="hero-court-eyebrow">Ontario family law</p>
-        <p class="hero-court-slogan" lang="en">Fighting for What Matters Most to You.</p>
+        <p class="hero-court-slogan" lang="en">Fighting for What Matters Most <span class="hero-court-slogan-tail">to You.</span></p>
         <h1 id="hero-main-heading" class="hero-court-h1">Ontario Family Law &amp; Divorce Lawyer – Miao He <span class="hero-court-chinese">何淼</span></h1>
         <p class="hero-court-lead">Dual-licensed family lawyer (Ontario &amp; China) · divorce, custody &amp; cross-border assets · Mandarin &amp; English · Markham · GTA and Ontario</p>
         <div class="hero-court-actions">
@@ -566,10 +566,10 @@ function formatBlogDate(date: Date) {
   .hero-inner--court {
     position: relative;
     z-index: 2;
-    max-width: 820px;
+    max-width: min(1120px, calc(100vw - 2rem));
     margin: 0 auto;
     text-align: center;
-    padding: 0 0.5rem;
+    padding: 0 0.75rem;
   }
   .hero-court-eyebrow {
     margin: 0 0 1rem;
@@ -584,13 +584,16 @@ function formatBlogDate(date: Date) {
   .hero-court-slogan {
     margin: 0 0 1.35rem;
     font-family: "Playfair Display", Georgia, "Times New Roman", serif;
-    font-size: clamp(1.75rem, 4.6vw, 3rem);
+    font-size: clamp(1.65rem, 4vw, 2.75rem);
     font-weight: 500;
     font-style: normal;
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: #fff;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.55), 0 4px 36px rgba(0, 0, 0, 0.5);
+  }
+  .hero-court-slogan-tail {
+    white-space: nowrap;
   }
   .hero-court-h1 {
     margin: 0 0 0.45rem;
