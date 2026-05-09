@@ -2,7 +2,6 @@
 import BaseHead from '../../components/BaseHead.astro';
 import HeaderEn from '../../components/HeaderEn.astro';
 import Footer from '../../components/Footer.astro';
-import { SITE_LAST_UPDATED_EN } from '../../consts';
 ---
 <!doctype html>
 <html lang="en">
@@ -43,9 +42,29 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
     a { color: inherit; text-decoration: none; }
     .page-hero { background: var(--hero-legal-top-background); border-bottom: 1px solid rgba(0, 0, 0, 0.35); padding: 4rem 2rem; text-align: center; }
     .page-hero-inner { max-width: 760px; margin: 0 auto; }
-    .page-label { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: #9A8060; margin-bottom: 1rem; }
-    .page-hero h1 { font-size: 2.5rem; font-weight: 400; color: #FAC775; margin-bottom: 1rem; }
-    .page-hero p { color: #C4AA80; font-size: 0.95rem; line-height: 1.7; max-width: 640px; margin: 0 auto; }
+    .page-label { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255, 255, 255, 0.72); margin-bottom: 1rem; }
+    .page-hero h1 {
+      font-family: Georgia, serif;
+      font-size: 2.5rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      color: #f5e6c8;
+      margin-bottom: 1rem;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+    }
+    .page-hero-inner > p:not(.page-last-updated) {
+      color: #b89678;
+      font-size: 0.95rem;
+      line-height: 1.7;
+      max-width: 640px;
+      margin: 0 auto;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+    }
+    .page-hero .page-last-updated.page-last-updated--warm {
+      margin-top: 1rem;
+      font-size: 0.78rem;
+      color: rgba(255, 255, 255, 0.72);
+    }
     .testimonials-section { padding: 4rem 2rem; }
     .testimonials-inner { max-width: 800px; margin: 0 auto; }
     .section-title { font-size: 1.4rem; font-weight: 400; color: var(--text-heading); margin: 2.5rem 0 1.25rem; padding-bottom: 0.5rem; border-bottom: 2px solid #EDE8DF; }
@@ -74,7 +93,7 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
         <div class="page-label">Client Reviews · Testimonials</div>
         <h1>Real Client Feedback</h1>
         <p>The following reviews are genuine feedback from clients shared through handwritten cards, Google reviews, messages, and emails. All displayed with client consent. Sensitive personal information has been anonymized.</p>
-        <p class="page-last-updated page-last-updated--warm">Page last updated: {SITE_LAST_UPDATED_EN}</p>
+        <p class="page-last-updated page-last-updated--warm">Page last updated: May 9, 2026</p>
       </div>
     </section>
 
