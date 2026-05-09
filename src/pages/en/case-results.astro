@@ -53,10 +53,22 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
       font-size: 0.78rem;
       color: rgba(255, 255, 255, 0.72);
     }
-    .results-numbers { background: #F5EFE0; padding: 3rem 2rem; border-bottom: 1px solid #EDE8DF; }
+    .results-numbers {
+      background: #2a2a2a;
+      padding: 3rem 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    }
     .results-numbers-inner { max-width: 960px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; text-align: center; }
-    .result-stat-number { font-size: 2rem; color: #7A5A1A; margin-bottom: 0.5rem; }
-    .result-stat-label { font-size: 0.8rem; color: #6B5A3A; line-height: 1.5; }
+    .result-stat-number {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #d9ad58;
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.01em;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    }
+    .result-stat-label { font-size: 0.8rem; color: #e8e2d9; line-height: 1.5; }
     .cases-section { padding: 4rem 2rem; }
     .cases-inner { max-width: 800px; margin: 0 auto; }
     .section-title { font-size: 1.75rem; font-weight: 400; color: var(--text-heading); margin-bottom: 1.5rem; padding-bottom: 0.75rem; border-bottom: 2px solid #EDE8DF; }
