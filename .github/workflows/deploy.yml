@@ -11,13 +11,13 @@ jobs:
         with:
           node-version: 22
       - run: npm install && npm run build
-      - name: Upload to SiteGround via SFTP
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+      - name: Deploy via SSH
+        uses: easingthemes/ssh-deploy@v5.0.3
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local_path: ./dist/*
-          remote_path: /home/miaohelaw/public_html
-          sftp_only: true
-          port: 18765
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          ARGS: "-rlgoDzvc -i"
+          SOURCE: "dist/"
+          REMOTE_HOST: ${{ secrets.FTP_SERVER }}
+          REMOTE_USER: ${{ secrets.FTP_USERNAME }}
+          REMOTE_PORT: 18765
+          TARGET: /home/miaohelaw/public_html/
