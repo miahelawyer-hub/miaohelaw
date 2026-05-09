@@ -11,11 +11,12 @@ jobs:
         with:
           node-version: 22
       - run: npm install && npm run build
-      - name: Upload to SiteGround
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      - name: Upload to SiteGround via SFTP
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./dist/
-          server-dir: /public_html/
+          local_path: ./dist/*
+          remote_path: /home/miaohelaw/public_html
+          sftp_only: true
