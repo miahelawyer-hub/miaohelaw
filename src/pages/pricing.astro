@@ -132,8 +132,8 @@ import { SITE_LAST_UPDATED_ZH } from '../consts';
 
     <section class="pricing-section">
       <div class="pricing-inner pricing-inner--consult">
-        <div class="consult-intro-layout">
-          <div class="consult-intro-content">
+        <div class="consult-intro-layout consult-intro-motion-root">
+          <div class="consult-intro-content consult-intro-slide consult-intro-slide--left">
             <div class="pricing-card highlight">
               <div class="pricing-tag">最常见的第一步</div>
               <h2>初次咨询</h2>
@@ -146,7 +146,7 @@ import { SITE_LAST_UPDATED_ZH } from '../consts';
               <a href="tel:6479306688" class="btn-primary">📞 立即预约 647-930-6688</a>
             </div>
           </div>
-          <div class="consult-intro-visual">
+          <div class="consult-intro-visual consult-intro-slide consult-intro-slide--right">
             <div class="consult-intro-visual-frame">
               <img src="/images/office-meeting.png" alt="" width="1200" height="800" loading="lazy" decoding="async" />
             </div>
@@ -154,6 +154,7 @@ import { SITE_LAST_UPDATED_ZH } from '../consts';
         </div>
       </div>
 
+      <div class="fade-in-section">
       <div class="pricing-banner" aria-labelledby="fixed-fee-banner-title-zh">
         <div class="pricing-banner-bg" aria-hidden="true"></div>
         <div class="pricing-banner-overlay" aria-hidden="true"></div>
@@ -201,6 +202,10 @@ import { SITE_LAST_UPDATED_ZH } from '../consts';
 
         </div>
 
+      </div>
+      </div>
+
+      <div class="pricing-inner fade-in-section">
         <h2 class="section-subtitle">诉讼代理</h2>
 
         <div class="pricing-card">
@@ -220,6 +225,9 @@ import { SITE_LAST_UPDATED_ZH } from '../consts';
           </div>
         </div>
 
+      </div>
+
+      <div class="pricing-inner fade-in-section">
         <h2 class="section-subtitle">Limited Retainer · 有限委托</h2>
 
         <div class="pricing-card">
@@ -238,6 +246,9 @@ import { SITE_LAST_UPDATED_ZH } from '../consts';
           <p>有限委托让客户在控制费用的同时，在关键节点获得专业的法律支持。如果你正在考虑自行代理但不确定某些步骤，欢迎咨询是否适合这种安排。</p>
         </div>
 
+      </div>
+
+      <div class="pricing-inner fade-in-section">
         <h2 class="section-subtitle">关于 Disbursements（垫付费用）</h2>
 
         <div class="pricing-card">
@@ -265,7 +276,7 @@ import { SITE_LAST_UPDATED_ZH } from '../consts';
       </div>
     </section>
 
-    <section class="page-cta">
+    <section class="page-cta fade-in-section">
       <h2>有费用相关问题？</h2>
       <p>每个案件情况不同。欢迎预约初次咨询，我会根据你的具体情况给出费用估算。</p>
       <div class="cta-actions">
@@ -276,6 +287,53 @@ import { SITE_LAST_UPDATED_ZH } from '../consts';
 
   </main>
   <Footer />
+  <script is:inline>
+    (function () {
+      var els = document.querySelectorAll('.fade-in-section');
+      if (els.length) {
+        if (!('IntersectionObserver' in window)) {
+          els.forEach(function (el) {
+            el.classList.add('is-visible');
+          });
+        } else {
+          var io = new IntersectionObserver(
+            function (entries) {
+              entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add('is-visible');
+                  io.unobserve(entry.target);
+                }
+              });
+            },
+            { threshold: 0.15 }
+          );
+          els.forEach(function (el) {
+            io.observe(el);
+          });
+        }
+      }
+
+      var consultRoot = document.querySelector('.consult-intro-motion-root');
+      if (consultRoot) {
+        if (!('IntersectionObserver' in window)) {
+          consultRoot.classList.add('consult-intro-visible');
+        } else {
+          var consultIo = new IntersectionObserver(
+            function (entries) {
+              entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add('consult-intro-visible');
+                  consultIo.unobserve(entry.target);
+                }
+              });
+            },
+            { threshold: 0.2 }
+          );
+          consultIo.observe(consultRoot);
+        }
+      }
+    })();
+  </script>
 </body>
 </html>
 
@@ -359,6 +417,21 @@ import { SITE_LAST_UPDATED_ZH } from '../consts';
     min-height: 240px;
     object-fit: cover;
     display: block;
+  }
+  .consult-intro-slide {
+    opacity: 0;
+    transition: transform 0.7s ease-out, opacity 0.7s ease-out;
+  }
+  .consult-intro-slide--left {
+    transform: translateX(-80px);
+  }
+  .consult-intro-slide--right {
+    transform: translateX(80px);
+  }
+  .consult-intro-layout.consult-intro-visible .consult-intro-slide--left,
+  .consult-intro-layout.consult-intro-visible .consult-intro-slide--right {
+    opacity: 1;
+    transform: translateX(0);
   }
   @media (min-width: 900px) {
     .consult-intro-layout {
@@ -446,6 +519,15 @@ import { SITE_LAST_UPDATED_ZH } from '../consts';
   .cta-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; align-items: stretch; }
   .btn-secondary { display: inline-flex; align-items: center; justify-content: center; width: 240px; height: 52px; background: #FDFBF7; color: #7A5A1A; border-radius: 8px; text-decoration: none; font-size: 0.9rem; font-weight: 600; border: 2px solid #7A5A1A; box-sizing: border-box; }
   .btn-secondary:hover { background: #F5EFE0; }
+  .fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  .fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
   @media (max-width: 720px) {
     .pricing-grid { grid-template-columns: 1fr; }
     .page-hero--pricing h1 { font-size: 1.75rem; }
