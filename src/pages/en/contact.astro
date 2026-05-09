@@ -106,21 +106,16 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
   ]
   </script>
   <style>
-    :global(body.page-contact-dark) {
-      background-color: #1a1a1a;
-      color: rgba(255, 255, 255, 0.92);
-    }
-
     .page-main {
       max-width: 100%;
       padding: 0;
       margin: 0;
-      --contact-gold: #d4a853;
+      --contact-gold: #b89456;
       --contact-gold-soft: #c4a386;
-      --contact-panel: #222224;
-      --contact-panel-border: rgba(255, 255, 255, 0.1);
-      --contact-body: rgba(255, 255, 255, 0.9);
-      --contact-muted: rgba(232, 226, 217, 0.72);
+      --contact-panel: #ffffff;
+      --contact-panel-border: rgba(44, 36, 24, 0.12);
+      --contact-body: #4a3a2a;
+      --contact-muted: rgba(74, 58, 42, 0.72);
     }
 
     /* H.lawfirmontario-style hero (mirrors 家庭法-华人律师): layered photo + brand scrim */
@@ -386,7 +381,11 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
       }
     }
 
-    .contact-section { padding: 3rem 1.5rem 4rem; background: #1a1a1a; }
+    .contact-section {
+      padding: 3rem 1.5rem 4rem;
+      background: var(--bg);
+      color: var(--contact-body);
+    }
     .contact-inner { max-width: 960px; margin: 0 auto; }
     .contact-grid { display: grid; grid-template-columns: 1fr 340px; gap: 2.5rem; }
 
@@ -399,7 +398,7 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
       border-radius: 12px;
       padding: 2rem;
       margin-bottom: 1.5rem;
-      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+      box-shadow: var(--box-shadow);
     }
 
     .contact-card.highlight {
@@ -422,18 +421,20 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
       align-items: center;
       gap: 1rem;
       padding: 0.75rem 1rem;
-      background: rgba(255, 255, 255, 0.05);
+      text-decoration: none;
+      color: inherit;
+      background: rgba(122, 90, 26, 0.06);
       border-radius: 8px;
-      border: 1px solid rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(44, 36, 24, 0.08);
       transition: background 0.15s, border-color 0.15s;
     }
     .contact-method:hover {
-      background: rgba(255, 255, 255, 0.09);
-      border-color: rgba(212, 168, 83, 0.35);
+      background: rgba(122, 90, 26, 0.1);
+      border-color: rgba(212, 168, 83, 0.45);
     }
     .method-icon { font-size: 1.4rem; }
     .method-label { font-size: 0.78rem; color: var(--contact-muted); margin-bottom: 0.2rem; }
-    .method-value { font-size: 1rem; font-weight: 600; color: #ffffff; }
+    .method-value { font-size: 1rem; font-weight: 600; color: #2c1810; }
 
     .cta-actions { display: flex; gap: 0.75rem; margin-bottom: 1rem; flex-wrap: wrap; }
     .btn-primary {
@@ -444,23 +445,24 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
       font-size: 0.92rem;
       font-weight: 700;
       border: none;
-      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.35);
+      box-shadow: 0 4px 14px rgba(44, 36, 24, 0.18);
       transition: background 0.15s, transform 0.15s;
     }
     .btn-primary:hover { background: #d4b699; transform: translateY(-1px); }
     .btn-secondary {
       background: transparent;
-      color: #ffffff;
+      color: #4a3a2a;
       padding: 0.68rem 1.35rem;
       border-radius: 999px;
       font-size: 0.92rem;
       font-weight: 600;
-      border: 2px solid rgba(255, 255, 255, 0.82);
-      transition: background 0.15s, border-color 0.15s;
+      border: 2px solid rgba(74, 58, 42, 0.35);
+      transition: background 0.15s, border-color 0.15s, color 0.15s;
     }
     .btn-secondary:hover {
-      background: rgba(255, 255, 255, 0.08);
-      border-color: #ffffff;
+      background: rgba(122, 90, 26, 0.08);
+      border-color: var(--contact-gold);
+      color: #2c1810;
     }
 
     .response-note { font-size: 0.8rem; color: var(--contact-muted); }
@@ -488,10 +490,10 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
 
     .complex-cases {
       font-size: 0.88rem;
-      color: rgba(255, 255, 255, 0.88);
+      color: #4a3a2a;
       margin-top: 1rem;
       line-height: 1.6;
-      background: rgba(0, 0, 0, 0.35);
+      background: rgba(184, 149, 106, 0.14);
       padding: 0.85rem 1rem;
       border-radius: 6px;
       border-left: 3px solid var(--contact-gold);
@@ -516,7 +518,7 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
       color: var(--contact-body);
     }
     .sidebar-card address a {
-      color: #ffffff;
+      color: #2c1810;
       font-weight: 600;
       text-decoration: none;
       border-bottom: 1px solid rgba(212, 168, 83, 0.45);
@@ -545,7 +547,7 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
     }
     .area-list li { font-size: 0.85rem; }
     .area-list a {
-      color: rgba(255, 255, 255, 0.88);
+      color: #5c4a36;
       text-decoration: none;
       border-bottom: 1px solid transparent;
       transition: color 0.15s, border-color 0.15s;
@@ -584,7 +586,7 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
     }
   </style>
 </head>
-<body class="page-contact-dark">
+<body>
   <HeaderEn />
   <main class="page-main">
 

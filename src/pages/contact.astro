@@ -108,7 +108,7 @@ import { SITE_LAST_UPDATED_ZH } from '../consts';
   ]
   </script>
 </head>
-<body class="page-contact-dark">
+<body>
   <Header />
   <main class="page-main">
 
@@ -330,21 +330,16 @@ import { SITE_LAST_UPDATED_ZH } from '../consts';
 </html>
 
 <style>
-  :global(body.page-contact-dark) {
-    background-color: #1a1a1a;
-    color: rgba(255, 255, 255, 0.92);
-  }
-
   .page-main {
     max-width: 100%;
     padding: 0;
     margin: 0;
-    --contact-gold: #d4a853;
+    --contact-gold: #b89456;
     --contact-gold-soft: #c4a386;
-    --contact-panel: #222224;
-    --contact-panel-border: rgba(255, 255, 255, 0.1);
-    --contact-body: rgba(255, 255, 255, 0.9);
-    --contact-muted: rgba(232, 226, 217, 0.72);
+    --contact-panel: #ffffff;
+    --contact-panel-border: rgba(44, 36, 24, 0.12);
+    --contact-body: #4a3a2a;
+    --contact-muted: rgba(74, 58, 42, 0.72);
   }
 
   /* H.lawfirmontario-style hero (家庭法-华人律师): layered photo + brand scrim + gradient */
@@ -598,10 +593,11 @@ import { SITE_LAST_UPDATED_ZH } from '../consts';
     }
   }
 
-  /* Content band — charcoal canvas */
+  /* Content band — site cream canvas below hero */
   .contact-section {
     padding: 4rem 2rem;
-    background: #1a1a1a;
+    background: var(--bg);
+    color: var(--contact-body);
   }
   .contact-inner { max-width: 1060px; margin: 0 auto; }
   .contact-grid { display: grid; grid-template-columns: 1fr 320px; gap: 2rem; align-items: start; }
@@ -615,7 +611,7 @@ import { SITE_LAST_UPDATED_ZH } from '../consts';
     border-radius: 10px;
     padding: 2rem;
     margin-bottom: 1.5rem;
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+    box-shadow: var(--box-shadow);
   }
 
   .contact-card.highlight {
@@ -640,18 +636,18 @@ import { SITE_LAST_UPDATED_ZH } from '../consts';
     gap: 0.75rem;
     text-decoration: none;
     padding: 0.75rem 1rem;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(122, 90, 26, 0.06);
     border-radius: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(44, 36, 24, 0.08);
     transition: background 0.15s, border-color 0.15s;
   }
   .contact-method:hover {
-    background: rgba(255, 255, 255, 0.09);
-    border-color: rgba(212, 168, 83, 0.35);
+    background: rgba(122, 90, 26, 0.1);
+    border-color: rgba(212, 168, 83, 0.45);
   }
   .method-icon { font-size: 1.2rem; flex-shrink: 0; }
   .method-label { font-size: 0.75rem; color: var(--contact-muted); margin-bottom: 2px; }
-  .method-value { font-size: 1rem; color: #ffffff; font-weight: 500; }
+  .method-value { font-size: 1rem; color: #2c1810; font-weight: 600; }
 
   .cta-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
   .btn-primary {
@@ -666,7 +662,7 @@ import { SITE_LAST_UPDATED_ZH } from '../consts';
     font-size: 0.9rem;
     font-weight: 700;
     border: none;
-    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 4px 14px rgba(44, 36, 24, 0.18);
     transition: background 0.15s, transform 0.15s;
   }
   .btn-primary:hover { background: #d4b699; transform: translateY(-1px); }
@@ -675,18 +671,19 @@ import { SITE_LAST_UPDATED_ZH } from '../consts';
     align-items: center;
     justify-content: center;
     background: transparent;
-    color: #ffffff;
+    color: #4a3a2a;
     padding: 0.75rem 1.5rem;
     border-radius: 999px;
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 600;
-    border: 2px solid rgba(255, 255, 255, 0.82);
-    transition: background 0.15s, border-color 0.15s;
+    border: 2px solid rgba(74, 58, 42, 0.35);
+    transition: background 0.15s, border-color 0.15s, color 0.15s;
   }
   .btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.08);
-    border-color: #ffffff;
+    background: rgba(122, 90, 26, 0.08);
+    border-color: var(--contact-gold);
+    color: #2c1810;
   }
 
   .response-note {
@@ -718,8 +715,8 @@ import { SITE_LAST_UPDATED_ZH } from '../consts';
 
   .complex-cases {
     font-size: 0.85rem;
-    color: rgba(255, 255, 255, 0.88);
-    background: rgba(0, 0, 0, 0.35);
+    color: #4a3a2a;
+    background: rgba(184, 149, 106, 0.14);
     border-left: 3px solid var(--contact-gold);
     padding: 0.85rem 1rem;
     border-radius: 6px;
@@ -746,7 +743,7 @@ import { SITE_LAST_UPDATED_ZH } from '../consts';
     margin-bottom: 1rem;
   }
   .sidebar-card address a {
-    color: #ffffff;
+    color: #2c1810;
     text-decoration: none;
     font-weight: 600;
     border-bottom: 1px solid rgba(212, 168, 83, 0.45);
@@ -779,7 +776,7 @@ import { SITE_LAST_UPDATED_ZH } from '../consts';
   .area-list { padding-left: 1.1rem; margin: 0.5rem 0 0; }
   .area-list li { font-size: 0.875rem; line-height: 1.85; }
   .area-list a {
-    color: rgba(255, 255, 255, 0.88);
+    color: #5c4a36;
     text-decoration: none;
     border-bottom: 1px solid transparent;
     transition: color 0.15s, border-color 0.15s;
