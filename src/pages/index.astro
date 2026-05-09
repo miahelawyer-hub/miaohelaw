@@ -505,14 +505,15 @@ const homepageVideos: VideoItem[] = homepageVideoSlugs
 		position: absolute;
 		inset: 0;
 		z-index: 1;
-		/* 线性压暗 + 中部略加一层，压住书页/法槌高光上的白字 */
+		/* 暖灰叠层 — 较上一版再略暗，仍避开纯黑 */
 		background:
-			radial-gradient(ellipse 85% 72% at 50% 42%, rgba(0, 0, 0, 0.42) 0%, transparent 58%),
+			radial-gradient(ellipse 88% 74% at 50% 40%, rgba(0, 0, 0, 0.36) 0%, transparent 62%),
+			linear-gradient(180deg, rgba(252, 250, 247, 0.045) 0%, transparent 52%),
 			linear-gradient(
 				165deg,
-				rgba(14, 12, 18, 0.76) 0%,
-				rgba(22, 18, 16, 0.84) 45%,
-				rgba(12, 10, 10, 0.9) 100%
+				rgba(38, 35, 33, 0.54) 0%,
+				rgba(44, 40, 38, 0.58) 45%,
+				rgba(28, 26, 25, 0.62) 100%
 			);
 		pointer-events: none;
 	}
