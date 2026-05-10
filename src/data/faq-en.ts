@@ -28,6 +28,8 @@ export const faqItemsEn: FaqItemEn[] =
       "In our experience, many clients assume that because the account is in the other spouse name, it is off limits. That is not how Ontario equalization works. How payment is made — cash, negotiated terms, or in appropriate cases discussions of RRSP rollover mechanics — depends on the file, tax rules, and institutional requirements.",
       "Gather recent statements, contribution history, and separation-date values as early as you can. Contact Miao He at 647-930-6688 to book a consultation."
     ],
+    "metaTitle": "Can I Get a Share of My Husband's RRSP in an Ontario Divorce? | Miao He",
+    "metaDescription": "Yes. An RRSP in one spouse's name must be disclosed and valued. Growth during the marriage is addressed through equalization of net family property. What you receive depends on the overall equalization calculation. 647-930-6688.",
     "keywords": "RRSP divorce Ontario,divide RRSP separation,equalization net family property Ontario,spouse RRSP family law,Miao He lawyer",
     "featured": true
   },
@@ -46,6 +48,8 @@ export const faqItemsEn: FaqItemEn[] =
       "Where a child views need to be presented formally, Ontario often involves the Office of the Children Lawyer (OCL) rather than putting the child on the witness stand in open court.",
       "Practical takeaway: building a stable, child-focused parenting pattern after separation can be critical. For advice tailored to your situation, contact Miao He at 647-930-6688."
     ],
+    "metaTitle": "Will Ontario Court Listen to My Child's Preference in Custody? | Miao He",
+    "metaDescription": "Courts consider a child's views but the child does not decide. The primary focus is the best interests of the child and the parenting status quo. Older, more mature children's preferences carry more weight. 647-930-6688.",
     "keywords": "child preference custody Ontario,child wants live with father,best interests child Ontario,voice of the child Ontario,OCL Ontario,Miao He lawyer",
     "featured": true
   },
@@ -64,6 +68,8 @@ export const faqItemsEn: FaqItemEn[] =
       "Relocating without consent or a court order can expose you to urgent motions, enforcement issues, and serious credibility problems in parenting litigation — in extreme cases it can undermine your parenting case.",
       "Plan early. Contact Miao He at 647-930-6688 to understand timelines, notice requirements, and how to present (or respond to) a relocation application."
     ],
+    "metaTitle": "Can I Move With My Child to Another City If My Ex Objects? | Miao He",
+    "metaDescription": "No. Ontario relocation rules require formal written notice. If the other parent objects, a court must determine what is in the child's best interests. Moving without consent or a court order can have serious legal consequences. 647-930-6688.",
     "keywords": "child relocation Ontario,Notice of Relocation Canada,move province divorce parenting,Vancouver relocation custody,Miao He lawyer,Chinese family lawyer GTA",
     "featured": true
   },
@@ -82,6 +88,8 @@ export const faqItemsEn: FaqItemEn[] =
       "If creditors sue both spouses, courts examine actual use of funds. If the money was spent on personal dissipation unrelated to the household, the non-borrowing spouse is often far less exposed.",
       "Debt allocation is a central part of separation planning. Contact Miao He at 647-930-6688 or WeChat 372656035 to clarify your exposure early."
     ],
+    "metaTitle": "Do I Have to Pay My Spouse's Credit Card Debt After Divorce? | Miao He",
+    "metaDescription": "Not necessarily. It depends on whether the debt supported joint household expenses and whether it was truly personal to your spouse. Creditors generally cannot pursue you solely because you were married. 647-930-6688.",
     "keywords": "spouse credit card debt divorce Ontario,joint debt separation Ontario,gambling debt divorce Ontario,personal debt spouse liability Ontario,Miao He lawyer,Chinese family lawyer GTA",
     "featured": true
   },
@@ -101,6 +109,8 @@ export const faqItemsEn: FaqItemEn[] =
       "Disability or health limitations affecting employability can lengthen duration or increase amount when proven and relevant.",
       "Many stay-at-home parents underestimate their claims. Contact Miao He at 647-930-6688 or WeChat 372656035 to understand your realistic range early."
     ],
+    "metaTitle": "Can I Get Spousal Support After 10 Years as a Stay-at-Home Parent? | Miao He",
+    "metaDescription": "Yes. Full-time caregiving and career sacrifice are important factors courts consider. Amount and duration depend on income disparity, length of marriage, and dependency — longer marriages and greater dependency support higher or longer support. 647-930-6688.",
     "keywords": "stay at home parent spousal support Ontario,10 year marriage spousal support,SSAG Ontario,spousal support duration Ontario,Miao He lawyer,Chinese family lawyer GTA",
     "featured": true
   },
@@ -119,6 +129,8 @@ export const faqItemsEn: FaqItemEn[] =
       "In that situation, the application may be refused or otherwise derailed, and you should urgently map alternative pathways — for example employer-driven work permits, other eligible programs, or lawful status extensions where available.",
       "These issues sit at the intersection of family law and immigration law. Consult both a family lawyer and an immigration lawyer early. Contact Miao He at 647-930-6688 or WeChat 372656035."
     ],
+    "metaTitle": "Will Divorce Affect My Immigration Status If My Spouse Is a PR? | Miao He",
+    "metaDescription": "An existing work permit or issued PR is not automatically lost due to divorce. The high-risk scenario is an in-land spousal sponsorship still in progress — get coordinated family law and immigration advice quickly. 647-930-6688.",
     "keywords": "work permit divorce Ontario,spousal sponsorship PR divorce Canada,immigration status divorce Ontario,PR revoked divorce Canada,Miao He lawyer,Chinese family lawyer GTA",
     "featured": true
   },
@@ -137,6 +149,8 @@ export const faqItemsEn: FaqItemEn[] =
       "Enforcement and verification can be hard if a spouse resists production. Ontario courts have tools such as disclosure orders and, in appropriate cases, adverse inferences where disclosure is inadequate.",
       "Miao He is dual-licensed in Ontario and China and regularly handles cross-border cases involving Chinese benefits and payroll systems. Contact 647-930-6688 or WeChat 372656035."
     ],
+    "metaTitle": "Can My Spouse's Chinese Pension Be Divided in an Ontario Divorce? | Miao He",
+    "metaDescription": "Yes. Ontario equalization is based on worldwide net family property. Chinese pension and social insurance entitlements must be disclosed with a credible cash value. Growth during the marriage is included in the equalization calculation. 647-930-6688.",
     "keywords": "China pension divorce Ontario,social insurance equalization Canada,worldwide net family property Ontario,cross-border divorce China assets Ontario,Miao He lawyer,dual licensed family lawyer",
     "featured": true
   },
@@ -155,6 +169,8 @@ export const faqItemsEn: FaqItemEn[] =
       "Practical planning: if you will register a new marriage in China or elsewhere, you may need authentication — for example Apostille steps where available, or Chinese consular authentication depending on timing and routing. Confirm the receiving country requirements early.",
       "If you need help expediting the certificate or coordinating cross-border document authentication, contact Miao He at 647-930-6688 or WeChat 372656035."
     ],
+    "metaTitle": "When Can I Remarry After Receiving My Certificate of Divorce? | Miao He",
+    "metaDescription": "Once you hold a Certificate of Divorce you may remarry immediately — no further waiting period. The court first grants a Divorce Order; after the 31-day appeal window you may apply for the Certificate proving the marriage is legally ended. 647-930-6688.",
     "keywords": "remarriage after divorce Ontario,Certificate of Divorce Ontario,Divorce Order vs certificate Ontario,how long remarry Canada,Miao He lawyer,Chinese family lawyer GTA",
     "featured": true
   },
@@ -173,6 +189,8 @@ export const faqItemsEn: FaqItemEn[] =
       "Third: gift or loan. If the parents signed a loan agreement or there was a clear expectation of repayment, the contribution can potentially be treated as a debt in the net family property calculation — meaning it does not need to be equalized. If it was a gift, the analysis is more complex, particularly when the property is a matrimonial home. Under the Douglas v Douglas, 2022 ONSC 585 (CanLII) framework, courts assess seven factors to distinguish a loan from a gift: whether contemporaneous loan documents exist, whether repayment terms were specified, whether security was provided, whether the advance was made to one child but not others, whether repayment was ever demanded before separation, whether any partial repayment occurred, and whether there was any reasonable expectation of repayment. Even without a formal loan agreement, evidence pointing toward these factors can support a loan characterization.",
       "Fourth: what evidence exists. Even without a formal agreement, WeChat messages, emails, e-transfer notes, and bank records can all be critical evidence of the parties' true intentions. Courts will look at everything available to determine what the contribution was intended to be. We recommend gathering all relevant records and bringing them to a consultation so that Miao He can analyze the specific facts of your case. Contact us at 647-930-6688."
     ],
+    "metaTitle": "Can My Parents' Down Payment Contribution Be Recovered in a Divorce? | Miao He",
+    "metaDescription": "Not necessarily. The answer depends on whether the property is a matrimonial home, whose account received the funds, whether it was a gift or loan, and what evidence exists of the parties' intentions. Every case is different. 647-930-6688.",
     "keywords": "parents down payment divorce Ontario,parental contribution matrimonial home Ontario,gift or loan family law Ontario,down payment divorce Chinese Canadian,Miao He lawyer"
   },
   {
@@ -207,6 +225,8 @@ export const faqItemsEn: FaqItemEn[] =
       "One area of caution for newcomers: if your immigration status is linked to your spouse — for example, if you came to Canada under spousal sponsorship — a divorce may have immigration consequences that are separate from the family law proceedings. It is important to get both family law and immigration advice before proceeding.",
       "Miao He is a bilingual lawyer who serves the Chinese-Canadian community in the GTA. If you have questions about divorce as a newcomer, contact 647-930-6688."
     ],
+    "metaTitle": "Can a New Immigrant Get Divorced in Ontario? | Miao He",
+    "metaDescription": "Yes. Ontario courts do not consider immigration status in divorce proceedings. As long as either spouse has been ordinarily resident in Ontario for at least one year, the court has jurisdiction — regardless of permit type. 647-930-6688.",
     "keywords": "new immigrant divorce Ontario,immigration status divorce Canada,divorce PR work permit Ontario,Chinese family lawyer,Miao He"
   },
   {
