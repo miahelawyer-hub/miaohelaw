@@ -178,6 +178,28 @@ function formatBlogDate(date: Date) {
         <p class="hero-court-lead">Dual-licensed family lawyer (Ontario &amp; China) · divorce, custody &amp; cross-border assets · Mandarin &amp; English · Markham · GTA and Ontario</p>
         <div class="hero-court-actions">
           <a href="tel:6479306688" class="btn-court-primary">Book a consultation · 647-930-6688</a>
+          <div class="hf-hero__wechat" id="cta-wechat-wrapper-home-en">
+            <button
+              type="button"
+              class="hf-btn hf-btn--ghost hf-btn--wechat"
+              id="cta-wechat-toggle-home-en"
+              aria-expanded="false"
+              aria-controls="cta-wechat-popover-home-en"
+            >
+              <svg class="hf-wechat-icon" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8.691 2C4.768 2 1.5 4.74 1.5 8.07c0 1.928 1.105 3.652 2.832 4.776L3.5 14.5l2.227-1.118c.704.182 1.443.282 2.205.282.158 0 .315-.005.47-.014a4.99 4.99 0 01-.182-1.293c0-2.946 2.804-5.339 6.275-5.339.158 0 .314.006.469.018C14.495 4.066 11.953 2 8.691 2zm-2.5 4a.75.75 0 110 1.5.75.75 0 010-1.5zm5 0a.75.75 0 110 1.5.75.75 0 010-1.5zM15.5 7.95c-3.245 0-5.875 2.166-5.875 4.838s2.63 4.838 5.875 4.838c.683 0 1.341-.097 1.953-.275L19.5 18.5l-.658-1.395C20.357 16.18 21.25 14.74 21.25 13.05c0-2.672-2.63-5.1-5.75-5.1zm-2 3a.625.625 0 110 1.25.625.625 0 010-1.25zm4 0a.625.625 0 110 1.25.625.625 0 010-1.25z"></path>
+              </svg>
+              WeChat
+            </button>
+            <div class="hf-wechat-popover" id="cta-wechat-popover-home-en" role="dialog" aria-hidden="true">
+              <p class="hf-wechat-popover__label">Scan QR to add WeChat</p>
+              <img src="/wechat-qr.jpg" alt="H. Law Firm WeChat QR code" class="hf-wechat-popover__qr" width="256" height="256" loading="lazy" decoding="async" />
+              <p class="hf-wechat-popover__hours">
+                Hours: Monday–Friday<br />
+                9:00 a.m. – 5:00 p.m.
+              </p>
+            </div>
+          </div>
           <a href="/en/about/" class="btn-court-secondary">About the lawyer</a>
         </div>
         <p class="hero-court-meta">
@@ -522,6 +544,33 @@ function formatBlogDate(date: Date) {
 
   </main>
   <Footer lang="en" />
+  <script is:inline>
+    (function () {
+      var t = document.getElementById('cta-wechat-toggle-home-en');
+      var p = document.getElementById('cta-wechat-popover-home-en');
+      var w = document.getElementById('cta-wechat-wrapper-home-en');
+      if (t && p) {
+        t.addEventListener('click', function (e) {
+          e.stopPropagation();
+          var open = !p.classList.contains('is-open');
+          p.classList.toggle('is-open', open);
+          t.setAttribute('aria-expanded', open ? 'true' : 'false');
+          p.setAttribute('aria-hidden', open ? 'false' : 'true');
+        });
+      }
+      if (w && p) {
+        document.addEventListener('click', function (e) {
+          if (!w.contains(e.target)) {
+            p.classList.remove('is-open');
+            if (t) {
+              t.setAttribute('aria-expanded', 'false');
+              p.setAttribute('aria-hidden', 'true');
+            }
+          }
+        });
+      }
+    })();
+  </script>
 </body>
 </html>
 
@@ -532,6 +581,9 @@ function formatBlogDate(date: Date) {
   .hero--court {
     --court-tan: #b89678;
     --court-tan-hover: #c4a386;
+    --hf-brand-primary: #3a4148;
+    --hf-brand-accent: #b8956a;
+    --hf-brand-accent-dark: #a78458;
     position: relative;
     display: flex;
     align-items: center;
@@ -689,6 +741,99 @@ function formatBlogDate(date: Date) {
   .hero-court-meta a:hover {
     color: #fff;
     border-bottom-color: rgba(255, 255, 255, 0.45);
+  }
+
+  /* Hero WeChat (same control as /en/contact/) */
+  .hero--court .hero-court-actions .hf-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.78rem 1.35rem;
+    font-size: 0.88rem;
+    font-weight: 600;
+    line-height: 1.25;
+    border-radius: 999px;
+    border: 2px solid transparent;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition:
+      background 0.15s ease,
+      color 0.15s ease,
+      border-color 0.15s ease,
+      transform 0.15s ease,
+      box-shadow 0.15s ease;
+    font-family: inherit;
+    width: auto;
+  }
+  .hero--court .hero-court-actions .hf-btn--ghost {
+    background: transparent;
+    border-color: rgba(255, 255, 255, 0.42);
+    color: #fff !important;
+  }
+  .hero--court .hero-court-actions .hf-btn--ghost:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff !important;
+    border-color: rgba(255, 255, 255, 0.65);
+    transform: translateY(-1px);
+  }
+  .hero--court .hf-wechat-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    flex-shrink: 0;
+    color: #07c160;
+  }
+  .hero--court .hero-court-actions .hf-btn--ghost:hover .hf-wechat-icon {
+    color: #07c160;
+  }
+  .hero--court .hero-court-actions .hf-hero__wechat {
+    position: relative;
+    display: inline-flex;
+    width: auto;
+    justify-content: center;
+  }
+  .hero--court .hf-wechat-popover {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 0.75rem;
+    width: 16rem;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 0.5rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.35);
+    padding: 1rem;
+    z-index: 50;
+    text-align: left;
+  }
+  .hero--court .hf-wechat-popover.is-open {
+    display: block;
+  }
+  .hero--court .hf-wechat-popover__label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #6b7280;
+    margin: 0 0 0.75rem;
+    text-align: center;
+  }
+  .hero--court .hf-wechat-popover__qr {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0.375rem;
+  }
+  .hero--court .hf-wechat-popover__hours {
+    font-size: 0.75rem;
+    color: #374151;
+    margin: 0.75rem 0 0;
+    text-align: center;
+    line-height: 1.5;
   }
 
   .btn-primary {
