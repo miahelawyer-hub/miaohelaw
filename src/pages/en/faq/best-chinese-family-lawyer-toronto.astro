@@ -1,0 +1,293 @@
+---
+import BaseHead from '../../../components/BaseHead.astro';
+import HeaderEn from '../../../components/HeaderEn.astro';
+import Footer from '../../../components/Footer.astro';
+import { getFaqItemsEnForListing } from '../../../data/faq-en';
+
+const faqListingEn = getFaqItemsEnForListing();
+const others = faqListingEn.slice(0, 6);
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <BaseHead
+    title="Chinese Family Lawyer Toronto | Experienced in Toronto Superior Court | Miao He"
+    description="Toronto family court operates differently from Newmarket and other Ontario courts. Miao He has practiced family law since 2009 — regularly appearing at Toronto Superior Court, 20+ court hours monthly. 647-930-6688."
+  />
+  <meta name="keywords" content="best Chinese family lawyer Toronto, experienced Chinese divorce lawyer Toronto, Toronto Superior Court family law, Chinese family lawyer recommendation Toronto, Mandarin divorce lawyer Toronto, Miao He family lawyer Toronto" />
+  <meta property="og:title" content="Experienced Chinese Family Lawyer Toronto | Miao He" />
+  <meta property="og:description" content="Toronto family court operates differently from Newmarket. Miao He has 15+ years family law experience and appears regularly at Toronto Superior Court — 20+ court hours monthly. 647-930-6688." />
+  <meta property="og:type" content="website" />
+  <link rel="alternate" hreflang="zh" href="https://www.miaohelaw.ca/best-chinese-family-lawyer-toronto/" />
+  <link rel="alternate" hreflang="en" href="https://www.miaohelaw.ca/en/faq/best-chinese-family-lawyer-toronto/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.miaohelaw.ca/best-chinese-family-lawyer-toronto/" />
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Where are Toronto family law cases heard?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Toronto family law cases are heard at the Ontario Superior Court of Justice in Toronto. Some matters may also be heard at the Ontario Court of Justice. Miao He appears in both courts and can advise which court and procedure is appropriate for your situation. Call 647-930-6688."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the main difference between Toronto and Newmarket family court?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The core difference is judicial specialization. Newmarket family court judges focus exclusively on family law. Toronto Superior Court judges operate under a General Division model, handling both family law and civil litigation. This affects how they approach motions, Case Conferences, and evidence — and a lawyer who only knows Newmarket may struggle to adapt."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I test whether a lawyer really knows Toronto court?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ask directly: How many active files do you currently have at Toronto Superior Court? When did you last appear in Toronto? Can you give me one example of how Toronto and Newmarket handle a specific issue differently? A lawyer who genuinely knows Toronto court can answer these questions specifically."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "@id": "https://www.miaohelaw.ca/en/faq/best-chinese-family-lawyer-toronto/#service",
+      "name": "Miao He — Experienced Chinese Family Lawyer Toronto",
+      "url": "https://www.miaohelaw.ca/en/faq/best-chinese-family-lawyer-toronto/",
+      "telephone": "+1-647-930-6688",
+      "email": "miao@miaohelaw.ca",
+      "areaServed": {"@type": "City", "name": "Toronto"},
+      "provider": {
+        "@type": "Person",
+        "name": "Miao He",
+        "alternateName": ["何淼", "Mia He"],
+        "jobTitle": "Family Law Lawyer",
+        "hasCredential": [
+          {"@type": "EducationalOccupationalCredential", "credentialCategory": "Law Society of Ontario — Member #83315K"},
+          {"@type": "EducationalOccupationalCredential", "credentialCategory": "China Bar Association — Licensed"},
+          {"@type": "EducationalOccupationalCredential", "credentialCategory": "Expert Witness — Chinese Family Law & Marriage Law"},
+          {"@type": "EducationalOccupationalCredential", "credentialCategory": "Notary Public — Ontario"}
+        ]
+      },
+      "inLanguage": ["en", "zh"]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.miaohelaw.ca/en/"},
+        {"@type": "ListItem", "position": 2, "name": "FAQ", "item": "https://www.miaohelaw.ca/en/faq/"},
+        {"@type": "ListItem", "position": 3, "name": "Experienced Chinese Family Lawyer Toronto", "item": "https://www.miaohelaw.ca/en/faq/best-chinese-family-lawyer-toronto/"}
+      ]
+    }
+  ]
+  </script>
+  <style>
+    * { box-sizing: border-box; }
+    body { background: var(--bg); margin: 0; }
+    .page-hero { background: var(--hero-legal-top-background); border-bottom: 1px solid rgba(0,0,0,0.35); padding: 3rem 1.5rem 2.5rem; text-align: center; }
+    .page-hero .hero-inner { max-width: 900px; margin: 0 auto; }
+    .breadcrumb {
+      font-size: 0.78rem; line-height: 1.5; margin-bottom: 1rem;
+      color: rgba(255,255,255,0.52); font-weight: 400; text-align: left;
+    }
+    .breadcrumb a { color: #c9a96e; text-decoration: none; font-weight: 500; }
+    .breadcrumb a:hover { color: #e4c47a; }
+    .breadcrumb .breadcrumb-sep { color: rgba(255,255,255,0.28); margin: 0 0.4rem; user-select: none; }
+    .breadcrumb-current { color: rgba(255,255,255,0.45); cursor: default; }
+    .badge { display: inline-block; background: rgba(212,168,83,0.15); border: 1px solid #D4A853; color: #D4A853; font-size: 0.78rem; letter-spacing: 0.08em; padding: 0.3rem 1rem; border-radius: 20px; margin-bottom: 1rem; text-transform: uppercase; }
+    .page-hero h1 { color: #ffffff; font-size: clamp(1.5rem, 3.5vw, 2rem); line-height: 1.35; margin: 0 auto 1rem; max-width: 800px; }
+    .page-hero .sub { color: rgba(255,255,255,0.82); font-size: 0.95rem; max-width: 640px; margin: 0 auto 1.5rem; line-height: 1.7; }
+    .hero-cta { display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; }
+    .btn-gold { background: #D4A853; color: var(--text-heading); padding: 0.75rem 1.75rem; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 0.95rem; }
+    .btn-outline { background: transparent; color: white; border: 2px solid white; padding: 0.75rem 1.75rem; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 0.95rem; }
+    .answer-section { padding: 0 0 4rem; }
+    .container { max-width: 900px; margin: 0 auto; padding: 2.5rem 1.5rem; }
+    .section-title { color: var(--text-heading); font-size: 1.25rem; margin: 2.5rem 0 1.25rem; padding-bottom: 0.4rem; border-bottom: 2px solid #D4A853; }
+    .section-title:first-of-type { margin-top: 0; }
+    .prose { color: #4A2C1A; font-size: 0.95rem; line-height: 1.8; margin-bottom: 1.25rem; }
+    .prose strong { color: var(--text-heading); }
+    .insight-box { background: #FDF6EC; border-left: 4px solid #D4A853; border-radius: 0 8px 8px 0; padding: 1.25rem 1.5rem; margin: 1.5rem 0; }
+    .insight-box p { color: #4A2C1A; font-size: 0.92rem; line-height: 1.75; margin: 0; }
+    .check-list { list-style: none; padding: 0; margin: 1rem 0 1.5rem; }
+    .check-list li { display: flex; gap: 0.75rem; align-items: flex-start; padding: 0.5rem 0; font-size: 0.92rem; color: #4A2C1A; line-height: 1.6; border-bottom: 1px solid #f0ebe3; }
+    .check-list li:last-child { border-bottom: none; }
+    .check-list .icon { color: #D4A853; font-weight: 700; flex-shrink: 0; }
+    .stats-bar { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: #e8e0d5; border: 1px solid #e8e0d5; border-radius: 10px; overflow: hidden; margin: 1.5rem 0 2.5rem; }
+    .stat { background: white; padding: 1.1rem 1rem; text-align: center; }
+    .stat-num { font-size: 1.5rem; font-weight: 700; color: var(--text-heading); display: block; }
+    .stat-label { font-size: 0.75rem; color: #9A8060; margin-top: 0.2rem; }
+    .faq-item { background: white; border: 1px solid #e8e0d5; border-radius: 10px; padding: 1.25rem 1.5rem; margin-bottom: 0.75rem; }
+    .faq-item h3 { color: var(--text-heading); font-size: 0.95rem; margin: 0 0 0.5rem; }
+    .faq-item p { color: #5a3e2b; font-size: 0.88rem; line-height: 1.65; margin: 0; }
+    .final-cta { background: linear-gradient(135deg, #2C1810, #4A2C1A); border-radius: 12px; padding: 2.5rem; text-align: center; margin-top: 3rem; }
+    .final-cta h2 { color: #D4A853; margin: 0 0 0.75rem; font-size: 1.2rem; }
+    .final-cta p { color: rgba(255,255,255,0.88); margin: 0 0 1.5rem; font-size: 0.92rem; line-height: 1.7; }
+    .related-section { margin-bottom: 2rem; margin-top: 2rem; }
+    .related-section h2 {
+      font-size: 0.88rem; text-transform: uppercase; letter-spacing: 0.06em;
+      color: #9A8060; margin-bottom: 1rem;
+    }
+    .related-list { list-style: none; background: white; border-radius: 10px;
+      border: 1px solid #e8e0d5; overflow: hidden; margin-bottom: 1rem; padding: 0; }
+    .related-list li { border-bottom: 1px solid #f0ebe3; }
+    .related-list li:last-child { border-bottom: none; }
+    .related-list a {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 0.9rem 1.25rem; font-size: 0.9rem; color: var(--text-heading);
+      transition: background 0.15s; text-decoration: none;
+    }
+    .related-list a:hover { background: #fdf6ec; color: #7A5A1A; }
+    .related-list .arr { color: #9A8060; font-size: 0.85rem; }
+    .view-all { font-size: 0.85rem; color: #9A8060; text-decoration: none; }
+    .view-all:hover { color: var(--text-heading); }
+    .contact-card {
+      background: linear-gradient(135deg, #2C1810, #4A2C1A);
+      border-radius: 12px; padding: 2rem;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 1.5rem; flex-wrap: wrap;
+    }
+    .contact-info h2 { color: #D4A853; margin: 0 0 0.5rem; font-size: 1.1rem; font-weight: 400; }
+    .contact-info p { color: rgba(255,255,255,0.88); margin: 0; font-size: 0.88rem; }
+    .contact-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+    .btn-primary { display: inline-block; background: #D4A853; color: var(--text-heading); padding: 0.65rem 1.3rem; border-radius: 6px; font-weight: 700; font-size: 0.88rem; text-decoration: none; }
+    .btn-secondary { display: inline-block; background: transparent; color: white; border: 2px solid white; padding: 0.65rem 1.3rem; border-radius: 6px; font-weight: 700; font-size: 0.88rem; text-decoration: none; }
+    @media (max-width: 600px) { .stats-bar { grid-template-columns: repeat(2, 1fr); } .page-hero h1 { font-size: 1.35rem; } .contact-card { flex-direction: column; } }
+  </style>
+</head>
+<body>
+  <HeaderEn />
+  <main>
+    <section class="page-hero">
+      <div class="hero-inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="/en/">Home</a>
+          <span class="breadcrumb-sep" aria-hidden="true">›</span>
+          <a href="/en/faq/">FAQ</a>
+          <span class="breadcrumb-sep" aria-hidden="true">›</span>
+          <span class="breadcrumb-current" aria-current="page">Experienced Chinese Family Lawyer Toronto</span>
+        </nav>
+        <div class="badge">Toronto · Chinese Family Law</div>
+        <h1>Taking a Family Law Case to Toronto Court? Your Lawyer's Courtroom Experience Matters More Than You Think</h1>
+        <p class="sub">Miao He has practiced family law since 2009 — regularly appearing at Toronto Superior Court, Newmarket, Ottawa, Brampton and beyond · 647-930-6688</p>
+        <div class="hero-cta">
+          <a href="tel:6479306688" class="btn-gold">📞 647-930-6688</a>
+          <a href="/en/contact" class="btn-outline">Book a Consultation</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="answer-section">
+      <div class="container">
+
+      <h2 class="section-title">Toronto Family Court Is Not Like Other Ontario Courts</h2>
+      <p class="prose">Many people assume that Ontario family courts all work the same way — same law, same procedure, same result regardless of which courthouse you walk into.</p>
+      <p class="prose">That assumption can cost you in Toronto.</p>
+      <p class="prose">Toronto Superior Court operates under a <strong>General Division</strong> system. Unlike Newmarket, Brampton, and many other Ontario family courts, Toronto judges are not exclusively family law judges. They also hear civil litigation and other types of cases.</p>
+      <p class="prose">This is a fundamental structural difference. Newmarket family court judges typically handle family law matters exclusively — they develop deep familiarity with family law procedure, judicial culture, and case outcomes over years of specialized practice. Toronto judges, by contrast, move between different areas of law. Their approach to family law motions, their expectations at Case Conferences, and their tolerance for procedural issues can differ significantly from what works in Newmarket.</p>
+
+      <h2 class="section-title">What This Means for Your Case</h2>
+      <p class="prose">If your matter is proceeding in Toronto, your lawyer needs more than general family law experience. They need <strong>real courtroom experience specifically in Toronto</strong>.</p>
+      <ul class="check-list">
+        <li><span class="icon">✓</span><span>Toronto judges think differently from dedicated family law judges — effective advocacy in Toronto requires understanding that framework</span></li>
+        <li><span class="icon">✓</span><span>Toronto's approach to motions, scheduling, and Case Conferences differs meaningfully from Newmarket</span></li>
+        <li><span class="icon">✓</span><span>A strategy that works well in Newmarket may produce very different results in Toronto</span></li>
+      </ul>
+      <div class="insight-box">
+        <p>Many family law lawyers in the GTA do most of their work in Newmarket and appear in Toronto only occasionally. This is not a question of how much experience they have — it is a question of <strong>where that experience was built</strong>. A lawyer who has appeared in Newmarket 100 times does not automatically understand how Toronto Superior Court operates.</p>
+      </div>
+
+      <h2 class="section-title">Miao He's Toronto Courtroom Record</h2>
+      <p class="prose">Miao He has practiced family law since 2009, when she was first called to the bar in China. Over more than 15 years, Toronto Superior Court has been one of her primary courthouses.</p>
+      <p class="prose">She currently has active files in Toronto across Case Conferences, Settlement Conferences, Short Motions, Long Motions, and Trial. She understands how Toronto family court operates from the inside — not from occasional visits, but from years of regular presence.</p>
+      <p class="prose">She also appears regularly at Newmarket, Ottawa, Brampton, North Bay, and Milton family courts. Because she practices across multiple courthouses, she understands the real differences between them — and uses that knowledge to build strategy for each specific client and venue.</p>
+      <p class="prose"><strong>20+ court hours per month.</strong> Full Trial representation every year, from first day of hearing to judgment.</p>
+
+      <div class="stats-bar">
+        <div class="stat">
+          <span class="stat-num">15+</span>
+          <span class="stat-label">Years family law practice</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">20+</span>
+          <span class="stat-label">Court hours per month</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">2</span>
+          <span class="stat-label">Dual licences Ontario & China</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">CanLII</span>
+          <span class="stat-label">Verified decisions</span>
+        </div>
+      </div>
+
+      <h2 class="section-title">How to Test Whether a Lawyer Really Knows Toronto Court</h2>
+      <p class="prose">Before retaining any Toronto family law lawyer, ask directly:</p>
+      <ul class="check-list">
+        <li><span class="icon">?</span><span>How many active files do you currently have at Toronto Superior Court?</span></li>
+        <li><span class="icon">?</span><span>When did you last appear in Toronto? What type of proceeding was it?</span></li>
+        <li><span class="icon">?</span><span>Can you give me one example of how Toronto and Newmarket handle a specific issue differently?</span></li>
+      </ul>
+      <p class="prose">A lawyer who genuinely knows Toronto court can answer these questions specifically. "I have extensive Ontario family law experience" is not an answer.</p>
+
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <h3>Where are Toronto family law cases heard?</h3>
+        <p>Toronto family law cases are heard at the Ontario Superior Court of Justice in Toronto. Some matters may also be heard at the Ontario Court of Justice. Miao He appears in both courts and can advise which court and procedure is appropriate for your situation. Call 647-930-6688.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What is the main difference between Toronto and Newmarket family court?</h3>
+        <p>The core difference is judicial specialization. Newmarket family court judges focus exclusively on family law. Toronto Superior Court judges operate under a General Division model, handling both family law and civil litigation. This affects how they approach motions, Case Conferences, and evidence — and a lawyer who only knows Newmarket may struggle to adapt.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What should I bring to a first consultation?</h3>
+        <p>A one-page summary of your situation (separation date, key disputes, children if any), a rough list of major assets, and any court documents you already have. Initial consultation is 30 minutes at $220 + HST — enough time to understand your rights, assess the file, and determine the right court and strategy for your case.</p>
+      </div>
+
+      <div class="final-cta">
+        <h2>Book an Initial Consultation with Miao He</h2>
+        <p>30-minute initial consultation · $220 + HST · Mandarin & English<br/>Markham office or Zoom · Ontario-wide service</p>
+        <div class="hero-cta">
+          <a href="tel:6479306688" class="btn-gold">📞 647-930-6688</a>
+          <a href="/en/contact" class="btn-outline">Book Online</a>
+        </div>
+      </div>
+
+      <div class="related-section">
+        <h2>Other Common Questions</h2>
+        <ul class="related-list">
+          {others.map(other => (
+            <li>
+              <a href={`/en/faq/${other.slug}/`}>
+                <span set:html={other.question} />
+                <span class="arr">→</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+        <a href="/en/faq/" class="view-all">← View all questions</a>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-info">
+          <h2>Still have questions?</h2>
+          <p>Miao He · Mandarin & English · 30 min consultation $220 + HST · Markham · All of Ontario</p>
+        </div>
+        <div class="contact-actions">
+          <a href="tel:6479306688" class="btn-primary">📞 647-930-6688</a>
+          <a href="/en/contact" class="btn-secondary">Book Online</a>
+        </div>
+      </div>
+
+      </div>
+    </section>
+  </main>
+  <Footer lang="en" />
+</body>
+</html>
