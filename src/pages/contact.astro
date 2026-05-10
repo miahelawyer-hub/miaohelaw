@@ -114,17 +114,17 @@ import { SITE_LAST_UPDATED_ZH } from '../consts';
 
     <section class="hf-hero" aria-label="联系我们">
       <div class="hf-hero__layers" aria-hidden="true">
-        <img
-          class="hf-hero__img"
-          src="/hero-zh-background.png"
-          alt="多伦多金融区现代写字楼"
-          width="1920"
-          height="1080"
-          loading="eager"
-          decoding="async"
-        />
-        <div class="hf-hero__overlay hf-hero__overlay--brand"></div>
-        <div class="hf-hero__overlay hf-hero__overlay--gradient"></div>
+        <div class="hf-hero__court-bg">
+          <img
+            src="/images/hero-legal-backdrop.png"
+            alt=""
+            width="1920"
+            height="1080"
+            loading="eager"
+            decoding="async"
+          />
+        </div>
+        <div class="hf-hero__court-scrim"></div>
       </div>
       <div class="hf-hero__inner">
         <div class="hf-hero__badge-row">
@@ -342,7 +342,6 @@ import { SITE_LAST_UPDATED_ZH } from '../consts';
     --contact-muted: rgba(74, 58, 42, 0.72);
   }
 
-  /* H.lawfirmontario-style hero (家庭法-华人律师): layered photo + brand scrim + gradient */
   .hf-hero {
     --hf-brand-primary: #3a4148;
     --hf-brand-accent: #b8956a;
@@ -355,36 +354,49 @@ import { SITE_LAST_UPDATED_ZH } from '../consts';
     border-bottom: 1px solid rgba(0, 0, 0, 0.35);
   }
 
+  /* Contact hero: same backdrop scale + scrim as homepage (.hero-court-bg / .hero-court-scrim) */
   .hf-hero__layers {
     position: absolute;
     inset: 0;
     z-index: 0;
+    overflow: hidden;
   }
 
-  .hf-hero__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-
-  .hf-hero__overlay {
+  .hf-hero__court-bg {
     position: absolute;
     inset: 0;
+    z-index: 0;
+    transform: scale(1.03);
     pointer-events: none;
   }
 
-  .hf-hero__overlay--brand {
-    background: rgba(58, 65, 72, 0.85);
+  .hf-hero__court-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 40%;
+    display: block;
   }
 
-  .hf-hero__overlay--gradient {
-    background: linear-gradient(to top, rgba(58, 65, 72, 0.4), transparent, transparent);
+  .hf-hero__court-scrim {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background:
+      radial-gradient(ellipse 88% 74% at 50% 40%, rgba(0, 0, 0, 0.49) 0%, transparent 62%),
+      linear-gradient(180deg, rgba(252, 250, 247, 0.01) 0%, transparent 52%),
+      linear-gradient(
+        165deg,
+        rgba(26, 24, 22, 0.64) 0%,
+        rgba(32, 28, 26, 0.69) 45%,
+        rgba(18, 17, 16, 0.73) 100%
+      );
+    pointer-events: none;
   }
 
   .hf-hero__inner {
     position: relative;
-    z-index: 10;
+    z-index: 2;
     max-width: 56rem;
     margin: 0 auto;
     padding-left: max(0px, env(safe-area-inset-left));
