@@ -189,6 +189,8 @@ export const faqItemsEn: FaqItemEn[] =
       "In practice, this means you can and should begin dealing with property division, support, and parenting arrangements immediately after separation, without waiting for one year to pass. Delaying can result in assets being dissipated or positions hardening. The earlier you engage a lawyer, the better protected your interests will be.",
       "If you are unsure whether you meet the grounds for divorce, or want to understand which approach best fits your circumstances, contact Miao He at 647-930-6688 for an initial consultation."
     ],
+    "metaTitle": "What Are the Requirements for Divorce in Ontario? | Miao He — Family Lawyer",
+    "metaDescription": "Ontario divorce has three grounds: one year of separation, adultery, or cruelty. Most cases use the one-year separation ground. Separation for one year is a condition for the court to grant divorce — not a condition for filing. 647-930-6688.",
     "keywords": "divorce requirements Ontario,grounds for divorce Canada,one year separation Ontario,Miao He lawyer,Chinese family lawyer Toronto"
   },
   {
@@ -239,6 +241,8 @@ export const faqItemsEn: FaqItemEn[] =
       "Both spouses have equal rights to possession of the matrimonial home during the separation, regardless of whose name is on title. Neither party can sell or mortgage the home without the other consent.",
       "For a clear assessment of how property division would apply in your specific situation, contact Miao He at 647-930-6688."
     ],
+    "metaTitle": "Does the House Have to Be Split 50/50 in a Divorce? | Ontario Family Law",
+    "metaDescription": "No. Ontario uses equalization of net family property, not a simple 50/50 split. The outcome depends on each party's net family property difference — not a mechanical division of the home. 647-930-6688.",
     "keywords": "house split divorce Ontario,equalization net family property,matrimonial home Ontario,property division Ontario divorce,Miao He lawyer"
   },
   {
@@ -256,6 +260,8 @@ export const faqItemsEn: FaqItemEn[] =
       "Once entitlement is established, the Spousal Support Advisory Guidelines provide a range for the amount and duration. Courts have significant discretion. Key factors include the length of the marriage, each spouse income and earning capacity, and the economic consequences of the marriage breakdown.",
       "If you want to understand what support obligations you may face — or what you may be entitled to — contact Miao He at 647-930-6688."
     ],
+    "metaTitle": "How Are Child Support and Spousal Support Calculated in Ontario? | Miao He",
+    "metaDescription": "Child support is mandatory and formula-based under the Federal Child Support Guidelines. Spousal support requires entitlement analysis and is calculated using advisory ranges — not a fixed amount. 647-930-6688.",
     "keywords": "child support Ontario calculation,spousal support Ontario,Child Support Guidelines,SSAG Ontario,Miao He family lawyer"
   },
   {
@@ -273,6 +279,8 @@ export const faqItemsEn: FaqItemEn[] =
       "One area of particular difficulty is the matrimonial home. Even if a marriage contract purports to exclude the matrimonial home from equalization, courts have sometimes declined to enforce such provisions.",
       "If you are considering a marriage contract — whether before marriage or during — contact Miao He at 647-930-6688 for advice on how to make it as robust as possible."
     ],
+    "metaTitle": "Is a Prenuptial Agreement Enforceable in Ontario? | Miao He — Family Lawyer",
+    "metaDescription": "Yes — but only if both parties sign voluntarily, each receives independent legal advice, both fully disclose finances, and terms are fair. Agreements without these protections are at serious risk of being set aside. 647-930-6688.",
     "keywords": "prenuptial agreement Ontario,marriage contract Ontario,domestic contract enforceable,independent legal advice Ontario,Miao He lawyer"
   },
   {
@@ -307,6 +315,8 @@ export const faqItemsEn: FaqItemEn[] =
       "These measures must be obtained before the child leaves. Once the child is in China, your legal remedies are significantly more limited. Do not wait to see if your concerns materialize — act at the first sign of risk.",
       "Miao He has experience in both Ontario family law and Chinese law. For urgent child protection matters, call 647-930-6688 immediately."
     ],
+    "metaTitle": "What If My Spouse Wants to Take the Children to China? | Miao He",
+    "metaDescription": "This is an emergency. China is not a Hague Convention signatory — once a child is in China, recovery is extremely difficult. An Ontario court can issue a Non-Removal Order before the child leaves. Act immediately. 647-930-6688.",
     "keywords": "child taken China Ontario,international child abduction Canada China,Hague Convention China,Non-Removal Order Ontario,Miao He lawyer"
   },
   {
@@ -324,6 +334,8 @@ export const faqItemsEn: FaqItemEn[] =
       "The most effective way to shorten the timeline is to negotiate a separation agreement before or concurrent with filing. Every issue resolved by agreement is one less issue for the court to decide. A well-structured separation agreement, followed by an uncontested divorce application, is almost always faster, cheaper, and less stressful than contested litigation.",
       "To discuss your timeline and options, contact Miao He at 647-930-6688."
     ],
+    "metaTitle": "How Long Does a Divorce Take in Ontario? | Miao He — 2026 Guide",
+    "metaDescription": "Uncontested divorce typically takes 4 to 8 months. Contested divorce involving property, support, or custody can take 1 to 3 years or longer. Reaching agreement before filing is the most effective way to shorten the timeline. 647-930-6688.",
     "keywords": "divorce timeline Ontario,how long divorce Ontario,uncontested divorce Ontario months,contested divorce Ontario years,Miao He lawyer"
   },
   {
@@ -341,6 +353,8 @@ export const faqItemsEn: FaqItemEn[] =
       "The most cost-effective approach in almost every case is to invest upfront in negotiating a comprehensive separation agreement. The cost of a well-drafted agreement is typically a fraction of the cost of contested litigation.",
       "Miao He initial consultation is 30 minutes at $220 + HST, conducted in Mandarin or English. To book, call 647-930-6688."
     ],
+    "metaTitle": "How Much Does a Divorce Lawyer Cost in Ontario? | Miao He",
+    "metaDescription": "Uncontested divorce typically costs $2,000–$5,000. Contested litigation can cost $50,000–$80,000+ per year. Initial 30-minute consultation with Miao He is $220 + HST. 647-930-6688.",
     "keywords": "divorce lawyer cost Ontario,family lawyer fees Ontario,uncontested divorce cost,contested divorce cost Ontario,Miao He consultation"
   },
   {
@@ -466,6 +480,8 @@ export const faqItemsEn: FaqItemEn[] =
       "Third, the matrimonial home is categorically different. Under the <em>Family Law Act</em>, even if one spouse owned the matrimonial home before the marriage, the pre-marital value cannot be deducted from their NFP. The full value of the home at the date of separation is included. This is one of the most significant and surprising aspects of Ontario family law for clients who owned a home before marrying.",
       "If you have significant pre-marital assets, it is critical to document them properly and seek legal advice early. Contact Miao He at 647-930-6688."
     ],
+    "metaTitle": "Can I Keep Assets I Owned Before Marriage in Ontario? | Miao He",
+    "metaDescription": "Pre-marital assets can generally be excluded from equalization if properly documented and traceable. Critical exception: the matrimonial home's pre-marital value cannot be deducted. 647-930-6688.",
     "keywords": "pre-marital assets divorce Ontario,property before marriage Ontario,NFP deduction Ontario,matrimonial home exclusion,Miao He"
   },
   {
@@ -500,6 +516,8 @@ export const faqItemsEn: FaqItemEn[] =
       "The child own voice is increasingly important. While courts do not allow children to simply choose which parent they live with, older children expressed preferences carry significant weight, particularly if the preference is clearly articulated and consistent.",
       "For advice on parenting arrangements in your specific circumstances, contact Miao He at 647-930-6688."
     ],
+    "metaTitle": "What Factors Does Ontario Court Consider in Child Custody? | Miao He",
+    "metaDescription": "The paramount consideration is the best interests of the child — including each parent's relationship with the child, ability to meet needs, willingness to support the other parent's relationship, and any history of family violence. 647-930-6688.",
     "keywords": "child custody factors Ontario,best interests child Ontario,parenting time Ontario,custody decision Ontario,Miao He family lawyer"
   },
   {
@@ -554,6 +572,9 @@ export const faqItemsEn: FaqItemEn[] =
       "If you wish to formally end the marriage, you must go through a <a href=\"/en/family-law/divorce-litigation\">divorce litigation</a> application. If the parties have agreed on property and parenting matters, a <a href=\"/en/family-law/domestic-contracts#separation\">separation agreement</a> can be signed first to document those terms before filing.",
       "For the full explanation, read: <a href=\"/en/blog/separation-vs-divorce-ontario/\">Separation vs. Divorce in Canada: Key Legal Differences</a>. Contact Miao He at 647-930-6688 to book a consultation.",
     ],
+    metaTitle: "Is Separation the Same as Divorce in Ontario? | Miao He — Family Lawyer",
+    metaDescription:
+      "No. Separation is a factual state — no court process or documents required. Divorce is a legal process requiring a court order. The marriage is not legally ended until a Divorce Order is granted. 647-930-6688.",
     keywords: "is separation divorce Canada,separation vs divorce Ontario,legal consequences separation Ontario,Divorce Order Canada,Miao He lawyer",
     pairedFaqPath: "/faq/fenju-jiushi-lihun-ma/",
     featured: true,
