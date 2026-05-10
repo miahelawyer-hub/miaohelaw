@@ -1,7 +1,7 @@
 ---
 
 title: "安省离婚财产怎么分？多伦多律师详解财产平分与婚房陷阱"
-description: "2026年安省家庭法指南：Equalization 差额补偿计算公式全解析。多伦多华人离婚律师 Miao He 详解 NFP 平分制度、婚房陷阱与同居误区。"
+description: "2026年安省家庭法指南：安省离婚不是简单平分。何淼律师详解净家庭财产（NFP）计算公式、婚前资产豁免规则、婚房特殊处理，以及华人家庭最常踩的财产分割陷阱。647-930-6688。"
 pairedArticlePath: "/en/blog/ontario-divorce-property-division/"
 pubDate: 2026-04-07T12:00:00-05:00
 heroImage: ""

@@ -1,7 +1,7 @@
 ---
 
 title: "Separation vs. Divorce in Canada: Key Legal Differences"
-description: "Separation is factual; divorce is a court order. Separate under one roof — no paperwork. 90-day rule governs reconciliation. Years apart never end a marriage."
+description: "In Canada, separation is a factual state — no paperwork required. Divorce is a court order that legally ends the marriage. Miao He explains the key differences, the 90-day reconciliation rule, and why years of separation never automatically end a marriage. 647-930-6688."
 pairedArticlePath: "/blog/separation-vs-divorce-ontario/"
 pubDate: 2026-04-19T12:00:00-04:00
 updatedDate: 2026-04-19T12:00:00-04:00

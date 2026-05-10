@@ -1,7 +1,7 @@
 ---
 
 title: "China–Canada Divorce Judgments: Recognition & Strategy"
-description: "Chinese divorce judgments need separate Canadian recognition. Canadian judgments cannot divide Chinese property. Wrong forum: judgment but no asset."
+description: "A Chinese divorce judgment is not automatically recognized in Canada — and a Canadian judgment cannot divide property in China. Miao He explains how to choose the right forum based on where your assets are. 647-930-6688."
 pairedArticlePath: "/blog/china-canada-divorce-judgment-recognition/"
 pubDate: 2026-04-18T12:00:00-04:00
 updatedDate: 2026-04-18T12:00:00-04:00
