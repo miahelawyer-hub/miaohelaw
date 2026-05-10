@@ -2,6 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { SITE_LAST_UPDATED_ZH } from '../consts';
 ---
 
 <!doctype html>
@@ -142,7 +143,7 @@ import Footer from '../components/Footer.astro';
         <div class="page-label">客户评价 · TESTIMONIALS</div>
         <h1>真实客户反馈</h1>
         <p>以下是客户通过不同方式留下的真实反馈，包括手写贺卡、Google评价、微信留言及电子邮件，均经客户同意展示，敏感信息已作匿名处理。</p>
-        <p class="page-last-updated page-last-updated--warm">页面内容最后更新：2026年5月9日</p>
+        <p class="page-last-updated page-last-updated--warm">页面内容最后更新：{SITE_LAST_UPDATED_ZH}</p>
       </div>
     </section>
 

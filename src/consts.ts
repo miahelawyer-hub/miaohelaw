@@ -8,6 +8,28 @@ export const AUTHOR_NAME = 'Miao He (何淼)';
 export const AUTHOR_TITLE = 'Barrister & Solicitor — Ontario & China';
 export const AUTHOR_EMAIL = 'miao@miaohelaw.ca';
 
-/** Human-readable content review stamp for static key pages (not file modification times). */
-export const SITE_LAST_UPDATED_ZH = '2026年4月17日';
-export const SITE_LAST_UPDATED_EN = 'April 17, 2026';
+const SITE_LAST_UPDATED_TZ = 'America/Toronto';
+
+function formatSiteLastUpdatedZh(date: Date): string {
+	return new Intl.DateTimeFormat('zh-CN', {
+		year: 'numeric',
+		month: 'long',
+		day: 'numeric',
+		timeZone: SITE_LAST_UPDATED_TZ,
+	}).format(date);
+}
+
+function formatSiteLastUpdatedEn(date: Date): string {
+	return new Intl.DateTimeFormat('en-CA', {
+		year: 'numeric',
+		month: 'long',
+		day: 'numeric',
+		timeZone: SITE_LAST_UPDATED_TZ,
+	}).format(date);
+}
+
+/** Set once per static build (deploy); FAQ / blog heroes and other stamps stay in sync without manual edits. */
+const siteLastUpdatedBuildDate = new Date();
+
+export const SITE_LAST_UPDATED_ZH = formatSiteLastUpdatedZh(siteLastUpdatedBuildDate);
+export const SITE_LAST_UPDATED_EN = formatSiteLastUpdatedEn(siteLastUpdatedBuildDate);

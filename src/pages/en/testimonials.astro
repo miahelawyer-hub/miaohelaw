@@ -2,6 +2,7 @@
 import BaseHead from '../../components/BaseHead.astro';
 import HeaderEn from '../../components/HeaderEn.astro';
 import Footer from '../../components/Footer.astro';
+import { SITE_LAST_UPDATED_EN } from '../../consts';
 ---
 <!doctype html>
 <html lang="en">
@@ -93,7 +94,7 @@ import Footer from '../../components/Footer.astro';
         <div class="page-label">Client Reviews · Testimonials</div>
         <h1>Real Client Feedback</h1>
         <p>The following reviews are genuine feedback from clients shared through handwritten cards, Google reviews, messages, and emails. All displayed with client consent. Sensitive personal information has been anonymized.</p>
-        <p class="page-last-updated page-last-updated--warm">Page last updated: May 9, 2026</p>
+        <p class="page-last-updated page-last-updated--warm">Page last updated: {SITE_LAST_UPDATED_EN}</p>
       </div>
     </section>
 
