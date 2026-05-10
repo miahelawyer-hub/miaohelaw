@@ -296,6 +296,21 @@
 			"permanent": true
 		},
 		{
+			"source": "/tag/%E4%B8%AD%E5%8A%A0%E5%8F%8C%E6%89%A7%E7%85%A7%E5%BE%8B%E5%B8%88/",
+			"destination": "/tag/dual-licensed-china-canada-lawyer/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/%E8%B4%A2%E4%BA%A7%E5%88%86%E5%89%B2%E5%BE%8B%E5%B8%88/",
+			"destination": "/tag/property-division-lawyer/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/%E6%8A%93%E8%B4%B9%E5%BE%8B%E5%B8%88/",
+			"destination": "/tag/support-lawyer/",
+			"permanent": true
+		},
+		{
 			"source": "/en/tag/China%20Canada%20Evidence%20Rules/",
 			"destination": "/en/tag/china-canada-evidence-rules/",
 			"permanent": true
