@@ -437,6 +437,8 @@ export const faqItemsEn: FaqItemEn[] =
       "One issue that arises specifically with Chinese marriages is whether the marriage was properly registered in China. In China, a marriage is legally constituted by registration with the civil affairs bureau — not by a ceremony alone. If registration did not occur, the marriage may not be legally valid, which has implications for divorce proceedings and property rights. A lawyer familiar with Chinese marriage law can assess whether your marriage was properly constituted.",
       "Miao He is qualified as an expert witness in Chinese family law and marriage law in Ontario courts. For questions about the validity of your Chinese marriage or how to proceed with an Ontario divorce, contact 647-930-6688."
     ],
+    "metaTitle": "Can I Get Divorced in Ontario If I Was Married in China? | Miao He",
+    "metaDescription": "Yes. Ontario courts recognize marriages performed in China. You can proceed with divorce as long as either spouse has been ordinarily resident in Ontario for at least one year. A certified translation of your Chinese marriage certificate is typically required. 647-930-6688.",
     "keywords": "married China divorce Ontario,Chinese marriage certificate Ontario,divorce China Canada,Chinese family lawyer Toronto,Miao He"
   },
   {
@@ -588,6 +590,8 @@ export const faqItemsEn: FaqItemEn[] =
       "Miao He serves clients throughout the Greater Toronto Area and all of Ontario. She holds both an Ontario bar licence (LSO #83315K) and a Chinese bar licence, making her uniquely equipped to handle family law matters involving Canadian and Chinese elements.",
       "To book, call 647-930-6688 or email miao@miaohelaw.ca. You can also submit an inquiry through the contact form at miaohelaw.ca/en/contact."
     ],
+    "metaTitle": "How to Book a Consultation With Miao He | Ontario Family Lawyer",
+    "metaDescription": "Call 647-930-6688 or email miao@miaohelaw.ca. Consultations are 30 minutes at $220 + HST, in Mandarin or English, in person at the Markham office or by video. No obligation to retain after the consultation.",
     "keywords": "book consultation Miao He,family lawyer Markham,Chinese family lawyer GTA,Ontario family law consultation,647-930-6688",
     "pairedFaqPath": "/faq/book-consultation-miao-he/"
   },
@@ -652,6 +656,9 @@ export const faqItemsEn: FaqItemEn[] =
       "Keep evidence of your separation date — texts, emails, and separate bank accounts. If you have briefly reconciled and then separated again, consult a lawyer promptly to confirm whether your separation date needs to be re-established.",
       "For the full explanation, read: <a href=\"/en/blog/separation-vs-divorce-ontario/\">Separation vs. Divorce in Canada: Key Legal Differences</a>. Contact Miao He at 647-930-6688 to book a consultation.",
     ],
+    metaTitle: "Can You Reconcile After Separating in Ontario? | Miao He",
+    metaDescription:
+      "Yes — but timing matters. If you resume living together for 90 days or less, the original separation date is preserved. More than 90 days breaks the separation period and you must recalculate. 647-930-6688.",
     keywords: "reconcile after separation Canada,90-day reconciliation rule Canada,separation date reset Ontario,Divorce Act reconciliation,Miao He lawyer",
     pairedFaqPath: "/faq/fenju-zhihou-fanhou-hehao/",
     featured: true,
@@ -671,6 +678,9 @@ export const faqItemsEn: FaqItemEn[] =
       "In practice, some former couples do reconcile after divorce and choose to remarry. That remarriage involves a new ceremony and new registration — exactly like a first marriage.",
       "For the full explanation, read: <a href=\"/en/blog/separation-vs-divorce-ontario/\">Separation vs. Divorce in Canada: Key Legal Differences</a>. Contact Miao He at 647-930-6688 to book a consultation.",
     ],
+    metaTitle: "Can You Change Your Mind After a Divorce Is Granted? | Miao He",
+    metaDescription:
+      "No. Once a Divorce Order is issued the marriage is permanently ended. If you wish to resume life as spouses you must register a completely new marriage — there is no reinstatement of the prior marriage. 647-930-6688.",
     keywords: "reconcile after divorce Canada,divorce irreversible Ontario,remarry after divorce Canada,Divorce Order permanent,Miao He lawyer",
     pairedFaqPath: "/faq/lihun-zhihou-keyi-fanhui/",
     featured: true,
@@ -711,6 +721,9 @@ export const faqItemsEn: FaqItemEn[] =
       "For more on \"human\" legal service and how to interview counsel, read Miao He’s <a href=\"/en/blog/how-to-choose-markham-family-lawyer/\">How to Choose a Good Markham Family Lawyer</a>. You may also compare notes with <a href=\"/en/blog/how-to-choose-toronto-chinese-divorce-lawyer/\">How to Choose the Best Chinese Divorce Lawyer in Toronto</a> on consults and fit.",
       "Call <strong>647-930-6688</strong> or WeChat <strong>372656035</strong> to book a consultation.",
     ],
+    metaTitle: "Why Empathy Matters as Much as Law in an Ontario Family Lawyer | Miao He",
+    metaDescription:
+      "Without empathy, counsel may not understand why you insist on a particular outcome. Hearing the \"why\" is what lets legal tools be aimed at your core interests. Knowing the law is the baseline — understanding the client is what makes strategy credible. 647-930-6688.",
     keywords: "Ontario family lawyer empathy,Chinese family lawyer GTA,Markham family lawyer,choose family lawyer Ontario,Miao He lawyer",
     pairedFaqPath: "/faq/gongqing-yu-dongfalv-tongyang-zhongyao/",
     featured: true,
@@ -730,6 +743,9 @@ export const faqItemsEn: FaqItemEn[] =
       "This is consistent with what Miao He describes in <a href=\"/en/blog/how-to-choose-markham-family-lawyer/\">How to Choose a Good Markham Family Lawyer</a>: holding space for emotion while still managing consult time. Professional listening is not unlimited repetition of the same story; it is spending limited time on information that can change results. For how hourly costs add up, see <a href=\"/en/faq/divorce-lawyer-cost-ontario/\">How much does a divorce lawyer cost in Ontario?</a>",
       "Call <strong>647-930-6688</strong> to book a consultation with Miao He.",
     ],
+    metaTitle: "Why Does My Family Lawyer Sometimes Interrupt Me? | Miao He",
+    metaDescription:
+      "Interruptions after the full narrative filter out irrelevant detail, control hourly cost, and refocus on evidence. If interruptions start from minute one and never let you finish, key facts may be missed. True professionalism is disciplined triage after listening. 647-930-6688.",
     keywords: "lawyer interrupts consult,hourly billing family lawyer,Markham family lawyer,Ontario family law consult,Miao He lawyer",
     pairedFaqPath: "/faq/lushi-weishenme-you-shi-dazhuan-chenshu/",
     featured: true,
@@ -749,6 +765,9 @@ export const faqItemsEn: FaqItemEn[] =
       "Important caveat: emotional harm is not always noise. Where <strong>family violence</strong> or personal injury is involved, the same facts may be critical evidence in criminal or family proceedings. Drawing the line takes deep practical judgment.",
       "On electronic and documentary habits in court, see <a href=\"/en/blog/electronic-evidence-ontario-family-court/\">Electronic evidence in Ontario family court</a>. Miao He also discusses carrying your \"usable voice\" into court in <a href=\"/en/blog/how-to-choose-markham-family-lawyer/\">How to Choose a Good Markham Family Lawyer</a>. Call <strong>647-930-6688</strong> to book.",
     ],
+    metaTitle: "Court Evidence vs Emotional Noise in Family Law | Miao He",
+    metaDescription:
+      "Emotional noise is subjective feeling without objective support. Court evidence ties to verifiable facts: documents, transfers, witnesses, police records. Experienced counsel will press for details that can be turned into proof. 647-930-6688.",
     keywords: "family law evidence Ontario,emotional noise court,family violence evidence Ontario,Miao He lawyer",
     pairedFaqPath: "/faq/fating-zhengju-yu-qingxu-zaoyin/",
     featured: true,
@@ -768,6 +787,9 @@ export const faqItemsEn: FaqItemEn[] =
       "For how we try to keep communication on outcome-driving topics and cost thinking, read <a href=\"/en/blog/how-to-choose-markham-family-lawyer/\">How to Choose a Good Markham Family Lawyer</a>. For fee ranges and variables, compare <a href=\"/en/faq/divorce-lawyer-cost-ontario/\">How much does a divorce lawyer cost in Ontario?</a> and <a href=\"/en/faq/toronto-divorce-cost-how-much/\">How much does a divorce cost in Toronto?</a>.",
       "Call <strong>647-930-6688</strong> to book a consultation.",
     ],
+    metaTitle: "How to Keep Litigation Costs Under Control in Ontario | Miao He",
+    metaDescription:
+      "Map strategy and likely direction in your first consultation. The most expensive pattern is re-asking the same questions. Efficient, targeted negotiation or litigation on a shared plan is the soundest way to save money. 647-930-6688.",
     keywords: "Ontario hourly lawyer fees,control litigation cost,family lawyer first consult,Miao He lawyer",
     pairedFaqPath: "/faq/an-sheng-xiaoshoufei-kongzhi-susong-chengben/",
     featured: true,
@@ -787,6 +809,9 @@ export const faqItemsEn: FaqItemEn[] =
       "The fairness of the law is province-wide, and so is our professional service — whether a retainer fits still depends on case-by-case review (conflicts, capacity, and file structure). Miao He explains province-wide service in the closing section of <a href=\"/en/blog/how-to-choose-markham-family-lawyer/\">How to Choose a Good Markham Family Lawyer</a>, subject to individual assessment.",
       "Call <strong>647-930-6688</strong> with your location and a short case summary, and we can discuss whether a retainer is appropriate.",
     ],
+    metaTitle: "Can I Hire Miao He If I Live Outside Markham? | Ontario Family Lawyer",
+    metaDescription:
+      "Yes. With an Ontario licence we represent family law clients province-wide. Video meetings, e-signatures, and court e-filing support the same quality of service regardless of where you are in Ontario. 647-930-6688.",
     keywords: "Markham family lawyer Ontario wide,GTA family lawyer,Ontario family law remote consult,Miao He lawyer",
     pairedFaqPath: "/faq/markham-wai-pinren-an-sheng-jiatingfa/",
     featured: true,
