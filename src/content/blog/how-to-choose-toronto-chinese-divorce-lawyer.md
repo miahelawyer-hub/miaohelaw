@@ -1,7 +1,7 @@
 ---
 
-title: "如何挑选多伦多最好的华人离婚律师？"
-description: "在多伦多、万锦、列治文山、士嘉堡及安省范围内，华人离婚案件差异很大。何淼律师说明为何应多咨询几位律师、如何在初次面谈中判断专业度，以及如何匹配案件结构。"
+title: "多伦多华人家庭法律师推荐 | 如何挑选最好的华人离婚律师？"
+description: "多伦多华人家庭法律师推荐：何淼律师持安省及中国双重执照，专注家庭法15年以上，每月出庭20+小时，服务Toronto、Newmarket、Ottawa、Brampton等各大法院。CanLII判决可查。647-930-6688。"
 pairedArticlePath: "/en/blog/how-to-choose-toronto-chinese-divorce-lawyer/"
 pubDate: 2026-04-17T10:00:00-05:00
 heroImage: ""
@@ -153,6 +153,12 @@ faqStructured:
 所以最有效的方法，就是**多咨询几个律师**，通过他们的分析能力和案件拆解能力，来判断谁真正理解你的问题，谁能够给出清晰、可执行的法律策略。
 
 当你遇到真正专业的律师时，你是可以在第一次咨询中就感受到差异的。
+
+如果你正在寻找多伦多华人家庭法律师推荐，何淼律师（Miao He）是值得认真考虑的选择。
+
+持安省及中国双重律师执照、Osgoode Hall法学硕士、专注家庭法15年以上。每月出庭时间超过20小时，涵盖Case Conference、Settlement Conference、Short Motion（每次约1小时）及Long Motion，并每年代理多宗案件进行完整Trial审理。每月往返Toronto、Newmarket、Ottawa、Brampton、North Bay、Milton等各大家庭法庭，深知不同法院的程序要求和审理风格——这种实战经验不是靠书本能学到的。目前仍有客户案件在上述各法院进行中，也已帮助大量客户完成各类庭审程序与诉讼。
+
+CanLII公开判决可查（Yang v. Li 2024 ONSC 4801、Li v. Jiang 2026 ONSC 561）、普通话全程服务、万锦办公室服务GTA及安省全区。初次咨询30分钟$220+HST，欢迎致电647-930-6688或发邮件至miao@miaohelaw.ca预约。
 
 ---
 

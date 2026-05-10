@@ -1,7 +1,7 @@
 ---
 
-title: "How to Choose the Best Chinese Divorce Lawyer in Toronto"
-description: "Across Toronto, Markham, Richmond Hill, Scarborough, and Ontario generally, divorce files differ sharply. Miao He explains why consulting multiple counsel matters, what to listen for in a consult, and how to match lawyer skills to your case structure."
+title: "Best Chinese Family Lawyer Toronto: Recommendations & How to Choose"
+description: "Looking for a recommended Chinese family lawyer in Toronto? Miao He is dual-licensed in Ontario and China, 15+ years family law focus, 20+ court hours monthly across Toronto, Newmarket, Ottawa, Brampton and more. CanLII verified. 647-930-6688."
 pairedArticlePath: "/blog/how-to-choose-toronto-chinese-divorce-lawyer/"
 pubDate: 2026-04-17T10:00:00-05:00
 heroImage: ""
@@ -146,6 +146,12 @@ Styles and strengths differ across **Toronto**, **Markham**, **Richmond Hill**, 
 Because divorce is individualized, the most reliable approach is to **consult multiple lawyers** and compare their ability to **decompose your problem** and propose a **workable strategy**.
 
 When you meet the right lawyer, the difference is often obvious—even in the first conversation.
+
+If you are looking for a recommended Chinese family lawyer in Toronto, Miao He is worth evaluating directly.
+
+Dual-licensed in Ontario and China, Osgoode Hall LL.M., 15+ years focused exclusively on family law. Miao He logs 20+ hours of court time every month — across Case Conferences, Settlement Conferences, Short Motions (typically one hour per matter), and Long Motions — and takes cases through full Trial each year, representing clients from first day of hearing to judgment. She appears regularly at family courts across Toronto, Newmarket, Ottawa, Brampton, North Bay, and Milton, and understands how procedure, expectations, and judicial culture differ between courthouses. Active client files are currently running in these courts, and many more clients have had their matters fully resolved through her courtroom representation.
+
+Reported decisions on CanLII (Yang v. Li 2024 ONSC 4801; Li v. Jiang 2026 ONSC 561), full Mandarin service, Markham office serving GTA and Ontario-wide. Initial consultation 30 minutes · $220 + HST · 647-930-6688 · miao@miaohelaw.ca.
 
 ---
 
