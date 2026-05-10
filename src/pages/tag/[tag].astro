@@ -11,8 +11,8 @@
  *   schemaName       CollectionPage 等结构化数据的标题（更正式）
  *   schemaDescription 结构化数据的详细描述（更偏教义/底层信息）
  *
- * “拯救”聚合页（可索引 + ItemList）：该 tag 下已发布中文博文数 ≥ 5，且存在上述 intro 文件。
- * 否则：noindex,follow（仍显示文章列表）。
+ * Tag 聚合页一律 noindex,follow（仍可被爬虫顺着链接抓取并传递权重；不向 SERP 收录）。
+ * Intro + ≥5 篇时仍可渲染导语段落并附带 ItemList 结构化数据（便于站内语义）；rescued 仅保留这些内容层面的区分。
  *
  * 如果某 tag 没有对应 md 文件，tag 页会正常显示
  * （只是 H1 下方不出现 intro 段落）——不会报错。
@@ -99,7 +99,7 @@ if (rawContent) {
   tagIntro = parseTagIntro(rawContent);
 }
 
-// Index only when this tag is “rescued”: has an intro AND has 5+ posts.
+// “rescued”：有 intro 且 ≥5 篇 — 用于导语区块与 ItemList；SEO 上与非 rescued 一致均为 noindex,follow。
 const isRescuedTag = Boolean(tagIntro) && posts.length >= 5;
 
 const sorted = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
@@ -165,7 +165,7 @@ const schema = JSON.stringify([
     title={pageTitle}
     description={pageDescription}
   />
-  {!isRescuedTag && <meta name="robots" content="noindex, follow" />}
+  <meta name="robots" content="noindex, follow" />
   <meta name="keywords" content={displayLabel + ",何淼律师,Miao He,Ontario家庭法,华人离婚律师,LSO 83315K"} />
   <meta property="og:title" content={displayLabel + " | 何淼律师"} />
   <meta property="og:type" content="website" />

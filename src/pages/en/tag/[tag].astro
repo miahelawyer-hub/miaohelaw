@@ -11,8 +11,8 @@
  *   schemaName        Formal name for JSON-LD CollectionPage
  *   schemaDescription Longer, more doctrinal/technical description for structured data
  *
- * English “rescued” hub (indexable + ItemList): published blog-en posts with this tag ≥ 5
- * AND this intro file exists. Otherwise: noindex,follow (list still renders).
+ * English tag hubs are noindex,follow sitewide (still crawlable via links).
+ * With intro + ≥5 posts (“rescued”), the hub gets intro copy + ItemList JSON-LD for richer on-page semantics only.
  *
  * If a tag has no matching .md file, the tag page still renders
  * (only the intro block below H1 is omitted) — no build error.
@@ -94,7 +94,7 @@ if (rawContent) {
   tagIntro = parseTagIntro(rawContent);
 }
 
-// Index only when this tag is “rescued”: has an intro AND has 5+ posts.
+// rescued = intro + ≥5 posts (intro block + ItemList); robots unchanged vs thin hubs.
 const isRescuedTag = Boolean(tagIntro) && posts.length >= 5;
 
 const sorted = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
@@ -159,7 +159,7 @@ const schema = JSON.stringify([
     title={pageTitle}
     description={pageDescription}
   />
-  {!isRescuedTag && <meta name="robots" content="noindex, follow" />}
+  <meta name="robots" content="noindex, follow" />
   <meta
     name="keywords"
     content={displayLabel + ',Miao He,Ontario family law,Chinese family lawyer,dual-licensed lawyer,LSO 83315K'}
