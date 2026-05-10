@@ -184,8 +184,12 @@ const homepageVideos: VideoItem[] = homepageVideoSlugs
 				<div class="hero-court-scrim" aria-hidden="true"></div>
 				<div class="hero-inner hero-inner--court">
 					<p class="hero-court-eyebrow">Ontario family law · 安省家庭法</p>
-					<p class="hero-court-slogan" lang="en">Fighting for What Matters Most to You.</p>
-					<h1 id="hero-main-heading" class="hero-court-h1">Ontario & Toronto Chinese Divorce Lawyer | <span class="hero-court-name-lock">Miao He <span class="chinese hero-court-chinese">何淼</span></span></h1>
+					<p class="hero-court-slogan" lang="en">
+						Fighting for What Matters Most <span class="hero-court-slogan-tail">to You.</span>
+					</p>
+					<h1 id="hero-main-heading" class="hero-court-h1">
+						Ontario & Toronto Chinese Divorce Lawyer | Miao He <span class="hero-court-chinese">何淼</span>
+					</h1>
 					<p class="hero-court-lead">中加双执照 · 华人家庭法主理律师 · 离婚诉讼、子女监护、跨境资产 · 普通话与英文 · Markham · 服务 GTA 及安大略全省</p>
 					<div class="hero-court-actions">
 						<a href="tel:6479306688" class="btn-court-primary">预约咨询 · 647-930-6688</a>
@@ -585,11 +589,12 @@ const homepageVideos: VideoItem[] = homepageVideoSlugs
 		text-transform: uppercase;
 		color: rgba(255, 255, 255, 0.62);
 		text-shadow: 0 1px 3px rgba(0, 0, 0, 0.55);
+		-webkit-font-smoothing: antialiased;
 	}
 	.hero-court-slogan {
 		margin: 0 0 1.35rem;
 		font-family: "Playfair Display", Georgia, "Times New Roman", serif;
-		font-size: clamp(1.75rem, 4.6vw, 3rem);
+		font-size: clamp(1.65rem, 4vw, 2.75rem);
 		font-weight: 500;
 		font-style: normal;
 		line-height: 1.22;
@@ -597,28 +602,17 @@ const homepageVideos: VideoItem[] = homepageVideoSlugs
 		color: #fff;
 		text-shadow: 0 1px 3px rgba(0, 0, 0, 0.55), 0 4px 36px rgba(0, 0, 0, 0.5);
 	}
-	.hero-court-h1 {
-		margin: 0 0 0.45rem;
-		font-family: var(--font-en-display) !important;
-		font-size: clamp(1.12rem, 2.05vw, 1.72rem);
-		font-weight: 500 !important;
-		color: rgba(255, 255, 255, 0.95);
-		letter-spacing: 0.01em !important;
-		line-height: 1.28;
-		text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5), 0 3px 24px rgba(0, 0, 0, 0.45);
-	}
-	@media (min-width: 960px) {
-		.hero-court-h1 {
-			white-space: nowrap;
-		}
-	}
-	.hero-court-name-lock {
+	.hero-court-slogan-tail {
 		white-space: nowrap;
 	}
-	@media (max-width: 959px) {
-		.hero-court-h1 {
-			white-space: normal;
-		}
+	.hero-court-h1 {
+		margin: 0 0 0.45rem;
+		font-family: Georgia, "Times New Roman", serif;
+		font-size: clamp(1.45rem, 3vw, 1.95rem);
+		font-weight: 500;
+		color: rgba(255, 255, 255, 0.95);
+		letter-spacing: 0.02em;
+		text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5), 0 3px 24px rgba(0, 0, 0, 0.45);
 	}
 	.hero-court-chinese {
 		color: #e8c9a4;
@@ -634,6 +628,7 @@ const homepageVideos: VideoItem[] = homepageVideoSlugs
 		letter-spacing: 0.01em;
 		color: rgba(255, 255, 255, 0.82);
 		text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+		-webkit-font-smoothing: antialiased;
 	}
 	.hero-court-tagline {
 		margin: 0 auto 1.85rem;
@@ -658,11 +653,13 @@ const homepageVideos: VideoItem[] = homepageVideoSlugs
 		padding: 0.82rem 1.65rem;
 		border-radius: 999px;
 		text-decoration: none;
+		font-family: var(--font-en-body);
 		font-size: 0.92rem;
 		font-weight: 700;
 		letter-spacing: 0.02em;
 		box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
 		transition: background 0.15s, transform 0.15s, box-shadow 0.15s;
+		-webkit-font-smoothing: antialiased;
 	}
 	.btn-court-primary:hover {
 		background: var(--court-tan-hover);
@@ -676,10 +673,13 @@ const homepageVideos: VideoItem[] = homepageVideoSlugs
 		padding: 0.78rem 1.35rem;
 		border-radius: 999px;
 		text-decoration: none;
+		font-family: var(--font-en-body);
 		font-size: 0.88rem;
 		font-weight: 600;
+		letter-spacing: 0.002em;
 		border: 2px solid rgba(255, 255, 255, 0.42);
 		transition: background 0.15s, border-color 0.15s, transform 0.15s;
+		-webkit-font-smoothing: antialiased;
 	}
 	.btn-court-secondary:hover {
 		background: rgba(255, 255, 255, 0.08);
@@ -688,13 +688,16 @@ const homepageVideos: VideoItem[] = homepageVideoSlugs
 	}
 	.hero-court-meta {
 		margin: 0;
+		font-family: var(--font-en-body);
 		font-size: 0.78rem;
 		line-height: 1.65;
+		letter-spacing: 0.002em;
 		color: rgba(255, 255, 255, 0.58);
 		max-width: 40em;
 		margin-left: auto;
 		margin-right: auto;
 		text-shadow: 0 1px 3px rgba(0, 0, 0, 0.55);
+		-webkit-font-smoothing: antialiased;
 	}
 	.hero-court-meta a {
 		color: #e8c9a4;
@@ -728,7 +731,9 @@ const homepageVideos: VideoItem[] = homepageVideoSlugs
 			border-color 0.15s ease,
 			transform 0.15s ease,
 			box-shadow 0.15s ease;
-		font-family: inherit;
+		font-family: var(--font-en-body);
+		letter-spacing: 0.002em;
+		-webkit-font-smoothing: antialiased;
 		width: auto;
 	}
 	.hero--court .hero-court-actions .hf-btn--ghost {
