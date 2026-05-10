@@ -3,14 +3,16 @@ import BaseHead from '../../components/BaseHead.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import { SITE_TITLE, SITE_URL } from '../../consts';
-import { faqItems, getFaqItemsForListing } from '../../data/faq';
+import { faqItems, getFaqDetailPath, getFaqItemsForListing } from '../../data/faq';
 import { stripHtml } from '../../utils/stripHtml';
 
 export function getStaticPaths() {
-  return faqItems.map(item => ({
-    params: { slug: item.slug },
-    props: { item },
-  }));
+  return faqItems
+    .filter(item => !item.detailPath)
+    .map(item => ({
+      params: { slug: item.slug },
+      props: { item },
+    }));
 }
 
 const { item } = Astro.props;
@@ -140,7 +142,7 @@ const faqSchemaGraph = [
           <h2>其他常见问题</h2>
           <div class="related-capsules">
             {others.map(other => (
-              <a href={`/faq/${other.slug}/`} class="capsule"><span set:html={other.capsule} /></a>
+              <a href={getFaqDetailPath(other)} class="capsule"><span set:html={other.capsule} /></a>
             ))}
           </div>
           <a href="/faq/" class="view-all">查看全部问题 →</a>

@@ -1,3 +1,5 @@
+import { SITE_URL } from '../consts';
+
 export interface FaqItem {
   slug: string;
   capsule: string;
@@ -9,10 +11,21 @@ export interface FaqItem {
   featured?: boolean;
   /** English FAQ path for hreflang, e.g. `/en/faq/toronto-divorce-cost-how-much/` */
   pairedFaqPath?: string;
+  /** When set, listing / search / related links use this path (page must exist separately, not `/faq/[slug]`). */
+  detailPath?: string;
   /** Overrides `<title>` / og:title when set */
   metaTitle?: string;
   /** Overrides meta description when set (plain text, no HTML) */
   metaDescription?: string;
+}
+
+/** FAQ list / search URL path for an item (respects `detailPath` for standalone hubs). */
+export function getFaqDetailPath(item: FaqItem): string {
+  return item.detailPath ?? `/faq/${item.slug}/`;
+}
+
+export function getFaqDetailAbsoluteUrl(item: FaqItem): string {
+  return `${SITE_URL}${getFaqDetailPath(item)}`;
 }
 
 export const faqItems: FaqItem[] = [
@@ -1722,6 +1735,29 @@ export const faqItems: FaqItem[] = [
     metaDescription:
       '安省法院不允许接收方故意不工作来获取长期赡养费。作为支付方可主张推定收入、申请有期限赡养、变更已有命令。Drygala v. Pauli 判例支持。',
     pairedFaqPath: '/en/faq/payor-spouse-refuses-to-work-ontario/',
+  },
+  {
+    slug: 'best-chinese-family-lawyer-toronto',
+    capsule: '多伦多离婚律师 · 熟悉多伦多 Superior Court',
+    question: '在多伦多打家庭法官司，为什么律师熟悉多伦多法庭特别重要？',
+    summary:
+      '多伦多 Superior Court 与 Newmarket 等法院在法官分工与程序预期上差异很大。若案件在多伦多进行，需要的是<strong>在多伦多出庭积累的实战经验</strong>，而不只是一般的「安省家庭法经验」。',
+    answers: [
+      '多伦多采用通才制（General Division），家事法官并非只做家事案件；对动议、Case Conference、证据披露的预期与专职家事法庭不同。',
+      '何淼律师自2009年起深耕家事法，常年在多伦多及其他主要法院出庭；完整说明见本站专题页。',
+    ],
+    details: [
+      '本题详解请参阅：<a href="/best-chinese-family-lawyer-toronto/">多伦多华人家庭法专题 · 法庭经验说明</a>。',
+      '预约咨询请致电 647-930-6688。',
+    ],
+    keywords:
+      '多伦多华人离婚律师,多伦多 Superior Court,家庭法律师 Toronto,Miao He,何淼律师',
+    featured: true,
+    metaTitle: '多伦多家事法庭｜为何多伦多出庭经验很重要｜何淼律师',
+    metaDescription:
+      '多伦多家庭法院与其他城市运作方式不同；若律师仅在 Newmarket 积累经验，未必熟悉多伦多 Superior Court 的实际节奏。',
+    pairedFaqPath: '/en/faq/best-chinese-family-lawyer-toronto/',
+    detailPath: '/best-chinese-family-lawyer-toronto/',
   },
 ];
 

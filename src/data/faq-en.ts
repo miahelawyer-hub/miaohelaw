@@ -1164,6 +1164,29 @@ export const faqItemsEn: FaqItemEn[] =
     metaDescription:
       "Ontario courts don't allow a recipient to deliberately stay unemployed for more spousal support. As the payor, you can seek imputed income, time-limited support, or vary an existing order under Drygala v. Pauli.",
   },
+  {
+    slug: 'best-chinese-family-lawyer-toronto',
+    question:
+      'Do I need a Chinese family lawyer who really knows Toronto Superior Court?',
+    summary:
+      'Toronto family court differs materially from Newmarket and many Ontario hubs — judicial specialization and courtroom culture differ. For Toronto files you want counsel with meaningful Toronto Superior Court time, not only generic provincial family law experience.',
+    answers: [
+      'Toronto Superior Court operates under a General Division model — judges hear more than family law alone.',
+      'See our Toronto hub for Toronto vs Newmarket differences and questions to ask counsel.',
+    ],
+    details: [
+      'Full overview: <a href="/en/faq/best-chinese-family-lawyer-toronto/">Chinese family lawyer Toronto · courtroom experience</a>.',
+      'Call 647-930-6688 to book with Miao He.',
+    ],
+    keywords:
+      'Chinese family lawyer Toronto,Toronto Superior Court,Mandarin divorce lawyer Toronto,family court Toronto,Miao He,best Chinese divorce lawyer Toronto',
+    featured: true,
+    pairedFaqPath: '/best-chinese-family-lawyer-toronto/',
+    metaTitle:
+      'Chinese Family Lawyer Toronto | Toronto Superior Court Experience | Miao He',
+    metaDescription:
+      'Toronto family court operates differently from Newmarket and elsewhere — venue affects strategy. Miao He appears regularly at Toronto Superior Court. 647-930-6688.',
+  },
 ];
 
 export function getFaqItemsEnForListing(): FaqItemEn[] {

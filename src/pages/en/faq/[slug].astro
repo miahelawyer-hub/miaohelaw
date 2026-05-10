@@ -7,10 +7,13 @@ import { faqItemsEn, getFaqItemsEnForListing } from '../../../data/faq-en';
 import { stripHtml } from '../../../utils/stripHtml';
 
 export function getStaticPaths() {
-  return faqItemsEn.map(item => ({
-    params: { slug: item.slug },
-    props: { item },
-  }));
+  const customPageSlugs = new Set(['best-chinese-family-lawyer-toronto']);
+  return faqItemsEn
+    .filter(item => !customPageSlugs.has(item.slug))
+    .map(item => ({
+      params: { slug: item.slug },
+      props: { item },
+    }));
 }
 
 const { item } = Astro.props;
