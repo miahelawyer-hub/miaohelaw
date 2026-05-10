@@ -113,6 +113,18 @@ import Footer from '../components/Footer.astro';
     .lawyer-card h3 { color: var(--text-heading); margin: 0 0 0.5rem; font-size: 1rem; }
     .lawyer-card p { color: #5a3e2b; font-size: 0.88rem; line-height: 1.65; margin: 0 0 0.5rem; }
     .lawyer-card p:last-child { margin: 0; }
+    .prose { color: #4A2C1A; font-size: 0.95rem; line-height: 1.8; margin-bottom: 1.25rem; }
+    .prose strong { color: var(--text-heading); }
+    .insight-box { background: #FDF6EC; border-left: 4px solid #D4A853; border-radius: 0 8px 8px 0; padding: 1.25rem 1.5rem; margin: 1.5rem 0; }
+    .insight-box p { color: #4A2C1A; font-size: 0.92rem; line-height: 1.75; margin: 0; }
+    .check-list { list-style: none; padding: 0; margin: 1rem 0 1.5rem; }
+    .check-list li { display: flex; gap: 0.75rem; align-items: flex-start; padding: 0.5rem 0; font-size: 0.92rem; color: #4A2C1A; line-height: 1.6; border-bottom: 1px solid #f0ebe3; }
+    .check-list li:last-child { border-bottom: none; }
+    .check-list .icon { color: #D4A853; font-weight: 700; flex-shrink: 0; }
+    .stats-bar { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: #e8e0d5; border: 1px solid #e8e0d5; border-radius: 10px; overflow: hidden; margin: 1.5rem 0 2.5rem; }
+    .stat { background: white; padding: 1.1rem 1rem; text-align: center; }
+    .stat-num { font-size: 1.5rem; font-weight: 700; color: var(--text-heading); display: block; }
+    .stat-label { font-size: 0.75rem; color: #9A8060; margin-top: 0.2rem; }
     @media (max-width: 600px) { .service-grid { grid-template-columns: 1fr; } .page-hero h1 { font-size: 1.35rem; } }
   </style>
 </head>
@@ -121,54 +133,91 @@ import Footer from '../components/Footer.astro';
   <main>
     <div class="page-hero">
       <div class="badge">普通话 · 国语服务</div>
-      <h1>寻找Ontario普通话离婚律师？</h1>
-      <p class="sub">何淼律师提供全程普通话（国语）家庭法服务，无语言障碍，覆盖GTA全区及Ontario全省</p>
+      <h1>普通话离婚律师，不只是语言问题</h1>
+      <p class="sub">何淼律师母语普通话，精通英文，15年以上深耕华人家庭法，从倾听到法庭全程无障碍沟通 · 647-930-6688</p>
       <div class="hero-cta">
         <a href="tel:6479306688" class="btn-gold">📞 647-930-6688</a>
-        <a href="/contact" class="btn-outline">预约咨询</a>
+        <a href="/contact" class="btn-outline">预约初次咨询</a>
       </div>
     </div>
     <div class="container">
 
-      <div class="lawyer-card">
-        <h3>何淼律师（Miao He） · H. LAW FIRM 恒. 律师事务所</h3>
-        <p>Ontario律师执照 LSO #83315K · 中国律师执照 · Markham事务所 · 服务GTA全区及Ontario全省</p>
-        <p>曾代理 Yang v. Li 2024 ONSC 4801 · Li v. Jiang 2026 ONSC 561（CanLII可查）· 跨境资产追回逾30万加元</p>
+      <h2 class="section-title">华人在安省找律师，通常有两种选择</h2>
+      <p class="prose">很多华人朋友在安省面临离婚或家庭法问题时，会面临一个选择：</p>
+      <ul class="check-list">
+        <li><span class="icon">①</span><span><strong>找母语为英文的律师</strong>，再另外安排翻译</span></li>
+        <li><span class="icon">②</span><span><strong>找母语为中文的华人律师</strong>，直接用普通话沟通</span></li>
+      </ul>
+      <p class="prose">表面上看，这只是语言偏好的问题。但在实际工作中，我们发现这两种选择最终带来的结果，往往有很大的差异。</p>
+
+      <h2 class="section-title">依赖翻译，风险比你想象的大</h2>
+      <p class="prose">找母语为英文的律师，对客户的英文能力是有要求的。如果客户英文不够好，完全依赖翻译来沟通，中间非常容易产生歧义。</p>
+      <p class="prose">法律领域有大量专业术语——这些术语即使经过翻译，也可能跟普通话的理解有偏差。一个普通翻译，未必能准确传达法律概念的真正含义。</p>
+      <div class="insight-box">
+        <p>在我们的实际工作中，遇到过很多客户：他们最初选择了母语为英文的律师，但最终都换成了华人律师。原因很简单——<strong>语言之间的歧义，直接影响了诉讼策略的制定和案件的走向。</strong></p>
+      </div>
+
+      <h2 class="section-title">华人案件往往涉及特定的中国文化背景</h2>
+      <p class="prose">很多华人离婚案件，不只是法律问题，还涉及特定的中国文化背景：</p>
+      <ul class="check-list">
+        <li><span class="icon">✓</span><span>父母出资买房，是赠与还是借款？这背后有中国家庭的文化逻辑</span></li>
+        <li><span class="icon">✓</span><span>婚姻中的家庭责任分工，跟西方家庭模式有很大差异</span></li>
+        <li><span class="icon">✓</span><span>跨境资产的来源和性质，往往需要理解中国的经济和法律背景</span></li>
+      </ul>
+      <p class="prose">如果律师不能理解这些文化差异，就很难在法庭上为华人客户有效争取权益。</p>
+
+      <h2 class="section-title">何淼律师——用普通话表达你的故事，用英文在法庭上为你争取</h2>
+      <p class="prose">何淼律师母语普通话，同时精通英文，自2009年起深耕家庭法超过15年。</p>
+      <p class="prose">她能做到的，不只是"听懂你说的话"，而是：</p>
+      <ul class="check-list">
+        <li><span class="icon">✓</span><span>真正理解你的故事背后的文化逻辑</span></li>
+        <li><span class="icon">✓</span><span>把你的诉求、你的委屈、你的期望，准确地转化为法律策略</span></li>
+        <li><span class="icon">✓</span><span>在法庭上用英文为你有效陈述，不会因为语言而丢失任何重要信息</span></li>
+      </ul>
+      <p class="prose">事实证明，找到一个负责任的华人律师，可以让很多华人客户的案件事半功倍。很多客户告诉我们：找到何淼律师之后，他们第一次真正觉得自己被完全理解了。</p>
+
+      <div class="stats-bar">
+        <div class="stat">
+          <span class="stat-num">15+</span>
+          <span class="stat-label">年家庭法执业经验</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">20+</span>
+          <span class="stat-label">每月出庭小时数</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">2</span>
+          <span class="stat-label">中加双重律师执照</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">CanLII</span>
+          <span class="stat-label">公开判决可查</span>
+        </div>
       </div>
 
       <h2 class="section-title">常见问题</h2>
       <div class="faq-item">
-        <h3>多伦多有没有说普通话的离婚律师？</h3>
-        <p>有。何淼律师（Miao He）提供全程普通话（国语）家庭法服务，包括离婚诉讼、子女监护权、抚养费、婚前协议及跨境资产处理。事务所位于Markham，服务多伦多、GTA全区及Ontario全省。电话：647-930-6688。</p>
+        <h3>找普通话律师和找英文律师加翻译，有什么实际区别？</h3>
+        <p>最核心的区别在于沟通的准确度。法律术语经过翻译容易产生歧义，而歧义会直接影响诉讼策略。何淼律师母语普通话，你可以用中文完整表达你的情况，不会有任何信息在翻译中丢失。647-930-6688。</p>
       </div>
       <div class="faq-item">
-        <h3>Ontario普通话律师能处理哪些家庭法案件？</h3>
-        <p>何淼律师提供全面的普通话家庭法服务：离婚诉讼（含缺席判决）、子女监护权和居住安排、子女及配偶抚养费、婚前及分居协议、净家庭财产分割、跨境资产追回。</p>
+        <h3>华人离婚案件有什么特别之处？</h3>
+        <p>华人离婚案件往往涉及中国文化背景——父母出资、家庭责任分工、跨境资产来源等。这些背景如果律师不理解，很难在法庭上为客户有效争取。何淼律师深刻理解华人家庭的文化逻辑，能把这些背景转化为有效的法律论证。647-930-6688。</p>
       </div>
       <div class="faq-item">
-        <h3>普通话服务对离婚案件有多重要？</h3>
-        <p>家庭法案件涉及大量敏感细节和复杂法律概念。用母语沟通，能确保律师完整理解你的情况，你也能真正理解自己的权利和风险。语言障碍可能导致关键信息遗漏，直接影响案件结果。</p>
-      </div>
-
-      <h2 class="section-title" style="margin-top:2.5rem;">服务范围</h2>
-      <div class="service-grid">
-        <div class="service-item">离婚诉讼</div>
-        <div class="service-item">子女监护权</div>
-        <div class="service-item">抚养费计算与执行</div>
-        <div class="service-item">婚前协议</div>
-        <div class="service-item">分居协议</div>
-        <div class="service-item">净家庭财产分割</div>
-        <div class="service-item">跨境资产处理</div>
+        <h3>如何预约何淼律师初次咨询？</h3>
+        <p>致电647-930-6688或发邮件至miao@miaohelaw.ca。初次咨询30分钟$220+HST，普通话全程，Markham办公室面谈或视频均可，咨询后无强制委托义务。</p>
       </div>
 
       <div class="final-cta">
-        <h2>预约初次咨询</h2>
-        <p>30分钟初次咨询 $220+HST · 了解权利 · 评估案件 · 制定策略<br/>普通话 · 英文双语 · Markham · 服务Ontario全省</p>
+        <h2>预约何淼律师初次咨询</h2>
+        <p>30分钟初次咨询 $220+HST · 普通话全程服务<br />Markham事务所或视频会议 · 服务Ontario全省</p>
         <div class="hero-cta">
           <a href="tel:6479306688" class="btn-gold">📞 647-930-6688</a>
           <a href="/contact" class="btn-outline">在线预约</a>
         </div>
       </div>
+
     </div>
   </main>
   <Footer />
