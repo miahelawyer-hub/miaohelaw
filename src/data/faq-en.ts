@@ -224,6 +224,8 @@ export const faqItemsEn: FaqItemEn[] =
       "One important nuance: obtaining the divorce order is one thing; resolving property division, support, and parenting issues is another. Even if you get the divorce, outstanding family law issues can still be brought before the court by either party. Dealing with these issues proactively — ideally through a separation agreement — is strongly recommended.",
       "For advice on how to proceed when your spouse is uncooperative, contact Miao He at 647-930-6688."
     ],
+    "metaTitle": "What If My Spouse Refuses to Cooperate With the Divorce? | Miao He",
+    "metaDescription": "A spouse who refuses cannot stop a divorce. After one year of separation you can proceed without their cooperation. If they do not respond, the court can issue a Default Judgment in their absence. 647-930-6688.",
     "keywords": "spouse refuses divorce Ontario,uncontested divorce Ontario,default judgment divorce,divorce without consent Canada,Miao He lawyer"
   },
   {
@@ -298,6 +300,8 @@ export const faqItemsEn: FaqItemEn[] =
       "One of the most common patterns in Chinese-Canadian divorce cases is a spouse transferring funds to China — often to a parent or sibling — in anticipation of divorce proceedings. Asset preservation orders can be obtained from the Ontario court to prevent dissipation, but they must be obtained before assets are moved.",
       "Miao He holds both an Ontario bar licence and a Chinese bar licence, with active legal connections in China. For cross-border asset cases, contact 647-930-6688."
     ],
+    "metaTitle": "How Are Assets in China Handled in an Ontario Divorce? | Miao He",
+    "metaDescription": "Ontario equalization applies to worldwide assets including Chinese real estate and bank accounts. Tracing and enforcing judgments on overseas assets requires a lawyer licensed in both Ontario and China. 647-930-6688.",
     "keywords": "assets China divorce Ontario,cross-border divorce Canada China,Chinese real estate divorce Ontario,dual licensed family lawyer,Miao He"
   },
   {
@@ -394,6 +398,8 @@ export const faqItemsEn: FaqItemEn[] =
       "The distinction matters practically because of cost and time. An uncontested divorce can be resolved in 4 to 8 months at a fraction of the cost of a trial. A contested divorce can take 2 to 3 years and cost tens of thousands of dollars in legal fees.",
       "Contact Miao He at 647-930-6688 to discuss which path applies to your situation."
     ],
+    "metaTitle": "What Is the Difference Between Contested and Uncontested Divorce? | Miao He",
+    "metaDescription": "Uncontested divorce means both parties agree on all issues — faster and less expensive. Contested divorce means one or more issues must be decided by a judge at trial. 647-930-6688.",
     "keywords": "contested uncontested divorce Ontario,divorce trial Ontario,settlement conference Ontario,separation agreement Ontario,Miao He"
   },
   {
@@ -428,6 +434,8 @@ export const faqItemsEn: FaqItemEn[] =
       "Without a separation agreement, any unresolved issue can be brought to court at any time within the applicable limitation period. Court proceedings are expensive, slow, and emotionally draining. The upfront investment in a proper separation agreement is almost always worthwhile.",
       "Miao He assists clients in negotiating, drafting, and reviewing separation agreements. To discuss your situation, call 647-930-6688."
     ],
+    "metaTitle": "What Is a Separation Agreement and Do I Need One? | Miao He",
+    "metaDescription": "A separation agreement is a legally binding contract covering property division, support, and parenting. Not legally required, but strongly recommended — it avoids court, saves money, and gives both parties certainty. 647-930-6688.",
     "keywords": "separation agreement Ontario,domestic contract Ontario,what is separation agreement,family law agreement Ontario,Miao He lawyer"
   },
   {
@@ -445,6 +453,8 @@ export const faqItemsEn: FaqItemEn[] =
       "For defined contribution plans, the calculation is more straightforward: the value of the account at the date of separation is included in NFP, with a deduction for any pre-marital contributions.",
       "Pension division is a technically complex area. To ensure your pension assets are properly addressed in your divorce, contact Miao He at 647-930-6688."
     ],
+    "metaTitle": "Is My Spouse's Pension Divided in an Ontario Divorce? | Miao He",
+    "metaDescription": "Yes. Pension plans are included in the equalization calculation. The value accrued during marriage is included in the pension holder's NFP. Defined benefit pensions require actuarial valuation. 647-930-6688.",
     "keywords": "pension division divorce Ontario,defined benefit pension divorce,net family property pension,equalization pension Ontario,Miao He lawyer"
   },
   {
@@ -463,6 +473,8 @@ export const faqItemsEn: FaqItemEn[] =
       "The matrimonial home is subject to a special rule: unlike other assets, the value the home had at the date of marriage cannot be deducted from NFP, even if one spouse owned it before the marriage.",
       "To understand how equalization would apply to your specific assets, contact Miao He at 647-930-6688."
     ],
+    "metaTitle": "What Is Equalization of Net Family Property in Ontario? | Miao He",
+    "metaDescription": "Each spouse calculates their Net Family Property: assets at separation minus debts minus pre-marital assets. The spouse with the higher NFP pays the other half the difference — called the equalization payment. 647-930-6688.",
     "keywords": "equalization net family property Ontario,NFP calculation Ontario,property division Ontario divorce,equalization payment Ontario,Miao He"
   },
   {
@@ -499,6 +511,8 @@ export const faqItemsEn: FaqItemEn[] =
       "The court will not leave the home in a state of permanent uncertainty. If the parties cannot agree, a court order will resolve the issue.",
       "For advice on your rights regarding the matrimonial home, contact Miao He at 647-930-6688."
     ],
+    "metaTitle": "What Happens to the Matrimonial Home If We Cannot Agree? | Miao He",
+    "metaDescription": "If parties cannot agree, the court can order the home sold or one party to buy out the other. Both spouses have equal possession rights to the matrimonial home during separation regardless of ownership. 647-930-6688.",
     "keywords": "matrimonial home dispute Ontario,sell house divorce Ontario,partition sale Ontario,possession matrimonial home,Miao He lawyer"
   },
   {
@@ -535,6 +549,8 @@ export const faqItemsEn: FaqItemEn[] =
       "Critically, decision-making responsibility and parenting time are separate concepts. A child can live primarily with one parent while both parents share decision-making responsibility. Or one parent may have sole decision-making while the other has substantial parenting time. The arrangement depends on what serves the child best interests.",
       "For advice on what parenting arrangement is most likely to be appropriate in your case, contact Miao He at 647-930-6688."
     ],
+    "metaTitle": "Decision-Making Responsibility vs Parenting Time in Ontario | Miao He",
+    "metaDescription": "Decision-making responsibility covers major decisions about a child's life. Parenting time is the time spent with each parent. The two are separate — joint decision-making does not mean equal parenting time. 647-930-6688.",
     "keywords": "decision-making responsibility Ontario,parenting time Ontario,custody access Divorce Act 2021,joint decision-making Ontario,Miao He"
   },
   {
@@ -594,6 +610,9 @@ export const faqItemsEn: FaqItemEn[] =
       "\"Long separation = automatic divorce\" is a costly misconception. Once you have been separated for a year, consult a lawyer about starting the <a href=\"/en/family-law/divorce-litigation\">divorce application</a> process.",
       "For the full explanation, read: <a href=\"/en/blog/separation-vs-divorce-ontario/\">Separation vs. Divorce in Canada: Key Legal Differences</a>. Contact Miao He at 647-930-6688 to book a consultation.",
     ],
+    metaTitle: "Does One Year of Separation Mean Automatic Divorce in Ontario? | Miao He",
+    metaDescription:
+      "No. Canada has no automatic divorce. One year of separation gives you the right to apply — it does not end the marriage by itself. You must actively apply to court for a Divorce Order. 647-930-6688.",
     keywords: "separated one year automatic divorce Canada,how long separated to divorce Ontario,Divorce Act one year separation,marriage breakdown Canada,Miao He lawyer",
     pairedFaqPath: "/faq/fenju-yinian-zidong-lihun/",
     featured: true,
@@ -651,6 +670,9 @@ export const faqItemsEn: FaqItemEn[] =
       "Separation under one roof is legally equivalent to conventional separation — the separation date carries the same weight for property division and divorce timing, and a <a href=\"/en/family-law/domestic-contracts#separation\">separation agreement</a> is equally applicable. However, because the parties still share a residence, proving the separation date is harder — preserve <a href=\"/en/blog/electronic-evidence-ontario-family-court/\">electronic evidence such as texts and emails</a> to document the separation.",
       "For the full explanation, read: <a href=\"/en/blog/separation-vs-divorce-ontario/\">Separation vs. Divorce in Canada: Key Legal Differences</a>. Contact Miao He at 647-930-6688 to book a consultation.",
     ],
+    metaTitle: "Can You Be Legally Separated While Living Under the Same Roof? | Miao He",
+    metaDescription:
+      "Yes. Ontario recognizes separation under one roof — separate bedrooms, finances, and daily lives. It has the same legal effect as conventional separation, but requires stronger evidence to prove. 647-930-6688.",
     keywords: "separation under one roof Ontario,live together separated Canada,same house separated Ontario,prove separation date same roof,Miao He lawyer",
     pairedFaqPath: "/faq/tongwuyan-fenju/",
     featured: true,
