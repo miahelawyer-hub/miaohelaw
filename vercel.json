@@ -21,6 +21,16 @@
 			"permanent": true
 		},
 		{
+			"source": "/en/faq/mandarin-divorce-lawyer-ontario",
+			"destination": "/en/mandarin-divorce-lawyer-ontario/",
+			"permanent": true
+		},
+		{
+			"source": "/en/faq/mandarin-divorce-lawyer-ontario/",
+			"destination": "/en/mandarin-divorce-lawyer-ontario/",
+			"permanent": true
+		},
+		{
 			"source": "/richmond-hill-family-lawer",
 			"destination": "/richmond-hill-family-lawyer/",
 			"permanent": true
