@@ -1152,6 +1152,9 @@ export const faqItems: FaqItem[] = [
       '"分居久 = 自动离婚"是代价高昂的误解。建议在分居满一年后尽早咨询律师，了解<a href="/family-law/divorce-litigation">离婚申请</a>流程与所需文件。',
       '完整解析请阅读：<a href="/blog/separation-vs-divorce-ontario/">《分居和离婚的区别详解》</a>。欢迎致电647-930-6688预约何淼律师咨询。',
     ],
+    metaTitle: '分居一年就自动离婚了吗？| 安省离婚律师 何淼',
+    metaDescription:
+      '不会。加拿大没有自动离婚。无论分居多久，不主动向法院申请，婚姻关系永远存在。分居满一年只是有资格申请离婚，不代表自动离婚。647-930-6688。',
     keywords: '分居一年自动离婚,加拿大自动离婚,分居多久可以离婚,Divorce Act分居满一年,何淼律师',
     pairedFaqPath: '/en/faq/separation-one-year-automatic-divorce/',
     featured: true,
@@ -1172,6 +1175,9 @@ export const faqItems: FaqItem[] = [
       '建议保留短信、邮件、独立账户等可证明分居日的证据。如果曾经短暂复合又再次分居，及时咨询律师确认分居日是否需要重新认定。',
       '完整解析请阅读：<a href="/blog/separation-vs-divorce-ontario/">《分居和离婚的区别详解》</a>。欢迎致电647-930-6688预约何淼律师咨询。',
     ],
+    metaTitle: '分居之后可以反悔和好吗？| 安省家庭法律师 何淼',
+    metaDescription:
+      '可以，但有时间规则。重新共同生活不超过90天，原分居日不变；超过90天则之前的分居期被打断，未来再次分手需重新计算分居日。647-930-6688。',
     keywords: '分居后可以和好吗,90天复合规则加拿大,分居日重置,reconciliation Divorce Act,何淼律师',
     pairedFaqPath: '/en/faq/can-you-reconcile-after-separation/',
     featured: true,
@@ -1192,6 +1198,9 @@ export const faqItems: FaqItem[] = [
       '现实中也有夫妻离婚后决定复合，他们的选择是重新举行婚礼、重新办理结婚登记，这与初次结婚程序完全相同。',
       '完整解析请阅读：<a href="/blog/separation-vs-divorce-ontario/">《分居和离婚的区别详解》</a>。欢迎致电647-930-6688预约何淼律师咨询。',
     ],
+    metaTitle: '离婚之后可以反悔吗？| 安省离婚律师 何淼',
+    metaDescription:
+      '法律上不可以。拿到离婚判决书后婚姻关系彻底终止。如之后想恢复夫妻关系，必须重新办理结婚登记，与第一次结婚程序相同。647-930-6688。',
     keywords: '离婚后可以复婚吗,离婚反悔加拿大,离婚判决书不可逆,复婚程序加拿大,何淼律师',
     pairedFaqPath: '/en/faq/can-you-reconcile-after-divorce/',
     featured: true,
@@ -1212,6 +1221,9 @@ export const faqItems: FaqItem[] = [
       '"同屋分居"在法律上完全等同于常规分居，分居日一样重要，<a href="/family-law/domestic-contracts#separation">分居协议</a>一样适用。但因为双方仍住在一起，举证比"搬出去住"更难——建议通过<a href="/blog/electronic-evidence-ontario-family-court/">短信、邮件等电子记录</a>保留分居证据。',
       '完整解析请阅读：<a href="/blog/separation-vs-divorce-ontario/">《分居和离婚的区别详解》</a>。欢迎致电647-930-6688预约何淼律师咨询。',
     ],
+    metaTitle: '同一个屋檐下可以分居吗？| 安省家庭法律师 何淼',
+    metaDescription:
+      '可以。安省法院认可同屋分居，关键是双方是否实质上停止夫妻生活——分房睡、财务独立、生活分开。同屋分居法律效力与常规分居相同，但举证更难，建议留好证据。647-930-6688。',
     keywords: '同屋分居安省,separation under one roof,同住可以分居吗,分居证据保留,何淼律师',
     pairedFaqPath: '/en/faq/separation-under-one-roof/',
     featured: true,
@@ -1231,6 +1243,9 @@ export const faqItems: FaqItem[] = [
       '想了解更多关于「有温度的法律服务」与选律师的思路，请阅读何淼律师的<a href="/blog/how-to-choose-markham-family-lawyer/">《如何选好的万锦家庭法律师：在安省，找一个能听懂你委屈、更能帮你拿回权益的人》</a>。您也可以对照<a href="/blog/how-to-choose-toronto-chinese-divorce-lawyer/">《如何挑选多伦多最好的华人离婚律师？》</a>中关于面谈与匹配的段落。',
       '欢迎致电647-930-6688或通过微信372656035预约咨询。',
     ],
+    metaTitle: '安省找家庭法律师，为什么共情和懂法同样重要？| 何淼律师',
+    metaDescription:
+      '律师若不能共情，就难以真正理解你为何坚持某项诉求。只有听懂「为什么」，才能把法律工具对准你最核心的利益。懂法是底线，深度理解客户才是真正的后盾。647-930-6688。',
     keywords: '安省家庭法律师,共情与法律,选家庭法律师,万锦家庭法律师,有温度的法律服务,何淼律师',
     pairedFaqPath: '/en/faq/empathy-and-law-both-matter-ontario-family-lawyer/',
     featured: true,
@@ -1251,6 +1266,9 @@ export const faqItems: FaqItem[] = [
       '这与何淼律师在<a href="/blog/how-to-choose-markham-family-lawyer/">《如何选好的万锦家庭法律师…》</a>一文中讨论的「接住情绪、同时管理咨询时间」并不矛盾：专业倾听不等于无边界重复叙述，而是把有限时间用在能改变结果的信息上。关于按小时计费下成本如何累积，可结合<a href="/faq/lushi-fei-duoshao/">在安省请离婚律师大概多少钱？</a>一并理解。',
       '欢迎致电647-930-6688预约何淼律师咨询。',
     ],
+    metaTitle: '律师打断我的陈述，是不尊重我吗？| 安省家庭法律师',
+    metaDescription:
+      '不一定。律师已了解全貌后的打断，是为了过滤无关信息、节省律师费并聚焦有效争点。从头频繁打断才可能遗漏关键证据。真正的专业是「听完」后的精准取舍。647-930-6688。',
     keywords: '律师打断陈述,按小时计费咨询,家庭法律师沟通,万锦家庭法律师,何淼律师',
     pairedFaqPath: '/en/faq/lawyer-interrupts-during-family-law-consult/',
     featured: true,
@@ -1271,6 +1289,9 @@ export const faqItems: FaqItem[] = [
       '特别注意：情感伤害并非全是噪音。如果涉及家庭暴力（Family Violence）或人身伤害，这就可能上升到刑事或家庭法上的重要证据。区分这两者，需要律师具备深厚的实战洞察力。',
       '关于电子记录与书面材料在庭审中的运用，可参考<a href="/blog/electronic-evidence-ontario-family-court/">《安省家庭法庭上的电子证据》</a>。何淼律师在<a href="/blog/how-to-choose-markham-family-lawyer/">《如何选好的万锦家庭法律师…》</a>中也谈到如何把「有用的声音」带到法庭。欢迎致电647-930-6688预约咨询。',
     ],
+    metaTitle: '家庭法案件中如何区分法庭证据与情绪噪音？| 安省家庭法律师 何淼',
+    metaDescription:
+      '情绪噪音是缺乏客观佐证的主观感受；法庭证据是书面记录、转账凭证、第三方证言等可检验事实。家庭暴力或人身伤害可能构成重要证据，需律师具备扎实实务判断。647-930-6688。',
     keywords: '家庭法证据,情绪噪音,法庭证据,家庭暴力证据,安省家庭法,何淼律师',
     pairedFaqPath: '/en/faq/court-evidence-vs-emotional-noise-family-law/',
     featured: true,
@@ -1291,6 +1312,9 @@ export const faqItems: FaqItem[] = [
       '想知道我们如何帮客户把沟通集中在「能改变结果的事项」上、并优化诉讼成本思路，可阅读<a href="/blog/how-to-choose-markham-family-lawyer/">《如何选好的万锦家庭法律师…》</a>。费用区间与变量还可对照<a href="/faq/lushi-fei-duoshao/">在安省请离婚律师大概多少钱？</a>、<a href="/faq/toronto-lihun-feiyong-duoshao/">多伦多离婚费用大概是多少？</a>。',
       '欢迎致电647-930-6688预约咨询。',
     ],
+    metaTitle: '安省律师按小时计费，如何控制诉讼成本？| 安省家庭法律师 何淼',
+    metaDescription:
+      '秘诀在于首次咨询的深度。第一次咨询就与律师讨论办案思路、预判走向并拟定策略。最费钱的是反复沟通相同问题，战略一致后高效推进才是最合理的省钱之道。647-930-6688。',
     keywords: '安省律师按小时计费,诉讼成本控制,首次咨询策略,家庭法律师费用,何淼律师',
     pairedFaqPath: '/en/faq/control-litigation-costs-hourly-ontario/',
     featured: true,
@@ -1311,6 +1335,9 @@ export const faqItems: FaqItem[] = [
       '法律的公正覆盖全省，我们的专业服务亦然。是否建立律师—客户关系仍需个案评估（例如利益冲突核查、时间表与案件类型等）。何淼律师在<a href="/blog/how-to-choose-markham-family-lawyer/">《如何选好的万锦家庭法律师…》</a>结语中也说明了服务范围与个案评估的关系。',
       '欢迎致电647-930-6688，说明您的居住地与案件概况，我们再讨论是否适合建立代理关系。',
     ],
+    metaTitle: '住在万锦以外，可以聘请何淼律师处理安省案件吗？| 家庭法律师',
+    metaDescription:
+      '可以。持安省律师执照可代理全省家庭法业务。通过远程视频、电子签名及安省法院电子递交，与万锦本地客户获得同等质量的专业服务。647-930-6688。',
     keywords: '万锦以外聘请律师,安省家庭法全省代理,远程法律咨询安省,Markham律师安省,何淼律师',
     pairedFaqPath: '/en/faq/outside-markham-hire-ontario-family-lawyer/',
     featured: true,
@@ -1332,6 +1359,9 @@ export const faqItems: FaqItem[] = [
       '何淼律师服务大多伦多及安省各地客户，持安省律师执照（LSO #83315K）与中国律师资格，擅长处理涉及加拿大与中国因素的家庭法事务。',
       '预约请致电647-930-6688或发邮件至 miao@miaohelaw.ca；您也可通过本站<a href="/contact/">联系我们</a>页面提交留言。',
     ],
+    metaTitle: '如何预约何淼律师的咨询？| 多伦多华人家庭法律师',
+    metaDescription:
+      '致电647-930-6688或发邮件至miao@miaohelaw.ca。初次咨询30分钟$220+HST，普通话或英文，万锦办公室面谈或视频会议均可，咨询后无强制委托义务。647-930-6688。',
     keywords: '预约何淼律师,何淼律师咨询,万锦家庭法律师咨询,初次咨询费用,647-930-6688',
     pairedFaqPath: '/en/faq/book-consultation-miao-he/',
   },
