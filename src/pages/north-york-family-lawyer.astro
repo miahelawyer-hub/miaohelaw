@@ -73,36 +73,45 @@ import Footer from '../components/Footer.astro';
   <style>
     * { box-sizing: border-box; }
     body { background: var(--bg); margin: 0; font-family: -apple-system, sans-serif; }
-    .hero { background: var(--hero-legal-top-background); border-bottom: 1px solid rgba(0, 0, 0, 0.35); padding: 3rem 1.5rem 2.5rem; }
-    .hero-inner { max-width: 860px; margin: 0 auto; }
-    .breadcrumb { font-size: 0.8rem; color: rgba(255,255,255,0.5); margin-bottom: 0.75rem; }
-    .breadcrumb a { color: rgba(255,255,255,0.5); text-decoration: none; }
-    .hero h1 { color: #fff; font-size: clamp(1.5rem, 3vw, 2rem); margin: 0 0 0.75rem; line-height: 1.3; }
-    .hero-sub { color: #D4A853; font-size: 0.9rem; margin: 0 0 1.5rem; }
-    .hero-cta { display: flex; gap: 0.75rem; flex-wrap: wrap; }
-    .btn-gold { background: #D4A853; color: var(--text-heading); padding: 0.7rem 1.5rem; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 0.9rem; }
-    .btn-outline { background: transparent; color: white; border: 2px solid white; padding: 0.7rem 1.5rem; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 0.9rem; }
-    .container { max-width: 860px; margin: 0 auto; padding: 2.5rem 1.5rem; }
-    .section { margin-bottom: 2rem; }
-    .section h2 { color: var(--text-heading); font-size: 1.15rem; margin: 0 0 0.75rem; padding-bottom: 0.5rem; border-bottom: 2px solid #D4A853; }
-    .section p { color: #4A3A2A; font-size: 0.92rem; line-height: 1.75; margin: 0 0 0.75rem; }
-    .highlight-box { background: #f5f0eb; border-left: 3px solid #D4A853; padding: 1rem 1.25rem; border-radius: 0 6px 6px 0; margin: 1rem 0; }
-    .highlight-box p { margin: 0; font-size: 0.88rem; color: #4A3A2A; }
-    .faq-item { border: 1px solid #e8e0d5; border-radius: 8px; padding: 1.25rem; margin-bottom: 0.75rem; background: white; }
-    .faq-q { font-weight: 600; color: var(--text-heading); font-size: 0.92rem; margin: 0 0 0.5rem; }
-    .faq-a { color: #4A3A2A; font-size: 0.88rem; line-height: 1.7; margin: 0; }
-    .cta-box { background: linear-gradient(135deg, #2C1810, #4A2C1A); border-radius: 10px; padding: 2rem; text-align: center; margin-top: 2rem; }
-    .cta-box h2 { color: #D4A853; margin: 0 0 0.5rem; font-size: 1.15rem; }
-    .cta-box p { color: rgba(255,255,255,0.88); margin: 0 0 1.25rem; font-size: 0.9rem; }
-    .cta-btns { display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; }
-    @media (max-width: 600px) { .hero-cta { flex-direction: column; } }
+    .page-hero{background:var(--hero-legal-top-background);border-bottom:1px solid rgba(0,0,0,0.35);color:white;padding:3rem 0 2rem}
+    .page-hero h1{font-size:2rem;margin:0.5rem 0;color:#ffffff}
+    .hero-sub{color:#D4A853;margin:0}
+    .breadcrumb{font-size:0.85rem;opacity:0.7;margin-bottom:0.5rem}
+    .breadcrumb a{color:white;text-decoration:none}
+    .hero-cta{display:flex;gap:0.75rem;flex-wrap:wrap;margin-top:1.25rem}
+    .btn-gold{background:#D4A853;color:var(--text-heading);padding:0.7rem 1.5rem;border-radius:6px;text-decoration:none;font-weight:700;font-size:0.9rem}
+    .btn-outline{background:transparent;color:white;border:2px solid white;padding:0.7rem 1.5rem;border-radius:6px;text-decoration:none;font-weight:700;font-size:0.9rem}
+    .container{max-width:1100px;margin:0 auto;padding:0 1.5rem}
+    .content-section{padding:3rem 0}
+    .content-grid{display:grid;grid-template-columns:1fr 300px;gap:3rem}
+    .main-content .section{margin-bottom:2rem}
+    .main-content .section h2{color:var(--text-heading);font-size:1.15rem;margin:0 0 0.75rem;padding-bottom:0.5rem;border-bottom:2px solid #D4A853}
+    .main-content .section p{color:#4A3A2A;font-size:0.92rem;line-height:1.75;margin:0 0 0.75rem}
+    .highlight-box{background:#f5f0eb;border-left:3px solid #D4A853;padding:1rem 1.25rem;border-radius:0 6px 6px 0;margin:1rem 0}
+    .highlight-box p{margin:0;font-size:0.88rem;color:#4A3A2A}
+    .faq-item{border:1px solid #e8e0d5;border-radius:8px;padding:1.25rem;margin-bottom:0.75rem;background:white}
+    .faq-q{font-weight:600;color:var(--text-heading);font-size:0.92rem;margin:0 0 0.5rem}
+    .faq-a{color:#4A3A2A;font-size:0.88rem;line-height:1.7;margin:0}
+    .cta-box{background:linear-gradient(135deg,#2C1810,#4A2C1A);border-radius:10px;padding:2rem;text-align:center;margin-top:2rem}
+    .cta-box h2{color:#D4A853;margin:0 0 0.5rem;font-size:1.15rem;border:none;padding:0}
+    .cta-box p{color:rgba(255,255,255,0.88);margin:0 0 1.25rem;font-size:0.9rem}
+    .cta-btns{display:flex;gap:0.75rem;justify-content:center;flex-wrap:wrap}
+    .sidebar{display:flex;flex-direction:column;gap:1.5rem}
+    .sidebar-card{background:white;border:1px solid #e8e0d5;border-radius:10px;padding:1.2rem}
+    .sidebar-card h3{color:var(--text-heading);font-size:0.95rem;margin-top:0;border-bottom:1px solid #e8e0d5;padding-bottom:0.5rem;margin-bottom:0.75rem}
+    .sidebar-card ul{list-style:none;padding:0;margin:0}
+    .sidebar-card li{padding:0.3rem 0;border-bottom:1px solid #f0ebe3;font-size:0.9rem}
+    .sidebar-card a{color:#9A8060;text-decoration:none}
+    .sidebar-card p{margin:0.3rem 0;font-size:0.9rem}
+    @media(max-width:768px){.content-grid{grid-template-columns:1fr}.page-hero h1{font-size:1.5rem}}
+    @media(max-width:600px){.hero-cta{flex-direction:column}}
   </style>
 </head>
 <body>
   <Header />
   <main>
-    <div class="hero">
-      <div class="hero-inner">
+    <section class="page-hero">
+      <div class="container">
         <p class="breadcrumb"><a href="/">首页</a> › North York 华人离婚律师</p>
         <h1>North York 北约克华人离婚律师</h1>
         <p class="hero-sub">服务 Finch · Sheppard · Yonge 沿线华人社区 · 普通话全程 · 647-930-6688</p>
@@ -110,80 +119,127 @@ import Footer from '../components/Footer.astro';
           <a href="tel:6479306688" class="btn-gold">📞 647-930-6688</a>
           <a href="/contact" class="btn-outline">预约咨询</a>
         </div>
-
-      <div class="section">
-        <h2>服务地区</h2>
-        <p>
-          <a href="/toronto-family-lawyer">多伦多华人离婚律师</a> ·
-          <a href="/markham-family-lawyer">万锦华人家庭法律师</a> ·
-          <a href="/richmond-hill-family-lawyer">列治文山华人家庭法律师</a> ·
-          <a href="/scarborough-family-lawyer">士嘉堡华人家庭法律师</a> ·
-          <a href="/mississauga-family-lawyer">密西沙加华人离婚律师</a> ·
-          <a href="/brampton-family-lawyer">宾顿华人家庭法律师</a> ·
-          <a href="/vaughan-family-lawyer">旺市华人家庭法律师</a> ·
-          <a href="/thornhill-family-lawyer">Thornhill 华人家庭法律师</a> ·
-          <a href="/newmarket-family-lawyer">新市华人家庭法律师</a> ·
-          <a href="/ajax-pickering-family-lawyer">Ajax / Pickering 华人律师</a> ·
-          <a href="/hamilton-family-lawyer">汉密尔顿华人家庭法律师</a> ·
-          <a href="/kitchener-family-lawyer">Kitchener 华人家庭法律师</a> ·
-          <a href="/ottawa-family-lawyer">渥太华华人家庭法律师</a> ·
-          <a href="/london-family-lawyer">London Ontario 华人律师</a> ·
-          <a href="/windsor-family-lawyer">温莎华人家庭法律师</a> ·
-          <a href="/north-bay-family-lawyer">北湾华人家庭法律师</a>
-        </p>
       </div>
+    </section>
 
+    <section class="content-section">
+      <div class="container content-grid">
+        <div class="main-content">
+          <div class="section">
+            <h2>服务地区</h2>
+            <p>
+              <a href="/toronto-family-lawyer">多伦多华人离婚律师</a> ·
+              <a href="/markham-family-lawyer">万锦华人家庭法律师</a> ·
+              <a href="/richmond-hill-family-lawyer">列治文山华人家庭法律师</a> ·
+              <a href="/scarborough-family-lawyer">士嘉堡华人家庭法律师</a> ·
+              <a href="/mississauga-family-lawyer">密西沙加华人离婚律师</a> ·
+              <a href="/brampton-family-lawyer">宾顿华人家庭法律师</a> ·
+              <a href="/vaughan-family-lawyer">旺市华人家庭法律师</a> ·
+              <a href="/thornhill-family-lawyer">Thornhill 华人家庭法律师</a> ·
+              <a href="/newmarket-family-lawyer">新市华人家庭法律师</a> ·
+              <a href="/ajax-pickering-family-lawyer">Ajax / Pickering 华人律师</a> ·
+              <a href="/hamilton-family-lawyer">汉密尔顿华人家庭法律师</a> ·
+              <a href="/kitchener-family-lawyer">Kitchener 华人家庭法律师</a> ·
+              <a href="/ottawa-family-lawyer">渥太华华人家庭法律师</a> ·
+              <a href="/london-family-lawyer">London Ontario 华人律师</a> ·
+              <a href="/windsor-family-lawyer">温莎华人家庭法律师</a> ·
+              <a href="/north-bay-family-lawyer">北湾华人家庭法律师</a>
+            </p>
+          </div>
+
+          <div class="section">
+            <h2>North York 华人离婚的特殊考量</h2>
+            <p>North York 是大多伦多华人密度最高的区域之一，Finch Ave 和 Sheppard Ave 沿线聚居大量来自中国大陆、香港和台湾的华人家庭。这里的离婚案件有几个常见的特殊情况：</p>
+            <div class="highlight-box">
+              <p><strong>共管公寓婚姻住所问题：</strong>North York 大量华人家庭居住在 Condo，分居时婚姻住所的认定和占用权争议非常常见。非产权方配偶在法律上享有平等占用权，不得被单方驱逐。</p>
+            </div>
+            <div class="highlight-box">
+              <p><strong>跨省、跨境资产：</strong>不少 North York 华人家庭在中国持有房产或在多国持有资产，何淼律师持中加双重执照，专门处理此类跨境财产分割问题。</p>
+            </div>
+            <div class="highlight-box">
+              <p><strong>法院距离近：</strong>North York 离婚案件在多伦多 Superior Court of Justice 处理，交通便利。何淼律师在该法院有丰富出庭经验。</p>
+            </div>
+          </div>
+
+          <div class="section">
+            <h2>服务范围</h2>
+            <p>何淼律师为 North York 华人提供以下家庭法服务，全程普通话及英文双语：</p>
+            <p>离婚诉讼（Divorce Litigation）· 无争议离婚 · 子女监护权（Decision Making Responsibility）· 子女抚养费（Child Support）· 配偶抚养费（Spousal Support）· 财产分割（NFP Equalization）· 婚姻住所占用权 · 婚前协议（Marriage Contract）· 分居协议（Separation Agreement）· 跨境资产追索（中国房产、境外账户）</p>
+          </div>
+
+          <div class="section">
+            <h2>常见问题</h2>
+            <div class="faq-item">
+              <p class="faq-q">North York 有说普通话的离婚律师吗？</p>
+              <p class="faq-a">有。何淼律师（Miao He）提供普通话及英文双语家庭法服务，服务 North York 及 GTA 全区。事务所位于 Markham，提供视频及电话咨询，初次咨询30分钟 $220+HST。</p>
+            </div>
+            <div class="faq-item">
+              <p class="faq-q">我住在 North York 的 Condo，离婚时对方能把我赶出去吗？</p>
+              <p class="faq-a">不能。根据 Ontario《家庭法》，婚姻住所（Matrimonial Home）中，无论产权登记在哪方名下，双方配偶均享有平等占用权。对方不得在未获法院命令的情况下单方驱逐另一方。如面临此类威胁，应立即寻求法律保护。</p>
+            </div>
+            <div class="faq-item">
+              <p class="faq-q">North York 离婚案件在哪个法院？</p>
+              <p class="faq-a">North York 的家庭法案件通常在多伦多 Superior Court of Justice — Toronto Courthouse 处理（361 University Ave）。何淼律师在该法院有丰富出庭经验，可全程普通话服务。</p>
+            </div>
+          </div>
+
+          <div class="cta-box">
+            <h2>预约 North York 华人离婚律师</h2>
+            <p>何淼律师 · 30分钟初次咨询 $220+HST · 普通话 · 服务 North York 及 GTA 全区</p>
+            <div class="cta-btns">
+              <a href="tel:6479306688" class="btn-gold">📞 647-930-6688</a>
+              <a href="/contact" class="btn-outline">在线预约</a>
+            </div>
+          </div>
+        </div>
+
+        <aside class="sidebar">
+          <div class="sidebar-card">
+            <h3>联系何淼律师</h3>
+            <p>📞 <a href="tel:6479306688">647-930-6688</a></p>
+            <p>📧 <a href="mailto:miao@miaohelaw.ca">miao@miaohelaw.ca</a></p>
+          </div>
+          <div class="sidebar-card">
+            <h3>家庭法服务</h3>
+            <ul>
+              <li><a href="/family-law/divorce-litigation">离婚诉讼</a></li>
+              <li><a href="/family-law/child-custody">子女监护权</a></li>
+              <li><a href="/family-law/domestic-contracts">婚姻协议</a></li>
+              <li><a href="/family-law/cross-border-assets">跨境资产</a></li>
+              <li><a href="/family-law/support">抚养费与赡养费</a></li>
+              <li><a href="/family-law/mediation">调解与仲裁</a></li>
+            </ul>
+          </div>
+          <div class="sidebar-card">
+            <h3>服务地区</h3>
+            <ul>
+              <li><a href="/toronto-family-lawyer">多伦多华人离婚律师</a></li>
+              <li><a href="/markham-family-lawyer">万锦华人家庭法律师 · 事务所</a></li>
+              <li><a href="/richmond-hill-family-lawyer">列治文山华人家庭法律师</a></li>
+              <li><a href="/north-york-family-lawyer">北约克华人离婚律师</a></li>
+              <li><a href="/scarborough-family-lawyer">士嘉堡华人家庭法律师</a></li>
+              <li><a href="/mississauga-family-lawyer">密西沙加华人离婚律师</a></li>
+              <li><a href="/brampton-family-lawyer">宾顿华人家庭法律师</a></li>
+              <li><a href="/vaughan-family-lawyer">旺市华人家庭法律师</a></li>
+              <li><a href="/thornhill-family-lawyer">Thornhill 华人家庭法律师</a></li>
+              <li><a href="/newmarket-family-lawyer">新市华人家庭法律师</a></li>
+              <li><a href="/ajax-pickering-family-lawyer">Ajax / Pickering 华人律师</a></li>
+              <li><a href="/hamilton-family-lawyer">汉密尔顿华人家庭法律师</a></li>
+              <li><a href="/kitchener-family-lawyer">Kitchener 华人家庭法律师</a></li>
+              <li><a href="/ottawa-family-lawyer">渥太华华人家庭法律师</a></li>
+              <li><a href="/london-family-lawyer">London Ontario 华人律师</a></li>
+              <li><a href="/windsor-family-lawyer">温莎华人家庭法律师</a></li>
+              <li><a href="/north-bay-family-lawyer">北湾华人家庭法律师</a></li>
+            </ul>
+          </div>
+          <div class="sidebar-card">
+            <h3>服务语言</h3>
+            <p>🇨🇳 普通话 / 国语</p>
+            <p>🇨🇦 英文（English）</p>
+          </div>
+        </aside>
       </div>
-    </div>
-
-    <div class="container">
-
-      <div class="section">
-        <h2>North York 华人离婚的特殊考量</h2>
-        <p>North York 是大多伦多华人密度最高的区域之一，Finch Ave 和 Sheppard Ave 沿线聚居大量来自中国大陆、香港和台湾的华人家庭。这里的离婚案件有几个常见的特殊情况：</p>
-        <div class="highlight-box">
-          <p><strong>共管公寓婚姻住所问题：</strong>North York 大量华人家庭居住在 Condo，分居时婚姻住所的认定和占用权争议非常常见。非产权方配偶在法律上享有平等占用权，不得被单方驱逐。</p>
-        </div>
-        <div class="highlight-box">
-          <p><strong>跨省、跨境资产：</strong>不少 North York 华人家庭在中国持有房产或在多国持有资产，何淼律师持中加双重执照，专门处理此类跨境财产分割问题。</p>
-        </div>
-        <div class="highlight-box">
-          <p><strong>法院距离近：</strong>North York 离婚案件在多伦多 Superior Court of Justice 处理，交通便利。何淼律师在该法院有丰富出庭经验。</p>
-        </div>
-      </div>
-
-      <div class="section">
-        <h2>服务范围</h2>
-        <p>何淼律师为 North York 华人提供以下家庭法服务，全程普通话及英文双语：</p>
-        <p>离婚诉讼（Divorce Litigation）· 无争议离婚 · 子女监护权（Decision Making Responsibility）· 子女抚养费（Child Support）· 配偶抚养费（Spousal Support）· 财产分割（NFP Equalization）· 婚姻住所占用权 · 婚前协议（Marriage Contract）· 分居协议（Separation Agreement）· 跨境资产追索（中国房产、境外账户）</p>
-      </div>
-
-      <div class="section">
-        <h2>常见问题</h2>
-        <div class="faq-item">
-          <p class="faq-q">North York 有说普通话的离婚律师吗？</p>
-          <p class="faq-a">有。何淼律师（Miao He）提供普通话及英文双语家庭法服务，服务 North York 及 GTA 全区。事务所位于 Markham，提供视频及电话咨询，初次咨询30分钟 $220+HST。</p>
-        </div>
-        <div class="faq-item">
-          <p class="faq-q">我住在 North York 的 Condo，离婚时对方能把我赶出去吗？</p>
-          <p class="faq-a">不能。根据 Ontario《家庭法》，婚姻住所（Matrimonial Home）中，无论产权登记在哪方名下，双方配偶均享有平等占用权。对方不得在未获法院命令的情况下单方驱逐另一方。如面临此类威胁，应立即寻求法律保护。</p>
-        </div>
-        <div class="faq-item">
-          <p class="faq-q">North York 离婚案件在哪个法院？</p>
-          <p class="faq-a">North York 的家庭法案件通常在多伦多 Superior Court of Justice — Toronto Courthouse 处理（361 University Ave）。何淼律师在该法院有丰富出庭经验，可全程普通话服务。</p>
-        </div>
-      </div>
-
-      <div class="cta-box">
-        <h2>预约 North York 华人离婚律师</h2>
-        <p>何淼律师 · 30分钟初次咨询 $220+HST · 普通话 · 服务 North York 及 GTA 全区</p>
-        <div class="cta-btns">
-          <a href="tel:6479306688" class="btn-gold">📞 647-930-6688</a>
-          <a href="/contact" class="btn-outline">在线预约</a>
-        </div>
-      </div>
-
-    </div>
+    </section>
   </main>
   <Footer />
 </body>
