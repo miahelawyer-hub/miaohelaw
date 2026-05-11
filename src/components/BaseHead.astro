@@ -73,10 +73,13 @@ const abs = (path: string) => new URL(path, `${origin}/`).href;
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={image} />
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z66X0QGEV7"></script>
+<script defer src="https://www.googletagmanager.com/gtag/js?id=G-Z66X0QGEV7"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-Z66X0QGEV7');
 </script>
+{Astro.url.pathname === '/' || Astro.url.pathname === '/en/' ? (
+	<link rel="preload" as="image" href="/images/hero-home-court-interior.webp" fetchpriority="high" />
+) : null}
