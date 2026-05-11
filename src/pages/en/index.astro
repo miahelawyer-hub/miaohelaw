@@ -169,7 +169,11 @@ function formatBlogDate(date: Date) {
 
     <!-- Hero: same full-width treatment as Chinese homepage; portrait on /en/about/ -->
     <section class="hero hero--court" aria-labelledby="hero-main-heading">
-      <div class="hero-court-bg" aria-hidden="true"></div>
+      <div
+        class="hero-court-bg"
+        aria-hidden="true"
+        style="background-image: url('/images/hero-home-court-interior.jpg');"
+      ></div>
       <div class="hero-court-scrim" aria-hidden="true"></div>
       <div class="hero-inner hero-inner--court">
         <p class="hero-court-eyebrow">Ontario family law</p>
@@ -597,7 +601,9 @@ function formatBlogDate(date: Date) {
     position: absolute;
     inset: 0;
     z-index: 0;
-    background: url('/images/hero-legal-backdrop.png') center 40% / cover no-repeat;
+    background-size: cover;
+    background-position: 58% 42%;
+    background-repeat: no-repeat;
     transform: scale(1.03);
     pointer-events: none;
   }
