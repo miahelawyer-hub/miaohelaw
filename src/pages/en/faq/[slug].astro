@@ -23,7 +23,7 @@ const summaryPlain = stripHtml(item.summary);
 const questionPlain = stripHtml(item.question);
 const jsonLdAnswerPlain = [summaryPlain, ...item.answers.map(stripHtml)].filter(Boolean).join('\n\n');
 const pageUrl = new URL(`en/faq/${item.slug}/`, `${SITE_URL}/`).href;
-const metaTitle = item.metaTitle ?? `${questionPlain} | Miao He — Ontario Family Law`;
+const metaTitle = item.metaTitle ?? `${questionPlain} | Miao He · Toronto Divorce Lawyer · Family Law`;
 const metaDesc = item.metaDescription ?? summaryPlain;
 const alternateZhUrl = item.pairedFaqPath
   ? new URL(item.pairedFaqPath.replace(/^\//, ''), `${SITE_URL}/`).href
