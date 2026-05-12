@@ -9,7 +9,12 @@ import '../styles/blog-prose-body-color.css';
 import { SITE_TITLE, SITE_URL } from '../consts';
 import { getTagDisplayNameEn } from '../data/tagDisplayNames';
 
-type RelatedReadingItem = { slug: string; line: string };
+type RelatedReadingItem = {
+  slug?: string;
+  href?: string;
+  title?: string;
+  line: string;
+};
 
 type FaqStructuredItem = { question: string; answer: string };
 
@@ -667,12 +672,19 @@ const defaultRelatedIntroEn =
                 <h3>Further Reading</h3>
                 <p class="sidebar-related-intro">{relatedIntro ?? defaultRelatedIntroEn}</p>
                 <ul class="related-reading-list">
-                  {relatedReading.map((item) => (
-                    <li>
-                      <a href={`/en/blog/${item.slug}/`}>{titleForEnBlogSlug(item.slug)}</a>
-                      <p class="related-reading-teaser">{item.line}</p>
-                    </li>
-                  ))}
+                  {relatedReading.map((item) => {
+                    const href = item.href?.trim()
+                      ? item.href.trim()
+                      : `/en/blog/${item.slug}/`;
+                    const linkLabel =
+                      item.title?.trim() ?? titleForEnBlogSlug(item.slug as string);
+                    return (
+                      <li>
+                        <a href={href}>{linkLabel}</a>
+                        <p class="related-reading-teaser">{item.line}</p>
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             )}

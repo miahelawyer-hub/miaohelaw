@@ -13,13 +13,38 @@ const blogSchema = ({ image }) =>
     tags: z.array(z.string()).optional(),
     /** Optional sidebar blurb above curated internal links */
     relatedIntro: z.string().optional(),
-    /** Curated same-site blog links with one-line context (slug = blog post `id`) */
+    /** Curated internal links with one-line context: either blog `slug` (→ /blog/{slug}/) or `href`+`title` (e.g. FAQ / service pages). */
     relatedReading: z
       .array(
-        z.object({
-          slug: z.string(),
-          line: z.string(),
-        })
+        z
+          .object({
+            slug: z.string().optional(),
+            href: z.string().optional(),
+            title: z.string().optional(),
+            line: z.string(),
+          })
+          .superRefine((data, ctx) => {
+            const hasSlug = Boolean(data.slug?.trim());
+            const hasHref = Boolean(data.href?.trim());
+            if (!hasSlug && !hasHref) {
+              ctx.addIssue({
+                code: z.ZodIssueCode.custom,
+                message: 'relatedReading: set slug (blog post id) or href (internal URL)',
+              });
+            }
+            if (hasSlug && hasHref) {
+              ctx.addIssue({
+                code: z.ZodIssueCode.custom,
+                message: 'relatedReading: use either slug or href, not both',
+              });
+            }
+            if (hasHref && !data.title?.trim()) {
+              ctx.addIssue({
+                code: z.ZodIssueCode.custom,
+                message: 'relatedReading: href entries need title (link text)',
+              });
+            }
+          })
       )
       .optional(),
     /**

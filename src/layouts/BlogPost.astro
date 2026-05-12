@@ -846,12 +846,20 @@ const structuredDataJson = JSON.stringify([
                 <h3>延伸阅读</h3>
                 <p class="sidebar-related-intro">{relatedIntro ?? defaultRelatedIntro}</p>
                 <ul class="related-reading-list">
-                  {relatedReading.map((item) => (
-                    <li>
-                      <a href={`/blog/${item.slug}/`}>{titleForBlogSlug(item.slug)}</a>
-                      <p class="related-reading-teaser">{item.line}</p>
-                    </li>
-                  ))}
+                  {relatedReading.map((item) => {
+                    const href = item.href?.trim()
+                      ? item.href.trim()
+                      : `/blog/${item.slug}/`;
+                    const linkLabel =
+                      item.title?.trim() ??
+                      (item.slug ? titleForBlogSlug(item.slug) : item.href ?? '');
+                    return (
+                      <li>
+                        <a href={href}>{linkLabel}</a>
+                        <p class="related-reading-teaser">{item.line}</p>
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             )}
