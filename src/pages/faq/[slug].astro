@@ -23,7 +23,7 @@ const questionPlain = stripHtml(item.question);
 const jsonLdAnswerPlain = [summaryPlain, ...item.answers.map(stripHtml)].filter(Boolean).join('\n\n');
 const pageUrl = new URL(`faq/${item.slug}/`, `${SITE_URL}/`).href;
 const metaTitle = item.metaTitle ?? `${questionPlain} | 何淼律师 · 多伦多离婚律师 · 家庭法律师`;
-const metaDesc = item.metaDescription ?? summaryPlain;
+const metaDesc = item.metaDescription ?? `${summaryPlain} 欢迎致电预约咨询：647-930-6688。`;
 const alternateEnUrl = item.pairedFaqPath
   ? new URL(item.pairedFaqPath.replace(/^\//, ''), `${SITE_URL}/`).href
   : null;
