@@ -1187,6 +1187,146 @@ export const faqItemsEn: FaqItemEn[] =
     metaDescription:
       'Toronto family court operates differently from Newmarket and elsewhere — venue affects strategy. Miao He appears regularly at Toronto Superior Court. 647-930-6688.',
   },
+  {
+    slug: "uncontested-divorce-newmarket-court-markham",
+    question:
+      "Can I get an uncontested divorce through Newmarket Court if I live in Markham or Richmond Hill?",
+    featured: true,
+    metaTitle:
+      "Uncontested Divorce in Markham & Richmond Hill | Newmarket Court | Miao He · Family Law",
+    metaDescription:
+      "Miao He handles uncontested divorce from start to finish — flat-fee, no hidden costs, full follow-up with the court. Serving Markham and Richmond Hill. Call 647-930-6688.",
+    pairedFaqPath: "/faq/uncontested-divorce-newmarket-court-markham/",
+    summary:
+      "Yes — residents of Markham and Richmond Hill can pursue an uncontested divorce through Newmarket Court. But <strong>uncontested does not mean simple</strong>. Many applicants who file on their own, or with inexperienced counsel, wait years without receiving a divorce order — because the court's specific requirements were not met, or because no one followed up.",
+    answers: [
+      "The divorce application is filed as part of the <strong>public court record</strong> — accessible to anyone. Beyond the application itself, the court and individual judges have specific requirements that are not publicly documented and cannot be reliably sourced from AI tools. Meeting those requirements takes direct experience with the court.",
+      "During the review process, a judge can request <strong>additional documents at any time</strong> — including proof of income or other financial records. If those materials are not submitted promptly, the divorce order will not be issued. Applications that are filed and then not actively followed up frequently sit unresolved for one to two years.",
+    ],
+    details: [
+      "Miao He regularly handles files where a client filed their own application — or had another lawyer file — and the divorce order never came through. The reasons are consistent: documents did not meet the judge's requirements, or no one was tracking the file after submission.",
+      "An uncontested divorce involves more than paperwork. It requires knowing <strong>what the court expects at each stage</strong>, responding to any judicial requisitions quickly and correctly, and maintaining active communication with the court until the order issues.",
+      "Miao He offers uncontested divorce as a <strong>flat-fee service</strong>: one fee, full follow-through, no surprise charges. Responding to requisitions and communicating with the court on your behalf is included — there is no additional billing for those steps. Call <strong>647-930-6688</strong> to learn about the process and pricing.",
+    ],
+    keywords:
+      "uncontested divorce Markham,uncontested divorce Richmond Hill,Newmarket Court divorce application,Ontario divorce order,divorce application rejected Ontario,waiting for divorce order Ontario,Chinese divorce lawyer Markham,flat fee uncontested divorce Ontario,Miao He lawyer",
+  },
+  {
+    slug: "when-to-settle-divorce-ontario",
+    question: "When is the right time to settle a divorce case in Ontario?",
+    featured: true,
+    metaTitle:
+      "When Should You Settle Your Divorce Case in Ontario? | Miao He · Toronto Divorce Lawyer · Family Law",
+    metaDescription:
+      "Knowing when to settle is one of the most valuable things an experienced family lawyer brings. Miao He personally handles every file and advises on negotiation timing. Call 647-930-6688.",
+    pairedFaqPath: "/faq/when-to-settle-divorce-ontario/",
+    summary:
+      "Settlement timing is one of the most consequential — and underappreciated — decisions in a family law case. Settle too early and you may accept terms that undervalue your position. Wait too long and you spend far more in legal fees than the difference was worth. <strong>Most clients cannot make this call on their own</strong> — it requires judgment built from years of seeing how cases actually unfold.",
+    answers: [
+      "The right moment to settle depends on several factors: <strong>where you are in the court process, the strength of your current position, the other side's posture, and upcoming procedural deadlines</strong>. Certain stages of litigation create natural settlement windows — a lawyer who knows the process can position you to take advantage of them.",
+      "Clients often ask \"should I just settle?\" without knowing whether their current position is strong or weak. Settling from a position of strength produces a very different outcome than settling under pressure. <strong>An experienced lawyer tracks both simultaneously</strong> — building your case while staying alert to the right moment to resolve it.",
+    ],
+    details: [
+      "Litigation is a tool, not a destination. But the decision of when to use it — and when to step back from it — requires honest, experience-based judgment. Miao He has handled hundreds of family law files across all stages of the court process, from first conference to trial.",
+      "Her approach is proactive: she does not wait for the other side to raise settlement. Instead, she continuously evaluates <strong>whether the current moment creates leverage</strong> — and advises her clients accordingly. This applies at every stage, including DRO Conferences, Case Conferences, and Settlement Conferences.",
+      "Every file is handled personally by Miao He — not passed to an associate. Clients always know where their case stands and why. Call <strong>647-930-6688</strong> to speak with her directly.",
+    ],
+    keywords:
+      "when to settle divorce Ontario,divorce settlement timing,family law settlement strategy,Settlement Conference Ontario,Newmarket Court settlement,Markham divorce lawyer,Chinese family lawyer Toronto,Miao He lawyer",
+  },
+  {
+    slug: "newmarket-court-regular-motion-vs-long-motion",
+    question:
+      "What is the difference between a Regular Motion and a Long Motion at Newmarket Court?",
+    featured: true,
+    metaTitle:
+      "Regular Motion vs Long Motion at Newmarket Court | Miao He · Toronto Divorce Lawyer · Family Law",
+    metaDescription:
+      "Miao He has 15+ years of litigation experience and knows when to bring a Regular, Long, or Urgent Motion at Newmarket Court. Call 647-930-6688.",
+    pairedFaqPath: "/faq/newmarket-court-regular-motion-vs-long-motion/",
+    summary:
+      "At Newmarket Court, most motions are scheduled as <strong>Regular Motions</strong> (one hour). Complex matters may require court leave to schedule a <strong>Long Motion</strong>. Urgent situations call for an <strong>Urgent Motion</strong>. Choosing the wrong type wastes a court date at best — and at worst, costs you the opportunity to protect your interests at a critical moment.",
+    answers: [
+      "<strong>Regular Motion</strong>: the default format at Newmarket Court, allocated one hour. Appropriate for focused, less complex applications where the issues and materials can be addressed within that timeframe.",
+      "<strong>Long Motion</strong>: requires court leave (permission) to schedule, used when the matter is too complex for a one-hour hearing. <strong>Urgent Motion</strong>: used when immediate court intervention is needed — for example, if a child is being removed from Ontario, or if assets are being dissipated.",
+    ],
+    details: [
+      "Choosing the right motion type is a strategic decision, not just an administrative one. If a complex matter is brought as a Regular Motion, there may not be enough time to properly address the issues — leading to an unsatisfactory result or an adjournment. If an urgent situation is not recognized as such, the window to protect a client's interests may close before the motion is even heard.",
+      "Conversely, applying for a Long Motion when it is not needed adds scheduling delays and signals poor case management to the court.",
+      "Miao He has over 15 years of family litigation experience and appears at Newmarket Court every week. She knows <strong>when each type of motion is appropriate</strong> and how to make the strongest case within whichever format applies. Call <strong>647-930-6688</strong> to discuss your situation.",
+    ],
+    keywords:
+      "Regular Motion Newmarket Court,Long Motion Ontario family law,Urgent Motion family court,Newmarket Court motion types,Markham divorce motion,Richmond Hill family law motion,Chinese family lawyer Newmarket,Miao He lawyer",
+  },
+  {
+    slug: "newmarket-court-filing-deadline-requirements",
+    question: "Does Newmarket Court have special document filing requirements?",
+    featured: true,
+    metaTitle:
+      "Newmarket Court Document Filing Requirements | Miao He · Toronto Divorce Lawyer · Family Law",
+    metaDescription:
+      "Newmarket Court enforces strict filing deadlines. Miao He knows the procedural requirements and helps clients avoid delays caused by missed deadlines. Call 647-930-6688.",
+    pairedFaqPath: "/faq/newmarket-court-filing-deadline-requirements/",
+    summary:
+      "Yes. Newmarket Court enforces document filing deadlines strictly, and its requirements differ from other Ontario family courts. Missing a deadline can prevent a scheduled Conference from proceeding — delaying your case and potentially weakening your negotiating position at a critical moment.",
+    answers: [
+      "Newmarket Court has <strong>specific filing requirements for each stage of the proceeding</strong> — including what documents to file, in what format, and by when. These requirements reflect the court's local practice and are not always obvious from the general Ontario Family Law Rules alone.",
+      "Miss a deadline, and your scheduled Conference may not go ahead. That is not just an inconvenience — <strong>delays at key procedural moments can shift the balance of negotiations</strong> and push resolution further away.",
+    ],
+    details: [
+      "Many clients come to Miao He after a prior lawyer missed a Newmarket Court filing deadline, resulting in months of unnecessary delay. In some cases, the missed deadline meant losing a conference date that had taken weeks to schedule.",
+      "Miao He tracks every deadline proactively and ensures all materials are submitted on time and in the correct format. Her familiarity with <strong>Newmarket Court's specific procedural expectations</strong> — built from regular appearances — means she knows what the court expects before issues arise.",
+      "If you are concerned about how your current matter is being managed, or if you are starting a new file, call <strong>647-930-6688</strong> to speak with Miao He directly.",
+    ],
+    keywords:
+      "Newmarket Court filing deadline,Newmarket family court documents,Ontario family law filing requirements,Markham divorce lawyer,Richmond Hill family law,Chinese family lawyer Newmarket,Miao He lawyer",
+  },
+  {
+    slug: "newmarket-court-dro-conference-explained",
+    question: "What is a DRO Conference at Newmarket Court, and do I need one?",
+    featured: true,
+    metaTitle:
+      "What Is a DRO Conference at Newmarket Court? | Miao He · Toronto Divorce Lawyer · Family Law",
+    metaDescription:
+      "Miao He regularly handles DRO Conferences at Newmarket Court for Markham and Richmond Hill clients. Mandarin and English family law services. Call 647-930-6688.",
+    pairedFaqPath: "/faq/newmarket-court-dro-conference-explained/",
+    summary:
+      "A DRO Conference (Dispute Resolution Officer Conference) is a procedural step used at Newmarket Court, typically scheduled before a Case Conference. It is arranged directly between counsel — not by the court — and gives both sides an opportunity to narrow issues before formal proceedings. A lawyer unfamiliar with this practice may skip it entirely, which can disrupt the natural flow of your case.",
+    answers: [
+      "The DRO Conference is arranged <strong>directly between the lawyers for both parties</strong> — no court scheduling required. Its purpose is to bring the parties together with a neutral officer to identify common ground and reduce the issues heading into the Case Conference.",
+      "After the DRO Conference, the case may proceed to a Case Conference or directly to a Settlement Conference depending on progress. <strong>Lawyers who don't know Newmarket's local practice often skip this step</strong>, which can mean a less efficient path through the court process — at your expense.",
+    ],
+    details: [
+      "The DRO Conference is specific to Newmarket Court and is not a standard feature of all Ontario family courts. The DRO (Dispute Resolution Officer) is a neutral professional appointed by the court to help parties work through contested issues before a judge gets involved.",
+      "For an experienced lawyer, the DRO Conference is not just a procedural checkbox — it's a <strong>strategic opportunity</strong>. How you present your position, assess the other side's priorities, and set up the next stage can significantly influence the outcome of later proceedings.",
+      "Miao He attends a high volume of DRO Conferences at Newmarket Court each month and understands how to use this step effectively on behalf of her clients. Call <strong>647-930-6688</strong> to discuss your matter.",
+    ],
+    keywords:
+      "DRO Conference Newmarket Court,Dispute Resolution Officer Ontario,Newmarket family court procedure,Markham divorce conference,Richmond Hill family law conference,Chinese family lawyer Newmarket,Miao He lawyer",
+  },
+  {
+    slug: "markham-richmond-hill-divorce-court-location",
+    question: "If I live in Markham or Richmond Hill, which court handles my divorce?",
+    featured: true,
+    metaTitle:
+      "Which Court Handles Divorce in Markham & Richmond Hill? | Miao He · Toronto Divorce Lawyer · Family Law",
+    metaDescription:
+      "Miao He is a Chinese family lawyer with deep knowledge of Newmarket Court procedures. Mandarin and English services for Markham and Richmond Hill clients. Call 647-930-6688.",
+    pairedFaqPath: "/faq/markham-richmond-hill-divorce-court-location/",
+    summary:
+      "If you live in Markham or Richmond Hill, your family law case will be heard at <strong>Newmarket Court</strong> — one of Ontario's Unified Family Courts (UFC), where every judge handles family law exclusively. This creates more consistent, predictable outcomes compared to courts that mix family law with other matters.",
+    answers: [
+      "Newmarket Court is a <strong>Unified Family Court (UFC)</strong>, meaning all judges assigned to divorce and family law cases there deal exclusively with family law — no criminal cases, no civil litigation. Judges develop deep, consistent expertise in issues like property division, custody, and support.",
+      "For clients, this predictability is valuable. An experienced lawyer who appears regularly at Newmarket Court can <strong>anticipate how judges approach specific issues</strong> and build your strategy accordingly — something a lawyer unfamiliar with that courthouse simply cannot do.",
+    ],
+    details: [
+      "Markham and Richmond Hill fall within York Region, which means Newmarket Court has jurisdiction over your family law matter. Many people focus on a lawyer's reputation or price without asking a more important question: <strong>does this lawyer actually know Newmarket Court?</strong>",
+      "Newmarket Court has its own procedural expectations — including how DRO Conferences are arranged, document filing deadlines, and when to bring which type of motion. These differ from courts like Toronto or Scarborough. A lawyer unfamiliar with Newmarket's local practice can cost you months and money through avoidable procedural missteps.",
+      "Miao He appears at Newmarket Court regularly, with over 20 hours per month in Conferences and Motions. She brings firsthand knowledge of the court's rhythms, judicial tendencies, and procedural expectations. Call <strong>647-930-6688</strong> to book a consultation.",
+    ],
+    keywords:
+      "Markham divorce court,Richmond Hill divorce court,Newmarket Court family law,Unified Family Court Ontario,Markham divorce lawyer,Richmond Hill divorce lawyer,Chinese family lawyer Newmarket,Miao He lawyer",
+  },
 ];
 
 export function getFaqItemsEnForListing(): FaqItemEn[] {

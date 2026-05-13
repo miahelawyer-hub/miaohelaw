@@ -28,8 +28,15 @@ function formatSiteLastUpdatedEn(date: Date): string {
 	}).format(date);
 }
 
-/** Set once per static build (deploy); FAQ / blog heroes and other stamps stay in sync without manual edits. */
-const siteLastUpdatedBuildDate = new Date();
+/** Calendar "today" in Toronto for listing stamps (FAQ/blog heroes); avoids UTC build servers showing the wrong local date. */
+const torontoYmd = new Intl.DateTimeFormat('en-CA', {
+	timeZone: SITE_LAST_UPDATED_TZ,
+	year: 'numeric',
+	month: '2-digit',
+	day: '2-digit',
+}).format(new Date());
+const [tuY, tuM, tuD] = torontoYmd.split('-').map((s) => parseInt(s, 10));
+const siteLastUpdatedBuildDate = new Date(Date.UTC(tuY, tuM - 1, tuD, 12, 0, 0));
 
 export const SITE_LAST_UPDATED_ZH = formatSiteLastUpdatedZh(siteLastUpdatedBuildDate);
 export const SITE_LAST_UPDATED_EN = formatSiteLastUpdatedEn(siteLastUpdatedBuildDate);
