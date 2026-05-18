@@ -1,7 +1,7 @@
 ---
 
 title: "Ontario婚姻财产分割：NFP计算方法和华人家庭常见陷阱"
-description: "Ontario离婚财产分割基于净家庭财产（NFP）计算，不是简单平分。何淼律师详解NFP公式、婚前资产豁免、婚姻住所特殊规则，以及华人家庭最容易踩的陷阱。"
+description: "Ontario离婚财产分割基于净家庭财产（NFP）计算，而非简单平分。何淼律师详解NFP公式、婚前资产豁免条件、婚姻住所特殊规则，以及华人家庭最容易踩的财产分割陷阱。多伦多华人家庭法律师。647-930-6688。"
 pairedArticlePath: "/en/blog/net-family-property-ontario/"
 pubDate: 2026-04-09T17:00:00-05:00
 heroImage: ""

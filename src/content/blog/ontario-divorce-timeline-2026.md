@@ -1,7 +1,7 @@
 ---
 
 title: "Ontario 离婚需要多长时间？2026 年完整流程指南"
-description: "Ontario 离婚从分居到拿到 Divorce Order 需要多久？详解无争议离婚（4-8个月）、争议离婚（1-3年）的完整时间线、关键节点和常见拖延原因。"
+description: "Ontario离婚从分居到拿到Divorce Order需要多久？何淼律师详解无争议离婚（4-8个月）、争议离婚（1-3年）的完整时间线、关键程序节点和常见拖延原因，帮助华人客户合理规划离婚进程。647-930-6688。"
 pairedArticlePath: "/en/blog/ontario-divorce-timeline-2026/"
 pubDate: 2026-04-09T10:00:00-05:00
 heroImage: ""
