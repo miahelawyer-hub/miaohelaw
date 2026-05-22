@@ -19,7 +19,7 @@ tags:
   - "prenuptial-agreement-ontario"
 ---
 
-Many married couples register their matrimonial home as Tenancy in Common with unequal ownership shares — for example, 70% to one spouse and 30% to the other. Upon separation, it is a common misconception that the property will be divided according to these registered percentages. Under Ontario family law, this is incorrect.
+Many married couples take title to their matrimonial home as **tenants in common** with unequal shares — for example, 70% to one spouse and 30% to the other — rather than as joint tenants. Upon separation, it is a common misconception that the property will be divided according to these registered percentages. Under Ontario family law, this is incorrect.
 
 ## The Key Principle: Equalization of Net Family Property
 
