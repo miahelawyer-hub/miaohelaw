@@ -23,7 +23,7 @@ Many married couples take title to their matrimonial home as **tenants in common
 
 ## The Key Principle: Equalization of Net Family Property
 
-Under Ontario's Family Law Act, married spouses are subject to the Net Family Property (NFP) equalization regime. Property division is not based on title ownership percentages. Instead:
+Under Ontario's [*Family Law Act*](https://www.ontario.ca/laws/statute/90f03), married spouses are subject to the Net Family Property (NFP) equalization regime. Property division is not based on title ownership percentages. Instead:
 
 - Each spouse calculates their Net Family Property (NFP)
 - The difference between the two NFPs is determined
@@ -57,4 +57,4 @@ Ownership percentages on title only affect how Net Family Property is calculated
 
 The guiding principle under Ontario family law is that wealth accumulated during marriage should be shared equally between spouses.
 
-To opt out of equalization, spouses must enter into a valid Marriage Contract in accordance with the Family Law Act.
+To opt out of equalization, spouses must enter into a valid Marriage Contract in accordance with the [*Family Law Act*](https://www.ontario.ca/laws/statute/90f03).

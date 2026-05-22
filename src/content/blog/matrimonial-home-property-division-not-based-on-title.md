@@ -23,7 +23,7 @@ tags:
 
 ## 安省家庭法的核心：财产均等化（Equalization）
 
-根据安省《家庭法》（Family Law Act），已婚夫妻在离婚时适用净家庭财产均等化制度（Net Family Property, NFP Equalization）。
+根据安省[*《家庭法》（Family Law Act）*](https://www.ontario.ca/laws/statute/90f03)，已婚夫妻在离婚时适用净家庭财产均等化制度（Net Family Property, NFP Equalization）。
 
 财产分割并不是按照房产登记比例进行，而是：
 
@@ -59,4 +59,4 @@ tags:
 
 安省家庭法的基本原则是：婚姻期间积累的财富应在配偶之间均等分享，而不是按产权比例分配。
 
-如果夫妻希望排除均等化权利，需要在婚前或婚后签订婚姻协议（Marriage Contract），并符合《家庭法》法律要求。
+如果夫妻希望排除均等化权利，需要在婚前或婚后签订婚姻协议（Marriage Contract），并符合[*《家庭法》*](https://www.ontario.ca/laws/statute/90f03)相关法律要求。
