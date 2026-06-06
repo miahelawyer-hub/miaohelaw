@@ -1,10 +1,11 @@
 ---
 
 title: "Toronto Divorce Lawyer Fees Explained: From About $3,000 to $30,000 — What You Are Actually Paying For"
-description: "Uncontested divorce packages vs hourly billing in Ontario: six-minute units, court filing fees, tariff assessments, and retainers — why Toronto divorce lawyer costs vary so widely, and how to budget before you instruct counsel."
+description: "A clear breakdown of Toronto divorce lawyer fees: flat-fee packages vs. hourly billing, the 6-minute billing unit, court filing fees, refund of unused retainer, and what's actually in a retainer agreement — so you understand why costs range from about $3,000 to $30,000."
 pubDate: 2026-04-17T12:00:00-05:00
+updatedDate: 2026-06-05T12:00:00-05:00
 heroImage: ""
-keywords: "Toronto divorce lawyer fees,Ontario divorce lawyer cost,hourly family lawyer Ontario,uncontested divorce package Ontario,six minute billing lawyer,divorce court fees Ontario,retainer agreement family law,Markham Chinese family lawyer,GTA Mandarin divorce lawyer,affordable divorce lawyer Toronto,how much does a divorce lawyer cost Ontario,legal bill assessment Ontario,Miao He family lawyer,647-930-6688"
+keywords: "Toronto divorce lawyer fees, divorce lawyer cost Ontario, retainer agreement, hourly billing divorce lawyer, uncontested divorce cost, flat fee divorce Ontario, divorce lawyer agreement, Miao He lawyer, Chinese family lawyer Toronto"
 tags:
   - "chinese-family-lawyer"
   - "chinese-family-lawyer-gta"
@@ -27,6 +28,13 @@ relatedReading:
     line: If you worry about waste or hidden movement of family property, this article discusses risk from an evidence and procedure angle.
   - slug: separation-agreement-vs-divorce-ontario
     line: How separation agreements interact with the divorce process — relevant when you are weighing package work versus litigation-driven hourly fees.
+faqStructured:
+  - question: "How do Toronto divorce lawyers charge, and roughly how much?"
+    answer: "Mainly two ways: a flat fee (uncontested divorce about $2,000–$3,500, agreement drafting about $2,500–$4,500, plus HST and disbursements, with a fixed price stated in the retainer agreement), or hourly billing (used for contested or litigated matters, in 6-minute units). A limited retainer is also available, billed only for defined tasks."
+  - question: "What is the lawyer's agreement (retainer), and is unused retainer refunded?"
+    answer: "The lawyer's agreement usually means the Retainer Agreement, which sets the billing method, retainer, and refund terms. The retainer is drawn down as work is done; any unused portion is always returned, and even if you end the retainer partway, the balance is returned after deducting work already completed."
+  - question: "Why do divorce lawyer fees range from $3,000 to $30,000?"
+    answer: "It mainly depends on whether the matter is uncontested or proceeds to litigation, how much communication is involved, and how clear the litigation strategy is. Uncontested matters and agreements typically use a flat fee; contested cases are billed hourly, so the total varies with time invested."
 ---
 
 <div class="blog-tldr">
@@ -103,9 +111,26 @@ If motion timing, settlement windows, and risk–cost trade-offs are not thought
 
 ---
 
-## What is a retainer?
+## How Legal Fees and the Retainer Agreement Work Together
 
-A **retainer** is typically a **deposit held in trust** against future fees. Work is drawn against it according to your **retainer agreement**. Unused portions may be **refunded** depending on terms; if you **terminate the retainer**, refund treatment depends on work done and contract language — **read your agreement** and ask questions before you sign.
+When people search for a "divorce lawyer agreement," they usually want to know two things: **how the fees are charged, and what's actually written in the agreement they sign.** First, two different "agreements" worth separating:
+
+- **The Retainer Agreement** — the formal contract between you and your lawyer that sets the billing method, the retainer, and the refund terms. More on this below.
+- **A separation / divorce agreement** — a contract dealing with substantive issues like property and support. That's case content, not the lawyer's fee contract. Don't confuse the two.
+
+**On how fees are charged:**
+
+- **Flat fee (package):** Used for uncontested divorces and family agreements. My pricing is transparent — for example, an uncontested divorce runs about **$2,000–$3,500**, and agreement drafting (prenuptial / marriage / separation / cohabitation) about **$2,500–$4,500** (plus HST and disbursements). The retainer agreement states a fixed price, so you know the total upfront — and as long as the matter does not turn contested, there are no add-on bills within that flat fee.
+- **Hourly:** Used where a matter is contested or proceeds to litigation, billed in 6-minute units, varying with complexity and workload. Every document, court appearance, and email is recorded honestly, with no hidden charges.
+- **Limited Retainer:** If you are self-represented and only need help at key points — a specific document or a single court appearance — you can retain me for defined tasks only, billed by actual work, to keep costs under control.
+
+You can see full fee ranges on my [fees page](/en/pricing/).
+
+**On the retainer:**
+
+A retainer is essentially a prepaid deposit held in trust against legal fees, drawn down as work is done. **Any unused portion is always returned to you** — and even if you terminate the retainer partway through, the remaining balance is returned after deducting work already done. The terms of your signed retainer agreement govern.
+
+The way I work is this: **I only sign a retainer with you once you fully understand the agreement, where every dollar goes, and the legal process ahead.** I will not let any client be pushed forward without understanding what is happening — I hold to that on every file.
 
 ---
 
