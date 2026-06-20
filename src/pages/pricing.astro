@@ -2,7 +2,6 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { SITE_LAST_UPDATED_ZH } from '../consts';
 ---
 
 <!doctype html>
@@ -89,26 +88,42 @@ import { SITE_LAST_UPDATED_ZH } from '../consts';
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "何淼律师初次咨询收费是多少？",
+        "name": "离婚律师收费一般是多少？",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "初次咨询30分钟收费$220+HST，帮助您了解自身法律权利、案件走向及费用范围，没有委托义务。"
+          "text": "无争议离婚通常为 $2,000 至 $3,500 加 HST、法院费用及其他垫付费用。涉及诉讼的案件通常按小时计费，总费用取决于案件复杂程度及程序进展。"
         }
       },
       {
         "@type": "Question",
-        "name": "离婚案件的总费用大概是多少？",
+        "name": "初次咨询收费吗？",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Ontario离婚案件费用因复杂程度差异较大。无争议离婚通常$3,000至$8,000；有争议的财产或监护纠纷可能达$15,000至$50,000以上。何淼律师提供透明收费，咨询后提供书面预估。"
+          "text": "收费。30 分钟初次咨询费用为 $220 + HST。"
         }
       },
       {
         "@type": "Question",
-        "name": "何淼律师是否接受法律援助？",
+        "name": "是否可以先咨询再决定是否聘请律师？",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "何淼律师主要以自费方式收费，不提供法律援助服务。如预算有限，欢迎先预约咨询，共同评估最经济有效的处理方案。"
+          "text": "可以。很多客户会先通过初次咨询了解案件情况、费用范围及法律风险，然后再决定是否正式委托律师。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "如果案件提前结束，未使用的律师信托金会退还吗？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "会。根据 Law Society of Ontario 的要求，未使用的信托金属于客户资金，应当退还给客户。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "可以只委托律师处理部分工作吗？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "可以。Limited Retainer（有限委托）允许客户仅委托律师处理案件中的特定事项，而无需聘请律师全程代理。"
         }
       }
     ]
@@ -125,25 +140,79 @@ import { SITE_LAST_UPDATED_ZH } from '../consts';
       <div class="page-hero-inner">
         <div class="page-label">律师费用说明 · LEGAL FEES</div>
         <h1>收费透明，没有隐藏费用</h1>
-        <p>我相信客户在决定是否聘请律师之前，有权利了解大概的费用范围。以下是我的主要服务收费说明。所有费用均需另加 HST，部分服务另有 disbursements（垫付费用）。</p>
-        <p class="page-last-updated page-last-updated--warm">页面内容最后更新：{SITE_LAST_UPDATED_ZH}</p>
+        <p>何淼律师收费透明，没有隐藏费用。</p>
+        <p>初次咨询 $220 + HST，无争议离婚 $2,000 起，分居协议、婚前协议及其他家庭法协议起草 $2,500 起；争议性家庭法案件按小时计费，每 6 分钟为一个计费单元。</p>
+        <p>在正式签署委托协议之前，何淼律师会根据案件情况说明适用的收费方式、可能产生的费用以及预估费用范围，帮助客户充分了解成本与风险，并在完全知情的基础上决定是否聘请律师。</p>
+        <p class="page-last-updated page-last-updated--warm">页面最后更新：2026年6月19日</p>
       </div>
     </section>
 
     <section class="pricing-section">
+      <div class="pricing-inner fade-in-section">
+        <h2 class="section-subtitle section-subtitle--first">常见服务收费</h2>
+        <div class="pricing-table-wrap">
+          <table class="pricing-table">
+            <thead>
+              <tr>
+                <th scope="col">服务项目</th>
+                <th scope="col">收费标准</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>初次咨询（30分钟）</td>
+                <td>$220 + HST</td>
+              </tr>
+              <tr>
+                <td>无争议离婚</td>
+                <td>$2,000 – $3,500 + HST + Disbursements</td>
+              </tr>
+              <tr>
+                <td>分居协议、婚前协议、同居协议等</td>
+                <td>$2,500 – $4,500 + HST + Disbursements</td>
+              </tr>
+              <tr>
+                <td>家庭法诉讼</td>
+                <td>按小时计费</td>
+              </tr>
+              <tr>
+                <td>Limited Retainer（有限委托）</td>
+                <td>按实际工作量计费</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
       <div class="pricing-inner pricing-inner--consult">
         <div class="consult-intro-layout consult-intro-motion-root">
           <div class="consult-intro-content consult-intro-slide consult-intro-slide--left">
             <div class="pricing-card highlight">
-              <div class="pricing-tag">最常见的第一步</div>
               <h2>初次咨询</h2>
               <div class="pricing-amount">$220 <span>+ HST</span></div>
-              <div class="pricing-detail">30分钟 · 中英双语 · 面谈或视频均可</div>
-              <p>法律问题没有标准答案。在初次咨询中，我不只听案情，更会为你拆解全局。</p>
-              <p>我会为你揭开诉讼的迷雾，分析每一种可能的博弈策略——明确告知你诉讼的风险点、谈判的筹码，以及推进的最优路径。很多客户在咨询后告诉我，最让他们心安的是终于"看清了全局"。</p>
-              <p>我拒绝让客户在模糊中仓促进入诉讼。我的目标是确保你在掌握完整策略的基础上，做出最理智的选择。</p>
-              <p style="font-size:0.8rem; color:#9A8060;">咨询费按每6分钟一个计费单元收取，30分钟为一次完整咨询。</p>
-              <a href="tel:6479306688" class="btn-primary">📞 立即预约 647-930-6688</a>
+              <div class="pricing-detail">30分钟｜中文、英文｜面谈或视频会议</div>
+              <p>许多客户在联系律师时最关心的问题是：</p>
+              <div class="pricing-includes pricing-includes--dark">
+                <ul>
+                  <li>我的案件有没有胜算？</li>
+                  <li>应该协商还是起诉？</li>
+                  <li>大概需要花多少钱？</li>
+                  <li>接下来会经历哪些程序？</li>
+                </ul>
+              </div>
+              <p>初次咨询的目的不仅是了解案情，更是帮助你了解自己的法律处境、潜在风险以及可行方案。</p>
+              <p>咨询过程中，何淼律师将：</p>
+              <div class="pricing-includes pricing-includes--dark">
+                <ul>
+                  <li>分析案件情况及法律问题</li>
+                  <li>解释法院程序及时间线</li>
+                  <li>讨论诉讼与和解方案的利弊</li>
+                  <li>提供初步费用预估</li>
+                  <li>回答你最关心的法律问题</li>
+                </ul>
+              </div>
+              <p>很多客户在咨询结束后最大的收获，并不是获得某一个具体答案，而是终于看清案件的整体方向，以及下一步应该如何规划。</p>
+              <a href="tel:6479306688" class="btn-primary">📞 647-930-6688</a>
             </div>
           </div>
           <div class="consult-intro-visual consult-intro-slide consult-intro-slide--right">
@@ -154,131 +223,200 @@ import { SITE_LAST_UPDATED_ZH } from '../consts';
         </div>
       </div>
 
-      <div class="fade-in-section">
-      <div class="pricing-banner" aria-labelledby="fixed-fee-banner-title-zh">
-        <div class="pricing-banner-bg" aria-hidden="true"></div>
-        <div class="pricing-banner-overlay" aria-hidden="true"></div>
-        <div class="pricing-banner-inner">
-          <h2 id="fixed-fee-banner-title-zh" class="section-subtitle section-subtitle--on-banner">固定费用服务</h2>
-        </div>
-      </div>
-
-      <div class="pricing-inner">
-        <p class="section-note">以下服务提供固定费用范围，费用因案件具体情况而有所不同。所有费用均需另加 HST 及 disbursements。</p>
-
-        <div class="pricing-grid">
-
-          <div class="pricing-card">
-            <h3>无争议离婚</h3>
-            <div class="pricing-amount-sm">$2,000 – $3,500 <span>+ HST + disbursements</span></div>
-            <p>适用于双方就离婚条件已达成一致的情况。我们不是只负责起草文件就完事的律师——从文件准备到法院递交，到主动跟进法院处理进度，直到你拿到离婚证，全程由我们负责，不需要你自己去追。</p>
-            <p>只要双方保持配合、中途没有变成争议离婚，固定费用内不会产生额外收费。你不需要担心中途被追加账单。</p>
-            <div class="pricing-includes">
-              <div class="includes-title">全程包含：</div>
-              <ul>
-                <li>审查双方协议内容，确认符合法律要求</li>
-                <li>准备并递交所有法院文件</li>
-                <li>主动跟进法院处理进度，无需客户自行追踪</li>
-                <li>取得离婚令（Divorce Order）及离婚证（Divorce Certificate）</li>
-              </ul>
-            </div>
-            <div class="pricing-note">⚠️ 如对方中途不配合或案件演变为争议离婚，费用另行讨论。</div>
-          </div>
-
-          <div class="pricing-card">
-            <h3>协议起草</h3>
-            <div class="pricing-amount-sm">$2,500 – $4,500 <span>+ HST + disbursements</span></div>
-            <p>适用于需要起草婚前协议、婚内协议、分居协议或同居协议的情况。我以诉讼律师的视角起草协议，预判漏洞，确保协议具有法律效力。</p>
-            <div class="pricing-includes">
-              <div class="includes-title">包含：</div>
-              <ul>
-                <li>全面了解双方财务状况及诉求</li>
-                <li>起草完整协议文本</li>
-                <li>协助完成签署程序（ILA）</li>
-              </ul>
-            </div>
-            <div class="pricing-note">✅ 3个月内完成签署，不额外收费。超出部分按时间计费。</div>
-          </div>
-
-        </div>
-
-      </div>
-      </div>
-
       <div class="pricing-inner fade-in-section">
-        <h2 class="section-subtitle">诉讼代理</h2>
-
+        <h2 class="section-subtitle">无争议离婚</h2>
         <div class="pricing-card">
-          <h3>家庭法诉讼全程代理</h3>
-          <div class="pricing-amount-sm">按小时计费 <span>每6分钟为一计费单元</span></div>
-          <p>适用于争议性离婚、财产分割、子女监护权争夺、配偶赡养费、跨境资产追索等需要在法院进行的案件。</p>
-          <p>费用因案件复杂程度、庭审频率及所需工作量而异。每一份文件、每一次上庭、每一封邮件都会如实记录在账单中，不设隐藏收费。</p>
+          <div class="pricing-amount-sm">$2,000 – $3,500 <span>+ HST + Disbursements</span></div>
+          <p>适用于双方已经就离婚相关问题达成一致，仅需办理离婚手续的情况。</p>
+          <p>与部分仅负责准备文件的律师不同，我们会持续跟进案件直至离婚程序完成。</p>
           <div class="pricing-includes">
-            <div class="includes-title">计费范围包括：</div>
+            <div class="includes-title">服务内容包括：</div>
             <ul>
-              <li>法庭出席及庭前准备</li>
-              <li>动议文件起草及答辩</li>
-              <li>与对方律师的沟通协商</li>
-              <li>调解及庭外和解谈判</li>
-              <li>客户沟通及法律意见</li>
+              <li>审查双方协议内容</li>
+              <li>准备并递交法院文件</li>
+              <li>跟进法院处理进度</li>
+              <li>取得 Divorce Order</li>
+              <li>协助申请 Divorce Certificate</li>
             </ul>
           </div>
+          <div class="pricing-includes" style="margin-top: 0.75rem;">
+            <div class="includes-title">固定收费的前提</div>
+            <p style="margin-bottom: 0;">在双方持续配合且案件未转为争议案件的情况下，固定费用范围内不会产生额外律师费。</p>
+            <p style="margin-bottom: 0; margin-top: 0.5rem;">如案件性质发生变化，例如一方拒绝配合、出现新的争议或需要额外程序，相关费用将提前与客户沟通。</p>
+          </div>
         </div>
-
       </div>
 
       <div class="pricing-inner fade-in-section">
-        <h2 class="section-subtitle">Limited Retainer · 有限委托</h2>
-
+        <h2 class="section-subtitle">分居协议、婚前协议及其他家庭法协议</h2>
         <div class="pricing-card">
-          <h3>什么是 Limited Retainer？</h3>
+          <div class="pricing-amount-sm">$2,500 – $4,500 <span>+ HST + Disbursements</span></div>
+          <p>适用于：</p>
+          <div class="pricing-includes">
+            <ul>
+              <li>Separation Agreement（分居协议）</li>
+              <li>Prenuptial Agreement（婚前协议）</li>
+              <li>Marriage Contract（婚内协议）</li>
+              <li>Cohabitation Agreement（同居协议）</li>
+            </ul>
+          </div>
+          <p>协议的价值不在于签字当天，而在于几年后甚至十几年后出现争议时是否能够经受法院审查。</p>
+          <p>作为家庭法诉讼律师，何淼律师会从未来潜在争议的角度审查协议内容，尽可能降低协议被挑战或撤销的风险。</p>
+          <div class="pricing-includes">
+            <div class="includes-title">服务内容包括：</div>
+            <ul>
+              <li>了解双方财务状况及需求</li>
+              <li>提供法律建议</li>
+              <li>起草协议文本</li>
+              <li>修改及协商条款</li>
+              <li>协助完成签署程序</li>
+              <li>协调 Independent Legal Advice（ILA）安排</li>
+            </ul>
+          </div>
+          <div class="pricing-note">✅ 协议在起草后 3 个月内完成签署，不额外收取律师费。</div>
+        </div>
+      </div>
+
+      <div class="pricing-inner fade-in-section">
+        <h2 class="section-subtitle">家庭法诉讼</h2>
+        <div class="pricing-card">
+          <div class="pricing-amount-sm">按小时计费</div>
+          <p>适用于：</p>
+          <div class="pricing-includes">
+            <ul>
+              <li>争议离婚</li>
+              <li>财产分割</li>
+              <li>子女监护及决策责任</li>
+              <li>抚养时间安排</li>
+              <li>子女抚养费</li>
+              <li>配偶赡养费</li>
+              <li>家暴相关程序</li>
+              <li>跨境家庭法纠纷</li>
+              <li>海外资产追索</li>
+            </ul>
+          </div>
+          <p>家庭法诉讼案件无法采用统一固定收费模式。</p>
+          <p>案件费用取决于：</p>
+          <div class="pricing-includes">
+            <ul>
+              <li>争议复杂程度</li>
+              <li>对方配合程度</li>
+              <li>法庭程序数量</li>
+              <li>文件准备工作量</li>
+              <li>是否需要庭审</li>
+            </ul>
+          </div>
+          <div class="pricing-includes" style="margin-top: 0.75rem;">
+            <div class="includes-title">计费方式</div>
+            <p style="margin-bottom: 0.5rem;">律师费按时间计费。每 6 分钟为一个计费单元。</p>
+            <p style="margin-bottom: 0.5rem;">计费工作包括：</p>
+            <ul>
+              <li>法律研究</li>
+              <li>文件起草</li>
+              <li>法庭出席</li>
+              <li>庭前准备</li>
+              <li>与对方律师沟通</li>
+              <li>调解及和解谈判</li>
+              <li>客户会议</li>
+              <li>电话及邮件沟通</li>
+              <li>文件审阅</li>
+            </ul>
+          </div>
+          <p>所有工作时间均会记录并反映在账单中，不设隐藏收费。</p>
+        </div>
+      </div>
+
+      <div class="pricing-inner fade-in-section">
+        <h2 class="section-subtitle">Limited Retainer（有限委托）</h2>
+        <div class="pricing-card">
           <div class="pricing-amount-sm">按实际工作量计费</div>
-          <p>Limited Retainer（有限委托）是指客户不将整个案件全权交给律师，而是只委托律师处理案件中的特定事项。委托协议会明确列出代理范围，代理事项完成后，委托自动终止。</p>
+          <p>Limited Retainer（有限委托）是指律师仅处理案件中的特定事项，而非代理整个案件。</p>
           <p>适合以下情况：</p>
           <div class="pricing-includes">
             <ul>
-              <li>客户选择自行代理（Self-represented），但需要律师协助准备特定文件或走法庭程序</li>
-              <li>客户需要律师出席某一次庭审或会议，但不需要全程代理</li>
-              <li>客户需要律师审查对方提交的文件或协议，提供书面法律意见</li>
-              <li>案件已进入尾声，只需要律师协助完成最后的法律程序</li>
+              <li>自行代理（Self-Represented Litigant）</li>
+              <li>仅需要律师审查文件</li>
+              <li>仅需要法律意见</li>
+              <li>仅需要起草法庭文件</li>
+              <li>仅需要律师出席某次庭审</li>
+              <li>案件已接近结束，仅需完成特定程序</li>
             </ul>
           </div>
-          <p>有限委托让客户在控制费用的同时，在关键节点获得专业的法律支持。如果你正在考虑自行代理但不确定某些步骤，欢迎咨询是否适合这种安排。</p>
+          <p>有限委托可以帮助客户在控制法律费用的同时，在关键环节获得专业法律支持。</p>
+          <p>如你正在考虑自行代理但不确定如何推进案件，欢迎咨询是否适合有限委托服务。</p>
         </div>
-
       </div>
 
       <div class="pricing-inner fade-in-section">
         <h2 class="section-subtitle">关于 Disbursements（垫付费用）</h2>
-
         <div class="pricing-card">
-          <p>Disbursements 是律师在处理案件过程中代客户垫付的第三方费用，与律师费分开计算，在账单中单独列明。</p>
+          <p>Disbursements 是律师代客户支付的第三方费用，与律师费分开计算，并在账单中单独列明。</p>
           <div class="pricing-includes">
-            <div class="includes-title">安省法院官方收费（Ontario Superior Court of Justice）</div>
+            <div class="includes-title">安省法院收费</div>
+            <p style="margin-bottom: 0.5rem;">目前常见法院收费包括：</p>
             <ul>
-              <li>申请书归档费（Application filing）— <strong>$224</strong></li>
-              <li>离婚宣誓书归档费（Affidavit for Divorce filing）— <strong>$445</strong></li>
-              <li>离婚证书申请费（Divorce Certificate）— <strong>$25</strong></li>
+              <li>Divorce Application Filing Fee：<strong>$224</strong></li>
+              <li>Divorce Order Fee：<strong>$445</strong></li>
+              <li>Divorce Certificate：<strong>$25</strong></li>
             </ul>
           </div>
+          <p>以上费用由法院收取，与律师费无关。法院收费标准可能发生调整，具体以法院最新公布标准为准。</p>
           <div class="pricing-includes" style="margin-top: 0.75rem;">
             <div class="includes-title">其他常见 Disbursements</div>
             <ul>
-              <li>送达费用（Process Server）</li>
-              <li>文件公证及认证费</li>
-              <li>专家报告费（如企业估值 CBV、财务评估）</li>
+              <li>Process Server（送达费）</li>
+              <li>公证及认证费用</li>
               <li>翻译及口译费用</li>
+              <li>企业估值报告费用</li>
+              <li>财务专家报告费用</li>
+              <li>政府查询费用</li>
+              <li>快递及邮寄费用</li>
             </ul>
           </div>
-          <p>以上法院收费为安省现行标准，如有调整以法院公告为准。所有 disbursements 均会在账单中如实列明，不会有任何隐藏收费。</p>
+          <p>所有 Disbursements 均会在账单中单独列明，不会产生任何隐藏收费。</p>
         </div>
+      </div>
 
+      <div class="pricing-inner fade-in-section">
+        <h2 class="section-subtitle">常见问题（FAQ）</h2>
+        <div class="pricing-faq">
+          <div class="pricing-faq-item">
+            <h3 class="pricing-faq-q">离婚律师收费一般是多少？</h3>
+            <p class="pricing-faq-a">无争议离婚通常为 $2,000 至 $3,500 加 HST、法院费用及其他垫付费用。涉及诉讼的案件通常按小时计费，总费用取决于案件复杂程度及程序进展。</p>
+          </div>
+          <div class="pricing-faq-item">
+            <h3 class="pricing-faq-q">初次咨询收费吗？</h3>
+            <p class="pricing-faq-a">收费。30 分钟初次咨询费用为 $220 + HST。</p>
+          </div>
+          <div class="pricing-faq-item">
+            <h3 class="pricing-faq-q">是否可以先咨询再决定是否聘请律师？</h3>
+            <p class="pricing-faq-a">可以。很多客户会先通过初次咨询了解案件情况、费用范围及法律风险，然后再决定是否正式委托律师。</p>
+          </div>
+          <div class="pricing-faq-item">
+            <h3 class="pricing-faq-q">如果案件提前结束，未使用的律师信托金会退还吗？</h3>
+            <p class="pricing-faq-a">会。根据 Law Society of Ontario 的要求，未使用的信托金属于客户资金，应当退还给客户。</p>
+          </div>
+          <div class="pricing-faq-item">
+            <h3 class="pricing-faq-q">可以只委托律师处理部分工作吗？</h3>
+            <p class="pricing-faq-a">可以。Limited Retainer（有限委托）允许客户仅委托律师处理案件中的特定事项，而无需聘请律师全程代理。</p>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="page-cta fade-in-section">
-      <h2>有费用相关问题？</h2>
-      <p>每个案件情况不同。欢迎预约初次咨询，我会根据你的具体情况给出费用估算。</p>
+      <h2>收费透明承诺</h2>
+      <p>何淼律师认为，客户有权在聘请律师之前了解可能产生的费用及风险。</p>
+      <p>在正式签署委托协议之前，何淼律师会：</p>
+      <ul class="page-cta-list">
+        <li>了解案件情况</li>
+        <li>解释收费方式</li>
+        <li>说明可能产生的费用</li>
+        <li>提供合理费用预估</li>
+        <li>讨论不同处理方案对应的成本差异</li>
+      </ul>
+      <p>律师的职责不仅是提供法律服务，更是帮助客户在了解成本、风险及收益的基础上做出理性决策。</p>
+      <p><strong>收费透明，沟通清晰，不设隐藏费用。</strong></p>
       <div class="cta-actions">
         <a href="tel:6479306688" class="btn-primary" style="width:240px;height:52px;display:inline-flex;align-items:center;justify-content:center;background:#7A5A1A;color:#FDFBF7;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:600;border:2px solid #7A5A1A;box-sizing:border-box;margin:0;">📞 647-930-6688</a>
         <a href="mailto:miao@miaohelaw.ca" class="btn-secondary" style="width:240px;height:52px;display:inline-flex;align-items:center;justify-content:center;background:#FFFFFF;color:#7A5A1A;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:600;border:2px solid #7A5A1A;box-sizing:border-box;margin:0;">miao@miaohelaw.ca</a>
@@ -393,7 +531,7 @@ import { SITE_LAST_UPDATED_ZH } from '../consts';
   .page-label { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: #9A8060; margin-bottom: 1rem; }
   .pricing-section { padding: 5.5rem 2rem 6rem; }
   .pricing-inner { max-width: 920px; margin: 0 auto; }
-  .pricing-inner--consult { max-width: 1080px; }
+  .pricing-inner--consult { max-width: 1080px; margin-top: 3.5rem; }
   .consult-intro-layout {
     display: flex;
     flex-direction: column;
@@ -485,6 +623,7 @@ import { SITE_LAST_UPDATED_ZH } from '../consts';
     padding-bottom: 0.75rem;
     border-bottom: 2px solid #EDE8DF;
   }
+  .section-subtitle--first { margin-top: 0; }
   .section-subtitle--on-banner {
     margin: 0;
     padding: 0;
@@ -509,6 +648,64 @@ import { SITE_LAST_UPDATED_ZH } from '../consts';
   .includes-title { font-size: 0.8rem; font-weight: 600; color: #7A5A1A; margin-bottom: 0.5rem; }
   .pricing-includes ul { margin: 0; padding-left: 1.25rem; }
   .pricing-includes li { font-size: 0.85rem; color: #4A3A2A; line-height: 1.8; }
+  .pricing-includes--dark { background: rgba(255, 255, 255, 0.06); }
+  .pricing-includes--dark .includes-title { color: #FAC775; }
+  .pricing-includes--dark li { color: #e8e2d9; }
+  .pricing-table-wrap { overflow-x: auto; margin-bottom: 0.5rem; }
+  .pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    background: #FDFBF7;
+    border: 1px solid #EDE8DF;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .pricing-table th,
+  .pricing-table td {
+    padding: 0.85rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #EDE8DF;
+    vertical-align: top;
+  }
+  .pricing-table th {
+    background: #F5EFE0;
+    color: #7A5A1A;
+    font-weight: 600;
+    font-size: 0.82rem;
+  }
+  .pricing-table tr:last-child td { border-bottom: none; }
+  .pricing-table td:last-child { color: #4A3A2A; }
+  .pricing-faq { display: flex; flex-direction: column; gap: 1rem; }
+  .pricing-faq-item {
+    background: #FDFBF7;
+    border: 1px solid #EDE8DF;
+    border-radius: 8px;
+    padding: 1.25rem 1.5rem;
+    border-left: 4px solid #7A5A1A;
+  }
+  .pricing-faq-q {
+    font-family: 'Georgia', serif;
+    font-size: 1.05rem;
+    font-weight: 400;
+    color: var(--text-heading);
+    margin-bottom: 0.5rem;
+  }
+  .pricing-faq-a {
+    font-size: 0.9rem;
+    color: #4A3A2A;
+    line-height: 1.8;
+    margin: 0;
+  }
+  .page-cta-list {
+    text-align: left;
+    max-width: 420px;
+    margin: 0 auto 1rem;
+    padding-left: 1.25rem;
+    color: #6B5A3A;
+    font-size: 0.9rem;
+    line-height: 1.8;
+  }
   .pricing-note { font-size: 0.82rem; color: #6B5A3A; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: rgba(122,90,26,0.06); border-radius: 4px; }
   .pricing-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-bottom: 1.25rem; }
   .btn-primary { display: inline-flex; align-items: center; justify-content: center; width: 240px; height: 52px; background: #7A5A1A; color: #FDFBF7; border-radius: 8px; text-decoration: none; font-size: 0.9rem; font-weight: 600; border: 2px solid #7A5A1A; box-sizing: border-box; margin: 0; }
@@ -533,5 +730,7 @@ import { SITE_LAST_UPDATED_ZH } from '../consts';
     .page-hero--pricing h1 { font-size: 1.75rem; }
     .pricing-card { padding: 1.5rem; }
     .pricing-banner { margin-top: 2.5rem; min-height: 220px; }
+    .pricing-table th,
+    .pricing-table td { padding: 0.65rem 0.75rem; font-size: 0.82rem; }
   }
 </style>
