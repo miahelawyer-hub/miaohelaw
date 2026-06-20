@@ -2,268 +2,249 @@
 import BaseHead from '../../components/BaseHead.astro';
 import HeaderEn from '../../components/HeaderEn.astro';
 import Footer from '../../components/Footer.astro';
-import { SITE_LAST_UPDATED_EN } from '../../consts';
 ---
 <!doctype html>
 <html lang="en">
 <head>
   <BaseHead
-    title="Ontario Family Law Legal Fees | Divorce Lawyer Transparent Pricing | Markham Toronto | Miao He"
-    description="Transparent legal fees by Miao He: initial consultation $220+HST, uncontested divorce from $2,000, agreement drafting from $2,500. Hourly billing in 6-minute units. 647-930-6688."
+    title="Ontario Family Law Fees | Legal Fee Schedule | Miao He Lawyer"
+    description="Ontario family law legal fees: $220+HST consultation, uncontested divorce $2,000–$3,500, separation & prenuptial agreement drafting $2,500–$4,500. Markham & Toronto family lawyer. 647-930-6688."
   />
-  <meta name="keywords" content="Ontario family lawyer fees,divorce lawyer Toronto cost,uncontested divorce Ontario price,separation agreement lawyer fee,prenuptial agreement lawyer Ontario,Chinese family lawyer Toronto fees,Miao He lawyer fees" />
-  <meta property="og:title" content="Legal Fees | Miao He — Ontario Family Law Lawyer" />
+  <meta name="keywords" content="Ontario family lawyer fees,divorce lawyer Toronto cost,uncontested divorce Ontario price,separation agreement lawyer fee,prenuptial agreement lawyer Ontario,Chinese family lawyer Toronto fees,Miao He lawyer fees,limited retainer family lawyer,hourly billing family lawyer Ontario" />
+  <meta property="og:title" content="Ontario Family Law Fees | Legal Fees — Miao He" />
+  <meta property="og:description" content="Ontario family law fees: consultation, uncontested divorce, and agreement drafting. Transparent pricing for Markham & Toronto. 647-930-6688." />
   <meta property="og:type" content="website" />
   <link rel="alternate" hreflang="zh" href="https://www.miaohelaw.ca/pricing/" />
   <link rel="alternate" hreflang="en" href="https://www.miaohelaw.ca/en/pricing/" />
-  <script type="application/ld+json">{
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "@id": "https://www.miaohelaw.ca/#lawfirm",
+    "name": "Miao He (何淼) — Ontario Family Law Lawyer",
+    "url": "https://www.miaohelaw.ca/en/",
+    "telephone": "+1-647-930-6688",
+    "priceRange": "$$",
+    "areaServed": "Ontario, Canada",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Legal service fees",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Initial consultation",
+            "description": "30-minute initial legal consultation in Mandarin or English, in person or by video."
+          },
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "price": "220",
+            "priceCurrency": "CAD"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Uncontested divorce",
+            "description": "Where both parties agree on divorce terms, Miao He assists with all legal documents and court applications."
+          },
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": "2000",
+            "maxPrice": "3500",
+            "priceCurrency": "CAD"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Agreement drafting",
+            "description": "Professional drafting of prenuptial, separation, and cohabitation agreements; no extra fee if signed within 3 months."
+          },
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": "2500",
+            "maxPrice": "4500",
+            "priceCurrency": "CAD"
+          }
+        }
+      ]
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      {"@type":"ListItem","position":1,"name":"Home","item":"https://www.miaohelaw.ca/en/"},
-      {"@type":"ListItem","position":2,"name":"Pricing","item":"https://www.miaohelaw.ca/en/pricing/"}
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.miaohelaw.ca/en/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Pricing",
+        "item": "https://www.miaohelaw.ca/en/pricing/"
+      }
     ]
-  }</script>
-  <script type="application/ld+json">{
+  }
+  </script>
+  <script type="application/ld+json">
+  {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "How much is an initial consultation with Miao He?",
-        "acceptedAnswer": {"@type": "Answer", "text": "An initial 30-minute consultation is $220 + HST. It gives you a clear picture of your legal rights, the likely direction of your case, and a realistic fee range — with no obligation to retain."}
+        "name": "How much does a divorce lawyer typically charge?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Generally, an uncontested divorce is typically $2,000 to $3,500 plus HST, court fees, and disbursements. Contested matters are usually billed hourly, and total fees vary depending on complexity and how the case progresses."
+        }
       },
       {
         "@type": "Question",
-        "name": "How much does a divorce cost in Ontario?",
-        "acceptedAnswer": {"@type": "Answer", "text": "It depends significantly on complexity. An uncontested divorce typically ranges from $3,000 to $8,000. A contested matter involving property or custody can range from $15,000 to $50,000 or more. Miao He provides a written fee estimate after the initial consultation."}
+        "name": "Is the initial consultation fee charged?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Generally, yes. The 30-minute initial consultation is $220 + HST. There is no obligation to retain counsel afterward."
+        }
       },
       {
         "@type": "Question",
-        "name": "Does Miao He accept Legal Aid?",
-        "acceptedAnswer": {"@type": "Answer", "text": "Miao He primarily accepts privately-retained clients and does not provide Legal Aid services. If budget is a concern, we encourage you to book a consultation to explore the most cost-effective approach for your situation."}
+        "name": "Can I consult first before deciding whether to hire a lawyer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Typically, yes. Many clients use an initial consultation to understand their situation, likely fee ranges, and legal risks before deciding whether to formally retain a lawyer."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "If the matter ends early, will unused legal fees be refunded?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Under Law Society of Ontario rules, generally any unused portion of a prepaid retainer deposit — after deducting fees for work already completed — is typically returned to the client. The exact process depends on your retainer agreement and LSO requirements."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I retain a lawyer for only part of the work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Generally, yes. A Limited Retainer typically allows you to retain counsel for specific tasks only, without full-case representation. The scope is set out in the Retainer Agreement."
+        }
       }
     ]
-  }</script>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: Georgia, serif; background: var(--bg); color: var(--text-primary); }
-    a { color: inherit; text-decoration: none; }
-    .page-hero { border-bottom: 1px solid rgba(0, 0, 0, 0.35); text-align: center; }
-    .page-hero--pricing {
-      position: relative;
-      min-height: 400px;
-      padding: 3rem 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://www.miaohelaw.ca/en/pricing/",
+    "url": "https://www.miaohelaw.ca/en/pricing/",
+    "name": "Ontario Family Law Fees | Pricing",
+    "description": "Ontario family law legal service fees including consultation, uncontested divorce, and agreement drafting.",
+    "inLanguage": "en",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Miao He — Ontario Family Law Lawyer",
+      "url": "https://www.miaohelaw.ca/en/"
+    },
+    "about": {
+      "@id": "https://www.miaohelaw.ca/#lawfirm"
     }
-    .page-hero-bg {
-      position: absolute;
-      inset: 0;
-      background: url('/images/consultation.png') center / cover no-repeat;
-      transform: scale(1.02);
-      z-index: 0;
-    }
-    .page-hero-overlay {
-      position: absolute;
-      inset: 0;
-      z-index: 1;
-      background:
-        linear-gradient(165deg, rgba(22, 18, 14, 0.82) 0%, rgba(36, 28, 20, 0.76) 50%, rgba(16, 12, 10, 0.88) 100%);
-    }
-    .page-hero-inner {
-      position: relative;
-      z-index: 2;
-      max-width: 760px;
-      margin: 0 auto;
-    }
-    .page-hero--pricing .page-label { color: rgba(232, 201, 164, 0.95); text-shadow: 0 1px 8px rgba(0, 0, 0, 0.45); }
-    .page-hero--pricing h1 {
-      font-size: 2.25rem;
-      font-weight: 400;
-      margin-bottom: 1rem;
-      color: #FDFBF7;
-      text-shadow: 0 2px 20px rgba(0, 0, 0, 0.55), 0 1px 3px rgba(0, 0, 0, 0.45);
-    }
-    .page-hero--pricing p {
-      font-size: 0.9rem;
-      line-height: 1.8;
-      max-width: 640px;
-      margin: 0 auto;
-      color: rgba(255, 255, 255, 0.9);
-      text-shadow: 0 1px 12px rgba(0, 0, 0, 0.4);
-    }
-    .page-hero--pricing .page-last-updated { color: rgba(255, 255, 255, 0.72) !important; }
-    .page-label { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: #9A8060; margin-bottom: 1rem; }
-    .pricing-section { padding: 5.5rem 2rem 6rem; }
-    .pricing-inner { max-width: 920px; margin: 0 auto; }
-    .pricing-inner--consult { max-width: 1080px; }
-    .consult-intro-layout {
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-      align-items: stretch;
-      margin-bottom: 1rem;
-    }
-    .consult-intro-visual { order: -1; }
-    .consult-intro-visual-frame {
-      border-radius: 16px;
-      overflow: hidden;
-      border: 1px solid rgba(237, 232, 223, 0.35);
-      box-shadow: 0 16px 48px rgba(44, 36, 24, 0.18);
-      min-height: 240px;
-      height: 100%;
-      max-height: 420px;
-    }
-    .consult-intro-visual-frame img {
-      width: 100%;
-      height: 100%;
-      min-height: 240px;
-      object-fit: cover;
-      display: block;
-    }
-    .consult-intro-slide {
-      opacity: 0;
-      transition: transform 0.7s ease-out, opacity 0.7s ease-out;
-    }
-    .consult-intro-slide--left {
-      transform: translateX(-80px);
-    }
-    .consult-intro-slide--right {
-      transform: translateX(80px);
-    }
-    .consult-intro-motion-root.consult-intro-visible .consult-intro-slide--left,
-    .consult-intro-motion-root.consult-intro-visible .consult-intro-slide--right {
-      opacity: 1;
-      transform: translateX(0);
-    }
-    @media (min-width: 900px) {
-      .consult-intro-layout {
-        display: grid;
-        grid-template-columns: 1fr minmax(280px, 40%);
-        gap: 2.25rem;
-        align-items: stretch;
-      }
-      .consult-intro-visual { order: unset; }
-      .consult-intro-visual-frame { max-height: none; min-height: 100%; }
-    }
-    .pricing-banner {
-      position: relative;
-      width: 100vw;
-      margin-left: calc(50% - 50vw);
-      margin-right: calc(50% - 50vw);
-      min-height: 250px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: 3.5rem;
-      margin-bottom: 2.25rem;
-      overflow: hidden;
-    }
-    .pricing-banner-bg {
-      position: absolute;
-      inset: 0;
-      background: url('/images/pen-document.png') center / cover no-repeat;
-      z-index: 0;
-    }
-    .pricing-banner-overlay {
-      position: absolute;
-      inset: 0;
-      z-index: 1;
-      background: linear-gradient(180deg, rgba(24, 18, 14, 0.45) 0%, rgba(18, 14, 11, 0.62) 100%);
-    }
-    .pricing-banner-inner {
-      position: relative;
-      z-index: 2;
-      padding: 2rem 1.5rem;
-      text-align: center;
-      max-width: 920px;
-      margin: 0 auto;
-    }
-    .section-subtitle { font-size: 1.5rem; font-weight: 400; color: var(--text-heading); margin: 4rem 0 0.5rem; padding-bottom: 0.75rem; border-bottom: 2px solid #EDE8DF; }
-    .section-subtitle--on-banner {
-      margin: 0;
-      padding: 0;
-      border-bottom: none;
-      color: #FDFBF7;
-      text-shadow: 0 2px 28px rgba(0, 0, 0, 0.55), 0 1px 4px rgba(0, 0, 0, 0.45);
-    }
-    .section-note { font-size: 0.85rem; color: #9A8060; margin-bottom: 1.5rem; }
-    .pricing-card { background: #FDFBF7; border: 1px solid #EDE8DF; border-radius: 8px; padding: 2rem; margin-bottom: 1.25rem; border-left: 4px solid #7A5A1A; }
-    .pricing-card.highlight { border-left-color: #FAC775; background: #2C2418; }
-    .pricing-card.highlight h2 { color: #F0E6D3; font-weight: 400; font-size: 1.5rem; margin-bottom: 0.5rem; }
-    .pricing-card.highlight p { color: #e8e2d9; font-size: 0.9rem; line-height: 1.8; }
-    .pricing-tag { font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: #9A8060; margin-bottom: 0.75rem; }
-    .pricing-amount { font-size: 2.5rem; color: #F0E6D3; margin-bottom: 0.25rem; }
-    .pricing-amount span { font-size: 1rem; color: #9A8060; }
-    .pricing-detail { font-size: 0.8rem; color: #9A8060; margin-bottom: 1.25rem; }
-    .pricing-card h3 { font-size: 1.25rem; font-weight: 400; color: var(--text-heading); margin-bottom: 0.5rem; }
-    .pricing-amount-sm { font-size: 1.1rem; font-weight: 600; color: #7A5A1A; margin-bottom: 1rem; }
-    .pricing-amount-sm span { font-size: 0.8rem; font-weight: 400; color: #9A8060; }
-    .pricing-card p { font-size: 0.9rem; color: #4A3A2A; line-height: 1.8; margin-bottom: 0.75rem; }
-    .pricing-includes { background: #F5EFE0; border-radius: 6px; padding: 1rem 1.25rem; margin: 1rem 0; }
-    .pricing-card.highlight .pricing-includes { background: rgba(245,239,224,0.1); }
-    .includes-title { font-size: 0.8rem; font-weight: 600; color: #7A5A1A; margin-bottom: 0.5rem; }
-    .pricing-card.highlight .includes-title { color: #F0E6D3; }
-    .pricing-includes ul { margin: 0; padding-left: 1.25rem; }
-    .pricing-includes li { font-size: 0.85rem; color: #4A3A2A; line-height: 1.8; }
-    .pricing-card.highlight .pricing-includes li { color: #C4AA80; }
-    .pricing-note { font-size: 0.82rem; color: #6B5A3A; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: rgba(122,90,26,0.06); border-radius: 4px; }
-    .pricing-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-bottom: 1.25rem; }
-    .btn-primary { display: inline-flex; align-items: center; justify-content: center; width: 240px; height: 52px; background: #7A5A1A; color: #FDFBF7; border-radius: 8px; font-size: 0.9rem; font-weight: 600; border: 2px solid #7A5A1A; box-sizing: border-box; }
-    .btn-primary:hover { background: #4A3A0A; }
-    .page-cta { background: #F5EFE0; border-top: 1px solid #EDE8DF; padding: 5.5rem 2rem 6rem; text-align: center; }
-    .page-cta h2 { font-size: 1.75rem; font-weight: 400; color: var(--text-heading); margin-bottom: 0.75rem; }
-    .page-cta p { color: #6B5A3A; font-size: 0.9rem; max-width: 540px; margin: 0 auto 1.5rem; line-height: 1.7; }
-    .cta-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
-    .btn-secondary { display: inline-flex; align-items: center; justify-content: center; width: 240px; height: 52px; background: #FDFBF7; color: #7A5A1A; border-radius: 8px; font-size: 0.9rem; font-weight: 600; border: 2px solid #7A5A1A; box-sizing: border-box; }
-    .fade-in-section {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-    }
-    .fade-in-section.is-visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    @media (max-width: 720px) {
-      .pricing-grid { grid-template-columns: 1fr; }
-      .page-hero--pricing h1 { font-size: 1.75rem; }
-      .pricing-card { padding: 1.5rem; }
-      .pricing-banner { margin-top: 2.5rem; min-height: 220px; }
-    }
-  </style>
+  }
+  </script>
 </head>
 <body>
   <HeaderEn />
-  <main>
+  <main class="page-main">
     <section class="page-hero page-hero--pricing">
       <div class="page-hero-bg" aria-hidden="true"></div>
       <div class="page-hero-overlay" aria-hidden="true"></div>
       <div class="page-hero-inner">
-        <div class="page-label">Legal Fees · Transparent Pricing</div>
+        <div class="page-label">Legal Fees · LEGAL FEES</div>
         <h1>Transparent Fees. No Hidden Costs.</h1>
-        <p>I believe clients have the right to understand the approximate cost of legal services before deciding whether to retain a lawyer. Below is a clear breakdown of my fees. All amounts are subject to HST, and some services carry additional disbursements.</p>
-        <p class="page-last-updated page-last-updated--warm">Page last updated: {SITE_LAST_UPDATED_EN}</p>
+        <p>Miao He offers transparent pricing with no hidden fees.</p>
+        <p>Initial consultation $220 + HST; uncontested divorce from $2,000; separation agreements, prenuptial agreements, and other family law agreements from $2,500; contested family law matters billed hourly in 6-minute units.</p>
+        <p>Before you sign a Retainer Agreement, Miao He will explain the applicable fee structure, likely costs, and estimated fee ranges based on your matter — so you can understand the costs and risks and decide whether to retain counsel on a fully informed basis.</p>
+        <p class="page-last-updated page-last-updated--warm">Page last updated: June 19, 2026</p>
       </div>
     </section>
 
     <section class="pricing-section">
+      <div class="pricing-inner fade-in-section">
+        <h2 class="section-subtitle section-subtitle--first">Common Services &amp; Fees</h2>
+        <div class="pricing-table-wrap">
+          <table class="pricing-table">
+            <thead>
+              <tr>
+                <th scope="col">Service</th>
+                <th scope="col">Fee</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Initial consultation (30 minutes)</td>
+                <td>$220 + HST</td>
+              </tr>
+              <tr>
+                <td>Uncontested divorce</td>
+                <td>$2,000 – $3,500 + HST + Disbursements</td>
+              </tr>
+              <tr>
+                <td>Separation, prenuptial, cohabitation agreements, etc.</td>
+                <td>$2,500 – $4,500 + HST + Disbursements</td>
+              </tr>
+              <tr>
+                <td>Family law litigation</td>
+                <td>Hourly billing</td>
+              </tr>
+              <tr>
+                <td>Limited Retainer</td>
+                <td>Billed based on actual work performed</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
       <div class="pricing-inner pricing-inner--consult">
         <div class="consult-intro-layout consult-intro-motion-root">
           <div class="consult-intro-content consult-intro-slide consult-intro-slide--left">
             <div class="pricing-card highlight">
-              <div class="pricing-tag">The Most Common First Step</div>
               <h2>Initial Consultation</h2>
               <div class="pricing-amount">$220 <span>+ HST</span></div>
-              <div class="pricing-detail">30 minutes · Mandarin & English · In-person or video</div>
-              <p>Legal situations don't have standard answers. In an initial consultation, I don't just listen to the facts — I give you a full strategic picture.</p>
-              <p>I will walk you through the realistic options in your case: the risks of litigation, your negotiating position, and the most effective path forward. Many clients tell me that what gave them the most peace of mind was finally understanding the full landscape of their situation.</p>
-              <p>I will not let clients enter proceedings without a clear strategy. My goal is to ensure you make the most rational decision with complete information in hand.</p>
-              <p style="font-size:0.8rem;color:#9A8060;">Billed in 6-minute units. 30 minutes constitutes one complete consultation.</p>
-              <a href="tel:6479306688" class="btn-primary">📞 Book Now: 647-930-6688</a>
+              <div class="pricing-detail">30 minutes · Mandarin &amp; English · In person or video</div>
+              <p>Many clients' first questions when contacting a lawyer are:</p>
+              <div class="pricing-includes pricing-includes--dark">
+                <ul>
+                  <li>Do I have a viable case?</li>
+                  <li>Should I negotiate or litigate?</li>
+                  <li>How much is this likely to cost?</li>
+                  <li>What steps lie ahead?</li>
+                </ul>
+              </div>
+              <p>The purpose of an initial consultation is not only to understand the facts, but to help you understand your legal position, potential risks, and available options.</p>
+              <p>During the consultation, Miao He will:</p>
+              <div class="pricing-includes pricing-includes--dark">
+                <ul>
+                  <li>Analyse the facts and legal issues</li>
+                  <li>Explain court procedures and timelines</li>
+                  <li>Discuss the pros and cons of litigation vs. settlement</li>
+                  <li>Provide a preliminary fee estimate</li>
+                  <li>Answer your most pressing legal questions</li>
+                </ul>
+              </div>
+              <p>For many clients, the greatest value after a consultation is not a single answer — but finally seeing the overall direction of the matter and how to plan the next step.</p>
+              <a href="tel:6479306688" class="btn-primary">📞 647-930-6688</a>
             </div>
           </div>
           <div class="consult-intro-visual consult-intro-slide consult-intro-slide--right">
@@ -274,129 +255,201 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
         </div>
       </div>
 
-      <div class="fade-in-section">
-      <div class="pricing-banner" aria-labelledby="fixed-fee-banner-title-en">
-        <div class="pricing-banner-bg" aria-hidden="true"></div>
-        <div class="pricing-banner-overlay" aria-hidden="true"></div>
-        <div class="pricing-banner-inner">
-          <h2 id="fixed-fee-banner-title-en" class="section-subtitle section-subtitle--on-banner">Fixed Fee Services</h2>
-        </div>
-      </div>
-
-      <div class="pricing-inner">
-        <p class="section-note">The following services are offered at fixed fee ranges. Actual fees depend on the specifics of each matter. All fees are subject to HST and disbursements.</p>
-
-        <div class="pricing-grid">
-          <div class="pricing-card">
-            <h3>Uncontested Divorce</h3>
-            <div class="pricing-amount-sm">$2,000 – $3,500 <span>+ HST + disbursements</span></div>
-            <p>For matters where both parties have already agreed on divorce terms. We handle everything — from document preparation to court filing to proactively following up on processing status — until you receive your Divorce Certificate. You will not need to chase the court yourself.</p>
-            <p>As long as both parties remain cooperative and the matter does not become contested, no additional fees will be charged within the fixed fee.</p>
-            <div class="pricing-includes">
-              <div class="includes-title">Included:</div>
-              <ul>
-                <li>Review of agreement terms for legal compliance</li>
-                <li>Preparation and filing of all court documents</li>
-                <li>Proactive follow-up with the court on processing status</li>
-                <li>Obtaining the Divorce Order and Divorce Certificate</li>
-              </ul>
-            </div>
-            <div class="pricing-note">⚠️ If the opposing party becomes uncooperative or the matter becomes contested, fees will be discussed separately.</div>
+      <div class="pricing-inner fade-in-section">
+        <h2 class="section-subtitle">Uncontested Divorce</h2>
+        <div class="pricing-card">
+          <div class="pricing-amount-sm">$2,000 – $3,500 <span>+ HST + Disbursements</span></div>
+          <p>For matters where both parties have already agreed on divorce-related issues and only need the divorce process completed.</p>
+          <p>Unlike some lawyers who only prepare documents, we follow the matter through until the divorce process is complete.</p>
+          <div class="pricing-includes">
+            <div class="includes-title">Services include:</div>
+            <ul>
+              <li>Review of the parties' agreement</li>
+              <li>Preparation and filing of court documents</li>
+              <li>Follow-up on court processing</li>
+              <li>Obtaining the Divorce Order</li>
+              <li>Assistance applying for the Divorce Certificate</li>
+            </ul>
           </div>
-
-          <div class="pricing-card">
-            <h3>Agreement Drafting</h3>
-            <div class="pricing-amount-sm">$2,500 – $4,500 <span>+ HST + disbursements</span></div>
-            <p>For prenuptial agreements, marriage contracts, separation agreements, and cohabitation agreements. I draft agreements from a litigator's perspective — anticipating gaps and ensuring legal enforceability.</p>
-            <div class="pricing-includes">
-              <div class="includes-title">Included:</div>
-              <ul>
-                <li>Full review of both parties' financial situation and objectives</li>
-                <li>Drafting of the complete agreement</li>
-                <li>Assistance with the signing process (ILA)</li>
-              </ul>
-            </div>
-            <div class="pricing-note">✅ No additional charge if signing is completed within 3 months. Time beyond that is billed hourly.</div>
+          <div class="pricing-includes" style="margin-top: 0.75rem;">
+            <div class="includes-title">Fixed-fee conditions</div>
+            <p style="margin-bottom: 0;">Where both parties remain cooperative and the matter does not become contested, no additional legal fees are charged within the fixed fee.</p>
+            <p style="margin-bottom: 0; margin-top: 0.5rem;">If the nature of the matter changes — for example, one party refuses to cooperate, new disputes arise, or additional steps are required — related costs will be discussed with you in advance.</p>
           </div>
         </div>
-
-      </div>
       </div>
 
       <div class="pricing-inner fade-in-section">
-        <h2 class="section-subtitle">Litigation Representation</h2>
-
+        <h2 class="section-subtitle">Separation, Prenuptial &amp; Other Family Law Agreements</h2>
         <div class="pricing-card">
-          <h3>Full Representation in Family Law Proceedings</h3>
-          <div class="pricing-amount-sm">Hourly billing <span>in 6-minute units</span></div>
-          <p>For contested divorce, property division, child custody, spousal support, cross-border asset recovery, and other matters requiring court proceedings.</p>
-          <p>Fees vary depending on the complexity of the matter, frequency of court appearances, and volume of work required. Every document, every court appearance, and every communication is accurately recorded in your account — no hidden charges.</p>
+          <div class="pricing-amount-sm">$2,500 – $4,500 <span>+ HST + Disbursements</span></div>
+          <p>This applies to:</p>
           <div class="pricing-includes">
-            <div class="includes-title">Billable work includes:</div>
             <ul>
-              <li>Court appearances and preparation</li>
-              <li>Drafting motions and responding to opposing motions</li>
-              <li>Negotiations with opposing counsel</li>
-              <li>Mediation and out-of-court settlement discussions</li>
-              <li>Client communications and legal advice</li>
+              <li>Separation Agreement</li>
+              <li>Prenuptial Agreement</li>
+              <li>Marriage Contract</li>
+              <li>Cohabitation Agreement</li>
             </ul>
           </div>
+          <p>The value of an agreement is not measured on signing day, but whether it can withstand court scrutiny years — or even decades — later if a dispute arises.</p>
+          <p>As a family litigation lawyer, Miao He reviews agreements from the perspective of potential future disputes, aiming to reduce the risk that an agreement is challenged or set aside.</p>
+          <div class="pricing-includes">
+            <div class="includes-title">Services include:</div>
+            <ul>
+              <li>Understanding both parties' financial circumstances and needs</li>
+              <li>Legal advice</li>
+              <li>Drafting the agreement</li>
+              <li>Revising and negotiating terms</li>
+              <li>Assisting with the signing process</li>
+              <li>Coordinating Independent Legal Advice (ILA)</li>
+            </ul>
+          </div>
+          <div class="pricing-note">✅ No additional legal fee if the agreement is signed within 3 months of drafting.</div>
         </div>
+      </div>
 
+      <div class="pricing-inner fade-in-section">
+        <h2 class="section-subtitle">Family Law Litigation</h2>
+        <div class="pricing-card">
+          <div class="pricing-amount-sm">Hourly billing</div>
+          <p>This applies to:</p>
+          <div class="pricing-includes">
+            <ul>
+              <li>Contested divorce</li>
+              <li>Property division</li>
+              <li>Child custody and decision-making responsibility</li>
+              <li>Parenting time</li>
+              <li>Child support</li>
+              <li>Spousal support</li>
+              <li>Domestic violence-related proceedings</li>
+              <li>Cross-border family law disputes</li>
+              <li>Recovery of overseas assets</li>
+            </ul>
+          </div>
+          <p>Family law litigation cannot be offered on a single fixed-fee basis for all cases.</p>
+          <p>Total fees depend on:</p>
+          <div class="pricing-includes">
+            <ul>
+              <li>Complexity of the dispute</li>
+              <li>Cooperation from the other party</li>
+              <li>Number of court steps</li>
+              <li>Volume of document preparation</li>
+              <li>Whether a trial is required</li>
+            </ul>
+          </div>
+          <div class="pricing-includes" style="margin-top: 0.75rem;">
+            <div class="includes-title">How billing works</div>
+            <p style="margin-bottom: 0.5rem;">Legal fees are billed by time. Each 6 minutes is one billing unit.</p>
+            <p style="margin-bottom: 0.5rem;">Billable work includes:</p>
+            <ul>
+              <li>Legal research</li>
+              <li>Document drafting</li>
+              <li>Court appearances</li>
+              <li>Pre-hearing preparation</li>
+              <li>Communications with opposing counsel</li>
+              <li>Mediation and settlement negotiations</li>
+              <li>Client meetings</li>
+              <li>Phone and email communications</li>
+              <li>Document review</li>
+            </ul>
+          </div>
+          <p>All time spent on your file is recorded and reflected on your invoice — no hidden charges.</p>
+        </div>
       </div>
 
       <div class="pricing-inner fade-in-section">
         <h2 class="section-subtitle">Limited Retainer</h2>
-
         <div class="pricing-card">
-          <h3>What Is a Limited Retainer?</h3>
           <div class="pricing-amount-sm">Billed based on actual work performed</div>
-          <p>A limited retainer means retaining a lawyer for a specific, defined task rather than handing over the entire matter. The retainer agreement specifies exactly what is covered, and representation ends once that task is complete.</p>
-          <p>This arrangement is appropriate in situations such as:</p>
+          <p>A Limited Retainer means the lawyer handles specific tasks in your matter — not the entire case.</p>
+          <p>This may suit:</p>
           <div class="pricing-includes">
             <ul>
-              <li>Self-represented clients who need a lawyer to prepare specific documents or navigate a particular court step</li>
-              <li>Clients who need a lawyer present at a single hearing or conference, but not for full representation</li>
-              <li>Clients who need a lawyer to review documents submitted by the opposing party and provide a written legal opinion</li>
-              <li>Matters nearing conclusion that only require assistance with a final legal step</li>
+              <li>Self-represented litigants</li>
+              <li>Document review only</li>
+              <li>Legal advice only</li>
+              <li>Drafting of specific court documents</li>
+              <li>Appearance at a single hearing</li>
+              <li>Matters near conclusion that need a specific final step</li>
             </ul>
           </div>
-          <p>A limited retainer allows clients to control costs while obtaining professional legal support at critical junctures. If you are considering self-representation but are uncertain about specific steps, feel free to ask whether this arrangement might suit your situation.</p>
+          <p>A limited retainer can help you control legal costs while obtaining professional support at critical stages.</p>
+          <p>If you are considering self-representation but are unsure how to proceed, feel free to ask whether a limited retainer is appropriate for your situation.</p>
         </div>
-
       </div>
 
       <div class="pricing-inner fade-in-section">
         <h2 class="section-subtitle">About Disbursements</h2>
-
         <div class="pricing-card">
-          <p>Disbursements are third-party costs paid on your behalf in the course of handling your matter. They are separate from legal fees and itemized clearly on your invoice.</p>
+          <p>Disbursements are third-party costs paid on your behalf. They are separate from legal fees and itemized clearly on your invoice.</p>
           <div class="pricing-includes">
-            <div class="includes-title">Ontario Superior Court of Justice — Official Filing Fees</div>
+            <div class="includes-title">Ontario court fees</div>
+            <p style="margin-bottom: 0.5rem;">Common court fees currently include:</p>
             <ul>
-              <li>Application filing fee — <strong>$224</strong></li>
-              <li>Affidavit for Divorce filing fee — <strong>$445</strong></li>
-              <li>Divorce Certificate application fee — <strong>$25</strong></li>
+              <li>Divorce Application Filing Fee: <strong>$224</strong></li>
+              <li>Divorce Order Fee: <strong>$445</strong></li>
+              <li>Divorce Certificate: <strong>$25</strong></li>
             </ul>
           </div>
-          <div class="pricing-includes" style="margin-top:0.75rem;">
-            <div class="includes-title">Other Common Disbursements</div>
+          <p>These amounts are paid to the court, not to your lawyer. Court fee schedules may change; please refer to the court's latest published rates.</p>
+          <div class="pricing-includes" style="margin-top: 0.75rem;">
+            <div class="includes-title">Other common disbursements</div>
             <ul>
               <li>Process server fees</li>
-              <li>Document notarization and certification</li>
-              <li>Expert reports (e.g. business valuations by a Chartered Business Valuator)</li>
-              <li>Translation and interpretation fees</li>
+              <li>Notarization and certification</li>
+              <li>Translation and interpretation</li>
+              <li>Business valuation reports</li>
+              <li>Financial expert reports</li>
+              <li>Government search fees</li>
+              <li>Courier and mailing costs</li>
             </ul>
           </div>
-          <p>The court fees above reflect current Ontario rates and are subject to change per court announcements. All disbursements are itemized transparently on your invoice — no hidden charges of any kind.</p>
+          <p>All disbursements are itemized separately on your invoice — no hidden charges.</p>
         </div>
+      </div>
 
+      <div class="pricing-inner fade-in-section">
+        <h2 class="section-subtitle">Frequently Asked Questions</h2>
+        <div class="pricing-faq">
+          <div class="pricing-faq-item">
+            <h3 class="pricing-faq-q">How much does a divorce lawyer typically charge?</h3>
+            <p class="pricing-faq-a">Generally, an uncontested divorce is typically $2,000 to $3,500 plus HST, court fees, and disbursements. Contested matters are usually billed hourly, and total fees vary depending on complexity and how the case progresses.</p>
+          </div>
+          <div class="pricing-faq-item">
+            <h3 class="pricing-faq-q">Is the initial consultation fee charged?</h3>
+            <p class="pricing-faq-a">Generally, yes. The 30-minute initial consultation is $220 + HST. There is no obligation to retain counsel afterward.</p>
+          </div>
+          <div class="pricing-faq-item">
+            <h3 class="pricing-faq-q">Can I consult first before deciding whether to hire a lawyer?</h3>
+            <p class="pricing-faq-a">Typically, yes. Many clients use an initial consultation to understand their situation, likely fee ranges, and legal risks before deciding whether to formally retain a lawyer.</p>
+          </div>
+          <div class="pricing-faq-item">
+            <h3 class="pricing-faq-q">If the matter ends early, will unused legal fees be refunded?</h3>
+            <p class="pricing-faq-a">Under Law Society of Ontario rules, generally any unused portion of a prepaid retainer deposit — after deducting fees for work already completed — is typically returned to the client. The exact process depends on your retainer agreement and LSO requirements.</p>
+          </div>
+          <div class="pricing-faq-item">
+            <h3 class="pricing-faq-q">Can I retain a lawyer for only part of the work?</h3>
+            <p class="pricing-faq-a">Generally, yes. A Limited Retainer typically allows you to retain counsel for specific tasks only, without full-case representation. The scope is set out in the Retainer Agreement.</p>
+          </div>
+        </div>
+        <p class="pricing-disclaimer">*Legal fees vary depending on the complexity and circumstances of each matter. The fee ranges above are for general reference only and do not constitute a quote for any specific case.*</p>
       </div>
     </section>
 
     <section class="page-cta fade-in-section">
-      <h2>Questions About Fees?</h2>
-      <p>Every case is different. Book an initial consultation and I will give you a realistic fee estimate based on your specific situation.</p>
+      <h2>Our Commitment to Transparent Fees</h2>
+      <p>Miao He believes clients have the right to understand likely costs and risks before retaining a lawyer.</p>
+      <p>Before you sign a Retainer Agreement, Miao He will:</p>
+      <ul class="page-cta-list">
+        <li>Understand your matter</li>
+        <li>Explain how fees are charged</li>
+        <li>Outline likely costs</li>
+        <li>Provide a reasonable fee estimate</li>
+        <li>Discuss how different approaches may affect total cost</li>
+      </ul>
+      <p>A lawyer's role is not only to provide legal services, but to help clients make informed decisions based on cost, risk, and benefit.</p>
+      <p><strong>Transparent fees. Clear communication. No hidden charges.</strong></p>
       <div class="cta-actions">
         <a href="tel:6479306688" class="btn-primary">📞 647-930-6688</a>
         <a href="mailto:miao@miaohelaw.ca" class="btn-secondary">miao@miaohelaw.ca</a>
@@ -453,3 +506,218 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
   </script>
 </body>
 </html>
+
+<style>
+  .page-main { max-width: 100%; padding: 0; margin: 0; }
+  .page-hero { border-bottom: 1px solid rgba(0, 0, 0, 0.35); text-align: center; }
+  .page-hero--pricing {
+    position: relative;
+    min-height: 400px;
+    padding: 3rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .page-hero-bg {
+    position: absolute;
+    inset: 0;
+    background: url('/images/consultation.png') center / cover no-repeat;
+    transform: scale(1.02);
+    z-index: 0;
+  }
+  .page-hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background:
+      linear-gradient(165deg, rgba(22, 18, 14, 0.82) 0%, rgba(36, 28, 20, 0.76) 50%, rgba(16, 12, 10, 0.88) 100%);
+  }
+  .page-hero-inner {
+    position: relative;
+    z-index: 2;
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  .page-hero--pricing .page-label {
+    color: rgba(232, 201, 164, 0.95);
+    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.45);
+  }
+  .page-hero--pricing h1 {
+    font-family: 'Georgia', serif;
+    font-size: 2.25rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: #FDFBF7;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.55), 0 1px 3px rgba(0, 0, 0, 0.45);
+  }
+  .page-hero--pricing p {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    max-width: 640px;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 1px 12px rgba(0, 0, 0, 0.4);
+  }
+  .page-hero--pricing .page-last-updated { color: rgba(255, 255, 255, 0.72) !important; }
+  .page-label { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: #9A8060; margin-bottom: 1rem; }
+  .pricing-section { padding: 5.5rem 2rem 6rem; }
+  .pricing-inner { max-width: 920px; margin: 0 auto; }
+  .pricing-inner--consult { max-width: 1080px; margin-top: 3.5rem; }
+  .consult-intro-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: stretch;
+    margin-bottom: 1rem;
+  }
+  .consult-intro-visual { order: -1; }
+  .consult-intro-visual-frame {
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(237, 232, 223, 0.35);
+    box-shadow: 0 16px 48px rgba(44, 36, 24, 0.18);
+    min-height: 240px;
+    height: 100%;
+    max-height: 420px;
+  }
+  .consult-intro-visual-frame img {
+    width: 100%;
+    height: 100%;
+    min-height: 240px;
+    object-fit: cover;
+    display: block;
+  }
+  .consult-intro-slide {
+    opacity: 0;
+    transition: transform 0.7s ease-out, opacity 0.7s ease-out;
+  }
+  .consult-intro-slide--left { transform: translateX(-80px); }
+  .consult-intro-slide--right { transform: translateX(80px); }
+  .consult-intro-motion-root.consult-intro-visible .consult-intro-slide--left,
+  .consult-intro-motion-root.consult-intro-visible .consult-intro-slide--right {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  @media (min-width: 900px) {
+    .consult-intro-layout {
+      display: grid;
+      grid-template-columns: 1fr minmax(280px, 40%);
+      gap: 2.25rem;
+      align-items: stretch;
+    }
+    .consult-intro-visual { order: unset; }
+    .consult-intro-visual-frame { max-height: none; min-height: 100%; }
+  }
+  .section-subtitle {
+    font-family: 'Georgia', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-heading);
+    margin: 4rem 0 0.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #EDE8DF;
+  }
+  .section-subtitle--first { margin-top: 0; }
+  .pricing-card { background: #FDFBF7; border: 1px solid #EDE8DF; border-radius: 8px; padding: 2rem; margin-bottom: 1.25rem; border-left: 4px solid #7A5A1A; }
+  .pricing-card.highlight { border-left-color: #FAC775; background: #2C2418; }
+  .pricing-card.highlight h2 { color: #F0E6D3; font-family: 'Georgia', serif; font-weight: 400; font-size: 1.5rem; margin-bottom: 0.5rem; }
+  .pricing-card.highlight p { color: #e8e2d9; font-size: 0.9rem; line-height: 1.8; }
+  .pricing-amount { font-family: 'Georgia', serif; font-size: 2.5rem; color: #F0E6D3; margin-bottom: 0.25rem; }
+  .pricing-amount span { font-size: 1rem; color: #9A8060; }
+  .pricing-detail { font-size: 0.8rem; color: #9A8060; margin-bottom: 1.25rem; }
+  .pricing-amount-sm { font-size: 1.1rem; font-weight: 600; color: #7A5A1A; margin-bottom: 1rem; }
+  .pricing-amount-sm span { font-size: 0.8rem; font-weight: 400; color: #9A8060; }
+  .pricing-card p { font-size: 0.9rem; color: #4A3A2A; line-height: 1.8; margin-bottom: 0.75rem; }
+  .pricing-includes { background: #F5EFE0; border-radius: 6px; padding: 1rem 1.25rem; margin: 1rem 0; }
+  .includes-title { font-size: 0.8rem; font-weight: 600; color: #7A5A1A; margin-bottom: 0.5rem; }
+  .pricing-includes ul { margin: 0; padding-left: 1.25rem; }
+  .pricing-includes li { font-size: 0.85rem; color: #4A3A2A; line-height: 1.8; }
+  .pricing-includes--dark { background: rgba(255, 255, 255, 0.06); }
+  .pricing-includes--dark li { color: #e8e2d9; }
+  .pricing-table-wrap { overflow-x: auto; margin-bottom: 0.5rem; }
+  .pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    background: #FDFBF7;
+    border: 1px solid #EDE8DF;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .pricing-table th,
+  .pricing-table td {
+    padding: 0.85rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #EDE8DF;
+    vertical-align: top;
+  }
+  .pricing-table th {
+    background: #F5EFE0;
+    color: #7A5A1A;
+    font-weight: 600;
+    font-size: 0.82rem;
+  }
+  .pricing-table tr:last-child td { border-bottom: none; }
+  .pricing-note { font-size: 0.82rem; color: #6B5A3A; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: rgba(122,90,26,0.06); border-radius: 4px; }
+  .pricing-faq { display: flex; flex-direction: column; gap: 1rem; }
+  .pricing-faq-item {
+    background: #FDFBF7;
+    border: 1px solid #EDE8DF;
+    border-radius: 8px;
+    padding: 1.25rem 1.5rem;
+    border-left: 4px solid #7A5A1A;
+  }
+  .pricing-faq-q {
+    font-family: 'Georgia', serif;
+    font-size: 1.05rem;
+    font-weight: 400;
+    color: var(--text-heading);
+    margin-bottom: 0.5rem;
+  }
+  .pricing-faq-a {
+    font-size: 0.9rem;
+    color: #4A3A2A;
+    line-height: 1.8;
+    margin: 0;
+  }
+  .pricing-disclaimer {
+    margin-top: 1.25rem;
+    font-size: 0.82rem;
+    color: #9A8060;
+    line-height: 1.7;
+    text-align: center;
+  }
+  .page-cta-list {
+    text-align: left;
+    max-width: 420px;
+    margin: 0 auto 1rem;
+    padding-left: 1.25rem;
+    color: #6B5A3A;
+    font-size: 0.9rem;
+    line-height: 1.8;
+  }
+  .btn-primary { display: inline-flex; align-items: center; justify-content: center; width: 240px; height: 52px; background: #7A5A1A; color: #FDFBF7; border-radius: 8px; text-decoration: none; font-size: 0.9rem; font-weight: 600; border: 2px solid #7A5A1A; box-sizing: border-box; }
+  .btn-primary:hover { background: #4A3A0A; border-color: #4A3A0A; color: #FDFBF7; }
+  .page-cta { background: #F5EFE0; border-top: 1px solid #EDE8DF; padding: 5.5rem 2rem 6rem; text-align: center; }
+  .page-cta h2 { font-family: 'Georgia', serif; font-size: 1.75rem; font-weight: 400; color: var(--text-heading); margin-bottom: 0.75rem; }
+  .page-cta p { color: #6B5A3A; font-size: 0.9rem; max-width: 540px; margin: 0 auto 1.5rem; line-height: 1.7; }
+  .cta-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; align-items: stretch; }
+  .btn-secondary { display: inline-flex; align-items: center; justify-content: center; width: 240px; height: 52px; background: #FDFBF7; color: #7A5A1A; border-radius: 8px; text-decoration: none; font-size: 0.9rem; font-weight: 600; border: 2px solid #7A5A1A; box-sizing: border-box; }
+  .btn-secondary:hover { background: #F5EFE0; }
+  .fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  .fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  @media (max-width: 720px) {
+    .page-hero--pricing h1 { font-size: 1.75rem; }
+    .pricing-card { padding: 1.5rem; }
+    .pricing-table th,
+    .pricing-table td { padding: 0.65rem 0.75rem; font-size: 0.82rem; }
+  }
+</style>

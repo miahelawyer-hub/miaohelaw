@@ -8,12 +8,12 @@ import Footer from '../components/Footer.astro';
 <html lang="zh">
 <head>
   <BaseHead
-    title="安省家庭法律师费用 | 离婚律师收费标准 | Ontario | Markham 多伦多"
-    description="何淼律师收费透明：初次咨询30分钟$220+HST，无争议离婚$2,000起，协议起草$2,500起，按小时计费每6分钟一单元。647-930-6688。"
+    title="Ontario Family Law Fees | 安省家庭法律师收费标准 | 何淼律师"
+    description="Ontario family law legal fees: $220+HST consultation, uncontested divorce $2,000–$3,500, separation & prenuptial agreement drafting $2,500–$4,500. Markham & Toronto family lawyer. 647-930-6688."
   />
   <meta name="keywords" content="何淼律师,何淼离婚律师,Miao He律师,Mia He律师,Miao He family lawyer,Mia He divorce lawyer,安省家庭法律师收费,多伦多离婚律师费用,Markham家庭法律师,GTA华人律师,华人离婚律师多伦多,婚前协议律师费用,无争议离婚费用,协议起草律师,子女监护律师费用,Ontario family lawyer fees,divorce lawyer Toronto cost,family lawyer Markham,Chinese family lawyer Toronto,Chinese divorce lawyer Ontario,uncontested divorce Ontario cost,separation agreement lawyer fee,prenuptial agreement lawyer Ontario,limited retainer family lawyer,按小时收费律师,6分钟计费律师,divorce lawyer fee Ontario,H. LAW FIRM 恒. 律师事务所" />
-  <meta property="og:title" content="律师费用说明 | 何淼律师 — Ontario 家庭法" />
-  <meta property="og:description" content="何淼律师收费透明：初次咨询$220+HST，无争议离婚$2,000起，协议起草$2,500起。647-930-6688。" />
+  <meta property="og:title" content="Ontario Family Law Fees | 律师费用说明 — 何淼律师" />
+  <meta property="og:description" content="Ontario family law fees: consultation, uncontested divorce, and agreement drafting. Transparent pricing for Markham & Toronto. 647-930-6688." />
   <meta property="og:type" content="website" />
   <script type="application/ld+json">
   {
@@ -36,8 +36,11 @@ import Footer from '../components/Footer.astro';
             "name": "初次咨询",
             "description": "30分钟初次法律咨询，中英双语，面谈或视频均可。"
           },
-          "price": "220",
-          "priceCurrency": "CAD"
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "price": "220",
+            "priceCurrency": "CAD"
+          }
         },
         {
           "@type": "Offer",
@@ -144,9 +147,19 @@ import Footer from '../components/Footer.astro';
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
+    "@id": "https://www.miaohelaw.ca/pricing/",
     "url": "https://www.miaohelaw.ca/pricing/",
-    "name": "Pricing | Ontario Family Lawyer",
-    "description": "Ontario family law legal service fees including consultation, divorce, and agreements."
+    "name": "Ontario Family Law Fees | Pricing",
+    "description": "Ontario family law legal service fees including consultation, uncontested divorce, and agreement drafting.",
+    "inLanguage": "zh",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Miao He — Ontario Family Law Lawyer",
+      "url": "https://www.miaohelaw.ca/"
+    },
+    "about": {
+      "@id": "https://www.miaohelaw.ca/#lawfirm"
+    }
   }
   </script>
 </head>
@@ -402,25 +415,26 @@ import Footer from '../components/Footer.astro';
         <div class="pricing-faq">
           <div class="pricing-faq-item">
             <h3 class="pricing-faq-q">离婚律师收费一般是多少？</h3>
-            <p class="pricing-faq-a">无争议离婚通常为 $2,000 至 $3,500 加 HST、法院费用及其他垫付费用。涉及诉讼的案件通常按小时计费，总费用取决于案件复杂程度及程序进展。</p>
+            <p class="pricing-faq-a">一般情况下，无争议离婚通常为 $2,000 至 $3,500，另加 HST、法院费用及其他垫付费用（disbursements）。涉及诉讼的案件通常按小时计费，总费用因案件复杂程度及程序进展而异。</p>
           </div>
           <div class="pricing-faq-item">
             <h3 class="pricing-faq-q">初次咨询收费吗？</h3>
-            <p class="pricing-faq-a">收费。30 分钟初次咨询费用为 $220 + HST。</p>
+            <p class="pricing-faq-a">一般情况下，30 分钟初次咨询费用为 $220 + HST。是否正式委托律师无强制要求。</p>
           </div>
           <div class="pricing-faq-item">
             <h3 class="pricing-faq-q">是否可以先咨询再决定是否聘请律师？</h3>
-            <p class="pricing-faq-a">可以。很多客户会先通过初次咨询了解案件情况、费用范围及法律风险，然后再决定是否正式委托律师。</p>
+            <p class="pricing-faq-a">通常可以。不少客户会先通过初次咨询了解案件情况、费用范围及法律风险，再决定是否正式委托律师。</p>
           </div>
           <div class="pricing-faq-item">
-            <h3 class="pricing-faq-q">如果案件提前结束，未使用的律师信托金会退还吗？</h3>
-            <p class="pricing-faq-a">会。根据 Law Society of Ontario 的要求，未使用的信托金属于客户资金，应当退还给客户。</p>
+            <h3 class="pricing-faq-q">如果案件提前结束，未使用的律师费是否会退还？</h3>
+            <p class="pricing-faq-a">根据 Law Society of Ontario 的规则，一般情况下，预付信托金（retainer deposit）在扣除已完成的法律服务费用后，剩余未使用部分通常应退还给客户。具体处理方式以委托协议及 LSO 规定为准。</p>
           </div>
           <div class="pricing-faq-item">
             <h3 class="pricing-faq-q">可以只委托律师处理部分工作吗？</h3>
-            <p class="pricing-faq-a">可以。Limited Retainer（有限委托）允许客户仅委托律师处理案件中的特定事项，而无需聘请律师全程代理。</p>
+            <p class="pricing-faq-a">一般情况下可以。Limited Retainer（有限委托）通常允许客户仅委托律师处理案件中的特定事项，无需全程代理。具体委托范围以 Retainer Agreement 为准。</p>
           </div>
         </div>
+        <p class="pricing-disclaimer">*律师费因案件复杂程度及具体情况而异，上述费用范围仅供参考，不构成对任何个案的报价承诺。*</p>
       </div>
     </section>
 
@@ -716,6 +730,13 @@ import Footer from '../components/Footer.astro';
     color: #4A3A2A;
     line-height: 1.8;
     margin: 0;
+  }
+  .pricing-disclaimer {
+    margin-top: 1.25rem;
+    font-size: 0.82rem;
+    color: #9A8060;
+    line-height: 1.7;
+    text-align: center;
   }
   .page-cta-list {
     text-align: left;
