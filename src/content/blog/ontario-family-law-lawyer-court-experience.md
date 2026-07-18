@@ -12,6 +12,7 @@ tags:
   - "chinese-divorce-lawyer"
   - "toronto-chinese-divorce-lawyer"
   - "markham-family-lawyer"
+pairedArticlePath: "/en/blog/ontario-family-law-lawyer-court-experience/"
 relatedIntro: "若你还关心各地法院实操差异、离婚程序时间线，或如何挑选有诉讼经验的华人离婚律师，可一并阅读："
 relatedReading:
   - slug: ontario-family-court-procedures-regional-differences
