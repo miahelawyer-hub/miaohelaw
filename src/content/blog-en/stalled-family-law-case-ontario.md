@@ -14,12 +14,12 @@ tags:
 pairedArticlePath: "/blog/stalled-family-law-case-ontario/"
 relatedIntro: "Read alongside:"
 relatedReading:
+  - slug: "force-sale-matrimonial-home-ontario"
+    line: "Forcing the sale of a matrimonial home — including sole title, investment properties, and occupation rent."
   - slug: "net-family-property-ontario"
     line: "How equalization actually works — the claim a deadlock is usually about."
   - slug: "toronto-divorce-lawyer-fees-3000-vs-30000"
     line: "What drives legal fees, and why a stalled file gets expensive fast."
-  - slug: "how-to-choose-toronto-chinese-divorce-lawyer"
-    line: "Choosing counsel at the outset, before a file has a history."
 faqStructured:
   - question: "My family law case has not moved in two years. Is that normal?"
     answer: "Long delays are common in Ontario family court, but two years of no movement at all usually signals something structural rather than ordinary backlog. The three most frequent causes are: the parties are negotiating through counsel on positions neither will abandon, so the same disagreement is simply repeated at greater cost; nobody has re-examined whether the problem being negotiated is the one that can actually be solved right now; or the file has drifted procedurally because no one is actively pushing it. A useful test is whether the same argument has appeared in three different letters. If it has, the file is not negotiating, it is repeating."
@@ -35,8 +35,8 @@ faqStructured:
     answer: "Not automatically. Changing counsel costs money and time, because new counsel must read the entire file before doing anything useful and you pay for that reading. Some delays are also outside any lawyer's control: court scheduling, an opposing party who will not disclose, or a client who is not yet ready to settle. Changing lawyers fixes none of those. The question worth asking first is whether the strategy has ever been re-examined or only executed more forcefully, and that conversation can often be had with existing counsel. A second opinion tends to be worth the cost where the file has a structural problem: the wrong procedural footing, a missed step needing a motion to correct, an asset losing value while the parties argue, or a strategy designed for circumstances that no longer exist."
   - question: "The other side keeps delaying. Does delay help them?"
     answer: "It depends entirely on who benefits from the status quo. Where one party is living in the home, controlling the finances, or otherwise enjoying the current arrangement, delay is a strategy and they have every reason to continue it. Where the asset in dispute is losing value, incurring carrying costs, or subject to a mortgage in arrears, delay damages both sides and is not rational for either. Working out which situation applies is the first step, because it determines whether the answer is a procedural remedy to compel movement or a negotiation that gives the other side a reason to move."
-  - question: "Can I force the sale of a jointly owned matrimonial home in Ontario before the case is resolved?"
-    answer: "Often yes. Under section 2 of the Partition Act, a joint owner of property has a prima facie right to partition and sale, and this includes a jointly owned matrimonial home. The right is not absolute: the court weighs competing interests under the Family Law Act, including a spouse's possessory rights and any claim for exclusive possession, and may refuse a sale that would genuinely prejudice those claims or where a party's conduct has been malicious, vexatious or oppressive. The Partition Act applies only to jointly held property; where the home is registered in one spouse's name alone, different provisions govern."
+  - question: "Can I force the sale of a matrimonial home in Ontario before the case is resolved?"
+    answer: "Often yes. For a matrimonial home — jointly owned or registered in one spouse's name alone — both spouses have an interest in the land and either may seek partition and sale under sections 2 and 3 of the Partition Act. Investment properties differ: jointly owned ones follow the Partition Act directly; property in one name only requires the interest to be established first (a trust claim or a determination of title), after which partition can follow. The right is not absolute: the court weighs competing Family Law Act interests, including possessory rights and exclusive possession claims, and may refuse a sale that would genuinely prejudice those claims or where a party's conduct has been malicious, vexatious or oppressive."
   - question: "If we sell the house before agreeing how to divide the money, do I lose my claim?"
     answer: "Not if the proceeds are properly secured. Where the parties cannot agree how the money should be divided, the standard mechanism is for the net sale proceeds to be held in trust pending agreement or further order of the court. Each party's claim survives; it simply attaches to a fund instead of to a property. This is why an agreement to sell can often be reached even when an agreement to divide cannot. Selling converts a depreciating, cost-generating asset into a preserved one, and neither party gives up any entitlement by agreeing to it."
   - question: "The mortgage is in arrears and my spouse will not agree to sell. What happens?"
@@ -51,7 +51,7 @@ faqStructured:
 <ul>
 <li>Two years of no movement is rarely court backlog. It usually means the file's strategy has never been re-examined.</li>
 <li>Deadlocks break when you separate the <strong>process</strong> question from the <strong>substantive</strong> question, and settle the process one first.</li>
-<li>A joint owner has a <em>prima facie</em> right to partition and sale under the <strong>Partition Act</strong>, s. 2 — subject to competing <em>Family Law Act</em> interests.</li>
+<li>A <strong>matrimonial home</strong> (regardless of whose name is on title) and a <strong>jointly owned investment property</strong> can usually be sold under the <strong>Partition Act</strong> — subject to competing <em>Family Law Act</em> interests.</li>
 <li>Where the parties cannot agree how to divide, <strong>net proceeds are held in trust</strong>. Nobody gives anything up by selling.</li>
 <li>Taking instructions and giving advice are different services. Stalled files usually need the second.</li>
 <li>Knowing the law is the entry requirement. <strong>Steering</strong> — deciding which legally available route actually arrives — is the job.</li>
@@ -145,7 +145,7 @@ The client agreed. The other side was persuaded. A file that had been frozen for
 
 This is not a workaround. It maps onto how Ontario courts handle exactly this situation, which is a large part of why the other side could be persuaded — the alternative was a motion they were unlikely to win.
 
-**The starting point.** Under **section 2 of the *Partition Act***, a joint owner of property has a ***prima facie* right to partition and sale**, and this includes a jointly owned matrimonial home. The Act applies only to jointly held property; where the home is in one spouse's name alone, different provisions govern, including the prohibition on alienation without consent under **s. 21 of the *Family Law Act***.
+**The starting point.** Under **sections 2 and 3 of the [*Partition Act*](https://www.canlii.org/en/on/laws/stat/rso-1990-c-p4/latest/rso-1990-c-p4.html)**, a person with an interest in land may seek partition and sale. For a **matrimonial home**, both spouses have an interest regardless of whose name is on title, so either may apply. A **jointly owned investment property** follows the same Act. An **investment property in one name only** requires the interest to be established first (a trust claim or a determination of title), after which partition can follow. **Section 21 of the [*Family Law Act*](https://www.canlii.org/en/on/laws/stat/rso-1990-c-f3/latest/rso-1990-c-f3.html)** prohibits disposing of a matrimonial home without the other spouse's consent or a court order — it blocks a unilateral private sale, not a court-ordered one. For the full analysis, see: [Your Spouse Won't Sell, Won't Pay and Won't Leave: Forcing the Sale of a Matrimonial Home in Ontario](/en/blog/force-sale-matrimonial-home-ontario/).
 
 **The limits.** That right is not absolute. In the family context the court weighs competing interests under the *Family Law Act*, including possessory rights and any claim for **exclusive possession**. The Court of Appeal has held that a sale before the resolution of *Family Law Act* issues should not be ordered as a matter of course (*Martin v. Martin*), and that the discretion to refuse partition and sale is narrow — reserved for conduct that is malicious, vexatious or oppressive (*Latcham v. Latcham*). At the same time, a party cannot simply hold the property hostage pending adjudication of their own claim; the prejudice asserted must be real (*Silva v. Silva*).
 
@@ -163,12 +163,12 @@ Courts have refused sale where the resisting spouse had legitimate outstanding c
 
 The technique also does not help where:
 
-- the home is not jointly owned, which takes the *Partition Act* out of the picture;
+- the property is an **investment property in one name only** and the interest has not yet been established — ownership must be resolved before the *Partition Act* route opens (a matrimonial home in one name can still be sold);
 - there is a live claim for **exclusive possession** with a real basis;
 - the deadlock is genuinely about children rather than property;
 - the asset is appreciating and neither party is bearing unsustainable carrying costs — in which case delay is not hurting anyone equally, and the incentive alignment that makes this work does not exist.
 
-The principle is not "always sell." It is: **find the question on which the parties' interests actually align, and settle that one first.** For a jointly owned property with arrears, that question is usually the sale. In another file, it will be something else.
+The principle is not "always sell." It is: **find the question on which the parties' interests actually align, and settle that one first.** For a matrimonial home or jointly owned property with arrears, that question is usually the sale. In another file, it will be something else.
 
 ---
 
@@ -227,9 +227,9 @@ Not automatically. New counsel must read the entire file before doing anything u
 
 It depends on who benefits from the status quo. If one party is living in the home or controlling the finances, delay is a strategy and they have every reason to continue. If the disputed asset is losing value, generating carrying costs, or in mortgage arrears, delay damages both sides and is irrational for either. Which situation applies determines whether the answer is a procedural remedy or a negotiation that gives the other side a reason to move.
 
-### Can I force the sale of a jointly owned matrimonial home before the case is resolved?
+### Can I force the sale of a matrimonial home before the case is resolved?
 
-Often yes. A joint owner has a *prima facie* right to partition and sale under s. 2 of the *Partition Act*, subject to competing *Family Law Act* interests including possessory rights and exclusive possession claims. The Act applies only to jointly held property.
+Often yes. A **matrimonial home** — jointly owned or in one name — can be sold under the *Partition Act* because both spouses have an interest; a **jointly owned investment property** follows the same route; an **investment property in one name** requires the interest to be established first. Sale remains subject to competing *Family Law Act* interests, including possessory rights and exclusive possession claims. See: [Forcing the sale of a matrimonial home](/en/blog/force-sale-matrimonial-home-ontario/).
 
 ### If we sell before agreeing how to divide the money, do I lose my claim?
 
