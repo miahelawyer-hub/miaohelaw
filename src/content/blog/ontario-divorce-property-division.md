@@ -93,7 +93,8 @@ tags:
   "publisher": {
     "@type": "LegalService",
     "name": "H. LAW FIRM 恒. 律师事务所",
-    "url": "https://www.hlawfirmontario.com"
+    "url": "https://www.miaohelaw.ca/",
+    "sameAs": ["https://www.hlawfirmontario.com/"]
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
