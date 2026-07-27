@@ -1895,6 +1895,44 @@ export const faqItems: FaqItem[] = [
     keywords:
       '万锦离婚法庭,列治文山离婚法庭,Newmarket法庭,Newmarket家庭法庭,万锦离婚律师,列治文山离婚律师,华人离婚律师万锦,何淼律师',
   },
+  {
+    slug: 'case-conference-xuyao-zhunbei-shenme',
+    capsule: '安省 Case Conference 需要准备什么？',
+    question: '安省家庭法的 Case Conference 需要准备什么？',
+    featured: true,
+    pairedFaqPath: '/en/faq/how-to-prepare-case-conference-ontario/',
+    metaTitle: '安省 Case Conference 需要准备什么？',
+    metaDescription:
+      '必备 Form 17A 案件会议简报和 Form 17F 确认书，涉及财产或支持的还需财务陈述。期限、页数限制、以及漏交 17F 会被取消开庭的后果。',
+    summary:
+      '必须准备两份文件：<strong>Form 17A</strong>（Case Conference Brief，案件会议简报）和 <strong>Form 17F</strong>（Confirmation of Conference，会议确认书）。涉及财产分割或抚养费、配偶支持的，还需要财务陈述。两份文件的提交期限不同，漏交 Form 17F 会导致开庭被取消。',
+    answers: [
+      '核心文件是 <strong>Form 17A</strong> 与 <strong>Form 17F</strong>；涉及财产或支持的，还要准备 Form 13/13.1 财务陈述和 Form 13A 披露证明书。',
+      'Form 17A 通常有<strong>8 页上限</strong>（个别法院如 Barrie 为 12 页）；约到开庭日期的一方须在会议前 <strong>6 天</strong>送达并提交，另一方为 <strong>4 天</strong>（Rule 17(13.1)）。',
+      'Form 17F 须<strong>先送达对方、再交给书记官</strong>，一般不迟于会议前 3 个工作日下午 2 点；漏交通常会被法院撤下排期。',
+      '按 Rule 14(4)，在处理实质争议的会议完成前，多数动议不得送达或聆讯——Case Conference 准备充分与否，直接决定之后几个月的推进速度。',
+    ],
+    details: [
+      '<strong>Case Conference 是什么。</strong>Case Conference（案件会议）是安省家庭法诉讼中，当事人第一次正式与法官见面的庭前程序，由法官主持。目的是让法官了解案件、缩小争议范围、推动双方和解，并安排下一步程序。它不是审判，也不是动议聆讯。法官通常不会对双方仍有争议的实质问题——孩子由谁抚养、财产如何分割、抚养费最终数额——作出最终裁决。依据：Ontario Family Law Rules, O. Reg. 114/99, Rules 14 与 17；Superior Court of Justice Consolidated Provincial Practice Direction for Family Proceedings。',
+      '<strong>Form 17A：案件会议简报。</strong>Form 17A 是向法官介绍案件的核心文件，通常包括：双方的基本背景资料；婚姻或同居关系的发展过程；子女情况（如适用）；目前存在的争议事项；希望法官协助解决的问题；已经进行过的协商情况及和解建议。法官开庭前会阅读双方提交的简报，因此内容应当简洁、准确，并突出案件重点。',
+      '<strong>页数限制。</strong>省高等法院的 Practice Direction 规定，Case Conference Brief 不得超过 <strong>8 页</strong>，其中包括作为附录或附表附上的额外事实与论点（规则允许的附件不计入）。个别法院另有规定，例如 Barrie 法院为 12 页。提交前应确认所在法院的具体要求。',
+      '<strong>Form 17A 提交期限（Rule 17(13.1)）。</strong>申请会议、约到开庭日期的一方：会议前 <strong>6 天</strong>送达并提交；另一方：会议前 <strong>4 天</strong>。如果开庭日期是在 First Appearance 上排定的、双方都没有「申请」，则申请人（Applicant）被视为约到日期的一方，适用 6 天期限。',
+      '<strong>财务文件。</strong>如果案件涉及财产分割、抚养费或配偶支持，还需要准备：Form 13 或 Form 13.1 财务陈述（Financial Statement）；Form 13A 财务披露证明书（Certificate of Financial Disclosure）。',
+      '<strong>60 天规则。</strong>如果上一份财务陈述距今已超过 60 天，必须更新——财务状况有重大变化的，提交新的 Form 13；没有变化或仅有轻微变化的，提交 Form 14A 誓章说明。提交前，必须把财务陈述中的银行账户号码、按揭和贷款账号等个人识别信息涂黑。',
+      '<strong>Form 17F：不要漏掉的确认书。</strong>除了简报之外，双方还必须在规定期限内提交 Confirmation（Form 17F）。它通知法院：会议是否仍需进行、预计需要多长时间、当天需要法官处理哪些最重要的问题，以及法官应当阅读哪些文件及其在 Continuing Record 中的卷号和标签号。',
+      '<strong>漏交 17F 的后果。</strong>如果没有按时提交 Form 17F，法院通常会认为会议不再需要进行，并将已排定的 Case Conference 从排期表中撤下，除非法院另有命令。届时需要重新申请新的开庭日期，既浪费时间，也会拖慢整个案件的进度。',
+      '<strong>Form 17F 期限和顺序。</strong>不迟于会议前 3 天下午 2 点交给法院书记官。规则条文写的是 “days”，但省高等法院的 Practice Direction 要求为 <strong>3 个工作日</strong>，按工作日计算更安全。顺序不能反：必须先把确认书副本给对方，然后才交给书记官（Rule 17(14)(b)）。交出后如果发现内容有误或情况有变，必须立即向对方和书记官提交更正后的确认书。',
+      '<strong>会前必须沟通。</strong>双方（或律师）在会议前必须就争议事项进行口头或书面沟通，并在 Form 17F 中说明。未经沟通可能导致会议被押后，并被判承担成本。',
+      '<strong>法官在会议上能作出什么命令。</strong>对双方仍有争议的实质问题，法官通常不会在这一步作出最终裁决。但按 Rule 17(8)，法官可以：作出文件披露命令（Rule 19）；命令进行 Questioning（Rule 20）；就专家意见证据作出命令；规定各项步骤的时间表、安排下一次开庭日期；就案件下一步给出指示。此外，只要双方就某事项达成一致，法官就可以据此签发 Consent Order（同意令）。实务上，很多实质问题确实是在这一阶段以同意令解决的，只是路径是协议，不是裁决。',
+      '<strong>准备重点不只是介绍案情。</strong>更要想清楚：这次开庭要拿到哪几项程序命令。尤其是披露命令和时间表——拿不到，案件就会停在原地。',
+      '<strong>会议上说的话会成为证据吗？</strong>一般不会。Case Conference 鼓励双方坦诚沟通，因此会议上发表的意见、提出的和解建议，以及为促成和解所作的讨论，通常不能在之后的审判或其他程序中被引用，用来证明某一方曾作出让步。Form 17A 不进入 Continuing Record，除非法官另有命令；即使法官命令归档，简报中涉及和解的部分必须删除（Rule 17(22.1)）。',
+      '<strong>重要例外与 Endorsement。</strong>如果双方在会议上共同确认了某些事实，或达成了协议，而这些内容被记入法官的 Endorsement（批示）或 Consent Order，那么这些事实和命令日后是可以被引用和执行的。会议结束时务必认真核对 Endorsement 或 Consent Order，确认法院记录的事实、双方达成的协议以及程序安排是否准确。记错的内容会跟着案件走到最后。',
+      '<strong>为什么这一步绕不过去。</strong>按 Rule 14(4)，在处理案件实质争议的会议完成之前，动议通知和支持证据都不得送达，动议也不得被聆讯。例外见 Rule 14(4.2)：法院认为存在紧急情况（urgency）、困难情形（hardship），或出于司法利益认为无需先开案件会议的，不受此限制。在拿到第一次会议之前，大部分临时救济都用不上；准备得充分与否，直接决定案件之后几个月的推进速度。',
+      '如需结合您的案件排期、所在法院页数限制与披露现状做会前清单，欢迎致电 <strong>647-930-6688</strong> 预约何淼律师咨询。',
+    ],
+    keywords:
+      'Case Conference准备,Form 17A,Form 17F,安省案件会议,家庭法Case Conference,财务陈述Form 13,安省家庭法规则17,何淼律师',
+  },
 ];
 
 export function getFaqItemsForListing(): FaqItem[] {
