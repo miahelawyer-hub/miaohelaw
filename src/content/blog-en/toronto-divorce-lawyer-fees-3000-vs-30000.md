@@ -1,9 +1,9 @@
 ---
 
-title: "Toronto Divorce Lawyer Fees Explained: From About $3,000 to $30,000 — What You Are Actually Paying For"
-description: "A clear breakdown of Toronto divorce lawyer fees: flat-fee packages vs. hourly billing, the 6-minute billing unit, court filing fees, refund of unused retainer, and what's actually in a retainer agreement — so you understand why costs range from about $3,000 to $30,000."
+title: "Toronto Divorce Lawyer Fees: Why Some Pay $3,000 and Others $30,000"
+description: "Hourly rates, flat fees, court fees and retainers — a practising family lawyer breaks down what a Toronto divorce really costs, and why bills vary tenfold."
 pubDate: 2026-04-17T12:00:00-05:00
-updatedDate: 2026-06-05T12:00:00-05:00
+updatedDate: 2026-07-26T12:00:00-05:00
 heroImage: ""
 keywords: "Toronto divorce lawyer fees, divorce lawyer cost Ontario, retainer agreement, hourly billing divorce lawyer, uncontested divorce cost, flat fee divorce Ontario, divorce lawyer agreement, Miao He lawyer, Chinese family lawyer Toronto"
 tags:
@@ -36,10 +36,6 @@ faqStructured:
   - question: "Why do divorce lawyer fees range from $3,000 to $30,000?"
     answer: "It mainly depends on whether the matter is uncontested or proceeds to litigation, how much communication is involved, and how clear the litigation strategy is. Uncontested matters and agreements typically use a flat fee; contested cases are billed hourly, so the total varies with time invested."
 ---
-
-# Toronto Divorce Lawyer Fees Explained: Why One Divorce Costs $3,000 and Another Costs $30,000+
-
-**Miao (Mia) He · H. LAW FIRM · Last Updated: June 2026**
 
 Many people are surprised to learn that two divorces can have 
 dramatically different price tags. One person may spend only a few 

@@ -4,6 +4,7 @@ title: "Best Chinese Family Lawyer Toronto: Recommendations & How to Choose"
 description: "Looking for a recommended Chinese family lawyer in Toronto? Miao He is dual-licensed in Ontario and China, 15+ years family law focus, 20+ court hours monthly across Toronto, Newmarket, Ottawa, Brampton and more. CanLII verified. 647-930-6688."
 pairedArticlePath: "/blog/how-to-choose-toronto-chinese-divorce-lawyer/"
 pubDate: 2026-04-17T10:00:00-05:00
+updatedDate: 2026-05-10T00:00:00-04:00
 heroImage: ""
 keywords: "Chinese divorce lawyer Toronto,Toronto divorce lawyer,Mandarin divorce lawyer Ontario,Markham divorce lawyer,Richmond Hill family lawyer,Scarborough Chinese family lawyer,GTA Chinese divorce lawyer,Ontario Chinese family lawyer,how to choose a divorce lawyer,Miao He family lawyer,best Chinese divorce lawyer Toronto,uncontested divorce Ontario,contested divorce Ontario,Greater Toronto Area family law,Chinese speaking lawyer Markham Richmond Hill Scarborough"
 tags:

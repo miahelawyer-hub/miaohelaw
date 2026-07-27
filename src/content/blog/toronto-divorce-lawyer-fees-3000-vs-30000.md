@@ -1,9 +1,9 @@
 ---
 
-title: "多伦多离婚律师费用全解：3000 到 3 万，这些钱究竟花在哪里？"
-description: "多伦多离婚律师费用全解：无争议 package 与按小时计费差在哪？6 分钟计费单元、法院规费、退款规则与委托协议（retainer agreement / 律师协议）一文说清，帮你看懂从三千到三万的落差。"
+title: "多伦多离婚律师费用：为什么有人 3 千，有人 3 万？"
+description: "按小时怎么算、什么时候能拿到打包价、法院规费多少、retainer 怎么用完——执业家庭法律师拆解多伦多离婚的真实成本，以及账单为什么能差十倍。"
 pubDate: 2026-04-17T12:00:00-05:00
-updatedDate: 2026-06-05T12:00:00-05:00
+updatedDate: 2026-07-26T12:00:00-05:00
 heroImage: ""
 keywords: "多伦多离婚律师费用,多伦多离婚律师协议,离婚律师收费,离婚律师费安省,retainer,委托协议,按小时收费,无争议离婚费用,何淼律师,华人家庭法律师"
 pairedArticlePath: "/en/blog/toronto-divorce-lawyer-fees-3000-vs-30000/"

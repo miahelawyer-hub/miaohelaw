@@ -169,8 +169,8 @@ export const faqItemsEn: FaqItemEn[] =
       "Practical planning: if you will register a new marriage in China or elsewhere, you may need authentication — for example Apostille steps where available, or Chinese consular authentication depending on timing and routing. Confirm the receiving country requirements early.",
       "If you need help expediting the certificate or coordinating cross-border document authentication, contact Miao He at 647-930-6688 or WeChat 372656035."
     ],
-    "metaTitle": "When Can I Remarry After Receiving My Certificate of Divorce? | Miao He",
-    "metaDescription": "Once you hold a Certificate of Divorce you may remarry immediately — no further waiting period. The court first grants a Divorce Order; after the 31-day appeal window you may apply for the Certificate proving the marriage is legally ended. 647-930-6688.",
+    "metaTitle": "When Can I Remarry After Divorce in Ontario?",
+    "metaDescription": "Immediately, once you hold the Certificate of Divorce. The Divorce Order comes first, then a 31-day appeal window before the Certificate is issued.",
     "keywords": "remarriage after divorce Ontario,Certificate of Divorce Ontario,Divorce Order vs certificate Ontario,how long remarry Canada,Miao He lawyer,Chinese family lawyer GTA",
     "featured": true
   },
