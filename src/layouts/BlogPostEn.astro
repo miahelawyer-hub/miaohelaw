@@ -183,6 +183,18 @@ const legalServiceLd = {
   ],
   sameAs: ['https://www.hlawfirmontario.com/'],
   founder: { '@id': `${siteOrigin}/#person` },
+  employee: { '@id': `${siteOrigin}/#person` },
+};
+
+const personLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  '@id': `${siteOrigin}/#person`,
+  name: 'Miao He',
+  alternateName: ['何淼', 'Mia He'],
+  jobTitle: 'Family Litigation Lawyer',
+  url: `${siteOrigin}/en/about/`,
+  worksFor: { '@id': `${siteOrigin}/#legalservice` },
 };
 
 const breadcrumbLd = {
@@ -200,6 +212,7 @@ const structuredDataJson = JSON.stringify([
   articleLd,
   webPageLd,
   webSiteLd,
+  personLd,
   legalServiceLd,
   faqPageLd,
   breadcrumbLd,

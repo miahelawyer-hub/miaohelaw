@@ -87,7 +87,13 @@ tags:
     "url": "https://www.miaohelaw.ca/about/",
     "sameAs": [
       "https://lso.ca/public-resources/finding-a-lawyer-or-paralegal/directory-search/member?MemberNumber=83315K"
-    ]
+    ],
+    "worksFor": {
+      "@type": "LegalService",
+      "name": "H. LAW FIRM 恒. 律师事务所",
+      "url": "https://www.miaohelaw.ca/",
+      "sameAs": ["https://www.hlawfirmontario.com/"]
+    }
   },
   "publisher": {
     "@type": "LegalService",
