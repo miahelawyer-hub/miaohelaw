@@ -70,8 +70,8 @@ function formatBlogDate(date: Date) {
       {
         "@type": "LegalService",
         "@id": "https://www.miaohelaw.ca/#lawfirm",
-        "name": "H. LAW FIRM 恒. 律师事务所",
-        "alternateName": "H. LAW FIRM 恒. 律师事务所",
+        "name": "H. LAW FIRM - 恒. 律师事务所",
+        "alternateName": ["H. LAW FIRM 恒. 律师事务所"],
         "logo": "https://www.miaohelaw.ca/h-law-firm-logo.png",
         "url": "https://www.miaohelaw.ca/",
         "telephone": "+1-647-930-6688",
@@ -105,7 +105,10 @@ function formatBlogDate(date: Date) {
           ]
         },
         "employee": {"@id": "https://www.miaohelaw.ca/#person"},
-        "sameAs": ["https://www.hlawfirmontario.com/"],
+        "sameAs": [
+          "https://www.hlawfirmontario.com/",
+          "https://maps.app.goo.gl/J9DkvRcrYgodtiNs7"
+        ],
         "priceRange": "$$"
       },
       {
