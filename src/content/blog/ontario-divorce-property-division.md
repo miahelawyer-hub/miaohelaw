@@ -86,14 +86,14 @@ tags:
     "name": "Miao He (何淼)",
     "url": "https://www.miaohelaw.ca/about/",
     "sameAs": [
-      "https://lso.ca/public-resources/finding-a-lawyer-or-paralegal/directory-search/member?MemberNumber=83315K",
-      "https://www.hlawfirmontario.com"
+      "https://lso.ca/public-resources/finding-a-lawyer-or-paralegal/directory-search/member?MemberNumber=83315K"
     ]
   },
   "publisher": {
     "@type": "LegalService",
     "name": "H. LAW FIRM 恒. 律师事务所",
-    "url": "https://www.hlawfirmontario.com"
+    "url": "https://www.miaohelaw.ca/",
+    "sameAs": ["https://www.hlawfirmontario.com/"]
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
