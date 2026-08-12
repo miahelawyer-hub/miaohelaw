@@ -25,12 +25,6 @@ function formatBlogDate(date: Date) {
   <link rel="alternate" hreflang="zh" href="https://www.miaohelaw.ca/" />
   <link rel="alternate" hreflang="en" href="https://www.miaohelaw.ca/en/" />
   <link rel="alternate" hreflang="x-default" href="https://www.miaohelaw.ca/" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap"
-    rel="stylesheet"
-  />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -171,11 +165,27 @@ function formatBlogDate(date: Date) {
 
     <!-- Hero: same full-width treatment as Chinese homepage; portrait on /en/about/ -->
     <section class="hero hero--court" aria-labelledby="hero-main-heading">
-      <div
-        class="hero-court-bg"
-        aria-hidden="true"
-        style="background-image: url('/images/hero-home-court-interior.webp');"
-      ></div>
+      <div class="hero-court-bg" aria-hidden="true">
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="/images/hero-home-court-interior-mobile.webp"
+            type="image/webp"
+            width="768"
+            height="512"
+          />
+          <img
+            class="hero-court-bg-img"
+            src="/images/hero-home-court-interior.webp"
+            alt=""
+            width="1024"
+            height="682"
+            fetchpriority="high"
+            loading="eager"
+            decoding="async"
+          />
+        </picture>
+      </div>
       <div class="hero-court-scrim" aria-hidden="true"></div>
       <div class="hero-inner hero-inner--court">
         <p class="hero-court-eyebrow">Ontario family law</p>
@@ -603,11 +613,16 @@ function formatBlogDate(date: Date) {
     position: absolute;
     inset: 0;
     z-index: 0;
-    background-size: cover;
-    background-position: 58% 42%;
-    background-repeat: no-repeat;
+    overflow: hidden;
     transform: scale(1.03);
     pointer-events: none;
+  }
+  .hero-court-bg-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 58% 42%;
   }
   .hero-court-scrim {
     position: absolute;

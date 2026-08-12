@@ -25,3 +25,6 @@ pnpm-debug.log*
 
 # Vercel CLI link metadata (do not commit)
 .vercel/
+
+.venv/
+tmp-fonts/
