@@ -78,7 +78,7 @@ import HeaderLink from './HeaderLink.astro';
 	</nav>
 </header>
 
-<style>
+<style is:inline>
 	header {
 		margin: 0;
 		padding: 0 1em;
@@ -130,6 +130,14 @@ import HeaderLink from './HeaderLink.astro';
 	.lang-switch:hover {
 		background: #7A5A1A;
 		color: #fff !important;
+	}
+	.internal-links :global(a) {
+		display: inline-block;
+		text-decoration: none;
+	}
+	.internal-links :global(a.active) {
+		font-weight: bolder;
+		text-decoration: underline;
 	}
 	/* Dropdown */
 	.dropdown {

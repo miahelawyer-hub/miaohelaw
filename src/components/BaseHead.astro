@@ -1,5 +1,5 @@
 ---
-import '../styles/global.css';
+import globalCss from '../styles/global.css?raw';
 import { SITE_TITLE } from '../consts';
 
 interface Props {
@@ -43,6 +43,10 @@ const abs = (path: string) => new URL(path, `${origin}/`).href;
 	href={new URL('rss.xml', Astro.site)}
 />
 <meta name="generator" content={Astro.generator} />
+
+<style is:inline set:html={globalCss}></style>
+<link rel="preload" href="/styles/footer.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<noscript><link rel="stylesheet" href="/styles/footer.css" /></noscript>
 
 <!-- Self-hosted fonts (Playfair latin + Noto Serif SC glyph subset) — no Google Fonts CDN -->
 <link rel="preload" as="font" type="font/woff2" href="/fonts/playfair-display-latin-500-normal.woff2" crossorigin />

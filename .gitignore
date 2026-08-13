@@ -28,3 +28,4 @@ pnpm-debug.log*
 
 .venv/
 tmp-fonts/
+tmp-images/
