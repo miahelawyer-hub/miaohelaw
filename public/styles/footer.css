@@ -8,6 +8,8 @@
   z-index: 999;
   flex-direction: column;
   box-shadow: 0 -2px 16px rgba(0, 0, 0, 0.3);
+  /* Keep tap targets above iPhone home indicator / Safari bottom bar */
+  padding-bottom: env(safe-area-inset-bottom, 0px);
 }
 
 .call-row {
@@ -110,6 +112,10 @@
 @media (max-width: 768px) {
   .call-bar {
     display: flex;
+  }
+
+  footer {
+    padding-bottom: calc(6.5rem + env(safe-area-inset-bottom, 0px));
   }
 }
 
