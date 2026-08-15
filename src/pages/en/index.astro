@@ -190,7 +190,10 @@ function formatBlogDate(date: Date) {
       <div class="hero-inner hero-inner--court">
         <p class="hero-court-eyebrow">Ontario family law</p>
         <p class="hero-court-slogan" lang="en">Fighting for What Matters Most <span class="hero-court-slogan-tail">to You.</span></p>
-        <h1 id="hero-main-heading" class="hero-court-h1">Ontario Family Law &amp; Divorce Lawyer | Chinese Family Lawyer – Miao He <span class="hero-court-chinese">何淼</span></h1>
+        <h1 id="hero-main-heading" class="hero-court-h1">
+          Ontario Family Law &amp; Divorce Lawyer
+          <span class="hero-court-h1-sub">Chinese Family Lawyer – Miao He <span class="hero-court-chinese">何淼</span></span>
+        </h1>
         <p class="hero-court-lead">Ontario family litigation lawyer · dual-licensed (Ontario &amp; China) · divorce, custody &amp; cross-border assets · Mandarin &amp; English · Markham · GTA and Ontario</p>
         <div class="hero-court-actions">
           <a href="tel:6479306688" class="btn-court-primary">Book a consultation · 647-930-6688</a>
@@ -678,7 +681,13 @@ function formatBlogDate(date: Date) {
     font-weight: 500;
     color: rgba(255, 255, 255, 0.95);
     letter-spacing: 0.02em;
+    line-height: 1.28;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5), 0 3px 24px rgba(0, 0, 0, 0.45);
+  }
+  .hero-court-h1-sub {
+    display: block;
+    margin-top: 0.2em;
+    font-size: 0.92em;
   }
   .hero-court-chinese {
     color: #e8c9a4;
