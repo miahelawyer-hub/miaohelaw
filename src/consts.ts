@@ -8,6 +8,16 @@ export const AUTHOR_NAME = 'Miao He (何淼)';
 export const AUTHOR_TITLE = 'Barrister & Solicitor — Ontario & China';
 export const AUTHOR_EMAIL = 'miao@miaohelaw.ca';
 
+/** Personal GBP (Miao He Law → miaohelaw.ca). Not the H. LAW FIRM Maps listing. */
+export const PERSONAL_GBP_NAME = 'Miao He Law';
+export const PERSONAL_GBP_URL = 'https://www.google.com/search?q=Miao+He+Law&kgmid=/g/11nc1y4_8w';
+export const PERSONAL_GBP_MAPS_URL =
+	'https://www.google.com/maps/place/Miao+He+Law/@43.8149715,-79.3498119,17z/data=!3m1!4b1!4m6!3m5!1s0x89d4d33d713b3bc5:0xbfc8a82458104dfb!8m2!3d43.8149715!4d-79.3498119!16s%2Fg%2F11nc1y4_8w';
+export const PERSONAL_GBP_MAP_EMBED_EN =
+	'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.6!2d-79.3498119!3d43.8149715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d33d713b3bc5%3A0xbfc8a82458104dfb!2sMiao+He+Law!5e0!3m2!1sen!2sca';
+export const PERSONAL_GBP_MAP_EMBED_ZH =
+	'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.6!2d-79.3498119!3d43.8149715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d33d713b3bc5%3A0xbfc8a82458104dfb!2sMiao+He+Law!5e0!3m2!1szh-CN!2sca';
+
 const SITE_LAST_UPDATED_TZ = 'America/Toronto';
 
 function formatSiteLastUpdatedZh(date: Date): string {

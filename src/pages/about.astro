@@ -93,7 +93,18 @@ import { SITE_LAST_UPDATED_ZH } from '../consts';
         { "@type": "Organization", "name": "York Region Law Association", "url": "https://yorklaw.ca/" },
         { "@type": "Organization", "name": "Justice Net", "url": "https://www.justicenet.ca" }
       ],
-      "worksFor": { "@id": "https://www.miaohelaw.ca/#lawfirm" },
+      "worksFor": [
+        {"@id": "https://www.miaohelaw.ca/#lawfirm"},
+        {
+          "@type": "LegalService",
+          "name": "H. LAW FIRM - 恒. 律师事务所",
+          "url": "https://www.hlawfirmontario.com/",
+          "sameAs": [
+            "https://www.hlawfirmontario.com/",
+            "https://maps.app.goo.gl/J9DkvRcrYgodtiNs7"
+          ]
+        }
+      ],
       "sameAs": [
         "https://lso.ca/home",
         "https://www.linkedin.com/in/mia-he-93422b160/"
@@ -103,12 +114,11 @@ import { SITE_LAST_UPDATED_ZH } from '../consts';
       "@context": "https://schema.org",
       "@type": "LegalService",
       "@id": "https://www.miaohelaw.ca/#lawfirm",
-      "name": "H. LAW FIRM - 恒. 律师事务所",
-      "alternateName": ["H. LAW FIRM 恒. 律师事务所"],
+      "name": "Miao He Law",
+      "alternateName": ["何淼律师", "Miao He (何淼)"],
       "url": "https://www.miaohelaw.ca/",
       "sameAs": [
-        "https://www.hlawfirmontario.com/",
-        "https://maps.app.goo.gl/J9DkvRcrYgodtiNs7"
+        "https://www.google.com/search?q=Miao+He+Law&kgmid=/g/11nc1y4_8w"
       ],
       "employee": { "@id": "https://www.miaohelaw.ca/#person" }
     },

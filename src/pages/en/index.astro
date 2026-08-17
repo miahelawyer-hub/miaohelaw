@@ -55,7 +55,18 @@ function formatBlogDate(date: Date) {
           {"@type": "Organization", "name": "York Region Law Association", "url": "https://yrla.ca/"},
           {"@type": "Organization", "name": "Justice Net", "url": "https://www.justicenet.ca/"}
         ],
-        "worksFor": {"@id": "https://www.miaohelaw.ca/#lawfirm"},
+        "worksFor": [
+          {"@id": "https://www.miaohelaw.ca/#lawfirm"},
+          {
+            "@type": "LegalService",
+            "name": "H. LAW FIRM - 恒. 律师事务所",
+            "url": "https://www.hlawfirmontario.com/",
+            "sameAs": [
+              "https://www.hlawfirmontario.com/",
+              "https://maps.app.goo.gl/J9DkvRcrYgodtiNs7"
+            ]
+          }
+        ],
         "sameAs": [
           "https://lso.ca/public-resources/finding-a-lawyer-or-paralegal/lawyer-and-paralegal-directory",
           "https://www.linkedin.com/in/mia-he-93422b160/"
@@ -64,8 +75,8 @@ function formatBlogDate(date: Date) {
       {
         "@type": "LegalService",
         "@id": "https://www.miaohelaw.ca/#lawfirm",
-        "name": "H. LAW FIRM - 恒. 律师事务所",
-        "alternateName": ["H. LAW FIRM 恒. 律师事务所"],
+        "name": "Miao He Law",
+        "alternateName": ["何淼律师", "Miao He (何淼)"],
         "logo": "https://www.miaohelaw.ca/h-law-firm-logo.png",
         "url": "https://www.miaohelaw.ca/",
         "telephone": "+1-647-930-6688",
@@ -100,8 +111,7 @@ function formatBlogDate(date: Date) {
         },
         "employee": {"@id": "https://www.miaohelaw.ca/#person"},
         "sameAs": [
-          "https://www.hlawfirmontario.com/",
-          "https://maps.app.goo.gl/J9DkvRcrYgodtiNs7"
+          "https://www.google.com/search?q=Miao+He+Law&kgmid=/g/11nc1y4_8w"
         ],
         "priceRange": "$$"
       },
