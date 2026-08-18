@@ -2,7 +2,7 @@
 import BaseHead from '../../components/BaseHead.astro';
 import HeaderEn from '../../components/HeaderEn.astro';
 import Footer from '../../components/Footer.astro';
-import { PERSONAL_GBP_MAP_EMBED_EN, PERSONAL_GBP_MAPS_URL, PERSONAL_GBP_NAME, PERSONAL_GBP_URL, SITE_LAST_UPDATED_EN } from '../../consts';
+import { SITE_LAST_UPDATED_EN } from '../../consts';
 ---
 <!doctype html>
 <html lang="en">
@@ -40,8 +40,8 @@ import { PERSONAL_GBP_MAP_EMBED_EN, PERSONAL_GBP_MAPS_URL, PERSONAL_GBP_NAME, PE
       "@context": "https://schema.org",
       "@type": "LegalService",
       "@id": "https://www.miaohelaw.ca/#lawfirm",
-      "name": "Miao He Law",
-      "alternateName": ["何淼律师", "Miao He (何淼)"],
+      "name": "H. LAW FIRM - 恒. 律师事务所",
+      "alternateName": ["H. LAW FIRM 恒. 律师事务所", "H. LAW FIRM — Miao He Family Law"],
       "url": "https://www.miaohelaw.ca/en/contact/",
       "telephone": "+1-647-930-6688",
       "email": "miao@miaohelaw.ca",
@@ -77,22 +77,12 @@ import { PERSONAL_GBP_MAP_EMBED_EN, PERSONAL_GBP_MAPS_URL, PERSONAL_GBP_NAME, PE
           { "@type": "EducationalOccupationalCredential", "credentialCategory": "Expert Witness — Chinese Family Law & Marriage Law" },
           { "@type": "EducationalOccupationalCredential", "credentialCategory": "Notary Public — Ontario" }
         ],
-        "worksFor": [
-          {"@id": "https://www.miaohelaw.ca/#lawfirm"},
-          {
-            "@type": "LegalService",
-            "name": "H. LAW FIRM - 恒. 律师事务所",
-            "url": "https://www.hlawfirmontario.com/",
-            "sameAs": [
-              "https://www.hlawfirmontario.com/",
-              "https://maps.app.goo.gl/J9DkvRcrYgodtiNs7"
-            ]
-          }
-        ]
+        "worksFor": { "@id": "https://www.miaohelaw.ca/#lawfirm" }
       },
       "priceRange": "$$",
       "sameAs": [
-        "https://www.google.com/search?q=Miao+He+Law&kgmid=/g/11nc1y4_8w"
+        "https://www.hlawfirmontario.com/",
+        "https://maps.app.goo.gl/J9DkvRcrYgodtiNs7"
       ]
     },
     {
@@ -101,7 +91,7 @@ import { PERSONAL_GBP_MAP_EMBED_EN, PERSONAL_GBP_MAPS_URL, PERSONAL_GBP_NAME, PE
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "I am considering divorce but don't know where to start. Can I contact Miao He?",
+          "name": "I am considering divorce but don\'t know where to start. Can I contact Miao He?",
           "acceptedAnswer": { "@type": "Answer", "text": "Yes. Miao He offers a 30-minute initial consultation ($220+HST) to help you understand your rights, the process, and your options. Call 647-930-6688." }
         },
         {
@@ -559,21 +549,6 @@ import { PERSONAL_GBP_MAP_EMBED_EN, PERSONAL_GBP_MAPS_URL, PERSONAL_GBP_NAME, PE
       border-bottom-color: var(--contact-gold);
     }
 
-    .sidebar-card .gbp-reviews-link {
-      margin: 0 0 0.75rem;
-      font-size: 0.88rem;
-    }
-    .sidebar-card .gbp-reviews-link a {
-      color: #2c1810;
-      font-weight: 600;
-      text-decoration: none;
-      border-bottom: 1px solid rgba(212, 168, 83, 0.45);
-    }
-    .gbp-reviews-link a:hover {
-      color: var(--contact-gold);
-      border-bottom-color: var(--contact-gold);
-    }
-
     .sidebar-card p { font-size: 0.875rem; color: var(--contact-body); line-height: 1.7; margin-bottom: 0.5rem; }
 
     .map-wrapper {
@@ -768,23 +743,20 @@ import { PERSONAL_GBP_MAP_EMBED_EN, PERSONAL_GBP_MAPS_URL, PERSONAL_GBP_NAME, PE
             <div class="sidebar-card">
               <h3>Office Address</h3>
               <address>
-                <strong><a href={PERSONAL_GBP_MAPS_URL} target="_blank" rel="noopener">{PERSONAL_GBP_NAME}</a></strong><br/>
+                <strong><a href="https://www.hlawfirmontario.com" target="_blank" rel="noopener">H. LAW FIRM 恒. 律师事务所</a></strong><br/>
                 208 - 7050 Woodbine Avenue<br/>
                 Markham, Ontario L3R 4G8
               </address>
-              <p class="gbp-reviews-link">
-                <a href={PERSONAL_GBP_URL} target="_blank" rel="noopener">Google reviews · {PERSONAL_GBP_NAME}</a>
-              </p>
               <div class="map-wrapper">
                 <iframe
-                  src={PERSONAL_GBP_MAP_EMBED_EN}
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.6!2d-79.3498119!3d43.8149715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d36f0f400001%3A0x2fe787e17ffbfe38!2s7050+Woodbine+Ave+%23208%2C+Markham%2C+ON+L3R+4G8!5e0!3m2!1sen!2sca!4v1"
                   width="100%"
                   height="240"
                   style="border:0; display:block; border-radius: 6px;"
                   allowfullscreen=""
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"
-                  title="Miao He Law — 208-7050 Woodbine Ave, Markham">
+                  title="H. LAW FIRM — 208-7050 Woodbine Ave, Markham">
                 </iframe>
               </div>
             </div>
