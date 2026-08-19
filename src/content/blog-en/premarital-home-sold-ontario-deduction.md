@@ -15,6 +15,10 @@ tags:
   - "chinese-family-lawyer-toronto"
   - "dual-licensed-china-canada-lawyer"
 pairedArticlePath: "/blog/premarital-home-sold-ontario-deduction/"
+relatedIntro: "Read alongside:"
+relatedReading:
+  - slug: china-property-premarital-depreciation-ontario
+    line: "Does property in China have to be included? Why a pre-marriage decline in value can reduce equalization."
 faqStructured:
   - question: "I bought a house before I got married, then sold it and used the proceeds to buy our current home. Do I have to split the entire value with my spouse?"
     answer: "Not necessarily the date-of-marriage value of the former home. Section 4(1) of the Family Law Act allows a deduction for property owned on the date of marriage, other than a matrimonial home. Under s. 18(1), matrimonial-home status is assessed at the time of separation. If the pre-marriage home was sold before separation and replaced with another home, the former property may no longer be a matrimonial home, and its value at the date of marriage may be deductible. The new home, if it was the family residence at separation, is still treated as a matrimonial home."

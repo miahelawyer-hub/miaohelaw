@@ -15,6 +15,7 @@ tags:
   - "chinese-divorce-lawyer"
   - "toronto-chinese-divorce-lawyer"
   - "ontario-family-law"
+pairedArticlePath: "/en/blog/china-property-premarital-depreciation-ontario/"
 relatedIntro: "建议一并阅读："
 relatedReading:
   - slug: premarital-home-sold-ontario-deduction
