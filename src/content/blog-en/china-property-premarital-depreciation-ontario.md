@@ -203,7 +203,7 @@ Appraisals, document retrieval, authentication, and certified translation can be
 
 ## 6. Practical Takeaway
 
-If you own property in China and your spouses’ **last common habitual residence was in Ontario**, the property generally needs to be disclosed and considered in the Ontario NFP calculation.
+If you own property in China and the spouses’ **last common habitual residence was in Ontario**, the property generally needs to be disclosed and considered in the Ontario NFP calculation.
 
 If the property was purchased before marriage, the key questions include:
 

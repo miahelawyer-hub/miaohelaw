@@ -173,7 +173,7 @@ See [*Folga v. Folga* (1986), 2 R.F.L. (3d) 358 (Ont. H.C.J.)](https://www.canli
 
 This is precisely the type of issue that may be missed in an initial calculation and discovered only after a new lawyer reviews the file.
 
-## 4. Foreign Assets
+### 2. Foreign Assets
 
 Ontario's equalization regime generally takes into account global assets.
 
@@ -191,7 +191,7 @@ For example, a pre-marriage property in China may:
 
 Foreign assets are therefore an area where an earlier calculation can be wrong in both directions.
 
-## 5. Depreciation of Property Owned Before Marriage
+### 3. Depreciation of Property Owned Before Marriage
 
 Another common error is to record the pre-marriage property only as a deduction and ignore its value at separation.
 
@@ -217,7 +217,7 @@ But where the owner has other NFP, the depreciation may reduce that NFP and ther
 
 This is an issue that is surprisingly easy to miss if the previous lawyer simply carried forward the original property value without properly analyzing the date-of-separation value.
 
-## 6. Debts Existing on the Date of Marriage
+### 4. Debts Existing on the Date of Marriage
 
 The deduction for property owned on the date of marriage is based on net value, not simply gross asset value.
 
@@ -241,7 +241,7 @@ It should also ask:
 
 “What debts did I have on the date of marriage?”
 
-## 7. Contingent Liabilities and Costs of Disposition
+### 5. Contingent Liabilities and Costs of Disposition
 
 Another area frequently overlooked is the appropriate treatment of costs and liabilities associated with realizing an asset.
 
@@ -260,7 +260,7 @@ The question is:
 
 “What is the appropriate value of this asset for family-law purposes?”
 
-## 8. Pensions
+### 6. Pensions
 
 Pensions are another frequent source of calculation errors.
 
@@ -270,7 +270,7 @@ The amount appearing on a pension statement or the current account balance canno
 
 If a pension was treated as an ordinary investment account in the previous NFP calculation, the calculation may need to be reviewed.
 
-## 9. The Date of Separation — the Valuation Date
+### 7. The Date of Separation — the Valuation Date
 
 A surprisingly small change in the date of separation can sometimes produce a significant change in NFP.
 
@@ -288,7 +288,7 @@ This becomes particularly complicated where the parties:
 
 If the previous lawyer used the wrong valuation date, the entire NFP calculation may need to be revisited.
 
-## 10. Exclusions Under s. 4(2)
+### 8. Exclusions Under s. 4(2)
 
 There is another important distinction between a deduction and an exclusion.
 
@@ -314,7 +314,7 @@ Bank statements, title documents, purchase and sale agreements, appraisals, pens
 
 The stronger the documentary trail, the stronger the recalculation.
 
-## 11. The Limitation Period Does Not Restart When You Change Lawyers
+## 4. The Limitation Period Does Not Restart When You Change Lawyers
 
 This is one of the most important practical points.
 
@@ -340,7 +340,7 @@ Therefore, when considering changing counsel, one of the first things to check i
 
 Do not wait until after you have finished reviewing every number.
 
-## 12. Changing Lawyers During an Ongoing Case
+## 5. Changing Lawyers During an Ongoing Case
 
 Changing lawyers during litigation is not unusual.
 
@@ -364,7 +364,7 @@ That does not mean that you should stay with a lawyer simply because the case ha
 
 It means that the earlier the problem is identified, the easier it usually is to fix.
 
-## 13. Your File and the Transition to New Counsel
+## 6. Your File and the Transition to New Counsel
 
 When the retainer ends, the new lawyer will need the complete litigation file.
 
@@ -394,7 +394,7 @@ The important question is:
 
 Why is every number in that spreadsheet there?
 
-## 14. Was the Previous Lawyer Responsible?
+## 7. Was the Previous Lawyer Responsible?
 
 This is a separate legal question from the family-law proceeding.
 
@@ -416,7 +416,7 @@ If you believe your previous lawyer may have made a serious error, you should ob
 
 The lawyer currently representing you in the family matter may have a conflict if asked to assess the potential liability of your former lawyer.
 
-## 15. What to Prepare Before Meeting Your New Lawyer
+## 8. What to Prepare Before Meeting Your New Lawyer
 
 If you are changing counsel because you believe the property division calculation is wrong, do not simply bring the latest spreadsheet.
 
@@ -482,7 +482,7 @@ Sometimes the most important starting point is simply:
 
 “This number doesn't look right.”
 
-## 16. The Bottom Line
+## 9. The Bottom Line
 
 Changing lawyers does not mean that you are stuck with the previous lawyer's property-division calculation.
 
