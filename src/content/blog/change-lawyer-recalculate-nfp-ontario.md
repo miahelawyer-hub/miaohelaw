@@ -13,6 +13,7 @@ tags:
   - "chinese-divorce-lawyer"
   - "toronto-chinese-divorce-lawyer"
   - "toronto-divorce-lawyer"
+pairedArticlePath: "/en/blog/change-lawyer-recalculate-nfp-ontario/"
 relatedIntro: "建议一并阅读："
 relatedReading:
   - slug: premarital-home-sold-ontario-deduction

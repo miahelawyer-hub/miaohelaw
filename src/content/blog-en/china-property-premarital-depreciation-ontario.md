@@ -20,6 +20,8 @@ relatedIntro: "Read alongside:"
 relatedReading:
   - slug: premarital-home-sold-ontario-deduction
     line: "If a pre-marriage home is sold and replaced before separation, its date-of-marriage value may still be deductible."
+  - slug: change-lawyer-recalculate-nfp-ontario
+    line: "Can a property-division calculation be recalculated after changing lawyers mid-litigation?"
 faqStructured:
   - question: "The property is in China. Does a Canadian court have jurisdiction over it?"
     answer: "The value generally has to be included in Net Family Property. The geographic scope of a property division is determined by the applicable law, not simply by where the property is located. If the spouses’ last common habitual residence was in Ontario, s. 15 of the Family Law Act applies Ontario’s equalization regime to the parties’ property as a whole, including real estate, savings, and shares in China. An Ontario court can take the value of Chinese property into account and can make a payment order against the party before the court, but it does not generally have jurisdiction over land in China and would not ordinarily order that property sold or occupied. In practice the value is included, and the resulting obligation is satisfied through Canadian assets or a monetary payment."
