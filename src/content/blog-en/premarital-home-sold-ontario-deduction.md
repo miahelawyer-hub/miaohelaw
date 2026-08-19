@@ -1,5 +1,5 @@
 ---
-title: "Ontario Divorce Lawyer: Can You Deduct the Value of a Pre-Marriage Home at the Date of Marriage After Selling It and Buying a New Home?"
+title: "Ontario Divorce Lawyer Miao He: Can You Deduct the Value of a Pre-Marriage Home at the Date of Marriage After Selling It and Buying a New Home?"
 description: "Sold your pre-marriage home and bought a new matrimonial home before separation? Learn how Ontario's Family Law Act treats the value of property at the date of marriage, matrimonial homes, Nahatchewitz, Lau v. Tao, and tracing evidence."
 pubDate: 2026-08-18T12:00:00-04:00
 updatedDate: 2026-08-18T12:00:00-04:00
