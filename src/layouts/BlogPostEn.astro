@@ -74,6 +74,11 @@ function absoluteUrl(path: string) {
 }
 
 const siteOrigin = SITE_URL.replace(/\/$/, '');
+const personId = `${siteOrigin}/#person`;
+const lawfirmId = `${siteOrigin}/#lawfirm`;
+const firmSiteUrl = 'https://www.hlawfirmontario.com';
+const firmMapsUrl =
+  'https://www.google.com/maps/place/H.+LAW+FIRM+-+%E6%81%92.+%E5%BE%8B%E5%B8%88%E4%BA%8B%E5%8A%A1%E6%89%80/@43.8149715,-79.3498119,17z/data=!3m1!4b1!4m6!3m5!1s0x89d4d3dfcb98c153:0x44a7d7dab247f03d!8m2!3d43.8149715!4d-79.3498119!16s%2Fg%2F11rx4g3qk8';
 const webPageId = `${canonicalUrl}#webpage`;
 const breadcrumbId = `${canonicalUrl}#breadcrumb`;
 
@@ -89,12 +94,12 @@ const articleLd: Record<string, unknown> = {
   isAccessibleForFree: true,
   image: [`${siteOrigin}/miao-he-lawyer.jpeg`],
   author: {
-    '@id': `${SITE_URL}/#person`,
+    '@id': personId,
   },
   publisher: {
-    '@id': `${SITE_URL}/#person`,
+    '@id': lawfirmId,
   },
-  provider: { '@id': `${siteOrigin}/#legalservice` },
+  provider: { '@id': lawfirmId },
   about: {
     '@type': 'LegalService',
     name: 'Ontario Family Law',
@@ -153,19 +158,20 @@ const webSiteLd = {
 const legalServiceLd = {
   '@context': 'https://schema.org',
   '@type': 'LegalService',
-  '@id': `${siteOrigin}/#legalservice`,
-  name: 'H. LAW FIRM',
-  alternateName: ['H. LAW FIRM 恒. 律师事务所', '恒律师事务所', 'Miao He Law Firm Ontario'],
+  '@id': lawfirmId,
+  name: 'H. LAW FIRM - 恒. 律师事务所',
+  alternateName: ['H. LAW FIRM 恒. 律师事务所'],
   description:
     'Ontario family law: divorce and separation, parenting and support, property division, domestic contracts, and cross-border issues. Mandarin and English. Serving Toronto, Markham, Richmond Hill, Scarborough, the GTA, and province-wide.',
-  url: `${siteOrigin}/en/contact/`,
+  url: firmSiteUrl,
+  logo: `${siteOrigin}/h-law-firm-logo.png`,
   image: `${siteOrigin}/miao-he-lawyer.jpeg`,
   telephone: '+1-647-930-6688',
   email: 'miao@miaohelaw.ca',
   priceRange: '$$',
   address: {
     '@type': 'PostalAddress',
-    streetAddress: '208-7050 Woodbine Ave',
+    streetAddress: '208-7050 Woodbine Avenue',
     addressLocality: 'Markham',
     addressRegion: 'ON',
     postalCode: 'L3R 4G8',
@@ -181,20 +187,29 @@ const legalServiceLd = {
     { '@type': 'AdministrativeArea', name: 'Greater Toronto Area' },
     { '@type': 'AdministrativeArea', name: 'Ontario' },
   ],
-  sameAs: ['https://www.hlawfirmontario.com/'],
-  founder: { '@id': `${siteOrigin}/#person` },
-  employee: { '@id': `${siteOrigin}/#person` },
+  hasMap: firmMapsUrl,
+  sameAs: [firmSiteUrl + '/', firmMapsUrl],
+  employee: { '@id': personId },
 };
 
 const personLd = {
   '@context': 'https://schema.org',
   '@type': 'Person',
-  '@id': `${siteOrigin}/#person`,
+  '@id': personId,
   name: 'Miao He',
   alternateName: ['何淼', 'Mia He'],
   jobTitle: 'Family Litigation Lawyer',
-  url: `${siteOrigin}/en/about/`,
-  worksFor: { '@id': `${siteOrigin}/#legalservice` },
+  url: `${siteOrigin}/`,
+  image: `${siteOrigin}/miao-he-lawyer.jpeg`,
+  telephone: '+1-647-930-6688',
+  worksFor: { '@id': lawfirmId },
+  sameAs: [
+    'https://lso.ca/public-resources/finding-a-lawyer-or-paralegal/lawyer-and-paralegal-directory',
+    `${firmSiteUrl}/`,
+    'https://hlawfirmontario.com/en/',
+    firmMapsUrl,
+    'https://www.linkedin.com/in/mia-he-93422b160/',
+  ],
 };
 
 const breadcrumbLd = {

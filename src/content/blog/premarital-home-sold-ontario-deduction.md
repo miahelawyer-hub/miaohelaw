@@ -15,6 +15,7 @@ tags:
   - "toronto-chinese-divorce-lawyer"
   - "toronto-divorce-lawyer"
   - "dual-licensed-china-canada-lawyer"
+pairedArticlePath: "/en/blog/premarital-home-sold-ontario-deduction/"
 faqStructured:
   - question: "我结婚前买的房子，后来卖了换了现在这套，是不是要平分？"
     answer: "不一定要把旧房的结婚日价值拿来平分。安省《家庭法》第 4(1) 条允许扣除结婚当天拥有的财产，但婚姻住宅是例外。婚姻住宅按第 18(1) 条在分居当天认定：如果婚前那套房在分居前已经卖掉换了新房，分居时双方已不在该处居住，它便不再是婚姻住宅，旧房的结婚日价值可以扣除。新房若在分居时仍是双方通常居住的家庭住所，则新房本身仍按婚姻住宅处理。"
