@@ -88,7 +88,7 @@ const breadcrumbJsonLd = {
     <>
       <link rel="alternate" hreflang="zh" href={canonicalUrl} />
       <link rel="alternate" hreflang="en" href={`${SITE_URL}/en/faq/page/${currentPage}/`} />
-      <link rel="alternate" hreflang="x-default" href={`${SITE_URL}/en/faq/page/${currentPage}/`} />
+      <link rel="alternate" hreflang="x-default" href={canonicalUrl} />
     </>
   )}
   <script type="application/ld+json" set:html={JSON.stringify(itemListJsonLd)} />

@@ -5,11 +5,17 @@ import Footer from '../components/Footer.astro';
 import { getCollection } from 'astro:content';
 import { videoItems, type VideoItem } from '../data/videos';
 import { isBlogPostRoutable } from '../lib/blogPublished';
+import { blogTopicHubs, homepageEvergreenSlugs } from '../data/blog-topic-hubs';
 
-const posts = (await getCollection('blog'))
+const allPosts = (await getCollection('blog'))
 	.filter(isBlogPostRoutable)
-	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
-	.slice(0, 3);
+	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const posts = allPosts.slice(0, 3);
+const latestIds = new Set(posts.map((post) => post.id));
+const postById = new Map(allPosts.map((post) => [post.id, post]));
+const evergreenPosts = homepageEvergreenSlugs
+	.map((slug) => postById.get(slug))
+	.filter((post): post is (typeof allPosts)[number] => post != null && !latestIds.has(post.id));
 function formatBlogDate(date: Date) {
 	return new Date(date).toLocaleDateString('zh-CN', { year: 'numeric', month: 'long', day: 'numeric' });
 }
@@ -502,8 +508,31 @@ const homepageVideos: VideoItem[] = homepageVideoSlugs
 						</div>
 					))}
 				</div>
+				{evergreenPosts.length > 0 && (
+					<div class="blog-evergreen">
+						<h3>重点阅读</h3>
+						<p>下面这些文章不在最新三篇里，但回答的是华人家庭最常问的财产、跨境、监护和协议问题。</p>
+						<ul>
+							{evergreenPosts.map((post) => (
+								<li>
+									<a href={`/blog/${post.id}/`}>{post.data.title}</a>
+								</li>
+							))}
+						</ul>
+					</div>
+				)}
+				<nav class="blog-topics" aria-label="按主题阅读">
+					<h3>按主题阅读</h3>
+					<ul>
+						{blogTopicHubs.map((hub) => (
+							<li>
+								<a href={`/blog/#${hub.id}`}>{hub.title}</a>
+							</li>
+						))}
+					</ul>
+				</nav>
 				<div class="blog-more-wrap">
-					<a href="/blog" class="btn-secondary blog-view-all-link">View All Articles →</a>
+					<a href="/blog/" class="btn-secondary blog-view-all-link">View All Articles →</a>
 				</div>
 			</section>
 
@@ -1577,12 +1606,54 @@ const homepageVideos: VideoItem[] = homepageVideoSlugs
 		overflow: hidden;
 		margin-bottom: 1rem;
 	}
+	.blog-evergreen,
+	.blog-topics {
+		max-width: 980px;
+		margin: 2rem auto 0;
+		text-align: left;
+	}
+	.blog-evergreen h3,
+	.blog-topics h3 {
+		font-family: Georgia, serif;
+		font-size: 1.15rem;
+		font-weight: 400;
+		color: var(--text-heading);
+		margin: 0 0 0.4rem;
+	}
+	.blog-evergreen p {
+		color: #6B5A3A;
+		font-size: 0.9rem;
+		line-height: 1.6;
+		margin: 0 0 0.85rem;
+	}
+	.blog-evergreen ul,
+	.blog-topics ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 0.45rem 1.5rem;
+	}
+	@media (min-width: 768px) {
+		.blog-evergreen ul { grid-template-columns: 1fr 1fr; }
+		.blog-topics ul { grid-template-columns: repeat(3, 1fr); }
+	}
+	.blog-evergreen a,
+	.blog-topics a {
+		color: #4A2C1A;
+		text-decoration: none;
+		font-size: 0.92rem;
+		line-height: 1.45;
+	}
+	.blog-evergreen a:hover,
+	.blog-topics a:hover { color: #9A8060; }
 	.blog-more-wrap {
 		text-align: center;
 	}
 	a.blog-view-all-link {
 		display: inline-block;
-		margin-top: 4rem;
+		margin-top: 2rem;
 	}
 
 	/* CTA: same navy base as case-section (Yang v. Li), gold headline like case h2 */

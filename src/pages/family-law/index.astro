@@ -3,6 +3,18 @@ import BaseHead from '../../components/BaseHead.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import '../../styles/family-law-service-detail.css';
+import { getCollection } from 'astro:content';
+import { isBlogPostRoutable } from '../../lib/blogPublished';
+import { blogTopicHubs } from '../../data/blog-topic-hubs';
+
+const posts = (await getCollection('blog')).filter(isBlogPostRoutable);
+const postById = new Map(posts.map((post) => [post.id, post]));
+const topicHubsResolved = blogTopicHubs.map((hub) => ({
+  ...hub,
+  posts: hub.slugs
+    .map((slug) => postById.get(slug))
+    .filter((post): post is (typeof posts)[number] => post != null),
+}));
 
 const services = [
   {
@@ -152,6 +164,24 @@ const services = [
           ))}
         </ul>
 
+        <section class="article-hubs" aria-label="相关文章">
+          <h2>相关文章</h2>
+          <p>服务页说明怎么处理；下面每组先列几篇具体规则。全部文章按主题收在<a href="/blog/#property">博客主题枢纽</a>。</p>
+          {topicHubsResolved.map((hub) => (
+            <div class="article-hub" id={`articles-${hub.id}`}>
+              <h3>{hub.title}</h3>
+              <ul>
+                {hub.posts.slice(0, 4).map((post) => (
+                  <li>
+                    <a href={`/blog/${post.id}/`}>{post.data.title}</a>
+                  </li>
+                ))}
+              </ul>
+              <p class="article-hub-more"><a href={`/blog/#${hub.id}`}>本组全部文章 →</a></p>
+            </div>
+          ))}
+        </section>
+
         <div class="cta-box">
           <h3>需要针对您的情况做一次专业判断？</h3>
           <p>初次咨询 30 分钟 $220 + HST · 普通话 / 英文 · 通常 3 个工作日内回复。</p>
@@ -253,6 +283,55 @@ const services = [
     font-weight: 600;
     color: #7a5a1a;
     margin-top: 0.15rem;
+  }
+
+  main.family-law-hub .article-hubs {
+    margin: 2.75rem 0 0;
+    padding-top: 2rem;
+    border-top: 1px solid #ede8df;
+  }
+  main.family-law-hub .article-hubs > h2 {
+    font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+    font-size: 1.35rem;
+    color: #2c1810;
+    margin: 0 0 0.4rem;
+  }
+  main.family-law-hub .article-hubs > p {
+    color: #4a3a2a;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin: 0 0 1.25rem;
+  }
+  main.family-law-hub .article-hub {
+    margin: 0 0 1.25rem;
+  }
+  main.family-law-hub .article-hub h3 {
+    font-size: 1.02rem;
+    color: #2c1810;
+    margin: 0 0 0.45rem;
+  }
+  main.family-law-hub .article-hub ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.35rem 1.5rem;
+  }
+  main.family-law-hub .article-hub a {
+    color: #4a2c1a;
+    text-decoration: none;
+    font-size: 0.9rem;
+    line-height: 1.45;
+  }
+  main.family-law-hub .article-hub a:hover { color: #7a5a1a; }
+  main.family-law-hub .article-hub-more {
+    margin: 0.45rem 0 0;
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+  @media (max-width: 700px) {
+    main.family-law-hub .article-hub ul { grid-template-columns: 1fr; }
   }
 
   main.family-law-hub .cta-box { margin-top: 3rem; }
