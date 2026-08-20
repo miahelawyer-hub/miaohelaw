@@ -31,6 +31,46 @@
 			"permanent": true
 		},
 		{
+			"source": "/videos/topic/divorce-procedures",
+			"destination": "/videos/topic/matrimonial-home-separation-support-divorce/",
+			"permanent": true
+		},
+		{
+			"source": "/videos/topic/divorce-procedures/",
+			"destination": "/videos/topic/matrimonial-home-separation-support-divorce/",
+			"permanent": true
+		},
+		{
+			"source": "/videos/topic/domestic-violence",
+			"destination": "/blog/ontario-restraining-order-chinese-family/",
+			"permanent": true
+		},
+		{
+			"source": "/videos/topic/domestic-violence/",
+			"destination": "/blog/ontario-restraining-order-chinese-family/",
+			"permanent": true
+		},
+		{
+			"source": "/videos/topic/common-law",
+			"destination": "/family-law/common-law/",
+			"permanent": true
+		},
+		{
+			"source": "/videos/topic/common-law/",
+			"destination": "/family-law/common-law/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/%E5%AD%90%E5%A5%B3%E7%9B%91%E6%8A%A4%E6%9D%83Ontario",
+			"destination": "/tag/child-custody-ontario/",
+			"permanent": true
+		},
+		{
+			"source": "/tag/%E5%AD%90%E5%A5%B3%E7%9B%91%E6%8A%A4%E6%9D%83Ontario/",
+			"destination": "/tag/child-custody-ontario/",
+			"permanent": true
+		},
+		{
 			"source": "/en/blog/prenuptial-agreement-ontario-2024",
 			"destination": "/en/blog/prenuptial-agreement-ontario-2026/",
 			"permanent": true
