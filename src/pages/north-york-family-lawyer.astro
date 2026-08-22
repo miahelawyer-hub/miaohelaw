@@ -2,6 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { GEO_COPY_ZH } from '../data/geo-copy';
 ---
 <!doctype html>
 <html lang="zh">
@@ -41,7 +42,7 @@ import Footer from '../components/Footer.astro';
           "name": "North York 有说普通话的离婚律师吗？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "有。何淼律师（Miao He）提供普通话及英文双语家庭法服务，服务North York及GTA全区。擅长处理华人离婚、子女监护、高密度公寓婚姻住所争议及跨境资产案件。电话：647-930-6688。"
+            "text": "有。何淼律师（Miao He）提供普通话及英文双语家庭法服务。恒. 律师事务所位于万锦市与多伦多交界的 Woodbine / Steeles 一带（7050 Woodbine Ave #208，404 高速 Steeles 出口），北约克客户沿 404 高速往返便利；同时提供 Zoom 视频咨询。电话：647-930-6688。"
           }
         },
         {
@@ -129,6 +130,9 @@ import Footer from '../components/Footer.astro';
       <div class="container content-grid">
         <div class="main-content">
           <div class="section">
+            <p>{GEO_COPY_ZH.main}</p>
+          </div>
+          <div class="section">
             <h2>服务地区</h2>
             <p>
               <a href="/toronto-family-lawyer">多伦多华人离婚律师</a> ·
@@ -174,7 +178,7 @@ import Footer from '../components/Footer.astro';
             <h2>常见问题</h2>
             <div class="faq-item">
               <p class="faq-q">North York 有说普通话的离婚律师吗？</p>
-              <p class="faq-a">有。何淼律师（Miao He）提供普通话及英文双语家庭法服务，服务 North York 及 GTA 全区。事务所位于 Markham，提供视频及电话咨询，初次咨询30分钟 $220+HST。</p>
+              <p class="faq-a">有。何淼律师（Miao He）提供普通话及英文双语家庭法服务。{GEO_COPY_ZH.main} 初次咨询30分钟 $220+HST。</p>
             </div>
             <div class="faq-item">
               <p class="faq-q">我住在 North York 的 Condo，离婚时对方能把我赶出去吗？</p>

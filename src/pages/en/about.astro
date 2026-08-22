@@ -3,16 +3,18 @@ import BaseHead from '../../components/BaseHead.astro';
 import HeaderEn from '../../components/HeaderEn.astro';
 import Footer from '../../components/Footer.astro';
 import { SITE_LAST_UPDATED_EN } from '../../consts';
+import { GEO_COPY_EN } from '../../data/geo-copy';
 ---
 <!doctype html>
 <html lang="en">
 <head>
   <BaseHead
     title="About Miao He — Dual-Licensed Family Lawyer Toronto | Ontario & China | H. LAW FIRM"
-    description="Miao He (何淼) is an Ontario family litigation lawyer, dual-licensed in Ontario and China. Her practice has concentrated on courtroom family law for 15+ years in the GTA. Expert Witness in Chinese family law, Notary Public, Osgoode Hall LL.M. 647-930-6688."
+    description="Miao He (何淼) is an Ontario family litigation lawyer, dual-licensed in Ontario and China. Office in the Woodbine & Steeles area on the Markham–Toronto boundary, serving Toronto, North York, Scarborough and all Ontario. Expert Witness in Chinese family law, Notary Public, Osgoode Hall LL.M. 647-930-6688."
   />
   <meta name="keywords" content="Miao He lawyer,Mia He lawyer,Chinese family lawyer Toronto,dual licensed China Canada lawyer,Expert Witness Chinese marriage law,Notary Public Markham,Osgoode family lawyer,Ontario China bar licensed" />
   <meta property="og:title" content="About Miao He — Dual-Licensed Family Lawyer Toronto" />
+  <meta property="og:description" content="Ontario family litigation lawyer. Office in the Woodbine & Steeles area on the Markham–Toronto boundary. Dual-licensed in Ontario and China. 647-930-6688." />
   <meta property="og:type" content="profile" />
   <link rel="alternate" hreflang="zh" href="https://www.miaohelaw.ca/about/" />
   <link rel="alternate" hreflang="en" href="https://www.miaohelaw.ca/en/about/" />
@@ -512,6 +514,18 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
       padding: 0;
       margin: 0;
     }
+    .geo-lede {
+      font-size: 0.84rem;
+      color: #4a3a2a;
+      line-height: 1.7;
+      margin: 0 0 0.85rem;
+    }
+    .geo-short {
+      font-size: 0.78rem;
+      color: #6b5a48;
+      line-height: 1.5;
+      margin: 0.35rem 0 0;
+    }
     .area-list li {
       font-size: 0.875rem;
       padding: 0.4rem 0;
@@ -687,7 +701,7 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
             <h1 id="who-title">Strategic Advocacy.<br />Cross-Border Expertise.</h1>
             <div class="who-rule" aria-hidden="true"></div>
             <p class="who-lead">
-              Miao He (何淼) is a dual-licensed family lawyer in Ontario and China. <strong>Called to the China Bar in 2009</strong>, she has practised as a litigation lawyer ever since, with 15+ years of experience serving Chinese-Canadian families across the GTA. Her practice has concentrated on family law litigation, with substantial courtroom experience in high-conflict divorce, parenting, and property disputes. She also holds a Certified Mediator designation in Ontario and has been formally retained by other law firms as an Expert Witness on PRC family law and matrimonial property matters in Ontario court proceedings.
+              Miao He (何淼) is a dual-licensed family lawyer in Ontario and China. <strong>Called to the China Bar in 2009</strong>, she has practised as a litigation lawyer ever since, with 15+ years of experience serving Chinese-Canadian families across the GTA from H. LAW FIRM in the Woodbine & Steeles area on the Markham–Toronto boundary. Her practice has concentrated on family law litigation, with substantial courtroom experience in high-conflict divorce, parenting, and property disputes. She also holds a Certified Mediator designation in Ontario and has been formally retained by other law firms as an Expert Witness on PRC family law and matrimonial property matters in Ontario court proceedings.
             </p>
             <p class="who-sub">
               Litigator mindset, settlement strategy. High-conflict divorce, child custody, and complex cross-border assets — handled in Mandarin and English.
@@ -717,7 +731,7 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
             <div class="content-card">
               <h2>ABOUT</h2>
               <p>I am Miao He (何淼), a dual-licensed family lawyer holding both an Ontario bar licence and a China bar licence. I was <strong>called to the China Bar in 2009</strong> and have practised as a litigation lawyer ever since — first in China, and later in Canada after completing my Master of Laws (LL.M.) at Osgoode Hall Law School. My practice has concentrated on family law litigation, with substantial courtroom experience in high-conflict divorce, parenting, and property disputes. I also hold a Certified Mediator designation in Ontario and have been formally retained by other law firms as an Expert Witness on PRC family law and matrimonial property matters in Ontario court proceedings.</p>
-              <p>I have practiced family law in the Greater Toronto Area for over 15 years and serve as the principal lawyer at H. LAW FIRM, located in Markham. From Chinese commercial and matrimonial litigation to Ontario family court advocacy, I have built a courtroom-first practice across both jurisdictions.</p>
+              <p>I have practiced family law in the Greater Toronto Area for over 15 years and serve as the principal lawyer at H. LAW FIRM, located in Markham in the Woodbine & Steeles area on the Markham–Toronto boundary. From Chinese commercial and matrimonial litigation to Ontario family court advocacy, I have built a courtroom-first practice across both jurisdictions.</p>
               <p>I appear in court over 20 hours per month and provide more than 200 legal consultations per year — making me one of the most active family lawyers serving the Chinese-Canadian community in the GTA.</p>
               <p>My philosophy is simple: <strong>negotiate when it makes sense, litigate when it is necessary.</strong> I hold a Mediation Certificate and can represent clients effectively in both court and non-court proceedings.</p>
 
@@ -833,8 +847,10 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
 
             <div class="sidebar-card">
               <h3>Areas served</h3>
+              <p class="geo-lede">{GEO_COPY_EN.main}</p>
               <ul class="area-list">
                 <li><a href="/en/toronto-chinese-family-lawyer">Toronto</a></li>
+                <li><a href="/en/north-york-chinese-family-lawyer">North York</a></li>
                 <li><a href="/en/markham-chinese-family-lawyer">Markham</a> · Office</li>
                 <li><a href="/en/richmond-hill-chinese-family-lawyer">Richmond Hill</a></li>
                 <li><a href="/en/vaughan-chinese-family-lawyer">Vaughan</a></li>
@@ -851,6 +867,7 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
                 <a href="mailto:miao@miaohelaw.ca" class="contact-row">📧 miao@miaohelaw.ca</a>
                 <div class="contact-row">💬 WeChat: 372656035</div>
                 <div class="contact-row">📍 208-7050 Woodbine Ave, Markham</div>
+                <p class="geo-short">{GEO_COPY_EN.short}</p>
               </div>
               <a href="tel:6479306688" class="btn-primary">Book a consultation</a>
             </div>

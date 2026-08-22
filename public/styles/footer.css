@@ -194,6 +194,13 @@ footer {
 .chip-wide {
   width: 100%;
 }
+.footer-geo {
+  margin: 0.15rem 0 0;
+  padding: 0 0.35rem;
+  font-size: 0.72rem;
+  line-height: 1.45;
+  color: rgba(var(--gray), 0.88);
+}
 a.chip:hover {
   transform: translateY(-1px);
   box-shadow: 0 14px 24px rgba(44, 24, 16, 0.09);

@@ -2,6 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { GEO_COPY_ZH } from '../data/geo-copy';
 ---
 <!doctype html>
 <html lang="zh">
@@ -78,7 +79,7 @@ import Footer from '../components/Footer.astro';
         {
           "@type": "Question",
           "name": "何淼律师是否提供上门或 Zoom 咨询？",
-          "acceptedAnswer": {"@type": "Answer", "text": "何淼律师事务所位于万锦（Markham），同时提供 Zoom 视频咨询，方便多伦多市区及 GTA 各地客户预约。初次咨询 30 分钟，$220 + HST。电话：647-930-6688。"}
+          "acceptedAnswer": {"@type": "Answer", "text": "恒. 律师事务所位于万锦市与多伦多交界的 Woodbine / Steeles 一带（7050 Woodbine Ave #208，404 高速 Steeles 出口），多伦多、北约克、士嘉堡、列治文山客户往返便利；同时为安省全省客户提供 Zoom 视频咨询。初次咨询 30 分钟，$220 + HST。电话：647-930-6688。"}
         }
       ]
     }
@@ -105,6 +106,7 @@ import Footer from '../components/Footer.astro';
           <div class="definition-box">
             <p>何淼律师（Miao He，LSO #83315K）长期在<strong>Toronto Superior Court of Justice（361 University Avenue）</strong>处理高冲突家庭诉讼：案件会议（case conference）、争议性动议排期、财务披露争议及育儿安排僵局。客户可直接使用<strong>普通话</strong>陈述事实与诉讼目标；涉及<strong>中国境内房产、境外账户与公司权益</strong>时，以中加双重执业背景协助披露、估值与庭审举证策略。</p>
           </div>
+          <p>{GEO_COPY_ZH.main}</p>
 
           <h2>Toronto Superior Court： downtown 家庭诉讼流程要点</h2>
           <p>市中心法院案件量大，程序刚性。典型路径包括首次案件会议、披露与证据交换、以及在法官主导的<strong>案件管理（case management）</strong>框架下推进争议—法官通常会设定时间表、限制重复动议，并要求双方在出庭前完成交换材料与议题清单。争议性动议（contested motion）对书面论据、事实编排及判例引用要求高；排期窗口与听讯时长需提前规划。</p>
@@ -122,7 +124,7 @@ import Footer from '../components/Footer.astro';
 
           <h2>诉讼准备与沟通方式</h2>
           <p>高冲突诉讼的核心是可验证的事实与清晰的法庭叙事。何淼律师以<strong>中英双语</strong>准备书面材料并与客户对齐庭审口径；在涉及<strong>跨境财产来源、婚前协议或境外收入</strong>时，将中英文证据链与 Ontario《家庭法》下的披露义务一并纳入策略。</p>
-          <p>事务所位于万锦；多伦多市区客户可按案件需要安排面谈或以书面、电话方式协同准备<strong>361 University Ave</strong>相关出庭与动议。</p>
+          <p>多伦多市区客户可按案件需要安排面谈或以书面、电话方式协同准备<strong>361 University Ave</strong>相关出庭与动议。</p>
 
           <div class="qa-block">
             <h3>Q：多伦多离婚，我在中国还有房产，加拿大法院管得到吗？</h3>

@@ -1,5 +1,6 @@
 ---
 import CallBar from './CallBar.astro';
+import { GEO_COPY_EN, GEO_COPY_ZH } from '../data/geo-copy';
 const today = new Date();
 const { lang = 'zh' } = Astro.props;
 ---
@@ -14,6 +15,7 @@ const { lang = 'zh' } = Astro.props;
 					<a class="chip chip-wide" href="tel:6479306688"><span class="ico">📞</span><span>647-930-6688</span></a>
 					<a class="chip chip-wide" href="mailto:miao@miaohelaw.ca"><span class="ico">✉️</span><span>miao@miaohelaw.ca</span></a>
 					<div class="chip chip-wide"><span class="ico">📍</span><span>208-7050 Woodbine Ave, Markham, ON L3R 4G8</span></div>
+					<p class="footer-geo">{lang === 'en' ? GEO_COPY_EN.short : GEO_COPY_ZH.short}</p>
 				</div>
 			</section>
 

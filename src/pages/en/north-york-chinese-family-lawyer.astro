@@ -2,6 +2,7 @@
 import BaseHead from '../../components/BaseHead.astro';
 import HeaderEn from '../../components/HeaderEn.astro';
 import Footer from '../../components/Footer.astro';
+import { GEO_COPY_EN } from '../../data/geo-copy';
 ---
 <!doctype html>
 <html lang="en">
@@ -85,7 +86,7 @@ import Footer from '../../components/Footer.astro';
         {
           "@type": "Question",
           "name": "Is there a Mandarin-speaking divorce lawyer who serves North York?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Yes. Miao He provides full Mandarin family law services to Chinese-Canadian clients throughout North York and the GTA. The office is located in Markham with Zoom consultations available. Initial consultation: 30 minutes, $220 + HST. Call 647-930-6688."}
+          "acceptedAnswer": {"@type": "Answer", "text": "Yes. Miao He provides full Mandarin family law services to Chinese-Canadian clients throughout North York. Located in the Woodbine and Steeles area on the Markham–Toronto boundary (7050 Woodbine Ave #208, off the Highway 404 Steeles exit), convenient for North York clients via Highway 404, with Zoom consultations available. Initial consultation: 30 minutes, $220 + HST. Call 647-930-6688."}
         }
       ]
     }
@@ -112,6 +113,7 @@ import Footer from '../../components/Footer.astro';
           <div class="definition-box">
             <p>North York's Finch Avenue, Sheppard Avenue, and Yonge Street corridors are home to one of the GTA's densest concentrations of Chinese-Canadian families — from mainland China, Hong Kong, and Taiwan. When marriages in this community break down, the legal issues are specific: <strong>condo matrimonial home occupancy rights, cross-border assets, and cultural custody arrangements</strong> that require a lawyer who understands both Ontario law and the Chinese-Canadian family context. Miao He (何淼) serves North York clients with full Mandarin service. LSO #83315K.</p>
           </div>
+          <p>{GEO_COPY_EN.main}</p>
 
           <h2>What North York Chinese-Canadian Divorce Cases Often Involve</h2>
           <p>North York has the highest density of Chinese-Canadian residents in the GTA. The family law issues that arise here reflect that reality — and they require specific knowledge, not generic divorce advice.</p>

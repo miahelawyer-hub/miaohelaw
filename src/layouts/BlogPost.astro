@@ -10,6 +10,7 @@ import Header from '../components/Header.astro';
 import '../styles/blog-prose-body-color.css';
 import { SITE_TITLE, SITE_URL } from '../consts';
 import { getTagDisplayNameZh } from '../data/tagDisplayNames';
+import { GEO_AREA_SERVED, GEO_AREA_SERVED_LD, GEO_COPY_ZH } from '../data/geo-copy';
 
 type Props = CollectionEntry['blog']['data'];
 
@@ -103,7 +104,7 @@ const articleLd = {
   about: {
     '@type': 'LegalService',
     name: 'Ontario Family Law',
-    areaServed: ['Greater Toronto Area', 'Ontario'],
+    areaServed: [...GEO_AREA_SERVED],
   },
   ...(keywords
     ? {
@@ -158,7 +159,7 @@ const legalServiceLd = {
   name: 'H. LAW FIRM - 恒. 律师事务所',
   alternateName: ['H. LAW FIRM 恒. 律师事务所'],
   description:
-    '安省家庭法：离婚与分居、子女监护与抚养、财产分割、婚前及分居协议、跨境资产等。普通话及英文服务，面向多伦多、万锦、列治文山、士嘉堡及安省客户。',
+    '安省家庭法：离婚与分居、子女监护与抚养、财产分割、婚前及分居协议、跨境资产等。普通话及英文服务，面向多伦多、北约克、士嘉堡、列治文山、万锦及安省客户。',
   url: firmSiteUrl,
   logo: `${siteOrigin}/h-law-firm-logo.png`,
   image: `${siteOrigin}/miao-he-lawyer.jpeg`,
@@ -173,16 +174,7 @@ const legalServiceLd = {
     postalCode: 'L3R 4G8',
     addressCountry: 'CA',
   },
-  areaServed: [
-    { '@type': 'City', name: 'Toronto' },
-    { '@type': 'City', name: 'Markham' },
-    { '@type': 'City', name: 'Richmond Hill' },
-    { '@type': 'City', name: 'Vaughan' },
-    { '@type': 'City', name: 'Mississauga' },
-    { '@type': 'City', name: 'Scarborough' },
-    { '@type': 'AdministrativeArea', name: 'Greater Toronto Area' },
-    { '@type': 'AdministrativeArea', name: 'Ontario' },
-  ],
+  areaServed: GEO_AREA_SERVED_LD,
   hasMap: firmMapsUrl,
   sameAs: [firmSiteUrl + '/', firmMapsUrl],
   employee: { '@id': personId },
@@ -831,7 +823,7 @@ const structuredDataJson = JSON.stringify([
             <!-- 文末 CTA -->
             <div class="cta-box">
               <h3 class="cta-box-heading">咨询何淼律师</h3>
-              <p class="cta-box-intro">普通话与英文 · 万锦事务所 · 服务 GTA 及安大略省</p>
+              <p class="cta-box-intro">普通话与英文 · {GEO_COPY_ZH.short}</p>
               <div class="cta-box-fee">初次咨询 30 分钟 · $220 + HST · 按每 6 分钟计费</div>
               <div class="cta-box-actions">
                 <a href="tel:6479306688" class="btn-cta-phone">📞 647-930-6688</a>
@@ -845,7 +837,7 @@ const structuredDataJson = JSON.stringify([
                 <div class="author-bio-text">
                   <p class="author-bio-name">何淼 Miao (Mia) He</p>
                   <p class="author-bio-title">H. LAW FIRM 恒. 律师事务所 · 主持律师 · LSO #83315K</p>
-                  <p>何淼律师持安大略省及中国双重律师执照（Law Society of Ontario <strong>#83315K</strong>），精专安省家庭法诉讼逾 15 年，在高冲突离婚、子女与财产争议中积累了扎实的一线出庭经验。普通话与英文服务；事务所位于 Markham，服务 GTA 全区及安省全省。</p>
+                  <p>何淼律师持安大略省及中国双重律师执照（Law Society of Ontario <strong>#83315K</strong>），精专安省家庭法诉讼逾 15 年，在高冲突离婚、子女与财产争议中积累了扎实的一线出庭经验。普通话与英文服务。{GEO_COPY_ZH.short}。</p>
                   <p>曾代理 <strong>Yang v. Li 2024 ONSC 4801</strong>、<strong>Li v. Jiang 2026 ONSC 561</strong> 等 CanLII 公开判决案件，并曾为客户追回境外资产逾 30 万加元。执业重心包括离婚诉讼、子女安排、财产分割与中加跨境家庭法事项。</p>
                   <p class="author-bio-links">
                     <a href="/about">律师简介</a> ·
@@ -863,7 +855,7 @@ const structuredDataJson = JSON.stringify([
             <!-- 联系卡片 -->
             <div class="sidebar-card contact-card">
               <h3>预约咨询</h3>
-              <p>何淼律师 · 普通话 · 英文<br/>初次咨询 30 分钟 $220+HST<br/>Markham · 服务 GTA 全区</p>
+              <p>何淼律师 · 普通话 · 英文<br/>初次咨询 30 分钟 $220+HST<br/>{GEO_COPY_ZH.short}</p>
               <a href="tel:6479306688" class="call-btn">📞 647-930-6688</a>
               <a href="mailto:miao@miaohelaw.ca" class="email-btn">✉ miao@miaohelaw.ca</a>
             </div>
@@ -1013,7 +1005,7 @@ const structuredDataJson = JSON.stringify([
                 </li>
               </ul>
               <p class="sidebar-address">
-                <a href="/contact/">📍 事务所：208-7050 Woodbine Ave, Markham, ON L3R 4G8 — 到访路线与预约说明</a>
+                <a href="/contact/">📍 事务所：208-7050 Woodbine Ave, Markham, ON L3R 4G8 — {GEO_COPY_ZH.short} — 到访路线与预约说明</a>
               </p>
             </div>
 

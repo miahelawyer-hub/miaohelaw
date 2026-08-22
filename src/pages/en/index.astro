@@ -4,6 +4,7 @@ import HeaderEn from '../../components/HeaderEn.astro';
 import Footer from '../../components/Footer.astro';
 import { getCollection } from 'astro:content';
 import { isBlogEnPostRoutable } from '../../lib/blogPublished';
+import { GEO_COPY_EN } from '../../data/geo-copy';
 
 const posts = (await getCollection('blog-en'))
   .filter(isBlogEnPostRoutable)
@@ -19,7 +20,7 @@ function formatBlogDate(date: Date) {
 <head>
   <BaseHead
     title="Miao He — Chinese Family Lawyer Toronto | Ontario & China Dual-Licensed | H. LAW FIRM"
-    description="Miao He (何淼) is a dual-licensed Ontario family litigation lawyer. Her practice has concentrated on courtroom family law for 15+ years — divorce litigation, cross-border assets, child custody. Mandarin & English. 647-930-6688."
+    description="Miao He (何淼) is a dual-licensed Ontario family litigation lawyer. Divorce, custody and cross-border assets. Office in the Woodbine & Steeles area on the Markham–Toronto boundary, serving Toronto, North York, Scarborough and all Ontario. Mandarin & English. 647-930-6688."
   />
   <meta name="keywords" content="Chinese family lawyer Toronto,Mandarin divorce lawyer Ontario,dual licensed China Canada lawyer,Markham family lawyer,GTA Chinese divorce lawyer,cross-border asset divorce,family lawyer Markham,Ontario family law Chinese" />
   <link rel="alternate" hreflang="zh" href="https://www.miaohelaw.ca/" />
@@ -82,7 +83,7 @@ function formatBlogDate(date: Date) {
           "addressCountry": "CA"
         },
         "geo": {"@type": "GeoCoordinates", "latitude": "43.8563", "longitude": "-79.3370"},
-        "areaServed": ["Toronto", "Markham", "Richmond Hill", "Mississauga", "Scarborough", "Brampton", "Oakville", "Greater Toronto Area"],
+        "areaServed": ["Toronto", "North York", "Scarborough", "Richmond Hill", "Markham", "Mississauga", "Brampton", "Vaughan", "Oakville", "Ontario"],
         "knowsLanguage": ["zh-Hans", "en"],
         "serviceType": ["Divorce Litigation", "Family Law", "Child Custody", "Property Division", "Cross-Border Asset Division", "Spousal Support", "Child Support", "Prenuptial Agreement", "Separation Agreement", "Mediation"],
         "hasOfferCatalog": {
@@ -156,7 +157,7 @@ function formatBlogDate(date: Date) {
         "name": "Where is the law firm located?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "H. LAW FIRM (恒. 律师事务所) is located in Markham and serves the Greater Toronto Area (GTA) and clients across Ontario. Phone: 647-930-6688."
+          "text": "Located in the Woodbine & Steeles area on the Markham–Toronto boundary (7050 Woodbine Ave #208, off the Highway 404 Steeles exit), serving clients in Toronto, North York, Scarborough, Richmond Hill and Markham, with Zoom consultations available province-wide across Ontario. Phone: 647-930-6688."
         }
       }
     ]
@@ -198,7 +199,7 @@ function formatBlogDate(date: Date) {
           Ontario Family Law &amp; Divorce Lawyer
           <span class="hero-court-h1-sub">Chinese Family Lawyer – Miao He <span class="hero-court-chinese">何淼</span></span>
         </h1>
-        <p class="hero-court-lead">Ontario family litigation lawyer · dual-licensed (Ontario &amp; China) · divorce, custody &amp; cross-border assets · Mandarin &amp; English · Markham · GTA and Ontario</p>
+        <p class="hero-court-lead">Ontario family litigation lawyer · dual-licensed (Ontario &amp; China) · divorce, custody &amp; cross-border assets · Mandarin &amp; English · {GEO_COPY_EN.short}</p>
         <div class="hero-court-actions">
           <a href="tel:6479306688" class="btn-court-primary">Book a consultation · 647-930-6688</a>
           <div class="hf-hero__wechat" id="cta-wechat-wrapper-home-en">
@@ -557,7 +558,7 @@ function formatBlogDate(date: Date) {
     <!-- CTA -->
     <section class="contact-cta">
       <h2>Ready to speak with Miao He?</h2>
-      <p>Bilingual service in Mandarin and English · Serving Toronto, Markham, Richmond Hill, Mississauga and all of Ontario</p>
+      <p>Bilingual service in Mandarin and English · {GEO_COPY_EN.short}</p>
       <div class="fee-notice">Initial consultation 30 min · $220 + HST</div>
       <div class="cta-actions">
         <a href="tel:6479306688" class="btn-primary contact-cta-phone">📞 647-930-6688</a>

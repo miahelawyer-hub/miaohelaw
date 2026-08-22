@@ -2,6 +2,7 @@
 import BaseHead from '../../components/BaseHead.astro';
 import HeaderEn from '../../components/HeaderEn.astro';
 import Footer from '../../components/Footer.astro';
+import { GEO_COPY_EN } from '../../data/geo-copy';
 ---
 <!doctype html>
 <html lang="en">
@@ -79,7 +80,7 @@ import Footer from '../../components/Footer.astro';
         {
           "@type": "Question",
           "name": "Can I consult Miao He by Zoom from Toronto?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Yes. The office is located in Markham and Zoom video consultations are available for Toronto and GTA clients. Initial consultation: 30 minutes, $220 + HST. Call 647-930-6688 to book."}
+          "acceptedAnswer": {"@type": "Answer", "text": "Located in the Woodbine and Steeles area on the Markham–Toronto boundary (7050 Woodbine Ave #208, off the Highway 404 Steeles exit), serving clients in Toronto, North York, Scarborough, Richmond Hill and Markham, with Zoom consultations available province-wide across Ontario. Initial consultation: 30 minutes, $220 + HST. Call 647-930-6688 to book."}
         }
       ]
     }
@@ -106,6 +107,7 @@ import Footer from '../../components/Footer.astro';
           <div class="definition-box">
             <p>Miao He (何淼) provides <strong>full Mandarin family law services</strong> to Chinese-Canadian clients in Toronto and the Greater Toronto Area — no interpreter needed, direct communication in Mandarin. She holds dual licences from the Law Society of Ontario (#83315K) and the China Bar Association, handling cross-border assets, marriage contracts, and divorce litigation in complex cases.</p>
           </div>
+          <p>{GEO_COPY_EN.main}</p>
 
           <h2>Chinese-Canadian Divorce in Toronto: Common Complexities</h2>
           <p>Toronto is home to one of Canada's largest Chinese-Canadian communities. Divorce cases within this community frequently involve cross-border assets, pre-immigration property held in China, offshore accounts, and other complex legal issues that differ significantly from standard Ontario divorce cases.</p>
@@ -123,7 +125,7 @@ import Footer from '../../components/Footer.astro';
 
           <h2>Why Choose Miao He</h2>
           <p>Mandarin service is not simply a language convenience — it means you do not need to explain your situation through an interpreter, no important detail is lost due to a language barrier, and no translation error can undermine your legal strategy. Miao He communicates directly with you in Mandarin, understands the cultural context of Chinese-Canadian families, and has direct expertise in the legal complexities of cross-border assets.</p>
-          <p>The office is located in Markham, and Zoom consultations are available province-wide. Toronto clients do not need to travel far to receive a full-service consultation.</p>
+          <p>Toronto clients can attend in person when a downtown court date at 361 University Avenue requires it; Zoom consultations are available for all other meetings.</p>
 
           <div class="qa-block">
             <h3>Q: I am divorcing in Toronto but I still have property in China. Does the Canadian court have jurisdiction over that?</h3>

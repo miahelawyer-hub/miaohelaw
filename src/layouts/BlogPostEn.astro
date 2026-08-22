@@ -8,6 +8,7 @@ import HeaderEn from '../components/HeaderEn.astro';
 import '../styles/blog-prose-body-color.css';
 import { SITE_TITLE, SITE_URL } from '../consts';
 import { getTagDisplayNameEn } from '../data/tagDisplayNames';
+import { GEO_AREA_SERVED, GEO_AREA_SERVED_LD, GEO_COPY_EN } from '../data/geo-copy';
 
 type RelatedReadingItem = {
   slug?: string;
@@ -103,7 +104,7 @@ const articleLd: Record<string, unknown> = {
   about: {
     '@type': 'LegalService',
     name: 'Ontario Family Law',
-    areaServed: ['Greater Toronto Area', 'Ontario'],
+    areaServed: [...GEO_AREA_SERVED],
   },
   articleSection: 'Ontario family law',
   mainEntityOfPage: { '@type': 'WebPage', '@id': webPageId },
@@ -162,7 +163,7 @@ const legalServiceLd = {
   name: 'H. LAW FIRM - 恒. 律师事务所',
   alternateName: ['H. LAW FIRM 恒. 律师事务所'],
   description:
-    'Ontario family law: divorce and separation, parenting and support, property division, domestic contracts, and cross-border issues. Mandarin and English. Serving Toronto, Markham, Richmond Hill, Scarborough, the GTA, and province-wide.',
+    'Ontario family law: divorce and separation, parenting and support, property division, domestic contracts, and cross-border issues. Mandarin and English. Serving Toronto, North York, Scarborough, Richmond Hill, Markham, and province-wide.',
   url: firmSiteUrl,
   logo: `${siteOrigin}/h-law-firm-logo.png`,
   image: `${siteOrigin}/miao-he-lawyer.jpeg`,
@@ -177,16 +178,7 @@ const legalServiceLd = {
     postalCode: 'L3R 4G8',
     addressCountry: 'CA',
   },
-  areaServed: [
-    { '@type': 'City', name: 'Toronto' },
-    { '@type': 'City', name: 'Markham' },
-    { '@type': 'City', name: 'Richmond Hill' },
-    { '@type': 'City', name: 'Vaughan' },
-    { '@type': 'City', name: 'Mississauga' },
-    { '@type': 'City', name: 'Scarborough' },
-    { '@type': 'AdministrativeArea', name: 'Greater Toronto Area' },
-    { '@type': 'AdministrativeArea', name: 'Ontario' },
-  ],
+  areaServed: GEO_AREA_SERVED_LD,
   hasMap: firmMapsUrl,
   sameAs: [firmSiteUrl + '/', firmMapsUrl],
   employee: { '@id': personId },
@@ -665,7 +657,7 @@ const defaultRelatedIntroEn =
             <slot />
             <div class="cta-box">
               <h3 class="cta-box-heading">Speak with Miao He</h3>
-              <p class="cta-box-intro">Mandarin & English · Markham office · GTA &amp; Ontario</p>
+              <p class="cta-box-intro">Mandarin &amp; English · {GEO_COPY_EN.short}</p>
               <div class="cta-box-fee">Initial consultation 30 min · $220 + HST · billed in 6-minute units</div>
               <div class="cta-box-actions">
                 <a href="tel:6479306688" class="btn-cta-phone">📞 647-930-6688</a>
@@ -677,7 +669,7 @@ const defaultRelatedIntroEn =
               <div class="author-bio-text">
                 <p class="author-bio-name">Miao He (何淼)</p>
                 <p class="author-bio-title">Principal Lawyer · H. LAW FIRM · Markham, Ontario · LSO #83315K</p>
-                <p>Miao He is dual-licensed in Ontario (<strong>LSO #83315K</strong>) and China. Her practice has concentrated on Ontario family law litigation for over 15 years, with substantial courtroom experience in high-conflict divorce, parenting, and property disputes. She serves clients in Mandarin and English from Markham, across the GTA and Ontario-wide.</p>
+                <p>Miao He is dual-licensed in Ontario (<strong>LSO #83315K</strong>) and China. Her practice has concentrated on Ontario family law litigation for over 15 years, with substantial courtroom experience in high-conflict divorce, parenting, and property disputes. She serves clients in Mandarin and English. {GEO_COPY_EN.short}.</p>
                 <p>Reported decisions include <strong>Yang v. Li 2024 ONSC 4801</strong> and <strong>Li v. Jiang 2026 ONSC 561</strong> (CanLII). She has also recovered over $300,000 in cross-border assets for clients. Practice focus: divorce litigation, parenting, equalization and property, and Canada–China family law matters.</p>
                 <p class="author-bio-links">
                   <a href="/en/about">About Miao He</a> ·
@@ -691,7 +683,7 @@ const defaultRelatedIntroEn =
           <aside class="sidebar">
             <div class="sidebar-card contact-card">
               <h3>Book a Consultation</h3>
-              <p>Miao He · Mandarin & English<br/>Initial consultation 30 min $220+HST<br/>Markham · All of Ontario</p>
+              <p>Miao He · Mandarin &amp; English<br/>Initial consultation 30 min $220+HST<br/>{GEO_COPY_EN.short}</p>
               <a href="tel:6479306688" class="call-btn">📞 647-930-6688</a>
               <a href="mailto:miao@miaohelaw.ca" class="email-btn">✉ miao@miaohelaw.ca</a>
             </div>
@@ -835,7 +827,7 @@ const defaultRelatedIntroEn =
                 </li>
               </ul>
               <p class="sidebar-address">
-                <a href="/en/contact/">📍 Office: 208-7050 Woodbine Ave, Markham, ON L3R 4G8 — directions &amp; booking</a>
+                <a href="/en/contact/">📍 Office: 208-7050 Woodbine Ave, Markham, ON L3R 4G8 — {GEO_COPY_EN.short} — directions &amp; booking</a>
               </p>
             </div>
 

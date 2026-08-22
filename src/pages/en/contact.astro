@@ -3,17 +3,18 @@ import BaseHead from '../../components/BaseHead.astro';
 import HeaderEn from '../../components/HeaderEn.astro';
 import Footer from '../../components/Footer.astro';
 import { SITE_LAST_UPDATED_EN } from '../../consts';
+import { GEO_COPY_EN } from '../../data/geo-copy';
 ---
 <!doctype html>
 <html lang="en">
 <head>
   <BaseHead
     title="Contact Miao He — Chinese Family Lawyer Toronto | Mandarin Divorce Lawyer GTA"
-    description="Book a consultation with Miao He, Ontario family litigation lawyer dual-licensed in Ontario and China. Courtroom-focused practice for Chinese-Canadian clients across the GTA. Mandarin & English. 30 min · $220+HST · 647-930-6688."
+    description="Book a consultation with Miao He, Ontario family litigation lawyer dual-licensed in Ontario and China. Located in the Woodbine & Steeles area on the Markham–Toronto boundary, serving Toronto, North York, Scarborough and all Ontario. Mandarin & English. 30 min · $220+HST · 647-930-6688."
   />
   <meta name="keywords" content="Chinese family lawyer Toronto,Mandarin divorce lawyer GTA,Chinese divorce lawyer Markham,Mandarin speaking family lawyer Ontario,Chinese lawyer Richmond Hill,Mandarin family lawyer Mississauga,Chinese divorce attorney Brampton,bilingual family lawyer Toronto,Miao He lawyer,647-930-6688" />
   <meta property="og:title" content="Contact Miao He — Chinese Family Lawyer Toronto | Mandarin Divorce Lawyer GTA" />
-  <meta property="og:description" content="Book a consultation with Miao He, Ontario & China dual-licensed family lawyer. Serving GTA in Mandarin & English. 647-930-6688." />
+  <meta property="og:description" content="Book a consultation with Miao He. Office in the Woodbine & Steeles area on the Markham–Toronto boundary. Mandarin & English. 647-930-6688." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://www.miaohelaw.ca/og-image.jpg" />
   <link rel="alternate" hreflang="zh" href="https://www.miaohelaw.ca/contact/" />
@@ -26,7 +27,7 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
       "@id": "https://www.miaohelaw.ca/en/contact/",
       "url": "https://www.miaohelaw.ca/en/contact/",
       "name": "Contact Miao He — Chinese Family Lawyer Toronto",
-      "description": "Book a consultation with Miao He, Ontario and China dual-licensed family lawyer. Serving the Chinese-Canadian community across GTA in Mandarin and English.",
+      "description": "Book a consultation with Miao He, Ontario and China dual-licensed family lawyer. Office in the Woodbine & Steeles area on the Markham–Toronto boundary. Mandarin and English.",
       "inLanguage": ["en", "zh-Hans"],
       "breadcrumb": {
         "@type": "BreadcrumbList",
@@ -60,7 +61,7 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
         "opens": "09:00",
         "closes": "18:00"
       },
-      "areaServed": ["Toronto","Markham","Richmond Hill","Mississauga","Scarborough","Brampton","Vaughan","Greater Toronto Area","Ontario"],
+      "areaServed": ["Toronto","North York","Scarborough","Richmond Hill","Markham","Mississauga","Brampton","Vaughan","Oakville","Ontario"],
       "knowsLanguage": ["zh-Hans","en"],
       "serviceType": ["Divorce Litigation","Family Law","Child Custody","Property Division","Cross-Border Asset Division","Spousal Support","Child Support","Prenuptial Agreement","Separation Agreement","Mediation"],
       "employee": {
@@ -110,7 +111,7 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
         {
           "@type": "Question",
           "name": "Which areas does Miao He serve?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Miao He serves clients throughout Ontario, including Toronto, Markham, Richmond Hill, Mississauga, Scarborough, Brampton, Vaughan, and all GTA regions." }
+          "acceptedAnswer": { "@type": "Answer", "text": "Located in the Woodbine & Steeles area on the Markham–Toronto boundary (7050 Woodbine Ave #208, off the Highway 404 Steeles exit), serving clients in Toronto, North York, Scarborough, Richmond Hill and Markham, with Zoom consultations available province-wide across Ontario. Phone: 647-930-6688." }
         },
         {
           "@type": "Question",
@@ -545,6 +546,13 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
       font-size: 0.88rem;
       line-height: 1.75;
       color: var(--contact-body);
+      margin-bottom: 0.65rem;
+    }
+    .geo-lede {
+      font-size: 0.84rem;
+      color: var(--contact-body);
+      line-height: 1.7;
+      margin: 0 0 1rem;
     }
     .sidebar-card address a {
       color: #2c1810;
@@ -755,6 +763,7 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
                 208 - 7050 Woodbine Avenue<br/>
                 Markham, Ontario L3R 4G8
               </address>
+              <p class="geo-lede">{GEO_COPY_EN.main}</p>
               <div class="map-wrapper">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.6!2d-79.3498119!3d43.8149715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d36f0f400001%3A0x2fe787e17ffbfe38!2s7050+Woodbine+Ave+%23208%2C+Markham%2C+ON+L3R+4G8!5e0!3m2!1sen!2sca!4v1"
@@ -771,7 +780,7 @@ import { SITE_LAST_UPDATED_EN } from '../../consts';
 
             <div class="sidebar-card">
               <h3>Areas Served</h3>
-              <p class="sidebar-area-lede">Serving all of Ontario, including but not limited to:</p>
+              <p class="sidebar-area-lede">{GEO_COPY_EN.short}</p>
               <ul class="area-list">
                 <li><a href="/en/toronto-chinese-family-lawyer">Chinese Family Lawyer Toronto</a></li>
                 <li><a href="/en/markham-chinese-family-lawyer">Chinese Family Lawyer Markham</a> · Office</li>
