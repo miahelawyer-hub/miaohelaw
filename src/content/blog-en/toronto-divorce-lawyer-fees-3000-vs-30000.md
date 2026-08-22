@@ -344,8 +344,7 @@ or failed to comply with court orders.
 However, costs awards are never guaranteed and should not be relied 
 upon when deciding whether to pursue litigation.
 
-### What is the difference in cost between an uncontested and 
-contested divorce?
+### What is the difference in cost between an uncontested and contested divorce?
 
 The difference can be substantial.
 
