@@ -3,89 +3,125 @@ import BaseHead from '../../components/BaseHead.astro';
 import HeaderEn from '../../components/HeaderEn.astro';
 import Footer from '../../components/Footer.astro';
 import { GEO_COPY_EN } from '../../data/geo-copy';
+
+const pageTitle =
+  'Toronto Family Law Litigation Lawyer: How Chinese Clients Should Handle High Court Divorce Litigation | Miao He';
+const pageDescription =
+  'How do you litigate a divorce case in Toronto? Lawyer Miao He (LSO #83315K), with more than fifteen years of litigation experience, explains what should be done before starting a divorce, the differences between Ontario and China in asset preservation, how financial disclosure can force the other side to disclose financial information, the differences between Toronto Superior Court and other courts, and cross-border property evidence strategies based on dual qualifications to practise in Canada and China.';
+
+const faqs = [
+  {
+    q: 'I have not told my spouse that I want a divorce yet. Is it too early to find a lawyer?',
+    a: 'Quite the opposite. This is exactly when a consultation is most valuable. Miao He encounters this question almost every week. When the other side does not know what is happening, you can legally obtain the most information and you have the widest range of strategies available. Once the other side becomes alert, many of the things that can be done become forms of damage control. Call 647-930-6688.',
+  },
+  {
+    q: 'The other side has already transferred the money. Is there still anything I can do?',
+    a: 'It depends on where the money was transferred, when it was transferred, and whether there is a paper trail. The Ontario court can make adjustments in relation to dispositions of property before and after separation, and it can also make adverse inferences in determining income and property. Recovering the assets is much more difficult than preventing the transfer in the first place, and the cost is much higher.',
+  },
+  {
+    q: 'Can Ontario freeze the other person’s bank account like China does?',
+    a: 'Not in the same way. In China, you can apply to start a property preservation procedure. In Ontario, you need to proceed by motion, the standard is high, and scheduling can take time. Freezing real estate through a CPL is relatively more realistic. Freezing a bank account requires evidence of a real risk of dissipation.',
+  },
+  {
+    q: 'The other side says disclosure only needs to cover three years. Is that true?',
+    a: 'Three years is a basic requirement, not a maximum. When one party owns a company, reports income that is inconsistent with the actual financial circumstances, or the company has substantial retained earnings, the court can require a longer period of records. Miao He obtained an order for six years of disclosure at the Toronto Superior Court in February of this year.',
+  },
+  {
+    q: 'The other side ignores me and refuses to provide documents. What can I do?',
+    a: 'Start litigation. Once litigation starts, disclosure becomes an obligation to the court rather than a favor to you. If the other side does not comply, a motion can be brought to compel disclosure and to ask that they pay your legal costs. 647-930-6688.',
+  },
+  {
+    q: 'Will the Canadian court divide property in China?',
+    a: 'It will be included in the net family property calculation. Because it is not a matrimonial home in the legal sense under Ontario law, the premarital portion can generally be deducted. There are practical difficulties with enforcing an Ontario judgment in China, so it is often more realistic to deal with the Chinese asset through an offset or compensatory arrangement on the Ontario side. Miao He handles these cases with dual qualifications in Canada and China.',
+  },
+  {
+    q: 'Is custody generally awarded to the mother?',
+    a: 'There is no such rule. Since 2021, Canada’s Divorce Act has no longer used the concept of “custody.” Decision-making responsibility and parenting time are dealt with separately. The only standard is the best interests of the child. The court looks at caregiving ability and willingness, the child’s actual living arrangements, family violence, and other relevant factors—not gender.',
+  },
+  {
+    q: 'I am worried that the other parent will take the child back to China. Can this be prevented in advance?',
+    a: 'Yes, and it should be dealt with in advance. You can apply to the Ontario court for an order prohibiting the child from being removed from Ontario or Canada, an order requiring the child’s passport to be surrendered and held, and arrangements requiring both parents’ consent for Chinese travel documents. Mainland China is not a contracting state to the Hague Convention, so once the child is taken to China, the Convention’s return mechanism is not available.',
+  },
+  {
+    q: 'Where are family law cases heard in Toronto?',
+    a: 'Family law cases in Toronto are heard at the Superior Court of Justice at 361 University Avenue. Toronto does not have a Unified Family Court branch. This is different from locations such as Newmarket, which are among the 25 locations with a Family Court Branch.',
+  },
+  {
+    q: 'Does every divorce case have to go all the way to trial?',
+    a: 'Most do not. Based on Miao He’s experience, after the parties exchange disclosure and the lawyers fully communicate their positions, most cases settle. The percentage of cases that actually insist on going all the way to the end simply because one side wants to fight may be around 1%. Initial consultation: 30 minutes, $220 + HST. Call 647-930-6688.',
+  },
+];
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'LegalService',
+    '@id': 'https://www.miaohelaw.ca/en/toronto-chinese-family-lawyer/#service',
+    name: 'Miao He — Chinese Family Lawyer Toronto',
+    url: 'https://www.miaohelaw.ca/en/toronto-chinese-family-lawyer/',
+    telephone: '+1-647-930-6688',
+    email: 'miao@miaohelaw.ca',
+    areaServed: {
+      '@type': 'City',
+      name: 'Toronto',
+      containedInPlace: { '@type': 'Province', name: 'Ontario' },
+    },
+    provider: {
+      '@type': 'Person',
+      name: 'Miao He',
+      alternateName: ['何淼', 'Mia He'],
+      jobTitle: 'Family Law Lawyer',
+      knowsLanguage: ['zh-Hans', 'en'],
+      hasCredential: [
+        { '@type': 'EducationalOccupationalCredential', credentialCategory: 'Law Society of Ontario — Member #83315K' },
+        { '@type': 'EducationalOccupationalCredential', credentialCategory: 'China Bar Association — Licensed' },
+        { '@type': 'EducationalOccupationalCredential', credentialCategory: 'Expert Witness — Chinese Family Law & Marriage Law' },
+        { '@type': 'EducationalOccupationalCredential', credentialCategory: 'Notary Public — Ontario' },
+      ],
+    },
+    serviceType: [
+      'Divorce Litigation',
+      'Cross-Border Asset Recovery',
+      'Global Net Family Property Equalization',
+      'Child Custody',
+      'Marriage Contract',
+      'Separation Agreement',
+    ],
+    inLanguage: ['en', 'zh-Hans'],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.miaohelaw.ca/en/' },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Toronto Family Law Litigation Lawyer',
+        item: 'https://www.miaohelaw.ca/en/toronto-chinese-family-lawyer/',
+      },
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((item) => ({
+      '@type': 'Question',
+      name: item.q,
+      acceptedAnswer: { '@type': 'Answer', text: item.a },
+    })),
+  },
+];
 ---
 <!doctype html>
 <html lang="en">
 <head>
-  <BaseHead
-    title="Chinese Family Lawyer Toronto | Divorce · Child Custody · Marriage Contract | Miao He"
-    description="Miao He provides full Mandarin family law services for Chinese-Canadians in Toronto and the GTA — divorce litigation, property division, child custody, marriage contracts, cross-border assets. 647-930-6688."
-  />
-  <meta name="keywords" content="Chinese family lawyer Toronto,Mandarin divorce lawyer Toronto,Chinese divorce attorney Toronto,cross-border asset recovery divorce Toronto,global equalization property division Ontario,divorce lawyer downtown Toronto Chinese,child custody Toronto Chinese Canadian,marriage contract Toronto Mandarin,separation agreement Toronto,Ontario Superior Court Toronto family law Chinese" />
-  <meta property="og:title" content="Chinese Family Lawyer Toronto | Mandarin Divorce Lawyer | Miao He" />
-  <meta property="og:description" content="Miao He provides full Mandarin family law services for Chinese-Canadians in Toronto — divorce, custody, property division, cross-border assets. 647-930-6688." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://www.miaohelaw.ca/og-image.jpg" />
+  <BaseHead title={pageTitle} description={pageDescription} />
+  <meta name="keywords" content="Toronto family law litigation lawyer,Toronto Chinese divorce lawyer,Chinese litigation lawyer,Toronto Superior Court,financial disclosure,property preservation,CPL,Toronto divorce litigation,division of Chinese property,Mandarin divorce lawyer Toronto" />
   <link rel="alternate" hreflang="zh" href="https://www.miaohelaw.ca/toronto-family-lawyer/" />
   <link rel="alternate" hreflang="en" href="https://www.miaohelaw.ca/en/toronto-chinese-family-lawyer/" />
   <link rel="alternate" hreflang="x-default" href="https://www.miaohelaw.ca/toronto-family-lawyer/" />
-  <script type="application/ld+json">
-  [
-    {
-      "@context": "https://schema.org",
-      "@type": "LegalService",
-      "@id": "https://www.miaohelaw.ca/en/toronto-chinese-family-lawyer/#service",
-      "name": "Miao He — Chinese Family Lawyer Toronto",
-      "url": "https://www.miaohelaw.ca/en/toronto-chinese-family-lawyer/",
-      "telephone": "+1-647-930-6688",
-      "email": "miao@miaohelaw.ca",
-      "areaServed": {
-        "@type": "City",
-        "name": "Toronto",
-        "containedInPlace": {"@type": "Province", "name": "Ontario"}
-      },
-      "provider": {
-        "@type": "Person",
-        "name": "Miao He",
-        "alternateName": ["何淼", "Mia He"],
-        "jobTitle": "Family Law Lawyer",
-        "knowsLanguage": ["zh-Hans", "en"],
-        "hasCredential": [
-          {"@type": "EducationalOccupationalCredential", "credentialCategory": "Law Society of Ontario — Member #83315K"},
-          {"@type": "EducationalOccupationalCredential", "credentialCategory": "China Bar Association — Licensed"},
-          {"@type": "EducationalOccupationalCredential", "credentialCategory": "Expert Witness — Chinese Family Law & Marriage Law"},
-          {"@type": "EducationalOccupationalCredential", "credentialCategory": "Notary Public — Ontario"}
-        ]
-      },
-      "serviceType": ["Divorce Litigation", "Cross-Border Asset Recovery", "Global Net Family Property Equalization", "Child Custody", "Marriage Contract", "Separation Agreement"],
-      "inLanguage": ["en", "zh-Hans"]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.miaohelaw.ca/en/"},
-        {"@type": "ListItem", "position": 2, "name": "Chinese Family Lawyer Toronto", "item": "https://www.miaohelaw.ca/en/toronto-chinese-family-lawyer/"}
-      ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Is there a Mandarin-speaking divorce lawyer in Toronto?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Yes. Miao He (何淼) provides full Mandarin and English bilingual family law services to Chinese-Canadian clients in Toronto and the GTA — no interpreter needed, no complex legal procedure lost in translation. Call 647-930-6688."}
-        },
-        {
-          "@type": "Question",
-          "name": "Where are Toronto divorce cases heard?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Toronto family law cases are heard at the Ontario Superior Court of Justice. Miao He is familiar with Toronto and GTA court procedures and can provide full representation."}
-        },
-        {
-          "@type": "Question",
-          "name": "What should Chinese-Canadians in Toronto know about divorce?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Toronto Chinese-Canadian divorce cases commonly involve cross-border assets (Chinese real estate, offshore accounts), the validity of marriage contracts signed in China, child support arrangements, and language barriers. Miao He holds dual licences in Ontario and China and can handle these cross-border legal issues directly."}
-        },
-        {
-          "@type": "Question",
-          "name": "Can I consult Miao He by Zoom from Toronto?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Located in the Woodbine and Steeles area on the Markham–Toronto boundary (7050 Woodbine Ave #208, off the Highway 404 Steeles exit), serving clients in Toronto, North York, Scarborough, Richmond Hill and Markham, with Zoom consultations available province-wide across Ontario. Initial consultation: 30 minutes, $220 + HST. Call 647-930-6688 to book."}
-        }
-      ]
-    }
-  ]
-  </script>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 </head>
 <body>
   <HeaderEn />
@@ -93,10 +129,11 @@ import { GEO_COPY_EN } from '../../data/geo-copy';
     <section class="page-hero">
       <div class="container">
         <div class="breadcrumb">
-          <a href="/en/">Home</a> › Chinese Family Lawyer Toronto
+          <a href="/en/">Home</a> › Toronto Family Lawyer
+          <span class="lang-pair"> · <a href="/toronto-family-lawyer/">中文</a></span>
         </div>
-        <h1>Chinese Family Lawyer in Toronto</h1>
-        <p class="hero-sub">Full Mandarin service · Divorce litigation · Child custody · Marriage contracts · Cross-border assets · 647-930-6688</p>
+        <h1>Toronto Family Law Litigation Lawyer: How Chinese Clients Should Handle High Court Divorce Litigation</h1>
+        <p class="hero-sub">361 University Ave · Consult a lawyer before you speak · Financial disclosure and preservation · Cross-border evidence · Mandarin · 647-930-6688</p>
       </div>
     </section>
 
@@ -105,42 +142,274 @@ import { GEO_COPY_EN } from '../../data/geo-copy';
         <div class="main-content">
 
           <div class="definition-box">
-            <p>Miao He (何淼) provides <strong>full Mandarin family law services</strong> to Chinese-Canadian clients in Toronto and the Greater Toronto Area — no interpreter needed, direct communication in Mandarin. She holds dual licences from the Law Society of Ontario (#83315K) and the China Bar Association, handling cross-border assets, marriage contracts, and divorce litigation in complex cases.</p>
+            <p>I am Lawyer Miao He (Miao He / Mia He, LSO #83315K), licensed to practise in both Ontario and China. I focus on family law litigation and have long handled high-conflict divorce cases at the Toronto Superior Court of Justice, 361 University Avenue. What I write below is based on my own experience and judgment in handling cases. It is not a textbook flowchart.</p>
           </div>
           <p>{GEO_COPY_EN.main}</p>
 
-          <h2>Chinese-Canadian Divorce in Toronto: Common Complexities</h2>
-          <p>Toronto is home to one of Canada's largest Chinese-Canadian communities. Divorce cases within this community frequently involve cross-border assets, pre-immigration property held in China, offshore accounts, and other complex legal issues that differ significantly from standard Ontario divorce cases.</p>
-          <p>Miao He holds dual licences in Ontario and China. She understands both legal systems deeply and is one of the very few lawyers who can handle cross-border Canada-China family law matters directly — without referring you elsewhere.</p>
-
-          <h2>Areas of Practice</h2>
+          <h2>Summary</h2>
           <ul class="content-list">
-            <li><strong>Divorce Litigation</strong> — litigation strategy, property division, Equalization</li>
-            <li><strong>Child Custody</strong> — primary caregiver determination, parenting time, child support</li>
-            <li><strong>Marriage Contract / Separation Agreement / Cohabitation Agreement</strong> — drafting, review, validity assessment</li>
-            <li><strong>Cross-Border Assets</strong> — Chinese real estate, offshore accounts, global net family property calculation</li>
-            <li><strong>Spousal &amp; Child Support</strong> — imputed income, variation applications</li>
-            <li><strong>Mediation &amp; Arbitration</strong> — alternative dispute resolution strategy</li>
+            <li><strong>Consulting a lawyer before formally telling the other side that you want a divorce</strong> is the most effective and least expensive step for protecting your property. Once the other side knows that you want a divorce, transferring assets can sometimes be completed within days, and it can be extremely difficult to recover those assets afterward.</li>
+            <li><strong>Ontario does not have the same kind of “apply and freeze” pre-litigation preservation system as China.</strong> China has pre-litigation and during-litigation property preservation. You can apply to the court to freeze assets. In Ontario, freezing a bank account has a very high threshold and the court scheduling process can take months. Registering a CPL against real estate is relatively more realistic.</li>
+            <li><strong>Financial disclosure is an obligation that neither side can simply avoid.</strong> Outside litigation, the other side can ignore you. Once litigation starts, the court will require disclosure. If the other side does not do it, I can bring a motion to compel disclosure and ask the other side to pay my client’s legal costs.</li>
+            <li><strong>“The default is only three years” is not a legal maximum.</strong> If the other side owns a company, reports very low income for tax purposes, and has substantial retained earnings sitting in the company, the court can require a longer period of corporate financial records. Corporate income may need to be included in the person’s income for support purposes.</li>
+            <li><strong>Judges at the Toronto Superior Court are generalist judges.</strong> They hear both family law and civil litigation matters, and this directly affects how you should prepare your case. In Toronto, the quality, structure, and precision of your documents are more important than in a specialized family court.</li>
+            <li><strong>In cases where both Canada and China have assets, the difficult part is not “whether they should be divided,” but “how to prove them.”</strong> Ontario’s net family property calculation covers worldwide assets. For Chinese real estate, shares, and accounts to stand up in an Ontario court, you need a complete Chinese-English chain of evidence. The real battleground is the two valuation dates, exchange rates, and nominee ownership—not simply “whether it needs to be disclosed.”</li>
+            <li><strong>Issues involving children are no longer called “custody.”</strong> Since 2021, decision-making responsibility and parenting time are two separate issues. Mainland China is not a contracting state to the Hague Convention on the Civil Aspects of International Child Abduction. If a child is taken back to China, the Convention’s rapid return mechanism is not available, so the risk needs to be addressed in advance.</li>
           </ul>
 
-          <h2>Why Choose Miao He</h2>
-          <p>Mandarin service is not simply a language convenience — it means you do not need to explain your situation through an interpreter, no important detail is lost due to a language barrier, and no translation error can undermine your legal strategy. Miao He communicates directly with you in Mandarin, understands the cultural context of Chinese-Canadian families, and has direct expertise in the legal complexities of cross-border assets.</p>
-          <p>Toronto clients can attend in person when a downtown court date at 361 University Avenue requires it; Zoom consultations are available for all other meetings.</p>
-
           <div class="qa-block">
-            <h3>Q: I am divorcing in Toronto but I still have property in China. Does the Canadian court have jurisdiction over that?</h3>
-            <p>A: Yes. Ontario family law calculates Equalization based on <strong>global net family property</strong> — the value of property held in China is included and affects how Ontario assets are divided. Miao He holds dual licences in Ontario and China and can assist with cross-border asset matters directly. Call 647-930-6688.</p>
+            <h3>Questions Clients Commonly Ask</h3>
+            <ul>
+              <li>“I haven’t told him that I want a divorce yet. Should I talk to him first and see what happens?”</li>
+              <li>“He transferred all the money. Can I still freeze his accounts?”</li>
+              <li>“He is just dragging things out and refusing to give me financial documents. What can I do?”</li>
+              <li>“We have property in China. Can a Canadian court deal with it? How do I prove it?”</li>
+            </ul>
           </div>
 
-          <div class="qa-block">
-            <h3>Q: I am in Toronto and the office is in Markham. Can I consult by Zoom?</h3>
-            <p>A: Yes. Miao He provides Zoom video consultations for Toronto and province-wide clients. Initial consultation: 30 minutes, $220 + HST. Call 647-930-6688 to book.</p>
+          <nav class="toc" aria-label="On this page">
+            <h2>On this page</h2>
+            <ol>
+              <li><a href="#before-tell">Find a lawyer before you tell your spouse</a></li>
+              <li><a href="#preservation">Property preservation in Ontario vs China</a></li>
+              <li><a href="#settle-or-fight">Settlement or litigation</a></li>
+              <li><a href="#disclosure">Financial disclosure: six years vs three years</a></li>
+              <li><a href="#toronto-scj">Toronto Superior Court judges are generalists</a></li>
+              <li><a href="#judge-style">How a judge’s style changes your materials</a></li>
+              <li><a href="#downtown-process">Downtown family litigation procedure</a></li>
+              <li><a href="#cross-border">Cross-border property: China, accounts, companies</a></li>
+              <li><a href="#parenting">Children: decision-making and parenting time</a></li>
+              <li><a href="#high-conflict">High-conflict areas of representation</a></li>
+              <li><a href="#prep">Litigation preparation and communication</a></li>
+              <li><a href="#faq">Frequently asked questions</a></li>
+            </ol>
+          </nav>
+
+          <h2 id="before-tell">I. Find a Lawyer Before You Tell Your Spouse You Want a Divorce: Why “Tell First, Act Later” Can Put the Client at a Disadvantage</h2>
+          <p>When handling divorce litigation cases in Toronto, many Chinese clients are most concerned about the children and the division of the house. Most Chinese clients have property in both China and Canada. In these types of cases, one of the most difficult issues is financial disclosure, but financial disclosure cannot simply be handled casually.</p>
+          <p>Many times, when a client is emotional, telling the other side about the intention to divorce can cause the other side to quickly transfer a large amount of property. Because many clients have assets outside Ontario, and because the spouse may not have complete knowledge of all of the family assets, the client may later find themselves in a weaker position when they start litigation or retain a lawyer. Once assets have been transferred, it can be very difficult to find out what was transferred before, and even more difficult to recover those assets.</p>
+          <p>There is a time difference here that most clients do not realize: <strong>the client thinks they are “communicating,” while the other side is already “disposing of assets.”</strong> A single WeChat message saying, “Let’s get divorced,” can be followed by tens of thousands or hundreds of thousands of dollars being transferred within three days, a mortgage being hurriedly registered, or shares in a company being transferred. By the time I become involved, the issue is no longer preservation. It has become an investigation.</p>
+          <p>That is why I, Miao He, always tell clients that before formally communicating with the other side, they should first find their own lawyer and explain the family situation to the lawyer. There are many situations where I can help you avoid problems. Even when the other side does not yet know that you want a divorce, consulting a lawyer first allows you to take the correct approach, avoid unnecessarily provoking the other side, and sometimes even protect your rights while still reaching a peaceful resolution. Many of my clients are able to use litigation strategy to resolve their cases peacefully. I have already helped them settle, so they were fortunate that they did not have to go through long court proceedings and pay high litigation costs.</p>
+
+          <h3>What Actually Needs to Be Done During the Consultation Stage</h3>
+          <p>When the other side does not yet know what is happening, an experienced family lawyer will first do three things with you:</p>
+          <ul class="content-list">
+            <li><strong>Create an asset map.</strong> Who owns the real estate? Where is the mortgage? How many joint accounts are there? Who owns the company shares? Who is registered as the owner of the property in China? Is there nominee ownership? First make the list clear, then talk about strategy.</li>
+            <li><strong>Obtain the documents that you can legally obtain right now.</strong> Your own bank statements, statements for joint accounts, tax returns, corporate registration records, property registration information—these are materials you are entitled to obtain now. Once the other side becomes alert, they may not be available as easily.</li>
+            <li><strong>Determine when to tell the other side and how to tell the other side.</strong> Some cases are suitable for negotiation or mediation first. Some cases require litigation to be started quickly in order to protect the client’s rights. This decision should be made before you speak, not after you have already spoken and are trying to repair the situation.</li>
+          </ul>
+
+          <h2 id="preservation">II. Property Preservation in Ontario Is Very Different from the Chinese Court System</h2>
+          <p>Ontario’s property preservation system is very different from the Chinese court system. In China, there is pre-litigation property preservation and during-litigation property preservation. You can apply to the court and, with security provided, freeze property. In Ontario, applying to freeze property is much more difficult, and the process can take months before you get before a judge. Even if you can obtain an urgent motion, freezing the property is still very difficult, and it depends on whether you are trying to freeze real estate or the other side’s bank account.</p>
+
+          <h3>Real Estate: Registering a CPL Is Relatively Realistic</h3>
+          <p>If it is real estate, it is better. In many Toronto cases, the court supports registering a CPL (Certificate of Pending Litigation). As long as you can provide a reasonable basis, obtaining a CPL is not particularly difficult.</p>
+          <p>The legal basis for a CPL is section 103 of the <em>Courts of Justice Act</em>. The key threshold is that the applicant must claim an interest in the land itself, rather than merely a right to receive money. This is why a CPL relating to the matrimonial home is relatively easier. Under Ontario’s <em>Family Law Act</em>, both spouses have statutory rights of possession in the matrimonial home, and section 21 specifically provides that one spouse cannot dispose of the matrimonial home without the consent of the other spouse or a court order. Therefore, for a matrimonial home, the issue of “I have an interest in this land” does not require the same additional argument.</p>
+          <p>On the other hand, if the dispute concerns a pure investment property that is registered only in the other spouse’s name, then you first need to establish the interest—such as resulting trust, constructive trust, or a determination of ownership under the <em>Family Law Act</em>—before the CPL can stand. A simple equalization claim is, in substance, a monetary claim. Strictly speaking, it does not automatically support a CPL.</p>
+
+          <h3>Bank Accounts: A Much Higher Threshold</h3>
+          <p>But many times the client wants to freeze the other side’s bank account. In Ontario, to freeze an account, you have to show that there is a real need for it, and the legal standard is very high. In practice, there are two routes:</p>
+          <ul class="content-list">
+            <li><strong>Section 12 of the Family Law Act</strong> — The court can order the preservation of property or restrict one party from disposing of property in order to prevent that party’s conduct from damaging or defeating the other party’s claim relating to property division. This is a family-law route and is somewhat less demanding than a Mareva injunction, but there still needs to be actual evidence.</li>
+            <li><strong>A Mareva injunction</strong> — This is a heavy weapon under the common law. The classic Ontario authorities include <em>Chitel v. Rothbart</em> (Ont. C.A.) and the Supreme Court of Canada decision <em>Aetna Financial Services v. Feigelman</em>. The applicant needs to establish a strong prima facie case, a real risk that the other side will transfer or dissipate assets, and an undertaking as to damages. If the application is made without notice, the applicant also has a duty of full and frank disclosure. If you hide adverse facts, the order may be set aside and you may have to pay costs.</li>
+          </ul>
+          <p>Please pay attention to the key distinction: <strong>“I suspect he will transfer money” is not enough; “he emptied three accounts last month and transferred the money overseas” is evidence of a real risk.</strong> This is exactly why the documents I discussed in the first section should be obtained before the other side becomes alert. A preservation order is obtained through evidence, not through statements.</p>
+          <p>There is also an important procedural reality: under Ontario’s Family Law Rules, generally you cannot bring a motion before a case conference unless the circumstances are urgent, there is hardship, or justice requires an exception. Therefore, from “I want to freeze the assets” to “the judge signs the order,” there is not only a scheduling issue but also a procedural threshold.</p>
+          <p>This is why strategy becomes very important in Toronto divorce cases. This is also why I have always said: <strong>find your lawyer first, then contact the other side.</strong></p>
+
+          <h2 id="settle-or-fight">III. Settlement or Litigation: Should This Case Be Negotiated or Fought?</h2>
+          <p>Another type of case is one where the dispute is significant from the beginning and both sides are emotional and unwilling to give in. In that situation, there is no point trying to negotiate a settlement. Sometimes one side is deliberately delaying, and in that situation I need to start litigation as soon as possible.</p>
+          <p>Once litigation starts, the other side will participate in the litigation. If the other side does not participate, the Toronto Superior Court can proceed without them and the other side may be found in default.</p>
+          <p>This is worth explaining because many clients do not believe that “if you sue him, he will have to respond.” Under the Family Law Rules, a respondent who is served with an application (Form 8) generally has 30 days to serve and file an Answer (Form 10), or 60 days if served outside Canada or the United States. If the respondent does not answer within the time limit, the result is not that “the case just sits there.” The court can deal with the case in the respondent’s absence, and the respondent may lose the right to receive further documents and participate in the proceeding. The case can proceed as uncontested.</p>
+          <p>For someone who holds property and does not want you to know the details, this is the result they least want. Therefore, after I start litigation, the other side will usually enter the litigation process.</p>
+          <p>Before litigation, the client may contact the other side asking for financial disclosure, and the other side may refuse. After I start litigation, the other side is required to provide disclosure as part of the court process. I can help the client obtain the financial disclosure documents.</p>
+          <p>In these cases, most of the parties’ assets are in Canada. Once both sides provide disclosure, there is already a general picture of the equalization. I can predict approximately how much each side may receive. Normally, both sides continue disclosure throughout the litigation, so disclosure is ongoing. Many times, after the lawyers exchange disclosure and fully communicate their positions, the other side realizes that there is no realistic prospect of winning, and the case settles.</p>
+          <p>I have very few cases where the other side insists on taking the case all the way to trial simply because they want to fight. Based on my own experience, it may be only around 1%. So in most cases, the parties settle at this stage.</p>
+          <p>This is based on my own experience handling litigation. This year I have had four or five cases like this: the other side refused to cooperate with the divorce, refused to respond, the parties had already been separated for a long time, and the other side did not respond even when I discussed the division of property after separation. They simply dragged things out. But once I started litigation, and after the parties exchanged disclosure, the cases settled quickly.</p>
+          <p>The reason is simple: <strong>disclosure is something neither side can avoid.</strong> No matter what family lawyer the other side hires, that lawyer will tell them that disclosure has to be dealt with. If they do not provide it, I can bring a motion to compel them to do it, and I can also ask the other side to pay my client’s legal costs.</p>
+
+          <h3>How to Decide Whether to Negotiate or Litigate</h3>
+          <div class="table-wrap">
+            <table class="case-table">
+              <thead>
+                <tr>
+                  <th>Situation</th>
+                  <th>Recommended Approach</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Both sides basically know each other’s financial situation, and the disagreement is about numbers rather than facts</td>
+                  <td>Prioritize negotiation/mediation, with litigation as leverage</td>
+                </tr>
+                <tr>
+                  <td>One side deliberately delays, does not respond, or refuses disclosure</td>
+                  <td>Start litigation quickly and use the procedure to bring the other side into the process</td>
+                </tr>
+                <tr>
+                  <td>The client has no knowledge of the other side’s financial situation</td>
+                  <td>Investigate first, then litigate and force disclosure so it can be compared with the evidence already obtained</td>
+                </tr>
+                <tr>
+                  <td>There are signs of asset transfers or an urgent risk</td>
+                  <td>Proceed directly with an urgent motion / preservation route</td>
+                </tr>
+                <tr>
+                  <td>Both sides are emotionally opposed and neither wants to give in</td>
+                  <td>There is no point trying to settle at this stage; move the procedure forward first</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
+          <p>In these cases, I look at why the other side is unable to reach a settlement. If the reason is deliberate delay, and both sides already know the financial situation, then we should start litigation quickly.</p>
+
+          <h2 id="disclosure">IV. The Practical Reality of Financial Disclosure: A “Six Years vs. Three Years” Motion</h2>
+          <p>There are also clients who have absolutely no knowledge of the other side’s financial situation. In this situation, I recommend that the client investigate first, obtain the documents on their own side, and then start litigation and force the other side to disclose. This allows us to compare what the other side discloses against the evidence already in our possession. If the other side makes inaccurate disclosure or only discloses part of the information, I can challenge the other side’s credibility during the litigation. The judge will primarily look at the case from that point forward. If the parties cannot resolve the matter, it can only be resolved through litigation.</p>
+          <p>I will give an example from one of my own cases. In February of this year, I brought a disclosure motion at the Toronto Superior Court, asking the other side to provide six years of disclosure. The other side disagreed and argued that the law only required the default period of three years. In the end, during the hearing at the Toronto court, all of my arguments were accepted by the judge.</p>
+          <p>There was no reason for the other side not to provide the disclosure, especially because the other side also owned a company. The company was registered only in his name, his reported tax income every year was very low, and there were substantial retained earnings in the company. In that situation, he had to provide historical disclosure showing the company’s financial position—because when a company is wholly owned by the other party, the company’s income can be treated as that person’s income.</p>
+          <p>In other words, even though the other party’s personal tax return showed very little income, that income needs to be adjusted for family law purposes. I need to add the money earned personally and the money earned by the company together to determine the other party’s income. That is the income used as the basis for child support and spousal support.</p>
+          <p>I won that motion in February, and the other side was ordered to pay $5,000 in costs.</p>
+
+          <h3>Why the “Default Is Three Years” Argument Does Not Stand</h3>
+          <p>The number “three years” does exist, but it is a starting point, not a maximum.</p>
+          <ul class="content-list">
+            <li>The Federal Child Support Guidelines require the most recent three years of tax returns and Notices of Assessment as basic disclosure. For an employee receiving regular employment income, that is often sufficient.</li>
+            <li>The same Guidelines also require that if a person is a shareholder, director, or officer of a corporation, they provide the corporation’s most recent three years of financial statements, as well as details of salaries, dividends, management fees, and other payments made by the corporation to related persons.</li>
+            <li>More importantly, the Guidelines allow the court to include all or part of a corporation’s pre-tax retained earnings in the shareholder’s income for support purposes. The court can also impute income where a person’s income has been artificially reduced or where disclosure is inaccurate.</li>
+            <li>There is another point that is often overlooked: failure to disclose has consequences. The court can draw an adverse inference and determine income at an amount it considers appropriate. In other words, hidden information does not become “nothing.” It can instead result in an income determination that is unfavorable to the person who failed to disclose.</li>
+          </ul>
+          <p>So when one side owns a company, reports extremely low tax income, and the company has substantial retained earnings, three years may not explain the situation. To understand the company’s actual profitability and distribution practices, six years can be a reasonable period. This is not the lawyer simply “asking for more.” The income structure itself requires a longer time series to understand.</p>
+          <p>The Ontario Court of Appeal in <em>Roberts v. Roberts</em> (2015 ONCA 450) described disclosure as one of the most basic obligations in a family law case. The Supreme Court of Canada in <em>Leskun v. Leskun</em> (2006 SCC 25) cited the more direct statement that hiding assets is the cancer of matrimonial property litigation. These are principles that I repeatedly use as the foundation of my written materials for disclosure motions.</p>
+
+          <h3>The Cost of Failing to Disclose: Costs</h3>
+          <p>The Family Law Rules are structured in a way that gives the successful party a presumptive entitlement to costs. If a party’s conduct amounts to bad faith, the court can order that party to pay full costs. This is why I always tell clients: <strong>the other side’s delay is not free.</strong> Every motion that has to be brought because the other side refuses to provide documents is another opportunity for that other side to pay your legal fees.</p>
+
+          <h2 id="toronto-scj">V. Toronto Superior Court Is Different from Other Courts: The Judges Are Generalists</h2>
+          <p>When the parties cannot resolve the matter in advance, the case can only be resolved through litigation. When you start litigation at the Toronto Superior Court, Toronto is different from some other courts because the judges are generalists.</p>
+          <p>They do not only hear family law cases. They also hear civil litigation. You will see the names of Toronto judges appearing in both family law and civil litigation matters because Toronto judges are generalist judges and hear different types of cases.</p>
+          <p>This is not simply my personal impression. It is part of the Ontario court structure. Ontario has 25 locations with a Family Court Branch—what is commonly called a Unified Family Court, or UFC. At those locations, all family law matters—divorce, property, matrimonial homes, parenting, support, child protection, adoption—are handled within the specialized family court. <strong>Newmarket is one of those locations, while Toronto is not.</strong> The family law cases in Toronto are heard at the Superior Court of Justice, and these judges also hear civil cases.</p>
+          <p>There is an advantage to this because the judge does not develop a stereotype. For example, a judge at the Newmarket court primarily hears family law cases. Therefore, some of the practices and expectations at the Newmarket family court can be anticipated—almost like established patterns. You know what kinds of materials the court is likely to expect.</p>
+          <p>When you move to the Toronto court, when I need to bring a document or litigation or obtain an order at the Toronto Superior Court family court, I need to pay much more attention to the quality of the documents. The language needs to be precise. Do not put unnecessary things into the materials. Those unnecessary details affect the judge’s judgment and distract the judge’s attention.</p>
+          <p>This is something I, Miao He, have experienced many times in the Toronto court: the same facts can produce completely different results depending on how the materials are written.</p>
+          <p><strong>Practical note:</strong> Family law matters in downtown Toronto are currently heard at 361 University Avenue. Since January 2020, civil matters have been moved to 330 University Avenue, while family matters are at 361 University Avenue. Toronto is not a Unified Family Court location, so the court heading should not say “Family Court” or “Family Court Branch.” These details may look small, but they can matter when documents are being filed.</p>
+
+          <h2 id="judge-style">VI. Understanding the Judge’s Style Changes How You Write Your Materials</h2>
+          <p>I, Miao He, even know the styles of different judges in Toronto. I have appeared before almost every judge at the Toronto court, so I have a general understanding of how different judges approach cases.</p>
+          <p>There is no right or wrong in this. It is the judge’s own style of hearing a case. It does not mean that the judge is unfair or biased. But when a lawyer understands the judge’s style, the lawyer knows how to structure the materials, how to allow the judge to understand the case more quickly, how to understand the argument, and how to write the materials in a way that is more persuasive to that judge.</p>
+          <p>Let me give you a specific example. I had a family court case involving the other side’s request to find that my client’s imputed income was too high. The case was heard at the Toronto court in April of this year. Before the hearing—actually, when I was preparing the written materials and affidavit—I already knew what standard this particular judge used in handling this type of case.</p>
+          <p>At the motion hearing, I almost did not need to make much oral argument. The judge only asked me about a few key points and confirmed whether the facts were correct. During the hearing, the judge relied on my written materials and directly questioned the other side, asking them many questions that they could not answer.</p>
+          <p>In the end, we won, and the other side was ordered to pay $6,000 in costs for that motion.</p>
+          <p>So familiarity with court procedure, and familiarity with how individual judges handle cases, are extremely important.</p>
+
+          <h3>The Real Lesson from This Case Is in the Written Materials</h3>
+          <p>Many people think that a hearing is about “performing on the spot.” In reality, in many family law motions in Toronto, the outcome is largely determined when the affidavit is filed. Motion time is very short. Before you appear in court, the judge has already read the materials. If your written materials are structured clearly, the facts correspond directly to the relief requested, and every number is supported by an exhibit, the judge can use the hearing time to question the other side. On the other hand, if the materials are long, emotional, and contain ten years of grievances, the judge’s questions may be directed at you.</p>
+          <p>Regarding imputed income, the Federal Child Support Guidelines give the court clear authority to impute income where one party is intentionally under-employed or unemployed, where income is tax-exempt, where income has been unreasonably reduced, or where the person refuses to provide income information. This is a double-edged sword—it can be used against a person hiding income, but it can also be used by the other side to argue that your income should be higher. The difference is simply who has the stronger materials.</p>
+
+          <h2 id="downtown-process">VII. Toronto Superior Court: Key Points in Downtown Family Litigation</h2>
+          <p>Downtown court has a large volume of cases and strict procedural requirements. A typical path includes the first case conference, disclosure and exchange of evidence, and moving the dispute forward within a judge-led case management framework. The judge will usually establish a timetable, limit repetitive motions, and require both sides to exchange materials and issue lists before appearing in court.</p>
+          <p>Contested motions have high requirements for written arguments, factual organization, and case law. Scheduling windows and hearing lengths need to be planned in advance.</p>
+          <p>Here are several procedural points that are particularly easy to get wrong in Toronto:</p>
+          <ul class="content-list">
+            <li><strong>A case conference is generally a prerequisite to bringing a motion.</strong> Except where the matter is urgent, hardship exists, or justice requires otherwise, a motion on a substantive issue generally cannot be brought before a case conference. Many clients think, “I will just bring a motion first to force him to do it,” and then discover that the motion is rejected or sent back for scheduling, wasting two or three months.</li>
+            <li><strong>Confirmation (Form 14C) has a strict deadline.</strong> If the confirmation is not filed on time, the motion may not be heard that day.</li>
+            <li><strong>Financial statements (Form 13 / 13.1) have updating requirements.</strong> If the financial statement is too old, it must be updated. Otherwise, the conference or motion may be stopped. Form 13.1 is used in property division cases, while Form 13 is used where support is the issue.</li>
+            <li><strong>Long motions have higher requirements for materials.</strong> A factum will generally be required and is subject to page limits. The specific requirements should be checked against the Consolidated Provincial Practice Direction for Family Proceedings and the applicable Toronto-specific direction. These requirements can change, so they should be checked again before every scheduling step.</li>
+          </ul>
+
+          <h3>Urgent Motions</h3>
+          <p>Urgent relief is appropriate for matters involving personal safety, a child who may be taken out of the jurisdiction, or obvious evidence that assets are being transferred. The issue is to make a quick decision between timing and evidentiary strength.</p>
+          <p>One thing I want to emphasize is that the threshold for an urgent motion is that <strong>the urgency itself must be proven</strong>. It is not enough for the client to subjectively feel that the matter is urgent. The judge will ask three questions: What irreparable harm will occur if this is not dealt with immediately? What objective evidence supports the risk? Why can the matter not wait until the case conference?</p>
+          <p>If the application is made without notice, the obligation is even higher. The applicant must make full and frank disclosure to the court, including facts that are unfavorable to the applicant. This is often underestimated in practice. An order obtained without notice may later be set aside when the other side comes back to court, not because the substantive basis was necessarily wrong, but because the applicant failed to tell the whole story at the beginning.</p>
+          <p>Financial disclosure deadlocks are common in cases involving high-income structures, foreign ownership, or multiple accounts. Parenting disputes often involve unilateral school transfers, changes of school, third-party childcare arrangements, or supervised parenting. The request to the court needs to be enforceable. This is something I want to emphasize: <strong>judges do not like abstract requests.</strong> “Order the other party to cooperate” is not something that can easily be enforced. “Order the other party to provide all bank statements from Bank X from January 2019 to the present within 14 days of service of the order, failing which the applicant may independently request them from the bank” is the form of an enforceable order.</p>
+
+          <h2 id="cross-border">VIII. Cross-Border Property: Chinese Real Estate, Foreign Accounts and Corporate Interests</h2>
+          <p>I have long handled high-conflict family litigation at the Toronto Superior Court of Justice, 361 University Avenue, including case conferences, scheduling of contested motions, financial disclosure disputes, and parenting disputes. Clients can explain their facts and litigation objectives to me directly in Mandarin. When Chinese real estate, foreign accounts, and corporate interests are involved, I use my dual Canada-China professional background to assist with disclosure, valuation, and litigation evidence strategy.</p>
+          <p>In these types of cases, the difficult part is usually not “whether it should be divided,” but “how to prove it.” There are several basic points that need to be made clear:</p>
+          <p><strong>First, Ontario’s net family property calculation covers worldwide assets.</strong> The definition of “property” under Ontario’s <em>Family Law Act</em> is not limited to property located in Ontario. Chinese real estate, bank deposits, shares, and investment products generally need to be included in the balance sheet of assets and liabilities as of the date of marriage and the date of separation. Therefore, the statement that “the house is in China, so the Canadian court cannot deal with it” is wrong.</p>
+          <p><strong>Second, the special rules for a “matrimonial home” only apply to real estate located in Ontario.</strong> Part II of the <em>Family Law Act</em> dealing with matrimonial homes applies only to property located in Ontario. This creates an important practical consequence: a house located in China cannot be a matrimonial home in the legal sense under Ontario law. Therefore, its value on the date of marriage can generally be deducted as premarital property. An Ontario matrimonial home does not receive the same deduction. The difference can be very significant in the numbers.</p>
+          <p><strong>Third, enforcement is a separate issue.</strong> Canada and China do not have a bilateral treaty governing mutual recognition and enforcement of civil and commercial judgments. Whether a Canadian judgment will be recognized in China proceeds through principles of reciprocity, and the result is not certain. More specifically, under the Supreme People’s Court rules concerning recognition of foreign divorce judgments, when a Chinese court deals with an application for recognition, the procedure applies to the portion of the judgment dissolving the marriage, but does not apply to the property division, child support, or living expense portions. In other words, an Ontario divorce judgment may not simply be taken to China and used to transfer Chinese real estate. This means that strategy needs to be arranged in advance. On the Ontario side, using an asset offset, compensatory distribution, or settlement terms to resolve Chinese assets is often more realistic than trying to enforce an Ontario judgment in China afterward.</p>
+          <p><strong>Fourth, the evidence needs to form a chain.</strong> A Chinese real estate certificate that is to stand up in an Ontario court will generally require the property registration document in original form or a properly verified copy, the purchase agreement and payment records, mortgage and repayment records, an independent valuation opinion, and a certified English translation. Obtaining these documents in China takes time. They need to be started early, not after the judge has already made a disclosure order.</p>
+
+          <h3>Valuation of Chinese Real Estate: The Real Difficulty in an Ontario Court</h3>
+          <p>Many people think that once they honestly disclose the Chinese property and include it in NFP, the job is finished. But the disputes I see in court are almost never about “whether it should be counted.” They are about how much it should be valued at. There are several points that the other side’s lawyer will attack every time:</p>
+          <ul class="content-list">
+            <li><strong>Two valuation dates, not one.</strong> Ontario requires the value as of the date of marriage and the date of separation, not today’s market value. A Chinese property may have been purchased ten or more years ago. Reconstructing the value on the date of marriage may require the purchase agreement, the registered transaction price, and comparable transactions in the same development during the same period. This can be more difficult than the separation-date valuation—and this number directly determines how much can be deducted.</li>
+            <li><strong>Which date’s exchange rate?</strong> The RMB-to-CAD exchange rate can fluctuate significantly over ten years, sometimes by more than the property itself has increased in value. In principle, the applicable exchange rate should correspond to each valuation date, and the materials need to clearly explain the exchange rate and provide the source. Otherwise, the other side can simply use another exchange rate and recalculate the numbers, producing a six-figure difference.</li>
+            <li><strong>The registered contract price is not necessarily the market value.</strong> In Chinese transactions, it is common for the contract price to be lower for tax purposes. If you only submit the purchase agreement, the other side may argue that this is the value on the date of marriage. If you want to claim a higher value, additional evidence is required.</li>
+            <li><strong>Who prepares the valuation report?</strong> If the report is prepared by a valuation institution in China, there are issues concerning the institution’s qualifications, certified translation, and, where necessary, expert evidence procedure before the Ontario court will accept it. This is not simply a matter of translating a Chinese report and filing it.</li>
+          </ul>
+
+          <h3>What If the Property Is Registered in the Parents’ Name or the Shares Are Held by a Relative?</h3>
+          <p>A property registered in the parents’ name, shares held by a relative as a nominee, or premarital property where the registered owner and actual contributor are different—these are common situations among my clients, not exceptions. There are two different legal questions. Under Chinese law, the issue may involve nominee ownership and the identification of the actual rights holder. Under Ontario law, the issues may involve resulting trust, the presumption of gift, and determination of ownership under the <em>Family Law Act</em>.</p>
+          <p>There are two things I want to point out in practice. First, nominee ownership is a double-edged sword. You can use it to argue, “This property is not mine,” but the other side can use the same logic to argue, “The property registered in your parents’ name is actually yours.” Second, the evidentiary standard for nominee ownership is high. The court looks at the flow of funds, who made the mortgage payments, who actually occupied and used the property, and whether there was a written agreement made at the time—not simply a family understanding.</p>
+          <p>When cross-border property sources, premarital agreements, or foreign income are involved, I incorporate the Chinese-English evidence chain into the disclosure obligations and strategy under Ontario’s <em>Family Law Act</em>. This is where my dual qualifications to practise in China and Canada are most directly useful. What documents need to be obtained in China, whether they can be obtained, and whether the documents will stand up in an Ontario court are all part of the same judgment. They should not be separated into two lawyers and two rounds of legal fees.</p>
+
+          <h2 id="parenting">IX. Children: Decision-Making Responsibility and Parenting Time in High-Conflict Cases</h2>
+          <p>At the beginning I said that the two issues my Chinese clients care most about are the children and the house. The previous eight sections dealt with money. This section deals with children.</p>
+
+          <h3>First, Let’s Correct the Terminology</h3>
+          <p>Many clients immediately ask, “Can custody be awarded to me?” But after the 2021 amendments to Canada’s <em>Divorce Act</em>, the terms custody and access are no longer used. The law now refers to <strong>decision-making responsibility</strong> and <strong>parenting time</strong>.</p>
+          <p>This is not simply a change in wording. The old terms treated the child as something that could be “awarded” to one person. The new framework separates two different questions: who makes major decisions involving education, health, religion, and important extracurricular activities, and how the child’s time is allocated between the parents. These two issues can be decided separately. One parent may have more parenting time while decision-making responsibility remains shared. The reverse can also happen. If a client continues to approach the case as a “custody battle,” they may spend money fighting the wrong battle.</p>
+          <p>The only standard the court applies is the best interests of the child. The <em>Divorce Act</em> lists a series of factors that must be considered: the child’s needs and age, each parent’s ability and willingness to care for the child, the child’s relationship with each parent and other important people, the child’s linguistic, cultural and religious background, the child’s views and preferences depending on age and maturity, and family violence. Please note that the list does not say “who has more money,” and it does not say “who is the mother.”</p>
+
+          <h3>What Determines the Outcome in a High-Conflict Case?</h3>
+          <p>In high-conflict cases, both sides’ affidavits tell completely opposite stories. The judge cannot believe both. Therefore, what really matters is third-party evidence: school attendance and pick-up records, family doctor and dentist records, extracurricular registration and payment records, written statements from coaches or teachers, and written communications between the parties.</p>
+          <p>One point I repeatedly tell clients is: <strong>WeChat records are a double-edged sword.</strong> When you screenshot the other side’s emotional or inappropriate messages, the other side is also screenshotting yours. From the day you decide to deal with this matter, every message you write on WeChat should be written as though it will eventually be translated into English and attached to an affidavit for the judge to read.</p>
+          <p>As for the issue of putting forward an enforceable plan, I mentioned this in the procedural section. It is particularly important in parenting disputes. “Ask the other parent to cooperate more” is not something a judge can easily turn into an order. “During the school year, the applicant will have the child from after school on Monday until school on Wednesday, exchanges will take place at the school, each parent will have two consecutive weeks during the summer and winter holidays, and the holiday schedule must be confirmed in writing by April 1 of each year” is the form of an order.</p>
+
+          <h3>The Child Is Taken Back to China: This Is the Risk That Needs to Be Addressed First</h3>
+          <p>This issue is particularly important for my client group, and it is something I ask about during the first consultation.</p>
+          <p>The Hague Convention on the Civil Aspects of International Child Abduction establishes a mechanism for the international return of children who have been wrongfully removed or retained. But <strong>Mainland China is not a contracting state to the Convention</strong> (Hong Kong and Macao are covered). This means that if a child is taken to Mainland China by one parent, the Hague Convention’s relatively rapid return mechanism is not available. The remaining option is to commence separate proceedings in China, and the timing and outcome can be highly uncertain.</p>
+          <p>Therefore, in these cases, prevention is much more important than trying to recover the child afterward. You can ask the Ontario court for measures including an order prohibiting the child from being removed from Ontario or Canada, an order requiring the child’s passport to be surrendered and held by a lawyer or the court, arrangements requiring both parents’ consent for obtaining Chinese travel documents for the child, and an urgent motion where there is a real risk.</p>
+          <p>When deciding whether there is a “real risk,” the judge will look at objective indicators: whether the other parent has already resigned from a job or closed a business, whether Canadian assets are being disposed of, whether the other parent has unilaterally applied for or renewed the child’s travel documents, whether a one-way ticket has already been booked, and whether there is family and a long-term residence available in China. When these signs appear, you need to act. Once the child is already on the plane, the nature of the problem is completely different.</p>
+
+          <h2 id="high-conflict">X. Common Areas of Representation in High-Conflict Cases</h2>
+          <ul class="content-list">
+            <li><strong>Contested motions and litigation materials</strong> — factual statements, relevance screening, alignment of relief sought with the applicable law, and case law</li>
+            <li><strong>Financial disclosure and evidentiary disclosure disputes</strong> — motions for additional disclosure, assessment of the consequences of incomplete financial statements, and cost consequences of non-disclosure</li>
+            <li><strong>Equalization and cross-border assets</strong> — worldwide net family property, valuation and evidence concerning Chinese real estate / foreign accounts, and determination of the premarital property deduction</li>
+            <li><strong>Decision-making responsibility and parenting time</strong> — parenting plans in high-conflict cases, third-party evidence and oral submissions, and enforceable exchange and holiday provisions</li>
+            <li><strong>Preventing a child from being removed from the jurisdiction</strong> — non-removal orders, passport control, and evidence of risk indicators (Mainland China is not a contracting state to the Hague Convention)</li>
+            <li><strong>Urgent and without-notice relief</strong> — preservation, restraining orders, or measures preventing removal from the jurisdiction, and the applicable procedural thresholds and risks</li>
+            <li><strong>Income determination and imputed income</strong> — one-person corporations, retained earnings, and income adjustment in cash-income structures</li>
+            <li><strong>Judge-led case management</strong> — complying with case management orders and avoiding procedural disadvantage</li>
+          </ul>
+
+          <h2 id="prep">XI. Litigation Preparation and Communication</h2>
+          <p>The core of high-conflict litigation is verifiable facts and a clear litigation narrative.</p>
+          <p>I prepare written materials bilingually in Chinese and English and align the client’s litigation position with them before the hearing. When handling family law cases in Toronto, I pay particular attention to the client’s needs and the method of handling the case. In addition to carefully developing a solution with the client, I first analyze the case with the client. Some cases are suitable for negotiation or mediation. Some cases need to move into litigation quickly in order to protect the client’s rights.</p>
+          <p>I do not make that decision for the client. I explain the respective costs, timelines, and risks of both paths and let the client make the decision. I have seen too many clients spend two years going down the wrong path simply because no one explained the options to them clearly.</p>
+          <p>Clients in downtown Toronto can arrange an in-person meeting with me depending on the needs of the case, or coordinate preparation for appearances and motions relating to 361 University Ave. by writing or telephone. Clients throughout Ontario can arrange a Zoom consultation.</p>
+
+          <h2 id="faq">Frequently Asked Questions</h2>
+          {faqs.map((item) => (
+            <div class="qa-block">
+              <h3>Q: {item.q}</h3>
+              <p>A: {item.a}</p>
+            </div>
+          ))}
+
+          <h2>Further Reading</h2>
+          <ul class="related-list">
+            <li><a href="/en/blog/high-net-worth-divorce-ontario/">High-Net-Worth Divorce in Ontario: Key Issues and Strategies</a></li>
+            <li><a href="/en/blog/china-property-premarital-depreciation-ontario/">Ontario Divorce: Does Property in China Need to Be Included? What If It Was Purchased Before Marriage or Has Decreased in Value?</a></li>
+            <li><a href="/en/blog/ontario-family-court-procedures-regional-differences/">Ontario Family Court Procedures by Region: How Toronto, Newmarket, Ottawa &amp; North Bay Actually Differ</a></li>
+            <li><a href="/en/blog/force-sale-matrimonial-home-ontario/">Ontario Divorce: What Can I Do If My Spouse Refuses to Sell the House?</a></li>
+            <li><a href="/en/blog/child-taken-to-china-ontario/">My Child Has Been Taken to China: What Can I Do?</a></li>
+          </ul>
+
+          <div class="author-box">
+            <h3>About the Author</h3>
+            <p>Lawyer Miao He (Miao He / Mia He, LSO #83315K) is licensed to practise in both Ontario and China, is a Certified Mediator, and is retained by other law firms as an expert witness on the marriage and family law provisions of China’s Civil Code. She has more than fifteen years of litigation experience, appears in court more than 20 hours each month, and personally handles all cases. Her professional philosophy is: “Protect Your Rights with Wisdom.”</p>
+            <p>H. LAW FIRM 恒. 律师事务所 · 208-7050 Woodbine Ave, Markham, ON L3R 4G8 (Woodbine / Steeles area at the boundary of Markham and Toronto, near the Steeles exit of Highway 404) · Telephone 647-930-6688 · Fax 647-930-8833 · Email <a href="mailto:miao@miaohelaw.ca">miao@miaohelaw.ca</a></p>
+          </div>
+
+          <p class="disclaimer">The cases described on this page are general descriptions of concluded matters and do not identify any parties. Every family law result depends on its specific facts and evidence. This page is not a promise of any outcome and is not legal advice. For advice about your own situation, please consult a lawyer separately.</p>
 
           <div class="cta-box">
             <h3>Book a Toronto Family Law Consultation</h3>
-            <p>Initial consultation 30 minutes · $220 + HST · Full Mandarin service · Zoom or in-person</p>
-            <a href="/en/contact" class="btn-primary">Book Now</a>
+            <p>Initial consultation 30 minutes · $220 + HST. Please note the stage of the case (for example, whether a Toronto SC file has been opened, and whether a hearing is coming up). Mandarin is available.</p>
+            <a href="/en/contact/" class="btn-primary">Book Now</a>
             <a href="tel:6479306688" class="btn-secondary">647-930-6688</a>
           </div>
         </div>
@@ -151,6 +420,10 @@ import { GEO_COPY_EN } from '../../data/geo-copy';
             <p>📞 <a href="tel:6479306688">647-930-6688</a></p>
             <p>📧 <a href="mailto:miao@miaohelaw.ca">miao@miaohelaw.ca</a></p>
             <p>💬 WeChat: 372656035</p>
+          </div>
+          <div class="sidebar-card">
+            <h3>Read in Chinese</h3>
+            <p><a href="/toronto-family-lawyer/">中文版：多伦多家庭法诉讼律师</a></p>
           </div>
           <div class="sidebar-card">
             <h3>Family Law Services</h3>
@@ -189,19 +462,35 @@ import { GEO_COPY_EN } from '../../data/geo-copy';
 </html>
 <style>
   .page-hero{background:var(--hero-legal-top-background);border-bottom:1px solid rgba(0,0,0,0.35);color:white;padding:3rem 0 2rem}
-  .page-hero h1{font-size:2rem;margin:0.5rem 0;color:#ffffff}
+  .page-hero h1{font-size:2rem;margin:0.5rem 0;color:#ffffff;line-height:1.35}
   .hero-sub{color:#D4A853;margin:0}
   .breadcrumb{font-size:0.85rem;opacity:0.7;margin-bottom:0.5rem}
   .breadcrumb a{color:white;text-decoration:none}
+  .lang-pair a{color:#D4A853;text-decoration:none;font-weight:700}
   .container{max-width:1100px;margin:0 auto;padding:0 1.5rem}
   .content-section{padding:3rem 0}
-  .content-grid{display:grid;grid-template-columns:1fr 300px;gap:3rem}
+  .content-grid{display:grid;grid-template-columns:1fr 300px;gap:3rem;align-items:start}
   .definition-box{background:#FDF6EC;border-left:4px solid #9A8060;padding:1.2rem 1.5rem;margin-bottom:2rem;border-radius:0 8px 8px 0}
   .content-list{padding-left:0;margin:1rem 0;list-style:none}
   .content-list li{margin:0.6rem 0;padding:0.6rem 0.75rem 0.6rem 2.5rem;background:#fafafa;border-radius:6px;line-height:1.6;position:relative}
   .content-list li::before{content:"✓";position:absolute;left:0.75rem;color:#9A8060;font-weight:700}
+  .toc{background:#faf8f5;border:1px solid #e8e0d5;border-radius:10px;padding:1.2rem 1.5rem;margin:2rem 0}
+  .toc h2{margin-top:0;font-size:1.05rem}
+  .toc ol{margin:0.5rem 0 0;padding-left:1.25rem;line-height:1.85}
+  .toc a{color:#9A8060;text-decoration:none}
   .qa-block{background:#f8f8f8;border-radius:8px;padding:1.2rem 1.5rem;margin:1.5rem 0;border-left:3px solid #9A8060}
   .qa-block h3{color: var(--text-heading);margin-top:0;font-size:1rem}
+  .qa-block ul{margin:0.5rem 0 0;padding-left:1.25rem;line-height:1.85}
+  .table-wrap{overflow-x:auto;margin:1.25rem 0}
+  .case-table{width:100%;border-collapse:collapse;font-size:0.92rem}
+  .case-table th{background:#f5f0eb;color:var(--text-heading);text-align:left;padding:0.65rem 0.8rem;font-weight:600}
+  .case-table td{padding:0.65rem 0.8rem;border-bottom:1px solid #f0ebe3;vertical-align:top;line-height:1.55;color:var(--text-primary)}
+  .case-table td:first-child{font-weight:500;color:#4A2C1A;width:48%}
+  .related-list{padding-left:1.25rem;line-height:1.9}
+  .related-list a{color:#9A8060}
+  .author-box{background:#FDF6EC;border-radius:10px;padding:1.2rem 1.5rem;margin:2rem 0 1rem}
+  .author-box h3{margin-top:0;color:var(--text-heading);font-size:1.05rem}
+  .disclaimer{font-size:0.85rem;color:#6b5e52;line-height:1.7;margin:1.5rem 0}
   .cta-box{background:linear-gradient(135deg,#2C1810,#4A2C1A);color:white;padding:2rem;border-radius:12px;text-align:center;margin-top:2rem}
   .cta-box h3{margin-top:0;color:#D4A853}
   .cta-box p{color:#ffffff}
@@ -214,7 +503,8 @@ import { GEO_COPY_EN } from '../../data/geo-copy';
   .sidebar-card li{padding:0.3rem 0;border-bottom:1px solid #f0ebe3;font-size:0.9rem}
   .sidebar-card a{color:#9A8060;text-decoration:none}
   .sidebar-card p{margin:0.3rem 0;font-size:0.9rem}
-  h2{color: var(--text-heading);margin-top:2rem}
-  h3{color:#4A2C1A}
-  @media(max-width:768px){.content-grid{grid-template-columns:1fr}.page-hero h1{font-size:1.5rem}}
+  h2{color: var(--text-heading);margin-top:2.4rem;scroll-margin-top:5.5rem}
+  h3{color:var(--text-heading)}
+  .main-content p{line-height:1.85}
+  @media(max-width:768px){.content-grid{grid-template-columns:1fr}.page-hero h1{font-size:1.45rem}}
 </style>

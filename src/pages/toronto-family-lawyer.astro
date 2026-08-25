@@ -3,88 +3,117 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { GEO_COPY_ZH } from '../data/geo-copy';
+
+const pageTitle = '多伦多家庭法诉讼律师：高等法院离婚官司，华人客户怎么打？ | 何淼律师';
+const pageDescription =
+  '多伦多离婚官司怎么打？何淼律师（Miao He，LSO #83315K）以十五年以上诉讼经验，讲清提离婚前该先做什么、安省财产保全与中国的区别、财务披露怎样逼对方交底、多伦多高等法院与其他法庭的不同，以及中加双执照下的跨境房产举证策略。';
+
+const faqs = [
+  {
+    q: '我还没跟配偶提离婚，现在找律师是不是太早了？',
+    a: '恰恰相反，这是最有价值的时点。何淼律师（Miao He）几乎每周都会遇到这个问题。在对方不知情的阶段，你可以合法取得的资料最多、可选的策略最广。等到对方戒备起来，能做的事情就只剩下补救。电话：647-930-6688。',
+  },
+  {
+    q: '对方已经把钱转走了，还有救吗？',
+    a: '要看转去了哪里、什么时候转的、有没有痕迹。安省法院有权对分居前后的处分行为作出调整，也可以在收入和财产认定上作出不利推论。但追回的难度远高于事前防范，而且成本高得多。',
+  },
+  {
+    q: '安省能不能像中国那样申请冻结对方账户？',
+    a: '不能用同样的方式。中国是申请即可启动保全程序；安省要通过动议，标准高、排期长。冻结房产（CPL）相对可行，冻结银行账户需要证明真实的耗散风险。',
+  },
+  {
+    q: '对方说披露只需要给三年，是真的吗？',
+    a: '三年是基础要求，不是上限。当一方持有公司、报税收入与实际生活水平明显不符、或公司账上有大量留存收益时，法院会要求更长年限的资料。何淼律师今年 2 月就在多伦多高等法院拿到了六年的披露命令。',
+  },
+  {
+    q: '对方不理我、不给资料，我能怎么办？',
+    a: '起诉。诉讼一旦启动，披露就变成他对法庭的义务，而不是对你的人情。他不做，可以提动议强制，并要求他承担我方的律师费。647-930-6688。',
+  },
+  {
+    q: '中国的房子，加拿大法院会分吗？',
+    a: '会计入净家庭财产的计算。但因为它不是安省法律意义上的婚姻住宅，婚前部分通常可以扣除；同时，安省判决在中国的执行存在现实障碍，所以更常见的做法是在安省这一侧作抵扣或补偿性安排。何淼律师持中加双执照处理此类问题。',
+  },
+  {
+    q: '孩子的抚养权一般判给妈妈吗？',
+    a: '没有这条规则。2021 年后加拿大《离婚法》已经不用「抚养权」这个概念，改成决策责任和育儿时间两件事分开处理，唯一标准是孩子的最佳利益。法院要看的是照顾能力与意愿、孩子的实际生活安排、家庭暴力等因素，不是性别。',
+  },
+  {
+    q: '我担心对方把孩子带回中国，能不能提前阻止？',
+    a: '能，而且应该提前。可以向安省法院申请禁止将孩子带离安省或加拿大、交出并保管孩子护照、以及办理中国旅行证件须双方同意。中国内地不是海牙诱拐儿童公约的缔约方，孩子一旦被带回国内，公约那套返还机制用不上。',
+  },
+  {
+    q: '多伦多的家庭法案件在哪个法院？',
+    a: '多伦多高等法院的家庭法案件在 361 University Avenue 审理。多伦多不设统一家事法庭分庭，这与 Newmarket 等 25 个设有家事法庭分庭的地点不同。',
+  },
+  {
+    q: '打官司一定要打到最后吗？',
+    a: '绝大多数不会。按何淼律师的办案经验，双方交换完 disclosure、律师充分表达观点之后，大部分案件就 settle 了；真正因为一口气打到最后的，比例可能只有 1% 左右。初次咨询 30 分钟，$220 + HST。电话：647-930-6688。',
+  },
+];
+
+const pairEnHref = '/en/toronto-chinese-family-lawyer/';
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'LegalService',
+    '@id': 'https://www.miaohelaw.ca/toronto-family-lawyer/#service',
+    name: '何淼律师 — 多伦多华人家庭法律师',
+    url: 'https://www.miaohelaw.ca/toronto-family-lawyer/',
+    telephone: '+1-647-930-6688',
+    email: 'miao@miaohelaw.ca',
+    areaServed: {
+      '@type': 'City',
+      name: 'Toronto',
+      containedInPlace: { '@type': 'Province', name: 'Ontario' },
+    },
+    provider: {
+      '@type': 'Person',
+      name: 'Miao He',
+      alternateName: ['何淼', 'Mia He'],
+      jobTitle: 'Family Law Lawyer',
+      knowsLanguage: ['zh-Hans', 'en'],
+      hasCredential: [
+        { '@type': 'EducationalOccupationalCredential', credentialCategory: 'Law Society of Ontario — Member #83315K' },
+        { '@type': 'EducationalOccupationalCredential', credentialCategory: 'China Bar Association — Licensed' },
+        { '@type': 'EducationalOccupationalCredential', credentialCategory: 'Expert Witness — Chinese Family Law & Marriage Law' },
+        { '@type': 'EducationalOccupationalCredential', credentialCategory: 'Notary Public — Ontario' },
+      ],
+    },
+    serviceType: ['Family Law', 'Divorce', 'Child Custody', 'Marriage Contract', 'Spousal Support', 'Cross-border Assets'],
+    inLanguage: ['zh-Hans', 'en'],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: '首页', item: 'https://www.miaohelaw.ca/' },
+      { '@type': 'ListItem', position: 2, name: '多伦多家庭法律师', item: 'https://www.miaohelaw.ca/toronto-family-lawyer/' },
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((item) => ({
+      '@type': 'Question',
+      name: item.q,
+      acceptedAnswer: { '@type': 'Answer', text: item.a },
+    })),
+  },
+];
 ---
 <!doctype html>
 <html lang="zh">
 <head>
-  <BaseHead
-    title="多伦多华人家庭法律师 | Toronto Superior Court · 高冲突离婚诉讼 | 何淼律师"
-    description="何淼律师为多伦多华人提供中英双语家庭法律服务。多伦多家庭法案件程序复杂，对动议管理及诉讼策略要求极高，何律师常年在Toronto Superior Court出庭，熟悉downtown家庭诉讼流程。647-930-6688。"
-  />
-  <meta name="keywords" content="多伦多离婚律师附近,多伦多华人离婚律师附近,附近离婚律师多伦多,多伦多华人家庭法律师,多伦多离婚律师,Toronto华人律师,Toronto普通话律师,多伦多中国人离婚,Toronto国语律师,多伦多离婚诉讼,Toronto婚姻法,Toronto子女监护,Toronto婚前协议,Toronto分居协议,Toronto华裔律师,Toronto新移民离婚,Chinese family lawyer Toronto,Mandarin divorce lawyer Toronto,divorce lawyer Toronto Ontario" />
-  <meta property="og:title" content="多伦多华人离婚律师附近推荐 | 普通话家庭法 | 何淼律师" />
-  <meta property="og:description" content="多伦多及周边华人家庭法；可就近预约面谈或 Zoom。离婚、子女监护、婚前协议。647-930-6688。" />
+  <BaseHead title={pageTitle} description={pageDescription} />
+  <meta name="keywords" content="多伦多家庭法诉讼律师,多伦多离婚华人律师,华人诉讼律师,多伦多高等法院,财务披露,financial disclosure,财产保全,CPL,多伦多离婚官司,中国房产分割,多伦多华人离婚律师,Toronto华人律师,Mandarin divorce lawyer Toronto" />
+  <meta property="og:title" content={pageTitle} />
+  <meta property="og:description" content={pageDescription} />
   <meta property="og:type" content="website" />
   <link rel="alternate" hreflang="zh" href="https://www.miaohelaw.ca/toronto-family-lawyer/" />
   <link rel="alternate" hreflang="en" href="https://www.miaohelaw.ca/en/toronto-chinese-family-lawyer/" />
   <link rel="alternate" hreflang="x-default" href="https://www.miaohelaw.ca/toronto-family-lawyer/" />
-  <script type="application/ld+json">
-  [
-    {
-      "@context": "https://schema.org",
-      "@type": "LegalService",
-      "@id": "https://www.miaohelaw.ca/toronto-family-lawyer/#service",
-      "name": "何淼律师 — 多伦多华人家庭法律师",
-      "url": "https://www.miaohelaw.ca/toronto-family-lawyer/",
-      "telephone": "+1-647-930-6688",
-      "email": "miao@miaohelaw.ca",
-      "areaServed": {
-        "@type": "City",
-        "name": "Toronto",
-        "containedInPlace": {"@type": "Province", "name": "Ontario"}
-      },
-      "provider": {
-        "@type": "Person",
-        "name": "Miao He",
-        "alternateName": ["何淼", "Mia He"],
-        "jobTitle": "Family Law Lawyer",
-        "knowsLanguage": ["zh-Hans", "en"],
-        "hasCredential": [
-          {"@type": "EducationalOccupationalCredential", "credentialCategory": "Law Society of Ontario — Member #83315K"},
-          {"@type": "EducationalOccupationalCredential", "credentialCategory": "China Bar Association — Licensed"},
-          {"@type": "EducationalOccupationalCredential", "credentialCategory": "Expert Witness — Chinese Family Law & Marriage Law"},
-          {"@type": "EducationalOccupationalCredential", "credentialCategory": "Notary Public — Ontario"}
-        ]
-      },
-      "serviceType": ["Family Law", "Divorce", "Child Custody", "Marriage Contract", "Spousal Support", "Cross-border Assets"],
-      "inLanguage": ["zh-Hans", "en"]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "首页", "item": "https://www.miaohelaw.ca/"},
-        {"@type": "ListItem", "position": 2, "name": "多伦多家庭法律师", "item": "https://www.miaohelaw.ca/toronto-family-lawyer/"}
-      ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "多伦多有说普通话的离婚律师吗？",
-          "acceptedAnswer": {"@type": "Answer", "text": "有。何淼律师（Miao He）提供普通话及英文双语家庭法服务，服务多伦多及大多伦多地区华人客户，无需翻译即可清晰沟通复杂的法律程序。电话：647-930-6688。"}
-        },
-        {
-          "@type": "Question",
-          "name": "多伦多的离婚诉讼在哪里处理？",
-          "acceptedAnswer": {"@type": "Answer", "text": "多伦多的家庭法案件通常在 Ontario Superior Court of Justice 处理。何淼律师熟悉多伦多及 GTA 各法院的程序和惯例，可全程代理。"}
-        },
-        {
-          "@type": "Question",
-          "name": "多伦多华人离婚需要注意什么？",
-          "acceptedAnswer": {"@type": "Answer", "text": "多伦多华人离婚常见的复杂情况包括：跨境资产（中国房产、境外账户）的处理、婚前协议的有效性、子女抚养费安排，以及语言沟通障碍。何淼律师持中加双重执照，专注服务华人社区，可有效处理这些跨境法律问题。"}
-        },
-        {
-          "@type": "Question",
-          "name": "何淼律师是否提供上门或 Zoom 咨询？",
-          "acceptedAnswer": {"@type": "Answer", "text": "恒. 律师事务所位于万锦市与多伦多交界的 Woodbine / Steeles 一带（7050 Woodbine Ave #208，404 高速 Steeles 出口），多伦多、北约克、士嘉堡、列治文山客户往返便利；同时为安省全省客户提供 Zoom 视频咨询。初次咨询 30 分钟，$220 + HST。电话：647-930-6688。"}
-        }
-      ]
-    }
-  ]
-  </script>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 </head>
 <body>
   <Header />
@@ -93,9 +122,10 @@ import { GEO_COPY_ZH } from '../data/geo-copy';
       <div class="container">
         <div class="breadcrumb">
           <a href="/">首页</a> › 多伦多家庭法律师
+          <span class="lang-pair"> · <a href={pairEnHref} lang="en">English</a></span>
         </div>
-        <h1>多伦多家庭法诉讼律师 · Toronto Superior Court</h1>
-        <p class="hero-sub">361 University Ave 程序 · 案件会议与争议性动议 · 财务披露与紧急救济 · 育儿争议诉讼 · 中加跨境资产 · 普通话 · 647-930-6688</p>
+        <h1>多伦多家庭法诉讼律师：高等法院离婚官司，华人客户怎么打？</h1>
+        <p class="hero-sub">361 University Ave · 先找律师再开口 · 财务披露与财产保全 · 跨境房产举证 · 普通话 · 647-930-6688</p>
       </div>
     </section>
 
@@ -104,42 +134,273 @@ import { GEO_COPY_ZH } from '../data/geo-copy';
         <div class="main-content">
 
           <div class="definition-box">
-            <p>何淼律师（Miao He，LSO #83315K）长期在<strong>Toronto Superior Court of Justice（361 University Avenue）</strong>处理高冲突家庭诉讼：案件会议（case conference）、争议性动议排期、财务披露争议及育儿安排僵局。客户可直接使用<strong>普通话</strong>陈述事实与诉讼目标；涉及<strong>中国境内房产、境外账户与公司权益</strong>时，以中加双重执业背景协助披露、估值与庭审举证策略。</p>
+            <p>我是何淼律师（Miao He / Mia He，LSO #83315K），安省与中国双重执业，专做家庭法诉讼，长期在多伦多高等法院（Toronto Superior Court of Justice，361 University Avenue）处理高冲突离婚案件。下面写的是我自己办案的经验和判断，不是教科书上的流程图。</p>
           </div>
           <p>{GEO_COPY_ZH.main}</p>
 
-          <h2>Toronto Superior Court： downtown 家庭诉讼流程要点</h2>
-          <p>市中心法院案件量大，程序刚性。典型路径包括首次案件会议、披露与证据交换、以及在法官主导的<strong>案件管理（case management）</strong>框架下推进争议—法官通常会设定时间表、限制重复动议，并要求双方在出庭前完成交换材料与议题清单。争议性动议（contested motion）对书面论据、事实编排及判例引用要求高；排期窗口与听讯时长需提前规划。</p>
-          <p><strong>紧急救济（urgent motion）</strong>适用于人身安全、子女可能被擅自带离管辖区、或资产有明显转移迹象等情形：需在时效与证据强度之间快速取舍。财务披露僵局常见于高收入结构、境外持股或多层账户；育儿争议则往往涉及单方转学或更换学校、第三方照护安排或监督探视—需在法庭要求的框架内提出可执行方案。</p>
+          <h2>摘要</h2>
+          <ul class="content-list">
+            <li><strong>在正式向对方提出离婚之前先咨询律师</strong>，是保护财产最有效、也最便宜的一步。一旦对方先知道你要离婚，转移财产往往在几天之内就完成，事后极难追回。</li>
+            <li><strong>安省没有中国那样的「申请即冻结」的诉前保全。</strong>中国有诉前保全和诉中保全，向法院申请即可冻结；在安省，冻结银行账户的门槛非常高、排期要几个月，冻结房产（注册 CPL）则相对现实得多。</li>
+            <li><strong>财务披露（financial disclosure）是任何一方都躲不掉的义务。</strong>对方在诉讼外可以不理你，但诉讼一旦启动，法庭会要求他披露；不做，我可以提动议强制，并要求他承担我方的律师费。</li>
+            <li><strong>「默认只给三年」不是法律上限。</strong>对方名下有公司、报税收入极低、公司账上留存大量 retained earnings 时，法庭会要求他提供更长年限的公司财务资料，公司收入在家庭法上要并入他本人的收入来计算抚养费。</li>
+            <li><strong>多伦多高等法院的法官是 general 的</strong>，既审家庭法也审民事诉讼，这直接影响你该怎么写材料。在多伦多，文件质量、结构和语言的精准度比在专门的家庭法庭更重要。</li>
+            <li><strong>中加两地都有财产的案件，难点不在「要不要分」，而在「怎么证明」。 </strong>安省的净家庭财产计算涵盖全球资产，但中国的房产、股权、账户要在安省法庭立得住，需要一整条中英文证据链；真正的战场是两个估值日、汇率和代持，不是「要不要申报」。</li>
+            <li><strong>孩子的问题不再叫「抚养权」。 </strong>2021 年后是决策责任与育儿时间两件独立的事；而中国内地不是海牙诱拐儿童公约的缔约方，孩子一旦被带回国内，快速返还机制用不上，必须提前防范。</li>
+          </ul>
 
-          <h2>高冲突案件中常见的代理重点</h2>
+          <div class="qa-block">
+            <h3>客户常问到的</h3>
+            <ul>
+              <li>「我还没跟他说要离婚，我是不是应该先跟他谈谈看？」</li>
+              <li>「他把钱全转走了，我现在还能不能冻结他的账户？」</li>
+              <li>「他就是拖着不理我，不给财产资料，我能拿他怎么办？」</li>
+              <li>「我们在中国还有房子，加拿大法院管得着吗？我要怎么证明？」</li>
+            </ul>
+          </div>
+
+          <nav class="toc" aria-label="本页目录">
+            <h2>本页目录</h2>
+            <ol>
+              <li><a href="#before-tell">提离婚之前先找律师</a></li>
+              <li><a href="#preservation">安省财产保全，跟中国不一样</a></li>
+              <li><a href="#settle-or-fight">和解还是诉讼</a></li>
+              <li><a href="#disclosure">财务披露实战：六年 vs 三年</a></li>
+              <li><a href="#toronto-scj">多伦多高等法院的法官是 general 的</a></li>
+              <li><a href="#judge-style">了解法官风格，会改变材料写法</a></li>
+              <li><a href="#downtown-process">Downtown 家庭诉讼流程要点</a></li>
+              <li><a href="#cross-border">跨境财产：中国房产、境外账户</a></li>
+              <li><a href="#parenting">孩子：决策权与育儿时间</a></li>
+              <li><a href="#high-conflict">高冲突案件中的代理重点</a></li>
+              <li><a href="#prep">诉讼准备与沟通方式</a></li>
+              <li><a href="#faq">常见问题</a></li>
+            </ol>
+          </nav>
+
+          <h2 id="before-tell">一、提离婚之前先找律师：为什么「先说后办」会让客人吃亏</h2>
+          <p>在处理多伦多的离婚诉讼案件中，有很多华人客人最关心的是孩子的抚养权和房屋分配。大部分华人在中国和加拿大都有财产。在这样的案件中，最难的是他们要做 financial disclosure，但是不能轻易做 financial disclosure。</p>
+          <p>很多时候当客人比较冲动时，跟对方提出离婚的想法，会导致另一方迅速转移大量财产。由于他们有很多人的财产不在安省境内，配偶对于家庭财产的掌握和了解不够，这会导致以后他们提起诉讼或者请了律师，在财产公开这一块，我方处于下风。因为很多时候，财产公开无法通过后续手段知道之前转移了什么财产；而且在财产转移之后，会非常难以追回。</p>
+          <p>这里有一个大部分客人都没有意识到的时间差：<strong>当事人以为自己是在「沟通」，而对方已经在「处置」。</strong>一次微信上的「我们离婚吧」，换来的可能是三天之内几十万的转账、一份匆忙签下的抵押、或者一间公司的股权变更。等到我介入的时候，要做的已经不是保全，而是追查。</p>
+          <p>所以我（Miao He）一直主张，客人在跟对方正式沟通之前，要先找到自己的律师，跟律师讲清家庭情况——因为很多情形我是可以帮你避免的。甚至在对方还不知道你要离婚的时候，先找律师咨询，你会采取正确的方式，不会激怒对方，最后可能还能做一些事情保护自己的权益，达到跟对方和平解决的目的。所以我手上的客人，很多是用诉讼策略和平解决的。我已经帮他们 settle 了，这样客人就很幸运，他们不需要经过法庭长期诉讼、支付高额诉讼费用。</p>
+
+          <h3>咨询阶段真正要做的事</h3>
+          <p>在对方还不知情的阶段，一个有经验的家庭法律师会先跟你做三件事：</p>
+          <ul class="content-list">
+            <li><strong>把资产地图画出来。</strong>房产在谁名下、按揭在哪家银行、有几个联名账户、公司是谁持股、中国那边的房子登记在谁名下、有没有代持——先列清单，再谈策略。</li>
+            <li><strong>把你现在能合法拿到的材料先拿到。</strong>你自己名下的账户流水、联名账户的对账单、报税表、公司注册资料、房产登记信息——这些是你此刻有权取得的，等对方戒备起来之后就未必了。</li>
+            <li><strong>确定「什么时候说、怎么说」。</strong>有些案子适合先谈判、先调解；有些案子必须及时启动诉讼程序才能保护客人的权益。这个判断要在开口之前做，不是在开口之后补救。</li>
+          </ul>
+
+          <h2 id="preservation">二、安省的财产保全，跟中国法庭非常不一样</h2>
+          <p>安省的财产保全制度跟中国法庭的非常不一样。中国有诉前财产保全和诉中的财产保全，只要向法院申请、提供担保就可以冻结财产。但在安省想要申请财产冻结，程序非常长，要几个月才能排上法庭。Motion 即便可以申请到 urgent motion，那财产的冻结也非常难，要看你想冻结的是房产还是对方的银行账户。</p>
+
+          <h3>房产：注册 CPL 相对现实</h3>
+          <p>如果是房产还好，大部分多伦多法庭支持注册 CPL（Certificate of Pending Litigation，未决诉讼证明），只要能讲出合理原因，拿到 CPL 并不难。</p>
+          <p>CPL 的法律依据是《法院组织法》（Courts of Justice Act）第 103 条。它的核心门槛是：申请人要主张对这块土地本身的权益（an interest in land），而不只是一笔钱。这也是为什么婚姻住宅（matrimonial home）的 CPL 相对容易——根据安省《家庭法》，双方对婚姻住宅都享有法定的占有权，而且第 21 条明确规定，未经另一方同意或法院命令，一方不得单方面处分婚姻住宅。所以在婚姻住宅上，「我对这块地有权益」这件事本身就不需要额外论证。</p>
+          <p>反过来，如果争的是一处纯投资房、而且只登记在对方一人名下，那就要先把权益讲出来——resulting trust（推定信托）、constructive trust（建构信托），或者《家庭法》下的权属确认——CPL 才站得住。单纯的 equalization（财产均衡）请求，本质上是一笔金钱债权，严格来说不当然支持 CPL。</p>
+
+          <h3>银行账户：门槛高得多</h3>
+          <p>可是很多时候客人要冻结的是账户。在安省要冻结账户的话，除非你可以说明他确实有必要，而且评判标准非常高。实务上有两条路：</p>
+          <ul class="content-list">
+            <li><strong>《家庭法》第 12 条的财产保全令</strong>——法院可以下令保全财产，或者限制一方处分其财产，以防止其行为损害或架空另一方在财产分割上的请求。这是家庭法内部的路径，相对 Mareva 门槛低一些，但仍然要有实据。</li>
+            <li><strong>Mareva 禁令（Mareva injunction）</strong>——这是普通法上的重型武器。安省的经典判例是 <em>Chitel v. Rothbart</em>（Ont. C.A.）和加拿大最高法院的 <em>Aetna Financial Services v. Feigelman</em>。申请人要证明自己有很强的表面胜诉理由（strong prima facie case）、对方有真实的转移或耗散财产的风险，还要就损害赔偿作出承诺（undertaking as to damages）。如果是单方（without notice）申请，还负有完整、坦率披露的义务——隐瞒不利事实，命令会被撤销，而且要承担费用。</li>
+          </ul>
+          <p>请注意关键区别：<strong>「我怀疑他会转钱」不构成理由；「他上个月已经把三个账户清空并汇往境外」才构成理由。</strong>这就是为什么第一节讲的那些资料要在他戒备之前拿到——保全令是靠证据换来的，不是靠陈述换来的。</p>
+          <p>还要补充一点程序上的现实：根据安省《家庭法规则》，在案件会议（case conference）召开之前，一般是不能提动议的，只有在紧急、困难或者正义要求的有限情形下才可以例外。所以从「我想冻结」到「法官签命令」，中间隔着的不只是排期，还有一道程序门槛。</p>
+          <p>那么在处理多伦多离婚案件中的技巧就会变得非常重要，这也是为什么我一直主张：<strong>先找律师，再联系对方。</strong></p>
+
+          <h2 id="settle-or-fight">三、和解还是诉讼：这个案子该谈，还是该打</h2>
+          <p>另一种案件是刚开始时双方争议较大、心气高，谁都不想让步。这时候谈和解没有意义。而且有时有一方是故意拖延的，那么我需要尽快提起诉讼。</p>
+          <p>法庭诉讼程序，对方一定会参加。因为如果对方不参加，多伦多的高等法院会判你胜诉，判对方是 default 的一方。</p>
+          <p>这一点值得展开讲清楚，因为很多客人不相信「起诉了他就会理我」这件事：安省《家庭法规则》要求被告在收到申请书（Form 8 Application）后 30 天内提交答辩（Form 10 Answer）——在加拿大或美国境外送达的，期限是 60 天。逾期不答辩的后果不是「案子就停在那里」，而是对方失去参与资格：法庭可以在他缺席的情况下处理案件，他也不再有权收到后续文件通知，案子可以直接走 uncontested（无争议）程序判下来。对一个手里握着财产、又不想让你知道细节的人来说，这是他最不愿意接受的结果。所以在我提起诉讼后，对方就会加入诉讼。</p>
+          <p>之前客人可能联系对方做财产公开，对方不愿意。但在我提起诉讼后，对方会被法庭要求必须做财产公开。所以我可以帮客人拿到财产公开的文件。</p>
+          <p>在这样的案件中，大部分双方的财产都在加拿大境内。双方做了财产公开后，财产分配 equalization 就已经有大概情形，我可以预判：双方大概能拿到多少钱？通常情况下，双方会在诉讼过程中持续进行 disclosure，所以 disclosure 属于 ongoing。很多时候，当双方律师交换过了 disclosure，并充分表达了律师观点后，对方发现没有胜诉的可能性，这个案子就 settle 了。</p>
+          <p>我手上只有极其少量的案件，是对方为了一口气，非要把案子打到最后。这类案件占比非常少，按我自己的经验估计，可能只有 1% 左右。所以大部分案件在这个时候双方就 settle 了。</p>
+          <p>这也是我平时处理诉讼过程的亲身经历。今年我手上就有四五个这样的案件：对方不配合我方要求离婚，对方也不给予回应；双方已经分居很久了，我跟对方谈分居后的财产分配，对方也不回应，完全就是拖。但当我提起了诉讼、双方交换过了 disclosure 后，很快就 settle 了。</p>
+          <p>原因很简单：<strong>disclosure 是任何一方都无法避免的。</strong>不管对方找什么样的家庭法律师，那位律师一定会告诉他，这个 disclosure 必须处理。如果你不做，我可以提起 motion 强迫对方做，而且 motion 对方还要承担我方的律师费用。</p>
+
+          <h3>怎么判断该谈还是该打</h3>
+          <div class="table-wrap">
+            <table class="case-table">
+              <thead>
+                <tr>
+                  <th>情形</th>
+                  <th>建议路径</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>双方基本掌握彼此财务，分歧在数字而不在事实</td>
+                  <td>谈判／调解优先，诉讼作为杠杆</td>
+                </tr>
+                <tr>
+                  <td>一方故意拖延、不回应、不披露</td>
+                  <td>尽快起诉，用程序把对方拉进来</td>
+                </tr>
+                <tr>
+                  <td>客人完全不掌握对方财务状况</td>
+                  <td>先自行调查取证，再起诉，强迫对方公开后作比对</td>
+                </tr>
+                <tr>
+                  <td>有转移财产的迹象或紧急风险</td>
+                  <td>直接走紧急动议／保全路径</td>
+                </tr>
+                <tr>
+                  <td>双方情绪对立、心气高，谁都不肯让步</td>
+                  <td>此时谈和解没有意义，先把程序推起来</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p>在这样的案件中，我要看的是对方迟迟不能达成和解的原因。如果是故意拖延、而双方又掌握彼此财务状况，就赶紧提起诉讼。</p>
+
+          <h2 id="disclosure">四、财务披露的实战：一个「六年 vs 三年」的动议</h2>
+          <p>还有一些客人完全不掌握对方的财务状况。这种情况，我建议客人先做调查，拿到自己方面的资料后，再提起诉讼，强迫对方公开。这样可以跟我手头已有的证据比对。如果对方公开不实、或者只公开了一部分，我可以在法庭诉讼中 challenge 对方的信誉度（credibility）。法官会主要看接下来的案件——双方无法提前解决，就只能通过诉讼来解决。</p>
+          <p>举我自己的一个例子。我（Miao He）今年 2 月份在多伦多高等法院做了一个 disclosure 的动议，要求对方提供 6 年的 disclosure，但对方不同意，说法律规定默认只提供 3 年。最后在多伦多法庭审理过程中，我的所有观点都被法官采纳了。</p>
+          <p>对方没有理由不给我方提供 disclosure，尤其是对方自己还有公司，公司只注册在他名下，对方每年报税又极少，对方的公司账户里有大量 retained earnings（留存收益）。在这种情况下，对方必须提供历来的 disclosure 说明公司财务状况——因为当公司是对方一人持有时，公司的收入也要被认定为对方的收入。</p>
+          <p>也就是说，对方个人报税收入虽然很少，但这个收入在家庭法上要进行调账。我要把对方个人赚的钱和公司赚的钱加在一起认定为对方的收入，这个收入才是对方要支付 child support 和 spousal support 的标准。</p>
+          <p>我 2 月份打的这个 motion，全盘胜诉，对方要支付 $5,000 的 cost。</p>
+
+          <h3>为什么「默认三年」这个说法站不住</h3>
+          <p>「三年」这个数字确实存在，但它是起点，不是上限。</p>
+          <ul class="content-list">
+            <li>《联邦子女抚养费准则》（Federal Child Support Guidelines）要求提供最近三个纳税年度的报税表和评税通知（Notice of Assessment）——这是基础披露，对一个领工资的受雇者来说通常够用。</li>
+            <li>同一部准则同时规定：如果一方是公司的股东、董事或高管，还要提供该公司最近三个纳税年度的财务报表，以及公司支付给与其有关联的人士的薪酬、红利、管理费等明细。</li>
+            <li>更关键的是，准则允许法院把公司的税前留存收益全部或部分并入股东本人的收入来计算抚养费；也允许法院在一方收入被人为压低、或者披露不实时，直接推定（impute）一个收入。</li>
+            <li>还有一条常被忽略：不披露本身就有后果——法院可以据此作出不利推论（adverse inference），并按它认为适当的数额认定收入。换句话说，藏起来的资料不会变成「没有」，只会变成「按最不利于你的方式推定」。</li>
+          </ul>
+          <p>所以当一方名下有公司、报税收入极低、公司账上却有大量留存收益时，三年根本说明不了问题。要看清一家公司的真实盈利能力和分配习惯，六年是一个合理的窗口——这不是律师「要得多」，而是这个收入结构本身要求更长的时间序列才看得懂。</p>
+          <p>安省上诉法院在 <em>Roberts v. Roberts</em>（2015 ONCA 450）中把披露称为家庭法案件中最基本的义务。加拿大最高法院在 <em>Leskun v. Leskun</em>（2006 SCC 25）中引用过一句更直接的话：隐瞒财产是婚姻财产诉讼的癌症。这两句话，是我在披露动议的书面材料里反复会用到的立足点。</p>
+
+          <h3>不披露的代价：costs</h3>
+          <p>《家庭法规则》在费用上的设计是有倾向性的：胜诉方原则上有权获得费用；如果一方的行为构成恶意（bad faith），法院可以判其承担全额费用。这就是为什么我一直跟客人说：<strong>对方拖延不是免费的。</strong>每一次因为他不交材料而必须提的动议，都是他在给你付律师费的机会。</p>
+
+          <h2 id="toronto-scj">五、多伦多高等法院跟其他法庭不一样：法官是 general 的</h2>
+          <p>接下来的案件，双方无法提前解决，就只能靠诉讼来解决。而在多伦多高等法院提起诉讼，多伦多法庭跟其他法庭不一样：法官是 general 的。</p>
+          <p>他们不仅会听家庭法的案子，也会听 civil litigation（民事诉讼）。你会发现多伦多的法官名字，既会出现在 family court，也会出现在 civil litigation court——因为多伦多的法官是 general 形式，法官身兼数职，会审理不同类型的案件。</p>
+          <p>这不是我个人的印象，而是安省法院体制本身的安排。安省有 25 个地点设有高等法院的家事法庭分庭（Family Court Branch，也就是通常说的统一家事法庭 Unified Family Court／UFC），在这些地点，所有家庭法事项——离婚、财产、婚姻住宅、育儿、抚养费、儿童保护、收养——都在同一个专门法庭内处理。<strong>Newmarket 就是其中之一，而多伦多不是。</strong>多伦多的家庭法案件由高等法院（Superior Court of Justice）审理，而这些法官同时也审民事案件。</p>
+          <p>它的好处是法官不会形成一个 stereotype。比如 Newmarket 法庭的法官，主要审理家庭法案件，那么 Newmarket 家庭法庭的一些判决或要求，我是可以预计的——就像形成了惯例判例一样，在这个法庭，请求提供什么样的材料，基本上你知道能做到。</p>
+          <p>换到多伦多的法庭，我在多伦多高等法院的 family court 要提起文件或诉讼、要拿到一个 order 的话，就要更注重文件质量，语言表达要精准，不要把没用的事情写进去。这些啰嗦的东西会影响法官的判断，会 distract 法官的 attention。</p>
+          <p>这一点我（Miao He）在多伦多法庭有很多实战体会：同样的事实，材料写法不同，结果可以完全不同。</p>
+          <p><strong>实务提示：</strong>多伦多高等法院的家庭法案件目前在 361 University Avenue 的多伦多法院大楼审理（自 2020 年 1 月起，民事移至 330 University Avenue，家事移至 361 University Avenue）。这不是一个统一家事法庭分庭，所以在文件抬头上不应写 “Family Court” 或 “Family Court Branch”——这类细节看起来微小，但在立案窗口是会被退回来的。</p>
+
+          <h2 id="judge-style">六、了解法官的风格，会改变你写材料的方式</h2>
+          <p>我（Miao He）甚至知道多伦多不同法庭法官的风格。因为我几乎上过多伦多法院每个法官的庭审，我大概知道他们判案的风格。</p>
+          <p>这里没有对与错——那是一个法官自己的审理风格，不代表法官不公平、不公正。但当律师了解法官风格后，会知道起草材料时怎样管理材料的 structure，让法官更快理解案件、理解 argument，知道如何写文件能更 persuade 法官。</p>
+          <p>举一个具体的例子。我（Miao He）有一个案件是 family court，关于对方想请求认定我的客人的 imputed income（推定收入）过高。这个案子在多伦多法庭今年 4 月份开庭。开庭时——其实是在开庭之前，我在写书面材料 affidavit 的时候，我大概就知道这位法官审理的标准是什么。</p>
+          <p>这个案子的 motion 开庭，我几乎没有做过多阐述。法官只在几个关键点问了我一下，跟我 confirm 这是不是真实情况。而案子开庭的时候，法官基于我提交的书面文件直接 question 对方，问了对方很多问题，但对方答不上来。</p>
+          <p>最后我方胜诉，法官要求对方支付 $6,000 的 cost——这个 motion 的 cost。</p>
+          <p>所以对法庭程序的熟悉，和对于每一位法官案件处理方式的了解，是非常非常重要的。</p>
+
+          <h3>这个案子真正的教训在书面材料里</h3>
+          <p>很多人以为庭审是「临场发挥」，其实在多伦多的家庭法动议里，胜负大部分在 affidavit 提交的那一刻就定了。动议庭的时间很短，法官在上庭之前已经读过材料。你的书面材料如果结构清晰、事实与救济请求一一对应、每一个数字都有附件支撑，法官会把提问的时间用在对方身上；反过来，如果材料冗长、情绪化、把十年的委屈都写进去，法官的提问就会落在你身上。</p>
+          <p>关于推定收入（imputed income），《联邦子女抚养费准则》给了法院明确的授权：在一方故意不充分就业或失业、收入来源被免税、收入被不合理压低，或者拒绝提供收入资料等情形下，法院可以推定一个它认为适当的收入。这是一把双刃剑——它既可以用来对付隐瞒收入的一方，也可能被对方用来把你的收入说高。区别只在于谁的材料更扎实。</p>
+
+          <h2 id="downtown-process">七、Toronto Superior Court：downtown 家庭诉讼流程要点</h2>
+          <p>市中心法院案件量大，程序刚性。典型路径包括首次案件会议、披露与证据交换，以及在法官主导的案件管理（case management）框架下推进争议——法官通常会设定时间表、限制重复动议，并要求双方在出庭前完成材料交换与议题清单。</p>
+          <p>争议性动议（contested motion）对书面论据、事实编排及判例引用要求高；排期窗口与听讯时长需要提前规划。</p>
+          <p>补充几个在多伦多特别容易踩的程序点：</p>
+          <ul class="content-list">
+            <li><strong>案件会议是动议的前置条件。</strong>除紧急、困难或正义要求的例外情形外，在案件会议召开之前不得就实体问题提动议。很多当事人以为「我先提个动议逼他」，结果是被打回来重排，白白损失两三个月。</li>
+            <li><strong>确认表（Confirmation，Form 14C）有硬性截止时间。</strong>未按时确认，动议可能不被列入当日聆讯名单。</li>
+            <li><strong>财务报表（Form 13／13.1）有时效。</strong>超过一定时间的财务报表必须更新，否则会议或动议可能被叫停。涉及财产分割的案件用 Form 13.1，仅涉及抚养费的用 Form 13。</li>
+            <li><strong>长动议（long motion）的材料要求更高</strong>，通常需要提交 factum，并受篇幅限制；具体要求以《家庭诉讼省级综合实务指引》（Consolidated Provincial Practice Direction for Family Proceedings）及多伦多地区的补充指引为准，且会更新，每次排期前都应重新核对。</li>
+          </ul>
+
+          <h3>紧急救济（urgent motion）</h3>
+          <p>紧急救济适用于人身安全、子女可能被擅自带离管辖区、或资产有明显转移迹象等情形：需要在时效与证据强度之间快速取舍。</p>
+          <p>要提醒的是，紧急动议的门槛在于<strong>紧急性本身要被证明</strong>，而不是当事人主观上觉得急。法官会问三个问题：如果不马上处理，会发生什么无法回复的损害？这个风险有什么客观证据？为什么不能等到案件会议？</p>
+          <p>如果是单方（without notice）申请，义务更重：申请人必须向法院作出完整、坦率的披露，包括对自己不利的事实。这一点在实务中经常被低估——单方拿到的命令，往往在对方回来后的复议中被撤销，原因不是实体理由不成立，而是当初没有把话说全。</p>
+          <p>财务披露僵局常见于高收入结构、境外持股或多层账户；育儿争议则往往涉及单方转学或更换学校、第三方照护安排或监督探视——需要在法庭要求的框架内提出可执行的方案。这一点我要强调：<strong>法官不喜欢抽象的请求。</strong>「要求对方配合」是无法执行的，「要求对方于命令送达后 14 日内提供 X 银行 2019 年 1 月至今的全部对账单，逾期由申请人单方向该行申请」才是可执行的。</p>
+
+          <h2 id="cross-border">八、跨境财产：中国的房产、境外账户与公司权益</h2>
+          <p>我长期在 Toronto Superior Court of Justice（361 University Avenue）处理高冲突家庭诉讼：案件会议（case conference）、争议性动议排期、财务披露争议及育儿安排僵局。客户可以直接用普通话跟我讲事实和诉讼目标；涉及中国境内房产、境外账户与公司权益时，我（Miao He）以中加双重执业背景协助披露、估值与庭审举证策略。</p>
+          <p>这一类案件的难点，通常不在「要不要分」，而在「怎么证明」。几个必须讲清楚的基本点：</p>
+          <p><strong>第一，安省的净家庭财产计算涵盖全球资产。</strong>安省《家庭法》对「财产」的定义并不以所在地为限，中国的房产、存款、股权、理财产品，原则上都要计入结婚日与分居日的资产负债表。所以「房子在国内，加拿大法院管不着」这个说法是错的。</p>
+          <p><strong>第二，但「婚姻住宅」的特殊规则只适用于安省境内的房产。</strong>《家庭法》第二部分（婚姻住宅）只适用于位于安省的物业。这带来一个实务上非常重要的后果：位于中国的房子不可能是安省法律意义上的婚姻住宅，因此它在结婚之日的价值通常是可以作为婚前财产扣除的——而安省的婚姻住宅则不享有这个扣除。这个差别在数字上往往非常可观。</p>
+          <p><strong>第三，执行是另一件事。</strong>加拿大与中国之间没有关于民商事判决相互承认与执行的双边条约，中国法院是否承认，走的是互惠原则的路径，结果并不确定。更具体的是：根据最高人民法院关于承认外国法院离婚判决的规定，中国法院受理承认申请时，只处理判决中解除婚姻关系的部分，对于财产分割、子女抚养、生活费负担等内容并不适用该程序。也就是说，一份安省的离婚判决，未必能直接在中国把房子过户过来。这意味着策略上要提前安排——在安省这一侧通过资产抵扣、补偿性分配或和解条款来解决中国资产，往往比事后拿着安省判决去中国执行更现实。</p>
+          <p><strong>第四，举证要成链。</strong>一份中国的不动产权证书要在安省法庭立得住，通常需要：产权登记文件原件或经核验的复印件、购房合同与付款凭证、按揭与还款记录、独立的估值意见，以及经认证的英文翻译。这些材料在中国要花时间去调取，所以必须尽早启动，不能等到法官下了披露命令才开始找。</p>
+
+          <h3>估值：中国房产在安省法庭真正的难点</h3>
+          <p>很多人以为把中国的房子如实申报、计入 NFP，这件事就算办完了。但我在庭上遇到的争议，几乎从来不是「要不要算」，而是算多少。几个每次都会被对方律师攻击的点：</p>
+          <ul class="content-list">
+            <li><strong>两个时间点，不是一个。</strong>安省要的是结婚之日和分居之日两个估值，不是今天的市价。中国的房子往往是十几年前买的，结婚日那个数字要靠购房合同、网签备案价、同期同小区成交记录去还原，比分居日的估值难得多——而这个数字恰恰决定了能扣掉多少。</li>
+            <li><strong>汇率取哪一天。</strong>人民币兑加元在十几年间的波动幅度，可能比房子本身的涨幅还大。原则上两个估值日各自适用当日汇率，但这一点必须在材料里写明并附来源，否则对方会拿另一个汇率重算一遍，两边差出六位数。</li>
+            <li><strong>网签价不等于市场价。</strong>中国交易中出于税费考虑压低合同价的做法很普遍。如果你只提交购房合同，对方会说这就是结婚日价值；如果你要主张更高，就要另外补证。</li>
+            <li><strong>估值报告谁出。</strong>国内评估机构出具的报告要在安省法庭被采信，需要处理资质说明、认证翻译，以及必要时的专家证据程序问题。这不是把中文报告翻译一下就能提交的。</li>
+          </ul>
+
+          <h3>房子写的是父母的名字、股权挂在亲戚名下，算谁的？</h3>
+          <p>房子登记在父母名下、股权由亲戚代持、婚前房产登记人与实际出资人不一致——这在我的客户里是常态，不是例外。它在两边法律上是两个不同的问题：中国法上要处理借名买房与实际权利人的认定，安省法上则要处理 resulting trust（推定信托）、赠与推定，以及《家庭法》下的权属确认。</p>
+          <p>实务上要提醒两件事。一是代持是双刃剑：你可以用它主张「这套房不是我的」，对方也可以用同一套逻辑主张「登记在你父母名下的那套其实是你的」。二是代持的证明标准很高——法院看的是资金流水、还款人、实际占有使用、以及有没有同期的书面约定，而不是家庭内部的默契。</p>
+          <p>在涉及跨境财产来源、婚前协议或境外收入时，我会把中英文证据链与安省《家庭法》下的披露义务一并纳入策略。这也是我（Miao He）中加双执照最直接派上用场的地方——中国那一侧要什么材料、能不能调到、调出来在安省法庭立不立得住，是同一个判断，不该拆成两个律师、两次收费去做。</p>
+
+          <h2 id="parenting">九、孩子：决策权与育儿时间，高冲突下怎么打</h2>
+          <p>开头我说过，来找我的华人客人最关心两件事：孩子和房子。前面八节讲的都是钱，这一节讲孩子。</p>
+
+          <h3>先纠正一个用词</h3>
+          <p>很多客人开口就问「抚养权能不能判给我」。但加拿大《离婚法》在 2021 年修订后，已经不再使用 custody（监护权）和 access（探视）这两个词，改成了 <strong>decision-making responsibility（决策责任）</strong> 和 <strong>parenting time（育儿时间）</strong>。</p>
+          <p>这不只是换词。旧词把孩子说成一种可以被「判给谁」的权利归属，新词把它拆成两个独立的问题：重大事项由谁决定（教育、医疗、宗教、重要课外活动），以及孩子的时间怎么分配。这两件事可以分开判——一方拿到更多育儿时间，决策权仍可能是共同的；反过来也成立。客人如果还用「争抚养权」的思路去打，往往会在错误的战场上花钱。</p>
+          <p>法院唯一的判断标准是孩子的最佳利益，《离婚法》列出了一系列必须考量的因素：孩子的需要与年龄、每一方照顾孩子的能力与意愿、孩子与各方及其他重要人物的关系、孩子的语言文化背景、孩子本人的意见（按年龄和成熟度）、以及家庭暴力。请注意其中没有「谁更有钱」，也没有「谁是妈妈」。</p>
+
+          <h3>高冲突下，判决靠什么</h3>
+          <p>在高冲突案件里，双方的 affidavit 会讲出两个完全相反的故事，法官不可能都信。所以真正起作用的是第三方证据：学校的出勤与接送记录、家庭医生和牙医的就诊记录、课外班的报名与缴费、教练或老师的书面陈述、以及双方之间的书面往来。</p>
+          <p>一个我反复跟客人讲的点：<strong>微信记录是把双刃剑。</strong>你截图对方的失态发言时，对方也在截你的。从你决定要处理这件事那天起，你在微信里的每一句话都要当成将来会被翻译成英文、附在 affidavit 后面呈给法官来写。</p>
+          <p>至于「提出可执行的方案」——我在第七节讲程序时说过，这一条在育儿争议里尤其重要。「要求对方多配合」法官没法写进命令；「学期内周一放学至周三上学由申请人照顾，交接地点为学校，寒暑假各连续两周，须于每年 4 月 1 日前书面确认」才是命令的样子。</p>
+
+          <h3>孩子被带回中国：这是最需要提前处理的风险</h3>
+          <p>这一条对我的客户群体特别关键，也是我（Miao He）会在第一次咨询就问到的问题。</p>
+          <p>海牙《国际诱拐儿童民事方面公约》建立了一套跨国追回被非法带离孩子的机制，但<strong>中国内地不是该公约的缔约方</strong>（香港和澳门适用）。这意味着：如果孩子被一方带回中国内地，海牙公约那条相对快速的返还路径用不上，剩下的只能是在中国另行诉讼，时间和结果都高度不确定。</p>
+          <p>所以在这类案件里，防范远比事后追回重要。可以向安省法院请求的措施包括：禁止将孩子带离安省或加拿大的命令、要求交出并由律师或法院保管孩子护照的命令、在办理孩子中国旅行证件时需双方同意的安排，以及在有现实风险时的紧急动议。</p>
+          <p>判断有没有「现实风险」，法官会看的是客观迹象：对方是否已经辞职或结束生意、是否在处置加拿大的资产、有没有单方申请或续办孩子的证件、有没有已经订好的单程机票、在中国有没有可以长期依托的家庭与住所。这些迹象出现的时候就要动，等到人已经上飞机，性质就完全变了。</p>
+
+          <h2 id="high-conflict">十、高冲突案件中常见的代理重点</h2>
           <ul class="content-list">
             <li><strong>争议性动议与庭辩材料</strong>——事实陈述、相关性筛选、救济请求与判例对齐</li>
-            <li><strong>财务披露与证据开示争议</strong>——补充披露动议、不完整报表的后果评估</li>
-            <li><strong>Equalization 与跨境资产</strong>——全球净资产口径、中国房产/境外账户的估值与举证</li>
-            <li><strong>育儿决策权与 parenting time</strong>——高冲突下的育儿计划、第三方证据与庭审陈述</li>
+            <li><strong>财务披露与证据开示争议</strong>——补充披露动议、不完整报表的后果评估、不披露的费用后果</li>
+            <li><strong>Equalization 与跨境资产</strong>——全球净资产口径、中国房产／境外账户的估值与举证、婚前财产扣除的认定</li>
+            <li><strong>育儿决策权与 parenting time</strong>——高冲突下的育儿计划、第三方证据与庭审陈述、可执行的交接与假期条款</li>
+            <li><strong>阻止孩子被带离管辖区</strong>——禁止离境令、护照保管、风险迹象的举证（中国内地不适用海牙公约）</li>
             <li><strong>紧急与单方救济</strong>——保全、限制令或阻止离境等程序的门槛与风险</li>
+            <li><strong>收入认定与推定收入</strong>——一人公司、留存收益、现金收入结构下的收入调账</li>
             <li><strong>法官主导的进度控制</strong>——遵守案件管理命令、避免程序性被动</li>
           </ul>
 
-          <h2>诉讼准备与沟通方式</h2>
-          <p>高冲突诉讼的核心是可验证的事实与清晰的法庭叙事。何淼律师以<strong>中英双语</strong>准备书面材料并与客户对齐庭审口径；在涉及<strong>跨境财产来源、婚前协议或境外收入</strong>时，将中英文证据链与 Ontario《家庭法》下的披露义务一并纳入策略。</p>
-          <p>多伦多市区客户可按案件需要安排面谈或以书面、电话方式协同准备<strong>361 University Ave</strong>相关出庭与动议。</p>
+          <h2 id="prep">十一、诉讼准备与沟通方式</h2>
+          <p>高冲突诉讼的核心是可验证的事实与清晰的法庭叙事。</p>
+          <p>我以中英双语准备书面材料，并在开庭前跟客户把庭审口径对齐。在处理多伦多家庭法案件时，我尤其注意方式方法和客人的需求：除了会认真地帮客人制定解决方案，我还会帮客人先分析案情——有些案件适合谈判或者调解解决，有些案件就要及时地启动诉讼程序，才能帮客人保护自己的权益。</p>
+          <p>这个判断我不会替客人做，但我会把两条路各自的成本、时间和风险讲清楚，让客人自己决定。我见过太多客人是因为没人跟他讲清楚，才在错误的路上走了两年。</p>
+          <p>多伦多市区的客户可以按案件需要跟我安排面谈，或者以书面、电话方式协同准备 361 University Ave 相关的出庭与动议；安省全省的客户可以安排 Zoom 视频咨询。</p>
 
-          <div class="qa-block">
-            <h3>Q：多伦多离婚，我在中国还有房产，加拿大法院管得到吗？</h3>
-            <p>A：Net family property 以<strong>全球资产</strong>为计算基础；中国房产通常须纳入披露与估值，并可能影响 equalization 的调整策略。持中加双重执照有助于组织跨境证据与庭审表述。具体路径请致电 647-930-6688。</p>
+          <h2 id="faq">常见问题</h2>
+          {faqs.map((item) => (
+            <div class="qa-block">
+              <h3>Q：{item.q}</h3>
+              <p>A：{item.a}</p>
+            </div>
+          ))}
+
+          <h2>延伸阅读</h2>
+          <ul class="related-list">
+            <li><a href="/blog/high-net-worth-divorce-ontario/">高净值离婚：隐藏资产怎么查？境外资产怎么追？</a></li>
+            <li><a href="/blog/china-property-premarital-depreciation-ontario/">安省离婚：中国的房子要不要算？婚前买的、跌价了怎么办？</a></li>
+            <li><a href="/blog/ontario-family-court-procedures-regional-differences/">安省家庭法庭程序差异：Toronto、Newmarket、Ottawa 与 North Bay 有什么不同？</a></li>
+            <li><a href="/blog/force-sale-matrimonial-home-ontario/">安省离婚：对方不肯卖房，我能逼他卖吗？</a></li>
+            <li><a href="/blog/child-taken-to-china-ontario/">离婚时对方把孩子带回中国了，还能追回来吗？</a></li>
+          </ul>
+
+          <div class="author-box">
+            <h3>关于作者</h3>
+            <p>何淼律师（Miao He / Mia He，LSO #83315K），安省与中国双重执业资格，Certified Mediator，并受其他律师事务所委托担任中国《民法典》婚姻家庭编的专家证人。十五年以上诉讼经验，每月出庭 20 小时以上，所有案件亲自处理。执业理念：「智慧维权」。</p>
+            <p>H. LAW FIRM 恒. 律师事务所　208-7050 Woodbine Ave, Markham, ON L3R 4G8（万锦市与多伦多交界的 Woodbine／Steeles 一带，404 高速 Steeles 出口）　电话 647-930-6688 · 传真 647-930-8833　邮箱 <a href="mailto:miao@miaohelaw.ca">miao@miaohelaw.ca</a></p>
           </div>
 
-          <div class="qa-block">
-            <h3>Q：对方拒不披露或拖延程序，downtown Toronto 法院通常怎么处理？</h3>
-            <p>A：法官可在案件会议或案件管理听讯中下达披露命令、设定截止日期；必要时可申请<strong>强制披露或相应制裁</strong>方向的救济。材料完整度直接影响动议成功率—宜尽早固定证据与时间表。647-930-6688。</p>
-          </div>
+          <p class="disclaimer">本文所述案件均为已结案件的一般性描述，不涉及当事人身份信息。每一个家庭法案件的结果都取决于其具体事实与证据，本文不构成对任何结果的承诺，也不构成法律意见。如需针对您自身情况的建议，请单独咨询律师。</p>
 
           <div class="cta-box">
             <h3>预约多伦多家庭法咨询</h3>
             <p>初次咨询 30 分钟，$220 + HST。说明案件阶段（例如是否已建档 Toronto SC、近期是否有听讯）。普通话可提供。</p>
-            <a href="/contact" class="btn-primary">立即预约</a>
+            <a href="/contact/" class="btn-primary">立即预约</a>
             <a href="tel:6479306688" class="btn-secondary">647-930-6688</a>
           </div>
         </div>
@@ -149,6 +410,10 @@ import { GEO_COPY_ZH } from '../data/geo-copy';
             <h3>联系何淼律师</h3>
             <p>📞 <a href="tel:6479306688">647-930-6688</a></p>
             <p>📧 <a href="mailto:miao@miaohelaw.ca">miao@miaohelaw.ca</a></p>
+          </div>
+          <div class="sidebar-card">
+            <h3>English</h3>
+            <p><a href={pairEnHref}>English version: Toronto Family Law Litigation Lawyer</a></p>
           </div>
           <div class="sidebar-card">
             <h3>家庭法服务</h3>
@@ -197,19 +462,35 @@ import { GEO_COPY_ZH } from '../data/geo-copy';
 </html>
 <style>
   .page-hero{background:var(--hero-legal-top-background);border-bottom:1px solid rgba(0,0,0,0.35);color:white;padding:3rem 0 2rem}
-  .page-hero h1{font-size:2rem;margin:0.5rem 0;color:#ffffff}
+  .page-hero h1{font-size:2rem;margin:0.5rem 0;color:#ffffff;line-height:1.35}
   .hero-sub{color:#D4A853;margin:0}
   .breadcrumb{font-size:0.85rem;opacity:0.7;margin-bottom:0.5rem}
   .breadcrumb a{color:white;text-decoration:none}
+  .lang-pair a{color:#D4A853;text-decoration:none;font-weight:700}
   .container{max-width:1100px;margin:0 auto;padding:0 1.5rem}
   .content-section{padding:3rem 0}
-  .content-grid{display:grid;grid-template-columns:1fr 300px;gap:3rem}
+  .content-grid{display:grid;grid-template-columns:1fr 300px;gap:3rem;align-items:start}
   .definition-box{background:#FDF6EC;border-left:4px solid #9A8060;padding:1.2rem 1.5rem;margin-bottom:2rem;border-radius:0 8px 8px 0}
   .content-list{padding-left:0;margin:1rem 0;list-style:none}
   .content-list li{margin:0.6rem 0;padding:0.6rem 0.75rem 0.6rem 2.5rem;background:#fafafa;border-radius:6px;line-height:1.6;position:relative}
   .content-list li::before{content:"✓";position:absolute;left:0.75rem;color:#9A8060;font-weight:700}
+  .toc{background:#faf8f5;border:1px solid #e8e0d5;border-radius:10px;padding:1.2rem 1.5rem;margin:2rem 0}
+  .toc h2{margin-top:0;font-size:1.05rem}
+  .toc ol{margin:0.5rem 0 0;padding-left:1.25rem;line-height:1.85}
+  .toc a{color:#9A8060;text-decoration:none}
   .qa-block{background:#f8f8f8;border-radius:8px;padding:1.2rem 1.5rem;margin:1.5rem 0;border-left:3px solid #9A8060}
   .qa-block h3{color: var(--text-heading);margin-top:0;font-size:1rem}
+  .qa-block ul{margin:0.5rem 0 0;padding-left:1.25rem;line-height:1.85}
+  .table-wrap{overflow-x:auto;margin:1.25rem 0}
+  .case-table{width:100%;border-collapse:collapse;font-size:0.92rem}
+  .case-table th{background:#f5f0eb;color:var(--text-heading);text-align:left;padding:0.65rem 0.8rem;font-weight:600}
+  .case-table td{padding:0.65rem 0.8rem;border-bottom:1px solid #f0ebe3;vertical-align:top;line-height:1.55;color:var(--text-primary)}
+  .case-table td:first-child{font-weight:500;color:#4A2C1A;width:48%}
+  .related-list{padding-left:1.25rem;line-height:1.9}
+  .related-list a{color:#9A8060}
+  .author-box{background:#FDF6EC;border-radius:10px;padding:1.2rem 1.5rem;margin:2rem 0 1rem}
+  .author-box h3{margin-top:0;color:var(--text-heading);font-size:1.05rem}
+  .disclaimer{font-size:0.85rem;color:#6b5e52;line-height:1.7;margin:1.5rem 0}
   .cta-box{background:linear-gradient(135deg,#2C1810,#4A2C1A);color:white;padding:2rem;border-radius:12px;text-align:center;margin-top:2rem}
   .cta-box h3{margin-top:0;color:#D4A853}
   .cta-box p{color:#ffffff}
@@ -222,7 +503,8 @@ import { GEO_COPY_ZH } from '../data/geo-copy';
   .sidebar-card li{padding:0.3rem 0;border-bottom:1px solid #f0ebe3;font-size:0.9rem}
   .sidebar-card a{color:#9A8060;text-decoration:none}
   .sidebar-card p{margin:0.3rem 0;font-size:0.9rem}
-  h2{color: var(--text-heading);margin-top:2rem}
+  h2{color: var(--text-heading);margin-top:2.4rem;scroll-margin-top:5.5rem}
   h3{color:var(--text-heading)}
-  @media(max-width:768px){.content-grid{grid-template-columns:1fr}.page-hero h1{font-size:1.5rem}}
+  .main-content p{line-height:1.85}
+  @media(max-width:768px){.content-grid{grid-template-columns:1fr}.page-hero h1{font-size:1.45rem}}
 </style>
