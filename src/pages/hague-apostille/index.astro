@@ -1,0 +1,268 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_LAST_UPDATED_ZH } from '../../consts';
+import { HAGUE_DOCS, hagueDocPath } from '../../data/hague-apostille-docs';
+---
+<!doctype html>
+<html lang="zh">
+<head>
+  <BaseHead
+    title="海牙认证 · 中加文件认证公证 | 何淼律师"
+    description="何淼律师办理国内房产委托书、同名认证、亲子关系声明、放弃继承、加拿大离婚证书的海牙认证。中加双执照诉讼律师，急件次日可取 Apostille 原件。万锦办公室。647-930-6688。"
+  />
+  <meta name="keywords" content="海牙认证加拿大,授权委托书海牙认证,同名认证,亲子关系声明海牙认证,放弃继承海牙认证,加拿大离婚证书海牙认证,Ontario Apostille,ODS,何淼律师" />
+  <meta property="og:title" content="海牙认证 · 中加文件认证 | 何淼律师" />
+  <meta property="og:description" content="按文件办理海牙认证。急件次日可取原件。中加双执照诉讼律师。647-930-6688。" />
+  <link rel="alternate" hreflang="en" href="https://www.miaohelaw.ca/en/hague-apostille/" />
+  <link rel="alternate" hreflang="zh" href="https://www.miaohelaw.ca/hague-apostille/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.miaohelaw.ca/hague-apostille/" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "何淼律师 — 海牙认证与文件公证",
+    "url": "https://www.miaohelaw.ca/hague-apostille/",
+    "telephone": "+1-647-930-6688",
+    "email": "miao@miaohelaw.ca",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "208-7050 Woodbine Ave",
+      "addressLocality": "Markham",
+      "addressRegion": "ON",
+      "addressCountry": "CA"
+    },
+    "serviceType": ["海牙认证", "国内房产授权委托书", "同名认证", "亲子关系声明", "放弃继承证明", "加拿大离婚证书海牙认证", "Ontario公证服务"],
+    "availableLanguage": [
+      {"@type": "Language", "name": "Chinese (Mandarin)"},
+      {"@type": "Language", "name": "English"}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "急件真的第二天能取到海牙认证原件吗？",
+        "acceptedAnswer": {"@type": "Answer", "text": "可以安排。Ontario 公证完成后，送安省 Official Documents Services 出具 Apostille。急用客人可次日取回原件，视 ODS 窗口和材料是否齐全而定。近期国内房产委托书、同名认证、亲子关系声明、放弃继承和加拿大离婚证书均为一次通过。电话：647-930-6688。"}
+      },
+      {
+        "@type": "Question",
+        "name": "配偶在中国，不配合离婚怎么办？",
+        "acceptedAnswer": {"@type": "Answer", "text": "配偶的不配合并不妨碍您在Ontario离婚。分居满一年后，您可以单方面提起离婚申请。关键问题是如何合法送达法庭文件——必须通过海牙送达公约，经由中国中央机关转交。一旦完成合法送达，对方如果不回应，Ontario法院仍可缺席作出离婚判决。电话：647-930-6688。"}
+      },
+      {
+        "@type": "Question",
+        "name": "我不知道配偶在中国的地址，还能送达吗？",
+        "acceptedAnswer": {"@type": "Answer", "text": "如果配偶地址不明，您可以向法院申请替代送达令——通过电子邮件、微信或社交媒体等替代方式送达，前提是您能证明已合理尝试寻找对方。何淼律师可以评估您的具体情况。电话：647-930-6688。"}
+      },
+      {
+        "@type": "Question",
+        "name": "加拿大的离婚判决可以在中国执行吗？",
+        "acceptedAnswer": {"@type": "Answer", "text": "加拿大离婚判决不能在中国自动执行。中加两国之间没有民事判决互认条约。但经海牙认证的离婚证书可作为证据在中国法律程序或再婚登记中使用。何淼律师可就跨境执行策略提供建议。电话：647-930-6688。"}
+      },
+      {
+        "@type": "Question",
+        "name": "海牙认证公约和海牙送达公约有什么区别？",
+        "acceptedAnswer": {"@type": "Answer", "text": "海牙认证公约处理文件的真实性认证，让文件能在另一个国家被承认为合法文件。海牙送达公约处理如何将法庭文件正式送达给身处另一个国家的当事人。两者在跨境离婚案件中可能都涉及。何淼律师对两者均有经验。电话：647-930-6688。"}
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <Header />
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="/">首页</a> › 文件服务 › 海牙认证
+          <span class="lang-pair"> · <a href="/en/hague-apostille/" lang="en">English</a></span>
+        </div>
+        <h1>海牙认证 · 中加文件认证服务</h1>
+        <p class="hero-sub">急件次日可取原件 · 中加双执照诉讼律师 · Ontario公证资质 · 647-930-6688</p>
+        <p class="page-last-updated page-last-updated--gradient">页面内容最后更新：{SITE_LAST_UPDATED_ZH}</p>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container content-grid">
+        <div class="main-content">
+
+          <div class="definition-box">
+            <p><strong>什么是海牙认证（Apostille）？</strong>海牙认证是一种国际通行的文件认证方式，证明一份公文书（如出生证明、离婚判决书、公证书等）是真实合法的，可以在另一个海牙公约成员国使用。加拿大和中国均已加入海牙认证公约，因此中加两国之间的文件认证，以海牙认证为标准方式。</p>
+          </div>
+
+          <h2>按文件办理：急件次日可取原件</h2>
+          <p>何淼律师近期为客人办理国内卖房、买房、办理房产证的授权委托书海牙认证，以及同名认证、亲子关系声明、放弃继承证明、加拿大离婚证书的海牙认证——按国内受理机关要求起草，<strong>一次通过，不用补材料、不用改稿</strong>。我们是中国和加拿大双持证的诉讼律师，熟悉法院程序；急件<strong>第二天可取 Apostille 原件</strong>。急用的客人找我们就对了。</p>
+          <div class="doc-grid">
+            {HAGUE_DOCS.map((item) => (
+              <a class="doc-card" href={hagueDocPath(item.slug, 'zh')}>
+                <span class="doc-badge">急件次日可取原件</span>
+                <h3>{item.zh.cardTitle}</h3>
+                <p>{item.zh.cardDesc}</p>
+                <span class="doc-more">查看办理说明 →</span>
+              </a>
+            ))}
+          </div>
+          <p class="fine-print">次日取原件取决于 ODS 窗口、文件类型和材料是否齐全；近期一次通过是办案结果，不构成对每一份文件的保证。</p>
+
+          <h2>加拿大文件 → 中国使用：必须经过海牙认证</h2>
+          <p>如果您需要将加拿大文件带回中国使用——例如离婚证书、委托书、同一人声明——Ontario 出具或 Ontario 公证的文件，按下面流程办理（加拿大加入海牙认证公约之后，安省文件不再经 Global Affairs Canada 出 Apostille）：</p>
+          <div class="process-box">
+            <div class="process-step"><span class="step-num">1</span><div><strong>按国内格式起草</strong><p>先确认房产局、公证处、民政或银行要什么模板。何淼律师按受理机关要求起草中英文本。</p></div></div>
+            <div class="process-step"><span class="step-num">2</span><div><strong>Ontario 公证</strong><p>由 Ontario 公证人公证。何淼律师持有 Ontario 公证资质，可直接完成此步骤。法院出具的公文书（如离婚证书）通常可直接送 ODS。</p></div></div>
+            <div class="process-step"><span class="step-num">3</span><div><strong>安省 ODS 出具 Apostille</strong><p>Ontario Official Documents Services 对安省出具或安省公证的文件出具海牙认证。联邦文件（如 RCMP 无犯罪）才走 Global Affairs Canada。</p></div></div>
+            <div class="process-step"><span class="step-num">4</span><div><strong>急件次日取回原件</strong><p>认证完成后取回 Apostille 原件，按国内要求寄出或由代理人递件。</p></div></div>
+          </div>
+          <p>何淼律师作为<strong>Ontario 公证人</strong>和<strong>中加双执照诉讼律师</strong>，可完成起草、公证，并协助递交 ODS，无需您自行奔走多个机构。</p>
+
+          <h2>中国文件 → 加拿大使用：两条路都可以</h2>
+          <p>这是很多客户不了解的地方——方向不同，规则也不同。中国文件要在加拿大法律程序中使用，有<strong>两条被认可的途径</strong>，都不需要经过海牙认证：</p>
+
+          <div class="use-case-grid">
+            <div class="use-case">
+              <h3>🇨🇳 途径一：中国公证处公证</h3>
+              <p>由<strong>中国政府公证处（公证处）</strong>出具的公证书，在Ontario法律程序中被认可。中国公证员（公证员）是国家任命的官员，其出具的公证书具有官方效力。常见于：出生证明、结婚证、房产证、企业文件等。</p>
+            </div>
+            <div class="use-case">
+              <h3>🇨🇦 途径二：Ontario公证人认证</h3>
+              <p>如果中国文件已带到加拿大，<strong>Ontario公证人</strong>可以对文件进行认证——例如出具真实副本证明，或就文件内容作出法定声明。Ontario法院及政府机构认可Ontario公证人出具的认证。何淼律师持有Ontario公证资质，可直接提供此服务。</p>
+            </div>
+          </div>
+
+          <div class="definition-box" style="margin-top:1.5rem;">
+            <p><strong>为什么这对您的案件很重要：</strong>如果您的离婚案件涉及中国的资产或文件，选择正确的认证途径直接影响文件能否在Ontario法庭上顺利使用。何淼律师同时持有<strong>中国律师执照</strong>和<strong>Ontario公证资质</strong>，可以判断每份文件最有效的认证方式，并一站式处理——无需您另请中国律师或分别联系多个专业人士。</p>
+          </div>
+
+          <h2>海牙送达公约：配偶在中国，法庭文件怎么送达？</h2>
+          <div class="definition-box">
+            <p><strong>海牙送达公约</strong>与海牙认证公约是两个不同的条约。它规定了如何将法庭文件（如离婚申请书、诉状、法院命令）正式<strong>送达给身处另一个成员国的当事人</strong>。中国是海牙送达公约的成员国，因此当您的配偶在中国，而您在Ontario提起家庭法诉讼时，送达必须通过海牙送达公约的官方渠道进行。</p>
+          </div>
+
+          <h3>哪些情况需要走海牙送达？</h3>
+          <p>如果您的配偶身处中国，您需要将Ontario法庭文件送达给对方——离婚申请书、动议通知书、财务报表等——不能简单地用电子邮件或快递寄送。Ontario规则要求对在中国的当事人送达，必须通过海牙送达公约，经由中国中央机关转交。这个流程需要时间，但是法律要求的必要步骤。</p>
+
+          <h3>海牙送达中国需要多长时间？</h3>
+          <p>通过中国中央机关完成海牙送达，通常需要 <strong>3至6个月</strong>，有时更长。这个时间必须纳入整体诉讼计划。在紧急情况下——例如子女安全受到威胁或资产被转移——何淼律师可以评估是否有替代送达方式或其他紧急救济手段可用。</p>
+
+          <h2>常见问题</h2>
+
+          <div class="faq-item">
+            <h3>Q：急件真的第二天能取到海牙认证原件吗？</h3>
+            <p>A：可以安排。Ontario 公证完成后，送安省 Official Documents Services 出具 Apostille。急用客人可次日取回原件，视 ODS 窗口和材料是否齐全而定。近期国内房产委托书、同名认证、亲子关系声明、放弃继承和加拿大离婚证书均为一次通过。电话：647-930-6688。</p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Q：配偶在中国，不配合离婚怎么办？</h3>
+            <p>A：配偶的不配合并不妨碍您在Ontario离婚。分居满一年后，您可以单方面提起离婚申请。关键问题是<strong>如何合法送达法庭文件</strong>——必须通过海牙送达公约，经由中国中央机关转交。一旦完成合法送达，对方如果不回应，Ontario法院仍可缺席作出离婚判决，并就财产、抚养费、子女监护作出命令。何淼律师有处理此类情况的丰富经验。电话：647-930-6688。</p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Q：我不知道配偶在中国的地址，还能送达吗？</h3>
+            <p>A：如果配偶地址不明，您可以向法院申请"替代送达"令——通过电子邮件、微信或社交媒体等替代方式送达，前提是您能证明已合理尝试寻找对方，且替代方式有可能让对方收到文件。何淼律师可以评估您的具体情况，判断替代送达是否适用。电话：647-930-6688。</p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Q：加拿大的离婚判决可以在中国执行吗？</h3>
+            <p>A：加拿大离婚判决不能在中国自动执行。中加两国之间没有民事判决互认条约。但是，经海牙认证的离婚证书或判决可以作为证据在中国法律程序或再婚登记中使用。何淼律师可就跨境执行策略提供建议。电话：647-930-6688。</p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Q：海牙认证公约和海牙送达公约有什么区别？</h3>
+            <p>A：这是两个不同的条约。<strong>海牙认证公约（Apostille Convention）</strong>处理的是文件的真实性认证，让文件能在另一个国家被承认为合法文件。<strong>海牙送达公约（Service Convention）</strong>处理的是如何将法庭文件正式送达给身处另一个国家的当事人。在跨境离婚案件中，两者可能都涉及——认证公约用于证明证据文件的真实性，送达公约用于将离婚申请送达在中国的配偶。何淼律师对两者均有经验。电话：647-930-6688。</p>
+          </div>
+
+          <div class="cta-box">
+            <h3>急用就打电话</h3>
+            <p>初次咨询 30 分钟，$220 + HST · 普通话服务 · 电话或 Zoom</p>
+            <a href="/contact/" class="btn-primary">立即预约</a>
+            <a href="tel:6479306688" class="btn-secondary">647-930-6688</a>
+          </div>
+
+        </div>
+
+        <aside class="sidebar">
+          <div class="sidebar-card">
+            <h3>联系何淼律师</h3>
+            <p>📞 <a href="tel:6479306688">647-930-6688</a></p>
+            <p>📧 <a href="mailto:miao@miaohelaw.ca">miao@miaohelaw.ca</a></p>
+            <p>📍 208-7050 Woodbine Ave, Markham</p>
+            <p>💬 微信：372656035</p>
+          </div>
+          <div class="sidebar-card">
+            <h3>按文件办理</h3>
+            <ul>
+              {HAGUE_DOCS.map((item) => (
+                <li><a href={hagueDocPath(item.slug, 'zh')}>{item.zh.navLabel}</a></li>
+              ))}
+              <li><a href="/notary-public/">公证服务 · Ontario</a></li>
+            </ul>
+          </div>
+          <div class="sidebar-card">
+            <h3>相关家庭法服务</h3>
+            <ul>
+              <li><a href="/family-law/cross-border-assets">跨境资产分割</a></li>
+              <li><a href="/family-law/divorce-litigation">离婚诉讼</a></li>
+              <li><a href="/family-law/domestic-contracts">婚前协议</a></li>
+            </ul>
+          </div>
+          <div class="sidebar-card">
+            <h3>英文版</h3>
+            <p><a href="/en/hague-apostille/">🇨🇦 View in English</a></p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</body>
+</html>
+<style>
+  .page-hero{background:var(--hero-legal-top-background);border-bottom:1px solid rgba(0,0,0,0.35);color:white;padding:3rem 0 2rem}
+  .page-hero h1{font-size:2rem;margin:0.5rem 0;color:#ffffff}
+  .hero-sub{color:#D4A853;margin:0}
+  .breadcrumb{font-size:0.85rem;opacity:0.7;margin-bottom:0.5rem}
+  .breadcrumb a{color:white;text-decoration:none}
+  .container{max-width:1100px;margin:0 auto;padding:0 1.5rem}
+  .content-section{padding:3rem 0}
+  .content-grid{display:grid;grid-template-columns:1fr 300px;gap:3rem}
+  .definition-box{background:#FDF6EC;border-left:4px solid #9A8060;padding:1.2rem 1.5rem;margin-bottom:1.5rem;border-radius:0 8px 8px 0}
+  .process-box{display:flex;flex-direction:column;gap:1rem;margin:1.5rem 0}
+  .process-step{display:flex;gap:1rem;align-items:flex-start;background:#f8f8f8;border-radius:8px;padding:1rem 1.2rem}
+  .step-num{background:#9A8060;color:white;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.9rem;flex-shrink:0;margin-top:2px}
+  .process-step strong{color: var(--text-heading);display:block;margin-bottom:0.3rem}
+  .process-step p{margin:0;font-size:0.9rem;color:#4A2C1A}
+  .use-case-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin:1.5rem 0}
+  .use-case{background:#f8f8f8;border-radius:8px;padding:1.2rem 1.5rem;border-left:3px solid #9A8060}
+  .use-case h3{color: var(--text-heading);margin-top:0;font-size:0.95rem}
+  .use-case p{margin:0.5rem 0 0;font-size:0.9rem;color:#4A2C1A}
+  .doc-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.5rem 0}
+  .doc-card{display:block;background:#f8f8f8;border-radius:8px;padding:1.1rem 1.2rem;border-left:3px solid #9A8060;text-decoration:none;color:inherit}
+  .doc-badge{display:inline-block;font-size:0.72rem;font-weight:700;color:#6b4f2a;background:#FDF6EC;border-radius:999px;padding:0.15rem 0.55rem;margin-bottom:0.55rem}
+  .doc-card h3{color: var(--text-heading);margin:0 0 0.4rem;font-size:0.95rem}
+  .doc-card p{margin:0;font-size:0.88rem;color:#4A2C1A}
+  .doc-more{display:inline-block;margin-top:0.7rem;font-size:0.85rem;font-weight:700;color:#9A8060}
+  .fine-print{font-size:0.85rem;color:#6b5344}
+  .faq-item{background:#f8f8f8;border-radius:8px;padding:1.2rem 1.5rem;margin:1.5rem 0;border-left:3px solid #9A8060}
+  .faq-item h3{color: var(--text-heading);margin-top:0;font-size:1rem}
+  .cta-box{background:linear-gradient(135deg,#2C1810,#4A2C1A);color:white;padding:2rem;border-radius:12px;text-align:center;margin-top:2rem}
+  .cta-box h3{margin-top:0;color:#D4A853}
+  .cta-box p{color:#ffffff}
+  .btn-primary{display:inline-block;background:#D4A853;color: var(--text-heading);padding:0.75rem 1.5rem;border-radius:6px;text-decoration:none;font-weight:700;margin:0.5rem}
+  .btn-secondary{display:inline-block;background:transparent;color:white;border:2px solid white;padding:0.75rem 1.5rem;border-radius:6px;text-decoration:none;font-weight:700;margin:0.5rem}
+  .sidebar{display:flex;flex-direction:column;gap:1.5rem}
+  .sidebar-card{background:white;border:1px solid #e8e0d5;border-radius:10px;padding:1.2rem}
+  .sidebar-card h3{color: var(--text-heading);font-size:0.95rem;margin-top:0;border-bottom:1px solid #e8e0d5;padding-bottom:0.5rem;margin-bottom:0.75rem}
+  .sidebar-card ul{list-style:none;padding:0;margin:0}
+  .sidebar-card li{padding:0.3rem 0;border-bottom:1px solid #f0ebe3;font-size:0.9rem}
+  .sidebar-card a{color:#9A8060;text-decoration:none}
+  .sidebar-card p{margin:0.3rem 0;font-size:0.9rem}
+  h2{color: var(--text-heading);margin-top:2rem}
+  h3{color:#4A2C1A}
+  @media(max-width:768px){.content-grid{grid-template-columns:1fr}.page-hero h1{font-size:1.5rem}.use-case-grid,.doc-grid{grid-template-columns:1fr}}
+</style>

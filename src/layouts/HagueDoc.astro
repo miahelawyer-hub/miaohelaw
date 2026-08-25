@@ -1,0 +1,284 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import HeaderEn from '../components/HeaderEn.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_LAST_UPDATED_ZH, SITE_LAST_UPDATED_EN } from '../consts';
+import {
+	HAGUE_DOCS,
+	getHagueDoc,
+	hagueDocPath,
+	hagueHubPath,
+	type HagueDocSlug,
+} from '../data/hague-apostille-docs';
+
+interface Props {
+	lang: 'zh' | 'en';
+	slug: HagueDocSlug;
+	faqs: { q: string; a: string }[];
+}
+
+const { lang, slug, faqs } = Astro.props;
+const doc = getHagueDoc(slug);
+const copy = doc[lang];
+const path = hagueDocPath(slug, lang);
+const pairHref = hagueDocPath(slug, lang === 'zh' ? 'en' : 'zh');
+const hubHref = hagueHubPath(lang);
+const others = HAGUE_DOCS.filter((item) => item.slug !== slug);
+const origin = 'https://www.miaohelaw.ca';
+const pageUrl = `${origin}${path}`;
+const zhUrl = `${origin}${hagueDocPath(slug, 'zh')}`;
+const enUrl = `${origin}${hagueDocPath(slug, 'en')}`;
+const lastUpdated = lang === 'zh' ? SITE_LAST_UPDATED_ZH : SITE_LAST_UPDATED_EN;
+
+const jsonLd = [
+	{
+		'@context': 'https://schema.org',
+		'@type': 'LegalService',
+		name: lang === 'zh' ? `何淼律师 — ${copy.serviceType}` : `Miao He — ${copy.serviceType}`,
+		url: pageUrl,
+		telephone: '+1-647-930-6688',
+		email: 'miao@miaohelaw.ca',
+		address: {
+			'@type': 'PostalAddress',
+			streetAddress: '208-7050 Woodbine Ave',
+			addressLocality: 'Markham',
+			addressRegion: 'ON',
+			addressCountry: 'CA',
+		},
+		serviceType: [copy.serviceType, lang === 'zh' ? '海牙认证' : 'Hague Apostille'],
+		availableLanguage: [
+			{ '@type': 'Language', name: 'Chinese (Mandarin)' },
+			{ '@type': 'Language', name: 'English' },
+		],
+	},
+	{
+		'@context': 'https://schema.org',
+		'@type': 'BreadcrumbList',
+		itemListElement: [
+			{
+				'@type': 'ListItem',
+				position: 1,
+				name: lang === 'zh' ? '首页' : 'Home',
+				item: lang === 'zh' ? `${origin}/` : `${origin}/en/`,
+			},
+			{
+				'@type': 'ListItem',
+				position: 2,
+				name: lang === 'zh' ? '海牙认证' : 'Hague Apostille',
+				item: `${origin}${hubHref}`,
+			},
+			{ '@type': 'ListItem', position: 3, name: copy.navLabel, item: pageUrl },
+		],
+	},
+	{
+		'@context': 'https://schema.org',
+		'@type': 'FAQPage',
+		mainEntity: faqs.map((item) => ({
+			'@type': 'Question',
+			name: item.q,
+			acceptedAnswer: { '@type': 'Answer', text: item.a },
+		})),
+	},
+];
+---
+<!doctype html>
+<html lang={lang === 'zh' ? 'zh' : 'en'}>
+<head>
+  <BaseHead title={copy.title} description={copy.description} />
+  <meta name="keywords" content={copy.keywords} />
+  <meta property="og:title" content={copy.title} />
+  <meta property="og:description" content={copy.description} />
+  <link rel="alternate" hreflang="zh" href={zhUrl} />
+  <link rel="alternate" hreflang="en" href={enUrl} />
+  <link rel="alternate" hreflang="x-default" href={zhUrl} />
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+</head>
+<body>
+  {lang === 'zh' ? <Header /> : <HeaderEn />}
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          {lang === 'zh' ? (
+            <>
+              <a href="/">首页</a> › <a href={hubHref}>海牙认证</a> › {copy.navLabel}
+              <span class="lang-pair"> · <a href={pairHref} lang="en">English</a></span>
+            </>
+          ) : (
+            <>
+              <a href="/en/">Home</a> › <a href={hubHref}>Hague Apostille</a> › {copy.navLabel}
+              <span class="lang-pair"> · <a href={pairHref} lang="zh">中文</a></span>
+            </>
+          )}
+        </div>
+        <h1>{copy.h1}</h1>
+        <p class="hero-sub">{copy.heroSub}</p>
+        <p class="page-last-updated page-last-updated--gradient">
+          {lang === 'zh' ? `页面内容最后更新：${lastUpdated}` : `Page last updated: ${lastUpdated}`}
+        </p>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container content-grid">
+        <div class="main-content">
+          <slot />
+
+          {lang === 'zh' ? (
+            <>
+              <h2>急件为什么找何淼律师</h2>
+              <ul class="content-list">
+                <li><strong>中加双执照的诉讼律师。</strong>何淼律师同时持有中国律师执照和安省律师执照，熟悉两边的法院和行政程序。国内窗口要看的不是「公证过了」四个字，而是权限、标的、姓名和格式能不能一次过关。</li>
+                <li><strong>迅速出海牙证书，急件次日可取原件。</strong>Ontario 公证完成后，送安省 Official Documents Services（ODS）出具 Apostille。急用客人可安排第二天取回原件。</li>
+                <li><strong>一次通过，不用补材料、不用改稿。</strong>近期国内卖房、买房、办房产证委托书，以及同名认证、亲子关系声明、放弃继承、加拿大离婚证书，都是按受理机关要求一次通过。</li>
+              </ul>
+              <p class="fine-print">次日取原件取决于 ODS 窗口、文件类型和材料是否齐全；近期一次通过是办案结果，不构成对每一份文件的保证。电话：647-930-6688。</p>
+
+              <h2>办理流程（Ontario 文件）</h2>
+              <div class="process-box">
+                <div class="process-step"><span class="step-num">1</span><div><strong>确认国内受理格式</strong><p>先问清当地房产局、公证处、民政或银行要什么模板、要几份原件、姓名怎么写。</p></div></div>
+                <div class="process-step"><span class="step-num">2</span><div><strong>起草或核对中英文本</strong><p>何淼律师按国内要求起草或修改，避免权限漏写、姓名对不上、标的写错。</p></div></div>
+                <div class="process-step"><span class="step-num">3</span><div><strong>Ontario 公证</strong><p>何淼律师持有 Ontario 公证资质，可直接完成公证。</p></div></div>
+                <div class="process-step"><span class="step-num">4</span><div><strong>安省 ODS 出具 Apostille</strong><p>Ontario 出具或 Ontario 公证的文件，由 Official Documents Services 出具海牙认证。联邦文件（如 RCMP 无犯罪）才走 Global Affairs Canada。</p></div></div>
+                <div class="process-step"><span class="step-num">5</span><div><strong>急件次日取回原件</strong><p>认证完成后取回 Apostille 原件，按国内要求寄出或由代理人递件。</p></div></div>
+              </div>
+            </>
+          ) : (
+            <>
+              <h2>Why urgent files come here</h2>
+              <ul class="content-list">
+                <li><strong>Dual-licensed litigation lawyer.</strong> Miao He is licensed in both China and Ontario. She knows how receiving offices and courts actually read these documents — authority, names, subject matter, and format — not just that a notary stamp is present.</li>
+                <li><strong>Fast Apostille. Urgent originals the next day.</strong> After Ontario notarization, the file goes to Ontario Official Documents Services (ODS) for the Apostille. Urgent clients can pick up the original the following day.</li>
+                <li><strong>First-pass filings.</strong> Recent files — China property powers of attorney, same-name declarations, parent-child declarations, inheritance waivers, and Canadian divorce certificates — were accepted without supplementary materials or rewrites.</li>
+              </ul>
+              <p class="fine-print">Next-day pickup depends on the ODS window, the document type, and complete materials. Recent first-pass results are not a guarantee for every file. Call 647-930-6688.</p>
+
+              <h2>Process for Ontario documents</h2>
+              <div class="process-box">
+                <div class="process-step"><span class="step-num">1</span><div><strong>Confirm the receiving office’s format</strong><p>Ask the housing bureau, notary office, civil-affairs bureau or bank in China what template they want, how many originals, and how names must appear.</p></div></div>
+                <div class="process-step"><span class="step-num">2</span><div><strong>Draft or check the Chinese–English text</strong><p>Miao He drafts or revises so the authority, names and subject matter match what the receiving office will accept.</p></div></div>
+                <div class="process-step"><span class="step-num">3</span><div><strong>Ontario notarization</strong><p>Miao He is a commissioned Ontario Notary Public and completes this step herself.</p></div></div>
+                <div class="process-step"><span class="step-num">4</span><div><strong>Ontario ODS Apostille</strong><p>Ontario-issued or Ontario-notarized documents receive an Apostille from Official Documents Services. Federal documents (for example an RCMP criminal-record check) go to Global Affairs Canada.</p></div></div>
+                <div class="process-step"><span class="step-num">5</span><div><strong>Urgent originals the next day</strong><p>Collect the apostilled original and send it to China, or have your agent file it there.</p></div></div>
+              </div>
+            </>
+          )}
+
+          <h2>{lang === 'zh' ? '常见问题' : 'Frequently asked questions'}</h2>
+          {faqs.map((item) => (
+            <div class="faq-item">
+              <h3>{lang === 'zh' ? 'Q：' : 'Q: '}{item.q}</h3>
+              <p>{lang === 'zh' ? 'A：' : 'A: '}{item.a}</p>
+            </div>
+          ))}
+
+          <h2>{lang === 'zh' ? '其他文件的海牙认证' : 'Apostille for other documents'}</h2>
+          <div class="doc-grid doc-grid--compact">
+            {others.map((item) => (
+              <a class="doc-card" href={hagueDocPath(item.slug, lang)}>
+                <h3>{item[lang].cardTitle}</h3>
+                <p>{item[lang].cardDesc}</p>
+              </a>
+            ))}
+          </div>
+
+          <div class="cta-box">
+            {lang === 'zh' ? (
+              <>
+                <h3>急用就打电话</h3>
+                <p>普通话 · 万锦办公室 · 初次咨询 30 分钟，$220 + HST · 电话或 Zoom</p>
+                <a href="/contact/" class="btn-primary">立即预约</a>
+                <a href="tel:6479306688" class="btn-secondary">647-930-6688</a>
+              </>
+            ) : (
+              <>
+                <h3>If you need it urgently, call</h3>
+                <p>Mandarin &amp; English · Markham · Initial consultation 30 minutes · $220 + HST · Phone or Zoom</p>
+                <a href="/en/contact/" class="btn-primary">Book now</a>
+                <a href="tel:6479306688" class="btn-secondary">647-930-6688</a>
+              </>
+            )}
+          </div>
+        </div>
+
+        <aside class="sidebar">
+          <div class="sidebar-card">
+            <h3>{lang === 'zh' ? '联系何淼律师' : 'Contact Miao He'}</h3>
+            <p>📞 <a href="tel:6479306688">647-930-6688</a></p>
+            <p>📧 <a href="mailto:miao@miaohelaw.ca">miao@miaohelaw.ca</a></p>
+            <p>📍 208-7050 Woodbine Ave, Markham</p>
+            <p>💬 {lang === 'zh' ? '微信：372656035' : 'WeChat: 372656035'}</p>
+          </div>
+          <div class="sidebar-card">
+            <h3>{lang === 'zh' ? '按文件办理' : 'By document'}</h3>
+            <ul>
+              {HAGUE_DOCS.map((item) => (
+                <li>
+                  {item.slug === slug ? (
+                    <span>{item[lang].navLabel}</span>
+                  ) : (
+                    <a href={hagueDocPath(item.slug, lang)}>{item[lang].navLabel}</a>
+                  )}
+                </li>
+              ))}
+              <li><a href={hubHref}>{lang === 'zh' ? '海牙认证总览' : 'Hague Apostille overview'}</a></li>
+              <li><a href={lang === 'zh' ? '/notary-public/' : '/en/notary-public/'}>{lang === 'zh' ? '公证服务 · Ontario' : 'Notary Public · Ontario'}</a></li>
+            </ul>
+          </div>
+          <div class="sidebar-card">
+            <h3>{lang === 'zh' ? '英文版' : '中文版'}</h3>
+            {lang === 'zh' ? (
+              <p><a href={pairHref} lang="en">🇨🇦 View in English</a></p>
+            ) : (
+              <p><a href={pairHref} lang="zh">🇨🇳 中文版</a></p>
+            )}
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <Footer lang={lang === 'en' ? 'en' : undefined} />
+</body>
+</html>
+<style is:global>
+  .page-hero{background:var(--hero-legal-top-background);border-bottom:1px solid rgba(0,0,0,0.35);color:white;padding:3rem 0 2rem}
+  .page-hero h1{font-size:2rem;margin:0.5rem 0;color:#ffffff}
+  .hero-sub{color:#D4A853;margin:0}
+  .breadcrumb{font-size:0.85rem;opacity:0.7;margin-bottom:0.5rem}
+  .breadcrumb a{color:white;text-decoration:none}
+  .lang-pair{opacity:0.9}
+  .container{max-width:1100px;margin:0 auto;padding:0 1.5rem}
+  .content-section{padding:3rem 0}
+  .content-grid{display:grid;grid-template-columns:1fr 300px;gap:3rem}
+  .definition-box{background:#FDF6EC;border-left:4px solid #9A8060;padding:1.2rem 1.5rem;margin-bottom:1.5rem;border-radius:0 8px 8px 0}
+  .process-box{display:flex;flex-direction:column;gap:1rem;margin:1.5rem 0}
+  .process-step{display:flex;gap:1rem;align-items:flex-start;background:#f8f8f8;border-radius:8px;padding:1rem 1.2rem}
+  .step-num{background:#9A8060;color:white;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.9rem;flex-shrink:0;margin-top:2px}
+  .process-step strong{color:var(--text-heading);display:block;margin-bottom:0.3rem}
+  .process-step p{margin:0;font-size:0.9rem;color:#4A2C1A}
+  .content-list{padding-left:1.2rem}
+  .content-list li{margin:0.6rem 0;color:#4A2C1A}
+  .fine-print{font-size:0.85rem;color:#6b5344;margin-top:0.5rem}
+  .faq-item{background:#f8f8f8;border-radius:8px;padding:1.2rem 1.5rem;margin:1.5rem 0;border-left:3px solid #9A8060}
+  .faq-item h3{color:var(--text-heading);margin-top:0;font-size:1rem}
+  .cta-box{background:linear-gradient(135deg,#2C1810,#4A2C1A);color:white;padding:2rem;border-radius:12px;text-align:center;margin-top:2rem}
+  .cta-box h3{margin-top:0;color:#D4A853}
+  .cta-box p{color:#ffffff}
+  .btn-primary{display:inline-block;background:#D4A853;color:var(--text-heading);padding:0.75rem 1.5rem;border-radius:6px;text-decoration:none;font-weight:700;margin:0.5rem}
+  .btn-secondary{display:inline-block;background:transparent;color:white;border:2px solid white;padding:0.75rem 1.5rem;border-radius:6px;text-decoration:none;font-weight:700;margin:0.5rem}
+  .doc-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.5rem 0}
+  .doc-card{display:block;background:#f8f8f8;border-radius:8px;padding:1.1rem 1.2rem;border-left:3px solid #9A8060;text-decoration:none;color:inherit}
+  .doc-card h3{color:var(--text-heading);margin:0 0 0.4rem;font-size:0.95rem}
+  .doc-card p{margin:0;font-size:0.88rem;color:#4A2C1A}
+  .sidebar{display:flex;flex-direction:column;gap:1.5rem}
+  .sidebar-card{background:white;border:1px solid #e8e0d5;border-radius:10px;padding:1.2rem}
+  .sidebar-card h3{color:var(--text-heading);font-size:0.95rem;margin-top:0;border-bottom:1px solid #e8e0d5;padding-bottom:0.5rem;margin-bottom:0.75rem}
+  .sidebar-card ul{list-style:none;padding:0;margin:0}
+  .sidebar-card li{padding:0.3rem 0;border-bottom:1px solid #f0ebe3;font-size:0.9rem}
+  .sidebar-card a{color:#9A8060;text-decoration:none}
+  .sidebar-card p{margin:0.3rem 0;font-size:0.9rem}
+  h2{color:var(--text-heading);margin-top:2rem}
+  h3{color:#4A2C1A}
+  @media(max-width:768px){.content-grid{grid-template-columns:1fr}.page-hero h1{font-size:1.5rem}.doc-grid{grid-template-columns:1fr}}
+</style>
