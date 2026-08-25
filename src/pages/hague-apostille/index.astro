@@ -10,7 +10,7 @@ import { HAGUE_DOCS, hagueDocPath } from '../../data/hague-apostille-docs';
 <head>
   <BaseHead
     title="海牙认证 · 中加文件认证公证 | 何淼律师"
-    description="何淼律师办理国内房产委托书、同名认证、亲子关系声明、放弃继承、加拿大离婚证书的海牙认证。中加双执照诉讼律师，急件次日可取 Apostille 原件。万锦办公室。647-930-6688。"
+    description="何淼律师一站式办理国内房产委托书、同名认证、亲子关系声明、放弃继承、加拿大离婚证书的海牙认证。不用自己找翻译或公证人，办公室签一次字即可。急件次日可取原件。647-930-6688。"
   />
   <meta name="keywords" content="海牙认证加拿大,授权委托书海牙认证,同名认证,亲子关系声明海牙认证,放弃继承海牙认证,加拿大离婚证书海牙认证,Ontario Apostille,ODS,何淼律师" />
   <meta property="og:title" content="海牙认证 · 中加文件认证 | 何淼律师" />
@@ -45,6 +45,11 @@ import { HAGUE_DOCS, hagueDocPath } from '../../data/hague-apostille-docs';
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "要不要自己找翻译和 Notary Public？",
+        "acceptedAnswer": {"@type": "Answer", "text": "不用。何淼律师本人起草中英文本，并持有 Ontario 公证资质。需要签字的文件，来万锦办公室签一次即可；起草、公证、海牙认证全程由律师完成。法院已出证的文件（如离婚证书）可直接送认证。电话：647-930-6688。"}
+      },
       {
         "@type": "Question",
         "name": "急件真的第二天能取到海牙认证原件吗？",
@@ -84,7 +89,7 @@ import { HAGUE_DOCS, hagueDocPath } from '../../data/hague-apostille-docs';
           <span class="lang-pair"> · <a href="/en/hague-apostille/" lang="en">English</a></span>
         </div>
         <h1>海牙认证 · 中加文件认证服务</h1>
-        <p class="hero-sub">急件次日可取原件 · 中加双执照诉讼律师 · Ontario公证资质 · 647-930-6688</p>
+        <p class="hero-sub">一站式 · 办公室签一次字 · 急件次日可取原件 · 647-930-6688</p>
         <p class="page-last-updated page-last-updated--gradient">页面内容最后更新：{SITE_LAST_UPDATED_ZH}</p>
       </div>
     </section>
@@ -98,7 +103,7 @@ import { HAGUE_DOCS, hagueDocPath } from '../../data/hague-apostille-docs';
           </div>
 
           <h2>按文件办理：急件次日可取原件</h2>
-          <p>何淼律师近期为客人办理国内卖房、买房、办理房产证的授权委托书海牙认证，以及同名认证、亲子关系声明、放弃继承证明、加拿大离婚证书的海牙认证——按国内受理机关要求起草，<strong>一次通过，不用补材料、不用改稿</strong>。我们是中国和加拿大双持证的诉讼律师，熟悉法院程序；急件<strong>第二天可取 Apostille 原件</strong>。急用的客人找我们就对了。</p>
+          <p>何淼律师近期为客人办理国内卖房、买房、办理房产证的授权委托书海牙认证，以及同名认证、亲子关系声明、放弃继承证明、加拿大离婚证书的海牙认证——按国内受理机关要求起草，<strong>一次通过，不用补材料、不用改稿</strong>。我们是中国和加拿大双持证的诉讼律师，熟悉法院程序；<strong>一站式服务</strong>，不用自己找翻译、找 Notary Public，来万锦办公室<strong>签一次字</strong>即可，起草、公证、海牙认证全程做完。急件<strong>第二天可取 Apostille 原件</strong>。急用的客人找我们就对了。</p>
           <div class="doc-grid">
             {HAGUE_DOCS.map((item) => (
               <a class="doc-card" href={hagueDocPath(item.slug, 'zh')}>
@@ -115,11 +120,11 @@ import { HAGUE_DOCS, hagueDocPath } from '../../data/hague-apostille-docs';
           <p>如果您需要将加拿大文件带回中国使用——例如离婚证书、委托书、同一人声明——Ontario 出具或 Ontario 公证的文件，按下面流程办理（加拿大加入海牙认证公约之后，安省文件不再经 Global Affairs Canada 出 Apostille）：</p>
           <div class="process-box">
             <div class="process-step"><span class="step-num">1</span><div><strong>按国内格式起草</strong><p>先确认房产局、公证处、民政或银行要什么模板。何淼律师按受理机关要求起草中英文本。</p></div></div>
-            <div class="process-step"><span class="step-num">2</span><div><strong>Ontario 公证</strong><p>由 Ontario 公证人公证。何淼律师持有 Ontario 公证资质，可直接完成此步骤。法院出具的公文书（如离婚证书）通常可直接送 ODS。</p></div></div>
+            <div class="process-step"><span class="step-num">2</span><div><strong>来办公室签一次字、Ontario 公证</strong><p>需要签字的文件，到万锦办公室签一次即可。何淼律师持有 Ontario 公证资质，当场公证，不用另找翻译或 Notary Public。法院出具的公文书（如离婚证书）通常可直接送 ODS。</p></div></div>
             <div class="process-step"><span class="step-num">3</span><div><strong>安省 ODS 出具 Apostille</strong><p>Ontario Official Documents Services 对安省出具或安省公证的文件出具海牙认证。联邦文件（如 RCMP 无犯罪）才走 Global Affairs Canada。</p></div></div>
             <div class="process-step"><span class="step-num">4</span><div><strong>急件次日取回原件</strong><p>认证完成后取回 Apostille 原件，按国内要求寄出或由代理人递件。</p></div></div>
           </div>
-          <p>何淼律师作为<strong>Ontario 公证人</strong>和<strong>中加双执照诉讼律师</strong>，可完成起草、公证，并协助递交 ODS，无需您自行奔走多个机构。</p>
+          <p>何淼律师作为<strong>Ontario 公证人</strong>和<strong>中加双执照诉讼律师</strong>，起草、公证、递交 ODS 一站式完成——客人不用自己找翻译、找公证人，来办公室签一次字即可。</p>
 
           <h2>中国文件 → 加拿大使用：两条路都可以</h2>
           <p>这是很多客户不了解的地方——方向不同，规则也不同。中国文件要在加拿大法律程序中使用，有<strong>两条被认可的途径</strong>，都不需要经过海牙认证：</p>
@@ -151,6 +156,11 @@ import { HAGUE_DOCS, hagueDocPath } from '../../data/hague-apostille-docs';
           <p>通过中国中央机关完成海牙送达，通常需要 <strong>3至6个月</strong>，有时更长。这个时间必须纳入整体诉讼计划。在紧急情况下——例如子女安全受到威胁或资产被转移——何淼律师可以评估是否有替代送达方式或其他紧急救济手段可用。</p>
 
           <h2>常见问题</h2>
+
+          <div class="faq-item">
+            <h3>Q：要不要自己找翻译和 Notary Public？</h3>
+            <p>A：不用。何淼律师本人起草中英文本，并持有 Ontario 公证资质。需要签字的文件，来万锦办公室签一次即可；起草、公证、海牙认证全程由律师完成，不用自己另找翻译或公证人。法院已出证的文件（如离婚证书）可直接送认证。电话：647-930-6688。</p>
+          </div>
 
           <div class="faq-item">
             <h3>Q：急件真的第二天能取到海牙认证原件吗？</h3>

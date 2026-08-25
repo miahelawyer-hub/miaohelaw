@@ -19,6 +19,17 @@ interface Props {
 }
 
 const { lang, slug, faqs } = Astro.props;
+const oneStopFaq =
+	lang === 'zh'
+		? {
+				q: '要不要自己找翻译和 Notary Public？',
+				a: '不用。何淼律师本人起草中英文本，并持有 Ontario 公证资质。需要签字的文件，来万锦办公室签一次即可；起草、公证、海牙认证全程由律师完成，不用自己另找翻译或公证人。法院已出证的文件（如离婚证书）可直接送认证。电话：647-930-6688。',
+			}
+		: {
+				q: 'Do I need to find a translator and a Notary Public myself?',
+				a: 'No. Miao He drafts the Chinese–English text and is a commissioned Ontario Notary Public. For documents that require a signature, you come to the Markham office once. Drafting, notarization and the Apostille are handled in one place. Court-issued documents such as a Certificate of Divorce can go straight to Apostille. Call 647-930-6688.',
+			};
+const allFaqs = [oneStopFaq, ...faqs];
 const doc = getHagueDoc(slug);
 const copy = doc[lang];
 const path = hagueDocPath(slug, lang);
@@ -74,7 +85,7 @@ const jsonLd = [
 	{
 		'@context': 'https://schema.org',
 		'@type': 'FAQPage',
-		mainEntity: faqs.map((item) => ({
+		mainEntity: allFaqs.map((item) => ({
 			'@type': 'Question',
 			name: item.q,
 			acceptedAnswer: { '@type': 'Answer', text: item.a },
@@ -129,6 +140,7 @@ const jsonLd = [
             <>
               <h2>急件为什么找何淼律师</h2>
               <ul class="content-list">
+                <li><strong>一站式服务，不用自己找翻译、找公证人。</strong>何淼律师起草中英文本，本人就是 Ontario Notary Public。需要签字的文件，来万锦办公室签一次即可；起草、公证、海牙认证全程做完。</li>
                 <li><strong>中加双执照的诉讼律师。</strong>何淼律师同时持有中国律师执照和安省律师执照，熟悉两边的法院和行政程序。国内窗口要看的不是「公证过了」四个字，而是权限、标的、姓名和格式能不能一次过关。</li>
                 <li><strong>迅速出海牙证书，急件次日可取原件。</strong>Ontario 公证完成后，送安省 Official Documents Services（ODS）出具 Apostille。急用客人可安排第二天取回原件。</li>
                 <li><strong>一次通过，不用补材料、不用改稿。</strong>近期国内卖房、买房、办房产证委托书，以及同名认证、亲子关系声明、放弃继承、加拿大离婚证书，都是按受理机关要求一次通过。</li>
@@ -139,7 +151,7 @@ const jsonLd = [
               <div class="process-box">
                 <div class="process-step"><span class="step-num">1</span><div><strong>确认国内受理格式</strong><p>先问清当地房产局、公证处、民政或银行要什么模板、要几份原件、姓名怎么写。</p></div></div>
                 <div class="process-step"><span class="step-num">2</span><div><strong>起草或核对中英文本</strong><p>何淼律师按国内要求起草或修改，避免权限漏写、姓名对不上、标的写错。</p></div></div>
-                <div class="process-step"><span class="step-num">3</span><div><strong>Ontario 公证</strong><p>何淼律师持有 Ontario 公证资质，可直接完成公证。</p></div></div>
+                <div class="process-step"><span class="step-num">3</span><div><strong>来办公室签一次字、Ontario 公证</strong><p>需要签字的文件，到万锦办公室签一次即可。何淼律师持有 Ontario 公证资质，当场公证。法院出具的公文书通常可直接送 ODS。</p></div></div>
                 <div class="process-step"><span class="step-num">4</span><div><strong>安省 ODS 出具 Apostille</strong><p>Ontario 出具或 Ontario 公证的文件，由 Official Documents Services 出具海牙认证。联邦文件（如 RCMP 无犯罪）才走 Global Affairs Canada。</p></div></div>
                 <div class="process-step"><span class="step-num">5</span><div><strong>急件次日取回原件</strong><p>认证完成后取回 Apostille 原件，按国内要求寄出或由代理人递件。</p></div></div>
               </div>
@@ -148,6 +160,7 @@ const jsonLd = [
             <>
               <h2>Why urgent files come here</h2>
               <ul class="content-list">
+                <li><strong>One-stop service. No separate translator or Notary Public.</strong> Miao He drafts the Chinese–English text and is the notary. For documents that require a signature, you come to the Markham office once. Drafting, notarization and the Apostille are done in one place.</li>
                 <li><strong>Dual-licensed litigation lawyer.</strong> Miao He is licensed in both China and Ontario. She knows how receiving offices and courts actually read these documents — authority, names, subject matter, and format — not just that a notary stamp is present.</li>
                 <li><strong>Fast Apostille. Urgent originals the next day.</strong> After Ontario notarization, the file goes to Ontario Official Documents Services (ODS) for the Apostille. Urgent clients can pick up the original the following day.</li>
                 <li><strong>First-pass filings.</strong> Recent files — China property powers of attorney, same-name declarations, parent-child declarations, inheritance waivers, and Canadian divorce certificates — were accepted without supplementary materials or rewrites.</li>
@@ -158,7 +171,7 @@ const jsonLd = [
               <div class="process-box">
                 <div class="process-step"><span class="step-num">1</span><div><strong>Confirm the receiving office’s format</strong><p>Ask the housing bureau, notary office, civil-affairs bureau or bank in China what template they want, how many originals, and how names must appear.</p></div></div>
                 <div class="process-step"><span class="step-num">2</span><div><strong>Draft or check the Chinese–English text</strong><p>Miao He drafts or revises so the authority, names and subject matter match what the receiving office will accept.</p></div></div>
-                <div class="process-step"><span class="step-num">3</span><div><strong>Ontario notarization</strong><p>Miao He is a commissioned Ontario Notary Public and completes this step herself.</p></div></div>
+                <div class="process-step"><span class="step-num">3</span><div><strong>One office visit for signing and notarization</strong><p>Documents that require a signature are signed once at the Markham office. Miao He is a commissioned Ontario Notary Public and notarizes on the spot. Court-issued documents usually go straight to ODS.</p></div></div>
                 <div class="process-step"><span class="step-num">4</span><div><strong>Ontario ODS Apostille</strong><p>Ontario-issued or Ontario-notarized documents receive an Apostille from Official Documents Services. Federal documents (for example an RCMP criminal-record check) go to Global Affairs Canada.</p></div></div>
                 <div class="process-step"><span class="step-num">5</span><div><strong>Urgent originals the next day</strong><p>Collect the apostilled original and send it to China, or have your agent file it there.</p></div></div>
               </div>
@@ -166,7 +179,7 @@ const jsonLd = [
           )}
 
           <h2>{lang === 'zh' ? '常见问题' : 'Frequently asked questions'}</h2>
-          {faqs.map((item) => (
+          {allFaqs.map((item) => (
             <div class="faq-item">
               <h3>{lang === 'zh' ? 'Q：' : 'Q: '}{item.q}</h3>
               <p>{lang === 'zh' ? 'A：' : 'A: '}{item.a}</p>
