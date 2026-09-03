@@ -1,0 +1,67 @@
+---
+import '../styles/blog-topic-hubs.css';
+
+interface HubPost {
+  id: string;
+  title: string;
+}
+
+interface Hub {
+  id: string;
+  title: string;
+  chip: string;
+  intro: string;
+  posts: HubPost[];
+}
+
+interface Props {
+  lang: 'zh' | 'en';
+  lead: string;
+  sub: string;
+  jumpAria: string;
+  postBase: string;
+  hubs: Hub[];
+}
+
+const { lang, lead, sub, jumpAria, postBase, hubs } = Astro.props;
+
+function countLabel(n: number) {
+  if (lang === 'zh') return `${n} 篇`;
+  return n === 1 ? '1 article' : `${n} articles`;
+}
+---
+
+<section class="topic-hubs" aria-label={lead}>
+  <header class="topic-hubs-head">
+    <p class="topic-hubs-kicker">{lang === 'zh' ? '全部文章' : 'All articles'}</p>
+    <h2 class="topic-hubs-lead">{lead}</h2>
+    <p class="topic-hubs-sub">{sub}</p>
+    <nav class="topic-hubs-jump" aria-label={jumpAria}>
+      {hubs.map((hub) => (
+        <a href={`#${hub.id}`} aria-label={hub.title}>
+          {hub.chip}
+          <span>{hub.posts.length}</span>
+        </a>
+      ))}
+    </nav>
+  </header>
+  {hubs.map((hub, index) => (
+    <article class="topic-hub" id={hub.id}>
+      <div class="topic-hub-head">
+        <span class="topic-hub-num" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
+        <div>
+          <h2>{hub.title}</h2>
+          <p>{hub.intro}</p>
+        </div>
+        <span class="topic-hub-count">{countLabel(hub.posts.length)}</span>
+      </div>
+      <ul class="topic-hub-list">
+        {hub.posts.map((post) => (
+          <li>
+            <a href={`${postBase}/${post.id}/`}>{post.title}</a>
+          </li>
+        ))}
+      </ul>
+    </article>
+  ))}
+</section>

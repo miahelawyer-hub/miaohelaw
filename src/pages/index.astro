@@ -6,6 +6,7 @@ import { getCollection } from 'astro:content';
 import { videoItems, type VideoItem } from '../data/videos';
 import { isBlogPostRoutable } from '../lib/blogPublished';
 import { blogTopicHubs, homepageEvergreenSlugs } from '../data/blog-topic-hubs';
+import '../styles/blog-topic-hubs.css';
 import { GEO_COPY_ZH } from '../data/geo-copy';
 
 const allPosts = (await getCollection('blog'))
@@ -544,13 +545,11 @@ const homepageVideos: VideoItem[] = homepageVideoSlugs
 				)}
 				<nav class="blog-topics" aria-label="按主题阅读">
 					<h3>按主题阅读</h3>
-					<ul>
+					<div class="topic-hubs-jump">
 						{blogTopicHubs.map((hub) => (
-							<li>
-								<a href={`/blog/#${hub.id}`}>{hub.title}</a>
-							</li>
+							<a href={`/blog/#${hub.id}`} aria-label={hub.title}>{hub.chip}</a>
 						))}
-					</ul>
+					</div>
 				</nav>
 				<div class="blog-more-wrap">
 					<a href="/blog/" class="btn-secondary blog-view-all-link">View All Articles →</a>

@@ -5,7 +5,8 @@ import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import { SITE_LAST_UPDATED_ZH, SITE_URL } from '../../consts';
 import { isBlogPostRoutable } from '../../lib/blogPublished';
-import { blogTopicHubs } from '../../data/blog-topic-hubs';
+import { blogTopicHubs, hubSlugsForLang } from '../../data/blog-topic-hubs';
+import BlogTopicHubs from '../../components/BlogTopicHubs.astro';
 
 const posts = (await getCollection('blog'))
 	.filter(isBlogPostRoutable)
@@ -15,10 +16,14 @@ const totalPages = Math.max(1, Math.ceil(totalPosts / 10));
 const pageSmallCards = posts.slice(1, 10);
 const postById = new Map(posts.map((post) => [post.id, post]));
 const topicHubsResolved = blogTopicHubs.map((hub) => ({
-  ...hub,
-  posts: hub.slugs
+  id: hub.id,
+  title: hub.title,
+  chip: hub.chip,
+  intro: hub.intro,
+  posts: hubSlugsForLang(hub, 'zh')
     .map((slug) => postById.get(slug))
-    .filter((post): post is (typeof posts)[number] => post != null),
+    .filter((post): post is (typeof posts)[number] => post != null)
+    .map((post) => ({ id: post.id, title: post.data.title })),
 }));
 
 const itemListJsonLd = {
@@ -299,55 +304,6 @@ function formatDate(date) {
     .card-arrow { color: #D4A853; font-size: 1rem; }
 
     /* ── CTA：与博客文章文末条同款深蓝 + 暖金（仅配色） ── */
-    .topic-hubs { margin: 0 0 2.25rem; }
-    .topic-hubs-lead {
-      color: var(--text-heading);
-      font-size: 1.15rem;
-      margin: 0 0 0.35rem;
-    }
-    .topic-hubs-sub {
-      color: #6B5040;
-      font-size: 0.9rem;
-      margin: 0 0 1.1rem;
-      line-height: 1.6;
-    }
-    .topic-hub {
-      margin: 0 0 1rem;
-      padding: 1.15rem 1.25rem 1.2rem;
-      background: #fff;
-      border: 1px solid #e8e0d5;
-      border-radius: 12px;
-    }
-    .topic-hub h2 {
-      color: var(--text-heading);
-      font-size: 1.05rem;
-      margin: 0 0 0.35rem;
-    }
-    .topic-hub p {
-      color: #6B5040;
-      font-size: 0.88rem;
-      margin: 0;
-      line-height: 1.55;
-    }
-    .topic-hub-list {
-      list-style: none;
-      padding: 0;
-      margin: 0.75rem 0 0;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0.4rem 1.5rem;
-    }
-    .topic-hub-list a {
-      color: #4A2C1A;
-      text-decoration: none;
-      font-size: 0.9rem;
-      line-height: 1.45;
-    }
-    .topic-hub-list a:hover { color: #9A8060; }
-    @media (max-width: 700px) {
-      .topic-hub-list { grid-template-columns: 1fr; }
-    }
-
     .cta-box {
       background: #1c2b3f;
       border-radius: 12px;
@@ -433,23 +389,14 @@ function formatDate(date) {
       <p class="blog-search-meta" id="blog-search-meta" aria-live="polite"></p>
       <div class="blog-search-results" id="blog-search-results" hidden></div>
 
-      <section class="topic-hubs" aria-label="按主题阅读">
-        <h2 class="topic-hubs-lead">按主题阅读</h2>
-        <p class="topic-hubs-sub">分页只列出最近文章。下面按主题收录全部 {totalPosts} 篇，方便直接进入具体问题。</p>
-        {topicHubsResolved.map((hub) => (
-          <div class="topic-hub" id={hub.id}>
-            <h2>{hub.title}</h2>
-            <p>{hub.intro}</p>
-            <ul class="topic-hub-list">
-              {hub.posts.map((post) => (
-                <li>
-                  <a href={`/blog/${post.id}/`}>{post.data.title}</a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </section>
+      <BlogTopicHubs
+        lang="zh"
+        lead="按主题阅读"
+        sub={`分页只列出最近文章。下面按主题收录全部 ${totalPosts} 篇，方便直接进入具体问题。`}
+        jumpAria="主题快速跳转"
+        postBase="/blog"
+        hubs={topicHubsResolved}
+      />
 
       <nav class="pagination" aria-label="博客分页">
         {Array.from({ length: totalPages }, (_, i) => i + 1).map((num) =>

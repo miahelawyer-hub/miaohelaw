@@ -1,0 +1,190 @@
+.topic-hubs {
+  margin: 0 0 2.5rem;
+}
+.blog-listing--searching .topic-hubs {
+  display: none !important;
+}
+.topic-hubs-head {
+  margin: 0 0 1.15rem;
+  padding: 1.2rem 1.3rem 1.15rem;
+  background: #fff;
+  border: 1px solid #e8e0d5;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(44, 24, 16, 0.05);
+}
+.topic-hubs-kicker {
+  margin: 0 0 0.35rem;
+  color: #9A8060;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.topic-hubs-lead {
+  color: var(--text-heading);
+  font-size: clamp(1.35rem, 2.4vw, 1.7rem);
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 0 0 0.4rem;
+}
+.topic-hubs-sub {
+  color: #6B5040;
+  font-size: 0.92rem;
+  margin: 0 0 1rem;
+  line-height: 1.65;
+  max-width: 42rem;
+}
+.topic-hubs-jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.topic-hubs-jump a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.45rem 0.8rem 0.45rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid rgba(212, 168, 83, 0.38);
+  background: #fff;
+  color: #4A2C1A;
+  text-decoration: none;
+  font-size: 0.82rem;
+  line-height: 1.2;
+  transition: border-color 0.15s ease, background 0.15s ease, color 0.15s ease;
+}
+.topic-hubs-jump a:hover {
+  border-color: #D4A853;
+  background: rgba(212, 168, 83, 0.1);
+  color: #2C1810;
+}
+.topic-hubs-jump span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.35rem;
+  height: 1.35rem;
+  padding: 0 0.3rem;
+  border-radius: 999px;
+  background: #2C1810;
+  color: #F5E6C8;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+.topic-hub {
+  margin: 0 0 1rem;
+  padding: 0;
+  background: #fff;
+  border: 1px solid #e8e0d5;
+  border-left: 3px solid #D4A853;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(44, 24, 16, 0.05);
+  scroll-margin-top: 5.5rem;
+}
+.topic-hub-head {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 0.85rem 1rem;
+  align-items: start;
+  padding: 1.15rem 1.25rem 1rem;
+  background: linear-gradient(180deg, #fbf7f1 0%, #fff 100%);
+  border-bottom: 1px solid #f0ebe3;
+}
+.topic-hub-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.45rem;
+  height: 2.45rem;
+  border-radius: 10px;
+  background: #2C1810;
+  color: #D4A853;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1;
+}
+.topic-hub-head h2 {
+  color: var(--text-heading);
+  font-size: 1.08rem;
+  font-weight: 700;
+  margin: 0 0 0.3rem;
+  line-height: 1.35;
+}
+.topic-hub-head p {
+  color: #6B5040;
+  font-size: 0.86rem;
+  margin: 0;
+  line-height: 1.55;
+}
+.topic-hub-count {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  height: 1.7rem;
+  padding: 0 0.65rem;
+  border-radius: 999px;
+  background: rgba(212, 168, 83, 0.14);
+  color: #7a5a22;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  margin-top: 0.35rem;
+}
+.topic-hub-list {
+  list-style: none;
+  padding: 0.7rem 0.7rem 0.85rem;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.2rem 0.45rem;
+}
+.topic-hub-list a {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  padding: 0.55rem 0.7rem;
+  border-radius: 10px;
+  color: #4A2C1A;
+  text-decoration: none;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.topic-hub-list a::before {
+  content: '';
+  flex: none;
+  width: 0.38rem;
+  height: 0.38rem;
+  margin-top: 0.48rem;
+  border-radius: 50%;
+  background: #D4A853;
+}
+.topic-hub-list a:hover {
+  background: rgba(212, 168, 83, 0.1);
+  color: #2C1810;
+}
+.blog-topics .topic-hubs-jump {
+  margin-top: 0.65rem;
+}
+.blog-topics .topic-hubs-jump a {
+  background: #fff;
+}
+@media (max-width: 880px) {
+  .topic-hub-list {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 700px) {
+  .topic-hub-head {
+    grid-template-columns: auto 1fr;
+  }
+  .topic-hub-count {
+    grid-column: 2;
+    justify-self: start;
+    margin-top: 0;
+  }
+}

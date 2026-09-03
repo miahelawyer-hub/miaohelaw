@@ -5,6 +5,8 @@ import HeaderEn from '../../../components/HeaderEn.astro';
 import Footer from '../../../components/Footer.astro';
 import { SITE_LAST_UPDATED_EN, SITE_URL } from '../../../consts';
 import { isBlogEnPostRoutable } from '../../../lib/blogPublished';
+import { blogTopicHubs, hubSlugsForLang } from '../../../data/blog-topic-hubs';
+import BlogTopicHubs from '../../../components/BlogTopicHubs.astro';
 
 const posts = (await getCollection('blog-en'))
   .filter(isBlogEnPostRoutable)
@@ -12,6 +14,17 @@ const posts = (await getCollection('blog-en'))
 const totalPosts = posts.length;
 const totalPages = Math.max(1, Math.ceil(totalPosts / 10));
 const pageSmallCards = posts.slice(1, 10);
+const postById = new Map(posts.map((post) => [post.id, post]));
+const topicHubsResolved = blogTopicHubs.map((hub) => ({
+  id: hub.id,
+  title: hub.titleEn,
+  chip: hub.chipEn,
+  intro: hub.introEn,
+  posts: hubSlugsForLang(hub, 'en')
+    .map((slug) => postById.get(slug))
+    .filter((post): post is (typeof posts)[number] => post != null)
+    .map((post) => ({ id: post.id, title: post.data.title })),
+}));
 const schemaPosts = posts.length > 0 ? [posts[0], ...pageSmallCards] : [];
 
 const itemListJsonLd = {
@@ -182,6 +195,15 @@ function formatDate(date) {
       </div>
       <p class="blog-search-meta" id="blog-search-meta" aria-live="polite"></p>
       <div class="blog-search-results" id="blog-search-results" hidden></div>
+
+      <BlogTopicHubs
+        lang="en"
+        lead="Read by topic"
+        sub={`Pagination shows the latest posts. The groups below collect all ${totalPosts} articles so you can go straight to a specific issue.`}
+        jumpAria="Jump to a topic"
+        postBase="/en/blog"
+        hubs={topicHubsResolved}
+      />
 
       <nav class="pagination" aria-label="Blog pagination">
         {Array.from({ length: totalPages }, (_, i) => i + 1).map((num) =>

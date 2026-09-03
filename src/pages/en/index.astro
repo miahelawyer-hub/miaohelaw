@@ -5,6 +5,8 @@ import Footer from '../../components/Footer.astro';
 import { getCollection } from 'astro:content';
 import { isBlogEnPostRoutable } from '../../lib/blogPublished';
 import { GEO_COPY_EN } from '../../data/geo-copy';
+import { blogTopicHubs } from '../../data/blog-topic-hubs';
+import '../../styles/blog-topic-hubs.css';
 
 const posts = (await getCollection('blog-en'))
   .filter(isBlogEnPostRoutable)
@@ -569,6 +571,14 @@ function formatBlogDate(date: Date) {
           </div>
         ))}
       </div>
+      <nav class="blog-topics" aria-label="Read by topic">
+        <h3>Read by topic</h3>
+        <div class="topic-hubs-jump">
+          {blogTopicHubs.map((hub) => (
+            <a href={`/en/blog/#${hub.id}`} aria-label={hub.titleEn}>{hub.chipEn}</a>
+          ))}
+        </div>
+      </nav>
       <div class="blog-more-wrap">
         <a href="/en/blog" class="btn-secondary blog-view-all-link">View All Articles →</a>
       </div>
@@ -1602,6 +1612,36 @@ function formatBlogDate(date: Date) {
     overflow: hidden;
     margin-bottom: 1rem;
   }
+  .blog-topics {
+    max-width: 980px;
+    margin: 2rem auto 0;
+    text-align: left;
+  }
+  .blog-topics h3 {
+    font-family: Georgia, serif;
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: var(--text-heading);
+    margin: 0 0 0.4rem;
+  }
+  .blog-topics ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.45rem 1.5rem;
+  }
+  @media (min-width: 768px) {
+    .blog-topics ul { grid-template-columns: repeat(3, 1fr); }
+  }
+  .blog-topics a {
+    color: #4A2C1A;
+    text-decoration: none;
+    font-size: 0.92rem;
+    line-height: 1.45;
+  }
+  .blog-topics a:hover { color: #9A8060; }
   .blog-more-wrap {
     text-align: center;
   }
