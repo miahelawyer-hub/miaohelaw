@@ -33,6 +33,7 @@ export const blogTopicHubs: BlogTopicHub[] = [
       'china-property-premarital-depreciation-ontario',
       'cross-border-assets-divorce-ontario',
       'china-canada-divorce-judgment-recognition',
+      'hague-service-spouse-in-china-ontario',
       'expert-witness-chinese-marriage-law-ontario',
       'new-immigrant-divorce-ontario',
       'child-taken-to-china-ontario',
