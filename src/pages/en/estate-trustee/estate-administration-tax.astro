@@ -1,0 +1,55 @@
+---
+import EstateDoc from '../../../layouts/EstateDoc.astro';
+
+const faqs = [
+  {
+    q: 'Is tax really $0 under $50,000?',
+    a: 'For applications made on or after 1 January 2020, estate administration tax is $0 if the estate value is $50,000 or less. You may still need a court certificate, and you must still file an Estate Information Return within 180 days after the certificate is issued. Call 647-930-6688.',
+  },
+  {
+    q: 'Is the $15 per $1,000 charged on the whole estate, or only on the amount above $50,000?',
+    a: 'Only on the amount above $50,000. Round the estate value up to the next thousand, subtract $50,000, then multiply each $1,000 (or part) by $15. A $240,000 estate: $190,000 above the exemption, tax $2,850. 647-930-6688.',
+  },
+  {
+    q: 'Is this the lawyer’s fee?',
+    a: 'No. This is tax payable to the Ontario Ministry of Finance. Legal fees depend on whether there is a will, whether heirs are in China, and whether bond relief is required. Call with the facts. 647-930-6688.',
+  },
+];
+---
+<EstateDoc lang="en" slug="estate-administration-tax" faqs={faqs}>
+  <div class="definition-box">
+    <p>Estate administration tax is paid to the Ministry of Finance on the value of the estate. The formula is on ontario.ca; many secondary sites blur it. This page follows the rules for applications made <strong>on or after 1 January 2020</strong>.</p>
+  </div>
+
+  <h2>The current formula</h2>
+  <ul class="content-list">
+    <li>estate value of <strong>$50,000 or less: $0 tax</strong>;</li>
+    <li>on the amount above $50,000: <strong>$15 for each $1,000 or part thereof</strong>.</li>
+  </ul>
+  <p>The estate value is rounded up to the next thousand. An estate of $239,250 is treated as $240,000.</p>
+  <p>Tax = (rounded estate value − $50,000) ÷ $1,000 × $15. The 1.5% applies only to the excess over $50,000, not to the entire estate.</p>
+
+  <h2>Examples</h2>
+  <table class="eat-table">
+    <thead>
+      <tr><th>Estate value</th><th>Amount above $50,000</th><th>Estate administration tax</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>$50,000 or less</td><td>$0</td><td>$0</td></tr>
+      <tr><td>$51,000</td><td>$1,000</td><td>$15</td></tr>
+      <tr><td>$240,000</td><td>$190,000</td><td>$2,850</td></tr>
+      <tr><td>$500,000</td><td>$450,000</td><td>$6,750</td></tr>
+      <tr><td>$1,000,000</td><td>$950,000</td><td>$14,250</td></tr>
+    </tbody>
+  </table>
+  <p class="fine-print">Figures follow the current <em>Estate Administration Tax Act, 1998</em> and ontario.ca. The Ministry’s rules at the time of the application govern.</p>
+
+  <h2>Tax is not the legal fee</h2>
+  <p>The table is tax to the province. The court also charges filing fees. Miao He’s legal fees depend on the path — with a will, without a will, heirs in China, bond relief — so they are not a single number on this page. Call 647-930-6688 with the facts of the estate.</p>
+
+  <h2>180 days after the certificate: Estate Information Return</h2>
+  <p>Whether the tax is zero or not, an Estate Information Return listing asset values at death is ordinarily due <strong>180 calendar days</strong> after the certificate is issued. Late or missing returns create a separate problem. Get the valuation right when you apply so you are not amending after the certificate.</p>
+
+  <h2>Small estates still pay this tax</h2>
+  <p>An estate of $150,000 or less may use a Small Estate Certificate. The tax rules do not change: the first $50,000 is exempt; the rest is still $15 per $1,000. A $150,000 estate pays $1,500. The small-estate route saves forms and, in most cases, the bond — not this tax.</p>
+</EstateDoc>

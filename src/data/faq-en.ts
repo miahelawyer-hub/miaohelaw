@@ -1,3 +1,5 @@
+import { SITE_URL } from '../consts';
+
 export interface FaqItemEn {
   slug: string;
   question: string;
@@ -8,6 +10,8 @@ export interface FaqItemEn {
   featured?: boolean;
   /** Chinese FAQ path for hreflang, e.g. `/faq/toronto-lihun-feiyong-duoshao/` */
   pairedFaqPath?: string;
+  /** When set, listing / search / related links use this path (page must exist separately). */
+  detailPath?: string;
   metaTitle?: string;
   metaDescription?: string;
 }
@@ -1364,7 +1368,120 @@ export const faqItemsEn: FaqItemEn[] =
     keywords:
       "case conference Ontario,Form 17A,Form 17F,prepare case conference family court,Financial Statement Form 13,Family Law Rules Rule 17,Ontario family lawyer,Miao He",
   },
+  {
+    slug: "ontario-probate-when-needed",
+    question: "If there is a will, do we still need to go to court for probate in Ontario?",
+    featured: true,
+    detailPath: "/en/estate-trustee/",
+    pairedFaqPath: "/estate-trustee/",
+    metaTitle: "Do You Need Probate in Ontario If There Is a Will? | Miao He",
+    metaDescription:
+      "A will names the executor; banks and the land registry still often require a Certificate of Appointment of Estate Trustee. 647-930-6688.",
+    summary:
+      "Often yes. Assets in the deceased’s name alone usually need a court certificate. Jointly held property and designated-beneficiary accounts may not.",
+    answers: [
+      "A recent with-a-will application in this office received the certificate in about four months.",
+      "A recent intestacy file included an application to dispense with the administration bond.",
+    ],
+    details: [
+      'See the <a href="/en/estate-trustee/">Ontario probate</a> overview.',
+      "Call 647-930-6688.",
+    ],
+    keywords: "how to apply for probate Ontario,do I need probate if there is a will,Certificate of Estate Trustee,Miao He",
+  },
+  {
+    slug: "probate-without-a-will-ontario",
+    question: "There is no will — who inherits in Ontario and who may apply to the court?",
+    featured: true,
+    detailPath: "/en/estate-trustee/without-a-will/",
+    pairedFaqPath: "/estate-trustee/without-a-will/",
+    metaTitle: "Probate Without a Will Ontario | Miao He",
+    metaDescription:
+      "Intestacy follows the Succession Law Reform Act. Non-residents generally cannot take administration. 647-930-6688.",
+    summary:
+      "Who inherits and who may apply are different questions. A common-law partner is not a spouse for intestacy. A person in China generally cannot be the administrator.",
+    answers: [
+      "A married spouse has a preferential share; children share the residue if there are any.",
+      "Someone who is not first in priority may apply with the consents of those entitled (Estates Act s. 29(2)).",
+    ],
+    details: [
+      'See <a href="/en/estate-trustee/without-a-will/">probate without a will</a>.',
+      "Call 647-930-6688.",
+    ],
+    keywords: "probate without a will Ontario,intestate Ontario,who inherits no will,Miao He",
+  },
+  {
+    slug: "heirs-in-china-ontario-probate",
+    question: "The only beneficiary lives in China — can they be the Ontario estate trustee?",
+    featured: true,
+    detailPath: "/en/estate-trustee/china-heirs/",
+    pairedFaqPath: "/estate-trustee/china-heirs/",
+    metaTitle: "Heirs in China Ontario Probate | Miao He",
+    metaDescription:
+      "On an intestacy a non-resident generally cannot take administration. A named executor usually needs a bond unless the court dispenses with it. 647-930-6688.",
+    summary:
+      "On an intestacy, generally no. With a will, a non-resident executor may apply but usually needs a bond unless it is dispensed with.",
+    answers: [
+      "An Ontario resident often applies; the heir in China cooperates with consents and kinship documents.",
+      "China notarial records and the Ontario court application should be planned together.",
+    ],
+    details: [
+      'See <a href="/en/estate-trustee/china-heirs/">heirs in China</a>.',
+      "Call 647-930-6688.",
+    ],
+    keywords: "heirs in China Ontario probate,non-resident estate trustee,beneficiary in China,Miao He",
+  },
+  {
+    slug: "estate-administration-bond-ontario",
+    question: "Is an Ontario estate administration bond always required?",
+    featured: true,
+    detailPath: "/en/estate-trustee/administration-bond/",
+    pairedFaqPath: "/estate-trustee/administration-bond/",
+    metaTitle: "Dispense with Estate Administration Bond Ontario | Miao He",
+    metaDescription:
+      "On consent, the court can be asked to dispense with or reduce the bond without a motion. A recent intestacy file took that path. 647-930-6688.",
+    summary:
+      "It is most common on an intestacy or with a non-resident executor. Where everyone entitled to share consents, the request can go in with the application.",
+    answers: [
+      "Rule 74.11(5) allows a consent request without a separate motion.",
+      "A recent intestacy file in this office applied to dispense with the bond.",
+    ],
+    details: [
+      'See <a href="/en/estate-trustee/administration-bond/">administration bond</a>.',
+      "Call 647-930-6688.",
+    ],
+    keywords: "estate administration bond Ontario,dispense with bond probate,Rule 74.11,Miao He",
+  },
+  {
+    slug: "estate-administration-tax-ontario",
+    question: "How is Ontario estate administration tax calculated? Is the first $50,000 exempt?",
+    featured: true,
+    detailPath: "/en/estate-trustee/estate-administration-tax/",
+    pairedFaqPath: "/estate-trustee/estate-administration-tax/",
+    metaTitle: "Estate Administration Tax Ontario | Miao He",
+    metaDescription:
+      "For applications from 2020: $0 on the first $50,000; $15 per $1,000 above that. This is tax to the province, not legal fees. 647-930-6688.",
+    summary:
+      "Yes. $0 on $50,000 or less; $15 per $1,000 (or part) above that. A $240,000 estate pays $2,850.",
+    answers: [
+      "This is tax to the Ministry of Finance, not the lawyer’s fee.",
+      "An Estate Information Return is usually due 180 days after the certificate.",
+    ],
+    details: [
+      'See <a href="/en/estate-trustee/estate-administration-tax/">estate administration tax</a>.',
+      "Call 647-930-6688.",
+    ],
+    keywords: "estate administration tax Ontario,probate tax Ontario,first 50000 exempt,15 per 1000,Miao He",
+  },
 ];
+
+export function getFaqDetailPathEn(item: FaqItemEn): string {
+  return item.detailPath ?? `/en/faq/${item.slug}/`;
+}
+
+export function getFaqDetailAbsoluteUrlEn(item: FaqItemEn): string {
+  return `${SITE_URL}${getFaqDetailPathEn(item)}`;
+}
 
 export function getFaqItemsEnForListing(): FaqItemEn[] {
   const pinned = faqItemsEn.filter((item) => item.featured);

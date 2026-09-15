@@ -1,6 +1,5 @@
 import type { APIRoute } from 'astro';
-import { SITE_URL } from '../../consts';
-import { getFaqItemsEnForListing } from '../../data/faq-en';
+import { getFaqDetailAbsoluteUrlEn, getFaqItemsEnForListing } from '../../data/faq-en';
 import { stripHtml } from '../../utils/stripHtml';
 
 export const prerender = true;
@@ -11,7 +10,7 @@ export const GET: APIRoute = async () => {
 		slug: item.slug,
 		question: stripHtml(item.question),
 		searchText: `${stripHtml(item.question)} ${stripHtml(item.summary)} ${item.answers.map(stripHtml).join(' ')} ${item.keywords}`.toLowerCase(),
-		url: `${SITE_URL}/en/faq/${item.slug}/`,
+		url: getFaqDetailAbsoluteUrlEn(item),
 	}));
 	return new Response(JSON.stringify(body), {
 		headers: { 'Content-Type': 'application/json; charset=utf-8' },

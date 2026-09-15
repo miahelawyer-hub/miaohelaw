@@ -5,41 +5,30 @@ import HeaderEn from '../components/HeaderEn.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_LAST_UPDATED_ZH, SITE_LAST_UPDATED_EN } from '../consts';
 import {
-	HAGUE_DOCS,
-	getHagueDoc,
-	hagueDocPath,
-	hagueHubPath,
-	type HagueDocSlug,
-} from '../data/hague-apostille-docs';
+	ESTATE_TRUSTEE_PAGES,
+	getEstateTrusteePage,
+	estateTrusteePath,
+	estateTrusteeHubPath,
+	type EstateTrusteeSlug,
+} from '../data/estate-trustee';
 
 interface Props {
 	lang: 'zh' | 'en';
-	slug: HagueDocSlug;
+	slug: EstateTrusteeSlug;
 	faqs: { q: string; a: string }[];
 }
 
 const { lang, slug, faqs } = Astro.props;
-const oneStopFaq =
-	lang === 'zh'
-		? {
-				q: '要不要自己找翻译和 Notary Public？',
-				a: '不用。何淼律师本人起草中英文本，并持有 Ontario 公证资质。需要签字的文件，来万锦办公室签一次即可；起草、公证、海牙认证全程由律师完成，不用自己另找翻译或公证人。法院已出证的文件（如离婚证书）可直接送认证。电话：647-930-6688。',
-			}
-		: {
-				q: 'Do I need to find a translator and a Notary Public myself?',
-				a: 'No. Miao He drafts the Chinese–English text and is a commissioned Ontario Notary Public. For documents that require a signature, you come to the Markham office once. Drafting, notarization and the Apostille are handled in one place. Court-issued documents such as a Certificate of Divorce can go straight to Apostille. Call 647-930-6688.',
-			};
-const allFaqs = [oneStopFaq, ...faqs];
-const doc = getHagueDoc(slug);
-const copy = doc[lang];
-const path = hagueDocPath(slug, lang);
-const pairHref = hagueDocPath(slug, lang === 'zh' ? 'en' : 'zh');
-const hubHref = hagueHubPath(lang);
-const others = HAGUE_DOCS.filter((item) => item.slug !== slug);
+const page = getEstateTrusteePage(slug);
+const copy = page[lang];
+const path = estateTrusteePath(slug, lang);
+const pairHref = estateTrusteePath(slug, lang === 'zh' ? 'en' : 'zh');
+const hubHref = estateTrusteeHubPath(lang);
+const others = ESTATE_TRUSTEE_PAGES.filter((item) => item.slug !== slug);
 const origin = 'https://www.miaohelaw.ca';
 const pageUrl = `${origin}${path}`;
-const zhUrl = `${origin}${hagueDocPath(slug, 'zh')}`;
-const enUrl = `${origin}${hagueDocPath(slug, 'en')}`;
+const zhUrl = `${origin}${estateTrusteePath(slug, 'zh')}`;
+const enUrl = `${origin}${estateTrusteePath(slug, 'en')}`;
 const lastUpdated = lang === 'zh' ? SITE_LAST_UPDATED_ZH : SITE_LAST_UPDATED_EN;
 
 const jsonLd = [
@@ -57,7 +46,7 @@ const jsonLd = [
 			addressRegion: 'ON',
 			addressCountry: 'CA',
 		},
-		serviceType: [copy.serviceType, lang === 'zh' ? '海牙认证' : 'Hague Apostille'],
+		serviceType: [copy.serviceType, lang === 'zh' ? '安省遗产认证' : 'Ontario probate'],
 		availableLanguage: [
 			{ '@type': 'Language', name: 'Chinese (Mandarin)' },
 			{ '@type': 'Language', name: 'English' },
@@ -76,7 +65,7 @@ const jsonLd = [
 			{
 				'@type': 'ListItem',
 				position: 2,
-				name: lang === 'zh' ? '海牙认证' : 'Hague Apostille',
+				name: lang === 'zh' ? '安省遗产认证' : 'Ontario Probate',
 				item: `${origin}${hubHref}`,
 			},
 			{ '@type': 'ListItem', position: 3, name: copy.navLabel, item: pageUrl },
@@ -85,7 +74,7 @@ const jsonLd = [
 	{
 		'@context': 'https://schema.org',
 		'@type': 'FAQPage',
-		mainEntity: allFaqs.map((item) => ({
+		mainEntity: faqs.map((item) => ({
 			'@type': 'Question',
 			name: item.q,
 			acceptedAnswer: { '@type': 'Answer', text: item.a },
@@ -113,12 +102,12 @@ const jsonLd = [
         <div class="breadcrumb">
           {lang === 'zh' ? (
             <>
-              <a href="/">首页</a> › <a href={hubHref}>海牙认证</a> › {copy.navLabel}
+              <a href="/">首页</a> › <a href={hubHref}>安省遗产认证</a> › {copy.navLabel}
               <span class="lang-pair"> · <a href={pairHref} lang="en">English</a></span>
             </>
           ) : (
             <>
-              <a href="/en/">Home</a> › <a href={hubHref}>Hague Apostille</a> › {copy.navLabel}
+              <a href="/en/">Home</a> › <a href={hubHref}>Ontario Probate</a> › {copy.navLabel}
               <span class="lang-pair"> · <a href={pairHref} lang="zh">中文</a></span>
             </>
           )}
@@ -138,58 +127,38 @@ const jsonLd = [
 
           {lang === 'zh' ? (
             <>
-              <h2>急件为什么找何淼律师</h2>
+              <h2>为什么这类案子要找中加双执照律师</h2>
               <ul class="content-list">
-                <li><strong>一站式服务，不用自己找翻译、找公证人。</strong>何淼律师起草中英文本，本人就是 Ontario Notary Public。需要签字的文件，来万锦办公室签一次即可；起草、公证、海牙认证全程做完。</li>
-                <li><strong>中加双执照的诉讼律师。</strong>何淼律师同时持有中国律师执照和安省律师执照，熟悉两边的法院和行政程序。国内窗口要看的不是「公证过了」四个字，而是权限、标的、姓名和格式能不能一次过关。</li>
-                <li><strong>迅速出海牙证书，急件次日可取原件。</strong>Ontario 公证完成后，送安省 Official Documents Services（ODS）出具 Apostille。急用客人可安排第二天取回原件。</li>
-                <li><strong>一次通过，不用补材料、不用改稿。</strong>近期国内卖房、买房、办房产证委托书，以及同名认证、亲子关系声明、放弃继承、加拿大离婚证书，都是按受理机关要求一次通过。</li>
+                <li><strong>法院申请，不是填一张表那么简单。</strong>证书由安省 Superior Court of Justice 签发。材料不齐、顺位不对、保证金没处理，法院会退件或改由法官决定，周期立刻拉长。</li>
+                <li><strong>继承人在中国是常态，不是例外。</strong>何淼律师处理非居民申请人、保证金减免，以及国内亲属关系、继承权证明要走的公证和<a href="/hague-apostille/">海牙认证</a>。</li>
+                <li><strong>符合条件时，用同意申请免除保证金，而不是一上来就动议。</strong>Rule 74.11(5) 允许在全体有权分配的人同意、且没有未成年或无行为能力受益人时，随申请一并请求免除或减免 bond。</li>
+                <li><strong>程序不同，费用也不同。</strong>遗产管理税按遗产价值计算；律师费视路径、是否跨境、是否申请免除保证金而定。请来电说明情况，647-930-6688。</li>
               </ul>
-              <p class="fine-print">次日取原件取决于 ODS 窗口、文件类型和材料是否齐全；近期一次通过是办案结果，不构成对每一份文件的保证。电话：647-930-6688。</p>
-
-              <h2>办理流程（Ontario 文件）</h2>
-              <div class="process-box">
-                <div class="process-step"><span class="step-num">1</span><div><strong>确认国内受理格式</strong><p>先问清当地房产局、公证处、民政或银行要什么模板、要几份原件、姓名怎么写。</p></div></div>
-                <div class="process-step"><span class="step-num">2</span><div><strong>起草或核对中英文本</strong><p>何淼律师按国内要求起草或修改，避免权限漏写、姓名对不上、标的写错。</p></div></div>
-                <div class="process-step"><span class="step-num">3</span><div><strong>来办公室签一次字、Ontario 公证</strong><p>需要签字的文件，到万锦办公室签一次即可。何淼律师持有 Ontario 公证资质，当场公证。法院出具的公文书通常可直接送 ODS。</p></div></div>
-                <div class="process-step"><span class="step-num">4</span><div><strong>安省 ODS 出具 Apostille</strong><p>Ontario 出具或 Ontario 公证的文件，由 Official Documents Services 出具海牙认证。联邦文件（如 RCMP 无犯罪）才走 Global Affairs Canada。</p></div></div>
-                <div class="process-step"><span class="step-num">5</span><div><strong>急件次日取回原件</strong><p>认证完成后取回 Apostille 原件，按国内要求寄出或由代理人递件。</p></div></div>
-              </div>
             </>
           ) : (
             <>
-              <h2>Why urgent files come here</h2>
+              <h2>Why dual-licensed counsel matters on these files</h2>
               <ul class="content-list">
-                <li><strong>One-stop service. No separate translator or Notary Public.</strong> Miao He drafts the Chinese–English text and is the notary. For documents that require a signature, you come to the Markham office once. Drafting, notarization and the Apostille are done in one place.</li>
-                <li><strong>Dual-licensed litigation lawyer.</strong> Miao He is licensed in both China and Ontario. She knows how receiving offices and courts actually read these documents — authority, names, subject matter, and format — not just that a notary stamp is present.</li>
-                <li><strong>Fast Apostille. Urgent originals the next day.</strong> After Ontario notarization, the file goes to Ontario Official Documents Services (ODS) for the Apostille. Urgent clients can pick up the original the following day.</li>
-                <li><strong>First-pass filings.</strong> Recent files — China property powers of attorney, same-name declarations, parent-child declarations, inheritance waivers, and Canadian divorce certificates — were accepted without supplementary materials or rewrites.</li>
+                <li><strong>This is a court application, not a form-filling exercise.</strong> The certificate is issued by the Ontario Superior Court of Justice. Missing materials, the wrong applicant, or an unresolved bond will draw a requisition or a judge’s review.</li>
+                <li><strong>Heirs in China are the usual fact pattern, not a side issue.</strong> Miao He deals with non-resident applicants, bond relief, and the China-side kinship or inheritance documents that often need notarization and an <a href="/en/hague-apostille/">Apostille</a>.</li>
+                <li><strong>Where the rules allow it, dispense with the bond on consent — do not start with a motion.</strong> Rule 74.11(5) lets the request go in with the application when every person entitled to share consents and none is a minor or incapable.</li>
+                <li><strong>Fees follow the procedure.</strong> Estate administration tax is calculated on estate value. Legal fees depend on the path, whether the file is cross-border, and whether bond relief is required. Call 647-930-6688 with the facts.</li>
               </ul>
-              <p class="fine-print">Next-day pickup depends on the ODS window, the document type, and complete materials. Recent first-pass results are not a guarantee for every file. Call 647-930-6688.</p>
-
-              <h2>Process for Ontario documents</h2>
-              <div class="process-box">
-                <div class="process-step"><span class="step-num">1</span><div><strong>Confirm the receiving office’s format</strong><p>Ask the housing bureau, notary office, civil-affairs bureau or bank in China what template they want, how many originals, and how names must appear.</p></div></div>
-                <div class="process-step"><span class="step-num">2</span><div><strong>Draft or check the Chinese–English text</strong><p>Miao He drafts or revises so the authority, names and subject matter match what the receiving office will accept.</p></div></div>
-                <div class="process-step"><span class="step-num">3</span><div><strong>One office visit for signing and notarization</strong><p>Documents that require a signature are signed once at the Markham office. Miao He is a commissioned Ontario Notary Public and notarizes on the spot. Court-issued documents usually go straight to ODS.</p></div></div>
-                <div class="process-step"><span class="step-num">4</span><div><strong>Ontario ODS Apostille</strong><p>Ontario-issued or Ontario-notarized documents receive an Apostille from Official Documents Services. Federal documents (for example an RCMP criminal-record check) go to Global Affairs Canada.</p></div></div>
-                <div class="process-step"><span class="step-num">5</span><div><strong>Urgent originals the next day</strong><p>Collect the apostilled original and send it to China, or have your agent file it there.</p></div></div>
-              </div>
             </>
           )}
 
           <h2>{lang === 'zh' ? '常见问题' : 'Frequently asked questions'}</h2>
-          {allFaqs.map((item) => (
+          {faqs.map((item) => (
             <div class="faq-item">
               <h3>{lang === 'zh' ? 'Q：' : 'Q: '}{item.q}</h3>
               <p>{lang === 'zh' ? 'A：' : 'A: '}{item.a}</p>
             </div>
           ))}
 
-          <h2>{lang === 'zh' ? '其他文件的海牙认证' : 'Apostille for other documents'}</h2>
+          <h2>{lang === 'zh' ? '其他遗产认证说明' : 'Other probate guides'}</h2>
           <div class="doc-grid doc-grid--compact">
             {others.map((item) => (
-              <a class="doc-card" href={hagueDocPath(item.slug, lang)}>
+              <a class="doc-card" href={estateTrusteePath(item.slug, lang)}>
                 <h3>{item[lang].cardTitle}</h3>
                 <p>{item[lang].cardDesc}</p>
               </a>
@@ -199,15 +168,15 @@ const jsonLd = [
           <div class="cta-box">
             {lang === 'zh' ? (
               <>
-                <h3>急用就打电话</h3>
-                <p>普通话 · 万锦办公室 · 初次咨询 30 分钟，$220 + HST · 电话或 Zoom</p>
+                <h3>先打电话说清情况</h3>
+                <p>普通话 · 万锦办公室 · 程序不同费用也不同 · 电话或 Zoom</p>
                 <a href="/contact/" class="btn-primary">立即预约</a>
                 <a href="tel:6479306688" class="btn-secondary">647-930-6688</a>
               </>
             ) : (
               <>
-                <h3>If you need it urgently, call</h3>
-                <p>Mandarin &amp; English · Markham · Initial consultation 30 minutes · $220 + HST · Phone or Zoom</p>
+                <h3>Call with the facts of the estate</h3>
+                <p>Mandarin &amp; English · Markham · Fees depend on the procedure · Phone or Zoom</p>
                 <a href="/en/contact/" class="btn-primary">Book now</a>
                 <a href="tel:6479306688" class="btn-secondary">647-930-6688</a>
               </>
@@ -224,20 +193,19 @@ const jsonLd = [
             <p>💬 {lang === 'zh' ? '微信：372656035' : 'WeChat: 372656035'}</p>
           </div>
           <div class="sidebar-card">
-            <h3>{lang === 'zh' ? '按文件办理' : 'By document'}</h3>
+            <h3>{lang === 'zh' ? '按情况办理' : 'By situation'}</h3>
             <ul>
-              {HAGUE_DOCS.map((item) => (
+              <li><a href={hubHref}>{lang === 'zh' ? '遗产认证总览' : 'Probate overview'}</a></li>
+              {ESTATE_TRUSTEE_PAGES.map((item) => (
                 <li>
                   {item.slug === slug ? (
                     <span>{item[lang].navLabel}</span>
                   ) : (
-                    <a href={hagueDocPath(item.slug, lang)}>{item[lang].navLabel}</a>
+                    <a href={estateTrusteePath(item.slug, lang)}>{item[lang].navLabel}</a>
                   )}
                 </li>
               ))}
-              <li><a href={hubHref}>{lang === 'zh' ? '海牙认证总览' : 'Hague Apostille overview'}</a></li>
-              <li><a href={lang === 'zh' ? '/notary-public/' : '/en/notary-public/'}>{lang === 'zh' ? '公证服务 · Ontario' : 'Notary Public · Ontario'}</a></li>
-              <li><a href={lang === 'zh' ? '/estate-trustee/' : '/en/estate-trustee/'}>{lang === 'zh' ? '安省遗产认证' : 'Ontario Probate'}</a></li>
+              <li><a href={lang === 'zh' ? '/hague-apostille/' : '/en/hague-apostille/'}>{lang === 'zh' ? '海牙认证' : 'Hague Apostille'}</a></li>
             </ul>
           </div>
           <div class="sidebar-card">
@@ -285,6 +253,9 @@ const jsonLd = [
   .doc-card{display:block;background:#f8f8f8;border-radius:8px;padding:1.1rem 1.2rem;border-left:3px solid #9A8060;text-decoration:none;color:inherit}
   .doc-card h3{color:var(--text-heading);margin:0 0 0.4rem;font-size:0.95rem}
   .doc-card p{margin:0;font-size:0.88rem;color:#4A2C1A}
+  .eat-table{width:100%;border-collapse:collapse;margin:1.2rem 0;font-size:0.92rem}
+  .eat-table th,.eat-table td{border:1px solid #e8e0d5;padding:0.55rem 0.7rem;text-align:left}
+  .eat-table th{background:#FDF6EC;color:var(--text-heading)}
   .sidebar{display:flex;flex-direction:column;gap:1.5rem}
   .sidebar-card{background:white;border:1px solid #e8e0d5;border-radius:10px;padding:1.2rem}
   .sidebar-card h3{color:var(--text-heading);font-size:0.95rem;margin-top:0;border-bottom:1px solid #e8e0d5;padding-bottom:0.5rem;margin-bottom:0.75rem}

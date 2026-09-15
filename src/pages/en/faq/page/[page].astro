@@ -4,7 +4,7 @@ import BaseHead from '../../../../components/BaseHead.astro';
 import HeaderEn from '../../../../components/HeaderEn.astro';
 import Footer from '../../../../components/Footer.astro';
 import { SITE_LAST_UPDATED_EN, SITE_URL } from '../../../../consts';
-import { getFaqItemsEnForListing } from '../../../../data/faq-en';
+import { getFaqDetailAbsoluteUrlEn, getFaqDetailPathEn, getFaqItemsEnForListing } from '../../../../data/faq-en';
 import { getFaqItemsForListing } from '../../../../data/faq';
 import { stripHtml } from '../../../../utils/stripHtml';
 
@@ -53,7 +53,7 @@ const itemListJsonLd = {
 	itemListElement: pageItems.map((item, i) => ({
 		'@type': 'ListItem',
 		position: i + 1,
-		url: `${SITE_URL}/en/faq/${item.slug}/`,
+		url: getFaqDetailAbsoluteUrlEn(item),
 		name: stripHtml(item.question),
 	})),
 };
@@ -290,7 +290,7 @@ const breadcrumbJsonLd = {
 
         {pageItems.map((item) => (
           <div class="faq-item" data-search={`${stripHtml(item.question)} ${stripHtml(item.summary)} ${item.answers.map(stripHtml).join(' ')} ${item.keywords}`.toLowerCase()}>
-            <a href={`/en/faq/${item.slug}/`} class="faq-link">
+            <a href={getFaqDetailPathEn(item)} class="faq-link">
               <span set:html={item.question} />
               <span class="faq-arrow">→</span>
             </a>

@@ -1,0 +1,48 @@
+---
+import EstateDoc from '../../../layouts/EstateDoc.astro';
+
+const faqs = [
+  {
+    q: 'When is a bond required?',
+    a: 'Most often on an intestacy if the applicant is not a surviving spouse who meets s. 36(2), when the executor does not reside in Ontario or the Commonwealth, or when a beneficiary is a minor or incapable. Small estates usually do not require a bond except in those last cases. Call 647-930-6688.',
+  },
+  {
+    q: 'Can the bond be dispensed with on consent, or is a motion required?',
+    a: 'Rule 74.11(5): if every person entitled to share consents, and none is a minor or incapable (unless there is a guardian or an attorney with authority in the proceeding), the request can go in with the application — draft order, consents and affidavit — without a motion. Otherwise use the Rule 74.11(3) motion. Call 647-930-6688.',
+  },
+  {
+    q: 'How much is the bond?',
+    a: 'Estates Act s. 37(1): the penalty is generally double the sworn value of the estate. The judge may require more than one bond to limit a surety’s exposure. Section 37(2) allows the amount to be reduced or the bond dispensed with in special circumstances. A recent intestacy file in this office applied to dispense with it. 647-930-6688.',
+  },
+];
+---
+<EstateDoc lang="en" slug="administration-bond" faqs={faqs}>
+  <div class="definition-box">
+    <p>An administration bond is security to the court that the estate trustee will collect, administer and account for the estate. This is where Chinese-family files stall: no one has explained what a bond is, or that the court can be asked to dispense with it. A recent <strong>intestacy</strong> file in this office included an application to <strong>dispense with the bond</strong>.</p>
+  </div>
+
+  <h2>When the court asks for one</h2>
+  <ul class="content-list">
+    <li>an intestacy, unless the applicant is a surviving spouse who meets Estates Act s. 36(2);</li>
+    <li>a will, but the executor does not reside in Ontario or elsewhere in the Commonwealth (s. 6);</li>
+    <li>a beneficiary who is a minor or incapable;</li>
+    <li>small estates usually do not require a bond, subject to those limits.</li>
+  </ul>
+
+  <h2>The amount</h2>
+  <p>Section 37(1): the penalty is generally <strong>double</strong> the sworn value of the estate. The judge may require more than one bond so that any surety’s liability is capped. For an heir in China, that figure is often unobtainable.</p>
+
+  <h2>Dispense or reduce: consent request vs motion</h2>
+  <p>The power sits in s. 37(2): the judge may reduce the amount or dispense with the bond in special circumstances.</p>
+  <p><strong>On consent, no motion — Rule 74.11(5).</strong> File with the application:</p>
+  <ul class="content-list">
+    <li>a draft order (Form 74I);</li>
+    <li>a consent (Form 74H) from each person entitled to share in the distribution;</li>
+    <li>an affidavit (Form 4D) covering those entitled to share, the deceased’s last occupation, and debts.</li>
+  </ul>
+  <p>The request must be on consent of everyone entitled to share, and none of them may be a minor or a person mentally incapable within the <em>Substitute Decisions Act</em> unless a guardian or an attorney with authority in the proceeding is acting.</p>
+  <p><strong>Otherwise, a motion under Rule 74.11(3).</strong> That means notice and a hearing date. If the consent path is open, do not start with a motion.</p>
+
+  <h2>How this meets heirs in China</h2>
+  <p>How consents are signed and authenticated in China is usually bound up with a <a href="/en/estate-trustee/china-heirs/">non-resident applicant</a>. Miss one person entitled to share, or include a minor beneficiary, and the consent path closes. List the family first, then decide between dispensation and posting a bond.</p>
+</EstateDoc>

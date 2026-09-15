@@ -1,0 +1,277 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_LAST_UPDATED_ZH } from '../../consts';
+import { ESTATE_TRUSTEE_PAGES, estateTrusteePath } from '../../data/estate-trustee';
+
+const origin = 'https://www.miaohelaw.ca';
+const faqs = [
+  {
+    q: '亲人在安省去世，有遗嘱是不是就不用去法院？',
+    a: '不一定。遗嘱指定了执行人，银行、土地局或投资机构仍常常要求法院签发的遗产受托人证书，才会让你动用死者名下的资产。联名房产、指定受益人的 RRSP、TFSA 或保险，有时可以不走这套。要不要申请，看资产怎么登记。电话：647-930-6688。',
+  },
+  {
+    q: '人在中国，能不能当安省的 estate trustee？',
+    a: '要看有没有遗嘱。无遗嘱时，《遗产法》第 5 条原则上不把 administration 授给非安省居民；有遗嘱、执行人在英联邦以外，通常要提供保证金，法官才可以减免。实务上经常是由安省居民申请，或在其他人同意后由符合条件的人申请。电话：647-930-6688。',
+  },
+  {
+    q: 'Bond 是什么，一定要买吗？',
+    a: 'Bond 是遗产管理保证金，用来担保受托人依法管理遗产。无遗嘱、非配偶申请人、非居民执行人时最常见。符合条件可以用同意方式申请免除或减免，不必一上来就走动议。何淼律师近期为一件无遗嘱案件申请了免除。电话：647-930-6688。',
+  },
+  {
+    q: '遗产不到 5 万是不是完全不用花钱？',
+    a: '2020 年 1 月 1 日起申请的，遗产价值 5 万加元及以下，遗产管理税为 0。仍可能需要向法院申请证书，并在出证后 180 天内向财政部提交 Estate Information Return。律师费另计，视程序而定，请来电说明。647-930-6688。',
+  },
+  {
+    q: '不到 15 万能不能走小额遗产程序？',
+    a: '可以考虑。2021 年 4 月 1 日起，遗产价值 15 万加元及以下可申请 Small Estate Certificate，表格更简单，多数情况不必交保证金。5 万免额的遗产管理税规则仍然适用，两套数字不要混。是否适合走小额程序，要按资产清单判断。电话：647-930-6688。',
+  },
+  {
+    q: '法院要多久？出证后还要报税吗？',
+    a: '省政府页面写完整申请通常 15 个工作日，实务因法院而异，多伦多往往更长。何淼律师近期一件有遗嘱的申请，大约四个月拿到证书。出证后 180 天内须向安省财政部提交 Estate Information Return。电话：647-930-6688。',
+  },
+];
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'LegalService',
+    name: '何淼律师 — 安省遗产认证',
+    url: `${origin}/estate-trustee/`,
+    telephone: '+1-647-930-6688',
+    email: 'miao@miaohelaw.ca',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: '208-7050 Woodbine Ave',
+      addressLocality: 'Markham',
+      addressRegion: 'ON',
+      addressCountry: 'CA',
+    },
+    serviceType: [
+      '安省遗产认证',
+      'Certificate of Appointment of Estate Trustee',
+      '有遗嘱遗产认证',
+      '无遗嘱遗产认证',
+      '遗产管理保证金',
+    ],
+    availableLanguage: [
+      { '@type': 'Language', name: 'Chinese (Mandarin)' },
+      { '@type': 'Language', name: 'English' },
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((item) => ({
+      '@type': 'Question',
+      name: item.q,
+      acceptedAnswer: { '@type': 'Answer', text: item.a },
+    })),
+  },
+];
+---
+<!doctype html>
+<html lang="zh">
+<head>
+  <BaseHead
+    title="安省遗产认证 | 亲人去世怎么办 | Estate Trustee | 何淼律师"
+    description="亲人在安省去世，如何申请遗产受托人证书。有遗嘱、无遗嘱分开讲。何淼律师办理中国继承人、保证金减免及国内证明文件。近期有遗嘱案件约四个月拿到证书。647-930-6688。"
+  />
+  <meta name="keywords" content="安省遗产认证,安省遗产继承,亲人安省去世怎么办,Estate Trustee,probate Ontario,无遗嘱遗产继承,继承人在中国,遗产管理税,何淼律师" />
+  <meta property="og:title" content="安省遗产认证 | 亲人去世怎么办 | 何淼律师" />
+  <meta property="og:description" content="有遗嘱、无遗嘱两条路径。中国继承人、保证金、遗产管理税写清楚。中加双执照。647-930-6688。" />
+  <link rel="alternate" hreflang="en" href={`${origin}/en/estate-trustee/`} />
+  <link rel="alternate" hreflang="zh" href={`${origin}/estate-trustee/`} />
+  <link rel="alternate" hreflang="x-default" href={`${origin}/estate-trustee/`} />
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+</head>
+<body>
+  <Header />
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="/">首页</a> › 文件服务 › 安省遗产认证
+          <span class="lang-pair"> · <a href="/en/estate-trustee/" lang="en">English</a></span>
+        </div>
+        <h1>亲人在安省去世怎么办：遗产受托人证书</h1>
+        <p class="hero-sub">有遗嘱 / 无遗嘱 · 中国继承人 · 保证金减免 · 647-930-6688</p>
+        <p class="page-last-updated page-last-updated--gradient">页面内容最后更新：{SITE_LAST_UPDATED_ZH}</p>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container content-grid">
+        <div class="main-content">
+
+          <div class="definition-box">
+            <p><strong>遗产受托人证书</strong>（Certificate of Appointment of Estate Trustee，口语里常叫 probate）是安省法院签发的文件，证明谁有权管理死者在安省的遗产：查账户、过户房产、还债、按遗嘱或法律规定分配。何淼律师是中加双执照诉讼律师。很多华人家庭的继承人在国内，不知道找谁办、保证金是什么意思；不少华人律师也申请不了这类文件。近期一件<strong>有遗嘱</strong>的申请大约<strong>四个月拿到证书</strong>；一件<strong>无遗嘱</strong>的申请，已经<strong>申请免除保证金</strong>。</p>
+          </div>
+
+          <h2>不是每一个遗产都必须去法院</h2>
+          <p>房产、银行账户、投资写在死者自己名下，机构通常要看这份证书才肯放行。下面这些情况，有时可以不申请：</p>
+          <ul class="content-list">
+            <li>联名房产带生存者权利（right of survivorship），直接转给在世的联名人；</li>
+            <li>RRSP、TFSA、人寿保险已经指定了受益人，且指定仍然有效；</li>
+            <li>个别机构对极小额账户有内部放行门槛——以该机构当时的要求为准。</li>
+          </ul>
+          <p>拿不准就先把资产登记方式说清楚，再决定走哪条路。电话：647-930-6688。</p>
+
+          <h2>两条路径：有遗嘱 vs 无遗嘱</h2>
+          <p>法院申请的表格、谁有权递件、要不要保证金，都从这里分开。</p>
+          <div class="doc-grid">
+            {ESTATE_TRUSTEE_PAGES.filter((item) => item.slug === 'with-a-will' || item.slug === 'without-a-will').map((item) => (
+              <a class="doc-card" href={estateTrusteePath(item.slug, 'zh')}>
+                <h3>{item.zh.cardTitle}</h3>
+                <p>{item.zh.cardDesc}</p>
+                <span class="doc-more">查看办理说明 →</span>
+              </a>
+            ))}
+          </div>
+
+          <h2>人在国内、不是安省居民</h2>
+          <p>多伦多华人家庭里太常见：父母在安省去世，唯一受益人或主要继承人在中国。无遗嘱时，非安省居民原则上不能直接获得 administration；有遗嘱时，英联邦以外的执行人通常要交保证金，除非法院减免。国内还要准备亲属关系、继承权或放弃继承的证明，常常要公证并做<a href="/hague-apostille/">海牙认证</a>。</p>
+          <p><a href="/estate-trustee/china-heirs/">继承人在中国：安省遗产认证怎么做 →</a></p>
+
+          <h2>要多少钱：遗产管理税怎么算</h2>
+          <p>这是交给安省财政部的税，不是律师费。2020 年 1 月 1 日起提出的申请：</p>
+          <ul class="content-list">
+            <li>遗产价值 <strong>5 万加元及以下：税为 0</strong>；</li>
+            <li>超出 5 万的部分：<strong>每 1,000 加元（不足一千按一千计）15 加元</strong>，也就是 1.5%。</li>
+          </ul>
+          <p>例子：遗产 24 万，超出 19 万，税 <strong>2,850 加元</strong>。算法、更多例子和出证后 180 天的 Estate Information Return，见<a href="/estate-trustee/estate-administration-tax/">安省遗产管理税</a>。律师费视有遗嘱、无遗嘱、是否跨境、是否申请免除保证金而定，请来电说明情况。</p>
+
+          <h2>要多久</h2>
+          <p>申请必须交到死者去世时住所对应的 Superior Court of Justice，不能挑排队短的法院。省政府写完整、无争议的申请通常 15 个工作日；实务上各地差很多，材料被退会再加几周。何淼律师近期一件有遗嘱的申请，大约四个月拿到证书。这是该案的结果，不是每一件的承诺。</p>
+
+          <h2>需要准备什么</h2>
+          <ul class="content-list">
+            <li>死亡证明；</li>
+            <li>有遗嘱的：遗嘱原件及任何附录，以及遗嘱签署的宣誓（Affidavit of Execution）；</li>
+            <li>无遗嘱的：婚姻、子女、亲属关系证明——国内证件往往还要公证或海牙认证；</li>
+            <li>安省境内资产清单和估值（房产、银行、投资、车辆等），用来算遗产管理税；</li>
+            <li>受益人姓名、地址、与死者的关系；</li>
+            <li>放弃申请或同意他人申请的表格（如有）；</li>
+            <li>保证金，或请求免除 / 减免保证金的材料。</li>
+          </ul>
+          <p>有遗嘱、无遗嘱的表格并不相同。清单按路径列在<a href="/estate-trustee/with-a-will/">有遗嘱</a>和<a href="/estate-trustee/without-a-will/">无遗嘱</a>页。</p>
+
+          <h2>小额遗产（15 万及以下）</h2>
+          <p>2021 年 4 月 1 日起，遗产价值 <strong>15 万加元及以下</strong>可以走可选的 Small Estate Certificate，表格比普通申请简单，多数情况不必交保证金（未成年或无行为能力受益人除外）。证书只覆盖清单里列明的资产。遗产管理税的 5 万免额仍然适用：15 万里，5 万以下部分不征税，超出部分仍按每千元 15 元计算。是否走小额程序，要看资产是否都列得清、日后会不会发现漏报。适合的，申请时一并规划；不适合的，仍走普通证书。</p>
+
+          <h2>特殊情况怎么走</h2>
+          <div class="use-case-grid">
+            <div class="use-case">
+              <h3>受益人在海外</h3>
+              <p>通知、同意书、国内身份和亲属关系证明都要一次做对。详见<a href="/estate-trustee/china-heirs/">继承人在中国</a>。</p>
+            </div>
+            <div class="use-case">
+              <h3>申请人不是最优先顺位</h3>
+              <p>无遗嘱时，安省有权申请的人可以同意由另一人申请（《遗产法》s. 29(2)）。特殊情况法院也可另指定人（s. 29(3)）。详见<a href="/estate-trustee/without-a-will/">无遗嘱申请</a>。</p>
+            </div>
+            <div class="use-case">
+              <h3>需要免除保证金</h3>
+              <p>全体有权分配的人同意、且没有未成年或无行为能力受益人时，可以随申请请求免除或减免，不必单独动议。详见<a href="/estate-trustee/administration-bond/">保证金 Bond</a>。</p>
+            </div>
+            <div class="use-case">
+              <h3>小额遗产程序</h3>
+              <p>15 万及以下可走 Small Estate Certificate。是否合适，看资产清单和受益人情况，见上面一节。</p>
+            </div>
+          </div>
+
+          <h2>按情况办理</h2>
+          <div class="doc-grid">
+            {ESTATE_TRUSTEE_PAGES.map((item) => (
+              <a class="doc-card" href={estateTrusteePath(item.slug, 'zh')}>
+                <h3>{item.zh.cardTitle}</h3>
+                <p>{item.zh.cardDesc}</p>
+                <span class="doc-more">查看办理说明 →</span>
+              </a>
+            ))}
+          </div>
+
+          <h2>常见问题</h2>
+          {faqs.map((item) => (
+            <div class="faq-item">
+              <h3>Q：{item.q}</h3>
+              <p>A：{item.a}</p>
+            </div>
+          ))}
+
+          <div class="cta-box">
+            <h3>先打电话说清遗产情况</h3>
+            <p>有没有遗嘱、继承人在哪、资产怎么登记 · 程序不同费用也不同</p>
+            <a href="/contact/" class="btn-primary">立即预约</a>
+            <a href="tel:6479306688" class="btn-secondary">647-930-6688</a>
+          </div>
+        </div>
+
+        <aside class="sidebar">
+          <div class="sidebar-card">
+            <h3>联系何淼律师</h3>
+            <p>📞 <a href="tel:6479306688">647-930-6688</a></p>
+            <p>📧 <a href="mailto:miao@miaohelaw.ca">miao@miaohelaw.ca</a></p>
+            <p>📍 208-7050 Woodbine Ave, Markham</p>
+            <p>💬 微信：372656035</p>
+          </div>
+          <div class="sidebar-card">
+            <h3>按情况办理</h3>
+            <ul>
+              {ESTATE_TRUSTEE_PAGES.map((item) => (
+                <li><a href={estateTrusteePath(item.slug, 'zh')}>{item.zh.navLabel}</a></li>
+              ))}
+              <li><a href="/hague-apostille/">海牙认证</a></li>
+              <li><a href="/notary-public/">公证服务 · Ontario</a></li>
+            </ul>
+          </div>
+          <div class="sidebar-card">
+            <h3>英文版</h3>
+            <p><a href="/en/estate-trustee/">🇨🇦 View in English</a></p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</body>
+</html>
+<style>
+  .page-hero{background:var(--hero-legal-top-background);border-bottom:1px solid rgba(0,0,0,0.35);color:white;padding:3rem 0 2rem}
+  .page-hero h1{font-size:2rem;margin:0.5rem 0;color:#ffffff}
+  .hero-sub{color:#D4A853;margin:0}
+  .breadcrumb{font-size:0.85rem;opacity:0.7;margin-bottom:0.5rem}
+  .breadcrumb a{color:white;text-decoration:none}
+  .container{max-width:1100px;margin:0 auto;padding:0 1.5rem}
+  .content-section{padding:3rem 0}
+  .content-grid{display:grid;grid-template-columns:1fr 300px;gap:3rem}
+  .definition-box{background:#FDF6EC;border-left:4px solid #9A8060;padding:1.2rem 1.5rem;margin-bottom:1.5rem;border-radius:0 8px 8px 0}
+  .content-list{padding-left:1.2rem}
+  .content-list li{margin:0.6rem 0;color:#4A2C1A}
+  .use-case-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin:1.5rem 0}
+  .use-case{background:#f8f8f8;border-radius:8px;padding:1.2rem 1.5rem;border-left:3px solid #9A8060}
+  .use-case h3{color:var(--text-heading);margin-top:0;font-size:0.95rem}
+  .use-case p{margin:0.5rem 0 0;font-size:0.9rem;color:#4A2C1A}
+  .doc-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.5rem 0}
+  .doc-card{display:block;background:#f8f8f8;border-radius:8px;padding:1.1rem 1.2rem;border-left:3px solid #9A8060;text-decoration:none;color:inherit}
+  .doc-card h3{color:var(--text-heading);margin:0 0 0.4rem;font-size:0.95rem}
+  .doc-card p{margin:0;font-size:0.88rem;color:#4A2C1A}
+  .doc-more{display:inline-block;margin-top:0.7rem;font-size:0.85rem;font-weight:700;color:#9A8060}
+  .faq-item{background:#f8f8f8;border-radius:8px;padding:1.2rem 1.5rem;margin:1.5rem 0;border-left:3px solid #9A8060}
+  .faq-item h3{color:var(--text-heading);margin-top:0;font-size:1rem}
+  .cta-box{background:linear-gradient(135deg,#2C1810,#4A2C1A);color:white;padding:2rem;border-radius:12px;text-align:center;margin-top:2rem}
+  .cta-box h3{margin-top:0;color:#D4A853}
+  .cta-box p{color:#ffffff}
+  .btn-primary{display:inline-block;background:#D4A853;color:var(--text-heading);padding:0.75rem 1.5rem;border-radius:6px;text-decoration:none;font-weight:700;margin:0.5rem}
+  .btn-secondary{display:inline-block;background:transparent;color:white;border:2px solid white;padding:0.75rem 1.5rem;border-radius:6px;text-decoration:none;font-weight:700;margin:0.5rem}
+  .sidebar{display:flex;flex-direction:column;gap:1.5rem}
+  .sidebar-card{background:white;border:1px solid #e8e0d5;border-radius:10px;padding:1.2rem}
+  .sidebar-card h3{color:var(--text-heading);font-size:0.95rem;margin-top:0;border-bottom:1px solid #e8e0d5;padding-bottom:0.5rem;margin-bottom:0.75rem}
+  .sidebar-card ul{list-style:none;padding:0;margin:0}
+  .sidebar-card li{padding:0.3rem 0;border-bottom:1px solid #f0ebe3;font-size:0.9rem}
+  .sidebar-card a{color:#9A8060;text-decoration:none}
+  .sidebar-card p{margin:0.3rem 0;font-size:0.9rem}
+  h2{color:var(--text-heading);margin-top:2rem}
+  h3{color:#4A2C1A}
+  @media(max-width:768px){.content-grid{grid-template-columns:1fr}.page-hero h1{font-size:1.5rem}.use-case-grid,.doc-grid{grid-template-columns:1fr}}
+</style>

@@ -1,0 +1,41 @@
+---
+import EstateDoc from '../../../layouts/EstateDoc.astro';
+
+const faqs = [
+  {
+    q: 'I live in China and I am the only beneficiary. Can I be the estate trustee?',
+    a: 'On an intestacy, generally no: administration is not granted to a non-resident of Ontario. If you are the executor named in a will, you may apply, but you will usually need a bond unless the court dispenses with it. In practice an Ontario resident often applies and you cooperate as beneficiary with consents and China-side documents. Call 647-930-6688.',
+  },
+  {
+    q: 'What documents are needed from China?',
+    a: 'Identity, kinship, inheritance rights or a waiver of succession are the usual set. How a China notarial document is used in Ontario is a different path from how an Ontario document is used in China. Miao He runs the court application and the Apostille work in one plan so the two sets of papers match. 647-930-6688.',
+  },
+  {
+    q: 'Why do so many Mandarin-speaking lawyers turn these files away?',
+    a: 'This is an application to the Superior Court of Justice, not a certified copy. Non-resident applicants, the bond, and China-side proof have to be right together. Miao He is licensed in both China and Ontario, so the court application and the documents the China offices will accept can sit in one timetable. Call 647-930-6688.',
+  },
+];
+---
+<EstateDoc lang="en" slug="china-heirs" faqs={faqs}>
+  <div class="definition-box">
+    <p>A parent dies in Ontario. The only beneficiary — or the main heirs — live in China. That is the usual Greater Toronto Chinese-family file. People often ask several lawyers before they find someone who can file the court application and deal with the China-side documents and the bond. That is this practice.</p>
+  </div>
+
+  <h2>Start with whether there is a will</h2>
+  <p><strong>No will.</strong> Estates Act s. 5: letters of administration are not granted to a person who does not reside in Ontario. A child who lives in China should not assume they can be the administrator. An Ontario resident usually applies, or another person applies with the consents contemplated by s. 29(2). See <a href="/en/estate-trustee/without-a-will/">without a will</a>.</p>
+  <p><strong>With a will.</strong> The named executor may apply. If they do not reside in Ontario or elsewhere in the Commonwealth, s. 6 usually requires the same security as an administrator on intestacy unless the court dispenses with it. See <a href="/en/estate-trustee/with-a-will/">with a will</a> and the <a href="/en/estate-trustee/administration-bond/">administration bond</a>.</p>
+
+  <h2>Why the bond is where these files stall</h2>
+  <p>The bond is security to the court for due administration. The penalty is commonly double the sworn value of the estate — expensive and hard to obtain for an heir in China. Where the rules allow it, the court can be asked to <strong>dispense with or reduce the bond on consent</strong>, without starting with a motion. A recent intestacy file in this office took that path.</p>
+
+  <h2>Plan the China documents with the Ontario application</h2>
+  <ul class="content-list">
+    <li>kinship: birth records, hukou, China notarial kinship certificates, often with a <a href="/en/hague-apostille/parent-child-declaration/">parent-child declaration Apostille</a>;</li>
+    <li>name mismatches across passport, Chinese ID and a property deed: a <a href="/en/hague-apostille/same-name-declaration/">same-name declaration</a>;</li>
+    <li>someone renouncing in Ontario or in China: the <a href="/en/hague-apostille/renunciation-of-inheritance/">waiver</a> has to be drafted once, correctly;</li>
+    <li>using an Ontario certificate in China, or a China document in an Ontario court, are opposite directions with different authentication paths. Dual licensing lets both sit on one timetable.</li>
+  </ul>
+
+  <h2>What to have ready when you call</h2>
+  <p>Whether there is a will, where it is, which country each heir lives in, and which Ontario assets exist — especially real estate and bank accounts. Fees follow the procedure. Call 647-930-6688.</p>
+</EstateDoc>

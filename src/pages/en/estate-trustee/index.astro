@@ -1,0 +1,277 @@
+---
+import BaseHead from '../../../components/BaseHead.astro';
+import HeaderEn from '../../../components/HeaderEn.astro';
+import Footer from '../../../components/Footer.astro';
+import { SITE_LAST_UPDATED_EN } from '../../../consts';
+import { ESTATE_TRUSTEE_PAGES, estateTrusteePath } from '../../../data/estate-trustee';
+
+const origin = 'https://www.miaohelaw.ca';
+const faqs = [
+  {
+    q: 'If there is a will, do we still need to go to court?',
+    a: 'Often yes. Banks, the land registry and investment firms still commonly require a Certificate of Appointment of Estate Trustee before they will deal with assets in the deceased’s name alone. Jointly held property with a right of survivorship, and RRSPs, TFSAs or life insurance with a valid beneficiary designation, may not need probate. It depends on how the assets are registered. Call 647-930-6688.',
+  },
+  {
+    q: 'Can someone living in China be the estate trustee in Ontario?',
+    a: 'It depends on whether there is a will. On an intestacy, Estates Act s. 5 generally does not permit administration to be granted to a person who does not reside in Ontario. With a will, an executor outside the Commonwealth usually must give security unless the court dispenses with it. In practice an Ontario resident often applies, or another person applies with the consents of those entitled. Call 647-930-6688.',
+  },
+  {
+    q: 'What is an administration bond, and is it always required?',
+    a: 'It is security for the due administration of the estate. It is most common on an intestacy, when the applicant is not the surviving spouse, or when a non-resident executor applies. Where everyone entitled to share consents and there is no minor or incapable beneficiary, the court can be asked to dispense with or reduce the bond without a separate motion. Miao He recently applied to dispense with the bond on an intestacy. Call 647-930-6688.',
+  },
+  {
+    q: 'If the estate is under $50,000, is there nothing to pay?',
+    a: 'For applications made on or after 1 January 2020, estate administration tax is $0 if the estate value is $50,000 or less. You may still need a court certificate, and you must still file an Estate Information Return with the Ministry of Finance within 180 days after the certificate is issued. Legal fees are separate and depend on the procedure. Call 647-930-6688.',
+  },
+  {
+    q: 'Can we use the small-estate process if the estate is under $150,000?',
+    a: 'Possibly. Since 1 April 2021, an estate of $150,000 or less may use the optional Small Estate Certificate. The forms are simpler and a bond is usually not required unless a beneficiary is a minor or incapable. The $50,000 estate-tax exemption still applies. Whether the small-estate route fits depends on the asset list. Call 647-930-6688.',
+  },
+  {
+    q: 'How long does the court take, and is there a tax filing after the certificate?',
+    a: 'Ontario’s page still says a complete application is typically processed within 15 business days. Actual waits vary widely by courthouse. A recent with-a-will application in this office received the certificate in about four months. That is one file, not a promise. An Estate Information Return is due 180 days after the certificate. Call 647-930-6688.',
+  },
+];
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'LegalService',
+    name: 'Miao He — Ontario Probate & Estate Trustee',
+    url: `${origin}/en/estate-trustee/`,
+    telephone: '+1-647-930-6688',
+    email: 'miao@miaohelaw.ca',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: '208-7050 Woodbine Ave',
+      addressLocality: 'Markham',
+      addressRegion: 'ON',
+      addressCountry: 'CA',
+    },
+    serviceType: [
+      'Ontario probate',
+      'Certificate of Appointment of Estate Trustee',
+      'Estate Trustee with a Will',
+      'Estate Trustee without a Will',
+      'Estate administration bond',
+    ],
+    availableLanguage: [
+      { '@type': 'Language', name: 'Chinese (Mandarin)' },
+      { '@type': 'Language', name: 'English' },
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((item) => ({
+      '@type': 'Question',
+      name: item.q,
+      acceptedAnswer: { '@type': 'Answer', text: item.a },
+    })),
+  },
+];
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <BaseHead
+    title="Ontario Probate | Certificate of Estate Trustee | Miao He"
+    description="How to apply for a Certificate of Appointment of Estate Trustee in Ontario. Separate paths with and without a will. Dual-licensed lawyer for heirs in China, bond dispensation, and China-side documents. Recent with-a-will certificate in about four months. 647-930-6688."
+  />
+  <meta name="keywords" content="probate Ontario,how to apply for probate,Certificate of Appointment of Estate Trustee,probate without a will Ontario,estate administration tax Ontario,heirs in China,Miao He" />
+  <meta property="og:title" content="Ontario Probate | Estate Trustee Certificate | Miao He" />
+  <meta property="og:description" content="With a will vs without. Heirs in China, administration bonds, and the estate administration tax formula. Dual-licensed. 647-930-6688." />
+  <link rel="alternate" hreflang="en" href={`${origin}/en/estate-trustee/`} />
+  <link rel="alternate" hreflang="zh" href={`${origin}/estate-trustee/`} />
+  <link rel="alternate" hreflang="x-default" href={`${origin}/estate-trustee/`} />
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+</head>
+<body>
+  <HeaderEn />
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="/en/">Home</a> › Document Services › Ontario Probate
+          <span class="lang-pair"> · <a href="/estate-trustee/" lang="zh">中文</a></span>
+        </div>
+        <h1>Ontario Probate: Certificate of Appointment of Estate Trustee</h1>
+        <p class="hero-sub">With or without a will · Heirs in China · Bond relief · 647-930-6688</p>
+        <p class="page-last-updated page-last-updated--gradient">Page last updated: {SITE_LAST_UPDATED_EN}</p>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container content-grid">
+        <div class="main-content">
+
+          <div class="definition-box">
+            <p>A <strong>Certificate of Appointment of Estate Trustee</strong> — what most people call probate — is the Ontario court document that authorizes someone to deal with the deceased’s estate: bank accounts, real estate, debts, and distribution under the will or the intestacy rules. Miao He is licensed in both China and Ontario. Chinese families often find her only after asking several lawyers, because the heirs are in China, they do not know what a bond is, and many Mandarin-speaking lawyers cannot run this application. A recent <strong>with-a-will</strong> file received the certificate in about <strong>four months</strong>. A recent <strong>intestacy</strong> file included an application to <strong>dispense with the bond</strong>.</p>
+          </div>
+
+          <h2>Not every estate needs a court certificate</h2>
+          <p>Assets in the deceased’s name alone — a house, a bank account, an investment account — usually do. These often do not:</p>
+          <ul class="content-list">
+            <li>jointly held real estate with a right of survivorship;</li>
+            <li>RRSPs, TFSAs or life insurance with a valid beneficiary designation;</li>
+            <li>some institutions’ internal thresholds for very small balances — ask the institution.</li>
+          </ul>
+          <p>If you are unsure, start with how each asset is registered. Call 647-930-6688.</p>
+
+          <h2>Two paths: with a will vs without a will</h2>
+          <p>The forms, who may apply, and whether a bond is required all split here.</p>
+          <div class="doc-grid">
+            {ESTATE_TRUSTEE_PAGES.filter((item) => item.slug === 'with-a-will' || item.slug === 'without-a-will').map((item) => (
+              <a class="doc-card" href={estateTrusteePath(item.slug, 'en')}>
+                <h3>{item.en.cardTitle}</h3>
+                <p>{item.en.cardDesc}</p>
+                <span class="doc-more">Read the guide →</span>
+              </a>
+            ))}
+          </div>
+
+          <h2>The family is in China, or the applicant is not an Ontario resident</h2>
+          <p>This is the usual Toronto Chinese-family file: a parent dies in Ontario and the only beneficiary, or the main heirs, live in China. On an intestacy a non-resident generally cannot take administration. With a will, an executor outside the Commonwealth usually needs a bond unless the court dispenses with it. Kinship and inheritance documents from China often need notarization and an <a href="/en/hague-apostille/">Apostille</a>.</p>
+          <p><a href="/en/estate-trustee/china-heirs/">Heirs in China: how Ontario probate works →</a></p>
+
+          <h2>What it costs: estate administration tax</h2>
+          <p>This is tax to the Ontario Ministry of Finance, not a legal fee. For applications made on or after 1 January 2020:</p>
+          <ul class="content-list">
+            <li>estate value of <strong>$50,000 or less: $0 tax</strong>;</li>
+            <li>on the amount above $50,000: <strong>$15 for every $1,000 or part thereof</strong> — 1.5%.</li>
+          </ul>
+          <p>Example: a $240,000 estate pays <strong>$2,850</strong>. Worked examples and the 180-day Estate Information Return are on the <a href="/en/estate-trustee/estate-administration-tax/">estate administration tax</a> page. Legal fees depend on the path, whether the file is cross-border, and whether bond relief is required. Call with the facts.</p>
+
+          <h2>How long it takes</h2>
+          <p>The application is filed at the Superior Court of Justice for the place where the deceased lived. You cannot pick a faster courthouse. Ontario still describes a complete, uncontested application as typically 15 business days; actual waits vary, and a requisition adds weeks. A recent with-a-will application in this office received the certificate in about four months. That is that file’s result, not a guarantee.</p>
+
+          <h2>What to prepare</h2>
+          <ul class="content-list">
+            <li>proof of death;</li>
+            <li>if there is a will: the original will and any codicils, plus an affidavit of execution;</li>
+            <li>if there is no will: proof of marriage, children and kinship — China-issued records often need notarization or an Apostille;</li>
+            <li>a list and values of Ontario assets, used to calculate estate administration tax;</li>
+            <li>names, addresses and relationship of the beneficiaries;</li>
+            <li>renunciations or consents, if someone else is applying;</li>
+            <li>the bond, or the materials asking the court to dispense with or reduce it.</li>
+          </ul>
+          <p>The forms differ by path. See the <a href="/en/estate-trustee/with-a-will/">with a will</a> and <a href="/en/estate-trustee/without-a-will/">without a will</a> pages.</p>
+
+          <h2>Small estates ($150,000 or less)</h2>
+          <p>Since 1 April 2021, an estate of <strong>$150,000 or less</strong> may use the optional Small Estate Certificate. The forms are simpler, and a bond is usually not required unless a beneficiary is a minor or incapable. The certificate covers only the assets listed. The $50,000 estate-tax exemption still applies. Whether this route fits depends on whether every asset can be listed now and whether more assets may turn up later.</p>
+
+          <h2>Special situations</h2>
+          <div class="use-case-grid">
+            <div class="use-case">
+              <h3>Beneficiaries overseas</h3>
+              <p>Notices, consents, and China-side identity and kinship documents have to be right the first time. See <a href="/en/estate-trustee/china-heirs/">heirs in China</a>.</p>
+            </div>
+            <div class="use-case">
+              <h3>The applicant is not first in priority</h3>
+              <p>On an intestacy, those entitled in Ontario may consent to another person applying (Estates Act s. 29(2)). The court may also appoint someone else in special circumstances (s. 29(3)). See <a href="/en/estate-trustee/without-a-will/">without a will</a>.</p>
+            </div>
+            <div class="use-case">
+              <h3>Bond dispensation</h3>
+              <p>If everyone entitled to share consents and no beneficiary is a minor or incapable, the request can go in with the application — no separate motion. See <a href="/en/estate-trustee/administration-bond/">administration bond</a>.</p>
+            </div>
+            <div class="use-case">
+              <h3>Small-estate procedure</h3>
+              <p>Available at $150,000 or less. Whether it fits depends on the asset list and the beneficiaries, as above.</p>
+            </div>
+          </div>
+
+          <h2>Guides by situation</h2>
+          <div class="doc-grid">
+            {ESTATE_TRUSTEE_PAGES.map((item) => (
+              <a class="doc-card" href={estateTrusteePath(item.slug, 'en')}>
+                <h3>{item.en.cardTitle}</h3>
+                <p>{item.en.cardDesc}</p>
+                <span class="doc-more">Read the guide →</span>
+              </a>
+            ))}
+          </div>
+
+          <h2>Frequently asked questions</h2>
+          {faqs.map((item) => (
+            <div class="faq-item">
+              <h3>Q: {item.q}</h3>
+              <p>A: {item.a}</p>
+            </div>
+          ))}
+
+          <div class="cta-box">
+            <h3>Call with the facts of the estate</h3>
+            <p>Will or no will · where the heirs live · how the assets are registered · fees follow the procedure</p>
+            <a href="/en/contact/" class="btn-primary">Book now</a>
+            <a href="tel:6479306688" class="btn-secondary">647-930-6688</a>
+          </div>
+        </div>
+
+        <aside class="sidebar">
+          <div class="sidebar-card">
+            <h3>Contact Miao He</h3>
+            <p>📞 <a href="tel:6479306688">647-930-6688</a></p>
+            <p>📧 <a href="mailto:miao@miaohelaw.ca">miao@miaohelaw.ca</a></p>
+            <p>📍 208-7050 Woodbine Ave, Markham</p>
+            <p>💬 WeChat: 372656035</p>
+          </div>
+          <div class="sidebar-card">
+            <h3>By situation</h3>
+            <ul>
+              {ESTATE_TRUSTEE_PAGES.map((item) => (
+                <li><a href={estateTrusteePath(item.slug, 'en')}>{item.en.navLabel}</a></li>
+              ))}
+              <li><a href="/en/hague-apostille/">Hague Apostille</a></li>
+              <li><a href="/en/notary-public/">Notary Public · Ontario</a></li>
+            </ul>
+          </div>
+          <div class="sidebar-card">
+            <h3>中文版</h3>
+            <p><a href="/estate-trustee/">🇨🇳 中文版</a></p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <Footer lang="en" />
+</body>
+</html>
+<style>
+  .page-hero{background:var(--hero-legal-top-background);border-bottom:1px solid rgba(0,0,0,0.35);color:white;padding:3rem 0 2rem}
+  .page-hero h1{font-size:2rem;margin:0.5rem 0;color:#ffffff}
+  .hero-sub{color:#D4A853;margin:0}
+  .breadcrumb{font-size:0.85rem;opacity:0.7;margin-bottom:0.5rem}
+  .breadcrumb a{color:white;text-decoration:none}
+  .container{max-width:1100px;margin:0 auto;padding:0 1.5rem}
+  .content-section{padding:3rem 0}
+  .content-grid{display:grid;grid-template-columns:1fr 300px;gap:3rem}
+  .definition-box{background:#FDF6EC;border-left:4px solid #9A8060;padding:1.2rem 1.5rem;margin-bottom:1.5rem;border-radius:0 8px 8px 0}
+  .content-list{padding-left:1.2rem}
+  .content-list li{margin:0.6rem 0;color:#4A2C1A}
+  .use-case-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin:1.5rem 0}
+  .use-case{background:#f8f8f8;border-radius:8px;padding:1.2rem 1.5rem;border-left:3px solid #9A8060}
+  .use-case h3{color:var(--text-heading);margin-top:0;font-size:0.95rem}
+  .use-case p{margin:0.5rem 0 0;font-size:0.9rem;color:#4A2C1A}
+  .doc-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.5rem 0}
+  .doc-card{display:block;background:#f8f8f8;border-radius:8px;padding:1.1rem 1.2rem;border-left:3px solid #9A8060;text-decoration:none;color:inherit}
+  .doc-card h3{color:var(--text-heading);margin:0 0 0.4rem;font-size:0.95rem}
+  .doc-card p{margin:0;font-size:0.88rem;color:#4A2C1A}
+  .doc-more{display:inline-block;margin-top:0.7rem;font-size:0.85rem;font-weight:700;color:#9A8060}
+  .faq-item{background:#f8f8f8;border-radius:8px;padding:1.2rem 1.5rem;margin:1.5rem 0;border-left:3px solid #9A8060}
+  .faq-item h3{color:var(--text-heading);margin-top:0;font-size:1rem}
+  .cta-box{background:linear-gradient(135deg,#2C1810,#4A2C1A);color:white;padding:2rem;border-radius:12px;text-align:center;margin-top:2rem}
+  .cta-box h3{margin-top:0;color:#D4A853}
+  .cta-box p{color:#ffffff}
+  .btn-primary{display:inline-block;background:#D4A853;color:var(--text-heading);padding:0.75rem 1.5rem;border-radius:6px;text-decoration:none;font-weight:700;margin:0.5rem}
+  .btn-secondary{display:inline-block;background:transparent;color:white;border:2px solid white;padding:0.75rem 1.5rem;border-radius:6px;text-decoration:none;font-weight:700;margin:0.5rem}
+  .sidebar{display:flex;flex-direction:column;gap:1.5rem}
+  .sidebar-card{background:white;border:1px solid #e8e0d5;border-radius:10px;padding:1.2rem}
+  .sidebar-card h3{color:var(--text-heading);font-size:0.95rem;margin-top:0;border-bottom:1px solid #e8e0d5;padding-bottom:0.5rem;margin-bottom:0.75rem}
+  .sidebar-card ul{list-style:none;padding:0;margin:0}
+  .sidebar-card li{padding:0.3rem 0;border-bottom:1px solid #f0ebe3;font-size:0.9rem}
+  .sidebar-card a{color:#9A8060;text-decoration:none}
+  .sidebar-card p{margin:0.3rem 0;font-size:0.9rem}
+  h2{color:var(--text-heading);margin-top:2rem}
+  h3{color:#4A2C1A}
+  @media(max-width:768px){.content-grid{grid-template-columns:1fr}.page-hero h1{font-size:1.5rem}.use-case-grid,.doc-grid{grid-template-columns:1fr}}
+</style>

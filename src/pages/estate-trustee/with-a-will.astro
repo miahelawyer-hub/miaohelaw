@@ -1,0 +1,56 @@
+---
+import EstateDoc from '../../layouts/EstateDoc.astro';
+
+const faqs = [
+  {
+    q: '有遗嘱是不是执行人可以直接去银行办？',
+    a: '多数情况下不行。遗嘱本身证明谁被指定，但不代替法院证书。银行、土地局和投资机构通常要看到 Certificate of Appointment of Estate Trustee with a Will，才会让执行人动用死者名下的资产。电话：647-930-6688。',
+  },
+  {
+    q: '遗嘱指定的执行人在中国，还能申请吗？',
+    a: '可以申请，但执行人若不住在安省或英联邦，通常要按《遗产法》第 6 条提供保证金，除非法官减免。也可以由安省的人在放弃或同意后申请。详见继承人在中国一页。647-930-6688。',
+  },
+  {
+    q: '你们最近有遗嘱的案子多久拿到证书？',
+    a: '近期一件有遗嘱的申请，大约四个月拿到证书。周期取决于去世时住所对应的法院，以及材料是否一次交齐。这是该案结果，不是每一件的承诺。电话：647-930-6688。',
+  },
+];
+---
+<EstateDoc lang="zh" slug="with-a-will" faqs={faqs}>
+  <div class="definition-box">
+    <p>何淼律师近期办理一件<strong>有遗嘱</strong>的遗产受托人证书申请，大约<strong>四个月拿到证书</strong>。路径是 Certificate of Appointment of Estate Trustee <strong>with a Will</strong>：法院确认遗嘱、确认执行人，机构才肯放行死者名下的房产和账户。</p>
+  </div>
+
+  <h2>这条路径什么时候走</h2>
+  <p>死者留下有效遗嘱，并指定了执行人（estate trustee / executor）。常见卡点不是「有没有遗嘱」，而是：</p>
+  <ul class="content-list">
+    <li>遗嘱原件在哪、有没有附录（codicil）；</li>
+    <li>见证人能否做 Affidavit of Execution；手写遗嘱要另证笔迹；</li>
+    <li>执行人是否在安省、是否愿意就任、是否需要保证金；</li>
+    <li>资产是否登记在死者自己名下——如果是，机构几乎一定要证书。</li>
+  </ul>
+
+  <h2>谁有权申请</h2>
+  <p>原则上是遗嘱指定的执行人。指定的人拒绝或无法就任，可以由遗嘱里的候补执行人申请，或在符合《遗产法》的情况下由其他人申请 administration with the will annexed。执行人在中国，见<a href="/estate-trustee/china-heirs/">继承人在中国</a>和<a href="/estate-trustee/administration-bond/">保证金</a>。</p>
+
+  <h2>办理步骤</h2>
+  <div class="process-box">
+    <div class="process-step"><span class="step-num">1</span><div><strong>核对遗嘱和资产</strong><p>确认原件、附录、见证人，列出安省境内需要证书才能动用的资产，估算遗产管理税。</p></div></div>
+    <div class="process-step"><span class="step-num">2</span><div><strong>通知有权获分配的人</strong><p>按规则向受益人发出申请通知，保留送达证明。</p></div></div>
+    <div class="process-step"><span class="step-num">3</span><div><strong>准备法院表格</strong><p>申请书、草稿证书、遗嘱原件、执行宣誓、资产估值。执行人非居民时，一并准备保证金或免除请求。</p></div></div>
+    <div class="process-step"><span class="step-num">4</span><div><strong>交到对的法院</strong><p>交到死者去世时住所对应的 Superior Court of Justice。不能因为某地排队短就换法院。</p></div></div>
+    <div class="process-step"><span class="step-num">5</span><div><strong>出证后报税</strong><p>证书签发后 180 天内，向安省财政部提交 Estate Information Return。</p></div></div>
+  </div>
+
+  <h2>需要准备的文件</h2>
+  <ul class="content-list">
+    <li>死亡证明；</li>
+    <li>遗嘱原件及任何附录；</li>
+    <li>遗嘱签署宣誓（见证人；找不到见证人时按法院要求另证）；</li>
+    <li>执行人身份证明；人在国内的，护照和地址材料；</li>
+    <li>安省资产清单和估值；</li>
+    <li>受益人名单；</li>
+    <li>保证金，或请求免除 / 减免的同意书和宣誓。</li>
+  </ul>
+  <p>遗产管理税按遗产价值计算，算法见<a href="/estate-trustee/estate-administration-tax/">遗产管理税</a>。律师费视材料是否跨境、执行人是否在国外而定，请来电说明。647-930-6688。</p>
+</EstateDoc>

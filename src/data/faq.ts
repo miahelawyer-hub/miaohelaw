@@ -1933,6 +1933,116 @@ export const faqItems: FaqItem[] = [
     keywords:
       'Case Conference准备,Form 17A,Form 17F,安省案件会议,家庭法Case Conference,财务陈述Form 13,安省家庭法规则17,何淼律师',
   },
+  {
+    slug: 'qinren-ansheng-qushi-zenmeban',
+    capsule: '亲人在安省去世，怎么申请遗产认证？',
+    question: '亲人在安省去世，有遗嘱是不是就不用去法院？',
+    featured: true,
+    detailPath: '/estate-trustee/',
+    pairedFaqPath: '/en/estate-trustee/',
+    metaTitle: '亲人在安省去世怎么办 | 遗产受托人证书 | 何淼律师',
+    metaDescription:
+      '有遗嘱也不等于不用去法院。银行和土地局通常要遗产受托人证书。何淼律师办理有遗嘱、无遗嘱及中国继承人申请。647-930-6688。',
+    summary:
+      '不一定。遗嘱指定了执行人，银行、土地局仍常常要求法院签发的遗产受托人证书。联名房产、指定受益人的注册账户有时可以不走这套。',
+    answers: [
+      '多数写在死者自己名下的房产和账户，机构要看到 Certificate of Appointment of Estate Trustee 才肯放行。',
+      '何淼律师近期一件有遗嘱的申请大约四个月拿到证书；一件无遗嘱的申请已请求免除保证金。',
+    ],
+    details: [
+      '详见<a href="/estate-trustee/">安省遗产认证</a>总览：有遗嘱、无遗嘱、继承人在中国、保证金和遗产管理税分开说明。',
+      '预约请致电 647-930-6688。',
+    ],
+    keywords: '亲人安省去世怎么办,安省遗产认证,estate trustee,有遗嘱还要probate吗,何淼律师',
+  },
+  {
+    slug: 'wu-yizhu-ansheng-jicheng',
+    capsule: '安省无遗嘱，谁有权申请、财产怎么分？',
+    question: '安省没有遗嘱，遗产怎么继承、谁去法院申请？',
+    featured: true,
+    detailPath: '/estate-trustee/without-a-will/',
+    pairedFaqPath: '/en/estate-trustee/without-a-will/',
+    metaTitle: '无遗嘱安省遗产继承 | 何淼律师',
+    metaDescription:
+      '无遗嘱按《继承法改革法》分配。非居民原则上不能当 administrator。何淼律师办理无遗嘱申请及保证金免除。647-930-6688。',
+    summary:
+      '财产分配和谁去法院申请是两件事。同居伴侣一般不按无遗嘱继承。人在中国通常不能直接当 administrator。',
+    answers: [
+      '已婚配偶有优先份额；有子女时再和子女分剩余部分。',
+      '其他人同意后，可以由非优先顺位的人申请（Estates Act s. 29(2)）。',
+    ],
+    details: [
+      '详见<a href="/estate-trustee/without-a-will/">无遗嘱申请</a>。',
+      '预约请致电 647-930-6688。',
+    ],
+    keywords: '无遗嘱遗产继承安省,intestate Ontario,谁有权申请estate trustee,何淼律师',
+  },
+  {
+    slug: 'jichengren-zai-zhongguo-probate',
+    capsule: '继承人在中国，安省遗产认证怎么做？',
+    question: '人在中国，是唯一受益人，能不能自己当安省 estate trustee？',
+    featured: true,
+    detailPath: '/estate-trustee/china-heirs/',
+    pairedFaqPath: '/en/estate-trustee/china-heirs/',
+    metaTitle: '继承人在中国 | 安省遗产认证 | 何淼律师',
+    metaDescription:
+      '无遗嘱时非居民原则上不能获得 administration。有遗嘱的执行人通常要保证金。何淼律师处理中国继承人与国内证明文件。647-930-6688。',
+    summary:
+      '无遗嘱时原则上不能自己当 administrator；有遗嘱可以申请，但通常要保证金，除非法官减免。',
+    answers: [
+      '实务上常由安省居民申请，国内受益人配合同意书和亲属关系证明。',
+      '国内公证、海牙认证和安省法院申请要放在同一套方案里。',
+    ],
+    details: [
+      '详见<a href="/estate-trustee/china-heirs/">继承人在中国</a>。',
+      '预约请致电 647-930-6688。',
+    ],
+    keywords: '继承人在中国,非居民estate trustee,人在国内遗产认证,何淼律师',
+  },
+  {
+    slug: 'ansheng-yichan-baozhengjin',
+    capsule: '安省遗产保证金是什么，可以免除吗？',
+    question: '安省遗产认证的保证金（bond）一定要交吗？',
+    featured: true,
+    detailPath: '/estate-trustee/administration-bond/',
+    pairedFaqPath: '/en/estate-trustee/administration-bond/',
+    metaTitle: '安省遗产保证金免除 | 何淼律师',
+    metaDescription:
+      '符合条件可以用同意方式申请免除或减免保证金，不必一上来就动议。何淼律师近期无遗嘱案件已申请免除。647-930-6688。',
+    summary:
+      '无遗嘱、非居民执行人时最常被要求。全体有权分配的人同意且没有未成年受益人时，可以随申请请求免除。',
+    answers: [
+      'Rule 74.11(5) 允许同意申请，不必单独动议。',
+      '何淼律师近期一件无遗嘱案件已申请免除保证金。',
+    ],
+    details: [
+      '详见<a href="/estate-trustee/administration-bond/">保证金 Bond</a>。',
+      '预约请致电 647-930-6688。',
+    ],
+    keywords: '遗产保证金安省,administration bond,免除bond,Rule 74.11,何淼律师',
+  },
+  {
+    slug: 'ansheng-yichan-guanlishui',
+    capsule: '安省遗产管理税：5 万以下免，超出每千元 15 元',
+    question: '安省遗产认证要交多少税？5 万以下是不是不用交？',
+    featured: true,
+    detailPath: '/estate-trustee/estate-administration-tax/',
+    pairedFaqPath: '/en/estate-trustee/estate-administration-tax/',
+    metaTitle: '安省遗产管理税怎么算 | 何淼律师',
+    metaDescription:
+      '2020年起申请：5万及以下税为0，超出部分每千元15元。这是交给财政部的税，不是律师费。647-930-6688。',
+    summary:
+      '5 万及以下税为 0；超出部分每 1,000 加元（不足一千按一千）15 加元。例如遗产 24 万，税 2,850 加元。',
+    answers: [
+      '这是交给安省财政部的税，不是律师费。',
+      '出证后 180 天内通常还要提交 Estate Information Return。',
+    ],
+    details: [
+      '详见<a href="/estate-trustee/estate-administration-tax/">遗产管理税</a>。',
+      '预约请致电 647-930-6688。',
+    ],
+    keywords: '安省遗产管理税,estate administration tax Ontario,每千元15元,5万免税,何淼律师',
+  },
 ];
 
 export function getFaqItemsForListing(): FaqItem[] {
