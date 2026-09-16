@@ -1953,7 +1953,7 @@ export const faqItems: FaqItem[] = [
       '详见<a href="/estate-trustee/">安省遗产认证</a>总览：有遗嘱、无遗嘱、继承人在中国、保证金和遗产管理税分开说明。',
       '预约请致电 647-930-6688。',
     ],
-    keywords: '亲人安省去世怎么办,安省遗产认证,estate trustee,有遗嘱还要probate吗,何淼律师',
+    keywords: '华人律师办理遗产继承,普通话律师协助遗产执行,万锦华人律师处理遗产继承,多伦多华人律师处理遗产,安省华人律师probate,亲人安省去世怎么办,何淼律师',
   },
   {
     slug: 'wu-yizhu-ansheng-jicheng',
@@ -1975,7 +1975,7 @@ export const faqItems: FaqItem[] = [
       '详见<a href="/estate-trustee/without-a-will/">无遗嘱申请</a>。',
       '预约请致电 647-930-6688。',
     ],
-    keywords: '无遗嘱遗产继承安省,intestate Ontario,谁有权申请estate trustee,何淼律师',
+    keywords: '华人律师办理遗产继承,普通话律师协助遗产执行,万锦华人律师处理遗产继承,多伦多华人律师处理遗产,安省华人律师probate,无遗嘱遗产继承,何淼律师',
   },
   {
     slug: 'jichengren-zai-zhongguo-probate',
@@ -1997,7 +1997,7 @@ export const faqItems: FaqItem[] = [
       '详见<a href="/estate-trustee/china-heirs/">继承人在中国</a>。',
       '预约请致电 647-930-6688。',
     ],
-    keywords: '继承人在中国,非居民estate trustee,人在国内遗产认证,何淼律师',
+    keywords: '华人律师办理遗产继承,普通话律师协助遗产执行,万锦华人律师处理遗产继承,多伦多华人律师处理遗产,安省华人律师probate,继承人在中国,何淼律师',
   },
   {
     slug: 'ansheng-yichan-baozhengjin',
@@ -2019,7 +2019,7 @@ export const faqItems: FaqItem[] = [
       '详见<a href="/estate-trustee/administration-bond/">保证金 Bond</a>。',
       '预约请致电 647-930-6688。',
     ],
-    keywords: '遗产保证金安省,administration bond,免除bond,Rule 74.11,何淼律师',
+    keywords: '华人律师办理遗产继承,普通话律师协助遗产执行,万锦华人律师处理遗产继承,多伦多华人律师处理遗产,安省华人律师probate,遗产保证金免除,何淼律师',
   },
   {
     slug: 'ansheng-yichan-guanlishui',
@@ -2041,7 +2041,7 @@ export const faqItems: FaqItem[] = [
       '详见<a href="/estate-trustee/estate-administration-tax/">遗产管理税</a>。',
       '预约请致电 647-930-6688。',
     ],
-    keywords: '安省遗产管理税,estate administration tax Ontario,每千元15元,5万免税,何淼律师',
+    keywords: '华人律师办理遗产继承,普通话律师协助遗产执行,万锦华人律师处理遗产继承,多伦多华人律师处理遗产,安省华人律师probate,安省遗产管理税,何淼律师',
   },
 ];
 
