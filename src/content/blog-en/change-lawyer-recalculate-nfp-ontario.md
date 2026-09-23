@@ -19,6 +19,8 @@ relatedReading:
     line: "If a pre-marriage home is sold and replaced before separation, its date-of-marriage value may still be deductible."
   - slug: china-property-premarital-depreciation-ontario
     line: "Does property in China have to be included? Why a pre-marriage decline in value can reduce equalization."
+  - slug: equalization-limitation-chinese-lawyer-ontario
+    line: "Section 7(3): the earliest of three deadlines governs. Changing lawyers does not restart the clock."
 faqStructured:
   - question: "I have already filed my financial statement. Can the numbers still be changed?"
     answer: "In most cases, yes. A Form 13.1 or Form 13 Financial Statement is sworn financial evidence, not a contractual promise to the other spouse. Factual errors, omitted assets, incorrect valuations, and errors in legal characterization can generally be corrected by a revised statement or supplementary disclosure, with an explanation of why the numbers changed. What can be much harder to change is a signed separation agreement, memorandum of settlement, or consent order."

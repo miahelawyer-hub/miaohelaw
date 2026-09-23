@@ -19,6 +19,8 @@ relatedReading:
     line: "How long each stage actually takes, and what drives the total."
   - slug: "net-family-property-ontario"
     line: "Why property should be settled before the divorce is finalized, not after."
+  - slug: "equalization-limitation-chinese-lawyer-ontario"
+    line: "A divorce order starts the equalization clock. The earliest of three deadlines governs."
   - slug: "separation-agreement-vs-divorce-ontario"
     line: "How a separation agreement feeds into an uncontested divorce."
   - slug: "toronto-divorce-lawyer-fees-3000-vs-30000"
@@ -279,7 +281,7 @@ Under **s. 7(3) of the *Family Law Act***, a claim for equalization of net famil
 
 We have seen people obtain a fast, inexpensive divorce online, feel relieved it is behind them, and discover two years and one day later that a substantial equalization claim has expired.
 
-If there is a matrimonial home, a pension, a business, an inheritance, or assets held outside Canada, **get advice on the property claim before the divorce is finalized, not after.** This is the most expensive mistake in this article, and it is invisible at the time it is made.
+If there is a matrimonial home, a pension, a business, an inheritance, or assets held outside Canada, **get advice on the property claim before the divorce is finalized, not after.** How the three limitation periods interact, and when an extension is even possible, is in [Is There a Deadline to Claim Property Division in Ontario?](/en/blog/equalization-limitation-chinese-lawyer-ontario/). This is the most expensive mistake in this article, and it is invisible at the time it is made.
 
 ---
 

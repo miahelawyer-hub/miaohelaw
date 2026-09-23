@@ -74,6 +74,8 @@ The most effective strategy is prevention. If you are concerned that your co-par
 - **Alert the RCMP:** The child's name can be placed on a watch list at border crossings.
 - **Apply for sole decision-making responsibility:** If the risk is serious, an emergency application for sole decision-making may be appropriate.
 
+A proposed **relocation** — including an application to take the child back to China through the statutory notice process — is a different file from a child who has already been taken. Notice, objection, burden of proof and enforceability in China are in [Can You Relocate With Your Child in Ontario — Including Back to China?](/en/blog/relocate-child-china-mandarin-lawyer-ontario/).
+
 ---
 
 ## Practical Advice

@@ -20,6 +20,8 @@ relatedReading:
     line: "婚前房子卖掉换新房后，结婚日价值何时仍可扣除——重算时最常见的切入点之一。"
   - slug: china-property-premarital-depreciation-ontario
     line: "中国的房子要不要算？婚前买的、跌价了为什么可能减少均衡款。"
+  - slug: equalization-limitation-chinese-lawyer-ontario
+    line: "第 7(3) 条三条期限以最早到期者为准。换律师不会让这条线重新起算。"
 faqStructured:
   - question: "我已经交过财务陈述了，上面的数字还能改吗？"
     answer: "绝大多数情况下可以。财务陈述（Form 13.1 / Form 13）是宣誓提交的证据，不是对对方作出的承诺。事实错误、遗漏资产、估值不当、法律定性错误，都可通过更新版本或补充陈述更正；更正时需说明数字为什么变了、依据是什么。真正锁死结果的是已签署的分居协议、和解备忘录或同意令。"

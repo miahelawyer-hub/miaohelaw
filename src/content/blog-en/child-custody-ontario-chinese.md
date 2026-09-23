@@ -71,7 +71,7 @@ Relocation — particularly international relocation — is one of the most cont
 
 If the other parent objects, the relocating parent must bring a court application. The court will consider whether the move is in the child's best interests.
 
-**International relocation to China** is treated with particular seriousness. China is not a signatory to the Hague Convention on the Civil Aspects of International Child Abduction. Once a child is in China, return to Canada cannot be enforced through the Hague framework.
+**International relocation to China** is treated with particular seriousness. China is not a signatory to the Hague Convention on the Civil Aspects of International Child Abduction. Once a child is in China, return to Canada cannot be enforced through the Hague framework. The statutory notice, objection and burden-of-proof rules — including why a move to mainland China is assessed differently from a move to another province — are in [Can You Relocate With Your Child in Ontario — Including Back to China?](/en/blog/relocate-child-china-mandarin-lawyer-ontario/).
 
 ---
 

@@ -4,6 +4,7 @@ title: "Can New Immigrants Get Divorced in Ontario?"
 description: "Immigration status does not affect your right to divorce in Ontario. Miao He explains the residency requirements, what documents you need, and common concerns for newcomers going through separation."
 pairedArticlePath: "/blog/new-immigrant-divorce-ontario/"
 pubDate: 2026-04-11T16:00:00-05:00
+updatedDate: 2026-09-22T19:00:00-04:00
 keywords: "Ontario family law,Miao He lawyer,Chinese family lawyer Toronto,divorce Ontario,647-930-6688"
 tags:
   - "chinese-family-lawyer"
@@ -39,7 +40,7 @@ If you have been living in Ontario for at least one year, you can file for divor
 
 Getting divorced in Canada generally does not automatically affect your immigration status, but the specifics depend on your situation:
 
-- **Spousal sponsorship:** If you came to Canada as a sponsored spouse and are still in the conditional residency period, a divorce may have implications. You should consult an immigration lawyer alongside your family law lawyer.
+- **Spousal sponsorship:** Canada eliminated conditional permanent residence in 2017. A sponsored spouse who already has PR does not lose that status because of divorce. The **sponsorship undertaking** is a separate contract with the government: it still runs three years from the day PR was granted, and it is not cancelled by divorce. See [Does a Sponsorship Undertaking Survive Divorce?](/en/blog/sponsorship-undertaking-chinese-lawyer-ontario/). If PR has not yet been granted, IRCC must be told that the relationship has ended. Get immigration advice alongside family law advice.
 - **PR status:** Having PR status is independent of your marriage. A divorce does not automatically cancel your PR.
 - **Citizenship applications:** A divorce does not disqualify you from citizenship if you otherwise meet the requirements.
 

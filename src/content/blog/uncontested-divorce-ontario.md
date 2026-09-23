@@ -18,6 +18,8 @@ relatedReading:
     line: "每个阶段实际需要多久，以及什么因素决定总时长。"
   - slug: "net-family-property-ontario"
     line: "为什么财产问题要在离婚定案之前处理，而不是之后。"
+  - slug: "equalization-limitation-chinese-lawyer-ontario"
+    line: "离婚令会启动均等化时效。三条期限以最早到期者为准。"
   - slug: "separation-agreement-vs-divorce-ontario"
     line: "分居协议如何衔接到无争议离婚。"
   - slug: "toronto-divorce-lawyer-fees-3000-vs-30000"
@@ -278,7 +280,7 @@ faqStructured:
 
 我们见过当事人在网上快速、便宜地办完离婚，如释重负地以为一切翻篇——然后在两年零一天之后，发现一笔数额可观的均等化请求权已经过期。
 
-**如果涉及婚姻住宅、养老金、公司、继承财产，或者在加拿大境外的资产，请在离婚定案之前就财产问题取得法律意见，而不是之后。** 这是本文中代价最高的一个错误，而它在犯下的当时完全看不出来。
+**如果涉及婚姻住宅、养老金、公司、继承财产，或者在加拿大境外的资产，请在离婚定案之前就财产问题取得法律意见，而不是之后。** 三个期限如何互相卡住、错过了能不能延期，见[安省离婚财产分割有时效吗？](/blog/equalization-limitation-chinese-lawyer-ontario/)。这是本文中代价最高的一个错误，而它在犯下的当时完全看不出来。
 
 ---
 
