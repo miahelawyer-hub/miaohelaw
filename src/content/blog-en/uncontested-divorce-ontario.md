@@ -100,7 +100,7 @@ An uncontested divorce asks the court to do one thing: legally end the marriage.
 
 Those issues must already be resolved by agreement, or dealt with separately. A great many people obtain a quick divorce believing it settles everything arising from the marriage. It settles the marriage, and nothing else — and as Section 7 explains, it quietly starts a limitation clock running against you.
 
-If property is part of your picture, read [Understanding Net Family Property in Ontario](/en/blog/net-family-property-ontario/) before you finalize anything.
+If property is part of your picture, read [How Much Am I Entitled To? Net Family Property in Ontario](/en/blog/net-family-property-ontario/) before you finalize anything.
 
 ---
 

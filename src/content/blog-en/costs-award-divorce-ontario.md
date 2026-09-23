@@ -1,10 +1,11 @@
 ---
 
-title: "When Will a Court Order the Other Party to Pay Your Legal Costs in Ontario?"
-description: "Costs awards in family law cases are more common than many people realize. Miao He explains when Ontario courts order one party to pay the other's legal fees, and how to position yourself for a costs award."
+title: "Can I Make My Ex Pay My Legal Fees in an Ontario Divorce?"
+description: "Can you make your ex pay your legal fees in an Ontario divorce? Courts may order a costs award when one party succeeds or the other unreasonably prolongs the case. Miao He explains when that happens. 647-930-6688"
 pairedArticlePath: "/blog/costs-award-divorce-ontario/"
 pubDate: 2026-04-11T16:00:00-05:00
-keywords: "Ontario family law,Miao He lawyer,Chinese family lawyer Toronto,divorce Ontario,647-930-6688"
+updatedDate: 2026-09-22T20:21:00-04:00
+keywords: "make my ex pay legal fees Ontario divorce, costs award Ontario family law, other party pay lawyer fees, Markham family lawyer, Miao He"
 tags:
   - "chinese-family-lawyer"
   - "divorce-ontario"

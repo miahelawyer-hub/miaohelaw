@@ -1,10 +1,11 @@
 ---
 
-title: "Can a Separation Agreement Be Overturned in Ontario?"
-description: "A signed separation agreement is binding — but it can be challenged if signed under duress, without independent legal advice, or without financial disclosure. Miao He explains when it holds and when it can be set aside."
+title: "Can You Cancel or Undo a Separation Agreement in Ontario?"
+description: "Ontario law allows a separation agreement to be set aside in limited circumstances. Ontario family lawyer Miao He explains how to dissolve, cancel or get out of a separation agreement, the grounds a court accepts, and the time limits."
 pairedArticlePath: "/blog/separation-agreement-validity-ontario/"
 pubDate: 2026-04-11T16:00:00-05:00
-keywords: "Ontario family law,Miao He lawyer,Chinese family lawyer Toronto,divorce Ontario,647-930-6688"
+updatedDate: 2026-09-22T20:21:00-04:00
+keywords: "cancel separation agreement Ontario, undo separation agreement, dissolve separation agreement Ontario, set aside separation agreement, get out of a separation agreement, Miao He"
 tags:
   - "chinese-family-lawyer"
   - "divorce-ontario"
@@ -18,6 +19,10 @@ Can a separation agreement be overturned after it's been signed?
 This is a question many people start asking only after they've already signed. The answer depends on the circumstances: **a properly executed agreement is binding and cannot be unilaterally revoked — but if the signing process was flawed, the agreement can be challenged.**
 
 ---
+
+## What happens if I want to dissolve a separation agreement?
+
+You cannot dissolve, cancel, or get out of a signed separation agreement on your own. Ontario treats it as a binding contract. A court may **set it aside** only in limited circumstances — for example duress, incomplete financial disclosure, or no independent legal advice. If both of you agree, you can amend it. If only you want out, the question is whether a judge would set it aside. That is what the rest of this article covers.
 
 ## When Can a Separation Agreement Be Set Aside?
 

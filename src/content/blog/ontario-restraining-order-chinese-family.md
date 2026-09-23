@@ -184,7 +184,7 @@ Affidavit 的写法直接决定案子的结果。我在这里分享几个我给�
 - 同时或紧接着提起分居/离婚诉讼——因为保护令只是「暂时隔离」，真正解决双方关系还是要通过分居协议或离婚（参见：[分居和离婚的区别详解](/blog/separation-vs-divorce-ontario/)）  
 - **财产保护令（Preservation Order）**——防止对方在诉讼期间转移、隐匿或挥霍共同财产（参见：[还没离婚，对方已与别人同居——财产怎么分？那笔钱还能要回来吗？](/blog/dissipation-of-assets/)）  
 - **临时监护与探视安排（Interim Parenting Order）**——如果有孩子，临时的监护权安排必须和保护令配套  
-- **独占婚姻住房权（Exclusive Possession of Matrimonial Home）**——让对方搬出共同住所（关于安省婚姻住所的法律性质和分割规则，详见：[Ontario婚姻财产分割：NFP计算方法和华人家庭常见陷阱](/blog/net-family-property-ontario/)）  
+- **独占婚姻住房权（Exclusive Possession of Matrimonial Home）**——让对方搬出共同住所（关于安省婚姻住所的法律性质和分割规则，详见：[离婚时我能分到多少钱？安省净家庭财产计算方法和华人家庭常见陷阱](/blog/net-family-property-ontario/)）  
 - **经济援助申请（Interim Spousal/Child Support）**——如果你经济上依赖对方，需要立刻申请临时赡养费/抚养费（参见：[对方不付抚养费怎么办？Ontario强制执行手段详解](/blog/spousal-child-support-ontario/)）  
 
 这几项是一套**组合拳**。单独申请一个 Restraining Order，对方可能依然控制着房子、银行账户、孩子的去向。完整的保护方案必须这几项一起设计。

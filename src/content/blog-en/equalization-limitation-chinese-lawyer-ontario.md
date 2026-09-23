@@ -68,7 +68,7 @@ faqStructured:
 
 We have already flagged s. 7(3) in [Uncontested Divorce in Ontario](/en/blog/uncontested-divorce-ontario/) and [changing lawyers to recalculate NFP](/en/blog/change-lawyer-recalculate-nfp-ontario/). This article is the dedicated limitation analysis — because it is the one property issue that negotiation cannot revive.
 
-The formula itself is in [Understanding Net Family Property](/en/blog/net-family-property-ontario/).
+The formula itself is in [How Much Am I Entitled To? Net Family Property in Ontario](/en/blog/net-family-property-ontario/).
 
 ---
 
@@ -136,7 +136,7 @@ It depends on what the agreement says.
 - If it covers only support and parenting and is silent on property → the equalization entitlement survives, and the clock continues to run
 - If it addresses property in vague terms (“each party retains assets in their own name” without an express release) → disputes commonly follow
 
-Related risk: if the agreement is later set aside — for inadequate financial disclosure, say — the equalization claim may revive, but the statutory limitation period usually did not stop running simply because an agreement had been signed. See [Can a separation agreement be overturned](/en/blog/separation-agreement-validity-ontario/).
+Related risk: if the agreement is later set aside — for inadequate financial disclosure, say — the equalization claim may revive, but the statutory limitation period usually did not stop running simply because an agreement had been signed. See [Can you cancel or undo a separation agreement](/en/blog/separation-agreement-validity-ontario/).
 
 Every separation agreement should state how equalization is being dealt with — calculated and paid, or mutually released — and identify the valuation date relied on.
 

@@ -1,10 +1,11 @@
 ---
 
-title: "Imputed Income and Child Support in Ontario: What You Need to Know"
-description: "If a parent earns less than they should, or hides income, a court can impute income for child support purposes. Miao He explains how imputed income works and how to challenge it."
+title: "My Ex Quit Their Job to Avoid Child Support — What Can I Do?"
+description: "If your ex quit their job or is hiding income to avoid child support, an Ontario court can impute income. Miao He explains when the court will do that and how to challenge it. 647-930-6688"
 pairedArticlePath: "/blog/imputed-income-child-support-ontario/"
 pubDate: 2026-04-11T16:00:00-05:00
-keywords: "Ontario family law,Miao He lawyer,Chinese family lawyer Toronto,divorce Ontario,647-930-6688"
+updatedDate: 2026-09-22T20:21:00-04:00
+keywords: "ex quit job to avoid child support Ontario, imputed income child support Ontario, underemployed parent child support, Markham family lawyer, Miao He"
 tags:
   - "chinese-family-lawyer"
   - "divorce-ontario"

@@ -1,11 +1,12 @@
 ---
 
-title: "Ontario婚姻财产分割：NFP计算方法和华人家庭常见陷阱"
+title: "离婚时我能分到多少钱？安省净家庭财产计算方法和华人家庭常见陷阱"
 description: "Ontario离婚财产分割基于净家庭财产（NFP）计算，而非简单平分。何淼律师详解NFP公式、婚前资产豁免条件、婚姻住所特殊规则，以及华人家庭最容易踩的财产分割陷阱。多伦多华人家庭法律师。647-930-6688。"
 pairedArticlePath: "/en/blog/net-family-property-ontario/"
 pubDate: 2026-04-09T17:00:00-05:00
+updatedDate: 2026-09-22T20:21:00-04:00
 heroImage: ""
-keywords: "NFP净家庭财产,Ontario财产分割,婚姻住所规则,均等化补偿款,婚前资产豁免,何淼律师"
+keywords: "离婚能分到多少钱,安省净家庭财产,NFP计算方法,婚姻住所规则,均等化补偿款,婚前资产豁免,何淼律师"
 tags:
   - "chinese-divorce-lawyer"
   - "mandarin-family-lawyer"

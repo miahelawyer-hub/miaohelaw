@@ -1,10 +1,10 @@
 ---
-title: "Resulting Trust in Ontario Family Law: Is a Parent's Transfer a Gift or Held in Trust?"
-description: "When a marriage breaks down, was money from a parent a gift or held in resulting trust? Toronto Chinese family lawyer Miao He explains Pecore, equalization, and how Ontario courts decide who keeps a parental transfer. Dual-licensed in Ontario & China · 647-930-6688."
+title: "My Parents Paid for Our House — Is It a Gift, or Do They Still Own It?"
+description: "When parents pay for a house and the marriage breaks down, was it a gift, a loan you owe back, or held in resulting trust? Toronto Chinese family lawyer Miao He explains how Ontario courts decide. Dual-licensed in Ontario and China · 647-930-6688"
 pubDate: 2026-06-29T12:00:00-04:00
-updatedDate: 2026-06-29T12:00:00-04:00
+updatedDate: 2026-09-22T20:21:00-04:00
 heroImage: ""
-keywords: "resulting trust Ontario, parental gift divorce Ontario, gift or loan divorce, Pecore v Pecore, equalization net family property, matrimonial home parental gift, Ontario property division lawyer, presumption of resulting trust, Toronto Chinese family lawyer, Miao He lawyer"
+keywords: "parents paid for house gift or still own, resulting trust Ontario, parental gift divorce Ontario, gift or loan divorce, owe it back parents house, Pecore v Pecore, Toronto Chinese family lawyer, Miao He"
 tags:
   - "miao-he-lawyer"
   - "ontario-family-law"

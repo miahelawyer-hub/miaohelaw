@@ -1,8 +1,9 @@
 ---
-title: "安省配偶抚养费怎么算？SSAG、imputed income 与华人最容易踩的 3 个坑"
-description: "安省配偶抚养费与子女抚养费的计算逻辑完全不同：SSAG 只是指导性参考文件，不是必须遵循的标准。何淼律师从中加双执照角度详解收入认定、imputed income 举证、婚姻年限、生活水平等 factor 如何影响最终判付金额和年限。"
+title: "安省配偶抚养费怎么算？华人最容易踩的 3 个坑（2026）"
+description: "安省配偶抚养费怎么算？SSAG 只是指导性参考，不是强制标准。何淼律师详解收入认定、imputed income 举证、婚姻年限和生活水平如何影响金额和年限。华人家庭最容易踩的 3 个坑。"
 pairedArticlePath: "/en/blog/ontario-spousal-support-ssag-imputed-income-misconceptions/"
 pubDate: 2026-05-02T10:00:00-04:00
+updatedDate: 2026-09-22T20:21:00-04:00
 heroImage: ""
 keywords: "安省配偶抚养费,SSAG,Spousal Support Advisory Guidelines,imputed income,配偶赡养费计算,Drygala v Pauli,中国配偶抚养费差别,何淼律师,中加双执照律师"
 tags:

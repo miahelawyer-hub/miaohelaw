@@ -1,10 +1,11 @@
 ---
-title: "配偶赡养费也能「推定收入」吗？安省法院如何认定真实负担能力"
+title: "对方辞职、少报收入来躲赡养费，安省法院怎么认定？"
 description: "子女抚养费中的推定收入常被讨论，配偶赡养同样取决于支付方的真实负担能力。何淼律师说明：当申报收入与职业能力、生意流水或 lifestyle 明显不符时，法院如何在 entitlement 与 SSAG 顾问区间之外运用裁量权认定收入。"
 pairedArticlePath: "/en/blog/imputed-income-spousal-support-ontario/"
 pubDate: 2026-05-01T14:00:00-04:00
+updatedDate: 2026-09-22T20:21:00-04:00
 heroImage: ""
-keywords: "推定收入配偶赡养,imputed income spousal support Ontario,SSAG,配偶扶养能力认定,故意压低收入,何淼律师,安省家庭法"
+keywords: "对方辞职躲赡养费,少报收入配偶抚养费,推定收入配偶赡养,imputed income spousal support Ontario,SSAG,何淼律师"
 tags:
   - "chinese-divorce-lawyer"
   - "imputed-income-ontario"
