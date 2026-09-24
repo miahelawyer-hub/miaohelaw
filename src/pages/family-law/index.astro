@@ -9,12 +9,14 @@ import { blogTopicHubs } from '../../data/blog-topic-hubs';
 
 const posts = (await getCollection('blog')).filter(isBlogPostRoutable);
 const postById = new Map(posts.map((post) => [post.id, post]));
-const topicHubsResolved = blogTopicHubs.map((hub) => ({
-  ...hub,
-  posts: hub.slugs
-    .map((slug) => postById.get(slug))
-    .filter((post): post is (typeof posts)[number] => post != null),
-}));
+const topicHubsResolved = blogTopicHubs
+  .filter((hub) => hub.id !== 'estates-documents')
+  .map((hub) => ({
+    ...hub,
+    posts: hub.slugs
+      .map((slug) => postById.get(slug))
+      .filter((post): post is (typeof posts)[number] => post != null),
+  }));
 
 const services = [
   {
