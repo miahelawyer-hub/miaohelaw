@@ -23,6 +23,8 @@ relatedReading:
     line: "A divorce order starts the equalization clock. The earliest of three deadlines governs."
   - slug: "separation-agreement-vs-divorce-ontario"
     line: "How a separation agreement feeds into an uncontested divorce."
+  - slug: "child-support-waiver-separation-agreement-ontario"
+    line: "Why leaving child support out of the agreement can stall the divorce order."
   - slug: "toronto-divorce-lawyer-fees-3000-vs-30000"
     line: "How uncontested and contested paths differ in legal fees."
 faqStructured:
@@ -137,7 +139,7 @@ Virtually every Ontario divorce proceeds on the ground of **one year living sepa
 
 ### d. Reasonable arrangements for child support
 
-Where there are children of the marriage, the judge **must** be satisfied that reasonable arrangements have been made for their support (*Divorce Act*, s. 11). This obligation is independent of what the parents agreed — it cannot be waived between them.
+Where there are children of the marriage, the judge **must** be satisfied that reasonable arrangements have been made for their support (*Divorce Act*, s. 11(1)(b)). This obligation is independent of what the parents agreed — it cannot be waived between them. Why leaving support out of a separation agreement fails that test is in [Can you leave child support out of a separation agreement?](/en/blog/child-support-waiver-separation-agreement-ontario/).
 
 This is not a formality. It is the most common reason an otherwise clean uncontested divorce is sent back. If the support figure does not line up with the Federal Child Support Guidelines and the payor's actual income, expect a requisition, or a refusal.
 

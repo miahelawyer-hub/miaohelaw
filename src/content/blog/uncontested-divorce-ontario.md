@@ -22,6 +22,8 @@ relatedReading:
     line: "离婚令会启动均等化时效。三条期限以最早到期者为准。"
   - slug: "separation-agreement-vs-divorce-ontario"
     line: "分居协议如何衔接到无争议离婚。"
+  - slug: "child-support-waiver-separation-agreement-ontario"
+    line: "协议里不写或放弃子女抚养费，为什么离婚令会出不来。"
   - slug: "toronto-divorce-lawyer-fees-3000-vs-30000"
     line: "无争议与争议路径下的律师费结构差异。"
 faqStructured:
@@ -136,7 +138,7 @@ faqStructured:
 
 ### 4. 子女抚养安排合理
 
-如果有婚生子女，法官**必须**确认已就子女抚养作出合理安排（《离婚法》第 11 条）。这是法官独立的法定义务，**父母之间的协议不能免除**。
+如果有婚生子女，法官**必须**确认已就子女抚养作出合理安排（《离婚法》第 11(1)(b) 条）。这是法官独立的法定义务，**父母之间的协议不能免除**。为什么分居协议里不写或写放弃过不了这一关，见[分居协议里可以不写子女抚养费吗](/blog/child-support-waiver-separation-agreement-ontario/)。
 
 这不是走过场。它是干净的无争议离婚被退回的最常见原因。如果材料里的抚养费数额与《联邦子女抚养费准则》和支付方的实际收入对不上，你会收到法院的补正要求（requisition），或者直接被拒。
 

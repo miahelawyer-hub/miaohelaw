@@ -32,11 +32,13 @@ A marriage contract in Ontario can address:
 
 ## What Cannot Be Addressed?
 
-A marriage contract **cannot** limit or waive:
+A marriage contract **cannot** lock:
 
-- **Child support** — you cannot contract out of your obligation to pay child support under the guidelines
-- **Decision-making authority** regarding children — custody and access issues cannot be predetermined in a contract
+- **Who the children live with, or who makes the major decisions** — custody and access (now decision-making responsibility and parenting time) cannot be predetermined
+- **Child support as a bargaining chip** — a term waiving table support will often be disregarded
 - **Rights to possession of the matrimonial home during the marriage** (though division of its value can be addressed)
+
+The parenting and child-support limits are explained in [Can a marriage contract decide who gets the kids?](/en/blog/marriage-contract-child-parenting-ontario/)
 
 ---
 
