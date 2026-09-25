@@ -27,6 +27,8 @@ relatedReading:
     line: "Why separation and divorce are different legal ideas in Ontario — useful context for the first two mistakes people make about procedure."
   - slug: child-custody-ontario-chinese
     line: "Decision-making responsibility and parenting time in plain language — complements mistakes people make about income and about withholding parenting time."
+  - slug: supervised-parenting-time-child-does-not-want-ontario
+    line: "A child’s refusal of unsupervised time is not an automatic supervision order. Age and third-party evidence matter more than a parent’s retelling."
   - slug: separation-date-vs-divorce-date-ontario
     line: "Why the separation date matters for property and strategy, related but not identical to “under one roof” separation."
 faqStructured:

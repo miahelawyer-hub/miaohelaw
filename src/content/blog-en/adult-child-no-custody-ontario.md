@@ -19,6 +19,8 @@ relatedIntro: "Parenting, university costs, and restraining orders do not belong
 relatedReading:
   - slug: child-custody-ontario-chinese
     line: How Ontario decides decision-making responsibility and parenting time for minors.
+  - slug: supervised-parenting-time-child-does-not-want-ontario
+    line: Supervised time is a minor-child question: too young is not decisive; a teenager is heard against the whole file.
   - slug: child-support-waiver-separation-agreement-ontario
     line: Child support for minors cannot be waived by agreement. University costs are a different test.
   - slug: ontario-restraining-order-chinese-family

@@ -19,6 +19,8 @@ relatedIntro: "监护、大学费用、限制令，不要写进同一栏："
 relatedReading:
   - slug: child-custody-ontario-chinese
     line: 未成年子女的决策权和育儿时间，法院怎么判断。
+  - slug: supervised-parenting-time-child-does-not-want-ontario
+    line: 未成年才谈监督探视：年纪太小不当定案，青少年会听仍看全案。
   - slug: child-support-waiver-separation-agreement-ontario
     line: 未成年抚养费不能协议放弃；成年后的大学费用是另一条。
   - slug: ontario-restraining-order-chinese-family

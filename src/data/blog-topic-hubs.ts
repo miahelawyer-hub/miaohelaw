@@ -79,10 +79,11 @@ export const blogTopicHubs: BlogTopicHub[] = [
     titleEn: 'Child Custody & Support',
     chip: '子女抚养',
     chipEn: 'Children',
-    intro: '监护判断标准、成年子女还有没有抚养权、带孩子搬家、协议能不能放弃抚养费、分居后还没起诉的追溯抚养费、境外离婚和赡养费、推定收入、SSAG，以及中加抚养费认定差异。',
-    introEn: 'Best-interests tests, whether an adult child is still a custody case, relocation, whether support can be waived, retroactive support before anyone files, foreign divorce and spousal support, imputed income, SSAG, and China–Canada differences in support.',
+    intro: '监护判断标准、孩子不愿单独见面能不能要监督探视、成年子女还有没有抚养权、带孩子搬家、协议能不能放弃抚养费、分居后还没起诉的追溯抚养费、境外离婚和赡养费、推定收入、SSAG，以及中加抚养费认定差异。',
+    introEn: 'Best-interests tests, whether a child’s reluctance supports supervised parenting time, whether an adult child is still a custody case, relocation, whether support can be waived, retroactive support before anyone files, foreign divorce and spousal support, imputed income, SSAG, and China–Canada differences in support.',
     slugs: [
       'child-custody-ontario-chinese',
+      'supervised-parenting-time-child-does-not-want-ontario',
       'adult-child-no-custody-ontario',
       'relocate-child-china-mandarin-lawyer-ontario',
       'child-support-waiver-separation-agreement-ontario',

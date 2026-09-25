@@ -12,6 +12,8 @@ tags:
   - "miao-he-lawyer"
   - "ontario-family-law"
 relatedReading:
+  - slug: supervised-parenting-time-child-does-not-want-ontario
+    line: A child who does not want unsupervised time is not an automatic supervision order. Age, the whole file, and third-party evidence govern.
   - slug: adult-child-no-custody-ontario
     line: An adult at university is not usually a custody case. University costs are child support, not parenting.
 ---
