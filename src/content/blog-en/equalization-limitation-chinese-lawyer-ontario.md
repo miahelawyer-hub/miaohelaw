@@ -1,10 +1,10 @@
 ---
-title: "Chinese Lawyer Ontario Equalization Deadline | Mandarin Property Lawyer Markham | Miao He"
-description: "An Ontario equalization claim must be brought by the earliest of two years after divorce, six years after separation, or six months after a spouse’s death. Markham Chinese lawyer Miao He helps calculate the limitation period. Mandarin: 647-930-6688"
+title: "Property Division in Ontario Has a Deadline. Don't Miss It"
+description: "Ontario equalization has three clocks. The earliest one wins. Markham Chinese lawyer Miao He explains Family Law Act s. 7(3) in Mandarin: two years after divorce, six years after separation, six months after a spouse dies. Toronto and Ontario: 647-930-6688"
 pubDate: 2026-09-22T19:00:00-04:00
-updatedDate: 2026-09-22T19:00:00-04:00
+updatedDate: 2026-09-25T19:32:00-04:00
 heroImage: ""
-keywords: "Chinese lawyer Ontario equalization limitation, Mandarin property lawyer Markham deadline, Chinese lawyer Toronto property division time limit, 华人律师办理财产分割时效, Miao He"
+keywords: "Ontario property division deadline, equalization limitation period, Chinese lawyer Ontario equalization limitation, Mandarin property lawyer Markham deadline, Chinese lawyer Toronto property division time limit, 华人律师办理财产分割时效, Miao He"
 tags:
   - "net-family-property"
   - "property-division-ontario"
@@ -44,175 +44,164 @@ relatedReading:
     title: Cross-border assets
     line: If foreign property was never included, start with the dates and the disclosure.
 faqStructured:
-  - question: "How long do I have to claim property division after a divorce in Ontario?"
-    answer: "You must apply by the earliest of: two years after divorce or a judgment of nullity, six years after separation with no reasonable prospect of resuming cohabitation, or six months after a spouse’s death. Family Law Act, s. 7(3)."
-  - question: "My divorce was only a year ago — am I still in time?"
-    answer: "Not necessarily. If you separated more than six years ago, the six-year period expired first and the two-year post-divorce period offers no protection. The earliest of the three controls."
-  - question: "Can a missed equalization deadline be extended?"
-    answer: "The court may extend under s. 2(8) of the Family Law Act, but only if there are apparent grounds for relief, the delay was in good faith, and no person will suffer substantial prejudice. It is exceptional relief, not something to rely on."
-  - question: "Is the valuation date the same as the limitation date?"
-    answer: "No. The valuation date (s. 4(1)) determines how net family property is measured and is usually the date of separation. The limitation date (s. 7(3)) determines the filing deadline and may run from separation, divorce, or death."
-  - question: "Does signing a separation agreement stop the limitation clock?"
-    answer: "If the agreement expressly resolves equalization, the limitation period ceases to be the main obstacle. If it deals only with support and parenting, the equalization entitlement survives and the clock keeps running."
-  - question: "If equalization is out of time, can I still claim against property in China?"
-    answer: "Possibly, through a different cause of action. A trust claim over a specific property you funded is analytically separate, and trust claims involving land are generally governed by the ten-year period under the Real Property Limitations Act. This is fact-specific."
-  - question: "My spouse died — how long do I have?"
-    answer: "The equalization application itself must be brought within six months of the spouse’s death (Family Law Act, s. 7(3)). Separately, a surviving spouse must also elect, in roughly the same window, between taking under the will or intestacy and claiming equalization (s. 6). Failing to elect in time is generally treated as electing against equalization. Those are two steps, not one."
+  - question: "How long after divorce do I have to claim property division?"
+    answer: "Before the earliest of: 2 years after divorce or annulment, 6 years after separation with no reasonable prospect of reconciliation, 6 months after a spouse's death. Family Law Act s. 7(3)."
+  - question: "Divorced only a year ago, I'm fine, right?"
+    answer: "Not necessarily. If it's been over 6 years since separation, the 6-year clock already beat the 2-year clock."
+  - question: "Missed the deadline, any hope?"
+    answer: "Possibly. The court can extend under s. 2(8), but you need merit, good faith, and no substantial prejudice. It's an exception, not a plan."
+  - question: "We signed a separation agreement, still a limitation issue?"
+    answer: "If it clearly dealt with equalization, usually not your main issue. If it said nothing about property, the clock is still running."
+  - question: "My spouse passed away, how long do I have?"
+    answer: "6 months to bring the equalization claim. Around the same time, you also have to elect between taking under the will or intestacy and claiming equalization under s. 6. Those are two separate steps. Don't mix them up."
 ---
 
 <div class="blog-tldr">
 <p class="blog-tldr-kicker">In short</p>
 <ul>
-<li>Three deadlines, and the <strong>earliest</strong> one governs: 2 years after divorce or a judgment of nullity; 6 years after separation with no reasonable prospect of resuming cohabitation; 6 months after a spouse’s death. <em>Family Law Act</em>, s. 7(3).</li>
-<li>The most common trap: relying on “two years since the divorce” when the six-year separation period has already expired.</li>
-<li>Valuation date and limitation start date are different dates. One decides how much. The other decides whether you can claim at all.</li>
-<li>The court can extend under s. 2(8) if three conditions are met. Extension is the exception, not the plan.</li>
-<li>Getting divorced without resolving property is the most common route to losing the claim. See <a href="/en/blog/uncontested-divorce-ontario/">uncontested divorce</a>.</li>
-<li>An expired equalization claim does not necessarily end every other cause of action.</li>
+<li>Three clocks. The <strong>earliest one wins</strong>: 2 years after the divorce or annulment order; 6 years after separation with no reasonable prospect of reconciliation; 6 months after your spouse dies. <a href="https://www.canlii.org/en/on/laws/stat/rso-1990-c-f3/latest/rso-1990-c-f3.html">Family Law Act s. 7(3)</a>.</li>
+<li>It's not “pick the longest one.” All three run at the same time. Whichever hits first, that's it.</li>
+<li>The most common trap: “We divorced six months ago, we're fine.” The 6-year clock from separation may already be gone.</li>
+<li>Valuation date decides how much. Limitation decides whether you can still ask. Not the same thing.</li>
+<li>The court can extend under s. 2(8). Think of it as emergency repair, not a planning tool.</li>
 </ul>
 </div>
 
-We have already flagged s. 7(3) in [Uncontested Divorce in Ontario](/en/blog/uncontested-divorce-ontario/) and [changing lawyers to recalculate NFP](/en/blog/change-lawyer-recalculate-nfp-ontario/). This article is the dedicated limitation analysis — because it is the one property issue that negotiation cannot revive.
+A lot of clients come to me and say: “We already got the divorce. We can deal with property later, right?”
 
-The formula itself is in [How Much Am I Entitled To? Net Family Property in Ontario](/en/blog/net-family-property-ontario/).
-
----
-
-## What is the limitation period for an equalization claim in Ontario?
-
-Section 7(3) of Ontario’s *Family Law Act* (R.S.O. 1990, c. F.3) requires an application for equalization of net family property to be brought by the **earliest** of:
-
-| Triggering event | Deadline |
-|---|---|
-| The marriage is terminated by divorce or a judgment of nullity | 2 years |
-| The spouses separate with no reasonable prospect of resuming cohabitation | 6 years |
-| The first spouse dies | 6 months |
-
-These are not alternatives to choose from. All three run in parallel. The entitlement ends the moment the first of them expires.
-
-## What is the most common limitation trap?
-
-Relying on the two-year post-divorce window while the six-year separation window has already closed.
-
-A typical pattern:
-
-- Separated March 2019
-- Divorce order obtained January 2026
-- Property division first raised June 2026
-
-The instinctive reading is “the divorce was only six months ago.” In fact the six-year period from separation expired in March 2025. By June 2026 the equalization claim had been out of time for over a year. The date of the divorce order does not save it.
-
-This recurs among clients who separate, return to China for a period, and leave property for later — or who finalize the divorce first on the assumption that property can be negotiated at leisure. A recognized foreign divorce can also start the two-year clock from the date on that certificate — see [Divorced in China — can Ontario still divide the property?](/en/blog/china-divorce-ontario-equalization-afterward/).
-
-The reverse also occurs: a couple divorces quickly after separating, and the two-year period expires while the six-year period still has years to run.
-
-How the separation date is identified, and why it matters more than the divorce date, is in [Separation Date vs. Divorce Date](/en/blog/separation-date-vs-divorce-date-ontario/).
-
-## Is the valuation date the same as the limitation start date?
-
-No.
-
-| | Valuation date | Limitation start date |
-|---|---|---|
-| Function | The point at which net family property is measured | The point from which the filing deadline runs |
-| Source | *Family Law Act*, s. 4(1) | *Family Law Act*, s. 7(3) |
-| Typically | The date of separation | Separation / divorce / death, depending on the trigger |
-
-The valuation date determines **how much**. The limitation date determines **whether you can claim at all**. The valuation date is usually locked to separation. The limitation period may run from three different events.
-
-## Can the court extend the limitation period?
-
-Yes, but the threshold is meaningful. Section 2(8) gives the court discretion to extend if **all three** of the following are satisfied:
-
-- There are apparent grounds for relief — the claim has substance
-- The delay was incurred in good faith
-- No person will suffer substantial prejudice by reason of the delay
-
-Good faith does not require a spotless record. A simple failure to inquire generally does not defeat good faith unless it amounts to willful blindness. Delay because the claim felt difficult and delay because the other spouse concealed assets are weighed very differently.
-
-The third condition is usually the hardest. The longer the delay, the more likely the other spouse has reorganized their affairs — remarriage, a new home, disposition of assets — and the easier it becomes to establish substantial prejudice.
-
-Extension is a remedy, not a planning tool.
-
-## Does a separation agreement change the limitation analysis?
-
-It depends on what the agreement says.
-
-- If it expressly resolves property division, typically with mutual releases of equalization → the entitlement has been dealt with contractually and limitation is no longer the principal obstacle
-- If it covers only support and parenting and is silent on property → the equalization entitlement survives, and the clock continues to run
-- If it addresses property in vague terms (“each party retains assets in their own name” without an express release) → disputes commonly follow
-
-Related risk: if the agreement is later set aside — for inadequate financial disclosure, say — the equalization claim may revive, but the statutory limitation period usually did not stop running simply because an agreement had been signed. See [Can you cancel or undo a separation agreement](/en/blog/separation-agreement-validity-ontario/).
-
-Every separation agreement should state how equalization is being dealt with — calculated and paid, or mutually released — and identify the valuation date relied on.
-
-## If the equalization deadline has passed, is everything lost?
-
-No. Section 7(3) governs equalization only.
-
-| Claim | Limitation position |
-|---|---|
-| Equalization | *Family Law Act*, s. 7(3), as above |
-| Child support | No hard limitation of this kind; retroactive claims available |
-| Spousal support | Time limits apply under the *Family Law Act*; *Divorce Act* claims follow different rules |
-| Resulting / constructive trust over land | *Real Property Limitations Act* — generally 10 years |
-| Unjust enrichment (monetary) | *Limitations Act, 2002* — generally 2 years from discovery |
-| Possessory rights in the matrimonial home | End with the termination of the marriage |
-
-A trust claim over a specific property you funded but which is registered in the other spouse’s name is a separate route. See [resulting trust and parental gifts](/en/blog/resulting-trust-parental-gifts-ontario/). Whether property in China enters NFP is a different question: [Will my property in China be divided](/en/blog/china-property-ontario-divorce/).
-
-## What if my spouse concealed assets?
-
-Concealment bears on two elements of the extension analysis: good faith (delay caused by non-disclosure ordinarily supports it) and prejudice (a party who concealed assets has difficulty arguing they are substantially prejudiced). Non-disclosure also carries independent consequences, including adverse inferences and costs. See [dissipation of assets](/en/blog/dissipation-of-assets/).
-
-One caution: once you know, or ought to know, that assets were not disclosed, continued delay begins to erode the good-faith element.
-
-## When should I get advice?
-
-Seek advice promptly if any of the following apply:
-
-- Separation is approaching or past five years and property remains unresolved
-- A divorce order has been granted but there is no written resolution of property
-- A spouse has died and you are the surviving spouse (six months — the shortest of the three)
-- You signed a separation agreement where the other side never provided full financial disclosure
-- Property in China or elsewhere abroad was never included in any calculation
-
-Once a limitation period expires, the court cannot extend it on its own motion. An extension must be applied for.
+That's exactly what I want to talk about today — the time limit for property division in Ontario. How to split can be negotiated. But once the time is up, the court may not even give you a chance to negotiate. How the number is calculated is in [net family property](/en/blog/net-family-property-ontario/).
 
 ---
 
-## Frequently asked questions
+## The bottom line: three clocks, earliest one wins
 
-### How long do I have to claim property division after a divorce in Ontario?
+Section 7(3) of Ontario's [Family Law Act](https://www.canlii.org/en/on/laws/stat/rso-1990-c-f3/latest/rso-1990-c-f3.html) is very clear. You have to bring your equalization claim before the **earliest** of these three deadlines:
 
-You must apply by the earliest of: two years after divorce or a judgment of nullity, six years after separation with no reasonable prospect of resuming cohabitation, or six months after a spouse’s death. Family Law Act, s. 7(3).
+1. **2 years** after the divorce or annulment order
+2. **6 years** after separation with no reasonable prospect of reconciliation
+3. **6 months** after your spouse dies
 
-### My divorce was only a year ago — am I still in time?
-
-Not necessarily. If you separated more than six years ago, the six-year period expired first and the two-year post-divorce period offers no protection. The earliest of the three controls.
-
-### Can a missed equalization deadline be extended?
-
-The court may extend under s. 2(8) of the Family Law Act, but only if there are apparent grounds for relief, the delay was in good faith, and no person will suffer substantial prejudice. It is exceptional relief, not something to rely on.
-
-### Is the valuation date the same as the limitation date?
-
-No. The valuation date (s. 4(1)) determines how net family property is measured and is usually the date of separation. The limitation date (s. 7(3)) determines the filing deadline and may run from separation, divorce, or death.
-
-### Does signing a separation agreement stop the limitation clock?
-
-If the agreement expressly resolves equalization, the limitation period ceases to be the main obstacle. If it deals only with support and parenting, the equalization entitlement survives and the clock keeps running.
-
-### If equalization is out of time, can I still claim against property in China?
-
-Possibly, through a different cause of action. A trust claim over a specific property you funded is analytically separate, and trust claims involving land are generally governed by the ten-year period under the Real Property Limitations Act. This is fact-specific.
-
-### My spouse died — how long do I have?
-
-The equalization application itself must be brought within six months of the spouse’s death (Family Law Act, s. 7(3)). Separately, a surviving spouse must also elect, in roughly the same window, between taking under the will or intestacy and claiming equalization (s. 6). Failing to elect in time is generally treated as electing against equalization. Those are two steps, not one.
+It's not “pick the longest one.” All three clocks run at the same time. Whichever hits first, that's it.
 
 ---
 
-Limitation periods are the one property issue that cannot be negotiated away. If you separated more than five years ago, or you are already divorced and property was never reduced to writing, [book a 30-minute initial consultation](/en/contact/) ($220 + HST) and have the dates calculated first. Call 647-930-6688.
+## The most common trap: “We divorced six months ago, we're fine”
 
-*This article is general legal information, not legal advice, and does not create a solicitor-client relationship. Limitation calculations are highly fact-specific and missed deadlines can be irreversible. Confirm current legislation before relying on any citation.*
+Here's the story I see all the time:
+
+Separated in March 2019, divorce order in January 2026, thinking about property in June 2026. The client thinks: “It's only been six months since divorce, I still have two years.”
+
+In reality, the 6-year clock from separation already expired in March 2025. The divorce date can't save it. The equalization claim expired more than a year ago.
+
+This is especially common with Chinese clients. Separated, went back to China for a while, dragged it out. Or got the divorce done first — in China or in Ontario — thinking property can wait. Once a foreign divorce is recognized here, that 2-year clock may start from the date on that certificate. See [Divorced in China — can Ontario still divide the property?](/en/blog/china-divorce-ontario-equalization-afterward/). Getting the divorce done with nothing in writing about property is the most common way to lose the claim. See [uncontested divorce](/en/blog/uncontested-divorce-ontario/).
+
+It can also go the other way: separated for 2 years but divorced for 2 years already (divorced quickly after separation). Then the 2-year clock hits first.
+
+How the separation date is identified is in [separation date vs. divorce date](/en/blog/separation-date-vs-divorce-date-ontario/).
+
+---
+
+## Valuation date vs. limitation start date — not the same thing
+
+People mix these up all the time. Simply put:
+
+- **Valuation date**: for calculating how much. How we calculate net family property. Usually the separation date. That's s. 4(1).
+- **Limitation start date**: for calculating whether you still can. Whether you can still bring the claim. It could be the separation date, the divorce date, or the date of death. That's s. 7(3).
+
+One decides how much you get. The other decides if you can still ask.
+
+---
+
+## Missed the deadline. Can the court give you more time?
+
+Yes, but don't count on it. Section 2(8) gives the court discretion to extend, but you have to meet **all three** tests at the same time:
+
+1. You have a prima facie case — the claim itself has real merit
+2. The delay was in good faith — you acted honestly, no bad motive
+3. No one will suffer substantial prejudice because of the delay
+
+The third one is usually the hardest. The longer you wait, the more likely the other side has moved on — remarried, bought a house, disposed of assets. The court will see reopening everything as unfair.
+
+“Good faith” doesn't mean you made zero mistakes. Just not checking usually doesn't kill good faith, unless it was willful blindness. But “I kept putting it off because it was a hassle” and “I didn't know because the other side hid assets” carry very different weight.
+
+Think of extension as emergency repair, not a planning tool.
+
+---
+
+## We signed a separation agreement. Are we done with limitation?
+
+Depends on what it says:
+
+- It clearly dealt with property, usually with a mutual release of equalization — then limitation is not your main worry
+- It only dealt with support or parenting, said nothing about property — your equalization right is still there, and the clock is still running
+- It mentioned property but was vague, like just “each keeps property in their own name” with no clear release of equalization — this is where fights happen
+
+One more risk: if the agreement later gets set aside — for example, there was no full financial disclosure — the equalization claim might “come back to life,” but the limitation clock usually didn't pause just because you signed something. Whether an agreement can stand is in [can you undo a separation agreement](/en/blog/separation-agreement-validity-ontario/).
+
+Any separation agreement should spell out how equalization was handled — paid after calculation, or mutually waived — and state the valuation date.
+
+---
+
+## Equalization expired. Is everything lost? No.
+
+Section 7(3) only covers equalization. Other claims have their own rules:
+
+- **Child support**: no hard limitation like this, and you can claim retroactive arrears. See [retroactive child support](/en/blog/retroactive-child-support-ontario/).
+- **Spousal support**: different rules under the *Family Law Act* vs. the *Divorce Act*.
+- **Trust claims over land**, like resulting or constructive trust where you paid but title is in the other person's name: usually 10 years under the *Real Property Limitations Act*. See [parental gifts and resulting trust](/en/blog/resulting-trust-parental-gifts-ontario/).
+- **Unjust enrichment for money**: usually 2 years from discovery under the *Limitations Act, 2002*.
+- **Right to possession of the matrimonial home**: ends when the marriage ends.
+
+So even if equalization is out of time, if you're claiming a trust interest in a specific property, that's a separate path. Whether a house in China even goes on the NFP statement is in [property in China](/en/blog/china-property-ontario-divorce/).
+
+---
+
+## What if the other side hid property?
+
+Hiding helps you on two parts of the extension test: it supports good faith (you didn't know), and it makes it harder for the hiding party to claim they are prejudiced by the delay. Hiding also has its own consequences, including adverse inferences and cost penalties. See [dissipation of assets](/en/blog/dissipation-of-assets/).
+
+But once you know or ought to have known about the undisclosed property, don't keep waiting. Further delay will start to eat away at good faith.
+
+---
+
+## When should you definitely see a lawyer?
+
+If any of these sound familiar, get your dates calculated soon:
+
+- Separated close to or over 5 years, property still not dealt with
+- You have the divorce order but nothing in writing about property
+- Your spouse has passed away, you are the surviving spouse and haven't made an election yet — you only have 6 months, the shortest of the three
+- You signed a separation agreement but there was no full financial disclosure at the time
+- Property in China or elsewhere was never included in any calculation
+
+Once limitation expires, the court can't extend it on its own. You have to bring the motion yourself, and meet those three tests.
+
+---
+
+## FAQs people ask me the most
+
+### How long after divorce do I have to claim property division?
+
+Before the earliest of: 2 years after divorce/annulment, 6 years after separation with no reasonable prospect of reconciliation, 6 months after a spouse's death.
+
+### Divorced only a year ago, I'm fine, right?
+
+Not necessarily. If it's been over 6 years since separation, the 6-year clock already beat the 2-year clock.
+
+### Missed the deadline, any hope?
+
+Possibly. The court can extend under s. 2(8), but you need merit, good faith, and no substantial prejudice. It's an exception, not a plan.
+
+### We signed a separation agreement, still a limitation issue?
+
+If it clearly dealt with equalization, usually not your main issue. If it said nothing about property, the clock is still running.
+
+### My spouse passed away, how long do I have?
+
+6 months to bring the equalization claim. And around the same time, you also have to elect between taking under the will/intestacy vs. claiming equalization under s. 6. Those are two separate steps, don't mix them up.
+
+---
+
+Limitation is the one issue in property division that negotiation can't fix. Once it's gone, even a strong claim may not get heard. If you've been separated for over five years, or divorced with nothing in writing about property, I suggest [booking an initial consultation](/en/contact/) (30 minutes, $220+HST) to get your dates sorted. Call 647-930-6688.
+
+*This article provides general legal information only. It is not legal advice and does not create a solicitor-client relationship. Limitation calculations are highly fact and date specific, and missing a deadline can have irreversible consequences. Legislation and case law change — please verify current authority before relying on it.*
