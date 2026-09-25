@@ -15,6 +15,9 @@ tags:
   - "miao-he-lawyer"
   - "toronto-child-custody-lawyer"
   - "toronto-chinese-family-lawyer"
+relatedReading:
+  - slug: adult-child-no-custody-ontario
+    line: 孩子已经成年、在读大学，通常不再争抚养权；大学费用是另一条。
 ---
 
 子女监护权争议是家庭法案件中情绪最激烈、影响最深远的一类。很多父母在这个过程中因为不了解Ontario法律的判断逻辑，做出了适得其反的决定。

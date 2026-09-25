@@ -18,6 +18,10 @@ tags:
   - "miao-he-lawyer"
   - "ontario-family-law"
 relatedReading:
+  - slug: china-divorce-ontario-equalization-afterward
+    line: After a Chinese divorce that left Canadian property out of the judgment, whether Ontario can still equalize.
+  - slug: foreign-divorce-avoid-spousal-support-ontario
+    line: A foreign divorce does not automatically cancel support. Ontario can refuse recognition if it was obtained to evade.
   - slug: cross-border-assets-divorce-ontario
     line: How Ontario courts handle Chinese real estate, accounts, and offshore equity once you've chosen the forum.
   - slug: chinese-divorce-property-gift-loan-trust-ontario
@@ -34,7 +38,7 @@ faqStructured:
   - question: "What is an Equalization Set-off?"
     answer: "When one spouse holds assets abroad and the other holds Canadian assets, the Ontario court adjusts the in-Canada distribution ratio to reflect the offshore holdings, equalizing what each spouse actually receives. For example, of CAD $1M total ($800K in Canada, $200K in China), the court can award one spouse $500K of Canadian assets and the other $300K Canadian + $200K Chinese — both end up with $500K, all enforceable inside Canada."
   - question: "I filed in China without disclosing my Canadian assets. What happens when I return to Canada?"
-    answer: "Significant risk. Once an Ontario court determines it has jurisdiction over Canadian-situated property, it may either deal only with the unaddressed Canadian assets or reopen the entire case and recompute equalization across both spouses' worldwide assets under the Family Law Act — effectively overturning the Chinese judgment."
+    answer: "Significant risk. Once an Ontario court determines it has jurisdiction over Canadian-situated property, it may either deal only with the unaddressed Canadian assets or reopen equalization under the Family Law Act. See Divorced in China — can Ontario still divide the property? That is why a Chinese judgment should mention Canadian assets."
   - question: "How do I choose where to file?"
     answer: "The core factor is asset distribution, not procedural convenience. About 80% of assets in China: filing in China is reasonable, but the Chinese judgment must mention the Canadian assets. About 80% in Canada: file in Canada and let the court use Equalization Set-off. Roughly even: it depends on the place of marriage, residence, and evidence accessibility."
 ---

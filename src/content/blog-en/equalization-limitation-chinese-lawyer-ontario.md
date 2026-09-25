@@ -32,6 +32,10 @@ relatedReading:
     line: Concealment and dissipation change both the merits and the extension analysis.
   - slug: resulting-trust-parental-gifts-ontario
     line: An expired equalization claim is not the end of every trust claim.
+  - slug: china-divorce-ontario-equalization-afterward
+    line: A Chinese divorce that left Canadian property untouched can still start the two-year clock in s. 7(3).
+  - slug: after-divorce-ex-still-in-my-house-ontario
+    line: After limitation expires, occupation of a house in your name does not usually recreate a half-interest in title.
   - slug: china-property-ontario-divorce
     line: Whether property in China enters NFP is a different question from whether you are still in time.
   - href: /en/family-law/cross-border-assets/
@@ -96,7 +100,7 @@ A typical pattern:
 
 The instinctive reading is “the divorce was only six months ago.” In fact the six-year period from separation expired in March 2025. By June 2026 the equalization claim had been out of time for over a year. The date of the divorce order does not save it.
 
-This recurs among clients who separate, return to China for a period, and leave property for later — or who finalize the divorce first on the assumption that property can be negotiated at leisure.
+This recurs among clients who separate, return to China for a period, and leave property for later — or who finalize the divorce first on the assumption that property can be negotiated at leisure. A recognized foreign divorce can also start the two-year clock from the date on that certificate — see [Divorced in China — can Ontario still divide the property?](/en/blog/china-divorce-ontario-equalization-afterward/).
 
 The reverse also occurs: a couple divorces quickly after separating, and the two-year period expires while the six-year period still has years to run.
 

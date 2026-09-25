@@ -11,6 +11,9 @@ tags:
   - "markham-family-lawyer"
   - "miao-he-lawyer"
   - "ontario-family-law"
+relatedReading:
+  - slug: adult-child-no-custody-ontario
+    line: An adult at university is not usually a custody case. University costs are child support, not parenting.
 ---
 
 The language of child custody in Ontario has changed significantly in recent years. Understanding the current framework is essential for any parent navigating a separation or divorce.

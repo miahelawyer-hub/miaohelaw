@@ -33,6 +33,10 @@ relatedReading:
     line: 对方转移、挥霍财产时，时效和举证要一起看。
   - slug: resulting-trust-parental-gifts-ontario
     line: 均等化过期后，信托请求仍可能是另一条路。
+  - slug: china-divorce-ontario-equalization-afterward
+    line: 中国先离、判决没分加拿大财产，外国离婚会不会启动第 7(3) 条那两年。
+  - slug: after-divorce-ex-still-in-my-house-ontario
+    line: 时效过了，对方还住在你名下的房子里，居住本身一般不会变出一半产权。
   - slug: china-property-ontario-divorce
     line: 中国房产进不进 NFP，和均等化时效是两个问题。
   - href: /family-law/cross-border-assets/
@@ -97,7 +101,7 @@ faqStructured:
 
 直觉是「离婚才半年，两年期限还早」。实际上，分居 6 年的期限在 2025 年 3 月就已经届满。到 2026 年 6 月，均等化申请权早在一年多以前就失效了，离婚令的日期救不了这个案子。
 
-这个陷阱在华人客户中特别常见：分居后先回国住一段时间、拖着不办；或者在中国或安省先把「离婚」办掉，以为财产可以慢慢谈。
+这个陷阱在华人客户中特别常见：分居后先回国住一段时间、拖着不办；或者在中国或安省先把「离婚」办掉，以为财产可以慢慢谈。外国离婚一旦被承认，第 7(3) 条的两年也可能从那张证书的日期起算——见[中国离了婚，安省还能分财产吗](/blog/china-divorce-ontario-equalization-afterward/)。
 
 反向也存在：分居才 2 年但已经离婚满 2 年（分居后很快办了离婚），此时 2 年那条先到期。
 

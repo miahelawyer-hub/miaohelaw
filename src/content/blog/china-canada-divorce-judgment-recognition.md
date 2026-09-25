@@ -15,6 +15,10 @@ tags:
   - "jurisdiction-selection"
   - "miao-he-lawyer"
 relatedReading:
+  - slug: china-divorce-ontario-equalization-afterward
+    line: 中国已经离完、判决没分加拿大财产，安省还能不能走均等化。
+  - slug: foreign-divorce-avoid-spousal-support-ontario
+    line: 境外离婚不能自动取消赡养费；为躲义务去离的，法院可以不认。
   - slug: cross-border-assets-divorce-ontario
     line: 选完起诉地之后，加拿大法院如何审理与披露中国房产、账户与境外公司股权。
   - slug: chinese-divorce-property-gift-loan-trust-ontario
@@ -31,7 +35,7 @@ faqStructured:
   - question: "什么是 Equalization Set-off（调账）处理？"
     answer: "当一方在境外有财产、另一方在加拿大有财产时，加拿大法院可通过调整境内分配比例来反映境外财产的归属，使双方实际所得均衡。例如总财产 100 万加币、境内 80 万境外 20 万时，可让一方分得加国 50 万、另一方分得加国 30 万 + 中国 20 万，最终各 50 万，避免跨国执行的不确定性。"
   - question: "在中国判决里没有提及加拿大财产，回加拿大后会怎样？"
-    answer: "存在重大风险。加拿大法院一旦认定对加拿大境内财产具司法管辖权，可能仅处理加国境内未分割财产，也可能按 Family Law Act 重新核算双方全球范围内所有财产，等于推翻中国判决。这就是为什么中国判决中必须\"提及\"加拿大财产的存在。"
+    answer: "存在重大风险。加拿大法院一旦认定对加拿大境内财产具司法管辖权，可能仅处理加国境内未分割财产，也可能按 Family Law Act 重新核算双方全球范围内所有财产。展开见「中国离了婚，安省还能分财产吗」。这也是为什么中国判决中必须提及加拿大财产的存在。"
   - question: "起诉地选择的核心考量是什么？"
     answer: "核心考量是财产的国别分布，而非\"在哪里方便起诉\"。约 80% 财产在中国时可考虑在中国起诉但必须在判决中提及加拿大财产；约 80% 财产在加拿大时建议在加拿大起诉，由加拿大法院通过调账处理少量境内财产；接近平均分布时需结合婚姻登记地、双方居住地、证据可获取性综合判断。"
 ---

@@ -22,6 +22,8 @@ relatedReading:
     line: "Enforcement: FRO and court remedies when support payments stop or fall behind."
   - slug: ontario-vs-china-child-spousal-support-comparison
     line: "Cross-border context: how Ontario differs from Chinese family law on both child and spousal support."
+  - slug: foreign-divorce-avoid-spousal-support-ontario
+    line: "A foreign divorce does not automatically cancel Ontario support. Recognition can be refused if it was obtained to evade."
 ---
 
 Many clients walk into a first consultation assuming [child support](/en/family-law/support/) and [spousal support](/en/family-law/support/) work the same way. In Ontario, they don't — and that single misunderstanding leads to badly calibrated expectations, weak negotiating positions, and avoidable surprises in court. As a dually licensed lawyer (China 2009 / Ontario LSO #83315K), I see two specific traps come up again and again: misreading what SSAG actually is, and underestimating how imputed income reshapes the calculation. This article walks through both, plus the broader factors that drive Ontario spousal support outcomes.
