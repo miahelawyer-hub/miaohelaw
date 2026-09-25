@@ -37,6 +37,8 @@ relatedReading:
     line: 中国先离、判决没分加拿大财产，外国离婚会不会启动第 7(3) 条那两年。
   - slug: after-divorce-ex-still-in-my-house-ontario
     line: 时效过了，对方还住在你名下的房子里，居住本身一般不会变出一半产权。
+  - slug: house-appreciation-after-separation-ontario
+    line: 先等房价再起诉，升值账可能有利，第 7(3) 条的钟仍在走。
   - slug: china-property-ontario-divorce
     line: 中国房产进不进 NFP，和均等化时效是两个问题。
   - href: /family-law/cross-border-assets/

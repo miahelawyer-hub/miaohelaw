@@ -21,6 +21,8 @@ relatedReading:
     line: "还谈得拢时，用协议解决财产问题。"
   - slug: "after-divorce-ex-still-in-my-house-ontario"
     line: "外国已经离完、对方还住在你名下的房子里，第 19(2) 条的居住权通常已经结束。"
+  - slug: "house-appreciation-after-separation-ontario"
+    line: "现在开案会不会卖房，和分居后升值还分不分，是两笔账。出售不是一律命令。"
 faqStructured:
   - question: "配偶不肯搬出去，我可以怎么做？"
     answer: "提出出售动议。安省法院命令出售婚姻住宅时，可以一并作出使该出售得以执行的各项命令，常见的包括：责令占用一方在指定日期前迁出、配合看房及经纪与估价师进入、保持房屋适于展示的状态、签署挂牌文件与成交文件。如果一方拒不配合，实务上法院会作出的命令是把出售的主导权单独交给一方（sole carriage of the sale）：由该方单独指示经纪、接受报价、签署挂牌与成交文件，无需对方签字。拒绝搬走本身不构成对抗出售的理由，它只是出售命令本身要处理的一个问题。"

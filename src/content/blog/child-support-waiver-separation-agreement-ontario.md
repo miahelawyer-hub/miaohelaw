@@ -31,6 +31,8 @@ relatedReading:
     line: 分居协议签了之后，哪些情况还能被推翻。
   - slug: marriage-contract-child-parenting-ontario
     line: 婚内协议同样锁不住孩子和抚养费。
+  - slug: retroactive-child-support-ontario
+    line: 协议不写不等于以后不能追。分居了还没起诉，以前那截仍可能要。
 faqStructured:
   - question: "分居协议里可以不写子女抚养费吗？"
     answer: "不建议，也通常过不了。子女抚养费是孩子的权利。协议不写、或写互不支付，法院处理离婚时仍须确认已有合理安排；不合理的，可以中止发出离婚令。"

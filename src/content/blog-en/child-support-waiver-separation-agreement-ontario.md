@@ -31,6 +31,8 @@ relatedReading:
     line: After you sign a separation agreement, when it can still be set aside.
   - slug: marriage-contract-child-parenting-ontario
     line: A marriage contract cannot lock parenting or child support either.
+  - slug: retroactive-child-support-ontario
+    line: Silence in an agreement is not a waiver of the past. Support can still be claimed for the years before anyone filed.
 faqStructured:
   - question: "Can you leave child support out of a separation agreement in Ontario?"
     answer: "You can leave a blank on the page. That does not mean the court treats the issue as settled. Child support is the child's right. If the agreement is silent, or says neither parent pays, the court must still be satisfied that reasonable arrangements have been made before a divorce is granted."

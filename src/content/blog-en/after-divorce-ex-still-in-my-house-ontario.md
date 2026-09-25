@@ -30,6 +30,8 @@ relatedReading:
     line: The house value goes on the NFP statement. Living in it is not a half-interest in title.
   - slug: adult-child-no-custody-ontario
     line: An adult child still living there is not a reason to relitigate custody.
+  - slug: house-appreciation-after-separation-ontario
+    line: Before a divorce, whether a post-separation increase is shared is a valuation-date question, not this possessory one.
 faqStructured:
   - question: "After the divorce, the ex is still in my house. What now?"
     answer: "Separate three facts: whose name is on title, whether you are still spouses, and whether equalization is in time. After a recognized foreign divorce, the equal right of possession in s. 19(2) usually ends unless a contract or order says otherwise. Continued occupation is usually by your permission. It is not an automatic half-interest."

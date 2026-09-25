@@ -30,6 +30,8 @@ relatedReading:
     line: 房子市值进净值表；住在里面不等于已经分走一半。
   - slug: adult-child-no-custody-ontario
     line: 孩子已经成年还住在这套房子里，不是继续争抚养权的理由。
+  - slug: house-appreciation-after-separation-ontario
+    line: 还没离、分居后房价回来，升值还分不分，是估值日的账，不是这篇的居住权。
 faqStructured:
   - question: "离完婚了，对方还住在我名下的房子里怎么办？"
     answer: "先分清三件事：产权在谁名下、还是不是法律上的配偶、均等化有没有过时效。外国离婚被承认后，第 19(2) 条下的平等居住权通常结束，除非另有协议或法院令。对方继续住，多半是你允许，不是自动分走一半产权。"

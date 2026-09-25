@@ -36,6 +36,8 @@ relatedReading:
     line: A Chinese divorce that left Canadian property untouched can still start the two-year clock in s. 7(3).
   - slug: after-divorce-ex-still-in-my-house-ontario
     line: After limitation expires, occupation of a house in your name does not usually recreate a half-interest in title.
+  - slug: house-appreciation-after-separation-ontario
+    line: Waiting for the market may help the appreciation ledger. It does not stop the s. 7(3) clocks.
   - slug: china-property-ontario-divorce
     line: Whether property in China enters NFP is a different question from whether you are still in time.
   - href: /en/family-law/cross-border-assets/
