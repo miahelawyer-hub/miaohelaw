@@ -58,7 +58,7 @@ faqStructured:
 
 You have separated. The children live with one parent. The other pays little, or nothing. The property file is not ready — the house is in one name, the market is soft, the other party will not talk. The question becomes: does child support have to wait as well? If we have not claimed it, is the past period gone?
 
-Do not write property and child support as one sentence. Equalization has the s. 7(3) clocks. Child support does not die on the same six-year line. How table amounts and spousal support differ is on [child and spousal support](/en/family-law/support/). This article is only the unsued period.
+Property and child support are two ledgers. Equalization has the s. 7(3) clocks. Child support does not die on the same six-year line. How table amounts and spousal support differ is on [child and spousal support](/en/family-law/support/). This article is only the unsued period.
 
 ---
 

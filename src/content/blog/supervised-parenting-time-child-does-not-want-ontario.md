@@ -14,7 +14,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/en/blog/supervised-parenting-time-child-does-not-want-ontario/"
-relatedIntro: "孩子愿不愿意见，有没有限制令，和最终怎么判，不要写成一句："
+relatedIntro: "孩子愿不愿意见，有没有限制令，和最终怎么判，是三笔账："
 relatedReading:
   - slug: child-custody-ontario-chinese
     line: 子女最大利益、决策责任和育儿时间的总框架在这里。
@@ -54,7 +54,7 @@ faqStructured:
 </ul>
 </div>
 
-咨询里常听到一句：孩子自己说了，不想单独跟对方待着。希望至少有自己、或者家里另一个孩子跟着。对方不同意。已经立案了，能不能向法院要求监督探视（supervised parenting time）？
+孩子自己说了，不想单独跟对方待着。希望至少有自己、或者家里另一个孩子跟着。对方不同意。已经立案了，能不能向法院要求监督探视（supervised parenting time）？
 
 先把两笔账分开。一笔是[决策责任和育儿时间](/blog/child-custody-ontario-chinese/)——法院只问子女最大利益。另一笔才是限制：要不要第三人在场。孩子不愿意，是因素，不是开关。已经有限制令时，临时阶段的起点通常就是监督，不是无监督的单独相处。
 
@@ -66,7 +66,7 @@ faqStructured:
 
 [《离婚法》](https://www.canlii.org/en/ca/laws/stat/rsc-1985-c-3-2nd-supp/latest/rsc-1985-c-3-2nd-supp.html)第 16 条和[《儿童法改革法》](https://www.canlii.org/en/on/laws/stat/rso-1990-c-c12/latest/rso-1990-c-c12.html)第 24 条，都把孩子的观点和意愿写成要考虑的一项，分量随年龄和成熟程度加重。它们没有写成：孩子拒绝单独见面，探望就必须有人看着。
 
-两条轨道不要写成一句。
+两条轨道：
 
 **没有限制令、没有证明给孩子的风险，只是孩子说不愿意。** 监督探视仍是例外。常见的正当理由是伤害或伤害风险、诱拐风险、物质滥用、严重的临床问题，或长期没见过、需要重新介绍。孩子说「我不想一个人去」，本身通常到不了这一层。
 
@@ -122,7 +122,7 @@ faqStructured:
 
 ## 让家里人陪着，和法院说的监督，不是一回事
 
-三种安排不要写成一句：
+三种安排：
 
 **专业监督探视。** 指定中心或中立监督员在场。时间短、有记录。这才是申请书里「supervised parenting time」通常指的东西。
 

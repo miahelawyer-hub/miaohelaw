@@ -1,6 +1,6 @@
 ---
 title: "After the Divorce, the Ex Is Still in My House. What Now?"
-description: "An ex living in a house in your name does not take half the title. Markham Chinese lawyer Miao He explains Family Law Act s. 19(2): when you cease to be spouses, the equal right of possession usually ends. Whether a foreign divorce is recognized decides the lock-change and equalization questions. Mandarin help with the matrimonial home. Toronto and Ontario: 647-930-6688"
+description: "An ex living in a house in your name does not take half the title. Markham Chinese lawyer Miao He explains Family Law Act s. 19(2): when you stop being spouses, the right to live there because you are married usually ends. After a recognized foreign divorce, equalization may still be open. Mandarin help with the matrimonial home. Toronto and Ontario: 647-930-6688"
 pubDate: 2026-09-24T19:43:00-04:00
 updatedDate: 2026-09-24T20:00:00-04:00
 heroImage: ""
@@ -53,13 +53,13 @@ faqStructured:
 <p class="blog-tldr-kicker">In short</p>
 <ul>
 <li>An ex still living in the house is <strong>not</strong> a half-interest in title. Occupation, registration, and equalization are three ledgers.</li>
-<li><strong>Family Law Act s. 19(2)</strong>: where only one spouse has an interest in the matrimonial home, the other's right of possession is personal and <strong>ends when they cease to be spouses</strong>, unless a separation agreement or court order provides otherwise.</li>
-<li>Whether a <strong>foreign divorce is recognized</strong> decides whether you are still spouses. If it is, the lock-change and consent-to-sell rules usually fall away. If it is not, you are still treated as married. See <a href="/en/blog/china-divorce-ontario-equalization-afterward/">divorced in China — can Ontario still divide the property?</a></li>
+<li><strong>Family Law Act s. 19(2)</strong>: if only one name is on title, the other person can live there because you are still spouses. That right <strong>ends when you stop being spouses</strong>, unless an agreement or court order says otherwise.</li>
+<li>After a <strong>recognized foreign divorce</strong>, you are usually no longer spouses. The matrimonial-home rules on living there and consenting to a sale usually fall away. See <a href="/en/blog/china-divorce-ontario-equalization-afterward/">divorced in China — can Ontario still divide the property?</a></li>
 <li>While you are still spouses and the other party will not sell or leave, use a <a href="/en/blog/force-sale-matrimonial-home-ontario/">sale motion</a>. After the divorce, when the only issue is continued occupation, start with limitation and any agreement — do not paste the entire during-marriage sale playbook onto the file.</li>
 </ul>
 </div>
 
-The house is in one name. That person paid. The other party has lived there for years with a child. The consultation question is: the marriage is over — can I have the house back?
+The house is in one name. That person paid. The other party has lived there for years with a child. The marriage is over. Can I have the house back?
 
 You can negotiate, and you can sue. Do not read “my name on title” as “nothing in the NFP.” How title is registered was never the same as how the house is equalized. See [title versus property division](/en/blog/matrimonial-home-title-vs-property-division-ontario/).
 
@@ -71,11 +71,9 @@ Ask first whether you are still spouses.
 
 During the marriage, both spouses have an equal right to possession of a matrimonial home, regardless of title. Section 21 also bars a sale or mortgage without the other spouse's consent or a court order. Changing the locks, or putting the other spouse on the street, is usually both unlawful and damaging to the file.
 
-Section 19(2) is explicit about the end-point. Where only one spouse has an interest in the matrimonial home, the other's right of possession is personal as against that spouse, and **ends when they cease to be spouses**, unless a separation agreement or court order provides otherwise. Once a foreign divorce is recognized, you are former spouses in Canada. Continued occupation is then usually occupation by permission, not a s. 19 possessory right.
+Section 19(2) is plain: if only one name is on title, the other person can live there **because you are still spouses**, not because they own a share of the house. That right ends when you stop being spouses — unless a separation agreement or a court order says they can stay. Once a foreign divorce is recognized, you are former spouses in Canada. If they still live there, it is usually because you have not yet required them to leave, not because the statute still gives them a spouse's right to occupy.
 
-If the foreign divorce is **not** recognized — for example because it was obtained to evade Ontario obligations, see [avoiding spousal support by divorcing abroad](/en/blog/foreign-divorce-avoid-spousal-support-ontario/) — you are still married. Changing the locks or listing the house still hits ss. 19 and 21.
-
-Recognition does not license a confrontation at the door. Written notice, an agreed move-out date, or a court order for vacant possession is cleaner than a locksmith. If the occupant still has a trust claim, or an equalization claim that is in time, vacant possession and money may still be tried together.
+A recognized divorce does not mean you can show up tomorrow and throw them out. Write first. Agree a move-out date. If they will not go, ask the court for an order. Do not change the locks on your own. If they still claim a share of the house, moving out and dividing the money may be decided together.
 
 ---
 
@@ -85,7 +83,7 @@ On the NFP statement, often yes.
 
 Ontario does not slice the house into registered halves. It [equalizes net family property](/en/blog/net-family-property-ontario/). The value of the home during the marriage is usually an asset on the titled spouse's statement, then set off against the other spouse's NFP. Paying cash, discharging the mortgage early, and holding title in one name all go into the evidence. They do not, by themselves, switch the statute off.
 
-If the parties already divorced in China and the Canadian house was never in the judgment, Ontario may still equalize — if s. 7(3) has not expired. After limitation, occupation does not usually recreate a half-interest in title. Trust and unjust enrichment are different causes of action. They need evidence of contribution and intention.
+You already divorced in China, and the judgment said nothing about this Canadian house. Ontario can still divide the money — if the time limit has not run. See [limitation periods for equalization](/en/blog/equalization-limitation-chinese-lawyer-ontario/). After that deadline in Family Law Act s. 7(3), living in the house for years does not usually turn into half the title. A different claim — that they paid in and were meant to own a share — needs proof of both. Staying there is not enough.
 
 If a **minor** still lives there, housing stability matters on exclusive possession and sale. An [adult child](/en/blog/adult-child-no-custody-ontario/) is not a legal right to occupy the titled owner's home. You can agree that the child — and the parent who looks after them — stays until graduation or other housing is found. That is an arrangement, not custody.
 

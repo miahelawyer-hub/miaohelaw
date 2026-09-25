@@ -56,7 +56,7 @@ faqStructured:
 </ul>
 </div>
 
-A typical consultation: the child says they do not want to be alone with the other parent. They want you there, or another child in the house. The other parent refuses. A case is already before the court. Can you ask for supervised parenting time?
+The child says they do not want to be alone with the other parent. They want you there, or another child in the house. The other parent refuses. A case is already before the court. Can you ask for supervised parenting time?
 
 Two ledgers. One is [decision-making and parenting time](/en/blog/child-custody-ontario-chinese/) — best interests only. The other is a restriction: whether a third person must be in the room. The child’s reluctance is a factor. It is not a switch. Where a restraining order is already on the file, the temporary starting point is usually supervision, not unsupervised time.
 
@@ -68,7 +68,7 @@ You can ask. It is not automatic.
 
 Section 16 of the [Divorce Act](https://www.canlii.org/en/ca/laws/stat/rsc-1985-c-3-2nd-supp/latest/rsc-1985-c-3-2nd-supp.html) and s. 24 of the [Children’s Law Reform Act](https://www.canlii.org/en/on/laws/stat/rso-1990-c-c12/latest/rso-1990-c-c12.html) both require the court to consider the child’s views and preferences, giving them weight in line with age and maturity. Neither section says that a child’s refusal of unsupervised time means every visit must be watched.
 
-Do not write two tracks as one sentence.
+Two tracks:
 
 **No restraining order, no proven risk to the child, only a stated reluctance.** Supervised parenting time remains the exception. The usual justifications are harm or a risk of harm, abduction, substance abuse, serious clinical issues, or reintroduction after a long absence. “I do not want to go alone” does not, by itself, usually reach that threshold.
 
@@ -124,7 +124,7 @@ Where safety is the issue — violence, stalking, loss of control in front of th
 
 ## A relative in the room is not court-ordered supervision
 
-Do not write three arrangements as one sentence.
+Three arrangements:
 
 **Professional supervision.** A designated centre or a neutral supervisor. Short visits. A record. That is usually what “supervised parenting time” means on an application.
 

@@ -14,7 +14,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/en/blog/retroactive-child-support-ontario/"
-relatedIntro: "以前那截还能不能要，和以后怎么算、对方不付怎么执行，不要写成一句："
+relatedIntro: "以前那截还能不能要，以后怎么算、对方不付怎么执行，是三笔账："
 relatedReading:
   - href: /family-law/support/
     title: 抚养费与赡养费
@@ -58,7 +58,7 @@ faqStructured:
 
 分居了，孩子跟着一方，对方暂时给得很少或完全没给。财产那边还不想开案——房子在自己名下、市道不好、对方也不想谈。于是问：抚养费是不是也要一起先放着？以前没要的，以后还能要吗？
 
-财产和抚养费不要写成一句。均等化有第 7(3) 条的钟；子女抚养费没有同一条「分居六年就没了」。表格怎么算、配偶赡养费为什么不是强制的，见[抚养费与赡养费](/family-law/support/)。下面只把「还没起诉的那截」划清。
+财产和抚养费是两笔账。均等化有第 7(3) 条的钟；子女抚养费没有同一条「分居六年就没了」。表格怎么算、配偶赡养费为什么不是强制的，见[抚养费与赡养费](/family-law/support/)。下面只把「还没起诉的那截」划清。
 
 ---
 

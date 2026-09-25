@@ -56,7 +56,7 @@ faqStructured:
 </ul>
 </div>
 
-A typical consultation question: the house is in one name. The other party is not coming back for now. One parent stays with the children and keeps paying the mortgage. The market is soft. Must we start a divorce and equalization now? If we wait and the house recovers, is that gain still shared?
+The house is in one name. The other party is not coming back for now. One parent stays with the children and keeps paying the mortgage. The market is soft. Must we start a divorce and equalization now? If we wait and the house recovers, is that gain still shared?
 
 Two ledgers. One is [equalization of net family property](/en/blog/net-family-property-ontario/) — locked to the [separation date](/en/blog/separation-date-vs-divorce-date-ontario/). The other is title. A name on the register is not the same entry as a line on the NFP statement. How title is held was never the same as how the house is equalized. See [title versus property division](/en/blog/matrimonial-home-title-vs-property-division-ontario/).
 
@@ -83,7 +83,7 @@ On **sole title**, equalization usually **does not recut the later gain**. Marke
 | Who pays the mortgage after | Often the occupant; a large principal paydown may be a separate accounting | Payments and taxes set off occupation rent and affect how net proceeds are divided |
 | Can the off-title spouse block a sale | While you are still spouses, s. 21 may still block it | A co-owner can move for partition and sale |
 
-Do not write three fact patterns as one sentence:
+Three situations:
 
 **Sole title, you live there, you pay.** Equalization looks at the separation date. Later appreciation is usually not shared. A trust claim — a down payment from the other spouse’s parents, or years of payments from their account — is a different cause of action. It needs contribution and intention. See [parental gifts and trusts](/en/blog/resulting-trust-parental-gifts-ontario/) and [Pecore v. Pecore, 2007 SCC 17](https://www.canlii.org/en/ca/scc/doc/2007/2007scc17/2007scc17.html).
 
