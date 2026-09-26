@@ -1,10 +1,10 @@
 ---
-title: "Can You Fight Custody of an Adult Child in an Ontario Divorce?"
-description: "Once a child is an adult at university, Ontario generally does not make a custody order. Markham Chinese lawyer Miao He explains: a 'child' under the Children's Law Reform Act is under 18; university costs may still be child support — money, not parenting. A restraining order needs reasonable fear. Mandarin help. Toronto and Ontario: 647-930-6688"
+title: "My Child Is Already an Adult — Can I Still Fight for Custody? Richmond Hill Chinese Divorce Lawyer Says Usually No"
+description: "Once the child is an adult, Ontario usually has no custody left to fight over. Richmond Hill Chinese divorce lawyer Miao He explains: decision-making and parenting time are for minors; university may still mean child support — money, not parenting. Mandarin help. Markham, Toronto and Ontario: 647-930-6688"
 pubDate: 2026-09-24T19:42:00-04:00
-updatedDate: 2026-09-24T20:00:00-04:00
+updatedDate: 2026-09-25T20:47:00-04:00
 heroImage: ""
-keywords: "custody of adult child Ontario divorce, adult child custody Ontario, university child support Ontario, 20 year old custody Form 8, Chinese lawyer adult child support, Mandarin custody lawyer Markham, child of the marriage university, Toronto Chinese lawyer restraining order adult child, CLRA child under 18, Miao He"
+keywords: "my child is already an adult can I still fight for custody, adult child custody Ontario, university child support Ontario, Richmond Hill Chinese divorce lawyer, Chinese lawyer adult child support, Mandarin custody lawyer Markham, Toronto Chinese lawyer, Miao He"
 tags:
   - "child-custody-ontario"
   - "child-support-ontario"
@@ -15,7 +15,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/adult-child-no-custody-ontario/"
-relatedIntro: "Parenting, university costs, and restraining orders do not belong in the same box:"
+relatedIntro: "Whether parenting is still open, and whether university still costs money, are two different questions:"
 relatedReading:
   - slug: child-custody-ontario-chinese
     line: How Ontario decides decision-making responsibility and parenting time for minors.
@@ -34,118 +34,68 @@ relatedReading:
     title: Child and spousal support
     line: How child support is calculated, and how unpaid support is enforced.
 faqStructured:
-  - question: "Can you fight custody of an adult child in an Ontario divorce?"
-    answer: "Usually no. Under the Children's Law Reform Act, 'child' means a person under 18. An independent university student without a disability decides where to live and whom to see. Writing 'custody' on the application does not make the court try the file as a parenting case for a minor."
-  - question: "If the child is in university, is there nothing left to decide?"
-    answer: "Parenting, usually nothing. Money, maybe. A 'child of the marriage' under the Divorce Act can include an adult who has not withdrawn from parental charge — often a student in full-time university. That is child support, not decision-making or parenting time."
-  - question: "The other parent wants a distance condition from the adult child. Will the court grant it?"
-    answer: "A restraining order requires reasonable grounds to fear for your own safety, or for a child in your lawful custody. A twenty-year-old student is not usually in anyone's lawful custody. Putting it on the application does not make it an order."
-  - question: "If the adult child wants to live with me, or visit me in China, does the court have to approve that?"
-    answer: "Generally no. Adults travel and reside as they choose. A parent can pay for a ticket and living costs. The court will not build a parenting schedule for a twenty-year-old."
-  - question: "A Chinese judgment gave me the child years ago. The child is now an adult. Does Ontario still treat that as custody?"
-    answer: "Recognition of the divorce, and a parenting arrangement made when the child was a minor, are not the same ongoing order. Once the person is an adult, that custody clause usually has no remaining subject. University costs are a separate question."
-  - question: "The child just turned 18 and is still in high school. Is custody gone as well?"
-    answer: "The CLRA custody provisions stop at 18. An 18-year-old still in high school, or just starting university, who has not withdrawn from parental charge may still be a child of the marriage for support. The parenting timetable usually ends. The money claim may not."
-  - question: "If the application wrongly claims custody, can the Answer skip that box?"
-    answer: "Do not miss the Answer deadline because the claim is weak. Form 8 still has to be answered: oppose decision-making and parenting time for an adult child without a disability, and say that university costs, if claimed, are child support and should not be bundled with custody."
+  - question: "My child is already an adult — can I still fight for custody?"
+    answer: "Usually no. What people call custody in Ontario is now decision-making responsibility and parenting time, and it's for minor children. Under the Children's Law Reform Act, a child means under 18."
+  - question: "A Chinese judgment said the child goes to me. Does it still count?"
+    answer: "No. That covered the minor years. Once the child is an adult, there's nothing left for that order to apply to."
+  - question: "University — do I still pay child support?"
+    answer: "Maybe. Many university kids still aren't economically independent. If they're not, support can continue. But it's often not the full table amount. Tuition, residence and living costs are usually section 7 special expenses, split by parental income."
+  - question: "The claim is nonsense — can I just ignore it?"
+    answer: "No. Even if you think the requests are unreasonable, you still have to answer. If you don't, the other side can have you noted in default. Once that happens, the court can grant even unreasonable requests."
 ---
 
 <div class="blog-tldr">
 <p class="blog-tldr-kicker">In short</p>
 <ul>
-<li>What people still call “custody” in Ontario is <a href="/en/blog/child-custody-ontario-chinese/">decision-making responsibility and parenting time</a>. The subject is a <strong>minor</strong>. Under the Children's Law Reform Act, a child is a person under 18.</li>
-<li>An adult at university, without a disability and able to live independently, <strong>is not usually the subject of a custody fight</strong>. Where they live, and whom they see, is their decision.</li>
-<li>University may still attract <strong>child support</strong> if the person remains a child of the marriage. That is money, not a parenting order.</li>
-<li>A restraining order needs evidence of reasonable fear. An application cannot turn an adult child into a “stay 500 metres away” clause. The protection path is <a href="/en/blog/ontario-restraining-order-chinese-family/">restraining orders</a>.</li>
+<li>Short answer: once the child is an adult, there's <strong>usually nothing left to fight over</strong>. See <a href="/en/blog/child-custody-ontario-chinese/">decision-making and parenting time</a>.</li>
+<li>A Chinese judgment that said the child goes to you covered the minor years. Once the child is an adult, that order has nothing left to apply to.</li>
+<li>University: <a href="/en/family-law/support/">child support</a> may still be payable, often not the full table amount. Tuition and residence usually go as s. 7 special expenses.</li>
+<li>The claim is nonsense — you still have to answer. Ignore it and you can be noted in default.</li>
 </ul>
 </div>
 
-Applications sometimes still claim custody of a twenty-year-old at university, plus a distance condition. In Ontario that is not a parenting case.
+What people call “custody” in Ontario is now decision-making responsibility and parenting time, and it's for minor children. Under the [Children's Law Reform Act](https://www.canlii.org/en/on/laws/stat/rso-1990-c-c12/latest/rso-1990-c-c12.html), a child means under 18.
 
-How minors are decided is in [child custody in Ontario](/en/blog/child-custody-ontario-chinese/). This article is only the adult line.
+Short answer: once the child is an adult, there's usually nothing left to fight over.
 
----
-
-## Can you fight custody of an adult child in an Ontario divorce?
-
-Usually no.
-
-The [Children's Law Reform Act](https://www.ontario.ca/laws/statute/90c12) provisions on custody and access define “child” as a person under eighteen. After eighteen, the court does not set a school-age timetable for where the person lives or who consents to medical treatment.
-
-The Divorce Act, since 2021, uses decision-making responsibility and parenting time for a “child of the marriage.” That phrase is wider than eighteen: an adult who remains under parental charge because of illness, disability, or other cause can still be a child of the marriage. In practice, the court will not make a minor-style parenting order for someone without a disability, in university, reachable by phone, and able to board a plane. If the adult does not want contact, the court cannot order a relationship.
-
-A Chinese judgment that “the child goes to one parent” spoke to a then-minor. Once the person is an adult, that clause usually has no remaining subject. Whether the foreign divorce is recognized is a [recognition](/en/blog/china-canada-divorce-judgment-recognition/) question. It is not a current Ontario custody order.
+In university, no disability, able to live independently — where they live, who they see, where they travel is their own business. The court isn't going to make a grade-school schedule for them. How minors are decided is in [child custody in Ontario](/en/blog/child-custody-ontario-chinese/).
 
 ---
 
-## Does university still mean child support?
+## A Chinese judgment said the child goes to me. Does it still count?
 
-It can. That is not custody.
-
-A child of the marriage includes an adult who has not withdrawn from charge and cannot yet obtain the necessaries of life. Full-time university is the usual “other cause.” The court looks at enrolment, whether the program is reasonable, whether the student can contribute by working, whether the parents planned to fund university, and whether the age still fits ongoing support. If those facts are there, the claim is [child support](/en/family-law/support/), including s. 7 expenses such as tuition. If they are not, support ends.
-
-Do not plead “already an adult, so support is zero.” Do not trade monthly help for a parenting order over an adult. Support for minors cannot be waived in a contract — see [leaving child support out of a separation agreement](/en/blog/child-support-waiver-separation-agreement-ontario/). University costs have their own factual threshold.
-
-If a foreign divorce is recognized, spousal support may be closed while child support can still proceed under the Family Law Act. Do not reverse those two sentences. See [Can you avoid Ontario spousal support by divorcing abroad?](/en/blog/foreign-divorce-avoid-spousal-support-ontario/).
-
-On university costs the court usually looks at whether the program is full-time, whether the program and age still match, whether grades are being maintained, whether the student can work in the summer, whether the parents planned to fund university during the marriage, and whether disability or another cause keeps the person from withdrawing from charge. No disability, already working, and “still wants to live at home” is a weak case for treating the person as a minor. Disability that keeps the person from withdrawing from parental charge can keep them a child of the marriage well past eighteen — that is a different fact pattern. Do not collapse it into an ordinary student.
-
-Someone who has just turned eighteen and is still in high school, or just starting university, is usually past the custody timetable. Support may still be open. Do not shut both doors with the word “adult.”
+No. That covered the minor years. Once the child is an adult, there's nothing left for that order to apply to. Whether the foreign divorce is recognized is in [China–Canada divorce judgments](/en/blog/china-canada-divorce-judgment-recognition/).
 
 ---
 
-## If the application wrongly claims custody, can the Answer skip it?
+## University — do I still pay child support?
 
-Do not miss the deadline.
+Maybe. We have a lot of case law on this.
 
-A legally weak claim is not a reason to skip the Answer. Form 8 still has a time limit. The Answer should say: oppose decision-making responsibility and parenting time for an adult child without a disability; if the other party claims university costs, those are child support and need their own evidence — they should not sit in the same box as custody. If the restraining-order claim is “stay 500 metres from the adult child,” split it under s. 46: is it protecting the applicant, or an adult who is not in anyone’s lawful custody.
+Many university kids still aren't economically independent. If they're not, support can continue. But it's often not the full table amount anymore.
 
-The adult child can testify, or refuse. The court will not usually appoint the Office of the Children’s Lawyer for a twenty-year-old. Whether the child wants contact is their decision. A parent cannot obtain a court order that “awards” an adult.
+If the child lives in residence, the usual fight is tuition, residence, living costs, food — split as section 7 special expenses, generally in proportion to each parent's income. See [child and spousal support](/en/family-law/support/).
 
----
+If the child works, that income comes off the top. The court's logic is the child's earnings go to their own costs first, the rest gets split by parental income ratio.
 
-## Will the court restrain contact with an adult child?
+The court draws distinctions. Summer break, not in residence, back living with one parent all summer and not working — that parent is carrying the costs. The other parent may owe some child support for that period, but it may be less than the minor-child amount. The court can reduce it.
 
-Not because it was written on the application.
-
-Family Law Act s. 46 requires reasonable grounds to fear for **your own** safety, or for a child in your **lawful custody**. A twenty-year-old student is not usually in anyone’s lawful custody. A restraining order to protect the applicant still needs evidence of reasonable fear. An old incident on the page is not an automatic order.
-
-The adult child can say whether visits were a problem and whether they want contact. The court will not treat an adult as property in a “500 metres from the other parent” clause. If there is a real safety risk, the restraining-order or criminal path protects the person who needs protection — not a custody box that no longer applies.
+Support for minors cannot be waived in a contract. See [Can you agree to pay zero child support in a separation agreement?](/en/blog/child-support-waiver-separation-agreement-ontario/). University costs are a different test.
 
 ---
 
-## Common questions
+## The claim is nonsense — can I just ignore it?
 
-### Can you fight custody of an adult child in an Ontario divorce?
+No.
 
-Usually no. A CLRA child is under 18. An independent university student decides where to live and whom to see.
+Even if you think the requests are unreasonable or made up, you still have to answer. You can't ignore it.
 
-### If they are in university, is everything finished?
+If you don't, the other side can have you noted in default. Once that happens, the court can grant even unreasonable requests.
 
-Parenting, usually. Support, not necessarily. Full-time university can still mean a child of the marriage. That is money, not custody.
-
-### Will the court order 500 metres from an adult child?
-
-A restraining order needs reasonable fear. An adult child is not usually in lawful custody. The pleading is not the order.
-
-### Does a trip to China to see a parent need a court order?
-
-Generally no. Adults travel as they choose. A parent can pay for the trip.
-
-### Does a Chinese custody clause still operate at university age?
-
-A parenting arrangement made for a minor does not usually survive majority. Recognition of the divorce is a different question.
-
-### Just turned 18 and still in high school?
-
-The parenting timetable usually ends. Support may still treat them as a child of the marriage if they remain in charge.
-
-### Can the Answer skip a custody claim that does not fit?
-
-Do not miss the deadline. Oppose parenting claims for the adult child. Put university costs on the support path.
+So if you get served and think it's all nonsense, still file your Answer. If your Answer is clear, the other side's requests won't get through.
 
 ---
 
-If an application still claims custody of an adult child, or mixes university costs with parenting, [book an initial consultation](/en/contact/) (30 minutes, $220+HST) and split the claims. 647-930-6688.
+[Book an initial consultation](/en/contact/) (30 minutes, $220+HST). Call 647-930-6688.
 
-*This article is general information, not legal advice, and does not create a lawyer–client relationship. Whether someone remains a child of the marriage, and whether a restraining order is available, depend on age, studies, health, and the evidence.*
+*This article provides general legal information only. It is not legal advice and does not create a solicitor-client relationship.*
