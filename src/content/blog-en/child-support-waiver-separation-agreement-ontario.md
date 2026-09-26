@@ -2,7 +2,7 @@
 title: "Ontario Chinese Divorce Lawyer: Can You Agree to Pay Zero Child Support in a Separation Agreement?"
 description: "A clause that neither parent pays child support usually will not hold. Markham Chinese lawyer Miao He explains: child support cannot be waived. Mandarin help with separation agreements and uncontested divorce. Toronto and Ontario: 647-930-6688"
 pubDate: 2026-09-24T19:25:00-04:00
-updatedDate: 2026-09-25T20:15:00-04:00
+updatedDate: 2026-09-25T21:12:00-04:00
 heroImage: ""
 keywords: "can you agree to pay zero child support in a separation agreement, Ontario Chinese divorce lawyer child support waiver, waive child support Ontario, 50/50 parenting still pay child support, uncontested divorce stalled child support, Chinese lawyer child support Markham, Mandarin separation agreement lawyer Toronto, Miao He"
 tags:
@@ -51,14 +51,14 @@ faqStructured:
 <div class="blog-tldr">
 <p class="blog-tldr-kicker">In short</p>
 <ul>
-<li>Short answer: <strong>No</strong>. You can't waive child support. It belongs to the child, not to the parents to bargain away.</li>
-<li>You can negotiate property. You can negotiate spousal support. <a href="/en/family-law/support/">Child support</a> is different.</li>
-<li>A “neither party pays” clause: <a href="https://www.canlii.org/en/on/laws/stat/rso-1990-c-f3/latest/rso-1990-c-f3.html">Family Law Act s. 56(1.1)</a>. If it's unreasonable against the Guidelines, the court can disregard it.</li>
-<li>Both signed, divorce still stuck: Divorce Act s. 11(1)(b). See <a href="/en/blog/uncontested-divorce-ontario/">uncontested divorce</a>.</li>
+<li>Short answer: No. You can't waive child support. It belongs to the child, not to the parents to bargain away.</li>
+<li>You can negotiate property. You can negotiate spousal support. Child support is different.</li>
+<li>Write "no child support" and s. 56(1.1) of the [Family Law Act](https://www.canlii.org/en/on/laws/stat/rso-1990-c-f3/latest/rso-1990-c-f3.html) lets the court disregard it if it's unreasonable against the Guidelines.</li>
+<li>Both signed, divorce still stuck: s. 11(1)(b) of the [Divorce Act](https://www.canlii.org/en/ca/laws/stat/rsc-1985-c-3-2nd-supp/latest/rsc-1985-c-3-2nd-supp.html).</li>
 </ul>
 </div>
 
-I hear this a lot: “We do 50/50 parenting, so neither of us pays. Let's just leave child support out of the agreement.”
+I hear this a lot: "We do 50/50 parenting, so neither of us pays. Let's just leave child support out of the agreement."
 
 Short answer: No.
 
@@ -66,29 +66,25 @@ In Ontario, you can't waive child support. It belongs to the child, not to the p
 
 You can negotiate property. You can negotiate spousal support. Child support is different.
 
----
-
 ## Can we just leave it out?
 
 No.
 
-Leaving it blank doesn't mean it's dealt with. A separation agreement should spell it out: who pays, based on what income, how much, and Section 7 special expenses. See [marriage and separation agreements](/en/family-law/domestic-contracts/).
+Leaving it blank doesn't mean it's dealt with. A [separation agreement](/en/family-law/domestic-contracts/) should spell it out: who pays, based on what income, how much, and Section 7 special expenses.
 
-If the numbers say support is payable and you deliberately leave it blank or write “neither party pays,” it will come back to bite you.
+If the numbers say support is payable and you deliberately leave it blank or write "neither party pays," it will come back to bite you.
 
-If you're [common-law](/en/family-law/common-law/), you don't need a divorce, so the court won't jump in on its own. But as soon as one party starts a court case, the judge will calculate support based on both incomes. Bringing the agreement as a defence — “but we agreed on zero” — won't work. A clause waiving child support is void and unenforceable, even if it's in writing.
-
-A marriage contract cannot lock this either. See [Can an Ontario marriage contract decide who gets child custody?](/en/blog/marriage-contract-child-parenting-ontario/).
+If you're [common-law](/en/family-law/common-law/), you don't need a divorce, so the court won't jump in on its own. But as soon as one party starts a court case, the judge will calculate support based on both incomes. Bringing the agreement as a defence — "but we agreed on zero" — won't work. A clause waiving child support is void and unenforceable, even if it's in writing.
 
 ---
 
-## We wrote “no child support.” Will the court honour it?
+## We wrote "no child support." Will the court honour it?
 
 Usually not.
 
-Under s. 56(1.1) of Ontario's [Family Law Act](https://www.canlii.org/en/on/laws/stat/rso-1990-c-f3/latest/rso-1990-c-f3.html), the court can disregard the child support terms in a domestic contract if they're unreasonable in light of the Federal Child Support Guidelines.
+Under s. 56(1.1) of Ontario's [Family Law Act](https://www.canlii.org/en/on/laws/stat/rso-1990-c-f3/latest/rso-1990-c-f3.html), the court can disregard the child support terms in a domestic contract if they're unreasonable in light of the [Federal Child Support Guidelines](https://www.canlii.org/en/ca/laws/regu/sor-97-175/latest/sor-97-175.html).
 
-Saying privately “I don't want it” is the same as writing it in. You can't give away the child's right.
+Saying privately "I don't want it" is the same as writing it in. You can't give away the child's right.
 
 If you both privately agree on zero and there's no dispute, the court isn't going to chase you. But once there's a dispute, the court decides under the law and the child's best interests.
 
@@ -98,7 +94,7 @@ If you both privately agree on zero and there's no dispute, the court isn't goin
 
 Because of s. 11(1)(b) of the federal [Divorce Act](https://www.canlii.org/en/ca/laws/stat/rsc-1985-c-3-2nd-supp/latest/rsc-1985-c-3-2nd-supp.html). The judge has to be satisfied that reasonable arrangements have been made for the support of the children, measured against the Guidelines. No child support paid usually means no proper arrangement — the child's interests aren't protected — so the court holds off on granting the divorce.
 
-It's not the judge being difficult. It's the statute. The most common problem in the paperwork is numbers that don't line up with income. The court then issues a requisition or sends it back. See [uncontested divorce](/en/blog/uncontested-divorce-ontario/).
+It's not the judge being difficult. It's the statute. The most common problem in the paperwork is numbers that don't line up with income. The court then issues a requisition or sends it back.
 
 ---
 
@@ -112,9 +108,7 @@ So even with equal parenting time, run the numbers first under the Guidelines. I
 
 ## We agreed on zero before. Can I go back and claim it later?
 
-Yes. If you agreed on zero and there's a dispute later, the law clearly allows you to start a court case for child support. The court will set the amount based on both incomes. See [retroactive child support](/en/blog/retroactive-child-support-ontario/).
-
-If an amount was written and never paid, you can seek an order, and once there is an order the [Family Responsibility Office](/en/blog/spousal-child-support-ontario/) can enforce it. A parent who can earn but will not, or who under-reports, is an [imputed income](/en/blog/imputed-income-child-support-ontario/) problem.
+Yes. If you agreed on zero and there's a dispute later, the law clearly allows you to start a court case for child support. The court will set the amount based on both incomes.
 
 ---
 
@@ -132,13 +126,11 @@ This is where a lot of DIY divorces get stuck. We handle a high volume of divorc
 
 No. Different rules.
 
-Spouses can negotiate spousal support, and you can waive it in an agreement, including a prenup or postnup. But the court will look at the length of the marriage and both incomes. See [SSAG and imputed income](/en/blog/ontario-spousal-support-ssag-imputed-income-misconceptions/).
+Spouses can negotiate spousal support, and you can waive it in an agreement, including a prenup or postnup. But the court will look at the length of the marriage and both incomes.
 
 If the court thinks the waiver is unreasonable, or if someone genuinely needs support — poor health, mental health issues, no capacity to work, can't find work — the court can override the agreement and order support anyway.
 
 So spousal support clauses need to be drafted clearly. A one-liner won't cut it. Talk to a lawyer who practices family law.
-
----
 
 To [book an initial consultation](/en/contact/) (30 minutes, $220+HST), call 647-930-6688.
 
