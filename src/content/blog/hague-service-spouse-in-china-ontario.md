@@ -28,6 +28,8 @@ relatedReading:
     line: 案子两年没动，通常是程序卡住了，而不是实体请求不成立。
   - slug: china-property-premarital-depreciation-ontario
     line: 人可以回中国，加拿大境内的财产和中国房产仍可能进入净家庭财产计算。
+  - slug: china-divorce-lawsuit-living-in-canada
+    line: 方向反了：人在加拿大、被中国法院起诉，应诉和授权委托是另一篇。
   - slug: uncontested-divorce-ontario
     line: 无争议离婚同样必须完成送达；配偶在中国时，海牙途径会把时间拉长。
   - slug: cross-border-assets-divorce-ontario

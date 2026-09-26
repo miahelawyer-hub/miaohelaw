@@ -17,6 +17,8 @@ tags:
 relatedReading:
   - slug: china-divorce-ontario-equalization-afterward
     line: 中国已经离完、判决没分加拿大财产，安省还能不能走均等化。
+  - slug: china-divorce-lawsuit-living-in-canada
+    line: 人还在加拿大、中国刚起诉，应诉和递答辩状是前一步。
   - slug: foreign-divorce-avoid-spousal-support-ontario
     line: 境外离婚不能自动取消赡养费；为躲义务去离的，法院可以不认。
   - slug: cross-border-assets-divorce-ontario
