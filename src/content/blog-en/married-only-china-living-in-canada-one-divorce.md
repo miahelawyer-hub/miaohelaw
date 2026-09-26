@@ -33,7 +33,7 @@ faqStructured:
   - question: "Married only in China but living in Canada — do you need two divorces?"
     answer: "Once is enough. But where you do it makes a huge difference. Pick the right place first."
   - question: "If you divorce in China, can the Canadian house be divided there too?"
-    answer: "Usually not. In China, Chinese courts generally don't deal with assets outside China. The judgment usually says it plainly: the Canadian property won't be dealt with, go sort it out in a Canadian court. If you go back to China to divorce, chances are it won't be finished in one go."
+    answer: "Usually not. In China, Chinese courts generally don't deal with assets outside China. The judgment usually says it plainly: the Canadian property won't be dealt with, go sort it out in a Canadian court. If you go back to China to divorce, chances are it won't be finished in one go. Once there's a dispute later, you're back in Canada to deal with property division."
   - question: "If you divorce in Ontario, what happens to the house in China?"
     answer: "Ontario counts net family property. That's everything under each person's name — worldwide, all of it. Ontario divides property by setting values off against each other. The China house value has already been accounted for in the Ontario split, and nobody has to go back to the Chinese property bureau to transfer title."
   - question: "Can you divorce in China first, then come back to Ontario to divide the house?"
