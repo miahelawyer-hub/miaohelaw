@@ -15,6 +15,8 @@ tags:
   - "jurisdiction-selection"
   - "miao-he-lawyer"
 relatedReading:
+  - slug: married-only-china-living-in-canada-one-divorce
+    line: "还没立案：只在中国结的婚，办一次，自己选地方。"
   - slug: china-divorce-ontario-equalization-afterward
     line: 中国已经离完、判决没分加拿大财产，安省还能不能走均等化。
   - slug: china-divorce-lawsuit-living-in-canada

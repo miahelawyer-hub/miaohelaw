@@ -18,6 +18,8 @@ tags:
 pairedArticlePath: "/en/blog/china-divorce-ontario-equalization-afterward/"
 relatedIntro: "离完婚还能不能分，和分多少、房子谁住，是三件事："
 relatedReading:
+  - slug: married-only-china-living-in-canada-one-divorce
+    line: "还没离：选中国还是安省。这篇是已经在中国离完了。"
   - slug: china-canada-divorce-judgment-recognition
     line: 中国判决在加拿大怎么承认、执行，以及起诉地怎么选。
   - slug: equalization-limitation-chinese-lawyer-ontario

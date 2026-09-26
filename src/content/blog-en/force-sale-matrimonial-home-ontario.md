@@ -15,6 +15,8 @@ tags:
 pairedArticlePath: "/blog/force-sale-matrimonial-home-ontario/"
 relatedIntro: "Read alongside:"
 relatedReading:
+  - slug: "house-in-spouse-name-stay-with-kids-separation-ontario"
+    line: "Not divorced yet, title in their name, kids in school — can you stay. This article is the sale when you cannot agree."
   - slug: "net-family-property-ontario"
     line: "How equalization works — the claim the sale proceeds will ultimately answer to."
   - slug: "toronto-divorce-lawyer-fees-3000-vs-30000"

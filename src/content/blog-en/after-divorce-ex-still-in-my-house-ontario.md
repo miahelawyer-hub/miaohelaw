@@ -18,6 +18,8 @@ tags:
 pairedArticlePath: "/blog/after-divorce-ex-still-in-my-house-ontario/"
 relatedIntro: "Who lives there, whose name is on title, and whether equalization is still open are three different questions:"
 relatedReading:
+  - slug: house-in-spouse-name-stay-with-kids-separation-ontario
+    line: "The other direction: not divorced yet, the house is in their name, can you stay with the kids."
   - slug: matrimonial-home-title-vs-property-division-ontario
     line: The registered shares were never the same thing as equalization.
   - slug: force-sale-matrimonial-home-ontario

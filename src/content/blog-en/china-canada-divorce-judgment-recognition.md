@@ -18,6 +18,8 @@ tags:
   - "miao-he-lawyer"
   - "ontario-family-law"
 relatedReading:
+  - slug: married-only-china-living-in-canada-one-divorce
+    line: "Before anyone files: married only in China, living in Canada — one divorce, pick the place."
   - slug: china-divorce-ontario-equalization-afterward
     line: After a Chinese divorce that left Canadian property out of the judgment, whether Ontario can still equalize.
   - slug: china-divorce-lawsuit-living-in-canada
