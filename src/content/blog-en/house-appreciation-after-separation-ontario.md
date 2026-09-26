@@ -1,6 +1,6 @@
 ---
 title: "House Went Up After Separation — Do You Still Split It? Toronto Chinese Divorce Lawyer: Check Whose Name Is on Title"
-description: "Did the house go up after separation? First question: whose name is on title. Toronto Chinese divorce lawyer Miao He: sole name, usually no split of the increase; both names, you rise and fall together. Mandarin help with the matrimonial home. Markham and Ontario: 647-930-6688"
+description: "First question: whose name is on title. Sole name, usually no split of the increase. Both names, you rise and fall together. Waiting for the market doesn't help."
 pubDate: 2026-09-24T22:20:00-04:00
 updatedDate: 2026-09-25T21:38:00-04:00
 heroImage: ""

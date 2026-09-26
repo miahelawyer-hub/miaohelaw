@@ -1,6 +1,6 @@
 ---
 title: "Living in Canada but Your Spouse Filed for Divorce in China — What Do You Do? Richmond Hill Chinese Divorce Lawyer: Treat It as Real First"
-description: "Living in Canada but your spouse filed for divorce in China — what do you do? Treat it as real first. Richmond Hill Chinese divorce lawyer Miao He: it is a Chinese case, you file a defence; Chinese courts basically don't divide Canadian houses. Mandarin help. Markham, Toronto, Ontario: 647-930-6688"
+description: "Treat it as real first. It's a Chinese case. You file a defence. An Ontario lawyer can't file it into a Chinese court. Chinese courts basically don't divide Canadian houses. Don't use delay as a plan."
 pubDate: 2026-09-25T21:15:00-04:00
 updatedDate: 2026-09-25T22:17:00-04:00
 heroImage: ""

@@ -1,6 +1,6 @@
 ---
 title: "My Child Doesn't Want to See the Other Parent Alone — Can I Ask for Supervised Parenting Time? Markham Chinese Divorce Lawyer: You Can Ask"
-description: "My child doesn't want to see the other parent alone — can I ask for supervised parenting time? You can ask, but it is not automatic. Markham Chinese divorce lawyer Miao He: no restraining order, just the child's words, the court rarely orders supervision. Mandarin help. Toronto and Ontario: 647-930-6688"
+description: "You can ask, but it's not automatic. No restraining order, just the child saying they don't want to go alone — the court rarely orders supervision. With a restraining order, temporary visits are usually supervised."
 pubDate: 2026-09-25T19:05:00-04:00
 updatedDate: 2026-09-25T22:07:00-04:00
 heroImage: ""

@@ -1,6 +1,6 @@
 ---
 title: "Separated but Never Sued — Can You Still Get Back Child Support? Scarborough Chinese Divorce Lawyer Says Often Yes"
-description: "Separated but never sued — can you still get back child support? Often yes. Scarborough Chinese divorce lawyer Miao He: child support can be claimed from separation, and it is not subject to equalization limitation. Mandarin help. Markham, Toronto, Ontario: 647-930-6688"
+description: "Often yes. Not automatic full, not automatic zero. Child support can be claimed from separation. Equalization has limitation periods. Child support isn't subject to limitation."
 pubDate: 2026-09-24T22:21:00-04:00
 updatedDate: 2026-09-25T21:55:00-04:00
 heroImage: ""

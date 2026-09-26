@@ -1,6 +1,6 @@
 ---
 title: "Can You Still Do a Same-Person Declaration After Someone Dies? Toronto Chinese Estate Lawyer Says No"
-description: "Can you still do a same-person declaration after someone dies? No. It has to be done in person. Toronto Chinese estate lawyer Miao He: if they changed names, passports, or had a former name, do it while they are alive. Mandarin help. Markham and Ontario: 647-930-6688"
+description: "No. A same-person declaration has to be done in person. Once they're gone, no one can sign saying both names are me. All that's left is old documents and government records."
 pubDate: 2026-09-23T21:54:00-04:00
 updatedDate: 2026-09-25T21:43:00-04:00
 heroImage: ""
