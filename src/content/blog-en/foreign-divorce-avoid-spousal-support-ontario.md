@@ -1,10 +1,10 @@
 ---
-title: "Can You Avoid Ontario Spousal Support by Divorcing Abroad?"
-description: "A foreign divorce does not automatically cancel Ontario spousal support. Markham Chinese lawyer Miao He explains two paths: if the divorce is recognized, Divorce Act corollary relief is closed; if it was obtained to evade support, Ontario can refuse recognition — Vyazemskaya, 2024 ONCA 156. Mandarin help with cross-border support. Toronto and Ontario: 647-930-6688"
+title: "Divorced Abroad to Dodge Support? Toronto Chinese Divorce Lawyer Says No"
+description: "A foreign divorce does not automatically cancel Ontario spousal support. Toronto Chinese divorce lawyer Miao He explains two tracks: if recognized, support is usually closed; if you ran abroad to dodge it, Ontario can refuse recognition. Mandarin help with cross-border support. Markham and Ontario: 647-930-6688"
 pubDate: 2026-09-24T19:41:00-04:00
-updatedDate: 2026-09-24T20:00:00-04:00
+updatedDate: 2026-09-25T20:37:00-04:00
 heroImage: ""
-keywords: "avoid Ontario spousal support by divorcing abroad, foreign divorce spousal support Ontario, China divorce still claim support, forum shopping spousal support Ontario, Chinese lawyer foreign divorce support, Mandarin cross-border divorce Markham, Vyazemskaya Ontario, Toronto Chinese lawyer Divorce Act 15.2, Miao He"
+keywords: "divorced abroad to dodge support, avoid Ontario spousal support by divorcing abroad, foreign divorce spousal support Ontario, China divorce still claim support, forum shopping spousal support Ontario, Toronto Chinese divorce lawyer, Mandarin cross-border divorce Markham, Vyazemskaya Ontario, Miao He"
 tags:
   - "spousal-support"
   - "cross-border-divorce"
@@ -15,7 +15,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/foreign-divorce-avoid-spousal-support-ontario/"
-relatedIntro: "Support, property, and child support should not be written as one sentence:"
+relatedIntro: "Whether you can claim support, and how property and child support work, are three different questions:"
 relatedReading:
   - slug: china-divorce-ontario-equalization-afterward
     line: After a recognized foreign divorce, equalization can still proceed. Spousal support is not the same claim.
@@ -31,114 +31,100 @@ relatedReading:
   - slug: after-divorce-ex-still-in-my-house-ontario
     line: Letting a former spouse stay in the house is not a substitute for a support order.
 faqStructured:
-  - question: "Can you avoid Ontario spousal support by divorcing abroad?"
-    answer: "Not as an automatic shield. If the foreign divorce is recognized, Divorce Act corollary relief — including spousal support — is closed. If the foreign divorce was obtained to evade Ontario obligations, the court can refuse recognition and try support as if the parties were still married."
-  - question: "After a Chinese divorce, can you still claim spousal support in Ontario?"
-    answer: "It depends on recognition. If recognized: the classic cases generally bar Divorce Act support and Family Law Act Part III support for former spouses. If not recognized: the parties are still married for Canadian purposes, and Divorce Act s. 15.2 is available."
-  - question: "Is there an Ontario judgment on divorcing abroad to dodge support?"
-    answer: "Yes. Vyazemskaya v. Safin, 2024 ONCA 156 (trial 2022 ONSC 7311): one party obtained a Russian divorce immediately after leaving the matrimonial home. The court treated unfair forum-shopping as a distinct exception to recognition. Support stayed in Ontario."
-  - question: "If the foreign divorce is recognized, is child support gone too?"
-    answer: "No. Cheng v. Liu separates equalization, child support, and spousal support. The first two can usually still proceed under the Family Law Act. Spousal support is the claim that is blocked."
-  - question: "If someone is willing to pay monthly, should it be a lump sum buyout?"
-    answer: "A voluntary arrangement is not a court order. Amount, duration, or housing can be written into an agreement. Whether a large lump sum is wise depends on whether the money will be spent and whether the foreign divorce is recognized. Do not admit an unagreed figure in the Answer."
-  - question: "I have lived in China for years and the other party lives in Ontario. Is that 'evading support'?"
-    answer: "Not automatically. Forum-shopping looks at purpose and timing: whether, after an Ontario support dispute had already formed, someone raced to a forum with almost no real connection in order to keep Ontario off the claim. Long residence in China, a proceeding there, and actual notice to the other party is not the same pattern as leaving the matrimonial home and filing abroad within days."
-  - question: "If the foreign divorce has already been recognized, can recognition still be attacked?"
-    answer: "An Ontario order that has already recognized the divorce is much harder to unwind. If recognition has not yet been granted, and the other party is only waving the foreign certificate to say Ontario has no jurisdiction, recognition is still the fight. Pin recognition first. Do not recognize and then ask for Divorce Act support."
+  - question: "Divorced abroad to dodge support?"
+    answer: "No. It's not automatic. In Ontario the right question isn't whether there is still support after a foreign divorce. It's whether Ontario recognizes this foreign divorce. Recognized or not — two completely different tracks."
+  - question: "If the foreign divorce is recognized, what happens to spousal support?"
+    answer: "Usually, you can't get it. Once recognized, a Canadian court can't add Divorce Act corollary relief. Cheng v. Liu also says the Family Law Act definition of spouse generally doesn't cover someone who's already divorced."
+  - question: "What if you ran abroad just to dodge support?"
+    answer: "Ontario can refuse to recognize the divorce. Vyazemskaya v. Safin, 2024 ONCA 156: unfair forum shopping. Once it's not recognized, you're still considered married in Canada, and s. 15.2 comes back."
+  - question: "Does every Chinese divorce get tossed?"
+    answer: "No. Living in China long-term, suing in China, the other side actually got notice — that's completely different from living in Ontario and rushing abroad to dodge support. The first usually lines up with s. 22. The second is the Vyazemskaya route."
+  - question: "Do private payments count?"
+    answer: "Depends what the money was for. If you owed both child support and spousal support and didn't specify, the court will treat it as child support first. Large cash amounts over a long time with no proof — the court won't count it."
 ---
 
 <div class="blog-tldr">
 <p class="blog-tldr-kicker">In short</p>
 <ul>
-<li>A divorce obtained abroad is <strong>not</strong> an automatic end to Ontario spousal support. The first question is whether Ontario recognizes that divorce.</li>
-<li>If it is recognized: <a href="https://www.canlii.org/en/on/onca/doc/2007/2007onca427/2007onca427.html">Okmyansky, 2007 ONCA 427</a> and <a href="https://www.canlii.org/en/on/onca/doc/2017/2017onca104/2017onca104.html">Cheng v. Liu, 2017 ONCA 104</a> — Divorce Act corollary relief is closed, and Family Law Act Part III generally does not cover former spouses.</li>
-<li>If the foreign divorce was obtained to evade support: <a href="https://www.canlii.org/en/on/onca/doc/2024/2024onca156/2024onca156.html">Vyazemskaya v. Safin, 2024 ONCA 156</a> — unfair forum-shopping, recognition refused, support tried in Ontario.</li>
-<li>Child support and equalization are not bundled with spousal support. Paying monthly, or letting someone stay in the house, is a contract question, not “the court has no jurisdiction.”</li>
+<li>Short answer: <strong>No</strong>. It's not automatic. The first question is whether Ontario recognizes this foreign divorce.</li>
+<li>If recognized: usually you can't get it. <a href="https://www.canlii.org/en/on/onca/doc/2017/2017onca104/2017onca104.html">Cheng v. Liu, 2017 ONCA 104</a>; <a href="https://www.canlii.org/en/on/onca/doc/2007/2007onca427/2007onca427.html">Okmyansky, 2007 ONCA 427</a>.</li>
+<li>If you ran abroad to dodge support: <a href="https://www.canlii.org/en/on/onca/doc/2024/2024onca156/2024onca156.html">Vyazemskaya v. Safin, 2024 ONCA 156</a>. Ontario can refuse recognition and still decide spousal support.</li>
+<li>Don't bundle child support and equalization with spousal support. See <a href="/en/blog/china-divorce-ontario-equalization-afterward/">Divorced in China? You can often still divide property</a>.</li>
 </ul>
 </div>
 
-People assume that if they live in Ontario and the assets are in Ontario, a hometown divorce ends the support conversation. Ontario courts do not treat it that way.
+A lot of people assume: “We live in Ontario, our property is in Ontario, but if I go back home to get divorced, I won't have to talk about support.”
 
-The right question is not “is there still support after a foreign divorce.” It is “does Ontario recognize this foreign divorce.” The recognition framework is in [China–Canada divorce judgments](/en/blog/china-canada-divorce-judgment-recognition/). Whether property can still be equalized is in [Divorced in China — can Ontario still divide the property?](/en/blog/china-divorce-ontario-equalization-afterward/).
+Short answer: No. It's not automatic.
 
----
-
-## Can you avoid Ontario spousal support by divorcing abroad?
-
-Not as an automatic shield.
-
-If the foreign divorce **is recognized**, a Canadian court cannot add Divorce Act corollary relief onto that foreign divorce. Spousal support under s. 15.2 is corollary to a Canadian divorce. If Canada did not grant the divorce, that path is closed. Cheng also held that the Part III definition of “spouse” generally does not pick up former spouses. The classic result is that after a valid foreign divorce, Ontario **usually cannot** order spousal support.
-
-The Court of Appeal in [Sonia v. Ratan, 2024 ONCA 152](https://www.canlii.org/en/on/onca/doc/2024/2024onca152/2024onca152.html) and in Vyazemskaya has already said that this former-spouse bar may later be reconsidered. It has not been overruled. Do not write a consultation note as if the reconsideration has already happened.
+In Ontario, the right question isn't “is there still support after a foreign divorce.” It's “does Ontario recognize this foreign divorce.” Recognized or not — two completely different tracks. The recognition framework is in [China–Canada divorce judgments](/en/blog/china-canada-divorce-judgment-recognition/).
 
 ---
 
-## What does Ontario do when the foreign divorce was to avoid support?
+## If the foreign divorce is recognized, what happens to spousal support?
 
-It refuses recognition.
+Usually, you can't get it.
 
-[Vyazemskaya v. Safin, 2024 ONCA 156](https://www.canlii.org/en/on/onca/doc/2024/2024onca156/2024onca156.html) (trial 2022 ONSC 7311): one party obtained a Russian divorce immediately after leaving the matrimonial home, to defeat Ontario support. The Court of Appeal treated unfair forum-shopping as a distinct exception to recognition — not only the case where the foreign law itself is repugnant. The trial judge also referred to B.C.’s Marzara: an Iranian divorce obtained to keep Canadian courts off support and property.
+Once recognized, a Canadian court can't add Divorce Act corollary relief on top of a foreign divorce. Spousal support under s. 15.2 of the [Divorce Act](https://www.canlii.org/en/ca/laws/stat/rsc-1985-c-3-2nd-supp/latest/rsc-1985-c-3-2nd-supp.html) travels with a Canadian divorce order. No Canadian divorce order, that route is closed.
 
-Once recognition is refused, the parties are still married for Canadian purposes. Section 15.2 is available. Amount and duration still have to be decided on [entitlement, SSAG, and imputed income](/en/blog/ontario-spousal-support-ssag-imputed-income-misconceptions/). Refusal of recognition is not an automatic lump sum.
+[Cheng v. Liu, 2017 ONCA 104](https://www.canlii.org/en/on/onca/doc/2017/2017onca104/2017onca104.html) also says the “spouse” definition in Part III of the Family Law Act generally doesn't cover someone who's already divorced. So the classic result is: after a valid foreign divorce, spousal support is usually off the table in Ontario.
 
-Not every Chinese divorce is refused. Ending the marriage first, leaving property unclaimed, and litigating the house in Ontario years later is not the same fact pattern as a race to a foreign court to evade Ontario duties. Section 22 also has its own ordinary-residence conditions. The fight is recognition. It is not grafting Canadian support onto a foreign divorce that Ontario has already accepted.
+[Okmyansky, 2007 ONCA 427](https://www.canlii.org/en/on/onca/doc/2007/2007onca427/2007onca427.html) goes the same way.
 
-What the court usually looks at is how fast the foreign proceeding started, how many days it sat from the Ontario separation or claim, whether the other party actually received notice, whether the foreign country had a real connection to the marriage, and whether the divorce is now being used as a shield against Ontario support. The trial reasons in Vyazemskaya described a Russian proceeding started almost immediately after leaving the matrimonial home. The Court of Appeal separated that from the Beals-style public-policy case — where the foreign law itself is repugnant. Unfair forum-shopping can refuse recognition even if the foreign process was formally valid. Alberta's Zhang v. Lin and B.C.'s Marzara run on similar logic. This is not an Ontario-only idea.
-
-Long residence in China, a proceeding there, and notice to the other party should not be collapsed into "they divorced abroad to dodge support." The first pattern may meet s. 22. The second is the Vyazemskaya path.
+In other words, if you already got the divorce certificate in another country and then come back to Ontario to claim spousal support, Ontario will usually say no. No jurisdiction. If support wasn't dealt with at the time of divorce, Ontario won't reopen it now — provided Ontario recognizes the divorce.
 
 ---
 
-## How do the claims split on the two paths?
+## What if you ran abroad just to dodge support?
 
-| | Foreign divorce recognized | Recognition refused because it evaded Ontario duties |
-|---|---|---|
-| Status | Already divorced; no second Canadian divorce | Still married for Canadian purposes |
-| Divorce Act support (s. 15.2) | Usually closed | Available |
-| Family Law Act support for former spouses | Usually closed under the classic cases | Different path: the parties are still spouses |
-| Child support | Usually still available under the Family Law Act | Available under the Divorce Act or the Family Law Act |
-| Equalization | Usually still available under the Family Law Act, subject to limitation | Still available; the marriage has not been dissolved in Canada |
+Ontario can refuse to recognize the divorce.
 
-Cheng splits the three claims. After a recognized foreign divorce, spousal support is generally closed. **Child support** and **equalization** can still proceed under the Family Law Act. If the children are still minors, “we already divorced in China” is not a defence to child support. Whether an adult child in university is still a child of the marriage is [a support question, not a custody question](/en/blog/adult-child-no-custody-ontario/).
+[Vyazemskaya v. Safin, 2024 ONCA 156](https://www.canlii.org/en/on/onca/doc/2024/2024onca156/2024onca156.html): one party moved out of the matrimonial home and almost immediately got divorced in Russia to dodge an Ontario support claim.
 
-A willingness to pay monthly, or to let the other party stay in a house in your name, is not a court order. If you can settle, write it into a [domestic contract](/en/family-law/domestic-contracts/) or minutes. A large lump-sum buyout has a different risk: the money can be spent, and the claim can come back. Do not admit an unagreed figure in the Answer: a concession on the pleading is not the same as a private offer. Housing is [After the divorce, the ex is still in my house](/en/blog/after-divorce-ex-still-in-my-house-ontario/).
+The Court of Appeal carved out “unfair forum shopping” as a standalone reason to refuse recognition. The idea is simple: if you didn't divorce in Ontario but went to another country because the spousal support rules are different — maybe zero support there, or a tiny amount, versus much higher support in Ontario — the court can refuse to recognize the certificate even if you have it in hand, and still decide spousal support.
 
-An Ontario order that has already recognized the foreign divorce is much harder to unwind. If recognition has not yet been granted, and the other party is only waving the certificate to say Ontario has no jurisdiction, recognition itself is the fight. Pin recognition first, then talk quantum. Do not recognize and then ask for Divorce Act s. 15.2.
+In that scenario, though, the evidentiary bar is higher and stricter for both sides.
+
+Once it's not recognized, you're still considered married in Canada, and s. 15.2 comes back. How much and for how long gets decided separately. Amounts are on [SSAG and imputed income](/en/blog/ontario-spousal-support-ssag-imputed-income-misconceptions/).
 
 ---
 
-## Common questions
+## Not every Chinese divorce gets tossed
 
-### Can you avoid Ontario spousal support by divorcing abroad?
+Living in China long-term, suing in China, the other side actually got notice — that's completely different from “living in Ontario and rushing abroad to dodge support.”
 
-Not automatically. If recognized, Divorce Act support is closed. If the foreign divorce was to evade Ontario duties, recognition can be refused and s. 15.2 applies.
+The first has real residential ties and usually lines up with s. 22, which also requires a year of habitual residence. That's a recognition case. The second is the Vyazemskaya route. Don't mix them.
 
-### After a Chinese divorce, can you still claim support in Ontario?
-
-Start with recognition. After recognition, the classic cases generally bar a former spouse’s claim. If recognition is refused, the parties are still married.
-
-### Is there an Ontario case on this?
-
-Yes. Vyazemskaya, 2024 ONCA 156: unfair forum-shopping, foreign divorce not recognized.
-
-### Is child support gone too?
-
-No. Cheng keeps child support and equalization available. Spousal support is the blocked claim.
-
-### If someone will pay, should it be a lump sum?
-
-That is a settlement choice. Whether a lump sum is wise depends on the facts and on recognition. Do not admit a number in the Answer first.
-
-### I have lived in China for years and we divorced there. Is that evading support?
-
-Not automatically. Purpose and timing control. Real residential connection plus notice to the other party is usually a s. 22 recognition question, not the Vyazemskaya race-to-file pattern.
-
-### If the divorce has already been recognized, can recognition still be attacked?
-
-Much harder once an Ontario recognition order exists. Before recognition, pin that fight first. Do not recognize and then ask for s. 15.2.
+China and Ontario do not treat spousal support the same way to begin with. See [Ontario vs China child and spousal support](/en/blog/ontario-vs-china-child-spousal-support-comparison/).
 
 ---
 
-If a divorce was obtained abroad, or you are worried that a foreign judgment will block Ontario support, [book an initial consultation](/en/contact/) (30 minutes, $220+HST) and decide recognition before you argue quantum. 647-930-6688.
+## The two tracks
 
-*This article is general information, not legal advice, and does not create a lawyer–client relationship. Whether a foreign divorce is refused for forum-shopping, and whether s. 15.2 or the Family Law Act can be used, depend on timing, the residential connection, and the evidence.*
+**Recognized:** you're divorced, no need to re-divorce in Canada. Divorce Act support usually closed. Family Law Act support for an ex-spouse usually closed too.
+
+**Not recognized:** still married in Canada. s. 15.2 is live.
+
+Don't bundle child support and equalization with spousal support. Cheng splits them into three: spousal support usually closed after a recognized foreign divorce, child support and equalization can usually still go under the Family Law Act. Property is in [Divorced in China? You can often still divide property](/en/blog/china-divorce-ontario-equalization-afterward/).
+
+---
+
+## Do private payments count?
+
+Depends what the money was for.
+
+If there was already a loan between you, the private transfer might just be loan repayment — nothing to do with support.
+
+If it was for living expenses, the court looks at whether you owed [child support and spousal support](/en/family-law/support/). If you owed both and didn't specify what the money was for, the court will treat it as child support first.
+
+If you didn't owe child support, the court can treat it as spousal support. Even if there was no agreement, and the final spousal support order is higher than what you paid, what you already paid can be credited.
+
+One warning: large cash amounts over a long time with no proof — if you can't prove it, the court won't count it.
+
+Letting someone stay in a house in your name is not a support order either. See [After the divorce, the ex is still in my house](/en/blog/after-divorce-ex-still-in-my-house-ontario/).
+
+---
+
+If there's a foreign divorce in the picture and you're worried about support being blocked, figure out recognition first, then talk numbers. [Book an initial consultation](/en/contact/) (30 minutes, $220+HST). Call 647-930-6688.
+
+*This article provides general legal information only. It is not legal advice and does not create a solicitor-client relationship.*
