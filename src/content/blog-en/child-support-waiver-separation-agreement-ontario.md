@@ -1,10 +1,10 @@
 ---
-title: "Can You Leave Child Support Out of a Separation Agreement in Ontario?"
-description: "You cannot waive child support in a separation agreement. Markham Chinese lawyer Miao He explains Family Law Act s. 56(1.1) and Divorce Act s. 11(1)(b): an unreasonable arrangement can be disregarded and the divorce stayed. Mandarin help with agreements and uncontested divorce. Toronto and Ontario: 647-930-6688"
+title: "Ontario Chinese Divorce Lawyer: Can You Agree to Pay Zero Child Support in a Separation Agreement?"
+description: "A clause that neither parent pays child support usually will not hold. Markham Chinese lawyer Miao He explains: child support cannot be waived. Mandarin help with separation agreements and uncontested divorce. Toronto and Ontario: 647-930-6688"
 pubDate: 2026-09-24T19:25:00-04:00
-updatedDate: 2026-09-24T19:25:00-04:00
+updatedDate: 2026-09-25T20:15:00-04:00
 heroImage: ""
-keywords: "can you leave child support out of a separation agreement Ontario, waive child support Ontario, both parents agree no child support, 50/50 parenting still pay child support, uncontested divorce stalled child support, Chinese lawyer child support Markham, Mandarin separation agreement lawyer Toronto, Miao He"
+keywords: "can you agree to pay zero child support in a separation agreement, Ontario Chinese divorce lawyer child support waiver, waive child support Ontario, 50/50 parenting still pay child support, uncontested divorce stalled child support, Chinese lawyer child support Markham, Mandarin separation agreement lawyer Toronto, Miao He"
 tags:
   - "child-support-ontario"
   - "separation-agreement-ontario"
@@ -34,138 +34,112 @@ relatedReading:
   - slug: retroactive-child-support-ontario
     line: Silence in an agreement is not a waiver of the past. Support can still be claimed for the years before anyone filed.
 faqStructured:
-  - question: "Can you leave child support out of a separation agreement in Ontario?"
-    answer: "You can leave a blank on the page. That does not mean the court treats the issue as settled. Child support is the child's right. If the agreement is silent, or says neither parent pays, the court must still be satisfied that reasonable arrangements have been made before a divorce is granted."
-  - question: "If both parents agree to pay nothing, will the court accept that?"
-    answer: "Usually not. Divorce Act s. 11(1)(b) requires the court to satisfy itself that reasonable arrangements have been made for the support of any children of the marriage, having regard to the applicable guidelines. If they have not been made, the court is to stay the granting of the divorce until they are."
-  - question: "If we each have the children half the time, do we still pay child support?"
-    answer: "Often yes. Shared parenting of about 40 percent under Guidelines s. 9 can change how the amount is set. It rarely turns the table amount into zero. Similar incomes may produce a small net payment; a large income gap usually still produces an amount the court expects to see on the page."
-  - question: "The agreement set an amount but it was never paid. Can we still claim it?"
-    answer: "Usually yes. Writing the figure is not the same as settling the debt. Arrears can go through the court or the Family Responsibility Office. How far back you can go depends on whether there is an order, how the agreement is drafted, and the facts — it is not a rule that every dollar is always recoverable with no defence."
-  - question: "Does child support have to match the Guidelines table exactly?"
-    answer: "Not always. Shared parenting, split residence, undue hardship, or other reasonable arrangements in the contract can support a different figure. Writing zero with no explanation of how the children are housed and fed will rarely pass s. 11(1)(b)."
-  - question: "Can spousal support be waived the same way?"
-    answer: "No. Spousal support and child support are different regimes. Spousal support can be set, time-limited or waived in a contract if the process is fair and disclosure is complete. Child support cannot be waived on the same logic."
+  - question: "Can you agree to pay zero child support in a separation agreement?"
+    answer: "Usually not. You can't waive child support. It belongs to the child, not to the parents to bargain away. Under Family Law Act s. 56(1.1), the court can disregard child-support terms that are unreasonable in light of the Federal Child Support Guidelines."
+  - question: "Can we just leave it out?"
+    answer: "No. Leaving it blank doesn't mean it's dealt with. A separation agreement should spell it out: who pays, based on what income, how much, and Section 7 special expenses."
+  - question: "We do 50/50. Do we still have to pay?"
+    answer: "Often, yes. Child support turns on both incomes, and it's rare for two incomes to be exactly the same. Even a small gap can mean one parent owes the other."
+  - question: "We agreed on zero before. Can I go back and claim it later?"
+    answer: "Yes. If you agreed on zero and there's a dispute later, the law clearly allows you to start a court case for child support. The court will set the amount based on both incomes."
+  - question: "Does it have to match the table amount exactly?"
+    answer: "Not necessarily. Paying more is usually fine. Paying less, the court will ask you to explain it when you apply for divorce. If the explanation is reasonable, you'll still get your divorce order. If not, the court will likely hold up the divorce."
+  - question: "Is spousal support the same?"
+    answer: "No. Different rules. Spouses can negotiate spousal support and waive it in an agreement. But the court will look at the length of the marriage and both incomes, and can override the agreement if the waiver is unreasonable."
 ---
 
 <div class="blog-tldr">
 <p class="blog-tldr-kicker">In short</p>
 <ul>
-<li>A separation agreement <strong>cannot</strong> take child support off the table with a line that both parents agree to pay nothing. Silence, or a waiver, can still be disregarded.</li>
-<li><strong>Divorce Act s. 11(1)(b)</strong>: the judge must be satisfied that reasonable arrangements have been made for the children; if not, the divorce is stayed. That is the statute, not a local habit.</li>
-<li><strong>Family Law Act s. 56(1.1)</strong>: a child-support term that is unreasonable having regard to the Guidelines may be disregarded.</li>
-<li>The figure can differ from the table if the arrangement is still reasonable. Non-payment is an <a href="/en/blog/spousal-child-support-ontario/">enforcement</a> problem. A parent who will not earn is an <a href="/en/blog/imputed-income-child-support-ontario/">imputed income</a> problem.</li>
+<li>Short answer: <strong>No</strong>. You can't waive child support. It belongs to the child, not to the parents to bargain away.</li>
+<li>You can negotiate property. You can negotiate spousal support. <a href="/en/family-law/support/">Child support</a> is different.</li>
+<li>A “neither party pays” clause: <a href="https://www.canlii.org/en/on/laws/stat/rso-1990-c-f3/latest/rso-1990-c-f3.html">Family Law Act s. 56(1.1)</a>. If it's unreasonable against the Guidelines, the court can disregard it.</li>
+<li>Both signed, divorce still stuck: Divorce Act s. 11(1)(b). See <a href="/en/blog/uncontested-divorce-ontario/">uncontested divorce</a>.</li>
 </ul>
 </div>
 
-The line people bring into a consultation is: we each have the children half the time, so nobody pays anybody, and we will just leave child support out of the agreement.
+I hear this a lot: “We do 50/50 parenting, so neither of us pays. Let's just leave child support out of the agreement.”
 
-In Ontario that usually does not work. Child support is not a courtesy between parents. It is the child's right. Property and spousal support can be negotiated. [Child support](/en/family-law/support/) is reviewed on its own.
+Short answer: No.
 
----
+In Ontario, you can't waive child support. It belongs to the child, not to the parents to bargain away. It's mandatory, income-based, and set against national guidelines.
 
-## Can you leave child support out of a separation agreement?
-
-You can leave it off the page. That does not mean the court treats it as done.
-
-A separation agreement may deal with property, spousal support, education and moral training, and also custody and access — that is s. 54 of the *Family Law Act*, which is not the same list as a [marriage contract](/en/blog/marriage-contract-child-parenting-ontario/). Child support sits under support obligations. The document should say who pays, on what income, how much, and whether s. 7 special expenses are shared.
-
-If the table produces an amount and the agreement is left blank, or it says "neither of us pays, and neither of us will claim," two later gates still apply: the term may be disregarded, and a divorce application may be stayed until the children's arrangements are reasonable.
+You can negotiate property. You can negotiate spousal support. Child support is different.
 
 ---
 
-## If the agreement says neither parent pays, will the court accept it?
+## Can we just leave it out?
+
+No.
+
+Leaving it blank doesn't mean it's dealt with. A separation agreement should spell it out: who pays, based on what income, how much, and Section 7 special expenses. See [marriage and separation agreements](/en/family-law/domestic-contracts/).
+
+If the numbers say support is payable and you deliberately leave it blank or write “neither party pays,” it will come back to bite you.
+
+If you're [common-law](/en/family-law/common-law/), you don't need a divorce, so the court won't jump in on its own. But as soon as one party starts a court case, the judge will calculate support based on both incomes. Bringing the agreement as a defence — “but we agreed on zero” — won't work. A clause waiving child support is void and unenforceable, even if it's in writing.
+
+A marriage contract cannot lock this either. See [Can an Ontario marriage contract decide who gets child custody?](/en/blog/marriage-contract-child-parenting-ontario/).
+
+---
+
+## We wrote “no child support.” Will the court honour it?
 
 Usually not.
 
-The first gate is [s. 56(1.1)](https://www.ontario.ca/laws/statute/90f03) of the *Family Law Act*. In a matter respecting the support of a child, the court may disregard any provision of a domestic contract where the provision is unreasonable having regard to the child support guidelines, as well as to any other provision relating to support of the child in the contract.
+Under s. 56(1.1) of Ontario's [Family Law Act](https://www.canlii.org/en/on/laws/stat/rso-1990-c-f3/latest/rso-1990-c-f3.html), the court can disregard the child support terms in a domestic contract if they're unreasonable in light of the Federal Child Support Guidelines.
 
-Section 56(1) is a different test. It deals with education, moral training, custody or access, and the standard is the child's best interests. **Child support** is s. 56(1.1). The two subsections should not be cited as if they were one.
+Saying privately “I don't want it” is the same as writing it in. You can't give away the child's right.
 
-The second gate is in the divorce proceeding, in the next section.
-
-A private oral deal that "I will not ask" fails for the same reason as a written waiver. The child's right is not the parents' to give away.
+If you both privately agree on zero and there's no dispute, the court isn't going to chase you. But once there's a dispute, the court decides under the law and the child's best interests.
 
 ---
 
-## Why does an uncontested divorce stall on this?
+## Why is our divorce stuck even though we both signed?
 
-Because [s. 11(1)(b) of the *Divorce Act*](https://laws-lois.justice.gc.ca/eng/acts/d-3.4/) puts an independent duty on the court: in a divorce proceeding, it must satisfy itself that reasonable arrangements have been made for the support of any children of the marriage, having regard to the applicable guidelines. If those arrangements have not been made, the court is **to stay** the granting of the divorce until they are.
+Because of s. 11(1)(b) of the federal [Divorce Act](https://www.canlii.org/en/ca/laws/stat/rsc-1985-c-3-2nd-supp/latest/rsc-1985-c-3-2nd-supp.html). The judge has to be satisfied that reasonable arrangements have been made for the support of the children, measured against the Guidelines. No child support paid usually means no proper arrangement — the child's interests aren't protected — so the court holds off on granting the divorce.
 
-That is why both spouses can have signed and the divorce still does not issue. It is not the judge's mood, and it is not "there is no section, only practice."
-
-The usual defect on the paper is that the child-support figure does not match the payor's income and the Federal Child Support Guidelines. The [uncontested divorce](/en/blog/uncontested-divorce-ontario/) guide covers the requisition or rejection that follows. What the court is asking for is not a new property statement. It is a proper account of the children.
-
-Section 11(1)(b) applies in a **divorce proceeding**. If you separate and do not apply for a divorce yet, that stay is not in play. A waiver in the agreement still has to survive s. 56(1.1). When a divorce is later sought, s. 11(1)(b) still has to be met.
+It's not the judge being difficult. It's the statute. The most common problem in the paperwork is numbers that don't line up with income. The court then issues a requisition or sends it back. See [uncontested divorce](/en/blog/uncontested-divorce-ontario/).
 
 ---
 
-## If we each have the children half the time, do we still pay child support?
+## We do 50/50. Do we still have to pay?
 
-Often yes.
+Often, yes. Child support turns on both incomes, and it's rare for two incomes to be exactly the same. Even a small gap can mean one parent owes the other.
 
-“Fifty-fifty, so nobody pays” is the long-tail question that comes in most often. Guidelines s. 9 says that where each parent has the child at least about 40 percent of the time, the court may set a different amount rather than applying one table figure. That is not an automatic zero.
-
-Similar incomes can produce a small net payment. A large income gap usually still produces an amount, even when time is split. Silence, or a mutual waiver, still leaves the judge asking how housing, day-to-day costs and health care are covered.
+So even with equal parenting time, run the numbers first under the Guidelines. If you're not sure how, have a lawyer run them.
 
 ---
 
-## If we privately agreed not to pay, can it still be claimed later?
+## We agreed on zero before. Can I go back and claim it later?
 
-Usually yes.
+Yes. If you agreed on zero and there's a dispute later, the law clearly allows you to start a court case for child support. The court will set the amount based on both incomes. See [retroactive child support](/en/blog/retroactive-child-support-ontario/).
 
-A clause or a conversation that "neither of us will claim" does not stop a later claim under the Guidelines. If an amount was written and never paid, you can seek an order, and once there is an order the [Family Responsibility Office](/en/blog/spousal-child-support-ontario/) can enforce it.
-
-How far back, and from which date, depends on whether there is an order, how the agreement is drafted, and the facts of the file — including any limitation or estoppel arguments that actually arise. The child's right remains. That is not the same as saying every dollar is always recoverable, with no defence, no matter how many years have passed.
-
-A parent who can earn but will not, or who under-reports, is an [imputed income](/en/blog/imputed-income-child-support-ontario/) problem. It is not "the contract says zero, so the table is zero."
+If an amount was written and never paid, you can seek an order, and once there is an order the [Family Responsibility Office](/en/blog/spousal-child-support-ontario/) can enforce it. A parent who can earn but will not, or who under-reports, is an [imputed income](/en/blog/imputed-income-child-support-ontario/) problem.
 
 ---
 
-## When can the amount differ from the table?
+## Does it have to match the table amount exactly?
 
-It can differ. It still has to be reasonable, and the reasons have to be on the page.
+Not necessarily. What we call the table amount is the starting point.
 
-The Federal Child Support Guidelines table is the starting point, not the only number. Common departures include:
+Paying more is usually fine. Paying less, the court will ask you to explain it when you apply for divorce. If the explanation is reasonable, you'll still get your divorce order. If the court isn't satisfied and thinks the lower amount is unreasonable, it will likely hold up the divorce.
 
-- **s. 9:** where each parent has the child at least about 40 percent of the time (shared parenting), the court may set a different amount rather than applying one table figure mechanically.
-- **Undue hardship:** cost of living, other children, or certain debts may support a departure. The onus is strict. "I cannot afford it" is not enough on its own.
-- **A different figure by consent:** if the overall arrangement for the children is still reasonable. A court will not treat a term as unreasonable *only* because the number is not the table amount.
-
-Writing zero, with no account of housing, day-to-day costs, insurance or health care, is rarely a "reasonable arrangement." What the judge has to see is the arrangement, not that each parent made a concession.
-
-Spousal support is a different regime. Amount, duration, and even a waiver can be negotiated where disclosure is complete and the terms are fair. Those two sentences should not be collapsed into one.
+This is where a lot of DIY divorces get stuck. We handle a high volume of divorce applications, so we know how to prepare the materials and what the court needs to see to move it through quickly.
 
 ---
 
-## Common questions
+## Is spousal support the same?
 
-### Can you leave child support out of a separation agreement in Ontario?
+No. Different rules.
 
-You should not, and it usually will not pass. Silence or a waiver still leaves the court to confirm that reasonable arrangements have been made; if they have not, the divorce can be stayed.
+Spouses can negotiate spousal support, and you can waive it in an agreement, including a prenup or postnup. But the court will look at the length of the marriage and both incomes. See [SSAG and imputed income](/en/blog/ontario-spousal-support-ssag-imputed-income-misconceptions/).
 
-### If both parents agree to pay nothing, will the court accept that?
+If the court thinks the waiver is unreasonable, or if someone genuinely needs support — poor health, mental health issues, no capacity to work, can't find work — the court can override the agreement and order support anyway.
 
-Usually not. Section 11(1)(b) of the *Divorce Act* requires the court to confirm reasonable arrangements, having regard to the guidelines. If they have not been made, the divorce is to be stayed.
-
-### If we each have the children half the time, do we still pay child support?
-
-Often yes. Shared parenting can change how the amount is set. It rarely turns the figure into zero. An income gap still has to be addressed on the page.
-
-### The agreement set an amount but it was never paid. Can we still claim it?
-
-Usually yes. Arrears can go through the court or FRO. How far back depends on whether there is an order, the agreement, and the facts.
-
-### Does the amount have to match the table exactly?
-
-Not always. Shared parenting, undue hardship, or other reasonable arrangements can support a different figure. Zero with no explanation of how the children live will rarely pass.
-
-### Can spousal support be waived the same way?
-
-Not on the same logic. Spousal support can be set or waived in a contract if the process is fair and disclosure is complete. Child support cannot.
+So spousal support clauses need to be drafted clearly. A one-liner won't cut it. Talk to a lawyer who practices family law.
 
 ---
 
-If a separation agreement needs a child-support clause, or an uncontested divorce has already been sent back on support, [book an initial consultation](/en/contact/) (30 minutes, $220+HST) and match the figure to the table before you refile. 647-930-6688.
+To [book an initial consultation](/en/contact/) (30 minutes, $220+HST), call 647-930-6688.
 
-*This article is general information, not legal advice, and does not create a lawyer–client relationship. The amount, whether a departure from the Guidelines is reasonable, and whether a divorce will be stayed depend on the Guidelines then in force, the income evidence, and the facts of the file.*
+*This article provides general legal information only. It is not legal advice and does not create a solicitor-client relationship.*
