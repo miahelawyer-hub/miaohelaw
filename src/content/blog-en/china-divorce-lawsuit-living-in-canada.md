@@ -25,7 +25,7 @@ relatedReading:
   - slug: foreign-divorce-avoid-spousal-support-ontario
     line: A foreign divorce does not automatically cancel Ontario spousal support.
   - slug: hague-service-spouse-in-china-ontario
-    line: The other direction: serving from Ontario into China. This article is China serving into Canada.
+    line: "The other direction: serving from Ontario into China. This article is China serving into Canada."
   - href: /en/hague-apostille/
     title: Hague Apostille
     line: A power of attorney from Canada to instruct Chinese counsel usually needs a notary and an apostille.

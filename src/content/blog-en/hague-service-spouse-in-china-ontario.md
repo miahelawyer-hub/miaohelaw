@@ -28,7 +28,7 @@ relatedReading:
   - slug: china-property-premarital-depreciation-ontario
     line: He can return to China; property in Canada and in China may still enter the net family property calculation.
   - slug: china-divorce-lawsuit-living-in-canada
-    line: The other direction: you live in Canada and a Chinese court has issued the claim.
+    line: "The other direction: you live in Canada and a Chinese court has issued the claim."
   - slug: uncontested-divorce-ontario
     line: Even an uncontested divorce must be served. If the spouse is in China, Hague Service adds months.
   - slug: cross-border-assets-divorce-ontario
