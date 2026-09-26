@@ -32,7 +32,7 @@ relatedReading:
   - slug: marriage-contract-child-parenting-ontario
     line: A marriage contract cannot lock parenting or child support either.
   - slug: retroactive-child-support-ontario
-    line: Silence in an agreement is not a waiver of the past. Support can still be claimed for the years before anyone filed.
+    line: "Silence in an agreement is not a waiver of the past. Separated but never sued, the past part can often still be claimed."
 faqStructured:
   - question: "Can you agree to pay zero child support in a separation agreement?"
     answer: "Usually not. You can't waive child support. It belongs to the child, not to the parents to bargain away. Under Family Law Act s. 56(1.1), the court can disregard child-support terms that are unreasonable in light of the Federal Child Support Guidelines."

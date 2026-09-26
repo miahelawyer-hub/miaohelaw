@@ -32,7 +32,7 @@ relatedReading:
   - slug: marriage-contract-child-parenting-ontario
     line: 婚内协议同样锁不住孩子和抚养费。
   - slug: retroactive-child-support-ontario
-    line: 协议不写不等于以后不能追。分居了还没起诉，以前那截仍可能要。
+    line: "协议不写不等于以后不能追。分居了没起诉，以前那截常常还能要。"
 faqStructured:
   - question: "分居协议写互不付抚养费，法院认吗？"
     answer: "不行，一般不认。孩子抚养费不能放弃。这是给孩子的，不是两口子能商量掉的。对照《联邦孩子抚养费准则》不合理的条款，法院可以直接不理。"
