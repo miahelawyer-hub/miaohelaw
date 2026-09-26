@@ -62,7 +62,7 @@ Short answer: once is enough. But where you do it makes a huge difference. Pick 
 
 Usually not. In China, Chinese courts generally don't deal with assets outside China. The judgment usually says it plainly: the Canadian property won't be dealt with, go sort it out in a Canadian court.
 
-So if you go back to China to divorce, chances are it won't be finished in one go. Once there's a dispute later, you're back in Canada doing it again.
+So if you go back to China to divorce, chances are it won't be finished in one go. Once there's a dispute later, you're back in Canada to deal with property division.
 
 ---
 
