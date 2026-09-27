@@ -106,8 +106,8 @@ export const blogTopicHubs: BlogTopicHub[] = [
     titleEn: 'Family Violence, Restraining Orders & Court Procedure',
     chip: '法庭程序',
     chipEn: 'Court',
-    intro: '紧急保护、缺席判决、律师费、地区程序差异，案件卡住时怎么推进，以及房贷断供后家庭诉讼拖不住银行卖房。',
-    introEn: 'Emergency protection, default judgment, costs, regional court differences, stalled files, and why a family lawsuit will not stop a bank sale after mortgage default.',
+    intro: '紧急保护、缺席判决、律师费、地区程序差异，案件卡住时怎么推进，房贷断供后家庭诉讼拖不住银行卖房，以及对方手滑分享的文件法庭上能不能用。',
+    introEn: 'Emergency protection, default judgment, costs, regional court differences, stalled files, why a family lawsuit will not stop a bank sale after mortgage default, and whether files accidentally shared with you can be used in court.',
     slugs: [
       'ontario-restraining-order-chinese-family',
       'no-fault-divorce-domestic-violence-ontario',
@@ -118,6 +118,7 @@ export const blogTopicHubs: BlogTopicHub[] = [
       'stalled-family-law-case-ontario',
       'mortgage-default-family-court-cannot-stop-bank-sale-ontario',
       'electronic-evidence-ontario-family-court',
+      'accidentally-shared-files-family-court-ontario',
       'ontario-divorce-timeline-2026',
       'markham-richmond-hill-newmarket-court-divorce-lawyer',
     ],

@@ -22,6 +22,8 @@ relatedReading:
     line: "What drives legal fees, and why a stalled file gets expensive fast."
   - slug: "mortgage-default-family-court-cannot-stop-bank-sale-ontario"
     line: "If the mortgage is already in arrears, stalling the family file will not stop the lender."
+  - slug: "accidentally-shared-files-family-court-ontario"
+    line: "They stall on disclosure, then slip and share the files — yes, you can use them. Save them now."
 faqStructured:
   - question: "My family law case has not moved in two years. Is that normal?"
     answer: "Long delays are common in Ontario family court, but two years of no movement at all usually signals something structural rather than ordinary backlog. The three most frequent causes are: the parties are negotiating through counsel on positions neither will abandon, so the same disagreement is simply repeated at greater cost; nobody has re-examined whether the problem being negotiated is the one that can actually be solved right now; or the file has drifted procedurally because no one is actively pushing it. A useful test is whether the same argument has appeared in three different letters. If it has, the file is not negotiating, it is repeating."
