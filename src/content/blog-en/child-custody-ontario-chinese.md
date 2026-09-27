@@ -16,6 +16,8 @@ relatedReading:
     line: A child who does not want unsupervised time is not an automatic supervision order. Age, the whole file, and third-party evidence govern.
   - slug: adult-child-no-custody-ontario
     line: An adult at university is not usually a custody case. University costs are child support, not parenting.
+  - slug: sole-custody-vs-child-lives-with-me-ontario
+    line: Wanting sole custody usually just means the kids live with you. Two different things — don't write the agreement wrong.
 ---
 
 The language of child custody in Ontario has changed significantly in recent years. Understanding the current framework is essential for any parent navigating a separation or divorce.

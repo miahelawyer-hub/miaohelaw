@@ -35,6 +35,8 @@ relatedReading:
     line: "协议不写不等于以后不能追。分居了没起诉，以前那截常常还能要。"
   - slug: same-lawyer-both-sides-separation-agreement-ontario
     line: "两个人都同意了，也不能共用一个律师写协议。对方必须做完 ILA 再签字。"
+  - slug: sole-custody-vs-child-lives-with-me-ontario
+    line: "协议上写低抚养费，心细的法官不发离婚证。孩子的钱不能帮孩子减。"
 faqStructured:
   - question: "分居协议写互不付抚养费，法院认吗？"
     answer: "不行，一般不认。孩子抚养费不能放弃。这是给孩子的，不是两口子能商量掉的。对照《联邦孩子抚养费准则》不合理的条款，法院可以直接不理。"

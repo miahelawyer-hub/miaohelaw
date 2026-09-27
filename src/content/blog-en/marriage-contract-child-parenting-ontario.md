@@ -33,6 +33,8 @@ relatedReading:
     line: After separation, child support still cannot be waived.
   - slug: same-lawyer-both-sides-separation-agreement-ontario
     line: Even a separation agreement cannot be drafted by one lawyer for both sides. The other side needs ILA.
+  - slug: sole-custody-vs-child-lives-with-me-ontario
+    line: Wanting sole custody usually just means the kids live with you. Write the two things separately.
 faqStructured:
   - question: "Can a marriage contract decide custody of the child?"
     answer: "No. In Ontario a prenup and a postnup are the same thing: a marriage contract. You can talk about property and spousal support. You can't lock in the child. Whatever you wrote, the court can ignore it in the child's best interests."

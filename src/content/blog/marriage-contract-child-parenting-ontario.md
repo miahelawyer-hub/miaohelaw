@@ -33,6 +33,8 @@ relatedReading:
     line: 分居之后，子女抚养费同样不能拿来放弃。
   - slug: same-lawyer-both-sides-separation-agreement-ontario
     line: 分居协议写下来，也不能两个人共用一个律师。对方要做完 ILA 再签。
+  - slug: sole-custody-vs-child-lives-with-me-ontario
+    line: 想要唯一抚养权，多半只是孩子跟你住。分居协议里两件事要分开写。
 faqStructured:
   - question: "婚内协议能约定孩子的抚养权吗？"
     answer: "不行。安省的婚前协议和婚内协议都叫婚姻合同。财产和配偶赡养费可以谈。孩子不行。写了「孩子归我」，法院仍可按孩子最佳利益另作安排。"

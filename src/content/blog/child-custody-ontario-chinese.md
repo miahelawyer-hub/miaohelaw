@@ -20,6 +20,8 @@ relatedReading:
     line: 孩子不想单独见对方，能不能要求监督探视——年纪太小不当定案，青少年会听仍看全案。
   - slug: adult-child-no-custody-ontario
     line: 孩子已经成年、在读大学，通常不再争抚养权；大学费用是另一条。
+  - slug: sole-custody-vs-child-lives-with-me-ontario
+    line: 想要唯一抚养权，多半只是孩子跟你住。两件事，别写错协议。
 ---
 
 子女监护权争议是家庭法案件中情绪最激烈、影响最深远的一类。很多父母在这个过程中因为不了解Ontario法律的判断逻辑，做出了适得其反的决定。
