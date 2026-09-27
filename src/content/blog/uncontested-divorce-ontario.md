@@ -26,6 +26,8 @@ relatedReading:
     line: "协议里不写或放弃子女抚养费，为什么离婚令会出不来。"
   - slug: "toronto-divorce-lawyer-fees-3000-vs-30000"
     line: "无争议与争议路径下的律师费结构差异。"
+  - slug: "same-lawyer-both-sides-separation-agreement-ontario"
+    line: "协议要先签稳。两个人不能共用一个律师，对方必须做完 ILA。"
 faqStructured:
   - question: "安省无争议离婚的法院规费是多少？"
     answer: "法院规费合计约 700 加元。截至 2026 年 7 月，明细为：提交 Form 8A 离婚申请 214 元、联邦离婚程序中央登记处 10 元、列入聆讯清单 445 元、离婚证书 25 元。这些规费依据《司法行政法》下的法规确定，并非每年调整但会定期上调，立案前应核实当时的实际金额。律师费、专业送达员费用（通常 100 至 200 元）和境外婚姻文件的认证翻译费另计。领取 Ontario Works 或 ODSP、或符合低收入标准的申请人可申请费用豁免，但联邦登记费不可豁免。"

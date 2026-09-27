@@ -28,6 +28,8 @@ relatedReading:
     line: If you worry about waste or hidden movement of family property, this article discusses risk from an evidence and procedure angle.
   - slug: separation-agreement-vs-divorce-ontario
     line: How separation agreements interact with the divorce process — relevant when you are weighing package work versus litigation-driven hourly fees.
+  - slug: same-lawyer-both-sides-separation-agreement-ontario
+    line: You both agree — you still cannot share one lawyer to draft. The other side completes ILA before signing.
 faqStructured:
   - question: "How do Toronto divorce lawyers charge, and roughly how much?"
     answer: "Mainly two ways: a flat fee (uncontested divorce about $2,000–$3,500, agreement drafting about $2,500–$4,500, plus HST and disbursements, with a fixed price stated in the retainer agreement), or hourly billing (used for contested or litigated matters, in 6-minute units). A limited retainer is also available, billed only for defined tasks."

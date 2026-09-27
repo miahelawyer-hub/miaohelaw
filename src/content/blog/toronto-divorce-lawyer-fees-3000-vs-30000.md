@@ -26,6 +26,8 @@ relatedReading:
     line: 若您担心对方转移、挥霍婚姻财产，想从证据与程序角度理解风险，可读资产挥霍与保全相关讨论。
   - slug: separation-agreement-vs-divorce-ontario
     line: 若您在比较「先分居协议再离婚」与直接诉讼等路径对费用与节奏的影响，可参考协议与离婚程序的关系说明。
+  - slug: same-lawyer-both-sides-separation-agreement-ontario
+    line: 两个人都同意了，也不能共用一个律师写分居协议。对方必须做完 ILA 再签字。
 faqStructured:
   - question: "多伦多离婚律师的收费方式有哪些？大概多少钱？"
     answer: "主要两种：固定费用（无争议离婚约 $2,000–$3,500，协议起草约 $2,500–$4,500，均另加 HST 及 disbursements，委托协议中会写明固定价格），和按小时计费（涉及争议或诉讼时采用，每 6 分钟为一个计费单元）。也可选择有限委托，只就特定事项按实际工作量付费。"
