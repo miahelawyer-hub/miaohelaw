@@ -31,6 +31,8 @@ relatedReading:
     line: 已经离完、对方还住着，是居住权问题，不是这篇的升值账。
   - slug: resulting-trust-parental-gifts-ontario
     line: 对方说首付是父母出的、贷款一直是他在还，走信托那条路。
+  - slug: mortgage-default-family-court-cannot-stop-bank-sale-ontario
+    line: 等房价涨拖不住银行。房贷断了，家庭官司也拖不住。
 faqStructured:
   - question: "分居后房子涨了，还要分吗？"
     answer: "先看房证上有谁的名字。这是两笔账。一笔是算钱，锁在分居那天。一笔是产权，看名字。名字怎么写，不等于钱怎么分。"

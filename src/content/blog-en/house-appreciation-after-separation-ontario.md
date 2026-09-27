@@ -31,6 +31,8 @@ relatedReading:
     line: After a recognized divorce, occupation is a possessory question, not this appreciation ledger.
   - slug: resulting-trust-parental-gifts-ontario
     line: If they say the down payment came from their parents, that is a trust claim.
+  - slug: mortgage-default-family-court-cannot-stop-bank-sale-ontario
+    line: Waiting for prices will not pause the bank. A family lawsuit will not either.
 faqStructured:
   - question: "House went up after separation. Do you still split it?"
     answer: "First question: whose name is on title. Two different things. One is the money calculation, locked at separation. The other is title, whose name is on the deed. How title is held doesn't decide how the money is split."
