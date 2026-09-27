@@ -40,7 +40,7 @@ faqStructured:
   - question: "What do you call it when the kids live with you?"
     answer: "That's parenting time. Being the primary caregiver means the kids live with you day to day and they move when you move. The kids living with you doesn't mean all the major decisions are yours."
   - question: "Can the major decisions be negotiated separately?"
-    answer: "Yes — and each one can be decided on its own. Education, health, religion, one by one. Don't list out every single thing mom decides alone — list too much and he objects to things he never cared about."
+    answer: "Yes — and each one can be decided on its own. Education, health, religion, one by one."
   - question: "Can mom travel with the kids and handle documents on her own?"
     answer: "Yes — write them in clearly: travel, passports, documents without his signature. Nothing in the agreement, he won't sign, the passport doesn't get issued."
   - question: "Can we write the child support amount lower?"
@@ -106,8 +106,6 @@ Once you separate the two, you know exactly what you're asking for, and the agre
 Yes — and each one can be decided on its own. Who decides education, who decides health, who decides religion: negotiate them one by one, sole or joint, each item separately. It's not the bundle people assume, where it's all-or-nothing.
 
 For example: education, health, and religion decided jointly; everything else not mentioned decided by mom alone. Or: education decided by mom alone, health decided jointly. Any combination works — it's up to how you negotiate. Each item stands on its own; don't let "package deal" thinking box you in.
-
-One drafting tip: don't list out every single thing mom decides alone, item by item. List too much and he reads it, thinks of things he never cared about, and suddenly objects to all of it. Just write down the few items he wants decided jointly, and say everything else is decided by mom alone. No fight, agreement gets signed.
 
 ---
 
