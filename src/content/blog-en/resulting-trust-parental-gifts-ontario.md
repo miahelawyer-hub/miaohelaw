@@ -25,6 +25,8 @@ relatedReading:
     line: "How foreign property and bank accounts are handled in Ontario divorce proceedings."
   - slug: common-law-three-years-ontario-split-property
     line: "Ontario common law does not equalize. Keep parental money in its own account, with the slips."
+  - slug: in-laws-name-house-lived-decade-divorce-ontario
+    line: "A house titled in the in-laws' names after a decade. Follow the money — that is the resulting-trust road."
 faqStructured:
   - question: "If my parents gave me money during my marriage, is it a gift or held in resulting trust?"
     answer: "It depends on what your parents intended at the time of the transfer. Ontario law presumes that a gratuitous transfer to an adult child is held in resulting trust for the parent, but that presumption can be rebutted by evidence that a gift was intended. Documents and conduct closest in time to the transfer carry the most weight."

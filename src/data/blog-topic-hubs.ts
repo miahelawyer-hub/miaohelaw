@@ -30,8 +30,8 @@ export const blogTopicHubs: BlogTopicHub[] = [
     titleEn: 'Property Division & Net Family Property',
     chip: '财产分割',
     chipEn: 'Property',
-    intro: '婚房、婚前扣除、父母出资、强制出售，分居后房价升值还分不分，房子在对方名下还能不能带着孩子住，NFP 算错了能不能重算，均等化时效，离完婚对方还住在房子里，房贷断供了拿家庭官司拖不住银行卖房，以及安省同居满三年也不走夫妻财产平分。',
-    introEn: 'The matrimonial home, pre-marriage deductions, parental gifts, forced sale, whether a post-separation increase is still shared, whether you can stay with the kids when title is in the other name, whether a wrong NFP can be recalculated, equalization limitation periods, an ex still occupying the house after divorce, why a family lawsuit will not stop a bank sale after mortgage default, and why three years of common-law cohabitation in Ontario does not equalize property.',
+    intro: '婚房、婚前扣除、父母出资、强制出售，分居后房价升值还分不分，房子在对方名下还能不能带着孩子住，公婆名下住了十几年还能不能分，NFP 算错了能不能重算，均等化时效，离完婚对方还住在房子里，房贷断供了拿家庭官司拖不住银行卖房，以及安省同居满三年也不走夫妻财产平分。',
+    introEn: 'The matrimonial home, pre-marriage deductions, parental gifts, forced sale, whether a post-separation increase is still shared, whether you can stay with the kids when title is in the other name, whether a house titled in the in-laws’ names after a decade still yields a share, whether a wrong NFP can be recalculated, equalization limitation periods, an ex still occupying the house after divorce, why a family lawsuit will not stop a bank sale after mortgage default, and why three years of common-law cohabitation in Ontario does not equalize property.',
     slugs: [
       'net-family-property-ontario',
       'ontario-divorce-property-division',
@@ -39,6 +39,7 @@ export const blogTopicHubs: BlogTopicHub[] = [
       'china-divorce-ontario-equalization-afterward',
       'house-appreciation-after-separation-ontario',
       'house-in-spouse-name-stay-with-kids-separation-ontario',
+      'in-laws-name-house-lived-decade-divorce-ontario',
       'matrimonial-home-property-division-not-based-on-title',
       'after-divorce-ex-still-in-my-house-ontario',
       'premarital-home-sold-ontario-deduction',

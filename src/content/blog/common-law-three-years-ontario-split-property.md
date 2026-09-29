@@ -29,6 +29,8 @@ relatedReading:
     line: "同居协议以后当婚前协议用，签对了才算数。"
   - slug: same-lawyer-both-sides-separation-agreement-ontario
     line: "协议写下来，也不能两个人共用一个律师。"
+  - slug: in-laws-name-house-lived-decade-divorce-ontario
+    line: "房子在公婆名下，住了十几年。贡献走 constructive trust。"
   - href: /family-law/common-law/
     title: 同居关系
     line: "安省 common-law 的财产、赡养和孩子，跟结婚不是同一套。"

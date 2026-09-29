@@ -29,6 +29,8 @@ relatedReading:
     line: "Whether a post-separation increase is shared, and whether filing now means an automatic sale, are different questions."
   - slug: "mortgage-default-family-court-cannot-stop-bank-sale-ontario"
     line: "Behind on the mortgage and thinking a family lawsuit will freeze the bank — it will not."
+  - slug: "in-laws-name-house-lived-decade-divorce-ontario"
+    line: "A house in the in-laws' names after a decade. Show you have an interest before you talk about a sale."
 faqStructured:
   - question: "My spouse refuses to move out of the house. What can I do?"
     answer: "Bring a motion for sale. Where an Ontario court orders a matrimonial home sold, it can also make the orders needed to give effect to that sale, which commonly include requiring the occupying party to vacate by a specified date, to permit showings and access for the listing agent and appraiser, to keep the property in showing condition, and to sign listing and closing documents. Where one party will not cooperate, the practical order is sole carriage of the sale: the court gives one party authority to instruct the agent, accept an offer, and sign the listing and closing documents alone, without the other's signature. A refusal to leave is not a defence to a sale; it is a problem the sale order itself addresses."

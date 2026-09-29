@@ -29,6 +29,8 @@ relatedReading:
     line: "A cohabitation agreement can later work as a prenup — if it is signed properly."
   - slug: same-lawyer-both-sides-separation-agreement-ontario
     line: "Writing the agreement down still means one lawyer each."
+  - slug: in-laws-name-house-lived-decade-divorce-ontario
+    line: "A house in the in-laws' names after a decade. Contribution goes through constructive trust."
   - href: /en/family-law/common-law/
     title: Common-law relationships
     line: "Ontario common-law property, support and children are not the married-couple rulebook."

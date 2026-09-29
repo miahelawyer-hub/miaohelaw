@@ -30,6 +30,8 @@ relatedReading:
     line: "If you are considering domestic contracts to clarify parent advances, start with validity and disclosure basics."
   - slug: common-law-three-years-ontario-split-property
     line: "Ontario common law has no equalization. Contribution fights go through constructive trust."
+  - slug: in-laws-name-house-lived-decade-divorce-ontario
+    line: "A house in the in-laws' names after a decade. Gift or loan — write it down at the time."
 faqStructured:
   - question: "In an Ontario divorce, is a parent’s contribution a gift or a loan?"
     answer: "There is no automatic rule. Courts weigh contemporaneous documents, repayment terms, security, demands before separation, partial repayments, differential treatment among children, and whether repayment was realistically expected. Barber v. Magee (2015 ONSC 8054, aff’d 2017 ONCA 558) summarizes a multi-factor framework courts use in gift-vs-loan disputes. Full trial reasons on CanLII: https://www.canlii.org/en/on/onsc/doc/2015/2015onsc8054/2015onsc8054.html"

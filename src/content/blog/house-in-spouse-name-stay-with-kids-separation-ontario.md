@@ -31,6 +31,8 @@ relatedReading:
     line: "分居后房价涨了还分不分，是估值日的账，不是这篇的居住安排。"
   - slug: same-roof-wedding-separation-date-ontario
     line: "同屋檐下分了房，还一起吃饭一起去婚礼，那个分居日还算不算。"
+  - slug: in-laws-name-house-lived-decade-divorce-ontario
+    line: "房子在公婆名下，住了十几年，离婚还能不能分。Title是谁的不重要。"
 faqStructured:
   - question: "房子在对方名下，分居了还能带着孩子住着不搬吗？"
     answer: "能先住着。对方要房子，不等于能把人赶出去。先别自己吓自己搬走，也别被对方一句话吓走。"

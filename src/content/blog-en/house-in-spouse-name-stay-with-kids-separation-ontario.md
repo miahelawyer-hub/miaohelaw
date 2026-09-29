@@ -31,6 +31,8 @@ relatedReading:
     line: "Whether a post-separation increase is shared is the valuation-date ledger, not this occupancy question."
   - slug: same-roof-wedding-separation-date-ontario
     line: "Separate rooms under the same roof, but you still eat together and attend weddings — does that date still count?"
+  - slug: in-laws-name-house-lived-decade-divorce-ontario
+    line: "The house is in your in-laws' names after a decade. What matters is who paid, not whose name is on title."
 faqStructured:
   - question: "The house is in your spouse's name — can you still live there with the kids after separation?"
     answer: "Yes, stay for now. Them wanting the house is not the same as being able to kick you out. Don't move out scaring yourself, and don't let one sentence scare you out either."
