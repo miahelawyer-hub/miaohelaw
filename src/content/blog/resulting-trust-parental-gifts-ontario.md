@@ -23,6 +23,8 @@ relatedReading:
     line: "境外房产在净家庭财产计算中如何被计入与处理。"
   - slug: cross-border-assets-divorce-ontario
     line: "境外资产与银行账户在安省离婚程序中的总体处理方式。"
+  - slug: common-law-three-years-ontario-split-property
+    line: "同居没有财产平分。父母给的钱单独账户、凭证自己存。"
 faqStructured:
   - question: "婚姻期间父母给我的钱，算赠与还是以推定信托方式持有？"
     answer: "取决于父母在转账当时的主观意图。安省法律推定：父母向成年子女无偿转让财产时，子女以推定信托（resulting trust）为父母持有；但该推定可被证明「当时意图为赠与」的证据推翻。越接近转账当时的文件与行为，证据效力越高。"

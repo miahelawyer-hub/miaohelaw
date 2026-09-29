@@ -14,6 +14,14 @@ tags:
   - "markham-divorce-lawyer"
   - "miao-he-lawyer"
   - "toronto-chinese-family-lawyer"
+relatedIntro: "同居满三年会不会像结婚一样平分、父母给的钱怎么留、协议怎么签，是三笔账："
+relatedReading:
+  - slug: common-law-three-years-ontario-split-property
+    line: "网上说同居满三年就平分，那是BC。安省没有夫妻财产平分。"
+  - slug: resulting-trust-parental-gifts-ontario
+    line: "父母给的钱，赠与还是信托。凭证要自己存。"
+  - slug: prenuptial-agreement-ontario-2026
+    line: "同居协议以后当婚前协议用，签对了才算数。"
 ---
 
 在加拿大，有两种方式可以形成法律上认可的配偶关系。
@@ -50,7 +58,7 @@ tags:
 
 **Common-law 伴侣没有这个权利。**
 
-分手时，每个人只能拿走自己名下的财产。无论你们同居多少年，房子写在谁名下就是谁的——对方没有自动的财产分割权。这是很多在分手时才发现的残酷现实。
+分手时，每个人只能拿走自己名下的财产。无论你们[同居多少年](/blog/common-law-three-years-ontario-split-property/)，房子写在谁名下就是谁的——对方没有自动的财产分割权。这是很多在分手时才发现的残酷现实。
 
 ---
 

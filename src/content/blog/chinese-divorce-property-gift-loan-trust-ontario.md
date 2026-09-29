@@ -28,6 +28,8 @@ relatedReading:
     line: "推定收入在子女抚养费与配偶赡养中的运用，与本文第四节、第五节相呼应。"
   - slug: prenuptial-agreement-validity-ontario
     line: "若父母出资前曾考虑婚前/婚姻合同，可先了解协议效力与常见争议点。"
+  - slug: common-law-three-years-ontario-split-property
+    line: "安省同居没有均等分割。贡献争议走 constructive trust。"
 faqStructured:
   - question: "华人离婚里父母给的钱算赠与还是借款？"
     answer: "没有自动公式。法院会结合书面证据、还款安排、担保、是否曾催款、有无部分还款、家庭内部是否差别对待等综合判断双方（及父母）当时的真实意图，而不是仅看离婚后的口头说法。安省判例如 Barber v. Magee (2015 ONSC 8054, 上诉维持 2017 ONCA 558) 归纳了此类分析框架。一审判决书全文见 CanLII：https://www.canlii.org/en/on/onsc/doc/2015/2015onsc8054/2015onsc8054.html"

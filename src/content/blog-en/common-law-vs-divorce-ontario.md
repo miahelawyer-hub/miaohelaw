@@ -11,6 +11,14 @@ tags:
   - "markham-family-lawyer"
   - "miao-he-lawyer"
   - "ontario-family-law"
+relatedIntro: "Three years together, parental money, and whether a cohabitation agreement later works as a prenup are three ledgers:"
+relatedReading:
+  - slug: common-law-three-years-ontario-split-property
+    line: "The internet says three years means a 50/50 split. That is BC. Ontario does not equalize common-law property."
+  - slug: resulting-trust-parental-gifts-ontario
+    line: "Money from your parents: gift or trust. Keep the transfer slips yourself."
+  - slug: prenuptial-agreement-ontario-2026
+    line: "A cohabitation agreement can later work as a prenup — if it is signed properly."
 ---
 
 Many couples in Ontario live together without getting married. But the legal consequences of separating from a common-law partner are **very different** from divorcing a married spouse. Understanding these differences is critical — and many couples do not find out until it is too late.
@@ -54,7 +62,7 @@ Yes — but the claims are different and harder to establish:
 
 ### Unjust Enrichment / Constructive Trust
 
-A common-law partner who contributed to the acquisition or improvement of the other partner's assets (financially or through domestic contributions) may be able to claim **unjust enrichment**. If successful, the court may impose a **constructive trust** on the asset, giving the claimant a beneficial interest.
+A common-law partner who contributed to the acquisition or improvement of the other partner's assets (financially or through domestic contributions) may be able to claim **unjust enrichment**. If successful, the court may impose a **[constructive trust](/en/blog/common-law-three-years-ontario-split-property/)** on the asset, giving the claimant a beneficial interest.
 
 This requires litigation and evidence of:
 - The other party was enriched

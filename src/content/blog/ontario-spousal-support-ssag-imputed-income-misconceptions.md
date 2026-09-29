@@ -31,6 +31,8 @@ relatedReading:
     line: "中加抚养费差异综述：从子女抚养到配偶赡养的核心区别。"
   - slug: foreign-divorce-avoid-spousal-support-ontario
     line: "境外离婚不能自动取消安省赡养费；为躲义务去离的，法院可以不认。"
+  - slug: common-law-three-years-ontario-split-property
+    line: "同居满三年财产不平分。Spousal support 从同居第一天算，不是一定养一辈子。"
 ---
 
 很多客户在咨询时容易把[配偶抚养费](/family-law/support/)和[子女抚养费](/family-law/support/)混在一起理解——但在安省，这是两个完全不同的法律计算逻辑。下面我从中加双执照律师的角度，把配偶抚养费的判定框架讲清楚，特别是大家最容易踩坑的 imputed income 和「一直养着对方」这两个误区。
