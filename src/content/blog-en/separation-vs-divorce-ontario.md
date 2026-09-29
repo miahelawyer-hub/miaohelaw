@@ -21,6 +21,8 @@ relatedReading:
     line: Using WeChat messages, texts, and emails to prove your separation date — admissibility rules in Ontario family court.
   - slug: toronto-divorce-lawyer-fees-3000-vs-30000
     line: Once the separation agreement is in place — what the divorce process costs and how long it takes.
+  - slug: same-roof-wedding-separation-date-ontario
+    line: "Separate rooms under the same roof, but you still eat together and attend weddings — does that date still count?"
 faqStructured:
   - question: "Does separation require both spouses to agree?"
     answer: "No. Under Canadian law, one spouse alone can determine that the marriage is over. No agreement, documentation, or court process is required to trigger separation."
@@ -58,7 +60,7 @@ Many clients confuse the two, but under Canadian law, separation and divorce are
 **Key features of separation:**
 
 - ✅ **No documents or court process required** — separation begins the moment either (or both) spouses treat the relationship as over
-- ✅ You can **separate under one roof** ("separation under one roof") — as long as the two of you are no longer living as spouses
+- ✅ You can **[separate under one roof](/en/blog/same-roof-wedding-separation-date-ontario/)** ("separation under one roof") — as long as the two of you are no longer living as spouses
 - ✅ It is strongly recommended to sign a **[Separation Agreement](/en/family-law/domestic-contracts#separation)** to set out property, support, and parenting arrangements
 
 **Separation is reversible:**

@@ -32,6 +32,8 @@ relatedReading:
     line: "均等化有时效，孩子抚养费不受时效限制。"
   - slug: house-appreciation-after-separation-ontario
     line: "财产那边可以先不动。抚养费不是同一条时效。"
+  - slug: same-roof-wedding-separation-date-ontario
+    line: "孩子抚养费从分居日开始算。分居日本身站不站得住，是另一篇。"
 faqStructured:
   - question: "分居了没起诉，以前的孩子抚养费还能要吗？"
     answer: "常常还能。不是自动全有，也不是自动没有。孩子抚养费是孩子的权利。分居就可以要，不用等离婚，不用先有协议。协议里写互不付，法院也不认。财产和孩子抚养费是两笔账。均等化有时效，孩子抚养费不受时效限制。"

@@ -23,6 +23,8 @@ relatedReading:
     line: 跨境资金流向的证据披露——境外账户截图、跨境转账记录在安省家庭法庭的处理。
   - slug: accidentally-shared-files-family-court-ontario
     line: 对方手滑把文件分享给你了，家庭法庭能不能用。能用，赶紧存。
+  - slug: same-roof-wedding-separation-date-ontario
+    line: "分居日争的就是时间戳。短信、报税、草稿对不上日历，法官不认。"
 faqStructured:
   - question: "微信记录可以作为安省家庭法庭的证据吗？"
     answer: "原则上可以。微信聊天记录属于书面形式的电子记录（written electronic records），在离婚诉讼中常用于证明分居日、债务、资产、赠与、跨境转账与对方收入水平。但仅有截图不够，必须能证明截图的真实性、未经篡改，且通常需要证人在庭上引入。"

@@ -17,6 +17,10 @@ tags:
   - "pre-divorce-asset-search"
   - "separation-date-determination"
   - "toronto-chinese-family-lawyer"
+relatedIntro: "分居日定在哪一天、同屋檐下还一起吃饭去婚礼算不算，是两笔账："
+relatedReading:
+  - slug: same-roof-wedding-separation-date-ontario
+    line: "同屋檐下分了房，还一起吃饭一起去婚礼，那个分居日还算不算。"
 ---
 
 在华人客户当中，这是我遇到最多的误解之一。

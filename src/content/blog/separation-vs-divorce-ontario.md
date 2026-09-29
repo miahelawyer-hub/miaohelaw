@@ -20,6 +20,8 @@ relatedReading:
     line: 用微信记录、短信、邮件证明分居日——电子证据的采信规则与实务难点。
   - slug: toronto-divorce-lawyer-fees-3000-vs-30000
     line: 分居协议谈好之后，离婚诉讼的费用结构与流程预期。
+  - slug: same-roof-wedding-separation-date-ontario
+    line: "同屋檐下分了房，还一起吃饭一起去婚礼，那个分居日还算不算。"
 faqStructured:
   - question: "分居必须双方同意吗？"
     answer: "不需要。加拿大法律下，单方认定关系已结束即可进入分居，无需对方同意，也无需任何书面文件。"
@@ -112,7 +114,7 @@ faqStructured:
 
 **❌ 误区 2**："我们还住在一起，算分居吗？"
 
-**✅ 正解**：可以算。加拿大法律承认"同屋分居"，关键看是否实质上停止了夫妻生活（分房、分财务、分社交等）。
+**✅ 正解**：可以算。加拿大法律承认"[同屋分居](/blog/same-roof-wedding-separation-date-ontario/)"，关键看是否实质上停止了夫妻生活（分房、分财务、分社交等）。
 
 **❌ 误区 3**："分居久了就自动离婚了吧？"
 

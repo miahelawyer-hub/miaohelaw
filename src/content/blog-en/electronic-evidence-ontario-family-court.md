@@ -26,6 +26,8 @@ relatedReading:
     line: Disclosure of offshore accounts and cross-border transfers — how foreign screenshots are handled in Ontario family proceedings.
   - slug: accidentally-shared-files-family-court-ontario
     line: They accidentally shared files with you — family court can use them. Save them now.
+  - slug: same-roof-wedding-separation-date-ontario
+    line: "A separation-date fight is a timestamp fight. Texts, tax filings, and a draft that doesn't match the calendar will not hold."
 faqStructured:
   - question: "Can WeChat messages be used as evidence in Ontario family court?"
     answer: "Yes, in principle. WeChat chat records are written electronic records and are admissible in Ontario family proceedings. They are commonly used to establish the separation date, acknowledge debts or gifts, characterize parental contributions, trace cross-border transfers, and prove income for support purposes. However, screenshots alone are not enough — you must be able to authenticate them (prove they are genuine and unaltered), and they typically need to be introduced through witness testimony."

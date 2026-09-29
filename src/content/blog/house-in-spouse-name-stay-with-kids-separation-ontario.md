@@ -29,6 +29,8 @@ relatedReading:
     line: "动手、威胁，安全第一。限制令管的是大人之间谁不能靠近谁。"
   - slug: house-appreciation-after-separation-ontario
     line: "分居后房价涨了还分不分，是估值日的账，不是这篇的居住安排。"
+  - slug: same-roof-wedding-separation-date-ontario
+    line: "同屋檐下分了房，还一起吃饭一起去婚礼，那个分居日还算不算。"
 faqStructured:
   - question: "房子在对方名下，分居了还能带着孩子住着不搬吗？"
     answer: "能先住着。对方要房子，不等于能把人赶出去。先别自己吓自己搬走，也别被对方一句话吓走。"
@@ -62,7 +64,7 @@ faqStructured:
 
 算。按安省的婚姻法，算。
 
-很多人以为[分居](/blog/separation-vs-divorce-ontario/)就是一方搬出去，其实不是。两个人还住同一个屋檐下，但已经不住同一个房间了，各睡各的，经济上也分开了，各付各的账单，买菜做饭都不搭伙，安省家庭法庭是可以认你们已经分居了的。
+很多人以为[分居](/blog/separation-vs-divorce-ontario/)就是一方搬出去，其实不是。两个人还住同一个屋檐下，但已经不住同一个房间了，各睡各的，[经济上也分开了](/blog/same-roof-wedding-separation-date-ontario/)，各付各的账单，买菜做饭都不搭伙，安省家庭法庭是可以认你们已经分居了的。
 
 分居看的是两个人是不是不过了，感情上、经济上是不是分开了，不是一定要有人搬出去。所以，别觉得没搬走，分居就不算数。
 

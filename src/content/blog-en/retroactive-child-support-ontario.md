@@ -32,6 +32,8 @@ relatedReading:
     line: "Equalization has limitation periods. Child support isn't subject to limitation."
   - slug: house-appreciation-after-separation-ontario
     line: "You can leave property alone for now. Child support is not the same clock."
+  - slug: same-roof-wedding-separation-date-ontario
+    line: "Child support starts from the separation date. Whether that date holds is a different article."
 faqStructured:
   - question: "Separated but never sued — can you still get back child support?"
     answer: "Often yes. Not automatic full, not automatic zero. Child support is the child's right. You can claim it from separation — no need to wait for divorce, no need for an agreement first. An agreement saying zero, the court won't honor. Property and child support are two separate tracks. Equalization has limitation periods. Child support isn't subject to limitation."

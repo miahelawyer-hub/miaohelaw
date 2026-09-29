@@ -29,6 +29,8 @@ relatedReading:
     line: "Violence or threats — safety first. A restraining order is about the adults, who can't go near whom."
   - slug: house-appreciation-after-separation-ontario
     line: "Whether a post-separation increase is shared is the valuation-date ledger, not this occupancy question."
+  - slug: same-roof-wedding-separation-date-ontario
+    line: "Separate rooms under the same roof, but you still eat together and attend weddings — does that date still count?"
 faqStructured:
   - question: "The house is in your spouse's name — can you still live there with the kids after separation?"
     answer: "Yes, stay for now. Them wanting the house is not the same as being able to kick you out. Don't move out scaring yourself, and don't let one sentence scare you out either."
@@ -62,7 +64,7 @@ Yes, stay for now. Them wanting the house is not the same as being able to kick 
 
 Yes. Under Ontario family law, it counts.
 
-A lot of people think [separation](/en/blog/separation-vs-divorce-ontario/) means someone has to move out. Not true. Two people can live under the same roof but in separate bedrooms, sleeping apart, finances split — separate bills, separate groceries, separate cooking. An Ontario family court can recognize you as separated.
+A lot of people think [separation](/en/blog/separation-vs-divorce-ontario/) means someone has to move out. Not true. Two people can live under the same roof but in separate bedrooms, sleeping apart, [finances split](/en/blog/same-roof-wedding-separation-date-ontario/) — separate bills, separate groceries, separate cooking. An Ontario family court can recognize you as separated.
 
 Separation is about whether the two of you are done living as a couple — emotionally and financially — not about whether someone moved out. So don't think your separation doesn't count just because nobody left.
 

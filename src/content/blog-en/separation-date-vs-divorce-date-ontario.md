@@ -11,6 +11,10 @@ tags:
   - "markham-family-lawyer"
   - "miao-he-lawyer"
   - "ontario-family-law"
+relatedIntro: "Which day is the valuation date, and whether eating together and attending weddings as a couple undoes a date you agreed, are two ledgers:"
+relatedReading:
+  - slug: same-roof-wedding-separation-date-ontario
+    line: "Separate rooms under the same roof, but you still eat together and attend weddings — does that date still count?"
 ---
 
 Many people use "separation" and "divorce" interchangeably. In Ontario family law, they are legally distinct — and the difference has significant financial and procedural consequences.

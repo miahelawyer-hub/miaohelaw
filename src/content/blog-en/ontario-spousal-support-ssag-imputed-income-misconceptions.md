@@ -26,6 +26,8 @@ relatedReading:
     line: "A foreign divorce does not automatically cancel Ontario support. Recognition can be refused if it was obtained to evade."
   - slug: common-law-three-years-ontario-split-property
     line: "Three years of common law does not split property. Spousal support counts from the first day you lived together — it is not support for life."
+  - slug: same-roof-wedding-separation-date-ontario
+    line: "Support duration is counted back from the separation date. Whether that date holds depends on what you do, not what you say."
 ---
 
 Many clients walk into a first consultation assuming [child support](/en/family-law/support/) and [spousal support](/en/family-law/support/) work the same way. In Ontario, they don't — and that single misunderstanding leads to badly calibrated expectations, weak negotiating positions, and avoidable surprises in court. As a dually licensed lawyer (China 2009 / Ontario LSO #83315K), I see two specific traps come up again and again: misreading what SSAG actually is, and underestimating how imputed income reshapes the calculation. This article walks through both, plus the broader factors that drive Ontario spousal support outcomes.
