@@ -32,6 +32,8 @@ relatedReading:
   - href: /family-law/property-division/
     title: 财产分割
     line: "均等化管夫妻名下的账。title在公婆名下，走的是信托。"
+  - slug: already-married-marriage-contract-home-down-payment-ontario
+    line: "已经结婚了，签协议说婚房归我、父母的首付要拿回去，还来得及。"
 faqStructured:
   - question: "房子在公婆名下，住了十几年，离婚还能分吗？"
     answer: "能分，但不是自动平分。Title写谁的名字，不等于房子就是谁的。法院看的是钱是谁出的、房子是谁养的。"

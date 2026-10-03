@@ -11,6 +11,9 @@ tags:
   - "markham-family-lawyer"
   - "miao-he-lawyer"
   - "ontario-family-law"
+relatedReading:
+  - slug: already-married-marriage-contract-home-down-payment-ontario
+    line: "Already married — is it too late to say the home is yours and the parents get the down payment back? Not too late."
 ---
 
 A prenuptial agreement — called a **marriage contract** in Ontario — is a legally binding agreement signed before marriage that sets out how assets and support will be handled if the marriage breaks down.

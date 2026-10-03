@@ -32,6 +32,8 @@ relatedReading:
   - href: /en/family-law/property-division/
     title: Property division
     line: "Equalization covers what is in the spouses' names. Title in the in-laws' names goes through trust."
+  - slug: already-married-marriage-contract-home-down-payment-ontario
+    line: "Already married — it is not too late to say the home is yours and the parents get the down payment back."
 faqStructured:
   - question: "My in-laws own the house we've lived in for over a decade — can I still get a share in our divorce?"
     answer: "Yes, but not automatically. Whose name is on the title isn't the whole story. Courts look at who paid for the house and who kept it up."

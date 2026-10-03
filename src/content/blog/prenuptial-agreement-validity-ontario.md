@@ -12,6 +12,9 @@ tags:
   - "miao-he-lawyer"
   - "prenuptial-agreement-ontario"
   - "toronto-chinese-family-lawyer"
+relatedReading:
+  - slug: already-married-marriage-contract-home-down-payment-ontario
+    line: "已经结婚了，签婚内协议说婚房和父母首付，还来得及。签对了法院才认。"
 ---
 
 很多人在咨询时会问：婚前协议到底有没有用？

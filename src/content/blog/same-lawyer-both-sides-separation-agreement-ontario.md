@@ -32,6 +32,8 @@ relatedReading:
   - href: /family-law/domestic-contracts/
     title: 婚前及分居协议
     line: "四种家庭协议分别能写什么。"
+  - slug: already-married-marriage-contract-home-down-payment-ontario
+    line: "已经结婚了，签婚内协议说婚房和父母首付，还来得及。一人一个律师。"
 faqStructured:
   - question: "两个人都同意了，能不能找同一个律师写分居协议？"
     answer: "不能。一个人一个律师，谁都一样。"

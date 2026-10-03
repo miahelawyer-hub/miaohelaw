@@ -32,6 +32,8 @@ relatedReading:
   - href: /en/family-law/domestic-contracts/
     title: Marriage and separation agreements
     line: "What the four kinds of family contracts can cover."
+  - slug: already-married-marriage-contract-home-down-payment-ontario
+    line: "Already married — a marriage contract on the home and the parents' down payment is not too late. One lawyer each."
 faqStructured:
   - question: "We both agree — can we use the same lawyer for our separation agreement?"
     answer: "No. One lawyer each. No exceptions."

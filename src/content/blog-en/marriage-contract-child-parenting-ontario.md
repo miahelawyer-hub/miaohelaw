@@ -35,6 +35,8 @@ relatedReading:
     line: Even a separation agreement cannot be drafted by one lawyer for both sides. The other side needs ILA.
   - slug: sole-custody-vs-child-lives-with-me-ontario
     line: Wanting sole custody usually just means the kids live with you. Write the two things separately.
+  - slug: already-married-marriage-contract-home-down-payment-ontario
+    line: "Already married — is it too late to say the home is yours and the parents get the down payment back? Not too late."
 faqStructured:
   - question: "Can a marriage contract decide custody of the child?"
     answer: "No. In Ontario a prenup and a postnup are the same thing: a marriage contract. You can talk about property and spousal support. You can't lock in the child. Whatever you wrote, the court can ignore it in the child's best interests."
@@ -62,7 +64,7 @@ A lot of people ask me: "We haven't separated yet. Can we sign an agreement now 
 
 Answer: No.
 
-In Ontario, a prenup and a postnup are the same thing legally. Both are called a marriage contract. You can talk about property and spousal support. You can't lock in the child.
+In Ontario, a prenup and a postnup are the same thing legally. Both are called a marriage contract. You can talk about [property](/en/blog/already-married-marriage-contract-home-down-payment-ontario/) and spousal support. You can't lock in the child.
 
 ## Can we agree on who the child lives with?
 

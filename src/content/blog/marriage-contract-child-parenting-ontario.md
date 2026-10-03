@@ -35,6 +35,8 @@ relatedReading:
     line: 分居协议写下来，也不能两个人共用一个律师。对方要做完 ILA 再签。
   - slug: sole-custody-vs-child-lives-with-me-ontario
     line: 想要唯一抚养权，多半只是孩子跟你住。分居协议里两件事要分开写。
+  - slug: already-married-marriage-contract-home-down-payment-ontario
+    line: "已经结婚了，签协议说婚房归我、父母的首付要拿回去，还来得及。来得及。"
 faqStructured:
   - question: "婚内协议能约定孩子的抚养权吗？"
     answer: "不行。安省的婚前协议和婚内协议都叫婚姻合同。财产和配偶赡养费可以谈。孩子不行。写了「孩子归我」，法院仍可按孩子最佳利益另作安排。"
@@ -62,7 +64,7 @@ faqStructured:
 
 答案：不行。
 
-在安省，婚前协议和婚内协议是同一种东西，都叫婚姻合同。财产和配偶赡养费可以谈。孩子不行。
+在安省，婚前协议和婚内协议是同一种东西，都叫婚姻合同。[财产](/blog/already-married-marriage-contract-home-down-payment-ontario/)和配偶赡养费可以谈。孩子不行。
 
 ## 孩子跟谁，能写吗？
 
