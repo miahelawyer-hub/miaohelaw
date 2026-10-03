@@ -25,6 +25,8 @@ relatedReading:
     line: "子女重大事项决定权（decision-making responsibility）与陪伴时间（parenting time）的实务框架，可与误区四、误区五一并阅读。"
   - slug: supervised-parenting-time-child-does-not-want-ontario
     line: "孩子不愿单独见面，能不能要监督探视——不是孩子说了就算，第三方证据更有分量。"
+  - slug: married-under-five-years-matrimonial-home-unfair-ontario
+    line: "结婚不到五年打不公平，有这条，但门槛极高。"
   - slug: separation-date-vs-divorce-date-ontario
     line: "分居日（date of separation）在财产与策略上的意义；与「是否同住」讨论相关但侧重点不同。"
 faqStructured:

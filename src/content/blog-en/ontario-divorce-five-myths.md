@@ -29,6 +29,8 @@ relatedReading:
     line: "Decision-making responsibility and parenting time in plain language — complements mistakes people make about income and about withholding parenting time."
   - slug: supervised-parenting-time-child-does-not-want-ontario
     line: "A child’s refusal of unsupervised time is not an automatic supervision order. Age and third-party evidence matter more than a parent’s retelling."
+  - slug: married-under-five-years-matrimonial-home-unfair-ontario
+    line: "Married less than five years — the unfair-split rule exists, but the bar is extremely high."
   - slug: separation-date-vs-divorce-date-ontario
     line: "Why the separation date matters for property and strategy, related but not identical to “under one roof” separation."
 faqStructured:

@@ -26,6 +26,8 @@ relatedReading:
     line: "境外资产在安省离婚中如何被计入与处理的总体说明。"
   - slug: ontario-spousal-support-ssag-imputed-income-misconceptions
     line: "跨境案件常涉及收入认定，了解 imputed income 如何影响赡养费。"
+  - slug: mom-gift-moved-between-accounts-divorce-ontario
+    line: "妈妈的财产在国内，遗嘱只能在国内签。亲子关系公证现在就办。"
 faqStructured:
   - question: "我在中国的房子只登记在我一个人名下，离婚也要算进去吗？"
     answer: "要。在净家庭财产均等化制度下，产权登记在谁名下不直接决定分割结果。只要它是你净家庭财产的一部分，其价值就要计入计算。"

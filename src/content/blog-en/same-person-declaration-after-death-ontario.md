@@ -32,6 +32,8 @@ relatedReading:
   - href: /en/hague-apostille/
     title: Hague Apostille
     line: Ontario documents used in China, and China documents used in Ontario, travel in opposite directions.
+  - slug: mom-gift-moved-between-accounts-divorce-ontario
+    line: "Mom's will is signed in China. Parent-child and hukou notarizations should be done now."
 faqStructured:
   - question: "Can you still do a same-person declaration after someone dies?"
     answer: "No. A same-person declaration has to be done in person. You show your passport and ID, swear and sign. Once they're gone, no one can sign saying both names are me. That route is closed. All that's left is digging up old documents and government records."

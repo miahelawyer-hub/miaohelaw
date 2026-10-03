@@ -24,6 +24,8 @@ relatedReading:
     line: "How foreign property and bank accounts are treated in Ontario divorce proceedings."
   - slug: ontario-spousal-support-ssag-imputed-income-misconceptions
     line: "How income is assessed in cross-border family law cases."
+  - slug: mom-gift-moved-between-accounts-divorce-ontario
+    line: "Assets in China: the will can only be signed in China. Get the notarizations done now."
 faqStructured:
   - question: "If I own a house in China under my name, will it be divided in an Ontario divorce?"
     answer: "Yes. It will generally be included in your Net Family Property (NFP) calculation. However, Ontario courts do not usually divide foreign real estate directly."

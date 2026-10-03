@@ -34,6 +34,8 @@ relatedReading:
     line: "A house in the in-laws' names after a decade. Gift or loan — write it down at the time."
   - slug: already-married-marriage-contract-home-down-payment-ontario
     line: "Already married — it is not too late to write the parents' down payment as a loan."
+  - slug: mom-gift-moved-between-accounts-divorce-ontario
+    line: "Mom's gift moved between accounts. The more it moves, the weaker the proof."
 faqStructured:
   - question: "In an Ontario divorce, is a parent’s contribution a gift or a loan?"
     answer: "There is no automatic rule. Courts weigh contemporaneous documents, repayment terms, security, demands before separation, partial repayments, differential treatment among children, and whether repayment was realistically expected. Barber v. Magee (2015 ONSC 8054, aff’d 2017 ONCA 558) summarizes a multi-factor framework courts use in gift-vs-loan disputes. Full trial reasons on CanLII: https://www.canlii.org/en/on/onsc/doc/2015/2015onsc8054/2015onsc8054.html"

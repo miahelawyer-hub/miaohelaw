@@ -34,6 +34,8 @@ relatedReading:
     line: "房子在公婆名下，住了十几年。父母的钱是送的还是借的，当时就要写清楚。"
   - slug: already-married-marriage-contract-home-down-payment-ontario
     line: "已经结婚了，签协议把父母的首付写成借款，还来得及。"
+  - slug: mom-gift-moved-between-accounts-divorce-ontario
+    line: "妈妈给的钱在几个账户之间转来转去，转得越多越说不清。"
 faqStructured:
   - question: "华人离婚里父母给的钱算赠与还是借款？"
     answer: "没有自动公式。法院会结合书面证据、还款安排、担保、是否曾催款、有无部分还款、家庭内部是否差别对待等综合判断双方（及父母）当时的真实意图，而不是仅看离婚后的口头说法。安省判例如 Barber v. Magee (2015 ONSC 8054, 上诉维持 2017 ONCA 558) 归纳了此类分析框架。一审判决书全文见 CanLII：https://www.canlii.org/en/on/onsc/doc/2015/2015onsc8054/2015onsc8054.html"
