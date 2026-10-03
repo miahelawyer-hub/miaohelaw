@@ -36,6 +36,8 @@ relatedReading:
     line: "协议写下来，也不能两个人共用一个律师。"
   - slug: said-house-money-yours-wont-sign-agreement-ontario
     line: "他说房子和钱都给你，不肯写成协议，到法庭不算数。口头等于没说。"
+  - slug: sold-house-split-money-ai-agreement-ontario
+    line: "房子卖掉钱也分了，AI写的协议法院不认。分钱不等于结案。"
   - href: /family-law/domestic-contracts/
     title: 婚前及分居协议
     line: "婚前、婚内、分居、同居四种协议分别能写什么。"

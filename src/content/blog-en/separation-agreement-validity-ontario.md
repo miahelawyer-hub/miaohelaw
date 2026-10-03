@@ -15,6 +15,8 @@ tags:
 relatedReading:
   - slug: said-house-money-yours-wont-sign-agreement-ontario
     line: "He said the house and money are yours — he won't put it in writing. An oral promise counts for nothing."
+  - slug: sold-house-split-money-ai-agreement-ontario
+    line: "The house sold and the money split — an AI-written agreement still is not closing the case."
 ---
 
 Can a separation agreement be overturned after it's been signed?

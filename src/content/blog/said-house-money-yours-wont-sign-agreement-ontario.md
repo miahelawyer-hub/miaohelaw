@@ -19,6 +19,8 @@ relatedIntro: "口头不算、协议怎么签才有效、打官司怎么平分�
 relatedReading:
   - slug: same-lawyer-both-sides-separation-agreement-ontario
     line: "协议写下来，也不能两个人共用一个律师。"
+  - slug: sold-house-split-money-ai-agreement-ontario
+    line: "房子卖掉钱也分了，AI写的协议法院不认。分钱不等于结案。"
   - slug: already-married-marriage-contract-home-down-payment-ontario
     line: "婚内协议一样要书面、签字、见证。口头同样不算。"
   - slug: separation-agreement-validity-ontario

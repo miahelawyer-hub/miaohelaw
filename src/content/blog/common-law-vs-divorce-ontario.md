@@ -22,6 +22,8 @@ relatedReading:
     line: "父母给的钱，赠与还是信托。凭证要自己存。"
   - slug: prenuptial-agreement-ontario-2026
     line: "同居协议以后当婚前协议用，签对了才算数。"
+  - slug: sold-house-split-money-ai-agreement-ontario
+    line: "房子卖掉钱也分了，AI写的协议法院不认。分钱不等于结案。"
 ---
 
 在加拿大，有两种方式可以形成法律上认可的配偶关系。
