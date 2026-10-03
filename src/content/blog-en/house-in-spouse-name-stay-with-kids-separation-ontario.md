@@ -21,6 +21,8 @@ relatedReading:
     line: "The other direction: already divorced, and they are still living in a house in your name."
   - slug: force-sale-matrimonial-home-ontario
     line: "Can't agree who keeps it — sell and split. Refusing to leave doesn't stall the sale."
+  - slug: house-in-his-name-designate-matrimonial-home-ontario
+    line: "The house is only in his name — designate it as the matrimonial home. Once registered, he cannot secretly mortgage it."
   - slug: matrimonial-home-title-vs-property-division-ontario
     line: "Whose name is on title is the property math later, not an excuse to throw you out now."
   - slug: separation-vs-divorce-ontario

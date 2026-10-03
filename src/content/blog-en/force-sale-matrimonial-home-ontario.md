@@ -17,6 +17,8 @@ relatedIntro: "Read alongside:"
 relatedReading:
   - slug: "house-in-spouse-name-stay-with-kids-separation-ontario"
     line: "Not divorced yet, title in their name, kids in school — can you stay. This article is the sale when you cannot agree."
+  - slug: house-in-his-name-designate-matrimonial-home-ontario
+    line: "The house is only in his name — designate it. Once registered, he cannot secretly mortgage it. Designation is not a sale."
   - slug: "net-family-property-ontario"
     line: "How equalization works — the claim the sale proceeds will ultimately answer to."
   - slug: "toronto-divorce-lawyer-fees-3000-vs-30000"

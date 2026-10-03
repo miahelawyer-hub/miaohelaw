@@ -21,6 +21,8 @@ relatedReading:
     line: "方向反了：已经离完，对方还住在你名下的房子里。"
   - slug: force-sale-matrimonial-home-ontario
     line: "谈不拢归谁，卖了分钱。赖着不搬，法院可以出驱逐令。"
+  - slug: house-in-his-name-designate-matrimonial-home-ontario
+    line: "房子写在他名下，能注册成婚房。登记了，他偷偷贷不出来。"
   - slug: matrimonial-home-property-division-not-based-on-title
     line: "房子在谁名下，是以后分财产的账，不是现在赶人的借口。"
   - slug: separation-vs-divorce-ontario

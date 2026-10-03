@@ -30,8 +30,8 @@ export const blogTopicHubs: BlogTopicHub[] = [
     titleEn: 'Property Division & Net Family Property',
     chip: '财产分割',
     chipEn: 'Property',
-    intro: '婚房、婚前扣除、结婚不到五年打不公平门槛极高、父母出资、妈妈给的钱在几个账户之间转来转去就越说不清、已经结婚了签婚内协议说婚房和父母首付还来得及、公司开在我名下账从没看过离婚先算谁的、强制出售，分居后房价升值还分不分，房子在对方名下还能不能带着孩子住，公婆名下住了十几年还能不能分，NFP 算错了能不能重算，均等化时效，离完婚对方还住在房子里，房贷断供了拿家庭官司拖不住银行卖房，安省同居满三年也不走夫妻财产平分，以及房子卖掉钱也分了AI写的协议不等于结案。',
-    introEn: 'The matrimonial home, pre-marriage deductions, why under five years almost never shocks the court into unequal division, parental gifts, why moving mom’s gift between accounts weakens the proof, why it is not too late after the wedding to contract the home and a parental down payment, why a company registered in your name is counted on your side first even if you never looked at the books, forced sale, whether a post-separation increase is still shared, whether you can stay with the kids when title is in the other name, whether a house titled in the in-laws’ names after a decade still yields a share, whether a wrong NFP can be recalculated, equalization limitation periods, an ex still occupying the house after divorce, why a family lawsuit will not stop a bank sale after mortgage default, why three years of common-law cohabitation in Ontario does not equalize property, and why selling the house and splitting the money with an AI-written agreement is not closing the case.',
+    intro: '婚房、婚前扣除、结婚不到五年打不公平门槛极高、父母出资、妈妈给的钱在几个账户之间转来转去就越说不清、已经结婚了签婚内协议说婚房和父母首付还来得及、公司开在我名下账从没看过离婚先算谁的、强制出售，分居后房价升值还分不分，房子在对方名下还能不能带着孩子住，房子写在他名下能注册成婚房不让他偷偷贷款，公婆名下住了十几年还能不能分，NFP 算错了能不能重算，均等化时效，离完婚对方还住在房子里，房贷断供了拿家庭官司拖不住银行卖房，安省同居满三年也不走夫妻财产平分，以及房子卖掉钱也分了AI写的协议不等于结案。',
+    introEn: 'The matrimonial home, pre-marriage deductions, why under five years almost never shocks the court into unequal division, parental gifts, why moving mom’s gift between accounts weakens the proof, why it is not too late after the wedding to contract the home and a parental down payment, why a company registered in your name is counted on your side first even if you never looked at the books, forced sale, whether a post-separation increase is still shared, whether you can stay with the kids when title is in the other name, whether you can designate a house in his name as the matrimonial home so he cannot secretly mortgage it, whether a house titled in the in-laws’ names after a decade still yields a share, whether a wrong NFP can be recalculated, equalization limitation periods, an ex still occupying the house after divorce, why a family lawsuit will not stop a bank sale after mortgage default, why three years of common-law cohabitation in Ontario does not equalize property, and why selling the house and splitting the money with an AI-written agreement is not closing the case.',
     slugs: [
       'net-family-property-ontario',
       'ontario-divorce-property-division',
@@ -39,6 +39,7 @@ export const blogTopicHubs: BlogTopicHub[] = [
       'china-divorce-ontario-equalization-afterward',
       'house-appreciation-after-separation-ontario',
       'house-in-spouse-name-stay-with-kids-separation-ontario',
+      'house-in-his-name-designate-matrimonial-home-ontario',
       'in-laws-name-house-lived-decade-divorce-ontario',
       'already-married-marriage-contract-home-down-payment-ontario',
       'matrimonial-home-property-division-not-based-on-title',

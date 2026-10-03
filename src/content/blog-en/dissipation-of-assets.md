@@ -14,6 +14,8 @@ tags:
 relatedReading:
   - slug: married-under-five-years-matrimonial-home-unfair-ontario
     line: "Married less than five years — the unfair-split rule exists, but the bar is extremely high. Dissipation is when courts actually depart."
+  - slug: house-in-his-name-designate-matrimonial-home-ontario
+    line: "The house is only in his name — designate it as the matrimonial home. Once registered, he cannot secretly mortgage it."
 ---
 
 Asset dissipation — the deliberate wasting, hiding, or transferring of marital assets to reduce what a spouse must pay on equalization — is a serious issue in Ontario family law. Courts have tools to address it, but early action is essential.

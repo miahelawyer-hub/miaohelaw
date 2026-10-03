@@ -18,6 +18,8 @@ tags:
 relatedReading:
   - slug: married-under-five-years-matrimonial-home-unfair-ontario
     line: "结婚不到五年打不公平，有这条，但门槛极高。挥霍才是法院会不等分的那种。"
+  - slug: house-in-his-name-designate-matrimonial-home-ontario
+    line: "房子写在他名下，能注册成婚房。登记了，他偷偷贷不出来。"
 ---
 
 **作者：Miao (Mia) He 何淼律师 | H. LAW FIRM 恒. 律师事务所**

@@ -15,6 +15,8 @@ relatedIntro: "建议一并阅读："
 relatedReading:
   - slug: "house-in-spouse-name-stay-with-kids-separation-ontario"
     line: "还没离、房子在对方名下，带着孩子能不能继续住。谈不拢才是这篇的强制出售。"
+  - slug: house-in-his-name-designate-matrimonial-home-ontario
+    line: "房子写在他名下，能注册成婚房。登记了，他偷偷贷不出来。指定不是卖房。"
   - slug: "net-family-property-ontario"
     line: "均等化怎么算——卖房款最终要回答的就是这笔账。"
   - slug: "toronto-divorce-lawyer-fees-3000-vs-30000"
