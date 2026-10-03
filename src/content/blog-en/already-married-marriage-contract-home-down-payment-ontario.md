@@ -30,6 +30,8 @@ relatedReading:
     line: "A gratuitous transfer from parents to an adult child is presumed to be held in trust, not a gift."
   - slug: same-lawyer-both-sides-separation-agreement-ontario
     line: "Writing the agreement down still means one lawyer each."
+  - slug: said-house-money-yours-wont-sign-agreement-ontario
+    line: "He said the house and money are yours — he won't put it in writing. An oral promise counts for nothing."
   - href: /en/family-law/domestic-contracts/
     title: Prenups and separation agreements
     line: "What prenups, marriage contracts, separation agreements and cohabitation agreements can each cover."
@@ -122,7 +124,7 @@ With both layers in place, the parents get their money back when they want it ba
 
 ## Four things an agreement needs to survive in court
 
-Finally: for a marriage contract to hold up, four things are non-negotiable. First, in writing — printed out. Second, signed by both parties. Third, signed by a witness (s. 55(1) — a hard requirement). Fourth, each side has their own lawyer review it (independent legal advice), with full disclosure of each side's assets and debts beforehand. Most agreements fail not on content but on procedure — no witness, no disclosure, one side without a lawyer — and when challenged at divorce, the agreement is left hanging.
+Finally: for a marriage contract to hold up, four things are non-negotiable. First, [in writing](/en/blog/said-house-money-yours-wont-sign-agreement-ontario/) — printed out. Second, signed by both parties. Third, signed by a witness (s. 55(1) — a hard requirement). Fourth, each side has their own lawyer review it (independent legal advice), with full disclosure of each side's assets and debts beforehand. Most agreements fail not on content but on procedure — no witness, no disclosure, one side without a lawyer — and when challenged at divorce, the agreement is left hanging.
 
 So back to the client's question: we're already married — is it too late to sign an agreement saying the matrimonial home is mine and my parents get their down payment back? Not too late. A marriage contract signed after the wedding works just as well. But sign it properly — signed right, it works. [Book an initial consultation](/en/contact/) (30 minutes, $220+HST). Call 647-930-6688.
 

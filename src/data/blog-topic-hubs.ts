@@ -133,8 +133,8 @@ export const blogTopicHubs: BlogTopicHub[] = [
     titleEn: 'Separation, Contracts & Choosing a Lawyer',
     chip: '协议选律师',
     chipEn: 'Agreements',
-    intro: '分居日、同屋檐下分居、还一起吃饭一起去婚礼那个分居日还算不算、分居协议、两个人不能共用一个律师写协议、婚前婚内协议锁不住孩子、已经结婚了签婚内协议说婚房和父母首付还来得及、同居分手、同居满三年财产也不平分，以及律师费和如何挑选律师。',
-    introEn: 'Separation date, same-roof separation, why eating together and attending weddings as a couple can undo a date you agreed, agreements, why both sides cannot share one lawyer to draft, prenups that cannot lock parenting, why it is not too late after the wedding to contract the matrimonial home and a parental down payment, common-law breakdown, why three years together still does not split property like a marriage, fees, and how to choose counsel.',
+    intro: '分居日、同屋檐下分居、还一起吃饭一起去婚礼那个分居日还算不算、分居协议、两个人不能共用一个律师写协议、他说房子和钱都给我不肯写成协议到法庭不算数、婚前婚内协议锁不住孩子、已经结婚了签婚内协议说婚房和父母首付还来得及、同居分手、同居满三年财产也不平分，以及律师费和如何挑选律师。',
+    introEn: 'Separation date, same-roof separation, why eating together and attending weddings as a couple can undo a date you agreed, agreements, why both sides cannot share one lawyer to draft, why an oral promise that the house and money are yours counts for nothing in court, prenups that cannot lock parenting, why it is not too late after the wedding to contract the matrimonial home and a parental down payment, common-law breakdown, why three years together still does not split property like a marriage, fees, and how to choose counsel.',
     slugs: [
       'separation-vs-divorce-ontario',
       'house-in-spouse-name-stay-with-kids-separation-ontario',
@@ -149,6 +149,7 @@ export const blogTopicHubs: BlogTopicHub[] = [
       'prenuptial-agreement-validity-ontario',
       'marriage-contract-child-parenting-ontario',
       'already-married-marriage-contract-home-down-payment-ontario',
+      'said-house-money-yours-wont-sign-agreement-ontario',
       'child-support-waiver-separation-agreement-ontario',
       'uncontested-divorce-ontario',
       'ontario-divorce-five-myths',

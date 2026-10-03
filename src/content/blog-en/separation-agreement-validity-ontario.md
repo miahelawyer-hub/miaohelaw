@@ -12,6 +12,9 @@ tags:
   - "markham-family-lawyer"
   - "miao-he-lawyer"
   - "ontario-family-law"
+relatedReading:
+  - slug: said-house-money-yours-wont-sign-agreement-ontario
+    line: "He said the house and money are yours — he won't put it in writing. An oral promise counts for nothing."
 ---
 
 Can a separation agreement be overturned after it's been signed?

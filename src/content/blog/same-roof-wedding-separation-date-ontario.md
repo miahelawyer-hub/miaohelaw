@@ -32,6 +32,8 @@ relatedReading:
   - href: /family-law/divorce-litigation/
     title: 离婚诉讼
     line: "分居日争不清楚，财产和 support 都跟着晃。"
+  - slug: said-house-money-yours-wont-sign-agreement-ontario
+    line: "他说房子和钱都给你，不肯写成协议，到法庭不算数。口头等于没说。"
 faqStructured:
   - question: "同屋檐下分了房，还一起吃饭、一起参加朋友婚礼，分居日还算不算？"
     answer: "口头认的分居日，约等于没说。法官看的是行为，不是你嘴上怎么说。还住一个屋檐下、财务还在一起、还以夫妻身份一起吃饭一起参加婚礼，这些全是还在过夫妻日子的证据。"

@@ -34,6 +34,8 @@ relatedReading:
     line: "What the four kinds of family contracts can cover."
   - slug: already-married-marriage-contract-home-down-payment-ontario
     line: "Already married — a marriage contract on the home and the parents' down payment is not too late. One lawyer each."
+  - slug: said-house-money-yours-wont-sign-agreement-ontario
+    line: "He said the house and money are yours — he won't put it in writing. An oral promise counts for nothing."
 faqStructured:
   - question: "We both agree — can we use the same lawyer for our separation agreement?"
     answer: "No. One lawyer each. No exceptions."
