@@ -12,6 +12,9 @@ tags:
   - "markham-family-lawyer"
   - "miao-he-lawyer"
   - "ontario-family-law"
+relatedReading:
+  - slug: company-in-my-name-never-looked-books-divorce-ontario
+    line: "The company is in my name, I've never looked at the books. Reporting $3,000 a month doesn't end the inquiry."
 ---
 
 Child support in Ontario is based on income — specifically, the paying parent's **annual gross income**. But what happens when a parent deliberately reduces their income, hides earnings, or is unemployed without good reason? Ontario courts have a powerful tool: **imputed income**.

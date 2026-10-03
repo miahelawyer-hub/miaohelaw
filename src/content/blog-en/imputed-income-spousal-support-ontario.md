@@ -18,6 +18,8 @@ relatedReading:
     line: "Child support: Guidelines s.19, leading cases, and how to build the record."
   - slug: spousal-child-support-ontario
     line: "Enforcement: FRO and court remedies once the payable amount is fixed."
+  - slug: company-in-my-name-never-looked-books-divorce-ontario
+    line: "The company is in my name, I've never looked at the books. Reporting $3,000 a month doesn't end the inquiry."
 ---
 
 Clients often assume spousal support must be calculated from whatever number appears on a T4 or Notice of Assessment. In Ontario, that is a starting point—not always the ending point. Spousal support analysis begins with **entitlement** (compensatory, non-compensatory, or contractual bases, where applicable). Once entitlement is in play, courts look at the factors in the *Divorce Act*, including means, needs, and earning capacity. “Income” for that purpose can include income a payor **could reasonably earn**, not only income they choose to report—parallel in spirit to [s. 19 of the Federal Child Support Guidelines](https://laws-lois.justice.gc.ca/eng/regulations/sor-97-175/page-5.html), which prevents manipulation of child support by artificial unemployment or under-employment.

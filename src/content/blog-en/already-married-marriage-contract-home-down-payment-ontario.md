@@ -1,5 +1,5 @@
 ---
-title: "We're Already Married — Is It Too Late to Sign an Agreement Saying the Matrimonial Home Is Mine and My Parents Get Their Down Payment Back? Richmond Hill Chinese-Speaking Divorce Lawyer: No, a Marriage Contract Works Just as Well"
+title: "We're Already Married — Is It Too Late to Protect the Home by Agreement? Richmond Hill Chinese-Speaking Divorce Lawyer: No, a Marriage Contract Works"
 description: "Not too late. A marriage contract signed after the wedding works just as well. Who gets the home and how the parents get their down payment back can be written in. Possession and consent to sell cannot. Sign it properly, and the court honours it."
 pubDate: 2026-10-02T20:16:00-04:00
 updatedDate: 2026-10-02T20:16:00-04:00
@@ -36,7 +36,7 @@ relatedReading:
     title: Prenups and separation agreements
     line: "What prenups, marriage contracts, separation agreements and cohabitation agreements can each cover."
 faqStructured:
-  - question: "We're already married — is it too late to sign an agreement saying the matrimonial home is mine and my parents get their down payment back?"
+  - question: "We're already married — is it too late to protect the home by agreement?"
     answer: "Not too late. A marriage contract signed after the wedding works just as well. Two persons who are married to each other may enter into a marriage contract. You're already married and signing now? Perfectly fine."
   - question: "What can the agreement cover?"
     answer: "Who gets the matrimonial home — you can put it in writing. The parents' down payment — you can put that in writing too: a loan, not a gift, repaid to the parents first on divorce or sale, with the rest divided after."

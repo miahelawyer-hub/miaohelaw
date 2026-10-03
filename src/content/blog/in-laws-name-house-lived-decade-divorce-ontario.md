@@ -1,5 +1,5 @@
 ---
-title: "房子在公婆名下，住了十几年，离婚还能分吗？士嘉堡华人离婚律师何淼：title是谁的不重要，钱是谁出的才重要"
+title: "房子在公婆名下，住了十几年，离婚还能分吗？士嘉堡华人离婚律师何淼：看钱是谁出的"
 description: "能分，但不是自动平分。Title写谁的名字，不等于房子就是谁的。法院看的是钱是谁出的、房子是谁养的。住得久本身不是权利。"
 pubDate: 2026-09-29T19:50:00-04:00
 updatedDate: 2026-09-29T19:50:00-04:00
@@ -34,6 +34,8 @@ relatedReading:
     line: "均等化管夫妻名下的账。title在公婆名下，走的是信托。"
   - slug: already-married-marriage-contract-home-down-payment-ontario
     line: "已经结婚了，签协议说婚房归我、父母的首付要拿回去，还来得及。"
+  - slug: company-in-my-name-never-looked-books-divorce-ontario
+    line: "公司开在我名下，账我从没看过。写在谁名下，离婚先算谁的。"
 faqStructured:
   - question: "房子在公婆名下，住了十几年，离婚还能分吗？"
     answer: "能分，但不是自动平分。Title写谁的名字，不等于房子就是谁的。法院看的是钱是谁出的、房子是谁养的。"

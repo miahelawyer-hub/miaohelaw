@@ -30,8 +30,8 @@ export const blogTopicHubs: BlogTopicHub[] = [
     titleEn: 'Property Division & Net Family Property',
     chip: '财产分割',
     chipEn: 'Property',
-    intro: '婚房、婚前扣除、父母出资、已经结婚了签婚内协议说婚房和父母首付还来得及、强制出售，分居后房价升值还分不分，房子在对方名下还能不能带着孩子住，公婆名下住了十几年还能不能分，NFP 算错了能不能重算，均等化时效，离完婚对方还住在房子里，房贷断供了拿家庭官司拖不住银行卖房，以及安省同居满三年也不走夫妻财产平分。',
-    introEn: 'The matrimonial home, pre-marriage deductions, parental gifts, why it is not too late after the wedding to contract the home and a parental down payment, forced sale, whether a post-separation increase is still shared, whether you can stay with the kids when title is in the other name, whether a house titled in the in-laws’ names after a decade still yields a share, whether a wrong NFP can be recalculated, equalization limitation periods, an ex still occupying the house after divorce, why a family lawsuit will not stop a bank sale after mortgage default, and why three years of common-law cohabitation in Ontario does not equalize property.',
+    intro: '婚房、婚前扣除、父母出资、已经结婚了签婚内协议说婚房和父母首付还来得及、公司开在我名下账从没看过离婚先算谁的、强制出售，分居后房价升值还分不分，房子在对方名下还能不能带着孩子住，公婆名下住了十几年还能不能分，NFP 算错了能不能重算，均等化时效，离完婚对方还住在房子里，房贷断供了拿家庭官司拖不住银行卖房，以及安省同居满三年也不走夫妻财产平分。',
+    introEn: 'The matrimonial home, pre-marriage deductions, parental gifts, why it is not too late after the wedding to contract the home and a parental down payment, why a company registered in your name is counted on your side first even if you never looked at the books, forced sale, whether a post-separation increase is still shared, whether you can stay with the kids when title is in the other name, whether a house titled in the in-laws’ names after a decade still yields a share, whether a wrong NFP can be recalculated, equalization limitation periods, an ex still occupying the house after divorce, why a family lawsuit will not stop a bank sale after mortgage default, and why three years of common-law cohabitation in Ontario does not equalize property.',
     slugs: [
       'net-family-property-ontario',
       'ontario-divorce-property-division',
@@ -52,6 +52,7 @@ export const blogTopicHubs: BlogTopicHub[] = [
       'dissipation-of-assets',
       'change-lawyer-recalculate-nfp-ontario',
       'high-net-worth-divorce-ontario',
+      'company-in-my-name-never-looked-books-divorce-ontario',
     ],
   },
   {
@@ -86,8 +87,8 @@ export const blogTopicHubs: BlogTopicHub[] = [
     titleEn: 'Child Custody & Support',
     chip: '子女抚养',
     chipEn: 'Children',
-    intro: '监护判断标准、唯一抚养权是不是就是孩子跟我住、孩子不愿单独见面能不能要监督探视、成年子女还有没有抚养权、带孩子搬家、协议能不能放弃抚养费、分居后还没起诉的追溯抚养费、境外离婚和赡养费、推定收入、SSAG，以及中加抚养费认定差异。',
-    introEn: 'Best-interests tests, whether wanting sole custody just means the kids live with you, whether a child’s reluctance supports supervised parenting time, whether an adult child is still a custody case, relocation, whether support can be waived, retroactive support before anyone files, foreign divorce and spousal support, imputed income, SSAG, and China–Canada differences in support.',
+    intro: '监护判断标准、唯一抚养权是不是就是孩子跟我住、孩子不愿单独见面能不能要监督探视、成年子女还有没有抚养权、带孩子搬家、协议能不能放弃抚养费、分居后还没起诉的追溯抚养费、境外离婚和赡养费、推定收入、报税三千法院不只看报税、SSAG，以及中加抚养费认定差异。',
+    introEn: 'Best-interests tests, whether wanting sole custody just means the kids live with you, whether a child’s reluctance supports supervised parenting time, whether an adult child is still a custody case, relocation, whether support can be waived, retroactive support before anyone files, foreign divorce and spousal support, imputed income, why reporting $3,000 a month does not end the inquiry, SSAG, and China–Canada differences in support.',
     slugs: [
       'child-custody-ontario-chinese',
       'sole-custody-vs-child-lives-with-me-ontario',
@@ -98,6 +99,7 @@ export const blogTopicHubs: BlogTopicHub[] = [
       'retroactive-child-support-ontario',
       'foreign-divorce-avoid-spousal-support-ontario',
       'imputed-income-child-support-ontario',
+      'company-in-my-name-never-looked-books-divorce-ontario',
       'imputed-income-spousal-support-ontario',
       'spousal-child-support-ontario',
       'ontario-spousal-support-ssag-imputed-income-misconceptions',

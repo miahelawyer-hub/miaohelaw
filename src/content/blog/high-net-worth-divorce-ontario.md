@@ -15,6 +15,9 @@ tags:
   - "miao-he-lawyer"
   - "property-division-lawyer"
   - "toronto-chinese-family-lawyer"
+relatedReading:
+  - slug: company-in-my-name-never-looked-books-divorce-ontario
+    line: "公司开在我名下，账我从没看过。写在谁名下，离婚先算谁的。"
 ---
 
 高净值离婚和普通离婚的区别，不只是数字大小——而是复杂程度完全不同。

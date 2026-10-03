@@ -1,5 +1,5 @@
 ---
-title: "My In-Laws Own the House We've Lived in for Over a Decade — Can I Still Get a Share in Our Divorce? Scarborough Chinese-Speaking Divorce Lawyer: What Matters Is Who Paid, Not Whose Name Is on the Title"
+title: "My In-Laws Own Our House — Can I Get a Share in Divorce? Scarborough Chinese-Speaking Divorce Lawyer: Who Paid Matters More Than Title"
 description: "Yes, but not automatically. Whose name is on the title isn't the whole story. Courts look at who paid for the house and who kept it up. Living there a long time doesn't create ownership."
 pubDate: 2026-09-29T19:50:00-04:00
 updatedDate: 2026-09-29T19:50:00-04:00
@@ -34,8 +34,10 @@ relatedReading:
     line: "Equalization covers what is in the spouses' names. Title in the in-laws' names goes through trust."
   - slug: already-married-marriage-contract-home-down-payment-ontario
     line: "Already married — it is not too late to say the home is yours and the parents get the down payment back."
+  - slug: company-in-my-name-never-looked-books-divorce-ontario
+    line: "The company is in my name, I've never looked at the books. Registration counts first."
 faqStructured:
-  - question: "My in-laws own the house we've lived in for over a decade — can I still get a share in our divorce?"
+  - question: "My in-laws own our house — can I get a share in divorce?"
     answer: "Yes, but not automatically. Whose name is on the title isn't the whole story. Courts look at who paid for the house and who kept it up."
   - question: "What does it mean that title is in your in-laws' names?"
     answer: "If neither spouse holds any legally recognized interest, it is not your matrimonial home — there is no automatic equal split. Living somewhere a long time doesn't create ownership. But a long stay usually means you paid money into the house and kept it standing."

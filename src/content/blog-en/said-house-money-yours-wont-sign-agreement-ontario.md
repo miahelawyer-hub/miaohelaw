@@ -1,5 +1,5 @@
 ---
-title: "He Said the House and Money Are Mine and the Debts Are His — But He Won't Put It in Writing. Does It Count in Court? North York Chinese-Speaking Divorce Lawyer: No, an Oral Promise Counts for Nothing"
+title: "He Promised Me the House But Won't Put It in Writing — Does It Count? North York Chinese-Speaking Divorce Lawyer: No, Oral Promises Don't Count"
 description: "No. What's said orally counts for nothing in court. A separation agreement must be in writing, signed by both, and witnessed. A lawyer's letter has no coercive force."
 pubDate: 2026-10-02T20:40:00-04:00
 updatedDate: 2026-10-02T20:40:00-04:00
@@ -31,7 +31,7 @@ relatedReading:
     title: Prenups and separation agreements
     line: "What separation agreements, marriage contracts and cohabitation agreements can each cover."
 faqStructured:
-  - question: "He said the house and money are mine and the debts are his — but he won't put it in writing. Does it count in court?"
+  - question: "He promised me the house but won't put it in writing — does it count?"
     answer: "No. What's said orally counts for nothing in court."
   - question: "Must the agreement be in writing, signed, and witnessed?"
     answer: "Yes. A separation agreement, marriage contract, or cohabitation agreement must be in writing, signed by both parties, and signed by a witness. Miss any one and it's unenforceable — not half-enforceable."

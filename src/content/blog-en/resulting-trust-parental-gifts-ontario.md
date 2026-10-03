@@ -29,6 +29,8 @@ relatedReading:
     line: "A house titled in the in-laws' names after a decade. Follow the money — that is the resulting-trust road."
   - slug: already-married-marriage-contract-home-down-payment-ontario
     line: "Already married — it is not too late to write the parents' down payment as a loan."
+  - slug: company-in-my-name-never-looked-books-divorce-ontario
+    line: "The company is in my name, I've never looked at the books. Registration counts first."
 faqStructured:
   - question: "If my parents gave me money during my marriage, is it a gift or held in resulting trust?"
     answer: "It depends on what your parents intended at the time of the transfer. Ontario law presumes that a gratuitous transfer to an adult child is held in resulting trust for the parent, but that presumption can be rebutted by evidence that a gift was intended. Documents and conduct closest in time to the transfer carry the most weight."

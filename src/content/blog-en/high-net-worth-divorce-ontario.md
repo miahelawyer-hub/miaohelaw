@@ -11,6 +11,9 @@ tags:
   - "markham-family-lawyer"
   - "miao-he-lawyer"
   - "ontario-family-law"
+relatedReading:
+  - slug: company-in-my-name-never-looked-books-divorce-ontario
+    line: "The company is in my name, I've never looked at the books. Registration counts first."
 ---
 
 High-net-worth divorces involve the same legal framework as any other Ontario divorce — but the complexity, the stakes, and the strategies are categorically different.

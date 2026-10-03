@@ -20,6 +20,8 @@ relatedReading:
     line: "子女抚养费：Federal Guidelines s.19、Drygala 标准与证据准备清单。"
   - slug: spousal-child-support-ontario
     line: "执行视角：FRO 与法院救济如何扣住被认定后的应付金额。"
+  - slug: company-in-my-name-never-looked-books-divorce-ontario
+    line: "公司开在我名下，账我从没看过。报税三千，法院不只看报税。"
 ---
 
 很多当事人在谈完**子女抚养费**之后，会接着问配偶赡养（spousal support）——并假设：「对方税单上写多少，就只能按多少算。」这在安省并不总是成立。与 [子女抚养费指引表](/faq/fuyanfei/) 类似，配偶赡养的数额与期间往往参考 **SSAG** 的建议区间，但法院首先要解决一个更前置的问题：**支付方到底有没有能力付？** 当申报收入与真实负担能力脱节时，**推定收入**同样会进入法官的考量。

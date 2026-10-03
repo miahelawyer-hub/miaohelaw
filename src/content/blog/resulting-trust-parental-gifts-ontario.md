@@ -29,6 +29,8 @@ relatedReading:
     line: "房子在公婆名下，住了十几年。钱是谁出的，才是 resulting trust 那条路。"
   - slug: already-married-marriage-contract-home-down-payment-ontario
     line: "已经结婚了，签协议把父母的首付写成借款，还来得及。"
+  - slug: company-in-my-name-never-looked-books-divorce-ontario
+    line: "公司开在我名下，账我从没看过。写在谁名下，离婚先算谁的。"
 faqStructured:
   - question: "婚姻期间父母给我的钱，算赠与还是以推定信托方式持有？"
     answer: "取决于父母在转账当时的主观意图。安省法律推定：父母向成年子女无偿转让财产时，子女以推定信托（resulting trust）为父母持有；但该推定可被证明「当时意图为赠与」的证据推翻。越接近转账当时的文件与行为，证据效力越高。"
