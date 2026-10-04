@@ -27,6 +27,8 @@ relatedReading:
     line: "外国已经离完、对方还住在你名下的房子里，第 19(2) 条的居住权通常已经结束。"
   - slug: "house-appreciation-after-separation-ontario"
     line: "现在开案会不会卖房，和分居后升值还分不分，是两笔账。出售不是一律命令。"
+  - slug: buy-house-after-separation-still-divide-ontario
+    line: "分居后再买的新房，付不出均衡化，才可能被拿出来卖。"
   - slug: "mortgage-default-family-court-cannot-stop-bank-sale-ontario"
     line: "房贷断了，想拿家庭官司拖住银行卖房——拖不住。"
   - slug: "in-laws-name-house-lived-decade-divorce-ontario"

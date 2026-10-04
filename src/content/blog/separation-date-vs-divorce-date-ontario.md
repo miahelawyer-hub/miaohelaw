@@ -21,6 +21,8 @@ relatedIntro: "分居日定在哪一天、同屋檐下还一起吃饭去婚礼�
 relatedReading:
   - slug: same-roof-wedding-separation-date-ontario
     line: "同屋檐下分了房，还一起吃饭一起去婚礼，那个分居日还算不算。"
+  - slug: buy-house-after-separation-still-divide-ontario
+    line: "口头说分开锁不住。分居后再买一套房，分居日的钱变成房子也照分。"
 ---
 
 在华人客户当中，这是我遇到最多的误解之一。

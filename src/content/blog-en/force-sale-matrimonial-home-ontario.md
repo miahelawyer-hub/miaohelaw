@@ -29,6 +29,8 @@ relatedReading:
     line: "After a recognized foreign divorce, the s. 19(2) possessory right usually ends even if the ex is still in the house."
   - slug: "house-appreciation-after-separation-ontario"
     line: "Whether a post-separation increase is shared, and whether filing now means an automatic sale, are different questions."
+  - slug: buy-house-after-separation-still-divide-ontario
+    line: "A house bought after separation with money already on the books. It gets sold if equalization cannot be paid."
   - slug: "mortgage-default-family-court-cannot-stop-bank-sale-ontario"
     line: "Behind on the mortgage and thinking a family lawsuit will freeze the bank — it will not."
   - slug: "in-laws-name-house-lived-decade-divorce-ontario"

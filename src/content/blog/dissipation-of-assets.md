@@ -20,6 +20,8 @@ relatedReading:
     line: "结婚不到五年打不公平，有这条，但门槛极高。挥霍才是法院会不等分的那种。"
   - slug: house-in-his-name-designate-matrimonial-home-ontario
     line: "房子写在他名下，能注册成婚房。登记了，他偷偷贷不出来。"
+  - slug: buy-house-after-separation-still-divide-ontario
+    line: "分居日之后把钱拿去买房、花掉、挥霍，都不影响那天账户上的数字。"
 ---
 
 **作者：Miao (Mia) He 何淼律师 | H. LAW FIRM 恒. 律师事务所**

@@ -29,6 +29,8 @@ relatedReading:
     line: "打官司走财产平分，按公式算，没有商量的余地。"
   - slug: same-roof-wedding-separation-date-ontario
     line: "同屋檐下分了房，法官看的是行为，不是你嘴上怎么说。"
+  - slug: buy-house-after-separation-still-divide-ontario
+    line: "口头说分开，分居后再买一套房，分居日的钱变成房子也照分。"
   - href: /family-law/domestic-contracts/
     title: 婚前及分居协议
     line: "分居、婚内、同居四种协议分别能写什么。"

@@ -34,6 +34,8 @@ relatedReading:
     line: "If the separation date is unclear, property and support both move with it."
   - slug: said-house-money-yours-wont-sign-agreement-ontario
     line: "He said the house and money are yours — he won't put it in writing. An oral promise counts for nothing."
+  - slug: buy-house-after-separation-still-divide-ontario
+    line: "A verbal split does not lock a later house purchase. Money on separation day still counts after it becomes a house."
 faqStructured:
   - question: "Under the same roof, we sleep in separate rooms but still eat together and attend weddings as a couple — does our separation date still count?"
     answer: "An oral date counts for almost nothing. Courts look at conduct. Still under the same roof, finances still joint, still eating together, still showing up at friends' weddings as a couple — to a judge, that's all evidence of still living as spouses."

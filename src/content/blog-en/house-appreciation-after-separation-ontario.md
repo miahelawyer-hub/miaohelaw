@@ -23,6 +23,8 @@ relatedReading:
     line: The registered shares were never the same thing as equalization.
   - slug: separation-date-vs-divorce-date-ontario
     line: The valuation date is usually the separation date. Without that day, the gain has no starting line.
+  - slug: buy-house-after-separation-still-divide-ontario
+    line: "Buying another house after separation with money already on the books still counts. Cash into bricks does not shrink the number."
   - slug: force-sale-matrimonial-home-ontario
     line: Starting a claim does not mean the court will automatically order a sale.
   - slug: equalization-limitation-chinese-lawyer-ontario

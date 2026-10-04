@@ -23,6 +23,8 @@ relatedReading:
     line: 产权登记比例，本来就不等于离婚时怎么分。
   - slug: separation-date-vs-divorce-date-ontario
     line: 估值日通常就是分居日；没有这一天，升值从哪天算起都说不清。
+  - slug: buy-house-after-separation-still-divide-ontario
+    line: "分居后拿存款再买一套，数字还在。钱变成房子，也不会少一半。"
   - slug: force-sale-matrimonial-home-ontario
     line: 现在起诉，法院会不会命令卖房——不是一律卖。
   - slug: equalization-limitation-chinese-lawyer-ontario

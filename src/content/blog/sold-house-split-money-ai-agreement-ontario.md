@@ -28,6 +28,8 @@ relatedReading:
     line: "安省同居满三年，也不走夫妻财产平分。"
   - slug: ontario-divorce-property-division
     line: "打官司走财产平分，按公式算，没有商量的余地。"
+  - slug: buy-house-after-separation-still-divide-ontario
+    line: "分居后拿存款再买一套，数字还在。想少生事端，买房前先把协议签了。"
   - href: /family-law/domestic-contracts/
     title: 婚前及分居协议
     line: "分居、婚内、同居四种协议分别能写什么。"

@@ -29,6 +29,8 @@ relatedReading:
     line: "Going to court means equalization — a statutory formula, no room to negotiate."
   - slug: same-roof-wedding-separation-date-ontario
     line: "Same roof, separate rooms. The judge looks at conduct, not what you said."
+  - slug: buy-house-after-separation-still-divide-ontario
+    line: "A verbal split does not lock a later house purchase. Money on separation day still counts after it becomes a house."
   - href: /en/family-law/domestic-contracts/
     title: Prenups and separation agreements
     line: "What separation agreements, marriage contracts and cohabitation agreements can each cover."

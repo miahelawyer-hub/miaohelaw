@@ -28,6 +28,8 @@ relatedReading:
     line: "Three years of common law in Ontario still does not equalize property like a marriage."
   - slug: ontario-divorce-property-division
     line: "Going to court means equalization — a statutory formula, no room to negotiate."
+  - slug: buy-house-after-separation-still-divide-ontario
+    line: "Buying another house after separation with money already on the books still counts. Sign the agreement before you buy."
   - href: /en/family-law/domestic-contracts/
     title: Prenups and separation agreements
     line: "What separation agreements, marriage contracts and cohabitation agreements can each cover."
