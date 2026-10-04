@@ -31,6 +31,8 @@ relatedReading:
     line: "协议写下来，也不能两个人共用一个律师。"
   - slug: sold-house-split-money-ai-agreement-ontario
     line: "房子卖掉钱也分了，AI写的协议法院不认。分钱不等于结案。没领证，没有财产平分。"
+  - slug: common-law-house-share-transfer-buyout-child-support-ontario
+    line: "同居分开，房子份额过户过来，也不算买断抚养费。"
   - slug: in-laws-name-house-lived-decade-divorce-ontario
     line: "房子在公婆名下，住了十几年。贡献走 constructive trust。"
   - href: /family-law/common-law/

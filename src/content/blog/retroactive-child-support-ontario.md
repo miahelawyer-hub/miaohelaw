@@ -22,6 +22,8 @@ relatedReading:
     line: "表格金额和第 7 条特殊费用怎么算。"
   - slug: child-support-waiver-separation-agreement-ontario
     line: "协议里写互不付，法院也不认。拖着不起诉，也不是放弃。"
+  - slug: common-law-house-share-transfer-buyout-child-support-ontario
+    line: "房子份额过户过来，也不算买断。以前少给的，常常还能追。"
   - slug: imputed-income-child-support-ontario
     line: "对方报税很低、拿现金瞒收入，推定收入怎么走。"
   - slug: spousal-child-support-ontario

@@ -16,6 +16,9 @@ tags:
   - "spousal-support"
   - "support-lawyer"
   - "toronto-chinese-family-lawyer"
+relatedReading:
+  - slug: common-law-house-share-transfer-buyout-child-support-ontario
+    line: "同居分开，房子份额过户过来，也不算买断。不付的话，才走这篇的执行。"
 ---
 
 拿到法院抚养费命令，以为事情就结束了——很多人没想到，真正的挑战才刚开始。

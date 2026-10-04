@@ -22,6 +22,8 @@ relatedReading:
     line: "Table amounts and s. 7 expenses."
   - slug: child-support-waiver-separation-agreement-ontario
     line: "An agreement saying zero, the court won't honor. Not suing is not a waiver either."
+  - slug: common-law-house-share-transfer-buyout-child-support-ontario
+    line: "A house-share transfer is not a buyout. What was underpaid can still be claimed."
   - slug: imputed-income-child-support-ontario
     line: "If they report very low income or hide cash, imputed income needs real evidence."
   - slug: spousal-child-support-ontario

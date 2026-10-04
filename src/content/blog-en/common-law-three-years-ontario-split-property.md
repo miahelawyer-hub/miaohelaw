@@ -31,6 +31,8 @@ relatedReading:
     line: "Writing the agreement down still means one lawyer each."
   - slug: sold-house-split-money-ai-agreement-ontario
     line: "The house sold and the money split — an AI-written agreement still is not closing the case. No marriage, no equalization."
+  - slug: common-law-house-share-transfer-buyout-child-support-ontario
+    line: "A common-law house-share transfer is not a child-support buyout."
   - slug: in-laws-name-house-lived-decade-divorce-ontario
     line: "A house in the in-laws' names after a decade. Contribution goes through constructive trust."
   - href: /en/family-law/common-law/

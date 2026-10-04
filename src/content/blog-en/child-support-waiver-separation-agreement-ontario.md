@@ -37,6 +37,8 @@ relatedReading:
     line: "You both agree — you still cannot share one lawyer. The other side completes ILA before signing."
   - slug: sole-custody-vs-child-lives-with-me-ontario
     line: "Write child support lower in the agreement and a careful judge will refuse the divorce order."
+  - slug: common-law-house-share-transfer-buyout-child-support-ontario
+    line: "A common-law house-share transfer is not a child-support buyout. A transfer is a transfer; support is support."
 faqStructured:
   - question: "Can you agree to pay zero child support in a separation agreement?"
     answer: "Usually not. You can't waive child support. It belongs to the child, not to the parents to bargain away. Under Family Law Act s. 56(1.1), the court can disregard child-support terms that are unreasonable in light of the Federal Child Support Guidelines."

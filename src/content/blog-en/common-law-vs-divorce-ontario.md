@@ -21,6 +21,8 @@ relatedReading:
     line: "A cohabitation agreement can later work as a prenup — if it is signed properly."
   - slug: sold-house-split-money-ai-agreement-ontario
     line: "The house sold and the money split — an AI-written agreement still is not closing the case."
+  - slug: common-law-house-share-transfer-buyout-child-support-ontario
+    line: "A common-law house-share transfer is not a child-support buyout."
 ---
 
 Many couples in Ontario live together without getting married. But the legal consequences of separating from a common-law partner are **very different** from divorcing a married spouse. Understanding these differences is critical — and many couples do not find out until it is too late.
