@@ -28,6 +28,8 @@ relatedReading:
     line: "跨境案件常涉及收入认定，了解 imputed income 如何影响赡养费。"
   - slug: mom-gift-moved-between-accounts-divorce-ontario
     line: "妈妈的财产在国内，遗嘱只能在国内签。亲子关系公证现在就办。"
+  - slug: died-house-unsold-deemed-sold-tax-ontario
+    line: "人走了房子还没卖，税局仍按去世当天市价视同卖掉。国内的房，遗嘱还是要在国内签。"
 faqStructured:
   - question: "我在中国的房子只登记在我一个人名下，离婚也要算进去吗？"
     answer: "要。在净家庭财产均等化制度下，产权登记在谁名下不直接决定分割结果。只要它是你净家庭财产的一部分，其价值就要计入计算。"

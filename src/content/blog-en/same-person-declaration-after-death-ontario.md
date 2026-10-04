@@ -34,6 +34,8 @@ relatedReading:
     line: Ontario documents used in China, and China documents used in Ontario, travel in opposite directions.
   - slug: mom-gift-moved-between-accounts-divorce-ontario
     line: "Mom's will is signed in China. Parent-child and hukou notarizations should be done now."
+  - slug: died-house-unsold-deemed-sold-tax-ontario
+    line: "They died but the house hasn't been sold — it is still deemed sold at market value on the date of death."
 faqStructured:
   - question: "Can you still do a same-person declaration after someone dies?"
     answer: "No. A same-person declaration has to be done in person. You show your passport and ID, swear and sign. Once they're gone, no one can sign saying both names are me. That route is closed. All that's left is digging up old documents and government records."

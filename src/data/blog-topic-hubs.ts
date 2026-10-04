@@ -177,10 +177,11 @@ export const blogTopicHubs: BlogTopicHub[] = [
     titleEn: 'Estates & Same-Person Proof',
     chip: '遗产文件',
     chipEn: 'Estates',
-    intro: '人去世后不能再做同一人认证；只剩旧文件和政府记录，没有就证明不了。妈妈遗嘱在国内签，亲子关系和户口本公证现在就要办。',
-    introEn: 'After death a same-person declaration cannot be made. Only old documents and government records remain; if those are gone, you cannot prove it. A will for assets in China is signed in China; parent-child and hukou notarizations should be done now.',
+    intro: '人去世后不能再做同一人认证；只剩旧文件和政府记录，没有就证明不了。人走了房子还没卖，税局仍按去世当天市价视同卖掉。妈妈遗嘱在国内签，亲子关系和户口本公证现在就要办。',
+    introEn: 'After death a same-person declaration cannot be made. Only old documents and government records remain; if those are gone, you cannot prove it. An unsold house is still deemed sold at market value on the date of death. A will for assets in China is signed in China; parent-child and hukou notarizations should be done now.',
     slugs: [
       'same-person-declaration-after-death-ontario',
+      'died-house-unsold-deemed-sold-tax-ontario',
       'mom-gift-moved-between-accounts-divorce-ontario',
     ],
   },

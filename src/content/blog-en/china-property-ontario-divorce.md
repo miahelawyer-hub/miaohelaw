@@ -26,6 +26,8 @@ relatedReading:
     line: "How income is assessed in cross-border family law cases."
   - slug: mom-gift-moved-between-accounts-divorce-ontario
     line: "Assets in China: the will can only be signed in China. Get the notarizations done now."
+  - slug: died-house-unsold-deemed-sold-tax-ontario
+    line: "They died but the house hasn't been sold — it is still deemed sold at market value on the date of death. A China will has to be signed in China."
 faqStructured:
   - question: "If I own a house in China under my name, will it be divided in an Ontario divorce?"
     answer: "Yes. It will generally be included in your Net Family Property (NFP) calculation. However, Ontario courts do not usually divide foreign real estate directly."

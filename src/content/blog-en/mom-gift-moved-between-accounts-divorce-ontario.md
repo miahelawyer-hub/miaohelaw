@@ -29,6 +29,8 @@ relatedReading:
     line: "A same-person declaration has to be done while the person is alive."
   - slug: china-property-ontario-divorce
     line: "Assets in China: the will can only be signed in China."
+  - slug: died-house-unsold-deemed-sold-tax-ontario
+    line: "They died but the house hasn't been sold — it is still deemed sold at market value on the date of death."
   - href: /en/hague-apostille/same-name-declaration/
     title: Same-person declaration
     line: "Pinyin on Canadian ID and the Chinese passport don't match — do it while you are living."

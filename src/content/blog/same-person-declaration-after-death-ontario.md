@@ -34,6 +34,8 @@ relatedReading:
     line: 加拿大文件拿到中国用，和中国文件拿到安省用，认证方向相反。
   - slug: mom-gift-moved-between-accounts-divorce-ontario
     line: "妈妈的遗嘱在国内签。亲子关系和户口本公证，现在就要办。"
+  - slug: died-house-unsold-deemed-sold-tax-ontario
+    line: "人走了房子还没卖，税局仍按去世当天市价视同卖掉。"
 faqStructured:
   - question: "人去世了还能做同一人认证吗？"
     answer: "不能。同一人认证，必须本人到场。拿着护照身份证，宣誓签字。人走了，没人能签字说这两个名字都是我。这条路直接断了。剩下只能翻旧文件、找政府记录。"
