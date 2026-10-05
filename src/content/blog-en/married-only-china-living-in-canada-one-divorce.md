@@ -20,6 +20,8 @@ relatedReading:
     line: "They've already filed in China. That is not this forum-choice question. That is how to respond."
   - slug: china-divorce-ontario-equalization-afterward
     line: "Already divorced in China, judgment silent on the Canadian house — whether Ontario can still divide."
+  - slug: divorced-china-remarried-property-from-which-date-ontario
+    line: "Divorced in China, then remarried — Ontario only measures this marriage, from the remarriage date."
   - slug: china-canada-divorce-judgment-recognition
     line: "How a Chinese judgment is recognized in Canada, and why a Canadian property order will not re-title land in China."
   - slug: net-family-property-ontario

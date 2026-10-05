@@ -20,6 +20,8 @@ relatedReading:
     line: "对方已经在中国起诉了，不是这篇的选地方，是应诉。"
   - slug: china-divorce-ontario-equalization-afterward
     line: "已经在中国离完、判决没写加拿大房子，安省还能不能分。"
+  - slug: divorced-china-remarried-property-from-which-date-ontario
+    line: "中国离过又复婚，安省这次只审这一段。结婚日就是复婚那天。"
   - slug: china-canada-divorce-judgment-recognition
     line: "中国判决在加拿大怎么承认；加拿大判决在中国执行不了房产过户。"
   - slug: net-family-property-ontario

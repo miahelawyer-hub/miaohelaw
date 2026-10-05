@@ -29,6 +29,8 @@ relatedReading:
     line: "同一人认证要本人在世时做。人走了就不能做。"
   - slug: china-property-ontario-divorce
     line: "财产在中国，遗嘱只能在国内签。"
+  - slug: divorced-china-remarried-property-from-which-date-ontario
+    line: "钱转来转去证明不了，复婚那天的清单上就扣不了。"
   - slug: died-house-unsold-deemed-sold-tax-ontario
     line: "人走了房子还没卖，税局仍按去世当天市价视同卖掉。国内的房，遗嘱还是要在国内签。"
   - href: /hague-apostille/same-name-declaration/

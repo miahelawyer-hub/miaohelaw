@@ -29,6 +29,8 @@ relatedReading:
     line: "A same-person declaration has to be done while the person is alive."
   - slug: china-property-ontario-divorce
     line: "Assets in China: the will can only be signed in China."
+  - slug: divorced-china-remarried-property-from-which-date-ontario
+    line: "Money moved around with no records cannot be deducted on the remarriage-date list."
   - slug: died-house-unsold-deemed-sold-tax-ontario
     line: "They died but the house hasn't been sold — it is still deemed sold at market value on the date of death."
   - href: /en/hague-apostille/same-name-declaration/

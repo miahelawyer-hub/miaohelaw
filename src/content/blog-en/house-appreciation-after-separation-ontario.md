@@ -25,6 +25,8 @@ relatedReading:
     line: The valuation date is usually the separation date. Without that day, the gain has no starting line.
   - slug: buy-house-after-separation-still-divide-ontario
     line: "Buying another house after separation with money already on the books still counts. Cash into bricks does not shrink the number."
+  - slug: divorced-china-remarried-property-from-which-date-ontario
+    line: "Divorced in China, then remarried. After separation, a house solely in your name going up or down is generally none of the other side's business."
   - slug: force-sale-matrimonial-home-ontario
     line: Starting a claim does not mean the court will automatically order a sale.
   - slug: equalization-limitation-chinese-lawyer-ontario

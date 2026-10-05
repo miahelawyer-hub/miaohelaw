@@ -20,6 +20,8 @@ relatedIntro: "Whether you can still claim, how much the house is worth, and who
 relatedReading:
   - slug: married-only-china-living-in-canada-one-divorce
     line: "Not divorced yet: China or Ontario. This article is after a Chinese divorce is already done."
+  - slug: divorced-china-remarried-property-from-which-date-ontario
+    line: "Divorced in China, then remarried — Ontario only measures this marriage, from the remarriage date."
   - slug: china-canada-divorce-judgment-recognition
     line: How a Chinese judgment is recognized and enforced, and how to choose the forum.
   - slug: equalization-limitation-chinese-lawyer-ontario

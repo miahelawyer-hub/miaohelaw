@@ -23,6 +23,8 @@ relatedReading:
     line: "Can a property-division calculation be recalculated after changing lawyers mid-litigation?"
   - slug: married-under-five-years-matrimonial-home-unfair-ontario
     line: "Married less than five years — the unfair-split rule exists, but the bar is extremely high."
+  - slug: divorced-china-remarried-property-from-which-date-ontario
+    line: "Divorced in China, then remarried — Ontario measures from the remarriage date. What was still there that day may be deductible."
 faqStructured:
   - question: "I bought a house before I got married, then sold it and used the proceeds to buy our current home. Do I have to split the entire value with my spouse?"
     answer: "Not necessarily the date-of-marriage value of the former home. Section 4(1) of the Family Law Act allows a deduction for property owned on the date of marriage, other than a matrimonial home. Under s. 18(1), matrimonial-home status is assessed at the time of separation. If the pre-marriage home was sold before separation and replaced with another home, the former property may no longer be a matrimonial home, and its value at the date of marriage may be deductible. The new home, if it was the family residence at separation, is still treated as a matrimonial home."
