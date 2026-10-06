@@ -30,6 +30,8 @@ relatedReading:
     line: "打官司走财产平分，按公式算，没有商量的余地。"
   - slug: buy-house-after-separation-still-divide-ontario
     line: "分居后拿存款再买一套，数字还在。想少生事端，买房前先把协议签了。"
+  - slug: pressured-into-signing-away-property-ontario
+    line: "没做财产公开、没找自己的律师，协议就立不住。上午通知下午签字，更不是自愿。"
   - href: /family-law/domestic-contracts/
     title: 婚前及分居协议
     line: "分居、婚内、同居四种协议分别能写什么。"

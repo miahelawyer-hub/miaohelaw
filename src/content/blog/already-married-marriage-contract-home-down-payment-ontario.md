@@ -38,6 +38,8 @@ relatedReading:
     line: "他说房子和钱都给你，不肯写成协议，到法庭不算数。口头等于没说。"
   - slug: sold-house-split-money-ai-agreement-ontario
     line: "房子卖掉钱也分了，AI写的协议法院不认。分钱不等于结案。"
+  - slug: pressured-into-signing-away-property-ontario
+    line: "被家里人催着签了放弃财产的协议，法院一般不认。没公开、没自己的律师，立不住。"
   - href: /family-law/domestic-contracts/
     title: 婚前及分居协议
     line: "婚前、婚内、分居、同居四种协议分别能写什么。"

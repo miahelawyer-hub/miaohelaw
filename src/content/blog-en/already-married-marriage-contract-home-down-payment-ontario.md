@@ -38,6 +38,8 @@ relatedReading:
     line: "He said the house and money are yours — he won't put it in writing. An oral promise counts for nothing."
   - slug: sold-house-split-money-ai-agreement-ontario
     line: "The house sold and the money split — an AI-written agreement still is not closing the case."
+  - slug: pressured-into-signing-away-property-ontario
+    line: "Family pressured you into signing away property rights — the court generally will not honor it."
   - href: /en/family-law/domestic-contracts/
     title: Prenups and separation agreements
     line: "What prenups, marriage contracts, separation agreements and cohabitation agreements can each cover."

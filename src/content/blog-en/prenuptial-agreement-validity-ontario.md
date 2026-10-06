@@ -14,6 +14,8 @@ tags:
 relatedReading:
   - slug: already-married-marriage-contract-home-down-payment-ontario
     line: "Already married — a marriage contract on the home and the parents' down payment is not too late. Sign it properly, and the court honours it."
+  - slug: pressured-into-signing-away-property-ontario
+    line: "Pressed into signing away property rights, no disclosure, no lawyer of your own — the court generally will not honor it."
 ---
 
 Signing a marriage contract does not guarantee it will be enforced. Ontario courts have the power to set aside marriage contracts that do not meet the required legal standards. If you are relying on a contract to protect your assets, you need to know what makes it valid — and what could defeat it.

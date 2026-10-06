@@ -31,6 +31,8 @@ relatedReading:
     line: "The tax return is not the last word on ability to pay."
   - slug: high-net-worth-divorce-ontario
     line: "Corporate shares and murky books — how they are found and valued."
+  - slug: pressured-into-signing-away-property-ontario
+    line: "Bought in the company's name does not take it off the table. If your spouse owns the company, it still counts."
   - href: /en/family-law/property-division/
     title: Property division
     line: "Equalization covers what is in a spouse's name. Trust covers who really owns it."

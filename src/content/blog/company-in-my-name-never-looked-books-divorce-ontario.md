@@ -31,6 +31,8 @@ relatedReading:
     line: "税单上写多少，赡养费不一定按多少。先看有没有能力付。"
   - slug: high-net-worth-divorce-ontario
     line: "公司股权、账目不清，怎么查、怎么估值。"
+  - slug: pressured-into-signing-away-property-ontario
+    line: "物业是公司买的，不等于跟你没关系。公司是配偶的，离婚一样要算进去。"
   - href: /family-law/property-division/
     title: 财产分割
     line: "均等化管名下的账。信托管实质是谁的。"

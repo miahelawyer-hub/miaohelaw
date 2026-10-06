@@ -38,6 +38,8 @@ relatedReading:
     line: "他说房子和钱都给你，不肯写成协议，到法庭不算数。口头等于没说。"
   - slug: sold-house-split-money-ai-agreement-ontario
     line: "房子卖掉钱也分了，AI写的协议法院不认。分钱不等于结案。"
+  - slug: pressured-into-signing-away-property-ontario
+    line: "对方家里人找的律师起草，你这边没有律师。一个律师不能同时代理两个人，签了也立不住。"
 faqStructured:
   - question: "两个人都同意了，能不能找同一个律师写分居协议？"
     answer: "不能。一个人一个律师，谁都一样。"
