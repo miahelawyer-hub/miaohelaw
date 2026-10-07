@@ -39,6 +39,8 @@ relatedReading:
     line: 时效过了，对方还住在你名下的房子里，居住本身一般不会变出一半产权。
   - slug: house-appreciation-after-separation-ontario
     line: 先等房价再起诉，升值账可能有利，第 7(3) 条的钟仍在走。
+  - slug: house-underwater-divorce-hold-until-recovers-ontario
+    line: "房子跌破贷款先不卖、等升值再分。签协议时一起申请离婚证，两年时效可能先到。"
   - slug: china-property-ontario-divorce
     line: 中国房产进不进 NFP，和均等化时效是两个问题。
   - href: /family-law/cross-border-assets/

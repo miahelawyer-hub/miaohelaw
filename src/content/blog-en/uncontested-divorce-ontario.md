@@ -31,6 +31,8 @@ relatedReading:
     line: "The agreement has to stand first. You cannot share one lawyer. The other side needs ILA."
   - slug: "sole-custody-vs-child-lives-with-me-ontario"
     line: "Write child support below the table and a careful judge will refuse the divorce order."
+  - slug: house-underwater-divorce-hold-until-recovers-ontario
+    line: "Apply for the divorce order when you sign the agreement. That order starts a two-year clock; later the court only enforces the agreement."
 faqStructured:
   - question: "How much does an uncontested divorce cost in Ontario?"
     answer: "Court fees come to roughly $700 in total. As at July 2026 that breaks down as $214 to file the Form 8A application, $10 to the federal Central Registry of Divorce Proceedings, $445 to place the application on the list for hearing, and $25 for the Certificate of Divorce. These fees are set by regulation under the Administration of Justice Act and are revised upward periodically, so confirm current amounts before filing. Legal fees, a process server (typically $100 to $200) and certified translation of foreign marriage documents are separate. Fee waivers are available for applicants receiving Ontario Works or ODSP, or meeting low-income thresholds."

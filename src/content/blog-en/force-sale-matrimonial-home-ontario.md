@@ -31,6 +31,8 @@ relatedReading:
     line: "Whether a post-separation increase is shared, and whether filing now means an automatic sale, are different questions."
   - slug: buy-house-after-separation-still-divide-ontario
     line: "A house bought after separation with money already on the books. It gets sold if equalization cannot be paid."
+  - slug: house-underwater-divorce-hold-until-recovers-ontario
+    line: "House worth less than the mortgage — you can hold it after divorce. Litigate, and no judge waits five years."
   - slug: "mortgage-default-family-court-cannot-stop-bank-sale-ontario"
     line: "Behind on the mortgage and thinking a family lawsuit will freeze the bank — it will not."
   - slug: "in-laws-name-house-lived-decade-divorce-ontario"

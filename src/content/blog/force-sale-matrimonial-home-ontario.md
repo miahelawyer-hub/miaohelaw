@@ -29,6 +29,8 @@ relatedReading:
     line: "现在开案会不会卖房，和分居后升值还分不分，是两笔账。出售不是一律命令。"
   - slug: buy-house-after-separation-still-divide-ontario
     line: "分居后再买的新房，付不出均衡化，才可能被拿出来卖。"
+  - slug: house-underwater-divorce-hold-until-recovers-ontario
+    line: "房子跌破贷款，离婚可以先不卖。打到法院，法官不会陪你们等五年升值。"
   - slug: "mortgage-default-family-court-cannot-stop-bank-sale-ontario"
     line: "房贷断了，想拿家庭官司拖住银行卖房——拖不住。"
   - slug: "in-laws-name-house-lived-decade-divorce-ontario"

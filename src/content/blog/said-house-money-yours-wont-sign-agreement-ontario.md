@@ -31,6 +31,8 @@ relatedReading:
     line: "同屋檐下分了房，法官看的是行为，不是你嘴上怎么说。"
   - slug: buy-house-after-separation-still-divide-ontario
     line: "口头说分开，分居后再买一套房，分居日的钱变成房子也照分。"
+  - slug: house-underwater-divorce-hold-until-recovers-ontario
+    line: "口头说好一起拿着等升值，不行。必须写进分居协议。"
   - href: /family-law/domestic-contracts/
     title: 婚前及分居协议
     line: "分居、婚内、同居四种协议分别能写什么。"

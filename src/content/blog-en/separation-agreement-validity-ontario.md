@@ -17,6 +17,8 @@ relatedReading:
     line: "He said the house and money are yours — he won't put it in writing. An oral promise counts for nothing."
   - slug: sold-house-split-money-ai-agreement-ontario
     line: "The house sold and the money split — an AI-written agreement still is not closing the case."
+  - slug: house-underwater-divorce-hold-until-recovers-ontario
+    line: "Hold an underwater house and split later — a verbal deal does not work. Put it in a separation agreement."
 ---
 
 Can a separation agreement be overturned after it's been signed?

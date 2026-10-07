@@ -17,6 +17,8 @@ relatedReading:
     line: "Separate rooms under the same roof, but you still eat together and attend weddings — does that date still count?"
   - slug: buy-house-after-separation-still-divide-ontario
     line: "A verbal split does not lock a later house purchase. Money on separation day still counts after it becomes a house."
+  - slug: house-underwater-divorce-hold-until-recovers-ontario
+    line: "House worth less than the mortgage — a court still uses the separation-date numbers. Holding instead of selling has to be your own agreement."
 ---
 
 Many people use "separation" and "divorce" interchangeably. In Ontario family law, they are legally distinct — and the difference has significant financial and procedural consequences.

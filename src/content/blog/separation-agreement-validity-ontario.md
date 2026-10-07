@@ -21,6 +21,8 @@ relatedReading:
     line: "他说房子和钱都给你，不肯写成协议，到法庭不算数。口头等于没说。"
   - slug: sold-house-split-money-ai-agreement-ontario
     line: "房子卖掉钱也分了，AI写的协议法院不认。分钱不等于结案。"
+  - slug: house-underwater-divorce-hold-until-recovers-ontario
+    line: "房子跌破贷款先不卖、等升值再分。不能口头说好，必须写进分居协议。"
 ---
 
 签了分居协议之后，还可以反悔吗？
