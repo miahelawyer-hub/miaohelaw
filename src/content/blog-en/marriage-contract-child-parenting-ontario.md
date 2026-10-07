@@ -31,6 +31,8 @@ relatedReading:
     line: The statutory default if you never sign a contract.
   - slug: child-support-waiver-separation-agreement-ontario
     line: After separation, child support still cannot be waived.
+  - slug: child-support-until-18-university-expenses-ontario
+    line: "An agreement that only ran to 18 does not automatically extend to university. After 18, different rules."
   - slug: same-lawyer-both-sides-separation-agreement-ontario
     line: Even a separation agreement cannot be drafted by one lawyer for both sides. The other side needs ILA.
   - slug: sole-custody-vs-child-lives-with-me-ontario

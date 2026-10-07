@@ -23,6 +23,8 @@ relatedReading:
     line: 未成年才谈监督探视：年纪太小不当定案，青少年会听仍看全案。
   - slug: child-support-waiver-separation-agreement-ontario
     line: 未成年抚养费不能协议放弃；成年后的大学费用是另一条。
+  - slug: child-support-until-18-university-expenses-ontario
+    line: "分居协议只写到18岁，大学费用还能向前夫要。能告，不是无条件。"
   - slug: ontario-restraining-order-chinese-family
     line: 限制令保护的是有合理恐惧的申请人，不是把成年子女写进 custody。
   - slug: foreign-divorce-avoid-spousal-support-ontario

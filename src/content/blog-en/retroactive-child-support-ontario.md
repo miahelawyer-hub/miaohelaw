@@ -30,6 +30,8 @@ relatedReading:
     line: "With a court order, arrears go through FRO. The past part has to become a number first."
   - slug: adult-child-no-custody-ontario
     line: "Even after the child is independent, past arrears can sometimes still be claimed."
+  - slug: child-support-until-18-university-expenses-ontario
+    line: "An agreement that only ran to 18 does not automatically extend to university. That is a new claim."
   - slug: equalization-limitation-chinese-lawyer-ontario
     line: "Equalization has limitation periods. Child support isn't subject to limitation."
   - slug: house-appreciation-after-separation-ontario

@@ -31,6 +31,8 @@ relatedReading:
     line: 不签协议时，法律默认的财产分割是什么。
   - slug: child-support-waiver-separation-agreement-ontario
     line: 分居之后，子女抚养费同样不能拿来放弃。
+  - slug: child-support-until-18-university-expenses-ontario
+    line: "协议只写到18岁，大学费用不是自动接着给。18岁以后是另一套规则。"
   - slug: same-lawyer-both-sides-separation-agreement-ontario
     line: 分居协议写下来，也不能两个人共用一个律师。对方要做完 ILA 再签。
   - slug: sole-custody-vs-child-lives-with-me-ontario

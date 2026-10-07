@@ -30,6 +30,8 @@ relatedReading:
     line: "有了法院令，欠的才能走 FRO。以前那截要先变成令上的数字。"
   - slug: adult-child-no-custody-ontario
     line: "孩子已经独立了，以前欠的，有时还能要。"
+  - slug: child-support-until-18-university-expenses-ontario
+    line: "协议只写到18岁，大学费用不是以前那截，是新主张。"
   - slug: equalization-limitation-chinese-lawyer-ontario
     line: "均等化有时效，孩子抚养费不受时效限制。"
   - slug: house-appreciation-after-separation-ontario

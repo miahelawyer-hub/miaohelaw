@@ -39,6 +39,8 @@ relatedReading:
     line: "协议上写低抚养费，心细的法官不发离婚证。孩子的钱不能帮孩子减。"
   - slug: common-law-house-share-transfer-buyout-child-support-ontario
     line: "同居分开，房子份额过户过来，也不算买断抚养费。过户是过户，抚养费是抚养费。"
+  - slug: child-support-until-18-university-expenses-ontario
+    line: "18岁以前不能放弃。协议只写到18岁，大学费用是新争议，不是自动接着给。"
 faqStructured:
   - question: "分居协议写互不付抚养费，法院认吗？"
     answer: "不行，一般不认。孩子抚养费不能放弃。这是给孩子的，不是两口子能商量掉的。对照《联邦孩子抚养费准则》不合理的条款，法院可以直接不理。"

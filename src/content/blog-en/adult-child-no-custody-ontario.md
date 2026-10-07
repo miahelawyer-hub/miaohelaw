@@ -23,6 +23,8 @@ relatedReading:
     line: "Supervised time is a minor-child question: too young is not decisive; a teenager is heard against the whole file."
   - slug: child-support-waiver-separation-agreement-ontario
     line: Child support for minors cannot be waived by agreement. University costs are a different test.
+  - slug: child-support-until-18-university-expenses-ontario
+    line: "The agreement only ran to 18 — you can still claim university expenses, but there are no guarantees."
   - slug: ontario-restraining-order-chinese-family
     line: A restraining order protects an applicant with reasonable fear — it does not write an adult child into custody.
   - slug: foreign-divorce-avoid-spousal-support-ontario
