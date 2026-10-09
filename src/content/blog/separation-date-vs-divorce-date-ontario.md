@@ -25,6 +25,8 @@ relatedReading:
     line: "口头说分开锁不住。分居后再买一套房，分居日的钱变成房子也照分。"
   - slug: house-underwater-divorce-hold-until-recovers-ontario
     line: "房子跌破贷款，法院仍只认分居日那天的数字。先不卖只能你们自己约定。"
+  - slug: spouse-sudden-debts-share-ontario
+    line: "分居日一到，财产就锁死。分居后对方自己借的钱，跟你没关系。"
 ---
 
 在华人客户当中，这是我遇到最多的误解之一。

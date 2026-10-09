@@ -19,6 +19,8 @@ relatedIntro: "赠与怎么证明、代持怎么写、钱进了婚房还能不�
 relatedReading:
   - slug: chinese-divorce-property-gift-loan-trust-ontario
     line: "父母的钱是送的还是借的，当时就要写清楚。"
+  - slug: spouse-sudden-debts-share-ontario
+    line: "对方突然拿出欠亲戚的债，没记录法院可以不认。谁主张谁举证。"
   - slug: resulting-trust-parental-gifts-ontario
     line: "妈妈白给成年子女的钱，推定是代持，不是赠与。"
   - slug: already-married-marriage-contract-home-down-payment-ontario

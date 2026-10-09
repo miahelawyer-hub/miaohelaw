@@ -36,6 +36,8 @@ relatedReading:
     line: "Already married — it is not too late to write the parents' down payment as a loan."
   - slug: mom-gift-moved-between-accounts-divorce-ontario
     line: "Mom's gift moved between accounts. The more it moves, the weaker the proof."
+  - slug: spouse-sudden-debts-share-ontario
+    line: "A sudden claim of money owed to parents or a sibling, with no IOU and no transfer, may not be recognized."
 faqStructured:
   - question: "In an Ontario divorce, is a parent’s contribution a gift or a loan?"
     answer: "There is no automatic rule. Courts weigh contemporaneous documents, repayment terms, security, demands before separation, partial repayments, differential treatment among children, and whether repayment was realistically expected. Barber v. Magee (2015 ONSC 8054, aff’d 2017 ONCA 558) summarizes a multi-factor framework courts use in gift-vs-loan disputes. Full trial reasons on CanLII: https://www.canlii.org/en/on/onsc/doc/2015/2015onsc8054/2015onsc8054.html"

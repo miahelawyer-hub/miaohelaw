@@ -33,6 +33,8 @@ relatedReading:
     line: "Corporate shares and murky books — how they are found and valued."
   - slug: pressured-into-signing-away-property-ontario
     line: "Bought in the company's name does not take it off the table. If your spouse owns the company, it still counts."
+  - slug: spouse-sudden-debts-share-ontario
+    line: "A company you own together, you rise and fall together. You divide the net value after the loss."
   - href: /en/family-law/property-division/
     title: Property division
     line: "Equalization covers what is in a spouse's name. Trust covers who really owns it."

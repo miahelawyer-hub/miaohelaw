@@ -22,6 +22,8 @@ relatedReading:
     line: How parental contributions (gift vs loan) are proven — one of the most common contexts where WeChat transfers are introduced as evidence.
   - slug: dissipation-of-assets
     line: Proving asset concealment and dissipation — how bank statements and WeChat transfers build a complete money trail.
+  - slug: spouse-sudden-debts-share-ontario
+    line: "Messages where your spouse acknowledged a debt should be kept. A relative's claim with no records may not count."
   - slug: cross-border-assets-divorce-ontario
     line: Disclosure of offshore accounts and cross-border transfers — how foreign screenshots are handled in Ontario family proceedings.
   - slug: accidentally-shared-files-family-court-ontario

@@ -27,6 +27,8 @@ relatedReading:
     line: "If the house was parents' money, argue resulting trust — held in trust, not gifted."
   - slug: dissipation-of-assets
     line: "Reckless depletion and transfers are when courts actually depart from equal division."
+  - slug: spouse-sudden-debts-share-ontario
+    line: "Debts deliberately created in the year before separation can justify unequal division under s. 5(6). The bar is high."
   - slug: ontario-divorce-property-division
     line: "Going to court means equalization — a statutory formula."
   - href: /en/family-law/property-division/

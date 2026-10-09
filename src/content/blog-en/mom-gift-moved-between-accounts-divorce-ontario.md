@@ -19,6 +19,8 @@ relatedIntro: "How a gift is proved, how a nominee holding is written, and what 
 relatedReading:
   - slug: chinese-divorce-property-gift-loan-trust-ontario
     line: "Parents' money: gift or loan. Write it down at the time."
+  - slug: spouse-sudden-debts-share-ontario
+    line: "A sudden debt to a relative with no records may not be recognized. Whoever claims it must prove it."
   - slug: resulting-trust-parental-gifts-ontario
     line: "Money a mother gives an adult child for free is presumed held in trust, not gifted."
   - slug: already-married-marriage-contract-home-down-payment-ontario

@@ -19,6 +19,8 @@ relatedReading:
     line: 父母出资性质（赠与 vs 借款）的证据认定与还原——电子转账记录最常被引用的场景之一。
   - slug: dissipation-of-assets
     line: 财产隐匿与转移的举证策略——银行流水与微信转账如何串成完整的资金链。
+  - slug: spouse-sudden-debts-share-ontario
+    line: "对方在微信里承认过债务的聊天记录，要留着。没记录的亲戚债，法院可以不认。"
   - slug: cross-border-assets-divorce-ontario
     line: 跨境资金流向的证据披露——境外账户截图、跨境转账记录在安省家庭法庭的处理。
   - slug: accidentally-shared-files-family-court-ontario

@@ -27,6 +27,8 @@ relatedReading:
     line: "房子是父母出钱买的，打归复信托，证明代持不是赠与。"
   - slug: dissipation-of-assets
     line: "恶意挥霍、转移财产，才是法院真的会不等分的那种。"
+  - slug: spouse-sudden-debts-share-ontario
+    line: "分居前一年故意搞出来的坏债，第5(6)条可以不等分。门槛很高，良心过不去才动。"
   - slug: ontario-divorce-property-division
     line: "打官司走财产平分，按公式算。"
   - href: /family-law/property-division/

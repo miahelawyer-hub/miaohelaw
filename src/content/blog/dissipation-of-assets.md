@@ -22,6 +22,8 @@ relatedReading:
     line: "房子写在他名下，能注册成婚房。登记了，他偷偷贷不出来。"
   - slug: buy-house-after-separation-still-divide-ontario
     line: "分居日之后把钱拿去买房、花掉、挥霍，都不影响那天账户上的数字。"
+  - slug: spouse-sudden-debts-share-ontario
+    line: "离婚时突然拿出一堆债，不会自动一人一半。没记录的亲戚债，法院可以不认。"
 ---
 
 **作者：Miao (Mia) He 何淼律师 | H. LAW FIRM 恒. 律师事务所**

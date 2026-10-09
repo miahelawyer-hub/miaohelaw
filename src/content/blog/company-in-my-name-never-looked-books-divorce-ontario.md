@@ -33,6 +33,8 @@ relatedReading:
     line: "公司股权、账目不清，怎么查、怎么估值。"
   - slug: pressured-into-signing-away-property-ontario
     line: "物业是公司买的，不等于跟你没关系。公司是配偶的，离婚一样要算进去。"
+  - slug: spouse-sudden-debts-share-ontario
+    line: "两个人的公司，涨跌一起。投资亏了，分的是缩水后的净值。"
   - href: /family-law/property-division/
     title: 财产分割
     line: "均等化管名下的账。信托管实质是谁的。"

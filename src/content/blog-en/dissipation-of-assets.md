@@ -18,6 +18,8 @@ relatedReading:
     line: "The house is only in his name — designate it as the matrimonial home. Once registered, he cannot secretly mortgage it."
   - slug: buy-house-after-separation-still-divide-ontario
     line: "Spending or parking separation-day money in a new house does not shrink that day's number."
+  - slug: spouse-sudden-debts-share-ontario
+    line: "A pile of debts produced at divorce is not split down the middle. A relative's claim with no records may not count."
 ---
 
 Asset dissipation — the deliberate wasting, hiding, or transferring of marital assets to reduce what a spouse must pay on equalization — is a serious issue in Ontario family law. Courts have tools to address it, but early action is essential.
