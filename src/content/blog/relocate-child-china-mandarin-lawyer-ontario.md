@@ -34,6 +34,8 @@ relatedReading:
     line: 决策责任、亲子时间与搬迁，都从子女最佳利益出发。
   - slug: sole-custody-vs-child-lives-with-me-ontario
     line: 想要唯一抚养权，多半只是孩子跟你住。旅行、护照要单独写进协议。
+  - slug: immigrate-with-toddler-sole-decision-making-ontario
+    line: "想带两岁的孩子移民，并不能因此要到单独抚养权。出国每次都要书面同意书。"
 faqStructured:
   - question: "安省带孩子搬家需要提前多久通知？"
     answer: "至少提前 60 天书面通知，使用指定表格。依据是《离婚法》第 16.9 条和安省《儿童法律改革法》第 39.3 条。通知须载明搬迁日期、新地址与联系方式，以及调整后的亲子安排方案。"

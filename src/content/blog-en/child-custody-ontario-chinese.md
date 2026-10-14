@@ -18,6 +18,8 @@ relatedReading:
     line: An adult at university is not usually a custody case. University costs are child support, not parenting.
   - slug: sole-custody-vs-child-lives-with-me-ontario
     line: Wanting sole custody usually just means the kids live with you. Two different things — don't write the agreement wrong.
+  - slug: immigrate-with-toddler-sole-decision-making-ontario
+    line: "Wanting to immigrate with a toddler does not get you sole decision-making. Shared care means joint decisions."
 ---
 
 The language of child custody in Ontario has changed significantly in recent years. Understanding the current framework is essential for any parent navigating a separation or divorce.

@@ -34,6 +34,8 @@ relatedReading:
     line: Decision-making, parenting time and relocation all start from the child’s best interests.
   - slug: sole-custody-vs-child-lives-with-me-ontario
     line: Wanting sole custody usually just means the kids live with you. Write travel and passports into the agreement.
+  - slug: immigrate-with-toddler-sole-decision-making-ontario
+    line: "Wanting to immigrate with a toddler does not get you sole decision-making. Every trip still needs written consent."
 faqStructured:
   - question: "How much notice is required to relocate with a child in Ontario?"
     answer: "At least 60 days’ written notice in the prescribed form, under Divorce Act s. 16.9 and CLRA s. 39.3. The notice must state the expected date of the move, the new address and contact information, and a proposal for revised parenting arrangements."

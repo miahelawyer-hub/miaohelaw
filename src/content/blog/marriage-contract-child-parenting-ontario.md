@@ -37,6 +37,8 @@ relatedReading:
     line: 分居协议写下来，也不能两个人共用一个律师。对方要做完 ILA 再签。
   - slug: sole-custody-vs-child-lives-with-me-ontario
     line: 想要唯一抚养权，多半只是孩子跟你住。分居协议里两件事要分开写。
+  - slug: immigrate-with-toddler-sole-decision-making-ontario
+    line: "想带两岁的孩子移民，并不能因此要到单独抚养权。口头答应的条件不算数。"
   - slug: already-married-marriage-contract-home-down-payment-ontario
     line: "已经结婚了，签协议说婚房归我、父母的首付要拿回去，还来得及。来得及。"
 faqStructured:

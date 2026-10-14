@@ -27,6 +27,8 @@ relatedReading:
     line: "数字对不上表格，无争议离婚会被卡住，离婚证发不下来。"
   - slug: relocate-child-china-mandarin-lawyer-ontario
     line: "带孩子搬家、回国探亲，通知和反对是另一套程序。"
+  - slug: immigrate-with-toddler-sole-decision-making-ontario
+    line: "想带两岁的孩子移民，并不能因此要到单独抚养权。双方都在带，法院给的是共同决策。"
   - slug: same-lawyer-both-sides-separation-agreement-ontario
     line: "协议写下来，也不能两个人共用一个律师。"
   - href: /family-law/child-custody/

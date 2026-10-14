@@ -27,6 +27,8 @@ relatedReading:
     line: "If the number does not match the table, an uncontested divorce stalls and the order does not issue."
   - slug: relocate-child-china-mandarin-lawyer-ontario
     line: "Moving with a child, or a trip home, is a different notice-and-objection process."
+  - slug: immigrate-with-toddler-sole-decision-making-ontario
+    line: "Wanting to immigrate with a toddler does not get you sole decision-making. Shared care means joint decisions."
   - slug: same-lawyer-both-sides-separation-agreement-ontario
     line: "Writing the agreement down still means one lawyer each."
   - href: /en/family-law/child-custody/

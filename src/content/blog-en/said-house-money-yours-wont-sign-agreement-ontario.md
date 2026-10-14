@@ -19,6 +19,8 @@ relatedIntro: "Whether spoken words count, how an agreement has to be signed, an
 relatedReading:
   - slug: same-lawyer-both-sides-separation-agreement-ontario
     line: "Writing the agreement down still means one lawyer each."
+  - slug: immigrate-with-toddler-sole-decision-making-ontario
+    line: "A verbal swap of property for sole decision-making does not count either. Put it in writing."
   - slug: sold-house-split-money-ai-agreement-ontario
     line: "The house sold and the money split — an AI-written agreement still is not closing the case."
   - slug: already-married-marriage-contract-home-down-payment-ontario

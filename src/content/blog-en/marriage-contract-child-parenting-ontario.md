@@ -37,6 +37,8 @@ relatedReading:
     line: Even a separation agreement cannot be drafted by one lawyer for both sides. The other side needs ILA.
   - slug: sole-custody-vs-child-lives-with-me-ontario
     line: Wanting sole custody usually just means the kids live with you. Write the two things separately.
+  - slug: immigrate-with-toddler-sole-decision-making-ontario
+    line: "Wanting to immigrate with a toddler does not get you sole decision-making. Verbal deals do not count."
   - slug: already-married-marriage-contract-home-down-payment-ontario
     line: "Already married — is it too late to say the home is yours and the parents get the down payment back? Not too late."
 faqStructured:
