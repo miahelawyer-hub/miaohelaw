@@ -22,6 +22,8 @@ relatedReading:
     line: 分居协议谈好之后，离婚诉讼的费用结构与流程预期。
   - slug: same-roof-wedding-separation-date-ontario
     line: "同屋檐下分了房，还一起吃饭一起去婚礼，那个分居日还算不算。"
+  - slug: separation-agreement-waiver-still-need-will-ontario
+    line: "分居不等于离婚。协议写了放弃继承，还要另立遗嘱。"
 faqStructured:
   - question: "分居必须双方同意吗？"
     answer: "不需要。加拿大法律下，单方认定关系已结束即可进入分居，无需对方同意，也无需任何书面文件。"

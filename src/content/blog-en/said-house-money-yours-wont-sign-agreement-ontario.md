@@ -19,6 +19,8 @@ relatedIntro: "Whether spoken words count, how an agreement has to be signed, an
 relatedReading:
   - slug: same-lawyer-both-sides-separation-agreement-ontario
     line: "Writing the agreement down still means one lawyer each."
+  - slug: separation-agreement-waiver-still-need-will-ontario
+    line: "A separation agreement that waives inheritance still is not a will. You need a separate will."
   - slug: immigrate-with-toddler-sole-decision-making-ontario
     line: "A verbal swap of property for sole decision-making does not count either. Put it in writing."
   - slug: sold-house-split-money-ai-agreement-ontario

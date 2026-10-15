@@ -36,6 +36,8 @@ relatedReading:
     line: "已经结婚了，签婚内协议说婚房和父母首付，还来得及。一人一个律师。"
   - slug: said-house-money-yours-wont-sign-agreement-ontario
     line: "他说房子和钱都给你，不肯写成协议，到法庭不算数。口头等于没说。"
+  - slug: separation-agreement-waiver-still-need-will-ontario
+    line: "分居协议写了放弃继承，还要另立遗嘱。协议不是遗嘱。"
   - slug: sold-house-split-money-ai-agreement-ontario
     line: "房子卖掉钱也分了，AI写的协议法院不认。分钱不等于结案。"
   - slug: pressured-into-signing-away-property-ontario

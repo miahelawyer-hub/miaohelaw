@@ -25,6 +25,8 @@ relatedReading:
     line: "执行人证书怎么申请。遗嘱指定了执行人，银行和土地局仍常常要法院证书。"
   - slug: same-person-declaration-after-death-ontario
     line: "同一人认证要本人在世时做。人走了就不能做。"
+  - slug: separation-agreement-waiver-still-need-will-ontario
+    line: "分居协议写了放弃继承，还要另立遗嘱。协议不是遗嘱。"
   - slug: mom-gift-moved-between-accounts-divorce-ontario
     line: "妈妈的遗嘱在国内签。亲子关系和户口本公证，现在就要办。"
   - slug: china-property-ontario-divorce

@@ -36,6 +36,8 @@ relatedReading:
     line: "Already married — a marriage contract on the home and the parents' down payment is not too late. One lawyer each."
   - slug: said-house-money-yours-wont-sign-agreement-ontario
     line: "He said the house and money are yours — he won't put it in writing. An oral promise counts for nothing."
+  - slug: separation-agreement-waiver-still-need-will-ontario
+    line: "A separation agreement that waives inheritance still is not a will. You need a separate will."
   - slug: sold-house-split-money-ai-agreement-ontario
     line: "The house sold and the money split — an AI-written agreement still is not closing the case."
   - slug: pressured-into-signing-away-property-ontario

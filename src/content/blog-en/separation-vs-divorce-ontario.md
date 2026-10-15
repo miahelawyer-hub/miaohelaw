@@ -23,6 +23,8 @@ relatedReading:
     line: Once the separation agreement is in place — what the divorce process costs and how long it takes.
   - slug: same-roof-wedding-separation-date-ontario
     line: "Separate rooms under the same roof, but you still eat together and attend weddings — does that date still count?"
+  - slug: separation-agreement-waiver-still-need-will-ontario
+    line: "Separated is not divorced. A waiver of inheritance in the agreement still is not a will."
 faqStructured:
   - question: "Does separation require both spouses to agree?"
     answer: "No. Under Canadian law, one spouse alone can determine that the marriage is over. No agreement, documentation, or court process is required to trigger separation."
