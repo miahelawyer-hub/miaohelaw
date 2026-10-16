@@ -196,15 +196,6 @@ function formatDate(date) {
       <p class="blog-search-meta" id="blog-search-meta" aria-live="polite"></p>
       <div class="blog-search-results" id="blog-search-results" hidden></div>
 
-      <BlogTopicHubs
-        lang="en"
-        lead="Read by topic"
-        sub={`Pagination shows the latest posts. The groups below collect all ${totalPosts} articles so you can go straight to a specific issue.`}
-        jumpAria="Jump to a topic"
-        postBase="/en/blog"
-        hubs={topicHubsResolved}
-      />
-
       <nav class="pagination" aria-label="Blog pagination">
         {Array.from({ length: totalPages }, (_, i) => i + 1).map((num) =>
           num === 1 ? (
@@ -256,6 +247,14 @@ function formatDate(date) {
           </a>
         ))}
       </div>
+      <BlogTopicHubs
+        lang="en"
+        lead="Read by topic"
+        sub={`Pagination shows the latest posts. The groups below collect all ${totalPosts} articles so you can go straight to a specific issue.`}
+        jumpAria="Jump to a topic"
+        postBase="/en/blog"
+        hubs={topicHubsResolved}
+      />
       <div class="cta-box">
         <h2>Book an Initial Consultation</h2>
         <p>Miao He · 30-min consultation $220+HST · Mandarin & English · Markham · All of Ontario</p>

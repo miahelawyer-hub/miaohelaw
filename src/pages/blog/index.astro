@@ -389,15 +389,6 @@ function formatDate(date) {
       <p class="blog-search-meta" id="blog-search-meta" aria-live="polite"></p>
       <div class="blog-search-results" id="blog-search-results" hidden></div>
 
-      <BlogTopicHubs
-        lang="zh"
-        lead="按主题阅读"
-        sub={`分页只列出最近文章。下面按主题收录全部 ${totalPosts} 篇，方便直接进入具体问题。`}
-        jumpAria="主题快速跳转"
-        postBase="/blog"
-        hubs={topicHubsResolved}
-      />
-
       <nav class="pagination" aria-label="博客分页">
         {Array.from({ length: totalPages }, (_, i) => i + 1).map((num) =>
           num === 1 ? (
@@ -452,6 +443,15 @@ function formatDate(date) {
           </a>
         ))}
       </div>
+
+      <BlogTopicHubs
+        lang="zh"
+        lead="按主题阅读"
+        sub={`分页只列出最近文章。下面按主题收录全部 ${totalPosts} 篇，方便直接进入具体问题。`}
+        jumpAria="主题快速跳转"
+        postBase="/blog"
+        hubs={topicHubsResolved}
+      />
 
       <div class="cta-box">
         <h2>预约初次法律咨询</h2>
