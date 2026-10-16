@@ -19,6 +19,8 @@ relatedIntro: "Whether a sudden debt counts, whether a relative's claim needs re
 relatedReading:
   - slug: dissipation-of-assets
     line: "Not divorced yet, already living with someone else, money spent on a third party. Dissipation has to be proved, and the bar is not low."
+  - slug: resp-university-bank-can-touch-ontario
+    line: "An RESP set aside for university is still reachable by the bank. How you split it between yourselves does not bind the lender."
   - slug: married-under-five-years-matrimonial-home-unfair-ontario
     line: "Married less than five years — the unfair-split rule exists, but the bar is extremely high. The conscience of the court has to be shocked."
   - slug: net-family-property-ontario

@@ -19,6 +19,8 @@ relatedIntro: "Whether spoken words count, how an agreement has to be signed, an
 relatedReading:
   - slug: same-lawyer-both-sides-separation-agreement-ontario
     line: "Writing the agreement down still means one lawyer each."
+  - slug: resp-university-bank-can-touch-ontario
+    line: "Writing that the RESP is yours in a separation agreement still does not bind the bank."
   - slug: separation-agreement-waiver-still-need-will-ontario
     line: "A separation agreement that waives inheritance still is not a will. You need a separate will."
   - slug: immigrate-with-toddler-sole-decision-making-ontario

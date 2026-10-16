@@ -19,6 +19,8 @@ relatedIntro: "口头不算、协议怎么签才有效、打官司怎么平分�
 relatedReading:
   - slug: same-lawyer-both-sides-separation-agreement-ontario
     line: "协议写下来，也不能两个人共用一个律师。"
+  - slug: resp-university-bank-can-touch-ontario
+    line: "分居协议写RESP归我，也对抗不了银行。银行是外人。"
   - slug: separation-agreement-waiver-still-need-will-ontario
     line: "分居协议写了放弃继承，还要另立遗嘱。协议不是遗嘱。"
   - slug: immigrate-with-toddler-sole-decision-making-ontario

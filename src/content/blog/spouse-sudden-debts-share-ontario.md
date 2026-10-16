@@ -19,6 +19,8 @@ relatedIntro: "债算不算、亲戚有没有记录、公司亏了谁扛，是�
 relatedReading:
   - slug: dissipation-of-assets
     line: "还没离婚就跟别人同居、给第三者花钱。挥霍要举证，门槛不低。"
+  - slug: resp-university-bank-can-touch-ontario
+    line: "RESP是给孩子上大学的，银行照样能动。你们怎么分，绑不住银行。"
   - slug: married-under-five-years-matrimonial-home-unfair-ontario
     line: "结婚不到五年打不公平，有这条，但门槛极高。良心过不去才动。"
   - slug: net-family-property-ontario

@@ -38,6 +38,8 @@ relatedReading:
     line: "算法看的是每个人全部财产的净值，不是只看房子。"
   - slug: mortgage-default-family-court-cannot-stop-bank-sale-ontario
     line: "等房价回来拖不住银行。房贷断了，家庭官司也拖不住。"
+  - slug: resp-university-bank-can-touch-ontario
+    line: "RESP是给孩子上大学的，银行照样能动。分居协议也对抗不了银行。"
   - href: /family-law/domestic-contracts/
     title: 婚前及分居协议
     line: "分居协议里能写谁住、谁还贷、何时卖。"

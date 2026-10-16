@@ -38,6 +38,8 @@ relatedReading:
     line: "The calculation looks at each person's entire net family property — not just the house."
   - slug: mortgage-default-family-court-cannot-stop-bank-sale-ontario
     line: "Waiting for the market will not pause the bank. A family lawsuit will not either."
+  - slug: resp-university-bank-can-touch-ontario
+    line: "An RESP set aside for university is still reachable by the bank. A separation agreement does not bind the lender."
   - href: /en/family-law/domestic-contracts/
     title: Prenups and separation agreements
     line: "A separation agreement can write who lives there, who pays, and when to sell."

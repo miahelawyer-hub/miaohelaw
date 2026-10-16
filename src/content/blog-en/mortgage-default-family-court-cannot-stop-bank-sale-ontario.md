@@ -19,6 +19,8 @@ relatedIntro: "Family court ordering a sale, waiting on the market, and a stalle
 relatedReading:
   - slug: force-sale-matrimonial-home-ontario
     line: "Spouse won't sell, won't pay, won't leave — that is a family-law sale motion. This piece is the bank selling, and a family case will not stop it."
+  - slug: resp-university-bank-can-touch-ontario
+    line: "An RESP set aside for university is still reachable by the bank. Intention is not a legal lock."
   - slug: house-appreciation-after-separation-ontario
     line: "Waiting for the market does not help equalization. It also will not pause a bank power of sale."
   - slug: stalled-family-law-case-ontario

@@ -17,6 +17,8 @@ relatedIntro: "Read alongside:"
 relatedReading:
   - slug: "house-in-spouse-name-stay-with-kids-separation-ontario"
     line: "Not divorced yet, title in their name, kids in school — can you stay. This article is the sale when you cannot agree."
+  - slug: resp-university-bank-can-touch-ontario
+    line: "An RESP set aside for university is still reachable by the bank. Title in his name does not stop the lender from pursuing you."
   - slug: house-in-his-name-designate-matrimonial-home-ontario
     line: "The house is only in his name — designate it. Once registered, he cannot secretly mortgage it. Designation is not a sale."
   - slug: "net-family-property-ontario"

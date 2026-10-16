@@ -19,6 +19,8 @@ relatedIntro: "家庭法院卖房、等房价、房贷欠款把案子卡住，�
 relatedReading:
   - slug: force-sale-matrimonial-home-ontario
     line: "配偶不卖、不付、不搬走，是家庭法里申请卖。这篇是银行要卖，家庭官司拖不住。"
+  - slug: resp-university-bank-can-touch-ontario
+    line: "RESP是给孩子上大学的，银行照样能动。给孩子的打算，不是法律上的锁。"
   - slug: house-appreciation-after-separation-ontario
     line: "等房价回来再告，家庭法分财产没用。断供等涨，银行更不会等。"
   - slug: stalled-family-law-case-ontario
