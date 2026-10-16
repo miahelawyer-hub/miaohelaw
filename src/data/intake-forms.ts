@@ -3,7 +3,7 @@
  * Separation & Divorce, Common-Law Separation, Prenuptial Agreement,
  * Marriage Contract, Designation of Matrimonial Home, Real Estate Purchase,
  * Real Estate Sale, Real Estate Refinance, Real Estate Title Transfer,
- * Private Mortgage – Borrower.
+ * Private Mortgage – Borrower, Business Purchase, Business Sale.
  * Required marks follow the asterisks printed on those PDFs.
  */
 
@@ -39,6 +39,7 @@ export type IntakeField =
 			namePrefix: string;
 			rows: number;
 			columns: { key: string; label: string; type?: 'text' | 'date' }[];
+			rowChoice?: { key: string; label: string; options: Choice[] };
 	  };
 
 export type IntakeSection = { title: string; fields: IntakeField[] };
@@ -205,6 +206,98 @@ const realEstateKicker = {
 	kickerZh: '房地产登记表',
 	kickerEn: 'Real Estate Intake Form',
 };
+
+const businessKicker = {
+	kickerZh: '商业交易登记表',
+	kickerEn: 'Business Transaction Intake Form',
+};
+
+const entityOptions: Choice[] = [
+	{ value: 'Personally', label: 'Personally 个人' },
+	{ value: 'Existing corporation', label: 'Existing corporation 现有公司' },
+	{ value: 'New corporation', label: 'New corporation 新成立公司' },
+	{ value: 'Not sure', label: 'Not sure 不确定' },
+];
+
+const assetsOrShares: Choice[] = [
+	{ value: 'Assets', label: 'Assets 资产' },
+	{ value: 'Shares', label: 'Shares 股份' },
+	{ value: 'Not sure', label: 'Not sure 不确定' },
+];
+
+function clientIdentity(): IntakeField[] {
+	return [
+		t('Full legal name', 'Full legal name 姓名', {
+			required: true,
+			clientName: true,
+			autoComplete: 'name',
+		}),
+		{ kind: 'date', name: 'Birthday', label: 'Birthday 出生日期', required: true, autoComplete: 'bday' },
+		{ kind: 'tel', name: 'Phone number', label: 'Phone number 电话', required: true, autoComplete: 'tel' },
+		t('Current address', 'Current address 现居住地址', {
+			required: true,
+			wide: true,
+			autoComplete: 'street-address',
+		}),
+		{
+			kind: 'email',
+			name: 'Email',
+			label: 'Email 邮箱',
+			required: true,
+			replyEmail: true,
+			autoComplete: 'email',
+		},
+		t('Occupation', 'Occupation 职业', { required: true, autoComplete: 'organization-title' }),
+	];
+}
+
+function shareholders(): IntakeField {
+	return {
+		kind: 'grid',
+		rowLabel: '股东',
+		namePrefix: 'Shareholder',
+		rows: 3,
+		columns: [
+			{ key: 'full legal name', label: 'Full legal name 姓名' },
+			{ key: 'birthday', label: 'Birthday 出生日期', type: 'date' },
+			{ key: '% of shares', label: '% of shares 持股比例' },
+			{ key: 'address', label: 'Address 地址' },
+			{ key: 'phone', label: 'Phone 电话' },
+			{ key: 'email', label: 'Email 邮箱' },
+		],
+		rowChoice: {
+			key: 'director',
+			label: 'Will this shareholder be a director? 是否担任董事？',
+			options: yesNoUnsure,
+		},
+	};
+}
+
+function businessDetails(): IntakeField[] {
+	return [
+		t('Business name', 'Business name 生意名称', { required: true }),
+		t('Type of business', 'Type of business 行业/生意类型'),
+		t('Business address', 'Business address 生意地址', { required: true, wide: true }),
+		{
+			kind: 'date',
+			name: 'Expected closing date',
+			label: 'Expected closing date 预计交接日期',
+			required: true,
+		},
+		{
+			kind: 'radio',
+			name: 'Is this a sale of assets or a sale of shares',
+			label: 'Is this a sale of assets or a sale of shares? 是资产买卖还是股份买卖？',
+			options: assetsOrShares,
+		},
+		{
+			kind: 'radio',
+			name: 'Is it a franchise',
+			label: 'Is it a franchise? 是否为加盟店？',
+			options: yesNo,
+		},
+	];
+}
 
 export const intakeForms: IntakeFormDef[] = [
 	{
@@ -1267,6 +1360,173 @@ export const intakeForms: IntakeFormDef[] = [
 							{ value: 'Other', label: 'Other 其他' },
 						],
 					},
+				],
+			},
+		],
+	},
+	{
+		slug: 'business-purchase',
+		titleZh: '生意购买',
+		titleEn: 'Business Purchase',
+		subject: '客户登记表 | 生意购买',
+		...businessKicker,
+		sections: [
+			{
+				title: '1. Your Information 您的信息',
+				fields: clientIdentity(),
+			},
+			{
+				title: '2. Buying Entity 购买主体',
+				fields: [
+					{
+						kind: 'radio',
+						name: 'Are you buying personally or through a corporation',
+						label: 'Are you buying personally or through a corporation? 您是以个人还是公司名义购买？',
+						options: entityOptions,
+					},
+					t('Corporation name (if any)', 'Corporation name (if any) 公司名称（如有）'),
+					t('Ontario corporation number', 'Ontario corporation number 安省公司编号'),
+				],
+			},
+			{
+				title: '3. Shareholder Information (if buying through a corporation) 股东信息（如以公司名义购买）',
+				fields: [shareholders()],
+			},
+			{
+				title: '4. Business Information 生意信息',
+				fields: businessDetails(),
+			},
+			{
+				title: '5. Premises, Staff and Licences 场地、员工及牌照',
+				fields: [
+					{
+						kind: 'radio',
+						name: 'Does the business rent its premises',
+						label: 'Does the business rent its premises? 生意场地是否为租用？',
+						options: yesNoUnsure,
+					},
+					{
+						kind: 'radio',
+						name: 'Will the lease be assigned to you, or will you sign a new lease',
+						label: 'Will the lease be assigned to you, or will you sign a new lease? 租约是转让给您，还是由您重新签订？',
+						options: [
+							{ value: 'Assignment', label: 'Assignment 转让租约' },
+							{ value: 'New lease', label: 'New lease 重新签约' },
+							{ value: 'Not sure', label: 'Not sure 不确定' },
+						],
+					},
+					{
+						kind: 'radio',
+						name: 'Will you keep the existing employees',
+						label: 'Will you keep the existing employees? 是否保留现有员工？',
+						options: yesNoUnsure,
+					},
+					{
+						kind: 'radio',
+						name: 'Does the business need special licences',
+						label: 'Does the business need special licences (e.g. liquor licence)? 生意是否需要特别牌照（如酒牌）？',
+						options: yesNoUnsure,
+					},
+					{
+						kind: 'radio',
+						name: 'Will you use a loan to buy the business',
+						label: 'Will you use a loan to buy the business? 是否使用贷款购买？',
+						options: yesNo,
+					},
+				],
+			},
+			{
+				title: '6. Seller and Broker 卖方及经纪',
+				fields: [
+					t("Seller's name (person or corporation)", "Seller's name (person or corporation) 卖方姓名/公司名称", {
+						wide: true,
+					}),
+					t("Seller's phone / email", "Seller's phone / email 卖方电话/邮箱", { wide: true }),
+					t(
+						'Business broker / realtor (name, phone, email)',
+						'Business broker / realtor (name, phone, email) 生意经纪/地产经纪（姓名、电话、邮箱）',
+						{ wide: true },
+					),
+				],
+			},
+		],
+	},
+	{
+		slug: 'business-sale',
+		titleZh: '生意出售',
+		titleEn: 'Business Sale',
+		subject: '客户登记表 | 生意出售',
+		...businessKicker,
+		sections: [
+			{
+				title: '1. Your Information 您的信息',
+				fields: clientIdentity(),
+			},
+			{
+				title: '2. Selling Entity 出售主体',
+				fields: [
+					{
+						kind: 'radio',
+						name: 'Are you selling personally or through a corporation',
+						label: 'Are you selling personally or through a corporation? 您是以个人还是公司名义出售？',
+						options: entityOptions,
+					},
+					t('Corporation name (if any)', 'Corporation name (if any) 公司名称（如有）'),
+					t('Ontario corporation number', 'Ontario corporation number 安省公司编号'),
+				],
+			},
+			{
+				title: '3. Shareholder Information of the Selling Corporation (if any) 出售公司的股东信息（如有）',
+				fields: [shareholders()],
+			},
+			{
+				title: '4. Business Information 生意信息',
+				fields: businessDetails(),
+			},
+			{
+				title: '5. Premises, Staff and Debts 场地、员工及债务',
+				fields: [
+					{
+						kind: 'radio',
+						name: 'Does the business rent its premises',
+						label: 'Does the business rent its premises? 生意场地是否为租用？',
+						options: yesNo,
+					},
+					t('If yes, landlord name and contact', 'If yes, landlord name and contact 如是，房东名称及联系方式', {
+						wide: true,
+					}),
+					{
+						kind: 'radio',
+						name: 'Does the business have employees',
+						label: 'Does the business have employees? 生意是否有员工？',
+						options: yesNo,
+					},
+					t('Number of employees', 'Number of employees 员工人数'),
+					{
+						kind: 'radio',
+						name: 'Are there loans, liens or equipment leases on the business',
+						label: 'Are there loans, liens or equipment leases on the business? 生意是否有贷款、抵押或设备租赁？',
+						options: yesNoUnsure,
+					},
+					t(
+						'If yes, lender / leasing company name(s)',
+						'If yes, lender / leasing company name(s) 如有，贷款方/租赁公司名称',
+						{ wide: true },
+					),
+				],
+			},
+			{
+				title: '6. Buyer and Broker 买方及经纪',
+				fields: [
+					t("Buyer's name (person or corporation)", "Buyer's name (person or corporation) 买方姓名/公司名称", {
+						wide: true,
+					}),
+					t("Buyer's phone / email", "Buyer's phone / email 买方电话/邮箱", { wide: true }),
+					t(
+						'Business broker / realtor (name, phone, email)',
+						'Business broker / realtor (name, phone, email) 生意经纪/地产经纪（姓名、电话、邮箱）',
+						{ wide: true },
+					),
 				],
 			},
 		],

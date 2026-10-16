@@ -99,6 +99,33 @@ function mailParts(text: string): string[] {
 														</label>
 													);
 												})}
+												{field.rowChoice && (
+													<fieldset class="intake-choices intake-row-choice">
+														<legend id={fieldDomId(`${field.namePrefix} ${row + 1} ${field.rowChoice.key}`)}>
+															{field.rowChoice.label}
+														</legend>
+														<div
+															class="choice-list"
+															role="radiogroup"
+															aria-labelledby={fieldDomId(`${field.namePrefix} ${row + 1} ${field.rowChoice.key}`)}
+														>
+															{field.rowChoice.options.map((option, index) => {
+																const id = `${fieldDomId(`${field.namePrefix} ${row + 1} ${field.rowChoice!.key}`)}-${index}`;
+																return (
+																	<label class="choice" for={id}>
+																		<input
+																			id={id}
+																			type="radio"
+																			name={`${field.namePrefix} ${row + 1} ${field.rowChoice!.key}`}
+																			value={option.value}
+																		/>
+																		<span>{option.label}</span>
+																	</label>
+																);
+															})}
+														</div>
+													</fieldset>
+												)}
 											</fieldset>
 										))}
 									</div>
