@@ -101,7 +101,7 @@
 .intake input[type='text'],
 .intake input[type='email'],
 .intake input[type='tel'],
-.intake input[type='date'] {
+.intake select {
 	width: 100%;
 	box-sizing: border-box;
 	padding: 0.7rem 0.75rem;
@@ -112,9 +112,29 @@
 	font: inherit;
 }
 
-.intake input:focus {
+.intake input:focus,
+.intake select:focus {
 	outline: 2px solid #7a5a1a;
 	outline-offset: 1px;
+}
+
+.intake-date {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.45rem;
+}
+
+.intake-date select {
+	min-height: 48px;
+}
+
+.intake-date select[data-date-part='year'] {
+	flex: 1.4 1 6.5rem;
+}
+
+.intake-date select[data-date-part='month'],
+.intake-date select[data-date-part='day'] {
+	flex: 1 1 4.6rem;
 }
 
 .intake-choices {

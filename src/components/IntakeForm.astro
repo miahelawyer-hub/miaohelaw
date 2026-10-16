@@ -2,6 +2,7 @@
 import { DOCUMENT_EMAIL, fieldDomId } from '../data/intake-forms';
 import type { IntakeFormDef } from '../data/intake-forms';
 import { SITE_URL } from '../consts';
+import IntakeDate from './IntakeDate.astro';
 
 interface Props {
 	form: IntakeFormDef;
@@ -92,10 +93,18 @@ function mailParts(text: string): string[] {
 												{field.columns.map((column) => {
 													const inputName = `${field.namePrefix} ${row + 1} ${column.key}`;
 													const id = fieldDomId(inputName);
+													if (column.type === 'date') {
+														return (
+															<div class="intake-field">
+																<span id={id}>{column.label}</span>
+																<IntakeDate name={inputName} labelledBy={id} />
+															</div>
+														);
+													}
 													return (
 														<label class="intake-field" for={id}>
 															<span>{column.label}</span>
-															<input id={id} name={inputName} type={column.type ?? 'text'} />
+															<input id={id} name={inputName} type="text" />
 														</label>
 													);
 												})}
@@ -165,6 +174,26 @@ function mailParts(text: string): string[] {
 							}
 							const id = fieldDomId(field.name);
 							const inputName = field.replyEmail ? 'email' : field.name;
+							if (field.kind === 'date') {
+								return (
+									<div class:list={['intake-field', { wide: field.wide }]}>
+										<span id={id}>
+											{field.label}
+											{field.required && (
+												<abbr class="req" title="必填">
+													*
+												</abbr>
+											)}
+										</span>
+										<IntakeDate
+											name={field.name}
+											required={field.required}
+											birthday={field.autoComplete === 'bday'}
+											labelledBy={id}
+										/>
+									</div>
+								);
+							}
 							return (
 								<label class:list={['intake-field', { wide: field.wide }]} for={id}>
 									<span>

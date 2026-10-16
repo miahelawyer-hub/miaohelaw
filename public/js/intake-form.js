@@ -8,8 +8,55 @@
 	var subject = form.querySelector('[name="subject"]');
 	var fromName = form.querySelector('[name="from_name"]');
 
+	function daysInMonth(year, month) {
+		var y = Number(year || '2000');
+		return new Date(y, Number(month), 0).getDate();
+	}
+
+	function syncDate(group) {
+		var hidden = group.querySelector('[data-date-value]');
+		var year = group.querySelector('[data-date-part="year"]');
+		var month = group.querySelector('[data-date-part="month"]');
+		var day = group.querySelector('[data-date-part="day"]');
+		var selected = day.value;
+		var max = month.value ? daysInMonth(year.value, month.value) : 31;
+		if (day.options.length - 1 !== max) {
+			day.innerHTML = '';
+			var empty = document.createElement('option');
+			empty.value = '';
+			empty.textContent = '日';
+			day.appendChild(empty);
+			for (var d = 1; d <= max; d++) {
+				var opt = document.createElement('option');
+				var value = String(d).padStart(2, '0');
+				opt.value = value;
+				opt.textContent = value;
+				day.appendChild(opt);
+			}
+		}
+		day.value = selected && Number(selected) <= max ? selected : '';
+		var complete = year.value && month.value && day.value;
+		hidden.value = complete ? year.value + '-' + month.value + '-' + day.value : '';
+		[year, month, day].forEach(function (part) {
+			part.setCustomValidity('');
+		});
+		if ((year.value || month.value || day.value) && !complete) {
+			var missing = !year.value ? year : !month.value ? month : day;
+			missing.setCustomValidity('请选择完整日期。Please select the full date.');
+		}
+	}
+
+	form.querySelectorAll('[data-date]').forEach(function (group) {
+		group.querySelectorAll('select').forEach(function (part) {
+			part.addEventListener('change', function () {
+				syncDate(group);
+			});
+		});
+	});
+
 	form.addEventListener('submit', function (event) {
 		event.preventDefault();
+		form.querySelectorAll('[data-date]').forEach(syncDate);
 		if (!form.reportValidity()) return;
 
 		var keyInput = form.querySelector('[name="access_key"]');
