@@ -42,6 +42,7 @@ const copy =
 ---
 
 <div class="inquiry-card">
+	<div class="inquiry-entry" data-inquiry-entry>
 	<h2>{copy.title}</h2>
 	<p class="inquiry-lead">{copy.lead}</p>
 	{
@@ -56,7 +57,6 @@ const copy =
 		method="POST"
 		action="https://api.web3forms.com/submit"
 		data-missing-key={copy.missing}
-		data-sending={copy.sending}
 		data-failure={copy.failure}
 	>
 		<input type="hidden" name="access_key" value={accessKey} />
@@ -94,6 +94,8 @@ const copy =
 		<p class="inquiry-status" data-status role="alert"></p>
 		<button type="submit" class="inquiry-submit">{copy.submit}</button>
 	</form>
+	</div>
+	<p class="inquiry-pending" data-inquiry-pending hidden>{copy.sending}</p>
 	<div class="inquiry-success" data-inquiry-success hidden>
 		<h3>{copy.successTitle}</h3>
 		<p>{copy.success}</p>
@@ -138,6 +140,13 @@ const copy =
 		border-radius: 8px;
 		background: #fff6e8;
 		color: var(--contact-body, #4a3a2a);
+	}
+
+	.inquiry-entry[hidden],
+	.inquiry-form[hidden],
+	.inquiry-pending[hidden],
+	.inquiry-success[hidden] {
+		display: none;
 	}
 
 	.inquiry-form {
@@ -223,6 +232,12 @@ const copy =
 	.inquiry-submit:disabled {
 		opacity: 0.65;
 		cursor: progress;
+	}
+
+	.inquiry-pending {
+		margin: 0;
+		color: var(--contact-body, #4a3a2a);
+		font-size: 0.95rem;
 	}
 
 	.inquiry-success p {

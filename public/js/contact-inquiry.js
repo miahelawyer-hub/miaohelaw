@@ -2,6 +2,8 @@
 	var form = document.querySelector('.inquiry-form');
 	if (!form) return;
 
+	var entry = document.querySelector('[data-inquiry-entry]');
+	var pending = document.querySelector('[data-inquiry-pending]');
 	var status = form.querySelector('[data-status]');
 	var success = document.querySelector('[data-inquiry-success]');
 	var button = form.querySelector('.inquiry-submit');
@@ -28,7 +30,9 @@
 		if (fromName && clientName) fromName.value = clientName;
 
 		button.disabled = true;
-		status.textContent = form.getAttribute('data-sending') || '';
+		status.textContent = '';
+		if (entry) entry.hidden = true;
+		if (pending) pending.hidden = false;
 
 		fetch('https://api.web3forms.com/submit', {
 			method: 'POST',
@@ -46,10 +50,12 @@
 				});
 			})
 			.then(function () {
-				form.hidden = true;
+				if (pending) pending.hidden = true;
 				if (success) success.hidden = false;
 			})
 			.catch(function () {
+				if (pending) pending.hidden = true;
+				if (entry) entry.hidden = false;
 				status.textContent = form.getAttribute('data-failure') || '';
 				button.disabled = false;
 			});
