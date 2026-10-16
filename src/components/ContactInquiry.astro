@@ -1,0 +1,239 @@
+---
+interface Props {
+	lang?: 'zh' | 'en';
+}
+
+const lang = Astro.props.lang === 'en' ? 'en' : 'zh';
+const accessKey = import.meta.env.PUBLIC_WEB3FORMS_ACCESS_KEY ?? '';
+const copy =
+	lang === 'zh'
+		? {
+				title: '在线询问',
+				lead: '留下姓名、邮箱和想问的问题。回复会发到您留下的邮箱。',
+				name: '姓名',
+				email: '邮箱',
+				question: '询问的问题',
+				submit: '发送询问',
+				note: '发送本表不表示已经建立律师委托关系。通常 3 个工作日内回复。',
+				successTitle: '已收到',
+				success: '询问已经发送。律师会回复到您留下的邮箱。',
+				missing: '在线询问暂时无法发送。请致电 647-930-6688，或电邮 miao@miaohelaw.ca。',
+				sending: '正在发送…',
+				failure: '没有发送成功，请稍后再试，或直接电邮 miao@miaohelaw.ca。',
+				subject: '网站咨询',
+				formName: '联系我们',
+			}
+		: {
+				title: 'Online inquiry',
+				lead: 'Leave your name, email, and question. The reply will go to the email you provide.',
+				name: 'Name',
+				email: 'Email',
+				question: 'Your question',
+				submit: 'Send inquiry',
+				note: 'Sending this form does not create a lawyer-client relationship. We usually reply within 3 business days.',
+				successTitle: 'Received',
+				success: 'Your inquiry has been sent. We will reply to the email you provided.',
+				missing: 'This form cannot be sent online right now. Please call 647-930-6688 or email miao@miaohelaw.ca.',
+				sending: 'Sending…',
+				failure: 'The message did not send. Please try again, or email miao@miaohelaw.ca.',
+				subject: 'Website inquiry',
+				formName: 'Contact',
+			};
+---
+
+<div class="inquiry-card">
+	<h2>{copy.title}</h2>
+	<p class="inquiry-lead">{copy.lead}</p>
+	{
+		!accessKey && (
+			<p class="inquiry-banner" role="status">
+				{copy.missing}
+			</p>
+		)
+	}
+	<form
+		class="inquiry-form"
+		method="POST"
+		action="https://api.web3forms.com/submit"
+		data-missing-key={copy.missing}
+		data-sending={copy.sending}
+		data-failure={copy.failure}
+	>
+		<input type="hidden" name="access_key" value={accessKey} />
+		<input type="hidden" name="subject" value={copy.subject} data-base={copy.subject} />
+		<input type="hidden" name="from_name" value="miaohelaw.ca" />
+		<input type="hidden" name="form_name" value={copy.formName} />
+		<div class="inquiry-hp" aria-hidden="true">
+			<label>
+				Leave this empty
+				<input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" />
+			</label>
+		</div>
+		<label class="inquiry-field">
+			<span>
+				{copy.name}
+				<abbr class="inquiry-req" title={lang === 'zh' ? '必填' : 'Required'}>*</abbr>
+			</span>
+			<input name="Name" type="text" required autocomplete="name" data-client-name />
+		</label>
+		<label class="inquiry-field">
+			<span>
+				{copy.email}
+				<abbr class="inquiry-req" title={lang === 'zh' ? '必填' : 'Required'}>*</abbr>
+			</span>
+			<input name="email" type="email" required autocomplete="email" />
+		</label>
+		<label class="inquiry-field">
+			<span>
+				{copy.question}
+				<abbr class="inquiry-req" title={lang === 'zh' ? '必填' : 'Required'}>*</abbr>
+			</span>
+			<textarea name="Question" rows="5" required></textarea>
+		</label>
+		<p class="inquiry-note">{copy.note}</p>
+		<p class="inquiry-status" data-status role="alert"></p>
+		<button type="submit" class="inquiry-submit">{copy.submit}</button>
+	</form>
+	<div class="inquiry-success" data-inquiry-success hidden>
+		<h3>{copy.successTitle}</h3>
+		<p>{copy.success}</p>
+	</div>
+</div>
+
+<script src="/js/contact-inquiry.js" defer></script>
+
+<style>
+	.inquiry-card {
+		background: var(--contact-panel, #fff);
+		border: 1px solid var(--contact-panel-border, rgba(44, 36, 24, 0.12));
+		border-left: 4px solid var(--contact-gold, #b89456);
+		border-radius: 10px;
+		padding: 2rem;
+		padding-left: calc(2rem - 3px);
+		margin-bottom: 1.5rem;
+		box-shadow: var(--box-shadow);
+	}
+
+	.inquiry-card h2,
+	.inquiry-success h3 {
+		font-family: Georgia, serif;
+		font-size: 1.35rem;
+		font-weight: 600;
+		color: var(--contact-gold, #b89456);
+		margin: 0 0 0.75rem;
+	}
+
+	.inquiry-lead,
+	.inquiry-note,
+	.inquiry-success p {
+		margin: 0 0 1rem;
+		color: var(--contact-body, #4a3a2a);
+		font-size: 0.92rem;
+		line-height: 1.7;
+	}
+
+	.inquiry-banner {
+		margin: 0 0 1rem;
+		padding: 0.75rem 0.9rem;
+		border-radius: 8px;
+		background: #fff6e8;
+		color: var(--contact-body, #4a3a2a);
+	}
+
+	.inquiry-form {
+		display: grid;
+		gap: 0.9rem;
+	}
+
+	.inquiry-field {
+		display: flex;
+		flex-direction: column;
+		gap: 0.35rem;
+	}
+
+	.inquiry-field span {
+		font-weight: 600;
+		color: #2c1810;
+	}
+
+	.inquiry-req {
+		text-decoration: none;
+		color: #8a3b2a;
+		margin-left: 0.2rem;
+	}
+
+	.inquiry-field input,
+	.inquiry-field textarea {
+		width: 100%;
+		box-sizing: border-box;
+		padding: 0.7rem 0.75rem;
+		border: 1px solid rgba(74, 58, 10, 0.28);
+		border-radius: 8px;
+		background: #fffdf9;
+		color: #2c1810;
+		font: inherit;
+	}
+
+	.inquiry-field textarea {
+		resize: vertical;
+		min-height: 8rem;
+	}
+
+	.inquiry-field input:focus,
+	.inquiry-field textarea:focus {
+		outline: 2px solid #7a5a1a;
+		outline-offset: 1px;
+	}
+
+	.inquiry-note {
+		margin-bottom: 0;
+		color: var(--contact-muted, rgba(74, 58, 42, 0.72));
+		font-size: 0.8rem;
+	}
+
+	.inquiry-status:empty {
+		display: none;
+	}
+
+	.inquiry-status {
+		margin: 0;
+		color: #8a3b2a;
+	}
+
+	.inquiry-submit {
+		justify-self: start;
+		appearance: none;
+		border: 0;
+		cursor: pointer;
+		background: var(--contact-gold-soft, #c4a386);
+		color: #1a1208;
+		font: inherit;
+		font-size: 0.9rem;
+		font-weight: 700;
+		padding: 0.75rem 1.55rem;
+		border-radius: 999px;
+		min-height: 48px;
+		box-shadow: 0 4px 14px rgba(44, 36, 24, 0.18);
+	}
+
+	.inquiry-submit:hover {
+		background: #d4b699;
+	}
+
+	.inquiry-submit:disabled {
+		opacity: 0.65;
+		cursor: progress;
+	}
+
+	.inquiry-success p {
+		margin-bottom: 0;
+	}
+
+	.inquiry-hp {
+		position: absolute;
+		left: -10000px;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+	}
+</style>
