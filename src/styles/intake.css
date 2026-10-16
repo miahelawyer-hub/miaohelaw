@@ -177,6 +177,10 @@
 	padding: 0 0.25rem;
 }
 
+.intake-row-choice {
+	grid-column: 1 / -1;
+}
+
 .intake-submit-note,
 .intake-status {
 	margin: 1.25rem 0 0.75rem;
