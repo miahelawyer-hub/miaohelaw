@@ -1,0 +1,46 @@
+---
+interface Props {
+	name: string;
+	required?: boolean;
+	birthday?: boolean;
+	labelledBy?: string;
+}
+
+const { name, required = false, birthday = false, labelledBy } = Astro.props;
+const endYear = new Date().getFullYear() + 10;
+const years: string[] = [];
+for (let year = endYear; year >= 1920; year -= 1) years.push(String(year));
+const months = Array.from({ length: 12 }, (_, index) => String(index + 1).padStart(2, '0'));
+const days = Array.from({ length: 31 }, (_, index) => String(index + 1).padStart(2, '0'));
+---
+
+<div class="intake-date" data-date role="group" aria-labelledby={labelledBy}>
+	<input type="hidden" name={name} value="" data-date-value />
+	<select
+		data-date-part="year"
+		aria-label="Year 年"
+		required={required}
+		autocomplete={birthday ? 'bday-year' : undefined}
+	>
+		<option value="">年</option>
+		{years.map((year) => <option value={year}>{year}</option>)}
+	</select>
+	<select
+		data-date-part="month"
+		aria-label="Month 月"
+		required={required}
+		autocomplete={birthday ? 'bday-month' : undefined}
+	>
+		<option value="">月</option>
+		{months.map((month) => <option value={month}>{month}</option>)}
+	</select>
+	<select
+		data-date-part="day"
+		aria-label="Day 日"
+		required={required}
+		autocomplete={birthday ? 'bday-day' : undefined}
+	>
+		<option value="">日</option>
+		{days.map((day) => <option value={day}>{day}</option>)}
+	</select>
+</div>
