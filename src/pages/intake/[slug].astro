@@ -1,0 +1,35 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import IntakeForm from '../../components/IntakeForm.astro';
+import { intakeForms } from '../../data/intake-forms';
+import '../../styles/intake.css';
+
+export function getStaticPaths() {
+	return intakeForms.map((form) => ({
+		params: { slug: form.slug },
+		props: { form },
+	}));
+}
+
+const { form } = Astro.props;
+const title = `${form.titleZh} | 客户登记表 | H. LAW FIRM`;
+const description = `${form.kickerZh}：${form.titleZh}。请用英文填写。本页仅供客户填写，不公开收录。`;
+---
+
+<!doctype html>
+<html lang="zh">
+	<head>
+		<BaseHead title={title} description={description} />
+		<meta name="robots" content="noindex, nofollow" />
+		<meta name="googlebot" content="noindex, nofollow" />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<IntakeForm form={form} />
+		</main>
+		<Footer />
+	</body>
+</html>

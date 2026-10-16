@@ -1,0 +1,185 @@
+---
+import { DOCUMENT_EMAIL, fieldDomId } from '../data/intake-forms';
+import type { IntakeFormDef } from '../data/intake-forms';
+import { SITE_URL } from '../consts';
+
+interface Props {
+	form: IntakeFormDef;
+}
+
+const { form } = Astro.props;
+const accessKey = import.meta.env.PUBLIC_WEB3FORMS_ACCESS_KEY ?? '';
+const sentUrl = new URL('/intake/sent/', SITE_URL).href;
+
+function mailParts(text: string): string[] {
+	return text.split(DOCUMENT_EMAIL);
+}
+---
+
+<article class="intake">
+	<header class="intake-head">
+		<p class="intake-kicker">{form.kickerEn} · {form.kickerZh}</p>
+		<h1>{form.titleZh}</h1>
+		<p class="intake-en">{form.titleEn}</p>
+		<p class="intake-firm">H. LAW FIRM 恒. 律师事务所 · 208-7050 Woodbine Ave, Markham, ON L3R 4G8 · 647-930-6688</p>
+	</header>
+
+	<div class="intake-id" role="note">
+		<p>请用英文填写。日期格式：年-月-日。带 * 为必填项。</p>
+		<p>Please complete in English. Dates: YYYY-MM-DD. Required fields are marked with *.</p>
+		<p>
+			两份有效身份证件请另发至
+			<a href={`mailto:${DOCUMENT_EMAIL}`}>{DOCUMENT_EMAIL}</a>
+			（我们接受：护照；PR卡正反面；加拿大驾照正反面）。
+		</p>
+		<p>
+			Please email two pieces of valid ID to {DOCUMENT_EMAIL}
+			(we accept: Passport; PR Card – front and back; Canadian Driver's Licence – front and back).
+		</p>
+	</div>
+
+	{
+		!accessKey && (
+			<p class="intake-config" role="status">
+				在线提交暂时无法使用。请致电 647-930-6688。身份证件仍请发到 {DOCUMENT_EMAIL}。
+			</p>
+		)
+	}
+
+	<form class="intake-form" method="POST" action="https://api.web3forms.com/submit">
+		<input type="hidden" name="access_key" value={accessKey} />
+		<input type="hidden" name="subject" value={form.subject} data-base={form.subject} />
+		<input type="hidden" name="from_name" value="miaohelaw.ca intake" />
+		<input type="hidden" name="redirect" value={sentUrl} />
+		<input type="hidden" name="form_name" value={`${form.titleEn} | ${form.titleZh}`} />
+		<div class="intake-hp" aria-hidden="true">
+			<label>
+				Leave this empty
+				<input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" />
+			</label>
+		</div>
+
+		{
+			form.sections.map((section) => (
+				<section class="intake-section">
+					<h2>{section.title}</h2>
+					<div class="intake-fields">
+						{section.fields.map((field) => {
+							if (field.kind === 'note') {
+								const parts = mailParts(field.text);
+								return (
+									<p class="intake-note">
+										{parts.map((part, index) => (
+											<>
+												{part}
+												{index < parts.length - 1 && (
+													<a href={`mailto:${DOCUMENT_EMAIL}`}>{DOCUMENT_EMAIL}</a>
+												)}
+											</>
+										))}
+									</p>
+								);
+							}
+							if (field.kind === 'grid') {
+								return (
+									<div class="intake-grid">
+										{field.caption && <p class="intake-grid-caption">{field.caption}</p>}
+										{Array.from({ length: field.rows }, (_, row) => (
+											<fieldset class="intake-row">
+												<legend>
+													{field.rowLabel} {row + 1}
+												</legend>
+												{field.columns.map((column) => {
+													const inputName = `${field.namePrefix} ${row + 1} ${column.key}`;
+													const id = fieldDomId(inputName);
+													return (
+														<label class="intake-field" for={id}>
+															<span>{column.label}</span>
+															<input id={id} name={inputName} type={column.type ?? 'text'} />
+														</label>
+													);
+												})}
+											</fieldset>
+										))}
+									</div>
+								);
+							}
+							if (field.kind === 'radio' || field.kind === 'checks') {
+								const legendId = fieldDomId(field.name);
+								return (
+									<fieldset class:list={['intake-field', 'intake-choices']}>
+										<legend id={legendId}>
+											{field.label}
+											{field.required && (
+												<abbr class="req" title="必填">
+													*
+												</abbr>
+											)}
+										</legend>
+										<div class="choice-list" role={field.kind === 'radio' ? 'radiogroup' : 'group'} aria-labelledby={legendId}>
+											{field.options.map((option, index) => {
+												const id = `${legendId}-${index}`;
+												return (
+													<label class="choice" for={id}>
+														<input
+															id={id}
+															type={field.kind === 'radio' ? 'radio' : 'checkbox'}
+															name={field.kind === 'radio' ? field.name : `${field.name} — ${option.value}`}
+															value={field.kind === 'radio' ? option.value : 'Yes'}
+															required={field.kind === 'radio' && field.required}
+														/>
+														<span>{option.label}</span>
+													</label>
+												);
+											})}
+										</div>
+									</fieldset>
+								);
+							}
+							const id = fieldDomId(field.name);
+							const inputName = field.replyEmail ? 'email' : field.name;
+							return (
+								<label class:list={['intake-field', { wide: field.wide }]} for={id}>
+									<span>
+										{field.label}
+										{field.required && (
+											<abbr class="req" title="必填">
+												*
+											</abbr>
+										)}
+									</span>
+									<input
+										id={id}
+										name={inputName}
+										type={field.kind}
+										required={field.required}
+										autocomplete={field.autoComplete}
+										data-client-name={field.clientName ? '' : undefined}
+									/>
+								</label>
+							);
+						})}
+					</div>
+				</section>
+			))
+		}
+
+		<p class="intake-submit-note">
+			提交本表不表示已经建立律师委托关系。表格发到律师的咨询邮箱。身份证件仍请发到 {DOCUMENT_EMAIL}。
+		</p>
+		<p class="intake-status" data-status role="alert"></p>
+		<button type="submit" class="intake-submit">提交表格</button>
+	</form>
+
+	<div class="intake-success" data-success hidden>
+		<h2>已收到</h2>
+		<p>表格已经提交。律师会查看您填写的资料。</p>
+		<p>
+			两份有效身份证件请另发至
+			<a href={`mailto:${DOCUMENT_EMAIL}`}>{DOCUMENT_EMAIL}</a>
+			（护照；PR卡正反面；加拿大驾照正反面）。
+		</p>
+	</div>
+</article>
+
+<script src="/js/intake-form.js" defer></script>

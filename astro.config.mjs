@@ -20,8 +20,9 @@ export default defineConfig({
 				} catch {
 					return true;
 				}
-				// Tag listing hubs use noindex,follow — omit from sitemap to avoid conflicting signals.
-				if (p.startsWith('/tag/') || p.startsWith('/en/tag/')) {
+				// Tag hubs are noindex,follow. Client intake pages are noindex,nofollow.
+				// Omit both from the sitemap so those signals do not conflict.
+				if (p.startsWith('/tag/') || p.startsWith('/en/tag/') || p.startsWith('/intake/')) {
 					return false;
 				}
 				return true;
