@@ -1,7 +1,8 @@
 /**
  * Client intake fields copied from the office PDFs:
  * Separation & Divorce, Common-Law Separation, Prenuptial Agreement,
- * Marriage Contract, Real Estate Purchase, Real Estate Sale.
+ * Marriage Contract, Designation of Matrimonial Home, Real Estate Purchase,
+ * Real Estate Sale, Real Estate Refinance, Real Estate Title Transfer.
  * Required marks follow the asterisks printed on those PDFs.
  */
 
@@ -743,6 +744,373 @@ export const intakeForms: IntakeFormDef[] = [
 					t('Your realtor (name, phone, email)', 'Your realtor (name, phone, email) 您的地产经纪（姓名、电话、邮箱）', {
 						wide: true,
 					}),
+				],
+			},
+		],
+	},
+	{
+		slug: 'real-estate-refinance',
+		titleZh: '转贷 / 再融资',
+		titleEn: 'Refinance',
+		subject: '客户登记表 | 转贷 / 再融资',
+		...realEstateKicker,
+		sections: [
+			{
+				title: '1. Owner Information 业主信息',
+				fields: [
+					t('Full legal name', 'Full legal name 姓名', {
+						required: true,
+						clientName: true,
+						autoComplete: 'name',
+					}),
+					{ kind: 'date', name: 'Birthday', label: 'Birthday 出生日期', required: true, autoComplete: 'bday' },
+					{ kind: 'tel', name: 'Phone number', label: 'Phone number 电话', required: true, autoComplete: 'tel' },
+					t('Current address', 'Current address 现居住地址', {
+						required: true,
+						wide: true,
+						autoComplete: 'street-address',
+					}),
+					{
+						kind: 'email',
+						name: 'Email',
+						label: 'Email 邮箱',
+						required: true,
+						replyEmail: true,
+						autoComplete: 'email',
+					},
+					t('Occupation', 'Occupation 职业', { required: true, autoComplete: 'organization-title' }),
+					t('Employer / business address', 'Employer / business address 工作单位/地址', {
+						required: true,
+						wide: true,
+					}),
+					{
+						kind: 'radio',
+						name: 'Marital status',
+						label: 'Marital status 婚姻状况',
+						required: true,
+						options: maritalStatus,
+					},
+				],
+			},
+			{
+				title: '2. Spouse Information (if married or common-law) 配偶信息（如已婚或同居）',
+				fields: [
+					t("Spouse's full name", "Spouse's full name 姓名"),
+					{ kind: 'date', name: "Spouse's birthday", label: 'Birthday 出生日期' },
+					{ kind: 'tel', name: "Spouse's phone number", label: 'Phone number 电话' },
+					{ kind: 'email', name: "Spouse's email", label: 'Email 邮箱' },
+					{
+						kind: 'radio',
+						name: 'Is your spouse on title',
+						label: 'Is your spouse on title? 配偶是否在产权上？',
+						options: yesNo,
+					},
+					{
+						kind: 'radio',
+						name: 'Is the property your matrimonial home',
+						label: 'Is the property your matrimonial home? 该房产目前是否为您的婚姻住所？',
+						options: yesNoUnsure,
+					},
+				],
+			},
+			{
+				title: '3. Other Owners on Title (if any) 产权上的其他业主（如有）',
+				fields: [otherParties('其他业主', 'Other owner')],
+			},
+			{
+				title: '4. Property 房产信息',
+				fields: [
+					t('Property address', 'Property address 房产地址', { required: true, wide: true }),
+					{ kind: 'date', name: 'Expected funding date', label: 'Expected funding date 预计放款日期', required: true },
+					{
+						kind: 'radio',
+						name: 'Property type',
+						label: 'Property type 房产类型',
+						options: [
+							{ value: 'House', label: 'House 独立/半独立屋' },
+							{ value: 'Townhouse', label: 'Townhouse 镇屋' },
+							{ value: 'Condo', label: 'Condo 公寓' },
+							{ value: 'Other', label: 'Other 其他' },
+						],
+					},
+					{
+						kind: 'radio',
+						name: 'Is the property your principal residence',
+						label: 'Is the property your principal residence? 该房产是否为您的自住房（主要居所）？',
+						options: yesNo,
+					},
+					{
+						kind: 'radio',
+						name: 'Is the property currently rented to tenants',
+						label: 'Is the property currently rented to tenants? 该房产目前是否出租？',
+						options: yesNo,
+					},
+				],
+			},
+			{
+				title: '5. Mortgage Details 贷款信息',
+				fields: [
+					t('New lender', 'New lender 新贷款银行'),
+					t('Broker / bank contact (name, phone)', 'Broker / bank contact (name, phone) 贷款经纪/银行联系人（姓名、电话）', {
+						wide: true,
+					}),
+					{
+						kind: 'radio',
+						name: 'Is there an existing mortgage or line of credit to be paid off',
+						label:
+							'Is there an existing mortgage or line of credit to be paid off? 是否有需要还清的现有贷款或房屋信用额度？',
+						options: yesNo,
+					},
+					t('If yes, existing lender name(s)', 'If yes, existing lender name(s) 如有，现有贷款银行名称', { wide: true }),
+					{
+						kind: 'radio',
+						name: 'Will any other debts be paid from the new mortgage',
+						label:
+							'Will any other debts be paid from the new mortgage (e.g. credit cards, car loan)? 新贷款是否用于偿还其他债务（如信用卡、车贷）？',
+						options: yesNo,
+					},
+				],
+			},
+		],
+	},
+	{
+		slug: 'real-estate-title-transfer',
+		titleZh: '产权转让',
+		titleEn: 'Title Transfer',
+		subject: '客户登记表 | 产权转让',
+		...realEstateKicker,
+		sections: [
+			{
+				title: '1. Current Owner Information 现产权人信息',
+				fields: [
+					t('Full legal name', 'Full legal name 姓名', {
+						required: true,
+						clientName: true,
+						autoComplete: 'name',
+					}),
+					{ kind: 'date', name: 'Birthday', label: 'Birthday 出生日期', required: true, autoComplete: 'bday' },
+					{ kind: 'tel', name: 'Phone number', label: 'Phone number 电话', required: true, autoComplete: 'tel' },
+					t('Current address', 'Current address 现居住地址', {
+						required: true,
+						wide: true,
+						autoComplete: 'street-address',
+					}),
+					{
+						kind: 'email',
+						name: 'Email',
+						label: 'Email 邮箱',
+						required: true,
+						replyEmail: true,
+						autoComplete: 'email',
+					},
+					t('Occupation', 'Occupation 职业', { required: true, autoComplete: 'organization-title' }),
+					t('Employer / business address', 'Employer / business address 工作单位/地址', {
+						required: true,
+						wide: true,
+					}),
+					{
+						kind: 'radio',
+						name: 'Marital status',
+						label: 'Marital status 婚姻状况',
+						required: true,
+						options: maritalStatus,
+					},
+				],
+			},
+			{
+				title: '2. Spouse Information (if married or common-law) 配偶信息（如已婚或同居）',
+				fields: [
+					t("Spouse's full name", "Spouse's full name 姓名"),
+					{ kind: 'date', name: "Spouse's birthday", label: 'Birthday 出生日期' },
+					{ kind: 'tel', name: "Spouse's phone number", label: 'Phone number 电话' },
+					{ kind: 'email', name: "Spouse's email", label: 'Email 邮箱' },
+					{
+						kind: 'radio',
+						name: 'Is your spouse on title',
+						label: 'Is your spouse on title? 配偶是否在产权上？',
+						options: yesNo,
+					},
+					{
+						kind: 'radio',
+						name: 'Is the property your matrimonial home',
+						label: 'Is the property your matrimonial home? 该房产目前是否为您的婚姻住所？',
+						options: yesNoUnsure,
+					},
+				],
+			},
+			{
+				title: '3. Transfer Details 转让信息',
+				fields: [
+					{
+						kind: 'radio',
+						name: 'What kind of transfer',
+						label: 'What kind of transfer? 转让类型',
+						options: [
+							{ value: 'Add a person to title', label: 'Add a person to title 加名' },
+							{ value: 'Remove a person from title', label: 'Remove a person from title 减名' },
+							{ value: 'Transfer to another person', label: 'Transfer to another person 转给他人' },
+							{ value: 'Other', label: 'Other 其他' },
+						],
+					},
+					{
+						kind: 'radio',
+						name: 'Reason for transfer',
+						label: 'Reason for transfer 转让原因',
+						options: [
+							{ value: 'Gift to family', label: 'Gift to family 赠与家人' },
+							{ value: 'Separation / divorce', label: 'Separation / divorce 分居/离婚' },
+							{ value: 'Estate planning', label: 'Estate planning 遗产规划' },
+							{ value: 'Other', label: 'Other 其他' },
+						],
+					},
+					t('Person receiving / added to title – full name', 'Person receiving / added to title – full name 受让人/加名人姓名'),
+					t('Relationship to you', 'Relationship to you 与您的关系'),
+					{ kind: 'date', name: 'Recipient birthday', label: 'Birthday 出生日期' },
+					{ kind: 'tel', name: 'Recipient phone number', label: 'Phone number 电话' },
+					{ kind: 'email', name: 'Recipient email', label: 'Email 邮箱' },
+				],
+			},
+			{
+				title: '4. Property 房产信息',
+				fields: [
+					t('Property address', 'Property address 房产地址', { required: true, wide: true }),
+					{ kind: 'date', name: 'Preferred transfer date', label: 'Preferred transfer date 希望转让日期' },
+					{
+						kind: 'radio',
+						name: 'Property type',
+						label: 'Property type 房产类型',
+						options: [
+							{ value: 'House', label: 'House 独立/半独立屋' },
+							{ value: 'Townhouse', label: 'Townhouse 镇屋' },
+							{ value: 'Condo', label: 'Condo 公寓' },
+							{ value: 'Other', label: 'Other 其他' },
+						],
+					},
+					{
+						kind: 'radio',
+						name: 'Is the property your principal residence',
+						label: 'Is the property your principal residence? 该房产是否为您的自住房（主要居所）？',
+						options: yesNo,
+					},
+				],
+			},
+			{
+				title: '5. Mortgage 贷款',
+				fields: [
+					{
+						kind: 'radio',
+						name: 'Is there a mortgage or line of credit on the property',
+						label: 'Is there a mortgage or line of credit on the property? 该房产是否有贷款或房屋信用额度？',
+						required: true,
+						options: yesNo,
+					},
+					t('If yes, lender name(s)', 'If yes, lender name(s) 如有，贷款银行名称', { wide: true }),
+					{
+						kind: 'note',
+						text: 'Please note: if there is a mortgage on the property, it must be refinanced before the title can be transferred. 请注意：如房产上有贷款，必须先办理转贷（Refinance），才能办理产权转让。',
+					},
+				],
+			},
+		],
+	},
+	{
+		slug: 'designation-of-matrimonial-home',
+		titleZh: '婚房指定',
+		titleEn: 'Designation of Matrimonial Home',
+		subject: '客户登记表 | 婚房指定',
+		kickerZh: '家事法登记表',
+		kickerEn: 'Family Law Intake Form',
+		sections: [
+			{
+				title: '1. Your Information 您的信息',
+				fields: [
+					t('Full legal name', 'Full legal name 姓名', {
+						required: true,
+						clientName: true,
+						autoComplete: 'name',
+					}),
+					{ kind: 'date', name: 'Birthday', label: 'Birthday 出生日期', required: true, autoComplete: 'bday' },
+					{ kind: 'tel', name: 'Phone number', label: 'Phone number 电话', required: true, autoComplete: 'tel' },
+					t('Current address', 'Current address 现居住地址', {
+						required: true,
+						wide: true,
+						autoComplete: 'street-address',
+					}),
+					{
+						kind: 'email',
+						name: 'Email',
+						label: 'Email 邮箱',
+						required: true,
+						replyEmail: true,
+						autoComplete: 'email',
+					},
+					t('Occupation', 'Occupation 职业', { required: true, autoComplete: 'organization-title' }),
+					t('Employer / business address', 'Employer / business address 工作单位/地址', {
+						required: true,
+						wide: true,
+					}),
+				],
+			},
+			{
+				title: '2. Spouse Information 配偶信息',
+				fields: [
+					t("Spouse's full legal name", "Full legal name 姓名", { required: true }),
+					{ kind: 'date', name: "Spouse's birthday", label: 'Birthday 出生日期', required: true },
+					{ kind: 'tel', name: "Spouse's phone number", label: 'Phone number 电话', required: true },
+					t("Spouse's current address", "Current address 现居住地址", { required: true, wide: true }),
+					{ kind: 'email', name: "Spouse's email", label: 'Email 邮箱', required: true },
+					t("Spouse's occupation", 'Occupation 职业', { required: true }),
+					t("Spouse's employer / business address", 'Employer / business address 工作单位/地址', {
+						required: true,
+						wide: true,
+					}),
+				],
+			},
+			{
+				title: '3. Marriage Details 婚姻信息',
+				fields: [
+					{ kind: 'date', name: 'Marriage date', label: 'Marriage date 结婚日期', required: true },
+					t('Place of marriage (city, country)', 'Place of marriage (city, country) 结婚登记地（城市、国家）', {
+						wide: true,
+					}),
+					{
+						kind: 'radio',
+						name: 'Are you and your spouse currently living together',
+						label: 'Are you and your spouse currently living together? 您与配偶目前是否同住？',
+						options: yesNo,
+					},
+					{
+						kind: 'radio',
+						name: 'Do you have a marriage contract or prenuptial agreement',
+						label: 'Do you have a marriage contract or prenuptial agreement? 是否签有婚内协议或婚前协议？',
+						options: yesNo,
+					},
+				],
+			},
+			{
+				title: '4. Property to be Designated 拟指定为婚房的房产',
+				fields: [
+					t('Property address', 'Property address 房产地址', { required: true, wide: true }),
+					{
+						kind: 'radio',
+						name: 'Who is on title',
+						label: 'Who is on title? 产权登记在谁名下？',
+						required: true,
+						options: [
+							{ value: 'Me', label: 'Me 我' },
+							{ value: 'My spouse', label: 'My spouse 配偶' },
+						],
+					},
+					{
+						kind: 'radio',
+						name: 'Property type',
+						label: 'Property type 房产类型',
+						options: [
+							{ value: 'House', label: 'House 独立/半独立屋' },
+							{ value: 'Townhouse', label: 'Townhouse 镇屋' },
+							{ value: 'Condo', label: 'Condo 公寓' },
+						],
+					},
 				],
 			},
 		],
