@@ -27,6 +27,8 @@ relatedReading:
     line: "A same-person declaration has to be done while the person is alive."
   - slug: separation-agreement-waiver-still-need-will-ontario
     line: "A separation agreement that waives inheritance still is not a will. You need a separate will."
+  - slug: will-without-divorce-kids-cannot-get-half-ontario
+    line: "Everything is in his name — a will without a divorce cannot lock in your half for the children."
   - slug: mom-gift-moved-between-accounts-divorce-ontario
     line: "Mom's will is signed in China. Parent-child and hukou notarizations should be done now."
   - slug: china-property-ontario-divorce

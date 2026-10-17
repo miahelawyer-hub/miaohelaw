@@ -23,6 +23,8 @@ relatedReading:
     line: "Writing that the RESP is yours in a separation agreement still does not bind the bank."
   - slug: separation-agreement-waiver-still-need-will-ontario
     line: "A separation agreement that waives inheritance still is not a will. You need a separate will."
+  - slug: will-without-divorce-kids-cannot-get-half-ontario
+    line: "Everything is in his name — a will without a divorce cannot lock in your half for the children."
   - slug: immigrate-with-toddler-sole-decision-making-ontario
     line: "A verbal swap of property for sole decision-making does not count either. Put it in writing."
   - slug: sold-house-split-money-ai-agreement-ontario

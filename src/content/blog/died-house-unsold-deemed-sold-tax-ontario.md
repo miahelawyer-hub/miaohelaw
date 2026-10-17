@@ -27,6 +27,8 @@ relatedReading:
     line: "同一人认证要本人在世时做。人走了就不能做。"
   - slug: separation-agreement-waiver-still-need-will-ontario
     line: "分居协议写了放弃继承，还要另立遗嘱。协议不是遗嘱。"
+  - slug: will-without-divorce-kids-cannot-get-half-ontario
+    line: "东西都在老公名下，不离婚只立遗嘱，孩子拿不到那一半。"
   - slug: mom-gift-moved-between-accounts-divorce-ontario
     line: "妈妈的遗嘱在国内签。亲子关系和户口本公证，现在就要办。"
   - slug: china-property-ontario-divorce

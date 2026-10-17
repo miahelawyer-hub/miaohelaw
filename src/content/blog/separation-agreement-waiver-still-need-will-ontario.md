@@ -25,6 +25,8 @@ relatedReading:
     line: "分居不等于离婚。婚没离，对方在法律上还是配偶。"
   - slug: died-house-unsold-deemed-sold-tax-ontario
     line: "人走了房子还没卖，税局仍按去世当天市价视同卖掉。"
+  - slug: will-without-divorce-kids-cannot-get-half-ontario
+    line: "东西都在老公名下，不离婚只立遗嘱，孩子拿不到那一半。"
   - slug: same-person-declaration-after-death-ontario
     line: "同一人认证要本人在世时做。人走了就不能做。"
   - href: /estate-trustee/with-a-will/

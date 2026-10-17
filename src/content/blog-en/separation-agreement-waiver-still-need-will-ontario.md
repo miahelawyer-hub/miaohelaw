@@ -25,6 +25,8 @@ relatedReading:
     line: "Separated is not divorced. Until the divorce is final, your ex is still your legal spouse."
   - slug: died-house-unsold-deemed-sold-tax-ontario
     line: "They died but the house hasn't been sold — it is still deemed sold at market value on the date of death."
+  - slug: will-without-divorce-kids-cannot-get-half-ontario
+    line: "Everything is in his name — a will without a divorce cannot lock in your half for the children."
   - slug: same-person-declaration-after-death-ontario
     line: "A same-person declaration has to be done while the person is alive."
   - href: /en/estate-trustee/with-a-will/

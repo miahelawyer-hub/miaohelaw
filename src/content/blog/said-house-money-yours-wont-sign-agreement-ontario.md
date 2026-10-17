@@ -23,6 +23,8 @@ relatedReading:
     line: "分居协议写RESP归我，也对抗不了银行。银行是外人。"
   - slug: separation-agreement-waiver-still-need-will-ontario
     line: "分居协议写了放弃继承，还要另立遗嘱。协议不是遗嘱。"
+  - slug: will-without-divorce-kids-cannot-get-half-ontario
+    line: "东西都在老公名下，不离婚只立遗嘱，孩子拿不到那一半。"
   - slug: immigrate-with-toddler-sole-decision-making-ontario
     line: "口头答应财产换单独抚养权，同样不算数。得写成书面协议。"
   - slug: sold-house-split-money-ai-agreement-ontario
