@@ -17,6 +17,8 @@ tags:
 pairedArticlePath: "/blog/premarital-home-sold-ontario-deduction/"
 relatedIntro: "Read alongside:"
 relatedReading:
+  - slug: premarital-home-wedding-day-value-divorce-ontario
+    line: "Still living in the pre-marriage home on separation day — no wedding-day deduction. This piece is the deduction after you sell and buy another."
   - slug: china-property-premarital-depreciation-ontario
     line: "Does property in China have to be included? Why a pre-marriage decline in value can reduce equalization."
   - slug: change-lawyer-recalculate-nfp-ontario

@@ -18,6 +18,8 @@ tags:
 pairedArticlePath: "/en/blog/buy-house-after-separation-still-divide-ontario/"
 relatedIntro: "分居后再买一套、旧房涨了还分不分、口头分开锁不锁得住，是三笔账："
 relatedReading:
+  - slug: premarital-home-wedding-day-value-divorce-ontario
+    line: "婚前买的房子还住着，结婚日价值扣不掉。那篇讲旧房。这篇讲存款再买一套。"
   - slug: house-appreciation-after-separation-ontario
     line: "分居后房子涨了，看名字。那篇讲旧房涨跌。这篇讲拿存款再买一套。"
   - slug: separation-date-vs-divorce-date-ontario

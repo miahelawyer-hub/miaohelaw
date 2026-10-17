@@ -18,6 +18,8 @@ tags:
 pairedArticlePath: "/blog/buy-house-after-separation-still-divide-ontario/"
 relatedIntro: "Buying another house after separation, whether the old house's increase is still shared, and whether a verbal split locks anything in are three ledgers:"
 relatedReading:
+  - slug: premarital-home-wedding-day-value-divorce-ontario
+    line: "Still living in a pre-marriage home — no wedding-day deduction. That piece is the old house. This one is buying another with the savings."
   - slug: house-appreciation-after-separation-ontario
     line: "House went up after separation — check whose name is on title. That piece is the old house. This one is buying another with the savings."
   - slug: separation-date-vs-divorce-date-ontario

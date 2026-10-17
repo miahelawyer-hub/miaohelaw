@@ -23,6 +23,8 @@ relatedReading:
     line: "同屋檐下分了房，还一起吃饭一起去婚礼，那个分居日还算不算。"
   - slug: buy-house-after-separation-still-divide-ontario
     line: "口头说分开锁不住。分居后再买一套房，分居日的钱变成房子也照分。"
+  - slug: premarital-home-wedding-day-value-divorce-ontario
+    line: "分居那天还是不是家庭住所，决定婚前房子结婚日价值扣不扣。"
   - slug: house-underwater-divorce-hold-until-recovers-ontario
     line: "房子跌破贷款，法院仍只认分居日那天的数字。先不卖只能你们自己约定。"
   - slug: spouse-sudden-debts-share-ontario

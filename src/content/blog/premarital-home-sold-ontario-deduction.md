@@ -18,6 +18,8 @@ tags:
 pairedArticlePath: "/en/blog/premarital-home-sold-ontario-deduction/"
 relatedIntro: "建议一并阅读："
 relatedReading:
+  - slug: premarital-home-wedding-day-value-divorce-ontario
+    line: "还住在婚前买的房子里，结婚日价值扣不掉。这篇讲卖掉换新房之后怎么扣。"
   - slug: china-property-premarital-depreciation-ontario
     line: "中国的房子要不要算进安省分割？婚前买的、跌价了为什么可能减少均衡款。"
   - slug: change-lawyer-recalculate-nfp-ontario
