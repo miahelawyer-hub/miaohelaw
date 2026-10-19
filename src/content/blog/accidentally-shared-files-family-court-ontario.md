@@ -17,6 +17,8 @@ tags:
 pairedArticlePath: "/en/blog/accidentally-shared-files-family-court-ontario/"
 relatedIntro: "误发的文件能不能用、电子证据怎么进法庭、对方拖着不给怎么办，是三笔账："
 relatedReading:
+  - slug: spouse-kept-company-books-use-in-divorce-ontario
+    line: "配偶给公司做账拿到的流水、税表，来源正当就能用。那篇讲正经拿到的。这篇讲误发。"
   - slug: electronic-evidence-ontario-family-court
     line: "微信、截图、录音能不能进家庭法庭。真不真、怎么引入，是另一笔。"
   - slug: stalled-family-law-case-ontario

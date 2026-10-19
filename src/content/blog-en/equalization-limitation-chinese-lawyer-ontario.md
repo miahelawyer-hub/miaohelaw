@@ -30,6 +30,8 @@ relatedReading:
     line: If the agreement is later set aside, the limitation clock usually did not stop in the meantime.
   - slug: dissipation-of-assets
     line: Concealment and dissipation change both the merits and the extension analysis.
+  - slug: spouse-kept-company-books-use-in-divorce-ontario
+    line: Books a spouse kept can be used if lawfully obtained, but banks keep records only seven years. Wait too long, and even a court order cannot retrieve the earlier statements.
   - slug: resulting-trust-parental-gifts-ontario
     line: An expired equalization claim is not the end of every trust claim.
   - slug: china-divorce-ontario-equalization-afterward

@@ -28,6 +28,8 @@ relatedReading:
     line: Disclosure of offshore accounts and cross-border transfers — how foreign screenshots are handled in Ontario family proceedings.
   - slug: accidentally-shared-files-family-court-ontario
     line: They accidentally shared files with you — family court can use them. Save them now.
+  - slug: spouse-kept-company-books-use-in-divorce-ontario
+    line: Bank statements and tax records a spouse kept while doing the books can be used if lawfully obtained. Banks keep records only seven years.
   - slug: same-roof-wedding-separation-date-ontario
     line: "A separation-date fight is a timestamp fight. Texts, tax filings, and a draft that doesn't match the calendar will not hold."
 faqStructured:

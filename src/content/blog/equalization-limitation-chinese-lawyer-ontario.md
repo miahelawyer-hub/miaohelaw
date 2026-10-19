@@ -31,6 +31,8 @@ relatedReading:
     line: 协议被推翻后，时效时钟通常并没有因此停过。
   - slug: dissipation-of-assets
     line: 对方转移、挥霍财产时，时效和举证要一起看。
+  - slug: spouse-kept-company-books-use-in-divorce-ontario
+    line: 配偶做账拿到的流水能用，但银行只留七年。拖久了，调令也调不回更早的。
   - slug: resulting-trust-parental-gifts-ontario
     line: 均等化过期后，信托请求仍可能是另一条路。
   - slug: china-divorce-ontario-equalization-afterward

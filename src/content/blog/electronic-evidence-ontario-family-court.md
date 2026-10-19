@@ -25,6 +25,8 @@ relatedReading:
     line: 跨境资金流向的证据披露——境外账户截图、跨境转账记录在安省家庭法庭的处理。
   - slug: accidentally-shared-files-family-court-ontario
     line: 对方手滑把文件分享给你了，家庭法庭能不能用。能用，赶紧存。
+  - slug: spouse-kept-company-books-use-in-divorce-ontario
+    line: 配偶给公司做账拿到的流水、税表，来源正当就能用。银行只留七年。
   - slug: same-roof-wedding-separation-date-ontario
     line: "分居日争的就是时间戳。短信、报税、草稿对不上日历，法官不认。"
 faqStructured:

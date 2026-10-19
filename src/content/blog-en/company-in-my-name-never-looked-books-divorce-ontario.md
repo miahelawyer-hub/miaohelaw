@@ -19,6 +19,8 @@ tags:
 pairedArticlePath: "/blog/company-in-my-name-never-looked-books-divorce-ontario/"
 relatedIntro: "Where the shares are counted, how a trust is claimed, and how income is imputed are three ledgers:"
 relatedReading:
+  - slug: spouse-kept-company-books-use-in-divorce-ontario
+    line: "Bank statements and tax records a spouse kept while doing the books can be used if lawfully obtained. That piece is the records in your hands. This one is whose name the shares are in."
   - slug: net-family-property-ontario
     line: "How net family property is counted: shares in your name go on your side first."
   - slug: resulting-trust-parental-gifts-ontario
