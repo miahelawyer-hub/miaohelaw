@@ -21,6 +21,8 @@ relatedIntro: "Where the shares are counted, how a trust is claimed, and how inc
 relatedReading:
   - slug: spouse-kept-company-books-use-in-divorce-ontario
     line: "Bank statements and tax records a spouse kept while doing the books can be used if lawfully obtained. That piece is the records in your hands. This one is whose name the shares are in."
+  - slug: rrsp-tfsa-in-his-name-contribution-divorce-ontario
+    line: "An RRSP or TFSA in his name is not returned by contribution ratio. Registration counts first, then equalization."
   - slug: net-family-property-ontario
     line: "How net family property is counted: shares in your name go on your side first."
   - slug: resulting-trust-parental-gifts-ontario

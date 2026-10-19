@@ -20,6 +20,8 @@ tags:
   - "toronto-divorce-lawyer"
 relatedIntro: "For equalization basics, net family property mechanics, or imputed income in support claims, these posts complement the topics above."
 relatedReading:
+  - slug: rrsp-tfsa-in-his-name-contribution-divorce-ontario
+    line: "You earned it, but the RRSP is in his name — contribution ratio does not bring it back. Prove a loan, and it is a separate debt claim."
   - slug: ontario-divorce-property-division
     line: "How Ontario equalization works and why the matrimonial home is treated differently—useful alongside gift/loan characterization."
   - slug: net-family-property-ontario

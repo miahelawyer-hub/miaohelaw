@@ -17,6 +17,8 @@ tags:
 pairedArticlePath: "/en/blog/said-house-money-yours-wont-sign-agreement-ontario/"
 relatedIntro: "口头不算、协议怎么签才有效、打官司怎么平分，是三笔账："
 relatedReading:
+  - slug: rrsp-tfsa-in-his-name-contribution-divorce-ontario
+    line: "口头说多给你10%，RRSP买在他名下也按出资比例拿不回。先算清楚50%是多少。"
   - slug: same-lawyer-both-sides-separation-agreement-ontario
     line: "协议写下来，也不能两个人共用一个律师。"
   - slug: resp-university-bank-can-touch-ontario

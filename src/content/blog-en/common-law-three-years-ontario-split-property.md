@@ -17,6 +17,8 @@ tags:
 pairedArticlePath: "/blog/common-law-three-years-ontario-split-property/"
 relatedIntro: "How common law differs from marriage, how parental money is treated, and how spousal support is calculated are three ledgers:"
 relatedReading:
+  - slug: rrsp-tfsa-in-his-name-contribution-divorce-ontario
+    line: "Marriage does not divide by who paid. That contribution logic is for unmarried partners. This piece is why Ontario common law does not equalize at all."
   - slug: common-law-vs-divorce-ontario
     line: "Breaking up as common-law partners is not the same as a divorce — especially on property."
   - slug: resulting-trust-parental-gifts-ontario

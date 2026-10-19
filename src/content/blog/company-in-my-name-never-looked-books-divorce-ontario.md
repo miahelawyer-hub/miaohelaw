@@ -21,6 +21,8 @@ relatedIntro: "名下怎么算、信托怎么争、收入怎么推定，是三�
 relatedReading:
   - slug: spouse-kept-company-books-use-in-divorce-ontario
     line: "配偶给公司做账拿到的流水、税表，来源正当就能用。那篇讲手里的账。这篇讲名下算谁的。"
+  - slug: rrsp-tfsa-in-his-name-contribution-divorce-ontario
+    line: "RRSP、TFSA买在他名下，也不能按出资比例拿回。名下先算，平分后拿。"
   - slug: net-family-property-ontario
     line: "家庭净财产怎么算：名下的股份先进谁的账。"
   - slug: resulting-trust-parental-gifts-ontario

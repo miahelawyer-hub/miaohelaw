@@ -20,6 +20,8 @@ tags:
   - "toronto-chinese-family-lawyer"
 relatedIntro: "若你还希望从净资产均等（Equalization）、整体财产框架或抚养费推定收入角度补充阅读，可结合下列站内文章。"
 relatedReading:
+  - slug: rrsp-tfsa-in-his-name-contribution-divorce-ontario
+    line: "钱是我赚的，RRSP买在他名下，不能按出资比例拿回。能证明是借款，才当债权另算。"
   - slug: ontario-divorce-property-division
     line: "安省 NFP 与婚房在均等分割中的特殊规则，可与本文「父母资金定性」对照阅读。"
   - slug: net-family-property-ontario

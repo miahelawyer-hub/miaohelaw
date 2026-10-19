@@ -17,6 +17,8 @@ tags:
 pairedArticlePath: "/en/blog/common-law-three-years-ontario-split-property/"
 relatedIntro: "同居和结婚差在哪、父母给的钱算不算、赡养费怎么算，是三笔账："
 relatedReading:
+  - slug: rrsp-tfsa-in-his-name-contribution-divorce-ontario
+    line: "结了婚不按出资比例分。那是没结婚的算法。这篇讲安省同居本来就不平分。"
   - slug: common-law-vs-divorce-ontario
     line: "同居分手和离婚，财产权利本来就不是一回事。"
   - slug: resulting-trust-parental-gifts-ontario
