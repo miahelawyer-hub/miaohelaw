@@ -18,6 +18,8 @@ tags:
 pairedArticlePath: "/blog/will-without-divorce-kids-cannot-get-half-ontario/"
 relatedIntro: "Whether title is in your name, whether you are still married, and whether a will can lock anything in are three ledgers:"
 relatedReading:
+  - slug: equalization-spousal-support-cannot-go-to-kids-ontario
+    line: "Equalization and spousal support cannot go to the kids either. To leave money, use your own share: a trust, beneficiaries, a will."
   - slug: separation-agreement-waiver-still-need-will-ontario
     line: "A separation agreement that waives inheritance still is not a will. You need a separate will."
   - slug: separation-vs-divorce-ontario

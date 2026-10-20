@@ -17,6 +17,8 @@ tags:
 pairedArticlePath: "/blog/separation-agreement-waiver-still-need-will-ontario/"
 relatedIntro: "The separation agreement, the will, and beneficiary designations are three ledgers:"
 relatedReading:
+  - slug: equalization-spousal-support-cannot-go-to-kids-ontario
+    line: "A sentence in the agreement sending money into a trust for the children is empty if the trust documents are not done. The will and beneficiary designations are separate too."
   - slug: said-house-money-yours-wont-sign-agreement-ontario
     line: "What is said orally counts for nothing in court. A separation agreement is a contract — and it still is not a will."
   - slug: same-lawyer-both-sides-separation-agreement-ontario

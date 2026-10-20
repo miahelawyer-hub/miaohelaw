@@ -18,6 +18,8 @@ tags:
 pairedArticlePath: "/blog/marriage-contract-child-parenting-ontario/"
 relatedIntro: "What a contract can lock, what it cannot, and when a signed contract can still be set aside are three different questions:"
 relatedReading:
+  - slug: equalization-spousal-support-cannot-go-to-kids-ontario
+    line: "Property and spousal support can be negotiated — and they are paid to the spouse. They cannot be redirected to the children."
   - href: /en/family-law/domestic-contracts/
     title: Marriage and separation agreements
     line: What prenuptial, during-marriage, separation and cohabitation agreements can cover.

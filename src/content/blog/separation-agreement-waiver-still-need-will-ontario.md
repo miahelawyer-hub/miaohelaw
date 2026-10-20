@@ -17,6 +17,8 @@ tags:
 pairedArticlePath: "/en/blog/separation-agreement-waiver-still-need-will-ontario/"
 relatedIntro: "分居协议、遗嘱、受益人指定，是三笔账："
 relatedReading:
+  - slug: equalization-spousal-support-cannot-go-to-kids-ontario
+    line: "协议里写一句给孩子建信托，信托文件没落地，就是空的。遗嘱、受益人也要单独做。"
   - slug: said-house-money-yours-wont-sign-agreement-ontario
     line: "口头说的到法庭不算数。分居协议是合同，也替代不了遗嘱。"
   - slug: same-lawyer-both-sides-separation-agreement-ontario

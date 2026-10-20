@@ -18,6 +18,8 @@ tags:
 pairedArticlePath: "/en/blog/child-support-waiver-separation-agreement-ontario/"
 relatedIntro: "能不能放弃，和对方不付时怎么追，是两件事："
 relatedReading:
+  - slug: equalization-spousal-support-cannot-go-to-kids-ontario
+    line: "平分的钱和赡养费不能直接给孩子。那是给配偶的。抚养费才是孩子的钱，也不能私下减免。"
   - href: /family-law/support/
     title: 抚养费与赡养费
     line: 子女抚养费和配偶赡养费的区别，以及推定收入。

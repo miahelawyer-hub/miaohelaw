@@ -18,6 +18,8 @@ tags:
 pairedArticlePath: "/blog/child-support-waiver-separation-agreement-ontario/"
 relatedIntro: "Whether you can waive support, and how you collect if the other parent does not pay, are two different files:"
 relatedReading:
+  - slug: equalization-spousal-support-cannot-go-to-kids-ontario
+    line: "Equalization and spousal support cannot go to the kids. Those payments belong to the spouse. Child support is the children's money, and it still cannot be privately waived."
   - href: /en/family-law/support/
     title: Child and spousal support
     line: How the two streams differ, and when income is imputed.

@@ -18,6 +18,8 @@ tags:
 pairedArticlePath: "/en/blog/will-without-divorce-kids-cannot-get-half-ontario/"
 relatedIntro: "名下有没有、离不离婚、遗嘱锁不锁得住，是三笔账："
 relatedReading:
+  - slug: equalization-spousal-support-cannot-go-to-kids-ontario
+    line: "平分的钱和赡养费也不能直接给孩子。想留钱，用你自己那一份：信托、受益人、遗嘱。"
   - slug: separation-agreement-waiver-still-need-will-ontario
     line: "分居协议写了放弃继承，还要另立遗嘱。协议不是遗嘱。"
   - slug: separation-vs-divorce-ontario
