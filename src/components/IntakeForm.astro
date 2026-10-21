@@ -19,24 +19,33 @@ function mailParts(text: string): string[] {
 
 <article class="intake">
 	<header class="intake-head">
-		<p class="intake-kicker">{form.kickerEn} · {form.kickerZh}</p>
+		<p class="intake-kicker">{form.kickerZh}</p>
+		<p class="intake-kicker-en">{form.kickerEn}</p>
 		<h1>{form.titleZh}</h1>
 		<p class="intake-en">{form.titleEn}</p>
-		<p class="intake-firm">H. LAW FIRM 恒. 律师事务所 · 208-7050 Woodbine Ave, Markham, ON L3R 4G8 · 647-930-6688</p>
+		<ul class="intake-firm">
+			<li>H. LAW FIRM 恒. 律师事务所</li>
+			<li>208-7050 Woodbine Ave, Markham, ON L3R 4G8</li>
+			<li><a href="tel:+16479306688">647-930-6688</a></li>
+		</ul>
 	</header>
 
 	<div class="intake-id" role="note">
-		<p>请用英文填写。日期格式：年-月-日。带 * 为必填项。</p>
-		<p>Please complete in English. Dates: YYYY-MM-DD. Required fields are marked with *.</p>
-		<p>
-			两份有效身份证件请另发至
-			<a href={`mailto:${DOCUMENT_EMAIL}`}>{DOCUMENT_EMAIL}</a>
-			（我们接受：护照；PR卡正反面；加拿大驾照正反面）。
-		</p>
-		<p>
-			Please email two pieces of valid ID to {DOCUMENT_EMAIL}
-			(we accept: Passport; PR Card – front and back; Canadian Driver's Licence – front and back).
-		</p>
+		<div class="intake-id-block">
+			<p>请用英文填写。日期格式：年-月-日。带 * 为必填项。</p>
+			<p>Please complete in English. Dates: YYYY-MM-DD. Required fields are marked with *.</p>
+		</div>
+		<div class="intake-id-block">
+			<p>
+				两份有效身份证件请另发至
+				<a href={`mailto:${DOCUMENT_EMAIL}`}>{DOCUMENT_EMAIL}</a>
+				（护照、PR卡正反面、或加拿大驾照正反面均可）。
+			</p>
+			<p>
+				Please email two pieces of valid ID to {DOCUMENT_EMAIL}. Passport, PR card (front and
+				back), or Canadian driver’s licence (front and back).
+			</p>
+		</div>
 	</div>
 
 	{

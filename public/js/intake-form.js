@@ -105,9 +105,9 @@
 	function cellValue(item) {
 		if (item.raw) return item.value;
 		if (!item.value || item.value === BLANK) {
-			return '<span style="color:#888">' + BLANK + '</span>';
+			return '<span style="color:#888888">' + BLANK + '</span>';
 		}
-		return escapeHtml(item.value);
+		return '<strong style="color:#1557c0">' + escapeHtml(item.value) + '</strong>';
 	}
 
 	function pairRows(items) {
@@ -182,7 +182,11 @@
 		var checks = fieldset.querySelectorAll('input[type="checkbox"]');
 		if (!checks.length) return null;
 		var parts = Array.prototype.map.call(checks, function (box) {
-			return (box.checked ? '☑' : '☐') + '&nbsp;' + escapeHtml(optionLabel(box));
+			var mark = box.checked ? '☑' : '☐';
+			var text = mark + '&nbsp;' + escapeHtml(optionLabel(box));
+			return box.checked
+				? '<strong style="color:#1557c0">' + text + '</strong>'
+				: '<span style="color:#888888">' + text + '</span>';
 		});
 		return { label: label, value: parts.join('&nbsp;&nbsp;'), raw: true, wide: true };
 	}
@@ -295,7 +299,9 @@
 		if (emailInput && emailInput.value) payload.append('email', emailInput.value);
 		var bot = form.querySelector('[name="botcheck"]');
 		if (bot && bot.checked) payload.append('botcheck', '1');
-		payload.append('Client intake', buildMessage());
+		var html = buildMessage();
+		payload.append('html', html);
+		payload.append('Client intake', html);
 		return payload;
 	}
 
