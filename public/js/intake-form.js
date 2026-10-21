@@ -8,10 +8,20 @@
 	var subject = form.querySelector('[name="subject"]');
 	var fromName = form.querySelector('[name="from_name"]');
 	var BLANK = '（未填）';
-	var LAB =
-		'width:18%;background:#f3efe6;padding:4px 6px;border:1px solid #cfc6b4;font-size:10px;line-height:1.35;vertical-align:top;font-family:Arial,Helvetica,sans-serif';
-	var VAL =
-		'width:32%;padding:4px 6px;border:1px solid #cfc6b4;font-size:10px;line-height:1.35;vertical-align:top;font-family:Arial,Helvetica,sans-serif';
+	var RESERVED = {
+		access_key: true,
+		apikey: true,
+		attachment: true,
+		botcheck: true,
+		ccemail: true,
+		email: true,
+		from_name: true,
+		html: true,
+		redirect: true,
+		replyto: true,
+		subject: true,
+		webhook: true,
+	};
 
 	function daysInMonth(year, month) {
 		var y = Number(year || '2000');
@@ -49,14 +59,6 @@
 			var missing = !year.value ? year : !month.value ? month : day;
 			missing.setCustomValidity('请选择完整日期。Please select the full date.');
 		}
-	}
-
-	function escapeHtml(value) {
-		return String(value)
-			.replace(/&/g, '&amp;')
-			.replace(/</g, '&lt;')
-			.replace(/>/g, '&gt;')
-			.replace(/"/g, '&quot;');
 	}
 
 	function cleanLabel(text) {
@@ -102,63 +104,18 @@
 		return cleanLabel(input.value);
 	}
 
-	function cellValue(item) {
-		if (item.raw) return item.value;
-		if (!item.value || item.value === BLANK) {
-			return '<span style="color:#888888">' + BLANK + '</span>';
+	function uniqueKey(label, seen) {
+		var key = label || 'Field';
+		if (RESERVED[key.toLowerCase().replace(/\s+/g, '_')]) key = key + ' 填写';
+		if (RESERVED[key.toLowerCase()]) key = key + ' 填写';
+		var base = key;
+		var n = 2;
+		while (seen[key]) {
+			key = base + ' · ' + n;
+			n += 1;
 		}
-		return '<strong style="color:#1557c0">' + escapeHtml(item.value) + '</strong>';
-	}
-
-	function pairRows(items) {
-		var html = '';
-		var i = 0;
-		while (i < items.length) {
-			var a = items[i];
-			if (a.html) {
-				html +=
-					'<tr><td colspan="4" style="padding:6px;border:1px solid #cfc6b4;font-family:Arial,Helvetica,sans-serif">' +
-					a.html +
-					'</td></tr>';
-				i += 1;
-				continue;
-			}
-			var next = items[i + 1];
-			if (a.wide || !next || next.wide || next.html) {
-				html +=
-					'<tr><td style="' +
-					LAB +
-					'">' +
-					escapeHtml(a.label) +
-					'</td><td colspan="3" style="' +
-					VAL +
-					'">' +
-					cellValue(a) +
-					'</td></tr>';
-				i += 1;
-				continue;
-			}
-			html +=
-				'<tr><td style="' +
-				LAB +
-				'">' +
-				escapeHtml(a.label) +
-				'</td><td style="' +
-				VAL +
-				'">' +
-				cellValue(a) +
-				'</td><td style="' +
-				LAB +
-				'">' +
-				escapeHtml(next.label) +
-				'</td><td style="' +
-				VAL +
-				'">' +
-				cellValue(next) +
-				'</td></tr>';
-			i += 2;
-		}
-		return html;
+		seen[key] = true;
+		return key;
 	}
 
 	function readInputField(el) {
@@ -167,7 +124,6 @@
 		return {
 			label: visibleLabel(el, input.name === 'email' ? 'Email 邮箱' : input.name),
 			value: filled(input.value),
-			wide: el.classList.contains('wide') || /address/i.test(input.name),
 		};
 	}
 
@@ -182,112 +138,69 @@
 		var checks = fieldset.querySelectorAll('input[type="checkbox"]');
 		if (!checks.length) return null;
 		var parts = Array.prototype.map.call(checks, function (box) {
-			var mark = box.checked ? '☑' : '☐';
-			var text = mark + '&nbsp;' + escapeHtml(optionLabel(box));
-			return box.checked
-				? '<strong style="color:#1557c0">' + text + '</strong>'
-				: '<span style="color:#888888">' + text + '</span>';
+			return (box.checked ? '☑ ' : '☐ ') + optionLabel(box);
 		});
-		return { label: label, value: parts.join('&nbsp;&nbsp;'), raw: true, wide: true };
+		return { label: label, value: parts.join('\n') };
 	}
 
-	function collectGrid(grid) {
-		var caption = grid.querySelector('.intake-grid-caption');
+	function collectGrid(grid, section, items) {
 		var rows = grid.querySelectorAll('.intake-row');
-		if (!rows.length) return null;
+		if (!rows.length) return;
 		var first = rows[0];
-		var headers = [''];
+		var headers = [];
 		childrenByClass(first, 'intake-field').forEach(function (field) {
 			headers.push(visibleLabel(field, ''));
 		});
-		var choice = childrenByClass(first, 'intake-row-choice')[0];
-		if (choice) headers.push(visibleLabel(choice, ''));
-
-		var th =
-			'background:#ece6d8;padding:3px 5px;border:1px solid #cfc6b4;font-size:9px;text-align:left;font-family:Arial,Helvetica,sans-serif';
-		var td =
-			'padding:3px 5px;border:1px solid #cfc6b4;font-size:9px;vertical-align:top;font-family:Arial,Helvetica,sans-serif';
-		var html = '';
-		if (caption) {
-			html +=
-				'<div style="font-size:10px;font-weight:bold;margin:0 0 4px 0">' +
-				escapeHtml(cleanLabel(caption.textContent)) +
-				'</div>';
-		}
-		html += '<table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse">';
-		html += '<tr>';
-		headers.forEach(function (header) {
-			html += '<th style="' + th + '">' + escapeHtml(header) + '</th>';
-		});
-		html += '</tr>';
+		var choiceHeader = childrenByClass(first, 'intake-row-choice')[0];
+		if (choiceHeader) headers.push(visibleLabel(choiceHeader, ''));
 		Array.prototype.forEach.call(rows, function (row) {
-			html += '<tr>';
 			var legend = firstChildByTag(row, 'LEGEND');
-			html += '<td style="' + td + '">' + escapeHtml(cleanLabel(legend && legend.textContent)) + '</td>';
-			childrenByClass(row, 'intake-field').forEach(function (field) {
+			var rowName = cleanLabel(legend && legend.textContent);
+			childrenByClass(row, 'intake-field').forEach(function (field, index) {
 				var input = field.querySelector('[data-date-value], input[name], textarea[name], select[name]');
-				var value = filled(input && input.value);
-				html += '<td style="' + td + '">' + cellValue({ value: value }) + '</td>';
+				items.push({
+					section: section,
+					label: rowName + ' · ' + (headers[index] || '栏'),
+					value: filled(input && input.value),
+				});
 			});
 			var rowChoice = childrenByClass(row, 'intake-row-choice')[0];
 			if (rowChoice) {
 				var checked = rowChoice.querySelector('input[type="radio"]:checked');
-				html += '<td style="' + td + '">' + cellValue({ value: checked ? checked.value : BLANK }) + '</td>';
+				items.push({
+					section: section,
+					label: rowName + ' · ' + (headers[headers.length - 1] || '选择'),
+					value: checked ? checked.value : BLANK,
+				});
 			}
-			html += '</tr>';
 		});
-		html += '</table>';
-		return { html: html };
 	}
 
-	function collectSection(section) {
-		var heading = section.querySelector('h2');
-		var title = heading ? cleanLabel(heading.textContent) : '';
-		var fields = section.querySelector('.intake-fields');
+	function collectFields() {
 		var items = [];
-		if (fields) {
+		form.querySelectorAll('.intake-section').forEach(function (section) {
+			var heading = section.querySelector('h2');
+			var title = heading ? cleanLabel(heading.textContent) : '';
+			var fields = section.querySelector('.intake-fields');
+			if (!fields) return;
 			Array.prototype.forEach.call(fields.children, function (child) {
 				if (child.classList.contains('intake-note')) return;
 				if (child.classList.contains('intake-grid')) {
-					var grid = collectGrid(child);
-					if (grid) items.push(grid);
+					collectGrid(child, title, items);
 					return;
 				}
 				if (child.classList.contains('intake-choices')) {
 					var choice = formatChoices(child);
-					if (choice) items.push(choice);
+					if (choice) items.push({ section: title, label: choice.label, value: choice.value });
 					return;
 				}
 				if (child.classList.contains('intake-field')) {
 					var item = readInputField(child);
-					if (item) items.push(item);
+					if (item) items.push({ section: title, label: item.label, value: item.value });
 				}
 			});
-		}
-		return (
-			'<table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;margin:0 0 8px 0">' +
-			'<tr><td colspan="4" style="background:#1e3a5f;color:#fff;font-weight:bold;padding:5px 8px;font-size:11px;font-family:Arial,Helvetica,sans-serif">' +
-			escapeHtml(title) +
-			'</td></tr>' +
-			pairRows(items) +
-			'</table>'
-		);
-	}
-
-	function buildMessage() {
-		var formName = '';
-		var formNameInput = form.querySelector('[name="form_name"]');
-		if (formNameInput) formName = formNameInput.value;
-		var parts = [
-			'<div style="font-family:Arial,Helvetica,sans-serif;font-size:10px;color:#111;line-height:1.35">',
-			'<div style="font-size:13px;font-weight:bold;margin:0 0 2px 0">H. LAW FIRM 恒. 律师事务所</div>',
-			'<div style="margin:0 0 8px 0">' + escapeHtml(formName) + '</div>',
-		];
-		form.querySelectorAll('.intake-section').forEach(function (section) {
-			parts.push(collectSection(section));
 		});
-		parts.push('</div>');
-		return parts.join('');
+		return items;
 	}
 
 	function submissionPayload(key) {
@@ -299,9 +212,13 @@
 		if (emailInput && emailInput.value) payload.append('email', emailInput.value);
 		var bot = form.querySelector('[name="botcheck"]');
 		if (bot && bot.checked) payload.append('botcheck', '1');
-		var html = buildMessage();
-		payload.append('html', html);
-		payload.append('Client intake', html);
+		var formNameInput = form.querySelector('[name="form_name"]');
+		if (formNameInput && formNameInput.value) payload.append('表格', formNameInput.value);
+		var seen = { 表格: true };
+		collectFields().forEach(function (item) {
+			var label = item.section ? item.section + ' · ' + item.label : item.label;
+			payload.append(uniqueKey(label, seen), item.value);
+		});
 		return payload;
 	}
 
