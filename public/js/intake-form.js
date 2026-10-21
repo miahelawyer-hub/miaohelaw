@@ -7,7 +7,11 @@
 	var button = form.querySelector('.intake-submit');
 	var subject = form.querySelector('[name="subject"]');
 	var fromName = form.querySelector('[name="from_name"]');
-	var BLANK = '(blank)';
+	var BLANK = '（未填）';
+	var LAB =
+		'width:18%;background:#f3efe6;padding:4px 6px;border:1px solid #cfc6b4;font-size:10px;line-height:1.35;vertical-align:top;font-family:Arial,Helvetica,sans-serif';
+	var VAL =
+		'width:32%;padding:4px 6px;border:1px solid #cfc6b4;font-size:10px;line-height:1.35;vertical-align:top;font-family:Arial,Helvetica,sans-serif';
 
 	function daysInMonth(year, month) {
 		var y = Number(year || '2000');
@@ -47,10 +51,19 @@
 		}
 	}
 
-	function prettyLabel(name) {
-		if (!name) return '';
-		if (name === 'email') return 'Email';
-		return name.replace(/^\S+ \d+ /, '');
+	function escapeHtml(value) {
+		return String(value)
+			.replace(/&/g, '&amp;')
+			.replace(/</g, '&lt;')
+			.replace(/>/g, '&gt;')
+			.replace(/"/g, '&quot;');
+	}
+
+	function cleanLabel(text) {
+		return String(text || '')
+			.replace(/\s+/g, ' ')
+			.replace(/\s*\*\s*$/, '')
+			.trim();
 	}
 
 	function filled(value) {
@@ -58,193 +71,219 @@
 		return text ? text : BLANK;
 	}
 
-	function isNameLabel(label) {
-		return /(full legal name|full name|^name$)/i.test(label);
+	function firstChildByTag(el, tag) {
+		if (!el) return null;
+		tag = tag.toUpperCase();
+		for (var i = 0; i < el.children.length; i++) {
+			if (el.children[i].tagName === tag) return el.children[i];
+		}
+		return null;
 	}
 
-	function isPhoneLabel(label) {
-		return /phone/i.test(label) && !/email/i.test(label);
+	function childrenByClass(el, className) {
+		return Array.prototype.filter.call(el.children, function (child) {
+			return child.classList.contains(className);
+		});
 	}
 
-	function cell(item) {
-		return item.label + ': ' + item.value;
+	function visibleLabel(el, fallback) {
+		if (!el) return cleanLabel(fallback);
+		var labelled = firstChildByTag(el, 'LEGEND') || firstChildByTag(el, 'SPAN');
+		if (labelled) return cleanLabel(labelled.textContent);
+		return cleanLabel(fallback);
 	}
 
-	function layoutItems(items) {
-		var used = {};
-		var partner = {};
-		var shorts = [];
-		items.forEach(function (item, index) {
-			if (item.kind === 'short') shorts.push(index);
-		});
-
-		function pairIndexes(left, right) {
-			partner[left] = right;
-			partner[right] = left;
-			used[left] = true;
-			used[right] = true;
+	function optionLabel(input) {
+		var wrap = input.closest ? input.closest('label') : input.parentNode;
+		if (wrap) {
+			var span = wrap.querySelector('span');
+			if (span) return cleanLabel(span.textContent);
 		}
+		return cleanLabel(input.value);
+	}
 
-		var nameIndex = -1;
-		var phoneIndex = -1;
-		shorts.forEach(function (index) {
-			if (nameIndex < 0 && isNameLabel(items[index].label)) nameIndex = index;
-			if (phoneIndex < 0 && isPhoneLabel(items[index].label)) phoneIndex = index;
-		});
-		if (nameIndex >= 0 && phoneIndex >= 0 && nameIndex !== phoneIndex) {
-			pairIndexes(nameIndex, phoneIndex);
+	function cellValue(item) {
+		if (item.raw) return item.value;
+		if (!item.value || item.value === BLANK) {
+			return '<span style="color:#888">' + BLANK + '</span>';
 		}
+		return escapeHtml(item.value);
+	}
 
-		var leftover = shorts.filter(function (index) {
-			return !used[index];
-		});
-		for (var i = 0; i + 1 < leftover.length; i += 2) {
-			pairIndexes(leftover[i], leftover[i + 1]);
-		}
-
-		var lines = [];
-		var emitted = {};
-		items.forEach(function (item, index) {
-			if (emitted[index]) return;
-			if (item.kind === 'short') {
-				var other = partner[index];
-				if (other != null) {
-					lines.push(cell(item) + '    |    ' + cell(items[other]));
-					emitted[index] = true;
-					emitted[other] = true;
-					return;
-				}
-				lines.push(cell(item));
-				emitted[index] = true;
-				return;
+	function pairRows(items) {
+		var html = '';
+		var i = 0;
+		while (i < items.length) {
+			var a = items[i];
+			if (a.html) {
+				html +=
+					'<tr><td colspan="4" style="padding:6px;border:1px solid #cfc6b4;font-family:Arial,Helvetica,sans-serif">' +
+					a.html +
+					'</td></tr>';
+				i += 1;
+				continue;
 			}
-			lines.push(item.line);
-			emitted[index] = true;
-		});
-		return lines;
+			var next = items[i + 1];
+			if (a.wide || !next || next.wide || next.html) {
+				html +=
+					'<tr><td style="' +
+					LAB +
+					'">' +
+					escapeHtml(a.label) +
+					'</td><td colspan="3" style="' +
+					VAL +
+					'">' +
+					cellValue(a) +
+					'</td></tr>';
+				i += 1;
+				continue;
+			}
+			html +=
+				'<tr><td style="' +
+				LAB +
+				'">' +
+				escapeHtml(a.label) +
+				'</td><td style="' +
+				VAL +
+				'">' +
+				cellValue(a) +
+				'</td><td style="' +
+				LAB +
+				'">' +
+				escapeHtml(next.label) +
+				'</td><td style="' +
+				VAL +
+				'">' +
+				cellValue(next) +
+				'</td></tr>';
+			i += 2;
+		}
+		return html;
 	}
 
 	function readInputField(el) {
 		var input = el.querySelector('[data-date-value], input[name], textarea[name], select[name]');
 		if (!input || !input.name) return null;
-		var label = prettyLabel(input.name);
-		var value = filled(input.value);
-		var wide = el.classList.contains('wide') || /address/i.test(input.name);
-		if (wide) {
-			return { kind: 'line', line: label + ': ' + value };
-		}
-		return { kind: 'short', label: label, value: value };
-	}
-
-	function namedInputs(root) {
-		return Array.prototype.filter.call(root.querySelectorAll('input[name], textarea[name], select[name]'), function (el) {
-			return el.name && el.name !== 'botcheck' && !el.hasAttribute('data-date-part');
-		});
-	}
-
-	function valuesByName(root) {
-		var map = {};
-		namedInputs(root).forEach(function (el) {
-			if (el.type === 'radio') {
-				if (!Object.prototype.hasOwnProperty.call(map, el.name)) map[el.name] = '';
-				if (el.checked) map[el.name] = el.value;
-				return;
-			}
-			if (el.type === 'checkbox') {
-				map[el.name] = el.checked ? el.value : '';
-				return;
-			}
-			map[el.name] = el.value;
-		});
-		return map;
+		return {
+			label: visibleLabel(el, input.name === 'email' ? 'Email 邮箱' : input.name),
+			value: filled(input.value),
+			wide: el.classList.contains('wide') || /address/i.test(input.name),
+		};
 	}
 
 	function formatChoices(fieldset) {
+		var legend = fieldset.querySelector('legend');
+		var label = cleanLabel(legend && legend.textContent);
 		var radios = fieldset.querySelectorAll('input[type="radio"]');
 		if (radios.length) {
-			var name = radios[0].name;
 			var checked = fieldset.querySelector('input[type="radio"]:checked');
-			return prettyLabel(name) + ': ' + (checked ? checked.value : BLANK);
+			return { label: label, value: checked ? checked.value : BLANK };
 		}
 		var checks = fieldset.querySelectorAll('input[type="checkbox"]');
-		if (!checks.length) return '';
-		var group = checks[0].name.split(' — ')[0];
+		if (!checks.length) return null;
 		var parts = Array.prototype.map.call(checks, function (box) {
-			var option = box.name.split(' — ')[1] || box.value;
-			return option + ': ' + (box.checked ? box.value : BLANK);
+			return (box.checked ? '☑' : '☐') + '&nbsp;' + escapeHtml(optionLabel(box));
 		});
-		return prettyLabel(group) + ': ' + parts.join(' | ');
+		return { label: label, value: parts.join('&nbsp;&nbsp;'), raw: true, wide: true };
 	}
 
 	function collectGrid(grid) {
-		var lines = [];
 		var caption = grid.querySelector('.intake-grid-caption');
-		if (caption) lines.push(caption.textContent.replace(/\s+/g, ' ').trim());
-		Array.prototype.forEach.call(grid.querySelectorAll('.intake-row'), function (row) {
-			var legend = row.querySelector('legend');
-			var title = legend ? legend.textContent.replace(/\s+/g, ' ').trim() : '';
-			var values = valuesByName(row);
-			var items = Object.keys(values).map(function (name) {
-				var label = prettyLabel(name);
-				var value = filled(values[name]);
-				if (/address/i.test(label)) {
-					return { kind: 'line', line: label + ': ' + value };
-				}
-				return { kind: 'short', label: label, value: value };
-			});
-			if (title) lines.push(title);
-			lines.push.apply(lines, layoutItems(items));
+		var rows = grid.querySelectorAll('.intake-row');
+		if (!rows.length) return null;
+		var first = rows[0];
+		var headers = [''];
+		childrenByClass(first, 'intake-field').forEach(function (field) {
+			headers.push(visibleLabel(field, ''));
 		});
-		return lines;
+		var choice = childrenByClass(first, 'intake-row-choice')[0];
+		if (choice) headers.push(visibleLabel(choice, ''));
+
+		var th =
+			'background:#ece6d8;padding:3px 5px;border:1px solid #cfc6b4;font-size:9px;text-align:left;font-family:Arial,Helvetica,sans-serif';
+		var td =
+			'padding:3px 5px;border:1px solid #cfc6b4;font-size:9px;vertical-align:top;font-family:Arial,Helvetica,sans-serif';
+		var html = '';
+		if (caption) {
+			html +=
+				'<div style="font-size:10px;font-weight:bold;margin:0 0 4px 0">' +
+				escapeHtml(cleanLabel(caption.textContent)) +
+				'</div>';
+		}
+		html += '<table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse">';
+		html += '<tr>';
+		headers.forEach(function (header) {
+			html += '<th style="' + th + '">' + escapeHtml(header) + '</th>';
+		});
+		html += '</tr>';
+		Array.prototype.forEach.call(rows, function (row) {
+			html += '<tr>';
+			var legend = firstChildByTag(row, 'LEGEND');
+			html += '<td style="' + td + '">' + escapeHtml(cleanLabel(legend && legend.textContent)) + '</td>';
+			childrenByClass(row, 'intake-field').forEach(function (field) {
+				var input = field.querySelector('[data-date-value], input[name], textarea[name], select[name]');
+				var value = filled(input && input.value);
+				html += '<td style="' + td + '">' + cellValue({ value: value }) + '</td>';
+			});
+			var rowChoice = childrenByClass(row, 'intake-row-choice')[0];
+			if (rowChoice) {
+				var checked = rowChoice.querySelector('input[type="radio"]:checked');
+				html += '<td style="' + td + '">' + cellValue({ value: checked ? checked.value : BLANK }) + '</td>';
+			}
+			html += '</tr>';
+		});
+		html += '</table>';
+		return { html: html };
 	}
 
 	function collectSection(section) {
 		var heading = section.querySelector('h2');
-		var lines = ['', '—— ' + (heading ? heading.textContent.replace(/\s+/g, ' ').trim() : '') + ' ——'];
+		var title = heading ? cleanLabel(heading.textContent) : '';
 		var fields = section.querySelector('.intake-fields');
-		if (!fields) return lines;
 		var items = [];
-		Array.prototype.forEach.call(fields.children, function (child) {
-			if (child.classList.contains('intake-note')) return;
-			if (child.classList.contains('intake-grid')) {
-				if (items.length) {
-					lines.push.apply(lines, layoutItems(items));
-					items = [];
+		if (fields) {
+			Array.prototype.forEach.call(fields.children, function (child) {
+				if (child.classList.contains('intake-note')) return;
+				if (child.classList.contains('intake-grid')) {
+					var grid = collectGrid(child);
+					if (grid) items.push(grid);
+					return;
 				}
-				lines.push.apply(lines, collectGrid(child));
-				return;
-			}
-			if (child.classList.contains('intake-choices')) {
-				if (items.length) {
-					lines.push.apply(lines, layoutItems(items));
-					items = [];
+				if (child.classList.contains('intake-choices')) {
+					var choice = formatChoices(child);
+					if (choice) items.push(choice);
+					return;
 				}
-				var choiceLine = formatChoices(child);
-				if (choiceLine) lines.push(choiceLine);
-				return;
-			}
-			if (child.classList.contains('intake-field')) {
-				var item = readInputField(child);
-				if (item) items.push(item);
-			}
-		});
-		if (items.length) lines.push.apply(lines, layoutItems(items));
-		return lines;
+				if (child.classList.contains('intake-field')) {
+					var item = readInputField(child);
+					if (item) items.push(item);
+				}
+			});
+		}
+		return (
+			'<table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;margin:0 0 8px 0">' +
+			'<tr><td colspan="4" style="background:#1e3a5f;color:#fff;font-weight:bold;padding:5px 8px;font-size:11px;font-family:Arial,Helvetica,sans-serif">' +
+			escapeHtml(title) +
+			'</td></tr>' +
+			pairRows(items) +
+			'</table>'
+		);
 	}
 
 	function buildMessage() {
 		var formName = '';
 		var formNameInput = form.querySelector('[name="form_name"]');
 		if (formNameInput) formName = formNameInput.value;
-		var lines = [
-			'H. LAW FIRM 恒. 律师事务所',
-			formName,
-			'Empty answers are recorded as (blank).',
+		var parts = [
+			'<div style="font-family:Arial,Helvetica,sans-serif;font-size:10px;color:#111;line-height:1.35">',
+			'<div style="font-size:13px;font-weight:bold;margin:0 0 2px 0">H. LAW FIRM 恒. 律师事务所</div>',
+			'<div style="margin:0 0 8px 0">' + escapeHtml(formName) + '</div>',
 		];
 		form.querySelectorAll('.intake-section').forEach(function (section) {
-			lines.push.apply(lines, collectSection(section));
+			parts.push(collectSection(section));
 		});
-		return lines.join('\n');
+		parts.push('</div>');
+		return parts.join('');
 	}
 
 	function submissionPayload(key) {
