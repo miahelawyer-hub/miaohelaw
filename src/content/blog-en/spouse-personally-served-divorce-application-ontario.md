@@ -71,7 +71,7 @@ The first is proof. Once the documents have been served, the person who served t
 
 The second reason is conflict. Two people in the middle of separating, and one of them turns up and puts a divorce application into the other's hands — that moment is tense enough on its own, and it does not take much for it to turn into a shouting match or worse. The Rules take the parties themselves out of the serving role so that a case does not start with an incident before it has even begun.
 
-So the problem is not really how the documents were handed to you. The problem is that the person who handed them to you was never allowed to be the one doing it. When the server is the wrong person, nothing about the delivery itself can fix that.
+So the problem is not really how the documents were handed to you. The problem is that the person who handed them to you was never allowed to be the one doing it.
 
 ---
 
@@ -97,9 +97,7 @@ I want to be firm about this part, because it is where people get themselves int
 
 When the applicant realizes the service was done wrong, there are two ways she can deal with it. The simple way is to start over: have someone serve the documents again, properly this time, and the 30 days run from that second service. The other way is to go to court and ask for an order approving the first, irregular service. That is what Rule 6(18) of the Family Law Rules is for. It says that where a document was served by a method the Rules do not allow, the court may still approve the service, as long as the document actually came to the attention of the person it was meant for, or it would have come to their attention if they had not been avoiding it.
 
-Now look at your own situation. The documents are in your hands. You have read what is in them. You have taken them to a lawyer and asked questions about them. Put together, all of that shows the documents did exactly what service is supposed to do — they reached you, and you know about the case. If a court approves the service on that basis, your time to file an Answer may well be counted from the day the documents actually arrived. If you have spent that time assuming the clock never started, you can find yourself out of time. From there, the applicant can ask to have you noted in [default](/en/blog/default-judgment-divorce-ontario/), and the divorce and the property issues can move ahead without your side of the story in front of the court.
-
-So the advice I always give is this. If the service was defective, by all means say so — that argument is there to be made. But at the same time, get your Answer ready inside 30 days counted from the day the documents reached you. Hold that line first. Do not gamble with a deadline.
+Now look at your own situation. The documents are in your hands. You have read what is in them. You have taken them to a lawyer and asked questions about them. Put together, all of that shows the documents did exactly what service is supposed to do — they reached you, and you know about the case. If a court approves the service on that basis, your time to file an Answer may well be counted from the day the documents actually arrived.
 
 ---
 
