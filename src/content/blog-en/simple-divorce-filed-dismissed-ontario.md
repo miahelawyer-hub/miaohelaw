@@ -18,6 +18,8 @@ relatedIntro: "Filing is only the start, stalling at service, and the 365-day cl
 relatedReading:
   - slug: uncontested-divorce-ontario
     line: "How a simple divorce is actually finished. Filing is only the first step; service and the certificate still have to follow."
+  - slug: spouse-personally-served-divorce-application-ontario
+    line: "A spouse shoving the application into your hands is not valid service. Ignoring the papers can still lead to default."
   - slug: ontario-divorce-timeline-2026
     line: "How long each step takes. Stall at service, and everything behind it stops."
   - slug: default-judgment-divorce-ontario

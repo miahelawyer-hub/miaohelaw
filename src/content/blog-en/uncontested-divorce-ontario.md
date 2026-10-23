@@ -35,6 +35,8 @@ relatedReading:
     line: "Apply for the divorce order when you sign the agreement. That order starts a two-year clock; later the court only enforces the agreement."
   - slug: simple-divorce-filed-dismissed-ontario
     line: "File a simple divorce and leave it, and 365 days later the court sends a notice of approaching dismissal. Do nothing for 60 more days, and the case is cancelled."
+  - slug: spouse-personally-served-divorce-application-ontario
+    line: "A spouse shoving the application into your hands is not valid service. Still count 30 days from the day the papers reached you."
 faqStructured:
   - question: "How much does an uncontested divorce cost in Ontario?"
     answer: "Court fees come to roughly $700 in total. As at July 2026 that breaks down as $214 to file the Form 8A application, $10 to the federal Central Registry of Divorce Proceedings, $445 to place the application on the list for hearing, and $25 for the Certificate of Divorce. These fees are set by regulation under the Administration of Justice Act and are revised upward periodically, so confirm current amounts before filing. Legal fees, a process server (typically $100 to $200) and certified translation of foreign marriage documents are separate. Fee waivers are available for applicants receiving Ontario Works or ODSP, or meeting low-income thresholds."

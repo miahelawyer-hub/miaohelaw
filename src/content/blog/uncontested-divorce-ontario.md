@@ -34,6 +34,8 @@ relatedReading:
     line: "签分居协议时把离婚证一起申请。离婚令会启动两年时效，以后法院只能按协议执行。"
   - slug: simple-divorce-filed-dismissed-ontario
     line: "简易离婚交了就不管，立案365天会发即将撤销通知。再过60天没动静，案子会被取消。"
+  - slug: spouse-personally-served-divorce-application-ontario
+    line: "配偶本人把申请书塞到手里，不算合法送达。答辩仍要按收到那天起算。"
 faqStructured:
   - question: "安省无争议离婚的法院规费是多少？"
     answer: "法院规费合计约 700 加元。截至 2026 年 7 月，明细为：提交 Form 8A 离婚申请 214 元、联邦离婚程序中央登记处 10 元、列入聆讯清单 445 元、离婚证书 25 元。这些规费依据《司法行政法》下的法规确定，并非每年调整但会定期上调，立案前应核实当时的实际金额。律师费、专业送达员费用（通常 100 至 200 元）和境外婚姻文件的认证翻译费另计。领取 Ontario Works 或 ODSP、或符合低收入标准的申请人可申请费用豁免，但联邦登记费不可豁免。"

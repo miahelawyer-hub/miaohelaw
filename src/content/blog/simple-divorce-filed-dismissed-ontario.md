@@ -18,6 +18,8 @@ relatedIntro: "申请交了只是开始、卡在送达、365天时钟，是三�
 relatedReading:
   - slug: uncontested-divorce-ontario
     line: "简易离婚怎么一步步走完。交上去只是开始，后面还有送达和离婚证。"
+  - slug: spouse-personally-served-divorce-application-ontario
+    line: "配偶本人把申请书塞到手里，不算合法送达。但装没收到会缺席。"
   - slug: ontario-divorce-timeline-2026
     line: "每一步要多久。卡在送达，后面全停。"
   - slug: default-judgment-divorce-ontario
