@@ -24,6 +24,8 @@ relatedReading:
     line: "Buying another house after separation. The money was already counted on separation day. The new home is not counted twice, but it must be disclosed."
   - slug: matrimonial-home-title-vs-property-division-ontario
     line: "The registered shares were never the same thing as equalization."
+  - slug: parents-money-child-account-living-expenses-divorce-ontario
+    line: "Parents paid for a pre-marriage house through the child's account. Matrimonial-home status and a trust are two different ledgers."
   - slug: net-family-property-ontario
     line: "Net family property locks on the separation date. The formula is here."
   - slug: house-appreciation-after-separation-ontario

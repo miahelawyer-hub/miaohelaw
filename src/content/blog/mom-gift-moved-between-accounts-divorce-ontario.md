@@ -23,6 +23,8 @@ relatedReading:
     line: "对方突然拿出欠亲戚的债，没记录法院可以不认。谁主张谁举证。"
   - slug: resulting-trust-parental-gifts-ontario
     line: "妈妈白给成年子女的钱，推定是代持，不是赠与。"
+  - slug: parents-money-child-account-living-expenses-divorce-ontario
+    line: "钱打进子女自己的卡、还花过生活费。一张卡里混着房款和生活费，也是这个道理。"
   - slug: already-married-marriage-contract-home-down-payment-ontario
     line: "结婚后签协议说婚房归我，还来得及。赠与写进协议更保险。"
   - slug: matrimonial-home-property-division-not-based-on-title

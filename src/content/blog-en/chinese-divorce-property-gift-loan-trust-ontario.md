@@ -38,6 +38,8 @@ relatedReading:
     line: "Already married — it is not too late to write the parents' down payment as a loan."
   - slug: mom-gift-moved-between-accounts-divorce-ontario
     line: "Mom's gift moved between accounts. The more it moves, the weaker the proof."
+  - slug: parents-money-child-account-living-expenses-divorce-ontario
+    line: "Parents' money went through the child's account, and living expenses came out. Amount and speed do not prove it was not a gift."
   - slug: spouse-sudden-debts-share-ontario
     line: "A sudden claim of money owed to parents or a sibling, with no IOU and no transfer, may not be recognized."
 faqStructured:

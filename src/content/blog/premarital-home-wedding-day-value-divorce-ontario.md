@@ -24,6 +24,8 @@ relatedReading:
     line: "分居后再买一套。钱已经在分居日算过，新房不再重算，但要披露。"
   - slug: matrimonial-home-property-division-not-based-on-title
     line: "产权登记比例，本来就不等于离婚时怎么分。"
+  - slug: parents-money-child-account-living-expenses-divorce-ontario
+    line: "婚前父母出钱买的房，钱进了子女自己的卡。婚房身份和代持，是两笔账。"
   - slug: net-family-property-ontario
     line: "净家庭财产锁在分居日。公式本身在这里。"
   - slug: house-appreciation-after-separation-ontario

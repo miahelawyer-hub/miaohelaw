@@ -33,6 +33,8 @@ relatedReading:
     line: "The company is in my name, I've never looked at the books. Registration counts first."
   - slug: mom-gift-moved-between-accounts-divorce-ontario
     line: "Mom's gift moved between accounts. The more it moves, the weaker the proof."
+  - slug: parents-money-child-account-living-expenses-divorce-ontario
+    line: "Parents' money went through the child's account, and living expenses came out. Amount and speed do not prove it was not a gift."
   - slug: divorced-china-remarried-property-from-which-date-ontario
     line: "A $2 transfer is a name change, not a sale. Who paid is the resulting-trust road."
   - slug: married-under-five-years-matrimonial-home-unfair-ontario

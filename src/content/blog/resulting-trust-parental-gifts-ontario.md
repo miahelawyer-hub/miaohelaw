@@ -33,6 +33,8 @@ relatedReading:
     line: "公司开在我名下，账我从没看过。写在谁名下，离婚先算谁的。"
   - slug: mom-gift-moved-between-accounts-divorce-ontario
     line: "妈妈给的钱在几个账户之间转来转去，转得越多越说不清。"
+  - slug: parents-money-child-account-living-expenses-divorce-ontario
+    line: "钱打进子女自己的卡、还花过生活费。钱数够、到账快，证明不了这不是赠与。"
   - slug: divorced-china-remarried-property-from-which-date-ontario
     line: "两块钱过户是改名字，不是卖。钱是谁出的，走信托那条路。"
   - slug: married-under-five-years-matrimonial-home-unfair-ontario

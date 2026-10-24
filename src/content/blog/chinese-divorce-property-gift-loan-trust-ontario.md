@@ -38,6 +38,8 @@ relatedReading:
     line: "已经结婚了，签协议把父母的首付写成借款，还来得及。"
   - slug: mom-gift-moved-between-accounts-divorce-ontario
     line: "妈妈给的钱在几个账户之间转来转去，转得越多越说不清。"
+  - slug: parents-money-child-account-living-expenses-divorce-ontario
+    line: "钱打进子女自己的卡、还花过生活费。钱数够、到账快，证明不了这不是赠与。"
   - slug: spouse-sudden-debts-share-ontario
     line: "离婚时突然说欠父母、欠妹妹，没借条没转账，法院可以不认。"
 faqStructured:
