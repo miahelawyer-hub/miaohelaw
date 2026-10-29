@@ -39,6 +39,8 @@ relatedReading:
     line: "Bought in the company's name does not take it off the table. If your spouse owns the company, it still counts."
   - slug: spouse-sudden-debts-share-ontario
     line: "A company you own together, you rise and fall together. You divide the net value after the loss."
+  - slug: cash-taken-home-safe-separation-ontario
+    line: "Cash at home with no records cannot be recovered. Transfers on the company books that left records can."
   - href: /en/family-law/property-division/
     title: Property division
     line: "Equalization covers what is in a spouse's name. Trust covers who really owns it."

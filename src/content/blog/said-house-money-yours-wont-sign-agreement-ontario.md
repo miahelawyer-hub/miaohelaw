@@ -37,6 +37,8 @@ relatedReading:
     line: "签了对了才有效。签错了，对方一挑战就悬。"
   - slug: ontario-divorce-property-division
     line: "打官司走财产平分，按公式算，没有商量的余地。"
+  - slug: cash-taken-home-safe-separation-ontario
+    line: "一句话不是证据。分居那天拿走家里现金，没照片没流水，要不回来。"
   - slug: same-roof-wedding-separation-date-ontario
     line: "同屋檐下分了房，法官看的是行为，不是你嘴上怎么说。"
   - slug: buy-house-after-separation-still-divide-ontario

@@ -37,6 +37,8 @@ relatedReading:
     line: "Signed right, it holds. Signed wrong, one challenge and it is left hanging."
   - slug: ontario-divorce-property-division
     line: "Going to court means equalization — a statutory formula, no room to negotiate."
+  - slug: cash-taken-home-safe-separation-ontario
+    line: "Your word alone is not evidence. Cash taken from the home safe on separation day, with no photos and no paper trail, cannot be recovered."
   - slug: same-roof-wedding-separation-date-ontario
     line: "Same roof, separate rooms. The judge looks at conduct, not what you said."
   - slug: house-underwater-divorce-hold-until-recovers-ontario

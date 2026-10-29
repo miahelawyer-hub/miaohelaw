@@ -27,6 +27,8 @@ relatedReading:
     line: "Property division has a deadline. Wait too long, and the seven-year bank records are gone too."
   - slug: dissipation-of-assets
     line: "Money moved to personal accounts labeled supplier payments. Dissipation needs the statements to line up."
+  - slug: cash-taken-home-safe-separation-ontario
+    line: "Cash at home with no statements cannot be recovered. This piece is the books in your hands. That one is cash with none."
   - slug: imputed-income-child-support-ontario
     line: "The tax return says no income. Support is not calculated on whatever is reported. Courts can impute."
   - slug: stalled-family-law-case-ontario

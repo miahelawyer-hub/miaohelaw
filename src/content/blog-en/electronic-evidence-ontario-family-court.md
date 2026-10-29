@@ -32,6 +32,8 @@ relatedReading:
     line: Bank statements and tax records a spouse kept while doing the books can be used if lawfully obtained. Banks keep records only seven years.
   - slug: same-roof-wedding-separation-date-ontario
     line: "A separation-date fight is a timestamp fight. Texts, tax filings, and a draft that doesn't match the calendar will not hold."
+  - slug: cash-taken-home-safe-separation-ontario
+    line: "Cash taken from the home safe on separation day, with no photos and no paper trail, cannot be recovered. Photos and video are evidence too."
 faqStructured:
   - question: "Can WeChat messages be used as evidence in Ontario family court?"
     answer: "Yes, in principle. WeChat chat records are written electronic records and are admissible in Ontario family proceedings. They are commonly used to establish the separation date, acknowledge debts or gifts, characterize parental contributions, trace cross-border transfers, and prove income for support purposes. However, screenshots alone are not enough — you must be able to authenticate them (prove they are genuine and unaltered), and they typically need to be introduced through witness testimony."

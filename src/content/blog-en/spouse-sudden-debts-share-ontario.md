@@ -35,6 +35,8 @@ relatedReading:
     line: "The numbers lock on the separation date. New borrowing after that belongs to your spouse alone."
   - slug: electronic-evidence-ontario-family-court
     line: "Messages where your spouse acknowledged a debt can be evidence."
+  - slug: cash-taken-home-safe-separation-ontario
+    line: "A relative's claim with no records may not count. Cash with no records is the same problem."
   - slug: house-in-his-name-designate-matrimonial-home-ontario
     line: "The house is only in his name — designate it. Once registered, he cannot secretly mortgage it."
   - href: /en/family-law/property-division/

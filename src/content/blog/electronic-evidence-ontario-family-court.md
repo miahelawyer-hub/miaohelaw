@@ -29,6 +29,8 @@ relatedReading:
     line: 配偶给公司做账拿到的流水、税表，来源正当就能用。银行只留七年。
   - slug: same-roof-wedding-separation-date-ontario
     line: "分居日争的就是时间戳。短信、报税、草稿对不上日历，法官不认。"
+  - slug: cash-taken-home-safe-separation-ontario
+    line: "分居那天拿走家里现金，没照片没流水，要不回来。照片和录像，也是证据。"
 faqStructured:
   - question: "微信记录可以作为安省家庭法庭的证据吗？"
     answer: "原则上可以。微信聊天记录属于书面形式的电子记录（written electronic records），在离婚诉讼中常用于证明分居日、债务、资产、赠与、跨境转账与对方收入水平。但仅有截图不够，必须能证明截图的真实性、未经篡改，且通常需要证人在庭上引入。"

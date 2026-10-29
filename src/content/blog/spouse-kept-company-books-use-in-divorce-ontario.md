@@ -27,6 +27,8 @@ relatedReading:
     line: "分财产有 deadline。拖久了，银行七年记录也没了。"
   - slug: dissipation-of-assets
     line: "钱转到个人账户、说是付货款。挥霍和转移，要流水才能对上。"
+  - slug: cash-taken-home-safe-separation-ontario
+    line: "家里现金没流水，要不回来。这篇讲手里有账。那篇讲家里没有账。"
   - slug: imputed-income-child-support-ontario
     line: "报税说没收入，抚养费不按报税算。法院可以推定收入。"
   - slug: stalled-family-law-case-ontario
