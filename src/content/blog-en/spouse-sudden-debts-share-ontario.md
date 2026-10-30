@@ -37,6 +37,8 @@ relatedReading:
     line: "Messages where your spouse acknowledged a debt can be evidence."
   - slug: cash-taken-home-safe-separation-ontario
     line: "A relative's claim with no records may not count. Cash with no records is the same problem."
+  - slug: sale-proceeds-transferred-urgent-motion-freeze-ontario
+    line: "A debt to a friend is decided by the evidence. Sale proceeds already transferred away still have to be equalized, even if they cannot be frozen."
   - slug: house-in-his-name-designate-matrimonial-home-ontario
     line: "The house is only in his name — designate it. Once registered, he cannot secretly mortgage it."
   - href: /en/family-law/property-division/

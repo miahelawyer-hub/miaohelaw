@@ -26,6 +26,8 @@ relatedReading:
     line: "公司写在谁名下，离婚先算谁的。联名公司账上的转账，有记录就能追。"
   - slug: dissipation-of-assets
     line: "钱被拿走、被花掉，要证据才能追。没有记录的现金，追不回。"
+  - slug: sale-proceeds-transferred-urgent-motion-freeze-ontario
+    line: "卖房款已经转走了，紧急动议也冻不了。这篇讲家里现金。那篇讲账户里的钱。"
   - slug: spouse-sudden-debts-share-ontario
     line: "没记录的亲戚债，法院可以不认。没记录的现金，同样认不了。"
   - slug: said-house-money-yours-wont-sign-agreement-ontario

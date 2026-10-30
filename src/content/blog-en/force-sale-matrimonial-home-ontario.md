@@ -33,6 +33,8 @@ relatedReading:
     line: "Whether a post-separation increase is shared, and whether filing now means an automatic sale, are different questions."
   - slug: buy-house-after-separation-still-divide-ontario
     line: "A house bought after separation with money already on the books. It gets sold if equalization cannot be paid."
+  - slug: sale-proceeds-transferred-urgent-motion-freeze-ontario
+    line: "Once the house is sold and the proceeds are gone, an urgent motion cannot freeze them. This piece is before the sale."
   - slug: premarital-home-wedding-day-value-divorce-ontario
     line: "Still living in a pre-marriage home — no wedding-day deduction. A later purchase can also be ordered sold if equalization cannot be paid."
   - slug: house-underwater-divorce-hold-until-recovers-ontario

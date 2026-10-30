@@ -37,6 +37,8 @@ relatedReading:
     line: "微信里承认过债务的聊天记录，可以当证据。"
   - slug: cash-taken-home-safe-separation-ontario
     line: "没记录的亲戚债，法院可以不认。没记录的现金，同样认不了。"
+  - slug: sale-proceeds-transferred-urgent-motion-freeze-ontario
+    line: "说拿去还朋友的债，证据说了算。卖房款转走了，冻不了，也还是要分。"
   - slug: house-in-his-name-designate-matrimonial-home-ontario
     line: "房子写在他名下，能注册成婚房。登记了，他偷偷贷不出来。"
   - href: /family-law/property-division/

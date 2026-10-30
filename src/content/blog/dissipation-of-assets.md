@@ -26,6 +26,8 @@ relatedReading:
     line: "离婚时突然拿出一堆债，不会自动一人一半。没记录的亲戚债，法院可以不认。"
   - slug: cash-taken-home-safe-separation-ontario
     line: "分居那天拿走家里现金，没照片没流水，要不回来。有记录的转账才追得回。"
+  - slug: sale-proceeds-transferred-urgent-motion-freeze-ontario
+    line: "卖房款已经转走了，紧急动议也冻不了。转到别人名下，命令管不了已经发生的转账。"
 ---
 
 **作者：Miao (Mia) He 何淼律师 | H. LAW FIRM 恒. 律师事务所**

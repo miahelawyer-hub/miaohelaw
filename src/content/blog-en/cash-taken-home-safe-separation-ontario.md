@@ -26,6 +26,8 @@ relatedReading:
     line: "Whose name the company is in counts first. Transfers on a jointly owned company's books left records, and those can be traced."
   - slug: dissipation-of-assets
     line: "Money taken or spent has to be proved before it can be recovered. Cash with no records cannot."
+  - slug: sale-proceeds-transferred-urgent-motion-freeze-ontario
+    line: "Sale proceeds already transferred away cannot be frozen by an urgent motion. This piece is cash at home. That one is money that left the account."
   - slug: spouse-sudden-debts-share-ontario
     line: "A relative's claim with no records may not count. Cash with no records is the same problem."
   - slug: said-house-money-yours-wont-sign-agreement-ontario

@@ -26,6 +26,8 @@ relatedReading:
     line: "They stall on disclosure, then slip and share the files — yes, you can use them. Save them now."
   - slug: simple-divorce-filed-dismissed-ontario
     line: "A simple divorce left sitting is not a deadlock. It is a 365-day clock. When it runs out, the file is dismissed."
+  - slug: sale-proceeds-transferred-urgent-motion-freeze-ontario
+    line: "Sale proceeds already transferred away cannot be frozen by an urgent motion. Urgency is the court call, not yours."
 faqStructured:
   - question: "My family law case has not moved in two years. Is that normal?"
     answer: "Long delays are common in Ontario family court, but two years of no movement at all usually signals something structural rather than ordinary backlog. The three most frequent causes are: the parties are negotiating through counsel on positions neither will abandon, so the same disagreement is simply repeated at greater cost; nobody has re-examined whether the problem being negotiated is the one that can actually be solved right now; or the file has drifted procedurally because no one is actively pushing it. A useful test is whether the same argument has appeared in three different letters. If it has, the file is not negotiating, it is repeating."

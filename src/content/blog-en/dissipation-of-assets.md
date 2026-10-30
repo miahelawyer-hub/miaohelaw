@@ -22,6 +22,8 @@ relatedReading:
     line: "A pile of debts produced at divorce is not split down the middle. A relative's claim with no records may not count."
   - slug: cash-taken-home-safe-separation-ontario
     line: "Cash taken from the home safe on separation day, with no photos and no paper trail, cannot be recovered. Only transfers that left records can."
+  - slug: sale-proceeds-transferred-urgent-motion-freeze-ontario
+    line: "Sale proceeds already transferred away cannot be frozen by an urgent motion. An order cannot undo a transfer that has already happened."
 ---
 
 Asset dissipation — the deliberate wasting, hiding, or transferring of marital assets to reduce what a spouse must pay on equalization — is a serious issue in Ontario family law. Courts have tools to address it, but early action is essential.
