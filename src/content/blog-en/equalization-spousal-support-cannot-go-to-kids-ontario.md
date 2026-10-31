@@ -21,6 +21,8 @@ relatedReading:
     line: "How net family property is counted. The equalization payment goes to the spouse."
   - slug: child-support-waiver-separation-agreement-ontario
     line: "Child support is the children's money. Parents cannot privately agree to reduce it. Equalization and spousal support cannot be moved over."
+  - slug: urgent-motion-equalization-mid-case-ontario
+    line: "An urgent motion cannot collect equalization mid-case. The children's living costs run on support, which can be temporary."
   - slug: will-without-divorce-kids-cannot-get-half-ontario
     line: "To leave money to the children, you can only dispose of what is yours. A will cannot lock in her share."
   - slug: separation-agreement-waiver-still-need-will-ontario

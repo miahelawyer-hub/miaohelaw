@@ -21,6 +21,8 @@ relatedReading:
     line: "净家庭财产怎么算。平分那笔钱，给的是配偶。"
   - slug: child-support-waiver-separation-agreement-ontario
     line: "抚养费才是孩子的钱，父母不能私下协议减免。平分和赡养费挪不过去。"
+  - slug: urgent-motion-equalization-mid-case-ontario
+    line: "紧急动议要平分款，中途拿不到。孩子的生活费走抚养费，临时可以处理。"
   - slug: will-without-divorce-kids-cannot-get-half-ontario
     line: "想给孩子留钱，只能处分自己名下的。对方那一份，遗嘱也锁不住。"
   - slug: separation-agreement-waiver-still-need-will-ontario

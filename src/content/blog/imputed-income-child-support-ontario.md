@@ -19,6 +19,8 @@ relatedReading:
     line: "公司开在我名下，账我从没看过。报税三千，法院不只看报税。"
   - slug: common-law-house-share-transfer-buyout-child-support-ontario
     line: "同居分开，房子份额过户过来，也不算买断抚养费。现金收入也要算进抚养费。"
+  - slug: urgent-motion-equalization-mid-case-ontario
+    line: "抚养费断了、养不起孩子，可以紧急。平分款中途要不来。"
 ---
 
 这是很多客户在分居之后会遇到的情况：

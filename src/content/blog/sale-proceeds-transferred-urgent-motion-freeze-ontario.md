@@ -31,6 +31,8 @@ relatedReading:
     line: "婚房怎么分，不看出资证上写谁。卖房款转走了，还是要算进去。"
   - slug: net-family-property-ontario
     line: "财产平分要到诉讼最后才算、才给。中途塞进紧急动议，要不来。"
+  - slug: urgent-motion-equalization-mid-case-ontario
+    line: "紧急动议要平分款，中途拿不到。这篇讲冻不了。那篇讲平分款本身就不是紧急事项。"
   - href: /family-law/divorce-litigation/
     title: 离婚诉讼
     line: "冻结的命令只能在诉讼过程中申请。起诉前封账户，加拿大没有这一套。"

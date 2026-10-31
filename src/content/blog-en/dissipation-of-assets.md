@@ -24,6 +24,8 @@ relatedReading:
     line: "Cash taken from the home safe on separation day, with no photos and no paper trail, cannot be recovered. Only transfers that left records can."
   - slug: sale-proceeds-transferred-urgent-motion-freeze-ontario
     line: "Sale proceeds already transferred away cannot be frozen by an urgent motion. An order cannot undo a transfer that has already happened."
+  - slug: urgent-motion-equalization-mid-case-ontario
+    line: "Property being moved right now can be urgent. Equalization itself cannot be collected mid-case."
 ---
 
 Asset dissipation — the deliberate wasting, hiding, or transferring of marital assets to reduce what a spouse must pay on equalization — is a serious issue in Ontario family law. Courts have tools to address it, but early action is essential.

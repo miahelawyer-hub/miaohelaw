@@ -31,6 +31,8 @@ relatedReading:
     line: "How the matrimonial home is divided does not turn on whose name is on title. Sale proceeds transferred away still go into the calculation."
   - slug: net-family-property-ontario
     line: "Equalization is calculated and paid at the end of a case. Putting it into an urgent motion goes nowhere."
+  - slug: urgent-motion-equalization-mid-case-ontario
+    line: "An urgent motion cannot collect equalization mid-case. This piece is the freeze. That one is why equalization itself is not urgent."
   - href: /en/family-law/divorce-litigation/
     title: Divorce litigation
     line: "A freezing order can only be sought within an ongoing case. Canada has no pre-litigation freeze."
