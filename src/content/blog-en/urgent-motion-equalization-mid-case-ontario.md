@@ -32,6 +32,8 @@ relatedReading:
     line: "Equalization and spousal support are paid to the spouse, not the children. The children's account runs on child support."
   - slug: cash-taken-home-safe-separation-ontario
     line: "Cash taken from a home safe with no records cannot be recovered. This piece is equalization that cannot be collected mid-case either."
+  - slug: child-taken-from-school-switched-schools-ontario
+    line: "A parent who takes the child from school and switches schools does not win by going first. The court restores the original school."
   - href: /en/family-law/divorce-litigation/
     title: Divorce litigation
     line: "Urgent matters in their own motion; the final accounting at the end. Bundle them, and the whole motion is dismissed."

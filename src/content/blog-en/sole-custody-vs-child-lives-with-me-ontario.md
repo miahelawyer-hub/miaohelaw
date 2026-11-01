@@ -31,6 +31,8 @@ relatedReading:
     line: "Wanting to immigrate with a toddler does not get you sole decision-making. Shared care means joint decisions."
   - slug: same-lawyer-both-sides-separation-agreement-ontario
     line: "Writing the agreement down still means one lawyer each."
+  - slug: child-taken-from-school-switched-schools-ontario
+    line: "Who the child lived with and which school they attended is the status quo. Taking the child from school does not create a new one."
   - href: /en/family-law/child-custody/
     title: Child custody
     line: "Decision-making, parenting time and relocation all start from the child's best interests."

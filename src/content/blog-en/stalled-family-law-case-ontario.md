@@ -30,6 +30,8 @@ relatedReading:
     line: "Sale proceeds already transferred away cannot be frozen by an urgent motion. Urgency is the court call, not yours."
   - slug: urgent-motion-equalization-mid-case-ontario
     line: "An urgent motion cannot collect equalization mid-case. What can be urgent is the children, if you cannot support them."
+  - slug: child-taken-from-school-switched-schools-ontario
+    line: "The longer you wait, the less urgent it looks. A school pickup is the kind of motion that cannot wait."
 faqStructured:
   - question: "My family law case has not moved in two years. Is that normal?"
     answer: "Long delays are common in Ontario family court, but two years of no movement at all usually signals something structural rather than ordinary backlog. The three most frequent causes are: the parties are negotiating through counsel on positions neither will abandon, so the same disagreement is simply repeated at greater cost; nobody has re-examined whether the problem being negotiated is the one that can actually be solved right now; or the file has drifted procedurally because no one is actively pushing it. A useful test is whether the same argument has appeared in three different letters. If it has, the file is not negotiating, it is repeating."

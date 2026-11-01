@@ -31,6 +31,8 @@ relatedReading:
     line: "想带两岁的孩子移民，并不能因此要到单独抚养权。双方都在带，法院给的是共同决策。"
   - slug: same-lawyer-both-sides-separation-agreement-ontario
     line: "协议写下来，也不能两个人共用一个律师。"
+  - slug: child-taken-from-school-switched-schools-ontario
+    line: "孩子原来跟谁、上哪所学校，才是现状。从学校领走转学，法院会先把现状拉回来。"
   - href: /family-law/child-custody/
     title: 子女监护
     line: "决策责任、育儿时间与搬迁，都从子女最佳利益出发。"

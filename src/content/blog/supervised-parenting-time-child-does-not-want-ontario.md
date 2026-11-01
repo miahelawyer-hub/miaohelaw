@@ -26,6 +26,8 @@ relatedReading:
     line: "孩子已经成年，通常不再争探视时间表。"
   - slug: ontario-divorce-five-myths
     line: "对方不付抚养费，不能自己切断见面。"
+  - slug: child-taken-from-school-switched-schools-ontario
+    line: "孩子回来以后，对方照样有育儿时间。领走过，不等于以后不能见。"
 faqStructured:
   - question: "孩子不想单独见对方，能要求监督探视吗？"
     answer: "可以申请，但不是你一说，法院就自动给。这是两笔账。一笔是谁照顾、怎么见，法院只看孩子最大利益。一笔是要不要找第三人在场。孩子不愿意，是个参考因素，不是说了就算。"

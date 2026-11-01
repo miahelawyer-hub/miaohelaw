@@ -32,6 +32,8 @@ relatedReading:
     line: "平分的钱和赡养费给的是配偶，不是孩子。孩子的账，走抚养费。"
   - slug: cash-taken-home-safe-separation-ontario
     line: "家里现金没证据，要不回来。这篇讲平分款中途也要不来。"
+  - slug: child-taken-from-school-switched-schools-ontario
+    line: "对方从学校把孩子领走转学、不让见，法院会让孩子回原来的学校。谁先领走不等于谁赢。"
   - href: /family-law/divorce-litigation/
     title: 离婚诉讼
     line: "紧急的单独提，不紧急的等最后算总账。捆在一起，整份动议一起被驳回。"

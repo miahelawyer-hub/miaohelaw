@@ -24,6 +24,8 @@ relatedReading:
     line: 想要唯一抚养权，多半只是孩子跟你住。两件事，别写错协议。
   - slug: immigrate-with-toddler-sole-decision-making-ontario
     line: "想带两岁的孩子移民，并不能因此要到单独抚养权。双方都在带，法院给的是共同决策。"
+  - slug: child-taken-from-school-switched-schools-ontario
+    line: "从学校领走转学、不让见，紧急动议先让孩子回来。不是最后把孩子判给谁。"
 ---
 
 子女监护权争议是家庭法案件中情绪最激烈、影响最深远的一类。很多父母在这个过程中因为不了解Ontario法律的判断逻辑，做出了适得其反的决定。

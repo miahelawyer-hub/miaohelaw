@@ -20,6 +20,8 @@ relatedReading:
     line: Wanting sole custody usually just means the kids live with you. Two different things — don't write the agreement wrong.
   - slug: immigrate-with-toddler-sole-decision-making-ontario
     line: "Wanting to immigrate with a toddler does not get you sole decision-making. Shared care means joint decisions."
+  - slug: child-taken-from-school-switched-schools-ontario
+    line: "An urgent motion after a school pickup restores the original life. It does not award the child to anyone."
 ---
 
 The language of child custody in Ontario has changed significantly in recent years. Understanding the current framework is essential for any parent navigating a separation or divorce.

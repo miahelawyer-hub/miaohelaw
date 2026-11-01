@@ -26,6 +26,8 @@ relatedReading:
     line: "An adult child is not usually on a parenting timetable."
   - slug: ontario-divorce-five-myths
     line: "Unpaid child support is not a reason to cut parenting time yourself."
+  - slug: child-taken-from-school-switched-schools-ontario
+    line: "Returning the child does not cut off the other parent. Parenting time is decided later."
 faqStructured:
   - question: "My child doesn't want to see the other parent alone — can I ask for supervised parenting time?"
     answer: "Yes, you can ask. But it's not automatic just because you ask. Two separate issues here. One is who cares for the child and how visits work — the court only looks at the child's best interests. The other is whether someone else needs to be there. The child not wanting to go alone is a factor, not the deciding vote."
