@@ -44,6 +44,8 @@ relatedReading:
     line: "Hold an underwater house after divorce. Applying for the divorce order with the agreement can start the two-year clock first."
   - slug: china-property-ontario-divorce
     line: Whether property in China enters NFP is a different question from whether you are still in time.
+  - slug: equalization-limitation-joint-title-sold-house-ontario
+    line: "A house already sold is lost with equalization. A house still in both names is title and stays half and half."
   - href: /en/family-law/cross-border-assets/
     title: Cross-border assets
     line: If foreign property was never included, start with the dates and the disclosure.

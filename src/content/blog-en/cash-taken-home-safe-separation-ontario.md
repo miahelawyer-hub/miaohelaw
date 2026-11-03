@@ -34,6 +34,8 @@ relatedReading:
     line: "An oral promise counts for nothing in court. A sentence is not evidence that the cash existed either."
   - slug: matrimonial-home-title-vs-property-division-ontario
     line: "Jointly owned property is still there. This piece is cash already gone, with no evidence behind it."
+  - slug: equalization-limitation-joint-title-sold-house-ontario
+    line: "A house still in both names is title, and the equalization deadline does not touch it. Cash with no records cannot be recovered either."
   - href: /en/family-law/divorce-litigation/
     title: Divorce litigation
     line: "Litigation turns on evidence. Without proof, the court has no basis to rule."

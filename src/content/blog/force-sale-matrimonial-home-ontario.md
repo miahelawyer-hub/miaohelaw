@@ -41,6 +41,8 @@ relatedReading:
     line: "房贷断了，想拿家庭官司拖住银行卖房——拖不住。"
   - slug: "in-laws-name-house-lived-decade-divorce-ontario"
     line: "房子在公婆名下，住了十几年。先证明你有份，再谈卖不卖。"
+  - slug: equalization-limitation-joint-title-sold-house-ontario
+    line: "均等化过了时效，联名房子仍是一人一半。申请卖掉，不看均等化的期限。"
 faqStructured:
   - question: "配偶不肯搬出去，我可以怎么做？"
     answer: "提出出售动议。安省法院命令出售婚姻住宅时，可以一并作出使该出售得以执行的各项命令，常见的包括：责令占用一方在指定日期前迁出、配合看房及经纪与估价师进入、保持房屋适于展示的状态、签署挂牌文件与成交文件。如果一方拒不配合，实务上法院会作出的命令是把出售的主导权单独交给一方（sole carriage of the sale）：由该方单独指示经纪、接受报价、签署挂牌与成交文件，无需对方签字。拒绝搬走本身不构成对抗出售的理由，它只是出售命令本身要处理的一个问题。"

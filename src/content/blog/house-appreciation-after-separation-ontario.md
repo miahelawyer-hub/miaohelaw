@@ -31,6 +31,8 @@ relatedReading:
     line: 现在起诉，法院会不会命令卖房——不是一律卖。
   - slug: equalization-limitation-chinese-lawyer-ontario
     line: 先等房价回来，第 7(3) 条的钟仍在走。
+  - slug: equalization-limitation-joint-title-sold-house-ontario
+    line: "均等化过了时效，卖掉的一般就不能再算。还在两人名下的，仍是产权一人一半。"
   - slug: after-divorce-ex-still-in-my-house-ontario
     line: 已经离完、对方还住着，是居住权问题，不是这篇的升值账。
   - slug: resulting-trust-parental-gifts-ontario

@@ -45,6 +45,8 @@ relatedReading:
     line: "房子跌破贷款先不卖、等升值再分。签协议时一起申请离婚证，两年时效可能先到。"
   - slug: china-property-ontario-divorce
     line: 中国房产进不进 NFP，和均等化时效是两个问题。
+  - slug: equalization-limitation-joint-title-sold-house-ontario
+    line: "卖掉的走均等化，过期一般就不能再算。还在两人名下的房子是产权，仍是一人一半。"
   - href: /family-law/cross-border-assets/
     title: 跨境资产分割
     line: 境外财产从未纳入计算时，先把日期和披露做齐。

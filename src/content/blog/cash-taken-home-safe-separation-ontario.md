@@ -34,6 +34,8 @@ relatedReading:
     line: "口头说的，到法庭等于没说。一句话也不是现金存在的证据。"
   - slug: matrimonial-home-property-division-not-based-on-title
     line: "联名的房产还在。这篇讲现金已经拿走、又没证据。"
+  - slug: equalization-limitation-joint-title-sold-house-ontario
+    line: "联名还在名下的房子是产权，不受均等化时效影响。没证据的现金，过了时效也要不回来。"
   - href: /family-law/divorce-litigation/
     title: 离婚诉讼
     line: "打官司看证据。证明不了，法院没有办法处理。"

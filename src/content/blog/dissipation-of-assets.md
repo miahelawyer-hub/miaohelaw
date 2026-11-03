@@ -30,6 +30,8 @@ relatedReading:
     line: "卖房款已经转走了，紧急动议也冻不了。转到别人名下，命令管不了已经发生的转账。"
   - slug: urgent-motion-equalization-mid-case-ontario
     line: "正在转钱才可能紧急。平分款中途要不来，最后算总账。"
+  - slug: equalization-limitation-joint-title-sold-house-ontario
+    line: "时效之内，花掉的卖房款仍计入净财产。过了时效，法院一般就不管了。"
 ---
 
 **作者：Miao (Mia) He 何淼律师 | H. LAW FIRM 恒. 律师事务所**

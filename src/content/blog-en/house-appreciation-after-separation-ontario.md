@@ -31,6 +31,8 @@ relatedReading:
     line: Starting a claim does not mean the court will automatically order a sale.
   - slug: equalization-limitation-chinese-lawyer-ontario
     line: Waiting for the market does not stop the s. 7(3) clocks.
+  - slug: equalization-limitation-joint-title-sold-house-ontario
+    line: "After the equalization deadline, a sold house is generally gone. A house still in both names stays half and half as title."
   - slug: after-divorce-ex-still-in-my-house-ontario
     line: After a recognized divorce, occupation is a possessory question, not this appreciation ledger.
   - slug: resulting-trust-parental-gifts-ontario
