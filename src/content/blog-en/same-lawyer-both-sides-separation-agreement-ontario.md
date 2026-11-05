@@ -42,6 +42,8 @@ relatedReading:
     line: "The house sold and the money split — an AI-written agreement still is not closing the case."
   - slug: pressured-into-signing-away-property-ontario
     line: "The family's lawyer drafted it, you had no counsel. One lawyer cannot represent both spouses — it will not hold."
+  - slug: only-i-disclosed-separation-agreement-ontario
+    line: "If only you disclosed, he cannot use no disclosure to overturn it. Having no lawyer of his own can still set it aside."
 faqStructured:
   - question: "We both agree — can we use the same lawyer for our separation agreement?"
     answer: "No. One lawyer each. No exceptions."

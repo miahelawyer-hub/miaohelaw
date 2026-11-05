@@ -32,6 +32,8 @@ relatedReading:
     line: "Buying another house after separation with money already on the books still counts. Sign the agreement before you buy."
   - slug: pressured-into-signing-away-property-ontario
     line: "No disclosure, no lawyer of your own — the agreement is defective. Told in the morning, signed that afternoon is not voluntary."
+  - slug: only-i-disclosed-separation-agreement-ontario
+    line: "If only you disclosed, he cannot use no disclosure to overturn it. The party who skipped disclosure cannot use that skip."
   - href: /en/family-law/domestic-contracts/
     title: Prenups and separation agreements
     line: "What separation agreements, marriage contracts and cohabitation agreements can each cover."

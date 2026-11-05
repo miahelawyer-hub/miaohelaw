@@ -35,6 +35,8 @@ relatedReading:
   - href: /en/family-law/domestic-contracts/
     title: Prenups and separation agreements
     line: "What prenups, marriage contracts, separation agreements and cohabitation agreements can each cover."
+  - slug: only-i-disclosed-separation-agreement-ontario
+    line: "If only you disclosed, he cannot use his own skip to set the agreement aside. Disclosure blocks only that ground."
 faqStructured:
   - question: "My spouse's family pressured me into signing away property rights — will the court honor that agreement?"
     answer: "Generally, no. Without financial disclosure and without your own lawyer, the agreement is defective from the start. Being told in the morning and signing that afternoon only further undermines any claim it was voluntary."

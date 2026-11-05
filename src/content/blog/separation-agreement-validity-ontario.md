@@ -23,6 +23,8 @@ relatedReading:
     line: "房子卖掉钱也分了，AI写的协议法院不认。分钱不等于结案。"
   - slug: house-underwater-divorce-hold-until-recovers-ontario
     line: "房子跌破贷款先不卖、等升值再分。不能口头说好，必须写进分居协议。"
+  - slug: only-i-disclosed-separation-agreement-ontario
+    line: "只有你做了财产公开，对方不能拿自己没公开推翻。公开只挡住没披露这一条。"
 ---
 
 签了分居协议之后，还可以反悔吗？

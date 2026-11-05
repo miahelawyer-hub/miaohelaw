@@ -35,6 +35,8 @@ relatedReading:
   - href: /family-law/domestic-contracts/
     title: 婚前及分居协议
     line: "婚前、婚内、分居、同居四种协议分别能写什么。"
+  - slug: only-i-disclosed-separation-agreement-ontario
+    line: "只有你做了财产公开，对方不能拿自己没公开推翻协议。公开只挡住没披露这一条。"
 faqStructured:
   - question: "被家里人催着签了放弃财产的协议，法院会认吗？"
     answer: "一般不认。没做财产公开、没找自己的律师，协议就立不住。上午通知下午签字，更说明签字不是完全自愿。"

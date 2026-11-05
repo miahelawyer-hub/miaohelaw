@@ -19,6 +19,8 @@ relatedReading:
     line: "The house sold and the money split — an AI-written agreement still is not closing the case."
   - slug: house-underwater-divorce-hold-until-recovers-ontario
     line: "Hold an underwater house and split later — a verbal deal does not work. Put it in a separation agreement."
+  - slug: only-i-disclosed-separation-agreement-ontario
+    line: "If only you disclosed, he cannot use his own skip to set the agreement aside. Disclosure blocks only that ground."
 ---
 
 Can a separation agreement be overturned after it's been signed?

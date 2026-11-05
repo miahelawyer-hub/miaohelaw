@@ -32,6 +32,8 @@ relatedReading:
     line: "分居后拿存款再买一套，数字还在。想少生事端，买房前先把协议签了。"
   - slug: pressured-into-signing-away-property-ontario
     line: "没做财产公开、没找自己的律师，协议就立不住。上午通知下午签字，更不是自愿。"
+  - slug: only-i-disclosed-separation-agreement-ontario
+    line: "只有你做了财产公开，对方不能拿没披露翻案。缺公开的那一方，打不了这一条。"
   - href: /family-law/domestic-contracts/
     title: 婚前及分居协议
     line: "分居、婚内、同居四种协议分别能写什么。"

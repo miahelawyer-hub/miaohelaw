@@ -48,6 +48,8 @@ relatedReading:
   - href: /en/family-law/domestic-contracts/
     title: Prenups and separation agreements
     line: "What separation agreements, marriage contracts and cohabitation agreements can each cover."
+  - slug: only-i-disclosed-separation-agreement-ontario
+    line: "Once it is in writing, one-sided disclosure does not let him use no disclosure to overturn it."
 faqStructured:
   - question: "He promised me the house but won't put it in writing — does it count?"
     answer: "No. What's said orally counts for nothing in court."

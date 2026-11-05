@@ -48,6 +48,8 @@ relatedReading:
   - href: /family-law/domestic-contracts/
     title: 婚前及分居协议
     line: "分居、婚内、同居四种协议分别能写什么。"
+  - slug: only-i-disclosed-separation-agreement-ontario
+    line: "协议写下来了，只有你做了财产公开，对方不能拿没披露翻案。"
 faqStructured:
   - question: "他说房子和钱都给我，不写协议法庭认吗？"
     answer: "不算数。口头说的，到了法庭就等于没说。"
