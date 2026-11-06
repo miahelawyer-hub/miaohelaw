@@ -19,6 +19,8 @@ relatedReading:
     line: "RESP是给孩子上大学的，银行照样能动。房子只写他名字，银行也可以把你牵连进去。"
   - slug: house-in-his-name-designate-matrimonial-home-ontario
     line: "房子写在他名下，能注册成婚房。登记了，他偷偷贷不出来。指定不是卖房。"
+  - slug: joint-title-spouse-sell-half-ontario
+    line: "联名房子，他能不能一个人把一半卖掉。不能。你不签字，产权变不了。"
   - slug: "net-family-property-ontario"
     line: "均等化怎么算——卖房款最终要回答的就是这笔账。"
   - slug: "toronto-divorce-lawyer-fees-3000-vs-30000"

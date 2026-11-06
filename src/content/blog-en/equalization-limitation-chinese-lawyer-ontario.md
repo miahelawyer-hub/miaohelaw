@@ -36,6 +36,8 @@ relatedReading:
     line: An expired equalization claim is not the end of every trust claim.
   - slug: china-divorce-ontario-equalization-afterward
     line: A Chinese divorce that left Canadian property untouched can still start the two-year clock in s. 7(3).
+  - slug: china-divorce-pending-sue-ontario-property
+    line: "China has not decided yet. Filing in Ontario at the same time, the court stays the case. Lifting that stay does not stop the clock."
   - slug: after-divorce-ex-still-in-my-house-ontario
     line: After limitation expires, occupation of a house in your name does not usually recreate a half-interest in title.
   - slug: house-appreciation-after-separation-ontario

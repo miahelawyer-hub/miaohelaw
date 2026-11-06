@@ -18,6 +18,8 @@ relatedIntro: "Where to file, whether Ontario can still equalize after a Chinese
 relatedReading:
   - slug: china-divorce-lawsuit-living-in-canada
     line: "They've already filed in China. That is not this forum-choice question. That is how to respond."
+  - slug: china-divorce-pending-sue-ontario-property
+    line: "China is already under way and not yet decided. Filing in Ontario at the same time, the court stays the case first."
   - slug: china-divorce-ontario-equalization-afterward
     line: "Already divorced in China, judgment silent on the Canadian house — whether Ontario can still divide."
   - slug: divorced-china-remarried-property-from-which-date-ontario

@@ -20,6 +20,8 @@ relatedIntro: "离完婚还能不能分，和分多少、房子谁住，是三�
 relatedReading:
   - slug: married-only-china-living-in-canada-one-divorce
     line: "还没离：选中国还是安省。这篇是已经在中国离完了。"
+  - slug: china-divorce-pending-sue-ontario-property
+    line: "中国还没判完，同时在安省起诉，安省会先停住。这篇是已经离完了。"
   - slug: divorced-china-remarried-property-from-which-date-ontario
     line: "中国离过又复婚，安省这次只审这一段。结婚日就是复婚那天。"
   - slug: china-canada-divorce-judgment-recognition

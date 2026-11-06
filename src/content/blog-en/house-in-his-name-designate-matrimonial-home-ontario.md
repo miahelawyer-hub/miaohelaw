@@ -19,6 +19,10 @@ relatedIntro: "Locking the mortgage, whether you can still live there, and selli
 relatedReading:
   - slug: house-in-spouse-name-stay-with-kids-separation-ontario
     line: "Title in their name — can you still live there with the kids. Wanting the house is not an eviction."
+  - slug: joint-title-spouse-sell-half-ontario
+    line: "The house is in both names. Can he sell his half. No. Without your signature, title cannot change."
+  - slug: house-transferred-cheap-after-separation-ontario
+    line: "A house already transferred below market still counts at separation-date value. Designation is the lock before it is moved."
   - slug: force-sale-matrimonial-home-ontario
     line: "Can't agree who keeps it — sell and split. Section 21 blocks a unilateral sale; the court can still order one."
   - slug: matrimonial-home-title-vs-property-division-ontario

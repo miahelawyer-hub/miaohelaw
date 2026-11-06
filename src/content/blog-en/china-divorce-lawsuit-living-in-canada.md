@@ -17,6 +17,8 @@ tags:
 pairedArticlePath: "/blog/china-divorce-lawsuit-living-in-canada/"
 relatedIntro: "How to respond to the China case, whether a China court can touch Canadian property, and what happens to the Ontario clock are three tracks:"
 relatedReading:
+  - slug: china-divorce-pending-sue-ontario-property
+    line: "China is still going. Can you also file in Ontario. You can; Ontario will stay the case first."
   - slug: married-only-china-living-in-canada-one-divorce
     line: "You haven't filed yet. Married only in China, living in Canada — one divorce, pick the place."
   - slug: china-divorce-ontario-equalization-afterward

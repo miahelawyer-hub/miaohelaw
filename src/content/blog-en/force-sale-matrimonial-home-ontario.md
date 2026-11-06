@@ -21,6 +21,8 @@ relatedReading:
     line: "An RESP set aside for university is still reachable by the bank. Title in his name does not stop the lender from pursuing you."
   - slug: house-in-his-name-designate-matrimonial-home-ontario
     line: "The house is only in his name — designate it. Once registered, he cannot secretly mortgage it. Designation is not a sale."
+  - slug: joint-title-spouse-sell-half-ontario
+    line: "The house is in both names. Can he sell his half alone. No. Without your signature, title cannot change."
   - slug: "net-family-property-ontario"
     line: "How equalization works — the claim the sale proceeds will ultimately answer to."
   - slug: "toronto-divorce-lawyer-fees-3000-vs-30000"

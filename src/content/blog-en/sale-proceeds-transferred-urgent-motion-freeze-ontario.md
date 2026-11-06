@@ -21,6 +21,8 @@ relatedReading:
     line: "Cash taken from the home safe on separation day, with no photos and no paper trail, cannot be recovered. This piece is sale proceeds already transferred away."
   - slug: dissipation-of-assets
     line: "Money taken or spent has to be proved before it can be recovered. A transfer into someone else's name is the same kind of problem."
+  - slug: house-transferred-cheap-after-separation-ontario
+    line: "A house transferred below market still counts at separation-date value. This piece is sale proceeds already gone that cannot be frozen."
   - slug: spouse-sudden-debts-share-ontario
     line: "A relative's claim with no records may not count. Saying the money repaid a friend's debt needs evidence too."
   - slug: stalled-family-law-case-ontario

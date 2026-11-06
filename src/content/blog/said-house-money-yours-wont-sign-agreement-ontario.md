@@ -31,6 +31,8 @@ relatedReading:
     line: "口头答应财产换单独抚养权，同样不算数。得写成书面协议。"
   - slug: sold-house-split-money-ai-agreement-ontario
     line: "房子卖掉钱也分了，AI写的协议法院不认。分钱不等于结案。"
+  - slug: joint-title-spouse-sell-half-ontario
+    line: "私下协议改不了联名房子的产权登记。他那一半也卖不出去。"
   - slug: already-married-marriage-contract-home-down-payment-ontario
     line: "婚内协议一样要书面、签字、见证。口头同样不算。"
   - slug: separation-agreement-validity-ontario

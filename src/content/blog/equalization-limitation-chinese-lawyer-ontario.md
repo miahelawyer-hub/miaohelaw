@@ -37,6 +37,8 @@ relatedReading:
     line: 均等化过期后，信托请求仍可能是另一条路。
   - slug: china-divorce-ontario-equalization-afterward
     line: 中国先离、判决没分加拿大财产，外国离婚会不会启动第 7(3) 条那两年。
+  - slug: china-divorce-pending-sue-ontario-property
+    line: "中国还没判完，同时在安省起诉会先停住。停住的案子重新启动，钟还在走。"
   - slug: after-divorce-ex-still-in-my-house-ontario
     line: 时效过了，对方还住在你名下的房子里，居住本身一般不会变出一半产权。
   - slug: house-appreciation-after-separation-ontario

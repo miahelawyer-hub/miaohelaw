@@ -22,6 +22,8 @@ relatedReading:
     line: "Still living in a pre-marriage home — no wedding-day deduction. That piece is the old house. This one is buying another with the savings."
   - slug: house-appreciation-after-separation-ontario
     line: "House went up after separation — check whose name is on title. That piece is the old house. This one is buying another with the savings."
+  - slug: house-transferred-cheap-after-separation-ontario
+    line: "A house transferred below market after separation is still counted at its separation-date value. Destination changes, not the number."
   - slug: separation-date-vs-divorce-date-ontario
     line: "Property is valued on the separation date, not the divorce date."
   - slug: same-roof-wedding-separation-date-ontario

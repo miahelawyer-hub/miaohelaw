@@ -22,6 +22,8 @@ relatedReading:
     line: "婚前买的房子还住着，结婚日价值扣不掉。那篇讲旧房。这篇讲存款再买一套。"
   - slug: house-appreciation-after-separation-ontario
     line: "分居后房子涨了，看名字。那篇讲旧房涨跌。这篇讲拿存款再买一套。"
+  - slug: house-transferred-cheap-after-separation-ontario
+    line: "分居后把房子低价转走，数字还在。转走改的是去向，不是账。"
   - slug: separation-date-vs-divorce-date-ontario
     line: "财产按分居日算，不按离婚日算。"
   - slug: same-roof-wedding-separation-date-ontario

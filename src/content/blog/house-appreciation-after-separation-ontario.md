@@ -25,6 +25,8 @@ relatedReading:
     line: 估值日通常就是分居日；没有这一天，升值从哪天算起都说不清。
   - slug: buy-house-after-separation-still-divide-ontario
     line: "分居后拿存款再买一套，数字还在。钱变成房子，也不会少一半。"
+  - slug: house-transferred-cheap-after-separation-ontario
+    line: "分居后把房子低价转给别人，仍按分居日市值算。转走改不了账。"
   - slug: divorced-china-remarried-property-from-which-date-ontario
     line: "中国离过又复婚，分居日之后房子只写你的名字，涨跌一般跟对方没关系。"
   - slug: force-sale-matrimonial-home-ontario

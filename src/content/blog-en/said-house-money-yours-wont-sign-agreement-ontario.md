@@ -31,6 +31,8 @@ relatedReading:
     line: "A verbal swap of property for sole decision-making does not count either. Put it in writing."
   - slug: sold-house-split-money-ai-agreement-ontario
     line: "The house sold and the money split — an AI-written agreement still is not closing the case."
+  - slug: joint-title-spouse-sell-half-ontario
+    line: "A private agreement cannot change title to a jointly owned house. His half cannot be sold without your signature."
   - slug: already-married-marriage-contract-home-down-payment-ontario
     line: "A marriage contract also has to be in writing, signed, and witnessed. Oral doesn't count there either."
   - slug: separation-agreement-validity-ontario

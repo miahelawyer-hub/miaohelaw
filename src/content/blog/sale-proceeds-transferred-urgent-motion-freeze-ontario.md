@@ -21,6 +21,8 @@ relatedReading:
     line: "分居那天拿走家里现金，没照片没流水，要不回来。这篇讲卖房款已经转走了。"
   - slug: dissipation-of-assets
     line: "钱被拿走、被花掉，要证据才能追。转到别人名下，也是这一类。"
+  - slug: house-transferred-cheap-after-separation-ontario
+    line: "房子低价转走了冻不回来，账仍按分居日市值算。这篇讲钱转走了冻不了。"
   - slug: spouse-sudden-debts-share-ontario
     line: "没记录的亲戚债，法院可以不认。说拿去还朋友的债，也要证据。"
   - slug: stalled-family-law-case-ontario

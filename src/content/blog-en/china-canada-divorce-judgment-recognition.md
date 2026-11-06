@@ -24,6 +24,8 @@ relatedReading:
     line: After a Chinese divorce that left Canadian property out of the judgment, whether Ontario can still equalize.
   - slug: china-divorce-lawsuit-living-in-canada
     line: "The step before recognition: you live in Canada and a Chinese court has just issued the claim."
+  - slug: china-divorce-pending-sue-ontario-property
+    line: "China is still going. Filing in Ontario at the same time, the court stays the case. This article is recognition after a judgment exists."
   - slug: foreign-divorce-avoid-spousal-support-ontario
     line: A foreign divorce does not automatically cancel support. Ontario can refuse recognition if it was obtained to evade.
   - slug: cross-border-assets-divorce-ontario

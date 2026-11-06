@@ -18,6 +18,8 @@ relatedIntro: "去哪边离、离完安省还能不能分、判决认不认，�
 relatedReading:
   - slug: china-divorce-lawsuit-living-in-canada
     line: "对方已经在中国起诉了，不是这篇的选地方，是应诉。"
+  - slug: china-divorce-pending-sue-ontario-property
+    line: "中国已经在打、还没判完。同时在安省起诉，法院会先停住。"
   - slug: china-divorce-ontario-equalization-afterward
     line: "已经在中国离完、判决没写加拿大房子，安省还能不能分。"
   - slug: divorced-china-remarried-property-from-which-date-ontario

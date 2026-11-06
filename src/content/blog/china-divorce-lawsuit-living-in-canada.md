@@ -17,6 +17,8 @@ tags:
 pairedArticlePath: "/en/blog/china-divorce-lawsuit-living-in-canada/"
 relatedIntro: "中国这个离婚案怎么应、加拿大房子分不分、判离后安省的钟，是三笔账："
 relatedReading:
+  - slug: china-divorce-pending-sue-ontario-property
+    line: "中国还在打，你能不能同时在安省起诉。能起诉，安省会先停住。"
   - slug: married-only-china-living-in-canada-one-divorce
     line: "还没立案、只在中国结的婚，要不要两边各离一次。办一次，自己选地方。"
   - slug: china-divorce-ontario-equalization-afterward
