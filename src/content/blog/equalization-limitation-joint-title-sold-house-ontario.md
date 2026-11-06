@@ -24,7 +24,7 @@ relatedReading:
   - slug: force-sale-matrimonial-home-ontario
     line: "联名对方不肯卖，可以向法院申请把房子卖掉。走的是产权，不看均等化期限。"
   - slug: joint-title-spouse-sell-half-ontario
-    line: "联名房子，他能不能把一半卖掉。不能。你不签字，产权变不了。"
+    line: "联名房子，他能不能把一半卖掉。不太可能。法律没禁止，没有你同意律师不愿办。"
   - slug: house-appreciation-after-separation-ontario
     line: "联名不锁分居日房价。这篇讲时效过了，联名仍是一人一半。"
   - slug: cash-taken-home-safe-separation-ontario

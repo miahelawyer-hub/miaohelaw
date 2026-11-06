@@ -24,7 +24,7 @@ relatedReading:
   - slug: force-sale-matrimonial-home-ontario
     line: "If a joint owner will not sell, you can apply to the court to have the house sold. That route is title, not the equalization deadline."
   - slug: joint-title-spouse-sell-half-ontario
-    line: "Can he sell his half of a jointly owned house. No. Without your signature, title cannot change."
+    line: "Can he sell his half of a jointly owned house. Not likely. The law does not forbid it, but lawyers will not help without your consent."
   - slug: house-appreciation-after-separation-ontario
     line: "Joint title does not lock the separation-day price. This piece is that after the deadline, joint title is still half and half."
   - slug: cash-taken-home-safe-separation-ontario

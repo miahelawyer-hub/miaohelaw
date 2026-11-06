@@ -32,7 +32,7 @@ relatedReading:
   - slug: sold-house-split-money-ai-agreement-ontario
     line: "房子卖掉钱也分了，AI写的协议法院不认。分钱不等于结案。"
   - slug: joint-title-spouse-sell-half-ontario
-    line: "私下协议改不了联名房子的产权登记。他那一半也卖不出去。"
+    line: "私下协议改不了联名房子的产权登记。没有你同意，律师不愿帮他过户。"
   - slug: already-married-marriage-contract-home-down-payment-ontario
     line: "婚内协议一样要书面、签字、见证。口头同样不算。"
   - slug: separation-agreement-validity-ontario

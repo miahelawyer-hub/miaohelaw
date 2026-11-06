@@ -28,7 +28,7 @@ relatedReading:
   - slug: house-in-his-name-designate-matrimonial-home-ontario
     line: "房子写在他名下，能注册成婚房。登记了，他偷偷转不走。"
   - slug: joint-title-spouse-sell-half-ontario
-    line: "联名房子，他一个人卖不了那一半。这篇是他名下的房子已经转走了。"
+    line: "联名房子，一个人过户不太可能。法律没禁止，没有你同意律师不愿办。这篇是他名下的房子已经转走了。"
   - slug: cash-taken-home-safe-separation-ontario
     line: "分居那天拿走现金，没记录要不回来。这篇讲房子转走了，账还按那天的市值。"
   - slug: house-underwater-divorce-hold-until-recovers-ontario

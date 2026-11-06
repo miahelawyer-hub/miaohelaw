@@ -28,7 +28,7 @@ relatedReading:
   - slug: house-in-his-name-designate-matrimonial-home-ontario
     line: "The house is only in his name — designate it. Once registered, he cannot secretly transfer it away."
   - slug: joint-title-spouse-sell-half-ontario
-    line: "A jointly owned house — he cannot sell his half alone. This piece is a house already transferred out of his sole name."
+    line: "A jointly owned house — a one-sided transfer is not likely. The law does not forbid it, but lawyers will not help without your consent. This piece is a house already transferred out of his sole name."
   - slug: cash-taken-home-safe-separation-ontario
     line: "Cash taken on separation day with no records cannot be recovered. This piece is a house transferred away that is still counted at that day's value."
   - slug: house-underwater-divorce-hold-until-recovers-ontario

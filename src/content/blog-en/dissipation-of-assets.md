@@ -17,7 +17,7 @@ relatedReading:
   - slug: house-in-his-name-designate-matrimonial-home-ontario
     line: "The house is only in his name — designate it as the matrimonial home. Once registered, he cannot secretly mortgage it."
   - slug: joint-title-spouse-sell-half-ontario
-    line: "The house is in both names. Can he sell his half. No. Without your signature, title cannot change."
+    line: "The house is in both names. Can he sell his half. Not likely. The law does not forbid it, but lawyers will not help without your consent."
   - slug: house-transferred-cheap-after-separation-ontario
     line: "A house transferred below market after separation is still counted at its separation-date value. The transfer does not change the number."
   - slug: buy-house-after-separation-still-divide-ontario

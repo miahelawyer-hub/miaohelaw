@@ -20,7 +20,7 @@ relatedReading:
   - slug: house-in-spouse-name-stay-with-kids-separation-ontario
     line: "房子在对方名下，分居了还能带着孩子住。要房子不等于能赶人。"
   - slug: joint-title-spouse-sell-half-ontario
-    line: "联名房子，他能不能把一半卖掉。不能。你不签字，产权变不了。"
+    line: "联名房子，他能不能把一半卖掉。不太可能。法律没禁止，没有你同意律师不愿办。"
   - slug: house-transferred-cheap-after-separation-ontario
     line: "房子已经低价转走了，账仍按分居日市值。指定是转走之前先锁住。"
   - slug: force-sale-matrimonial-home-ontario

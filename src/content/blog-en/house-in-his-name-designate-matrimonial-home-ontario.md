@@ -20,7 +20,7 @@ relatedReading:
   - slug: house-in-spouse-name-stay-with-kids-separation-ontario
     line: "Title in their name — can you still live there with the kids. Wanting the house is not an eviction."
   - slug: joint-title-spouse-sell-half-ontario
-    line: "The house is in both names. Can he sell his half. No. Without your signature, title cannot change."
+    line: "The house is in both names. Can he sell his half. Not likely. The law does not forbid it, but lawyers will not help without your consent."
   - slug: house-transferred-cheap-after-separation-ontario
     line: "A house already transferred below market still counts at separation-date value. Designation is the lock before it is moved."
   - slug: force-sale-matrimonial-home-ontario
