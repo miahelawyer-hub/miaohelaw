@@ -1,8 +1,8 @@
 ---
 title: "Our Separation Agreement Says Support Is Recalculated Every Year — Do We Have to Hire a Lawyer Every Time? Ontario Mandarin-Speaking Divorce Lawyer Miao He"
 description: "No. The annual recalculation puts new income into the guidelines and produces a new figure — arithmetic, not a new negotiation. Exchange income, calculate, confirm by email. A free calculator and a lawyer's paid software produce the same child-support number. Miao He."
-pubDate: 2026-11-07T18:50:00-05:00
-updatedDate: 2026-11-07T18:50:00-05:00
+pubDate: 2026-11-08T18:50:00-05:00
+updatedDate: 2026-11-08T18:50:00-05:00
 heroImage: ""
 keywords: "our separation agreement says support is recalculated every year do we have to hire a lawyer every time, no annual recalculation is arithmetic not a new negotiation, email confirmation counts as writing, Ontario Mandarin-speaking lawyer, Chinese lawyer annual child support review, Miao He"
 tags:
