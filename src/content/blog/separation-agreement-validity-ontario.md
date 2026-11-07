@@ -1,7 +1,7 @@
 ---
 
 title: "分居协议签了之后还能反悔吗？"
-description: "分居协议签署后原则上具有法律约束力，但在特定情况下可以被推翻。何淼律师解析哪些情况协议无效、哪些情况不可撤销，以及双方同意时如何变更。"
+description: "分居协议签署后原则上具有法律约束力，但在特定情况下可以被推翻。何淼律师解析哪些情况协议无效、哪些情况不可撤销，以及双方同意时如何变更。看有没有各自的律师和财产公开。"
 pairedArticlePath: "/en/blog/separation-agreement-validity-ontario/"
 pubDate: 2026-04-11T16:00:00-05:00
 heroImage: ""

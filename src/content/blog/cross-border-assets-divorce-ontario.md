@@ -1,7 +1,7 @@
 ---
 
 title: "离婚时中国房产怎么分？Ontario法院如何处理境外资产"
-description: "在加拿大离婚，中国的房产、存款、投资账户要纳入财产分割吗？何淼律师详解Ontario法院对境外资产的管辖权、举证要求和常见处理策略。"
+description: "在加拿大离婚，中国的房产、存款、投资账户要纳入财产分割吗？何淼律师详解Ontario法院对境外资产的管辖权、举证要求和常见处理策略。管得了账上的数字，不等于管得了国内过户。"
 pairedArticlePath: "/en/blog/cross-border-assets-divorce-ontario/"
 pubDate: 2026-04-09T12:00:00-05:00
 heroImage: ""

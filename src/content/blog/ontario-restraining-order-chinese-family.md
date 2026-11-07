@@ -1,7 +1,7 @@
 ---
 
 title: "在安省申请 Restraining Order：华人家庭面对家暴时，法律能提供哪些紧急保护？"
-description: "安省家暴禁制令实务指南——华人家庭如何申请 Restraining Order、紧急动议程序、证据准备、移民身份与孩子保护。何淼律师家庭法专业解读。"
+description: "安省家暴禁制令实务指南——华人家庭如何申请 Restraining Order、紧急动议程序、证据准备、移民身份与孩子保护。何淼律师家庭法专业解读。紧急可单方申请，先给约14天。"
 pairedArticlePath: "/en/blog/ontario-restraining-order-chinese-family/"
 pubDate: 2026-04-24T10:00:00-04:00
 heroImage: ""

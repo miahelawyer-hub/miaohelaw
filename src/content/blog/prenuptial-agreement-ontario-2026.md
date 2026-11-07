@@ -1,7 +1,7 @@
 ---
 
 title: "婚前协议在Ontario有法律效力吗？5个华人常见误区"
-description: "很多人以为婚前协议签了就万事大吉，但Ontario法院推翻婚前协议的案例并不少见。何淼律师详解婚前协议的法律要求、5个常见误区和起草注意事项。"
+description: "很多人以为婚前协议签了就万事大吉，但Ontario法院推翻婚前协议的案例并不少见。何淼律师详解婚前协议的法律要求、5个常见误区和起草注意事项。财产公开不完整，是最常见的翻案理由。"
 pairedArticlePath: "/en/blog/prenuptial-agreement-ontario-2026/"
 pubDate: 2026-04-09T11:00:00-05:00
 heroImage: ""

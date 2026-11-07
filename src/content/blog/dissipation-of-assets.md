@@ -1,7 +1,7 @@
 ---
 
 title: "还没离婚，对方已与别人同居——财产怎么分？那笔钱还能要回来吗？"
-description: "对方出轨同居，婚内给第三者花的钱能追回来吗？何淼律师详解安省分居日、婚姻财产挥霍（Dissipation of Assets）的法律主张与举证要求。"
+description: "对方出轨同居，婚内给第三者花的钱能追回来吗？何淼律师详解安省分居日、婚姻财产挥霍（Dissipation of Assets）的法律主张与举证要求。分居日锁账。挥霍须证明钱去哪了。"
 pairedArticlePath: "/en/blog/dissipation-of-assets/"
 pubDate: 2026-04-07T14:00:00-05:00
 heroImage: ""
