@@ -23,6 +23,8 @@ relatedReading:
     line: "每月已经在给，以前欠的那截还挂在 FRO 账上，不会勾销。"
   - slug: separation-agreement-not-paying-child-support-fro-ontario
     line: "还没有法院令，只有分居协议。不用先起诉，协议交 FRO 就能执行。"
+  - slug: annual-support-recalculation-no-lawyer-ontario
+    line: "每年重算新数字，邮件确认即可。已经走 FRO 的，要把新金额报给 FRO 更新。"
 ---
 
 拿到法院抚养费命令，以为事情就结束了——很多人没想到，真正的挑战才刚开始。

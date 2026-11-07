@@ -25,6 +25,10 @@ relatedReading:
     line: "深入阅读：配偶赡养场景下的能力认定与 SSAG 输入数字争议。"
   - slug: imputed-income-child-support-ontario
     line: "子女抚养费视角的推定收入：Federal Guidelines s.19 与举证标准。"
+  - slug: annual-support-recalculation-no-lawyer-ontario
+    line: "协议把重算规则写明确了，配偶赡养费也可以自己算。没写算法，谈不拢才找律师。"
+  - slug: layoff-support-not-automatic-decrease-ontario
+    line: "被裁员了，配偶赡养费也不会自动停。EI 也算收入，是调低，不是停付。"
   - slug: spousal-child-support-ontario
     line: "如果对方拒付：FRO 强制执行与法院救济路径。"
   - slug: ontario-vs-china-child-spousal-support-comparison

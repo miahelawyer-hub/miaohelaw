@@ -23,6 +23,10 @@ relatedReading:
     line: "If only you disclosed, he cannot use his own skip to set the agreement aside. Disclosure blocks only that ground."
   - slug: separation-agreement-not-paying-child-support-fro-ontario
     line: "In writing, signed, and witnessed — then it stands. If he will not pay the support in it, file it with the FRO."
+  - slug: annual-support-recalculation-no-lawyer-ontario
+    line: "Changing a term of the agreement is a renegotiation. Recalculating the yearly figure is not changing the term."
+  - slug: layoff-support-not-automatic-decrease-ontario
+    line: "If both of you agree to lower the amount, put it in writing. A spoken pay that for now leaves you with nothing if she later denies it."
 ---
 
 Can a separation agreement be overturned after it's been signed?

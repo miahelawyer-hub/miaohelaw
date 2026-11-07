@@ -19,6 +19,10 @@ relatedIntro: "Filing the agreement with the FRO does not require a lawsuit firs
 relatedReading:
   - slug: fro-monthly-paying-arrears-still-collect-ontario
     line: "Already at the FRO and paying monthly again — the arrears from before stay on the books. This piece is an agreement not yet at the FRO, and he has stopped paying."
+  - slug: annual-support-recalculation-no-lawyer-ontario
+    line: "An annual recalculation clause does not mean hiring a lawyer every year. This piece is when he will not pay — file it with the FRO."
+  - slug: layoff-support-not-automatic-decrease-ontario
+    line: "A layoff does not lower the amount in the agreement by itself. Pay less, and she can file the agreement for enforcement."
   - slug: retroactive-child-support-ontario
     line: "No order and no agreement yet — the past stretch can often still be claimed. This piece is an agreement already signed, and how it goes to the FRO."
   - slug: spousal-child-support-ontario

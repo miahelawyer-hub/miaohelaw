@@ -25,6 +25,8 @@ relatedReading:
     line: "孩子抚养费不能拿来放弃。写互不付，法院一般不认。"
   - slug: separation-agreement-not-paying-child-support-fro-ontario
     line: "协议要律师起草、正式签。签完对方不付抚养费，交 FRO 执行，不用先起诉。"
+  - slug: annual-support-recalculation-no-lawyer-ontario
+    line: "签协议不能共用一个律师。签完了，每年重算不必一直养着律师。"
   - slug: marriage-contract-child-parenting-ontario
     line: "婚前婚内协议锁不住孩子。孩子安排只能写进分居协议。"
   - slug: uncontested-divorce-ontario

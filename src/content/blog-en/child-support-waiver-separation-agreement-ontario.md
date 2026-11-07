@@ -33,6 +33,10 @@ relatedReading:
     line: "A verbal yes that the old arrears can go does not stop the FRO. Writing zero into an agreement usually will not hold either."
   - slug: separation-agreement-not-paying-child-support-fro-ontario
     line: "The amount is written and he will not pay — you do not have to sue first. File the agreement with the FRO."
+  - slug: annual-support-recalculation-no-lawyer-ontario
+    line: "An annual recalculation clause can be run yourselves. This piece is writing zero into the agreement — the court usually will not honour it."
+  - slug: layoff-support-not-automatic-decrease-ontario
+    line: "An amount already written does not go down just because you were laid off. This piece is writing zero — the court usually will not honour it."
   - slug: separation-agreement-validity-ontario
     line: After you sign a separation agreement, when it can still be set aside.
   - slug: marriage-contract-child-parenting-ontario

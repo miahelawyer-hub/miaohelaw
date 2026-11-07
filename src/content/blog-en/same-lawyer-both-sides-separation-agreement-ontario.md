@@ -25,6 +25,8 @@ relatedReading:
     line: "Child support cannot be waived. A clause that neither parent pays usually will not hold."
   - slug: separation-agreement-not-paying-child-support-fro-ontario
     line: "The agreement has to be drafted by a lawyer and properly signed. After that, if he will not pay support, file it with the FRO — you do not have to sue first."
+  - slug: annual-support-recalculation-no-lawyer-ontario
+    line: "You cannot share one lawyer to draft. After signing, the yearly recalculation does not require keeping a lawyer on retainer."
   - slug: marriage-contract-child-parenting-ontario
     line: "A prenup cannot lock parenting. Parenting belongs in a separation agreement."
   - slug: uncontested-divorce-ontario

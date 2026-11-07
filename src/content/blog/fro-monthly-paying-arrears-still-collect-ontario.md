@@ -18,6 +18,10 @@ relatedIntro: "每月在给不等于旧账清零、要交欠付声明 FRO 才按
 relatedReading:
   - slug: separation-agreement-not-paying-child-support-fro-ontario
     line: "签了协议对方不付，不用先起诉，协议交法院备案再登记 FRO。这篇是已经在走 FRO，欠的那截还会不会追。"
+  - slug: annual-support-recalculation-no-lawyer-ontario
+    line: "协议写了每年重算，邮件确认新数字即可。走 FRO 的，要把新金额报给 FRO 更新。"
+  - slug: layoff-support-not-automatic-decrease-ontario
+    line: "被裁员了先按低的给，差额就是欠付。欠的那截，账上一直挂着。"
   - slug: retroactive-child-support-ontario
     line: "还没令、还没协议，以前那截常常还能要。这篇是已经在走 FRO，每月在给，欠的那截还会不会追。"
   - slug: spousal-child-support-ontario

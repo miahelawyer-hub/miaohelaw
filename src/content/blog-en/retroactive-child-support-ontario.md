@@ -32,6 +32,8 @@ relatedReading:
     line: "Already at the FRO and paying monthly again — the arrears from before stay on the books. They are not wiped."
   - slug: separation-agreement-not-paying-child-support-fro-ontario
     line: "The agreement is already signed and he will not pay — you do not have to sue first. File it with the court, then register it with the FRO."
+  - slug: annual-support-recalculation-no-lawyer-ontario
+    line: "An annual recalculation going forward can be done yourselves. This piece is the past stretch that is not yet a number on an order."
   - slug: adult-child-no-custody-ontario
     line: "Even after the child is independent, past arrears can sometimes still be claimed."
   - slug: child-support-until-18-university-expenses-ontario

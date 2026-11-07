@@ -18,6 +18,10 @@ relatedIntro: "Current monthly payments do not wipe the old balance, a Statement
 relatedReading:
   - slug: separation-agreement-not-paying-child-support-fro-ontario
     line: "He signed and then stopped paying — you do not have to sue first. File the agreement with the court, then register it with the FRO. This piece is already at the FRO, and whether the arrears still get chased."
+  - slug: annual-support-recalculation-no-lawyer-ontario
+    line: "An annual recalculation can be confirmed by email. If you are already at the FRO, report the new figure so the FRO enforces it."
+  - slug: layoff-support-not-automatic-decrease-ontario
+    line: "Pay less after a layoff and the shortfall is arrears. Those arrears stay on the books."
   - slug: retroactive-child-support-ontario
     line: "No order and no agreement yet — the past stretch can often still be claimed. This piece is already at the FRO, paying monthly, and whether the arrears still get chased."
   - slug: spousal-child-support-ontario

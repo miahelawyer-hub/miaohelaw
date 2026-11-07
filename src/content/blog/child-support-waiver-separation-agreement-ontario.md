@@ -33,6 +33,10 @@ relatedReading:
     line: "口头答应旧账算了，FRO 不停。协议写互不付，法院也不认。"
   - slug: separation-agreement-not-paying-child-support-fro-ontario
     line: "协议写了金额、对方不付，不用先起诉，交 FRO 执行。"
+  - slug: annual-support-recalculation-no-lawyer-ontario
+    line: "协议写了每年重算，自己就能办。这篇是协议写互不付，法院不认。"
+  - slug: layoff-support-not-automatic-decrease-ontario
+    line: "协议写了金额，被裁员也不会自动少。这篇是协议写互不付，法院不认。"
   - slug: separation-agreement-validity-ontario
     line: 分居协议签了之后，哪些情况还能被推翻。
   - slug: marriage-contract-child-parenting-ontario

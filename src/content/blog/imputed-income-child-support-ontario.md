@@ -23,6 +23,10 @@ relatedReading:
     line: "抚养费断了、养不起孩子，可以紧急。平分款中途要不来。"
   - slug: fro-monthly-paying-arrears-still-collect-ontario
     line: "他说收入降了去申请变更，申请不等于批准。每月已经在给，以前欠的也不会勾销。"
+  - slug: annual-support-recalculation-no-lawyer-ontario
+    line: "收入没有争议，每年重算自己就能办。收入真不真，才是这篇。"
+  - slug: layoff-support-not-automatic-decrease-ontario
+    line: "被裁员了，协议上的数字也不会自动下调。躺着不找工作，才按原来的赚钱能力认定。"
 ---
 
 这是很多客户在分居之后会遇到的情况：

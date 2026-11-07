@@ -19,6 +19,10 @@ relatedIntro: "协议交 FRO 不用先起诉、金额必须写清、已经欠的
 relatedReading:
   - slug: fro-monthly-paying-arrears-still-collect-ontario
     line: "已经在走 FRO、每月又开始给了，以前欠的那截还挂在账上。这篇是协议还没交 FRO，对方不付。"
+  - slug: annual-support-recalculation-no-lawyer-ontario
+    line: "协议写了每年重算，不用每年找律师。这篇是对方不付，交 FRO。"
+  - slug: layoff-support-not-automatic-decrease-ontario
+    line: "被裁员了，协议上的数也不会自动少。少给的，对方可以拿协议去执行。"
   - slug: retroactive-child-support-ontario
     line: "还没令、还没协议，以前那截常常还能要。这篇是协议已经签了，怎么交 FRO。"
   - slug: spousal-child-support-ontario

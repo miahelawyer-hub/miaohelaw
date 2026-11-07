@@ -18,6 +18,10 @@ relatedReading:
     line: "Companion article: how Ontario courts assess ability to pay and SSAG inputs in spousal support cases."
   - slug: imputed-income-child-support-ontario
     line: "Child support side: Federal Guidelines s.19 and the leading authorities on imputation."
+  - slug: annual-support-recalculation-no-lawyer-ontario
+    line: "If the agreement wrote the recalculation method clearly, spousal support can be run yourselves too. No method stated, a disagreement needs a lawyer."
+  - slug: layoff-support-not-automatic-decrease-ontario
+    line: "A layoff does not stop spousal support on its own. EI still counts as income — it goes down, it does not stop."
   - slug: spousal-child-support-ontario
     line: "Enforcement: FRO and court remedies when support payments stop or fall behind."
   - slug: ontario-vs-china-child-spousal-support-comparison

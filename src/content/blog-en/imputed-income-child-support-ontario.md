@@ -21,6 +21,10 @@ relatedReading:
     line: "Child support cut off, children you cannot support — that can be urgent. Equalization mid-case cannot."
   - slug: fro-monthly-paying-arrears-still-collect-ontario
     line: "He says income dropped and applies to vary — applying is not getting it. Monthly payments already flowing do not wipe the arrears from before."
+  - slug: annual-support-recalculation-no-lawyer-ontario
+    line: "If income is not in dispute, the yearly recalculation can be done without a lawyer. This piece is when the income is not real."
+  - slug: layoff-support-not-automatic-decrease-ontario
+    line: "A layoff does not lower the figure in the agreement by itself. Sit at home, and the court treats you as still earning what you were capable of."
 ---
 
 Child support in Ontario is based on income — specifically, the paying parent's **annual gross income**. But what happens when a parent deliberately reduces their income, hides earnings, or is unemployed without good reason? Ontario courts have a powerful tool: **imputed income**.

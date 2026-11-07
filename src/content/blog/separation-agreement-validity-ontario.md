@@ -27,6 +27,10 @@ relatedReading:
     line: "只有你做了财产公开，对方不能拿自己没公开推翻。公开只挡住没披露这一条。"
   - slug: separation-agreement-not-paying-child-support-fro-ontario
     line: "书面、双方签字、有见证人，协议才立得住。立住了、对方不付抚养费，交 FRO 执行。"
+  - slug: annual-support-recalculation-no-lawyer-ontario
+    line: "要改的是条款本身，才是重新谈协议。每年重算数字，不是改条款。"
+  - slug: layoff-support-not-automatic-decrease-ontario
+    line: "双方同意把金额调低，要落成书面。口头那句先按这个给吧，日后反悔你手里什么都没有。"
 ---
 
 签了分居协议之后，还可以反悔吗？

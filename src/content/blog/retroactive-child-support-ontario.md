@@ -32,6 +32,8 @@ relatedReading:
     line: "已经在走 FRO、每月又开始给了，以前欠的那截还挂在账上，不会勾销。"
   - slug: separation-agreement-not-paying-child-support-fro-ontario
     line: "已经签了协议、对方不付，不用先起诉，协议交法院备案再登记 FRO。"
+  - slug: annual-support-recalculation-no-lawyer-ontario
+    line: "协议写了每年重算，往后的数字自己就能办。这篇是以前那截还没变成令上的数。"
   - slug: adult-child-no-custody-ontario
     line: "孩子已经独立了，以前欠的，有时还能要。"
   - slug: child-support-until-18-university-expenses-ontario
