@@ -19,6 +19,8 @@ relatedReading:
     line: "A common-law house-share transfer is not a child-support buyout. Cash income still counts."
   - slug: urgent-motion-equalization-mid-case-ontario
     line: "Child support cut off, children you cannot support — that can be urgent. Equalization mid-case cannot."
+  - slug: fro-monthly-paying-arrears-still-collect-ontario
+    line: "He says income dropped and applies to vary — applying is not getting it. Monthly payments already flowing do not wipe the arrears from before."
 ---
 
 Child support in Ontario is based on income — specifically, the paying parent's **annual gross income**. But what happens when a parent deliberately reduces their income, hides earnings, or is unemployed without good reason? Ontario courts have a powerful tool: **imputed income**.

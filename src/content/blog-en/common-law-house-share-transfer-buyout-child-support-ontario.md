@@ -26,6 +26,8 @@ relatedReading:
     line: "Support is based on actual income: pre-tax, and cash income counts."
   - slug: spousal-child-support-ontario
     line: "He won't pay support — how FRO enforces it."
+  - slug: fro-monthly-paying-arrears-still-collect-ontario
+    line: "A transfer is not a buyout. Already at the FRO and paying monthly, the arrears from before are not wiped either."
   - slug: retroactive-child-support-ontario
     line: "What was underpaid in the past can often still be claimed."
   - slug: said-house-money-yours-wont-sign-agreement-ontario

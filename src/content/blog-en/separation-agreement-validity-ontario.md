@@ -21,6 +21,8 @@ relatedReading:
     line: "Hold an underwater house and split later — a verbal deal does not work. Put it in a separation agreement."
   - slug: only-i-disclosed-separation-agreement-ontario
     line: "If only you disclosed, he cannot use his own skip to set the agreement aside. Disclosure blocks only that ground."
+  - slug: separation-agreement-not-paying-child-support-fro-ontario
+    line: "In writing, signed, and witnessed — then it stands. If he will not pay the support in it, file it with the FRO."
 ---
 
 Can a separation agreement be overturned after it's been signed?

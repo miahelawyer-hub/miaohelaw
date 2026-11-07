@@ -29,6 +29,10 @@ relatedReading:
     line: What the court does when a parent quits or under-reports income.
   - slug: spousal-child-support-ontario
     line: Once an amount is set, how FRO enforces if it is not paid.
+  - slug: fro-monthly-paying-arrears-still-collect-ontario
+    line: "A verbal yes that the old arrears can go does not stop the FRO. Writing zero into an agreement usually will not hold either."
+  - slug: separation-agreement-not-paying-child-support-fro-ontario
+    line: "The amount is written and he will not pay — you do not have to sue first. File the agreement with the FRO."
   - slug: separation-agreement-validity-ontario
     line: After you sign a separation agreement, when it can still be set aside.
   - slug: marriage-contract-child-parenting-ontario

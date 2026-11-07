@@ -26,6 +26,8 @@ relatedReading:
     line: "抚养费按实际收入算。税前收入，现金收入也算在内。"
   - slug: spousal-child-support-ontario
     line: "对方不付抚养费，FRO 怎么追。"
+  - slug: fro-monthly-paying-arrears-still-collect-ontario
+    line: "过户买不断。已经在走 FRO，每月在给，以前欠的也不会勾销。"
   - slug: retroactive-child-support-ontario
     line: "以前少给的，分居了没起诉，常常还能追。"
   - slug: said-house-money-yours-wont-sign-agreement-ontario

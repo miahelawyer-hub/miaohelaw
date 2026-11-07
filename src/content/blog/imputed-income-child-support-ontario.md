@@ -21,6 +21,8 @@ relatedReading:
     line: "同居分开，房子份额过户过来，也不算买断抚养费。现金收入也要算进抚养费。"
   - slug: urgent-motion-equalization-mid-case-ontario
     line: "抚养费断了、养不起孩子，可以紧急。平分款中途要不来。"
+  - slug: fro-monthly-paying-arrears-still-collect-ontario
+    line: "他说收入降了去申请变更，申请不等于批准。每月已经在给，以前欠的也不会勾销。"
 ---
 
 这是很多客户在分居之后会遇到的情况：

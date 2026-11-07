@@ -25,6 +25,8 @@ relatedReading:
     line: "房子跌破贷款先不卖、等升值再分。不能口头说好，必须写进分居协议。"
   - slug: only-i-disclosed-separation-agreement-ontario
     line: "只有你做了财产公开，对方不能拿自己没公开推翻。公开只挡住没披露这一条。"
+  - slug: separation-agreement-not-paying-child-support-fro-ontario
+    line: "书面、双方签字、有见证人，协议才立得住。立住了、对方不付抚养费，交 FRO 执行。"
 ---
 
 签了分居协议之后，还可以反悔吗？

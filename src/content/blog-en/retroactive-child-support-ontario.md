@@ -28,6 +28,10 @@ relatedReading:
     line: "If they report very low income or hide cash, imputed income needs real evidence."
   - slug: spousal-child-support-ontario
     line: "With a court order, arrears go through FRO. The past part has to become a number first."
+  - slug: fro-monthly-paying-arrears-still-collect-ontario
+    line: "Already at the FRO and paying monthly again — the arrears from before stay on the books. They are not wiped."
+  - slug: separation-agreement-not-paying-child-support-fro-ontario
+    line: "The agreement is already signed and he will not pay — you do not have to sue first. File it with the court, then register it with the FRO."
   - slug: adult-child-no-custody-ontario
     line: "Even after the child is independent, past arrears can sometimes still be claimed."
   - slug: child-support-until-18-university-expenses-ontario

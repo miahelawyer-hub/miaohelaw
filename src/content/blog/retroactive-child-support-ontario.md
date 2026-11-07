@@ -28,6 +28,10 @@ relatedReading:
     line: "对方报税很低、拿现金瞒收入，推定收入怎么走。"
   - slug: spousal-child-support-ontario
     line: "有了法院令，欠的才能走 FRO。以前那截要先变成令上的数字。"
+  - slug: fro-monthly-paying-arrears-still-collect-ontario
+    line: "已经在走 FRO、每月又开始给了，以前欠的那截还挂在账上，不会勾销。"
+  - slug: separation-agreement-not-paying-child-support-fro-ontario
+    line: "已经签了协议、对方不付，不用先起诉，协议交法院备案再登记 FRO。"
   - slug: adult-child-no-custody-ontario
     line: "孩子已经独立了，以前欠的，有时还能要。"
   - slug: child-support-until-18-university-expenses-ontario
