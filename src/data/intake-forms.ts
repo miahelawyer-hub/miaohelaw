@@ -72,6 +72,15 @@ const heardAbout: Choice[] = [
 	{ value: 'Other', label: 'Other 其他' },
 ];
 
+function heardAboutQuestion(): IntakeField {
+	return {
+		kind: 'checks',
+		name: 'How did you hear about us',
+		label: 'How did you hear about us? 您是如何得知本所的？',
+		options: heardAbout,
+	};
+}
+
 const consultFormat: Choice[] = [
 	{ value: 'Zoom', label: 'Zoom 视频' },
 	{ value: 'In person', label: 'In person 到所面谈' },
@@ -108,12 +117,7 @@ function consultation(extra: IntakeField[] = []): IntakeSection {
 				required: true,
 				options: consultFormat,
 			},
-			{
-				kind: 'checks',
-				name: 'How did you hear about us',
-				label: 'How did you hear about us? 您是如何得知本所的？',
-				options: heardAbout,
-			},
+			heardAboutQuestion(),
 			...extra,
 		],
 	};
@@ -589,6 +593,7 @@ export const intakeForms: IntakeFormDef[] = [
 			{
 				title: '1. Purchaser Information 买方信息',
 				fields: [
+					heardAboutQuestion(),
 					t('Full legal name', 'Full legal name 姓名', {
 						required: true,
 						clientName: true,
@@ -737,6 +742,7 @@ export const intakeForms: IntakeFormDef[] = [
 			{
 				title: '1. Seller Information 卖方信息',
 				fields: [
+					heardAboutQuestion(),
 					t('Full legal name', 'Full legal name 姓名', {
 						required: true,
 						clientName: true,
@@ -852,6 +858,7 @@ export const intakeForms: IntakeFormDef[] = [
 			{
 				title: '1. Owner Information 业主信息',
 				fields: [
+					heardAboutQuestion(),
 					t('Full legal name', 'Full legal name 姓名', {
 						required: true,
 						clientName: true,
@@ -977,6 +984,7 @@ export const intakeForms: IntakeFormDef[] = [
 			{
 				title: '1. Current Owner Information 现产权人信息',
 				fields: [
+					heardAboutQuestion(),
 					t('Full legal name', 'Full legal name 姓名', {
 						required: true,
 						clientName: true,
@@ -1118,6 +1126,7 @@ export const intakeForms: IntakeFormDef[] = [
 			{
 				title: '1. Your Information 您的信息',
 				fields: [
+					heardAboutQuestion(),
 					t('Full legal name', 'Full legal name 姓名', {
 						required: true,
 						clientName: true,
@@ -1219,6 +1228,7 @@ export const intakeForms: IntakeFormDef[] = [
 			{
 				title: '1. Borrower Information 借款人信息',
 				fields: [
+					heardAboutQuestion(),
 					t('Full legal name', 'Full legal name 姓名', {
 						required: true,
 						clientName: true,
@@ -1373,7 +1383,7 @@ export const intakeForms: IntakeFormDef[] = [
 		sections: [
 			{
 				title: '1. Your Information 您的信息',
-				fields: clientIdentity(),
+				fields: [heardAboutQuestion(), ...clientIdentity()],
 			},
 			{
 				title: '2. Buying Entity 购买主体',
@@ -1460,7 +1470,7 @@ export const intakeForms: IntakeFormDef[] = [
 		sections: [
 			{
 				title: '1. Your Information 您的信息',
-				fields: clientIdentity(),
+				fields: [heardAboutQuestion(), ...clientIdentity()],
 			},
 			{
 				title: '2. Selling Entity 出售主体',
