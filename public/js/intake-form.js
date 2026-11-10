@@ -25,7 +25,7 @@
 			day.innerHTML = '';
 			var empty = document.createElement('option');
 			empty.value = '';
-			empty.textContent = '日';
+			empty.textContent = 'Day 日';
 			day.appendChild(empty);
 			for (var d = 1; d <= max; d++) {
 				var opt = document.createElement('option');
@@ -276,7 +276,7 @@
 		var keyInput = form.querySelector('[name="access_key"]');
 		var key = keyInput && keyInput.value ? keyInput.value.trim() : '';
 		if (!key) {
-			status.textContent = '在线提交尚未开通。请稍后再试，或致电 647-930-6688。';
+			status.textContent = '在线提交尚未开通。请稍后再试，或致电 647-930-6688。 Online submission is not available yet. Please try again later or call 647-930-6688.';
 			return;
 		}
 
@@ -289,7 +289,7 @@
 		if (fromName && clientName) fromName.value = clientName;
 
 		button.disabled = true;
-		status.textContent = '正在提交…';
+		status.textContent = '正在提交… Submitting…';
 
 		fetch('https://api.web3forms.com/submit', {
 			method: 'POST',
@@ -314,7 +314,7 @@
 				if (success) success.scrollIntoView({ behavior: 'smooth', block: 'start' });
 			})
 			.catch(function () {
-				status.textContent = '提交没有成功，请稍后再试。身份证件仍请发到 Lawyer@HLawFirmOntario.com。';
+				status.textContent = '提交没有成功，请稍后再试。身份证件仍请发到 Lawyer@HLawFirmOntario.com. Submission failed. Please try again later. Please still email ID documents to Lawyer@HLawFirmOntario.com.';
 				button.disabled = false;
 			});
 	});

@@ -14,8 +14,8 @@ export function getStaticPaths() {
 }
 
 const { form } = Astro.props;
-const title = `${form.titleZh} | 客户登记表 | H. LAW FIRM`;
-const description = `${form.kickerZh}：${form.titleZh}。请用英文填写。本页仅供客户填写，不公开收录。`;
+const title = `${form.titleZh} | ${form.titleEn} | 客户登记表 Client Intake | H. LAW FIRM`;
+const description = `${form.kickerZh}：${form.titleZh}。${form.kickerEn}: ${form.titleEn}. Please complete in English. 本页仅供客户填写，不公开收录。`;
 ---
 
 <!doctype html>

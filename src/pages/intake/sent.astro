@@ -5,8 +5,8 @@ import Footer from '../../components/Footer.astro';
 import { DOCUMENT_EMAIL } from '../../data/intake-forms';
 import '../../styles/intake.css';
 
-const title = '表格已提交 | H. LAW FIRM';
-const description = '客户登记表已提交。本页不公开收录。';
+const title = '表格已提交 Form submitted | H. LAW FIRM';
+const description = '客户登记表已提交。Intake form submitted. 本页不公开收录。';
 ---
 
 <!doctype html>
@@ -21,12 +21,18 @@ const description = '客户登记表已提交。本页不公开收录。';
 		<main>
 			<article class="intake">
 				<div class="intake-success">
-					<h1>已收到</h1>
+					<h1>已收到 Received</h1>
 					<p>表格已经提交。律师会查看您填写的资料。</p>
+					<p>The form has been submitted. A lawyer will review the information you provided.</p>
 					<p>
 						两份有效身份证件请另发至
 						<a href={`mailto:${DOCUMENT_EMAIL}`}>{DOCUMENT_EMAIL}</a>
 						（护照；PR卡正反面；加拿大驾照正反面）。
+					</p>
+					<p>
+						Please email two pieces of valid ID to
+						<a href={`mailto:${DOCUMENT_EMAIL}`}>{DOCUMENT_EMAIL}</a>
+						(passport; PR card front and back; or Canadian driver’s licence front and back).
 					</p>
 				</div>
 			</article>

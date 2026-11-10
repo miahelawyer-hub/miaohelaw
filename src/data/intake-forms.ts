@@ -148,7 +148,7 @@ function children(rows: number, caption?: string): IntakeField {
 	return {
 		kind: 'grid',
 		caption,
-		rowLabel: '子女',
+		rowLabel: 'Child 子女',
 		namePrefix: 'Child',
 		rows,
 		columns: [
@@ -258,7 +258,7 @@ function clientIdentity(): IntakeField[] {
 function shareholders(): IntakeField {
 	return {
 		kind: 'grid',
-		rowLabel: '股东',
+		rowLabel: 'Shareholder 股东',
 		namePrefix: 'Shareholder',
 		rows: 3,
 		columns: [
@@ -654,7 +654,7 @@ export const intakeForms: IntakeFormDef[] = [
 			{
 				title: '3. Other Purchasers (if any) 其他买方（如有）',
 				fields: [
-					otherParties('其他买方', 'Other purchaser'),
+					otherParties('Other purchaser 其他买方', 'Other purchaser'),
 					{
 						kind: 'radio',
 						name: 'How will you hold title',
@@ -804,7 +804,7 @@ export const intakeForms: IntakeFormDef[] = [
 			},
 			{
 				title: '3. Other Sellers on Title (if any) 产权上的其他卖方（如有）',
-				fields: [otherParties('其他卖方', 'Other seller')],
+				fields: [otherParties('Other seller 其他卖方', 'Other seller')],
 			},
 			{
 				title: '4. Property and Sale 房产及交易信息',
@@ -916,7 +916,7 @@ export const intakeForms: IntakeFormDef[] = [
 			},
 			{
 				title: '3. Other Owners on Title (if any) 产权上的其他业主（如有）',
-				fields: [otherParties('其他业主', 'Other owner')],
+				fields: [otherParties('Other owner 其他业主', 'Other owner')],
 			},
 			{
 				title: '4. Property 房产信息',
@@ -1289,7 +1289,7 @@ export const intakeForms: IntakeFormDef[] = [
 				fields: [
 					{
 						kind: 'grid',
-						rowLabel: '其他借款人',
+						rowLabel: 'Other borrower 其他借款人',
 						namePrefix: 'Other borrower',
 						rows: 2,
 						columns: [

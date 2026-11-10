@@ -22,7 +22,7 @@ const days = Array.from({ length: 31 }, (_, index) => String(index + 1).padStart
 		required={required}
 		autocomplete={birthday ? 'bday-year' : undefined}
 	>
-		<option value="">年</option>
+		<option value="">Year 年</option>
 		{years.map((year) => <option value={year}>{year}</option>)}
 	</select>
 	<select
@@ -31,7 +31,7 @@ const days = Array.from({ length: 31 }, (_, index) => String(index + 1).padStart
 		required={required}
 		autocomplete={birthday ? 'bday-month' : undefined}
 	>
-		<option value="">月</option>
+		<option value="">Month 月</option>
 		{months.map((month) => <option value={month}>{month}</option>)}
 	</select>
 	<select
@@ -40,7 +40,7 @@ const days = Array.from({ length: 31 }, (_, index) => String(index + 1).padStart
 		required={required}
 		autocomplete={birthday ? 'bday-day' : undefined}
 	>
-		<option value="">日</option>
+		<option value="">Day 日</option>
 		{days.map((day) => <option value={day}>{day}</option>)}
 	</select>
 </div>
