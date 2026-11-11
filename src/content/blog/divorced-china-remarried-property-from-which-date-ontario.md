@@ -20,6 +20,8 @@ relatedIntro: "复婚从哪天算、中国离完还能不能分、婚前房子�
 relatedReading:
   - slug: china-divorce-ontario-equalization-afterward
     line: "中国离完、没复婚，加拿大房子常常还能分。这篇是离过又复婚，安省只审这一段。"
+  - slug: divorced-then-cohabit-no-equalization-ontario
+    line: "离过又没复婚，后来只是同居，房子不走夫妻平分。这篇是离过又复婚，安省只从复婚那天起算。"
   - slug: married-only-china-living-in-canada-one-divorce
     line: "只在中国结的婚，人在加拿大，办一次就行。去哪边办，后果差很多。"
   - slug: net-family-property-ontario

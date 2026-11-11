@@ -19,6 +19,8 @@ relatedIntro: "Family court ordering a sale, waiting on the market, and a stalle
 relatedReading:
   - slug: force-sale-matrimonial-home-ontario
     line: "Spouse won't sell, won't pay, won't leave — that is a family-law sale motion. This piece is the bank selling, and a family case will not stop it."
+  - slug: common-law-joint-house-wont-sell-court-ontario
+    line: "After a common-law split, a jointly owned house he will not sell can still go to court for a sale order. This piece is already in default — the bank is selling, and a family case will not stop it."
   - slug: resp-university-bank-can-touch-ontario
     line: "An RESP set aside for university is still reachable by the bank. Intention is not a legal lock."
   - slug: house-appreciation-after-separation-ontario

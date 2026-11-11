@@ -15,6 +15,8 @@ relatedIntro: "Three years together, parental money, and whether a cohabitation 
 relatedReading:
   - slug: common-law-three-years-ontario-split-property
     line: "The internet says three years means a 50/50 split. That is BC. Ontario does not equalize common-law property."
+  - slug: divorced-then-cohabit-no-equalization-ontario
+    line: "Married before, divorced, then lived together again without remarrying — that later stretch is cohabitation, not married-property equalization."
   - slug: resulting-trust-parental-gifts-ontario
     line: "Money from your parents: gift or trust. Keep the transfer slips yourself."
   - slug: prenuptial-agreement-ontario-2026

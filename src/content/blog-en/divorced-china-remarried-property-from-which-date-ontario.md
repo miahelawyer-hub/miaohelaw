@@ -20,6 +20,8 @@ relatedIntro: "From which date a remarriage is measured, whether a China divorce
 relatedReading:
   - slug: china-divorce-ontario-equalization-afterward
     line: "Divorced in China, never remarried — the Canadian house can often still be equalized. This article is after a remarriage, and Ontario only measures this marriage."
+  - slug: divorced-then-cohabit-no-equalization-ontario
+    line: "Divorced and later lived together without remarrying — that later stretch is cohabitation, not married-property equalization. This piece is after a remarriage, measured from the remarriage date."
   - slug: married-only-china-living-in-canada-one-divorce
     line: "A China-only marriage, living in Canada — one divorce is enough. Where you file changes the outcome."
   - slug: net-family-property-ontario

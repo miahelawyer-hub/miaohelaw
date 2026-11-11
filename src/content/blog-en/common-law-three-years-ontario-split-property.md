@@ -37,6 +37,10 @@ relatedReading:
     line: "A common-law house-share transfer is not a child-support buyout."
   - slug: in-laws-name-house-lived-decade-divorce-ontario
     line: "A house in the in-laws' names after a decade. Contribution goes through constructive trust."
+  - slug: divorced-then-cohabit-no-equalization-ontario
+    line: "Divorced, then moved back in without remarrying — the house is still not equalized as married property. This piece is never married, and three years of cohabitation still does not equalize."
+  - slug: common-law-joint-house-wont-sell-court-ontario
+    line: "After a common-law split, he will not sell the jointly owned house — you cannot sell the whole house alone. This piece is never married, and property is still not equalized."
   - href: /en/family-law/common-law/
     title: Common-law relationships
     line: "Ontario common-law property, support and children are not the married-couple rulebook."

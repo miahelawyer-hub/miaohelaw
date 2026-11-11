@@ -25,6 +25,8 @@ relatedReading:
     line: "境外资产与银行账户在安省离婚程序中的总体处理方式。"
   - slug: common-law-three-years-ontario-split-property
     line: "同居没有财产平分。父母给的钱单独账户、凭证自己存。"
+  - slug: divorced-then-cohabit-no-equalization-ontario
+    line: "没复婚、名字不在产权上，争的是信托和出资。这篇是没复婚，不走夫妻平分。"
   - slug: in-laws-name-house-lived-decade-divorce-ontario
     line: "房子在公婆名下，住了十几年。钱是谁出的，才是 resulting trust 那条路。"
   - slug: already-married-marriage-contract-home-down-payment-ontario

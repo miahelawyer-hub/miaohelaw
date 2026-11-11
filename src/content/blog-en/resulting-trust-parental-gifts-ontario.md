@@ -25,6 +25,8 @@ relatedReading:
     line: "How foreign property and bank accounts are handled in Ontario divorce proceedings."
   - slug: common-law-three-years-ontario-split-property
     line: "Ontario common law does not equalize. Keep parental money in its own account, with the slips."
+  - slug: divorced-then-cohabit-no-equalization-ontario
+    line: "Without remarriage, and with your name not on title, the fight is trust and contribution. This piece is no remarriage, so there is no married-property equalization."
   - slug: in-laws-name-house-lived-decade-divorce-ontario
     line: "A house titled in the in-laws' names after a decade. Follow the money — that is the resulting-trust road."
   - slug: already-married-marriage-contract-home-down-payment-ontario

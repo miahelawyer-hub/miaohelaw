@@ -17,6 +17,8 @@ tags:
 relatedReading:
   - slug: already-married-marriage-contract-home-down-payment-ontario
     line: "已经结婚了，现在签协议说婚房归我、父母的首付要拿回去，还来得及。来得及。"
+  - slug: divorced-then-cohabit-no-equalization-ontario
+    line: "没复婚又想把房子说清楚，签同居协议。没协议、没复婚，法院回到产权和证据。"
 ---
 
 在华人社区，越来越多的人在结婚前选择签订婚前协议。这是一个理智的决定——但很多人对婚前协议在Ontario的法律效力存在严重误解，导致花了钱签了协议，离婚时却发现协议根本无法执行。

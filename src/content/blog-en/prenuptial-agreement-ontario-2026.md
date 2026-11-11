@@ -14,6 +14,8 @@ tags:
 relatedReading:
   - slug: already-married-marriage-contract-home-down-payment-ontario
     line: "Already married — is it too late to say the home is yours and the parents get the down payment back? Not too late."
+  - slug: divorced-then-cohabit-no-equalization-ontario
+    line: "If you do not remarry and still want the house written down, sign a cohabitation agreement. Without that, the court goes back to title and evidence."
 ---
 
 A prenuptial agreement — called a **marriage contract** in Ontario — is a legally binding agreement signed before marriage that sets out how assets and support will be handled if the marriage breaks down.

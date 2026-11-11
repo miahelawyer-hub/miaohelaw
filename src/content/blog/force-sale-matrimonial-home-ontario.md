@@ -21,6 +21,8 @@ relatedReading:
     line: "房子写在他名下，能注册成婚房。登记了，他偷偷贷不出来。指定不是卖房。"
   - slug: joint-title-spouse-sell-half-ontario
     line: "联名房子，他能不能一个人把一半卖掉。不太可能。法律没禁止，没有你同意律师不愿办。"
+  - slug: common-law-joint-house-wont-sell-court-ontario
+    line: "同居分手，联名房子他不卖，一个人卖不了整套，只能去法院申请卖房令。这篇是婚姻住宅的强制出售。"
   - slug: "net-family-property-ontario"
     line: "均等化怎么算——卖房款最终要回答的就是这笔账。"
   - slug: "toronto-divorce-lawyer-fees-3000-vs-30000"

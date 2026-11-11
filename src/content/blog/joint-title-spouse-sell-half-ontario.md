@@ -25,6 +25,8 @@ relatedReading:
     line: "均等化过了时效，联名仍是一人一半。这篇讲他能不能把那一半卖给别人。"
   - slug: force-sale-matrimonial-home-ontario
     line: "对方不卖、不付、不搬走，可以向法院申请卖掉。这篇是他能不能一个人把一半卖掉。"
+  - slug: common-law-joint-house-wont-sell-court-ontario
+    line: "同居分手，他不卖联名房子，整套一个人卖不了，只能去法院申请卖房令。这篇是他能不能把一半卖给别人。"
   - slug: said-house-money-yours-wont-sign-agreement-ontario
     line: "口头说房子给你，不写协议不算。私下协议同样改不了产权登记。"
   - slug: dissipation-of-assets

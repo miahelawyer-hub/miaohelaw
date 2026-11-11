@@ -27,6 +27,8 @@ relatedReading:
     line: "Parents' money: gift or loan. Write it down at the time."
   - slug: common-law-three-years-ontario-split-property
     line: "Ontario common law does not equalize. Contribution fights go through constructive trust."
+  - slug: divorced-then-cohabit-no-equalization-ontario
+    line: "Without remarriage, a name that is not on the house does not automatically get half. This piece is a house in the in-laws names — you still have to prove a contribution."
   - slug: force-sale-matrimonial-home-ontario
     line: "Can't agree who keeps it — sell and split. First you have to show you have an interest in the house."
   - href: /en/family-law/property-division/

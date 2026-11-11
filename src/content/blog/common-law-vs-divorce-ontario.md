@@ -18,6 +18,8 @@ relatedIntro: "同居满三年会不会像结婚一样平分、父母给的钱�
 relatedReading:
   - slug: common-law-three-years-ontario-split-property
     line: "网上说同居满三年就平分，那是BC。安省没有夫妻财产平分。"
+  - slug: divorced-then-cohabit-no-equalization-ontario
+    line: "以前结过婚、离了又没复婚，后面那段按同居处理，房子不走夫妻平分。"
   - slug: resulting-trust-parental-gifts-ontario
     line: "父母给的钱，赠与还是信托。凭证要自己存。"
   - slug: prenuptial-agreement-ontario-2026

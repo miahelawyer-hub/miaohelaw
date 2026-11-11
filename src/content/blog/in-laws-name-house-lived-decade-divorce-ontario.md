@@ -27,6 +27,8 @@ relatedReading:
     line: "父母的钱是送的还是借的，当时就要写清楚。"
   - slug: common-law-three-years-ontario-split-property
     line: "安省同居没有财产平分。贡献争议走 constructive trust。"
+  - slug: divorced-then-cohabit-no-equalization-ontario
+    line: "没复婚，名字不在房子上不会自动分一半。这篇是房子在公婆名下，要证明投入。"
   - slug: force-sale-matrimonial-home-ontario
     line: "谈不拢归谁，卖了分钱。先得证明你对这房子有份。"
   - href: /family-law/property-division/

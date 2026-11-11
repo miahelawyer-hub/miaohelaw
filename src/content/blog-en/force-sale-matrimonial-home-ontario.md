@@ -23,6 +23,8 @@ relatedReading:
     line: "The house is only in his name — designate it. Once registered, he cannot secretly mortgage it. Designation is not a sale."
   - slug: joint-title-spouse-sell-half-ontario
     line: "The house is in both names. Can he sell his half alone. Not likely. The law does not forbid it, but lawyers will not help without your consent."
+  - slug: common-law-joint-house-wont-sell-court-ontario
+    line: "After a common-law split, a jointly owned house he will not sell cannot be sold whole without a court order. This piece is a matrimonial-home force sale."
   - slug: "net-family-property-ontario"
     line: "How equalization works — the claim the sale proceeds will ultimately answer to."
   - slug: "toronto-divorce-lawyer-fees-3000-vs-30000"

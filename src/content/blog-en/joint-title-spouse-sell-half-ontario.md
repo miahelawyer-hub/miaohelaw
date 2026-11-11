@@ -25,6 +25,8 @@ relatedReading:
     line: "After the equalization deadline, joint title is still half and half. This piece is whether he can sell that half to someone else."
   - slug: force-sale-matrimonial-home-ontario
     line: "If he will not sell, pay or leave, you can ask the court to sell. This piece is whether he can sell his half alone."
+  - slug: common-law-joint-house-wont-sell-court-ontario
+    line: "After a common-law split, he will not sell the jointly owned house — you cannot sell the whole house alone, and the remaining route is a court order. This piece is whether he can sell his half to someone else."
   - slug: said-house-money-yours-wont-sign-agreement-ontario
     line: "An oral promise that the house is yours counts for nothing. A private agreement likewise cannot change the title registration."
   - slug: dissipation-of-assets

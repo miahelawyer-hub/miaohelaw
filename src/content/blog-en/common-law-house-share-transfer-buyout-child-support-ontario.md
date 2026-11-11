@@ -22,6 +22,10 @@ relatedReading:
     line: "Writing 'no child support' into an agreement usually will not hold. The child's money cannot be waived."
   - slug: common-law-three-years-ontario-split-property
     line: "Three years of common law in Ontario still does not equalize property like a marriage."
+  - slug: divorced-then-cohabit-no-equalization-ontario
+    line: "Divorced, then moved back in without remarrying — the house is still not equalized as married property. Joint title is divided by title."
+  - slug: common-law-joint-house-wont-sell-court-ontario
+    line: "After a common-law split, he will not sell the jointly owned house — you cannot sell the whole house without a court order. This piece is a share transfer that does not buy out child support."
   - slug: imputed-income-child-support-ontario
     line: "Support is based on actual income: pre-tax, and cash income counts."
   - slug: spousal-child-support-ontario
