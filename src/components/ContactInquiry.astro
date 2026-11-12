@@ -9,8 +9,9 @@ const copy =
 	lang === 'zh'
 		? {
 				title: '在线询问',
-				lead: '留下姓名、邮箱和想问的问题。回复会发到您留下的邮箱。',
+				lead: '留下姓名、电话、邮箱和想问的问题。回复会发到您留下的邮箱。',
 				name: '姓名',
+				phone: '电话',
 				email: '邮箱',
 				question: '询问的问题',
 				submit: '发送询问',
@@ -25,8 +26,9 @@ const copy =
 			}
 		: {
 				title: 'Online inquiry',
-				lead: 'Leave your name, email, and question. The reply will go to the email you provide.',
+				lead: 'Leave your name, phone, email, and question. The reply will go to the email you provide.',
 				name: 'Name',
+				phone: 'Phone',
 				email: 'Email',
 				question: 'Your question',
 				submit: 'Send inquiry',
@@ -75,6 +77,13 @@ const copy =
 				<abbr class="inquiry-req" title={lang === 'zh' ? '必填' : 'Required'}>*</abbr>
 			</span>
 			<input name="Name" type="text" required autocomplete="name" data-client-name />
+		</label>
+		<label class="inquiry-field">
+			<span>
+				{copy.phone}
+				<abbr class="inquiry-req" title={lang === 'zh' ? '必填' : 'Required'}>*</abbr>
+			</span>
+			<input name="Phone" type="tel" required autocomplete="tel" />
 		</label>
 		<label class="inquiry-field">
 			<span>
