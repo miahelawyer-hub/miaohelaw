@@ -23,6 +23,8 @@ relatedReading:
     line: 诉讼成本与费用裁定（costs）的基本框架，便于理解程序选择背后的经济因素。
   - slug: separation-agreement-vs-divorce-ontario
     line: 分居协议与离婚程序的关系，帮助理解在诉讼外是否仍有协商空间。
+  - slug: own-lawyer-cannot-interpret-court-ontario
+    line: "有律师了，自己的律师不能当场当翻译。法院翻译要提前申请，当天找不到就要延期。"
 ---
 
 ## 各地区程序差异核心要点

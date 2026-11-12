@@ -27,6 +27,8 @@ relatedReading:
     line: How costs awards work in family law — relevant when comparing litigation paths and budgets.
   - slug: separation-agreement-vs-divorce-ontario
     line: How separation agreements relate to the divorce process — often relevant before heavy court time is spent.
+  - slug: own-lawyer-cannot-interpret-court-ontario
+    line: "You have a lawyer — she still cannot interpret in court. A court interpreter has to be requested in advance, or the hearing is adjourned."
 ---
 
 ## Key Regional Procedure Differences

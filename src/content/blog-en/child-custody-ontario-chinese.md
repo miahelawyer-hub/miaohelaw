@@ -14,6 +14,8 @@ tags:
 relatedReading:
   - slug: supervised-parenting-time-child-does-not-want-ontario
     line: A child who does not want unsupervised time is not an automatic supervision order. Age, the whole file, and third-party evidence govern.
+  - slug: own-lawyer-cannot-interpret-court-ontario
+    line: "If you need a court interpreter, apply in advance. Your own lawyer cannot interpret on the spot, and family will not do."
   - slug: adult-child-no-custody-ontario
     line: An adult at university is not usually a custody case. University costs are child support, not parenting.
   - slug: sole-custody-vs-child-lives-with-me-ontario

@@ -23,6 +23,8 @@ relatedReading:
     line: "How hourly billing interacts with consult style, so you can judge whether time is being spent on outcomes—not only on storytelling."
   - slug: ontario-divorce-timeline-2026
     line: "Uncontested versus contested timing, useful context when you ask counsel about milestones and pacing."
+  - slug: own-lawyer-cannot-interpret-court-ontario
+    line: "Once you have a lawyer, she still cannot interpret in court. A court interpreter has to be requested in advance, or the hearing is adjourned."
 faqStructured:
   - question: "Do I need a lawyer who physically practices only in Markham?"
     answer: "Ontario family law rules are province-wide. Geography mainly affects convenience of meetings and logistics. Fit turns more on experience with your issue mix—parenting, support, property, or cross-border factors—and on transparent advice about risks and realistic ranges."

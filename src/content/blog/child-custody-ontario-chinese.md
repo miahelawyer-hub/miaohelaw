@@ -18,6 +18,8 @@ tags:
 relatedReading:
   - slug: supervised-parenting-time-child-does-not-want-ontario
     line: 孩子不想单独见对方，能不能要求监督探视——年纪太小不当定案，青少年会听仍看全案。
+  - slug: own-lawyer-cannot-interpret-court-ontario
+    line: "需要法庭翻译，提前申请。自己的律师不能当场翻，家人朋友法庭不接受。"
   - slug: adult-child-no-custody-ontario
     line: 孩子已经成年、在读大学，通常不再争抚养权；大学费用是另一条。
   - slug: sole-custody-vs-child-lives-with-me-ontario

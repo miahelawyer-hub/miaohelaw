@@ -18,6 +18,8 @@ relatedReading:
     line: "均等化到底怎么算——僵局争的通常就是这笔钱。"
   - slug: "toronto-divorce-lawyer-fees-3000-vs-30000"
     line: "律师费由什么决定，以及卡住的案子为什么会迅速变贵。"
+  - slug: own-lawyer-cannot-interpret-court-ontario
+    line: "听不懂庭上的话，先把翻译申请下来。自己的律师不能当场翻，不等于要换律师。"
   - slug: "mortgage-default-family-court-cannot-stop-bank-sale-ontario"
     line: "房贷已经欠款，家庭案子再卡住，银行处置不会停。"
   - slug: "accidentally-shared-files-family-court-ontario"

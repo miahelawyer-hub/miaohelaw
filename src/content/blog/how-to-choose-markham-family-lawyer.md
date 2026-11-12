@@ -21,6 +21,8 @@ relatedReading:
     line: "按小时计费下，理解律师费区间与计费方式，更容易判断「倾听与打断」是否物有所值。"
   - slug: ontario-divorce-timeline-2026
     line: "无争议与争议案件在时间线上的差异，有助于你在咨询里追问程序节点与策略节奏。"
+  - slug: own-lawyer-cannot-interpret-court-ontario
+    line: "请了律师，她也不能在庭上兼做翻译。法院翻译要提前申请，当天找不到就要延期。"
 faqStructured:
   - question: "万锦找家庭法律师，是不是一定要找「同区」的？"
     answer: "安省家庭法的实体规则在全省一致；地域更多影响的是通勤与面谈便利。更重要的是律师是否熟悉你这类争议（分居、离婚、子女、财产或跨境因素），能否坦诚说明预期、风险与可选路径。"

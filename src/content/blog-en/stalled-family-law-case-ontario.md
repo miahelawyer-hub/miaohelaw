@@ -20,6 +20,8 @@ relatedReading:
     line: "How equalization actually works — the claim a deadlock is usually about."
   - slug: "toronto-divorce-lawyer-fees-3000-vs-30000"
     line: "What drives legal fees, and why a stalled file gets expensive fast."
+  - slug: own-lawyer-cannot-interpret-court-ontario
+    line: "If you cannot follow the hearing, get the interpreter in place first. Your own lawyer cannot interpret on the spot — that is not a reason to change counsel."
   - slug: "mortgage-default-family-court-cannot-stop-bank-sale-ontario"
     line: "If the mortgage is already in arrears, stalling the family file will not stop the lender."
   - slug: "accidentally-shared-files-family-court-ontario"

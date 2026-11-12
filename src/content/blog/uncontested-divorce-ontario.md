@@ -16,6 +16,8 @@ relatedIntro: "建议与本文一起阅读："
 relatedReading:
   - slug: "ontario-divorce-timeline-2026"
     line: "每个阶段实际需要多久，以及什么因素决定总时长。"
+  - slug: own-lawyer-cannot-interpret-court-ontario
+    line: "文件翻译要有资质译员，朋友家人不行。庭上口头翻译也一样：自己的律师不能当场翻。"
   - slug: "net-family-property-ontario"
     line: "为什么财产问题要在离婚定案之前处理，而不是之后。"
   - slug: "equalization-limitation-chinese-lawyer-ontario"

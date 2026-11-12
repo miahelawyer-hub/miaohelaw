@@ -17,6 +17,8 @@ relatedIntro: "Read these alongside this guide:"
 relatedReading:
   - slug: "ontario-divorce-timeline-2026"
     line: "How long each stage actually takes, and what drives the total."
+  - slug: own-lawyer-cannot-interpret-court-ontario
+    line: "Document translation needs a qualified translator. The same rule applies in court: your own lawyer cannot interpret on the spot."
   - slug: "net-family-property-ontario"
     line: "Why property should be settled before the divorce is finalized, not after."
   - slug: "equalization-limitation-chinese-lawyer-ontario"
