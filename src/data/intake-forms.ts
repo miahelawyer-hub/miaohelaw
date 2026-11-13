@@ -590,10 +590,10 @@ export const intakeForms: IntakeFormDef[] = [
 		subject: '客户登记表 | 同居协议',
 		...familyKicker,
 		sections: [
+			consultation(),
 			{
-				title: '1. Your Information 您的信息',
+				title: '2. Your Information 您的信息',
 				fields: [
-					heardAboutQuestion(),
 					t('Full legal name', 'Full legal name 姓名', {
 						required: true,
 						clientName: true,
@@ -620,7 +620,7 @@ export const intakeForms: IntakeFormDef[] = [
 				],
 			},
 			{
-				title: '2. Partner Information 同居伴侣信息',
+				title: '3. Partner Information 同居伴侣信息',
 				fields: [
 					t("Partner's full name", "Partner's full name 姓名", { required: true }),
 					{ kind: 'date', name: "Partner's birthday", label: 'Birthday 出生日期', required: true },
@@ -630,7 +630,7 @@ export const intakeForms: IntakeFormDef[] = [
 				],
 			},
 			{
-				title: '3. Relationship Details 同居关系信息',
+				title: '4. Relationship Details 同居关系信息',
 				fields: [
 					{
 						kind: 'radio',
@@ -653,7 +653,7 @@ export const intakeForms: IntakeFormDef[] = [
 				],
 			},
 			{
-				title: '4. Children and Pets 子女及宠物',
+				title: '5. Children and Pets 子女及宠物',
 				fields: [
 					t('How many children do you have', 'How many children do you have? 子女人数', { required: true }),
 					t('How many pets do you have', 'How many pets do you have? 宠物数量', { required: true }),
