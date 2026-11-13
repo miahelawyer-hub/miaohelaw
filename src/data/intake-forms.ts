@@ -1,7 +1,7 @@
 /**
  * Client intake fields copied from the office PDFs:
  * Separation & Divorce, Common-Law Separation, Prenuptial Agreement,
- * Marriage Contract, Designation of Matrimonial Home, Real Estate Purchase,
+ * Marriage Contract, Cohabitation Agreement, Designation of Matrimonial Home, Real Estate Purchase,
  * Real Estate Sale, Real Estate Refinance, Real Estate Title Transfer,
  * Private Mortgage – Borrower, Business Purchase, Business Sale.
  * Required marks follow the asterisks printed on those PDFs.
@@ -571,6 +571,85 @@ export const intakeForms: IntakeFormDef[] = [
 					t('Place of marriage (city, country)', 'Place of marriage (city, country) 结婚登记地（城市、国家）', {
 						wide: true,
 					}),
+				],
+			},
+			{
+				title: '5. Children and Pets 子女及宠物',
+				fields: [
+					t('How many children do you have', 'How many children do you have? 子女人数', { required: true }),
+					t('How many pets do you have', 'How many pets do you have? 宠物数量', { required: true }),
+					children(3),
+				],
+			},
+		],
+	},
+	{
+		slug: 'cohabitation-agreement',
+		titleZh: '同居协议',
+		titleEn: 'Cohabitation Agreement',
+		subject: '客户登记表 | 同居协议',
+		...familyKicker,
+		sections: [
+			consultation(),
+			{
+				title: '2. Your Information 您的信息',
+				fields: [
+					t('Full legal name', 'Full legal name 姓名', {
+						required: true,
+						clientName: true,
+						autoComplete: 'name',
+					}),
+					{ kind: 'date', name: 'Birthday', label: 'Birthday 出生日期', required: true, autoComplete: 'bday' },
+					{ kind: 'tel', name: 'Phone number', label: 'Phone number 电话', required: true, autoComplete: 'tel' },
+					t('Residence address', 'Residence address 居住地址', {
+						required: true,
+						wide: true,
+						autoComplete: 'street-address',
+					}),
+					{
+						kind: 'email',
+						name: 'Email (please confirm)',
+						label: 'Email (please confirm) 邮箱（请确认）',
+						required: true,
+						replyEmail: true,
+						autoComplete: 'email',
+					},
+					t('Occupation', 'Occupation 职业', { required: true, autoComplete: 'organization-title' }),
+					t('Business address', 'Business address 工作单位地址', { required: true, wide: true }),
+					previousDivorce('you'),
+				],
+			},
+			{
+				title: '3. Partner Information 同居伴侣信息',
+				fields: [
+					t("Partner's full name", "Partner's full name 姓名", { required: true }),
+					{ kind: 'date', name: "Partner's birthday", label: 'Birthday 出生日期', required: true },
+					{ kind: 'tel', name: "Partner's phone number", label: 'Phone number 电话', required: true },
+					t("Partner's address", "Partner's address 地址", { required: true, wide: true }),
+					{ kind: 'email', name: "Partner's email", label: 'Email 邮箱', required: true },
+				],
+			},
+			{
+				title: '4. Relationship Details 同居关系信息',
+				fields: [
+					{
+						kind: 'radio',
+						name: 'Are you already living together',
+						label: 'Are you already living together? 您们是否已经开始同居？',
+						required: true,
+						options: yesNo,
+					},
+					{
+						kind: 'date',
+						name: 'Date you started living together, or the expected date',
+						label: 'Date you started living together, or the expected date 同居开始日期或预计开始日期',
+						required: true,
+					},
+					t(
+						'Place you live together, or will live (city, country)',
+						'Place you live together, or will live (city, country) 同居地点（城市、国家）',
+						{ wide: true },
+					),
 				],
 			},
 			{
