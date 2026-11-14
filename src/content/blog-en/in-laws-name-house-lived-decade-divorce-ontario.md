@@ -23,6 +23,8 @@ relatedReading:
     line: "A matrimonial home is not split by the percentages on title. With in-laws on title, you first have to show you have an interest."
   - slug: resulting-trust-parental-gifts-ontario
     line: "A gratuitous transfer from parents to an adult child is presumed to be held in trust, not a gift."
+  - slug: joint-account-house-in-parents-name-divorce-ontario
+    line: "Title in the parents names, money from a joint account, no gift letter — it still goes into equalization. This piece is living in the in-laws house: you still have to prove a contribution."
   - slug: chinese-divorce-property-gift-loan-trust-ontario
     line: "Parents' money: gift or loan. Write it down at the time."
   - slug: common-law-three-years-ontario-split-property

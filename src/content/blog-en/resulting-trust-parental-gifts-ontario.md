@@ -29,6 +29,8 @@ relatedReading:
     line: "Without remarriage, and with your name not on title, the fight is trust and contribution. This piece is no remarriage, so there is no married-property equalization."
   - slug: in-laws-name-house-lived-decade-divorce-ontario
     line: "A house titled in the in-laws' names after a decade. Follow the money — that is the resulting-trust road."
+  - slug: joint-account-house-in-parents-name-divorce-ontario
+    line: "The reverse: the couple paid, title is in the parents names, no gift letter — it is still a resulting trust and still goes into equalization."
   - slug: already-married-marriage-contract-home-down-payment-ontario
     line: "Already married — it is not too late to write the parents' down payment as a loan."
   - slug: company-in-my-name-never-looked-books-divorce-ontario

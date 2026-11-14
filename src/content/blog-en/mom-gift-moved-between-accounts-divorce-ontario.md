@@ -23,6 +23,8 @@ relatedReading:
     line: "A sudden debt to a relative with no records may not be recognized. Whoever claims it must prove it."
   - slug: resulting-trust-parental-gifts-ontario
     line: "Money a mother gives an adult child for free is presumed held in trust, not gifted."
+  - slug: joint-account-house-in-parents-name-divorce-ontario
+    line: "Joint account straight to the lawyer — a clear chain. This piece is money moved between accounts, and the more it moves the weaker the proof."
   - slug: parents-money-child-account-living-expenses-divorce-ontario
     line: "Parents' money went through the child's own account, and living expenses came out of the same fund."
   - slug: already-married-marriage-contract-home-down-payment-ontario

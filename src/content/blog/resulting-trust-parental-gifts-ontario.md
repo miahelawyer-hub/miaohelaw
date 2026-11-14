@@ -29,6 +29,8 @@ relatedReading:
     line: "没复婚、名字不在产权上，争的是信托和出资。这篇是没复婚，不走夫妻平分。"
   - slug: in-laws-name-house-lived-decade-divorce-ontario
     line: "房子在公婆名下，住了十几年。钱是谁出的，才是 resulting trust 那条路。"
+  - slug: joint-account-house-in-parents-name-divorce-ontario
+    line: "反过来：夫妻出钱、写在父母名下，没有赠与信，同样是推定信托，仍进均等化。"
   - slug: already-married-marriage-contract-home-down-payment-ontario
     line: "已经结婚了，签协议把父母的首付写成借款，还来得及。"
   - slug: company-in-my-name-never-looked-books-divorce-ontario

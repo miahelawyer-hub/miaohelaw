@@ -19,6 +19,8 @@ relatedIntro: "Whether the amount was enough, which account it went into, and wh
 relatedReading:
   - slug: resulting-trust-parental-gifts-ontario
     line: "Property parents give an adult child for free is presumed held in trust, not gifted. This piece is money that went through the child's own account."
+  - slug: joint-account-house-in-parents-name-divorce-ontario
+    line: "The reverse: money from the couple joint account paid to the lawyer, title in the parents names, no gift letter — still in equalization."
   - slug: chinese-divorce-property-gift-loan-trust-ontario
     line: "Parents' money: gift or loan. Write it down at the time."
   - slug: mom-gift-moved-between-accounts-divorce-ontario

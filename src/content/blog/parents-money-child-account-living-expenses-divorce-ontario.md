@@ -19,6 +19,8 @@ relatedIntro: "钱数够不够、打进哪张卡、有没有协议，是三笔�
 relatedReading:
   - slug: resulting-trust-parental-gifts-ontario
     line: "父母白给成年子女的财产，推定是代持，不是送的。这篇讲钱进了子女自己的卡。"
+  - slug: joint-account-house-in-parents-name-divorce-ontario
+    line: "反过来：钱从夫妻联名账户付给律师，写在父母名下，没有赠与信，仍进均等化。"
   - slug: chinese-divorce-property-gift-loan-trust-ontario
     line: "父母的钱是送的还是借的，当时就要写清楚。"
   - slug: mom-gift-moved-between-accounts-divorce-ontario

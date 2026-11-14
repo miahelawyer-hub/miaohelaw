@@ -22,6 +22,8 @@ relatedIntro: "若你还希望从净资产均等（Equalization）、整体财�
 relatedReading:
   - slug: rrsp-tfsa-in-his-name-contribution-divorce-ontario
     line: "钱是我赚的，RRSP买在他名下，不能按出资比例拿回。能证明是借款，才当债权另算。"
+  - slug: joint-account-house-in-parents-name-divorce-ontario
+    line: "房子写在父母名下，联名账户付给律师、没有赠与信，就是推定信托，仍进均等化。"
   - slug: ontario-divorce-property-division
     line: "安省 NFP 与婚房在均等分割中的特殊规则，可与本文「父母资金定性」对照阅读。"
   - slug: net-family-property-ontario

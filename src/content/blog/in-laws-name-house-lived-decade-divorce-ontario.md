@@ -23,6 +23,8 @@ relatedReading:
     line: "婚房不按产权证比例分。但公婆名下，先得证明你有份。"
   - slug: resulting-trust-parental-gifts-ontario
     line: "父母给成年子女的财产，推定是代持，不是送的。"
+  - slug: joint-account-house-in-parents-name-divorce-ontario
+    line: "房子写在父母名下，钱从联名账户付给律师，没有赠与信，仍进均等化。这篇是住在公婆名下，要证明投入。"
   - slug: chinese-divorce-property-gift-loan-trust-ontario
     line: "父母的钱是送的还是借的，当时就要写清楚。"
   - slug: common-law-three-years-ontario-split-property

@@ -22,6 +22,8 @@ relatedIntro: "For equalization basics, net family property mechanics, or impute
 relatedReading:
   - slug: rrsp-tfsa-in-his-name-contribution-divorce-ontario
     line: "You earned it, but the RRSP is in his name — contribution ratio does not bring it back. Prove a loan, and it is a separate debt claim."
+  - slug: joint-account-house-in-parents-name-divorce-ontario
+    line: "Title in the parents names, money from a joint account, no gift letter — a resulting trust, still in equalization."
   - slug: ontario-divorce-property-division
     line: "How Ontario equalization works and why the matrimonial home is treated differently—useful alongside gift/loan characterization."
   - slug: net-family-property-ontario
