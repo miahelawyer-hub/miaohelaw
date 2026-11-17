@@ -28,6 +28,8 @@ relatedReading:
     line: "净家庭财产锁在分居日。公式本身在这里。"
   - slug: premarital-home-sold-ontario-deduction
     line: "婚前的房子卖了换新房，旧房结婚日价值有时还能扣。婚房本身扣不掉。"
+  - slug: sold-condo-bought-matrimonial-home-deduction-ontario
+    line: "结婚后才卖condo买婚房：婚房不能扣，结婚日名下还在的condo净值可以扣。"
   - slug: matrimonial-home-property-division-not-based-on-title
     line: "产权登记比例，本来就不等于离婚时怎么分。"
   - slug: house-appreciation-after-separation-ontario

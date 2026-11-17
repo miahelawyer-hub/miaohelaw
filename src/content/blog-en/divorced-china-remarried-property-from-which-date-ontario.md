@@ -28,6 +28,8 @@ relatedReading:
     line: "Net family property locks on the separation date. The formula is here."
   - slug: premarital-home-sold-ontario-deduction
     line: "Sold the pre-marriage home and bought a new one — the old house's marriage-date value can sometimes still be deducted. The matrimonial home itself cannot."
+  - slug: sold-condo-bought-matrimonial-home-deduction-ontario
+    line: "Condo sold after the wedding to buy the matrimonial home: the home cannot be deducted, the wedding-day net value of the condo can."
   - slug: matrimonial-home-title-vs-property-division-ontario
     line: "The registered shares were never the same thing as equalization."
   - slug: house-appreciation-after-separation-ontario

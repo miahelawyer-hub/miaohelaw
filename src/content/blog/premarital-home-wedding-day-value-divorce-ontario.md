@@ -20,6 +20,8 @@ relatedIntro: "婚前房子还住着扣不扣、分居前卖掉租出去、分�
 relatedReading:
   - slug: premarital-home-sold-ontario-deduction
     line: "婚前的房子卖掉换了新房，旧房就不再是婚房，结婚日价值才可能扣。"
+  - slug: sold-condo-bought-matrimonial-home-deduction-ontario
+    line: "结婚后才卖condo买婚房：婚房价值不能扣，结婚日净值可以扣。这篇是分居那天还住着，一分都扣不掉。"
   - slug: buy-house-after-separation-still-divide-ontario
     line: "分居后再买一套。钱已经在分居日算过，新房不再重算，但要披露。"
   - slug: matrimonial-home-property-division-not-based-on-title

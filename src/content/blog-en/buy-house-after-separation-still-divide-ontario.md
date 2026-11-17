@@ -20,6 +20,8 @@ relatedIntro: "Buying another house after separation, whether the old house's in
 relatedReading:
   - slug: premarital-home-wedding-day-value-divorce-ontario
     line: "Still living in a pre-marriage home — no wedding-day deduction. That piece is the old house. This one is buying another with the savings."
+  - slug: sold-condo-bought-matrimonial-home-deduction-ontario
+    line: "Condo sold after the wedding to buy the matrimonial home: the home cannot be deducted, the wedding-day net value can. This piece is a house bought after separation, not counted twice."
   - slug: house-appreciation-after-separation-ontario
     line: "House went up after separation — check whose name is on title. That piece is the old house. This one is buying another with the savings."
   - slug: house-transferred-cheap-after-separation-ontario

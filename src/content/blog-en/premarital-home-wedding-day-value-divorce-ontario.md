@@ -20,6 +20,8 @@ relatedIntro: "Whether a pre-marriage home still occupied on separation day can 
 relatedReading:
   - slug: premarital-home-sold-ontario-deduction
     line: "Sold the pre-marriage home and bought another. The old house may no longer be the matrimonial home, so the wedding-day value can come off."
+  - slug: sold-condo-bought-matrimonial-home-deduction-ontario
+    line: "Condo sold after the wedding to buy the matrimonial home: the home cannot be deducted, the wedding-day net value can. This piece is still living there on separation day — none of it comes off."
   - slug: buy-house-after-separation-still-divide-ontario
     line: "Buying another house after separation. The money was already counted on separation day. The new home is not counted twice, but it must be disclosed."
   - slug: matrimonial-home-title-vs-property-division-ontario

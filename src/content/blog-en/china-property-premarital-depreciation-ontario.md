@@ -20,6 +20,8 @@ relatedIntro: "Read alongside:"
 relatedReading:
   - slug: premarital-home-sold-ontario-deduction
     line: "If a pre-marriage home is sold and replaced before separation, its date-of-marriage value may still be deductible."
+  - slug: sold-condo-bought-matrimonial-home-deduction-ontario
+    line: "Condo sold after the wedding to buy the matrimonial home: the home itself cannot be deducted, the wedding-day net value can. Buy the home first, then marry, and the deduction is gone."
   - slug: change-lawyer-recalculate-nfp-ontario
     line: "Can a property-division calculation be recalculated after changing lawyers mid-litigation?"
 faqStructured:

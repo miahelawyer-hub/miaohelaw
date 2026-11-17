@@ -20,6 +20,8 @@ relatedIntro: "建议一并阅读："
 relatedReading:
   - slug: premarital-home-sold-ontario-deduction
     line: "婚前房子卖掉换新房后，结婚日价值何时仍可扣除——同一条婚姻住宅认定规则。"
+  - slug: sold-condo-bought-matrimonial-home-deduction-ontario
+    line: "结婚后才卖condo买婚房：婚房本身不能扣，结婚日净值可以扣。先买婚房再结婚就扣不了。"
   - slug: change-lawyer-recalculate-nfp-ontario
     line: "诉讼中途换律师后，算错的财产分割还能不能重算——财务陈述是证据不是合同。"
 faqStructured:
