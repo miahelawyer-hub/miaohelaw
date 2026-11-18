@@ -27,6 +27,8 @@ relatedReading:
     line: "口头说房子和钱都给你，不肯写成协议，到法庭不算数。"
   - slug: sold-house-split-money-ai-agreement-ontario
     line: "缺公开、缺见证，谁写的都不认。分钱不等于结案。"
+  - slug: buyout-unpaid-sign-agreement-rights-ontario
+    line: "婚房过户买断款没拿齐，签协议不等于放弃权利。双方都没公开，法院有可能不认。"
   - slug: prenuptial-agreement-validity-ontario
     line: "签了之后哪些情况会被推翻。没公开、被催着签，都在这一关。"
   - href: /family-law/domestic-contracts/

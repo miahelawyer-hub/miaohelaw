@@ -27,6 +27,8 @@ relatedReading:
     line: "Not divorced yet, and they are already moving assets. A cheap transfer is still counted at separation-date market value."
   - slug: house-in-his-name-designate-matrimonial-home-ontario
     line: "The house is only in his name — designate it. Once registered, he cannot secretly transfer it away."
+  - slug: buyout-unpaid-sign-agreement-rights-ontario
+    line: "A contracted buyout should not release your rights until you are paid. This piece is a house transferred below market after separation — the books still use the separation-date value."
   - slug: joint-title-spouse-sell-half-ontario
     line: "A jointly owned house — a one-sided transfer is not likely. The law does not forbid it, but lawyers will not help without your consent. This piece is a house already transferred out of his sole name."
   - slug: cash-taken-home-safe-separation-ontario

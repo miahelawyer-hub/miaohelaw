@@ -25,6 +25,8 @@ relatedReading:
     line: "A house already transferred below market still counts at separation-date value. Designation is the lock before it is moved."
   - slug: force-sale-matrimonial-home-ontario
     line: "Can't agree who keeps it — sell and split. Section 21 blocks a unilateral sale; the court can still order one."
+  - slug: buyout-unpaid-sign-agreement-rights-ontario
+    line: "Transferring the matrimonial home before the buyout is paid does not end your rights if the agreement is drafted well. A charge after the transfer means a later sale pays you first."
   - slug: matrimonial-home-title-vs-property-division-ontario
     line: "Whose name is on title is the property math later, not an excuse to throw you out now."
   - slug: dissipation-of-assets

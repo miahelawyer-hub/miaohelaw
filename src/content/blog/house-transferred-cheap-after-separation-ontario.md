@@ -27,6 +27,8 @@ relatedReading:
     line: "还没离婚，对方已经在动财产。低价转走，账上仍按分居日市值。"
   - slug: house-in-his-name-designate-matrimonial-home-ontario
     line: "房子写在他名下，能注册成婚房。登记了，他偷偷转不走。"
+  - slug: buyout-unpaid-sign-agreement-rights-ontario
+    line: "协议约定过户买断，钱没到齐权利不该放。这篇是分居后低价转走，账仍按分居日市值。"
   - slug: joint-title-spouse-sell-half-ontario
     line: "联名房子，一个人过户不太可能。法律没禁止，没有你同意律师不愿办。这篇是他名下的房子已经转走了。"
   - slug: cash-taken-home-safe-separation-ontario

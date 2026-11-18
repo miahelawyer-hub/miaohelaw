@@ -25,6 +25,8 @@ relatedReading:
     line: "房子已经低价转走了，账仍按分居日市值。指定是转走之前先锁住。"
   - slug: force-sale-matrimonial-home-ontario
     line: "谈不拢归谁，卖了分钱。第21条卡住单方卖，不等于法院不能下令卖。"
+  - slug: buyout-unpaid-sign-agreement-rights-ontario
+    line: "婚房过户买断款没拿齐，签协议不等于放弃权利。过户后登记charge，卖房款先还你。"
   - slug: matrimonial-home-property-division-not-based-on-title
     line: "房子在谁名下，是以后分财产的账，不是现在赶人的借口。"
   - slug: dissipation-of-assets

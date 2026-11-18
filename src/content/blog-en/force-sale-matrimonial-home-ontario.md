@@ -21,6 +21,8 @@ relatedReading:
     line: "An RESP set aside for university is still reachable by the bank. Title in his name does not stop the lender from pursuing you."
   - slug: house-in-his-name-designate-matrimonial-home-ontario
     line: "The house is only in his name — designate it. Once registered, he cannot secretly mortgage it. Designation is not a sale."
+  - slug: buyout-unpaid-sign-agreement-rights-ontario
+    line: "Transferring the matrimonial home before the buyout is paid does not end your rights. Drafted well, a missed payment lets you apply to sell."
   - slug: joint-title-spouse-sell-half-ontario
     line: "The house is in both names. Can he sell his half alone. Not likely. The law does not forbid it, but lawyers will not help without your consent."
   - slug: common-law-joint-house-wont-sell-court-ontario

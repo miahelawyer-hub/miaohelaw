@@ -27,6 +27,8 @@ relatedReading:
     line: "He said the house and money are yours — he will not put it in writing. An oral promise counts for nothing."
   - slug: sold-house-split-money-ai-agreement-ontario
     line: "Missing disclosure and witnesses, it does not matter who wrote it. Splitting the money is not closing the case."
+  - slug: buyout-unpaid-sign-agreement-rights-ontario
+    line: "Transferring the matrimonial home before the buyout is paid does not end your rights. If neither side disclosed, the court may not uphold the agreement."
   - slug: prenuptial-agreement-validity-ontario
     line: "Once signed, when a court can still set it aside. No disclosure, rushed into signing — that is this gate."
   - href: /en/family-law/domestic-contracts/
