@@ -16,7 +16,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/buyout-unpaid-sign-agreement-rights-ontario/"
-relatedIntro: "Whether signing ends your rights, registering a charge after the transfer, and not waiting until the final year to sell are three ledgers:"
+relatedIntro: "Whether signing ends your rights, registering a charge after the transfer, and not waiting until the final year to sell are three separate issues:"
 relatedReading:
   - slug: house-in-his-name-designate-matrimonial-home-ontario
     line: "A house in his name can be designated as the matrimonial home, so a sale or mortgage needs your signature. This piece is a charge after the transfer, so sale proceeds pay the unpaid buyout first."

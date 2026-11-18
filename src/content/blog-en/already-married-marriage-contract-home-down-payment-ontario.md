@@ -16,7 +16,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/already-married-marriage-contract-home-down-payment-ontario/"
-relatedIntro: "Whether you can still sign after the wedding, what the contract can lock, and how parents' money is written down are three ledgers:"
+relatedIntro: "Whether you can still sign after the wedding, what the contract can lock, and how parents' money is written down are three separate issues:"
 relatedReading:
   - slug: prenuptial-agreement-ontario-2026
     line: "What a prenup can do in Ontario, and the misconceptions that come up most often."

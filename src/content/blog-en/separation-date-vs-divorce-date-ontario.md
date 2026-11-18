@@ -11,7 +11,7 @@ tags:
   - "markham-family-lawyer"
   - "miao-he-lawyer"
   - "ontario-family-law"
-relatedIntro: "Which day is the valuation date, and whether eating together and attending weddings as a couple undoes a date you agreed, are two ledgers:"
+relatedIntro: "Which day is the valuation date, and whether eating together and attending weddings as a couple undoes a date you agreed, are two separate issues:"
 relatedReading:
   - slug: same-roof-wedding-separation-date-ontario
     line: "Separate rooms under the same roof, but you still eat together and attend weddings — does that date still count?"

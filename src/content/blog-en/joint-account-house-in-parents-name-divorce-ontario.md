@@ -15,7 +15,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/joint-account-house-in-parents-name-divorce-ontario/"
-relatedIntro: "Registration does not keep it out, money from a joint account is a resulting trust, and taking it off the books requires proof of a gift are three ledgers:"
+relatedIntro: "Registration does not keep it out, money from a joint account is a resulting trust, and taking it off the books requires proof of a gift are three separate issues:"
 relatedReading:
   - slug: in-laws-name-house-lived-decade-divorce-ontario
     line: "A house in the in-laws names after a decade — who paid matters. This piece is joint-account money paid to the lawyer, no gift letter, still in equalization."

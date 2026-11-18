@@ -16,7 +16,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/common-law-house-share-transfer-buyout-child-support-ontario/"
-relatedIntro: "Whether a transfer buys out support, whether an agreement can waive it, and how common-law property splits are three ledgers:"
+relatedIntro: "Whether a transfer buys out support, whether an agreement can waive it, and how common-law property splits are three separate issues:"
 relatedReading:
   - slug: child-support-waiver-separation-agreement-ontario
     line: "Writing 'no child support' into an agreement usually will not hold. The child's money cannot be waived."
@@ -38,7 +38,7 @@ relatedReading:
     line: "A verbal 'we're done after this' counts for nothing in court."
   - href: /en/family-law/support/
     title: Child and spousal support
-    line: "Child support and spousal support are not the same ledger."
+    line: "Child support and spousal support are not the same issue."
 faqStructured:
   - question: "After our common-law split, he transferred his share of the house to me — does that buy out child support?"
     answer: "No. A transfer is a transfer; child support is child support. Signing over the house doesn't wipe out support."

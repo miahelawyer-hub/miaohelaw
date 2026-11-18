@@ -15,7 +15,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/common-law-joint-house-wont-sell-court-ontario/"
-relatedIntro: "One co-owner cannot sell the whole house, a verbal refusal does not veto a court order, and a bank sale leaves less net proceeds are three ledgers:"
+relatedIntro: "One co-owner cannot sell the whole house, a verbal refusal does not veto a court order, and a bank sale leaves less net proceeds are three separate issues:"
 relatedReading:
   - slug: joint-title-spouse-sell-half-ontario
     line: "Can he sell his half of a jointly owned house alone. Not likely. This piece is the whole house — he will not sell, and you cannot sell it yourself."

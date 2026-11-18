@@ -15,7 +15,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/separation-agreement-not-paying-child-support-fro-ontario/"
-relatedIntro: "Filing the agreement with the FRO does not require a lawsuit first, the monthly amount must be written clearly, arrears go in with a Statement of Arrears, and no wages or leaving Ontario means sue promptly are four ledgers:"
+relatedIntro: "Filing the agreement with the FRO does not require a lawsuit first, the monthly amount must be written clearly, arrears go in with a Statement of Arrears, and no wages or leaving Ontario means sue promptly are four separate issues:"
 relatedReading:
   - slug: fro-monthly-paying-arrears-still-collect-ontario
     line: "Already at the FRO and paying monthly again — the arrears from before stay on the books. This piece is an agreement not yet at the FRO, and he has stopped paying."

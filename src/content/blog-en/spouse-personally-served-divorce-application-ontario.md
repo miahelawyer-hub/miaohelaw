@@ -14,7 +14,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/spouse-personally-served-divorce-application-ontario/"
-relatedIntro: "Personal service by the applicant does not count, irregular service is not a free pass, and default is harder to undo than a fight about service are three ledgers:"
+relatedIntro: "Personal service by the applicant does not count, irregular service is not a free pass, and default is harder to undo than a fight about service are three separate issues:"
 relatedReading:
   - slug: uncontested-divorce-ontario
     line: "A simple divorce still has to be served. You cannot serve it yourself. A third party files Form 6B."

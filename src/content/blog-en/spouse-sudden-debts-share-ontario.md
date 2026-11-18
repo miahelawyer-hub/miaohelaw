@@ -15,7 +15,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/spouse-sudden-debts-share-ontario/"
-relatedIntro: "Whether a sudden debt counts, whether a relative's claim needs records, and who absorbs a company loss are three ledgers:"
+relatedIntro: "Whether a sudden debt counts, whether a relative's claim needs records, and who absorbs a company loss are three separate issues:"
 relatedReading:
   - slug: dissipation-of-assets
     line: "Not divorced yet, already living with someone else, money spent on a third party. Dissipation has to be proved, and the bar is not low."

@@ -15,7 +15,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/house-in-his-name-designate-matrimonial-home-ontario/"
-relatedIntro: "Locking the mortgage, whether you can still live there, and selling when you cannot agree are three ledgers:"
+relatedIntro: "Locking the mortgage, whether you can still live there, and selling when you cannot agree are three separate issues:"
 relatedReading:
   - slug: house-in-spouse-name-stay-with-kids-separation-ontario
     line: "Title in their name — can you still live there with the kids. Wanting the house is not an eviction."
@@ -30,7 +30,7 @@ relatedReading:
   - slug: matrimonial-home-title-vs-property-division-ontario
     line: "Whose name is on title is the property math later, not an excuse to throw you out now."
   - slug: dissipation-of-assets
-    line: "Not divorced yet, and they are already moving assets. Designation locks the house; dissipation is a different ledger."
+    line: "Not divorced yet, and they are already moving assets. Designation locks the house; dissipation is a different issue."
   - slug: ontario-divorce-property-division
     line: "How the house is ultimately divided still follows the law. Designation is not division."
   - href: /en/family-law/property-division/

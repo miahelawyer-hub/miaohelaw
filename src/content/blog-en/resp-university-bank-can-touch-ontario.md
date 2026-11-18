@@ -16,7 +16,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/resp-university-bank-can-touch-ontario/"
-relatedIntro: "Whether the RESP can hide money, whether a separation agreement binds the bank, and a house in his name only are three ledgers:"
+relatedIntro: "Whether the RESP can hide money, whether a separation agreement binds the bank, and a house in his name only are three separate issues:"
 relatedReading:
   - slug: mortgage-default-family-court-cannot-stop-bank-sale-ontario
     line: "A family lawsuit will not stop a bank sale after mortgage default. An RESP is not a lockbox either."
@@ -31,7 +31,7 @@ relatedReading:
   - slug: same-lawyer-both-sides-separation-agreement-ontario
     line: "Writing the agreement down still means one lawyer each."
   - slug: spouse-sudden-debts-share-ontario
-    line: "A pile of debts produced at divorce is not split down the middle automatically. A bank chasing payment is a different ledger."
+    line: "A pile of debts produced at divorce is not split down the middle automatically. A bank chasing payment is a different issue."
   - href: /en/family-law/property-division/
     title: Property division
     line: "Equalization is how the two of you split. The bank is not in that formula."

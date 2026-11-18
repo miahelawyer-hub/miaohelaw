@@ -15,7 +15,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/in-laws-name-house-lived-decade-divorce-ontario/"
-relatedIntro: "Whose name is on title, whether parents' money was a gift or a loan, and how a trust claim is framed are three ledgers:"
+relatedIntro: "Whose name is on title, whether parents' money was a gift or a loan, and how a trust claim is framed are three separate issues:"
 relatedReading:
   - slug: house-in-spouse-name-stay-with-kids-separation-ontario
     line: "Title in a spouse's name is about whether you can stay. This piece is title in the in-laws' names — whether you can still get a share."

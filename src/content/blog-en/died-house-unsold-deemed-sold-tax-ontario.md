@@ -12,7 +12,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "cross-border-divorce"
 pairedArticlePath: "/blog/died-house-unsold-deemed-sold-tax-ontario/"
-relatedIntro: "How tax is calculated on the date of death, how the probate fee is paid, and how a China will is signed are three ledgers:"
+relatedIntro: "How tax is calculated on the date of death, how the probate fee is paid, and how a China will is signed are three separate issues:"
 relatedReading:
   - href: /en/estate-trustee/estate-administration-tax/
     title: Ontario estate administration tax

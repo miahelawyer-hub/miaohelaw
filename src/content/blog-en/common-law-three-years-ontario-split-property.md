@@ -15,7 +15,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/common-law-three-years-ontario-split-property/"
-relatedIntro: "How common law differs from marriage, how parental money is treated, and how spousal support is calculated are three ledgers:"
+relatedIntro: "How common law differs from marriage, how parental money is treated, and how spousal support is calculated are three separate issues:"
 relatedReading:
   - slug: rrsp-tfsa-in-his-name-contribution-divorce-ontario
     line: "Marriage does not divide by who paid. That contribution logic is for unmarried partners. This piece is why Ontario common law does not equalize at all."

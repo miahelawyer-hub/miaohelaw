@@ -41,7 +41,7 @@ relatedReading:
   - slug: after-divorce-ex-still-in-my-house-ontario
     line: After limitation expires, occupation of a house in your name does not usually recreate a half-interest in title.
   - slug: house-appreciation-after-separation-ontario
-    line: Waiting for the market may help the appreciation ledger. It does not stop the s. 7(3) clocks.
+    line: Waiting for the market may help the appreciation issue. It does not stop the s. 7(3) clocks.
   - slug: house-underwater-divorce-hold-until-recovers-ontario
     line: "Hold an underwater house after divorce. Applying for the divorce order with the agreement can start the two-year clock first."
   - slug: china-property-ontario-divorce

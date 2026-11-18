@@ -15,7 +15,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/sole-custody-vs-child-lives-with-me-ontario/"
-relatedIntro: "Custody split in two, a prenup that cannot lock the child, and a support figure that stalls the divorce order are three ledgers:"
+relatedIntro: "Custody split in two, a prenup that cannot lock the child, and a support figure that stalls the divorce order are three separate issues:"
 relatedReading:
   - slug: child-custody-ontario-chinese
     line: "Decision-making and parenting time — the court only looks at the child's best interests."

@@ -15,7 +15,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/layoff-support-not-automatic-decrease-ontario/"
-relatedIntro: "It does not go down automatically, you can adjust it yourselves if she agrees, and you apply to court only if she does not are three ledgers:"
+relatedIntro: "It does not go down automatically, you can adjust it yourselves if she agrees, and you apply to court only if she does not are three separate issues:"
 relatedReading:
   - slug: annual-support-recalculation-no-lawyer-ontario
     line: "An annual recalculation clause can be run yourselves. This piece is a fixed amount in the agreement — a layoff does not change it by itself."

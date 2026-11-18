@@ -16,7 +16,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/immigrate-with-toddler-sole-decision-making-ontario/"
-relatedIntro: "Sole decision-making, trips abroad, and verbal deals are three ledgers:"
+relatedIntro: "Sole decision-making, trips abroad, and verbal deals are three separate issues:"
 relatedReading:
   - slug: sole-custody-vs-child-lives-with-me-ontario
     line: "Wanting sole custody usually just means the kids live with you. Decision-making and where the child lives are not the same thing."

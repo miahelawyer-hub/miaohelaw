@@ -14,7 +14,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/china-divorce-pending-sue-ontario-property/"
-relatedIntro: "You can file but Ontario stays the case, a stay is not a wasted filing, and non-recognition after China decides has a high bar are three ledgers:"
+relatedIntro: "You can file but Ontario stays the case, a stay is not a wasted filing, and non-recognition after China decides has a high bar are three separate issues:"
 relatedReading:
   - slug: china-divorce-lawsuit-living-in-canada
     line: "They have already sued you in China — how to respond. This piece is whether you can also file in Ontario while China is still going."

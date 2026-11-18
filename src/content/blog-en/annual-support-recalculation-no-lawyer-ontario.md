@@ -15,7 +15,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/annual-support-recalculation-no-lawyer-ontario/"
-relatedIntro: "A recalculation is not a renegotiation, three steps can be done without a lawyer, child support comes out the same whoever runs the table, and a lawyer is needed only when income itself is disputed are four ledgers:"
+relatedIntro: "A recalculation is not a renegotiation, three steps can be done without a lawyer, child support comes out the same whoever runs the table, and a lawyer is needed only when income itself is disputed are four separate issues:"
 relatedReading:
   - slug: separation-agreement-not-paying-child-support-fro-ontario
     line: "He signed and then stopped paying — you do not have to sue first. File it with the FRO. This piece is the annual recalculation, and whether you keep a lawyer forever."

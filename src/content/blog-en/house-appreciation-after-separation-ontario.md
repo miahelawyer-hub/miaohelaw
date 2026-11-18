@@ -15,7 +15,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/house-appreciation-after-separation-ontario/"
-relatedIntro: "Whether the gain is shared, whether occupation rent arises on a joint home, and whether limitation has run are three ledgers:"
+relatedIntro: "Whether the gain is shared, whether occupation rent arises on a joint home, and whether limitation has run are three separate issues:"
 relatedReading:
   - slug: net-family-property-ontario
     line: Net family property locks on the separation date. The formula is here.
@@ -36,7 +36,7 @@ relatedReading:
   - slug: equalization-limitation-joint-title-sold-house-ontario
     line: "After the equalization deadline, a sold house is generally gone. A house still in both names stays half and half as title."
   - slug: after-divorce-ex-still-in-my-house-ontario
-    line: After a recognized divorce, occupation is a possessory question, not this appreciation ledger.
+    line: After a recognized divorce, occupation is a possessory question, not this appreciation issue.
   - slug: resulting-trust-parental-gifts-ontario
     line: If they say the down payment came from their parents, that is a trust claim.
   - slug: mortgage-default-family-court-cannot-stop-bank-sale-ontario

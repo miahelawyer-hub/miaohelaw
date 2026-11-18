@@ -15,7 +15,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/mortgage-default-family-court-cannot-stop-bank-sale-ontario/"
-relatedIntro: "Family court ordering a sale, waiting on the market, and a stalled file with mortgage arrears are three ledgers:"
+relatedIntro: "Family court ordering a sale, waiting on the market, and a stalled file with mortgage arrears are three separate issues:"
 relatedReading:
   - slug: force-sale-matrimonial-home-ontario
     line: "Spouse won't sell, won't pay, won't leave — that is a family-law sale motion. This piece is the bank selling, and a family case will not stop it."

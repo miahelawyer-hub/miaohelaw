@@ -16,7 +16,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/sold-house-split-money-ai-agreement-ontario/"
-relatedIntro: "Whether an AI draft counts, whether spoken words count, and whether common law equalizes are three ledgers:"
+relatedIntro: "Whether an AI draft counts, whether spoken words count, and whether common law equalizes are three separate issues:"
 relatedReading:
   - slug: said-house-money-yours-wont-sign-agreement-ontario
     line: "He said the house and money are yours — he won't put it in writing. An oral promise counts for nothing."

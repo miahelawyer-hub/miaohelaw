@@ -15,7 +15,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/equalization-limitation-joint-title-sold-house-ontario/"
-relatedIntro: "A sold house is lost with equalization, a house still in both names stays half and half as title, and the first fight after the deadline is whether time can be extended are three ledgers:"
+relatedIntro: "A sold house is lost with equalization, a house still in both names stays half and half as title, and the first fight after the deadline is whether time can be extended are three separate issues:"
 relatedReading:
   - slug: equalization-limitation-chinese-lawyer-ontario
     line: "Three clocks, the earliest one wins. This piece is why a sold house and a house still on title do not share the same fate."

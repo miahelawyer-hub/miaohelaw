@@ -15,7 +15,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/same-lawyer-both-sides-separation-agreement-ontario/"
-relatedIntro: "Whether you can share one lawyer, whether a signed agreement can still be set aside, and how the agreement feeds into a divorce are three ledgers:"
+relatedIntro: "Whether you can share one lawyer, whether a signed agreement can still be set aside, and how the agreement feeds into a divorce are three separate issues:"
 relatedReading:
   - slug: separation-agreement-validity-ontario
     line: "No independent legal advice, no financial disclosure — they change their mind later, and the agreement is in danger."

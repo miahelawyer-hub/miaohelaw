@@ -15,16 +15,16 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/child-support-until-18-university-expenses-ontario/"
-relatedIntro: "Whether an agreement to 18 still governs, how university costs are shared, and whether a demand letter works are three ledgers:"
+relatedIntro: "Whether an agreement to 18 still governs, how university costs are shared, and whether a demand letter works are three separate issues:"
 relatedReading:
   - slug: adult-child-no-custody-ontario
-    line: "An adult child is usually no longer a custody case. Whether university still has to be paid is a different ledger."
+    line: "An adult child is usually no longer a custody case. Whether university still has to be paid is a different issue."
   - slug: child-support-waiver-separation-agreement-ontario
     line: "Before 18, an agreement to pay zero child support generally will not hold."
   - slug: retroactive-child-support-ontario
     line: "Separated but never sued — the past part for a minor can often still be claimed. University left out of the agreement is a new claim."
   - slug: ontario-vs-china-child-spousal-support-comparison
-    line: "After a China divorce, how Ontario treats child support is a different ledger."
+    line: "After a China divorce, how Ontario treats child support is a different issue."
   - slug: marriage-contract-child-parenting-ontario
     line: "Property can be negotiated. The child cannot. An agreement cannot lock child support."
   - slug: common-law-house-share-transfer-buyout-child-support-ontario

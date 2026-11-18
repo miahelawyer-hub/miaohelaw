@@ -127,7 +127,7 @@ Many escalations happen under one roof: **who leaves, who returns, where the chi
 
 ### 3) Support and property — do not confuse equalization with \"punishing fault\"
 
-**Equalization** of net family property is **not** primarily a moral fault ledger.
+**Equalization** of net family property is **not** primarily a moral-fault calculation.
 
 For support and enforcement pathways, start with **[support and child support](/en/family-law/support/)**; for non-payment, see **[When the other side will not pay support in Ontario](/en/blog/spousal-child-support-ontario/)**. For income manipulation in guideline calculations, see **[Imputed income and child support in Ontario](/en/blog/imputed-income-child-support-ontario/)**.
 

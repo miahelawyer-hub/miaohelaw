@@ -15,7 +15,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/equalization-spousal-support-cannot-go-to-kids-ontario/"
-relatedIntro: "Who equalization is paid to, whether child support can be waived, and how to leave your own share to the children are three ledgers:"
+relatedIntro: "Who equalization is paid to, whether child support can be waived, and how to leave your own share to the children are three separate issues:"
 relatedReading:
   - slug: net-family-property-ontario
     line: "How net family property is counted. The equalization payment goes to the spouse."

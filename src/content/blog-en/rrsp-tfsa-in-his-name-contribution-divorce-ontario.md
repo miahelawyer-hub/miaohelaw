@@ -15,7 +15,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/rrsp-tfsa-in-his-name-contribution-divorce-ontario/"
-relatedIntro: "Whether contribution ratios count after marriage, what title on an RRSP means, and when a written agreement changes the split are three ledgers:"
+relatedIntro: "Whether contribution ratios count after marriage, what title on an RRSP means, and when a written agreement changes the split are three separate issues:"
 relatedReading:
   - slug: net-family-property-ontario
     line: "How net family property is counted. The formula is here. Contribution ratios have no place in it."

@@ -16,7 +16,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/premarital-home-wedding-day-value-divorce-ontario/"
-relatedIntro: "Whether a pre-marriage home still occupied on separation day can be deducted, whether selling or renting it out before that day brings the deduction back, and whether a later purchase is counted twice are three ledgers:"
+relatedIntro: "Whether a pre-marriage home still occupied on separation day can be deducted, whether selling or renting it out before that day brings the deduction back, and whether a later purchase is counted twice are three separate issues:"
 relatedReading:
   - slug: premarital-home-sold-ontario-deduction
     line: "Sold the pre-marriage home and bought another. The old house may no longer be the matrimonial home, so the wedding-day value can come off."
@@ -27,7 +27,7 @@ relatedReading:
   - slug: matrimonial-home-title-vs-property-division-ontario
     line: "The registered shares were never the same thing as equalization."
   - slug: parents-money-child-account-living-expenses-divorce-ontario
-    line: "Parents paid for a pre-marriage house through the child's account. Matrimonial-home status and a trust are two different ledgers."
+    line: "Parents paid for a pre-marriage house through the child's account. Matrimonial-home status and a trust are two different issues."
   - slug: net-family-property-ontario
     line: "Net family property locks on the separation date. The formula is here."
   - slug: house-appreciation-after-separation-ontario

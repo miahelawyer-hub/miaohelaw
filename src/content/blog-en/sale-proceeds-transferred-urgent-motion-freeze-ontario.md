@@ -15,7 +15,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/sale-proceeds-transferred-urgent-motion-freeze-ontario/"
-relatedIntro: "Money already gone cannot be frozen, what is still in the account can be ordered preserved, and a transfer into someone else's name depends on who received it are three ledgers:"
+relatedIntro: "Money already gone cannot be frozen, what is still in the account can be ordered preserved, and a transfer into someone else's name depends on who received it are three separate issues:"
 relatedReading:
   - slug: cash-taken-home-safe-separation-ontario
     line: "Cash taken from the home safe on separation day, with no photos and no paper trail, cannot be recovered. This piece is sale proceeds already transferred away."

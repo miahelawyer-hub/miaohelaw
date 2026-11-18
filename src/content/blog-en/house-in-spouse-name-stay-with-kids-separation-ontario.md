@@ -15,7 +15,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/house-in-spouse-name-stay-with-kids-separation-ontario/"
-relatedIntro: "Whether you can stay before a divorce, what happens if an ex is still in the house after, and whether a sale is the way out are three ledgers:"
+relatedIntro: "Whether you can stay before a divorce, what happens if an ex is still in the house after, and whether a sale is the way out are three separate issues:"
 relatedReading:
   - slug: after-divorce-ex-still-in-my-house-ontario
     line: "The other direction: already divorced, and they are still living in a house in your name."
@@ -30,7 +30,7 @@ relatedReading:
   - slug: ontario-restraining-order-chinese-family
     line: "Violence or threats — safety first. A restraining order is about the adults, who can't go near whom."
   - slug: house-appreciation-after-separation-ontario
-    line: "Whether a post-separation increase is shared is the valuation-date ledger, not this occupancy question."
+    line: "Whether a post-separation increase is shared is the valuation-date issue, not this occupancy question."
   - slug: same-roof-wedding-separation-date-ontario
     line: "Separate rooms under the same roof, but you still eat together and attend weddings — does that date still count?"
   - slug: in-laws-name-house-lived-decade-divorce-ontario

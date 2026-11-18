@@ -16,7 +16,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/divorced-china-remarried-property-from-which-date-ontario/"
-relatedIntro: "From which date a remarriage is measured, whether a China divorce still leaves property to divide, and whether a pre-marriage house can still be deducted are three ledgers:"
+relatedIntro: "From which date a remarriage is measured, whether a China divorce still leaves property to divide, and whether a pre-marriage house can still be deducted are three separate issues:"
 relatedReading:
   - slug: china-divorce-ontario-equalization-afterward
     line: "Divorced in China, never remarried — the Canadian house can often still be equalized. This article is after a remarriage, and Ontario only measures this marriage."

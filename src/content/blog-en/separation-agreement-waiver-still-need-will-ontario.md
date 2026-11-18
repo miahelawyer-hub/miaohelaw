@@ -15,7 +15,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/separation-agreement-waiver-still-need-will-ontario/"
-relatedIntro: "The separation agreement, the will, and beneficiary designations are three ledgers:"
+relatedIntro: "The separation agreement, the will, and beneficiary designations are three separate issues:"
 relatedReading:
   - slug: equalization-spousal-support-cannot-go-to-kids-ontario
     line: "A sentence in the agreement sending money into a trust for the children is empty if the trust documents are not done. The will and beneficiary designations are separate too."

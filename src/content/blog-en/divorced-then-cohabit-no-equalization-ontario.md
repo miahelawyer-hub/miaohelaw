@@ -15,7 +15,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/divorced-then-cohabit-no-equalization-ontario/"
-relatedIntro: "Without remarriage there is no married-property equalization, Ontario cohabitation has no equalization, and the house starts with title are three ledgers:"
+relatedIntro: "Without remarriage there is no married-property equalization, Ontario cohabitation has no equalization, and the house starts with title are three separate issues:"
 relatedReading:
   - slug: common-law-three-years-ontario-split-property
     line: "Three years of common law in Ontario still does not equalize. This piece is a prior marriage, then no remarriage — still no married-property split."

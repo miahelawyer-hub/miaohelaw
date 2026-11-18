@@ -14,7 +14,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/child-taken-from-school-switched-schools-ontario/"
-relatedIntro: "The child comes back, taking first is not winning, and the return is only temporary are three ledgers:"
+relatedIntro: "The child comes back, taking first is not winning, and the return is only temporary are three separate issues:"
 relatedReading:
   - slug: urgent-motion-equalization-mid-case-ontario
     line: "Equalization cannot be collected mid-case. This piece is a school pickup: an urgent motion will order the child returned."

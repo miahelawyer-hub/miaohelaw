@@ -16,7 +16,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/pressured-into-signing-away-property-ontario/"
-relatedIntro: "Whether an ambush signing holds, why each side needs a lawyer, and whether company-held property still counts are three ledgers:"
+relatedIntro: "Whether an ambush signing holds, why each side needs a lawyer, and whether company-held property still counts are three separate issues:"
 relatedReading:
   - slug: already-married-marriage-contract-home-down-payment-ontario
     line: "Already married — it is not too late to protect the home by agreement. Sign it properly, and the court honours it."

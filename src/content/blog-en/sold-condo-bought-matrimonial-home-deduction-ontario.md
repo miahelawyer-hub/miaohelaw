@@ -16,7 +16,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/sold-condo-bought-matrimonial-home-deduction-ontario/"
-relatedIntro: "The matrimonial home cannot be deducted, the condo net value on the date of marriage can, and buying the home first then marrying loses the deduction are three ledgers:"
+relatedIntro: "The matrimonial home cannot be deducted, the condo net value on the date of marriage can, and buying the home first then marrying loses the deduction are three separate issues:"
 relatedReading:
   - slug: premarital-home-sold-ontario-deduction
     line: "Sold a pre-marriage home and bought another — the old house date-of-marriage value may come off. This piece is a condo sold after the wedding: the new home cannot be deducted, the wedding-day net value can."

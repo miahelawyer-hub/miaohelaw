@@ -16,7 +16,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/house-underwater-divorce-hold-until-recovers-ontario/"
-relatedIntro: "Whether an underwater house still gets divided, whether you can hold and wait, and whether limitation has run are three ledgers:"
+relatedIntro: "Whether an underwater house still gets divided, whether you can hold and wait, and whether limitation has run are three separate issues:"
 relatedReading:
   - slug: house-appreciation-after-separation-ontario
     line: "House went up after separation — do you still split it? That is the gain. This is the loss below the mortgage."

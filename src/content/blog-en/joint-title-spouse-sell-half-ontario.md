@@ -15,7 +15,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/joint-title-spouse-sell-half-ontario/"
-relatedIntro: "Not likely because lawyers will not help one side, a private agreement cannot change title, and even a forged transfer can be recovered are three ledgers:"
+relatedIntro: "Not likely because lawyers will not help one side, a private agreement cannot change title, and even a forged transfer can be recovered are three separate issues:"
 relatedReading:
   - slug: house-in-his-name-designate-matrimonial-home-ontario
     line: "The house is only in his name — designate it, and once registered he cannot touch it. This piece is joint title: can he sell his half."

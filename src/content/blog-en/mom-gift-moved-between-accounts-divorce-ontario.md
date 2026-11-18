@@ -15,7 +15,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/mom-gift-moved-between-accounts-divorce-ontario/"
-relatedIntro: "How a gift is proved, how a nominee holding is written, and what happens if the money goes into the home are three ledgers:"
+relatedIntro: "How a gift is proved, how a nominee holding is written, and what happens if the money goes into the home are three separate issues:"
 relatedReading:
   - slug: chinese-divorce-property-gift-loan-trust-ontario
     line: "Parents' money: gift or loan. Write it down at the time."

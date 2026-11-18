@@ -15,12 +15,12 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/accidentally-shared-files-family-court-ontario/"
-relatedIntro: "Whether a mistaken share counts, how electronic evidence gets in, and what to do when they stall on disclosure are three ledgers:"
+relatedIntro: "Whether a mistaken share counts, how electronic evidence gets in, and what to do when they stall on disclosure are three separate issues:"
 relatedReading:
   - slug: spouse-kept-company-books-use-in-divorce-ontario
     line: "Bank statements and tax records a spouse kept while doing the books — lawful sourcing is what matters. That piece is records obtained in the business. This one is a mistaken share."
   - slug: electronic-evidence-ontario-family-court
-    line: "WeChat, screenshots, recordings in family court. Whether they're genuine, and how you introduce them, is a different ledger."
+    line: "WeChat, screenshots, recordings in family court. Whether they're genuine, and how you introduce them, is a different issue."
   - slug: stalled-family-law-case-ontario
     line: "They stall on the files, the case stalls. A motion is how you force production."
   - slug: dissipation-of-assets

@@ -14,7 +14,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/simple-divorce-filed-dismissed-ontario/"
-relatedIntro: "Filing is only the start, stalling at service, and the 365-day clock are three ledgers:"
+relatedIntro: "Filing is only the start, stalling at service, and the 365-day clock are three separate issues:"
 relatedReading:
   - slug: uncontested-divorce-ontario
     line: "How a simple divorce is actually finished. Filing is only the first step; service and the certificate still have to follow."

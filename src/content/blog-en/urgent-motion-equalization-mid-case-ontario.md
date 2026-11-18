@@ -16,7 +16,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/urgent-motion-equalization-mid-case-ontario/"
-relatedIntro: "Equalization cannot be collected mid-case, children you cannot support may be urgent, and temporary support is not a temporary equalization are three ledgers:"
+relatedIntro: "Equalization cannot be collected mid-case, children you cannot support may be urgent, and temporary support is not a temporary equalization are three separate issues:"
 relatedReading:
   - slug: sale-proceeds-transferred-urgent-motion-freeze-ontario
     line: "Sale proceeds already transferred away cannot be frozen by an urgent motion. This piece is whether equalization can be collected mid-case."

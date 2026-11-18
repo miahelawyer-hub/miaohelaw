@@ -15,7 +15,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/said-house-money-yours-wont-sign-agreement-ontario/"
-relatedIntro: "Whether spoken words count, how an agreement has to be signed, and what equalization does in court are three ledgers:"
+relatedIntro: "Whether spoken words count, how an agreement has to be signed, and what equalization does in court are three separate issues:"
 relatedReading:
   - slug: rrsp-tfsa-in-his-name-contribution-divorce-ontario
     line: "An oral extra 10% does not return an RRSP in his name by contribution ratio. Calculate what 50% actually is first."

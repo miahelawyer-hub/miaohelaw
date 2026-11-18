@@ -1,6 +1,6 @@
 ---
 title: "After Separation, My Spouse Transferred a House to Someone Else Below Market Value — Does Ontario Still Count It at Its Separation-Date Value? Chinese-Speaking Toronto Divorce Lawyer Miao He"
-description: "Yes. Ontario property division is locked to the separation date. Transferring the house afterward below market changes where the house went, not the number on the ledger."
+description: "Yes. Ontario property division is locked to the separation date. Transferring the house afterward below market changes where the house went, not the number on the books."
 pubDate: 2026-11-05T19:35:00-05:00
 updatedDate: 2026-11-05T19:35:00-05:00
 heroImage: ""
@@ -15,7 +15,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/house-transferred-cheap-after-separation-ontario/"
-relatedIntro: "The separation date locks the number, a transfer changes destination not the figure, getting the house back is a different fight, and a judgment against a spouse with nothing left can be an empty paper are four ledgers:"
+relatedIntro: "The separation date locks the number, a transfer changes destination not the figure, getting the house back is a different fight, and a judgment against a spouse with nothing left can be a paper judgment are four separate issues:"
 relatedReading:
   - slug: house-appreciation-after-separation-ontario
     line: "House went up after separation — check whose name is on title. This piece is a low-price transfer that is still counted at the separation-date value."
@@ -43,7 +43,7 @@ relatedReading:
     line: "Toronto family law. This piece is whether a house transferred below market after separation is still counted at its separation-date value."
 faqStructured:
   - question: "After separation, my spouse transferred a house to someone else below market value — does Ontario still count it at its separation-date value?"
-    answer: "Yes. Ontario's property division works from a photograph taken on the separation date: what he owned on that day, and what it was worth on that day, is locked in. Transferring the house afterward — even well below market value — changes where the house went, not the number on his side of the ledger. When the accounts are done, the house is still counted as his, at its separation-date value."
+    answer: "Yes. Ontario's property division works from a photograph taken on the separation date: what he owned on that day, and what it was worth on that day, is locked in. Transferring the house afterward — even well below market value — changes where the house went, not the number on his side of the equalization. When the accounts are done, the house is still counted as his, at its separation-date value."
   - question: "He transferred it at a price obviously below market. Will the court accept that low price?"
     answer: "No. The accounting uses market value at the separation date, not the figure he chose to write in the transfer. If the value is in dispute, an appraiser's retrospective appraisal as of the separation date, together with the municipal assessment and comparable sales from that period, will establish the number."
   - question: "The house is worth much more now. Counting it at the separation-date value — don't I lose out?"
@@ -62,7 +62,7 @@ faqStructured:
 </ul>
 </div>
 
-Yes. Ontario's property division works from a photograph taken on the separation date: what he owned on that day, and what it was worth on that day, is locked in. Transferring the house afterward — even well below market value — changes where the house went, not the number on his side of the ledger. When the accounts are done, the house is still counted as his, at its separation-date value.
+Yes. Ontario's property division works from a photograph taken on the separation date: what he owned on that day, and what it was worth on that day, is locked in. Transferring the house afterward — even well below market value — changes where the house went, not the number on his side of the equalization. When the accounts are done, the house is still counted as his, at its separation-date value.
 
 A client came to consult me. After the separation, her spouse had transferred a house out of his name at a low price, to someone cooperating with him. The house was no longer his on paper. Her question: does this house simply disappear from the division — do I get nothing from it?
 

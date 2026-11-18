@@ -15,7 +15,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/only-i-disclosed-separation-agreement-ontario/"
-relatedIntro: "His own non-disclosure is closed to him, neither side disclosing leaves both with a weapon, and being rushed or having no lawyer can still set an agreement aside are three ledgers:"
+relatedIntro: "His own non-disclosure is closed to him, neither side disclosing leaves both with a weapon, and being rushed or having no lawyer can still set an agreement aside are three separate issues:"
 relatedReading:
   - slug: pressured-into-signing-away-property-ontario
     line: "Rushed into signing without your own lawyer, the agreement is defective. This piece is one-sided disclosure: he cannot use no disclosure to overturn it."

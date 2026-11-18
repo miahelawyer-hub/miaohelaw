@@ -15,12 +15,12 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/spouse-kept-company-books-use-in-divorce-ontario/"
-relatedIntro: "Whether the books in your hands can be used, what to do if the other side will not disclose, and how long banks keep records are three ledgers:"
+relatedIntro: "Whether the books in your hands can be used, what to do if the other side will not disclose, and how long banks keep records are three separate issues:"
 relatedReading:
   - slug: accidentally-shared-files-family-court-ontario
     line: "They accidentally shared files with you — save them now. That piece is a mistaken share. This one is records you kept while doing the books."
   - slug: electronic-evidence-ontario-family-court
-    line: "WeChat, bank screenshots, recordings in family court. Whether they're genuine, and how you introduce them, is a different ledger."
+    line: "WeChat, bank screenshots, recordings in family court. Whether they're genuine, and how you introduce them, is a different issue."
   - slug: company-in-my-name-never-looked-books-divorce-ontario
     line: "Whose name the company is in counts first. That piece is title. This one is whether the books in your hands can be used."
   - slug: equalization-limitation-chinese-lawyer-ontario

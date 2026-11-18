@@ -11,7 +11,7 @@ tags:
   - "markham-family-lawyer"
   - "miao-he-lawyer"
   - "ontario-family-law"
-relatedIntro: "Three years together, parental money, and whether a cohabitation agreement later works as a prenup are three ledgers:"
+relatedIntro: "Three years together, parental money, and whether a cohabitation agreement later works as a prenup are three separate issues:"
 relatedReading:
   - slug: common-law-three-years-ontario-split-property
     line: "The internet says three years means a 50/50 split. That is BC. Ontario does not equalize common-law property."

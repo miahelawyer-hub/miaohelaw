@@ -14,7 +14,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/fro-monthly-paying-arrears-still-collect-ontario/"
-relatedIntro: "Current monthly payments do not wipe the old balance, a Statement of Arrears is what puts the number on the FRO's books, and only a court variation order or both parties' written consent stops enforcement are three ledgers:"
+relatedIntro: "Current monthly payments do not wipe the old balance, a Statement of Arrears is what puts the number on the FRO's books, and only a court variation order or both parties' written consent stops enforcement are three separate issues:"
 relatedReading:
   - slug: separation-agreement-not-paying-child-support-fro-ontario
     line: "He signed and then stopped paying — you do not have to sue first. File the agreement with the court, then register it with the FRO. This piece is already at the FRO, and whether the arrears still get chased."
@@ -69,7 +69,7 @@ The short answer: no. Arrears with the FRO will be enforced. You don't need to w
 
 ---
 
-## 1. The FRO Keeps One Running Ledger, and Current Support and Arrears Are Recorded Separately
+## 1. The FRO Keeps One Running Account, and Current Support and Arrears Are Recorded Separately
 
 His payments arriving on time now means the current month's support is flowing and the arrears have stopped growing. It does not clear the old balance: the amount he owed from before stays on the FRO's books as a separate arrears figure, and it is not offset by his paying properly afterward. Current is current; the old debt is the old debt.
 

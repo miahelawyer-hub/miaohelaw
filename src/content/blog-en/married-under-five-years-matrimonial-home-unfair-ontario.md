@@ -15,7 +15,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/married-under-five-years-matrimonial-home-unfair-ontario/"
-relatedIntro: "How the home is counted, how an agreement is written, and how parents' money is proved are three ledgers:"
+relatedIntro: "How the home is counted, how an agreement is written, and how parents' money is proved are three separate issues:"
 relatedReading:
   - slug: matrimonial-home-title-vs-property-division-ontario
     line: "The matrimonial home is not split by title. Bought before marriage, the full value still goes in."

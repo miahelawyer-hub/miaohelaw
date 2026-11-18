@@ -13,7 +13,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/own-lawyer-cannot-interpret-court-ontario/"
-relatedIntro: "Your own lawyer cannot interpret, a court interpreter has to be requested in advance, and a friend or family member will not do are three ledgers:"
+relatedIntro: "Your own lawyer cannot interpret, a court interpreter has to be requested in advance, and a friend or family member will not do are three separate issues:"
 relatedReading:
   - slug: ontario-family-court-procedures-regional-differences
     line: "Regional courts run hearings differently. This piece is: you have a lawyer, so an interpreter has to be requested in advance — your lawyer cannot interpret on the spot."

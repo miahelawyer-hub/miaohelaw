@@ -16,7 +16,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/cash-taken-home-safe-separation-ontario/"
-relatedIntro: "No photos and no paper trail means it cannot be recovered, recorded transfers can be traced, and proving the safe existed does not prove money was in it are three ledgers:"
+relatedIntro: "No photos and no paper trail means it cannot be recovered, recorded transfers can be traced, and proving the safe existed does not prove money was in it are three separate issues:"
 relatedReading:
   - slug: electronic-evidence-ontario-family-court
     line: "WeChat, bank screenshots, recordings in family court. Photos and video sit in the same category."
@@ -85,7 +85,7 @@ Bank transfers, cheques, and statements all leave records a judge can see. Cash 
 
 ## 3. Most People Lose on This Point Because of Everyday Habits
 
-Cash gets spent as it comes in — no ledger, no photos, no video. Then separation comes, and when it's time to prove something in court, there's nothing to show. A court only recognizes what can be proven; a story, however reasonable, counts for nothing without evidence. That's not a judge being unreasonable — it's the rule of litigation: whoever makes the claim bears the burden of proof.
+Cash gets spent as it comes in — no records, no photos, no video. Then separation comes, and when it's time to prove something in court, there's nothing to show. A court only recognizes what can be proven; a story, however reasonable, counts for nothing without evidence. That's not a judge being unreasonable — it's the rule of litigation: whoever makes the claim bears the burden of proof.
 
 One practical step you can take right now: put a security camera where you keep valuables — the storage room, the room with the safe. This isn't only about separation. Friends visit, their children visit; an accident happens, or worse, a break-in — the footage is your evidence either way. And if you do separate one day, those recordings can show what valuables and cash were actually in the house, instead of leaving you with nothing but your word.
 

@@ -16,7 +16,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/buy-house-after-separation-still-divide-ontario/"
-relatedIntro: "Buying another house after separation, whether the old house's increase is still shared, and whether a verbal split locks anything in are three ledgers:"
+relatedIntro: "Buying another house after separation, whether the old house's increase is still shared, and whether a verbal split locks anything in are three separate issues:"
 relatedReading:
   - slug: premarital-home-wedding-day-value-divorce-ontario
     line: "Still living in a pre-marriage home — no wedding-day deduction. That piece is the old house. This one is buying another with the savings."

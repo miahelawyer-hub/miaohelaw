@@ -15,7 +15,7 @@ tags:
   - "toronto-chinese-family-lawyer"
   - "ontario-family-law"
 pairedArticlePath: "/blog/parents-money-child-account-living-expenses-divorce-ontario/"
-relatedIntro: "Whether the amount was enough, which account it went into, and whether there was an agreement are three ledgers:"
+relatedIntro: "Whether the amount was enough, which account it went into, and whether there was an agreement are three separate issues:"
 relatedReading:
   - slug: resulting-trust-parental-gifts-ontario
     line: "Property parents give an adult child for free is presumed held in trust, not gifted. This piece is money that went through the child's own account."
