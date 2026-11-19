@@ -17,6 +17,8 @@ tags:
 pairedArticlePath: "/blog/house-in-his-name-designate-matrimonial-home-ontario/"
 relatedIntro: "Locking the mortgage, whether you can still live there, and selling when you cannot agree are three separate issues:"
 relatedReading:
+  - slug: prenup-excluded-house-became-matrimonial-home-ontario
+    line: "An excluded condo becomes a matrimonial home once you move in, and a sale may need a signature. This piece is designating a house in his name so a sale or mortgage needs a signature."
   - slug: house-in-spouse-name-stay-with-kids-separation-ontario
     line: "Title in their name — can you still live there with the kids. Wanting the house is not an eviction."
   - slug: joint-title-spouse-sell-half-ontario

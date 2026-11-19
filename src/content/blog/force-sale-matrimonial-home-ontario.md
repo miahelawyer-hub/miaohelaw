@@ -13,6 +13,8 @@ tags:
 pairedArticlePath: "/en/blog/force-sale-matrimonial-home-ontario/"
 relatedIntro: "建议一并阅读："
 relatedReading:
+  - slug: prenup-excluded-house-became-matrimonial-home-ontario
+    line: "协议排除的房子住进去，卖房可能要对方签字。这篇是对方不卖、不付、不搬走，向法院申请强制出售。"
   - slug: "house-in-spouse-name-stay-with-kids-separation-ontario"
     line: "还没离、房子在对方名下，带着孩子能不能继续住。谈不拢才是这篇的强制出售。"
   - slug: resp-university-bank-can-touch-ontario

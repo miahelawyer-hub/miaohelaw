@@ -18,6 +18,8 @@ tags:
 pairedArticlePath: "/blog/pressured-into-signing-away-property-ontario/"
 relatedIntro: "Whether an ambush signing holds, why each side needs a lawyer, and whether company-held property still counts are three separate issues:"
 relatedReading:
+  - slug: prenup-excluded-house-became-matrimonial-home-ontario
+    line: "A clear prenup can still protect the house value after you move in. This piece is an agreement signed under family pressure, which generally will not hold."
   - slug: already-married-marriage-contract-home-down-payment-ontario
     line: "Already married — it is not too late to protect the home by agreement. Sign it properly, and the court honours it."
   - slug: same-lawyer-both-sides-separation-agreement-ontario

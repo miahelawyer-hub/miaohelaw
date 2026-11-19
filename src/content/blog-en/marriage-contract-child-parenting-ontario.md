@@ -18,6 +18,8 @@ tags:
 pairedArticlePath: "/blog/marriage-contract-child-parenting-ontario/"
 relatedIntro: "What a contract can lock, what it cannot, and when a signed contract can still be set aside are three different questions:"
 relatedReading:
+  - slug: prenup-excluded-house-became-matrimonial-home-ontario
+    line: "A prenup cannot lock the right to live in the matrimonial home. This piece is: it cannot lock parenting either."
   - slug: equalization-spousal-support-cannot-go-to-kids-ontario
     line: "Property and spousal support can be negotiated — and they are paid to the spouse. They cannot be redirected to the children."
   - href: /en/family-law/domestic-contracts/

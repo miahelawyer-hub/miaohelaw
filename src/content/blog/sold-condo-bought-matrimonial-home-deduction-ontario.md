@@ -18,6 +18,8 @@ tags:
 pairedArticlePath: "/en/blog/sold-condo-bought-matrimonial-home-deduction-ontario/"
 relatedIntro: "婚房价值不能扣、结婚日名下还在的condo净值可以扣、先买婚房再结婚就扣不了，是三笔账："
 relatedReading:
+  - slug: prenup-excluded-house-became-matrimonial-home-ontario
+    line: "协议排除的房子住进去价值仍挡得住。这篇是婚后卖掉condo买婚房，婚房价值不能扣。"
   - slug: premarital-home-sold-ontario-deduction
     line: "婚前房子卖掉换新房，旧房结婚日价值才可能扣。这篇是结婚后才卖condo买婚房：婚房本身不能扣，结婚日净值可以扣。"
   - slug: premarital-home-wedding-day-value-divorce-ontario

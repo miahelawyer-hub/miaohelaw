@@ -18,6 +18,8 @@ tags:
 pairedArticlePath: "/blog/premarital-home-wedding-day-value-divorce-ontario/"
 relatedIntro: "Whether a pre-marriage home still occupied on separation day can be deducted, whether selling or renting it out before that day brings the deduction back, and whether a later purchase is counted twice are three separate issues:"
 relatedReading:
+  - slug: prenup-excluded-house-became-matrimonial-home-ontario
+    line: "A prenup that names the value can still protect it after you move in. This piece is: still living there on separation day, the wedding-day value cannot be deducted."
   - slug: premarital-home-sold-ontario-deduction
     line: "Sold the pre-marriage home and bought another. The old house may no longer be the matrimonial home, so the wedding-day value can come off."
   - slug: sold-condo-bought-matrimonial-home-deduction-ontario

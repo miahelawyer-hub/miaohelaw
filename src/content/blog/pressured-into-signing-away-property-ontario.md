@@ -18,6 +18,8 @@ tags:
 pairedArticlePath: "/en/blog/pressured-into-signing-away-property-ontario/"
 relatedIntro: "突击签字认不认、一人一个律师、公司名下还算不算，是三笔账："
 relatedReading:
+  - slug: prenup-excluded-house-became-matrimonial-home-ontario
+    line: "协议写清了价值归谁，住进去价值仍挡得住。这篇是被催着签的放弃财产协议，法院一般不认。"
   - slug: already-married-marriage-contract-home-down-payment-ontario
     line: "结婚后签协议说婚房归我，还来得及。签对了法院才认。"
   - slug: same-lawyer-both-sides-separation-agreement-ontario

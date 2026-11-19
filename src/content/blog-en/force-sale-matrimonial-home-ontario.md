@@ -15,6 +15,8 @@ tags:
 pairedArticlePath: "/blog/force-sale-matrimonial-home-ontario/"
 relatedIntro: "Read alongside:"
 relatedReading:
+  - slug: prenup-excluded-house-became-matrimonial-home-ontario
+    line: "An excluded house you moved into may still need a signature to sell. This piece is a spouse who will not sell, pay, or leave — a court-ordered sale."
   - slug: "house-in-spouse-name-stay-with-kids-separation-ontario"
     line: "Not divorced yet, title in their name, kids in school — can you stay. This article is the sale when you cannot agree."
   - slug: resp-university-bank-can-touch-ontario

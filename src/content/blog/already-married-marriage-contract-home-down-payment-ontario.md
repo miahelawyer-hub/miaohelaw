@@ -18,6 +18,8 @@ tags:
 pairedArticlePath: "/en/blog/already-married-marriage-contract-home-down-payment-ontario/"
 relatedIntro: "结了婚还能不能签、协议锁得住什么、父母的钱怎么写，是三笔账："
 relatedReading:
+  - slug: prenup-excluded-house-became-matrimonial-home-ontario
+    line: "婚前已经排除，后来住进去成了婚房。价值还挡得住，居住权锁不住。这篇是结婚后签协议说婚房归我，还来得及。"
   - slug: prenuptial-agreement-ontario-2026
     line: "婚前协议在安省能做什么，以及华人常见误区。"
   - slug: married-under-five-years-matrimonial-home-unfair-ontario

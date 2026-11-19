@@ -17,6 +17,8 @@ tags:
 pairedArticlePath: "/blog/same-roof-wedding-separation-date-ontario/"
 relatedIntro: "Whether same-roof counts, how the date is fixed, and when child support starts are three separate issues:"
 relatedReading:
+  - slug: prenup-excluded-house-became-matrimonial-home-ontario
+    line: "Separated spouses can still both live in the home. This piece is: eating together and attending weddings as a couple can undo a date you agreed."
   - slug: house-in-spouse-name-stay-with-kids-separation-ontario
     line: "Same-roof separation can count. That piece is about staying in the house. This one is about eating together and attending weddings — whether the date still holds."
   - slug: separation-vs-divorce-ontario

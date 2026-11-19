@@ -17,6 +17,8 @@ tags:
 pairedArticlePath: "/en/blog/same-roof-wedding-separation-date-ontario/"
 relatedIntro: "同屋檐下能不能算、分居日怎么定、抚养费从哪天起，是三笔账："
 relatedReading:
+  - slug: prenup-excluded-house-became-matrimonial-home-ontario
+    line: "分居了还可以一起住，居住权不结束。这篇是还一起吃饭一起去婚礼，那个分居日还算不算。"
   - slug: house-in-spouse-name-stay-with-kids-separation-ontario
     line: "同屋檐下也可以分居。那篇讲能住着。这篇讲还一起吃饭一起参加婚礼，日子还算不算。"
   - slug: separation-vs-divorce-ontario

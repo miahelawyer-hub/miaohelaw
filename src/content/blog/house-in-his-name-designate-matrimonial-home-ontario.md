@@ -17,6 +17,8 @@ tags:
 pairedArticlePath: "/en/blog/house-in-his-name-designate-matrimonial-home-ontario/"
 relatedIntro: "卡住贷款、还能不能住、谈不拢卖不卖，是三笔账："
 relatedReading:
+  - slug: prenup-excluded-house-became-matrimonial-home-ontario
+    line: "协议排除的condo住进去也是婚房，卖房可能要对方签字。这篇是房子写在他名下，能注册成婚房。"
   - slug: house-in-spouse-name-stay-with-kids-separation-ontario
     line: "房子在对方名下，分居了还能带着孩子住。要房子不等于能赶人。"
   - slug: joint-title-spouse-sell-half-ontario

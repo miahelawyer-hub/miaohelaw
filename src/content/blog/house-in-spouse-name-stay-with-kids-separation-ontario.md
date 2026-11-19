@@ -17,6 +17,8 @@ tags:
 pairedArticlePath: "/en/blog/house-in-spouse-name-stay-with-kids-separation-ontario/"
 relatedIntro: "还没离能不能住、离完了对方还住着、谈不拢卖不卖，是三笔账："
 relatedReading:
+  - slug: prenup-excluded-house-became-matrimonial-home-ontario
+    line: "协议管价值，管不住居住权。这篇是分居了房子在对方名下，还能不能先住着。"
   - slug: after-divorce-ex-still-in-my-house-ontario
     line: "方向反了：已经离完，对方还住在你名下的房子里。"
   - slug: force-sale-matrimonial-home-ontario

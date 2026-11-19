@@ -18,6 +18,8 @@ tags:
 pairedArticlePath: "/en/blog/premarital-home-wedding-day-value-divorce-ontario/"
 relatedIntro: "婚前房子还住着扣不扣、分居前卖掉租出去、分居后再买一套，是三笔账："
 relatedReading:
+  - slug: prenup-excluded-house-became-matrimonial-home-ontario
+    line: "协议写清了价值归谁，住进去价值仍挡得住。这篇是分居那天还住着，结婚日价值扣不掉。"
   - slug: premarital-home-sold-ontario-deduction
     line: "婚前的房子卖掉换了新房，旧房就不再是婚房，结婚日价值才可能扣。"
   - slug: sold-condo-bought-matrimonial-home-deduction-ontario

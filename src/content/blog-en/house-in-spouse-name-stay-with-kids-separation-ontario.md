@@ -17,6 +17,8 @@ tags:
 pairedArticlePath: "/blog/house-in-spouse-name-stay-with-kids-separation-ontario/"
 relatedIntro: "Whether you can stay before a divorce, what happens if an ex is still in the house after, and whether a sale is the way out are three separate issues:"
 relatedReading:
+  - slug: prenup-excluded-house-became-matrimonial-home-ontario
+    line: "The agreement controls the money, not who can live there. This piece is: title in the other name does not let them throw you out after separation."
   - slug: after-divorce-ex-still-in-my-house-ontario
     line: "The other direction: already divorced, and they are still living in a house in your name."
   - slug: force-sale-matrimonial-home-ontario

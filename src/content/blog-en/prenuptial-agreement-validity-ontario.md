@@ -12,6 +12,8 @@ tags:
   - "miao-he-lawyer"
   - "ontario-family-law"
 relatedReading:
+  - slug: prenup-excluded-house-became-matrimonial-home-ontario
+    line: "Name the property and the equity, and the value can still be protected after you move in. This piece is: signed the wrong way, or worded too loosely, and it can still be set aside."
   - slug: already-married-marriage-contract-home-down-payment-ontario
     line: "Already married — a marriage contract on the home and the parents' down payment is not too late. Sign it properly, and the court honours it."
   - slug: pressured-into-signing-away-property-ontario

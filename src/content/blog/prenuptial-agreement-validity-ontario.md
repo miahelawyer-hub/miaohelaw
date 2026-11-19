@@ -13,6 +13,8 @@ tags:
   - "prenuptial-agreement-ontario"
   - "toronto-chinese-family-lawyer"
 relatedReading:
+  - slug: prenup-excluded-house-became-matrimonial-home-ontario
+    line: "要写清是哪套、净值归谁，住进去价值仍归一方。这篇是形式不对、约定不明，照样会被推翻。"
   - slug: already-married-marriage-contract-home-down-payment-ontario
     line: "已经结婚了，签婚内协议说婚房和父母首付，还来得及。签对了法院才认。"
   - slug: pressured-into-signing-away-property-ontario

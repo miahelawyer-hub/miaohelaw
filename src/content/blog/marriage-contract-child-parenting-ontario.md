@@ -18,6 +18,8 @@ tags:
 pairedArticlePath: "/en/blog/marriage-contract-child-parenting-ontario/"
 relatedIntro: "协议能锁什么、锁不住什么，和签完之后还能不能推翻，是三件不同的事："
 relatedReading:
+  - slug: prenup-excluded-house-became-matrimonial-home-ontario
+    line: "婚前协议锁不住婚房居住权。这篇是锁不住孩子。"
   - slug: equalization-spousal-support-cannot-go-to-kids-ontario
     line: "财产和配偶赡养费可以谈，谈的是给配偶。不能改成直接给孩子。"
   - href: /family-law/domestic-contracts/
