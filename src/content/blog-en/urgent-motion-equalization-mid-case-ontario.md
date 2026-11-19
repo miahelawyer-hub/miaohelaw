@@ -1,6 +1,6 @@
 ---
 title: "Can an Urgent Motion Get Me My Equalization Payment in the Middle of the Case? Chinese-Speaking North York Divorce Lawyer Miao He"
-description: "No. Equalization is calculated and paid at the end of a case. A living-expense advance is without prejudice and counted back in. What can be urgent is the children, not your half of the property."
+description: "Can an urgent motion get me equalization in the middle of the case? No. Equalization is calculated at the end. A living-expense advance is counted back in. What can be urgent is the children, if they cannot be supported. Miao He 647-930-6688."
 pubDate: 2026-10-31T08:00:00-04:00
 updatedDate: 2026-10-31T08:00:00-04:00
 heroImage: ""

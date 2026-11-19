@@ -1,6 +1,6 @@
 ---
 title: "He Sold His Condo and Bought the Matrimonial Home After the Marriage — Can That Money Still Be Deducted as Premarital Property? Ontario Chinese-Speaking Divorce Lawyer Miao He"
-description: "You cannot deduct the matrimonial home. Its full value goes in. The condo net value on the date of marriage can be deducted — not the later sale price — if you still owned it that day. Buy the home first, then marry, and the deduction is gone. Miao He."
+description: "He sold his condo and bought the matrimonial home after the wedding — can that money still be deducted? The home cannot be deducted. The condo net value on the wedding day can — not the later sale price. Buy the home first, then marry, and the deduction is gone. Miao He 647-930-6688."
 pubDate: 2026-11-17T08:50:00-05:00
 updatedDate: 2026-11-17T08:50:00-05:00
 heroImage: ""

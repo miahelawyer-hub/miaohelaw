@@ -1,6 +1,6 @@
 ---
 title: "Our House Is in Both Names — Can My Spouse Sell His Half to Someone Else? Chinese-Speaking Toronto Divorce Lawyer Miao He"
-description: "Not likely. The law does not forbid one joint owner from transferring a share. Without the other co-owner's consent, though, lawyers are very unwilling to help one side change title. Disputes come too easily, and the lawyer can be pulled in."
+description: "The house is in both names — can he sell his half to someone else? Not likely. Without the other owner's consent, lawyers will not help one side change title. A private deal does not change the land register. Disputes come too easily, and the lawyer can be pulled in. Miao He 647-930-6688."
 pubDate: 2026-11-05T19:25:00-05:00
 updatedDate: 2026-11-05T20:45:00-05:00
 heroImage: ""

@@ -1,6 +1,6 @@
 ---
 title: "I Did Not Receive the Full Buyout Payment — Will I Lose My Rights Once I Sign the Separation Agreement? Ontario Mandarin-Speaking Divorce Lawyer Miao He"
-description: "No. Signing does not end your rights — it depends on how the agreement is drafted. Drafted well, your rights survive until the buyout is paid in full. Register a charge after the transfer so a sale pays you first. Do not wait until the final year to sell. Miao He."
+description: "The home is transferred and the buyout is not fully paid — does signing end your rights? No. Drafted well, your rights remain until the money is paid. Register a charge so a sale pays you first. Put the release after payment, and do not wait until the last year. Miao He 647-930-6688."
 pubDate: 2026-11-18T09:20:00-05:00
 updatedDate: 2026-11-18T09:20:00-05:00
 heroImage: ""

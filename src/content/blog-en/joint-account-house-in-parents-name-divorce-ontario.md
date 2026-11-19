@@ -1,6 +1,6 @@
 ---
 title: "The House Is in His Parents' Names, but the Money Came Out of Our Joint Account — Does It Still Count in the Divorce? Ontario Mandarin-Speaking Divorce Lawyer Miao He"
-description: "Yes. Title in the parents names does not keep it out. Money from a joint account, with no gift letter, is a resulting trust. Prove the funds left your account and the house still goes into equalization — you do not have to transfer it back first. Miao He."
+description: "The house is in the parents' names, but the money came from a joint account — does it still count? Yes. With no gift letter, joint-account money is a resulting trust and still goes into equalization. To take it out, the other side must prove a gift. Miao He 647-930-6688."
 pubDate: 2026-11-14T10:20:00-05:00
 updatedDate: 2026-11-14T10:20:00-05:00
 heroImage: ""

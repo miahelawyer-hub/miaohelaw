@@ -1,6 +1,6 @@
 ---
 title: "I Have a Lawyer — Can My Own Lawyer Interpret for Me? Ontario Mandarin-Speaking Divorce Lawyer Miao He"
-description: "No. Your own lawyer cannot interpret in court. Apply in advance for a court interpreter or the hearing is adjourned. Legal Aid usually gets a free interpreter; otherwise hire a professional. Friends and family will not do. Miao He."
+description: "I already have a lawyer — can my own lawyer interpret in court? No. Your lawyer cannot also interpret. Apply in advance for a court interpreter or the hearing is adjourned. Unless you have Legal Aid, hire a professional; family and friends will not do. Miao He 647-930-6688."
 pubDate: 2026-11-12T07:40:00-05:00
 updatedDate: 2026-11-12T07:40:00-05:00
 heroImage: ""

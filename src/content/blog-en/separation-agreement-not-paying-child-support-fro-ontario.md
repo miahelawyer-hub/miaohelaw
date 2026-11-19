@@ -1,6 +1,6 @@
 ---
 title: "We Signed a Separation Agreement and He's Not Paying the Child Support — What Can I Do? Ontario Mandarin-Speaking Divorce Lawyer Miao He"
-description: "You can file the separation agreement with the FRO for enforcement — you do not have to sue him in court first. If the agreement states a monthly child support amount, once it is filed with the court and registered with the FRO, the FRO enforces it like a court order."
+description: "We signed a separation agreement and he is not paying child support — what then? You do not have to sue again. File the agreement with the court and register it with the FRO, and it is enforced like a court order. If the monthly amount is not written clearly, the FRO cannot enforce it. Miao He 647-930-6688."
 pubDate: 2026-11-06T19:10:00-05:00
 updatedDate: 2026-11-06T19:10:00-05:00
 heroImage: ""

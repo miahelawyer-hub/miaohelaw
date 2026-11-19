@@ -1,6 +1,6 @@
 ---
 title: "We Split Up and He Won't Sell Our Jointly Owned House — Can It Be Sold Without Going to Court? Ontario Mandarin-Speaking Family Lawyer Miao He"
-description: "Essentially, yes. One co-owner cannot sell the whole house alone. If he will not sell and will not buy you out, the remaining route is a court order for sale. A verbal refusal is not a veto. Net proceeds sit in trust; a bank sale leaves less. Miao He."
+description: "We split up and he will not sell the jointly owned house — can it be sold without going to court? Essentially no. One owner cannot sell the whole house. If he will not cooperate, you apply for a sale order. A verbal refusal is not a veto. Net proceeds sit in trust; a bank sale leaves less. Miao He 647-930-6688."
 pubDate: 2026-11-10T22:40:00-05:00
 updatedDate: 2026-11-10T22:40:00-05:00
 heroImage: ""

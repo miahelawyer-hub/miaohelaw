@@ -1,6 +1,6 @@
 ---
 title: "The Equalization Limitation Period Has Passed — Is the Jointly Owned House Still Half Each? Chinese-Speaking Mississauga Divorce Lawyer Miao He"
-description: "These are two different questions. Once the limitation period for equalization has passed, a house that has been sold generally cannot be counted anymore. A house still in both names is title, not equalization: it remains half and half."
+description: "The equalization deadline has passed — is the jointly owned house still half each? Two separate issues. A house still in both names is title, and stays half and half. A house already sold is equalization, and generally cannot be counted. To proceed out of time, a limitation motion comes first. Mississauga. Miao He 647-930-6688."
 pubDate: 2026-11-03T08:00:00-05:00
 updatedDate: 2026-11-03T08:00:00-05:00
 heroImage: ""

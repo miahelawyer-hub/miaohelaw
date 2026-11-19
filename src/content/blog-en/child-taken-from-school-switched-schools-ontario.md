@@ -1,6 +1,6 @@
 ---
 title: "My Spouse Took Our Child From School, Switched Schools, and Won't Let Me See Them. Will the Court Order the Child Returned? Chinese-Speaking Richmond Hill Divorce Lawyer Miao He"
-description: "Yes. The court will generally order the child returned to their original life and original school. Taking first is not winning. An urgent motion restores the status quo; it is not the final judgment."
+description: "He took the child from school, switched schools, and will not let me see them — will the court send the child back? Yes. The child goes back to the original life and original school. Taking first is not winning. An urgent motion only restores the status quo — do not grab the child yourself. Miao He 647-930-6688."
 pubDate: 2026-11-01T08:00:00-05:00
 updatedDate: 2026-11-01T08:00:00-05:00
 heroImage: ""

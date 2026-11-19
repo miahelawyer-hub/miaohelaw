@@ -1,6 +1,6 @@
 ---
 title: "I Was Laid Off — Does the Support in Our Separation Agreement Go Down Automatically? Ontario Mandarin-Speaking Divorce Lawyer Miao He"
-description: "No. The amount in the agreement stays until a new agreement or a court variation order. Being laid off does not change the number on the page. Pay less in the meantime and the shortfall is arrears. EI still counts as income — it goes down, it does not stop. Miao He."
+description: "I was laid off — does the support in the agreement go down on its own? No. The figure stays until a new agreement or a court variation order. Paying less in the meantime is arrears. EI still counts as income — it can go down, it does not stop. Miao He 647-930-6688."
 pubDate: 2026-11-08T19:10:00-05:00
 updatedDate: 2026-11-08T19:10:00-05:00
 heroImage: ""

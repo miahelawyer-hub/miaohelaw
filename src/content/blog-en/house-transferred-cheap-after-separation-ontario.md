@@ -1,6 +1,6 @@
 ---
 title: "After Separation, My Spouse Transferred a House to Someone Else Below Market Value — Does Ontario Still Count It at Its Separation-Date Value? Chinese-Speaking Toronto Divorce Lawyer Miao He"
-description: "Yes. Ontario property division is locked to the separation date. Transferring the house afterward below market changes where the house went, not the number on the books."
+description: "After separation he transferred a house below market — is it still counted at the separation-date value? Yes. That value is locked. The transfer changes where the house went, not the number on the books. Accounting and getting the house back are different issues. If there are no other assets, the judgment may be a paper judgment. Miao He 647-930-6688."
 pubDate: 2026-11-05T19:35:00-05:00
 updatedDate: 2026-11-05T19:35:00-05:00
 heroImage: ""

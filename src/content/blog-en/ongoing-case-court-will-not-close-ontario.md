@@ -1,6 +1,6 @@
 ---
 title: "My Case Has Been Going for Years — Will the Court Close It? Ontario Chinese-Speaking Divorce Lawyer Miao He"
-description: "No. Once a case is ongoing and has had conferences and motions, the court will not dismiss it. Limitation periods govern claims not yet started. A simple divorce left untouched can still be dismissed. An older case may get trial priority. Miao He."
+description: "A case that has been going for years — will the court close it? No. Once it is underway, the court will not dismiss it on its own. Limitation periods govern claims not yet filed. A simple divorce left untouched can still be dismissed. An older case may get trial priority. Miao He 647-930-6688."
 pubDate: 2026-11-19T08:40:00-05:00
 updatedDate: 2026-11-19T08:40:00-05:00
 heroImage: ""

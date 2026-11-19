@@ -1,6 +1,6 @@
 ---
 title: "Only I Made Financial Disclosure for Our Separation Agreement — My Spouse Didn't. Can He Later Say the Agreement Is Invalid? Chinese-Speaking Toronto Divorce Lawyer Miao He"
-description: "No. He cannot use his own failure to disclose to set the agreement aside. Disclosure blocks only the no-disclosure ground. Being rushed into signing, or having no lawyer of his own, can still be grounds to set it aside."
+description: "Only I made financial disclosure — can he later say the agreement is invalid because he did not? No. He cannot use his own failure to disclose to set it aside. Being rushed, or having no lawyer of his own, can still be grounds to set it aside. Miao He 647-930-6688."
 pubDate: 2026-11-04T21:30:00-05:00
 updatedDate: 2026-11-04T21:30:00-05:00
 heroImage: ""

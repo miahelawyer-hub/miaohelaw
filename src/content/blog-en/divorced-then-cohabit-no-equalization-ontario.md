@@ -1,6 +1,6 @@
 ---
 title: "We Divorced Before and Later Moved Back In Together Without Remarrying — Is the House Still Split Like Married Couples' Property? Ontario Mandarin-Speaking Divorce Lawyer Miao He"
-description: "No. Without remarriage you are cohabiting, not married. Ontario does not equalize common-law property. Joint title is divided by title; if your name is on the house you can claim your half; if it is not, you do not automatically receive half. Miao He."
+description: "We divorced, then lived together again without remarrying — is the house still split like married property? No. Without remarriage you are cohabiting. Ontario does not equalize. Joint title is split by title; if your name is on it you can claim half; if not, you need proof you paid. Miao He 647-930-6688."
 pubDate: 2026-11-10T22:20:00-05:00
 updatedDate: 2026-11-10T22:20:00-05:00
 heroImage: ""

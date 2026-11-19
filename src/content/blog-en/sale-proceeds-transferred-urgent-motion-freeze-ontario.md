@@ -1,6 +1,6 @@
 ---
 title: "The Sale Proceeds Are Already Gone — Can an Urgent Motion Freeze My Spouse's Bank Account? Chinese-Speaking Markham Divorce Lawyer Miao He"
-description: "Once the sale proceeds have been transferred away, an urgent motion cannot freeze them. Money moved into someone else's name cannot be recovered. Urgency is the court's call, not yours. What is still in the account can be ordered preserved."
+description: "The sale proceeds are already gone — can an urgent motion freeze the account? No. Money already transferred cannot be pulled back. What is still in the account can be ordered left untouched. A transfer to the parents may still leave a path; a transfer to someone else generally cannot be frozen. Markham. Miao He 647-930-6688."
 pubDate: 2026-10-29T08:00:00-04:00
 updatedDate: 2026-10-29T08:00:00-04:00
 heroImage: ""

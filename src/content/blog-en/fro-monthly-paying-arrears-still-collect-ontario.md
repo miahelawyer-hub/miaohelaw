@@ -1,6 +1,6 @@
 ---
 title: "The Monthly Support Is Coming Through the FRO — Can I Still Get Back the Arrears He Owed From Before? Chinese-Speaking Toronto Divorce Lawyer Miao He"
-description: "Yes. The payments arriving each month are the current support. The stretch he missed before sits on the FRO's books as arrears, and the FRO will keep enforcing it. Only a court variation order or both parties' written consent stops the FRO."
+description: "Monthly support is coming through the FRO — can I still collect the arrears from before? Yes. Arrears stay on the FRO account. Paying on time now does not wipe them out. Only a court variation order or both parties' written consent stops the FRO. Miao He 647-930-6688."
 pubDate: 2026-11-06T18:50:00-05:00
 updatedDate: 2026-11-06T18:50:00-05:00
 heroImage: ""

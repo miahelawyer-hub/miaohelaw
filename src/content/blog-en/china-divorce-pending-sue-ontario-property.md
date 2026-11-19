@@ -1,6 +1,6 @@
 ---
 title: "My Divorce in China Isn't Finished Yet — Can I Sue in Ontario at the Same Time to Divide Our Canadian Property? Chinese-Speaking Toronto Divorce Lawyer Miao He"
-description: "Yes, you can sue. Filing is your right, and Ontario will accept the case. Accepting is not hearing: while China is still pending, Ontario stays the case until the Chinese judgment."
+description: "The China divorce is not finished — can I sue in Ontario at the same time to divide Canadian property? Yes, you can sue. Ontario will accept the case, then stay it until China decides. A stay is not a dismissal. If the China judgment did not deal with the Canadian property, the Ontario case can be restarted. Toronto. Miao He 647-930-6688."
 pubDate: 2026-11-05T19:10:00-05:00
 updatedDate: 2026-11-05T19:10:00-05:00
 heroImage: ""
