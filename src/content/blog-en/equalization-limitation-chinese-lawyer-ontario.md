@@ -26,6 +26,8 @@ relatedReading:
     line: The valuation date is usually the separation date. That is not the same as the limitation start date.
   - slug: uncontested-divorce-ontario
     line: Finalizing the divorce starts a two-year clock. Property left unresolved is the most common way to lose the claim.
+  - slug: ongoing-case-court-will-not-close-ontario
+    line: "Once the claim is started, that clock is done. The court will not close an ongoing case just because years have passed."
   - slug: separation-agreement-validity-ontario
     line: If the agreement is later set aside, the limitation clock usually did not stop in the meantime.
   - slug: dissipation-of-assets

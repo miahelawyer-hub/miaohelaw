@@ -26,6 +26,8 @@ relatedReading:
     line: "送到了对方不理，才谈缺席。送不到，缺席也走不了。"
   - slug: stalled-family-law-case-ontario
     line: "案子两年没动，是僵局。这篇讲365天时钟，到点会被撤销。"
+  - slug: ongoing-case-court-will-not-close-ontario
+    line: "已经开了诉讼、开过会议提过动议，法院不会自己关掉。这篇是简易离婚交了不管才会被撤销。"
   - slug: ontario-family-court-procedures-regional-differences
     line: "各地区交材料、送达顺序不一样。时钟是同一套规则。"
   - slug: separation-agreement-vs-divorce-ontario

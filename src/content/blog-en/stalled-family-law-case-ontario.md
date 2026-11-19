@@ -28,6 +28,8 @@ relatedReading:
     line: "They stall on disclosure, then slip and share the files — yes, you can use them. Save them now."
   - slug: simple-divorce-filed-dismissed-ontario
     line: "A simple divorce left sitting is not a deadlock. It is a 365-day clock. When it runs out, the file is dismissed."
+  - slug: ongoing-case-court-will-not-close-ontario
+    line: "An ongoing lawsuit will not be closed just because years have passed. This piece is a stall: the process still has to be pushed forward."
   - slug: sale-proceeds-transferred-urgent-motion-freeze-ontario
     line: "Sale proceeds already transferred away cannot be frozen by an urgent motion. Urgency is the court call, not yours."
   - slug: urgent-motion-equalization-mid-case-ontario

@@ -26,6 +26,8 @@ relatedReading:
     line: "Default only starts after they have been served and still do not answer. No service, no default."
   - slug: stalled-family-law-case-ontario
     line: "Two years of deadlock is one problem. This piece is the 365-day clock that can dismiss the file."
+  - slug: ongoing-case-court-will-not-close-ontario
+    line: "An ongoing lawsuit with conferences and motions will not be closed because years have passed. This piece is a simple divorce left untouched."
   - slug: ontario-family-court-procedures-regional-differences
     line: "Filing and service order differ by courthouse. The clock is the same set of rules."
   - slug: separation-agreement-vs-divorce-ontario

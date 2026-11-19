@@ -27,6 +27,8 @@ relatedReading:
     line: 估值日通常锁在分居日；和时效起算日不是同一件事。
   - slug: uncontested-divorce-ontario
     line: 先办离婚会启动两年时效。财产没写清楚就出令，是最常见的失权路径。
+  - slug: ongoing-case-court-will-not-close-ontario
+    line: "已经起诉了，时效这一关就过了。法院不会因为拖了几年就把案子关掉。"
   - slug: separation-agreement-validity-ontario
     line: 协议被推翻后，时效时钟通常并没有因此停过。
   - slug: dissipation-of-assets

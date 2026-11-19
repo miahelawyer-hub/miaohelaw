@@ -26,6 +26,8 @@ relatedReading:
     line: "对方拖着不给文件，手滑分享给你了——能用，赶紧存。"
   - slug: simple-divorce-filed-dismissed-ontario
     line: "简易离婚交了不管，不是僵局，是365天时钟。到点会被撤销。"
+  - slug: ongoing-case-court-will-not-close-ontario
+    line: "已经开了诉讼，拖了几年法院也不会自己关掉。这篇是卡住了要把程序往前推。"
   - slug: sale-proceeds-transferred-urgent-motion-freeze-ontario
     line: "卖房款已经转走了，紧急动议也冻不了。不是你觉得紧急，法院就当成紧急。"
   - slug: urgent-motion-equalization-mid-case-ontario
