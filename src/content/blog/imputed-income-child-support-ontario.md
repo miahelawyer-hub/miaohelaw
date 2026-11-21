@@ -15,6 +15,8 @@ tags:
   - "miao-he-lawyer"
   - "toronto-chinese-family-lawyer"
 relatedReading:
+  - slug: parents-yearly-gift-letter-not-enough-ontario
+    line: "父母定期给的钱拿去付生活费，也可能被当成收入。这篇是故意不工作，法院可以推算收入。"
   - slug: company-in-my-name-never-looked-books-divorce-ontario
     line: "公司开在我名下，账我从没看过。报税三千，法院不只看报税。"
   - slug: common-law-house-share-transfer-buyout-child-support-ontario

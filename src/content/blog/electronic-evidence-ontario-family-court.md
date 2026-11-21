@@ -15,6 +15,8 @@ tags:
   - "ontario-family-court"
   - "wechat-evidence"
 relatedReading:
+  - slug: parents-yearly-gift-letter-not-enough-ontario
+    line: "没有正式赠与信，微信也许可以。这篇是微信、银行截图能不能当证据。"
   - slug: chinese-divorce-property-gift-loan-trust-ontario
     line: 父母出资性质（赠与 vs 借款）的证据认定与还原——电子转账记录最常被引用的场景之一。
   - slug: dissipation-of-assets

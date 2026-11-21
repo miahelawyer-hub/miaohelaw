@@ -17,6 +17,8 @@ tags:
 pairedArticlePath: "/blog/parents-money-child-account-living-expenses-divorce-ontario/"
 relatedIntro: "Whether the amount was enough, which account it went into, and whether there was an agreement are three separate issues:"
 relatedReading:
+  - slug: parents-yearly-gift-letter-not-enough-ontario
+    line: "Yearly gifts after the marriage: one gift letter is not enough. This piece is money that went through the child's account with living expenses spent."
   - slug: resulting-trust-parental-gifts-ontario
     line: "Property parents give an adult child for free is presumed held in trust, not gifted. This piece is money that went through the child's own account."
   - slug: joint-account-house-in-parents-name-divorce-ontario

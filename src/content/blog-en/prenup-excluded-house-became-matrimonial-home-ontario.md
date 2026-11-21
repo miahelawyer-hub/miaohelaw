@@ -18,6 +18,8 @@ tags:
 pairedArticlePath: "/blog/prenup-excluded-house-became-matrimonial-home-ontario/"
 relatedIntro: "Whether the value stays protected, whether possession can be limited by agreement, and whether moving in makes it a matrimonial home are three separate issues:"
 relatedReading:
+  - slug: parents-yearly-gift-letter-not-enough-ontario
+    line: "Gifted money that goes into the matrimonial home loses the exclusion. This piece is a prenup that still protects the house value after you move in."
   - slug: already-married-marriage-contract-home-down-payment-ontario
     line: "It is not too late after the wedding to contract the home and a parental down payment. This piece is a house already excluded, then lived in as the matrimonial home."
   - slug: house-in-spouse-name-stay-with-kids-separation-ontario

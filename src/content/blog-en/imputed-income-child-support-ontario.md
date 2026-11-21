@@ -13,6 +13,8 @@ tags:
   - "miao-he-lawyer"
   - "ontario-family-law"
 relatedReading:
+  - slug: parents-yearly-gift-letter-not-enough-ontario
+    line: "Regular parental money spent on living costs can be treated as income. This piece is a spouse who will not work, and the court can impute income."
   - slug: company-in-my-name-never-looked-books-divorce-ontario
     line: "The company is in my name, I've never looked at the books. Reporting $3,000 a month doesn't end the inquiry."
   - slug: common-law-house-share-transfer-buyout-child-support-ontario

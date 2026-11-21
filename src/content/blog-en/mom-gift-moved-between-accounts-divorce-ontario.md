@@ -17,6 +17,8 @@ tags:
 pairedArticlePath: "/blog/mom-gift-moved-between-accounts-divorce-ontario/"
 relatedIntro: "How a gift is proved, how a nominee holding is written, and what happens if the money goes into the home are three separate issues:"
 relatedReading:
+  - slug: parents-yearly-gift-letter-not-enough-ontario
+    line: "Yearly gifts after the marriage: one gift letter is not enough. This piece is money moved between accounts, and the more it moves the weaker the proof."
   - slug: chinese-divorce-property-gift-loan-trust-ontario
     line: "Parents' money: gift or loan. Write it down at the time."
   - slug: spouse-sudden-debts-share-ontario

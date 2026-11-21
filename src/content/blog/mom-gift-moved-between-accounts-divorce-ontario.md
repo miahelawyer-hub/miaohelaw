@@ -17,6 +17,8 @@ tags:
 pairedArticlePath: "/en/blog/mom-gift-moved-between-accounts-divorce-ontario/"
 relatedIntro: "赠与怎么证明、代持怎么写、钱进了婚房还能不能扣，是三笔账："
 relatedReading:
+  - slug: parents-yearly-gift-letter-not-enough-ontario
+    line: "婚后父母每年打钱，一份赠与信不够。这篇是钱转来转去，转得越多越说不清。"
   - slug: chinese-divorce-property-gift-loan-trust-ontario
     line: "父母的钱是送的还是借的，当时就要写清楚。"
   - slug: spouse-sudden-debts-share-ontario

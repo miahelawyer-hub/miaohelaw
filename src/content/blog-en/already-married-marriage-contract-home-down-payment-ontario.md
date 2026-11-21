@@ -18,6 +18,8 @@ tags:
 pairedArticlePath: "/blog/already-married-marriage-contract-home-down-payment-ontario/"
 relatedIntro: "Whether you can still sign after the wedding, what the contract can lock, and how parents' money is written down are three separate issues:"
 relatedReading:
+  - slug: parents-yearly-gift-letter-not-enough-ontario
+    line: "Yearly gifts after the marriage: one gift letter is not enough. A marriage contract can exclude a specific amount. This piece is: it is not too late after the wedding to contract."
   - slug: prenup-excluded-house-became-matrimonial-home-ontario
     line: "The house was already excluded, then lived in as the matrimonial home. The value can still be protected; possession cannot. This piece is: it is not too late after the wedding to contract the home."
   - slug: prenuptial-agreement-ontario-2026

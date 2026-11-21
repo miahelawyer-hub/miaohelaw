@@ -17,6 +17,8 @@ tags:
 pairedArticlePath: "/en/blog/parents-money-child-account-living-expenses-divorce-ontario/"
 relatedIntro: "钱数够不够、打进哪张卡、有没有协议，是三笔账："
 relatedReading:
+  - slug: parents-yearly-gift-letter-not-enough-ontario
+    line: "婚后父母每年打钱，一份赠与信不够。这篇是钱进了子女卡、还花过生活费。"
   - slug: resulting-trust-parental-gifts-ontario
     line: "父母白给成年子女的财产，推定是代持，不是送的。这篇讲钱进了子女自己的卡。"
   - slug: joint-account-house-in-parents-name-divorce-ontario

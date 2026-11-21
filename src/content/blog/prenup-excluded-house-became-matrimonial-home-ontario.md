@@ -18,6 +18,8 @@ tags:
 pairedArticlePath: "/en/blog/prenup-excluded-house-became-matrimonial-home-ontario/"
 relatedIntro: "价值能挡住、居住权锁不住、住进去就是婚房，是三笔账："
 relatedReading:
+  - slug: parents-yearly-gift-letter-not-enough-ontario
+    line: "赠与的钱进了婚房，排除就没了。这篇是协议排除的房子住进去，价值还挡得住。"
   - slug: already-married-marriage-contract-home-down-payment-ontario
     line: "结婚后签协议说婚房归我，还来得及。这篇是婚前已经排除，后来住进去成了婚房。"
   - slug: house-in-spouse-name-stay-with-kids-separation-ontario

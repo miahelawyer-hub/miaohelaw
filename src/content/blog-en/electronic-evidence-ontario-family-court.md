@@ -18,6 +18,8 @@ tags:
   - "ontario-family-law"
   - "wechat-evidence"
 relatedReading:
+  - slug: parents-yearly-gift-letter-not-enough-ontario
+    line: "No formal gift letter? A WeChat message may still work. This piece is whether WeChat and bank screenshots can be evidence in family court."
   - slug: chinese-divorce-property-gift-loan-trust-ontario
     line: How parental contributions (gift vs loan) are proven — one of the most common contexts where WeChat transfers are introduced as evidence.
   - slug: dissipation-of-assets

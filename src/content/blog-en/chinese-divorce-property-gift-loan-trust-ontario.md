@@ -20,6 +20,8 @@ tags:
   - "toronto-divorce-lawyer"
 relatedIntro: "For equalization basics, net family property mechanics, or imputed income in support claims, these posts complement the topics above."
 relatedReading:
+  - slug: parents-yearly-gift-letter-not-enough-ontario
+    line: "Yearly gifts after the marriage: one gift letter is not enough. This piece is whether parents money is a gift or a loan."
   - slug: rrsp-tfsa-in-his-name-contribution-divorce-ontario
     line: "You earned it, but the RRSP is in his name — contribution ratio does not bring it back. Prove a loan, and it is a separate debt claim."
   - slug: joint-account-house-in-parents-name-divorce-ontario
