@@ -41,6 +41,8 @@ relatedReading:
     line: "Money moved around with no records cannot be deducted on the remarriage-date list."
   - slug: died-house-unsold-deemed-sold-tax-ontario
     line: "They died but the house hasn't been sold — it is still deemed sold at market value on the date of death."
+  - slug: hague-apostille-inherit-renounce-china-ontario
+    line: "From Canada, inheriting or renouncing property in China needs a Hague Apostille. Parent-child proof has no expiry date and can be prepared early."
   - href: /en/hague-apostille/same-name-declaration/
     title: Same-person declaration
     line: "Pinyin on Canadian ID and the Chinese passport don't match — do it while you are living."

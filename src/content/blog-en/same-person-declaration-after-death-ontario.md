@@ -14,6 +14,8 @@ tags:
 pairedArticlePath: "/blog/same-person-declaration-after-death-ontario/"
 relatedIntro: "A living same-person declaration and an estate that has already stalled are two different files:"
 relatedReading:
+  - slug: hague-apostille-inherit-renounce-china-ontario
+    line: "From Canada, inheriting or renouncing property in China needs a Hague Apostille. This piece is: after death a same-person declaration cannot be made."
   - href: /en/hague-apostille/same-name-declaration/
     title: Same-name / same-person declaration Apostille
     line: While the person is living, this is the page for passport, ID and deed names that do not match.

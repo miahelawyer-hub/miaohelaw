@@ -258,6 +258,20 @@ export const blogTopicHubs: BlogTopicHub[] = [
       'will-without-divorce-kids-cannot-get-half-ontario',
       'equalization-spousal-support-cannot-go-to-kids-ontario',
       'mom-gift-moved-between-accounts-divorce-ontario',
+      'hague-apostille-inherit-renounce-china-ontario',
+    ],
+  },
+  {
+    id: 'hague-apostille',
+    title: '海牙认证',
+    titleEn: 'Hague Apostille',
+    chip: '海牙认证',
+    chipEn: 'Apostille',
+    intro: '人在加拿大继承或放弃中国的遗产文件要海牙认证才能在中国用、放弃要出放弃声明、继承要出亲子关系证明、亲子关系证明没有有效期可以提前准备、人去世了不能再做同一人认证只剩旧文件和政府记录没有就证明不了。',
+    introEn: 'From Canada, documents for inheriting or renouncing property in China need a Hague Apostille before they can be used in China, a renunciation takes a declaration, inheriting takes parent-child proof that has no expiry date and can be prepared in advance, and after death a same-person declaration cannot be made because only old documents and government records remain.',
+    slugs: [
+      'hague-apostille-inherit-renounce-china-ontario',
+      'same-person-declaration-after-death-ontario',
     ],
   },
 ];

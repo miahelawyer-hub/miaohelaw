@@ -41,6 +41,8 @@ relatedReading:
     line: "钱转来转去证明不了，复婚那天的清单上就扣不了。"
   - slug: died-house-unsold-deemed-sold-tax-ontario
     line: "人走了房子还没卖，税局仍按去世当天市价视同卖掉。国内的房，遗嘱还是要在国内签。"
+  - slug: hague-apostille-inherit-renounce-china-ontario
+    line: "人在加拿大继承或放弃中国的遗产，文件要海牙认证。亲子关系证明没有有效期，可以提前办。"
   - href: /hague-apostille/same-name-declaration/
     title: 同名认证 / 同一人声明
     line: "加拿大证件拼音和中国护照对不上，人在世就做。"
