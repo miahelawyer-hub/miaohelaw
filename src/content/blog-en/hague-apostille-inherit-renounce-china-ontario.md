@@ -17,6 +17,8 @@ relatedReading:
   - href: /en/hague-apostille/
     title: Hague Apostille
     line: "Canadian documents for use in China start on this page."
+  - slug: selling-china-house-power-of-attorney-apostille-ontario
+    line: "Selling a house in China from Canada takes a power of attorney in the registry format. This piece is inheriting or renouncing an estate."
   - href: /en/hague-apostille/renunciation-of-inheritance/
     title: Renunciation of inheritance
     line: "An heir in Canada who wants to renounce a China estate needs the waiver worded right the first time."

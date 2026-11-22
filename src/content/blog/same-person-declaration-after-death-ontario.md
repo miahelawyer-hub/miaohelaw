@@ -16,6 +16,8 @@ relatedIntro: "人在世时的同一人声明，和人走了之后的遗产程�
 relatedReading:
   - slug: hague-apostille-inherit-renounce-china-ontario
     line: "人在加拿大继承或放弃中国的遗产，文件要海牙认证才能在中国用。这篇是人去世了不能再做同一人认证。"
+  - slug: selling-china-house-power-of-attorney-apostille-ontario
+    line: "卖房委托书改过名字、换过护照，登记中心可能还要同名声明。这篇是人去世了不能再做同一人认证。"
   - href: /hague-apostille/same-name-declaration/
     title: 同名认证 / 同一人声明海牙认证
     line: 人还在世，护照、身份证、房产证姓名对不上，按这一页办理。

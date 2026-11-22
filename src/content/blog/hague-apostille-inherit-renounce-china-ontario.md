@@ -17,6 +17,8 @@ relatedReading:
   - href: /hague-apostille/
     title: 海牙认证
     line: "加拿大文件拿到中国用，先看这一页。"
+  - slug: selling-china-house-power-of-attorney-apostille-ontario
+    line: "人在加拿大卖中国的房子，委托书要按登记中心格式写。这篇是继承或放弃遗产。"
   - href: /hague-apostille/renunciation-of-inheritance/
     title: 放弃继承证明
     line: "人在加拿大要放弃国内遗产，声明必须一次写对。"
