@@ -1,8 +1,8 @@
 ---
 title: "Selling a House in China From Canada. How Do You Apostille the Power of Attorney? Ontario Mandarin-Speaking Lawyer Miao He"
 description: "Selling a house in China from Canada — how do you apostille the power of attorney? You do not need to fly back. Sign it in Canada, have it notarized and apostilled, and send the original to China. The registry only accepts a power of attorney in its own format. Miao He 647-930-6688."
-pubDate: 2026-11-24T09:20:00-05:00
-updatedDate: 2026-11-24T09:20:00-05:00
+pubDate: 2026-11-22T13:40:00-05:00
+updatedDate: 2026-11-22T13:40:00-05:00
 heroImage: ""
 keywords: "selling a house in China from Canada how do you apostille the power of attorney, you do not need to fly back sign notarize apostille in Canada, the registry only accepts a power of attorney in its own format, Ontario Mandarin-speaking lawyer, Chinese lawyer China property POA apostille, Miao He"
 tags:

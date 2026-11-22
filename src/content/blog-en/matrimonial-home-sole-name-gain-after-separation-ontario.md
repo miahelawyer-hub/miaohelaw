@@ -1,8 +1,8 @@
 ---
 title: "The Matrimonial Home Is Only in My Name. Who Gets the Gain If It Goes Up After Separation? Ontario Chinese-Speaking Divorce Lawyer Miao He"
 description: "The matrimonial home is only in my name. Who gets the gain if it goes up after separation? Yours. Ontario calculates equalization on the value as of the date of separation. Whatever the house does after that, up or down, has nothing to do with the other side. Only a jointly owned home shares the loss. Miao He 647-930-6688."
-pubDate: 2026-11-23T09:20:00-05:00
-updatedDate: 2026-11-23T09:20:00-05:00
+pubDate: 2026-11-22T11:20:00-05:00
+updatedDate: 2026-11-22T11:20:00-05:00
 heroImage: ""
 keywords: "the matrimonial home is only in my name who gets the gain if it goes up after separation, yours Ontario calculates equalization on the separation-date value, if it was high on separation day and sells low now you bear the difference, Ontario Chinese-speaking divorce lawyer, Chinese lawyer matrimonial home equalization, Miao He"
 tags:
