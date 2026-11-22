@@ -17,6 +17,8 @@ tags:
 pairedArticlePath: "/en/blog/house-appreciation-after-separation-ontario/"
 relatedIntro: "升值还分不分，联名只一方住会不会有租金，和时效过没过，是三笔账："
 relatedReading:
+  - slug: matrimonial-home-sole-name-gain-after-separation-ontario
+    line: "婚房只在我名下，分居日之后房价涨了算谁的？涨跌都归房主。这篇是先看名字。"
   - slug: net-family-property-ontario
     line: 净家庭财产锁在分居日。公式本身在这里。
   - slug: matrimonial-home-property-division-not-based-on-title

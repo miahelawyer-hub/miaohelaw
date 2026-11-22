@@ -17,6 +17,8 @@ tags:
 pairedArticlePath: "/blog/house-appreciation-after-separation-ontario/"
 relatedIntro: "Whether the gain is shared, whether occupation rent arises on a joint home, and whether limitation has run are three separate issues:"
 relatedReading:
+  - slug: matrimonial-home-sole-name-gain-after-separation-ontario
+    line: "The matrimonial home is only in my name. Who gets the gain if it goes up after separation? The gain and the loss both stay with the owner. This piece starts with whose name is on title."
   - slug: net-family-property-ontario
     line: Net family property locks on the separation date. The formula is here.
   - slug: matrimonial-home-title-vs-property-division-ontario

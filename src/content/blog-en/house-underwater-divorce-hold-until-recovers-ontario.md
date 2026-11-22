@@ -20,6 +20,8 @@ relatedIntro: "Whether an underwater house still gets divided, whether you can h
 relatedReading:
   - slug: house-appreciation-after-separation-ontario
     line: "House went up after separation — do you still split it? That is the gain. This is the loss below the mortgage."
+  - slug: matrimonial-home-sole-name-gain-after-separation-ontario
+    line: "Sole name, high on separation day and low at sale: the owner bears the difference. This piece is the loss below the mortgage."
   - slug: equalization-limitation-chinese-lawyer-ontario
     line: "Equalization has three deadlines. The earliest one governs. Finalizing the divorce can start the two-year clock first."
   - slug: separation-date-vs-divorce-date-ontario

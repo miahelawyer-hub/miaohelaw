@@ -20,6 +20,8 @@ relatedIntro: "跌破贷款还能不能分、先不卖等升值、和时效，�
 relatedReading:
   - slug: house-appreciation-after-separation-ontario
     line: "分居后房子涨了还要分吗？那是升值那一头。这篇是跌破贷款。"
+  - slug: matrimonial-home-sole-name-gain-after-separation-ontario
+    line: "婚房只在一人名下，分居日高、现在卖低，差额房主自己承担。这篇是跌破贷款。"
   - slug: equalization-limitation-chinese-lawyer-ontario
     line: "分财产有三个 deadline，谁先到算谁的。先办离婚证，两年那条可能先到。"
   - slug: separation-date-vs-divorce-date-ontario
