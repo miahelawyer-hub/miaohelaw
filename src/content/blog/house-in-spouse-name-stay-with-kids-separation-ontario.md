@@ -31,6 +31,8 @@ relatedReading:
     line: "同屋檐下也可以分居。分居看的是不过了，不是一定要有人搬走。"
   - slug: ontario-restraining-order-chinese-family
     line: "动手、威胁，安全第一。限制令管的是大人之间谁不能靠近谁。"
+  - slug: restraining-order-lawyer-demand-rent-utilities-ontario
+    line: "限制令不让联系对方，律师还能发函要租金水电。限制的是你，不是律师。"
   - slug: house-appreciation-after-separation-ontario
     line: "分居后房价涨了还分不分，是估值日的账，不是这篇的居住安排。"
   - slug: same-roof-wedding-separation-date-ontario

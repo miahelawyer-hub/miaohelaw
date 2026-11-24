@@ -19,6 +19,8 @@ relatedIntro: "升值还分不分，联名只一方住会不会有租金，和�
 relatedReading:
   - slug: matrimonial-home-sole-name-gain-after-separation-ontario
     line: "婚房只在我名下，分居日之后房价涨了算谁的？涨跌都归房主。这篇是先看名字。"
+  - slug: restraining-order-lawyer-demand-rent-utilities-ontario
+    line: "限制令不让你自己开口要占用租金，律师发函把主张留在记录上。这篇是联名只一方住会不会有租金。"
   - slug: net-family-property-ontario
     line: 净家庭财产锁在分居日。公式本身在这里。
   - slug: matrimonial-home-property-division-not-based-on-title

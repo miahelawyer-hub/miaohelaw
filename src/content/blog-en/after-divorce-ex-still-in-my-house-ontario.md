@@ -20,6 +20,8 @@ relatedIntro: "Who lives there, whose name is on title, and whether equalization
 relatedReading:
   - slug: house-in-spouse-name-stay-with-kids-separation-ontario
     line: "The other direction: not divorced yet, the house is in their name, can you stay with the kids."
+  - slug: restraining-order-lawyer-demand-rent-utilities-ontario
+    line: "A restraining order bars contact. A lawyer can still demand rent and utilities. This piece is after divorce, the ex still lives there."
   - slug: matrimonial-home-title-vs-property-division-ontario
     line: The registered shares were never the same thing as equalization.
   - slug: force-sale-matrimonial-home-ontario

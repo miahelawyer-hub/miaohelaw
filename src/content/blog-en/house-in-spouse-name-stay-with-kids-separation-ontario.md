@@ -31,6 +31,8 @@ relatedReading:
     line: "Same-roof separation counts. Separation is about being done as a couple, not about moving out."
   - slug: ontario-restraining-order-chinese-family
     line: "Violence or threats — safety first. A restraining order is about the adults, who can't go near whom."
+  - slug: restraining-order-lawyer-demand-rent-utilities-ontario
+    line: "A restraining order bars contact. A lawyer can still demand rent and utilities. The order restricts you, not your lawyer."
   - slug: house-appreciation-after-separation-ontario
     line: "Whether a post-separation increase is shared is the valuation-date issue, not this occupancy question."
   - slug: same-roof-wedding-separation-date-ontario

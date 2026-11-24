@@ -19,6 +19,8 @@ relatedIntro: "Whether the gain is shared, whether occupation rent arises on a j
 relatedReading:
   - slug: matrimonial-home-sole-name-gain-after-separation-ontario
     line: "The matrimonial home is only in my name. Who gets the gain if it goes up after separation? The gain and the loss both stay with the owner. This piece starts with whose name is on title."
+  - slug: restraining-order-lawyer-demand-rent-utilities-ontario
+    line: "A restraining order stops you from asking for occupation rent yourself. The lawyer puts the claim on record. This piece is whether a joint home occupier owes rent."
   - slug: net-family-property-ontario
     line: Net family property locks on the separation date. The formula is here.
   - slug: matrimonial-home-title-vs-property-division-ontario
