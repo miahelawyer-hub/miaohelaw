@@ -842,7 +842,10 @@ export const intakeForms: IntakeFormDef[] = [
 						replyEmail: true,
 						autoComplete: 'email',
 					},
-					t('Address after closing', 'Address after closing 交接后的地址', { wide: true }),
+					t('Post-sale address', 'Post-sale address 出售房屋之后居住地址', {
+						wide: true,
+						autoComplete: 'street-address',
+					}),
 					t('Occupation', 'Occupation 职业', { required: true, autoComplete: 'organization-title' }),
 					{
 						kind: 'radio',
