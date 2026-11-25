@@ -17,6 +17,8 @@ tags:
 pairedArticlePath: "/en/blog/spouse-sudden-debts-share-ontario/"
 relatedIntro: "债算不算、亲戚有没有记录、公司亏了谁扛，是三笔账："
 relatedReading:
+  - slug: spouse-company-loan-no-personal-guarantee-ontario
+    line: "配偶公司贷了款，没签个人担保，债主不能找你。但这笔债会扣进对方净家庭财产，你分到的就变少。"
   - slug: dissipation-of-assets
     line: "还没离婚就跟别人同居、给第三者花钱。挥霍要举证，门槛不低。"
   - slug: resp-university-bank-can-touch-ontario

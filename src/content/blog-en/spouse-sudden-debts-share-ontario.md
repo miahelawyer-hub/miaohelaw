@@ -17,6 +17,8 @@ tags:
 pairedArticlePath: "/blog/spouse-sudden-debts-share-ontario/"
 relatedIntro: "Whether a sudden debt counts, whether a relative's claim needs records, and who absorbs a company loss are three separate issues:"
 relatedReading:
+  - slug: spouse-company-loan-no-personal-guarantee-ontario
+    line: "A company loan with no personal guarantee is not yours to repay. It is still deducted from the other side's net family property, so you may receive less."
   - slug: dissipation-of-assets
     line: "Not divorced yet, already living with someone else, money spent on a third party. Dissipation has to be proved, and the bar is not low."
   - slug: resp-university-bank-can-touch-ontario

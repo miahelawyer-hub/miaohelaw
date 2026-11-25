@@ -19,6 +19,8 @@ tags:
 pairedArticlePath: "/en/blog/company-in-my-name-never-looked-books-divorce-ontario/"
 relatedIntro: "名下怎么算、信托怎么争、收入怎么推定，是三笔账："
 relatedReading:
+  - slug: spouse-company-loan-no-personal-guarantee-ontario
+    line: "公司贷了款、没签个人担保，债主不能找你。计入的是股份价值，不是贷款本身。"
   - slug: spouse-kept-company-books-use-in-divorce-ontario
     line: "配偶给公司做账拿到的流水、税表，来源正当就能用。那篇讲手里的账。这篇讲名下算谁的。"
   - slug: rrsp-tfsa-in-his-name-contribution-divorce-ontario
