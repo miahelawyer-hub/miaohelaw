@@ -18,6 +18,8 @@ tags:
 pairedArticlePath: "/blog/spouse-company-loan-no-personal-guarantee-ontario/"
 relatedIntro: "Whether the creditor can come after you, how the shares are counted, and why not having to repay still leaves you with less are three separate issues:"
 relatedReading:
+  - slug: signing-officer-not-shareholder-creditor-ontario
+    line: "A signing officer who is not a shareholder: generally the creditor cannot come after the person who signed. This piece is no personal guarantee: the creditor cannot come after you, but equalization may still shrink."
   - slug: spouse-sudden-debts-share-ontario
     line: "A pile of debts produced at divorce is not split down the middle automatically. This piece is a real company loan with no personal guarantee: the creditor cannot come after you, but equalization may still shrink."
   - slug: company-in-my-name-never-looked-books-divorce-ontario

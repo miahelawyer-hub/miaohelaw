@@ -21,6 +21,8 @@ relatedIntro: "名下怎么算、信托怎么争、收入怎么推定，是三�
 relatedReading:
   - slug: spouse-company-loan-no-personal-guarantee-ontario
     line: "公司贷了款、没签个人担保，债主不能找你。计入的是股份价值，不是贷款本身。"
+  - slug: signing-officer-not-shareholder-creditor-ontario
+    line: "签字授权人不是股东，债主看年报和报税上的股东、董事。这篇是名下先算谁的。"
   - slug: spouse-kept-company-books-use-in-divorce-ontario
     line: "配偶给公司做账拿到的流水、税表，来源正当就能用。那篇讲手里的账。这篇讲名下算谁的。"
   - slug: rrsp-tfsa-in-his-name-contribution-divorce-ontario

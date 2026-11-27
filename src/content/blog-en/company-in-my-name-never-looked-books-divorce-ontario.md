@@ -21,6 +21,8 @@ relatedIntro: "Where the shares are counted, how a trust is claimed, and how inc
 relatedReading:
   - slug: spouse-company-loan-no-personal-guarantee-ontario
     line: "A company loan with no personal guarantee: the creditor cannot come after you. What goes in is the value of the shares, not the loan itself."
+  - slug: signing-officer-not-shareholder-creditor-ontario
+    line: "A signing officer is not a shareholder. The creditor looks at the annual return and the tax filings. This piece is whose name the shares are in."
   - slug: spouse-kept-company-books-use-in-divorce-ontario
     line: "Bank statements and tax records a spouse kept while doing the books can be used if lawfully obtained. That piece is the records in your hands. This one is whose name the shares are in."
   - slug: rrsp-tfsa-in-his-name-contribution-divorce-ontario

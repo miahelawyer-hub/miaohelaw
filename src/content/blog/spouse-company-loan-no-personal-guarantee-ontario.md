@@ -18,6 +18,8 @@ tags:
 pairedArticlePath: "/en/blog/spouse-company-loan-no-personal-guarantee-ontario/"
 relatedIntro: "债主能不能找你、股份怎么计入、不用还和分到的减少，是三笔账："
 relatedReading:
+  - slug: signing-officer-not-shareholder-creditor-ontario
+    line: "签字授权人不是股东，一般来说债主不能找签字的人。这篇是没签个人担保，债主不能找你，均等化仍可能变少。"
   - slug: spouse-sudden-debts-share-ontario
     line: "离婚时对方突然拿出一堆债，不会自动一人一半。这篇是真公司贷、没签个人担保，债主不能找你，均等化仍可能变少。"
   - slug: company-in-my-name-never-looked-books-divorce-ontario
