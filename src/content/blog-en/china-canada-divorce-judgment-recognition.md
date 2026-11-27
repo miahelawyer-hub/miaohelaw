@@ -18,6 +18,8 @@ tags:
   - "miao-he-lawyer"
   - "ontario-family-law"
 relatedReading:
+  - slug: china-divorce-agreement-cannot-change-ontario
+    line: "An agreement divorce: once filed it cannot be changed, and without the certificate it has no effect. This article is how a judgment is recognized and enforced."
   - slug: married-only-china-living-in-canada-one-divorce
     line: "Before anyone files: married only in China, living in Canada — one divorce, pick the place."
   - slug: china-divorce-ontario-equalization-afterward

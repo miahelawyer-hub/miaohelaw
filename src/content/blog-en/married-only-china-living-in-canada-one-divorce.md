@@ -16,6 +16,8 @@ tags:
 pairedArticlePath: "/blog/married-only-china-living-in-canada-one-divorce/"
 relatedIntro: "Where to file, whether Ontario can still equalize after a Chinese divorce, and whether the judgment is recognized are three tracks:"
 relatedReading:
+  - slug: china-divorce-agreement-cannot-change-ontario
+    line: "Already signed a Chinese divorce agreement: once filed it cannot be changed, and without the certificate it has no effect. This article is before anyone files — one divorce, pick the place."
   - slug: china-divorce-lawsuit-living-in-canada
     line: "They've already filed in China. That is not this forum-choice question. That is how to respond."
   - slug: china-divorce-pending-sue-ontario-property

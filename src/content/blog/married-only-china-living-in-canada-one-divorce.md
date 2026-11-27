@@ -16,6 +16,8 @@ tags:
 pairedArticlePath: "/en/blog/married-only-china-living-in-canada-one-divorce/"
 relatedIntro: "去哪边离、离完安省还能不能分、判决认不认，是三笔账："
 relatedReading:
+  - slug: china-divorce-agreement-cannot-change-ontario
+    line: "已经在中国签过离婚协议：备案后改不了，没领证还不生效。这篇是还没离，办一次自己选地方。"
   - slug: china-divorce-lawsuit-living-in-canada
     line: "对方已经在中国起诉了，不是这篇的选地方，是应诉。"
   - slug: china-divorce-pending-sue-ontario-property

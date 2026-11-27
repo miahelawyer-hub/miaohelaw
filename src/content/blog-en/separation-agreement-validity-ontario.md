@@ -13,6 +13,8 @@ tags:
   - "miao-he-lawyer"
   - "ontario-family-law"
 relatedReading:
+  - slug: china-divorce-agreement-cannot-change-ontario
+    line: "A Chinese divorce agreement on file with the civil affairs bureau cannot be changed. This article is an Ontario separation agreement, which both spouses can amend if they agree."
   - slug: said-house-money-yours-wont-sign-agreement-ontario
     line: "He said the house and money are yours — he won't put it in writing. An oral promise counts for nothing."
   - slug: sold-house-split-money-ai-agreement-ontario

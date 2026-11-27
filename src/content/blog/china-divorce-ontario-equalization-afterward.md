@@ -18,6 +18,8 @@ tags:
 pairedArticlePath: "/en/blog/china-divorce-ontario-equalization-afterward/"
 relatedIntro: "离完婚还能不能分，和分多少、房子谁住，是三件事："
 relatedReading:
+  - slug: china-divorce-agreement-cannot-change-ontario
+    line: "中国离婚协议备案后改不了，没领离婚证不生效。这篇是离完了加拿大房子还能不能分。"
   - slug: married-only-china-living-in-canada-one-divorce
     line: "还没离：选中国还是安省。这篇是已经在中国离完了。"
   - slug: china-divorce-pending-sue-ontario-property

@@ -18,6 +18,8 @@ tags:
 pairedArticlePath: "/blog/china-divorce-ontario-equalization-afterward/"
 relatedIntro: "Whether you can still claim, how much the house is worth, and who lives there are three different questions:"
 relatedReading:
+  - slug: china-divorce-agreement-cannot-change-ontario
+    line: "A filed Chinese divorce agreement cannot be changed, and without the certificate it never takes effect. This article is whether Ontario can still divide property after that divorce."
   - slug: married-only-china-living-in-canada-one-divorce
     line: "Not divorced yet: China or Ontario. This article is after a Chinese divorce is already done."
   - slug: china-divorce-pending-sue-ontario-property

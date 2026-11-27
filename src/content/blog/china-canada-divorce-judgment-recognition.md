@@ -15,6 +15,8 @@ tags:
   - "jurisdiction-selection"
   - "miao-he-lawyer"
 relatedReading:
+  - slug: china-divorce-agreement-cannot-change-ontario
+    line: "协议离婚：备案后改不了，没领证不生效。这篇是判决怎么承认、执行。"
   - slug: married-only-china-living-in-canada-one-divorce
     line: "还没立案：只在中国结的婚，办一次，自己选地方。"
   - slug: china-divorce-ontario-equalization-afterward
